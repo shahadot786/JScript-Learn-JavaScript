@@ -5,11 +5,11 @@ plugins {
 android {
     compileSdkVersion 31
     defaultConfig {
-        applicationId "com.javascript.learnonline"
+        applicationId "com.javascript.jscript"
         minSdkVersion 19
         targetSdkVersion 31
         versionCode 1
-        versionName "1.0"
+        versionName "1.0.0.0"
         multiDexEnabled true
     }
     buildTypes {

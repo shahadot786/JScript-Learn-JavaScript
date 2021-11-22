@@ -1,8 +1,8 @@
-package com.javascript.learnonline;
+package com.javascript.jscript;
 
 import android.os.Bundle;
 import androidx.appcompat.app.AppCompatActivity;
-import com.javascript.learnonline.databinding.ActivityMainBinding;
+import com.javascript.jscript.databinding.ActivityMainBinding;
 
 
 public class MainActivity extends AppCompatActivity {

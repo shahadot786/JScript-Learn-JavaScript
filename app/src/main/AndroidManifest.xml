@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.javascript.learnonline">
+    package="com.javascript.jscript">
 
     <uses-permission android:name="android.permission.VIBRATE" />
     <uses-permission android:name="android.permission.INTERNET" />
@@ -23,7 +23,7 @@
         tools:targetApi="m">
 
         <activity
-            android:name="com.javascript.learnonline.MainActivity"
+            android:name="com.javascript.jscript.MainActivity"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:exported="true">
             <intent-filter>

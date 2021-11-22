@@ -1,41 +1,41 @@
 {
   "project_info": {
-    "project_number": "452143243276",
-    "project_id": "learn-javascript-online",
-    "storage_bucket": "learn-javascript-online.appspot.com"
+    "project_number": "10732582829",
+    "project_id": "jscript-a8688",
+    "storage_bucket": "jscript-a8688.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:452143243276:android:58870fb7db57bae8b74e29",
+        "mobilesdk_app_id": "1:10732582829:android:bf833300b881177bd91324",
         "android_client_info": {
-          "package_name": "com.javascript.learnonline"
+          "package_name": "com.javascript.jscript"
         }
       },
       "oauth_client": [
         {
-          "client_id": "452143243276-ppg251jmlvmitj9dac3c3ls512idd9rq.apps.googleusercontent.com",
+          "client_id": "10732582829-srv96l245sn3s9jgl6j4vfijnvplsf7p.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
-            "package_name": "com.javascript.learnonline",
+            "package_name": "com.javascript.jscript",
             "certificate_hash": "1ed9540682f2a3e9b01431a84b27ad7a4cfb9a8e"
           }
         },
         {
-          "client_id": "452143243276-7ekcl41el0ot9nh04d2s4p5pdbdhis1q.apps.googleusercontent.com",
+          "client_id": "10732582829-ls4gv4b3a1nppoqv5nqtb7altjd7nlsj.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyAh2HlT5W8-wkukBaYSch4KHzCqrv23hXg"
+          "current_key": "AIzaSyCoIAGz0sZnWgJLnoPrPM0hE3hX3tmRkrU"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "452143243276-7ekcl41el0ot9nh04d2s4p5pdbdhis1q.apps.googleusercontent.com",
+              "client_id": "10732582829-ls4gv4b3a1nppoqv5nqtb7altjd7nlsj.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

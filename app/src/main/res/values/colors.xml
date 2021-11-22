@@ -1,18 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <!--default theme color-->
-    <color name="colorPrimary">#306998</color>
-    <color name="colorPrimaryDark">#306998</color>
-    <color name="colorAccent">#306998</color>
-    <color name="colorBackgroundLight">#FFFFFF</color>
+    <!--default theme colors-->
+    <color name="colorPrimary">#16171b</color>
+    <color name="colorSecondary">#24252a</color>
+    <color name="activeGreen">#15c55d</color>
+    <color name="activeRed">#dc4036</color>
+    
+    <!--Text Colors-->
+    <color name="textColorGrey">#D2D3D5</color>
+    <color name="textColorBlack">#22272C</color>
+    
+    <!--Bar colors-->
+    <color name="colorStatusBarDark">#16171b</color>
+    <color name="colorToolbarDark">#16171b</color>
 
-    <!--dark theme color-->
-    <color name="colorStatusBarDark">#0F1D24</color>
-    <color name="colorToolbarDark">#222D36</color>
-    <color name="colorBackgroundDark">#101D24</color>
-
-    <!--others-->
+    <!--Extra Colors-->
+    <color name="color1">#2ebb55</color>
+    <color name="color2">#f71138</color>
+    <color name="color3">#1D1F2B</color>
+    <color name="color4">#FFBF00</color>
+    
+    <!--Never Change Colors-->
     <color name="colorWhite">#FFFFFF</color>
     <color name="colorBlack">#000000</color>
     <color name="colorGreySoft">#BCBEC1</color>

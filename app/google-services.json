@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "452143243276",
+    "project_id": "learn-javascript-online",
+    "storage_bucket": "learn-javascript-online.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:452143243276:android:58870fb7db57bae8b74e29",
+        "android_client_info": {
+          "package_name": "com.javascript.learnonline"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "452143243276-ppg251jmlvmitj9dac3c3ls512idd9rq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.javascript.learnonline",
+            "certificate_hash": "1ed9540682f2a3e9b01431a84b27ad7a4cfb9a8e"
+          }
+        },
+        {
+          "client_id": "452143243276-7ekcl41el0ot9nh04d2s4p5pdbdhis1q.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAh2HlT5W8-wkukBaYSch4KHzCqrv23hXg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "452143243276-7ekcl41el0ot9nh04d2s4p5pdbdhis1q.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

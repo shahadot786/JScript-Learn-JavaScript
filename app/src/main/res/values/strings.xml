@@ -38,7 +38,7 @@
     <string name="reply">Reply</string>
     <string name="share">Share</string>
     <string name="star_bookmarks">Bookmarks</string>
-    
+
     <!--Learn-->
     <string name="title_learn_js">Learn JavaScript</string>
     <string name="title_start_learning">Start Learning</string>
@@ -57,10 +57,10 @@
     <string name="views">Views</string>
     <string name="qa_discussions">Q&amp;A Discussions</string>
     <string name="qa_answer_message">Write your answer here</string>
-    
+
     <!--Compiler/Code-->
     <string name="code_compiler">Test your code here</string>
-    
+
     <!--Profile-->
     <string name="followers">Followers</string>
     <string name="following">Following</string>
@@ -69,11 +69,6 @@
     <string name="questions">Questions</string>
     <string name="answers">Answers</string>
     <string name="course_progress">Progress</string>
-
-
-
-
-
 
 
 </resources>

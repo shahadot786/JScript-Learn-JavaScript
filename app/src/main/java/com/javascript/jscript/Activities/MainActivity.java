@@ -1,9 +1,12 @@
-package com.javascript.jscript;
+package com.javascript.jscript.Activities;
 
 import android.os.Bundle;
+import android.view.WindowManager;
+
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.ContextCompat;
 
+import com.javascript.jscript.R;
 import com.javascript.jscript.databinding.ActivityMainBinding;
 
 
@@ -14,7 +17,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         //change status bar color
-        getWindow().setStatusBarColor(ContextCompat.getColor(MainActivity.this,R.color.colorStatusBarDark));
+        getWindow().setStatusBarColor(ContextCompat.getColor(MainActivity.this, R.color.colorStatusBarDark));
         //binding
         binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());

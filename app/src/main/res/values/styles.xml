@@ -6,18 +6,12 @@
 
     <style name="BaseTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
-        <item name="colorAccent">@color/colorAccent</item>
-        <item name="android:windowBackground">@color/colorBackgroundLight</item>
         <item name="actionBarTheme">@style/ToolBarTheme</item>
         <item name="android:fontFamily">@font/custom_font</item>
     </style>
 
     <style name="BaseDarkTheme" parent="Theme.AppCompat.NoActionBar">
         <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
-        <item name="colorAccent">@color/colorAccent</item>
-        <item name="android:windowBackground">@color/colorBackgroundDark</item>
         <item name="actionBarTheme">@style/ToolBarDarkTheme</item>
         <item name="android:fontFamily">@font/custom_font</item>
     </style>

@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorPrimary"
-    tools:context=".Activities.NextActivity">
+    tools:context=".Activities.NextActivity2"
+    android:background="@color/colorPrimary">
 
     <ImageView
         android:id="@+id/imageView2"
@@ -18,7 +18,7 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/next1" />
+        app:srcCompat="@drawable/next2" />
 
     <View
         android:id="@+id/view"
@@ -35,15 +35,15 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="16dp"
-        android:text="@string/next_message"
+        android:text="@string/next_message2"
         android:textColor="@color/textColorGrey"
         android:textSize="18sp"
-        app:layout_constraintBottom_toTopOf="@+id/btn_next1"
+        app:layout_constraintBottom_toTopOf="@+id/btn_next2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/btn_next1"
+        android:id="@+id/btn_next2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="16dp"

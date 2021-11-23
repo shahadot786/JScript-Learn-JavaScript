@@ -21,6 +21,15 @@
         android:usesCleartextTraffic="true"
         tools:targetApi="m">
         <activity
+            android:name=".Activities.SignUpActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.NextActivity3"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.NextActivity2"
+            android:exported="false" />
+        <activity
             android:name=".Activities.NextActivity"
             android:exported="false" />
         <activity
@@ -35,7 +44,7 @@
         <activity
             android:name=".Activities.MainActivity"
             android:configChanges="orientation|keyboardHidden|screenSize"
-            android:exported="false"></activity>
+            android:exported="false" />
     </application>
 
 </manifest>

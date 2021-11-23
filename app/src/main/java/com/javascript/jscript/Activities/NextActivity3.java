@@ -7,34 +7,28 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.view.WindowManager;
-import android.widget.Button;
 
 import com.javascript.jscript.R;
-import com.javascript.jscript.databinding.ActivityNextBinding;
+import com.javascript.jscript.databinding.ActivityNext3Binding;
 
-public class NextActivity extends AppCompatActivity {
+public class NextActivity3 extends AppCompatActivity {
 
-    ActivityNextBinding binding;
+    ActivityNext3Binding binding;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         //set fullscreen
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
         //change status bar color
-        getWindow().setStatusBarColor(ContextCompat.getColor(NextActivity.this, R.color.colorStatusBarDark));
-        //binding
-        binding = ActivityNextBinding.inflate(getLayoutInflater());
+        getWindow().setStatusBarColor(ContextCompat.getColor(NextActivity3.this, R.color.colorStatusBarDark));
+        binding = ActivityNext3Binding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
-        //find id
-        binding.btnNext1.setOnClickListener(new View.OnClickListener() {
+        binding.btnGetStarted.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(NextActivity.this,NextActivity2.class);
+                Intent intent = new Intent(NextActivity3.this,SignUpActivity.class);
                 startActivity(intent);
             }
         });
-
-
-
     }
 }

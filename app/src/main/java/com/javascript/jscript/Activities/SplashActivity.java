@@ -17,7 +17,7 @@ import com.javascript.jscript.R;
 public class SplashActivity extends AppCompatActivity {
 
     //Variables
-    private static int SPLASH_SCREEN = 400000;
+    private static int SPLASH_SCREEN = 4000;
     Animation topAmin,bottomAnim;
     ImageView image;
     TextView slogan;

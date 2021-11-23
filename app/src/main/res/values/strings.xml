@@ -32,7 +32,7 @@
     <string name="create_post_message">Share anything you want!</string>
     <string name="story">Story</string>
     <string name="js_world">JS_World!</string>
-    <string name="username">UserName</string>
+    <string name="username">Username</string>
     <string name="profession">Profession</string>
     <string name="like">Like</string>
     <string name="reply">Reply</string>
@@ -82,7 +82,11 @@
     <string name="signup">Sign Up</string>
     <string name="an_account">Already have an account?,</string>
     <string name="signIn">Sign In</string>
-    <string name="name">Name</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="register">Register</string>
+    <string name="sign_up_policy_message">By clicking Register, you agree to our</string>
+    <string name="privacy_term">Terms &amp; Data Policy</string>
 
 
 </resources>

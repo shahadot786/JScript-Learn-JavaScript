@@ -8,16 +8,43 @@
     tools:context=".Activities.SplashActivity">
 
 
+    <ImageView
+        android:id="@+id/splash_logo"
+        android:layout_width="@dimen/_100mdp"
+        android:layout_height="@dimen/_100mdp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/slogan_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/splash_logo" />
+
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/slogan_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/app_slogan"
+        android:layout_marginBottom="100dp"
+        android:fontFamily="@font/allerta"
+        android:text="@string/jscript_learn_with_kind"
+        android:textAlignment="center"
         android:textColor="@color/textColorGrey"
-        android:textSize="24sp"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/MKLoader"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.tuyenmonkey.mkloader.MKLoader
+        android:id="@+id/MKLoader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="100dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:mk_color="@color/activeGrey"
+        app:mk_type="FishSpinner" />
 </androidx.constraintlayout.widget.ConstraintLayout>

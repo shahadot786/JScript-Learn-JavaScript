@@ -69,6 +69,7 @@
     <string name="questions">Questions</string>
     <string name="answers">Answers</string>
     <string name="course_progress">Progress</string>
+    <string name="jscript_learn_with_kind">JScript:Learn With Kind</string>
 
 
 </resources>

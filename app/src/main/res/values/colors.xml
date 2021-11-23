@@ -6,7 +6,8 @@
     <color name="colorSecondary">#24252a</color>
     <color name="activeGreen">#15c55d</color>
     <color name="activeRed">#dc4036</color>
-    
+    <color name="activeGrey">#403F3F</color>
+
     <!--Text Colors-->
     <color name="textColorGrey">#D2D3D5</color>
     <color name="textColorBlack">#22272C</color>

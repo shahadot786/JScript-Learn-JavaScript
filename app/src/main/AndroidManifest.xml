@@ -21,12 +21,14 @@
         android:usesCleartextTraffic="true"
         tools:targetApi="m">
         <activity
+            android:name=".Activities.ForgotPasswordActivity"
+            android:exported="false" />
+        <activity
             android:name=".Activities.LogInActivity"
             android:exported="false" />
         <activity
             android:name=".Activities.SignUpActivity"
-            android:exported="false">
-        </activity>
+            android:exported="false"></activity>
         <activity
             android:name=".Activities.NextActivity3"
             android:exported="false" />

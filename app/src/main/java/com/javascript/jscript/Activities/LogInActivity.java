@@ -59,6 +59,7 @@ public class LogInActivity extends AppCompatActivity {
         binding.dataPolicy.setOnClickListener
                 (View -> startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(getString(R.string.url_play_privacy_policy)))));
 
+        //goto log in button
         binding.logInBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -73,7 +74,14 @@ public class LogInActivity extends AppCompatActivity {
             }
 
         });
-
+        //goto forgot password button
+        binding.gotoForgotPassword.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(LogInActivity.this,ForgotPasswordActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 
     //other codes and method here

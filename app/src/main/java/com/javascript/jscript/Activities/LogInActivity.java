@@ -1,5 +1,8 @@
 package com.javascript.jscript.Activities;
 
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.content.ContextCompat;
+
 import android.content.Context;
 import android.content.Intent;
 import android.net.Uri;
@@ -7,19 +10,16 @@ import android.os.Bundle;
 import android.util.Patterns;
 import android.view.View;
 import android.view.inputmethod.InputMethodManager;
-import android.widget.EditText;
 import android.widget.Toast;
-
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.content.ContextCompat;
 
 import com.google.android.material.textfield.TextInputLayout;
 import com.javascript.jscript.R;
-import com.javascript.jscript.databinding.ActivitySignUpBinding;
+import com.javascript.jscript.databinding.ActivityLogInBinding;
 
 import java.util.regex.Pattern;
 
-public class SignUpActivity extends AppCompatActivity {
+public class LogInActivity extends AppCompatActivity {
+
     private static final Pattern PASSWORD_PATTERN =
             Pattern.compile("^" +
                     //"(?=.*[0-9])" +         //at least 1 digit
@@ -31,49 +31,27 @@ public class SignUpActivity extends AppCompatActivity {
                     ".{8,15}" +               //at least 6 characters
                     "$");
 
-    ActivitySignUpBinding binding;//binding
-    //InputVariables
-    private TextInputLayout textInputUserName;
-    private TextInputLayout textInputProfession;
+    //binding
+    ActivityLogInBinding binding;
     private TextInputLayout textInputEmail;
     private TextInputLayout textInputPassword;
-
-    private EditText editTextPassword;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         //change status bar color
-        getWindow().setStatusBarColor(ContextCompat.getColor(SignUpActivity.this, R.color.colorStatusBarDark));
+        getWindow().setStatusBarColor(ContextCompat.getColor(LogInActivity.this, R.color.colorStatusBarDark));
         //binding
-        binding = ActivitySignUpBinding.inflate(getLayoutInflater());
+        binding = ActivityLogInBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
-        //initialize id
-        textInputUserName = findViewById(R.id.text_input_username);
-        textInputProfession = findViewById(R.id.text_input_profession);
+        //Initialize id
         textInputEmail = findViewById(R.id.text_input_email);
         textInputPassword = findViewById(R.id.text_input_password);
-        //Register Button OnClickListener
-        binding.registerBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                if (!validateUsername() | !validateProfession() | !validateEmail() | !validatePassword()) {
-                    return;
-                }
-
-                InputMethodManager inputMethodManager = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
-                inputMethodManager.hideSoftInputFromWindow(view.getWindowToken(), 0);
-
-                Toast.makeText(SignUpActivity.this, "Registration Complete", Toast.LENGTH_SHORT).show();
-            }
-
-        });
         //Goto sign in activity
-        binding.goToSignIn.setOnClickListener(new View.OnClickListener() {
+        binding.goToSignUp.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(SignUpActivity.this,LogInActivity.class);
+                Intent intent = new Intent(LogInActivity.this,SignUpActivity.class);
                 startActivity(intent);
             }
         });
@@ -81,38 +59,24 @@ public class SignUpActivity extends AppCompatActivity {
         binding.dataPolicy.setOnClickListener
                 (View -> startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(getString(R.string.url_play_privacy_policy)))));
 
+        binding.logInBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if (!validateEmail() | !validatePassword()) {
+                    return;
+                }
+
+                InputMethodManager inputMethodManager = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
+                inputMethodManager.hideSoftInputFromWindow(view.getWindowToken(), 0);
+
+                Toast.makeText(LogInActivity.this, "Registration Complete", Toast.LENGTH_SHORT).show();
+            }
+
+        });
 
     }
 
-    //Other Methods
-    //username Validation
-    private boolean validateUsername() {
-        String usernameInput = textInputUserName.getEditText().getText().toString().trim();
-        if (usernameInput.isEmpty()) {
-            textInputUserName.setError("Field can't be empty");
-            return false;
-        } else if (usernameInput.length() > 12) {
-            textInputUserName.setError("Username too long, 12 character only");
-            return false;
-        }else {
-            textInputUserName.setError(null);
-            return true;
-        }
-    }
-    //profession Validation
-    private boolean validateProfession() {
-        String professionInput = textInputProfession.getEditText().getText().toString().trim();
-        if (professionInput.isEmpty()) {
-            textInputProfession.setError("Field can't be empty");
-            return false;
-        } else if (professionInput.length() > 20) {
-            textInputProfession.setError("Profession too long, 20 character only");
-            return false;
-        } else {
-            textInputProfession.setError(null);
-            return true;
-        }
-    }
+    //other codes and method here
     //email Validation
     private boolean validateEmail() {
         String emailInput = textInputEmail.getEditText().getText().toString().trim();
@@ -148,5 +112,4 @@ public class SignUpActivity extends AppCompatActivity {
         }
 
     }
-
 }

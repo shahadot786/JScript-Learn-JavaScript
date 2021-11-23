@@ -21,15 +21,11 @@
         android:usesCleartextTraffic="true"
         tools:targetApi="m">
         <activity
+            android:name=".Activities.LogInActivity"
+            android:exported="false" />
+        <activity
             android:name=".Activities.SignUpActivity"
-            android:exported="true">
-
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-
+            android:exported="false">
         </activity>
         <activity
             android:name=".Activities.NextActivity3"
@@ -43,11 +39,11 @@
         <activity
             android:name=".Activities.SplashActivity"
             android:exported="true">
-            <!--<intent-filter>
+            <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>-->
+            </intent-filter>
         </activity>
         <activity
             android:name=".Activities.MainActivity"

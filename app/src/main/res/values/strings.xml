@@ -8,8 +8,8 @@
     <string name="copyright">Copyright © 2021 SHR_Creation. \nAll right reserved</string>
 
     <!--Play Store -->
-    <string name="play_more_apps">https://play.google.com/store/apps/dev?id=5967016763322581246</string>
-    <string name="play_privacy_policy">https://shrcreation.com/privacy.html</string>
+    <string name="url_play_more_apps">https://play.google.com/store/apps/dev?id=5967016763322581246</string>
+    <string name="url_play_privacy_policy">https://shrcreation.com/privacy.html</string>
     <string name="play_name">SHR_Creation</string>
     <string name="play_email">shrcreation.media\'@gmail.com</string>
     <string name="play_website">https://www.shrcreation.com</string>
@@ -78,15 +78,20 @@
     <string name="next_message3">Regular Update Feeds</string>
     <string name="get_started">Get Started</string>
 
-    <!--Sign Up and Log In-->
+    <!--Sign Up-->
     <string name="signup">Sign Up</string>
-    <string name="an_account">Already have an account?,</string>
+    <string name="an_account">Already have an account?</string>
     <string name="signIn">Sign In</string>
     <string name="email">Email</string>
     <string name="password">Password</string>
     <string name="register">Register</string>
     <string name="sign_up_policy_message">By clicking Register, you agree to our</string>
     <string name="privacy_term">Terms &amp; Data Policy</string>
+
+    <!--Log In-->
+    <string name="log_in">Sign In</string>
+    <string name="no_account">Don\'t have an account?</string>
+    <string name="welcome_message">Welcome back, Read our..</string>
 
 
 </resources>

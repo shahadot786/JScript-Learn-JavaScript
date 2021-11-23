@@ -20,7 +20,7 @@
     <color name="color1">#2ebb55</color>
     <color name="color2">#f71138</color>
     <color name="color3">#1D1F2B</color>
-    <color name="color4">#FFBF00</color>
+    <color name="colorYellow">#FFBF00</color>
 
     <!--Never Change Colors-->
     <color name="colorWhite">#FFFFFF</color>

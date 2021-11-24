@@ -40,7 +40,7 @@ public class LogInActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         //change status bar color
-        getWindow().setStatusBarColor(ContextCompat.getColor(LogInActivity.this, R.color.colorStatusBarDark));
+        getWindow().setStatusBarColor(ContextCompat.getColor(LogInActivity.this, R.color.activeGreen));
         //binding
         binding = ActivityLogInBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());

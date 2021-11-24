@@ -45,7 +45,7 @@ public class SignUpActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         //change status bar color
-        getWindow().setStatusBarColor(ContextCompat.getColor(SignUpActivity.this, R.color.colorStatusBarDark));
+        getWindow().setStatusBarColor(ContextCompat.getColor(SignUpActivity.this, R.color.activeGreen));
         //binding
         binding = ActivitySignUpBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());

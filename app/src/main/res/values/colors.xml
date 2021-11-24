@@ -11,7 +11,8 @@
     <!--Text Colors-->
     <color name="textColorGrey">#D2D3D5</color>
     <color name="textColorBlack">#22272C</color>
-    
+    <color name="textColorPlaceholder">#7D7D7D</color>
+
     <!--Bar colors-->
     <color name="colorStatusBarDark">#16171b</color>
     <color name="colorToolbarDark">#16171b</color>

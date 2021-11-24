@@ -97,6 +97,7 @@
 
     <!--Forgot Password-->
     <string name="forgot_password">Forgot Password</string>
+    <string name="forgot_password2">Forgot Password?</string>
     <string name="forgot_message">Please enter registered email address</string>
     <string name="forgot_message2">to request a password reset.</string>
     <string name="remember_pass_message">You remember your password?</string>

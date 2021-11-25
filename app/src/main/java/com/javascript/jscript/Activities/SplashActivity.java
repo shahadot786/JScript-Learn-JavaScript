@@ -26,8 +26,6 @@ public class SplashActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         //set fullscreen
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
-        //change status bar color
-        getWindow().setStatusBarColor(ContextCompat.getColor(SplashActivity.this, R.color.colorStatusBarDark));
         setContentView(R.layout.activity_splash);
         //animations
         topAmin = AnimationUtils.loadAnimation(this,R.anim.top_animation);

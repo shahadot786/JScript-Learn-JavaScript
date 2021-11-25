@@ -20,7 +20,7 @@ import com.javascript.jscript.databinding.ActivitySignInBinding;
 import java.util.regex.Pattern;
 
 public class SignInActivity extends AppCompatActivity {
-
+    //password validation patterns
     private static final Pattern PASSWORD_PATTERN =
             Pattern.compile("^" +
                     //"(?=.*[0-9])" +         //at least 1 digit
@@ -40,14 +40,14 @@ public class SignInActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        //change status bar color
-        getWindow().setStatusBarColor(ContextCompat.getColor(SignInActivity.this, R.color.colorStatusBarDark));
         //binding
         binding = ActivitySignInBinding.inflate(getLayoutInflater());
+
         setContentView(binding.getRoot());
         //Initialize id
         textInputEmail = findViewById(R.id.text_input_email);
         textInputPassword = findViewById(R.id.text_input_password);
+
         //Goto sign in activity
         binding.goToSignUp.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -61,17 +61,18 @@ public class SignInActivity extends AppCompatActivity {
                 (View -> startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(getString(R.string.url_play_privacy_policy)))));
 
         //goto log in button
-        binding.logInBtn.setOnClickListener(new View.OnClickListener() {
+        binding.signInBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 if (!validateEmail() | !validatePassword()) {
                     return;
                 }
-
+                //hide keyboard
                 InputMethodManager inputMethodManager = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
                 inputMethodManager.hideSoftInputFromWindow(view.getWindowToken(), 0);
-
+                //other codes start here
                 Toast.makeText(SignInActivity.this, "Registration Complete", Toast.LENGTH_SHORT).show();
+
             }
 
         });

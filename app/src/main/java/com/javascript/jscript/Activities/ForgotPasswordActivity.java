@@ -21,12 +21,12 @@ public class ForgotPasswordActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        //change status bar color
-        getWindow().setStatusBarColor(ContextCompat.getColor(ForgotPasswordActivity.this, R.color.colorStatusBarDark));
+        //binding
         binding = ActivityForgotPasswordBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
+        //find id
         textInputLayoutEmail = findViewById(R.id.text_input_email);
-
+        //button forgot listener
         binding.forgotPasswordBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

@@ -20,8 +20,6 @@ public class NextActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         //set fullscreen
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
-        //change status bar color
-        getWindow().setStatusBarColor(ContextCompat.getColor(NextActivity.this, R.color.colorStatusBarDark));
         //binding
         binding = ActivityNextBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());

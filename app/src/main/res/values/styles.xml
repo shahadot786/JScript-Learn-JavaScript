@@ -5,9 +5,12 @@
         <item name="colorPrimary">@color/activeGreen</item>
         <item name="colorPrimaryDark">@color/colorPrimary</item>
         <item name="colorAccent">@color/activeRed</item>
+        <!--Window main animation-->
         <item name="android:windowAnimationStyle">@style/CustomActivityAnimation</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">@color/colorStatusBarDark</item>
     </style>
-
+    <!--Animation Style-->
     <style name="CustomActivityAnimation" parent="@android:style/Animation.Activity">
         <item name="android:activityOpenEnterAnimation">@anim/slide_in_right</item>
         <item name="android:activityOpenExitAnimation">@anim/slide_out_left</item>

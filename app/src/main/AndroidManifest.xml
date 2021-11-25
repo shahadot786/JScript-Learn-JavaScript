@@ -28,7 +28,7 @@
             android:exported="false" />
         <activity
             android:name=".Activities.SignUpActivity"
-            android:exported="false"></activity>
+            android:exported="false"/>
         <activity
             android:name=".Activities.NextActivity3"
             android:exported="false" />
@@ -43,7 +43,6 @@
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>

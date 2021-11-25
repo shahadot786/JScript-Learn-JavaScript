@@ -19,10 +19,10 @@ public class NextActivity3 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         //set fullscreen
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
-        //change status bar color
-        getWindow().setStatusBarColor(ContextCompat.getColor(NextActivity3.this, R.color.colorStatusBarDark));
+        //binding
         binding = ActivityNext3Binding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
+        //Button Get Started listener
         binding.btnGetStarted.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

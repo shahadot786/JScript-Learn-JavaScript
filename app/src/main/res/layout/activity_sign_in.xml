@@ -104,7 +104,6 @@
             android:layout_height="wrap_content"
             android:hint="@string/email"
             android:inputType="textEmailAddress"
-            android:maxLines="1"
             android:textColor="@color/white" />
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -138,7 +137,6 @@
             android:layout_height="wrap_content"
             android:hint="@string/password"
             android:inputType="textPassword"
-            android:maxLines="1"
             android:textColor="@color/white" />
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -150,11 +148,11 @@
         android:text="@string/forgot_password2"
         android:textColor="@color/activeGreen"
         android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="@+id/logInBtn"
+        app:layout_constraintEnd_toEndOf="@+id/signInBtn"
         app:layout_constraintTop_toBottomOf="@+id/text_input_password" />
 
     <Button
-        android:id="@+id/logInBtn"
+        android:id="@+id/signInBtn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"

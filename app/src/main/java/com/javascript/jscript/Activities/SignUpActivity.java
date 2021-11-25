@@ -20,6 +20,7 @@ import com.javascript.jscript.databinding.ActivitySignUpBinding;
 import java.util.regex.Pattern;
 
 public class SignUpActivity extends AppCompatActivity {
+    //password validation patterns
     private static final Pattern PASSWORD_PATTERN =
             Pattern.compile("^" +
                     //"(?=.*[0-9])" +         //at least 1 digit
@@ -28,7 +29,7 @@ public class SignUpActivity extends AppCompatActivity {
                     "(?=.*[a-zA-Z])" +      //any letter
                     //"(?=.*[@#$%^&+=])" +    //at least 1 special character
                     //"(?=\\S+$)" +           //no white spaces
-                    ".{8,15}" +               //at least 6 characters
+                    ".{8,15}" +               //at least 8 characters
                     "$");
 
     ActivitySignUpBinding binding;//binding
@@ -37,35 +38,37 @@ public class SignUpActivity extends AppCompatActivity {
     private TextInputLayout textInputProfession;
     private TextInputLayout textInputEmail;
     private TextInputLayout textInputPassword;
-
     private EditText editTextPassword;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        //change status bar color
-        getWindow().setStatusBarColor(ContextCompat.getColor(SignUpActivity.this, R.color.colorStatusBarDark));
         //binding
         binding = ActivitySignUpBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
+
         //initialize id
         textInputUserName = findViewById(R.id.text_input_username);
         textInputProfession = findViewById(R.id.text_input_profession);
         textInputEmail = findViewById(R.id.text_input_email);
         textInputPassword = findViewById(R.id.text_input_password);
+
         //Register Button OnClickListener
         binding.registerBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                //input fields validations check
                 if (!validateUsername() | !validateProfession() | !validateEmail() | !validatePassword()) {
                     return;
                 }
-
+                //hide keyboard
                 InputMethodManager inputMethodManager = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
                 inputMethodManager.hideSoftInputFromWindow(view.getWindowToken(), 0);
 
+                //other code start here
                 Toast.makeText(SignUpActivity.this, "Registration Complete", Toast.LENGTH_SHORT).show();
+
             }
 
         });
@@ -137,6 +140,8 @@ public class SignUpActivity extends AppCompatActivity {
         } else if (!PASSWORD_PATTERN.matcher(passwordInput).matches()) {
             if (passwordInput.length() < 8){
                 textInputPassword.setError("At least 8 Characters");
+            }else if (passwordInput.length() > 15){
+                textInputPassword.setError("Password too long");
             }else{
                 textInputPassword.setError("Password too weak");
             }

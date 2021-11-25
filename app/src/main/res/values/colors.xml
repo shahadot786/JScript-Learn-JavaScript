@@ -7,12 +7,10 @@
     <color name="activeGreen">#15c55d</color>
     <color name="activeRed">#dc4036</color>
     <color name="activeGrey">#403F3F</color>
-    <!--Light Color-->
-    <color name="activeGreenLight">#11F16C</color>
-    <color name="activeRedLight">#FC3F32</color>
-    <!--Dark Color-->
-    <color name="activeGreenDark">#0A6B32</color>
-    <color name="activeRedDark">#84140D</color>
+    <color name="activeGreenLight">#1FC600</color>
+    <color name="activeRedLight">#BF0000</color>
+    <color name="activeGreenDark">#0A5D00</color>
+    <color name="activeRedDark">#800000</color>
     <!--Text Colors-->
     <color name="textColorGrey">#D2D3D5</color>
     <color name="textColorBlack">#22272C</color>
@@ -23,10 +21,10 @@
     <color name="colorToolbarDark">#16171b</color>
 
     <!--Extra Colors-->
-    <color name="color1">#2ebb55</color>
-    <color name="color2">#f71138</color>
-    <color name="color3">#1D1F2B</color>
-    <color name="colorYellow">#FFBF00</color>
+    <color name="colorGreen">#82D364</color>
+    <color name="colorRed">#F53B3B</color>
+    <color name="color3">#3A96F1</color>
+    <color name="colorYellow">#FFD512</color>
 
     <!--Never Change Colors-->
     <color name="colorWhite">#FFFFFF</color>

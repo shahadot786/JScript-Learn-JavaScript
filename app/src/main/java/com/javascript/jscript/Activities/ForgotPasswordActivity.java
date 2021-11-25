@@ -22,7 +22,7 @@ public class ForgotPasswordActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         //change status bar color
-        getWindow().setStatusBarColor(ContextCompat.getColor(ForgotPasswordActivity.this, R.color.activeGreen));
+        getWindow().setStatusBarColor(ContextCompat.getColor(ForgotPasswordActivity.this, R.color.colorStatusBarDark));
         binding = ActivityForgotPasswordBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
         textInputLayoutEmail = findViewById(R.id.text_input_email);

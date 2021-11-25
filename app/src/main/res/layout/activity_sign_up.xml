@@ -5,7 +5,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorPrimary"
     tools:context=".Activities.SignUpActivity">
 
 
@@ -37,7 +36,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:fontFamily="@font/roboto"
         android:text="@string/an_account"
         android:textColor="@color/textColorGrey"
         android:textSize="14sp"
@@ -212,7 +210,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="32dp"
-        android:fontFamily="@font/roboto"
         android:text="@string/sign_up_policy_message"
         android:textColor="@color/textColorGrey"
         app:layout_constraintBottom_toBottomOf="parent"

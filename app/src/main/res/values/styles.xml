@@ -9,6 +9,10 @@
         <item name="android:windowAnimationStyle">@style/CustomActivityAnimation</item>
         <!-- Status bar color. -->
         <item name="android:statusBarColor">@color/colorStatusBarDark</item>
+        <!--Window background-->
+        <item name="android:windowBackground">@color/colorPrimary</item>
+        <!--<item name="actionBarTheme">@style/ToolBarTheme</item>-->
+        <item name="android:fontFamily">@font/roboto</item>
     </style>
     <!--Animation Style-->
     <style name="CustomActivityAnimation" parent="@android:style/Animation.Activity">

@@ -31,8 +31,10 @@ public class ForgotPasswordActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 //check first email validation
-                validateEmail();
+                //validateEmail();
                 //other codes
+                Intent intent = new Intent(ForgotPasswordActivity.this, MainActivity.class);
+                startActivity(intent);
 
             }
         });

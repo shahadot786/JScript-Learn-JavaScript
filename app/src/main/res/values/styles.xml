@@ -13,7 +13,7 @@
         <item name="android:windowBackground">@color/colorPrimary</item>
         <item name="android:textColor">@color/textColorGrey</item>
         <!--<item name="actionBarTheme">@style/ToolBarTheme</item>-->
-        <item name="android:fontFamily">@font/roboto</item>
+        <item name="android:fontFamily">@font/oswald_light</item>
     </style>
     <!--Animation Style-->
     <style name="CustomActivityAnimation" parent="@android:style/Animation.Activity">

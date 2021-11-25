@@ -11,6 +11,7 @@
         <item name="android:statusBarColor">@color/colorStatusBarDark</item>
         <!--Window background-->
         <item name="android:windowBackground">@color/colorPrimary</item>
+        <item name="android:textColor">@color/textColorGrey</item>
         <!--<item name="actionBarTheme">@style/ToolBarTheme</item>-->
         <item name="android:fontFamily">@font/roboto</item>
     </style>

@@ -8,7 +8,7 @@
         <!--Window main animation-->
         <item name="android:windowAnimationStyle">@style/CustomActivityAnimation</item>
         <!-- Status bar color. -->
-        <item name="android:statusBarColor">@color/colorStatusBarDark</item>
+        <item name="android:statusBarColor">@color/activeGreen</item>
     </style>
     <!--Animation Style-->
     <style name="CustomActivityAnimation" parent="@android:style/Animation.Activity">

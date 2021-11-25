@@ -14,11 +14,12 @@ import android.widget.Toast;
 
 import com.google.android.material.textfield.TextInputLayout;
 import com.javascript.jscript.R;
-import com.javascript.jscript.databinding.ActivityLogInBinding;
+import com.javascript.jscript.databinding.ActivitySignInBinding;
+
 
 import java.util.regex.Pattern;
 
-public class LogInActivity extends AppCompatActivity {
+public class SignInActivity extends AppCompatActivity {
 
     private static final Pattern PASSWORD_PATTERN =
             Pattern.compile("^" +
@@ -32,7 +33,7 @@ public class LogInActivity extends AppCompatActivity {
                     "$");
 
     //binding
-    ActivityLogInBinding binding;
+    ActivitySignInBinding binding;
     private TextInputLayout textInputEmail;
     private TextInputLayout textInputPassword;
 
@@ -40,9 +41,9 @@ public class LogInActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         //change status bar color
-        getWindow().setStatusBarColor(ContextCompat.getColor(LogInActivity.this, R.color.activeGreen));
+        getWindow().setStatusBarColor(ContextCompat.getColor(SignInActivity.this, R.color.activeGreen));
         //binding
-        binding = ActivityLogInBinding.inflate(getLayoutInflater());
+        binding = ActivitySignInBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
         //Initialize id
         textInputEmail = findViewById(R.id.text_input_email);
@@ -51,7 +52,7 @@ public class LogInActivity extends AppCompatActivity {
         binding.goToSignUp.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(LogInActivity.this,SignUpActivity.class);
+                Intent intent = new Intent(SignInActivity.this,SignUpActivity.class);
                 startActivity(intent);
             }
         });
@@ -70,7 +71,7 @@ public class LogInActivity extends AppCompatActivity {
                 InputMethodManager inputMethodManager = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
                 inputMethodManager.hideSoftInputFromWindow(view.getWindowToken(), 0);
 
-                Toast.makeText(LogInActivity.this, "Registration Complete", Toast.LENGTH_SHORT).show();
+                Toast.makeText(SignInActivity.this, "Registration Complete", Toast.LENGTH_SHORT).show();
             }
 
         });
@@ -78,7 +79,7 @@ public class LogInActivity extends AppCompatActivity {
         binding.gotoForgotPassword.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(LogInActivity.this,ForgotPasswordActivity.class);
+                Intent intent = new Intent(SignInActivity.this,ForgotPasswordActivity.class);
                 startActivity(intent);
             }
         });
@@ -109,7 +110,10 @@ public class LogInActivity extends AppCompatActivity {
         } else if (!PASSWORD_PATTERN.matcher(passwordInput).matches()) {
             if (passwordInput.length() < 8){
                 textInputPassword.setError("At least 8 Characters");
-            }else{
+            }else if (passwordInput.length() > 15){
+                textInputPassword.setError("Password too long");
+            }
+            else{
                 textInputPassword.setError("Password too weak");
             }
             return false;

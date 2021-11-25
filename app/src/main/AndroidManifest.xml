@@ -24,7 +24,7 @@
             android:name=".Activities.ForgotPasswordActivity"
             android:exported="false" />
         <activity
-            android:name=".Activities.LogInActivity"
+            android:name=".Activities.SignInActivity"
             android:exported="false" />
         <activity
             android:name=".Activities.SignUpActivity"
@@ -51,6 +51,10 @@
             android:name=".Activities.MainActivity"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:exported="false" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
     </application>
 
 </manifest>

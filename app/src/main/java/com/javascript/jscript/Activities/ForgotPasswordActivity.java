@@ -40,7 +40,7 @@ public class ForgotPasswordActivity extends AppCompatActivity {
         binding.goToSignIn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(ForgotPasswordActivity.this,LogInActivity.class);
+                Intent intent = new Intent(ForgotPasswordActivity.this, SignInActivity.class);
                 startActivity(intent);
             }
         });

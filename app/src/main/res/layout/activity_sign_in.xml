@@ -5,18 +5,18 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/colorPrimary"
-    tools:context=".Activities.LogInActivity">
+    tools:context=".Activities.SignInActivity">
 
     <ImageView
         android:id="@+id/imageView3"
         android:layout_width="wrap_content"
-        android:layout_height="@dimen/_120mdp"
+        android:layout_height="@dimen/_150mdp"
         android:layout_marginTop="16dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/signin" />
+        app:srcCompat="@drawable/ic_login" />
 
     <TextView
         android:id="@+id/textView3"
@@ -48,6 +48,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginBottom="8dp"
+        android:fontFamily="@font/roboto"
         android:text="@string/no_account"
         android:textColor="@color/textColorGrey"
         android:textSize="12sp"
@@ -62,6 +63,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="4dp"
+        android:fontFamily="@font/roboto_bold"
         android:text="@string/signup"
         android:textColor="@color/activeGreen"
         android:textSize="14sp"
@@ -144,6 +146,7 @@
         android:id="@+id/gotoForgotPassword"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto_bold"
         android:text="@string/forgot_password2"
         android:textColor="@color/activeGreen"
         android:textStyle="bold"
@@ -157,7 +160,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="8dp"
-        android:fontFamily="@font/roboto_bold"
+        android:fontFamily="@font/roboto_black"
         android:paddingTop="12dp"
         android:paddingBottom="12dp"
         android:text="@string/log_in"
@@ -174,6 +177,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="32dp"
+        android:fontFamily="@font/roboto_bold"
         android:text="@string/privacy_term"
         android:textColor="@color/activeGreen"
         android:textStyle="bold"

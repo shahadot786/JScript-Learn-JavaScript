@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".Fragment.ProfileFragment">
+    tools:context=".Fragment.ProgramsFragment">
 
     <TextView
         android:id="@+id/appName"
@@ -14,7 +14,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:fontFamily="@font/cookie"
-        android:text="@string/menu_profile"
+        android:text="@string/menu_programs"
         android:textSize="40sp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -10,9 +10,9 @@ import android.view.ViewGroup;
 
 import com.javascript.jscript.R;
 
-public class FeedsFragment extends Fragment {
+public class ProgramsFragment extends Fragment {
 
-    public FeedsFragment() {
+    public ProgramsFragment() {
         // Required empty public constructor
     }
 
@@ -26,6 +26,6 @@ public class FeedsFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_feeds, container, false);
+        return inflater.inflate(R.layout.fragment_programs, container, false);
     }
 }

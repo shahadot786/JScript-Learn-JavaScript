@@ -4,8 +4,8 @@ import android.os.Bundle;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.FragmentTransaction;
 
-import com.javascript.jscript.Fragment.DiscussFragment;
-import com.javascript.jscript.Fragment.FeedsFragment;
+import com.javascript.jscript.Fragment.ProgramsFragment;
+import com.javascript.jscript.Fragment.QuizFragment;
 import com.javascript.jscript.Fragment.LearnFragment;
 import com.javascript.jscript.Fragment.ProFragment;
 import com.javascript.jscript.Fragment.ProfileFragment;
@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
 
         //by default fragment code
         FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
-        transaction.replace(R.id.container, new FeedsFragment());
+        transaction.replace(R.id.container, new LearnFragment());
         transaction.commit();
 
         //bottom bar fragment listener
@@ -39,13 +39,13 @@ public class MainActivity extends AppCompatActivity {
                 //fragment replace switch case code
                 switch (i){
                     case 0:
-                        transaction.replace(R.id.container, new FeedsFragment());
-                        break;
-                    case 1:
                         transaction.replace(R.id.container, new LearnFragment());
                         break;
+                    case 1:
+                        transaction.replace(R.id.container, new QuizFragment());
+                        break;
                     case 2:
-                        transaction.replace(R.id.container, new DiscussFragment());
+                        transaction.replace(R.id.container, new ProgramsFragment());
                         break;
                     case 3:
                         transaction.replace(R.id.container, new ProfileFragment());

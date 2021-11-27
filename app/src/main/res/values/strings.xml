@@ -95,9 +95,9 @@
     <string name="remember_pass_message">You remember your password?</string>
 
     <!--Bottom Navigation-->
-    <string name="menu_feeds">Feeds</string>
     <string name="menu_learn">Learn</string>
-    <string name="menu_discuss">Discuss</string>
+    <string name="menu_quiz">Quiz</string>
+    <string name="menu_programs">Programs</string>
     <string name="menu_profile">Profile</string>
     <string name="menu_pro">PRO</string>
     <!-- TODO: Remove or change this placeholder text -->

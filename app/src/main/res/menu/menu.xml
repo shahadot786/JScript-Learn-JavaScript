@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <item
-        android:id="@+id/item0"
-        android:title="@string/menu_feeds"
-        android:icon="@drawable/ic_feeds_white_24dp"/>
 
     <item
-        android:id="@+id/item1"
+        android:id="@+id/item0"
         android:title="@string/menu_learn"
         android:icon="@drawable/ic_learn_white_24dp"/>
 
     <item
+        android:id="@+id/item1"
+        android:title="@string/menu_quiz"
+        android:icon="@drawable/ic_quiz_white_24dp"/>
+    <item
         android:id="@+id/item2"
-        android:title="@string/menu_discuss"
-        android:icon="@drawable/ic_discuss_white_24dp"/>
+        android:title="@string/menu_programs"
+        android:icon="@drawable/ic_programs_white_24dp"/>
 
     <item
         android:id="@+id/item3"

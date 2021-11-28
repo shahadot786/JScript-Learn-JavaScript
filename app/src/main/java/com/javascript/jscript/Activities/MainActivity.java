@@ -21,6 +21,7 @@ import com.javascript.jscript.Fragment.LearnFragment;
 import com.javascript.jscript.Fragment.ProFragment;
 import com.javascript.jscript.Fragment.ProfileFragment;
 import com.javascript.jscript.R;
+import com.javascript.jscript.Config.UiConfig;
 import com.javascript.jscript.databinding.ActivityMainBinding;
 
 import me.ibrahimsn.lib.OnItemSelectedListener;
@@ -45,7 +46,7 @@ public class MainActivity extends AppCompatActivity {
         //ad declarations
         bannerAd = findViewById(R.id.adView);
         AdView adView = new AdView(this);
-        adView.setAdSize(AdSize.FULL_BANNER);
+        adView.setAdSize(AdSize.BANNER);
         adView.setAdUnitId(getResources().getString(R.string.banner_ad_unit_id));
         //load ad
         MobileAds.initialize(this, new OnInitializationCompleteListener() {
@@ -96,23 +97,33 @@ public class MainActivity extends AppCompatActivity {
                 switch (i){
                     case 0:
                         transaction.replace(R.id.container, new FeedsFragment());
-                        bannerAd.setVisibility(View.VISIBLE);
+                        if (UiConfig.BANNER_AD_VISIBILITY){
+                            bannerAd.setVisibility(View.VISIBLE);
+                        }
                         break;
                     case 1:
                         transaction.replace(R.id.container, new LearnFragment());
-                        bannerAd.setVisibility(View.GONE);
+                        if (UiConfig.BANNER_AD_VISIBILITY){
+                            bannerAd.setVisibility(View.GONE);
+                        }
                         break;
                     case 2:
                         transaction.replace(R.id.container, new DiscussFragment());
-                        bannerAd.setVisibility(View.VISIBLE);
+                        if (UiConfig.BANNER_AD_VISIBILITY){
+                            bannerAd.setVisibility(View.VISIBLE);
+                        }
                         break;
                     case 3:
                         transaction.replace(R.id.container, new ProfileFragment());
-                        bannerAd.setVisibility(View.GONE);
+                        if (UiConfig.BANNER_AD_VISIBILITY){
+                            bannerAd.setVisibility(View.GONE);
+                        }
                         break;
                     case 4:
                         transaction.replace(R.id.container, new ProFragment());
-                        bannerAd.setVisibility(View.VISIBLE);
+                        if (UiConfig.BANNER_AD_VISIBILITY){
+                            bannerAd.setVisibility(View.GONE);
+                        }
                         break;
                 }
                 transaction.commit();

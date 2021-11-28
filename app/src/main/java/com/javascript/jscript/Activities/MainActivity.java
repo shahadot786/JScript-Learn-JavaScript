@@ -1,9 +1,20 @@
 package com.javascript.jscript.Activities;
 
 import android.os.Bundle;
+import android.view.View;
+
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.FragmentTransaction;
 
+import com.google.android.gms.ads.AdListener;
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdSize;
+import com.google.android.gms.ads.AdView;
+import com.google.android.gms.ads.LoadAdError;
+import com.google.android.gms.ads.MobileAds;
+import com.google.android.gms.ads.initialization.InitializationStatus;
+import com.google.android.gms.ads.initialization.OnInitializationCompleteListener;
 import com.javascript.jscript.Fragment.DiscussFragment;
 import com.javascript.jscript.Fragment.FeedsFragment;
 import com.javascript.jscript.Fragment.LearnFragment;
@@ -18,6 +29,7 @@ import me.ibrahimsn.lib.OnItemSelectedListener;
 public class MainActivity extends AppCompatActivity {
 
     ActivityMainBinding binding;
+    AdView bannerAd;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -30,6 +42,50 @@ public class MainActivity extends AppCompatActivity {
         transaction.replace(R.id.container, new FeedsFragment());
         transaction.commit();
 
+        //ad declarations
+        bannerAd = findViewById(R.id.adView);
+        AdView adView = new AdView(this);
+        adView.setAdSize(AdSize.FULL_BANNER);
+        adView.setAdUnitId(getResources().getString(R.string.banner_ad_unit_id));
+        //load ad
+        MobileAds.initialize(this, new OnInitializationCompleteListener() {
+            @Override
+            public void onInitializationComplete(@NonNull InitializationStatus initializationStatus) {
+            }
+        });
+        //ad request
+        AdRequest adRequest = new AdRequest.Builder().build();
+        bannerAd.loadAd(adRequest);
+        //ad click listener
+        adView.setAdListener(new AdListener() {
+            @Override
+            public void onAdLoaded() {
+                // Code to be executed when an ad finishes loading.
+            }
+
+            @Override
+            public void onAdFailedToLoad(LoadAdError adError) {
+                // Code to be executed when an ad request fails.
+            }
+
+            @Override
+            public void onAdOpened() {
+                // Code to be executed when an ad opens an overlay that
+                // covers the screen.
+            }
+
+            @Override
+            public void onAdClicked() {
+                // Code to be executed when the user clicks on an ad.
+            }
+
+            @Override
+            public void onAdClosed() {
+                // Code to be executed when the user is about to return
+                // to the app after tapping on an ad.
+            }
+        });
+
         //bottom bar fragment listener
         binding.bottomBar.setOnItemSelectedListener(new OnItemSelectedListener() {
             @Override
@@ -40,18 +96,23 @@ public class MainActivity extends AppCompatActivity {
                 switch (i){
                     case 0:
                         transaction.replace(R.id.container, new FeedsFragment());
+                        bannerAd.setVisibility(View.VISIBLE);
                         break;
                     case 1:
                         transaction.replace(R.id.container, new LearnFragment());
+                        bannerAd.setVisibility(View.GONE);
                         break;
                     case 2:
                         transaction.replace(R.id.container, new DiscussFragment());
+                        bannerAd.setVisibility(View.VISIBLE);
                         break;
                     case 3:
                         transaction.replace(R.id.container, new ProfileFragment());
+                        bannerAd.setVisibility(View.GONE);
                         break;
                     case 4:
                         transaction.replace(R.id.container, new ProFragment());
+                        bannerAd.setVisibility(View.VISIBLE);
                         break;
                 }
                 transaction.commit();

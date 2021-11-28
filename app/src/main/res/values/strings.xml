@@ -15,6 +15,9 @@
     <string name="play_website">https://www.shrcreation.com</string>
     <string name="play_rate_now">https://play.google.com/store/apps/details?id=com.javascript.jscript</string>
 
+    <!--Admob Ads-->
+    <string name="banner_ad_unit_id">ca-app-pub-3940256099942544/6300978111</string>
+
     <!--Feeds-->
     <string name="search">Search</string>
     <string name="search_topics">Search topics..</string>

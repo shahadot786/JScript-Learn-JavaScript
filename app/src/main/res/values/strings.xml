@@ -14,25 +14,18 @@
     <string name="play_email">shrcreation.media\'@gmail.com</string>
     <string name="play_website">https://www.shrcreation.com</string>
     <string name="play_rate_now">https://play.google.com/store/apps/details?id=com.javascript.jscript</string>
+    <string name="share_message">Hey check out this app to learn Javascript:</string>
+    <string name="share_message2">JavaScript tutorial provides basic and advanced concepts of JavaScript. Our JavaScript tutorial is designed for beginners and professionals.</string>
+    <string name="share_message3">JavaScript tutorial provides basic and advanced concepts of JavaScript. Our JavaScript tutorial is designed for beginners and professionals.</string>
+    <string name="share_message4">JavaScript tutorial provides basic and advanced concepts of JavaScript. Our JavaScript tutorial is designed for beginners and professionals.</string>
 
     <!--Admob Ads-->
     <string name="banner_ad_unit_id">ca-app-pub-3940256099942544/6300978111</string>
 
     <!--Feeds-->
-    <string name="search">Search</string>
-    <string name="search_topics">Search topics..</string>
-    <string name="notifications">Notifications</string>
     <string name="hello">Hello</string>
-    <string name="hello_message">What\'s bothering you?</string>
-    <string name="create_post_message">Share anything you want!</string>
-    <string name="story">Story</string>
-    <string name="js_world">JS_World!</string>
     <string name="username">Username</string>
-    <string name="profession">Profession</string>
-    <string name="like">Like</string>
-    <string name="reply">Reply</string>
     <string name="share">Share</string>
-    <string name="star_bookmarks">Bookmarks</string>
 
     <!--Learn-->
     <string name="title_learn_js">Learn JavaScript</string>
@@ -43,27 +36,10 @@
     <string name="frameworks">Frameworks</string>
     <string name="libraries">Libraries</string>
 
-    <!--Discuss-->
-    <string name="title_discuss">Tell us your Question?</string>
-    <string name="btn_new_question">New Question</string>
-    <string name="question">Question</string>
-    <string name="descriptions">Descriptions</string>
-    <string name="btn_post">Post</string>
-    <string name="views">Views</string>
-    <string name="qa_discussions">Q&amp;A Discussions</string>
-    <string name="qa_answer_message">Write your answer here</string>
-
     <!--Compiler/Code-->
     <string name="code_compiler">Test your code here</string>
 
     <!--Profile-->
-    <string name="followers">Followers</string>
-    <string name="following">Following</string>
-    <string name="photos">Photos</string>
-    <string name="posts">Posts</string>
-    <string name="questions">Questions</string>
-    <string name="answers">Answers</string>
-    <string name="course_progress">Progress</string>
 
     <!--Start-->
     <string name="jscript_learn_with_kind">JScript : Learn Javascript</string>
@@ -78,7 +54,9 @@
     <string name="an_account">Already have an account?</string>
     <string name="signIn">Sign In</string>
     <string name="email">Email</string>
+    <string name="email2">Email: </string>
     <string name="password">Password</string>
+    <string name="password2">Password: </string>
     <string name="register">Register</string>
     <string name="sign_up_policy_message">By clicking Register, you agree to our</string>
     <string name="privacy_term">Terms &amp; Data Policy</string>
@@ -90,21 +68,25 @@
     <string name="no_account">Don\'t have an account?</string>
     <string name="welcome_message">Welcome back, Read our..</string>
 
-    <!--Forgot Password-->
-    <string name="forgot_password">Forgot Password</string>
-    <string name="forgot_password2">Forgot Password?</string>
-    <string name="forgot_message">Please enter registered email address</string>
-    <string name="forgot_message2">to request a password reset.</string>
-    <string name="remember_pass_message">You remember your password?</string>
-
     <!--Bottom Navigation-->
     <string name="menu_learn">Learn</string>
     <string name="menu_quiz">Quiz</string>
     <string name="menu_programs">Programs</string>
     <string name="menu_profile">Profile</string>
     <string name="menu_pro">PRO</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!--Fragments String-->
+    <string name="feedback">Feedback</string>
+    <string name="rate_now">Rate Now</string>
+    <string name="follow_us">Follow Us</string>
+    <string name="more_apps">More Apps</string>
+    <string name="logout">Logout</string>
+    <string name="upgrade_pro">Upgrade PRO</string>
+    <string name="privacy_policy">Privacy &amp; Policy</string>
+    <string name="share_knowledge">Share Knowledge</string>
+    <string name="contact_us">Contact Us</string>
+    <string name="exclamation">!</string>
+    <string name="log_in_details">Log In Details:</string>
 
 
 </resources>

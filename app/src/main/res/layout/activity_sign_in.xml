@@ -9,7 +9,7 @@
     <ImageView
         android:id="@+id/imageView3"
         android:layout_width="wrap_content"
-        android:layout_height="@dimen/_150mdp"
+        android:layout_height="150dp"
         android:layout_marginTop="16dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
@@ -25,7 +25,7 @@
         android:layout_marginTop="8dp"
         android:fontFamily="@font/oswald"
         android:text="@string/login_message"
-        android:textColor="@color/white"
+        android:textColor="@color/colorWhite"
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
@@ -62,7 +62,7 @@
         android:fontFamily="@font/oswald"
         android:text="@string/signup"
         android:textColor="@color/activeGreen"
-        android:textSize="14sp"
+        android:textSize="12sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/textView5"
         app:layout_constraintEnd_toEndOf="parent"
@@ -78,7 +78,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
-        android:textColor="@color/white"
+        android:textColor="@color/colorWhite"
         android:textColorHint="@color/textColorPlaceholder"
         app:boxBackgroundColor="@color/colorSecondary"
         app:boxBackgroundMode="outline"
@@ -100,7 +100,7 @@
             android:layout_height="wrap_content"
             android:hint="@string/email"
             android:inputType="textEmailAddress"
-            android:textColor="@color/white" />
+            android:textColor="@color/colorWhite" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
@@ -110,7 +110,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
-        android:textColor="@color/white"
+        android:textColor="@color/colorWhite"
         android:textColorHint="@color/textColorPlaceholder"
         app:boxBackgroundColor="@color/colorSecondary"
         app:boxBackgroundMode="outline"
@@ -133,27 +133,16 @@
             android:layout_height="wrap_content"
             android:hint="@string/password"
             android:inputType="textPassword"
-            android:textColor="@color/white" />
+            android:textColor="@color/colorWhite" />
     </com.google.android.material.textfield.TextInputLayout>
-
-    <TextView
-        android:id="@+id/gotoForgotPassword"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/oswald"
-        android:text="@string/forgot_password2"
-        android:textColor="@color/activeGreen"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="@+id/signInBtn"
-        app:layout_constraintTop_toBottomOf="@+id/text_input_password" />
 
     <Button
         android:id="@+id/signInBtn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
         android:layout_marginEnd="16dp"
-        android:layout_marginBottom="8dp"
         android:fontFamily="@font/oswald"
         android:paddingTop="12dp"
         android:paddingBottom="12dp"
@@ -161,20 +150,21 @@
         android:textAllCaps="false"
         android:textSize="18sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/textView5"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_input_password" />
 
     <TextView
         android:id="@+id/data_policy"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="32dp"
+        android:layout_marginBottom="16dp"
         android:fontFamily="@font/oswald"
         android:text="@string/privacy_term"
         android:textColor="@color/activeGreen"
         android:textStyle="bold"
+        android:textSize="12sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"

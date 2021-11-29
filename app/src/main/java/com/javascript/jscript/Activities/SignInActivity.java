@@ -1,5 +1,6 @@
 package com.javascript.jscript.Activities;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.ContextCompat;
 
@@ -12,7 +13,12 @@ import android.view.View;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.Toast;
 
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
 import com.google.android.material.textfield.TextInputLayout;
+import com.google.firebase.auth.AuthResult;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 import com.javascript.jscript.R;
 import com.javascript.jscript.databinding.ActivitySignInBinding;
 
@@ -36,6 +42,9 @@ public class SignInActivity extends AppCompatActivity {
     ActivitySignInBinding binding;
     private TextInputLayout textInputEmail;
     private TextInputLayout textInputPassword;
+    //Firebase Code
+    FirebaseAuth auth;
+    FirebaseUser currentUser;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -47,6 +56,9 @@ public class SignInActivity extends AppCompatActivity {
         //Initialize id
         textInputEmail = findViewById(R.id.text_input_email);
         textInputPassword = findViewById(R.id.text_input_password);
+        //firebase auth
+        auth = FirebaseAuth.getInstance();
+        currentUser = auth.getCurrentUser();
 
         //Goto sign in activity
         binding.goToSignUp.setOnClickListener(new View.OnClickListener() {
@@ -71,21 +83,23 @@ public class SignInActivity extends AppCompatActivity {
                 InputMethodManager inputMethodManager = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
                 inputMethodManager.hideSoftInputFromWindow(view.getWindowToken(), 0);
                 //other codes start here
-                Toast.makeText(SignInActivity.this, "Registration Complete", Toast.LENGTH_SHORT).show();
+                String email = binding.editTextEmail.getText().toString();
+                String password = binding.editTextPassword.getText().toString();
+                auth.signInWithEmailAndPassword(email,password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
+                    @Override
+                    public void onComplete(@NonNull Task<AuthResult> task) {
+                        if (task.isSuccessful()){
+                            Intent intent = new Intent(SignInActivity.this,MainActivity.class);
+                            startActivity(intent);
+                            Toast.makeText(SignInActivity.this, "Sign In Successfully", Toast.LENGTH_SHORT).show();
+                        }
+                    }
+                });
 
             }
 
-        });
-        //goto forgot password button
-        binding.gotoForgotPassword.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(SignInActivity.this,ForgotPasswordActivity.class);
-                startActivity(intent);
-            }
         });
     }
-
     //other codes and method here
     //email Validation
     private boolean validateEmail() {

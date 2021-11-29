@@ -10,10 +10,17 @@ import android.view.inputmethod.InputMethodManager;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.ContextCompat;
 
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
 import com.google.android.material.textfield.TextInputLayout;
+import com.google.firebase.auth.AuthResult;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.database.FirebaseDatabase;
+import com.javascript.jscript.Model.UserModel;
 import com.javascript.jscript.R;
 import com.javascript.jscript.databinding.ActivitySignUpBinding;
 
@@ -35,10 +42,12 @@ public class SignUpActivity extends AppCompatActivity {
     ActivitySignUpBinding binding;//binding
     //InputVariables
     private TextInputLayout textInputUserName;
-    private TextInputLayout textInputProfession;
     private TextInputLayout textInputEmail;
     private TextInputLayout textInputPassword;
-    private EditText editTextPassword;
+
+    //firebase code
+    FirebaseAuth auth;
+    FirebaseDatabase database;
 
 
     @Override
@@ -50,16 +59,18 @@ public class SignUpActivity extends AppCompatActivity {
 
         //initialize id
         textInputUserName = findViewById(R.id.text_input_username);
-        textInputProfession = findViewById(R.id.text_input_profession);
         textInputEmail = findViewById(R.id.text_input_email);
         textInputPassword = findViewById(R.id.text_input_password);
 
+        //firebase instance code
+        auth = FirebaseAuth.getInstance();
+        database = FirebaseDatabase.getInstance();
         //Register Button OnClickListener
         binding.registerBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 //input fields validations check
-                if (!validateUsername() | !validateProfession() | !validateEmail() | !validatePassword()) {
+                if (!validateUsername()  | !validateEmail() | !validatePassword()) {
                     return;
                 }
                 //hide keyboard
@@ -67,7 +78,28 @@ public class SignUpActivity extends AppCompatActivity {
                 inputMethodManager.hideSoftInputFromWindow(view.getWindowToken(), 0);
 
                 //other code start here
-                Toast.makeText(SignUpActivity.this, "Registration Complete", Toast.LENGTH_SHORT).show();
+                String userName = binding.editTextUsername.getText().toString();
+                String email = binding.editTextEmail.getText().toString();
+                String password = binding.editTextPassword.getText().toString();
+                auth.createUserWithEmailAndPassword(email,password)
+                        .addOnCompleteListener(new OnCompleteListener<AuthResult>() {
+                    @Override
+                    public void onComplete(@NonNull Task<AuthResult> task) {
+                        if (task.isSuccessful()){
+                            UserModel userModel = new UserModel(userName,email,password);
+                            String id = task.getResult().getUser().getUid();
+                            database.getReference().child("Users")
+                                    .child(id)
+                                    .setValue(userModel);
+                            Toast.makeText(SignUpActivity.this, "Sign Up Successfully", Toast.LENGTH_SHORT).show();
+                            Intent intent = new Intent(SignUpActivity.this,MainActivity.class);
+                            startActivity(intent);
+                        }else {
+                            Toast.makeText(SignUpActivity.this, "Sign Up Error", Toast.LENGTH_SHORT).show();
+                        }
+                    }
+                });
+
 
             }
 
@@ -99,20 +131,6 @@ public class SignUpActivity extends AppCompatActivity {
             return false;
         }else {
             textInputUserName.setError(null);
-            return true;
-        }
-    }
-    //profession Validation
-    private boolean validateProfession() {
-        String professionInput = textInputProfession.getEditText().getText().toString().trim();
-        if (professionInput.isEmpty()) {
-            textInputProfession.setError("Field can't be empty");
-            return false;
-        } else if (professionInput.length() > 20) {
-            textInputProfession.setError("Profession too long, 20 character only");
-            return false;
-        } else {
-            textInputProfession.setError(null);
             return true;
         }
     }

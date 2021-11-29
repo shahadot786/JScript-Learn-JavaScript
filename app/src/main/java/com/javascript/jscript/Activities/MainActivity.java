@@ -2,15 +2,11 @@ package com.javascript.jscript.Activities;
 
 import android.os.Bundle;
 import android.view.View;
-
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.FragmentTransaction;
-
-<<<<<<< HEAD
 import com.javascript.jscript.Fragment.ProgramsFragment;
 import com.javascript.jscript.Fragment.QuizFragment;
-=======
 import com.google.android.gms.ads.AdListener;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdSize;
@@ -19,9 +15,6 @@ import com.google.android.gms.ads.LoadAdError;
 import com.google.android.gms.ads.MobileAds;
 import com.google.android.gms.ads.initialization.InitializationStatus;
 import com.google.android.gms.ads.initialization.OnInitializationCompleteListener;
-import com.javascript.jscript.Fragment.DiscussFragment;
-import com.javascript.jscript.Fragment.FeedsFragment;
->>>>>>> main_workflow_branch
 import com.javascript.jscript.Fragment.LearnFragment;
 import com.javascript.jscript.Fragment.ProFragment;
 import com.javascript.jscript.Fragment.ProfileFragment;
@@ -101,15 +94,6 @@ public class MainActivity extends AppCompatActivity {
                 //fragment replace switch case code
                 switch (i){
                     case 0:
-<<<<<<< HEAD
-=======
-                        transaction.replace(R.id.container, new FeedsFragment());
-                        if (UiConfig.BANNER_AD_VISIBILITY){
-                            bannerAd.setVisibility(View.VISIBLE);
-                        }
-                        break;
-                    case 1:
->>>>>>> main_workflow_branch
                         transaction.replace(R.id.container, new LearnFragment());
                         if (UiConfig.BANNER_AD_VISIBILITY){
                             bannerAd.setVisibility(View.GONE);
@@ -117,21 +101,20 @@ public class MainActivity extends AppCompatActivity {
                         break;
                     case 1:
                         transaction.replace(R.id.container, new QuizFragment());
-                        break;
-                    case 2:
-<<<<<<< HEAD
-                        transaction.replace(R.id.container, new ProgramsFragment());
-=======
-                        transaction.replace(R.id.container, new DiscussFragment());
                         if (UiConfig.BANNER_AD_VISIBILITY){
                             bannerAd.setVisibility(View.VISIBLE);
                         }
->>>>>>> main_workflow_branch
+                        break;
+                    case 2:
+                        transaction.replace(R.id.container, new ProgramsFragment());
+                        if (UiConfig.BANNER_AD_VISIBILITY){
+                            bannerAd.setVisibility(View.VISIBLE);
+                        }
                         break;
                     case 3:
                         transaction.replace(R.id.container, new ProfileFragment());
                         if (UiConfig.BANNER_AD_VISIBILITY){
-                            bannerAd.setVisibility(View.GONE);
+                            bannerAd.setVisibility(View.VISIBLE);
                         }
                         break;
                     case 4:
@@ -140,6 +123,7 @@ public class MainActivity extends AppCompatActivity {
                             bannerAd.setVisibility(View.GONE);
                         }
                         break;
+
                 }
                 transaction.commit();
                 return false;

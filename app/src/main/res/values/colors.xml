@@ -36,5 +36,6 @@
     <color name="colorRipple">#636363</color>
     <color name="colorOverlaySoft">#1A000000</color>
     <color name="colorOverlayDark">#33000000</color>
+    <color name="color_grey_green_soft">#2015C55D</color>
 
 </resources>

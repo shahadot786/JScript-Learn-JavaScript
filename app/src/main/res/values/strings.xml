@@ -101,5 +101,24 @@
     <string name="dialog_ok">OK</string>
     <string name="message">Message :</string>
 
+    <!--Follow Us-->
+    <string name="version">Version</string>
+    <string name="shr_creation">SHR Creation</string>
+    <string name="_2021_all_rights_reserved">© 2021 All Rights Reserved</string>
+    <string name="instagram">Instagram</string>
+    <string name="facebook">Facebook</string>
+    <string name="linkedin">LinkedIn</string>
+    <string name="twitter">Twitter</string>
+    <string name="play_store">Play Store</string>
+    <string name="github">GitHub</string>
+    <string name="website">Website</string>
+
+    <!--Link-->
+    <string name="link_instagram">https://www.instagram.com/shrcreation4/</string>
+    <string name="link_facebook">https://www.facebook.com/shrcreation</string>
+    <string name="link_linkedin">https://www.linkedin.com/in/shr-creation-a80602227/</string>
+    <string name="link_twitter">https://twitter.com/ShrCreation</string>
+    <string name="link_github">https://github.com/shrcreation</string>
+
 
 </resources>

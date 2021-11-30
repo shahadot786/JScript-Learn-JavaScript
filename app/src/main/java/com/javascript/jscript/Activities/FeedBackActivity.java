@@ -39,18 +39,18 @@ public class FeedBackActivity extends AppCompatActivity {
         //find id
         sendInput = findViewById(R.id.text_input_feedback);
         emailInput = findViewById(R.id.text_input_email);
-        String feedbackDescription = Objects.requireNonNull(binding.sendEditText.getText()).toString();
-        String feedEmail = Objects.requireNonNull(binding.emailFeedEdit.getText()).toString();
+        String feedbackDescription = binding.sendEditText.getText().toString();
+        String feedEmail = binding.emailFeedEdit.getText().toString();
         //instance
         database = FirebaseDatabase.getInstance();
         auth = FirebaseAuth.getInstance();
         //toolbar
         setSupportActionBar(binding.toolbar2);
         FeedBackActivity.this.setTitle("Feedback");
-        Objects.requireNonNull(getSupportActionBar()).setDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         //get database value
-        database.getReference().child("Users").child(Objects.requireNonNull(auth.getUid()))
+        database.getReference().child("Users").child(auth.getUid())
                 .addListenerForSingleValueEvent(new ValueEventListener() {
                     @Override
                     public void onDataChange(@NonNull DataSnapshot snapshot) {
@@ -107,28 +107,25 @@ public class FeedBackActivity extends AppCompatActivity {
 
     }//end of onCreate
     //other codes
-
-
     //send button message validation
     public boolean sendMessageBtnValidation() {
-        String sendTextInput = Objects.requireNonNull(sendInput.getEditText()).getText().toString().trim();
+        String sendTextInput = sendInput.getEditText().getText().toString().trim();
         if (sendTextInput.isEmpty()) {
-            sendInput.setError("Field can't be empty.");
+            sendInput.setError("Feedback is required");
             return false;
         } else if (sendTextInput.length() > 2048) {
-            sendInput.setError("Descriptions too long, tell us shortly within 2048 Letters.");
+            sendInput.setError("Feedback is too long, tell us shortly within 2048 Letters.");
             return false;
         } else {
             sendInput.setError(null);
             return true;
         }
     }
-
     //sent button email validation
     public boolean sendEmailBtnValidation() {
-        String sendEmailInput = Objects.requireNonNull(emailInput.getEditText()).getText().toString().trim();
+        String sendEmailInput = emailInput.getEditText().getText().toString().trim();
         if (sendEmailInput.isEmpty()){
-            emailInput.setError("Field can't be empty");
+            emailInput.setError("Email is required.");
             return false;
         }else if (!Patterns.EMAIL_ADDRESS.matcher(sendEmailInput).matches()){
             emailInput.setError("Please enter a valid email address");
@@ -139,7 +136,6 @@ public class FeedBackActivity extends AppCompatActivity {
             return true;
         }
     }
-
     //option menu item select
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {

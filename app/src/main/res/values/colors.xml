@@ -37,5 +37,11 @@
     <color name="colorOverlaySoft">#1A000000</color>
     <color name="colorOverlayDark">#33000000</color>
     <color name="color_grey_green_soft">#2015C55D</color>
+    <color name="color_twitter">#00ACEE</color>
+    <color name="color_play_store">#6BC8A3</color>
+    <color name="color_github">#999999</color>
+    <color name="color_linkedin">#0077B5</color>
+    <color name="color_facebook">#4267B2</color>
+    <color name="color_instagram">#E1306C</color>
 
 </resources>

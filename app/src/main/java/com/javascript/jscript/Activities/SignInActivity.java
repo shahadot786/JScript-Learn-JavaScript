@@ -104,7 +104,7 @@ public class SignInActivity extends AppCompatActivity {
     private boolean validateEmail() {
         String emailInput = textInputEmail.getEditText().getText().toString().trim();
         if (emailInput.isEmpty()) {
-            textInputEmail.setError("Field can't be empty");
+            textInputEmail.setError("Email is required.");
             return false;
         } else if (!Patterns.EMAIL_ADDRESS.matcher(emailInput).matches()) {
             textInputEmail.setError("Please enter a valid email address");
@@ -119,11 +119,11 @@ public class SignInActivity extends AppCompatActivity {
     private boolean validatePassword() {
         String passwordInput = textInputPassword.getEditText().getText().toString().trim();
         if (passwordInput.isEmpty()) {
-            textInputPassword.setError("Field can't be empty");
+            textInputPassword.setError("Password is required.");
             return false;
         } else if (!PASSWORD_PATTERN.matcher(passwordInput).matches()) {
-            if (passwordInput.length() < 8){
-                textInputPassword.setError("At least 8 Characters");
+            if (passwordInput.length() < 6){
+                textInputPassword.setError("At least 6 Characters");
             }else if (passwordInput.length() > 15){
                 textInputPassword.setError("Password too long");
             }

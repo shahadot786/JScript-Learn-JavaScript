@@ -163,6 +163,12 @@ public class MainActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
 
         switch (item.getItemId()){
+            //follow us
+            case R.id.follow_us:
+                Intent intent4 = new Intent(MainActivity.this,FollowUsActivity.class);
+                startActivity(intent4);
+                return true;
+            //feedback
             case R.id.feedback:
                 Intent intent3 = new Intent(MainActivity.this,FeedBackActivity.class);
                 startActivity(intent3);

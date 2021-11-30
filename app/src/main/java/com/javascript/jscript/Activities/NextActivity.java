@@ -49,6 +49,10 @@ public class NextActivity extends AppCompatActivity {
         if (currentUser != null){
             Intent intent = new Intent(NextActivity.this,MainActivity.class);
             startActivity(intent);
+        }else{
+            auth.signOut();
+            Intent intent = new Intent(NextActivity.this,SignInActivity.class);
+            startActivity(intent);
         }
     }
 }

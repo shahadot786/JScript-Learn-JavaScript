@@ -16,21 +16,19 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
-
     </FrameLayout>
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/toolbar_bg"
         android:minHeight="?attr/actionBarSize"
+        android:background="@drawable/toolbar_bg"
         app:popupTheme="@style/Theme.AppCompat.Light"
         android:theme="@style/Theme.AppCompat.DayNight.DarkActionBar"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:fontFamily="@font/cookie"
         android:textSize="40sp"
         app:titleTextColor="@color/textColorGrey"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />

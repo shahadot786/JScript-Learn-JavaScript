@@ -7,9 +7,13 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Toast;
+
 import androidx.annotation.NonNull;
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.FragmentTransaction;
+import androidx.viewpager.widget.ViewPager;
 
 import com.google.firebase.auth.FirebaseAuth;
 import com.javascript.jscript.BuildConfig;
@@ -35,6 +39,7 @@ import me.ibrahimsn.lib.OnItemSelectedListener;
 
 public class MainActivity extends AppCompatActivity {
 
+    private long exitTime = 0;
     ActivityMainBinding binding;
     FirebaseAuth auth = FirebaseAuth.getInstance();
     AdView bannerAd;
@@ -44,7 +49,6 @@ public class MainActivity extends AppCompatActivity {
         //binding
         binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
-
         setSupportActionBar(binding.toolbar);
 
         //by default fragment code
@@ -159,6 +163,10 @@ public class MainActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
 
         switch (item.getItemId()){
+            case R.id.feedback:
+                Intent intent3 = new Intent(MainActivity.this,FeedBackActivity.class);
+                startActivity(intent3);
+                return true;
             case R.id.logout:
                 //signOut
                 auth.signOut();
@@ -193,6 +201,23 @@ public class MainActivity extends AppCompatActivity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    //on back pressed
+    @Override
+    public void onBackPressed() {
+        exitApp();
+    }
+    //exit app
+    public void exitApp() {
+        if ((System.currentTimeMillis() - exitTime) > 2000) {
+            Toast.makeText(this, getString(R.string.press_again_to_exit), Toast.LENGTH_SHORT).show();
+            exitTime = System.currentTimeMillis();
+        } else {
+            Intent intent = new Intent(MainActivity.this,SignInActivity.class);
+            startActivity(intent);
+
+        }
     }
 
 }

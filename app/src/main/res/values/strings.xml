@@ -22,6 +22,9 @@
     <!--Admob Ads-->
     <string name="banner_ad_unit_id">ca-app-pub-3940256099942544/6300978111</string>
 
+    <!--Main Activity-->
+    <string name="press_again_to_exit">Press again to exit app</string>
+
     <!--Feeds-->
     <string name="hello">Hello</string>
     <string name="username">Username</string>
@@ -86,7 +89,7 @@
     <string name="share_knowledge">Share Knowledge</string>
     <string name="contact_us">Contact Us</string>
     <string name="exclamation">!</string>
-    <string name="log_in_details">Log In Details:</string>
+    <string name="log_in_details">Info</string>
 
 
 </resources>

@@ -99,7 +99,7 @@ public class SignInActivity extends AppCompatActivity {
             }
 
         });
-    }
+    }//end of onCreate
     //other codes and method here
     //email Validation
     private boolean validateEmail() {
@@ -138,5 +138,10 @@ public class SignInActivity extends AppCompatActivity {
             return true;
         }
 
+    }
+
+    @Override
+    public void onBackPressed() {
+        finishAffinity();
     }
 }

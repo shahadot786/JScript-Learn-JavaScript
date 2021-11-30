@@ -214,8 +214,7 @@ public class MainActivity extends AppCompatActivity {
             Toast.makeText(this, getString(R.string.press_again_to_exit), Toast.LENGTH_SHORT).show();
             exitTime = System.currentTimeMillis();
         } else {
-            Intent intent = new Intent(MainActivity.this,SignInActivity.class);
-            startActivity(intent);
+            finishAffinity();
 
         }
     }

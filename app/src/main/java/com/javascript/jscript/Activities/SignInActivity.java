@@ -139,9 +139,4 @@ public class SignInActivity extends AppCompatActivity {
         }
 
     }
-
-    @Override
-    public void onBackPressed() {
-        finishAffinity();
-    }
 }

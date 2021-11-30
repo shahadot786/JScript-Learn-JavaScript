@@ -90,6 +90,14 @@
     <string name="contact_us">Contact Us</string>
     <string name="exclamation">!</string>
     <string name="log_in_details">Info</string>
+    <string name="feedback_message">Please provide your feedback here..</string>
+    <string name="send">Send</string>
+
+    <!--Alert Dialog-->
+    <string name="dialog_feedback">Feedback Submitted</string>
+    <string name="dialog_feed_message">We value every piece of feedback we receive and use it to improve your JScript:Learn Javascript experience.</string>
+    <string name="dialog_ok">OK</string>
+
 
 
 </resources>

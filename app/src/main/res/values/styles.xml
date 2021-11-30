@@ -17,6 +17,14 @@
         <item name="android:itemBackground">@color/colorPrimary</item>
 
     </style>
+
+    <!--Alert Dialog Style-->
+    <style name="AppCompatAlertDialogStyle" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="colorAccent">@color/activeGreen</item>
+        <item name="android:textColorPrimary">@color/textColorGrey</item>
+        <item name="android:background">@color/colorPrimary</item>
+    </style>
+
     <!--Animation Style-->
     <style name="CustomActivityAnimation" parent="@android:style/Animation.Activity">
         <item name="android:activityOpenEnterAnimation">@anim/slide_in_right</item>

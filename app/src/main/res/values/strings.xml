@@ -57,9 +57,9 @@
     <string name="an_account">Already have an account?</string>
     <string name="signIn">Sign In</string>
     <string name="email">Email</string>
-    <string name="email2">Email: </string>
+    <string name="email2">Email : </string>
     <string name="password">Password</string>
-    <string name="password2">Password: </string>
+    <string name="password2">Password : </string>
     <string name="register">Register</string>
     <string name="sign_up_policy_message">By clicking Register, you agree to our</string>
     <string name="privacy_term">Terms &amp; Data Policy</string>
@@ -91,13 +91,15 @@
     <string name="exclamation">!</string>
     <string name="log_in_details">Info</string>
     <string name="feedback_message">Please provide your feedback here..</string>
+    <string name="feedback_message2">What\'s bothering you! Share anything you want.</string>
+    <string name="feedback_email">Write your email here..</string>
     <string name="send">Send</string>
 
     <!--Alert Dialog-->
     <string name="dialog_feedback">Feedback Submitted</string>
     <string name="dialog_feed_message">We value every piece of feedback we receive and use it to improve your JScript:Learn Javascript experience.</string>
     <string name="dialog_ok">OK</string>
-
+    <string name="message">Message :</string>
 
 
 </resources>

@@ -39,8 +39,8 @@
             android:layout_marginStart="8dp"
             android:layout_marginEnd="8dp"
             android:layout_marginBottom="60dp"
-            android:paddingBottom="55dp"
-            android:background="@drawable/ic_feedback_gradient_color">
+            android:background="@drawable/ic_feedback_gradient_color"
+            android:paddingBottom="55dp">
 
             <de.hdodenhof.circleimageview.CircleImageView
                 android:id="@+id/profile_image"
@@ -69,10 +69,57 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
-                android:text="@string/feedback"
-                android:textStyle="bold"
+                android:text="@string/feedback_message2"
+                android:textSize="18sp"
                 app:layout_constraintStart_toStartOf="@+id/profile_image"
                 app:layout_constraintTop_toBottomOf="@+id/profile_image" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/email2"
+                app:layout_constraintStart_toStartOf="@+id/textView11"
+                app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/text_input_email"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="16dp"
+                android:textColorHint="@color/textColorPlaceholder"
+                app:boxBackgroundColor="@color/colorSecondary"
+                app:boxStrokeColor="@color/activeGreen"
+                app:boxStrokeWidthFocused="1dp"
+                app:errorEnabled="true"
+                app:hintTextColor="@color/activeGreen"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/textView"
+                app:layout_constraintTop_toBottomOf="@+id/textView">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/emailFeedEdit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/feedback_email"
+                    android:textColor="@color/colorWhite"
+                    android:inputType="text"
+                    android:textSize="12sp"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/message"
+                app:layout_constraintStart_toStartOf="@+id/textView"
+                app:layout_constraintTop_toBottomOf="@+id/text_input_email" />
+
 
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/text_input_feedback"
@@ -80,7 +127,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
-                android:layout_marginTop="8dp"
+                android:layout_marginTop="12dp"
                 android:layout_marginEnd="16dp"
                 android:textColorHint="@color/textColorPlaceholder"
                 app:boxBackgroundColor="@color/colorSecondary"
@@ -88,19 +135,19 @@
                 app:boxStrokeWidthFocused="1dp"
                 app:counterEnabled="true"
                 app:counterMaxLength="2048"
-                app:errorEnabled="true"
                 app:counterTextColor="@color/textColorGrey"
+                app:errorEnabled="true"
                 app:hintTextColor="@color/activeGreen"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="@+id/textView11"
-                app:layout_constraintTop_toBottomOf="@+id/textView11">
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView12">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/sendEditText"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:ems="10"
                     android:hint="@string/feedback_message"
+                    android:ems="10"
                     android:inputType="textMultiLine|textPersonName"
                     android:maxLines="40"
                     android:overScrollMode="always"
@@ -113,13 +160,11 @@
                 android:id="@+id/sendBtn"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
-                android:layout_marginEnd="16dp"
-                android:layout_marginBottom="16dp"
+                android:layout_marginTop="24dp"
                 android:fontFamily="@font/oswald"
                 android:text="@string/send"
                 android:textStyle="bold"
-                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/text_input_feedback"
                 app:layout_constraintTop_toBottomOf="@+id/text_input_feedback" />
 
 

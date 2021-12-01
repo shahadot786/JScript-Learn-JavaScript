@@ -37,22 +37,18 @@ public class NextActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-
-
-
     }
 
     //check user currently sign in or not
     @Override
     protected void onStart() {
         super.onStart();
+        Intent intent;
         if (currentUser != null){
-            Intent intent = new Intent(NextActivity.this,MainActivity.class);
-            startActivity(intent);
+            intent = new Intent(NextActivity.this, MainActivity.class);
         }else{
-            auth.signOut();
-            Intent intent = new Intent(NextActivity.this,SignInActivity.class);
-            startActivity(intent);
+            intent = new Intent(NextActivity.this, SignInActivity.class);
         }
+        startActivity(intent);
     }
 }

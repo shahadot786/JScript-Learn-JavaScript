@@ -20,6 +20,7 @@
     <string name="share_message4">JavaScript tutorial provides basic and advanced concepts of JavaScript. Our JavaScript tutorial is designed for beginners and professionals.</string>
 
     <!--Admob Ads-->
+    <string name="app_id">ca-app-pub-3940256099942544~3347511713</string>
     <string name="banner_ad_unit_id">ca-app-pub-3940256099942544/6300978111</string>
 
     <!--Main Activity-->
@@ -32,6 +33,7 @@
 
     <!--Learn-->
     <string name="title_learn_js">Learn JavaScript</string>
+    <string name="title_js">JavaScript</string>
     <string name="title_start_learning">Start Learning</string>
     <string name="topic_basic">Basic</string>
     <string name="topic_advanced">Advanced</string>
@@ -54,6 +56,7 @@
 
     <!--Sign Up-->
     <string name="signup">Sign Up</string>
+    <string name="lets_start_learning">Let\'s start learning</string>
     <string name="an_account">Already have an account?</string>
     <string name="signIn">Sign In</string>
     <string name="email">Email</string>
@@ -83,14 +86,14 @@
     <string name="rate_now">Rate Now</string>
     <string name="follow_us">Follow Us</string>
     <string name="more_apps">More Apps</string>
-    <string name="logout">Logout</string>
+    <string name="signOut">Sign Out</string>
     <string name="upgrade_pro">Upgrade PRO</string>
     <string name="privacy_policy">Privacy &amp; Policy</string>
     <string name="share_knowledge">Share Knowledge</string>
     <string name="contact_us">Contact Us</string>
     <string name="exclamation">!</string>
     <string name="log_in_details">Info</string>
-    <string name="feedback_message">Please provide your feedback here..</string>
+    <string name="feedback_message">Please provide your message here..</string>
     <string name="feedback_message2">What\'s bothering you! Share anything you want.</string>
     <string name="feedback_email">Write your email here..</string>
     <string name="send">Send</string>
@@ -119,6 +122,17 @@
     <string name="link_linkedin">https://www.linkedin.com/in/shr-creation-a80602227/</string>
     <string name="link_twitter">https://twitter.com/ShrCreation</string>
     <string name="link_github">https://github.com/shrcreation</string>
+
+    <!--dialog close app-->
+    <string name="dialog_close_title">Thank You For Using Our App</string>
+    <string name="dialog_close_msg">Before low rate please share your problems. Your ratings and feedback will help us make the app better and deliver the best experience to you.</string>
+    <string name="dialog_option_quit">QUIT</string>
+    <string name="dialog_option_rate_us">RATE US</string>
+    <string name="yes_signout">Yes, SignOut</string>
+    <string name="cancel">Cancel</string>
+    <string name="are_you_sure_you_want_to_signout">Are you sure you want to signout?</string>
+    <string name="we_wish_to_see_you_back_real_soon">We wish to see you back real soon</string>
+    <string name="bye">Bye!</string>
 
 
 </resources>

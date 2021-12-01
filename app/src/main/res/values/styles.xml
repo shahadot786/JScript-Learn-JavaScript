@@ -14,7 +14,7 @@
         <item name="android:textColor">@color/textColorGrey</item>
         <!--<item name="actionBarTheme">@style/ToolBarTheme</item>-->
         <item name="android:fontFamily">@font/oswald_light</item>
-        <item name="android:itemBackground">@color/colorPrimary</item>
+        <item name="android:itemBackground">@color/colorSecondary</item>
 
     </style>
 

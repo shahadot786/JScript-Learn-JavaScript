@@ -3,6 +3,7 @@ package com.javascript.jscript.Activities;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.Intent;
 import android.net.Uri;
@@ -31,10 +32,10 @@ public class SignInActivity extends AppCompatActivity {
                     //"(?=.*[0-9])" +         //at least 1 digit
                     //"(?=.*[a-z])" +         //at least 1 lower case letter
                     //"(?=.*[A-Z])" +         //at least 1 upper case letter
-                    "(?=.*[a-zA-Z])" +      //any letter
+                    "(?=.*[a-zA-Z-0-9-@#$%^!~*&+=])" + //any letter or number or special
                     //"(?=.*[@#$%^&+=])" +    //at least 1 special character
-                    //"(?=\\S+$)" +           //no white spaces
-                    ".{8,15}" +               //at least 6 characters
+                    "(?=\\S+$)" +           //no white spaces
+                    ".{6,40}" +               //at least 6 characters
                     "$");
 
     //binding
@@ -44,14 +45,20 @@ public class SignInActivity extends AppCompatActivity {
     //Firebase Code
     FirebaseAuth auth;
     FirebaseUser currentUser;
+    ProgressDialog dialog;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         //binding
         binding = ActivitySignInBinding.inflate(getLayoutInflater());
-
         setContentView(binding.getRoot());
+        dialog = new ProgressDialog(this,ProgressDialog.THEME_DEVICE_DEFAULT_DARK);
+        dialog.setProgressStyle(ProgressDialog.STYLE_SPINNER);
+        dialog.setTitle("Sign In");
+        dialog.setMessage("Please Wait...");
+        dialog.setCancelable(false);
+        dialog.setCanceledOnTouchOutside(false);
         //Initialize id
         textInputEmail = findViewById(R.id.text_input_email);
         textInputPassword = findViewById(R.id.text_input_password);
@@ -87,13 +94,17 @@ public class SignInActivity extends AppCompatActivity {
                 auth.signInWithEmailAndPassword(email,password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
+                        dialog.show();
                         if (task.isSuccessful()){
                             Intent intent = new Intent(SignInActivity.this,MainActivity.class);
                             startActivity(intent);
-                            Toast.makeText(SignInActivity.this, "Sign In Successfully", Toast.LENGTH_SHORT).show();
+                            //Toast.makeText(SignInActivity.this, "Sign In Successfully", Toast.LENGTH_SHORT).show();
+                        }else {
+                            Toast.makeText(SignInActivity.this, "Sign In Error", Toast.LENGTH_SHORT).show();
                         }
                     }
                 });
+                dialog.dismiss();
 
             }
 
@@ -124,11 +135,11 @@ public class SignInActivity extends AppCompatActivity {
         } else if (!PASSWORD_PATTERN.matcher(passwordInput).matches()) {
             if (passwordInput.length() < 6){
                 textInputPassword.setError("At least 6 Characters");
-            }else if (passwordInput.length() > 15){
+            }else if (passwordInput.length() > 40){
                 textInputPassword.setError("Password too long");
             }
             else{
-                textInputPassword.setError("Password too weak");
+                textInputPassword.setError("No white spaces");
             }
             return false;
         } else {

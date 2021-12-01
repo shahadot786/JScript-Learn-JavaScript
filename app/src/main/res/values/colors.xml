@@ -11,14 +11,16 @@
     <color name="activeRedLight">#BF0000</color>
     <color name="activeGreenDark">#0A5D00</color>
     <color name="activeRedDark">#800000</color>
+
+    <!--Bar colors-->
+    <color name="colorStatusBarDark">#16171b</color>
+    <color name="colorToolbarDark">#16171b</color>
+
     <!--Text Colors-->
     <color name="textColorGrey">#D2D3D5</color>
     <color name="textColorBlack">#22272C</color>
     <color name="textColorPlaceholder">#7D7D7D</color>
 
-    <!--Bar colors-->
-    <color name="colorStatusBarDark">#16171b</color>
-    <color name="colorToolbarDark">#16171b</color>
 
     <!--Extra Colors-->
     <color name="colorGreen">#82D364</color>

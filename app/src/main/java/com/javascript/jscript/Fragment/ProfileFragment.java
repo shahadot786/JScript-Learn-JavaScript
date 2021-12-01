@@ -13,6 +13,7 @@ import android.view.ViewGroup;
 import android.widget.Toast;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.FirebaseDatabase;
@@ -20,6 +21,7 @@ import com.google.firebase.database.ValueEventListener;
 import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.StorageReference;
 import com.google.firebase.storage.UploadTask;
+import com.javascript.jscript.Activities.SignInActivity;
 import com.javascript.jscript.Model.UserModel;
 import com.javascript.jscript.R;
 import com.javascript.jscript.databinding.FragmentProfileBinding;
@@ -62,31 +64,38 @@ public class ProfileFragment extends Fragment {
         dialog.setCancelable(false);
         dialog.setCanceledOnTouchOutside(false);
 
-        database.getReference().child("Users").child(auth.getUid())
-                .addListenerForSingleValueEvent(new ValueEventListener() {
-                    @Override
-                    public void onDataChange(@NonNull DataSnapshot snapshot) {
-                        if (snapshot.exists()){
-                            UserModel user = snapshot.getValue(UserModel.class);
-                            Picasso.get()
-                                    .load(user.getCoverPhoto())
-                                    .placeholder(R.drawable.ic_placeholder_dark)
-                                    .into(binding.coverPhoto);
-                            Picasso.get()
-                                    .load(user.getProfile())
-                                    .placeholder(R.drawable.ic_placeholder_dark)
-                                    .into(binding.profileImage);
-                            binding.userName.setText(user.getUserName());
-                            binding.email.setText(user.getEmail());
-                            binding.password.setText(user.getPassword());
+        /*check if user is sign in or sign out*/
+        FirebaseUser currentUser = auth.getCurrentUser();
+        if (currentUser == null){
+            Intent intent = new Intent(getActivity(), SignInActivity.class);
+            startActivity(intent);
+        }else{
+            database.getReference().child("Users").child(auth.getUid())
+                    .addListenerForSingleValueEvent(new ValueEventListener() {
+                        @Override
+                        public void onDataChange(@NonNull DataSnapshot snapshot) {
+                            if (snapshot.exists()){
+                                UserModel user = snapshot.getValue(UserModel.class);
+                                Picasso.get()
+                                        .load(user.getCoverPhoto())
+                                        .placeholder(R.drawable.ic_placeholder_dark)
+                                        .into(binding.coverPhoto);
+                                Picasso.get()
+                                        .load(user.getProfile())
+                                        .placeholder(R.drawable.ic_placeholder_dark)
+                                        .into(binding.profileImage);
+                                binding.userName.setText(user.getUserName());
+                                binding.email.setText(user.getEmail());
+                                binding.password.setText(user.getPassword());
+                            }
                         }
-                    }
 
-                    @Override
-                    public void onCancelled(@NonNull DatabaseError error) {
+                        @Override
+                        public void onCancelled(@NonNull DatabaseError error) {
 
-                    }
-                });
+                        }
+                    });
+        }
 
         binding.uploadCoverImg.setOnClickListener(new View.OnClickListener() {
             @Override

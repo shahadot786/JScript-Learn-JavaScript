@@ -13,11 +13,12 @@
         android:background="@drawable/toolbar_bg"
         android:textSize="40sp"
         android:theme="@style/ThemeOverlay.AppCompat.Dark"
+        app:titleTextColor="@color/textColorGrey"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:titleTextColor="@color/textColorGrey" />
+        />
 
     <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"

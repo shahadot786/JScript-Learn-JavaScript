@@ -1,9 +1,12 @@
 package com.javascript.jscript.Activities;
 
+import static android.content.ContentValues.TAG;
+
 import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -16,6 +19,7 @@ import androidx.fragment.app.FragmentTransaction;
 import androidx.viewpager.widget.ViewPager;
 
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 import com.javascript.jscript.BuildConfig;
 import com.javascript.jscript.Fragment.ProgramsFragment;
 import com.javascript.jscript.Fragment.QuizFragment;
@@ -42,7 +46,8 @@ public class MainActivity extends AppCompatActivity {
     private long exitTime = 0;
     ActivityMainBinding binding;
     FirebaseAuth auth = FirebaseAuth.getInstance();
-    AdView bannerAd;
+    private AdView bannerAd;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -56,49 +61,10 @@ public class MainActivity extends AppCompatActivity {
         transaction.replace(R.id.container, new LearnFragment());
         transaction.commit();
 
-        //ad declarations
-        bannerAd = findViewById(R.id.adView);
-        AdView adView = new AdView(this);
-        adView.setAdSize(AdSize.BANNER);
-        adView.setAdUnitId(getResources().getString(R.string.banner_ad_unit_id));
-        //load ad
-        MobileAds.initialize(this, new OnInitializationCompleteListener() {
-            @Override
-            public void onInitializationComplete(@NonNull InitializationStatus initializationStatus) {
-            }
-        });
         //ad request
+        bannerAd = findViewById(R.id.adView);
         AdRequest adRequest = new AdRequest.Builder().build();
         bannerAd.loadAd(adRequest);
-        //ad click listener
-        adView.setAdListener(new AdListener() {
-            @Override
-            public void onAdLoaded() {
-                // Code to be executed when an ad finishes loading.
-            }
-
-            @Override
-            public void onAdFailedToLoad(LoadAdError adError) {
-                // Code to be executed when an ad request fails.
-            }
-
-            @Override
-            public void onAdOpened() {
-                // Code to be executed when an ad opens an overlay that
-                // covers the screen.
-            }
-
-            @Override
-            public void onAdClicked() {
-                // Code to be executed when the user clicks on an ad.
-            }
-
-            @Override
-            public void onAdClosed() {
-                // Code to be executed when the user is about to return
-                // to the app after tapping on an ad.
-            }
-        });
 
         //bottom bar fragment listener
         binding.bottomBar.setOnItemSelectedListener(new OnItemSelectedListener() {
@@ -161,39 +127,12 @@ public class MainActivity extends AppCompatActivity {
     @SuppressLint("NonConstantResourceId")
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
-
         switch (item.getItemId()){
-            //follow us
-            case R.id.follow_us:
-                Intent intent4 = new Intent(MainActivity.this,FollowUsActivity.class);
-                startActivity(intent4);
+            //upgrade pro
+            case R.id.upgrade_pro:
                 return true;
-            //feedback
-            case R.id.feedback:
-                Intent intent3 = new Intent(MainActivity.this,FeedBackActivity.class);
-                startActivity(intent3);
-                return true;
-            case R.id.logout:
-                //signOut
-                auth.signOut();
-                Intent intent = new Intent(MainActivity.this,SignInActivity.class);
-                startActivity(intent);
-                return true;
-            case R.id.privacy:
-                // Policy
-                Intent intent1 = new Intent(Intent.ACTION_VIEW,Uri.parse(getString(R.string.url_play_privacy_policy)));
-                startActivity(intent1);
-                return true;
-            case R.id.rate:
-                //rate
-                startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("http://play.google.com/store/apps/details?id=" + BuildConfig.APPLICATION_ID)));
-                return true;
-            case R.id.more_apps:
-                //more apps
-                startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(getString(R.string.url_play_more_apps))));
-                return true;
+            //share
             case R.id.share:
-                //share
                 Intent sendIntent = new Intent();
                 sendIntent.setAction(Intent.ACTION_SEND);
                 sendIntent.putExtra(Intent.EXTRA_TEXT,getResources().getString(R.string.share_message) +"\n\n"+
@@ -204,6 +143,36 @@ public class MainActivity extends AppCompatActivity {
                 sendIntent.setType("text/plain");
                 startActivity(sendIntent);
                 return true;
+            //feedback
+            case R.id.feedback:
+            //contact us
+            case R.id.contact_us:
+                Intent intent3 = new Intent(MainActivity.this,FeedBackActivity.class);
+                startActivity(intent3);
+                return true;
+            //rate now
+            case R.id.rate:
+                startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("http://play.google.com/store/apps/details?id=" + BuildConfig.APPLICATION_ID)));
+                return true;
+            //follow us
+            case R.id.follow_us:
+                Intent intent4 = new Intent(MainActivity.this,FollowUsActivity.class);
+                startActivity(intent4);
+                return true;
+            //more apps
+            case R.id.more_apps:
+                startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(getString(R.string.url_play_more_apps))));
+                return true;
+            //privacy policy
+            case R.id.privacy:
+                Intent intent1 = new Intent(Intent.ACTION_VIEW,Uri.parse(getString(R.string.url_play_privacy_policy)));
+                startActivity(intent1);
+                return true;
+            //logout
+            case R.id.logout:
+                Intent intent = new Intent(MainActivity.this,SignOutActivity.class);
+                startActivity(intent);
+                return true;
         }
 
         return super.onOptionsItemSelected(item);
@@ -212,7 +181,11 @@ public class MainActivity extends AppCompatActivity {
     //on back pressed
     @Override
     public void onBackPressed() {
-        exitApp();
+        if (UiConfig.ENABLE_EXIT_DIALOG){
+            exitDialog();
+        }else {
+            exitApp();
+        }
     }
     //exit app
     public void exitApp() {
@@ -224,5 +197,34 @@ public class MainActivity extends AppCompatActivity {
 
         }
     }
+    //Exit Dialog
+    public void exitDialog() {
+        AlertDialog.Builder dialog = new AlertDialog.Builder(MainActivity.this,R.style.AppCompatAlertDialogStyle);
+        dialog.setTitle(R.string.dialog_close_title);
+        dialog.setMessage(R.string.dialog_close_msg);
+        dialog.setPositiveButton(R.string.dialog_option_quit, (dialogInterface, i) -> finishAffinity());
+
+        dialog.setNegativeButton(R.string.dialog_option_rate_us, (dialogInterface, i) -> {
+            final String appName = getPackageName();
+            try {
+                startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("market://details?id=" + appName)));
+            } catch (android.content.ActivityNotFoundException anfe) {
+                startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("http://play.google.com/store/apps/details?id=" + appName)));
+            }
+            finish();
+        });
+        dialog.setNeutralButton(R.string.feedback,((dialogInterface, i) -> {
+            startActivity(new Intent(MainActivity.this,FeedBackActivity.class));
+            finish();
+        }));
+        /*dialog.setNeutralButton(R.string.dialog_option_more, (dialogInterface, i) -> {
+            startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(getString(R.string.url_play_more_apps))));
+            finish();
+        });*/
+        dialog.show();
+    }
+
+
+
 
 }

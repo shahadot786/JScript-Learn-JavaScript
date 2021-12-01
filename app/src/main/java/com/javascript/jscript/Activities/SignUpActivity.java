@@ -1,5 +1,6 @@
 package com.javascript.jscript.Activities;
 
+import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.Intent;
 import android.net.Uri;
@@ -33,9 +34,9 @@ public class SignUpActivity extends AppCompatActivity {
                     //"(?=.*[0-9])" +         //at least 1 digit
                     //"(?=.*[a-z])" +         //at least 1 lower case letter
                     //"(?=.*[A-Z])" +         //at least 1 upper case letter
-                    "(?=.*[a-zA-Z])" +      //any letter
+                    "(?=.*[a-zA-Z-0-9-@#$%^!~*&+=])" + //any letter or number or special
                     //"(?=.*[@#$%^&+=])" +    //at least 1 special character
-                    //"(?=\\S+$)" +           //no white spaces
+                    "(?=\\S+$)" +           //no white spaces
                     ".{6,15}" +               //at least 6 characters
                     "$");
 
@@ -44,6 +45,7 @@ public class SignUpActivity extends AppCompatActivity {
     private TextInputLayout textInputUserName;
     private TextInputLayout textInputEmail;
     private TextInputLayout textInputPassword;
+    ProgressDialog dialog;
 
     //firebase code
     FirebaseAuth auth;
@@ -56,6 +58,12 @@ public class SignUpActivity extends AppCompatActivity {
         //binding
         binding = ActivitySignUpBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
+        dialog = new ProgressDialog(this,ProgressDialog.THEME_DEVICE_DEFAULT_DARK);
+        dialog.setProgressStyle(ProgressDialog.STYLE_SPINNER);
+        dialog.setTitle("Sign Up");
+        dialog.setMessage("Please Wait...");
+        dialog.setCancelable(false);
+        dialog.setCanceledOnTouchOutside(false);
 
         //initialize id
         textInputUserName = findViewById(R.id.text_input_username);
@@ -85,13 +93,14 @@ public class SignUpActivity extends AppCompatActivity {
                         .addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
+                        dialog.show();
                         if (task.isSuccessful()){
                             UserModel userModel = new UserModel(userName,email,password);
                             String id = task.getResult().getUser().getUid();
                             database.getReference().child("Users")
                                     .child(id)
                                     .setValue(userModel);
-                            Toast.makeText(SignUpActivity.this, "Sign Up Successfully", Toast.LENGTH_SHORT).show();
+                            //Toast.makeText(SignUpActivity.this, "Sign Up Successfully", Toast.LENGTH_SHORT).show();
                             Intent intent = new Intent(SignUpActivity.this,MainActivity.class);
                             startActivity(intent);
                         }else {
@@ -99,8 +108,7 @@ public class SignUpActivity extends AppCompatActivity {
                         }
                     }
                 });
-
-
+                dialog.dismiss();
             }
 
         });
@@ -125,9 +133,6 @@ public class SignUpActivity extends AppCompatActivity {
         String usernameInput = textInputUserName.getEditText().getText().toString().trim();
         if (usernameInput.isEmpty()) {
             textInputUserName.setError("Username is required.");
-            return false;
-        } else if (usernameInput.length() > 12) {
-            textInputUserName.setError("Username too long, 12 character only");
             return false;
         }else {
             textInputUserName.setError(null);
@@ -158,10 +163,10 @@ public class SignUpActivity extends AppCompatActivity {
         } else if (!PASSWORD_PATTERN.matcher(passwordInput).matches()) {
             if (passwordInput.length() < 6){
                 textInputPassword.setError("At least 6 Characters");
-            }else if (passwordInput.length() > 15){
+            }else if (passwordInput.length() > 40){
                 textInputPassword.setError("Password too long");
             }else{
-                textInputPassword.setError("Password too weak");
+                textInputPassword.setError("No white spaces");
             }
             return false;
         } else {

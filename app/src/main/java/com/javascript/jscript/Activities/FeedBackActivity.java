@@ -111,10 +111,10 @@ public class FeedBackActivity extends AppCompatActivity {
     public boolean sendMessageBtnValidation() {
         String sendTextInput = sendInput.getEditText().getText().toString().trim();
         if (sendTextInput.isEmpty()) {
-            sendInput.setError("Feedback is required");
+            sendInput.setError("Message is required");
             return false;
         } else if (sendTextInput.length() > 2048) {
-            sendInput.setError("Feedback is too long, tell us shortly within 2048 Letters.");
+            sendInput.setError("Message is too long, tell us shortly within 2048 Letters.");
             return false;
         } else {
             sendInput.setError(null);

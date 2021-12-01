@@ -45,7 +45,7 @@ public class NextActivity extends AppCompatActivity {
         super.onStart();
         Intent intent;
         if (currentUser != null){
-            intent = new Intent(NextActivity.this, MainActivity.class);
+            intent = new Intent(NextActivity.this, PremiumActivity.class);
         }else{
             intent = new Intent(NextActivity.this, SignInActivity.class);
         }

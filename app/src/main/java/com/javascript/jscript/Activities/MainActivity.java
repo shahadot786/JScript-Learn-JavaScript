@@ -1,41 +1,27 @@
 package com.javascript.jscript.Activities;
 
-import static android.content.ContentValues.TAG;
-
 import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Toast;
-
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.FragmentTransaction;
-import androidx.viewpager.widget.ViewPager;
-
-import com.google.firebase.auth.FirebaseAuth;
-import com.google.firebase.auth.FirebaseUser;
-import com.javascript.jscript.BuildConfig;
-import com.javascript.jscript.Fragment.ProgramsFragment;
-import com.javascript.jscript.Fragment.QuizFragment;
-import com.google.android.gms.ads.AdListener;
 import com.google.android.gms.ads.AdRequest;
-import com.google.android.gms.ads.AdSize;
 import com.google.android.gms.ads.AdView;
-import com.google.android.gms.ads.LoadAdError;
-import com.google.android.gms.ads.MobileAds;
-import com.google.android.gms.ads.initialization.InitializationStatus;
-import com.google.android.gms.ads.initialization.OnInitializationCompleteListener;
+import com.javascript.jscript.BuildConfig;
+import com.javascript.jscript.Config.UiConfig;
 import com.javascript.jscript.Fragment.LearnFragment;
 import com.javascript.jscript.Fragment.ProFragment;
 import com.javascript.jscript.Fragment.ProfileFragment;
+import com.javascript.jscript.Fragment.ProgramsFragment;
+import com.javascript.jscript.Fragment.QuizFragment;
 import com.javascript.jscript.R;
-import com.javascript.jscript.Config.UiConfig;
 import com.javascript.jscript.databinding.ActivityMainBinding;
 
 import me.ibrahimsn.lib.OnItemSelectedListener;
@@ -45,7 +31,6 @@ public class MainActivity extends AppCompatActivity {
 
     private long exitTime = 0;
     ActivityMainBinding binding;
-    FirebaseAuth auth = FirebaseAuth.getInstance();
     private AdView bannerAd;
 
     @Override
@@ -73,39 +58,44 @@ public class MainActivity extends AppCompatActivity {
                 //fragment replace
                 FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
                 //fragment replace switch case code
-                switch (i){
+                switch (i) {
                     case 0:
+                        binding.toolbar.setVisibility(View.VISIBLE);
                         MainActivity.this.setTitle("Learn");
                         transaction.replace(R.id.container, new LearnFragment());
-                        if (UiConfig.BANNER_AD_VISIBILITY){
+                        if (UiConfig.BANNER_AD_VISIBILITY) {
                             bannerAd.setVisibility(View.VISIBLE);
                         }
                         break;
                     case 1:
+                        binding.toolbar.setVisibility(View.VISIBLE);
                         MainActivity.this.setTitle("Quiz");
                         transaction.replace(R.id.container, new QuizFragment());
-                        if (UiConfig.BANNER_AD_VISIBILITY){
+                        if (UiConfig.BANNER_AD_VISIBILITY) {
                             bannerAd.setVisibility(View.VISIBLE);
                         }
                         break;
                     case 2:
+                        binding.toolbar.setVisibility(View.VISIBLE);
                         MainActivity.this.setTitle("Programs");
                         transaction.replace(R.id.container, new ProgramsFragment());
-                        if (UiConfig.BANNER_AD_VISIBILITY){
+                        if (UiConfig.BANNER_AD_VISIBILITY) {
                             bannerAd.setVisibility(View.VISIBLE);
                         }
                         break;
                     case 3:
+                        binding.toolbar.setVisibility(View.VISIBLE);
                         MainActivity.this.setTitle("Profile");
                         transaction.replace(R.id.container, new ProfileFragment());
-                        if (UiConfig.BANNER_AD_VISIBILITY){
+                        if (UiConfig.BANNER_AD_VISIBILITY) {
                             bannerAd.setVisibility(View.VISIBLE);
                         }
                         break;
                     case 4:
+                        binding.toolbar.setVisibility(View.GONE);
                         MainActivity.this.setTitle("PRO");
                         transaction.replace(R.id.container, new ProFragment());
-                        if (UiConfig.BANNER_AD_VISIBILITY){
+                        if (UiConfig.BANNER_AD_VISIBILITY) {
                             bannerAd.setVisibility(View.VISIBLE);
                         }
                         break;
@@ -115,39 +105,40 @@ public class MainActivity extends AppCompatActivity {
                 return false;
             }
         });
-    }
+    }//finished onCreate
 
-
+    //on create option menu
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.menu_items,menu);
+        getMenuInflater().inflate(R.menu.menu_items, menu);
         return true;
     }
-
     @SuppressLint("NonConstantResourceId")
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
-        switch (item.getItemId()){
+        switch (item.getItemId()) {
             //upgrade pro
             case R.id.upgrade_pro:
+                Intent proIntent = new Intent(MainActivity.this,PremiumActivity.class);
+                startActivity(proIntent);
                 return true;
             //share
             case R.id.share:
                 Intent sendIntent = new Intent();
                 sendIntent.setAction(Intent.ACTION_SEND);
-                sendIntent.putExtra(Intent.EXTRA_TEXT,getResources().getString(R.string.share_message) +"\n\n"+
+                sendIntent.putExtra(Intent.EXTRA_TEXT, getResources().getString(R.string.share_message) + "\n\n" +
                         "https://play.google.com/store/apps/details?id=" +
-                        BuildConfig.APPLICATION_ID +"\n\n"+ getResources().getString(R.string.share_message2)
-                        +"\n\n"+ getResources().getString(R.string.share_message3)
-                        +"\n\n"+ getResources().getString(R.string.share_message4));
+                        BuildConfig.APPLICATION_ID + "\n\n" + getResources().getString(R.string.share_message2)
+                        + "\n\n" + getResources().getString(R.string.share_message3)
+                        + "\n\n" + getResources().getString(R.string.share_message4));
                 sendIntent.setType("text/plain");
                 startActivity(sendIntent);
                 return true;
             //feedback
             case R.id.feedback:
-            //contact us
+                //contact us
             case R.id.contact_us:
-                Intent intent3 = new Intent(MainActivity.this,FeedBackActivity.class);
+                Intent intent3 = new Intent(MainActivity.this, FeedBackActivity.class);
                 startActivity(intent3);
                 return true;
             //rate now
@@ -156,7 +147,7 @@ public class MainActivity extends AppCompatActivity {
                 return true;
             //follow us
             case R.id.follow_us:
-                Intent intent4 = new Intent(MainActivity.this,FollowUsActivity.class);
+                Intent intent4 = new Intent(MainActivity.this, FollowUsActivity.class);
                 startActivity(intent4);
                 return true;
             //more apps
@@ -165,29 +156,28 @@ public class MainActivity extends AppCompatActivity {
                 return true;
             //privacy policy
             case R.id.privacy:
-                Intent intent1 = new Intent(Intent.ACTION_VIEW,Uri.parse(getString(R.string.url_play_privacy_policy)));
+                Intent intent1 = new Intent(Intent.ACTION_VIEW, Uri.parse(getString(R.string.url_play_privacy_policy)));
                 startActivity(intent1);
                 return true;
             //logout
             case R.id.logout:
-                Intent intent = new Intent(MainActivity.this,SignOutActivity.class);
+                Intent intent = new Intent(MainActivity.this, SignOutActivity.class);
                 startActivity(intent);
                 return true;
         }
 
         return super.onOptionsItemSelected(item);
     }
-
     //on back pressed
     @Override
     public void onBackPressed() {
-        if (UiConfig.ENABLE_EXIT_DIALOG){
+        if (UiConfig.ENABLE_EXIT_DIALOG) {
             exitDialog();
-        }else {
+        } else {
             exitApp();
         }
     }
-    //exit app
+    //on exit app
     public void exitApp() {
         if ((System.currentTimeMillis() - exitTime) > 2000) {
             Toast.makeText(this, getString(R.string.press_again_to_exit), Toast.LENGTH_SHORT).show();
@@ -197,9 +187,9 @@ public class MainActivity extends AppCompatActivity {
 
         }
     }
-    //Exit Dialog
+    //on Exit Dialog
     public void exitDialog() {
-        AlertDialog.Builder dialog = new AlertDialog.Builder(MainActivity.this,R.style.AppCompatAlertDialogStyle);
+        AlertDialog.Builder dialog = new AlertDialog.Builder(MainActivity.this, R.style.AppCompatAlertDialogStyle);
         dialog.setTitle(R.string.dialog_close_title);
         dialog.setMessage(R.string.dialog_close_msg);
         dialog.setPositiveButton(R.string.dialog_option_quit, (dialogInterface, i) -> finishAffinity());
@@ -213,8 +203,8 @@ public class MainActivity extends AppCompatActivity {
             }
             finish();
         });
-        dialog.setNeutralButton(R.string.feedback,((dialogInterface, i) -> {
-            startActivity(new Intent(MainActivity.this,FeedBackActivity.class));
+        dialog.setNeutralButton(R.string.feedback, ((dialogInterface, i) -> {
+            startActivity(new Intent(MainActivity.this, FeedBackActivity.class));
             finish();
         }));
         /*dialog.setNeutralButton(R.string.dialog_option_more, (dialogInterface, i) -> {
@@ -223,8 +213,5 @@ public class MainActivity extends AppCompatActivity {
         });*/
         dialog.show();
     }
-
-
-
 
 }

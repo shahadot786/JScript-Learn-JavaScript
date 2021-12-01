@@ -128,11 +128,28 @@
     <string name="dialog_close_msg">Before low rate please share your problems. Your ratings and feedback will help us make the app better and deliver the best experience to you.</string>
     <string name="dialog_option_quit">QUIT</string>
     <string name="dialog_option_rate_us">RATE US</string>
+
+    <!--Sign Out-->
     <string name="yes_signout">Yes, SignOut</string>
     <string name="cancel">Cancel</string>
     <string name="are_you_sure_you_want_to_signout">Are you sure you want to signout?</string>
     <string name="we_wish_to_see_you_back_real_soon">We wish to see you back real soon</string>
     <string name="bye">Bye!</string>
+
+    <!--Pro Fragment-->
+    <string name="upgrade_to_pro">Upgrade to PRO</string>
+    <string name="pro_des">Celebrate Your Love For Code With PRO Access</string>
+    <string name="pro_des_1">Unlimited Access For All PRO Content</string>
+    <string name="pro_des_2">Get Job Ready</string>
+    <string name="pro_des_3">Free Exclusive Premium Course Updates</string>
+    <string name="pro_des_4">Remove Ads</string>
+    <string name="pro_des_5">And Much More!</string>
+    <string name="try_free_for_7_days">Try free for 7 days</string>
+    <string name="_95">95%</string>
+    <string name="best_value">BEST VALUE</string>
+    <string name="_12_months">12 Months</string>
+    <string name="pro_price">BDT 1499/-</string>
+    <string name="pro_play_message">You won\'t be charged until your free trial ends. You can cancel anytime in Google Play.</string>
 
 
 </resources>

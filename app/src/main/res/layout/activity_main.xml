@@ -27,6 +27,7 @@
         app:popupTheme="@style/Theme.AppCompat.Light"
         android:theme="@style/Theme.AppCompat.DayNight.DarkActionBar"
         android:textSize="40sp"
+        android:visibility="visible"
         app:titleTextColor="@color/textColorGrey"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"

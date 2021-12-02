@@ -14,6 +14,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.database.FirebaseDatabase;
 import com.javascript.jscript.Config.UiConfig;
 import com.javascript.jscript.R;
 
@@ -26,6 +27,7 @@ public class SplashActivity extends AppCompatActivity {
     TextView slogan;
     FirebaseUser currentUser;
     FirebaseAuth auth;
+    FirebaseDatabase database;
     final String PREFS_NAME = "JscriptPrefFile2";
 
     @Override
@@ -45,6 +47,8 @@ public class SplashActivity extends AppCompatActivity {
         slogan.setAnimation(bottomAnim);
         auth = FirebaseAuth.getInstance();
         currentUser = auth.getCurrentUser();
+        database = FirebaseDatabase.getInstance();
+        database.setPersistenceEnabled(true);
 
         ///check first time installer
         SharedPreferences settings = getSharedPreferences(PREFS_NAME, 0);

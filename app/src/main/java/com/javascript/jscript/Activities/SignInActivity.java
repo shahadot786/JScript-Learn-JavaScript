@@ -1,8 +1,5 @@
 package com.javascript.jscript.Activities;
 
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.Intent;
@@ -11,18 +8,21 @@ import android.os.Bundle;
 import android.util.Patterns;
 import android.view.View;
 import android.view.inputmethod.InputMethodManager;
-import com.google.android.material.textfield.TextInputLayout;
 import android.widget.Toast;
+
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
+import com.google.android.material.textfield.TextInputLayout;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.auth.SignInMethodQueryResult;
 import com.javascript.jscript.Config.UiConfig;
 import com.javascript.jscript.R;
 import com.javascript.jscript.databinding.ActivitySignInBinding;
-
 
 import java.util.regex.Pattern;
 
@@ -54,7 +54,7 @@ public class SignInActivity extends AppCompatActivity {
         //binding
         binding = ActivitySignInBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
-        dialog = new ProgressDialog(this,ProgressDialog.THEME_DEVICE_DEFAULT_DARK);
+        dialog = new ProgressDialog(this, ProgressDialog.THEME_DEVICE_DEFAULT_DARK);
         dialog.setProgressStyle(ProgressDialog.STYLE_SPINNER);
         dialog.setTitle("Sign In");
         dialog.setMessage("Please Wait...");
@@ -71,7 +71,7 @@ public class SignInActivity extends AppCompatActivity {
         binding.goToSignUp.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(SignInActivity.this,SignUpActivity.class);
+                Intent intent = new Intent(SignInActivity.this, SignUpActivity.class);
                 startActivity(intent);
             }
         });
@@ -92,29 +92,38 @@ public class SignInActivity extends AppCompatActivity {
                 //other codes start here
                 String email = binding.editTextEmail.getText().toString();
                 String password = binding.editTextPassword.getText().toString();
-                auth.signInWithEmailAndPassword(email,password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
+                auth.signInWithEmailAndPassword(email, password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
-                        dialog.show();
-                        if (task.isSuccessful()){
-                            Intent intent = new Intent(SignInActivity.this,MainActivity.class);
-                            startActivity(intent);
-                            //after upgrade to pro
-                            if (UiConfig.PRO_VISIBILITY_STATUS_SHOW){
-                                Intent intent1 = new Intent(SignInActivity.this,PremiumActivity.class);
-                                startActivity(intent1);
-                            }
-                        }else {
-                            Toast.makeText(SignInActivity.this, "Sign In Error", Toast.LENGTH_SHORT).show();
-                        }
+                        auth.fetchSignInMethodsForEmail(binding.editTextEmail.getText().toString())
+                                .addOnCompleteListener(new OnCompleteListener<SignInMethodQueryResult>() {
+                                    @Override
+                                    public void onComplete(@NonNull Task<SignInMethodQueryResult> task) {
+                                        boolean check = !task.getResult().getSignInMethods().isEmpty();
+                                        if (!check) {
+                                            Toast.makeText(getApplicationContext(), "Email not match", Toast.LENGTH_SHORT).show();
+                                        } else {
+                                            dialog.show();
+                                            Intent intent = new Intent(SignInActivity.this, MainActivity.class);
+                                            startActivity(intent);
+                                            //after upgrade to pro
+                                            if (UiConfig.PRO_VISIBILITY_STATUS_SHOW) {
+                                                Intent intent1 = new Intent(SignInActivity.this, PremiumActivity.class);
+                                                startActivity(intent1);
+                                            }
+                                        }
+
+                                    }
+                                });
+                        dialog.dismiss();
                     }
                 });
-                dialog.dismiss();
 
             }
 
         });
     }//end of onCreate
+
     //other codes and method here
     //email Validation
     private boolean validateEmail() {
@@ -131,6 +140,7 @@ public class SignInActivity extends AppCompatActivity {
             return true;
         }
     }
+
     //password Validation
     private boolean validatePassword() {
         String passwordInput = textInputPassword.getEditText().getText().toString().trim();
@@ -138,12 +148,11 @@ public class SignInActivity extends AppCompatActivity {
             textInputPassword.setError("Password is required.");
             return false;
         } else if (!PASSWORD_PATTERN.matcher(passwordInput).matches()) {
-            if (passwordInput.length() < 6){
+            if (passwordInput.length() < 6) {
                 textInputPassword.setError("At least 6 Characters");
-            }else if (passwordInput.length() > 40){
+            } else if (passwordInput.length() > 40) {
                 textInputPassword.setError("Password too long");
-            }
-            else{
+            } else {
                 textInputPassword.setError("No white spaces");
             }
             return false;

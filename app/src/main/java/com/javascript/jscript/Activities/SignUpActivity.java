@@ -20,6 +20,7 @@ import com.google.android.gms.tasks.Task;
 import com.google.android.material.textfield.TextInputLayout;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.SignInMethodQueryResult;
 import com.google.firebase.database.FirebaseDatabase;
 import com.javascript.jscript.Model.UserModel;
 import com.javascript.jscript.R;
@@ -93,7 +94,21 @@ public class SignUpActivity extends AppCompatActivity {
                         .addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
-                        dialog.show();
+
+                        auth.fetchSignInMethodsForEmail(binding.editTextEmail.getText().toString())
+                                .addOnCompleteListener(new OnCompleteListener<SignInMethodQueryResult>() {
+                                    @Override
+                                    public void onComplete(@NonNull Task<SignInMethodQueryResult> task) {
+                                        boolean check = !task.getResult().getSignInMethods().isEmpty();
+                                        if (!check){
+                                            Toast.makeText(getApplicationContext(), "Email not found", Toast.LENGTH_SHORT).show();
+                                            dialog.show();
+                                        }else{
+                                            Toast.makeText(getApplicationContext(), "Email already exist.", Toast.LENGTH_SHORT).show();
+                                        }
+
+                                    }
+                                });
                         if (task.isSuccessful()){
                             UserModel userModel = new UserModel(userName,email,password);
                             String id = task.getResult().getUser().getUid();
@@ -104,11 +119,11 @@ public class SignUpActivity extends AppCompatActivity {
                             Intent intent = new Intent(SignUpActivity.this,MainActivity.class);
                             startActivity(intent);
                         }else {
-                            Toast.makeText(SignUpActivity.this, "Sign Up Error", Toast.LENGTH_SHORT).show();
+
                         }
                     }
                 });
-                dialog.dismiss();
+                //dialog.dismiss();
             }
 
         });

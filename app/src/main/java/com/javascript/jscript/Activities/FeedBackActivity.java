@@ -59,7 +59,7 @@ public class FeedBackActivity extends AppCompatActivity {
                             assert user != null;
                             Picasso.get()
                                     .load(user.getProfile())
-                                    .placeholder(R.drawable.ic_placeholder_dark)
+                                    .placeholder(R.drawable.ic_profile_default_image)
                                     .into(binding.profileImage);
                             binding.userName.setText(user.getUserName());
                         }

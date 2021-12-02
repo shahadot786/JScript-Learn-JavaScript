@@ -151,6 +151,7 @@
     <string name="pro_play_message">You won\'t be charged until your free trial ends. You can cancel anytime in Google Play.</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="log_in_info">Log In Info</string>
 
 
 </resources>

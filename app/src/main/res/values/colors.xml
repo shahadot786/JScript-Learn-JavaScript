@@ -3,7 +3,7 @@
 
     <!--default theme colors-->
     <!--<color name="colorPrimary">#16171b</color>-->
-    <color name="colorPrimary">#121517</color>
+    <color name="colorPrimary">#16171b</color>
     <color name="colorSecondary">#24252a</color>
     <color name="activeGreen">#15c55d</color>
     <color name="activeRed">#dc4036</color>
@@ -14,7 +14,7 @@
     <color name="activeRedDark">#800000</color>
 
     <!--Bar colors-->
-    <color name="colorStatusBarDark">#121517</color>
+    <color name="colorStatusBarDark">#16171b</color>
     <color name="colorToolbarDark">#16171b</color>
 
     <!--Text Colors-->
@@ -28,6 +28,7 @@
     <color name="colorRed">#F53B3B</color>
     <color name="color3">#3A96F1</color>
     <color name="colorYellow">#FFD512</color>
+    <color name="colorLinkBg">#16171b</color>
 
     <!--Never Change Colors-->
     <color name="colorWhite">#FFFFFF</color>
@@ -39,7 +40,7 @@
     <color name="colorRipple">#636363</color>
     <color name="colorOverlaySoft">#1A000000</color>
     <color name="colorOverlayDark">#33000000</color>
-    <color name="color_grey_green_soft">#2015C55D</color>
+    <color name="color_grey_green_soft">#0516C45E</color>
     <color name="color_twitter">#00ACEE</color>
     <color name="color_play_store">#6BC8A3</color>
     <color name="color_github">#999999</color>
@@ -48,5 +49,6 @@
     <color name="color_instagram">#E1306C</color>
     <color name="color_app_gradient_end">#13bc57</color>
     <color name="color_app_gradient_start">#00601b</color>
+    <color name="colorAccent">#212228</color>
 
 </resources>

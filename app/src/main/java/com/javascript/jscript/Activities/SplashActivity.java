@@ -26,7 +26,6 @@ public class SplashActivity extends AppCompatActivity {
     TextView slogan;
     FirebaseUser currentUser;
     FirebaseAuth auth;
-
     final String PREFS_NAME = "JscriptPrefFile2";
 
     @Override

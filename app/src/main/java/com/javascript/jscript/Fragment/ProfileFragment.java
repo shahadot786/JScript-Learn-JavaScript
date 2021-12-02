@@ -2,14 +2,22 @@ package com.javascript.jscript.Fragment;
 
 import android.app.ProgressDialog;
 import android.content.Intent;
+import android.graphics.drawable.Drawable;
 import android.net.Uri;
 import android.os.Bundle;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.cardview.widget.CardView;
 import androidx.fragment.app.Fragment;
+
+import android.transition.AutoTransition;
+import android.transition.TransitionManager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
+import android.widget.RelativeLayout;
+import android.widget.TextView;
 import android.widget.Toast;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.auth.FirebaseAuth;
@@ -27,6 +35,8 @@ import com.javascript.jscript.R;
 import com.javascript.jscript.databinding.FragmentProfileBinding;
 import com.squareup.picasso.Picasso;
 
+import java.util.Objects;
+
 public class ProfileFragment extends Fragment {
 
     FragmentProfileBinding binding;
@@ -34,6 +44,9 @@ public class ProfileFragment extends Fragment {
     FirebaseStorage storage;
     FirebaseDatabase database;
     ProgressDialog dialog;
+    CardView cardView;
+    RelativeLayout expandableInfo;
+    ImageView arrow;
 
 
     public ProfileFragment() {
@@ -53,10 +66,27 @@ public class ProfileFragment extends Fragment {
     }
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+    public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         binding = FragmentProfileBinding.inflate(inflater,container,false);
+
+        binding.expandableView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                expandableInfo = getActivity().findViewById(R.id.expandableInfo);
+                cardView = getActivity().findViewById(R.id.expandableView);
+                arrow = getActivity().findViewById(R.id.arrowImage);
+                if (expandableInfo.getVisibility() == View.GONE){
+                    TransitionManager.beginDelayedTransition(cardView,new AutoTransition());
+                    expandableInfo.setVisibility(View.VISIBLE);
+
+                }else{
+                    TransitionManager.beginDelayedTransition(cardView,new AutoTransition());
+                    expandableInfo.setVisibility(View.GONE);
+                }
+            }
+        });
 
         dialog.setProgressStyle(ProgressDialog.STYLE_SPINNER);
         dialog.setTitle("Image Uploading");
@@ -70,19 +100,20 @@ public class ProfileFragment extends Fragment {
             Intent intent = new Intent(getActivity(), SignInActivity.class);
             startActivity(intent);
         }else{
-            database.getReference().child("Users").child(auth.getUid())
+            database.getReference().child("Users").child(Objects.requireNonNull(auth.getUid()))
                     .addListenerForSingleValueEvent(new ValueEventListener() {
                         @Override
                         public void onDataChange(@NonNull DataSnapshot snapshot) {
                             if (snapshot.exists()){
                                 UserModel user = snapshot.getValue(UserModel.class);
+                                assert user != null;
                                 Picasso.get()
                                         .load(user.getCoverPhoto())
                                         .placeholder(R.drawable.ic_placeholder_dark)
                                         .into(binding.coverPhoto);
                                 Picasso.get()
                                         .load(user.getProfile())
-                                        .placeholder(R.drawable.ic_placeholder_dark)
+                                        .placeholder(R.drawable.ic_profile_default_image)
                                         .into(binding.profileImage);
                                 binding.userName.setText(user.getUserName());
                                 binding.email.setText(user.getEmail());
@@ -126,21 +157,22 @@ public class ProfileFragment extends Fragment {
     public void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
         if (requestCode ==11){
+            assert data != null;
             if (data.getData()!= null){
                 Uri uri = data.getData();
                 binding.coverPhoto.setImageURI(uri);
                 dialog.show();
                 final StorageReference reference = storage.getReference().child("cover_photo")
-                        .child(FirebaseAuth.getInstance().getUid());
+                        .child(Objects.requireNonNull(FirebaseAuth.getInstance().getUid()));
                 reference.putFile(uri).addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
                     @Override
-                    public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {
+                    public void onSuccess(@NonNull UploadTask.TaskSnapshot taskSnapshot) {
                         dialog.dismiss();
                         Toast.makeText(getContext(), "Upload Successfully", Toast.LENGTH_SHORT).show();
                         reference.getDownloadUrl().addOnSuccessListener(new OnSuccessListener<Uri>() {
                             @Override
-                            public void onSuccess(Uri uri) {
-                                database.getReference().child("Users").child(auth.getUid()).child("coverPhoto")
+                            public void onSuccess(@NonNull Uri uri) {
+                                database.getReference().child("Users").child(Objects.requireNonNull(auth.getUid())).child("coverPhoto")
                                         .setValue(uri.toString());
                             }
                         });
@@ -149,21 +181,22 @@ public class ProfileFragment extends Fragment {
             }
         }
         else if (requestCode == 22){
+            assert data != null;
             if (data.getData()!= null){
                 Uri uri = data.getData();
                 binding.profileImage.setImageURI(uri);
                 dialog.show();
                 final StorageReference reference = storage.getReference().child("profile_image")
-                        .child(FirebaseAuth.getInstance().getUid());
+                        .child(Objects.requireNonNull(FirebaseAuth.getInstance().getUid()));
                 reference.putFile(uri).addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
                     @Override
-                    public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {
+                    public void onSuccess(@NonNull UploadTask.TaskSnapshot taskSnapshot) {
                         dialog.dismiss();
                         Toast.makeText(getContext(), "Upload Successfully", Toast.LENGTH_SHORT).show();
                         reference.getDownloadUrl().addOnSuccessListener(new OnSuccessListener<Uri>() {
                             @Override
-                            public void onSuccess(Uri uri) {
-                                database.getReference().child("Users").child(auth.getUid()).child("profile")
+                            public void onSuccess(@NonNull Uri uri) {
+                                database.getReference().child("Users").child(Objects.requireNonNull(auth.getUid())).child("profile")
                                         .setValue(uri.toString());
                             }
                         });

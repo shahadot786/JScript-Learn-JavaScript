@@ -25,7 +25,6 @@
         android:layout_marginTop="8dp"
         android:text="@string/title_js"
         app:layout_constraintEnd_toEndOf="@+id/imageView4"
-        app:layout_constraintHorizontal_bias="0.44"
         app:layout_constraintStart_toStartOf="@+id/imageView4"
         app:layout_constraintTop_toBottomOf="@+id/imageView4" />
 
@@ -422,7 +421,6 @@
         android:id="@+id/textView26"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_marginTop="14dp"
         android:background="@drawable/ic_follow_feedback_bg"
         android:gravity="center_horizontal|center_vertical"
         android:text="@string/contact_us"
@@ -431,16 +429,17 @@
         app:layout_constraintBottom_toBottomOf="@+id/viewFeedback"
         app:layout_constraintEnd_toEndOf="@+id/viewFeedback"
         app:layout_constraintStart_toStartOf="@+id/viewFeedback"
-        app:layout_constraintTop_toBottomOf="@+id/view24" />
+        app:layout_constraintTop_toTopOf="@+id/viewFeedback" />
 
     <View
         android:id="@+id/viewFeedback"
         android:layout_width="110dp"
         android:layout_height="50dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="12dp"
         android:background="@drawable/ic_follow_link_bg"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/view_website" />
+        app:layout_constraintTop_toBottomOf="@+id/view24" />
 </androidx.constraintlayout.widget.ConstraintLayout>

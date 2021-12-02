@@ -19,6 +19,7 @@ import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+import com.javascript.jscript.Config.UiConfig;
 import com.javascript.jscript.R;
 import com.javascript.jscript.databinding.ActivitySignInBinding;
 
@@ -98,7 +99,11 @@ public class SignInActivity extends AppCompatActivity {
                         if (task.isSuccessful()){
                             Intent intent = new Intent(SignInActivity.this,MainActivity.class);
                             startActivity(intent);
-                            //Toast.makeText(SignInActivity.this, "Sign In Successfully", Toast.LENGTH_SHORT).show();
+                            //after upgrade to pro
+                            if (UiConfig.PRO_VISIBILITY_STATUS_SHOW){
+                                Intent intent1 = new Intent(SignInActivity.this,PremiumActivity.class);
+                                startActivity(intent1);
+                            }
                         }else {
                             Toast.makeText(SignInActivity.this, "Sign In Error", Toast.LENGTH_SHORT).show();
                         }

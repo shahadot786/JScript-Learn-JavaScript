@@ -4,7 +4,6 @@
     <!--Main-->
     <string name="app_name">JScript</string>
     <string name="app_slogan">Learn With Kind</string>
-    <string name="app_version">Version:1.0.0.0</string>
     <string name="copyright">Copyright © 2021 SHR_Creation. \nAll right reserved</string>
 
     <!--Play Store -->
@@ -107,7 +106,6 @@
     <!--Follow Us-->
     <string name="version">Version</string>
     <string name="shr_creation">SHR Creation</string>
-    <string name="_2021_all_rights_reserved">© 2021 All Rights Reserved</string>
     <string name="instagram">Instagram</string>
     <string name="facebook">Facebook</string>
     <string name="linkedin">LinkedIn</string>
@@ -138,6 +136,7 @@
 
     <!--Pro Fragment-->
     <string name="upgrade_to_pro">Upgrade to PRO</string>
+    <string name="welcome_to_pro">Welcome to Premium</string>
     <string name="pro_des">Celebrate Your Love For Code With PRO Access</string>
     <string name="pro_des_1">Unlimited Access For All PRO Content</string>
     <string name="pro_des_2">Get Job Ready</string>
@@ -150,6 +149,8 @@
     <string name="_12_months">12 Months</string>
     <string name="pro_price">BDT 1499/-</string>
     <string name="pro_play_message">You won\'t be charged until your free trial ends. You can cancel anytime in Google Play.</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 
 </resources>

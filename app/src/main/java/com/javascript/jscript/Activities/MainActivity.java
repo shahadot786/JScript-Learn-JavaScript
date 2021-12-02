@@ -8,10 +8,12 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Toast;
+
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.FragmentTransaction;
+
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
 import com.javascript.jscript.BuildConfig;
@@ -94,7 +96,12 @@ public class MainActivity extends AppCompatActivity {
                     case 4:
                         binding.toolbar.setVisibility(View.GONE);
                         MainActivity.this.setTitle("PRO");
-                        transaction.replace(R.id.container, new ProFragment());
+                        if (UiConfig.PRO_VISIBILITY_STATUS_SHOW) {
+                            Intent intent = new Intent(MainActivity.this, PremiumActivity.class);
+                            startActivity(intent);
+                        } else {
+                            transaction.replace(R.id.container, new ProFragment());
+                        }
                         if (UiConfig.BANNER_AD_VISIBILITY) {
                             bannerAd.setVisibility(View.VISIBLE);
                         }
@@ -111,15 +118,23 @@ public class MainActivity extends AppCompatActivity {
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.menu_items, menu);
+        //after upgrade to pro
+        if (UiConfig.PRO_VISIBILITY_STATUS_SHOW){
+            menu.findItem(R.id.upgrade_pro).setVisible(true);
+        }else {
+            menu.findItem(R.id.upgrade_pro).setVisible(false);
+        }
+
         return true;
     }
+
     @SuppressLint("NonConstantResourceId")
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         switch (item.getItemId()) {
             //upgrade pro
             case R.id.upgrade_pro:
-                Intent proIntent = new Intent(MainActivity.this,PremiumActivity.class);
+                Intent proIntent = new Intent(MainActivity.this, PremiumActivity.class);
                 startActivity(proIntent);
                 return true;
             //share
@@ -168,6 +183,7 @@ public class MainActivity extends AppCompatActivity {
 
         return super.onOptionsItemSelected(item);
     }
+
     //on back pressed
     @Override
     public void onBackPressed() {
@@ -177,6 +193,7 @@ public class MainActivity extends AppCompatActivity {
             exitApp();
         }
     }
+
     //on exit app
     public void exitApp() {
         if ((System.currentTimeMillis() - exitTime) > 2000) {
@@ -187,6 +204,7 @@ public class MainActivity extends AppCompatActivity {
 
         }
     }
+
     //on Exit Dialog
     public void exitDialog() {
         AlertDialog.Builder dialog = new AlertDialog.Builder(MainActivity.this, R.style.AppCompatAlertDialogStyle);

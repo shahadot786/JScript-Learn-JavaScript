@@ -13,6 +13,7 @@
         <menu>
             <item
                 android:id="@+id/upgrade_pro"
+                android:visible="true"
                 android:icon="@drawable/ic_pro_white_24dp"
                 android:title="@string/upgrade_pro"/>
             <item

@@ -3,6 +3,7 @@ package com.javascript.jscript.Activities;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
@@ -13,11 +14,13 @@ import com.javascript.jscript.BuildConfig;
 import com.javascript.jscript.R;
 import com.javascript.jscript.databinding.ActivityFollowUsBinding;
 
+import java.util.Calendar;
 import java.util.Objects;
 
 public class FollowUsActivity extends AppCompatActivity {
 
     ActivityFollowUsBinding binding;
+    @SuppressLint("SetTextI18n")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -30,6 +33,9 @@ public class FollowUsActivity extends AppCompatActivity {
 
         //work with version
         binding.fwVersion.setText(BuildConfig.VERSION_NAME);
+        Calendar calendar = Calendar.getInstance();
+        int year = calendar.get(Calendar.YEAR);
+        binding.fwCopyrights.setText("© " + year + " All Rights Reserved");
 
         //work with link
         binding.viewInstagram.setOnClickListener(new View.OnClickListener() {

@@ -50,11 +50,12 @@ public class FeedBackActivity extends AppCompatActivity {
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         //get database value
-        database.getReference().child("Users").child(auth.getUid())
+        //google sign in data fetch with image
+        database.getReference().child("UserData").child(Objects.requireNonNull(auth.getUid()))
                 .addListenerForSingleValueEvent(new ValueEventListener() {
                     @Override
                     public void onDataChange(@NonNull DataSnapshot snapshot) {
-                        if (snapshot.exists()) {
+                        if (snapshot.exists()){
                             UserModel user = snapshot.getValue(UserModel.class);
                             assert user != null;
                             Picasso.get()

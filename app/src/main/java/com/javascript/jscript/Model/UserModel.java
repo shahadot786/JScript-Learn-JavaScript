@@ -1,9 +1,12 @@
 package com.javascript.jscript.Model;
 
+import java.util.PrimitiveIterator;
+
 public class UserModel {
     private String userName,email,password;
     private String coverPhoto;
     private String profile;
+    private String userID;
 
     public UserModel(String userName, String email, String password) {
         this.userName = userName;
@@ -12,6 +15,15 @@ public class UserModel {
     }
 
     public UserModel() {
+    }
+
+    public UserModel(String userName, String email, String password, String coverPhoto, String profile, String userID) {
+        this.userName = userName;
+        this.email = email;
+        this.password = password;
+        this.coverPhoto = coverPhoto;
+        this.profile = profile;
+        this.userID = userID;
     }
 
     public String getUserName() {
@@ -52,5 +64,13 @@ public class UserModel {
 
     public void setProfile(String profile) {
         this.profile = profile;
+    }
+
+    public String getUserID() {
+        return userID;
+    }
+
+    public void setUserID(String userID) {
+        this.userID = userID;
     }
 }

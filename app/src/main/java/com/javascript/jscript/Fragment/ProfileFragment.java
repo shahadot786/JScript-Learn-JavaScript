@@ -100,7 +100,32 @@ public class ProfileFragment extends Fragment {
             Intent intent = new Intent(getActivity(), SignInActivity.class);
             startActivity(intent);
         }else{
-            database.getReference().child("Users").child(Objects.requireNonNull(auth.getUid()))
+            //google sign in data fetch with image
+            database.getReference().child("UserData").child(Objects.requireNonNull(auth.getUid()))
+                    .addListenerForSingleValueEvent(new ValueEventListener() {
+                        @Override
+                        public void onDataChange(@NonNull DataSnapshot snapshot) {
+                            if (snapshot.exists()){
+                                UserModel user = snapshot.getValue(UserModel.class);
+                                assert user != null;
+                                Picasso.get()
+                                        .load(user.getProfile())
+                                        .placeholder(R.drawable.ic_profile_default_image)
+                                        .into(binding.profileImage);
+                                binding.userName.setText(user.getUserName());
+                                binding.email.setText(user.getEmail());
+                                binding.password.setText(user.getPassword());
+                            }
+                        }
+
+                        @Override
+                        public void onCancelled(@NonNull DatabaseError error) {
+
+                        }
+                    });
+
+            //cover and profile update images
+            database.getReference().child("UserData").child("UserImages").child(Objects.requireNonNull(auth.getUid()))
                     .addListenerForSingleValueEvent(new ValueEventListener() {
                         @Override
                         public void onDataChange(@NonNull DataSnapshot snapshot) {
@@ -115,9 +140,6 @@ public class ProfileFragment extends Fragment {
                                         .load(user.getProfile())
                                         .placeholder(R.drawable.ic_profile_default_image)
                                         .into(binding.profileImage);
-                                binding.userName.setText(user.getUserName());
-                                binding.email.setText(user.getEmail());
-                                binding.password.setText(user.getPassword());
                             }
                         }
 
@@ -172,7 +194,10 @@ public class ProfileFragment extends Fragment {
                         reference.getDownloadUrl().addOnSuccessListener(new OnSuccessListener<Uri>() {
                             @Override
                             public void onSuccess(@NonNull Uri uri) {
-                                database.getReference().child("Users").child(Objects.requireNonNull(auth.getUid())).child("coverPhoto")
+                                database.getReference().child("UserData")
+                                        .child("UserImages")
+                                        .child(Objects.requireNonNull(auth.getUid()))
+                                        .child("coverPhoto")
                                         .setValue(uri.toString());
                             }
                         });
@@ -196,7 +221,10 @@ public class ProfileFragment extends Fragment {
                         reference.getDownloadUrl().addOnSuccessListener(new OnSuccessListener<Uri>() {
                             @Override
                             public void onSuccess(@NonNull Uri uri) {
-                                database.getReference().child("Users").child(Objects.requireNonNull(auth.getUid())).child("profile")
+                                database.getReference().child("UserData")
+                                        .child("UserImages")
+                                        .child(Objects.requireNonNull(auth.getUid()))
+                                        .child("profile")
                                         .setValue(uri.toString());
                             }
                         });

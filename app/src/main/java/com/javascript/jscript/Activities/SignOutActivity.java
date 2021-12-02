@@ -75,7 +75,7 @@ public class SignOutActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 auth.signOut();
-                Intent intent = new Intent(SignOutActivity.this,SignInActivity.class);
+                Intent intent = new Intent(SignOutActivity.this,GoogleSignInActivity.class);
                 startActivity(intent);
             }
         });

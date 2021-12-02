@@ -42,6 +42,9 @@ dependencies {
     implementation 'androidx.constraintlayout:constraintlayout:2.1.2'
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
     implementation 'com.google.firebase:firebase-firestore:24.0.0'
+    implementation 'androidx.annotation:annotation:1.3.0'
+    implementation 'androidx.lifecycle:lifecycle-livedata-ktx:2.4.0'
+    implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.4.0'
     testImplementation 'junit:junit:'
     androidTestImplementation 'androidx.test.ext:junit:1.1.3'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
@@ -58,6 +61,7 @@ dependencies {
     implementation 'com.tuyenmonkey:mkloader:1.4.0'
     implementation 'com.github.ibrahimsn98:SmoothBottomBar:1.7.8'
     implementation 'org.jetbrains.kotlin:kotlin-stdlib:1.6.0'
+    implementation 'com.google.android.gms:play-services-auth:19.2.0'
     implementation 'com.google.android.gms:play-services-ads:20.5.0'
 }
 apply plugin: 'com.google.gms.google-services'

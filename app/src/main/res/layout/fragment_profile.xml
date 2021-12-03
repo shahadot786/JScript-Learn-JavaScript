@@ -250,7 +250,7 @@
                 </androidx.cardview.widget.CardView>
                 <!--Promotion-->
                 <androidx.cardview.widget.CardView
-                    android:id="@+id/Promotion"
+                    android:id="@+id/promotion"
                     android:layout_width="300dp"
                     android:layout_height="100dp"
                     android:layout_marginTop="16dp"
@@ -320,7 +320,7 @@
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.5"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/Promotion">
+                    app:layout_constraintTop_toBottomOf="@+id/promotion">
 
                     <androidx.constraintlayout.widget.ConstraintLayout
                         android:layout_width="match_parent"

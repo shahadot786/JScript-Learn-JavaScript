@@ -28,6 +28,7 @@ import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.StorageReference;
 import com.google.firebase.storage.UploadTask;
 import com.javascript.jscript.Activities.GoogleSignInActivity;
+import com.javascript.jscript.Config.UiConfig;
 import com.javascript.jscript.Model.UserModel;
 import com.javascript.jscript.R;
 import com.javascript.jscript.databinding.FragmentProfileBinding;
@@ -73,6 +74,13 @@ public class ProfileFragment extends Fragment {
         dialog.setMessage("Please Wait...");
         dialog.setCancelable(false);
         dialog.setCanceledOnTouchOutside(false);
+
+        //promotion visibility
+        if(UiConfig.PRO_VISIBILITY_STATUS_SHOW){
+            binding.promotion.setVisibility(View.VISIBLE);
+        }else {
+            binding.promotion.setVisibility(View.GONE);
+        }
 
         /*check if user is sign in or sign out*/
         FirebaseUser currentUser = auth.getCurrentUser();

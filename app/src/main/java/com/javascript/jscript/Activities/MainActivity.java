@@ -64,6 +64,7 @@ public class MainActivity extends AppCompatActivity {
                     case 0:
                         binding.toolbar.setVisibility(View.VISIBLE);
                         MainActivity.this.setTitle("Learn");
+                        transaction.setCustomAnimations(R.anim.slide_in_right,R.anim.slide_out_left,R.anim.slide_in_left,R.anim.slide_out_right);
                         transaction.replace(R.id.container, new LearnFragment());
                         if (UiConfig.BANNER_AD_VISIBILITY) {
                             bannerAd.setVisibility(View.VISIBLE);
@@ -72,6 +73,7 @@ public class MainActivity extends AppCompatActivity {
                     case 1:
                         binding.toolbar.setVisibility(View.VISIBLE);
                         MainActivity.this.setTitle("Quiz");
+                        transaction.setCustomAnimations(R.anim.slide_in_right,R.anim.slide_out_left,R.anim.slide_in_left,R.anim.slide_out_right);
                         transaction.replace(R.id.container, new QuizFragment());
                         if (UiConfig.BANNER_AD_VISIBILITY) {
                             bannerAd.setVisibility(View.VISIBLE);
@@ -80,6 +82,7 @@ public class MainActivity extends AppCompatActivity {
                     case 2:
                         binding.toolbar.setVisibility(View.VISIBLE);
                         MainActivity.this.setTitle("Programs");
+                        transaction.setCustomAnimations(R.anim.slide_in_right,R.anim.slide_out_left,R.anim.slide_in_left,R.anim.slide_out_right);
                         transaction.replace(R.id.container, new ProgramsFragment());
                         if (UiConfig.BANNER_AD_VISIBILITY) {
                             bannerAd.setVisibility(View.VISIBLE);
@@ -88,14 +91,16 @@ public class MainActivity extends AppCompatActivity {
                     case 3:
                         binding.toolbar.setVisibility(View.VISIBLE);
                         MainActivity.this.setTitle("Profile");
+                        transaction.setCustomAnimations(R.anim.slide_in_right,R.anim.slide_out_left,R.anim.slide_in_left,R.anim.slide_out_right);
                         transaction.replace(R.id.container, new ProfileFragment());
                         if (UiConfig.BANNER_AD_VISIBILITY) {
-                            bannerAd.setVisibility(View.VISIBLE);
+                            bannerAd.setVisibility(View.GONE);
                         }
                         break;
                     case 4:
                         binding.toolbar.setVisibility(View.GONE);
                         MainActivity.this.setTitle("PRO");
+                        transaction.setCustomAnimations(R.anim.slide_in_right,R.anim.slide_out_left,R.anim.slide_in_left,R.anim.slide_out_right);
                         if (UiConfig.PRO_VISIBILITY_STATUS_SHOW) {
                             Intent intent = new Intent(MainActivity.this, PremiumActivity.class);
                             startActivity(intent);
@@ -103,7 +108,7 @@ public class MainActivity extends AppCompatActivity {
                             transaction.replace(R.id.container, new ProFragment());
                         }
                         if (UiConfig.BANNER_AD_VISIBILITY) {
-                            bannerAd.setVisibility(View.VISIBLE);
+                            bannerAd.setVisibility(View.GONE);
                         }
                         break;
 
@@ -176,7 +181,13 @@ public class MainActivity extends AppCompatActivity {
                 return true;
             //logout
             case R.id.logout:
-                Intent intent = new Intent(MainActivity.this, SignOutActivity.class);
+                Intent intent;
+                //if user upgrade to pro
+                if (UiConfig.PRO_VISIBILITY_STATUS_SHOW){
+                     intent = new Intent(MainActivity.this, SignOutActivity.class);
+                }else {
+                    intent = new Intent(MainActivity.this,GoogleSignInActivity.class);
+                }
                 startActivity(intent);
                 return true;
         }

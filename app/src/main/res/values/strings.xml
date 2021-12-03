@@ -29,7 +29,7 @@
 
     <!--Feeds-->
     <string name="hello">Hello</string>
-    <string name="username">Username</string>
+    <string name="username">Anonymous</string>
     <string name="share">Share</string>
 
     <!--Learn-->

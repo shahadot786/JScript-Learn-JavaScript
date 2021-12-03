@@ -39,6 +39,7 @@ public class ProFragment extends Fragment {
 
         // Inflate the layout for this fragment
         binding = FragmentProBinding.inflate(inflater, container, false);
+
         binding.proVersion.setText(BuildConfig.VERSION_NAME);
         //catch the current year
         Calendar calendar = Calendar.getInstance();

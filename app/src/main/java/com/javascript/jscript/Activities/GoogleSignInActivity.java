@@ -5,7 +5,9 @@ import static android.content.ContentValues.TAG;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.ProgressDialog;
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -27,11 +29,13 @@ import com.javascript.jscript.Model.UserModel;
 import com.javascript.jscript.R;
 import com.javascript.jscript.databinding.ActivityGoogleSignInBinding;
 
+
 public class GoogleSignInActivity extends AppCompatActivity {
     ActivityGoogleSignInBinding binding;
     GoogleSignInClient mGoogleSignInClient;
     FirebaseAuth auth;
     FirebaseDatabase database;
+    ProgressDialog dialog;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,6 +44,13 @@ public class GoogleSignInActivity extends AppCompatActivity {
         setContentView(binding.getRoot());
         auth = FirebaseAuth.getInstance();
         database = FirebaseDatabase.getInstance();
+        dialog = new ProgressDialog(GoogleSignInActivity.this,ProgressDialog.THEME_DEVICE_DEFAULT_DARK);
+        //progress dialog
+        dialog.setProgressStyle(ProgressDialog.STYLE_SPINNER);
+        dialog.setTitle("Sign Up");
+        dialog.setMessage("Please Wait...");
+        dialog.setCancelable(true);
+        dialog.setCanceledOnTouchOutside(true);
         //google sign in
         // Configure Google Sign In
         GoogleSignInOptions gso = new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
@@ -53,6 +64,13 @@ public class GoogleSignInActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 signIn();
+            }
+        });
+        binding.privacy.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent1 = new Intent(Intent.ACTION_VIEW, Uri.parse(getString(R.string.url_play_privacy_policy)));
+                startActivity(intent1);
             }
         });
 
@@ -70,7 +88,6 @@ public class GoogleSignInActivity extends AppCompatActivity {
     @Override
     public void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
-
         // Result returned from launching the Intent from GoogleSignInApi.getSignInIntent(...);
         if (requestCode == RC_SIGN_IN) {
             Task<GoogleSignInAccount> task = GoogleSignIn.getSignedInAccountFromIntent(data);
@@ -92,6 +109,7 @@ public class GoogleSignInActivity extends AppCompatActivity {
                 .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
+                        dialog.show();
                         if (task.isSuccessful()) {
                             // Sign in success, update UI with the signed-in user's information
                             Log.d(TAG, "signInWithCredential:success");
@@ -117,6 +135,12 @@ public class GoogleSignInActivity extends AppCompatActivity {
                         }
                     }
                 });
+        dialog.dismiss();
     }
 
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        finishAffinity();
+    }
 }

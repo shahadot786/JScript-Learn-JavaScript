@@ -41,12 +41,6 @@
             android:name=".Activities.FeedBackActivity"
             android:exported="false" />
         <activity
-            android:name=".Activities.SignInActivity"
-            android:exported="false" />
-        <activity
-            android:name=".Activities.SignUpActivity"
-            android:exported="false" />
-        <activity
             android:name=".Activities.NextActivity3"
             android:exported="false" />
         <activity

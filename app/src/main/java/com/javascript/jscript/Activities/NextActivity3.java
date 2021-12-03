@@ -26,7 +26,7 @@ public class NextActivity3 extends AppCompatActivity {
         binding.btnGetStarted.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(NextActivity3.this,SignUpActivity.class);
+                Intent intent = new Intent(NextActivity3.this,GoogleSignInActivity.class);
                 startActivity(intent);
             }
         });

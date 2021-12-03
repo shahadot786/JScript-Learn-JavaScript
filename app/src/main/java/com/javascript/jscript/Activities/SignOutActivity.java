@@ -42,7 +42,7 @@ public class SignOutActivity extends AppCompatActivity {
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         //get database value
-        database.getReference().child("Users").child(auth.getUid())
+        database.getReference().child("UserData").child(auth.getUid())
                 .addListenerForSingleValueEvent(new ValueEventListener() {
                     @Override
                     public void onDataChange(@NonNull DataSnapshot snapshot) {

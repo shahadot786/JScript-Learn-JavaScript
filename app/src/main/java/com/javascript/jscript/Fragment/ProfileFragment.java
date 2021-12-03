@@ -2,7 +2,6 @@ package com.javascript.jscript.Fragment;
 
 import android.app.ProgressDialog;
 import android.content.Intent;
-import android.graphics.drawable.Drawable;
 import android.net.Uri;
 import android.os.Bundle;
 import androidx.annotation.NonNull;
@@ -17,7 +16,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
-import android.widget.TextView;
 import android.widget.Toast;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.auth.FirebaseAuth;
@@ -29,7 +27,7 @@ import com.google.firebase.database.ValueEventListener;
 import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.StorageReference;
 import com.google.firebase.storage.UploadTask;
-import com.javascript.jscript.Activities.SignInActivity;
+import com.javascript.jscript.Activities.GoogleSignInActivity;
 import com.javascript.jscript.Model.UserModel;
 import com.javascript.jscript.R;
 import com.javascript.jscript.databinding.FragmentProfileBinding;
@@ -44,9 +42,6 @@ public class ProfileFragment extends Fragment {
     FirebaseStorage storage;
     FirebaseDatabase database;
     ProgressDialog dialog;
-    CardView cardView;
-    RelativeLayout expandableInfo;
-    ImageView arrow;
 
 
     public ProfileFragment() {
@@ -71,22 +66,7 @@ public class ProfileFragment extends Fragment {
         // Inflate the layout for this fragment
         binding = FragmentProfileBinding.inflate(inflater,container,false);
 
-        binding.expandableView.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                expandableInfo = getActivity().findViewById(R.id.expandableInfo);
-                cardView = getActivity().findViewById(R.id.expandableView);
-                arrow = getActivity().findViewById(R.id.arrowImage);
-                if (expandableInfo.getVisibility() == View.GONE){
-                    TransitionManager.beginDelayedTransition(cardView,new AutoTransition());
-                    expandableInfo.setVisibility(View.VISIBLE);
 
-                }else{
-                    TransitionManager.beginDelayedTransition(cardView,new AutoTransition());
-                    expandableInfo.setVisibility(View.GONE);
-                }
-            }
-        });
 
         dialog.setProgressStyle(ProgressDialog.STYLE_SPINNER);
         dialog.setTitle("Image Uploading");
@@ -97,7 +77,7 @@ public class ProfileFragment extends Fragment {
         /*check if user is sign in or sign out*/
         FirebaseUser currentUser = auth.getCurrentUser();
         if (currentUser == null){
-            Intent intent = new Intent(getActivity(), SignInActivity.class);
+            Intent intent = new Intent(getActivity(), GoogleSignInActivity.class);
             startActivity(intent);
         }else{
             //google sign in data fetch with image
@@ -113,8 +93,6 @@ public class ProfileFragment extends Fragment {
                                         .placeholder(R.drawable.ic_profile_default_image)
                                         .into(binding.profileImage);
                                 binding.userName.setText(user.getUserName());
-                                binding.email.setText(user.getEmail());
-                                binding.password.setText(user.getPassword());
                             }
                         }
 

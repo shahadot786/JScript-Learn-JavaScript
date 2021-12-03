@@ -92,9 +92,8 @@
         android:layout_marginBottom="10dp"
         android:text="@string/are_you_sure_you_want_to_signout"
         app:layout_constraintBottom_toTopOf="@+id/cancelBtn"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintEnd_toEndOf="@+id/textView19"
+        app:layout_constraintStart_toStartOf="@+id/textView19" />
 
     <Button
         android:id="@+id/cancelBtn"
@@ -102,9 +101,9 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="12dp"
         android:layout_marginBottom="16dp"
+        android:background="@drawable/ic_sign_out_btn_bg"
         android:fontFamily="@font/oswald"
         android:text="@string/cancel"
-        android:background="@drawable/ic_sign_out_btn_bg"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/signOutBtn"
         app:layout_constraintHorizontal_bias="0.5"
@@ -115,9 +114,9 @@
         android:id="@+id/signOutBtn"
         android:layout_width="130dp"
         android:layout_height="wrap_content"
-        android:text="@string/yes_signout"
-        android:fontFamily="@font/oswald"
         android:background="@drawable/ic_sign_out_btn_bg"
+        android:fontFamily="@font/oswald"
+        android:text="@string/yes_signout"
         app:layout_constraintBottom_toBottomOf="@+id/cancelBtn"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"

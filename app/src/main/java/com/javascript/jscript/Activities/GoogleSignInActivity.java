@@ -44,8 +44,8 @@ public class GoogleSignInActivity extends AppCompatActivity {
         setContentView(binding.getRoot());
         auth = FirebaseAuth.getInstance();
         database = FirebaseDatabase.getInstance();
-        dialog = new ProgressDialog(GoogleSignInActivity.this,ProgressDialog.THEME_DEVICE_DEFAULT_DARK);
         //progress dialog
+        dialog = new ProgressDialog(GoogleSignInActivity.this,ProgressDialog.THEME_DEVICE_DEFAULT_DARK);
         dialog.setProgressStyle(ProgressDialog.STYLE_SPINNER);
         dialog.setTitle("Sign Up");
         dialog.setMessage("Please Wait...");

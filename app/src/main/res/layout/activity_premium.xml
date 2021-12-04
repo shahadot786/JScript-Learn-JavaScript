@@ -363,33 +363,44 @@
             android:layout_height="0dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/constraintLayout2">
+            app:layout_constraintTop_toBottomOf="@+id/constraintLayout2"
+            app:layout_constraintVertical_bias="1.0">
 
             <TextView
                 android:id="@+id/textView43"
                 android:layout_width="250dp"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="8dp"
-                android:textSize="11sp"
-                android:textAlignment="center"
+                android:layout_marginBottom="4dp"
                 android:text="@string/pro_play_message"
-                app:layout_constraintBottom_toTopOf="@+id/data_policy"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.5"
-                app:layout_constraintStart_toStartOf="parent" />
+                android:textAlignment="center"
+                android:textSize="11sp"
+                app:layout_constraintBottom_toTopOf="@+id/privacyPolicy"
+                app:layout_constraintEnd_toEndOf="@+id/privacyPolicy"
+                app:layout_constraintStart_toStartOf="@+id/privacyPolicy" />
 
             <TextView
-                android:id="@+id/data_policy"
+                android:id="@+id/privacyPolicy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/privacy_term"
+                android:textStyle="bold"
+                android:textSize="12sp"
+                android:textColor="@color/activeGreen"
+                app:layout_constraintBottom_toTopOf="@+id/refundPolicy"
+                app:layout_constraintEnd_toEndOf="@+id/refundPolicy"
+                app:layout_constraintStart_toStartOf="@+id/refundPolicy" />
+
+            <TextView
+                android:id="@+id/refundPolicy"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="16dp"
                 android:fontFamily="@font/oswald"
-                android:text="@string/privacy_term"
-                android:textColor="@color/activeGreen"
-                android:textSize="12sp"
-                android:textStyle="bold"
+                android:text="@string/refund_policy"
+                android:textColor="@color/colorGreyMedium"
+                android:textSize="11sp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.5"

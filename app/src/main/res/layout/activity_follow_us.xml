@@ -302,7 +302,7 @@
         app:srcCompat="@drawable/ic_play_store_24dp" />
 
     <View
-        android:id="@+id/view20"
+        android:id="@+id/cpView2"
         android:layout_width="wrap_content"
         android:layout_height="1dp"
         android:layout_marginStart="8dp"
@@ -319,7 +319,7 @@
         android:layout_width="wrap_content"
         android:layout_height="0dp"
         android:background="@drawable/ic_follow_link_bg"
-        app:layout_constraintBottom_toTopOf="@+id/view20"
+        app:layout_constraintBottom_toTopOf="@+id/cpView2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"

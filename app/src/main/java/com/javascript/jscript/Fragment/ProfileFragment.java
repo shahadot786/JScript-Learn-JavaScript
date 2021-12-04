@@ -4,19 +4,15 @@ import android.app.ProgressDialog;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
-import androidx.cardview.widget.CardView;
-import androidx.fragment.app.Fragment;
-
-import android.transition.AutoTransition;
-import android.transition.TransitionManager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageView;
-import android.widget.RelativeLayout;
 import android.widget.Toast;
+
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.fragment.app.Fragment;
+
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
@@ -27,8 +23,11 @@ import com.google.firebase.database.ValueEventListener;
 import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.StorageReference;
 import com.google.firebase.storage.UploadTask;
+import com.javascript.jscript.Activities.EditProfileActivity;
 import com.javascript.jscript.Activities.GoogleSignInActivity;
+import com.javascript.jscript.Activities.PremiumActivity;
 import com.javascript.jscript.Config.UiConfig;
+import com.javascript.jscript.Model.ProfileModel;
 import com.javascript.jscript.Model.UserModel;
 import com.javascript.jscript.R;
 import com.javascript.jscript.databinding.FragmentProfileBinding;
@@ -56,7 +55,7 @@ public class ProfileFragment extends Fragment {
         auth = FirebaseAuth.getInstance();
         storage = FirebaseStorage.getInstance();
         database = FirebaseDatabase.getInstance();
-        dialog = new ProgressDialog(getContext(),ProgressDialog.THEME_DEVICE_DEFAULT_DARK);
+        dialog = new ProgressDialog(getContext(), ProgressDialog.THEME_DEVICE_DEFAULT_DARK);
 
 
     }
@@ -65,9 +64,7 @@ public class ProfileFragment extends Fragment {
     public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        binding = FragmentProfileBinding.inflate(inflater,container,false);
-
-
+        binding = FragmentProfileBinding.inflate(inflater, container, false);
 
         dialog.setProgressStyle(ProgressDialog.STYLE_SPINNER);
         dialog.setTitle("Image Uploading");
@@ -76,24 +73,24 @@ public class ProfileFragment extends Fragment {
         dialog.setCanceledOnTouchOutside(false);
 
         //promotion visibility
-        if(UiConfig.PRO_VISIBILITY_STATUS_SHOW){
+        if (UiConfig.PRO_VISIBILITY_STATUS_SHOW) {
             binding.promotion.setVisibility(View.VISIBLE);
-        }else {
+        } else {
             binding.promotion.setVisibility(View.GONE);
         }
 
         /*check if user is sign in or sign out*/
         FirebaseUser currentUser = auth.getCurrentUser();
-        if (currentUser == null){
+        if (currentUser == null) {
             Intent intent = new Intent(getActivity(), GoogleSignInActivity.class);
             startActivity(intent);
-        }else{
+        } else {
             //google sign in data fetch with image
             database.getReference().child("UserData").child(Objects.requireNonNull(auth.getUid()))
                     .addListenerForSingleValueEvent(new ValueEventListener() {
                         @Override
                         public void onDataChange(@NonNull DataSnapshot snapshot) {
-                            if (snapshot.exists()){
+                            if (snapshot.exists()) {
                                 UserModel user = snapshot.getValue(UserModel.class);
                                 assert user != null;
                                 Picasso.get()
@@ -109,13 +106,12 @@ public class ProfileFragment extends Fragment {
 
                         }
                     });
-
             //cover and profile update images
             database.getReference().child("UserData").child("UserImages").child(Objects.requireNonNull(auth.getUid()))
                     .addListenerForSingleValueEvent(new ValueEventListener() {
                         @Override
                         public void onDataChange(@NonNull DataSnapshot snapshot) {
-                            if (snapshot.exists()){
+                            if (snapshot.exists()) {
                                 UserModel user = snapshot.getValue(UserModel.class);
                                 assert user != null;
                                 Picasso.get()
@@ -134,39 +130,160 @@ public class ProfileFragment extends Fragment {
 
                         }
                     });
+            //other information data fetch
+
+            //update profile data fetch
+            database.getReference().child("UpdateProfile")
+                    .child(Objects.requireNonNull(auth.getUid()))
+                    .addListenerForSingleValueEvent(new ValueEventListener() {
+                        @Override
+                        public void onDataChange(@NonNull DataSnapshot snapshot) {
+                            if (snapshot.exists()) {
+                                ProfileModel profile = snapshot.getValue(ProfileModel.class);
+                                assert profile != null;
+                                String profession = profile.getProfession();
+                                String bio = profile.getUserBio();
+                                String fb = profile.getFbLink();
+                                String insta = profile.getInstaLink();
+                                String github = profile.getGithubLink();
+                                String linkedin = profile.getLinkedinLink();
+                                String twitter = profile.getTwitterLink();
+
+                                //set profession and bio
+                                binding.profession.setText(profession);
+                                binding.userBioText.setText(bio);
+                                //insert link data
+                                binding.linkFacebook.setOnClickListener(new View.OnClickListener() {
+                                    @Override
+                                    public void onClick(View view) {
+                                        if (fb.isEmpty()) {
+                                            Toast.makeText(getActivity(), "Please update your profile first.", Toast.LENGTH_SHORT).show();
+                                        } else if (fb.startsWith("https://")) {
+                                            startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(fb)));
+                                        }else if (fb.startsWith("http://")){
+                                            startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(fb)));
+                                        }else {
+                                            Toast.makeText(getActivity(), "Please insert valid input in your update profile.", Toast.LENGTH_SHORT).show();
+                                        }
+                                    }
+                                });//facebook
+                                binding.linkInstagram.setOnClickListener(new View.OnClickListener() {
+                                    @Override
+                                    public void onClick(View view) {
+                                        if (insta.isEmpty()) {
+                                            Toast.makeText(getActivity(), "Please update your profile first.", Toast.LENGTH_SHORT).show();
+                                        } else if (insta.startsWith("https://")) {
+                                            startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(insta)));
+                                        }else if (insta.startsWith("http://")){
+                                            startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(insta)));
+                                        }else {
+                                            Toast.makeText(getActivity(), "Please insert valid input in your update profile.", Toast.LENGTH_SHORT).show();
+                                        }
+                                    }
+                                });//instagram
+                                binding.linkGithub.setOnClickListener(new View.OnClickListener() {
+                                    @Override
+                                    public void onClick(View view) {
+                                        if (github.isEmpty()) {
+                                            Toast.makeText(getActivity(), "Please update your profile first.", Toast.LENGTH_SHORT).show();
+                                        } else if (github.startsWith("https://")) {
+                                            startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(github)));
+                                        }else if (github.startsWith("http://")){
+                                            startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(github)));
+                                        }else {
+                                            Toast.makeText(getActivity(), "Please insert valid input in your update profile.", Toast.LENGTH_SHORT).show();
+                                        }
+                                    }
+                                });//github
+                                binding.linkLinkedIn.setOnClickListener(new View.OnClickListener() {
+                                    @Override
+                                    public void onClick(View view) {
+                                        if (linkedin.isEmpty()) {
+                                            Toast.makeText(getActivity(), "Please update your profile first.", Toast.LENGTH_SHORT).show();
+                                        } else if (linkedin.startsWith("https://")) {
+                                            startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(linkedin)));
+                                        }else if (linkedin.startsWith("http://")){
+                                            startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(linkedin)));
+                                        }else {
+                                            Toast.makeText(getActivity(), "Please insert valid input in your update profile.", Toast.LENGTH_SHORT).show();
+                                        }
+                                    }
+                                });//linkedin
+                                binding.linkTwitter.setOnClickListener(new View.OnClickListener() {
+                                    @Override
+                                    public void onClick(View view) {
+                                        if (twitter.isEmpty()) {
+                                            Toast.makeText(getActivity(), "Please update your profile first.", Toast.LENGTH_SHORT).show();
+                                        } else if (twitter.startsWith("https://")) {
+                                            startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(twitter)));
+                                        }else if (twitter.startsWith("http://")){
+                                            startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(twitter)));
+                                        }else {
+                                            Toast.makeText(getActivity(), "Please insert valid input.", Toast.LENGTH_SHORT).show();
+                                        }
+                                    }
+                                });//twitter
+
+
+                            }
+                        }
+
+                        @Override
+                        public void onCancelled(@NonNull DatabaseError error) {
+
+                        }
+                    });
         }
 
+
+        //upload cover
         binding.uploadCoverImg.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent();
                 intent.setAction(Intent.ACTION_GET_CONTENT);
                 intent.setType("image/*");
-                startActivityForResult(intent,11);
+                startActivityForResult(intent, 11);
 
             }
         });
-
+        //upload profile image
         binding.profileImage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent();
                 intent.setAction(Intent.ACTION_GET_CONTENT);
                 intent.setType("image/*");
-                startActivityForResult(intent,22);
+                startActivityForResult(intent, 22);
+            }
+        });
+        //edit profile
+        binding.editProfile.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getActivity(), EditProfileActivity.class);
+                startActivity(intent);
+            }
+        });
+        //promo start button
+        binding.promoStartBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getActivity(), PremiumActivity.class);
+                startActivity(intent);
             }
         });
 
 
         return binding.getRoot();
-    }
+    }//end onCreate
 
     @Override
     public void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
-        if (requestCode ==11){
+        if (requestCode == 11) {
             assert data != null;
-            if (data.getData()!= null){
+            if (data.getData() != null) {
                 Uri uri = data.getData();
                 binding.coverPhoto.setImageURI(uri);
                 dialog.show();
@@ -190,10 +307,9 @@ public class ProfileFragment extends Fragment {
                     }
                 });
             }
-        }
-        else if (requestCode == 22){
+        } else if (requestCode == 22) {
             assert data != null;
-            if (data.getData()!= null){
+            if (data.getData() != null) {
                 Uri uri = data.getData();
                 binding.profileImage.setImageURI(uri);
                 dialog.show();
@@ -217,8 +333,10 @@ public class ProfileFragment extends Fragment {
                     }
                 });
             }
-        }else {
+        } else {
             Toast.makeText(getContext(), "Wrong Image Upload", Toast.LENGTH_SHORT).show();
         }
     }
+
+
 }

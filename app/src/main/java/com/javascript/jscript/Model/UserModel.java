@@ -1,7 +1,5 @@
 package com.javascript.jscript.Model;
 
-import java.util.PrimitiveIterator;
-
 public class UserModel {
     private String userName,email,password;
     private String coverPhoto;

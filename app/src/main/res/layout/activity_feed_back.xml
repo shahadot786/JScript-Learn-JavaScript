@@ -85,7 +85,7 @@
                 app:layout_constraintTop_toBottomOf="@+id/textView11" />
 
             <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/text_input_email"
+                android:id="@+id/emailFeedInput"
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -119,11 +119,11 @@
                 android:layout_marginTop="16dp"
                 android:text="@string/message"
                 app:layout_constraintStart_toStartOf="@+id/textView"
-                app:layout_constraintTop_toBottomOf="@+id/text_input_email" />
+                app:layout_constraintTop_toBottomOf="@+id/emailFeedInput" />
 
 
             <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/text_input_feedback"
+                android:id="@+id/text_input_message"
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -144,7 +144,7 @@
                 app:layout_constraintTop_toBottomOf="@+id/textView12">
 
                 <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/sendEditText"
+                    android:id="@+id/messageEditText"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="@string/feedback_message"
@@ -165,8 +165,8 @@
                 android:fontFamily="@font/oswald"
                 android:text="@string/send"
                 android:textStyle="bold"
-                app:layout_constraintEnd_toEndOf="@+id/text_input_feedback"
-                app:layout_constraintTop_toBottomOf="@+id/text_input_feedback" />
+                app:layout_constraintEnd_toEndOf="@+id/text_input_message"
+                app:layout_constraintTop_toBottomOf="@+id/text_input_message" />
 
 
         </androidx.constraintlayout.widget.ConstraintLayout>

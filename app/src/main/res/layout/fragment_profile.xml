@@ -92,7 +92,8 @@
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="match_parent"
+                android:layout_marginBottom="50dp">
 
 
                 <ImageView
@@ -119,7 +120,6 @@
                     android:id="@+id/profession"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Android Developer"
                     android:textSize="11sp"
                     app:layout_constraintEnd_toEndOf="@+id/userName"
                     app:layout_constraintStart_toStartOf="@+id/userName"
@@ -142,7 +142,7 @@
                         android:layout_height="match_parent">
 
                         <View
-                            android:id="@+id/view8"
+                            android:id="@+id/linkFacebook"
                             android:layout_width="40dp"
                             android:layout_height="40dp"
                             android:layout_marginStart="8dp"
@@ -157,96 +157,134 @@
                             android:layout_width="40dp"
                             android:layout_height="40dp"
                             android:src="@drawable/ic_facebook_24dp"
-                            app:layout_constraintBottom_toBottomOf="@+id/view8"
-                            app:layout_constraintEnd_toEndOf="@+id/view8"
-                            app:layout_constraintStart_toStartOf="@+id/view8"
-                            app:layout_constraintTop_toTopOf="@+id/view8" />
+                            app:layout_constraintBottom_toBottomOf="@+id/linkFacebook"
+                            app:layout_constraintEnd_toEndOf="@+id/linkFacebook"
+                            app:layout_constraintStart_toStartOf="@+id/linkFacebook"
+                            app:layout_constraintTop_toTopOf="@+id/linkFacebook" />
 
                         <View
-                            android:id="@+id/view10"
+                            android:id="@+id/linkInstagram"
                             android:layout_width="40dp"
                             android:layout_height="40dp"
                             android:layout_marginStart="8dp"
                             android:background="@drawable/circle"
                             android:backgroundTint="@color/colorLinkBg"
-                            app:layout_constraintBottom_toBottomOf="@+id/view8"
-                            app:layout_constraintStart_toEndOf="@+id/view8"
-                            app:layout_constraintTop_toTopOf="@+id/view8" />
+                            app:layout_constraintBottom_toBottomOf="@+id/linkFacebook"
+                            app:layout_constraintStart_toEndOf="@+id/linkFacebook"
+                            app:layout_constraintTop_toTopOf="@+id/linkFacebook" />
 
                         <ImageView
                             android:id="@+id/imageView15"
                             android:layout_width="30dp"
                             android:layout_height="30dp"
                             android:src="@drawable/ic_instagram_24dp"
-                            app:layout_constraintBottom_toBottomOf="@+id/view10"
-                            app:layout_constraintEnd_toEndOf="@+id/view10"
-                            app:layout_constraintStart_toStartOf="@+id/view10"
-                            app:layout_constraintTop_toTopOf="@+id/view10" />
+                            app:layout_constraintBottom_toBottomOf="@+id/linkInstagram"
+                            app:layout_constraintEnd_toEndOf="@+id/linkInstagram"
+                            app:layout_constraintStart_toStartOf="@+id/linkInstagram"
+                            app:layout_constraintTop_toTopOf="@+id/linkInstagram" />
 
                         <View
-                            android:id="@+id/view11"
+                            android:id="@+id/linkGithub"
                             android:layout_width="40dp"
                             android:layout_height="40dp"
                             android:layout_marginStart="8dp"
                             android:background="@drawable/circle"
                             android:backgroundTint="@color/colorLinkBg"
-                            app:layout_constraintBottom_toBottomOf="@+id/view10"
-                            app:layout_constraintStart_toEndOf="@+id/view10"
-                            app:layout_constraintTop_toTopOf="@+id/view10" />
+                            app:layout_constraintBottom_toBottomOf="@+id/linkInstagram"
+                            app:layout_constraintStart_toEndOf="@+id/linkInstagram"
+                            app:layout_constraintTop_toTopOf="@+id/linkInstagram" />
 
                         <ImageView
                             android:id="@+id/imageView16"
                             android:layout_width="30dp"
                             android:layout_height="30dp"
                             android:src="@drawable/ic_github_24dp"
-                            app:layout_constraintBottom_toBottomOf="@+id/view11"
-                            app:layout_constraintEnd_toEndOf="@+id/view11"
-                            app:layout_constraintStart_toStartOf="@+id/view11"
-                            app:layout_constraintTop_toTopOf="@+id/view11" />
+                            app:layout_constraintBottom_toBottomOf="@+id/linkGithub"
+                            app:layout_constraintEnd_toEndOf="@+id/linkGithub"
+                            app:layout_constraintStart_toStartOf="@+id/linkGithub"
+                            app:layout_constraintTop_toTopOf="@+id/linkGithub" />
 
                         <View
-                            android:id="@+id/view12"
+                            android:id="@+id/linkLinkedIn"
                             android:layout_width="40dp"
                             android:layout_height="40dp"
                             android:layout_marginStart="8dp"
                             android:background="@drawable/circle"
                             android:backgroundTint="@color/colorLinkBg"
-                            app:layout_constraintBottom_toBottomOf="@+id/view11"
-                            app:layout_constraintStart_toEndOf="@+id/view11"
-                            app:layout_constraintTop_toTopOf="@+id/view11" />
+                            app:layout_constraintBottom_toBottomOf="@+id/linkGithub"
+                            app:layout_constraintStart_toEndOf="@+id/linkGithub"
+                            app:layout_constraintTop_toTopOf="@+id/linkGithub" />
 
                         <ImageView
                             android:id="@+id/imageView22"
                             android:layout_width="30dp"
                             android:layout_height="30dp"
                             android:src="@drawable/ic_linked_24dp"
-                            app:layout_constraintBottom_toBottomOf="@+id/view12"
-                            app:layout_constraintEnd_toEndOf="@+id/view12"
-                            app:layout_constraintStart_toStartOf="@+id/view12"
-                            app:layout_constraintTop_toTopOf="@+id/view12" />
+                            app:layout_constraintBottom_toBottomOf="@+id/linkLinkedIn"
+                            app:layout_constraintEnd_toEndOf="@+id/linkLinkedIn"
+                            app:layout_constraintStart_toStartOf="@+id/linkLinkedIn"
+                            app:layout_constraintTop_toTopOf="@+id/linkLinkedIn" />
 
                         <View
-                            android:id="@+id/view13"
+                            android:id="@+id/linkTwitter"
                             android:layout_width="40dp"
                             android:layout_height="40dp"
                             android:layout_marginStart="8dp"
                             android:background="@drawable/circle"
                             android:backgroundTint="@color/colorLinkBg"
-                            app:layout_constraintBottom_toBottomOf="@+id/view12"
-                            app:layout_constraintStart_toEndOf="@+id/view12"
-                            app:layout_constraintTop_toTopOf="@+id/view12" />
+                            app:layout_constraintBottom_toBottomOf="@+id/linkLinkedIn"
+                            app:layout_constraintStart_toEndOf="@+id/linkLinkedIn"
+                            app:layout_constraintTop_toTopOf="@+id/linkLinkedIn" />
 
                         <ImageView
                             android:id="@+id/imageView24"
                             android:layout_width="45dp"
                             android:layout_height="45dp"
                             android:src="@drawable/ic_twitter_24dp"
-                            app:layout_constraintBottom_toBottomOf="@+id/view13"
-                            app:layout_constraintEnd_toEndOf="@+id/view13"
-                            app:layout_constraintStart_toStartOf="@+id/view13"
-                            app:layout_constraintTop_toTopOf="@+id/view13" />
+                            app:layout_constraintBottom_toBottomOf="@+id/linkTwitter"
+                            app:layout_constraintEnd_toEndOf="@+id/linkTwitter"
+                            app:layout_constraintStart_toStartOf="@+id/linkTwitter"
+                            app:layout_constraintTop_toTopOf="@+id/linkTwitter" />
 
                     </androidx.constraintlayout.widget.ConstraintLayout>
+                </androidx.cardview.widget.CardView>
+                <!--User Bio-->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/userBio"
+                    android:layout_width="300dp"
+                    android:layout_height="100dp"
+                    android:layout_marginTop="16dp"
+                    android:visibility="visible"
+                    app:cardBackgroundColor="@color/colorAccent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/socialLink">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+
+                        <TextView
+                            android:id="@+id/userBioText"
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginEnd="16dp"
+                            android:layout_marginBottom="8dp"
+                            android:text="An Instagram bio is the small area under your username where you can share some details about yourself or your brand. Your Instagram bio can include a brief self or brand description, contact information, emojis, hashtags and more."
+                            android:textAlignment="center"
+                            android:textSize="12sp"
+                            android:maxLength="250"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
                 </androidx.cardview.widget.CardView>
                 <!--Promotion-->
                 <androidx.cardview.widget.CardView
@@ -259,7 +297,7 @@
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.5"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/socialLink">
+                    app:layout_constraintTop_toBottomOf="@+id/userBio">
 
                     <androidx.constraintlayout.widget.ConstraintLayout
                         android:layout_width="match_parent"
@@ -280,19 +318,19 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginStart="8dp"
-                            android:text="Try Pro 7 days for free"
+                            android:text="@string/try_pro_7_days_for_free"
                             android:textStyle="bold"
                             app:layout_constraintBottom_toBottomOf="@+id/imageView3"
                             app:layout_constraintStart_toEndOf="@+id/imageView3"
                             app:layout_constraintTop_toTopOf="@+id/imageView3" />
 
                         <Button
-                            android:id="@+id/button2"
+                            android:id="@+id/promoStartBtn"
                             android:layout_width="70dp"
                             android:layout_height="40dp"
                             android:layout_marginStart="8dp"
                             android:layout_marginTop="16dp"
-                            android:text="start"
+                            android:text="@string/start"
                             android:textSize="11sp"
                             app:layout_constraintStart_toEndOf="@+id/textView6"
                             app:layout_constraintTop_toTopOf="@+id/textView6" />
@@ -304,6 +342,18 @@
                             android:src="@drawable/ic_bookmark_favorite"
                             app:layout_constraintEnd_toEndOf="parent"
                             app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/textView5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="8dp"
+                            android:text="@string/_95"
+                            android:textStyle="bold"
+                            app:layout_constraintBottom_toBottomOf="@+id/imageView25"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="@+id/imageView25"
+                            app:layout_constraintTop_toTopOf="@+id/imageView25" />
                     </androidx.constraintlayout.widget.ConstraintLayout>
 
 
@@ -326,10 +376,243 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent">
 
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:id="@+id/constraintLayout4"
+                            android:layout_width="100dp"
+                            android:layout_height="match_parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent">
+
+                            <View
+                                android:id="@+id/cpView2"
+                                android:layout_width="1dp"
+                                android:layout_height="wrap_content"
+                                android:background="@color/activeGrey"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <TextView
+                                android:id="@+id/CPprograms"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="4dp"
+                                android:text="@string/menu_programs"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <TextView
+                                android:id="@+id/cpProgramsCount"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="4dp"
+                                android:text="@string/_0"
+                                android:textSize="20sp"
+                                android:textStyle="bold"
+                                app:layout_constraintEnd_toEndOf="@+id/CPprograms"
+                                app:layout_constraintStart_toStartOf="@+id/CPprograms"
+                                app:layout_constraintTop_toBottomOf="@+id/CPprograms" />
+
+                            <View
+                                android:id="@+id/cpView1"
+                                android:layout_width="60dp"
+                                android:layout_height="1dp"
+                                android:layout_marginTop="4dp"
+                                android:background="@color/activeGrey"
+                                app:layout_constraintEnd_toEndOf="@+id/CPprograms"
+                                app:layout_constraintStart_toStartOf="@+id/CPprograms"
+                                app:layout_constraintTop_toBottomOf="@+id/cpProgramsCount" />
+
+                            <TextView
+                                android:id="@+id/cpConstant"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/cp_programs_constant"
+                                android:textSize="12sp"
+                                app:layout_constraintEnd_toEndOf="@+id/cpView1"
+                                app:layout_constraintStart_toStartOf="@+id/cpView1"
+                                app:layout_constraintTop_toBottomOf="@+id/cpView1" />
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:id="@+id/constraintLayout5"
+                            android:layout_width="100dp"
+                            android:layout_height="match_parent"
+                            app:layout_constraintStart_toEndOf="@+id/constraintLayout4"
+                            app:layout_constraintTop_toTopOf="parent">
+
+                            <View
+                                android:id="@+id/cpView3"
+                                android:layout_width="1dp"
+                                android:layout_height="wrap_content"
+                                android:background="@color/activeGrey"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <TextView
+                                android:id="@+id/cpQuizes"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="4dp"
+                                android:text="@string/menu_quiz"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <TextView
+                                android:id="@+id/cpQuizeCount"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="4dp"
+                                android:text="@string/_0"
+                                android:textSize="20sp"
+                                android:textStyle="bold"
+                                app:layout_constraintEnd_toEndOf="@+id/cpQuizes"
+                                app:layout_constraintStart_toStartOf="@+id/cpQuizes"
+                                app:layout_constraintTop_toBottomOf="@+id/cpQuizes" />
+
+                            <View
+                                android:id="@+id/view9"
+                                android:layout_width="60dp"
+                                android:layout_height="1dp"
+                                android:layout_marginTop="4dp"
+                                android:background="@color/activeGrey"
+                                app:layout_constraintEnd_toEndOf="@+id/cpQuizes"
+                                app:layout_constraintStart_toStartOf="@+id/cpQuizes"
+                                app:layout_constraintTop_toBottomOf="@+id/cpQuizeCount" />
+
+                            <TextView
+                                android:id="@+id/cpQuizeConstant"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/cp_quizes_constants"
+                                android:textSize="12sp"
+                                app:layout_constraintEnd_toEndOf="@+id/view9"
+                                app:layout_constraintStart_toStartOf="@+id/view9"
+                                app:layout_constraintTop_toBottomOf="@+id/view9" />
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toEndOf="@+id/constraintLayout5"
+                            app:layout_constraintTop_toTopOf="parent">
+
+                            <TextView
+                                android:id="@+id/cpLesson"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="4dp"
+                                android:text="@string/lesson"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <TextView
+                                android:id="@+id/cpLessonCount"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="4dp"
+                                android:text="@string/_0"
+                                android:textSize="20sp"
+                                android:textStyle="bold"
+                                app:layout_constraintEnd_toEndOf="@+id/cpLesson"
+                                app:layout_constraintStart_toStartOf="@+id/cpLesson"
+                                app:layout_constraintTop_toBottomOf="@+id/cpLesson" />
+
+                            <View
+                                android:id="@+id/cpView5"
+                                android:layout_width="60dp"
+                                android:layout_height="1dp"
+                                android:layout_marginTop="4dp"
+                                android:background="@color/activeGrey"
+                                app:layout_constraintEnd_toEndOf="@+id/cpLesson"
+                                app:layout_constraintStart_toStartOf="@+id/cpLesson"
+                                app:layout_constraintTop_toBottomOf="@+id/cpLessonCount" />
+
+                            <TextView
+                                android:id="@+id/cpLessonConstant"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/cp_lesson_constant"
+                                android:textSize="12sp"
+                                app:layout_constraintEnd_toEndOf="@+id/cpView5"
+                                app:layout_constraintStart_toStartOf="@+id/cpView5"
+                                app:layout_constraintTop_toBottomOf="@+id/cpView5" />
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
                     </androidx.constraintlayout.widget.ConstraintLayout>
 
 
                 </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/Progress1"
+                    android:layout_width="300dp"
+                    android:layout_height="100dp"
+                    android:layout_marginTop="16dp"
+                    android:visibility="visible"
+                    app:cardBackgroundColor="@color/colorAccent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/courseProgress">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                </androidx.cardview.widget.CardView>
+
+
+
+
+
+                <!--<androidx.cardview.widget.CardView
+                    android:id="@+id/Progress2"
+                    android:layout_width="300dp"
+                    android:layout_height="100dp"
+                    android:layout_marginTop="16dp"
+                    android:visibility="visible"
+                    app:cardBackgroundColor="@color/colorAccent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/Progress1">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/Progress3"
+                    android:layout_width="300dp"
+                    android:layout_height="100dp"
+                    android:layout_marginTop="16dp"
+                    android:visibility="visible"
+                    app:cardBackgroundColor="@color/colorAccent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/Progress2">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                </androidx.cardview.widget.CardView>-->
 
 
             </androidx.constraintlayout.widget.ConstraintLayout>

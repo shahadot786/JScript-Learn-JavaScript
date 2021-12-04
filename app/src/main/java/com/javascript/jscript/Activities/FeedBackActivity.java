@@ -38,17 +38,15 @@ public class FeedBackActivity extends AppCompatActivity {
         binding = ActivityFeedBackBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
         //find id
-        sendInput = findViewById(R.id.text_input_feedback);
-        emailInput = findViewById(R.id.text_input_email);
-        String feedbackDescription = binding.sendEditText.getText().toString();
-        String feedEmail = binding.emailFeedEdit.getText().toString();
+        sendInput = findViewById(R.id.text_input_message);
+        emailInput = findViewById(R.id.emailFeedInput);
         //instance
         database = FirebaseDatabase.getInstance();
         auth = FirebaseAuth.getInstance();
         //toolbar
         setSupportActionBar(binding.toolbar2);
         FeedBackActivity.this.setTitle("Feedback");
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        Objects.requireNonNull(getSupportActionBar()).setDisplayHomeAsUpEnabled(true);
 
         //get database value
         //google sign in data fetch with image
@@ -80,8 +78,8 @@ public class FeedBackActivity extends AppCompatActivity {
                 //check first if the fields are empty
 
                 if (sendMessageBtnValidation() && sendEmailBtnValidation()) {
-                    FeedbackModel feedbackModel = new FeedbackModel(feedbackDescription,feedEmail);
-                    feedbackModel.setFeedbackDescription(binding.sendEditText.getText().toString());
+                    FeedbackModel feedbackModel = new FeedbackModel();
+                    feedbackModel.setFeedbackDescription(binding.messageEditText.getText().toString());
                     feedbackModel.setFeedEmail(binding.emailFeedEdit.getText().toString());
 
                     database.getReference().child("Feedback")

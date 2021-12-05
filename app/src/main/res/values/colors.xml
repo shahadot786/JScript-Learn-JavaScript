@@ -4,7 +4,7 @@
     <!--default theme colors-->
     <!--<color name="colorPrimary">#16171b</color>-->
     <color name="colorPrimary">#2A2E43</color>
-    <color name="colorSecondary">#4B4E5F</color>
+    <color name="colorSecondary">#1C1F32</color>
     <color name="activeGreen">#15c55d</color>
     <color name="activeRed">#dc4036</color>
     <color name="activeGrey">#403F3F</color>
@@ -12,6 +12,7 @@
     <color name="activeRedLight">#BF0000</color>
     <color name="activeGreenDark">#0A5D00</color>
     <color name="activeRedDark">#800000</color>
+    <color name="colorAccent">#162A2E43</color>
 
     <!--Bar colors-->
     <color name="colorStatusBarDark">#2A2E43</color>
@@ -49,6 +50,5 @@
     <color name="color_instagram">#E1306C</color>
     <color name="color_app_gradient_end">#13bc57</color>
     <color name="color_app_gradient_start">#00601b</color>
-    <color name="colorAccent">#4B4E5F</color>
 
 </resources>

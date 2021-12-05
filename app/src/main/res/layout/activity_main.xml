@@ -55,7 +55,7 @@
         android:layout_width="match_parent"
         android:layout_height="60dp"
         app:backgroundColor="@color/colorPrimary"
-        app:iconTintActive="@color/colorPrimary"
+        app:iconTintActive="@color/colorSecondary"
         app:indicatorColor="@color/activeGreen"
         app:indicatorRadius="8dp"
         app:layout_constraintBottom_toBottomOf="parent"

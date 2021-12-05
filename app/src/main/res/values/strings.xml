@@ -164,7 +164,7 @@
     <string name="invalid_username">Not a valid username</string>
     <string name="invalid_password">Password must be >5 characters</string>
     <string name="login_failed">"Login failed"</string>
-    <string name="sign_in_with_google">Sign Up With Google</string>
+    <string name="sign_in_with_google">Sign In With Google</string>
     <string name="just_one_tap_to_go">Just one tap to go</string>
     <string name="try_pro_7_days_for_free">Try Pro 7 days for free</string>
     <string name="start">start</string>
@@ -188,6 +188,10 @@
     <string name="write_your_linkedin_link">Write your linkedin link</string>
     <string name="twitter_link">Twitter Link</string>
     <string name="update">Update</string>
+
+    <!--Programs-->
+    <string name="programs_header_image">Programs Header Image</string>
+    <string name="javascripts_practice_programs">Practice Programs</string>
 
 
 </resources>

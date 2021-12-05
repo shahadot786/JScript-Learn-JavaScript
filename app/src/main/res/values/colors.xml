@@ -2,9 +2,9 @@
 <resources>
 
     <!--default theme colors-->
-    <!--<color name="colorPrimary">#16171b</color>-->
-    <color name="colorPrimary">#2A2E43</color>
-    <color name="colorSecondary">#1C1F32</color>
+    <!--<color name="colorPrimary">#1C1F32</color>-->
+    <color name="colorPrimary">#1C1F32</color>
+    <color name="colorSecondary">#2A2E43</color>
     <color name="activeGreen">#15c55d</color>
     <color name="activeRed">#dc4036</color>
     <color name="activeGrey">#403F3F</color>
@@ -15,7 +15,7 @@
     <color name="colorAccent">#162A2E43</color>
 
     <!--Bar colors-->
-    <color name="colorStatusBarDark">#2A2E43</color>
+    <color name="colorStatusBarDark">#1C1F32</color>
     <color name="colorToolbarDark">#16171b</color>
 
     <!--Text Colors-->

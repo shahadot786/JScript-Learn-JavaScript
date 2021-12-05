@@ -2,15 +2,15 @@ package com.javascript.jscript.Activities;
 
 import static android.content.ContentValues.TAG;
 
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.app.ProgressDialog;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.android.gms.auth.api.signin.GoogleSignIn;
 import com.google.android.gms.auth.api.signin.GoogleSignInAccount;
@@ -25,9 +25,12 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.auth.GoogleAuthProvider;
 import com.google.firebase.database.FirebaseDatabase;
+import com.javascript.jscript.Config.UiConfig;
 import com.javascript.jscript.Model.UserModel;
 import com.javascript.jscript.R;
 import com.javascript.jscript.databinding.ActivityGoogleSignInBinding;
+
+import java.util.Objects;
 
 
 public class GoogleSignInActivity extends AppCompatActivity {
@@ -45,9 +48,9 @@ public class GoogleSignInActivity extends AppCompatActivity {
         auth = FirebaseAuth.getInstance();
         database = FirebaseDatabase.getInstance();
         //progress dialog
-        dialog = new ProgressDialog(GoogleSignInActivity.this,ProgressDialog.THEME_DEVICE_DEFAULT_DARK);
+        dialog = new ProgressDialog(GoogleSignInActivity.this, ProgressDialog.THEME_DEVICE_DEFAULT_DARK);
         dialog.setProgressStyle(ProgressDialog.STYLE_SPINNER);
-        dialog.setTitle("Sign Up");
+        dialog.setTitle("Sign In");
         dialog.setMessage("Please Wait...");
         dialog.setCancelable(true);
         dialog.setCanceledOnTouchOutside(true);
@@ -75,11 +78,10 @@ public class GoogleSignInActivity extends AppCompatActivity {
         });
 
 
-
-
     }//on create ends
 
     int RC_SIGN_IN = 74;
+
     private void signIn() {
         Intent signInIntent = mGoogleSignInClient.getSignInIntent();
         startActivityForResult(signInIntent, RC_SIGN_IN);
@@ -115,16 +117,22 @@ public class GoogleSignInActivity extends AppCompatActivity {
                             Log.d(TAG, "signInWithCredential:success");
                             FirebaseUser user = auth.getCurrentUser();
                             UserModel userModel = new UserModel();
+                            assert user != null;
                             userModel.setUserID(user.getUid());
                             userModel.setUserName(user.getDisplayName());
-                            userModel.setProfile(user.getPhotoUrl().toString());
+                            userModel.setProfile(Objects.requireNonNull(user.getPhotoUrl()).toString());
                             userModel.setEmail(user.getEmail());
 
                             database.getReference().child("UserData")
                                     .child(user.getUid())
                                     .setValue(userModel);
 
-                            Intent intent = new Intent(GoogleSignInActivity.this,MainActivity.class);
+                            Intent intent;
+                            if (UiConfig.PRO_VISIBILITY_STATUS_SHOW) {
+                                intent = new Intent(GoogleSignInActivity.this, PremiumActivity.class);
+                            } else {
+                                intent = new Intent(GoogleSignInActivity.this, MainActivity.class);
+                            }
                             startActivity(intent);
 
                             //updateUI(user);

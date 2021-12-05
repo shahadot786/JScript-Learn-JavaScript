@@ -107,7 +107,7 @@ public class ProfileFragment extends Fragment {
                         }
                     });
             //cover and profile update images
-            database.getReference().child("UserData").child("UserImages").child(Objects.requireNonNull(auth.getUid()))
+            database.getReference().child("UserImages").child(Objects.requireNonNull(auth.getUid()))
                     .addListenerForSingleValueEvent(new ValueEventListener() {
                         @Override
                         public void onDataChange(@NonNull DataSnapshot snapshot) {
@@ -297,7 +297,7 @@ public class ProfileFragment extends Fragment {
                         reference.getDownloadUrl().addOnSuccessListener(new OnSuccessListener<Uri>() {
                             @Override
                             public void onSuccess(@NonNull Uri uri) {
-                                database.getReference().child("UserData")
+                                database.getReference()
                                         .child("UserImages")
                                         .child(Objects.requireNonNull(auth.getUid()))
                                         .child("coverPhoto")
@@ -323,7 +323,7 @@ public class ProfileFragment extends Fragment {
                         reference.getDownloadUrl().addOnSuccessListener(new OnSuccessListener<Uri>() {
                             @Override
                             public void onSuccess(@NonNull Uri uri) {
-                                database.getReference().child("UserData")
+                                database.getReference()
                                         .child("UserImages")
                                         .child(Objects.requireNonNull(auth.getUid()))
                                         .child("profile")

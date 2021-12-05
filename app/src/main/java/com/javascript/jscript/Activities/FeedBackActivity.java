@@ -62,6 +62,7 @@ public class FeedBackActivity extends AppCompatActivity {
                                     .placeholder(R.drawable.ic_profile_default_image)
                                     .into(binding.profileImage);
                             binding.userName.setText(user.getUserName());
+                            binding.emailFeedEdit.setText(user.getEmail());
                         }
                     }
 
@@ -83,7 +84,7 @@ public class FeedBackActivity extends AppCompatActivity {
                     feedbackModel.setFeedEmail(binding.emailFeedEdit.getText().toString());
 
                     database.getReference().child("Feedback")
-                            .child("User")
+                            .child(auth.getUid())
                             .push()
                             .setValue(feedbackModel).addOnSuccessListener(new OnSuccessListener<Void>() {
                         @Override

@@ -33,32 +33,53 @@ public class ProgramsCodeActivity extends AppCompatActivity {
         outCodeView.setTheme(CodeViewTheme.ATELIER_LAKESIDE_DARK).fillColor();
 
         loadCodes();
+        loadOutputs();
     }
-
+    //load code
     private void loadCodes() {
         String code = null;
         switch (getIntent().getStringExtra("position")){
             case "Basic":
-                code = ProgramsCodes.basic;
+                code = BasicProgramsCodes.basic;
                 break;
             case "Basic1":
-                code = ProgramsCodes.basic1;
+                code = BasicProgramsCodes.basic1;
                 break;
             case "Basic2":
-                code = ProgramsCodes.basic2;
+                code = BasicProgramsCodes.basic2;
                 break;
             case "advanced":
-                code = ProgramsCodes.advanced;
+                code = BasicProgramsCodes.advanced;
                 break;
             case "advanced2":
-                code = ProgramsCodes.advanced2;
+                code = BasicProgramsCodes.advanced2;
                 break;
             case "expert":
-                code = ProgramsCodes.expert;
+                code = BasicProgramsCodes.expert;
                 break;
 
         }
         codeView.showCode(code);
+
+    }
+    //load output
+    private void loadOutputs() {
+        String output = null;
+        switch (getIntent().getStringExtra("output")){
+            case "Basic":
+                output = BasicProgramsCodes.basicOutput1;
+                break;
+            case "Basic2":
+                output = BasicProgramsCodes.basicOutput2;
+                break;
+            case "advanced2":
+                output = BasicProgramsCodes.advanced2;
+                break;
+            case "expert":
+                output = BasicProgramsCodes.expert;
+                break;
+        }
+        outCodeView.showCode(output);
 
     }
     //option menu item select

@@ -41,6 +41,7 @@ public class ProgramsItemsListActivity extends AppCompatActivity {
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                 Intent intent = new Intent(ProgramsItemsListActivity.this,ProgramsCodeActivity.class);
                 intent.putExtra("position",list[i]);
+                intent.putExtra("output",list[i]);
                 startActivity(intent);
             }
         });

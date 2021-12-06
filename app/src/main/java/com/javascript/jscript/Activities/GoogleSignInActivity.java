@@ -4,10 +4,13 @@ import static android.content.ContentValues.TAG;
 
 import android.app.ProgressDialog;
 import android.content.Intent;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
 import android.net.Uri;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -39,6 +42,7 @@ public class GoogleSignInActivity extends AppCompatActivity {
     FirebaseAuth auth;
     FirebaseDatabase database;
     ProgressDialog dialog;
+    private boolean connected = false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -66,7 +70,17 @@ public class GoogleSignInActivity extends AppCompatActivity {
         binding.signInGoogle.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                signIn();
+                //network check
+                ConnectivityManager connectivityManager = (ConnectivityManager) getSystemService(SplashActivity.CONNECTIVITY_SERVICE);
+                if (connectivityManager.getNetworkInfo(ConnectivityManager.TYPE_MOBILE).getState() == NetworkInfo.State.CONNECTED ||
+                        connectivityManager.getNetworkInfo(ConnectivityManager.TYPE_WIFI).getState() == NetworkInfo.State.CONNECTED) {
+                    //we are connected to a network
+                    connected = true;
+                    signIn();
+                } else {
+                    Toast.makeText(GoogleSignInActivity.this, "You\'re offline, please connect to network first", Toast.LENGTH_SHORT).show();
+                    connected = false;
+                }
             }
         });
         binding.privacy.setOnClickListener(new View.OnClickListener() {
@@ -112,6 +126,7 @@ public class GoogleSignInActivity extends AppCompatActivity {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         dialog.show();
+                        //is all ok
                         if (task.isSuccessful()) {
                             // Sign in success, update UI with the signed-in user's information
                             Log.d(TAG, "signInWithCredential:success");

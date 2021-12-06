@@ -20,7 +20,7 @@
         app:titleTextColor="@color/textColorGrey" />
 
     <ImageView
-        android:id="@+id/imageView4"
+        android:id="@+id/profileImage"
         android:layout_width="wrap_content"
         android:layout_height="100dp"
         android:layout_marginTop="8dp"
@@ -30,7 +30,7 @@
         app:srcCompat="@drawable/ic_main_icon_round" />
 
     <TextView
-        android:id="@+id/textView13"
+        android:id="@+id/proUserName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
@@ -38,7 +38,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+        app:layout_constraintTop_toBottomOf="@+id/profileImage" />
 
     <TextView
         android:id="@+id/fw_version"
@@ -46,9 +46,9 @@
         android:layout_height="wrap_content"
         android:text=""
         android:textSize="11sp"
-        app:layout_constraintEnd_toEndOf="@+id/textView13"
-        app:layout_constraintStart_toStartOf="@+id/textView13"
-        app:layout_constraintTop_toBottomOf="@+id/textView13" />
+        app:layout_constraintEnd_toEndOf="@+id/proUserName"
+        app:layout_constraintStart_toStartOf="@+id/proUserName"
+        app:layout_constraintTop_toBottomOf="@+id/proUserName" />
 
     <View
         android:id="@+id/view4"

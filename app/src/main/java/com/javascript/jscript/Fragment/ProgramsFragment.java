@@ -1,5 +1,6 @@
 package com.javascript.jscript.Fragment;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
@@ -9,16 +10,40 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
-import android.widget.Toast;
 
 import com.javascript.jscript.Adapter.ProgramsItemsAdapter;
+import com.javascript.jscript.Programs.ProgramsItemsListActivity;
 import com.javascript.jscript.R;
 import com.javascript.jscript.Tools.ExpandableHeightGridView;
 
 public class ProgramsFragment extends Fragment {
-    ExpandableHeightGridView gridView;
-    String[] itemsName = {"Basic","Advanced","Expert","Typescript","Vue Js","React","Angular Js","Ember Js","Elm","Express Js","Node Js","Jquery","Bootstrap","Laravel","Deno"};
 
+    ExpandableHeightGridView gridView;
+
+    String[] itemsName = {"Basic","Advanced","Expert",
+            "Typescript","Vue Js","React",
+            "Angular Js","Ember Js","Elm",
+            "Express Js","Node Js","Jquery",
+            "Bootstrap","Laravel","Deno"};
+
+    Integer[] itemImages = {
+            R.drawable.ic_programs_basic_image,
+            R.drawable.ic_programs_advanced_image,
+            R.drawable.ic_programs_advanced_image,
+            R.drawable.ic_programs_advanced_image,
+            R.drawable.ic_programs_advanced_image,
+            R.drawable.ic_programs_advanced_image,
+            R.drawable.ic_programs_advanced_image,
+            R.drawable.ic_programs_advanced_image,
+            R.drawable.ic_programs_advanced_image,
+            R.drawable.ic_programs_advanced_image,
+            R.drawable.ic_programs_advanced_image,
+            R.drawable.ic_programs_advanced_image,
+            R.drawable.ic_programs_advanced_image,
+            R.drawable.ic_programs_advanced_image,
+            R.drawable.ic_programs_advanced_image
+
+    };
     public ProgramsFragment() {
         // Required empty public constructor
     }
@@ -26,8 +51,6 @@ public class ProgramsFragment extends Fragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
-
     }
 
     @Override
@@ -38,13 +61,28 @@ public class ProgramsFragment extends Fragment {
         gridView = view.findViewById(R.id.programs_item_gridview);
         gridView.setExpanded(true);
 
-        ProgramsItemsAdapter adapter = new ProgramsItemsAdapter(itemsName,getActivity());
+        ProgramsItemsAdapter adapter = new ProgramsItemsAdapter(itemsName,itemImages,getActivity());
         gridView.setAdapter(adapter);
 
         gridView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                Toast.makeText(getActivity(), itemsName[i], Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(getActivity(), ProgramsItemsListActivity.class);
+                switch (i){
+                    case 0:
+                        intent.putExtra("programsItems","Basic");
+                        startActivity(intent);
+                        break;
+                    case 1:
+                        intent.putExtra("programsItems","Advanced");
+                        startActivity(intent);
+                        break;
+                    case 2:
+                        intent.putExtra("programsItems","Expert");
+                        startActivity(intent);
+                        break;
+
+                }
             }
         });
 

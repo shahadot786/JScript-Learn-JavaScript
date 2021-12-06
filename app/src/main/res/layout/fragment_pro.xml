@@ -8,25 +8,27 @@
     tools:context=".Fragment.ProFragment">
 
 
-    <ImageView
-        android:id="@+id/imageView4"
-        android:layout_width="wrap_content"
-        android:layout_height="100dp"
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile_image"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
+        android:src="@drawable/ic_profile_default_image"
+        app:civ_border_color="@color/activeRed"
+        app:civ_border_width="1dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/ic_main_icon_round" />
+        app:layout_constraintTop_toTopOf="parent"  />
 
     <TextView
-        android:id="@+id/textView13"
+        android:id="@+id/proUserName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-        android:text="@string/title_js"
-        app:layout_constraintEnd_toEndOf="@+id/imageView4"
-        app:layout_constraintStart_toStartOf="@+id/imageView4"
-        app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+        app:layout_constraintEnd_toEndOf="@+id/profile_image"
+        app:layout_constraintStart_toStartOf="@+id/profile_image"
+        app:layout_constraintTop_toBottomOf="@+id/profile_image" />
 
     <TextView
         android:id="@+id/textView30"
@@ -40,8 +42,8 @@
         android:textColor="@color/colorPrimary"
         android:textSize="14sp"
         android:textStyle="bold"
-        app:layout_constraintStart_toEndOf="@+id/textView13"
-        app:layout_constraintTop_toTopOf="@+id/textView13" />
+        app:layout_constraintStart_toEndOf="@+id/proUserName"
+        app:layout_constraintTop_toTopOf="@+id/proUserName" />
 
     <TextView
         android:id="@+id/pro_version"
@@ -49,9 +51,9 @@
         android:layout_height="wrap_content"
         android:text=""
         android:textSize="11sp"
-        app:layout_constraintEnd_toEndOf="@+id/textView13"
-        app:layout_constraintStart_toStartOf="@+id/textView13"
-        app:layout_constraintTop_toBottomOf="@+id/textView13" />
+        app:layout_constraintEnd_toEndOf="@+id/proUserName"
+        app:layout_constraintStart_toStartOf="@+id/proUserName"
+        app:layout_constraintTop_toBottomOf="@+id/proUserName" />
 
     <View
         android:id="@+id/view4"

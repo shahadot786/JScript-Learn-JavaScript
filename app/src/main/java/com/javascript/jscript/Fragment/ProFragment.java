@@ -8,19 +8,30 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 import com.javascript.jscript.Activities.FeedBackActivity;
 import com.javascript.jscript.Activities.FollowUsActivity;
 import com.javascript.jscript.BuildConfig;
+import com.javascript.jscript.Model.UserModel;
 import com.javascript.jscript.R;
 import com.javascript.jscript.databinding.FragmentProBinding;
+import com.squareup.picasso.Picasso;
 
 import java.util.Calendar;
+import java.util.Objects;
 
 
 public class ProFragment extends Fragment {
     FragmentProBinding binding;
+    FirebaseAuth auth;
+    FirebaseDatabase database;
 
     public ProFragment() {
         // Required empty public constructor
@@ -29,6 +40,8 @@ public class ProFragment extends Fragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        auth = FirebaseAuth.getInstance();
+        database = FirebaseDatabase.getInstance();
 
     }
 
@@ -36,6 +49,29 @@ public class ProFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
+
+
+
+        database.getReference().child("UserData").child(Objects.requireNonNull(auth.getUid()))
+                .addListenerForSingleValueEvent(new ValueEventListener() {
+                    @Override
+                    public void onDataChange(@NonNull DataSnapshot snapshot) {
+                        if (snapshot.exists()){
+                            UserModel user = snapshot.getValue(UserModel.class);
+                            assert user != null;
+                            Picasso.get()
+                                    .load(user.getProfile())
+                                    .placeholder(R.drawable.ic_profile_default_image)
+                                    .into(binding.profileImage);
+                            binding.proUserName.setText(user.getUserName());
+                        }
+                    }
+
+                    @Override
+                    public void onCancelled(@NonNull DatabaseError error) {
+
+                    }
+                });
 
         // Inflate the layout for this fragment
         binding = FragmentProBinding.inflate(inflater, container, false);

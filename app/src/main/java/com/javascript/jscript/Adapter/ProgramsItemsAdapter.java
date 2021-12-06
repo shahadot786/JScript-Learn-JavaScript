@@ -5,6 +5,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.javascript.jscript.R;
@@ -13,11 +14,19 @@ public class ProgramsItemsAdapter extends BaseAdapter {
 
     String itemName[];
     Context context;
+    Integer[] itemsImages;
 
-    public ProgramsItemsAdapter(String[] itemName, Context context) {
+    public ProgramsItemsAdapter(String[] itemName, Integer[] itemsImages, Context context) {
         this.itemName = itemName;
         this.context = context;
+        this.itemsImages = itemsImages;
     }
+
+
+
+
+
+
 
     @Override
     public int getCount() {
@@ -47,7 +56,8 @@ public class ProgramsItemsAdapter extends BaseAdapter {
         TextView items = gridView.findViewById(R.id.programs_items);
         items.setText(itemName[i]);
 
-
+        ImageView imageItems = gridView.findViewById(R.id.itemsImages);
+        imageItems.setImageResource(itemsImages[i]);
 
         return gridView;
     }

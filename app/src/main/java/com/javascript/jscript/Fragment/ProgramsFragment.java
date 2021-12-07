@@ -20,11 +20,7 @@ public class ProgramsFragment extends Fragment {
 
     ExpandableHeightGridView gridView;
 
-    String[] itemsName = {"Basic","Advanced","Expert",
-            "Typescript","Vue Js","React",
-            "Angular Js","Ember Js","Elm",
-            "Express Js","Node Js","Jquery",
-            "Bootstrap","Laravel","Deno"};
+    String[] itemsName = {"Basic","Advanced","Expert","Basic","Advanced","Expert","Basic","Advanced","Expert","Basic","Advanced","Expert"};
 
     Integer[] itemImages = {
             R.drawable.ic_programs_basic_image,
@@ -85,13 +81,6 @@ public class ProgramsFragment extends Fragment {
                 }
             }
         });
-
-
-
-
-
-
-
 
         // Inflate the layout for this fragment
         return view;

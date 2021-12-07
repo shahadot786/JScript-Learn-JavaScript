@@ -22,12 +22,6 @@ public class ProgramsItemsAdapter extends BaseAdapter {
         this.itemsImages = itemsImages;
     }
 
-
-
-
-
-
-
     @Override
     public int getCount() {
         return itemName.length;

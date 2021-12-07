@@ -192,6 +192,7 @@
     <!--Programs-->
     <string name="programs_header_image">Programs Header Image</string>
     <string name="javascripts_practice_programs">Practice Programs</string>
+    <string name="pro">PRO</string>
 
 
 </resources>

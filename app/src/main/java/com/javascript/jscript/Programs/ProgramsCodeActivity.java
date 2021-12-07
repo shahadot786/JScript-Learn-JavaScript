@@ -4,6 +4,11 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.view.View;
+
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
+import com.javascript.jscript.Config.UiConfig;
 import com.javascript.jscript.R;
 import com.javascript.jscript.databinding.ActivityProgramsCodeBinding;
 
@@ -15,12 +20,22 @@ import thereisnospon.codeview.CodeViewTheme;
 public class ProgramsCodeActivity extends AppCompatActivity {
     ActivityProgramsCodeBinding binding;
     CodeView codeView,outCodeView;
+    private AdView bannerAd;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         binding = ActivityProgramsCodeBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
+        //ad request
+        bannerAd = findViewById(R.id.adView);
+        AdRequest adRequest = new AdRequest.Builder().build();
+        bannerAd.loadAd(adRequest);
+        if (UiConfig.BANNER_AD_VISIBILITY){
+            bannerAd.setVisibility(View.VISIBLE);
+        }else {
+            bannerAd.setVisibility(View.GONE);
+        }
         //toolbar
         setSupportActionBar(binding.toolbar2);
         ProgramsCodeActivity.this.setTitle("Details");

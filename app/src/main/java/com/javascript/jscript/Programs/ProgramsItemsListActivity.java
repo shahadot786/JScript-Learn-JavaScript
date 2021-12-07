@@ -113,9 +113,6 @@ public class ProgramsItemsListActivity extends AppCompatActivity {
                 list = expert;
                 break;
         }
-
-
-
     }
 
     class CustomAdapter extends BaseAdapter{

@@ -16,6 +16,7 @@ import androidx.fragment.app.FragmentTransaction;
 
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
+import com.google.firebase.auth.FirebaseAuth;
 import com.javascript.jscript.BuildConfig;
 import com.javascript.jscript.Config.UiConfig;
 import com.javascript.jscript.Fragment.LearnFragment;
@@ -34,6 +35,7 @@ public class MainActivity extends AppCompatActivity {
     private long exitTime = 0;
     ActivityMainBinding binding;
     private AdView bannerAd;
+    FirebaseAuth auth;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,6 +44,8 @@ public class MainActivity extends AppCompatActivity {
         binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
         setSupportActionBar(binding.toolbar);
+
+        auth = FirebaseAuth.getInstance();
 
         //by default fragment code
         FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
@@ -64,7 +68,7 @@ public class MainActivity extends AppCompatActivity {
                     case 0:
                         binding.toolbar.setVisibility(View.VISIBLE);
                         MainActivity.this.setTitle("Learn");
-                        transaction.setCustomAnimations(R.anim.slide_in_right,R.anim.slide_out_left,R.anim.slide_in_left,R.anim.slide_out_right);
+                        transaction.setCustomAnimations(R.anim.slide_in_right, R.anim.slide_out_left, R.anim.slide_in_left, R.anim.slide_out_right);
                         transaction.replace(R.id.container, new LearnFragment());
                         if (UiConfig.BANNER_AD_VISIBILITY) {
                             bannerAd.setVisibility(View.VISIBLE);
@@ -73,7 +77,7 @@ public class MainActivity extends AppCompatActivity {
                     case 1:
                         binding.toolbar.setVisibility(View.VISIBLE);
                         MainActivity.this.setTitle("Quiz");
-                        transaction.setCustomAnimations(R.anim.slide_in_right,R.anim.slide_out_left,R.anim.slide_in_left,R.anim.slide_out_right);
+                        transaction.setCustomAnimations(R.anim.slide_in_right, R.anim.slide_out_left, R.anim.slide_in_left, R.anim.slide_out_right);
                         transaction.replace(R.id.container, new QuizFragment());
                         if (UiConfig.BANNER_AD_VISIBILITY) {
                             bannerAd.setVisibility(View.VISIBLE);
@@ -82,7 +86,7 @@ public class MainActivity extends AppCompatActivity {
                     case 2:
                         binding.toolbar.setVisibility(View.VISIBLE);
                         MainActivity.this.setTitle("Programs");
-                        transaction.setCustomAnimations(R.anim.slide_in_right,R.anim.slide_out_left,R.anim.slide_in_left,R.anim.slide_out_right);
+                        transaction.setCustomAnimations(R.anim.slide_in_right, R.anim.slide_out_left, R.anim.slide_in_left, R.anim.slide_out_right);
                         transaction.replace(R.id.container, new ProgramsFragment());
                         if (UiConfig.BANNER_AD_VISIBILITY) {
                             bannerAd.setVisibility(View.VISIBLE);
@@ -91,7 +95,7 @@ public class MainActivity extends AppCompatActivity {
                     case 3:
                         binding.toolbar.setVisibility(View.VISIBLE);
                         MainActivity.this.setTitle("Profile");
-                        transaction.setCustomAnimations(R.anim.slide_in_right,R.anim.slide_out_left,R.anim.slide_in_left,R.anim.slide_out_right);
+                        transaction.setCustomAnimations(R.anim.slide_in_right, R.anim.slide_out_left, R.anim.slide_in_left, R.anim.slide_out_right);
                         transaction.replace(R.id.container, new ProfileFragment());
                         if (UiConfig.BANNER_AD_VISIBILITY) {
                             bannerAd.setVisibility(View.GONE);
@@ -100,7 +104,7 @@ public class MainActivity extends AppCompatActivity {
                     case 4:
                         binding.toolbar.setVisibility(View.GONE);
                         MainActivity.this.setTitle("PRO");
-                        transaction.setCustomAnimations(R.anim.slide_in_right,R.anim.slide_out_left,R.anim.slide_in_left,R.anim.slide_out_right);
+                        transaction.setCustomAnimations(R.anim.slide_in_right, R.anim.slide_out_left, R.anim.slide_in_left, R.anim.slide_out_right);
                         if (UiConfig.PRO_VISIBILITY_STATUS_SHOW) {
                             Intent intent = new Intent(MainActivity.this, PremiumActivity.class);
                             startActivity(intent);
@@ -124,9 +128,9 @@ public class MainActivity extends AppCompatActivity {
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.menu_items, menu);
         //after upgrade to pro
-        if (UiConfig.PRO_VISIBILITY_STATUS_SHOW){
+        if (UiConfig.PRO_VISIBILITY_STATUS_SHOW) {
             menu.findItem(R.id.upgrade_pro).setVisible(true);
-        }else {
+        } else {
             menu.findItem(R.id.upgrade_pro).setVisible(false);
         }
 
@@ -183,10 +187,11 @@ public class MainActivity extends AppCompatActivity {
             case R.id.logout:
                 Intent intent;
                 //if user upgrade to pro
-                if (UiConfig.PRO_VISIBILITY_STATUS_SHOW){
-                     intent = new Intent(MainActivity.this, SignOutActivity.class);
-                }else {
-                    intent = new Intent(MainActivity.this,GoogleSignInActivity.class);
+                if (UiConfig.PRO_VISIBILITY_STATUS_SHOW) {
+                    intent = new Intent(MainActivity.this, SignOutActivity.class);
+                } else {
+                    intent = new Intent(MainActivity.this, GoogleSignInActivity.class);
+                    auth.signOut();
                 }
                 startActivity(intent);
                 return true;

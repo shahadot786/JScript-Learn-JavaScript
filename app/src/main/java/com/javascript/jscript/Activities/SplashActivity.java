@@ -14,6 +14,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.javascript.jscript.Config.UiConfig;
 import com.javascript.jscript.R;
@@ -49,6 +50,7 @@ public class SplashActivity extends AppCompatActivity {
         currentUser = auth.getCurrentUser();
         database = FirebaseDatabase.getInstance();
         database.setPersistenceEnabled(true);
+
 
         ///check first time installer
         SharedPreferences settings = getSharedPreferences(PREFS_NAME, 0);

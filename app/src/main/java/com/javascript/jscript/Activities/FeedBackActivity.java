@@ -16,6 +16,7 @@ import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
+import com.google.firebase.firestore.auth.User;
 import com.javascript.jscript.Model.FeedbackModel;
 import com.javascript.jscript.Model.UserModel;
 import com.javascript.jscript.R;
@@ -49,7 +50,7 @@ public class FeedBackActivity extends AppCompatActivity {
         Objects.requireNonNull(getSupportActionBar()).setDisplayHomeAsUpEnabled(true);
 
         //get database value
-        //google sign in data fetch with image
+        //google sign in name and email data fetch with image
         database.getReference().child("UserData").child(Objects.requireNonNull(auth.getUid()))
                 .addListenerForSingleValueEvent(new ValueEventListener() {
                     @Override
@@ -57,12 +58,29 @@ public class FeedBackActivity extends AppCompatActivity {
                         if (snapshot.exists()){
                             UserModel user = snapshot.getValue(UserModel.class);
                             assert user != null;
-                            Picasso.get()
-                                    .load(user.getProfile())
-                                    .placeholder(R.drawable.ic_profile_default_image)
-                                    .into(binding.profileImage);
                             binding.userName.setText(user.getUserName());
                             binding.emailFeedEdit.setText(user.getEmail());
+                        }
+                    }
+
+                    @Override
+                    public void onCancelled(@NonNull DatabaseError error) {
+
+                    }
+                });
+
+        //fetch update image
+        database.getReference().child("UpdateProfile").child(auth.getUid())
+                .addListenerForSingleValueEvent(new ValueEventListener() {
+                    @Override
+                    public void onDataChange(@NonNull DataSnapshot snapshot) {
+                        if (snapshot.exists()){
+                            UserModel userModel = snapshot.getValue(UserModel.class);
+                            assert userModel != null;
+                            Picasso.get()
+                                    .load(userModel.getProfile())
+                                    .placeholder(R.drawable.ic_profile_default_image)
+                                    .into(binding.profileImage);
                         }
                     }
 

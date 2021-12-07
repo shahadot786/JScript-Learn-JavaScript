@@ -60,11 +60,27 @@ public class EditProfileActivity extends AppCompatActivity {
                         if (snapshot.exists()) {
                             UserModel user = snapshot.getValue(UserModel.class);
                             assert user != null;
+                            binding.userName.setText(user.getUserName());
+                        }
+                    }
+
+                    @Override
+                    public void onCancelled(@NonNull DatabaseError error) {
+
+                    }
+                });
+        //fetch update image
+        database.getReference().child("UpdateProfile").child(auth.getUid())
+                .addListenerForSingleValueEvent(new ValueEventListener() {
+                    @Override
+                    public void onDataChange(@NonNull DataSnapshot snapshot) {
+                        if (snapshot.exists()){
+                            UserModel userModel = snapshot.getValue(UserModel.class);
+                            assert userModel != null;
                             Picasso.get()
-                                    .load(user.getProfile())
+                                    .load(userModel.getProfile())
                                     .placeholder(R.drawable.ic_profile_default_image)
                                     .into(binding.profileImage);
-                            binding.userName.setText(user.getUserName());
                         }
                     }
 

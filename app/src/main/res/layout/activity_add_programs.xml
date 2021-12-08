@@ -4,8 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Activities.EditProfileActivity">
-
+    tools:context=".Programs.AddProgramsActivity">
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar2"
@@ -14,12 +13,11 @@
         android:background="@drawable/toolbar_bg"
         android:textSize="40sp"
         android:theme="@style/ThemeOverlay.AppCompat.Dark"
-        app:titleTextColor="@color/textColorGrey"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        />
+        app:titleTextColor="@color/textColorGrey" />
 
     <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
@@ -71,7 +69,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
-                android:text="@string/update_your_profile"
+                android:text="@string/add_javascript_program"
                 android:textSize="18sp"
                 app:layout_constraintStart_toStartOf="@+id/profile_image"
                 app:layout_constraintTop_toBottomOf="@+id/profile_image" />
@@ -81,12 +79,12 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
-                android:text="@string/profession"
+                android:text="@string/subject"
                 app:layout_constraintStart_toStartOf="@+id/textView11"
                 app:layout_constraintTop_toBottomOf="@+id/textView11" />
 
             <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/text_input_profession"
+                android:id="@+id/text_input_subject"
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -98,20 +96,21 @@
                 app:boxStrokeColor="@color/activeGreen"
                 app:boxStrokeWidthFocused="1dp"
                 app:counterEnabled="true"
-                app:counterMaxLength="40"
+                app:counterMaxLength="15"
                 app:counterTextColor="@color/textColorGrey"
+                app:errorEnabled="true"
                 app:hintTextColor="@color/activeGreen"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="@+id/textView"
                 app:layout_constraintTop_toBottomOf="@+id/textView">
 
                 <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/professionEdit"
+                    android:id="@+id/subjectEdit"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="@string/write_your_profession"
+                    android:hint="@string/write_programs_subjects"
                     android:inputType="text"
-                    android:maxLength="40"
+                    android:maxLength="15"
                     android:textColor="@color/colorWhite"
                     android:textSize="12sp" />
             </com.google.android.material.textfield.TextInputLayout>
@@ -121,13 +120,13 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
-                android:text="@string/about_or_bio"
+                android:text="@string/programs_title"
                 app:layout_constraintStart_toStartOf="@+id/textView"
-                app:layout_constraintTop_toBottomOf="@+id/text_input_profession" />
+                app:layout_constraintTop_toBottomOf="@+id/text_input_subject" />
 
 
             <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/text_input_bio"
+                android:id="@+id/text_input_program_title"
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -141,17 +140,18 @@
                 app:counterEnabled="true"
                 app:counterMaxLength="250"
                 app:counterTextColor="@color/textColorGrey"
+                app:errorEnabled="true"
                 app:hintTextColor="@color/activeGreen"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/textView12">
 
                 <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/bioEditText"
+                    android:id="@+id/programTitleEditText"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:ems="10"
-                    android:hint="@string/write_about_yourself"
+                    android:hint="@string/write_your_programs_title"
                     android:inputType="textMultiLine|textPersonName"
                     android:maxLength="250"
                     android:maxLines="5"
@@ -161,18 +161,18 @@
                     android:textSize="12sp" />
             </com.google.android.material.textfield.TextInputLayout>
 
-            <!--Facebook link-->
             <TextView
-                android:id="@+id/proUserName"
+                android:id="@+id/textView13"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/facebook_link"
+                android:layout_marginTop="16dp"
+                android:text="@string/programs"
                 app:layout_constraintStart_toStartOf="@+id/textView"
-                app:layout_constraintTop_toBottomOf="@+id/text_input_bio" />
+                app:layout_constraintTop_toBottomOf="@+id/text_input_program_title" />
 
 
             <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/text_input_fblink"
+                android:id="@+id/text_input_program"
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -183,37 +183,43 @@
                 app:boxBackgroundColor="@color/colorSecondary"
                 app:boxStrokeColor="@color/activeGreen"
                 app:boxStrokeWidthFocused="1dp"
+                app:counterEnabled="true"
+                app:counterMaxLength="5000"
                 app:counterTextColor="@color/textColorGrey"
+                app:errorEnabled="true"
                 app:hintTextColor="@color/activeGreen"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/proUserName">
+                app:layout_constraintTop_toBottomOf="@+id/textView13">
 
                 <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/fblinkEditText"
+                    android:id="@+id/programEditText"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="@string/write_your_facebook_link"
-                    android:inputType="text"
+                    android:ems="10"
+                    android:hint="@string/write_your_program_here"
+                    android:inputType="textMultiLine|textPersonName"
+                    android:maxLength="5000"
+                    android:maxLines="40"
                     android:overScrollMode="always"
                     android:scrollbars="vertical"
                     android:textColor="@color/colorWhite"
                     android:textSize="12sp" />
             </com.google.android.material.textfield.TextInputLayout>
 
-            <!--Instagram link-->
+
             <TextView
                 android:id="@+id/textView14"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:text="@string/instagram_link"
+                android:layout_marginTop="16dp"
+                android:text="@string/output"
                 app:layout_constraintStart_toStartOf="@+id/textView"
-                app:layout_constraintTop_toBottomOf="@+id/text_input_fblink" />
+                app:layout_constraintTop_toBottomOf="@+id/text_input_program" />
 
 
             <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/text_input_instalink"
+                android:id="@+id/text_input_program_output"
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -224,141 +230,24 @@
                 app:boxBackgroundColor="@color/colorSecondary"
                 app:boxStrokeColor="@color/activeGreen"
                 app:boxStrokeWidthFocused="1dp"
+                app:counterEnabled="true"
+                app:counterMaxLength="1024"
                 app:counterTextColor="@color/textColorGrey"
+                app:errorEnabled="true"
                 app:hintTextColor="@color/activeGreen"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/textView14">
 
                 <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/instalinkEditText"
+                    android:id="@+id/outputEditText"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="@string/write_your_instagram_link"
-                    android:inputType="text"
-                    android:overScrollMode="always"
-                    android:scrollbars="vertical"
-                    android:textColor="@color/colorWhite"
-                    android:textSize="12sp" />
-            </com.google.android.material.textfield.TextInputLayout>
-
-            <!--Github link-->
-            <TextView
-                android:id="@+id/textView15"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:text="@string/github_link"
-                app:layout_constraintStart_toStartOf="@+id/textView"
-                app:layout_constraintTop_toBottomOf="@+id/text_input_instalink" />
-
-
-            <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/text_input_githublink"
-                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
-                android:layout_marginTop="12dp"
-                android:layout_marginEnd="16dp"
-                android:textColorHint="@color/colorGreySoft"
-                app:boxBackgroundColor="@color/colorSecondary"
-                app:boxStrokeColor="@color/activeGreen"
-                app:boxStrokeWidthFocused="1dp"
-                app:counterTextColor="@color/textColorGrey"
-                app:hintTextColor="@color/activeGreen"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView15">
-
-                <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/githublinkEditText"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:hint="@string/write_your_github_link"
-                    android:inputType="text"
-                    android:overScrollMode="always"
-                    android:scrollbars="vertical"
-                    android:textColor="@color/colorWhite"
-                    android:textSize="12sp" />
-            </com.google.android.material.textfield.TextInputLayout>
-
-            <!--LinkedIn link-->
-            <TextView
-                android:id="@+id/textView16"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:text="@string/linkedin_link"
-                app:layout_constraintStart_toStartOf="@+id/textView"
-                app:layout_constraintTop_toBottomOf="@+id/text_input_githublink" />
-
-
-            <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/text_input_linkedinlink"
-                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
-                android:layout_marginTop="12dp"
-                android:layout_marginEnd="16dp"
-                android:textColorHint="@color/colorGreySoft"
-                app:boxBackgroundColor="@color/colorSecondary"
-                app:boxStrokeColor="@color/activeGreen"
-                app:boxStrokeWidthFocused="1dp"
-                app:counterTextColor="@color/textColorGrey"
-                app:hintTextColor="@color/activeGreen"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView16">
-
-                <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/linkedinlinkEditText"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:hint="@string/write_your_linkedin_link"
-                    android:inputType="text"
-                    android:overScrollMode="always"
-                    android:scrollbars="vertical"
-                    android:textColor="@color/colorWhite"
-                    android:textSize="12sp" />
-            </com.google.android.material.textfield.TextInputLayout>
-
-            <!--Twitter link-->
-            <TextView
-                android:id="@+id/textView17"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:text="@string/twitter_link"
-                app:layout_constraintStart_toStartOf="@+id/textView"
-                app:layout_constraintTop_toBottomOf="@+id/text_input_linkedinlink" />
-
-
-            <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/text_input_twitterlink"
-                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
-                android:layout_marginTop="12dp"
-                android:layout_marginEnd="16dp"
-                android:textColorHint="@color/colorGreySoft"
-                app:boxBackgroundColor="@color/colorSecondary"
-                app:boxStrokeColor="@color/activeGreen"
-                app:boxStrokeWidthFocused="1dp"
-                app:counterTextColor="@color/textColorGrey"
-                app:hintTextColor="@color/activeGreen"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView17">
-
-                <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/twitterlinkEditText"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:hint="@string/write_your_linkedin_link"
-                    android:inputType="text"
+                    android:ems="10"
+                    android:hint="@string/write_your_output_here"
+                    android:inputType="textMultiLine|textPersonName"
+                    android:maxLength="1024"
+                    android:maxLines="15"
                     android:overScrollMode="always"
                     android:scrollbars="vertical"
                     android:textColor="@color/colorWhite"
@@ -367,26 +256,22 @@
 
 
             <Button
-                android:id="@+id/updateBtn"
+                android:id="@+id/addProgramBtn"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="32dp"
                 android:layout_marginEnd="16dp"
                 android:fontFamily="@font/oswald"
-                android:text="@string/update"
+                android:text="@string/add_programs"
                 android:textStyle="bold"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/text_input_twitterlink" />
+                app:layout_constraintTop_toBottomOf="@+id/text_input_program_output" />
 
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
     </androidx.core.widget.NestedScrollView>
-
-
-
-
 
 
 

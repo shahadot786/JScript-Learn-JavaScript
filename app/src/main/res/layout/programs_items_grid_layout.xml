@@ -6,7 +6,7 @@
 
     <com.google.android.material.card.MaterialCardView
         android:layout_width="match_parent"
-        android:layout_height="100dp"
+        android:layout_height="80dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
@@ -27,9 +27,9 @@
             android:id="@+id/programs_items"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
+            android:layout_gravity="center|center_horizontal"
+            android:layout_marginTop="0dp"
             android:text="@string/title_js"
-            android:layout_marginTop="5dp"
             android:textColor="@color/colorGreySoft"
             android:textSize="20sp"
             android:textStyle="bold" />
@@ -39,7 +39,15 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="bottom|center_horizontal"
+            android:visibility="gone"
             app:srcCompat="@drawable/ic_programs_basic_image" />
+
+        <ImageView
+            android:id="@+id/imageView27"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            app:srcCompat="@drawable/ic_new_icon_24dp" />
 
 
     </com.google.android.material.card.MaterialCardView>

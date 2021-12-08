@@ -54,7 +54,7 @@ public class ProgramsItemsListActivity extends AppCompatActivity {
                 "Basic",
                 "Basic1",
                 "Basic2",
-                "In this example, you will learn to write a JavaScript program that will remove a property from an object.",
+                "In this example, you will learn to write a JavaScript program that will remove a property from an object.In this example, you will learn to write a JavaScript program that will remove a property from an object.In this example, you will learn to write a JavaScript program that will remove a property from an object.In this example, you will learn to write a JavaScript program that will remove a property from an object.",
         };
 
         final String advanced[] = {

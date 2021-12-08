@@ -191,8 +191,21 @@
 
     <!--Programs-->
     <string name="programs_header_image">Programs Header Image</string>
-    <string name="javascripts_practice_programs">Practice Programs</string>
     <string name="pro">PRO</string>
+    <string name="dashboard">Dashboard</string>
+    <string name="add_quiz">Add Quiz</string>
+    <string name="how_to">How to?</string>
+    <string name="subjects">Subjects</string>
+    <string name="add_programs">Add Program</string>
+    <string name="output">Output:</string>
+    <string name="programs">Program:</string>
+    <string name="write_programs_subjects">Write specific subject/framework/library name</string>
+    <string name="programs_title">Program Title:</string>
+    <string name="write_your_programs_title">Write the program title here..</string>
+    <string name="write_your_program_here">Write the program here..</string>
+    <string name="write_your_output_here">Write the output here..</string>
+    <string name="add_javascript_program">Add JavaScript Practice Program</string>
+    <string name="subject">Subject:</string>
 
 
 </resources>

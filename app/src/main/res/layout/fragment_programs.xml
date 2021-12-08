@@ -21,6 +21,7 @@
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:layout_marginBottom="50dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
@@ -58,15 +59,31 @@
                 app:layout_constraintTop_toBottomOf="@+id/toolbar" />
 
             <TextView
-                android:id="@+id/textView8"
+                android:id="@+id/addPrograms"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
-                android:text="@string/javascripts_practice_programs"
+                android:background="@drawable/ic_programs_image_bg"
+                android:paddingStart="20dp"
+                android:paddingTop="5dp"
+                android:paddingEnd="20dp"
+                android:paddingBottom="10dp"
+                android:text="@string/add_programs"
+                android:textColor="@color/colorGreySoft"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/imageView26"
+                app:layout_constraintTop_toBottomOf="@+id/imageView26" />
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/subjects"
                 android:textSize="16sp"
                 android:textStyle="bold"
                 app:layout_constraintStart_toStartOf="@+id/imageView26"
-                app:layout_constraintTop_toBottomOf="@+id/imageView26" />
+                app:layout_constraintTop_toBottomOf="@+id/addPrograms" />
 
             <View
                 android:id="@+id/view2"
@@ -93,64 +110,6 @@
                 app:layout_constraintHorizontal_bias="0.5"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/view2">
-
-            </com.javascript.jscript.Tools.ExpandableHeightGridView>
-
-            <ImageView
-                android:id="@+id/proImage"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="32dp"
-                android:src="@drawable/ic_pro_badge_48dp"
-                android:visibility="gone"
-                app:layout_constraintEnd_toStartOf="@+id/proText"
-                app:layout_constraintHorizontal_bias="0.5"
-                app:layout_constraintHorizontal_chainStyle="packed"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/programs_item_gridview" />
-
-            <TextView
-                android:id="@+id/proText"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/oswald"
-                android:text="@string/pro"
-                android:textSize="20sp"
-                android:textStyle="bold"
-                android:visibility="gone"
-                app:layout_constraintBottom_toBottomOf="@+id/proImage"
-                app:layout_constraintStart_toEndOf="@+id/proImage"
-                app:layout_constraintTop_toTopOf="@+id/proImage" />
-
-            <View
-                android:id="@+id/proView"
-                android:layout_width="0dp"
-                android:layout_height="1dp"
-                android:layout_marginStart="10dp"
-                android:layout_marginEnd="16dp"
-                android:background="@color/colorSecondary"
-                android:visibility="gone"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="@+id/proImage"
-                app:layout_constraintTop_toBottomOf="@+id/proImage" />
-
-
-            <com.javascript.jscript.Tools.ExpandableHeightGridView
-                android:id="@+id/programs_item_gridview_pro"
-                android:layout_width="match_parent"
-                android:layout_height="100dp"
-                android:layout_marginTop="16dp"
-                android:columnWidth="180dp"
-                android:horizontalSpacing="7dp"
-                android:isScrollContainer="true"
-                android:numColumns="2"
-                android:stretchMode="columnWidth"
-                android:verticalSpacing="10dp"
-                android:visibility="gone"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.5"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/proView">
 
             </com.javascript.jscript.Tools.ExpandableHeightGridView>
 

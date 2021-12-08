@@ -10,8 +10,10 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
+import android.widget.TextView;
 
 import com.javascript.jscript.Adapter.ProgramsItemsAdapter;
+import com.javascript.jscript.Programs.AddProgramsActivity;
 import com.javascript.jscript.Programs.ProgramsItemsListActivity;
 import com.javascript.jscript.R;
 import com.javascript.jscript.Tools.ExpandableHeightGridView;
@@ -53,6 +55,7 @@ public class ProgramsFragment extends Fragment {
     public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_programs,container,false);
+        TextView addPrograms = (TextView) view.findViewById(R.id.addPrograms);
 
         gridView = view.findViewById(R.id.programs_item_gridview);
         gridView.setExpanded(true);
@@ -79,6 +82,15 @@ public class ProgramsFragment extends Fragment {
                         break;
 
                 }
+            }
+        });
+
+
+        //addPrograms click listener
+        addPrograms.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getActivity(), AddProgramsActivity.class));
             }
         });
 

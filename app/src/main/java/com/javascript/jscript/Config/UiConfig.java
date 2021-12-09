@@ -11,7 +11,6 @@ public class UiConfig {
     public static final boolean INTERSTITIAL_AD_VISIBILITY = false;// if true then show interstitial ad
     //pro
     public static final boolean PRO_VISIBILITY_STATUS_SHOW = false; // if ture then show all premium activities
-    public static final boolean LOCKED_CONTENT_VISIBILITY_SHOW = false;// if true then show all locked content
     //app ui code
     public static final boolean ENABLE_EXIT_DIALOG = true; //if true then show dialog
 

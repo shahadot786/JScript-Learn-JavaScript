@@ -70,6 +70,7 @@ public class ProgramsCodeActivity extends AppCompatActivity {
                 code = BasicProgramsCodes.advanced2;
                 break;
             case "expert":
+            case "angular":
                 code = BasicProgramsCodes.expert;
                 break;
 
@@ -91,6 +92,7 @@ public class ProgramsCodeActivity extends AppCompatActivity {
                 output = BasicProgramsCodes.advanced2;
                 break;
             case "expert":
+            case "angular":
                 output = BasicProgramsCodes.expert;
                 break;
         }

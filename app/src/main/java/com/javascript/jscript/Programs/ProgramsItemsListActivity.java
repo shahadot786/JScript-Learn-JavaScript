@@ -48,7 +48,6 @@ public class ProgramsItemsListActivity extends AppCompatActivity {
 
 
     }
-
     private void loadItems() {
         final String basic[] = {
                 "Basic",
@@ -75,6 +74,15 @@ public class ProgramsItemsListActivity extends AppCompatActivity {
                 "expert",
         };
 
+        final String angular[] = {
+                "angular",
+                "angular",
+                "angular",
+                "In this example, you will learn to write a JavaScript program that will remove a property from an object.",
+                "angular",
+                "angular",
+        };
+
         String programsItems = getIntent().getStringExtra("programsItems");
         switch (programsItems){
             case "Basic":
@@ -85,6 +93,9 @@ public class ProgramsItemsListActivity extends AppCompatActivity {
                 break;
             case "Expert":
                 list = expert;
+                break;
+            case "Angular":
+                list = angular;
                 break;
         }
     }

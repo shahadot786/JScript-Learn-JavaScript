@@ -12,30 +12,26 @@ import android.view.ViewGroup;
 import android.widget.AdapterView;
 
 import com.javascript.jscript.Adapter.ProgramsItemsAdapter;
+import com.javascript.jscript.Adapter.ProgramsItemsAdapterPro;
 import com.javascript.jscript.Programs.ProgramsItemsListActivity;
 import com.javascript.jscript.R;
 import com.javascript.jscript.Tools.ExpandableHeightGridView;
 
 public class ProgramsFragment extends Fragment {
 
-    ExpandableHeightGridView gridView;
+    ExpandableHeightGridView gridView , gridViewPro;
 
-    String[] itemsName = {"Basic","Advanced","Expert","Basic","Advanced","Expert","Basic","Advanced","Expert","Basic","Advanced","Expert"};
+    String[] itemsName = {"Basic","Advanced","Expert"};
+    String[] itemsNamePro = {"Angular","Vue","React"};
 
     Integer[] itemImages = {
             R.drawable.ic_programs_basic_image,
             R.drawable.ic_programs_advanced_image,
-            R.drawable.ic_programs_advanced_image,
-            R.drawable.ic_programs_advanced_image,
-            R.drawable.ic_programs_advanced_image,
-            R.drawable.ic_programs_advanced_image,
-            R.drawable.ic_programs_advanced_image,
-            R.drawable.ic_programs_advanced_image,
-            R.drawable.ic_programs_advanced_image,
-            R.drawable.ic_programs_advanced_image,
-            R.drawable.ic_programs_advanced_image,
-            R.drawable.ic_programs_advanced_image,
-            R.drawable.ic_programs_advanced_image,
+            R.drawable.ic_programs_advanced_image
+
+    };
+    Integer[] itemImagesPro = {
+            R.drawable.ic_programs_basic_image,
             R.drawable.ic_programs_advanced_image,
             R.drawable.ic_programs_advanced_image
 
@@ -56,9 +52,13 @@ public class ProgramsFragment extends Fragment {
 
         gridView = view.findViewById(R.id.programs_item_gridview);
         gridView.setExpanded(true);
+        gridViewPro = view.findViewById(R.id.programs_item_gridview_pro);
+        gridViewPro.setExpanded(true);
 
         ProgramsItemsAdapter adapter = new ProgramsItemsAdapter(itemsName,itemImages,getActivity());
         gridView.setAdapter(adapter);
+        ProgramsItemsAdapterPro adapter1 = new ProgramsItemsAdapterPro(itemsNamePro,itemImagesPro,getActivity());
+        gridViewPro.setAdapter(adapter1);
 
         gridView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override

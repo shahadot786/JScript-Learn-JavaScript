@@ -12,7 +12,7 @@ import com.javascript.jscript.R;
 
 public class ProgramsItemsAdapter extends BaseAdapter {
 
-    String itemName[];
+    String[] itemName;
     Context context;
     Integer[] itemsImages;
 

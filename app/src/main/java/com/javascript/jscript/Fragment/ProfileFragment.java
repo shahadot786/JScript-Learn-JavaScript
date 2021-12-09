@@ -93,10 +93,6 @@ public class ProfileFragment extends Fragment {
                             if (snapshot.exists()) {
                                 UserModel user = snapshot.getValue(UserModel.class);
                                 assert user != null;
-                                Picasso.get()
-                                        .load(user.getProfile())
-                                        .placeholder(R.drawable.ic_profile_default_image)
-                                        .into(binding.profileImage);
                                 binding.userName.setText(user.getUserName());
                             }
                         }
@@ -107,7 +103,7 @@ public class ProfileFragment extends Fragment {
                         }
                     });
             //cover and profile update images
-            database.getReference().child("UpdateProfile").child(Objects.requireNonNull(auth.getUid()))
+            database.getReference().child("UserImages").child(Objects.requireNonNull(auth.getUid()))
                     .addListenerForSingleValueEvent(new ValueEventListener() {
                         @Override
                         public void onDataChange(@NonNull DataSnapshot snapshot) {
@@ -298,7 +294,7 @@ public class ProfileFragment extends Fragment {
                             @Override
                             public void onSuccess(@NonNull Uri uri) {
                                 database.getReference()
-                                        .child("UpdateProfile")
+                                        .child("UserImages")
                                         .child(Objects.requireNonNull(auth.getUid()))
                                         .child("coverPhoto")
                                         .setValue(uri.toString());
@@ -324,7 +320,7 @@ public class ProfileFragment extends Fragment {
                             @Override
                             public void onSuccess(@NonNull Uri uri) {
                                 database.getReference()
-                                        .child("UpdateProfile")
+                                        .child("UserImages")
                                         .child(Objects.requireNonNull(auth.getUid()))
                                         .child("profile")
                                         .setValue(uri.toString());

@@ -69,7 +69,7 @@ public class ProFragment extends Fragment {
                     }
                 });
         //fetch update image
-        database.getReference().child("UpdateProfile").child(auth.getUid())
+        database.getReference().child("UserImages").child(auth.getUid())
                 .addListenerForSingleValueEvent(new ValueEventListener() {
                     @Override
                     public void onDataChange(@NonNull DataSnapshot snapshot) {

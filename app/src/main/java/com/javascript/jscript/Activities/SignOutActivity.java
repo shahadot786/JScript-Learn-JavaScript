@@ -21,6 +21,8 @@ import com.javascript.jscript.R;
 import com.javascript.jscript.databinding.ActivitySignOutBinding;
 import com.squareup.picasso.Picasso;
 
+import java.util.Objects;
+
 public class SignOutActivity extends AppCompatActivity {
     ActivitySignOutBinding binding;
     FirebaseAuth auth;
@@ -42,7 +44,7 @@ public class SignOutActivity extends AppCompatActivity {
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         //get database value
-        database.getReference().child("UserData").child(auth.getUid())
+        database.getReference().child("UserData").child(Objects.requireNonNull(auth.getUid()))
                 .addListenerForSingleValueEvent(new ValueEventListener() {
                     @Override
                     public void onDataChange(@NonNull DataSnapshot snapshot) {
@@ -50,6 +52,26 @@ public class SignOutActivity extends AppCompatActivity {
                             UserModel user = snapshot.getValue(UserModel.class);
                             assert user != null;
                             binding.userName.setText(user.getUserName());
+                        }
+                    }
+
+                    @Override
+                    public void onCancelled(@NonNull DatabaseError error) {
+
+                    }
+                });
+
+        database.getReference().child("UserImages").child(auth.getUid())
+                .addListenerForSingleValueEvent(new ValueEventListener() {
+                    @Override
+                    public void onDataChange(@NonNull DataSnapshot snapshot) {
+                        if (snapshot.exists()){
+                            UserModel user = snapshot.getValue(UserModel.class);
+                            assert user != null;
+                            Picasso.get()
+                                    .load(user.getProfile())
+                                    .placeholder(R.drawable.ic_profile_default_image)
+                                    .into(binding.profileImage);
                         }
                     }
 

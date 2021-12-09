@@ -193,6 +193,9 @@
     <string name="programs_header_image">Programs Header Image</string>
     <string name="javascripts_practice_programs">Practice Programs</string>
     <string name="pro">PRO</string>
+    <string name="dashboard">Dashboard</string>
+    <string name="add_quiz">Add Quiz</string>
+    <string name="how_to">How to?</string>
 
 
 </resources>

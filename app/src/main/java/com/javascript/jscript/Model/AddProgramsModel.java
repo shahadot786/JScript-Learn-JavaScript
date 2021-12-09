@@ -13,6 +13,15 @@ public class AddProgramsModel {
     public AddProgramsModel() {
     }
 
+    public AddProgramsModel(String subject) {
+        this.subject = subject;
+    }
+
+    public AddProgramsModel(String program, String output) {
+        this.program = program;
+        this.output = output;
+    }
+
     public String getSubject() {
         return subject;
     }

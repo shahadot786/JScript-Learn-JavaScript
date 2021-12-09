@@ -17,18 +17,20 @@ import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
-import com.javascript.jscript.Adapter.ProgramsItemsAdapter;
+import com.javascript.jscript.Adapter.ProgramSubjectsAdapter;
 import com.javascript.jscript.Model.AddProgramsModel;
 import com.javascript.jscript.Programs.AddProgramsActivity;
 import com.javascript.jscript.Programs.ProgramsItemsListActivity;
 import com.javascript.jscript.R;
 import com.javascript.jscript.Tools.ExpandableHeightGridView;
 
+import java.util.ArrayList;
+
 public class ProgramsFragment extends Fragment {
 
     ExpandableHeightGridView gridView;
 
-    String[] itemsName = {};
+    ArrayList<AddProgramsModel> subjectList;
     FirebaseDatabase database;
     FirebaseAuth auth;
 
@@ -52,25 +54,9 @@ public class ProgramsFragment extends Fragment {
         TextView addPrograms = (TextView) view.findViewById(R.id.addPrograms);
         gridView = view.findViewById(R.id.programs_item_gridview);
         gridView.setExpanded(true);
-        ProgramsItemsAdapter adapter = new ProgramsItemsAdapter(itemsName,getActivity());
+        subjectList = new ArrayList<>();
+        ProgramSubjectsAdapter adapter = new ProgramSubjectsAdapter(subjectList,getContext());
         gridView.setAdapter(adapter);
-
-        database.getReference().child("Programs").child(auth.getUid())
-                .addListenerForSingleValueEvent(new ValueEventListener() {
-                    @Override
-                    public void onDataChange(@NonNull DataSnapshot snapshot) {
-                        if (snapshot.exists()){
-                            AddProgramsModel programsModel = new AddProgramsModel();
-
-                        }
-                    }
-
-                    @Override
-                    public void onCancelled(@NonNull DatabaseError error) {
-
-                    }
-                });
-
 
         gridView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override

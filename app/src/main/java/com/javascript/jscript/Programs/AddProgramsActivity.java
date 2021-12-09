@@ -115,7 +115,6 @@ public class AddProgramsActivity extends AppCompatActivity {
                 //send data to database
                 database.getReference().child("Programs")
                         .child(auth.getUid())
-                        .push()
                         .setValue(programsModel).addOnSuccessListener(new OnSuccessListener<Void>() {
                     @Override
                     public void onSuccess(@NonNull Void unused) {

@@ -5,9 +5,6 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.view.MenuItem;
-
-import com.javascript.jscript.Programs.ProgramsCodeActivity;
-import com.javascript.jscript.R;
 import com.javascript.jscript.databinding.ActivityDashboardBinding;
 
 import java.util.Objects;

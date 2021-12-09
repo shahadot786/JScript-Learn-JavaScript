@@ -93,10 +93,11 @@
                 android:textColor="@color/colorWhite"
                 android:textSize="16sp"
                 android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/dashboard"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.5"
                 app:layout_constraintStart_toEndOf="@+id/dashboard"
-                tools:layout_editor_absoluteY="288dp" />
+                app:layout_constraintTop_toTopOf="@+id/dashboard" />
 
             <TextView
                 android:id="@+id/textView32"

@@ -22,9 +22,6 @@
         android:usesCleartextTraffic="true"
         tools:targetApi="m">
         <activity
-            android:name=".Quiz.AddQuizActivity"
-            android:exported="false" />
-        <activity
             android:name=".Quiz.DashboardActivity"
             android:exported="false" />
         <activity

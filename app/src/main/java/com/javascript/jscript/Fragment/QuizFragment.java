@@ -11,14 +11,12 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import com.javascript.jscript.Activities.MainActivity;
-import com.javascript.jscript.Quiz.AddQuizActivity;
 import com.javascript.jscript.Quiz.DashboardActivity;
 import com.javascript.jscript.R;
 
 public class QuizFragment extends Fragment {
 
-    TextView dashboard,addQuiz,howTo;
+    TextView dashboard,howTo;
     public QuizFragment() {
         // Required empty public constructor
     }
@@ -36,7 +34,6 @@ public class QuizFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_quiz,container,false);
         //find id
         dashboard = view.findViewById(R.id.dashboard);
-        addQuiz = view.findViewById(R.id.addQuiz);
         howTo = view.findViewById(R.id.howTo);
         //on click listener
         //how to
@@ -60,12 +57,6 @@ public class QuizFragment extends Fragment {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(getActivity(), DashboardActivity.class));
-            }
-        });
-        addQuiz.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                startActivity(new Intent(getActivity(), AddQuizActivity.class));
             }
         });
 

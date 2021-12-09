@@ -14,6 +14,7 @@ public class UiConfig {
     public static final boolean LOCKED_CONTENT_VISIBILITY_SHOW = false;// if true then show all locked content
     //app ui code
     public static final boolean ENABLE_EXIT_DIALOG = true; //if true then show dialog
+    public static final int COUNT_USERS_UPLOAD = 0;
 
 
 }

@@ -12,7 +12,13 @@ import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.TextView;
 
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 import com.javascript.jscript.Adapter.ProgramsItemsAdapter;
+import com.javascript.jscript.Model.AddProgramsModel;
 import com.javascript.jscript.Programs.AddProgramsActivity;
 import com.javascript.jscript.Programs.ProgramsItemsListActivity;
 import com.javascript.jscript.R;
@@ -22,26 +28,10 @@ public class ProgramsFragment extends Fragment {
 
     ExpandableHeightGridView gridView;
 
-    String[] itemsName = {"Basic","Advanced","Expert","Basic","Advanced","Expert","Basic","Advanced","Expert","Basic","Advanced","Expert"};
+    String[] itemsName = {};
+    FirebaseDatabase database;
+    FirebaseAuth auth;
 
-    Integer[] itemImages = {
-            R.drawable.ic_programs_basic_image,
-            R.drawable.ic_programs_advanced_image,
-            R.drawable.ic_programs_advanced_image,
-            R.drawable.ic_programs_advanced_image,
-            R.drawable.ic_programs_advanced_image,
-            R.drawable.ic_programs_advanced_image,
-            R.drawable.ic_programs_advanced_image,
-            R.drawable.ic_programs_advanced_image,
-            R.drawable.ic_programs_advanced_image,
-            R.drawable.ic_programs_advanced_image,
-            R.drawable.ic_programs_advanced_image,
-            R.drawable.ic_programs_advanced_image,
-            R.drawable.ic_programs_advanced_image,
-            R.drawable.ic_programs_advanced_image,
-            R.drawable.ic_programs_advanced_image
-
-    };
     public ProgramsFragment() {
         // Required empty public constructor
     }
@@ -55,13 +45,32 @@ public class ProgramsFragment extends Fragment {
     public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_programs,container,false);
-        TextView addPrograms = (TextView) view.findViewById(R.id.addPrograms);
 
+        database = FirebaseDatabase.getInstance();
+        auth = FirebaseAuth.getInstance();
+
+        TextView addPrograms = (TextView) view.findViewById(R.id.addPrograms);
         gridView = view.findViewById(R.id.programs_item_gridview);
         gridView.setExpanded(true);
-
-        ProgramsItemsAdapter adapter = new ProgramsItemsAdapter(itemsName,itemImages,getActivity());
+        ProgramsItemsAdapter adapter = new ProgramsItemsAdapter(itemsName,getActivity());
         gridView.setAdapter(adapter);
+
+        database.getReference().child("Programs").child(auth.getUid())
+                .addListenerForSingleValueEvent(new ValueEventListener() {
+                    @Override
+                    public void onDataChange(@NonNull DataSnapshot snapshot) {
+                        if (snapshot.exists()){
+                            AddProgramsModel programsModel = new AddProgramsModel();
+
+                        }
+                    }
+
+                    @Override
+                    public void onCancelled(@NonNull DatabaseError error) {
+
+                    }
+                });
+
 
         gridView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override

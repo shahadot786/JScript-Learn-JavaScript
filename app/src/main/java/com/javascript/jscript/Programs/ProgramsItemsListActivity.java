@@ -14,11 +14,13 @@ import android.widget.BaseAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
 import com.javascript.jscript.R;
+import com.javascript.jscript.Utils.AdNetwork;
 import com.javascript.jscript.databinding.ActivityProgramsItemsListBinding;
 
 import java.util.Objects;
 
 public class ProgramsItemsListActivity extends AppCompatActivity {
+    private AdNetwork adNetwork;
     ActivityProgramsItemsListBinding binding;
     ListView programs;
     String[] list = {};
@@ -28,6 +30,7 @@ public class ProgramsItemsListActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         binding = ActivityProgramsItemsListBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
+        adNetwork = new AdNetwork(ProgramsItemsListActivity.this);
         //toolbar
         setSupportActionBar(binding.toolbar2);
         ProgramsItemsListActivity.this.setTitle("Programs");
@@ -36,6 +39,8 @@ public class ProgramsItemsListActivity extends AppCompatActivity {
         programs = findViewById(R.id.programsList);
         CustomAdapter adapter = new CustomAdapter();
         programs.setAdapter(adapter);
+        //load ad
+        adNetwork.loadInterstitialAd();
         programs.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
@@ -43,6 +48,7 @@ public class ProgramsItemsListActivity extends AppCompatActivity {
                 intent.putExtra("position",list[i]);
                 intent.putExtra("output",list[i]);
                 startActivity(intent);
+                adNetwork.showInterstitialAd();
             }
         });
 
@@ -50,6 +56,42 @@ public class ProgramsItemsListActivity extends AppCompatActivity {
     }
     private void loadItems() {
         final String basic[] = {
+                "Basic",
+                "Basic1",
+                "Basic2",
+                "In this example, you will learn to write a JavaScript program that will remove a property from an object.",
+                "Basic",
+                "Basic1",
+                "Basic2",
+                "In this example, you will learn to write a JavaScript program that will remove a property from an object.",
+                "Basic",
+                "Basic1",
+                "Basic2",
+                "In this example, you will learn to write a JavaScript program that will remove a property from an object.",
+                "Basic",
+                "Basic1",
+                "Basic2",
+                "In this example, you will learn to write a JavaScript program that will remove a property from an object.",
+                "Basic",
+                "Basic1",
+                "Basic2",
+                "In this example, you will learn to write a JavaScript program that will remove a property from an object.",
+                "Basic",
+                "Basic1",
+                "Basic2",
+                "In this example, you will learn to write a JavaScript program that will remove a property from an object.",
+                "Basic",
+                "Basic1",
+                "Basic2",
+                "In this example, you will learn to write a JavaScript program that will remove a property from an object.",
+                "Basic",
+                "Basic1",
+                "Basic2",
+                "In this example, you will learn to write a JavaScript program that will remove a property from an object.",
+                "Basic",
+                "Basic1",
+                "Basic2",
+                "In this example, you will learn to write a JavaScript program that will remove a property from an object.",
                 "Basic",
                 "Basic1",
                 "Basic2",

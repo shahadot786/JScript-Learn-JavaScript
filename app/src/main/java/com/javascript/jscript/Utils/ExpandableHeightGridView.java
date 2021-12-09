@@ -1,4 +1,4 @@
-package com.javascript.jscript.Tools;
+package com.javascript.jscript.Utils;
 
 import android.content.Context;
 import android.util.AttributeSet;

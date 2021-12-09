@@ -18,13 +18,14 @@ import com.javascript.jscript.Adapter.ProgramsItemsAdapterPro;
 import com.javascript.jscript.Config.UiConfig;
 import com.javascript.jscript.Programs.ProgramsItemsListActivity;
 import com.javascript.jscript.R;
-import com.javascript.jscript.Tools.ExpandableHeightGridView;
+import com.javascript.jscript.Utils.AdNetwork;
+import com.javascript.jscript.Utils.ExpandableHeightGridView;
 
 public class ProgramsFragment extends Fragment {
-
     ExpandableHeightGridView gridView , gridViewPro;
     View proView;
     ImageView proImage;
+    private AdNetwork adNetwork;
 
     String[] itemsName = {"Basic","Advanced","Expert"};
     String[] itemsNamePro = {"Angular","Vue","React","Angular","Vue","React","Angular","Vue","React"};
@@ -60,6 +61,7 @@ public class ProgramsFragment extends Fragment {
     public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_programs,container,false);
+        adNetwork = new AdNetwork(getActivity());
 
         //pro codes
         proView = view.findViewById(R.id.ProgramsProView);
@@ -93,6 +95,8 @@ public class ProgramsFragment extends Fragment {
             }
         });
 
+        //load ad
+        adNetwork.loadInterstitialAd();
         //items free
         gridView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
@@ -113,6 +117,8 @@ public class ProgramsFragment extends Fragment {
                         break;
 
                 }
+                //show ad
+                adNetwork.showInterstitialAd();
             }
         });
 

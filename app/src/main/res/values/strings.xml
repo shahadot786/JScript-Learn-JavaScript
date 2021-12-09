@@ -21,6 +21,7 @@
     <!--Admob Ads-->
     <string name="app_id">ca-app-pub-3940256099942544~3347511713</string>
     <string name="banner_ad_unit_id">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="interstitial_ad_unit_id">ca-app-pub-3940256099942544/1033173712</string>
 
     <!--Google Sign In-->
     <!--<string name="default_web_client_id">10732582829-srv96l245sn3s9jgl6j4vfijnvplsf7p.apps.googleusercontent.com</string>-->
@@ -196,6 +197,7 @@
     <string name="dashboard">Dashboard</string>
     <string name="add_quiz">Add Quiz</string>
     <string name="how_to">How to?</string>
+    <string name="subjects">Subjects:</string>
 
 
 </resources>

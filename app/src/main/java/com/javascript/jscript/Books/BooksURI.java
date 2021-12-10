@@ -1,4 +1,4 @@
-package com.javascript.jscript.Activities.Books;
+package com.javascript.jscript.Books;
 
 public class BooksURI {
     public static final String uri ="https://drive.google.com/file/d/1jMxlpVxb0TgGcr8Bu265CSKty9avvulm/view";

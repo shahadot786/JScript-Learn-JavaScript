@@ -11,14 +11,11 @@ import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ImageView;
 
-import com.javascript.jscript.Activities.Books.BooksListActivity;
+import com.javascript.jscript.Books.BooksListActivity;
 import com.javascript.jscript.Activities.PremiumActivity;
 import com.javascript.jscript.Adapter.BooksItemsAdapter;
 import com.javascript.jscript.Adapter.BooksItemsAdapterPro;
-import com.javascript.jscript.Adapter.InterviewItemsAdapter;
-import com.javascript.jscript.Adapter.InterviewItemsAdapterPro;
 import com.javascript.jscript.Config.UiConfig;
-import com.javascript.jscript.Programs.ProgramsItemsListActivity;
 import com.javascript.jscript.R;
 import com.javascript.jscript.Utils.AdNetwork;
 import com.javascript.jscript.Utils.ExpandableHeightGridView;

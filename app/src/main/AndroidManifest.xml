@@ -22,10 +22,10 @@
         android:usesCleartextTraffic="true"
         tools:targetApi="m">
         <activity
-            android:name=".Activities.Books.ReadBooksActivity"
+            android:name=".Books.ReadBooksActivity"
             android:exported="false" />
         <activity
-            android:name=".Activities.Books.BooksListActivity"
+            android:name=".Books.BooksListActivity"
             android:exported="false" />
         <activity
             android:name=".Interview.InterviewAnswerActivity"

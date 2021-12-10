@@ -1,4 +1,4 @@
-package com.javascript.jscript.Activities.Books;
+package com.javascript.jscript.Books;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -16,7 +16,6 @@ import android.webkit.WebViewClient;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
 import com.javascript.jscript.Config.UiConfig;
-import com.javascript.jscript.Programs.BasicProgramsCodes;
 import com.javascript.jscript.R;
 import com.javascript.jscript.databinding.ActivityReadBooksBinding;
 

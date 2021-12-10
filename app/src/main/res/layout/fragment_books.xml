@@ -4,8 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".Fragment.LearnFragment">
-
+    tools:context=".Fragment.BooksFragment">
     <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -36,7 +35,7 @@
                 android:layout_marginEnd="16dp"
                 android:background="@drawable/ic_programs_image_bg"
                 android:contentDescription="@string/programs_header_image"
-                android:src="@drawable/ic_javascript_learn_header"
+                android:src="@drawable/ic_javascript_books_header"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.5"
                 app:layout_constraintStart_toStartOf="parent"
@@ -63,4 +62,10 @@
                 app:layout_constraintTop_toBottomOf="@+id/textView8" />
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.core.widget.NestedScrollView>
+
+
+
+
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

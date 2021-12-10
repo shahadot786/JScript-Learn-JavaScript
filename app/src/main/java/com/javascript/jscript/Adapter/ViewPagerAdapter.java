@@ -1,11 +1,11 @@
 package com.javascript.jscript.Adapter;
-
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentPagerAdapter;
 
+import com.javascript.jscript.Fragment.BooksFragment;
 import com.javascript.jscript.Fragment.InterviewQAFragment;
 import com.javascript.jscript.Fragment.LearnFragment;
 import com.javascript.jscript.Fragment.ProgramsFragment;
@@ -21,6 +21,7 @@ public class ViewPagerAdapter extends FragmentPagerAdapter {
         switch (position){
             case 1: return new ProgramsFragment();
             case 2: return new InterviewQAFragment();
+            case 3: return new BooksFragment();
             case 0:
             default: return new LearnFragment();
         }
@@ -29,7 +30,7 @@ public class ViewPagerAdapter extends FragmentPagerAdapter {
 
     @Override
     public int getCount() {
-        return 3;
+        return 4;
     }
 
     @Nullable
@@ -41,7 +42,9 @@ public class ViewPagerAdapter extends FragmentPagerAdapter {
         }else if (position == 1){
             title ="Programs";
         }else if (position == 2){
-            title ="Interview QA";
+            title ="Interview";
+        }else if (position ==3){
+            title = "Books";
         }
         return title;
     }

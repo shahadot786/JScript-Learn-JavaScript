@@ -49,7 +49,7 @@
     <!--Profile-->
 
     <!--Start-->
-    <string name="jscript_learn_with_kind">JScript : Learn Javascript</string>
+    <string name="jscript_learn_javascript">JScript : Learn Javascript</string>
     <string name="next">Next</string>
     <string name="next_message">Learn JavaScript</string>
     <string name="next_message2">Discuss with Community</string>
@@ -79,7 +79,7 @@
     <string name="welcome_message">Welcome back, Read our..</string>
 
     <!--Bottom Navigation-->
-    <string name="menu_jscript">JScript</string>
+    <string name="menu_jscript">Home</string>
     <string name="menu_learn">Learn</string>
     <string name="menu_quiz">Quiz</string>
     <string name="menu_programs">Programs</string>
@@ -201,8 +201,10 @@
     <string name="add_quiz">Add Quiz</string>
     <string name="how_to">How to?</string>
     <string name="subjects">Subjects:</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="practice_programs">Practice Programs</string>
+    <string name="read_books">Read Books</string>
+    <string name="interview_questions_answer">Interview Questions Answers</string>
+    <string name="output">Output:</string>
 
 
 </resources>

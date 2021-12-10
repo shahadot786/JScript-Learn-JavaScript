@@ -64,8 +64,8 @@ public class AdNetwork {
     //show ad
 
     public void showInterstitialAd(){
-        if (UiConfig.PRO_VISIBILITY_STATUS_SHOW){
-            if (mInterstitialAd !=null){
+        if (UiConfig.INTERSTITIAL__AD_VISIBILITY){
+            if (mInterstitialAd != null){
                 if (counter == UiConfig.INTERSTITIAL_AD_INTERVAL){
                     mInterstitialAd.show(context);
                     counter = 1;
@@ -74,6 +74,16 @@ public class AdNetwork {
                 }
             }
         }
+        /*if (UiConfig.PRO_VISIBILITY_STATUS_SHOW){
+            if (mInterstitialAd !=null){
+                if (counter == UiConfig.INTERSTITIAL_AD_INTERVAL){
+                    mInterstitialAd.show(context);
+                    counter = 1;
+                }else {
+                    counter++;
+                }
+            }
+        }*/
 
     }
 

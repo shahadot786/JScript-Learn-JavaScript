@@ -42,10 +42,10 @@ public class ProgramsCodeActivity extends AppCompatActivity {
         Objects.requireNonNull(getSupportActionBar()).setDisplayHomeAsUpEnabled(true);
         //code view for code
         codeView = findViewById(R.id.codeView);
-        codeView.setTheme(CodeViewTheme.ATELIER_LAKESIDE_DARK).fillColor();
+        codeView.setTheme(CodeViewTheme.ANDROIDSTUDIO).fillColor();
         //code view for output
         outCodeView = findViewById(R.id.OutputCodeView);
-        outCodeView.setTheme(CodeViewTheme.ATELIER_LAKESIDE_DARK).fillColor();
+        outCodeView.setTheme(CodeViewTheme.ANDROIDSTUDIO).fillColor();
 
         loadCodes();
         loadOutputs();

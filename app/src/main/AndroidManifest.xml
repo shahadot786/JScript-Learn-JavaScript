@@ -22,6 +22,12 @@
         android:usesCleartextTraffic="true"
         tools:targetApi="m">
         <activity
+            android:name=".Interview.InterviewAnswerActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Interview.InterviewItemsListActivity"
+            android:exported="false" />
+        <activity
             android:name=".Quiz.DashboardActivity"
             android:exported="false" />
         <activity

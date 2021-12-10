@@ -45,11 +45,12 @@ public class MainActivity extends AppCompatActivity {
         binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
         setSupportActionBar(binding.toolbar);
-
         auth = FirebaseAuth.getInstance();
 
         //by default fragment code
         FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
+        binding.toolbar.setVisibility(View.VISIBLE);
+        MainActivity.this.setTitle(getResources().getString(R.string.jscript_learn_javascript));
         transaction.replace(R.id.container, new HomeFragment());
         transaction.commit();
 
@@ -68,7 +69,7 @@ public class MainActivity extends AppCompatActivity {
                 switch (i) {
                     case 0:
                         binding.toolbar.setVisibility(View.VISIBLE);
-                        MainActivity.this.setTitle("JScript");
+                        MainActivity.this.setTitle(getResources().getString(R.string.jscript_learn_javascript));
                         transaction.setCustomAnimations(R.anim.slide_in_right, R.anim.slide_out_left, R.anim.slide_in_left, R.anim.slide_out_right);
                         transaction.replace(R.id.container, new HomeFragment());
                         if (UiConfig.BANNER_AD_VISIBILITY) {

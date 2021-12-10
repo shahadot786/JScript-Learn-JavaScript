@@ -18,9 +18,13 @@ import com.javascript.jscript.databinding.ActivityInterviewAnswerBinding;
 
 import java.util.Objects;
 
+import thereisnospon.codeview.CodeView;
+import thereisnospon.codeview.CodeViewTheme;
+
 public class InterviewAnswerActivity extends AppCompatActivity {
     ActivityInterviewAnswerBinding binding;
     TextView textQuestion,textAnswer;
+    CodeView ansCodeView;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -42,7 +46,9 @@ public class InterviewAnswerActivity extends AppCompatActivity {
 
         //find text view id
         textQuestion = findViewById(R.id.textQuestion);
-        textAnswer = findViewById(R.id.textAnswer);
+        //textAnswer = findViewById(R.id.textAnswer);
+        ansCodeView = findViewById(R.id.answerCodeView);
+        ansCodeView.setTheme(CodeViewTheme.ANDROIDSTUDIO).fillColor();
 
         loadQuestion();
         loadAnswer();
@@ -75,7 +81,8 @@ public class InterviewAnswerActivity extends AppCompatActivity {
                 answer = BasicInterviewQA.answer3;
                 break;
         }
-        textAnswer.setText(answer);
+        //textAnswer.setText(answer);
+        ansCodeView.showCode(answer);
 
 
     }

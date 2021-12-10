@@ -59,18 +59,17 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
-            <TextView
-                android:id="@+id/textAnswer"
-                android:layout_width="0dp"
+            <thereisnospon.codeview.CodeView
+                android:id="@+id/answerCodeView"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
                 android:layout_marginTop="50dp"
-                android:background="@drawable/ic_programs_image_bg"
-                android:justificationMode="inter_word"
-                android:padding="25dp"
-                android:text="Global variables are available throughout the length of the code so that it has no scope. The var keyword is used to declare a local variable or object. If the var keyword is omitted, a global variable is declared.  Example:  // Declare a global: globalVariable = “Test”;  The problems faced by using global variables are the clash of variable names of local and global scope. Also, it is difficult to debug and test the code that relies on global variables."
+                android:layout_marginEnd="16dp"
                 app:layout_constraintEnd_toEndOf="@+id/textQuestion"
                 app:layout_constraintStart_toStartOf="@+id/textQuestion"
                 app:layout_constraintTop_toBottomOf="@+id/textQuestion" />
+
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.core.widget.NestedScrollView>
 

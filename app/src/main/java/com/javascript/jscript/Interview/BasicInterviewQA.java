@@ -5,8 +5,8 @@ public class BasicInterviewQA {
     public static final String question ="";
     public static final String answer ="";
     public static final String question1 = "What is JavaScript?";
-    public static final String answer1 = "JavaScript is a client-side and server-side scripting language " +
-            "inserted into HTML pages and is understood by web browsers. JavaScript is also an Object-based Programming language";
+    public static final String answer1 = "JavaScript is a client-side and server-side \nscripting language " +
+            "inserted into HTML pages and is \nunderstood by web browsers. JavaScript is \nalso an Object-based Programming language";
 
     public static final String question2 ="Enumerate the differences between Java and JavaScript?";
     public static final String answer2 ="Java is a complete programming language. In contrast, JavaScript is a coded program that can " +

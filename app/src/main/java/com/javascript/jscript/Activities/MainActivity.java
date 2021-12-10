@@ -19,6 +19,8 @@ import com.google.android.gms.ads.AdView;
 import com.google.firebase.auth.FirebaseAuth;
 import com.javascript.jscript.BuildConfig;
 import com.javascript.jscript.Config.UiConfig;
+import com.javascript.jscript.Fragment.DiscussFragment;
+import com.javascript.jscript.Fragment.InterviewQAFragment;
 import com.javascript.jscript.Fragment.LearnFragment;
 import com.javascript.jscript.Fragment.ProFragment;
 import com.javascript.jscript.Fragment.ProfileFragment;
@@ -76,15 +78,6 @@ public class MainActivity extends AppCompatActivity {
                         break;
                     case 1:
                         binding.toolbar.setVisibility(View.VISIBLE);
-                        MainActivity.this.setTitle("Quiz");
-                        transaction.setCustomAnimations(R.anim.slide_in_right, R.anim.slide_out_left, R.anim.slide_in_left, R.anim.slide_out_right);
-                        transaction.replace(R.id.container, new QuizFragment());
-                        if (UiConfig.BANNER_AD_VISIBILITY) {
-                            bannerAd.setVisibility(View.VISIBLE);
-                        }
-                        break;
-                    case 2:
-                        binding.toolbar.setVisibility(View.VISIBLE);
                         MainActivity.this.setTitle("Programs");
                         transaction.setCustomAnimations(R.anim.slide_in_right, R.anim.slide_out_left, R.anim.slide_in_left, R.anim.slide_out_right);
                         transaction.replace(R.id.container, new ProgramsFragment());
@@ -92,7 +85,35 @@ public class MainActivity extends AppCompatActivity {
                             bannerAd.setVisibility(View.VISIBLE);
                         }
                         break;
+                    case 2:
+                        binding.toolbar.setVisibility(View.VISIBLE);
+                        MainActivity.this.setTitle("Quiz");
+                        transaction.setCustomAnimations(R.anim.slide_in_right, R.anim.slide_out_left, R.anim.slide_in_left, R.anim.slide_out_right);
+                        transaction.replace(R.id.container, new QuizFragment());
+                        if (UiConfig.BANNER_AD_VISIBILITY) {
+                            bannerAd.setVisibility(View.VISIBLE);
+                        }
+                        break;
                     case 3:
+                        binding.toolbar.setVisibility(View.VISIBLE);
+                        MainActivity.this.setTitle("Interview QA");
+                        transaction.setCustomAnimations(R.anim.slide_in_right, R.anim.slide_out_left, R.anim.slide_in_left, R.anim.slide_out_right);
+                        transaction.replace(R.id.container, new InterviewQAFragment());
+                        if (UiConfig.BANNER_AD_VISIBILITY) {
+                            bannerAd.setVisibility(View.VISIBLE);
+                        }
+                        break;
+                    case 4:
+                        binding.toolbar.setVisibility(View.VISIBLE);
+                        MainActivity.this.setTitle("Discuss");
+                        transaction.setCustomAnimations(R.anim.slide_in_right, R.anim.slide_out_left, R.anim.slide_in_left, R.anim.slide_out_right);
+                        transaction.replace(R.id.container, new DiscussFragment());
+                        if (UiConfig.BANNER_AD_VISIBILITY) {
+                            bannerAd.setVisibility(View.VISIBLE);
+                        }
+                        break;
+
+                    case 5:
                         binding.toolbar.setVisibility(View.VISIBLE);
                         MainActivity.this.setTitle("Profile");
                         transaction.setCustomAnimations(R.anim.slide_in_right, R.anim.slide_out_left, R.anim.slide_in_left, R.anim.slide_out_right);
@@ -101,7 +122,7 @@ public class MainActivity extends AppCompatActivity {
                             bannerAd.setVisibility(View.GONE);
                         }
                         break;
-                    case 4:
+                    case 6:
                         binding.toolbar.setVisibility(View.GONE);
                         MainActivity.this.setTitle("PRO");
                         transaction.setCustomAnimations(R.anim.slide_in_right, R.anim.slide_out_left, R.anim.slide_in_left, R.anim.slide_out_right);

@@ -61,8 +61,6 @@ public class ProgramsFragment extends Fragment {
     public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_programs,container,false);
-        adNetwork = new AdNetwork(getActivity());
-
         //pro codes
         proView = view.findViewById(R.id.ProgramsProView);
         proImage = view.findViewById(R.id.programsProImage);
@@ -86,7 +84,10 @@ public class ProgramsFragment extends Fragment {
             proView.setVisibility(View.GONE);
             proImage.setVisibility(View.GONE);
         }
-
+        //add network context initialization
+        adNetwork = new AdNetwork(getActivity());
+        //load ad
+        adNetwork.loadInterstitialAd();
         //click pro view
         proView.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -94,9 +95,6 @@ public class ProgramsFragment extends Fragment {
                 startActivity(new Intent(getActivity(), PremiumActivity.class));
             }
         });
-
-        //load ad
-        adNetwork.loadInterstitialAd();
         //items free
         gridView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override

@@ -23,7 +23,7 @@ import thereisnospon.codeview.CodeViewTheme;
 
 public class InterviewAnswerActivity extends AppCompatActivity {
     ActivityInterviewAnswerBinding binding;
-    TextView textQuestion,textAnswer;
+    TextView textQuestion;
     CodeView ansCodeView;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,12 +41,11 @@ public class InterviewAnswerActivity extends AppCompatActivity {
         }
         //toolbar
         setSupportActionBar(binding.toolbar2);
-        InterviewAnswerActivity.this.setTitle("Details");
+        InterviewAnswerActivity.this.setTitle("Answer");
         Objects.requireNonNull(getSupportActionBar()).setDisplayHomeAsUpEnabled(true);
 
         //find text view id
         textQuestion = findViewById(R.id.textQuestion);
-        //textAnswer = findViewById(R.id.textAnswer);
         ansCodeView = findViewById(R.id.answerCodeView);
         ansCodeView.setTheme(CodeViewTheme.ANDROIDSTUDIO).fillColor();
 
@@ -59,6 +58,9 @@ public class InterviewAnswerActivity extends AppCompatActivity {
         switch (getIntent().getStringExtra("question")){
             case "Questions":
                 question = BasicInterviewQA.question1;
+                break;
+            case "Questions 2":
+                question = BasicInterviewQA.question2;
                 break;
             case "Questions 1":
             case "Questions Angular":
@@ -75,6 +77,9 @@ public class InterviewAnswerActivity extends AppCompatActivity {
         switch (getIntent().getStringExtra("answer")){
             case "Questions":
                 answer = BasicInterviewQA.answer1;
+                break;
+            case "Questions 2":
+                answer = BasicInterviewQA.answer2;
                 break;
             case "Questions 1":
             case "Questions Angular":

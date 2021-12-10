@@ -11,6 +11,7 @@ import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ImageView;
 
+import com.javascript.jscript.Activities.Books.BooksListActivity;
 import com.javascript.jscript.Activities.PremiumActivity;
 import com.javascript.jscript.Adapter.BooksItemsAdapter;
 import com.javascript.jscript.Adapter.BooksItemsAdapterPro;
@@ -103,18 +104,18 @@ public class BooksFragment extends Fragment {
         gridView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                Intent intent = new Intent(getActivity(), ProgramsItemsListActivity.class);
+                Intent intent = new Intent(getActivity(), BooksListActivity.class);
                 switch (i){
                     case 0:
-                        intent.putExtra("programsItems","Basic");
+                        intent.putExtra("booksItems","Basic");
                         startActivity(intent);
                         break;
                     case 1:
-                        intent.putExtra("programsItems","Advanced");
+                        intent.putExtra("booksItems","Advanced");
                         startActivity(intent);
                         break;
                     case 2:
-                        intent.putExtra("programsItems","Expert");
+                        intent.putExtra("booksItems","Expert");
                         startActivity(intent);
                         break;
 
@@ -128,18 +129,18 @@ public class BooksFragment extends Fragment {
         gridViewPro.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                Intent intent = new Intent(getActivity(), ProgramsItemsListActivity.class);
+                Intent intent = new Intent(getActivity(), BooksListActivity.class);
                 switch (i){
                     case 0:
-                        intent.putExtra("programsItems","Angular");
+                        intent.putExtra("booksItems","Angular");
                         startActivity(intent);
                         break;
                     case 1:
-                        intent.putExtra("programsItems","Vue");
+                        intent.putExtra("booksItems","Vue");
                         startActivity(intent);
                         break;
                     case 2:
-                        intent.putExtra("programsItems","React");
+                        intent.putExtra("booksItems","React");
                         startActivity(intent);
                         break;
 

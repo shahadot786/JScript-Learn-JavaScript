@@ -9,10 +9,10 @@ public class BasicInterviewQA {
             "inserted into HTML pages and is \nunderstood by web browsers. JavaScript is \nalso an Object-based Programming language";
 
     public static final String question2 ="Enumerate the differences between Java and JavaScript?";
-    public static final String answer2 ="Java is a complete programming language. In contrast, JavaScript is a coded program that can " +
-            "be introduced to HTML pages. These two languages are not at all inter-dependent and are designed for different intent. " +
-            "Java is an object-oriented programming (OOPS) or structured programming languages like C++ or C, " +
-            "whereas JavaScript is a client-side scripting language.";
+    public static final String answer2 ="Java is a complete programming language. \nIn contrast, JavaScript is a \ncoded program that can " +
+            "be \nintroduced to HTML pages. These two languages \nare not at all inter-dependent and are designed \nfor different intent. " +
+            "Java is an object-oriented \nprogramming (OOPS) or structured programming \nlanguages like C++ or C, " +
+            "\nwhereas JavaScript is a client-side \nscripting language.";
 
     public static final String question3 ="Write the code for adding new elements dynamically?";
     public static final String answer3 ="<html> \n" +
@@ -24,6 +24,76 @@ public class BasicInterviewQA {
             "    newP.appendChild(textNode); document.getElementById(\"firstP\").appendChild(newP); } \n" +
             "</script> </head> \n" +
             "<body> <p id=\"firstP\">firstP<p> </body> \n" +
-            "</html>";
+            "</html>" +
+            "<html> \\n\" +\n" +
+            "            \"<head> \\n\" +\n" +
+            "            \"<title>t1</title> \\n\" +\n" +
+            "            \"<script type=\\\"text/javascript\\\"> \\n\" +\n" +
+            "            \"    function addNode () { var newP = document. createElement(\\\"p\\\"); \\n\" +\n" +
+            "            \"    var textNode = document.createTextNode(\\\" This is a new text node\\\"); \\n\" +\n" +
+            "            \"    newP.appendChild(textNode); document.getElementById(\\\"firstP\\\").appendChild(newP); } \\n\" +\n" +
+            "            \"</script> </head> \\n\" +\n" +
+            "            \"<body> <p id=\\\"firstP\\\">firstP<p> </body> \\n\" +\n" +
+            "            \"</html>" +
+            "<html> \\n\" +\n" +
+            "            \"<head> \\n\" +\n" +
+            "            \"<title>t1</title> \\n\" +\n" +
+            "            \"<script type=\\\"text/javascript\\\"> \\n\" +\n" +
+            "            \"    function addNode () { var newP = document. createElement(\\\"p\\\"); \\n\" +\n" +
+            "            \"    var textNode = document.createTextNode(\\\" This is a new text node\\\"); \\n\" +\n" +
+            "            \"    newP.appendChild(textNode); document.getElementById(\\\"firstP\\\").appendChild(newP); } \\n\" +\n" +
+            "            \"</script> </head> \\n\" +\n" +
+            "            \"<body> <p id=\\\"firstP\\\">firstP<p> </body> \\n\" +\n" +
+            "            \"</html>" +
+            "<html> \\n\" +\n" +
+            "            \"<head> \\n\" +\n" +
+            "            \"<title>t1</title> \\n\" +\n" +
+            "            \"<script type=\\\"text/javascript\\\"> \\n\" +\n" +
+            "            \"    function addNode () { var newP = document. createElement(\\\"p\\\"); \\n\" +\n" +
+            "            \"    var textNode = document.createTextNode(\\\" This is a new text node\\\"); \\n\" +\n" +
+            "            \"    newP.appendChild(textNode); document.getElementById(\\\"firstP\\\").appendChild(newP); } \\n\" +\n" +
+            "            \"</script> </head> \\n\" +\n" +
+            "            \"<body> <p id=\\\"firstP\\\">firstP<p> </body> \\n\" +\n" +
+            "            \"</html>" +
+            "<html> \\n\" +\n" +
+            "            \"<head> \\n\" +\n" +
+            "            \"<title>t1</title> \\n\" +\n" +
+            "            \"<script type=\\\"text/javascript\\\"> \\n\" +\n" +
+            "            \"    function addNode () { var newP = document. createElement(\\\"p\\\"); \\n\" +\n" +
+            "            \"    var textNode = document.createTextNode(\\\" This is a new text node\\\"); \\n\" +\n" +
+            "            \"    newP.appendChild(textNode); document.getElementById(\\\"firstP\\\").appendChild(newP); } \\n\" +\n" +
+            "            \"</script> </head> \\n\" +\n" +
+            "            \"<body> <p id=\\\"firstP\\\">firstP<p> </body> \\n\" +\n" +
+            "            \"</html>" +
+            "<html> \\n\" +\n" +
+            "            \"<head> \\n\" +\n" +
+            "            \"<title>t1</title> \\n\" +\n" +
+            "            \"<script type=\\\"text/javascript\\\"> \\n\" +\n" +
+            "            \"    function addNode () { var newP = document. createElement(\\\"p\\\"); \\n\" +\n" +
+            "            \"    var textNode = document.createTextNode(\\\" This is a new text node\\\"); \\n\" +\n" +
+            "            \"    newP.appendChild(textNode); document.getElementById(\\\"firstP\\\").appendChild(newP); } \\n\" +\n" +
+            "            \"</script> </head> \\n\" +\n" +
+            "            \"<body> <p id=\\\"firstP\\\">firstP<p> </body> \\n\" +\n" +
+            "            \"</html>" +
+            "<html> \\n\" +\n" +
+            "            \"<head> \\n\" +\n" +
+            "            \"<title>t1</title> \\n\" +\n" +
+            "            \"<script type=\\\"text/javascript\\\"> \\n\" +\n" +
+            "            \"    function addNode () { var newP = document. createElement(\\\"p\\\"); \\n\" +\n" +
+            "            \"    var textNode = document.createTextNode(\\\" This is a new text node\\\"); \\n\" +\n" +
+            "            \"    newP.appendChild(textNode); document.getElementById(\\\"firstP\\\").appendChild(newP); } \\n\" +\n" +
+            "            \"</script> </head> \\n\" +\n" +
+            "            \"<body> <p id=\\\"firstP\\\">firstP<p> </body> \\n\" +\n" +
+            "            \"</html><html> \\n\" +\n" +
+            "            \"<head> \\n\" +\n" +
+            "            \"<title>t1</title> \\n\" +\n" +
+            "            \"<script type=\\\"text/javascript\\\"> \\n\" +\n" +
+            "            \"    function addNode () { var newP = document. createElement(\\\"p\\\"); \\n\" +\n" +
+            "            \"    var textNode = document.createTextNode(\\\" This is a new text node\\\"); \\n\" +\n" +
+            "            \"    newP.appendChild(textNode); document.getElementById(\\\"firstP\\\").appendChild(newP); } \\n\" +\n" +
+            "            \"</script> </head> \\n\" +\n" +
+            "            \"<body> <p id=\\\"firstP\\\">firstP<p> </body> \\n\" +\n" +
+            "            \"</html>" +
+            "";
 
 }

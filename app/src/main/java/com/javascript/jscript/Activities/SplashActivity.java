@@ -1,5 +1,7 @@
 package com.javascript.jscript.Activities;
 
+import static com.javascript.jscript.Activities.PremiumActivity.SUBSCRIBE_KEY;
+
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
@@ -14,7 +16,6 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
-import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.javascript.jscript.Config.UiConfig;
 import com.javascript.jscript.R;
@@ -30,6 +31,7 @@ public class SplashActivity extends AppCompatActivity {
     FirebaseAuth auth;
     FirebaseDatabase database;
     final String PREFS_NAME = "JscriptPrefFile2";
+    public static final String PREF_FILE= "MyPref";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -50,8 +52,20 @@ public class SplashActivity extends AppCompatActivity {
         currentUser = auth.getCurrentUser();
         database = FirebaseDatabase.getInstance();
         database.setPersistenceEnabled(true);
-
-
+        //item subscribed
+        if(getSubscribeValueFromPref()){
+            UiConfig.INTERSTITIAL__AD_VISIBILITY = false;
+            UiConfig.PRO_VISIBILITY_STATUS_SHOW = false;
+            UiConfig.BANNER_AD_VISIBILITY = false;
+            UiConfig.ENABLE_EXIT_DIALOG = false;
+        }
+        //item not subscribed
+        else{
+            UiConfig.INTERSTITIAL__AD_VISIBILITY = true;
+            UiConfig.PRO_VISIBILITY_STATUS_SHOW = true;
+            UiConfig.BANNER_AD_VISIBILITY = true;
+            UiConfig.ENABLE_EXIT_DIALOG = true;
+        }
         ///check first time installer
         SharedPreferences settings = getSharedPreferences(PREFS_NAME, 0);
         if (settings.getBoolean("my_first_time", true)) {
@@ -93,6 +107,12 @@ public class SplashActivity extends AppCompatActivity {
         }
 
 
+    }
+    private SharedPreferences getPreferenceObject() {
+        return getApplicationContext().getSharedPreferences(PREF_FILE, 0);
+    }
+    private boolean getSubscribeValueFromPref(){
+        return getPreferenceObject().getBoolean( SUBSCRIBE_KEY,false);
     }
 
 }

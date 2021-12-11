@@ -9,6 +9,7 @@
     <!--Play Store -->
     <string name="url_play_more_apps">https://play.google.com/store/apps/dev?id=5967016763322581246</string>
     <string name="url_play_privacy_policy">https://shrcreation.com/privacy.html</string>
+    <string name="play_console_license_key">MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEArQzE2PNoGbxumq9zzLdUA0rOfBTyutiNt1wu+EqEMxTtC3jDeVQRww+f1f3yjoUhdmxmu0mTuTz6SLfcsxtAfMwVk1eMgVrZ4HjfDLyhkcTTH6pY8sHJZjZl6bOJX/RH0l/gdLjNX2xUpuW1WG2SkyznS0joH0teA6+Q1o2Yg/i5x0/LMyR8B0piIQ/rwHBudmX9JwEuo3TljXgSPcETzxaY3gd2Cs2aAD5uZeljnyhkubJpKhqiOUiPfGTRqybeh4I+9kSSiLVoYviAuZY2GYVsePUtM267QxaUWRPVPu+hscF/zFBAofGfi9CehhzwQjg7MS/TS9XcZbPZ6AtATwIDAQAB</string>
     <string name="play_name">SHR_Creation</string>
     <string name="play_email">shrcreation.media\'@gmail.com</string>
     <string name="play_website">https://www.shrcreation.com</string>
@@ -151,10 +152,10 @@
     <string name="pro_des_3">Free Exclusive Premium Course Updates</string>
     <string name="pro_des_4">Remove Ads</string>
     <string name="pro_des_5">And Much More!</string>
-    <string name="try_free_for_7_days">Try free for 7 days</string>
+    <string name="try_free_for_7_days">Upgrade to Premium</string>
     <string name="_95">95%</string>
     <string name="best_value">BEST VALUE</string>
-    <string name="_12_months">12 Months</string>
+    <string name="_12_months">Yearly</string>
     <string name="pro_price">BDT 1499/-</string>
     <string name="pro_play_message">You won\'t be charged until your free trial ends. You can cancel anytime in Google Play.</string>
 
@@ -170,8 +171,7 @@
     <string name="login_failed">"Login failed"</string>
     <string name="sign_in_with_google">Sign In With Google</string>
     <string name="just_one_tap_to_go">Just one tap to go</string>
-    <string name="try_pro_7_days_for_free">Try Pro 7 days for free</string>
-    <string name="start">start</string>
+    <string name="start">BUY</string>
     <string name="cp_programs_constant">1000</string>
     <string name="_0">0</string>
     <string name="cp_quizes_constants">1000</string>

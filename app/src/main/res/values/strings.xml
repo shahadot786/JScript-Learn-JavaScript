@@ -171,7 +171,7 @@
     <string name="login_failed">"Login failed"</string>
     <string name="sign_in_with_google">Sign In With Google</string>
     <string name="just_one_tap_to_go">Just one tap to go</string>
-    <string name="start">BUY</string>
+    <string name="start">BUY NOW</string>
     <string name="cp_programs_constant">1000</string>
     <string name="_0">0</string>
     <string name="cp_quizes_constants">1000</string>
@@ -205,6 +205,9 @@
     <string name="read_books">Read Books</string>
     <string name="interview_questions_answer">Interview Questions Answers</string>
     <string name="output">Output:</string>
+    <string name="see_price">See Price &amp; BUY</string>
+    <string name="app_main_images">App main images</string>
+    <string name="profile_bio_default_text">An Instagram bio is the small area under your username where you can share some details about yourself or your brand. Your Instagram bio can include a brief self or brand description, contact information, emojis, hashtags and more.</string>
 
 
 </resources>

@@ -189,11 +189,8 @@ public class PremiumActivity extends AppCompatActivity implements PurchasesUpdat
                                             .build();
                                     //price info
                                     SkuDetails itemInfo = skuDetailsList.get(0);
-                                    //String price = itemInfo.getPrice();
-
                                     //set price
                                     itemPrice.setText(itemInfo.getPrice());
-
                                     billingClient.launchBillingFlow(PremiumActivity.this, flowParams);
                                 } else {
                                     //try to add subscription item "sub_example" in google play console

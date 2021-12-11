@@ -321,7 +321,8 @@
                     android:overScrollMode="always"
                     android:scrollbars="vertical"
                     android:textColor="@color/colorWhite"
-                    android:textSize="12sp" />
+                    android:textSize="12sp"
+                    tools:ignore="DuplicateSpeakableTextCheck" />
             </com.google.android.material.textfield.TextInputLayout>
 
             <!--Twitter link-->
@@ -372,8 +373,10 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="32dp"
                 android:layout_marginEnd="16dp"
+                android:layout_marginBottom="32dp"
                 android:fontFamily="@font/oswald"
                 android:text="@string/update"
+                android:textColor="@color/colorPrimary"
                 android:textStyle="bold"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"

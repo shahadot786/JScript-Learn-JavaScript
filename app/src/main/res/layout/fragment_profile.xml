@@ -34,6 +34,7 @@
                 android:id="@+id/coverPhoto"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:contentDescription="@string/app_main_images"
                 android:scaleType="centerCrop"
                 android:src="@drawable/ic_placeholder_dark" />
 
@@ -52,6 +53,7 @@
             android:src="@drawable/ic_profile_default_image"
             app:civ_border_color="@color/activeRed"
             app:civ_border_width="3dp"
+            android:contentDescription="@string/app_main_images"
             app:layout_constraintBottom_toBottomOf="@+id/diagonalLayout"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="@+id/diagonalLayout"
@@ -64,6 +66,7 @@
             android:layout_height="30dp"
             android:layout_marginEnd="16dp"
             android:layout_marginBottom="8dp"
+            android:contentDescription="@string/app_main_images"
             android:src="@drawable/ic_upload_picture_white_24dp"
             app:layout_constraintBottom_toBottomOf="@+id/diagonalLayout"
             app:layout_constraintEnd_toEndOf="parent" />
@@ -92,8 +95,7 @@
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginBottom="50dp">
+                android:layout_height="match_parent">
 
 
                 <ImageView
@@ -102,6 +104,7 @@
                     android:layout_height="24dp"
                     android:layout_marginTop="8dp"
                     android:layout_marginEnd="8dp"
+                    android:contentDescription="@string/app_main_images"
                     android:src="@drawable/ic_edit_white_24dp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
@@ -112,6 +115,7 @@
                     android:layout_height="wrap_content"
                     android:textSize="24sp"
                     android:textStyle="bold"
+                    android:text="@string/username"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
@@ -121,6 +125,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textSize="11sp"
+                    android:textColor="@color/textColorGrey"
+                    android:text="@string/profession"
                     app:layout_constraintEnd_toEndOf="@+id/userName"
                     app:layout_constraintStart_toStartOf="@+id/userName"
                     app:layout_constraintTop_toBottomOf="@+id/userName" />
@@ -156,6 +162,7 @@
                             android:id="@+id/imageView"
                             android:layout_width="40dp"
                             android:layout_height="40dp"
+                            android:contentDescription="@string/app_main_images"
                             android:src="@drawable/ic_facebook_24dp"
                             app:layout_constraintBottom_toBottomOf="@+id/linkFacebook"
                             app:layout_constraintEnd_toEndOf="@+id/linkFacebook"
@@ -177,6 +184,7 @@
                             android:id="@+id/imageView15"
                             android:layout_width="30dp"
                             android:layout_height="30dp"
+                            android:contentDescription="@string/app_main_images"
                             android:src="@drawable/ic_instagram_24dp"
                             app:layout_constraintBottom_toBottomOf="@+id/linkInstagram"
                             app:layout_constraintEnd_toEndOf="@+id/linkInstagram"
@@ -198,6 +206,7 @@
                             android:id="@+id/imageView16"
                             android:layout_width="30dp"
                             android:layout_height="30dp"
+                            android:contentDescription="@string/app_main_images"
                             android:src="@drawable/ic_github_24dp"
                             app:layout_constraintBottom_toBottomOf="@+id/linkGithub"
                             app:layout_constraintEnd_toEndOf="@+id/linkGithub"
@@ -219,6 +228,7 @@
                             android:id="@+id/imageView22"
                             android:layout_width="30dp"
                             android:layout_height="30dp"
+                            android:contentDescription="@string/app_main_images"
                             android:src="@drawable/ic_linked_24dp"
                             app:layout_constraintBottom_toBottomOf="@+id/linkLinkedIn"
                             app:layout_constraintEnd_toEndOf="@+id/linkLinkedIn"
@@ -240,6 +250,7 @@
                             android:id="@+id/imageView24"
                             android:layout_width="45dp"
                             android:layout_height="45dp"
+                            android:contentDescription="@string/app_main_images"
                             android:src="@drawable/ic_twitter_24dp"
                             app:layout_constraintBottom_toBottomOf="@+id/linkTwitter"
                             app:layout_constraintEnd_toEndOf="@+id/linkTwitter"
@@ -256,9 +267,8 @@
                     android:layout_marginTop="16dp"
                     android:visibility="visible"
                     app:cardBackgroundColor="@color/colorSecondary"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.5"
-                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="@+id/socialLink"
+                    app:layout_constraintStart_toStartOf="@+id/socialLink"
                     app:layout_constraintTop_toBottomOf="@+id/socialLink">
 
                     <androidx.constraintlayout.widget.ConstraintLayout
@@ -274,10 +284,10 @@
                             android:layout_marginTop="8dp"
                             android:layout_marginEnd="16dp"
                             android:layout_marginBottom="8dp"
-                            android:text="An Instagram bio is the small area under your username where you can share some details about yourself or your brand. Your Instagram bio can include a brief self or brand description, contact information, emojis, hashtags and more."
+                            android:maxLength="250"
+                            android:text="@string/profile_bio_default_text"
                             android:textAlignment="center"
                             android:textSize="12sp"
-                            android:maxLength="250"
                             app:layout_constraintBottom_toBottomOf="parent"
                             app:layout_constraintEnd_toEndOf="parent"
                             app:layout_constraintStart_toStartOf="parent"
@@ -294,9 +304,8 @@
                     android:layout_marginTop="16dp"
                     android:visibility="visible"
                     app:cardBackgroundColor="@color/colorSecondary"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.5"
-                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="@+id/userBio"
+                    app:layout_constraintStart_toStartOf="@+id/userBio"
                     app:layout_constraintTop_toBottomOf="@+id/userBio">
 
                     <androidx.constraintlayout.widget.ConstraintLayout
@@ -308,6 +317,7 @@
                             android:layout_width="65dp"
                             android:layout_height="65dp"
                             android:layout_marginStart="8dp"
+                            android:contentDescription="@string/app_main_images"
                             android:src="@drawable/ic_main_icon_round"
                             app:layout_constraintBottom_toBottomOf="parent"
                             app:layout_constraintStart_toStartOf="parent"
@@ -326,20 +336,24 @@
 
                         <Button
                             android:id="@+id/promoStartBtn"
-                            android:layout_width="70dp"
-                            android:layout_height="40dp"
-                            android:layout_marginStart="8dp"
+                            android:layout_width="85dp"
+                            android:layout_height="48dp"
                             android:layout_marginTop="16dp"
+                            android:layout_marginEnd="16dp"
+                            android:layout_marginBottom="16dp"
                             android:text="@string/start"
+                            android:textColor="@color/colorPrimary"
                             android:textSize="11sp"
                             android:textStyle="bold"
-                            app:layout_constraintStart_toEndOf="@+id/textView6"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
                             app:layout_constraintTop_toTopOf="@+id/textView6" />
 
                         <ImageView
                             android:id="@+id/imageView25"
                             android:layout_width="wrap_content"
                             android:layout_height="36dp"
+                            android:contentDescription="@string/app_main_images"
                             android:src="@drawable/ic_bookmark_favorite"
                             app:layout_constraintEnd_toEndOf="parent"
                             app:layout_constraintTop_toTopOf="parent" />
@@ -368,9 +382,8 @@
                     android:layout_marginTop="16dp"
                     android:visibility="visible"
                     app:cardBackgroundColor="@color/colorSecondary"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.5"
-                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="@+id/promotion"
+                    app:layout_constraintStart_toStartOf="@+id/promotion"
                     app:layout_constraintTop_toBottomOf="@+id/promotion">
 
                     <androidx.constraintlayout.widget.ConstraintLayout
@@ -553,11 +566,12 @@
                     android:layout_width="300dp"
                     android:layout_height="100dp"
                     android:layout_marginTop="16dp"
+                    android:layout_marginBottom="32dp"
                     android:visibility="visible"
                     app:cardBackgroundColor="@color/colorSecondary"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.5"
-                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="@+id/courseProgress"
+                    app:layout_constraintStart_toStartOf="@+id/courseProgress"
                     app:layout_constraintTop_toBottomOf="@+id/courseProgress">
 
                     <androidx.constraintlayout.widget.ConstraintLayout
@@ -568,9 +582,6 @@
 
 
                 </androidx.cardview.widget.CardView>
-
-
-
 
 
                 <!--<androidx.cardview.widget.CardView

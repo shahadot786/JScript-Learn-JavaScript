@@ -21,7 +21,7 @@
     <!--Text Colors-->
     <color name="textColorGrey">#D2D3D5</color>
     <color name="textColorBlack">#22272C</color>
-    <color name="textColorPlaceholder">#7D7D7D</color>
+    <color name="textColorPlaceholder">#D0CDCD</color>
 
 
     <!--Extra Colors-->
@@ -46,8 +46,8 @@
     <color name="color_play_store">#6BC8A3</color>
     <color name="color_github">#999999</color>
     <color name="color_linkedin">#0077B5</color>
-    <color name="color_facebook">#4267B2</color>
-    <color name="color_instagram">#E1306C</color>
+    <color name="color_facebook">#7986CB</color>
+    <color name="color_instagram">#FF4081</color>
     <color name="color_app_gradient_end">#13bc57</color>
     <color name="color_app_gradient_start">#00601b</color>
     <color name="color_pro_bg">#C11C1F32</color>

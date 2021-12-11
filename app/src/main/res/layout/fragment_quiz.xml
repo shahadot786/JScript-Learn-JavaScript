@@ -55,7 +55,8 @@
                 android:src="@drawable/ic_javascript_quiz_header"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+                app:layout_constraintTop_toBottomOf="@+id/toolbar"
+                android:contentDescription="@string/programs_header_image" />
 
             <TextView
                 android:id="@+id/dashboard"
@@ -69,7 +70,7 @@
                 android:paddingEnd="20dp"
                 android:paddingBottom="10dp"
                 android:text="@string/dashboard"
-                android:textColor="@color/colorWhite"
+                android:textColor="@color/colorPrimary"
                 android:textSize="16sp"
                 android:textStyle="bold"
                 app:layout_constraintEnd_toStartOf="@+id/howTo"
@@ -90,7 +91,7 @@
                 android:paddingEnd="20dp"
                 android:paddingBottom="10dp"
                 android:text="@string/how_to"
-                android:textColor="@color/colorWhite"
+                android:textColor="@color/colorPrimary"
                 android:textSize="16sp"
                 android:textStyle="bold"
                 app:layout_constraintBottom_toBottomOf="@+id/dashboard"
@@ -104,7 +105,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="24dp"
-                android:text="Subjects"
+                android:text="@string/subjects"
                 android:textSize="16sp"
                 android:textStyle="bold"
                 app:layout_constraintStart_toStartOf="@+id/imageView4"

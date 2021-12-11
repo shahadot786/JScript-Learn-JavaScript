@@ -85,23 +85,23 @@ public class ProfileFragment extends Fragment {
             Intent intent = new Intent(getActivity(), GoogleSignInActivity.class);
             startActivity(intent);
         } else {
-            //google sign in data fetch with image
-            database.getReference().child("UserData").child(Objects.requireNonNull(auth.getUid()))
-                    .addListenerForSingleValueEvent(new ValueEventListener() {
-                        @Override
-                        public void onDataChange(@NonNull DataSnapshot snapshot) {
-                            if (snapshot.exists()) {
-                                UserModel user = snapshot.getValue(UserModel.class);
-                                assert user != null;
-                                binding.userName.setText(user.getUserName());
+                //google sign in data fetch with image
+                database.getReference().child("UpdateProfile").child(Objects.requireNonNull(auth.getUid()))
+                        .addListenerForSingleValueEvent(new ValueEventListener() {
+                            @Override
+                            public void onDataChange(@NonNull DataSnapshot snapshot) {
+                                if (snapshot.exists()) {
+                                    ProfileModel profileModel = snapshot.getValue(ProfileModel.class);
+                                    assert profileModel != null;
+                                    binding.userName.setText(profileModel.getUsername());
+                                }
                             }
-                        }
 
-                        @Override
-                        public void onCancelled(@NonNull DatabaseError error) {
+                            @Override
+                            public void onCancelled(@NonNull DatabaseError error) {
 
-                        }
-                    });
+                            }
+                        });
             //cover and profile update images
             database.getReference().child("UserImages").child(Objects.requireNonNull(auth.getUid()))
                     .addListenerForSingleValueEvent(new ValueEventListener() {
@@ -127,7 +127,6 @@ public class ProfileFragment extends Fragment {
                         }
                     });
             //other information data fetch
-
             //update profile data fetch
             database.getReference().child("UpdateProfile")
                     .child(Objects.requireNonNull(auth.getUid()))

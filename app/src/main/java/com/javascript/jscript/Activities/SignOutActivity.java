@@ -16,6 +16,7 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 import com.javascript.jscript.Config.UiConfig;
+import com.javascript.jscript.Model.ProfileModel;
 import com.javascript.jscript.Model.UserModel;
 import com.javascript.jscript.R;
 import com.javascript.jscript.databinding.ActivitySignOutBinding;
@@ -44,14 +45,13 @@ public class SignOutActivity extends AppCompatActivity {
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         //get database value
-        database.getReference().child("UserData").child(Objects.requireNonNull(auth.getUid()))
+        database.getReference().child("UpdateProfile").child(Objects.requireNonNull(auth.getUid()))
                 .addListenerForSingleValueEvent(new ValueEventListener() {
                     @Override
                     public void onDataChange(@NonNull DataSnapshot snapshot) {
                         if (snapshot.exists()) {
-                            UserModel user = snapshot.getValue(UserModel.class);
-                            assert user != null;
-                            binding.userName.setText(user.getUserName());
+                            ProfileModel profileModel =  new ProfileModel();
+                            binding.userName.setText(profileModel.getUsername());
                         }
                     }
 

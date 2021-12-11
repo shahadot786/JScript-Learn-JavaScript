@@ -341,6 +341,7 @@
                             android:layout_marginTop="16dp"
                             android:layout_marginEnd="16dp"
                             android:layout_marginBottom="16dp"
+                            android:fontFamily="@font/oswald"
                             android:text="@string/start"
                             android:textColor="@color/colorPrimary"
                             android:textSize="11sp"

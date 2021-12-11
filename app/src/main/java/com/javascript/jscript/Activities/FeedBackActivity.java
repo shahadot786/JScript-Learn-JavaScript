@@ -18,6 +18,7 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 import com.google.firebase.firestore.auth.User;
 import com.javascript.jscript.Model.FeedbackModel;
+import com.javascript.jscript.Model.ProfileModel;
 import com.javascript.jscript.Model.UserModel;
 import com.javascript.jscript.R;
 
@@ -58,8 +59,23 @@ public class FeedBackActivity extends AppCompatActivity {
                         if (snapshot.exists()){
                             UserModel user = snapshot.getValue(UserModel.class);
                             assert user != null;
-                            binding.userName.setText(user.getUserName());
                             binding.emailFeedEdit.setText(user.getEmail());
+                        }
+                    }
+
+                    @Override
+                    public void onCancelled(@NonNull DatabaseError error) {
+
+                    }
+                });
+        database.getReference().child("UpdateProfile").child(Objects.requireNonNull(auth.getUid()))
+                .addListenerForSingleValueEvent(new ValueEventListener() {
+                    @Override
+                    public void onDataChange(@NonNull DataSnapshot snapshot) {
+                        if (snapshot.exists()){
+                            ProfileModel profileModel =  snapshot.getValue(ProfileModel.class);
+                            assert profileModel != null;
+                            binding.userName.setText(profileModel.getUsername());
                         }
                     }
 

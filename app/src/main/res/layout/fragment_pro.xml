@@ -444,32 +444,32 @@
                 app:layout_constraintTop_toBottomOf="@+id/view_github" />
 
             <TextView
-                android:id="@+id/textView26"
-                android:layout_width="0dp"
-                android:layout_height="0dp"
-                android:layout_marginTop="14dp"
+                android:id="@+id/textView10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="44dp"
                 android:background="@drawable/ic_follow_feedback_bg"
                 android:gravity="center_horizontal|center_vertical"
+                android:paddingStart="25dp"
+                android:paddingTop="15dp"
+                android:paddingEnd="25dp"
+                android:paddingBottom="15dp"
                 android:text="@string/contact_us"
                 android:textSize="20sp"
                 android:textStyle="bold"
-                app:layout_constraintBottom_toBottomOf="@+id/viewFeedback"
-                app:layout_constraintEnd_toEndOf="@+id/viewFeedback"
-                app:layout_constraintStart_toStartOf="@+id/viewFeedback"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/view24" />
 
             <View
-                android:id="@+id/viewFeedback"
-                android:layout_width="110dp"
-                android:layout_height="50dp"
-                android:layout_marginTop="16dp"
-                android:layout_marginBottom="50dp"
+                android:id="@+id/viewFeedback3"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
                 android:background="@drawable/ic_follow_link_bg"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.5"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/view_website" />
+                app:layout_constraintBottom_toBottomOf="@+id/textView10"
+                app:layout_constraintEnd_toEndOf="@+id/textView10"
+                app:layout_constraintStart_toStartOf="@+id/textView10"
+                app:layout_constraintTop_toTopOf="@+id/textView10" />
 
 
         </androidx.constraintlayout.widget.ConstraintLayout>

@@ -141,7 +141,7 @@ public class ProFragment extends Fragment {
                 startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(getString(R.string.play_website))));
             }
         });
-        binding.viewFeedback.setOnClickListener(new View.OnClickListener() {
+        binding.viewFeedback3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(getActivity(),FeedBackActivity.class);

@@ -346,7 +346,7 @@
                     android:layout_marginTop="8dp"
                     android:text="@string/_12_months"
                     android:textColor="@color/colorWhite"
-                    android:textSize="14sp"
+                    android:textSize="16sp"
                     app:layout_constraintEnd_toEndOf="@+id/textView39"
                     app:layout_constraintStart_toStartOf="@+id/textView39"
                     app:layout_constraintTop_toBottomOf="@+id/textView39" />
@@ -370,6 +370,7 @@
                     android:layout_marginBottom="8dp"
                     android:text="@string/see_price"
                     android:textAllCaps="false"
+                    android:fontFamily="@font/oswald"
                     android:textColor="@color/colorPrimary"
                     android:textStyle="bold"
                     app:layout_constraintBottom_toBottomOf="parent"
@@ -385,9 +386,8 @@
                 android:layout_marginTop="16dp"
                 android:layout_marginBottom="16dp"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/constraintLayout2"
+                app:layout_constraintStart_toStartOf="@+id/constraintLayout2"
                 app:layout_constraintTop_toBottomOf="@+id/constraintLayout2"
                 app:layout_constraintVertical_bias="1.0">
 
@@ -399,7 +399,6 @@
                     android:text="@string/pro_play_message"
                     android:textAlignment="center"
                     android:textSize="11sp"
-                    android:visibility="gone"
                     app:layout_constraintBottom_toTopOf="@+id/privacyPolicy"
                     app:layout_constraintEnd_toEndOf="@+id/privacyPolicy"
                     app:layout_constraintStart_toStartOf="@+id/privacyPolicy" />

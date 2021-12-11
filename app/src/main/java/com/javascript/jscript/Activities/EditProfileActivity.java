@@ -14,6 +14,7 @@ import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
+import com.javascript.jscript.Config.UiConfig;
 import com.javascript.jscript.Model.ProfileModel;
 import com.javascript.jscript.Model.UserModel;
 import com.javascript.jscript.R;
@@ -52,25 +53,8 @@ public class EditProfileActivity extends AppCompatActivity {
         Objects.requireNonNull(getSupportActionBar()).setDisplayHomeAsUpEnabled(true);
 
         //get database value
-        //google sign in data fetch with image
-        database.getReference().child("UserData").child(Objects.requireNonNull(auth.getUid()))
-                .addListenerForSingleValueEvent(new ValueEventListener() {
-                    @Override
-                    public void onDataChange(@NonNull DataSnapshot snapshot) {
-                        if (snapshot.exists()) {
-                            UserModel user = snapshot.getValue(UserModel.class);
-                            assert user != null;
-                            binding.userName.setText(user.getUserName());
-                        }
-                    }
-
-                    @Override
-                    public void onCancelled(@NonNull DatabaseError error) {
-
-                    }
-                });
         //fetch update image
-        database.getReference().child("UserImages").child(auth.getUid())
+        database.getReference().child("UserImages").child(Objects.requireNonNull(auth.getUid()))
                 .addListenerForSingleValueEvent(new ValueEventListener() {
                     @Override
                     public void onDataChange(@NonNull DataSnapshot snapshot) {
@@ -99,6 +83,7 @@ public class EditProfileActivity extends AppCompatActivity {
                         if (snapshot.exists()) {
                             ProfileModel profile = snapshot.getValue(ProfileModel.class);
                             assert profile != null;
+                            String username = profile.getUsername();
                             String profession = profile.getProfession();
                             String bio = profile.getUserBio();
                             String fb = profile.getFbLink();
@@ -107,6 +92,8 @@ public class EditProfileActivity extends AppCompatActivity {
                             String linkedin = profile.getLinkedinLink();
                             String twitter = profile.getTwitterLink();
                             //set profession,bio and link
+                            binding.userName.setText(username);
+                            binding.usernameEdit.setText(username);
                             binding.professionEdit.setText(profession);
                             binding.bioEditText.setText(bio);
                             binding.fblinkEditText.setText(fb);
@@ -129,6 +116,7 @@ public class EditProfileActivity extends AppCompatActivity {
             public void onClick(View view) {
                 dialog.show();
                 ProfileModel profileModel = new ProfileModel();
+                profileModel.setUsername(Objects.requireNonNull(binding.usernameEdit.getText()).toString());
                 profileModel.setProfession(Objects.requireNonNull(binding.professionEdit.getText()).toString());
                 profileModel.setFbLink(Objects.requireNonNull(binding.fblinkEditText.getText()).toString());
                 profileModel.setInstaLink(Objects.requireNonNull(binding.instalinkEditText.getText()).toString());

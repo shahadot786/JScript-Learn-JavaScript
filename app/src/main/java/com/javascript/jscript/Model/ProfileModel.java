@@ -2,11 +2,12 @@ package com.javascript.jscript.Model;
 
 public class ProfileModel {
 
-    private String  profession,fbLink,instaLink,githubLink,linkedinLink,twitterLink,userBio;
+    private String  username,profession,fbLink,instaLink,githubLink,linkedinLink,twitterLink,userBio;
     public ProfileModel() {
     }
 
-    public ProfileModel(String profession, String fbLink, String instaLink, String githubLink, String linkedinLink, String twitterLink, String userBio) {
+    public ProfileModel(String username, String profession, String fbLink, String instaLink, String githubLink, String linkedinLink, String twitterLink, String userBio) {
+        this.username = username;
         this.profession = profession;
         this.fbLink = fbLink;
         this.instaLink = instaLink;
@@ -15,6 +16,7 @@ public class ProfileModel {
         this.twitterLink = twitterLink;
         this.userBio = userBio;
     }
+
 
     public String getProfession() {
         return profession;
@@ -70,5 +72,13 @@ public class ProfileModel {
 
     public void setUserBio(String userBio) {
         this.userBio = userBio;
+    }
+
+    public String getUsername() {
+        return username;
+    }
+
+    public void setUsername(String username) {
+        this.username = username;
     }
 }

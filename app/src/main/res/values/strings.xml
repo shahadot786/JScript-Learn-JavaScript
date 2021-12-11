@@ -157,7 +157,7 @@
     <string name="best_value">BEST VALUE</string>
     <string name="_12_months">Yearly</string>
     <string name="pro_price">BDT 1499/-</string>
-    <string name="pro_play_message">You won\'t be charged until your free trial ends. You can cancel anytime in Google Play.</string>
+    <string name="pro_play_message">You can cancel anytime in Google Play.</string>
 
     <!--profile-->
     <string name="title_activity_login">LoginActivity</string>
@@ -184,12 +184,13 @@
     <string name="about_or_bio">About or Bio</string>
     <string name="write_about_yourself">Write about yourself</string>
     <string name="write_your_facebook_link">Write your facebook link</string>
-    <string name="instagram_link">Instagram Link</string>
     <string name="write_your_instagram_link">Write your instagram link</string>
     <string name="write_your_github_link">Write your github link</string>
+    <string name="write_your_linkedin_link">Write your linkedin link</string>
+    <string name="write_your_twitter_link">Write your twitter link</string>
+    <string name="instagram_link">Instagram Link</string>
     <string name="github_link">Github Link</string>
     <string name="linkedin_link">LinkedIn Link</string>
-    <string name="write_your_linkedin_link">Write your linkedin link</string>
     <string name="twitter_link">Twitter Link</string>
     <string name="update">Update</string>
 
@@ -208,6 +209,8 @@
     <string name="see_price">See Price &amp; BUY</string>
     <string name="app_main_images">App main images</string>
     <string name="profile_bio_default_text">An Instagram bio is the small area under your username where you can share some details about yourself or your brand. Your Instagram bio can include a brief self or brand description, contact information, emojis, hashtags and more.</string>
+    <string name="usernameet">Username</string>
+    <string name="write_your_username">Write your username</string>
 
 
 </resources>

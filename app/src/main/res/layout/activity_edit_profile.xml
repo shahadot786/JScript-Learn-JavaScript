@@ -81,9 +81,48 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
-                android:text="@string/profession"
+                android:text="@string/usernameet"
                 app:layout_constraintStart_toStartOf="@+id/textView11"
                 app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/text_input_username"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="16dp"
+                android:textColorHint="@color/textColorPlaceholder"
+                app:boxBackgroundColor="@color/colorSecondary"
+                app:boxStrokeColor="@color/activeGreen"
+                app:boxStrokeWidthFocused="1dp"
+                app:counterEnabled="true"
+                app:counterMaxLength="25"
+                app:counterTextColor="@color/textColorGrey"
+                app:hintTextColor="@color/activeGreen"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/textView"
+                app:layout_constraintTop_toBottomOf="@+id/textView">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/usernameEdit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/write_your_username"
+                    android:inputType="text"
+                    android:maxLength="25"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="12sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:id="@+id/textView22"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/profession"
+                app:layout_constraintStart_toStartOf="@+id/textView"
+                app:layout_constraintTop_toBottomOf="@+id/text_input_username" />
 
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/text_input_profession"
@@ -102,8 +141,8 @@
                 app:counterTextColor="@color/textColorGrey"
                 app:hintTextColor="@color/activeGreen"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="@+id/textView"
-                app:layout_constraintTop_toBottomOf="@+id/textView">
+                app:layout_constraintStart_toStartOf="@+id/textView22"
+                app:layout_constraintTop_toBottomOf="@+id/textView22">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/professionEdit"
@@ -358,7 +397,7 @@
                     android:id="@+id/twitterlinkEditText"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="@string/write_your_linkedin_link"
+                    android:hint="@string/write_your_twitter_link"
                     android:inputType="text"
                     android:overScrollMode="always"
                     android:scrollbars="vertical"

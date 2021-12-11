@@ -3,20 +3,9 @@ package com.javascript.jscript.Model;
 public class ProfileModel {
 
     private String  username,profession,fbLink,instaLink,githubLink,linkedinLink,twitterLink,userBio;
+
     public ProfileModel() {
     }
-
-    public ProfileModel(String username, String profession, String fbLink, String instaLink, String githubLink, String linkedinLink, String twitterLink, String userBio) {
-        this.username = username;
-        this.profession = profession;
-        this.fbLink = fbLink;
-        this.instaLink = instaLink;
-        this.githubLink = githubLink;
-        this.linkedinLink = linkedinLink;
-        this.twitterLink = twitterLink;
-        this.userBio = userBio;
-    }
-
 
     public String getProfession() {
         return profession;

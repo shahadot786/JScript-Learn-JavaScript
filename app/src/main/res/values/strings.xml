@@ -70,7 +70,7 @@
     <string name="sign_up_policy_message">By clicking Register, you agree to our</string>
     <string name="privacy_term">FAQ, &amp; Privacy Policy</string>
     <string name="refund_policy">Refund Policy</string>
-    <string name="refund_message">* Refunds can be issued only if you send a request for refund within 48 hours of your order. \n\n * To request a refund, you can mail us your order number and date (from your Google Play Order Receipt) to our email: shrcreation.media@gmail.com</string>
+    <string name="refund_message">* Refunds can be issued only if you send a request for refund within 48 hours of your order. \n\n * To request a refund, you can mail us your order number and date (from your Google Play Order Receipt) to our email: info@shrcreation.com</string>
 
     <!--Log In-->
     <string name="log_in">Sign In</string>

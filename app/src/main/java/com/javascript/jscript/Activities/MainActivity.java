@@ -163,8 +163,6 @@ public class MainActivity extends AppCompatActivity {
                 return true;
             //feedback
             case R.id.feedback:
-                //contact us
-            case R.id.contact_us:
                 Intent intent3 = new Intent(MainActivity.this, FeedBackActivity.class);
                 startActivity(intent3);
                 return true;
@@ -185,6 +183,10 @@ public class MainActivity extends AppCompatActivity {
             case R.id.privacy:
                 Intent intent1 = new Intent(Intent.ACTION_VIEW, Uri.parse(getString(R.string.url_play_privacy_policy)));
                 startActivity(intent1);
+                return true;
+            //contact us
+            case R.id.contact_us:
+                startActivity(new Intent(Intent.ACTION_VIEW,Uri.parse("mailto:" + "info@shrcreation.com")));
                 return true;
             //logout
             case R.id.logout:

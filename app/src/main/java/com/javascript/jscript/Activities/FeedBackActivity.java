@@ -114,9 +114,8 @@ public class FeedBackActivity extends AppCompatActivity {
 
                 if (sendMessageBtnValidation() && sendEmailBtnValidation()) {
                     FeedbackModel feedbackModel = new FeedbackModel();
-                    feedbackModel.setFeedbackDescription(binding.messageEditText.getText().toString());
-                    feedbackModel.setFeedEmail(binding.emailFeedEdit.getText().toString());
-
+                    feedbackModel.setFeedbackDescription(Objects.requireNonNull(binding.messageEditText.getText()).toString());
+                    feedbackModel.setFeedEmail(Objects.requireNonNull(binding.emailFeedEdit.getText()).toString());
                     database.getReference().child("Feedback")
                             .child(auth.getUid())
                             .push()

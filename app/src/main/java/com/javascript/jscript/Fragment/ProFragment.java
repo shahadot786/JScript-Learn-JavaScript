@@ -17,8 +17,8 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 import com.javascript.jscript.Activities.FeedBackActivity;
-import com.javascript.jscript.Activities.FollowUsActivity;
 import com.javascript.jscript.BuildConfig;
+import com.javascript.jscript.Model.ProfileModel;
 import com.javascript.jscript.Model.UserModel;
 import com.javascript.jscript.R;
 import com.javascript.jscript.databinding.FragmentProBinding;
@@ -52,14 +52,14 @@ public class ProFragment extends Fragment {
 
 
         //fetch username
-        database.getReference().child("UserData").child(Objects.requireNonNull(auth.getUid()))
+        database.getReference().child("UpdateProfile").child(Objects.requireNonNull(auth.getUid()))
                 .addListenerForSingleValueEvent(new ValueEventListener() {
                     @Override
                     public void onDataChange(@NonNull DataSnapshot snapshot) {
                         if (snapshot.exists()){
-                            UserModel user = snapshot.getValue(UserModel.class);
+                            ProfileModel user = snapshot.getValue(ProfileModel.class);
                             assert user != null;
-                            binding.proUserName.setText(user.getUserName());
+                            binding.proUserName.setText(user.getUsername());
                         }
                     }
 
@@ -144,8 +144,7 @@ public class ProFragment extends Fragment {
         binding.viewFeedback3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getActivity(),FeedBackActivity.class);
-                startActivity(intent);
+                startActivity(new Intent(Intent.ACTION_VIEW,Uri.parse("mailto:" + "info@shrcreation.com")));
             }
         });
 

@@ -46,9 +46,6 @@
             android:name=".Interview.InterviewItemsListActivity"
             android:exported="false" />
         <activity
-            android:name=".Quiz.DashboardActivity"
-            android:exported="false" />
-        <activity
             android:name=".Programs.ProgramsCodeActivity"
             android:exported="false" />
         <activity

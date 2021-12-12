@@ -60,31 +60,10 @@
                 app:layout_constraintTop_toBottomOf="@+id/toolbar" />
 
             <TextView
-                android:id="@+id/leaderboard"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
-                android:background="@drawable/ic_programs_image_bg"
-                android:backgroundTint="@color/activeGreen"
-                android:paddingStart="20dp"
-                android:paddingTop="5dp"
-                android:paddingEnd="20dp"
-                android:paddingBottom="10dp"
-                android:text="@string/dashboard"
-                android:textColor="@color/colorPrimary"
-                android:textSize="16sp"
-                android:textStyle="bold"
-                app:layout_constraintEnd_toStartOf="@+id/howTo"
-                app:layout_constraintHorizontal_bias="0.5"
-                app:layout_constraintHorizontal_chainStyle="packed"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/imageView4" />
-
-            <TextView
                 android:id="@+id/howTo"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="32dp"
+                android:layout_marginTop="16dp"
                 android:background="@drawable/ic_programs_image_bg"
                 android:backgroundTint="@color/activeGreen"
                 android:paddingStart="20dp"
@@ -95,11 +74,8 @@
                 android:textColor="@color/colorPrimary"
                 android:textSize="16sp"
                 android:textStyle="bold"
-                app:layout_constraintBottom_toBottomOf="@+id/leaderboard"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.5"
-                app:layout_constraintStart_toEndOf="@+id/leaderboard"
-                app:layout_constraintTop_toTopOf="@+id/leaderboard" />
+                app:layout_constraintEnd_toEndOf="@+id/imageView4"
+                app:layout_constraintTop_toBottomOf="@+id/imageView4" />
 
             <TextView
                 android:id="@+id/textView32"
@@ -110,7 +86,7 @@
                 android:textSize="16sp"
                 android:textStyle="bold"
                 app:layout_constraintStart_toStartOf="@+id/imageView4"
-                app:layout_constraintTop_toBottomOf="@+id/leaderboard" />
+                app:layout_constraintTop_toBottomOf="@+id/howTo" />
 
             <View
                 android:id="@+id/view8"

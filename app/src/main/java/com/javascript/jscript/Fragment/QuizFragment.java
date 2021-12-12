@@ -16,7 +16,6 @@ import com.javascript.jscript.Activities.PremiumActivity;
 import com.javascript.jscript.Adapter.QuizItemsAdapter;
 import com.javascript.jscript.Adapter.QuizItemsAdapterPro;
 import com.javascript.jscript.Config.UiConfig;
-import com.javascript.jscript.Quiz.DashboardActivity;
 import com.javascript.jscript.Quiz.QuizTopicListActivity;
 import com.javascript.jscript.R;
 import com.javascript.jscript.Utils.AdNetwork;
@@ -50,7 +49,7 @@ public class QuizFragment extends Fragment {
 
     };
 
-    TextView dashboard,howTo;
+    TextView howTo;
     public QuizFragment() {
         // Required empty public constructor
     }
@@ -67,7 +66,6 @@ public class QuizFragment extends Fragment {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_quiz,container,false);
         //find id
-        dashboard = view.findViewById(R.id.leaderboard);
         howTo = view.findViewById(R.id.howTo);
         //pro codes
         proView = view.findViewById(R.id.quizProView);
@@ -103,7 +101,7 @@ public class QuizFragment extends Fragment {
             public void onClick(View view) {
                 AlertDialog.Builder dialog = new AlertDialog.Builder(getActivity(), R.style.AppCompatAlertDialogStyle);
                 dialog.setCancelable(false);
-                dialog.setTitle("How to use?");
+                dialog.setTitle("How to play?");
                 dialog.setMessage("1. Every quiz subjects has different types of quiz.\n2. Every types of quiz has a 10 different questions.\n3. User can add quiz. \n4. Minimum 8 Correct Answer For Win.");
                 dialog.setPositiveButton(R.string.dialog_ok, new DialogInterface.OnClickListener() {
                     @Override
@@ -112,12 +110,6 @@ public class QuizFragment extends Fragment {
                     }
                 });
                 dialog.show();
-            }
-        });
-        dashboard.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                startActivity(new Intent(getActivity(), DashboardActivity.class));
             }
         });
         //click pro view

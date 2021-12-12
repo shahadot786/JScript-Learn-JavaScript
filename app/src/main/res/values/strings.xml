@@ -20,9 +20,9 @@
     <string name="share_message4">JavaScript tutorial provides basic and advanced concepts of JavaScript. Our JavaScript tutorial is designed for beginners and professionals.</string>
 
     <!--Admob Ads-->
-    <string name="app_id">ca-app-pub-3940256099942544~3347511713</string>
-    <string name="banner_ad_unit_id">ca-app-pub-3940256099942544/6300978111</string>
-    <string name="interstitial_ad_unit_id">ca-app-pub-3940256099942544/1033173712</string>
+    <string name="app_id">ca-app-pub-1183995713269973~4276200822</string>
+    <string name="banner_ad_unit_id">ca-app-pub-1183995713269973/7916247990</string>
+    <string name="interstitial_ad_unit_id">ca-app-pub-1183995713269973/6541772361</string>
 
     <!--Google Sign In-->
     <!--<string name="default_web_client_id">10732582829-srv96l245sn3s9jgl6j4vfijnvplsf7p.apps.googleusercontent.com</string>-->

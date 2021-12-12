@@ -198,7 +198,7 @@
     <string name="programs_header_image">Programs Header Image</string>
     <string name="javascripts_practice_programs">Practice Programs</string>
     <string name="pro">PRO</string>
-    <string name="dashboard">Dashboard</string>
+    <string name="dashboard">Leaderboard</string>
     <string name="add_quiz">Add Quiz</string>
     <string name="how_to">How to?</string>
     <string name="subjects">Subjects:</string>
@@ -211,6 +211,7 @@
     <string name="profile_bio_default_text">An Instagram bio is the small area under your username where you can share some details about yourself or your brand. Your Instagram bio can include a brief self or brand description, contact information, emojis, hashtags and more.</string>
     <string name="usernameet">Username</string>
     <string name="write_your_username">Write your username</string>
+    <string name="play_quiz">Play Quiz</string>
 
 
 </resources>

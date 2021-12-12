@@ -13,8 +13,6 @@ import android.widget.AdapterView;
 import android.widget.BaseAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
-
-import com.javascript.jscript.Interview.InterviewAnswerActivity;
 import com.javascript.jscript.R;
 import com.javascript.jscript.Utils.AdNetwork;
 import com.javascript.jscript.databinding.ActivityQuizTopicListBinding;
@@ -48,9 +46,8 @@ public class QuizTopicListActivity extends AppCompatActivity {
         quizList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                Intent intent = new Intent(QuizTopicListActivity.this, InterviewAnswerActivity.class);
+                Intent intent = new Intent(QuizTopicListActivity.this, QuizDetailsActivity.class);
                 intent.putExtra("question",list[i]);
-                intent.putExtra("answer",list[i]);
                 startActivity(intent);
                 adNetwork.showInterstitialAd();
             }
@@ -60,52 +57,52 @@ public class QuizTopicListActivity extends AppCompatActivity {
     }
     private void loadItems() {
         final String basic[] = {
-                "Questions",
-                "Questions 1",
-                "Questions 2",
-                "Questions 3",
-                "Questions 4",
-                "Questions 5",
-                "Questions 6",
-                "Questions 7"
+                "Quiz",
+                "Quiz 1",
+                "Quiz 2",
+                "Quiz 3",
+                "Quiz 4",
+                "Quiz 5",
+                "Quiz 6",
+                "Quiz 7"
 
         };
 
         final String advanced[] = {
-                "Questions Advanced",
-                "Questions Advanced 1",
-                "Questions Advanced 2",
-                "Questions Advanced 3",
-                "Questions Advanced 4",
-                "Questions Advanced 5",
-                "Questions Advanced 6",
-                "Questions Advanced 7"
+                "Quiz Advanced",
+                "Quiz Advanced 1",
+                "Quiz Advanced 2",
+                "Quiz Advanced 3",
+                "Quiz Advanced 4",
+                "Quiz Advanced 5",
+                "Quiz Advanced 6",
+                "Quiz Advanced 7"
         };
 
         final String expert[] = {
-                "Questions Expert",
-                "Questions Expert 1",
-                "Questions Expert 2",
-                "Questions Expert 3",
-                "Questions Expert 4",
-                "Questions Expert 5",
-                "Questions Expert 6",
-                "Questions Expert 7"
+                "Quiz Expert",
+                "Quiz Expert 1",
+                "Quiz Expert 2",
+                "Quiz Expert 3",
+                "Quiz Expert 4",
+                "Quiz Expert 5",
+                "Quiz Expert 6",
+                "Quiz Expert 7"
         };
 
         final String angular[] = {
-                "Questions Angular",
-                "Questions Angular 1",
-                "Questions Angular 2",
-                "Questions Angular 3",
-                "Questions Angular 4",
-                "Questions Angular 5",
-                "Questions Angular 6",
-                "Questions Angular 7"
+                "Quiz Angular",
+                "Quiz Angular 1",
+                "Quiz Angular 2",
+                "Quiz Angular 3",
+                "Quiz Angular 4",
+                "Quiz Angular 5",
+                "Quiz Angular 6",
+                "Quiz Angular 7"
         };
 
-        String programsItems = getIntent().getStringExtra("quizItems");
-        switch (programsItems){
+        String quizItems = getIntent().getStringExtra("quizItems");
+        switch (quizItems){
             case "Basic":
                 list = basic;
                 break;

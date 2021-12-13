@@ -1,6 +1,6 @@
 package com.javascript.jscript.Activities;
 
-import static com.javascript.jscript.Activities.PremiumActivity.PRODUCT_ID;
+import static com.javascript.jscript.Activities.PremiumActivity.PURCHASE_KEY;
 
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -22,8 +22,6 @@ import com.javascript.jscript.R;
 
 public class SplashActivity extends AppCompatActivity {
 
-    //Variables
-    private static int SPLASH_SCREEN = 4000;
     Animation topAmin, bottomAnim;
     ImageView image;
     TextView slogan;
@@ -31,7 +29,7 @@ public class SplashActivity extends AppCompatActivity {
     FirebaseAuth auth;
     FirebaseDatabase database;
     final String PREFS_NAME = "JscriptPrefFile2";
-    public static final String PREF_FILE= "MyPref";
+    public static final String PREF_FILE = "JScript";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -53,14 +51,14 @@ public class SplashActivity extends AppCompatActivity {
         database = FirebaseDatabase.getInstance();
         database.setPersistenceEnabled(true);
         //item subscribed
-        if(getSubscribeValueFromPref()){
+        if (getPurchaseValueFromPref()) {
             UiConfig.INTERSTITIAL__AD_VISIBILITY = false;
             UiConfig.PRO_VISIBILITY_STATUS_SHOW = false;
             UiConfig.BANNER_AD_VISIBILITY = false;
             UiConfig.ENABLE_EXIT_DIALOG = false;
         }
         //item not subscribed
-        else{
+        else {
             UiConfig.INTERSTITIAL__AD_VISIBILITY = true;
             UiConfig.PRO_VISIBILITY_STATUS_SHOW = true;
             UiConfig.BANNER_AD_VISIBILITY = true;
@@ -68,6 +66,8 @@ public class SplashActivity extends AppCompatActivity {
         }
         ///check first time installer
         SharedPreferences settings = getSharedPreferences(PREFS_NAME, 0);
+        //Variables
+        int SPLASH_SCREEN = 4000;
         if (settings.getBoolean("my_first_time", true)) {
             //the app is being launched for first time, do something
             //Log.d("Comments", "First time");
@@ -108,11 +108,13 @@ public class SplashActivity extends AppCompatActivity {
 
 
     }
+
     private SharedPreferences getPreferenceObject() {
         return getApplicationContext().getSharedPreferences(PREF_FILE, 0);
     }
-    private boolean getSubscribeValueFromPref(){
-        return getPreferenceObject().getBoolean( PRODUCT_ID,false);
+
+    private boolean getPurchaseValueFromPref() {
+        return getPreferenceObject().getBoolean(PURCHASE_KEY, false);
     }
 
 }

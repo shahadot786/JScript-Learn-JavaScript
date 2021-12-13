@@ -1,7 +1,6 @@
 package com.javascript.jscript.Activities;
 
 import static com.android.billingclient.api.BillingClient.SkuType.INAPP;
-import static com.android.billingclient.api.BillingClient.SkuType.SUBS;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -13,7 +12,6 @@ import android.content.SharedPreferences;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -42,7 +40,7 @@ public class PremiumActivity extends AppCompatActivity implements PurchasesUpdat
 
     ActivityPremiumBinding binding;
     private BillingClient billingClient;
-    public static final String PREF_FILE= "MyPref";
+    public static final String PREF_FILE= "JScript";
     public static final String PURCHASE_KEY= "one_time_product";
     public static final String PRODUCT_ID= "jscript_life_time";
     TextView itemPrice;
@@ -100,7 +98,7 @@ public class PremiumActivity extends AppCompatActivity implements PurchasesUpdat
                             // so update pref in both cases
                             // so next time on app launch our premium content will be locked
                             else{
-                                saveSubscribeValueToPref(false);
+                                savePurchaseValueToPref(false);
                             }
                         }
                     });
@@ -142,7 +140,7 @@ public class PremiumActivity extends AppCompatActivity implements PurchasesUpdat
         });
 
         //item subscribed
-        if(getSubscribeValueFromPref()){
+        if(getPurchaseValueFromPref()){
             UiConfig.INTERSTITIAL__AD_VISIBILITY = false;
             UiConfig.PRO_VISIBILITY_STATUS_SHOW = false;
             UiConfig.BANNER_AD_VISIBILITY = false;
@@ -164,10 +162,10 @@ public class PremiumActivity extends AppCompatActivity implements PurchasesUpdat
         SharedPreferences pref = getApplicationContext().getSharedPreferences(PREF_FILE, 0);
         return pref.edit();
     }
-    private boolean getSubscribeValueFromPref(){
+    private boolean getPurchaseValueFromPref(){
         return getPreferenceObject().getBoolean( PURCHASE_KEY,false);
     }
-    private void saveSubscribeValueToPref(boolean value){
+    private void savePurchaseValueToPref(boolean value){
         getPreferenceEditObject().putBoolean(PURCHASE_KEY,value).commit();
     }
 
@@ -251,8 +249,8 @@ public class PremiumActivity extends AppCompatActivity implements PurchasesUpdat
                 else {
                     // Grant entitlement to the user on item purchase
                     // restart activity
-                    if(!getSubscribeValueFromPref()){
-                        saveSubscribeValueToPref(true);
+                    if(!getPurchaseValueFromPref()){
+                        savePurchaseValueToPref(true);
                         Toast.makeText(getApplicationContext(), "Item Purchased", Toast.LENGTH_SHORT).show();
                         this.recreate();
                     }
@@ -267,7 +265,7 @@ public class PremiumActivity extends AppCompatActivity implements PurchasesUpdat
             //if purchase is unknown mark false
             else if(PRODUCT_ID.equals(purchase.getSkus().get(0)) && purchase.getPurchaseState() == Purchase.PurchaseState.UNSPECIFIED_STATE)
             {
-                saveSubscribeValueToPref(false);
+                savePurchaseValueToPref(false);
                 UiConfig.INTERSTITIAL__AD_VISIBILITY = true;
                 UiConfig.PRO_VISIBILITY_STATUS_SHOW = true;
                 UiConfig.BANNER_AD_VISIBILITY = true;
@@ -282,7 +280,7 @@ public class PremiumActivity extends AppCompatActivity implements PurchasesUpdat
             if(billingResult.getResponseCode()==BillingClient.BillingResponseCode.OK){
                 //if purchase is acknowledged
                 // Grant entitlement to the user. and restart activity
-                saveSubscribeValueToPref(true);
+                savePurchaseValueToPref(true);
                 PremiumActivity.this.recreate();
             }
         }

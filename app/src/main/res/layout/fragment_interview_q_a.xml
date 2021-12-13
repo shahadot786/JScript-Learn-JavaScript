@@ -36,7 +36,7 @@
                 android:layout_marginEnd="16dp"
                 android:background="@drawable/ic_programs_image_bg"
                 android:contentDescription="@string/programs_header_image"
-                android:src="@drawable/ic_javascript_interview_header"
+                android:src="@drawable/ic_interview_slider_bg_200dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.5"
                 app:layout_constraintStart_toStartOf="parent"

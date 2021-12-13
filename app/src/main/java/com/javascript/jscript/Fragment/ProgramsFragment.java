@@ -27,6 +27,7 @@ public class ProgramsFragment extends Fragment {
     ImageView proImage;
     private AdNetwork adNetwork;
 
+
     String[] itemsName = {"Basic","Advanced","Expert"};
     String[] itemsNamePro = {"Angular","Vue","React","Angular","Vue","React","Angular","Vue","React"};
 

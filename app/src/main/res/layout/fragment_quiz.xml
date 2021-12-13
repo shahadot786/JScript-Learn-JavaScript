@@ -46,15 +46,15 @@
                 app:titleTextColor="@color/textColorGrey" />
 
             <ImageView
-                android:id="@+id/imageView4"
+                android:id="@+id/sliderView"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="16dp"
                 android:layout_marginEnd="16dp"
+                android:src="@drawable/ic_quiz_slider_bg_200dp"
                 android:background="@drawable/ic_programs_image_bg"
                 android:contentDescription="@string/programs_header_image"
-                android:src="@drawable/ic_javascript_quiz_header"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/toolbar" />
@@ -74,8 +74,8 @@
                 android:textColor="@color/colorPrimary"
                 android:textSize="16sp"
                 android:textStyle="bold"
-                app:layout_constraintEnd_toEndOf="@+id/imageView4"
-                app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+                app:layout_constraintEnd_toEndOf="@+id/sliderView"
+                app:layout_constraintTop_toBottomOf="@+id/sliderView" />
 
             <TextView
                 android:id="@+id/textView32"
@@ -85,7 +85,7 @@
                 android:text="@string/play_quiz"
                 android:textSize="16sp"
                 android:textStyle="bold"
-                app:layout_constraintStart_toStartOf="@+id/imageView4"
+                app:layout_constraintStart_toStartOf="@+id/sliderView"
                 app:layout_constraintTop_toBottomOf="@+id/howTo" />
 
             <View

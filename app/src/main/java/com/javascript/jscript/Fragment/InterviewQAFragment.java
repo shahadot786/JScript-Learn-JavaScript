@@ -13,7 +13,6 @@ import com.javascript.jscript.Adapter.InterviewItemsAdapter;
 import com.javascript.jscript.Adapter.InterviewItemsAdapterPro;
 import com.javascript.jscript.Config.UiConfig;
 import com.javascript.jscript.Interview.InterviewItemsListActivity;
-import com.javascript.jscript.Programs.ProgramsItemsListActivity;
 import com.javascript.jscript.R;
 import com.javascript.jscript.Utils.AdNetwork;
 import com.javascript.jscript.Utils.ExpandableHeightGridView;
@@ -61,7 +60,6 @@ public class InterviewQAFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View view =  inflater.inflate(R.layout.fragment_interview_q_a, container, false);
-
         //pro codes
         proView = view.findViewById(R.id.interviewProView);
         proImage = view.findViewById(R.id.interviewProImage);

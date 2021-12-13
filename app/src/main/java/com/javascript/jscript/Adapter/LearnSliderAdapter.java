@@ -1,17 +1,35 @@
 package com.javascript.jscript.Adapter;
+import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.TextView;
+
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.Fragment;
+
+import com.javascript.jscript.Activities.FeedBackActivity;
+import com.javascript.jscript.Activities.PremiumActivity;
+import com.javascript.jscript.Config.UiConfig;
+import com.javascript.jscript.Fragment.InterviewQAFragment;
+import com.javascript.jscript.Fragment.LearnFragment;
+import com.javascript.jscript.Fragment.ProgramsFragment;
+import com.javascript.jscript.Fragment.QuizFragment;
+import com.javascript.jscript.Model.ProfileModel;
 import com.javascript.jscript.R;
 import com.smarteist.autoimageslider.SliderViewAdapter;
 
 public class LearnSliderAdapter extends SliderViewAdapter<LearnSliderAdapter.SliderViewHolder> {
     private int[] images;
+    private String[] slideText;
 
-    public LearnSliderAdapter(int[] images) {
+    public LearnSliderAdapter(int[] images, String[] slideText) {
         this.images = images;
+        this.slideText = slideText;
     }
+
 
     @Override
     public SliderViewHolder onCreateViewHolder(ViewGroup parent) {
@@ -22,12 +40,57 @@ public class LearnSliderAdapter extends SliderViewAdapter<LearnSliderAdapter.Sli
     @Override
     public void onBindViewHolder(SliderViewHolder viewHolder, int position) {
         viewHolder.imageView.setImageResource(images[position]);
+        viewHolder.textView.setText(slideText[position]);
 
-        //on click listener
-        /*viewHolder.itemView.setOnClickListener(new View.OnClickListener() {
+
+        if (UiConfig.PRO_VISIBILITY_STATUS_SHOW){
+            if (position == 0){
+                viewHolder.itemView.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        Context context = view.getContext();
+                        Intent intent;
+                        intent = new Intent(context,PremiumActivity.class);
+                        intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                        context.startActivity(intent);
+                    }
+                });
+            }
+
+        }else {
+            if (position == 0){
+                viewHolder.itemView.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        Context context = view.getContext();
+                        Intent intent;
+                        intent = new Intent(context, FeedBackActivity.class);
+                        intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                        context.startActivity(intent);
+                    }
+                });
+            }
+
+        }
+
+        /*if (position ==2){
+            viewHolder.itemView.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    AppCompatActivity activity = (AppCompatActivity) view.getContext();
+                    Fragment learFragment = new QuizFragment();
+                    activity.getSupportFragmentManager().beginTransaction()
+                            .replace(R.id.container,learFragment)
+                            .addToBackStack(null).commit();
+
+                }
+            });
+        }*/
+
+        /*//on click listener
+        viewHolder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
             }
         });*/
 
@@ -39,10 +102,13 @@ public class LearnSliderAdapter extends SliderViewAdapter<LearnSliderAdapter.Sli
     }
 
     public class SliderViewHolder extends SliderViewAdapter.ViewHolder{
+
         private ImageView imageView;
+        private TextView textView;
         public SliderViewHolder(View itemView) {
             super(itemView);
             imageView = itemView.findViewById(R.id.sliderImage);
+            textView = itemView.findViewById(R.id.slideText);
 
         }
     }

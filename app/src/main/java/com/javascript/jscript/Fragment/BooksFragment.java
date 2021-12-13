@@ -62,7 +62,6 @@ public class BooksFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_books, container, false);
-
         //pro codes
         proView = view.findViewById(R.id.booksProView);
         proImage = view.findViewById(R.id.booksProImage);

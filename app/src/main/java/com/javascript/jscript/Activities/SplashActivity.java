@@ -1,6 +1,6 @@
 package com.javascript.jscript.Activities;
 
-import static com.javascript.jscript.Activities.PremiumActivity.SUBSCRIBE_KEY;
+import static com.javascript.jscript.Activities.PremiumActivity.PRODUCT_ID;
 
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -112,7 +112,7 @@ public class SplashActivity extends AppCompatActivity {
         return getApplicationContext().getSharedPreferences(PREF_FILE, 0);
     }
     private boolean getSubscribeValueFromPref(){
-        return getPreferenceObject().getBoolean( SUBSCRIBE_KEY,false);
+        return getPreferenceObject().getBoolean( PRODUCT_ID,false);
     }
 
 }

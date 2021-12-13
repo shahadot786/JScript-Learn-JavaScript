@@ -155,7 +155,7 @@
     <string name="try_free_for_7_days">Upgrade to Premium</string>
     <string name="_95">95%</string>
     <string name="best_value">BEST VALUE</string>
-    <string name="_12_months">Yearly</string>
+    <string name="_12_months">Lifetime</string>
     <string name="pro_price">BDT 1499/-</string>
     <string name="pro_play_message">You can cancel anytime in Google Play.</string>
 
@@ -206,7 +206,7 @@
     <string name="read_books">Read Books</string>
     <string name="interview_questions_answer">Interview Questions Answers</string>
     <string name="output">Output:</string>
-    <string name="see_price">See Price &amp; BUY</string>
+    <string name="see_price">See Price &amp; Upgrade</string>
     <string name="app_main_images">App main images</string>
     <string name="profile_bio_default_text">An Instagram bio is the small area under your username where you can share some details about yourself or your brand. Your Instagram bio can include a brief self or brand description, contact information, emojis, hashtags and more.</string>
     <string name="usernameet">Username</string>

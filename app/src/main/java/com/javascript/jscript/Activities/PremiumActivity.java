@@ -1,5 +1,6 @@
 package com.javascript.jscript.Activities;
 
+import static com.android.billingclient.api.BillingClient.SkuType.INAPP;
 import static com.android.billingclient.api.BillingClient.SkuType.SUBS;
 
 import androidx.annotation.NonNull;
@@ -42,8 +43,8 @@ public class PremiumActivity extends AppCompatActivity implements PurchasesUpdat
     ActivityPremiumBinding binding;
     private BillingClient billingClient;
     public static final String PREF_FILE= "MyPref";
-    public static final String SUBSCRIBE_KEY= "subscribe";
-    public static final String ITEM_SKU_SUBSCRIBE= "jscript_yearly";
+    public static final String PURCHASE_KEY= "one_time_product";
+    public static final String PRODUCT_ID= "jscript_life_time";
     TextView itemPrice;
 
     @Override
@@ -88,7 +89,7 @@ public class PremiumActivity extends AppCompatActivity implements PurchasesUpdat
             @Override
             public void onBillingSetupFinished(@NonNull BillingResult billingResult) {
                 if(billingResult.getResponseCode()==BillingClient.BillingResponseCode.OK){
-                    billingClient.queryPurchasesAsync(SUBS, new PurchasesResponseListener() {
+                    billingClient.queryPurchasesAsync(INAPP, new PurchasesResponseListener() {
                         @Override
                         public void onQueryPurchasesResponse(@NonNull BillingResult billingResult, @NonNull List<Purchase> myPurchase) {
                             if (!myPurchase.isEmpty()){
@@ -164,48 +165,40 @@ public class PremiumActivity extends AppCompatActivity implements PurchasesUpdat
         return pref.edit();
     }
     private boolean getSubscribeValueFromPref(){
-        return getPreferenceObject().getBoolean( SUBSCRIBE_KEY,false);
+        return getPreferenceObject().getBoolean( PURCHASE_KEY,false);
     }
     private void saveSubscribeValueToPref(boolean value){
-        getPreferenceEditObject().putBoolean(SUBSCRIBE_KEY,value).commit();
+        getPreferenceEditObject().putBoolean(PURCHASE_KEY,value).commit();
     }
 
     private void initiatePurchase() {
         List<String> skuList = new ArrayList<>();
-        skuList.add(ITEM_SKU_SUBSCRIBE);
+        skuList.add(PRODUCT_ID);
         SkuDetailsParams.Builder params = SkuDetailsParams.newBuilder();
-        params.setSkusList(skuList).setType(SUBS);
-        BillingResult billingResult = billingClient.isFeatureSupported(BillingClient.FeatureType.SUBSCRIPTIONS);
-        if(billingResult.getResponseCode() == BillingClient.BillingResponseCode.OK) {
-            billingClient.querySkuDetailsAsync(params.build(),
-                    new SkuDetailsResponseListener() {
-                        @Override
-                        public void onSkuDetailsResponse(@NonNull BillingResult billingResult,
-                                                         List<SkuDetails> skuDetailsList) {
-                            if (billingResult.getResponseCode() == BillingClient.BillingResponseCode.OK) {
-                                if (skuDetailsList != null && skuDetailsList.size() > 0) {
-                                    BillingFlowParams flowParams = BillingFlowParams.newBuilder()
-                                            .setSkuDetails(skuDetailsList.get(0))
-                                            .build();
-                                    //price info
-                                    SkuDetails itemInfo = skuDetailsList.get(0);
-                                    //set price
-                                    itemPrice.setText(itemInfo.getPrice());
-                                    billingClient.launchBillingFlow(PremiumActivity.this, flowParams);
-                                } else {
-                                    //try to add subscription item "sub_example" in google play console
-                                    Toast.makeText(getApplicationContext(), "Item not Found", Toast.LENGTH_SHORT).show();
-                                }
+        params.setSkusList(skuList).setType(INAPP);
+        billingClient.querySkuDetailsAsync(params.build(),
+                new SkuDetailsResponseListener() {
+                    @Override
+                    public void onSkuDetailsResponse(@NonNull BillingResult billingResult,
+                                                     List<SkuDetails> skuDetailsList) {
+                        if (billingResult.getResponseCode() == BillingClient.BillingResponseCode.OK) {
+                            if (skuDetailsList != null && skuDetailsList.size() > 0) {
+                                SkuDetails itemInfo = skuDetailsList.get(0);
+                                BillingFlowParams flowParams = BillingFlowParams.newBuilder()
+                                        .setSkuDetails(skuDetailsList.get(0))
+                                        .build();
+                                billingClient.launchBillingFlow(PremiumActivity.this, flowParams);
+                                itemPrice.setText(itemInfo.getPrice());
                             } else {
-                                Toast.makeText(getApplicationContext(),
-                                        " Error " + billingResult.getDebugMessage(), Toast.LENGTH_SHORT).show();
+                                //try to add item/product id "purchase" inside managed product in google play console
+                                Toast.makeText(getApplicationContext(), "Purchase Item not Found", Toast.LENGTH_SHORT).show();
                             }
+                        } else {
+                            Toast.makeText(getApplicationContext(),
+                                    " Error " + billingResult.getDebugMessage(), Toast.LENGTH_SHORT).show();
                         }
-                    });
-        }else{
-            Toast.makeText(getApplicationContext(),
-                    "Sorry Subscription not Supported. Please Update Play Store", Toast.LENGTH_SHORT).show();
-        }
+                    }
+                });
     }
 
     @Override
@@ -220,31 +213,24 @@ public class PremiumActivity extends AppCompatActivity implements PurchasesUpdat
             UiConfig.ENABLE_EXIT_DIALOG = false;
             startActivity(new Intent(PremiumActivity.this,MainActivity.class));
         }
-        //if item already subscribed then check and reflect changes
+        //if item already purchased then check and reflect changes
         else if (billingResult.getResponseCode() == BillingClient.BillingResponseCode.ITEM_ALREADY_OWNED) {
+            Purchase.PurchasesResult queryAlreadyPurchasesResult = billingClient.queryPurchases(INAPP);
 
-            billingClient.queryPurchasesAsync(SUBS, new PurchasesResponseListener() {
-                @Override
-                public void onQueryPurchasesResponse(@NonNull BillingResult billingResult, @NonNull List<Purchase> alreadyPurchases) {
-                    if (!alreadyPurchases.isEmpty()){
-                        handlePurchases(alreadyPurchases);
-                    }
-                }
-            });
         }
-        //if Purchase canceled
+        //if purchase cancelled
         else if (billingResult.getResponseCode() == BillingClient.BillingResponseCode.USER_CANCELED) {
-            Toast.makeText(getApplicationContext(),"Purchase Canceled",Toast.LENGTH_SHORT).show();
+            Toast.makeText(getApplicationContext(), "Purchase Canceled", Toast.LENGTH_SHORT).show();
         }
         // Handle any other error msgs
         else {
-            Toast.makeText(getApplicationContext(),"Error "+billingResult.getDebugMessage(),Toast.LENGTH_SHORT).show();
+            Toast.makeText(getApplicationContext(), "Error " + billingResult.getDebugMessage(), Toast.LENGTH_SHORT).show();
         }
     }
     void handlePurchases(List<Purchase>  purchases) {
         for(Purchase purchase:purchases) {
             //if item is purchased
-            if (ITEM_SKU_SUBSCRIBE.equals(purchase.getSkus().get(0)) && purchase.getPurchaseState() == Purchase.PurchaseState.PURCHASED)
+            if (PRODUCT_ID.equals(purchase.getSkus().get(0)) && purchase.getPurchaseState() == Purchase.PurchaseState.PURCHASED)
             {
                 if (!verifyValidSignature(purchase.getOriginalJson(), purchase.getSignature())) {
                     // Invalid purchase
@@ -273,13 +259,13 @@ public class PremiumActivity extends AppCompatActivity implements PurchasesUpdat
                 }
             }
             //if purchase is pending
-            else if( ITEM_SKU_SUBSCRIBE.equals(purchase.getSkus().get(0)) && purchase.getPurchaseState() == Purchase.PurchaseState.PENDING)
+            else if( PRODUCT_ID.equals(purchase.getSkus().get(0)) && purchase.getPurchaseState() == Purchase.PurchaseState.PENDING)
             {
                 Toast.makeText(getApplicationContext(),
                         "Purchase is Pending. Please complete Transaction", Toast.LENGTH_SHORT).show();
             }
             //if purchase is unknown mark false
-            else if(ITEM_SKU_SUBSCRIBE.equals(purchase.getSkus().get(0)) && purchase.getPurchaseState() == Purchase.PurchaseState.UNSPECIFIED_STATE)
+            else if(PRODUCT_ID.equals(purchase.getSkus().get(0)) && purchase.getPurchaseState() == Purchase.PurchaseState.UNSPECIFIED_STATE)
             {
                 saveSubscribeValueToPref(false);
                 UiConfig.INTERSTITIAL__AD_VISIBILITY = true;

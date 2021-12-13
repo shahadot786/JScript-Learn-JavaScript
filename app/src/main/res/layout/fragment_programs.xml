@@ -29,7 +29,7 @@
             app:layout_constraintTop_toTopOf="parent">
 
             <ImageView
-                android:id="@+id/imageView26"
+                android:id="@+id/sliderView"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
@@ -51,8 +51,8 @@
                 android:text="@string/practice_programs"
                 android:textSize="16sp"
                 android:textStyle="bold"
-                app:layout_constraintStart_toStartOf="@+id/imageView26"
-                app:layout_constraintTop_toBottomOf="@+id/imageView26" />
+                app:layout_constraintStart_toStartOf="@+id/sliderView"
+                app:layout_constraintTop_toBottomOf="@+id/sliderView" />
 
             <View
                 android:id="@+id/view2"

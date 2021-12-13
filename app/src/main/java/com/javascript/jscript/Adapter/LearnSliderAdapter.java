@@ -13,6 +13,7 @@ import androidx.fragment.app.Fragment;
 import com.javascript.jscript.Activities.FeedBackActivity;
 import com.javascript.jscript.Activities.PremiumActivity;
 import com.javascript.jscript.Config.UiConfig;
+import com.javascript.jscript.Fragment.BooksFragment;
 import com.javascript.jscript.Fragment.InterviewQAFragment;
 import com.javascript.jscript.Fragment.LearnFragment;
 import com.javascript.jscript.Fragment.ProgramsFragment;
@@ -85,14 +86,47 @@ public class LearnSliderAdapter extends SliderViewAdapter<LearnSliderAdapter.Sli
 
                 }
             });
+        }
+        if (position ==3){
+            viewHolder.itemView.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    AppCompatActivity activity = (AppCompatActivity) view.getContext();
+                    Fragment learFragment = new ProgramsFragment();
+                    activity.getSupportFragmentManager().beginTransaction()
+                            .replace(R.id.container,learFragment)
+                            .addToBackStack(null).commit();
+
+                }
+            });
+        }
+        if (position ==4){
+            viewHolder.itemView.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    AppCompatActivity activity = (AppCompatActivity) view.getContext();
+                    Fragment learFragment = new InterviewQAFragment();
+                    activity.getSupportFragmentManager().beginTransaction()
+                            .replace(R.id.container,learFragment)
+                            .addToBackStack(null).commit();
+
+                }
+            });
+        }
+        if (position ==5){
+            viewHolder.itemView.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    AppCompatActivity activity = (AppCompatActivity) view.getContext();
+                    Fragment learFragment = new BooksFragment();
+                    activity.getSupportFragmentManager().beginTransaction()
+                            .replace(R.id.container,learFragment)
+                            .addToBackStack(null).commit();
+
+                }
+            });
         }*/
 
-        /*//on click listener
-        viewHolder.itemView.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-            }
-        });*/
 
     }
 

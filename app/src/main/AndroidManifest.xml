@@ -25,6 +25,12 @@
         android:usesCleartextTraffic="true"
         tools:targetApi="m">
         <activity
+            android:name=".Learn.LearnDetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Learn.LearnItemsListActivity"
+            android:exported="false" />
+        <activity
             android:name=".Quiz.QuizResultActivity"
             android:exported="false" />
         <activity

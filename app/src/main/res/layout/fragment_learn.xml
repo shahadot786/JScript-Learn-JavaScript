@@ -70,6 +70,106 @@
                 android:background="@color/colorSecondary"
                 app:layout_constraintStart_toStartOf="@+id/textView8"
                 app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+
+            <com.javascript.jscript.Utils.ExpandableHeightGridView
+                android:id="@+id/learn_item_gridview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:columnWidth="180dp"
+                android:horizontalSpacing="7dp"
+                android:isScrollContainer="true"
+                android:numColumns="2"
+                android:stretchMode="columnWidth"
+                android:verticalSpacing="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/view2">
+
+            </com.javascript.jscript.Utils.ExpandableHeightGridView>
+
+            <ImageView
+                android:id="@+id/proImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:contentDescription="@string/app_main_images"
+                android:src="@drawable/ic_pro_badge_48dp"
+                app:layout_constraintEnd_toStartOf="@+id/proText"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintHorizontal_chainStyle="packed"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/learn_item_gridview" />
+
+            <TextView
+                android:id="@+id/proText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/oswald"
+                android:text="@string/pro"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/proImage"
+                app:layout_constraintStart_toEndOf="@+id/proImage"
+                app:layout_constraintTop_toTopOf="@+id/proImage" />
+
+            <View
+                android:id="@+id/proView"
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="16dp"
+                android:background="@color/colorSecondary"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/proImage"
+                app:layout_constraintTop_toBottomOf="@+id/proImage" />
+
+
+            <com.javascript.jscript.Utils.ExpandableHeightGridView
+                android:id="@+id/learn_item_gridview_pro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:columnWidth="180dp"
+                android:horizontalSpacing="7dp"
+                android:isScrollContainer="true"
+                android:numColumns="2"
+                android:stretchMode="columnWidth"
+                android:verticalSpacing="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/proView">
+
+            </com.javascript.jscript.Utils.ExpandableHeightGridView>
+
+            <View
+                android:id="@+id/LearnProView"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/color_pro_bg"
+                android:visibility="visible"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/learn_item_gridview_pro"
+                app:layout_constraintStart_toStartOf="@+id/learn_item_gridview_pro"
+                app:layout_constraintTop_toBottomOf="@+id/proView" />
+
+            <ImageView
+                android:id="@+id/learnProImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/app_main_images"
+                android:src="@drawable/ic_pro_locked_128dp"
+                android:visibility="visible"
+                app:layout_constraintBottom_toBottomOf="@+id/learn_item_gridview_pro"
+                app:layout_constraintEnd_toEndOf="@+id/learn_item_gridview_pro"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/proView" />
+
+
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.core.widget.NestedScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>

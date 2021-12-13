@@ -21,9 +21,9 @@ import java.util.Objects;
 
 public class ProgramsItemsListActivity extends AppCompatActivity {
     private AdNetwork adNetwork;
-    ActivityProgramsItemsListBinding binding;
     ListView programs;
     String[] list = {};
+    ActivityProgramsItemsListBinding binding;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

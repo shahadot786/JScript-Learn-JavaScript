@@ -24,7 +24,7 @@ public class BooksListActivity extends AppCompatActivity {
 
     ActivityBooksListBinding binding;
     private AdNetwork adNetwork;
-    ListView programs;
+    ListView books;
     String[] list = {};
 
     @Override
@@ -38,12 +38,12 @@ public class BooksListActivity extends AppCompatActivity {
         BooksListActivity.this.setTitle("Books");
         Objects.requireNonNull(getSupportActionBar()).setDisplayHomeAsUpEnabled(true);
         loadItems();
-        programs = findViewById(R.id.bookList);
+        books = findViewById(R.id.bookList);
         BooksListActivity.CustomAdapter adapter = new BooksListActivity.CustomAdapter();
-        programs.setAdapter(adapter);
+        books.setAdapter(adapter);
         //load ad
         adNetwork.loadInterstitialAd();
-        programs.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+        books.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                 Intent intent = new Intent(BooksListActivity.this, ReadBooksActivity.class);

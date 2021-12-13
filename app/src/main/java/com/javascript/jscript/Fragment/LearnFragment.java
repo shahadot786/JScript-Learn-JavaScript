@@ -1,16 +1,28 @@
 package com.javascript.jscript.Fragment;
 
+import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
+import android.widget.ImageView;
 
 import androidx.fragment.app.Fragment;
 
+import com.javascript.jscript.Activities.PremiumActivity;
+import com.javascript.jscript.Adapter.LearnItemsAdapter;
+import com.javascript.jscript.Adapter.LearnItemsAdapterPro;
 import com.javascript.jscript.Adapter.LearnSliderAdapter;
+import com.javascript.jscript.Adapter.ProgramsItemsAdapter;
+import com.javascript.jscript.Adapter.ProgramsItemsAdapterPro;
 import com.javascript.jscript.Config.UiConfig;
+import com.javascript.jscript.Learn.LearnItemsListActivity;
+import com.javascript.jscript.Programs.ProgramsItemsListActivity;
 import com.javascript.jscript.R;
+import com.javascript.jscript.Utils.AdNetwork;
+import com.javascript.jscript.Utils.ExpandableHeightGridView;
 import com.smarteist.autoimageslider.IndicatorView.animation.type.IndicatorAnimationType;
 import com.smarteist.autoimageslider.SliderAnimations;
 import com.smarteist.autoimageslider.SliderView;
@@ -20,6 +32,33 @@ public class LearnFragment extends Fragment {
     private String[] slideText;
     private LearnSliderAdapter adapter;
     private SliderView sliderView;
+
+    ExpandableHeightGridView gridView , gridViewPro;
+    View proView;
+    ImageView proImage;
+    private AdNetwork adNetwork;
+
+    String[] itemsName = {"Basic","Advanced","Expert"};
+    String[] itemsNamePro = {"Angular","Vue","React","Angular","Vue","React","Angular","Vue","React"};
+
+    Integer[] itemImages = {
+            R.drawable.ic_programs_basic_image,
+            R.drawable.ic_programs_advanced_image,
+            R.drawable.ic_programs_advanced_image
+
+    };
+    Integer[] itemImagesPro = {
+            R.drawable.ic_programs_basic_image,
+            R.drawable.ic_programs_advanced_image,
+            R.drawable.ic_programs_advanced_image,
+            R.drawable.ic_programs_basic_image,
+            R.drawable.ic_programs_advanced_image,
+            R.drawable.ic_programs_advanced_image,
+            R.drawable.ic_programs_basic_image,
+            R.drawable.ic_programs_advanced_image,
+            R.drawable.ic_programs_advanced_image
+
+    };
 
     public LearnFragment() {
         // Required empty public constructor
@@ -72,6 +111,89 @@ public class LearnFragment extends Fragment {
             slideText[0] = "Enjoy Premium Services";
             images[0] = R.drawable.after_pro_ad;
         }
+
+
+        //pro codes
+        proView = view.findViewById(R.id.LearnProView);
+        proImage = view.findViewById(R.id.learnProImage);
+        //free
+        gridView = view.findViewById(R.id.learn_item_gridview);
+        gridView.setExpanded(true);
+        LearnItemsAdapter adapter = new LearnItemsAdapter(itemsName,itemImages,getActivity());
+        gridView.setAdapter(adapter);
+
+        //pro
+        gridViewPro = view.findViewById(R.id.learn_item_gridview_pro);
+        gridViewPro.setExpanded(true);
+        LearnItemsAdapterPro adapter1 = new LearnItemsAdapterPro(itemsNamePro,itemImagesPro,getActivity());
+        gridViewPro.setAdapter(adapter1);
+
+        //check user upgrade to pro
+        if (UiConfig.PRO_VISIBILITY_STATUS_SHOW){
+            proView.setVisibility(View.VISIBLE);
+            proImage.setVisibility(View.VISIBLE);
+        }else {
+            proView.setVisibility(View.GONE);
+            proImage.setVisibility(View.GONE);
+        }
+        //add network context initialization
+        adNetwork = new AdNetwork(getActivity());
+        //load ad
+        adNetwork.loadInterstitialAd();
+        //click pro view
+        proView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getActivity(), PremiumActivity.class));
+            }
+        });
+        //items free
+        gridView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                Intent intent = new Intent(getActivity(), LearnItemsListActivity.class);
+                switch (i){
+                    case 0:
+                        intent.putExtra("learnItems","Basic");
+                        startActivity(intent);
+                        break;
+                    case 1:
+                        intent.putExtra("learnItems","Advanced");
+                        startActivity(intent);
+                        break;
+                    case 2:
+                        intent.putExtra("learnItems","Expert");
+                        startActivity(intent);
+                        break;
+
+                }
+                //show ad
+                adNetwork.showInterstitialAd();
+            }
+        });
+
+        //items pro
+        gridViewPro.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                Intent intent = new Intent(getActivity(), LearnItemsListActivity.class);
+                switch (i){
+                    case 0:
+                        intent.putExtra("learnItems","Angular");
+                        startActivity(intent);
+                        break;
+                    case 1:
+                        intent.putExtra("learnItems","Vue");
+                        startActivity(intent);
+                        break;
+                    case 2:
+                        intent.putExtra("learnItems","React");
+                        startActivity(intent);
+                        break;
+
+                }
+            }
+        });
 
 
         return view;

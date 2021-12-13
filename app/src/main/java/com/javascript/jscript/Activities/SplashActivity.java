@@ -105,8 +105,6 @@ public class SplashActivity extends AppCompatActivity {
                 }
             }, SPLASH_SCREEN);
         }
-
-
     }
 
     private SharedPreferences getPreferenceObject() {

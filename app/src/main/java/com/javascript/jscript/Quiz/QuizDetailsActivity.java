@@ -21,6 +21,7 @@ import com.javascript.jscript.Config.UiConfig;
 import com.javascript.jscript.Interview.BasicInterviewQA;
 import com.javascript.jscript.Model.QuizListModel;
 import com.javascript.jscript.R;
+import com.javascript.jscript.Utils.AdNetwork;
 import com.javascript.jscript.databinding.ActivityQuizDetailsBinding;
 
 import java.util.List;
@@ -30,6 +31,7 @@ public class QuizDetailsActivity extends AppCompatActivity {
 
     ActivityQuizDetailsBinding binding;
     private AdView bannerAd;
+    private AdNetwork adNetwork;
     private List<QuizListModel> questionList;
     private int currentQuestionPosition = 0;
     private String selectedOptionByUser = "";
@@ -45,6 +47,10 @@ public class QuizDetailsActivity extends AppCompatActivity {
         QuizDetailsActivity.this.setTitle("Quiz");
         Objects.requireNonNull(getSupportActionBar()).setDisplayHomeAsUpEnabled(true);
         //ad request
+        //interstitial ads
+        adNetwork = new AdNetwork(QuizDetailsActivity.this);
+        adNetwork.loadInterstitialAd();
+        //banner
         bannerAd = findViewById(R.id.adView);
         AdRequest adRequest = new AdRequest.Builder().build();
         bannerAd.loadAd(adRequest);
@@ -151,6 +157,7 @@ public class QuizDetailsActivity extends AppCompatActivity {
                     Toast.makeText(QuizDetailsActivity.this, "Please select an option", Toast.LENGTH_SHORT).show();
                 }
                 else {
+                    adNetwork.showInterstitialAd();
                     changeNextQuestion();
                 }
 

@@ -79,5 +79,7 @@ dependencies {
     implementation 'com.tuyenmonkey:mkloader:1.4.0'
     implementation 'com.github.ibrahimsn98:SmoothBottomBar:1.7.8'
     implementation 'thereisnospon.codeview:codeview:0.3.1'
+    implementation 'com.github.marlonlom:timeago:4.0.3'
+    implementation 'com.github.sharish:ShimmerRecyclerView:v1.3'
 }
 apply plugin: 'com.google.gms.google-services'

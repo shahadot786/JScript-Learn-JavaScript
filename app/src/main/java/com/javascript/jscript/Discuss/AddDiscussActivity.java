@@ -18,10 +18,10 @@ import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
-import com.javascript.jscript.Activities.GoogleSignInActivity;
 import com.javascript.jscript.Config.UiConfig;
 import com.javascript.jscript.Fragment.DiscussFragment;
 import com.javascript.jscript.Model.AddDiscussModel;
+import com.javascript.jscript.Model.DashboardModel;
 import com.javascript.jscript.Model.ProfileModel;
 import com.javascript.jscript.Model.UserModel;
 import com.javascript.jscript.R;
@@ -36,7 +36,7 @@ public class AddDiscussActivity extends AppCompatActivity {
     ActivityAddDiscussBinding binding;
     FirebaseAuth auth;
     FirebaseDatabase database;
-    TextInputLayout question,descriptions;
+    TextInputLayout question, descriptions;
     ProgressDialog dialog;
 
     @Override
@@ -116,88 +116,58 @@ public class AddDiscussActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 //check first if the fields are empty
-                if (questionValidation() && descriptionsValidation()){
+                if (questionValidation() && descriptionsValidation()) {
                     //show dialog
                     dialog.show();
-                    int count = 0;
-                    AddDiscussModel discussModel = new AddDiscussModel();
-                    discussModel.setQuestion(Objects.requireNonNull(binding.questionEditText.getText()).toString());
-                    discussModel.setDescriptions(Objects.requireNonNull(binding.descriptionEditText.getText()).toString());
-                    discussModel.setPostAt(new Date().getTime());
-                    discussModel.setPostedBy(FirebaseAuth.getInstance().getUid());
+                    DashboardModel post = new DashboardModel();
+                    post.setPostedBy(FirebaseAuth.getInstance().getUid());
+                    post.setQuestions(binding.questionEditText.getText().toString());
+                    post.setDescription(binding.descriptionEditText.getText().toString());
+                    post.setPostedAt(new Date().getTime());
+
                     database.getReference().child("Discuss")
-                            .child(auth.getUid())
                             .push()
-                            .setValue(discussModel).addOnSuccessListener(new OnSuccessListener<Void>() {
+                            .setValue(post).addOnSuccessListener(new OnSuccessListener<Void>() {
                         @Override
                         public void onSuccess(@NonNull Void unused) {
-
-                            database.getReference()
-                                    .child("Discuss")
-                                    .child(auth.getUid())
-                                    .child("postCount").addListenerForSingleValueEvent(new ValueEventListener() {
-                                @Override
-                                public void onDataChange(@NonNull DataSnapshot snapshot) {
-                                    int postCount = 0;
-                                    if (snapshot.exists()){
-                                        postCount = snapshot.getValue(Integer.class);
-                                    }
-
-                                    database.getReference()
-                                            .child("Discuss")
-                                            .child(auth.getUid())
-                                            .child("postCount")
-                                            .setValue(postCount + 1).addOnSuccessListener(new OnSuccessListener<Void>() {
-                                        @Override
-                                        public void onSuccess(@NonNull Void unused) {
-                                            dialog.dismiss();
-                                            Intent intent = new Intent(AddDiscussActivity.this,DiscussFragment.class);
-                                            intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                                            finish();
-                                            Toast.makeText(AddDiscussActivity.this, "Posted Successfully", Toast.LENGTH_SHORT).show();
-                                        }
-                                    });
-
-                                }
-
-                                @Override
-                                public void onCancelled(@NonNull DatabaseError error) {
-
-                                }
-                            });
-
-
+                            dialog.dismiss();
+                            Toast.makeText(AddDiscussActivity.this, "Posted Successfully.", Toast.LENGTH_SHORT).show();
+                            Intent intent = new Intent(AddDiscussActivity.this,DiscussFragment.class);
+                            intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                            finish();
                         }
                     });
+
                 }
             }
         });
 
 
     }//ends of onCreate
+
     //question validation
-    public boolean questionValidation(){
+    public boolean questionValidation() {
         String questionText = Objects.requireNonNull(question.getEditText()).getText().toString().trim();
         if (questionText.isEmpty()) {
             question.setError("Question is required");
             return false;
-        }else {
+        } else {
             question.setError(null);
             return true;
         }
     }
+
     //descriptions validation
-    public boolean descriptionsValidation(){
+    public boolean descriptionsValidation() {
         String descriptionsText = Objects.requireNonNull(descriptions.getEditText()).getText().toString().trim();
         if (descriptionsText.isEmpty()) {
             descriptions.setError("Descriptions is required");
             return false;
-        }else {
+        } else {
             descriptions.setError(null);
             return true;
         }
     }
-
 
 
     //option menu item select

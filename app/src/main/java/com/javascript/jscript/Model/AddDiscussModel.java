@@ -1,12 +1,11 @@
 package com.javascript.jscript.Model;
 
 public class AddDiscussModel {
-    String question,descriptions,postedBy;
+    String postID,question,descriptions,postedBy;
     long postAt;
 
     public AddDiscussModel() {
     }
-
 
     public String getQuestion() {
         return question;
@@ -38,5 +37,13 @@ public class AddDiscussModel {
 
     public void setPostedBy(String postedBy) {
         this.postedBy = postedBy;
+    }
+
+    public String getPostID() {
+        return postID;
+    }
+
+    public void setPostID(String postID) {
+        this.postID = postID;
     }
 }

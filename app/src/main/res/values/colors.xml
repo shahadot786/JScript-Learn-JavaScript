@@ -51,5 +51,6 @@
     <color name="color_app_gradient_end">#13bc57</color>
     <color name="color_app_gradient_start">#00601b</color>
     <color name="color_pro_bg">#C11C1F32</color>
+    <color name="color_text_discuss">#DDDCDC</color>
 
 </resources>

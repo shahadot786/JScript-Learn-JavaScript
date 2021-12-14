@@ -5,6 +5,7 @@ import android.os.Bundle;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.view.LayoutInflater;
@@ -21,13 +22,16 @@ import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
+import com.javascript.jscript.Adapter.DashboardAdapter;
 import com.javascript.jscript.Config.UiConfig;
 import com.javascript.jscript.Discuss.AddDiscussActivity;
+import com.javascript.jscript.Model.DashboardModel;
 import com.javascript.jscript.Model.ProfileModel;
 import com.javascript.jscript.Model.UserModel;
 import com.javascript.jscript.R;
 import com.squareup.picasso.Picasso;
 
+import java.util.ArrayList;
 import java.util.Objects;
 
 public class DiscussFragment extends Fragment {
@@ -35,6 +39,7 @@ public class DiscussFragment extends Fragment {
     RecyclerView recyclerView;
     FirebaseAuth auth;
     FirebaseDatabase database;
+    ArrayList<DashboardModel> dashboardList;
 
     public DiscussFragment() {
         // Required empty public constructor
@@ -72,11 +77,10 @@ public class DiscussFragment extends Fragment {
                 startActivity(new Intent(getActivity(), AddDiscussActivity.class));
             }
         });
-        //recyclerview
-        recyclerView = view.findViewById(R.id.rv_discuss);
+
         //firebase instance
         TextView userName = view.findViewById(R.id.userName);
-        ImageView profileImage = view.findViewById(R.id.profile_image);
+        ImageView profileImage = view.findViewById(R.id.profileImage);
         auth = FirebaseAuth.getInstance();
         database = FirebaseDatabase.getInstance();
         database.getReference().child("UpdateProfile").child(Objects.requireNonNull(auth.getUid()))
@@ -95,7 +99,6 @@ public class DiscussFragment extends Fragment {
 
                     }
                 });
-
         //fetch update image
         database.getReference().child("UserImages").child(auth.getUid())
                 .addListenerForSingleValueEvent(new ValueEventListener() {
@@ -118,6 +121,36 @@ public class DiscussFragment extends Fragment {
                 });
 
 
+        //recyclerview
+        recyclerView = view.findViewById(R.id.rv_discuss);
+        dashboardList = new ArrayList<>();
+
+        DashboardAdapter dashboardAdapter = new DashboardAdapter(dashboardList,getContext());
+        LinearLayoutManager layoutManager = new LinearLayoutManager(getContext());
+        recyclerView.setLayoutManager(layoutManager);
+        recyclerView.setNestedScrollingEnabled(false);
+        recyclerView.setAdapter(dashboardAdapter);
+
+
+        database.getReference().child("Discuss")
+                .addValueEventListener(new ValueEventListener() {
+                    @Override
+                    public void onDataChange(@NonNull DataSnapshot snapshot) {
+                        dashboardList.clear();
+                        for (DataSnapshot dataSnapshot : snapshot.getChildren()){
+                            DashboardModel model = dataSnapshot.getValue(DashboardModel.class);
+                            dashboardList.add(model);
+                        }
+
+                        dashboardAdapter.notifyDataSetChanged();
+
+                    }
+
+                    @Override
+                    public void onCancelled(@NonNull DatabaseError error) {
+
+                    }
+                });
 
 
         return view;

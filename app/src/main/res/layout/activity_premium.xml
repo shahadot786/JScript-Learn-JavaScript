@@ -22,32 +22,40 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="4dp"
+            android:layout_marginEnd="12dp"
             android:text="@string/title_js"
             android:textSize="18sp"
-            app:layout_constraintEnd_toStartOf="@+id/textView30"
-            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintEnd_toEndOf="@+id/imageView13"
             app:layout_constraintHorizontal_chainStyle="packed"
-            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/imageView13"
             app:layout_constraintTop_toBottomOf="@+id/imageView13" />
 
-        <TextView
-            android:id="@+id/textView30"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="6dp"
+        <View
+            android:id="@+id/proTextView"
+            android:layout_width="24dp"
+            android:layout_height="14dp"
+            android:layout_marginStart="4dp"
             android:layout_marginTop="4dp"
             android:background="@drawable/ic_pro_gradient_round"
-            android:paddingStart="4dp"
-            android:paddingEnd="4dp"
-            android:text="@string/menu_pro"
-            android:textColor="@color/colorPrimary"
-            android:textSize="14sp"
-            android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="@+id/textView29"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toEndOf="@+id/textView29"
             app:layout_constraintTop_toTopOf="@+id/textView29" />
+
+        <TextView
+            android:id="@+id/proText2"
+            android:layout_width="0dp"
+            android:layout_height="24dp"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/oswald"
+            android:gravity="center|top"
+            android:text="@string/menu_pro"
+            android:textColor="@color/colorPrimary"
+            android:textSize="11sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/proTextView"
+            app:layout_constraintEnd_toEndOf="@+id/proTextView"
+            app:layout_constraintStart_toStartOf="@+id/proTextView"
+            app:layout_constraintTop_toTopOf="@+id/proTextView" />
 
         <ImageView
             android:id="@+id/imageView13"

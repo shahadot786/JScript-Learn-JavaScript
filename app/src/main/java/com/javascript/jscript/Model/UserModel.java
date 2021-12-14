@@ -6,12 +6,6 @@ public class UserModel {
     private String profile;
     private String userID;
 
-    public UserModel(String userName, String email, String password) {
-        this.userName = userName;
-        this.email = email;
-        this.password = password;
-    }
-
     public UserModel() {
     }
 

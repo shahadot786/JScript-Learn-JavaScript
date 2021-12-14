@@ -5,6 +5,7 @@ import android.os.Bundle;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.view.LayoutInflater;
 import android.view.Menu;
@@ -12,15 +13,28 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.google.android.material.textfield.TextInputLayout;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 import com.javascript.jscript.Config.UiConfig;
 import com.javascript.jscript.Discuss.AddDiscussActivity;
+import com.javascript.jscript.Model.ProfileModel;
+import com.javascript.jscript.Model.UserModel;
 import com.javascript.jscript.R;
+import com.squareup.picasso.Picasso;
+
+import java.util.Objects;
+
 public class DiscussFragment extends Fragment {
 
+    RecyclerView recyclerView;
+    FirebaseAuth auth;
+    FirebaseDatabase database;
 
     public DiscussFragment() {
         // Required empty public constructor
@@ -58,6 +72,50 @@ public class DiscussFragment extends Fragment {
                 startActivity(new Intent(getActivity(), AddDiscussActivity.class));
             }
         });
+        //recyclerview
+        recyclerView = view.findViewById(R.id.rv_discuss);
+        //firebase instance
+        TextView userName = view.findViewById(R.id.userName);
+        ImageView profileImage = view.findViewById(R.id.profile_image);
+        auth = FirebaseAuth.getInstance();
+        database = FirebaseDatabase.getInstance();
+        database.getReference().child("UpdateProfile").child(Objects.requireNonNull(auth.getUid()))
+                .addListenerForSingleValueEvent(new ValueEventListener() {
+                    @Override
+                    public void onDataChange(@NonNull DataSnapshot snapshot) {
+                        if (snapshot.exists()){
+                            ProfileModel profileModel =  snapshot.getValue(ProfileModel.class);
+                            assert profileModel != null;
+                            userName.setText(profileModel.getUsername());
+                        }
+                    }
+
+                    @Override
+                    public void onCancelled(@NonNull DatabaseError error) {
+
+                    }
+                });
+
+        //fetch update image
+        database.getReference().child("UserImages").child(auth.getUid())
+                .addListenerForSingleValueEvent(new ValueEventListener() {
+                    @Override
+                    public void onDataChange(@NonNull DataSnapshot snapshot) {
+                        if (snapshot.exists()){
+                            UserModel userModel = snapshot.getValue(UserModel.class);
+                            assert userModel != null;
+                            Picasso.get()
+                                    .load(userModel.getProfile())
+                                    .placeholder(R.drawable.ic_profile_default_image)
+                                    .into(profileImage);
+                        }
+                    }
+
+                    @Override
+                    public void onCancelled(@NonNull DatabaseError error) {
+
+                    }
+                });
 
 
 

@@ -123,7 +123,6 @@ public class FeedBackActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 //check first if the fields are empty
-
                 if (sendMessageBtnValidation() && sendEmailBtnValidation()) {
                     FeedbackModel feedbackModel = new FeedbackModel();
                     feedbackModel.setFeedbackDescription(Objects.requireNonNull(binding.feedbackMessageEditText.getText()).toString());
@@ -155,7 +154,7 @@ public class FeedBackActivity extends AppCompatActivity {
     //other codes
     //send button message validation
     public boolean sendMessageBtnValidation() {
-        String sendTextInput = sendInput.getEditText().getText().toString().trim();
+        String sendTextInput = Objects.requireNonNull(sendInput.getEditText()).getText().toString().trim();
         if (sendTextInput.isEmpty()) {
             sendInput.setError("Message is required");
             return false;
@@ -169,7 +168,7 @@ public class FeedBackActivity extends AppCompatActivity {
     }
     //sent button email validation
     public boolean sendEmailBtnValidation() {
-        String sendEmailInput = emailInput.getEditText().getText().toString().trim();
+        String sendEmailInput = Objects.requireNonNull(emailInput.getEditText()).getText().toString().trim();
         if (sendEmailInput.isEmpty()){
             emailInput.setError("Email is required.");
             return false;

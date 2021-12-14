@@ -30,20 +30,32 @@
         app:layout_constraintStart_toStartOf="@+id/profile_image"
         app:layout_constraintTop_toBottomOf="@+id/profile_image" />
 
-    <TextView
-        android:id="@+id/textView30"
-        android:layout_width="wrap_content"
-        android:layout_height="22dp"
-        android:layout_marginStart="6dp"
+    <View
+        android:id="@+id/proTextView"
+        android:layout_width="24dp"
+        android:layout_height="14dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="4dp"
         android:background="@drawable/ic_pro_gradient_round"
-        android:paddingStart="4dp"
-        android:paddingEnd="4dp"
-        android:text="@string/menu_pro"
-        android:textColor="@color/colorPrimary"
-        android:textSize="14sp"
-        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/proUserName"
         app:layout_constraintStart_toEndOf="@+id/proUserName"
         app:layout_constraintTop_toTopOf="@+id/proUserName" />
+
+    <TextView
+        android:id="@+id/proText2"
+        android:layout_width="0dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/oswald"
+        android:gravity="center|top"
+        android:text="@string/menu_pro"
+        android:textColor="@color/colorPrimary"
+        android:textSize="11sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/proTextView"
+        app:layout_constraintEnd_toEndOf="@+id/proTextView"
+        app:layout_constraintStart_toStartOf="@+id/proTextView"
+        app:layout_constraintTop_toTopOf="@+id/proTextView" />
 
     <TextView
         android:id="@+id/pro_version"

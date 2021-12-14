@@ -220,6 +220,9 @@
     <string name="start_new_quiz">Start New Quiz</string>
     <string name="wrong_answer">Wrong Answer :</string>
     <string name="correct_answer">Correct Answer :</string>
+    <string name="notification">Notification</string>
+    <string name="search">Search</string>
+    <string name="share_your_problems">Share your problems</string>
 
 
 </resources>

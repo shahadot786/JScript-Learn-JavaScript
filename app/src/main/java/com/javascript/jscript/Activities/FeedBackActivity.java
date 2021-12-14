@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.util.Patterns;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AlertDialog;
@@ -16,7 +17,7 @@ import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
-import com.google.firebase.firestore.auth.User;
+import com.javascript.jscript.Config.UiConfig;
 import com.javascript.jscript.Model.FeedbackModel;
 import com.javascript.jscript.Model.ProfileModel;
 import com.javascript.jscript.Model.UserModel;
@@ -40,8 +41,19 @@ public class FeedBackActivity extends AppCompatActivity {
         binding = ActivityFeedBackBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
         //find id
-        sendInput = findViewById(R.id.text_input_message);
+        sendInput = findViewById(R.id.feedback_input_text);
         emailInput = findViewById(R.id.emailFeedInput);
+        //pro status
+        View proView2 = findViewById(R.id.proTextView);
+        TextView proText2 = findViewById(R.id.proText2);
+
+        if (UiConfig.PRO_VISIBILITY_STATUS_SHOW){
+            proView2.setVisibility(View.GONE);
+            proText2.setVisibility(View.GONE);
+        }else {
+            proView2.setVisibility(View.VISIBLE);
+            proText2.setVisibility(View.VISIBLE);
+        }
         //instance
         database = FirebaseDatabase.getInstance();
         auth = FirebaseAuth.getInstance();
@@ -114,7 +126,7 @@ public class FeedBackActivity extends AppCompatActivity {
 
                 if (sendMessageBtnValidation() && sendEmailBtnValidation()) {
                     FeedbackModel feedbackModel = new FeedbackModel();
-                    feedbackModel.setFeedbackDescription(Objects.requireNonNull(binding.messageEditText.getText()).toString());
+                    feedbackModel.setFeedbackDescription(Objects.requireNonNull(binding.feedbackMessageEditText.getText()).toString());
                     feedbackModel.setFeedEmail(Objects.requireNonNull(binding.emailFeedEdit.getText()).toString());
                     database.getReference().child("Feedback")
                             .child(auth.getUid())

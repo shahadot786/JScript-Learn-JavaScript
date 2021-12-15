@@ -6,10 +6,11 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.Toast;
+import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
 
 import com.github.marlonlom.utilities.timeago.TimeAgo;
 import com.google.android.gms.ads.AdRequest;
@@ -20,6 +21,7 @@ import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
+import com.javascript.jscript.Adapter.CommentAdapter;
 import com.javascript.jscript.BuildConfig;
 import com.javascript.jscript.Config.UiConfig;
 import com.javascript.jscript.Model.CommentModel;
@@ -30,6 +32,7 @@ import com.javascript.jscript.R;
 import com.javascript.jscript.databinding.ActivityDiscussDetailsBinding;
 import com.squareup.picasso.Picasso;
 
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.Objects;
 
@@ -39,12 +42,24 @@ public class DiscussDetailsActivity extends AppCompatActivity {
     String postId, postedBy;
     FirebaseDatabase database;
     FirebaseAuth auth;
+    ArrayList<CommentModel> list = new ArrayList<>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         binding = ActivityDiscussDetailsBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
+        //pro status
+        View proView2 = findViewById(R.id.proTextView);
+        TextView proText2 = findViewById(R.id.proText2);
+        //conditions
+        if (UiConfig.PRO_VISIBILITY_STATUS_SHOW) {
+            proView2.setVisibility(View.GONE);
+            proText2.setVisibility(View.GONE);
+        } else {
+            proView2.setVisibility(View.VISIBLE);
+            proText2.setVisibility(View.VISIBLE);
+        }
         //get data by intent
         intent = getIntent();
         postId = intent.getStringExtra("postId");
@@ -78,6 +93,8 @@ public class DiscussDetailsActivity extends AppCompatActivity {
                 binding.question.setText(discuss.getQuestions());
                 binding.descriptions.setText(discuss.getDescription());
                 binding.views.setText(discuss.getPostViews() + "");
+                binding.comment.setText(discuss.getCommentCount() + "");
+                binding.share.setText(discuss.getShareCount() + "");
                 binding.time.setText(time);
             }
 
@@ -126,53 +143,94 @@ public class DiscussDetailsActivity extends AppCompatActivity {
         binding.commentPostBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                CommentModel comment = new CommentModel();
-                comment.setCommentBody(binding.commentET.getText().toString());
-                comment.setCommentAt(new Date().getTime());
-                comment.setCommentedBy(FirebaseAuth.getInstance().getUid());
-                //get comment data
-                database.getReference()
-                        .child("Discuss")
-                        .child(postId)
-                        .child("comments")
-                        .push()
-                        .setValue(comment).addOnSuccessListener(new OnSuccessListener<Void>() {
-                    @Override
-                    public void onSuccess(@NonNull Void unused) {
-                        database.getReference()
-                                .child("Discuss")
-                                .child(postId)
-                                .child("commentCount").addListenerForSingleValueEvent(new ValueEventListener() {
-                            @Override
-                            public void onDataChange(@NonNull DataSnapshot snapshot) {
-                                int commentCount = 0;
-                                if (snapshot.exists()) {
-                                    commentCount = snapshot.getValue(Integer.class);
-                                }
-                                database.getReference()
-                                        .child("Discuss")
-                                        .child(postId)
-                                        .child("commentCount")
-                                        .setValue(commentCount + 1).addOnSuccessListener(new OnSuccessListener<Void>() {
-                                    @Override
-                                    public void onSuccess(@NonNull Void unused) {
-                                        Toast.makeText(DiscussDetailsActivity.this, "Commented", Toast.LENGTH_SHORT).show();
+                if (commentValidation()) {
+                    CommentModel comment = new CommentModel();
+                    comment.setCommentBody(binding.commentET.getText().toString());
+                    comment.setCommentAt(new Date().getTime());
+                    comment.setCommentedBy(FirebaseAuth.getInstance().getUid());
+                    //get comment data
+                    database.getReference()
+                            .child("Discuss")
+                            .child(postId)
+                            .child("comments")
+                            .push()
+                            .setValue(comment).addOnSuccessListener(new OnSuccessListener<Void>() {
+                        @Override
+                        public void onSuccess(@NonNull Void unused) {
+                            database.getReference()
+                                    .child("Discuss")
+                                    .child(postId)
+                                    .child("commentCount").addListenerForSingleValueEvent(new ValueEventListener() {
+                                @Override
+                                public void onDataChange(@NonNull DataSnapshot snapshot) {
+                                    int commentCount = 0;
+                                    if (snapshot.exists()) {
+                                        commentCount = snapshot.getValue(Integer.class);
                                     }
-                                });
-                            }
+                                    database.getReference()
+                                            .child("Discuss")
+                                            .child(postId)
+                                            .child("commentCount")
+                                            .setValue(commentCount + 1).addOnSuccessListener(new OnSuccessListener<Void>() {
+                                        @Override
+                                        public void onSuccess(@NonNull Void unused) {
+                                            binding.commentET.setText("");
+                                        }
+                                    });
+                                }
 
-                            @Override
-                            public void onCancelled(@NonNull DatabaseError error) {
+                                @Override
+                                public void onCancelled(@NonNull DatabaseError error) {
 
-                            }
-                        });
+                                }
+                            });
+                        }
+                    });
+
+                }
+            }
+        });
+        //get commented data
+        CommentAdapter adapter = new CommentAdapter(this, list);
+        LinearLayoutManager layoutManager = new LinearLayoutManager(this);
+        binding.commentRv.setLayoutManager(layoutManager);
+        binding.commentRv.setAdapter(adapter);
+        //get database data
+        database.getReference()
+                .child("Discuss")
+                .child(postId)
+                .child("comments")
+                .addValueEventListener(new ValueEventListener() {
+                    @Override
+                    public void onDataChange(@NonNull DataSnapshot snapshot) {
+                        list.clear();
+                        for (DataSnapshot dataSnapshot : snapshot.getChildren()) {
+                            CommentModel comment = dataSnapshot.getValue(CommentModel.class);
+                            list.add(comment);
+                        }
+                        adapter.notifyDataSetChanged();
+                    }
+
+                    @Override
+                    public void onCancelled(@NonNull DatabaseError error) {
+
                     }
                 });
 
-            }
-        });
 
     }//ends of OnCreate
+
+    //comment button empty validation
+    public boolean commentValidation() {
+        String comment = binding.commentET.getText().toString();
+        if (comment.isEmpty()) {
+            binding.commentET.setError("Text is required");
+            return false;
+        } else {
+            binding.commentET.setError(null);
+            return true;
+        }
+    }
 
     //option menu
     @Override
@@ -180,6 +238,7 @@ public class DiscussDetailsActivity extends AppCompatActivity {
         getMenuInflater().inflate(R.menu.menu_discuss_share, menu);
         return super.onCreateOptionsMenu(menu);
     }
+
     //option menu item select
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {

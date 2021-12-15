@@ -67,6 +67,8 @@ public class DiscussAdapter extends RecyclerView.Adapter<DiscussAdapter.viewHold
         holder.binding.time.setText(time);
         holder.binding.question.setText(model.getQuestions());
         holder.binding.views.setText(model.getPostViews() + "");
+        holder.binding.comment.setText(model.getCommentCount() + "");
+        holder.binding.share.setText(model.getShareCount() + "");
 
         //fetch user name and profile
         FirebaseDatabase.getInstance().getReference().child("UserData").child(model.getPostedBy())

@@ -5,7 +5,8 @@ public class DiscussModel {
     private String postId,questions,description,postedBy;
     private long postedAt;
     private int postViews;
-    private int postShare;
+    private int commentCount;
+    private int shareCount;
 
     public DiscussModel() {
     }
@@ -59,11 +60,19 @@ public class DiscussModel {
         this.postViews = postViews;
     }
 
-    public int getPostShare() {
-        return postShare;
+    public int getCommentCount() {
+        return commentCount;
     }
 
-    public void setPostShare(int postShare) {
-        this.postShare = postShare;
+    public void setCommentCount(int commentCount) {
+        this.commentCount = commentCount;
+    }
+
+    public int getShareCount() {
+        return shareCount;
+    }
+
+    public void setShareCount(int shareCount) {
+        this.shareCount = shareCount;
     }
 }

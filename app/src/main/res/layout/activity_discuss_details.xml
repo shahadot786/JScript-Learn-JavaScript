@@ -160,13 +160,13 @@
                 android:textColor="@color/color_text_discuss"
                 android:textSize="11sp"
                 app:drawableLeftCompat="@drawable/ic_watch_icon"
-                app:layout_constraintEnd_toStartOf="@+id/reply"
+                app:layout_constraintEnd_toStartOf="@+id/comment"
                 app:layout_constraintHorizontal_bias="0.5"
                 app:layout_constraintStart_toEndOf="@+id/time"
                 app:layout_constraintTop_toBottomOf="@+id/descriptions" />
 
             <androidx.appcompat.widget.AppCompatTextView
-                android:id="@+id/reply"
+                android:id="@+id/comment"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
@@ -192,16 +192,15 @@
                 android:textColor="@color/color_text_discuss"
                 android:textSize="11sp"
                 app:drawableLeftCompat="@drawable/ic_share_white"
-                app:layout_constraintStart_toEndOf="@+id/reply"
+                app:layout_constraintStart_toEndOf="@+id/comment"
                 app:layout_constraintTop_toBottomOf="@+id/descriptions" />
 
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/commentRv"
                 android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_marginTop="8dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
                 android:background="@color/colorPrimary"
-                app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.5"
                 app:layout_constraintStart_toStartOf="parent"

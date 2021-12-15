@@ -4,14 +4,7 @@ public class DiscussModel {
 
     private String postId,questions,description,postedBy;
     private long postedAt;
-
-    public DiscussModel(String postId, String questions, String description, String postedBy, long postedAt) {
-        this.postId = postId;
-        this.questions = questions;
-        this.description = description;
-        this.postedBy = postedBy;
-        this.postedAt = postedAt;
-    }
+    private int postViews;
 
     public DiscussModel() {
     }
@@ -55,5 +48,13 @@ public class DiscussModel {
 
     public void setPostedAt(long postedAt) {
         this.postedAt = postedAt;
+    }
+
+    public int getPostViews() {
+        return postViews;
+    }
+
+    public void setPostViews(int postViews) {
+        this.postViews = postViews;
     }
 }

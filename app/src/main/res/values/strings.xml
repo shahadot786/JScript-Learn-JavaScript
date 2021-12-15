@@ -222,12 +222,13 @@
     <string name="correct_answer">Correct Answer :</string>
     <string name="notification">Notification</string>
     <string name="search">Search</string>
-    <string name="share_your_problems">Share your problems</string>
+    <string name="share_your_problems">Share your problems here..</string>
     <string name="question">Question:</string>
     <string name="write_your_question">Write your question?</string>
     <string name="descriptions">Descriptions:</string>
     <string name="post">Post</string>
     <string name="write_your_descriptions">Write your descriptions</string>
+    <string name="write_your_answer_here">Write your answer here</string>
 
 
 </resources>

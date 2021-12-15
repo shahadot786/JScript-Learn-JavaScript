@@ -1,5 +1,6 @@
 package com.javascript.jscript.Fragment;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 
@@ -115,11 +116,14 @@ public class DiscussFragment extends Fragment {
 
         database.getReference().child("Discuss")
                 .addValueEventListener(new ValueEventListener() {
+                    @SuppressLint("NotifyDataSetChanged")
                     @Override
                     public void onDataChange(@NonNull DataSnapshot snapshot) {
                         dashboardList.clear();
                         for (DataSnapshot dataSnapshot : snapshot.getChildren()){
                             DiscussModel model = dataSnapshot.getValue(DiscussModel.class);
+                            assert model != null;
+                            model.setPostId(dataSnapshot.getKey());
                             dashboardList.add(model);
                         }
 

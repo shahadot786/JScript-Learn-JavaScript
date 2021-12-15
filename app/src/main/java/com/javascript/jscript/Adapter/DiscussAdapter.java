@@ -1,6 +1,10 @@
 package com.javascript.jscript.Adapter;
 
+import static android.content.Intent.FLAG_ACTIVITY_NEW_TASK;
+
+import android.annotation.SuppressLint;
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -9,11 +13,15 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.github.marlonlom.utilities.timeago.TimeAgo;
+import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 import com.javascript.jscript.Config.UiConfig;
+import com.javascript.jscript.Discuss.DiscussDetailsActivity;
 import com.javascript.jscript.Model.DiscussModel;
 import com.javascript.jscript.Model.ProfileModel;
 import com.javascript.jscript.Model.UserModel;
@@ -44,23 +52,28 @@ public class DiscussAdapter extends RecyclerView.Adapter<DiscussAdapter.viewHold
         if (UiConfig.PRO_VISIBILITY_STATUS_SHOW) {
             proView.setVisibility(View.GONE);
             proText.setVisibility(View.GONE);
-        }else {
+        } else {
             proView.setVisibility(View.VISIBLE);
             proText.setVisibility(View.VISIBLE);
         }
         return new viewHolder(view);
     }
 
+    @SuppressLint("SetTextI18n")
     @Override
     public void onBindViewHolder(@NonNull viewHolder holder, int position) {
         DiscussModel model = list.get(position);
+        String time = TimeAgo.using(model.getPostedAt());
+        holder.binding.time.setText(time);
         holder.binding.question.setText(model.getQuestions());
+        holder.binding.views.setText(model.getPostViews() + "");
 
+        //fetch user name and profile
         FirebaseDatabase.getInstance().getReference().child("UserData").child(model.getPostedBy())
                 .addListenerForSingleValueEvent(new ValueEventListener() {
                     @Override
                     public void onDataChange(@NonNull DataSnapshot snapshot) {
-                        if (snapshot.exists()){
+                        if (snapshot.exists()) {
                             UserModel user = snapshot.getValue(UserModel.class);
                             assert user != null;
                             Picasso.get()
@@ -76,7 +89,7 @@ public class DiscussAdapter extends RecyclerView.Adapter<DiscussAdapter.viewHold
 
                     }
                 });
-
+        //fetch profession
         FirebaseDatabase.getInstance().getReference().child("UpdateProfile")
                 .child(model.getPostedBy()).addValueEventListener(new ValueEventListener() {
             @Override
@@ -91,6 +104,56 @@ public class DiscussAdapter extends RecyclerView.Adapter<DiscussAdapter.viewHold
 
             }
         });
+        //check multiple views
+        FirebaseDatabase.getInstance().getReference()
+                .child("Discuss")
+                .child(model.getPostId())
+                .child("views")
+                .child(Objects.requireNonNull(FirebaseAuth.getInstance().getUid()))
+                .addListenerForSingleValueEvent(new ValueEventListener() {
+                    @Override
+                    public void onDataChange(@NonNull DataSnapshot snapshot) {
+                        //post watch code
+                        holder.binding.discussRVSample.setOnClickListener(new View.OnClickListener() {
+                            @Override
+                            public void onClick(View view) {
+                                //goto topics details
+                                Intent intent = new Intent(context.getApplicationContext(), DiscussDetailsActivity.class);
+                                intent.addFlags(FLAG_ACTIVITY_NEW_TASK);
+                                context.getApplicationContext().startActivity(intent);
+
+                                //fetch firebase database
+                                FirebaseDatabase.getInstance().getReference()
+                                        .child("Discuss")
+                                        .child(model.getPostId())
+                                        .child("views")
+                                        .child(Objects.requireNonNull(FirebaseAuth.getInstance().getUid()))
+                                        .setValue(true).addOnSuccessListener(new OnSuccessListener<Void>() {
+                                    @Override
+                                    public void onSuccess(@NonNull Void unused) {
+                                        FirebaseDatabase.getInstance().getReference()
+                                                .child("Discuss")
+                                                .child(model.getPostId())
+                                                .child("postViews")
+                                                .setValue(model.getPostViews() + 1)
+                                                .addOnSuccessListener(new OnSuccessListener<Void>() {
+                                                    @Override
+                                                    public void onSuccess(@NonNull Void unused) {
+
+                                                    }
+                                                });
+                                    }
+                                });
+
+                            }
+                        });
+                    }
+
+                    @Override
+                    public void onCancelled(@NonNull DatabaseError error) {
+
+                    }
+                });
 
 
     }

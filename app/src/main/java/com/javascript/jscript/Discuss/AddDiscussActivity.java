@@ -72,25 +72,8 @@ public class AddDiscussActivity extends AppCompatActivity {
         auth = FirebaseAuth.getInstance();
         database = FirebaseDatabase.getInstance();
         //get firebase value
-        database.getReference().child("UpdateProfile").child(Objects.requireNonNull(auth.getUid()))
-                .addListenerForSingleValueEvent(new ValueEventListener() {
-                    @Override
-                    public void onDataChange(@NonNull DataSnapshot snapshot) {
-                        if (snapshot.exists()) {
-                            ProfileModel profileModel = snapshot.getValue(ProfileModel.class);
-                            assert profileModel != null;
-                            binding.userName.setText(profileModel.getUsername());
-                        }
-                    }
-
-                    @Override
-                    public void onCancelled(@NonNull DatabaseError error) {
-
-                    }
-                });
-
         //fetch update image
-        database.getReference().child("UserImages").child(auth.getUid())
+        database.getReference().child("UserData").child(auth.getUid())
                 .addListenerForSingleValueEvent(new ValueEventListener() {
                     @Override
                     public void onDataChange(@NonNull DataSnapshot snapshot) {
@@ -101,6 +84,7 @@ public class AddDiscussActivity extends AppCompatActivity {
                                     .load(userModel.getProfile())
                                     .placeholder(R.drawable.ic_profile_default_image)
                                     .into(binding.profileImage);
+                            binding.userName.setText(userModel.getUserName());
                         }
                     }
 

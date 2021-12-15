@@ -179,7 +179,7 @@
                     android:hint="@string/feedback_message"
                     android:ems="10"
                     android:inputType="textMultiLine|textPersonName"
-                    android:maxLines="40"
+                    android:maxLines="10"
                     android:overScrollMode="always"
                     android:scrollbars="vertical"
                     android:textColor="@color/colorWhite"

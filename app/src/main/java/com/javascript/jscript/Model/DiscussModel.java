@@ -5,6 +5,7 @@ public class DiscussModel {
     private String postId,questions,description,postedBy;
     private long postedAt;
     private int postViews;
+    private int postShare;
 
     public DiscussModel() {
     }
@@ -56,5 +57,13 @@ public class DiscussModel {
 
     public void setPostViews(int postViews) {
         this.postViews = postViews;
+    }
+
+    public int getPostShare() {
+        return postShare;
+    }
+
+    public void setPostShare(int postShare) {
+        this.postShare = postShare;
     }
 }

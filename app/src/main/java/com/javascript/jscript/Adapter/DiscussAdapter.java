@@ -119,6 +119,8 @@ public class DiscussAdapter extends RecyclerView.Adapter<DiscussAdapter.viewHold
                             public void onClick(View view) {
                                 //goto topics details
                                 Intent intent = new Intent(context.getApplicationContext(), DiscussDetailsActivity.class);
+                                intent.putExtra("postId",model.getPostId());
+                                intent.putExtra("postedBy",model.getPostedBy());
                                 intent.addFlags(FLAG_ACTIVITY_NEW_TASK);
                                 context.getApplicationContext().startActivity(intent);
 
@@ -144,6 +146,7 @@ public class DiscussAdapter extends RecyclerView.Adapter<DiscussAdapter.viewHold
                                                 });
                                     }
                                 });
+
 
                             }
                         });

@@ -172,7 +172,7 @@ public class QuizDetailsActivity extends AppCompatActivity {
                         questionList.get(0).getOption1() + "\n"+
                         questionList.get(0).getOption2() + "\n"+
                         questionList.get(0).getOption3() + "\n"+
-                        questionList.get(0).getOption4() + "\n" + "\n" + "\n" + "\n" + "\n" + "\n" + "\n" +
+                        questionList.get(0).getOption4() + "\n\n\n\n" +
                         "Play Quiz in JScript : Learn JavaScript" + "\n"+
                         "https://play.google.com/store/apps/details?id=" +
                         BuildConfig.APPLICATION_ID;

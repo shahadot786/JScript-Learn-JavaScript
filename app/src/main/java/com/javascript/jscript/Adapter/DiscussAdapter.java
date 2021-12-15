@@ -14,7 +14,7 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 import com.javascript.jscript.Config.UiConfig;
-import com.javascript.jscript.Model.DashboardModel;
+import com.javascript.jscript.Model.DiscussModel;
 import com.javascript.jscript.Model.ProfileModel;
 import com.javascript.jscript.Model.UserModel;
 import com.javascript.jscript.R;
@@ -22,13 +22,14 @@ import com.javascript.jscript.databinding.AddDiscussRvSampleBinding;
 import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
+import java.util.Objects;
 
-public class DashboardAdapter extends RecyclerView.Adapter<DashboardAdapter.viewHolder> {
+public class DiscussAdapter extends RecyclerView.Adapter<DiscussAdapter.viewHolder> {
 
-    ArrayList<DashboardModel> list;
+    ArrayList<DiscussModel> list;
     Context context;
 
-    public DashboardAdapter(ArrayList<DashboardModel> list, Context context) {
+    public DiscussAdapter(ArrayList<DiscussModel> list, Context context) {
         this.list = list;
         this.context = context;
     }
@@ -52,26 +53,29 @@ public class DashboardAdapter extends RecyclerView.Adapter<DashboardAdapter.view
 
     @Override
     public void onBindViewHolder(@NonNull viewHolder holder, int position) {
-        DashboardModel model = list.get(position);
+        DiscussModel model = list.get(position);
         holder.binding.question.setText(model.getQuestions());
 
-        FirebaseDatabase.getInstance().getReference().child("UserImages")
-                .child(model.getPostedBy()).addValueEventListener(new ValueEventListener() {
-            @Override
-            public void onDataChange(@NonNull DataSnapshot snapshot) {
-                UserModel userModel = snapshot.getValue(UserModel.class);
-                assert userModel != null;
-                Picasso.get()
-                        .load(userModel.getProfile())
-                        .placeholder(R.drawable.ic_profile_default_image)
-                        .into(holder.binding.profileImage);
-            }
+        FirebaseDatabase.getInstance().getReference().child("UserData").child(model.getPostedBy())
+                .addListenerForSingleValueEvent(new ValueEventListener() {
+                    @Override
+                    public void onDataChange(@NonNull DataSnapshot snapshot) {
+                        if (snapshot.exists()){
+                            UserModel user = snapshot.getValue(UserModel.class);
+                            assert user != null;
+                            Picasso.get()
+                                    .load(user.getProfile())
+                                    .placeholder(R.drawable.ic_profile_default_image)
+                                    .into(holder.binding.profileImage);
+                            holder.binding.userName.setText(user.getUserName());
+                        }
+                    }
 
-            @Override
-            public void onCancelled(@NonNull DatabaseError error) {
+                    @Override
+                    public void onCancelled(@NonNull DatabaseError error) {
 
-            }
-        });
+                    }
+                });
 
         FirebaseDatabase.getInstance().getReference().child("UpdateProfile")
                 .child(model.getPostedBy()).addValueEventListener(new ValueEventListener() {
@@ -79,7 +83,6 @@ public class DashboardAdapter extends RecyclerView.Adapter<DashboardAdapter.view
             public void onDataChange(@NonNull DataSnapshot snapshot) {
                 ProfileModel profileModel = snapshot.getValue(ProfileModel.class);
                 assert profileModel != null;
-                holder.binding.userName.setText(profileModel.getUsername());
                 holder.binding.profession.setText(profileModel.getProfession());
             }
 

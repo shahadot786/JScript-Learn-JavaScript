@@ -45,23 +45,7 @@ public class SignOutActivity extends AppCompatActivity {
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         //get database value
-        database.getReference().child("UpdateProfile").child(Objects.requireNonNull(auth.getUid()))
-                .addListenerForSingleValueEvent(new ValueEventListener() {
-                    @Override
-                    public void onDataChange(@NonNull DataSnapshot snapshot) {
-                        if (snapshot.exists()) {
-                            ProfileModel profileModel =  new ProfileModel();
-                            binding.userName.setText(profileModel.getUsername());
-                        }
-                    }
-
-                    @Override
-                    public void onCancelled(@NonNull DatabaseError error) {
-
-                    }
-                });
-
-        database.getReference().child("UserImages").child(auth.getUid())
+        database.getReference().child("UserData").child(Objects.requireNonNull(auth.getUid()))
                 .addListenerForSingleValueEvent(new ValueEventListener() {
                     @Override
                     public void onDataChange(@NonNull DataSnapshot snapshot) {
@@ -72,6 +56,7 @@ public class SignOutActivity extends AppCompatActivity {
                                     .load(user.getProfile())
                                     .placeholder(R.drawable.ic_profile_default_image)
                                     .into(binding.profileImage);
+                            binding.userName.setText(user.getUserName());
                         }
                     }
 

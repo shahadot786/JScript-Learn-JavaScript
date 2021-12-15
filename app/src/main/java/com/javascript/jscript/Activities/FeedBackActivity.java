@@ -71,44 +71,12 @@ public class FeedBackActivity extends AppCompatActivity {
                         if (snapshot.exists()){
                             UserModel user = snapshot.getValue(UserModel.class);
                             assert user != null;
-                            binding.emailFeedEdit.setText(user.getEmail());
-                        }
-                    }
-
-                    @Override
-                    public void onCancelled(@NonNull DatabaseError error) {
-
-                    }
-                });
-        database.getReference().child("UpdateProfile").child(Objects.requireNonNull(auth.getUid()))
-                .addListenerForSingleValueEvent(new ValueEventListener() {
-                    @Override
-                    public void onDataChange(@NonNull DataSnapshot snapshot) {
-                        if (snapshot.exists()){
-                            ProfileModel profileModel =  snapshot.getValue(ProfileModel.class);
-                            assert profileModel != null;
-                            binding.userName.setText(profileModel.getUsername());
-                        }
-                    }
-
-                    @Override
-                    public void onCancelled(@NonNull DatabaseError error) {
-
-                    }
-                });
-
-        //fetch update image
-        database.getReference().child("UserImages").child(auth.getUid())
-                .addListenerForSingleValueEvent(new ValueEventListener() {
-                    @Override
-                    public void onDataChange(@NonNull DataSnapshot snapshot) {
-                        if (snapshot.exists()){
-                            UserModel userModel = snapshot.getValue(UserModel.class);
-                            assert userModel != null;
                             Picasso.get()
-                                    .load(userModel.getProfile())
+                                    .load(user.getProfile())
                                     .placeholder(R.drawable.ic_profile_default_image)
                                     .into(binding.profileImage);
+                            binding.emailFeedEdit.setText(user.getEmail());
+                            binding.userName.setText(user.getUserName());
                         }
                     }
 
@@ -117,7 +85,6 @@ public class FeedBackActivity extends AppCompatActivity {
 
                     }
                 });
-
         //send button click codes
         binding.sendBtn.setOnClickListener(new View.OnClickListener() {
             @Override

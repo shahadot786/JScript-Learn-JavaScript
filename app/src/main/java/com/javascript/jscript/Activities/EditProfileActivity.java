@@ -66,7 +66,7 @@ public class EditProfileActivity extends AppCompatActivity {
 
         //get database value
         //fetch update image
-        database.getReference().child("UserImages").child(Objects.requireNonNull(auth.getUid()))
+        database.getReference().child("UserData").child(Objects.requireNonNull(auth.getUid()))
                 .addListenerForSingleValueEvent(new ValueEventListener() {
                     @Override
                     public void onDataChange(@NonNull DataSnapshot snapshot) {
@@ -77,6 +77,7 @@ public class EditProfileActivity extends AppCompatActivity {
                                     .load(userModel.getProfile())
                                     .placeholder(R.drawable.ic_profile_default_image)
                                     .into(binding.profileImage);
+                            binding.userName.setText(userModel.getUserName());
                         }
                     }
 
@@ -95,7 +96,6 @@ public class EditProfileActivity extends AppCompatActivity {
                         if (snapshot.exists()) {
                             ProfileModel profile = snapshot.getValue(ProfileModel.class);
                             assert profile != null;
-                            String username = profile.getUsername();
                             String profession = profile.getProfession();
                             String bio = profile.getUserBio();
                             String fb = profile.getFbLink();
@@ -104,8 +104,6 @@ public class EditProfileActivity extends AppCompatActivity {
                             String linkedin = profile.getLinkedinLink();
                             String twitter = profile.getTwitterLink();
                             //set profession,bio and link
-                            binding.userName.setText(username);
-                            binding.usernameEdit.setText(username);
                             binding.professionEdit.setText(profession);
                             binding.bioEditText.setText(bio);
                             binding.fblinkEditText.setText(fb);

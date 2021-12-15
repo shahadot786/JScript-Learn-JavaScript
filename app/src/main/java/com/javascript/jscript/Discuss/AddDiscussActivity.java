@@ -20,8 +20,7 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 import com.javascript.jscript.Config.UiConfig;
 import com.javascript.jscript.Fragment.DiscussFragment;
-import com.javascript.jscript.Model.AddDiscussModel;
-import com.javascript.jscript.Model.DashboardModel;
+import com.javascript.jscript.Model.DiscussModel;
 import com.javascript.jscript.Model.ProfileModel;
 import com.javascript.jscript.Model.UserModel;
 import com.javascript.jscript.R;
@@ -119,7 +118,7 @@ public class AddDiscussActivity extends AppCompatActivity {
                 if (questionValidation() && descriptionsValidation()) {
                     //show dialog
                     dialog.show();
-                    DashboardModel post = new DashboardModel();
+                    DiscussModel post = new DiscussModel();
                     post.setPostedBy(FirebaseAuth.getInstance().getUid());
                     post.setQuestions(binding.questionEditText.getText().toString());
                     post.setDescription(binding.descriptionEditText.getText().toString());

@@ -1,11 +1,11 @@
 package com.javascript.jscript.Model;
 
-public class DashboardModel {
+public class DiscussModel {
 
     private String postId,questions,description,postedBy;
     private long postedAt;
 
-    public DashboardModel(String postId, String questions, String description, String postedBy, long postedAt) {
+    public DiscussModel(String postId, String questions, String description, String postedBy, long postedAt) {
         this.postId = postId;
         this.questions = questions;
         this.description = description;
@@ -13,7 +13,7 @@ public class DashboardModel {
         this.postedAt = postedAt;
     }
 
-    public DashboardModel() {
+    public DiscussModel() {
     }
 
 

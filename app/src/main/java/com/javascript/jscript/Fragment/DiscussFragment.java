@@ -22,11 +22,10 @@ import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
-import com.javascript.jscript.Adapter.DashboardAdapter;
+import com.javascript.jscript.Adapter.DiscussAdapter;
 import com.javascript.jscript.Config.UiConfig;
 import com.javascript.jscript.Discuss.AddDiscussActivity;
-import com.javascript.jscript.Model.DashboardModel;
-import com.javascript.jscript.Model.ProfileModel;
+import com.javascript.jscript.Model.DiscussModel;
 import com.javascript.jscript.Model.UserModel;
 import com.javascript.jscript.R;
 import com.squareup.picasso.Picasso;
@@ -39,7 +38,7 @@ public class DiscussFragment extends Fragment {
     RecyclerView recyclerView;
     FirebaseAuth auth;
     FirebaseDatabase database;
-    ArrayList<DashboardModel> dashboardList;
+    ArrayList<DiscussModel> dashboardList;
 
     public DiscussFragment() {
         // Required empty public constructor
@@ -77,40 +76,23 @@ public class DiscussFragment extends Fragment {
                 startActivity(new Intent(getActivity(), AddDiscussActivity.class));
             }
         });
-
         //firebase instance
         TextView userName = view.findViewById(R.id.userName);
         ImageView profileImage = view.findViewById(R.id.profileImage);
         auth = FirebaseAuth.getInstance();
         database = FirebaseDatabase.getInstance();
-        database.getReference().child("UpdateProfile").child(Objects.requireNonNull(auth.getUid()))
+        database.getReference().child("UserData").child(Objects.requireNonNull(auth.getUid()))
                 .addListenerForSingleValueEvent(new ValueEventListener() {
                     @Override
                     public void onDataChange(@NonNull DataSnapshot snapshot) {
                         if (snapshot.exists()){
-                            ProfileModel profileModel =  snapshot.getValue(ProfileModel.class);
-                            assert profileModel != null;
-                            userName.setText(profileModel.getUsername());
-                        }
-                    }
-
-                    @Override
-                    public void onCancelled(@NonNull DatabaseError error) {
-
-                    }
-                });
-        //fetch update image
-        database.getReference().child("UserImages").child(auth.getUid())
-                .addListenerForSingleValueEvent(new ValueEventListener() {
-                    @Override
-                    public void onDataChange(@NonNull DataSnapshot snapshot) {
-                        if (snapshot.exists()){
-                            UserModel userModel = snapshot.getValue(UserModel.class);
-                            assert userModel != null;
+                            UserModel user = snapshot.getValue(UserModel.class);
+                            assert user != null;
                             Picasso.get()
-                                    .load(userModel.getProfile())
+                                    .load(user.getProfile())
                                     .placeholder(R.drawable.ic_profile_default_image)
                                     .into(profileImage);
+                            userName.setText(user.getUserName());
                         }
                     }
 
@@ -119,17 +101,16 @@ public class DiscussFragment extends Fragment {
 
                     }
                 });
-
 
         //recyclerview
         recyclerView = view.findViewById(R.id.rv_discuss);
         dashboardList = new ArrayList<>();
 
-        DashboardAdapter dashboardAdapter = new DashboardAdapter(dashboardList,getContext());
+        DiscussAdapter discussAdapter = new DiscussAdapter(dashboardList,getContext());
         LinearLayoutManager layoutManager = new LinearLayoutManager(getContext());
         recyclerView.setLayoutManager(layoutManager);
         recyclerView.setNestedScrollingEnabled(false);
-        recyclerView.setAdapter(dashboardAdapter);
+        recyclerView.setAdapter(discussAdapter);
 
 
         database.getReference().child("Discuss")
@@ -138,11 +119,11 @@ public class DiscussFragment extends Fragment {
                     public void onDataChange(@NonNull DataSnapshot snapshot) {
                         dashboardList.clear();
                         for (DataSnapshot dataSnapshot : snapshot.getChildren()){
-                            DashboardModel model = dataSnapshot.getValue(DashboardModel.class);
+                            DiscussModel model = dataSnapshot.getValue(DiscussModel.class);
                             dashboardList.add(model);
                         }
 
-                        dashboardAdapter.notifyDataSetChanged();
+                        discussAdapter.notifyDataSetChanged();
 
                     }
 

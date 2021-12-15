@@ -52,34 +52,18 @@ public class ProFragment extends Fragment {
 
 
         //fetch username
-        database.getReference().child("UpdateProfile").child(Objects.requireNonNull(auth.getUid()))
+        database.getReference().child("UserData").child(Objects.requireNonNull(auth.getUid()))
                 .addListenerForSingleValueEvent(new ValueEventListener() {
                     @Override
                     public void onDataChange(@NonNull DataSnapshot snapshot) {
                         if (snapshot.exists()){
-                            ProfileModel user = snapshot.getValue(ProfileModel.class);
+                            UserModel user = snapshot.getValue(UserModel.class);
                             assert user != null;
-                            binding.proUserName.setText(user.getUsername());
-                        }
-                    }
-
-                    @Override
-                    public void onCancelled(@NonNull DatabaseError error) {
-
-                    }
-                });
-        //fetch update image
-        database.getReference().child("UserImages").child(auth.getUid())
-                .addListenerForSingleValueEvent(new ValueEventListener() {
-                    @Override
-                    public void onDataChange(@NonNull DataSnapshot snapshot) {
-                        if (snapshot.exists()){
-                            UserModel userModel = snapshot.getValue(UserModel.class);
-                            assert userModel != null;
                             Picasso.get()
-                                    .load(userModel.getProfile())
+                                    .load(user.getProfile())
                                     .placeholder(R.drawable.ic_profile_default_image)
                                     .into(binding.profileImage);
+                            binding.proUserName.setText(user.getUserName());
                         }
                     }
 

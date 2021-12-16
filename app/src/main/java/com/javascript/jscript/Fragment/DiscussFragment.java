@@ -8,6 +8,7 @@ import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
+import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 
 import android.view.LayoutInflater;
 import android.view.Menu;
@@ -18,6 +19,7 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.cooltechworks.views.shimmer.ShimmerRecyclerView;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
@@ -36,10 +38,11 @@ import java.util.Objects;
 
 public class DiscussFragment extends Fragment {
 
-    RecyclerView recyclerView;
+    ShimmerRecyclerView recyclerView;
     FirebaseAuth auth;
     FirebaseDatabase database;
     ArrayList<DiscussModel> dashboardList;
+    SwipeRefreshLayout swipeRefreshLayout;
 
     public DiscussFragment() {
         // Required empty public constructor
@@ -58,6 +61,9 @@ public class DiscussFragment extends Fragment {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_discuss, container, false);
         setHasOptionsMenu(true);
+        //recyclerview
+        recyclerView = view.findViewById(R.id.rv_discuss);
+        recyclerView.showShimmerAdapter();
         //pro status
         View proView2 = view.findViewById(R.id.proTextView);
         TextView proText2 = view.findViewById(R.id.proText2);
@@ -103,15 +109,11 @@ public class DiscussFragment extends Fragment {
                     }
                 });
 
-        //recyclerview
-        recyclerView = view.findViewById(R.id.rv_discuss);
         dashboardList = new ArrayList<>();
-
         DiscussAdapter discussAdapter = new DiscussAdapter(dashboardList,getContext());
         LinearLayoutManager layoutManager = new LinearLayoutManager(getContext());
         recyclerView.setLayoutManager(layoutManager);
         recyclerView.setNestedScrollingEnabled(false);
-        recyclerView.setAdapter(discussAdapter);
 
 
         database.getReference().child("Discuss")
@@ -126,7 +128,8 @@ public class DiscussFragment extends Fragment {
                             model.setPostId(dataSnapshot.getKey());
                             dashboardList.add(model);
                         }
-
+                        recyclerView.setAdapter(discussAdapter);
+                        recyclerView.hideShimmerAdapter();
                         discussAdapter.notifyDataSetChanged();
 
                     }
@@ -136,6 +139,38 @@ public class DiscussFragment extends Fragment {
 
                     }
                 });
+
+        //find swipe refresh
+        swipeRefreshLayout = view.findViewById(R.id.swipeRefreshDiscuss);
+        swipeRefreshLayout.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
+            @Override
+            public void onRefresh() {
+                recyclerView.showShimmerAdapter();
+                database.getReference().child("Discuss")
+                        .addValueEventListener(new ValueEventListener() {
+                            @SuppressLint("NotifyDataSetChanged")
+                            @Override
+                            public void onDataChange(@NonNull DataSnapshot snapshot) {
+                                dashboardList.clear();
+                                for (DataSnapshot dataSnapshot : snapshot.getChildren()){
+                                    DiscussModel model = dataSnapshot.getValue(DiscussModel.class);
+                                    assert model != null;
+                                    model.setPostId(dataSnapshot.getKey());
+                                    dashboardList.add(model);
+                                }
+                                recyclerView.setAdapter(discussAdapter);
+                                recyclerView.hideShimmerAdapter();
+                            }
+
+                            @Override
+                            public void onCancelled(@NonNull DatabaseError error) {
+
+                            }
+                        });
+                discussAdapter.notifyDataSetChanged();
+                swipeRefreshLayout.setRefreshing(false);
+            }
+        });
 
 
         return view;

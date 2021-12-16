@@ -302,7 +302,7 @@
                     android:layout_width="300dp"
                     android:layout_height="100dp"
                     android:layout_marginTop="16dp"
-                    android:visibility="visible"
+                    android:visibility="gone"
                     app:cardBackgroundColor="@color/colorSecondary"
                     app:layout_constraintEnd_toEndOf="@+id/userBio"
                     app:layout_constraintStart_toStartOf="@+id/userBio"
@@ -376,8 +376,9 @@
                 </androidx.cardview.widget.CardView>
 
                 <!--Course Progress-->
+
                 <androidx.cardview.widget.CardView
-                    android:id="@+id/courseProgress"
+                    android:id="@+id/userPost"
                     android:layout_width="300dp"
                     android:layout_height="100dp"
                     android:layout_marginTop="16dp"
@@ -386,194 +387,6 @@
                     app:layout_constraintEnd_toEndOf="@+id/promotion"
                     app:layout_constraintStart_toStartOf="@+id/promotion"
                     app:layout_constraintTop_toBottomOf="@+id/promotion">
-
-                    <androidx.constraintlayout.widget.ConstraintLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent">
-
-                        <androidx.constraintlayout.widget.ConstraintLayout
-                            android:id="@+id/constraintLayout4"
-                            android:layout_width="100dp"
-                            android:layout_height="match_parent"
-                            app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toTopOf="parent">
-
-                            <View
-                                android:id="@+id/cpView2"
-                                android:layout_width="1dp"
-                                android:layout_height="wrap_content"
-                                android:background="@color/activeGrey"
-                                app:layout_constraintEnd_toEndOf="parent"
-                                app:layout_constraintTop_toTopOf="parent" />
-
-                            <TextView
-                                android:id="@+id/CPprograms"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginTop="4dp"
-                                android:text="@string/menu_programs"
-                                app:layout_constraintEnd_toEndOf="parent"
-                                app:layout_constraintStart_toStartOf="parent"
-                                app:layout_constraintTop_toTopOf="parent" />
-
-                            <TextView
-                                android:id="@+id/cpProgramsCount"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginTop="4dp"
-                                android:text="@string/_0"
-                                android:textSize="20sp"
-                                android:textStyle="bold"
-                                app:layout_constraintEnd_toEndOf="@+id/CPprograms"
-                                app:layout_constraintStart_toStartOf="@+id/CPprograms"
-                                app:layout_constraintTop_toBottomOf="@+id/CPprograms" />
-
-                            <View
-                                android:id="@+id/cpView1"
-                                android:layout_width="60dp"
-                                android:layout_height="1dp"
-                                android:layout_marginTop="4dp"
-                                android:background="@color/activeGrey"
-                                app:layout_constraintEnd_toEndOf="@+id/CPprograms"
-                                app:layout_constraintStart_toStartOf="@+id/CPprograms"
-                                app:layout_constraintTop_toBottomOf="@+id/cpProgramsCount" />
-
-                            <TextView
-                                android:id="@+id/cpConstant"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="@string/cp_programs_constant"
-                                android:textSize="12sp"
-                                app:layout_constraintEnd_toEndOf="@+id/cpView1"
-                                app:layout_constraintStart_toStartOf="@+id/cpView1"
-                                app:layout_constraintTop_toBottomOf="@+id/cpView1" />
-                        </androidx.constraintlayout.widget.ConstraintLayout>
-
-                        <androidx.constraintlayout.widget.ConstraintLayout
-                            android:id="@+id/constraintLayout5"
-                            android:layout_width="100dp"
-                            android:layout_height="match_parent"
-                            app:layout_constraintStart_toEndOf="@+id/constraintLayout4"
-                            app:layout_constraintTop_toTopOf="parent">
-
-                            <View
-                                android:id="@+id/cpView3"
-                                android:layout_width="1dp"
-                                android:layout_height="wrap_content"
-                                android:background="@color/activeGrey"
-                                app:layout_constraintEnd_toEndOf="parent"
-                                app:layout_constraintTop_toTopOf="parent" />
-
-                            <TextView
-                                android:id="@+id/cpQuizes"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginTop="4dp"
-                                android:text="@string/menu_quiz"
-                                app:layout_constraintEnd_toEndOf="parent"
-                                app:layout_constraintStart_toStartOf="parent"
-                                app:layout_constraintTop_toTopOf="parent" />
-
-                            <TextView
-                                android:id="@+id/cpQuizeCount"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginTop="4dp"
-                                android:text="@string/_0"
-                                android:textSize="20sp"
-                                android:textStyle="bold"
-                                app:layout_constraintEnd_toEndOf="@+id/cpQuizes"
-                                app:layout_constraintStart_toStartOf="@+id/cpQuizes"
-                                app:layout_constraintTop_toBottomOf="@+id/cpQuizes" />
-
-                            <View
-                                android:id="@+id/view9"
-                                android:layout_width="60dp"
-                                android:layout_height="1dp"
-                                android:layout_marginTop="4dp"
-                                android:background="@color/activeGrey"
-                                app:layout_constraintEnd_toEndOf="@+id/cpQuizes"
-                                app:layout_constraintStart_toStartOf="@+id/cpQuizes"
-                                app:layout_constraintTop_toBottomOf="@+id/cpQuizeCount" />
-
-                            <TextView
-                                android:id="@+id/cpQuizeConstant"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="@string/cp_quizes_constants"
-                                android:textSize="12sp"
-                                app:layout_constraintEnd_toEndOf="@+id/view9"
-                                app:layout_constraintStart_toStartOf="@+id/view9"
-                                app:layout_constraintTop_toBottomOf="@+id/view9" />
-                        </androidx.constraintlayout.widget.ConstraintLayout>
-
-                        <androidx.constraintlayout.widget.ConstraintLayout
-                            android:layout_width="0dp"
-                            android:layout_height="match_parent"
-                            app:layout_constraintEnd_toEndOf="parent"
-                            app:layout_constraintStart_toEndOf="@+id/constraintLayout5"
-                            app:layout_constraintTop_toTopOf="parent">
-
-                            <TextView
-                                android:id="@+id/cpLesson"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginTop="4dp"
-                                android:text="@string/lesson"
-                                app:layout_constraintEnd_toEndOf="parent"
-                                app:layout_constraintStart_toStartOf="parent"
-                                app:layout_constraintTop_toTopOf="parent" />
-
-                            <TextView
-                                android:id="@+id/cpLessonCount"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginTop="4dp"
-                                android:text="@string/_0"
-                                android:textSize="20sp"
-                                android:textStyle="bold"
-                                app:layout_constraintEnd_toEndOf="@+id/cpLesson"
-                                app:layout_constraintStart_toStartOf="@+id/cpLesson"
-                                app:layout_constraintTop_toBottomOf="@+id/cpLesson" />
-
-                            <View
-                                android:id="@+id/cpView5"
-                                android:layout_width="60dp"
-                                android:layout_height="1dp"
-                                android:layout_marginTop="4dp"
-                                android:background="@color/activeGrey"
-                                app:layout_constraintEnd_toEndOf="@+id/cpLesson"
-                                app:layout_constraintStart_toStartOf="@+id/cpLesson"
-                                app:layout_constraintTop_toBottomOf="@+id/cpLessonCount" />
-
-                            <TextView
-                                android:id="@+id/cpLessonConstant"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="@string/cp_lesson_constant"
-                                android:textSize="12sp"
-                                app:layout_constraintEnd_toEndOf="@+id/cpView5"
-                                app:layout_constraintStart_toStartOf="@+id/cpView5"
-                                app:layout_constraintTop_toBottomOf="@+id/cpView5" />
-                        </androidx.constraintlayout.widget.ConstraintLayout>
-
-                    </androidx.constraintlayout.widget.ConstraintLayout>
-
-
-                </androidx.cardview.widget.CardView>
-
-                <androidx.cardview.widget.CardView
-                    android:id="@+id/Progress1"
-                    android:layout_width="300dp"
-                    android:layout_height="100dp"
-                    android:layout_marginTop="16dp"
-                    android:layout_marginBottom="32dp"
-                    android:visibility="visible"
-                    app:cardBackgroundColor="@color/colorSecondary"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="@+id/courseProgress"
-                    app:layout_constraintStart_toStartOf="@+id/courseProgress"
-                    app:layout_constraintTop_toBottomOf="@+id/courseProgress">
 
                     <androidx.constraintlayout.widget.ConstraintLayout
                         android:layout_width="match_parent"

@@ -47,7 +47,7 @@
         android:layout_width="18dp"
         android:layout_height="10dp"
         android:layout_marginStart="4dp"
-        android:layout_marginTop="6dp"
+        android:layout_marginTop="4dp"
         android:background="@drawable/ic_pro_gradient_round"
         android:visibility="gone"
         app:layout_constraintBottom_toBottomOf="@+id/userName"

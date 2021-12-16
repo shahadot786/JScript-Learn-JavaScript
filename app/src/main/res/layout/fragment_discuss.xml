@@ -21,6 +21,7 @@
         app:titleTextColor="@color/textColorGrey" />
 
     <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swipeRefreshDiscuss"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -82,7 +83,7 @@
                         android:layout_width="24dp"
                         android:layout_height="14dp"
                         android:layout_marginStart="4dp"
-                        android:layout_marginTop="6dp"
+                        android:layout_marginTop="4dp"
                         android:background="@drawable/ic_pro_gradient_round"
                         android:visibility="gone"
                         app:layout_constraintBottom_toBottomOf="@+id/userName"
@@ -141,7 +142,7 @@
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/constraintLayout8">
 
-                    <androidx.recyclerview.widget.RecyclerView
+                    <com.cooltechworks.views.shimmer.ShimmerRecyclerView
                         android:id="@+id/rv_discuss"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
@@ -152,7 +153,9 @@
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintHorizontal_bias="0.5"
                         app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent" />
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:shimmer_demo_child_count="10"
+                        app:shimmer_demo_layout="@layout/demo_shimmer_discuss" />
                 </androidx.constraintlayout.widget.ConstraintLayout>
 
 

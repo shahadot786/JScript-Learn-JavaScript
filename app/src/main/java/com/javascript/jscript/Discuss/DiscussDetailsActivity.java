@@ -11,7 +11,9 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 
+import com.cooltechworks.views.shimmer.ShimmerRecyclerView;
 import com.github.marlonlom.utilities.timeago.TimeAgo;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
@@ -43,12 +45,16 @@ public class DiscussDetailsActivity extends AppCompatActivity {
     FirebaseDatabase database;
     FirebaseAuth auth;
     ArrayList<CommentModel> list = new ArrayList<>();
+    SwipeRefreshLayout swipeRefreshLayout;
+    ShimmerRecyclerView commentShimmer;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         binding = ActivityDiscussDetailsBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
+        swipeRefreshLayout = findViewById(R.id.swipeRefreshComment);
+        commentShimmer = findViewById(R.id.commentRv);
         //pro status
         View proView2 = findViewById(R.id.proTextView);
         TextView proText2 = findViewById(R.id.proText2);
@@ -220,6 +226,37 @@ public class DiscussDetailsActivity extends AppCompatActivity {
 
                     }
                 });
+
+        //swipe refresh layout
+        swipeRefreshLayout.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
+            @Override
+            public void onRefresh() {
+                commentShimmer.showShimmerAdapter();
+                //get database data
+                database.getReference()
+                        .child("Discuss")
+                        .child(postId)
+                        .child("comments")
+                        .addValueEventListener(new ValueEventListener() {
+                            @Override
+                            public void onDataChange(@NonNull DataSnapshot snapshot) {
+                                list.clear();
+                                for (DataSnapshot dataSnapshot : snapshot.getChildren()) {
+                                    CommentModel comment = dataSnapshot.getValue(CommentModel.class);
+                                    list.add(comment);
+                                }
+                            }
+
+                            @Override
+                            public void onCancelled(@NonNull DatabaseError error) {
+
+                            }
+                        });
+                adapter.notifyDataSetChanged();
+                swipeRefreshLayout.setRefreshing(false);
+                commentShimmer.hideShimmerAdapter();
+            }
+        });
 
 
     }//ends of OnCreate

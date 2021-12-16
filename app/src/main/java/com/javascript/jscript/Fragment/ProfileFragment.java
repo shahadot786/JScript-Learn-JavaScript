@@ -243,7 +243,6 @@ public class ProfileFragment extends Fragment {
             }
         });
         //upload profile image
-/*
         binding.profileImage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -253,7 +252,6 @@ public class ProfileFragment extends Fragment {
                 startActivityForResult(intent, 22);
             }
         });
-*/
         //edit profile
         binding.editProfile.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -321,7 +319,7 @@ public class ProfileFragment extends Fragment {
                             @Override
                             public void onSuccess(@NonNull Uri uri) {
                                 database.getReference()
-                                        .child("UserImages")
+                                        .child("UserData")
                                         .child(Objects.requireNonNull(auth.getUid()))
                                         .child("profile")
                                         .setValue(uri.toString());

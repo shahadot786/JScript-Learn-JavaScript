@@ -25,6 +25,12 @@
         android:usesCleartextTraffic="true"
         tools:targetApi="m">
         <activity
+            android:name=".Activities.SignInActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.SignUpActivity"
+            android:exported="false" />
+        <activity
             android:name=".Discuss.DiscussDetailsActivity"
             android:exported="false" />
         <activity

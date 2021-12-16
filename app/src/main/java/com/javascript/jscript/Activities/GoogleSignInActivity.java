@@ -92,6 +92,14 @@ public class GoogleSignInActivity extends AppCompatActivity {
         });
 
 
+        binding.signUpEmail.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(GoogleSignInActivity.this,SignUpActivity.class));
+            }
+        });
+
+
     }//on create ends
 
     int RC_SIGN_IN = 74;

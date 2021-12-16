@@ -39,7 +39,7 @@ import java.util.Objects;
 public class DiscussDetailsActivity extends AppCompatActivity {
     ActivityDiscussDetailsBinding binding;
     Intent intent;
-    String postId, postedBy;
+    String postId, postedBy, question, description;
     FirebaseDatabase database;
     FirebaseAuth auth;
     ArrayList<CommentModel> list = new ArrayList<>();
@@ -89,6 +89,10 @@ public class DiscussDetailsActivity extends AppCompatActivity {
             public void onDataChange(@NonNull DataSnapshot snapshot) {
                 DiscussModel discuss = snapshot.getValue(DiscussModel.class);
                 assert discuss != null;
+                //for share data
+                question = discuss.getQuestions();
+                description = discuss.getDescription();
+                //set data to id's
                 String time = TimeAgo.using(discuss.getPostedAt());
                 binding.question.setText(discuss.getQuestions());
                 binding.descriptions.setText(discuss.getDescription());
@@ -245,47 +249,52 @@ public class DiscussDetailsActivity extends AppCompatActivity {
         //share button click
         //get post data
         if (item.getItemId() == R.id.shareQA) {
-            Intent shareIntent = new Intent();
-            shareIntent.setAction(Intent.ACTION_SEND);
-            shareIntent.putExtra(Intent.EXTRA_TEXT, "Learn JavaScript in JScript & solve problems." + "\n" +
-                    "https://play.google.com/store/apps/details?id=" +
-                    BuildConfig.APPLICATION_ID);
-            shareIntent.setType("text/plain");
-            startActivity(shareIntent);
-            //fetch firebase database
-            database.getReference()
-                    .child("Discuss")
-                    .child(postId)
-                    .child("shareCount").addListenerForSingleValueEvent(new ValueEventListener() {
-                @Override
-                public void onDataChange(@NonNull DataSnapshot snapshot) {
-                    int shareCount = 0;
-                    if (snapshot.exists()) {
-                        shareCount = snapshot.getValue(Integer.class);
-                    }
-                    database.getReference()
-                            .child("Discuss")
-                            .child(postId)
-                            .child("shareCount")
-                            .setValue(shareCount + 1).addOnSuccessListener(new OnSuccessListener<Void>() {
-                        @Override
-                        public void onSuccess(@NonNull Void unused) {
-
-                        }
-                    });
-                }
-
-                @Override
-                public void onCancelled(@NonNull DatabaseError error) {
-
-                }
-            });
-
+            addShareData();
             return true;
         } else {
             finish();
         }
         return super.onOptionsItemSelected(item);
+    }
+
+    //share data intent method
+    public void addShareData() {
+        Intent shareIntent = new Intent();
+        shareIntent.setAction(Intent.ACTION_SEND);
+        shareIntent.putExtra(Intent.EXTRA_TEXT, question + "\n\n" + description + "\n\nLearn JavaScript in JScript & solve problems." +
+                "https://play.google.com/store/apps/details?id=" +
+                BuildConfig.APPLICATION_ID);
+        shareIntent.setType("text/plain");
+        startActivity(shareIntent);
+        //fetch firebase database
+        database.getReference()
+                .child("Discuss")
+                .child(postId)
+                .child("shareCount").addListenerForSingleValueEvent(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot snapshot) {
+                int shareCount = 0;
+                if (snapshot.exists()) {
+                    shareCount = snapshot.getValue(Integer.class);
+                }
+                database.getReference()
+                        .child("Discuss")
+                        .child(postId)
+                        .child("shareCount")
+                        .setValue(shareCount + 1).addOnSuccessListener(new OnSuccessListener<Void>() {
+                    @Override
+                    public void onSuccess(@NonNull Void unused) {
+
+                    }
+                });
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError error) {
+
+            }
+        });
+
     }
 
 }

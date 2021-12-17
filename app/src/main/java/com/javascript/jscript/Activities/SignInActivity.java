@@ -12,6 +12,8 @@ import android.util.Patterns;
 import android.view.View;
 import android.view.inputmethod.InputMethodManager;
 import com.google.android.material.textfield.TextInputLayout;
+
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnCompleteListener;
@@ -66,6 +68,16 @@ public class SignInActivity extends AppCompatActivity {
         //firebase auth
         auth = FirebaseAuth.getInstance();
         currentUser = auth.getCurrentUser();
+
+        //google sign in
+        binding.signInWithGoogle.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                TextView signIn = findViewById(R.id.signInWithGoogle);
+                signIn.setTextColor(getResources().getColor(R.color.activeGreen));
+                startActivity(new Intent(SignInActivity.this,GoogleSignInActivity.class));
+            }
+        });
 
         //Goto sign in activity
         binding.goToSignUp.setOnClickListener(new View.OnClickListener() {

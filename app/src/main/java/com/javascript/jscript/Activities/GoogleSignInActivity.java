@@ -10,6 +10,7 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
@@ -95,7 +96,9 @@ public class GoogleSignInActivity extends AppCompatActivity {
         binding.signUpEmail.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(GoogleSignInActivity.this,SignUpActivity.class));
+                TextView signUp = findViewById(R.id.signUpEmail);
+                signUp.setTextColor(getResources().getColor(R.color.activeGreen));
+                startActivity(new Intent(GoogleSignInActivity.this, SignUpActivity.class));
             }
         });
 

@@ -195,7 +195,7 @@ public class MainActivity extends AppCompatActivity {
                 if (UiConfig.PRO_VISIBILITY_STATUS_SHOW) {
                     intent = new Intent(MainActivity.this, SignOutActivity.class);
                 } else {
-                    intent = new Intent(MainActivity.this, GoogleSignInActivity.class);
+                    intent = new Intent(MainActivity.this, SignInActivity.class);
                     auth.signOut();
                 }
                 startActivity(intent);

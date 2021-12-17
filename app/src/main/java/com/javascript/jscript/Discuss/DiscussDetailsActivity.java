@@ -57,13 +57,13 @@ public class DiscussDetailsActivity extends AppCompatActivity {
         swipeRefreshLayout = findViewById(R.id.swipeRefreshComment);
         commentShimmer = findViewById(R.id.commentRv);
         //pro status
-        ImageView proBadge = findViewById(R.id.proBadge);
+        /*ImageView proBadge = findViewById(R.id.proBadge);
         //conditions
         if (UiConfig.PRO_VISIBILITY_STATUS_SHOW) {
             proBadge.setVisibility(View.GONE);
         } else {
             proBadge.setVisibility(View.VISIBLE);
-        }
+        }*/
         //get data by intent
         intent = getIntent();
         postId = intent.getStringExtra("postId");
@@ -296,7 +296,8 @@ public class DiscussDetailsActivity extends AppCompatActivity {
     public void addShareData() {
         Intent shareIntent = new Intent();
         shareIntent.setAction(Intent.ACTION_SEND);
-        shareIntent.putExtra(Intent.EXTRA_TEXT, question + "\n\n" + description + "\n\nLearn JavaScript in JScript & solve problems." +
+        shareIntent.putExtra(Intent.EXTRA_SUBJECT,"Q&A Discussions");
+        shareIntent.putExtra(Intent.EXTRA_TEXT, question + "\n\n" + description + "\n\nLearn JavaScript in JScript & solve problems.\n" +
                 "https://play.google.com/store/apps/details?id=" +
                 BuildConfig.APPLICATION_ID);
         shareIntent.setType("text/plain");

@@ -11,6 +11,9 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
+import com.javascript.jscript.Config.UiConfig;
 import com.javascript.jscript.Fragment.QuizFragment;
 import com.javascript.jscript.R;
 import com.javascript.jscript.databinding.ActivityQuizResultBinding;
@@ -23,6 +26,7 @@ public class QuizResultActivity extends AppCompatActivity {
     private AppCompatButton startNewBtn;
     private TextView quizMessage,correctAns,wrongAns;
     ImageView quizTrophy;
+    private AdView mRecAd;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,6 +43,17 @@ public class QuizResultActivity extends AppCompatActivity {
         correctAns = findViewById(R.id.correctAns);
         wrongAns = findViewById(R.id.wrongAns);
         startNewBtn = findViewById(R.id.startNewQuizBtn);
+        //ad initialization
+        mRecAd = findViewById(R.id.adView);
+        AdRequest adRequest = new AdRequest.Builder().build();
+        mRecAd.loadAd(adRequest);
+        //conditions
+        //ads disabled code
+        if (UiConfig.BANNER_AD_VISIBILITY){
+            mRecAd.setVisibility(View.VISIBLE);
+        }else {
+            mRecAd.setVisibility(View.GONE);
+        }
 
         //get results
         final int getCorrectAnswer = getIntent().getIntExtra("correct",0);

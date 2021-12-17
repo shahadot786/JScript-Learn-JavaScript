@@ -27,6 +27,8 @@ import com.android.billingclient.api.PurchasesUpdatedListener;
 import com.android.billingclient.api.SkuDetails;
 import com.android.billingclient.api.SkuDetailsParams;
 import com.android.billingclient.api.SkuDetailsResponseListener;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.database.FirebaseDatabase;
 import com.javascript.jscript.Config.UiConfig;
 import com.javascript.jscript.R;
 import com.javascript.jscript.Utils.Security;
@@ -153,7 +155,7 @@ public class PremiumActivity extends AppCompatActivity implements PurchasesUpdat
             UiConfig.BANNER_AD_VISIBILITY = true;
             UiConfig.ENABLE_EXIT_DIALOG = true;
         }
-    }
+    }//ends of OnCreate
 
     private SharedPreferences getPreferenceObject() {
         return getApplicationContext().getSharedPreferences(PREF_FILE, 0);

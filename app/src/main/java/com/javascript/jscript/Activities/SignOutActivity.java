@@ -16,7 +16,6 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 import com.javascript.jscript.Config.UiConfig;
-import com.javascript.jscript.Model.ProfileModel;
 import com.javascript.jscript.Model.UserModel;
 import com.javascript.jscript.R;
 import com.javascript.jscript.databinding.ActivitySignOutBinding;
@@ -82,7 +81,7 @@ public class SignOutActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 auth.signOut();
-                Intent intent = new Intent(SignOutActivity.this,GoogleSignInActivity.class);
+                Intent intent = new Intent(SignOutActivity.this,SignInActivity.class);
                 startActivity(intent);
             }
         });
@@ -90,6 +89,8 @@ public class SignOutActivity extends AppCompatActivity {
         //ads disabled code
         if (UiConfig.BANNER_AD_VISIBILITY){
             mRecAd.setVisibility(View.VISIBLE);
+        }else {
+            mRecAd.setVisibility(View.GONE);
         }
 
 

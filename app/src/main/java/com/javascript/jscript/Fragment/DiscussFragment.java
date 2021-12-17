@@ -2,6 +2,7 @@ package com.javascript.jscript.Fragment;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.Menu;
@@ -9,15 +10,18 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
+import androidx.appcompat.widget.SearchView;
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 
 import com.cooltechworks.views.shimmer.ShimmerRecyclerView;
+import com.firebase.ui.database.FirebaseRecyclerOptions;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
@@ -27,7 +31,6 @@ import com.javascript.jscript.Adapter.DiscussAdapter;
 import com.javascript.jscript.Config.UiConfig;
 import com.javascript.jscript.Discuss.AddDiscussActivity;
 import com.javascript.jscript.Model.DiscussModel;
-import com.javascript.jscript.Model.NotificationsModel;
 import com.javascript.jscript.Model.UserModel;
 import com.javascript.jscript.Notifications.NotificationsActivity;
 import com.javascript.jscript.R;
@@ -108,6 +111,8 @@ public class DiscussFragment extends Fragment {
         dashboardList = new ArrayList<>();
         DiscussAdapter discussAdapter = new DiscussAdapter(dashboardList, getContext());
         LinearLayoutManager layoutManager = new LinearLayoutManager(getContext());
+        layoutManager.setReverseLayout(true);
+        layoutManager.setStackFromEnd(true);
         recyclerView.setLayoutManager(layoutManager);
         recyclerView.setNestedScrollingEnabled(false);
 
@@ -139,6 +144,7 @@ public class DiscussFragment extends Fragment {
         //find swipe refresh
         swipeRefreshLayout = view.findViewById(R.id.swipeRefreshDiscuss);
         swipeRefreshLayout.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
+            @SuppressLint("NotifyDataSetChanged")
             @Override
             public void onRefresh() {
                 recyclerView.showShimmerAdapter();
@@ -178,16 +184,16 @@ public class DiscussFragment extends Fragment {
         MenuItem menuItem = menu.findItem(R.id.settings);
         menuItem.setVisible(false);
         inflater.inflate(R.menu.menu_discuss, menu);
-
-        /*NotificationsModel model = new NotificationsModel();
-        MenuItem notification = menu.findItem(R.id.notification);
-        boolean checkOpen = model.isCheckOpen();
-        if (!checkOpen) {
-            notification.setIcon(R.drawable.ic_notification_active_24);
-        } else {
-            notification.setIcon(R.drawable.ic_notification_icon);
-        }*/
-
+        MenuItem item = menu.findItem(R.id.search);
+        item.setVisible(false);
+        SearchView searchView = (SearchView) item.getActionView();
+        searchView.setQueryHint("Search questions...");
+        searchView.setBackgroundResource(R.drawable.ic_programs_image_bg);
+        //text
+        EditText txtSearch = ((EditText)searchView.findViewById(androidx.appcompat.R.id.search_src_text));
+        txtSearch.setHintTextColor(getResources().getColor(R.color.textColorPlaceholder));
+        txtSearch.setTextColor(Color.WHITE);
+        //query listener
         super.onCreateOptionsMenu(menu, inflater);
 
     }

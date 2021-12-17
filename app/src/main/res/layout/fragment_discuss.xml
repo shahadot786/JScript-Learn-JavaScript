@@ -138,7 +138,7 @@
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent"
                         app:shimmer_demo_child_count="10"
-                        app:shimmer_demo_layout="@layout/demo_shimmer_discuss" />
+                        app:shimmer_demo_layout="@layout/demo_discuss_shimmer" />
                 </androidx.constraintlayout.widget.ConstraintLayout>
 
 

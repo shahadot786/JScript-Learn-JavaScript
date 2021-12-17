@@ -221,8 +221,8 @@
     <string name="wrong_answer">Wrong Answer :</string>
     <string name="correct_answer">Correct Answer :</string>
     <string name="notification">Notification</string>
-    <string name="search">Search</string>
-    <string name="share_your_problems">Share your question here..</string>
+    <string name="search">Search..</string>
+    <string name="share_your_problems">Write your question here..</string>
     <string name="question">Question:</string>
     <string name="write_your_question">Write your question?</string>
     <string name="descriptions">Descriptions:</string>
@@ -231,6 +231,7 @@
     <string name="write_your_answer_here">Write your reply here</string>
     <string name="or_sign_up_with_email">or Sign up with email</string>
     <string name="buy_now">Buy Now</string>
+    <string name="or_sign_in_with_google">Or Sign in with Google</string>
 
 
 </resources>

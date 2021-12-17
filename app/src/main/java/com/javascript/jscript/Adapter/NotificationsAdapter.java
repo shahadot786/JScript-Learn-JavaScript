@@ -59,6 +59,7 @@ public class NotificationsAdapter extends RecyclerView.Adapter<NotificationsAdap
                     @Override
                     public void onDataChange(@NonNull DataSnapshot snapshot) {
                         UserModel userModel = snapshot.getValue(UserModel.class);
+                        assert userModel != null;
                         Picasso.get()
                                 .load(userModel.getProfile())
                                 .placeholder(R.drawable.ic_profile_default_image)
@@ -66,7 +67,7 @@ public class NotificationsAdapter extends RecyclerView.Adapter<NotificationsAdap
                         holder.binding.notificationTime.setText(time);
 
                         if (type.equals("comment")){
-                            holder.binding.notificationText.setText(Html.fromHtml("<span style=\"font-weight:bold; color:#dc4036\">"+
+                            holder.binding.notificationText.setText(Html.fromHtml("<span style=\"font-weight:bold; color:#15c55d\">"+
                                     userModel.getUserName()+" "+"</span>" + " Reply on your question"));
                         }
 
@@ -99,8 +100,7 @@ public class NotificationsAdapter extends RecyclerView.Adapter<NotificationsAdap
         boolean checkOpen = notifications.isCheckOpen();
         if (checkOpen){
             holder.binding.openNotification.setBackgroundResource(R.drawable.ic_notification_open_bg);
-        }else {}
-
+        }
 
 
     }

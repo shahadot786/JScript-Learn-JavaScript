@@ -50,7 +50,7 @@ public class DiscussDetailsActivity extends AppCompatActivity {
     ArrayList<CommentModel> list = new ArrayList<>();
     SwipeRefreshLayout swipeRefreshLayout;
     ShimmerRecyclerView commentShimmer;
-    Menu menu;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -197,7 +197,12 @@ public class DiscussDetailsActivity extends AppCompatActivity {
                                                     .child("Notifications")
                                                     .child(postedBy)
                                                     .push()
-                                                    .setValue(notifications);
+                                                    .setValue(notifications).addOnSuccessListener(new OnSuccessListener<Void>() {
+                                                @Override
+                                                public void onSuccess(@NonNull Void unused) {
+
+                                                }
+                                            });
 
                                         }
                                     });
@@ -217,6 +222,8 @@ public class DiscussDetailsActivity extends AppCompatActivity {
         //get commented data
         CommentAdapter adapter = new CommentAdapter(this, list);
         LinearLayoutManager layoutManager = new LinearLayoutManager(this);
+        layoutManager.setReverseLayout(true);
+        layoutManager.setStackFromEnd(true);
         binding.commentRv.setLayoutManager(layoutManager);
         binding.commentRv.setAdapter(adapter);
         //get database data

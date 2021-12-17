@@ -4,6 +4,7 @@ import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
+import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageView;
@@ -29,6 +30,7 @@ import com.javascript.jscript.BuildConfig;
 import com.javascript.jscript.Config.UiConfig;
 import com.javascript.jscript.Model.CommentModel;
 import com.javascript.jscript.Model.DiscussModel;
+import com.javascript.jscript.Model.NotificationsModel;
 import com.javascript.jscript.Model.ProfileModel;
 import com.javascript.jscript.Model.UserModel;
 import com.javascript.jscript.R;
@@ -48,6 +50,7 @@ public class DiscussDetailsActivity extends AppCompatActivity {
     ArrayList<CommentModel> list = new ArrayList<>();
     SwipeRefreshLayout swipeRefreshLayout;
     ShimmerRecyclerView commentShimmer;
+    Menu menu;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -183,6 +186,19 @@ public class DiscussDetailsActivity extends AppCompatActivity {
                                         @Override
                                         public void onSuccess(@NonNull Void unused) {
                                             binding.commentET.setText("");
+                                            NotificationsModel notifications = new NotificationsModel();
+                                            notifications.setNotificationBy(FirebaseAuth.getInstance().getUid());
+                                            notifications.setNotificationAt(new Date().getTime());
+                                            notifications.setPostId(postId);
+                                            notifications.setPostedBy(postedBy);
+                                            notifications.setType("comment");
+
+                                            FirebaseDatabase.getInstance().getReference()
+                                                    .child("Notifications")
+                                                    .child(postedBy)
+                                                    .push()
+                                                    .setValue(notifications);
+
                                         }
                                     });
                                 }

@@ -22,6 +22,7 @@ import com.google.firebase.database.ValueEventListener;
 import com.javascript.jscript.Config.UiConfig;
 import com.javascript.jscript.Fragment.DiscussFragment;
 import com.javascript.jscript.Model.DiscussModel;
+import com.javascript.jscript.Model.NotificationsModel;
 import com.javascript.jscript.Model.ProfileModel;
 import com.javascript.jscript.Model.UserModel;
 import com.javascript.jscript.R;

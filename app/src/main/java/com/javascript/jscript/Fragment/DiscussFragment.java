@@ -3,13 +3,6 @@ package com.javascript.jscript.Fragment;
 import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
-
-import androidx.annotation.NonNull;
-import androidx.fragment.app.Fragment;
-import androidx.recyclerview.widget.LinearLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
-import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
-
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -18,6 +11,11 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import androidx.annotation.NonNull;
+import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 
 import com.cooltechworks.views.shimmer.ShimmerRecyclerView;
 import com.google.firebase.auth.FirebaseAuth;
@@ -29,7 +27,9 @@ import com.javascript.jscript.Adapter.DiscussAdapter;
 import com.javascript.jscript.Config.UiConfig;
 import com.javascript.jscript.Discuss.AddDiscussActivity;
 import com.javascript.jscript.Model.DiscussModel;
+import com.javascript.jscript.Model.NotificationsModel;
 import com.javascript.jscript.Model.UserModel;
+import com.javascript.jscript.Notifications.NotificationsActivity;
 import com.javascript.jscript.R;
 import com.squareup.picasso.Picasso;
 
@@ -66,9 +66,9 @@ public class DiscussFragment extends Fragment {
         recyclerView.showShimmerAdapter();
         //pro status
         ImageView proBadge = view.findViewById(R.id.proBadge);
-        if (UiConfig.PRO_VISIBILITY_STATUS_SHOW){
+        if (UiConfig.PRO_VISIBILITY_STATUS_SHOW) {
             proBadge.setVisibility(View.GONE);
-        }else {
+        } else {
             proBadge.setVisibility(View.VISIBLE);
         }
         //text input click
@@ -88,7 +88,7 @@ public class DiscussFragment extends Fragment {
                 .addListenerForSingleValueEvent(new ValueEventListener() {
                     @Override
                     public void onDataChange(@NonNull DataSnapshot snapshot) {
-                        if (snapshot.exists()){
+                        if (snapshot.exists()) {
                             UserModel user = snapshot.getValue(UserModel.class);
                             assert user != null;
                             Picasso.get()
@@ -106,7 +106,7 @@ public class DiscussFragment extends Fragment {
                 });
 
         dashboardList = new ArrayList<>();
-        DiscussAdapter discussAdapter = new DiscussAdapter(dashboardList,getContext());
+        DiscussAdapter discussAdapter = new DiscussAdapter(dashboardList, getContext());
         LinearLayoutManager layoutManager = new LinearLayoutManager(getContext());
         recyclerView.setLayoutManager(layoutManager);
         recyclerView.setNestedScrollingEnabled(false);
@@ -118,7 +118,7 @@ public class DiscussFragment extends Fragment {
                     @Override
                     public void onDataChange(@NonNull DataSnapshot snapshot) {
                         dashboardList.clear();
-                        for (DataSnapshot dataSnapshot : snapshot.getChildren()){
+                        for (DataSnapshot dataSnapshot : snapshot.getChildren()) {
                             DiscussModel model = dataSnapshot.getValue(DiscussModel.class);
                             assert model != null;
                             model.setPostId(dataSnapshot.getKey());
@@ -148,7 +148,7 @@ public class DiscussFragment extends Fragment {
                             @Override
                             public void onDataChange(@NonNull DataSnapshot snapshot) {
                                 dashboardList.clear();
-                                for (DataSnapshot dataSnapshot : snapshot.getChildren()){
+                                for (DataSnapshot dataSnapshot : snapshot.getChildren()) {
                                     DiscussModel model = dataSnapshot.getValue(DiscussModel.class);
                                     assert model != null;
                                     model.setPostId(dataSnapshot.getKey());
@@ -168,7 +168,6 @@ public class DiscussFragment extends Fragment {
             }
         });
 
-
         return view;
     }
 
@@ -178,7 +177,29 @@ public class DiscussFragment extends Fragment {
     public void onCreateOptionsMenu(@NonNull Menu menu, @NonNull MenuInflater inflater) {
         MenuItem menuItem = menu.findItem(R.id.settings);
         menuItem.setVisible(false);
-        inflater.inflate(R.menu.menu_discuss,menu);
+        inflater.inflate(R.menu.menu_discuss, menu);
+
+        /*NotificationsModel model = new NotificationsModel();
+        MenuItem notification = menu.findItem(R.id.notification);
+        boolean checkOpen = model.isCheckOpen();
+        if (!checkOpen) {
+            notification.setIcon(R.drawable.ic_notification_active_24);
+        } else {
+            notification.setIcon(R.drawable.ic_notification_icon);
+        }*/
+
         super.onCreateOptionsMenu(menu, inflater);
+
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+
+        if (item.getItemId() == R.id.notification) {
+            startActivity(new Intent(getContext(), NotificationsActivity.class));
+            return true;
+        }
+
+        return super.onOptionsItemSelected(item);
     }
 }

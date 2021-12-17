@@ -4,6 +4,7 @@ import android.app.ProgressDialog;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -37,15 +38,12 @@ public class EditProfileActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         binding = ActivityEditProfileBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
-        View proView2 = findViewById(R.id.proTextView);
-        TextView proText2 = findViewById(R.id.proText2);
-
+        //check pro status
+        ImageView proBadge = findViewById(R.id.proBadge);
         if (UiConfig.PRO_VISIBILITY_STATUS_SHOW){
-            proView2.setVisibility(View.GONE);
-            proText2.setVisibility(View.GONE);
+            proBadge.setVisibility(View.GONE);
         }else {
-            proView2.setVisibility(View.VISIBLE);
-            proText2.setVisibility(View.VISIBLE);
+            proBadge.setVisibility(View.VISIBLE);
         }
 
         //instance

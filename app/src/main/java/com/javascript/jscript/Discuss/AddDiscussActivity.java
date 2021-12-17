@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -58,15 +59,11 @@ public class AddDiscussActivity extends AppCompatActivity {
         AddDiscussActivity.this.setTitle("Add Post");
         Objects.requireNonNull(getSupportActionBar()).setDisplayHomeAsUpEnabled(true);
         //check pro status
-        View proView2 = findViewById(R.id.proTextView);
-        TextView proText2 = findViewById(R.id.proText2);
-
+        ImageView proBadge = findViewById(R.id.proBadge);
         if (UiConfig.PRO_VISIBILITY_STATUS_SHOW) {
-            proView2.setVisibility(View.GONE);
-            proText2.setVisibility(View.GONE);
+            proBadge.setVisibility(View.GONE);
         } else {
-            proView2.setVisibility(View.VISIBLE);
-            proText2.setVisibility(View.VISIBLE);
+            proBadge.setVisibility(View.VISIBLE);
         }
         //firebase instance
         auth = FirebaseAuth.getInstance();

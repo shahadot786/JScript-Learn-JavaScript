@@ -5,6 +5,7 @@ import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -39,15 +40,11 @@ public class CommentAdapter extends RecyclerView.Adapter<CommentAdapter.viewHold
     public viewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(context).inflate(R.layout.comments_rv_sample,parent,false);
         //pro status
-        View proView2 = view.findViewById(R.id.proTextView);
-        TextView proText2 = view.findViewById(R.id.proText2);
-        //conditions
+        ImageView proBadge = view.findViewById(R.id.proBadge);
         if (UiConfig.PRO_VISIBILITY_STATUS_SHOW){
-            proView2.setVisibility(View.GONE);
-            proText2.setVisibility(View.GONE);
+            proBadge.setVisibility(View.GONE);
         }else {
-            proView2.setVisibility(View.VISIBLE);
-            proText2.setVisibility(View.VISIBLE);
+            proBadge.setVisibility(View.VISIBLE);
         }
         return new viewHolder(view);
     }

@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
@@ -65,13 +66,18 @@ public class ProfileFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         binding = FragmentProfileBinding.inflate(inflater, container, false);
-
+        //dialog
         dialog.setProgressStyle(ProgressDialog.STYLE_SPINNER);
         dialog.setTitle("Image Uploading");
         dialog.setMessage("Please Wait...");
         dialog.setCancelable(false);
         dialog.setCanceledOnTouchOutside(false);
-
+        //pro status
+        if (UiConfig.PRO_VISIBILITY_STATUS_SHOW){
+            binding.proBadge.setVisibility(View.GONE);
+        }else {
+            binding.proBadge.setVisibility(View.VISIBLE);
+        }
         //promotion visibility
         if (UiConfig.PRO_VISIBILITY_STATUS_SHOW) {
             binding.promotion.setVisibility(View.VISIBLE);
@@ -261,7 +267,7 @@ public class ProfileFragment extends Fragment {
             }
         });
         //promo start button
-        binding.promoStartBtn.setOnClickListener(new View.OnClickListener() {
+        binding.buyNow.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(getActivity(), PremiumActivity.class);

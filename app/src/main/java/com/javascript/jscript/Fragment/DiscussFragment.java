@@ -65,15 +65,11 @@ public class DiscussFragment extends Fragment {
         recyclerView = view.findViewById(R.id.rv_discuss);
         recyclerView.showShimmerAdapter();
         //pro status
-        View proView2 = view.findViewById(R.id.proTextView);
-        TextView proText2 = view.findViewById(R.id.proText2);
-        //conditions
+        ImageView proBadge = view.findViewById(R.id.proBadge);
         if (UiConfig.PRO_VISIBILITY_STATUS_SHOW){
-            proView2.setVisibility(View.GONE);
-            proText2.setVisibility(View.GONE);
+            proBadge.setVisibility(View.GONE);
         }else {
-            proView2.setVisibility(View.VISIBLE);
-            proText2.setVisibility(View.VISIBLE);
+            proBadge.setVisibility(View.VISIBLE);
         }
         //text input click
         View discuss_view = view.findViewById(R.id.discuss_view);

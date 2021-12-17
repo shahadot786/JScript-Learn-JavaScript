@@ -16,9 +16,8 @@ import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
-import com.javascript.jscript.Activities.FeedBackActivity;
 import com.javascript.jscript.BuildConfig;
-import com.javascript.jscript.Model.ProfileModel;
+import com.javascript.jscript.Config.UiConfig;
 import com.javascript.jscript.Model.UserModel;
 import com.javascript.jscript.R;
 import com.javascript.jscript.databinding.FragmentProBinding;
@@ -49,8 +48,6 @@ public class ProFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-
-
         //fetch username
         database.getReference().child("UserData").child(Objects.requireNonNull(auth.getUid()))
                 .addListenerForSingleValueEvent(new ValueEventListener() {
@@ -75,7 +72,6 @@ public class ProFragment extends Fragment {
 
         // Inflate the layout for this fragment
         binding = FragmentProBinding.inflate(inflater, container, false);
-
         binding.proVersion.setText(BuildConfig.VERSION_NAME);
         //catch the current year
         Calendar calendar = Calendar.getInstance();

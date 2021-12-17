@@ -63,8 +63,8 @@ public class SignUpActivity extends AppCompatActivity {
         dialog.setProgressStyle(ProgressDialog.STYLE_SPINNER);
         dialog.setTitle("Sign Up");
         dialog.setMessage("Please Wait...");
-        dialog.setCancelable(false);
-        dialog.setCanceledOnTouchOutside(false);
+        dialog.setCancelable(true);
+        dialog.setCanceledOnTouchOutside(true);
 
         //initialize id
         textInputUserName = findViewById(R.id.text_input_username);
@@ -97,9 +97,8 @@ public class SignUpActivity extends AppCompatActivity {
                                 dialog.show();
                                 if (task.isSuccessful()){
                                     UserModel userModel = new UserModel(userName,email,password);
-                                    String id = Objects.requireNonNull(task.getResult().getUser()).getUid();
                                     database.getReference().child("UserData")
-                                            .child(id)
+                                            .child(Objects.requireNonNull(FirebaseAuth.getInstance().getUid()))
                                             .setValue(userModel);
                                     Toast.makeText(SignUpActivity.this, "Sign Up Successfully", Toast.LENGTH_SHORT).show();
                                     Intent intent = new Intent(SignUpActivity.this,MainActivity.class);

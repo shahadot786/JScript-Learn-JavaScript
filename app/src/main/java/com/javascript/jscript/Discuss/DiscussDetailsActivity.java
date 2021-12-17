@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -56,15 +57,12 @@ public class DiscussDetailsActivity extends AppCompatActivity {
         swipeRefreshLayout = findViewById(R.id.swipeRefreshComment);
         commentShimmer = findViewById(R.id.commentRv);
         //pro status
-        View proView2 = findViewById(R.id.proTextView);
-        TextView proText2 = findViewById(R.id.proText2);
+        ImageView proBadge = findViewById(R.id.proBadge);
         //conditions
         if (UiConfig.PRO_VISIBILITY_STATUS_SHOW) {
-            proView2.setVisibility(View.GONE);
-            proText2.setVisibility(View.GONE);
+            proBadge.setVisibility(View.GONE);
         } else {
-            proView2.setVisibility(View.VISIBLE);
-            proText2.setVisibility(View.VISIBLE);
+            proBadge.setVisibility(View.VISIBLE);
         }
         //get data by intent
         intent = getIntent();

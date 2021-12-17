@@ -41,7 +41,7 @@
                 app:sliderIndicatorMargin="15dp"
                 app:sliderIndicatorOrientation="horizontal"
                 app:sliderIndicatorPadding="3dp"
-                app:sliderIndicatorRadius="2dp"
+                app:sliderIndicatorRadius="1dp"
                 app:sliderScrollTimeInSec="1"
                 app:sliderStartAutoCycle="true"
                 android:background="@drawable/ic_programs_image_bg"

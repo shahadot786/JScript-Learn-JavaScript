@@ -8,6 +8,7 @@ import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -47,14 +48,12 @@ public class DiscussAdapter extends RecyclerView.Adapter<DiscussAdapter.viewHold
     public viewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
 
         View view = LayoutInflater.from(context).inflate(R.layout.add_discuss_rv_sample, parent, false);
-        View proView = view.findViewById(R.id.proTextView);
-        TextView proText = view.findViewById(R.id.proText2);
-        if (UiConfig.PRO_VISIBILITY_STATUS_SHOW) {
-            proView.setVisibility(View.GONE);
-            proText.setVisibility(View.GONE);
-        } else {
-            proView.setVisibility(View.VISIBLE);
-            proText.setVisibility(View.VISIBLE);
+        //pro status
+        ImageView proBadge = view.findViewById(R.id.proBadge);
+        if (UiConfig.PRO_VISIBILITY_STATUS_SHOW){
+            proBadge.setVisibility(View.GONE);
+        }else {
+            proBadge.setVisibility(View.VISIBLE);
         }
         return new viewHolder(view);
     }

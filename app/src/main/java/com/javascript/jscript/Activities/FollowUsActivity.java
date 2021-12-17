@@ -9,8 +9,10 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.ImageView;
 
 import com.javascript.jscript.BuildConfig;
+import com.javascript.jscript.Config.UiConfig;
 import com.javascript.jscript.R;
 import com.javascript.jscript.databinding.ActivityFollowUsBinding;
 
@@ -26,6 +28,13 @@ public class FollowUsActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         binding = ActivityFollowUsBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
+        //pro status
+        ImageView proBadge = findViewById(R.id.proBadge);
+        if (UiConfig.PRO_VISIBILITY_STATUS_SHOW){
+            proBadge.setVisibility(View.GONE);
+        }else {
+            proBadge.setVisibility(View.VISIBLE);
+        }
         //toolbar
         setSupportActionBar(binding.toolbar3);
         FollowUsActivity.this.setTitle("Follow Us");

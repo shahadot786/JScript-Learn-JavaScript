@@ -78,34 +78,17 @@
                         app:layout_constraintStart_toEndOf="@+id/profileImage"
                         app:layout_constraintTop_toTopOf="@+id/profileImage" />
 
-                    <View
-                        android:id="@+id/proTextView"
-                        android:layout_width="24dp"
-                        android:layout_height="14dp"
+                    <ImageView
+                        android:id="@+id/proBadge"
+                        android:layout_width="30dp"
+                        android:layout_height="20dp"
                         android:layout_marginStart="4dp"
                         android:layout_marginTop="4dp"
-                        android:background="@drawable/ic_pro_gradient_round"
-                        android:visibility="gone"
+                        android:contentDescription="@string/app_main_images"
+                        android:src="@drawable/pro_big"
                         app:layout_constraintBottom_toBottomOf="@+id/userName"
                         app:layout_constraintStart_toEndOf="@+id/userName"
                         app:layout_constraintTop_toTopOf="@+id/userName" />
-
-                    <TextView
-                        android:id="@+id/proText2"
-                        android:layout_width="0dp"
-                        android:layout_height="24dp"
-                        android:layout_marginTop="5dp"
-                        android:fontFamily="@font/oswald"
-                        android:gravity="center|top"
-                        android:text="@string/menu_pro"
-                        android:textColor="@color/textColorBlack"
-                        android:textSize="11sp"
-                        android:textStyle="bold"
-                        android:visibility="gone"
-                        app:layout_constraintBottom_toBottomOf="@+id/proTextView"
-                        app:layout_constraintEnd_toEndOf="@+id/proTextView"
-                        app:layout_constraintStart_toStartOf="@+id/proTextView"
-                        app:layout_constraintTop_toTopOf="@+id/proTextView" />
 
                     <View
                         android:id="@+id/discuss_view"

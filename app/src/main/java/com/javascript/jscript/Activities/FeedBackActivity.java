@@ -1,5 +1,6 @@
 package com.javascript.jscript.Activities;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Patterns;
 import android.view.MenuItem;
@@ -112,7 +113,6 @@ public class FeedBackActivity extends AppCompatActivity {
 
             }
         });
-
 
     }//end of onCreate
     //other codes

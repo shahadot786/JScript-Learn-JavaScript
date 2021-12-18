@@ -29,7 +29,7 @@ public class SplashActivity extends AppCompatActivity {
     FirebaseAuth auth;
     FirebaseDatabase database;
     final String PREFS_NAME = "JscriptPrefFile2";
-    public static final String PREF_FILE = "JScript";
+    public static final String PREF_FILE = "JScript_Learn_JavaScript";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

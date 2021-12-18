@@ -44,7 +44,7 @@ public class PremiumActivity extends AppCompatActivity implements PurchasesUpdat
     private BillingClient billingClient;
     public static final String PREF_FILE= "JScript";
     public static final String PURCHASE_KEY= "one_time_product";
-    public static final String PRODUCT_ID= "jscript_life_time";
+    public static final String PRODUCT_ID= "final_product";
     TextView itemPrice;
 
     @Override

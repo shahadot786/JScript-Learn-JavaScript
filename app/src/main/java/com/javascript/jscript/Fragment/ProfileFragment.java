@@ -7,7 +7,6 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
@@ -267,13 +266,14 @@ public class ProfileFragment extends Fragment {
             }
         });
         //promo start button
-        binding.buyNow.setOnClickListener(new View.OnClickListener() {
+        binding.promotion.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(getActivity(), PremiumActivity.class);
                 startActivity(intent);
             }
         });
+
 
 
         return binding.getRoot();

@@ -232,6 +232,7 @@ public class DiscussDetailsActivity extends AppCompatActivity {
                 .child(postId)
                 .child("comments")
                 .addValueEventListener(new ValueEventListener() {
+                    @SuppressLint("NotifyDataSetChanged")
                     @Override
                     public void onDataChange(@NonNull DataSnapshot snapshot) {
                         list.clear();
@@ -250,6 +251,7 @@ public class DiscussDetailsActivity extends AppCompatActivity {
 
         //swipe refresh layout
         swipeRefreshLayout.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
+            @SuppressLint("NotifyDataSetChanged")
             @Override
             public void onRefresh() {
                 commentShimmer.showShimmerAdapter();

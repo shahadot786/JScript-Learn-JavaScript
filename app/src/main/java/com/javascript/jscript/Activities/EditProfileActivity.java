@@ -5,12 +5,12 @@ import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageView;
-import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.android.material.textfield.TextInputLayout;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
@@ -20,7 +20,6 @@ import com.javascript.jscript.Config.UiConfig;
 import com.javascript.jscript.Model.ProfileModel;
 import com.javascript.jscript.Model.UserModel;
 import com.javascript.jscript.R;
-
 import com.javascript.jscript.databinding.ActivityEditProfileBinding;
 import com.squareup.picasso.Picasso;
 
@@ -32,17 +31,22 @@ public class EditProfileActivity extends AppCompatActivity {
     FirebaseDatabase database;
     FirebaseAuth auth;
     ProgressDialog dialog;
+    private TextInputLayout professionInput;
+    private TextInputLayout bioInput;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         binding = ActivityEditProfileBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
+        //find id
+        professionInput = findViewById(R.id.text_input_profession);
+        bioInput = findViewById(R.id.text_input_bio);
         //check pro status
         ImageView proBadge = findViewById(R.id.proBadge);
-        if (UiConfig.PRO_VISIBILITY_STATUS_SHOW){
+        if (UiConfig.PRO_VISIBILITY_STATUS_SHOW) {
             proBadge.setVisibility(View.GONE);
-        }else {
+        } else {
             proBadge.setVisibility(View.VISIBLE);
         }
 
@@ -68,7 +72,7 @@ public class EditProfileActivity extends AppCompatActivity {
                 .addListenerForSingleValueEvent(new ValueEventListener() {
                     @Override
                     public void onDataChange(@NonNull DataSnapshot snapshot) {
-                        if (snapshot.exists()){
+                        if (snapshot.exists()) {
                             UserModel userModel = snapshot.getValue(UserModel.class);
                             assert userModel != null;
                             Picasso.get()
@@ -122,31 +126,55 @@ public class EditProfileActivity extends AppCompatActivity {
         binding.updateBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                dialog.show();
-                ProfileModel profileModel = new ProfileModel();
-                profileModel.setUsername(Objects.requireNonNull(binding.usernameEdit.getText()).toString());
-                profileModel.setProfession(Objects.requireNonNull(binding.professionEdit.getText()).toString());
-                profileModel.setFbLink(Objects.requireNonNull(binding.fblinkEditText.getText()).toString());
-                profileModel.setInstaLink(Objects.requireNonNull(binding.instalinkEditText.getText()).toString());
-                profileModel.setGithubLink(Objects.requireNonNull(binding.githublinkEditText.getText()).toString());
-                profileModel.setLinkedinLink(Objects.requireNonNull(binding.linkedinlinkEditText.getText()).toString());
-                profileModel.setTwitterLink(Objects.requireNonNull(binding.twitterlinkEditText.getText()).toString());
-                profileModel.setUserBio(Objects.requireNonNull(binding.bioEditText.getText()).toString());
-                //send data to database
-                database.getReference().child("UpdateProfile")
-                        .child(auth.getUid())
-                        .setValue(profileModel).addOnSuccessListener(new OnSuccessListener<Void>() {
-                    @Override
-                    public void onSuccess(@NonNull Void unused) {
-                        dialog.dismiss();
-                        finish();
-                    }
-                });
+                if (professionValidation() && bioValidation()) {
+                    dialog.show();
+                    ProfileModel profileModel = new ProfileModel();
+                    profileModel.setUsername(Objects.requireNonNull(binding.usernameEdit.getText()).toString());
+                    profileModel.setProfession(Objects.requireNonNull(binding.professionEdit.getText()).toString());
+                    profileModel.setFbLink(Objects.requireNonNull(binding.fblinkEditText.getText()).toString());
+                    profileModel.setInstaLink(Objects.requireNonNull(binding.instalinkEditText.getText()).toString());
+                    profileModel.setGithubLink(Objects.requireNonNull(binding.githublinkEditText.getText()).toString());
+                    profileModel.setLinkedinLink(Objects.requireNonNull(binding.linkedinlinkEditText.getText()).toString());
+                    profileModel.setTwitterLink(Objects.requireNonNull(binding.twitterlinkEditText.getText()).toString());
+                    profileModel.setUserBio(Objects.requireNonNull(binding.bioEditText.getText()).toString());
+                    //send data to database
+                    database.getReference().child("UpdateProfile")
+                            .child(auth.getUid())
+                            .setValue(profileModel).addOnSuccessListener(new OnSuccessListener<Void>() {
+                        @Override
+                        public void onSuccess(@NonNull Void unused) {
+                            dialog.dismiss();
+                            finish();
+                        }
+                    });
+                }
             }
         });
 
 
     }//onCreate Ends
+
+    public boolean professionValidation() {
+        String sendTextInput = Objects.requireNonNull(professionInput.getEditText()).getText().toString().trim();
+        if (sendTextInput.isEmpty()) {
+            professionInput.setError("Profession is required");
+            return false;
+        } else {
+            professionInput.setError(null);
+            return true;
+        }
+    }
+
+    public boolean bioValidation() {
+        String sendTextInput = Objects.requireNonNull(bioInput.getEditText()).getText().toString().trim();
+        if (sendTextInput.isEmpty()) {
+            bioInput.setError("About is required");
+            return false;
+        } else {
+            bioInput.setError(null);
+            return true;
+        }
+    }
 
     //option menu item select
     @Override

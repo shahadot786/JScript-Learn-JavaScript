@@ -152,7 +152,7 @@
     <string name="pro_des_3">Free Exclusive Premium Course Updates</string>
     <string name="pro_des_4">Remove Ads</string>
     <string name="pro_des_5">And Much More!</string>
-    <string name="try_free_for_7_days">Upgrade to Premium</string>
+    <string name="try_free_for_7_days">Upgrade to Premium Now</string>
     <string name="_95">95%</string>
     <string name="best_value">BEST VALUE</string>
     <string name="_12_months">Lifetime</string>
@@ -232,6 +232,8 @@
     <string name="or_sign_up_with_email">or Sign up with email</string>
     <string name="buy_now">Buy Now</string>
     <string name="or_sign_in_with_google">Or Sign in with Google</string>
+    <string name="limited_time_offer">Limited time offer</string>
+    <string name="my_questions">My Questions</string>
 
 
 </resources>

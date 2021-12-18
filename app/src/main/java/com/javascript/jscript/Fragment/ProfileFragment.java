@@ -27,6 +27,7 @@ import com.google.firebase.storage.UploadTask;
 import com.javascript.jscript.Activities.EditProfileActivity;
 import com.javascript.jscript.Activities.GoogleSignInActivity;
 import com.javascript.jscript.Activities.PremiumActivity;
+import com.javascript.jscript.Activities.PremiumActivity2;
 import com.javascript.jscript.Config.UiConfig;
 import com.javascript.jscript.Model.ProfileModel;
 import com.javascript.jscript.Model.UserModel;
@@ -270,7 +271,7 @@ public class ProfileFragment extends Fragment {
         binding.buyNow.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getActivity(), PremiumActivity.class);
+                Intent intent = new Intent(getActivity(), PremiumActivity2.class);
                 startActivity(intent);
             }
         });

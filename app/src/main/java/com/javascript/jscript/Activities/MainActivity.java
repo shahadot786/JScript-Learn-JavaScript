@@ -109,7 +109,7 @@ public class MainActivity extends AppCompatActivity {
                         MainActivity.this.setTitle("PRO");
                         transaction.setCustomAnimations(R.anim.slide_in_right, R.anim.slide_out_left, R.anim.slide_in_left, R.anim.slide_out_right);
                         if (UiConfig.PRO_VISIBILITY_STATUS_SHOW) {
-                            Intent intent = new Intent(MainActivity.this, PremiumActivity.class);
+                            Intent intent = new Intent(MainActivity.this, PremiumActivity2.class);
                             startActivity(intent);
                         } else {
                             transaction.replace(R.id.container, new ProFragment());

@@ -155,7 +155,7 @@ public class GoogleSignInActivity extends AppCompatActivity {
 
                             Intent intent;
                             if (UiConfig.PRO_VISIBILITY_STATUS_SHOW) {
-                                intent = new Intent(GoogleSignInActivity.this, PremiumActivity.class);
+                                intent = new Intent(GoogleSignInActivity.this, PremiumActivity2.class);
                             } else {
                                 intent = new Intent(GoogleSignInActivity.this, MainActivity.class);
                             }

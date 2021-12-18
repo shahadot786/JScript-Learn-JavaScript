@@ -1,5 +1,6 @@
 package com.javascript.jscript.Activities;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Patterns;
 import android.view.MenuItem;
@@ -51,6 +52,14 @@ public class FeedBackActivity extends AppCompatActivity {
         }else {
             proBadge.setVisibility(View.VISIBLE);
         }
+
+        binding.pro2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(FeedBackActivity.this,PremiumActivity2.class));
+            }
+        });
+
         //instance
         database = FirebaseDatabase.getInstance();
         auth = FirebaseAuth.getInstance();

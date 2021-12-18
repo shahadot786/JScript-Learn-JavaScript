@@ -94,7 +94,7 @@ public class SplashActivity extends AppCompatActivity {
                     if (currentUser != null) {
                         //after upgrade to pro
                         if (UiConfig.PRO_VISIBILITY_STATUS_SHOW) {
-                            intent = new Intent(SplashActivity.this, PremiumActivity.class);
+                            intent = new Intent(SplashActivity.this, PremiumActivity2.class);
                         } else {
                             intent = new Intent(SplashActivity.this, MainActivity.class);
                         }

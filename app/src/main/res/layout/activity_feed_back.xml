@@ -21,12 +21,12 @@
         />
 
     <androidx.core.widget.NestedScrollView
+        android:id="@+id/nestedScrollView3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:layout_marginBottom="60dp"
-        android:paddingBottom="40dp"
         android:fillViewport="true"
+        android:paddingBottom="40dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
@@ -120,9 +120,9 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="@string/feedback_email"
-                    android:textColor="@color/colorWhite"
                     android:inputType="text"
-                    android:textSize="12sp"/>
+                    android:textColor="@color/colorWhite"
+                    android:textSize="12sp" />
             </com.google.android.material.textfield.TextInputLayout>
 
             <TextView
@@ -160,8 +160,8 @@
                     android:id="@+id/feedbackMessageEditText"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="@string/feedback_message"
                     android:ems="10"
+                    android:hint="@string/feedback_message"
                     android:inputType="textMultiLine|textPersonName"
                     android:maxLines="10"
                     android:overScrollMode="always"
@@ -181,6 +181,16 @@
                 android:textStyle="bold"
                 app:layout_constraintEnd_toEndOf="@+id/feedback_input_text"
                 app:layout_constraintTop_toBottomOf="@+id/feedback_input_text" />
+
+            <TextView
+                android:id="@+id/pro2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:text="Pro 2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
 
         </androidx.constraintlayout.widget.ConstraintLayout>

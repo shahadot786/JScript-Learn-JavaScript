@@ -5,8 +5,8 @@
     android:id="@+id/discussRVSample"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_marginBottom="1dp"
-    android:background="@color/colorSecondary"
+    android:layout_marginBottom="5dp"
+    android:background="@drawable/ic_programs_image_bg"
     android:paddingBottom="5dp">
 
     <de.hdodenhof.circleimageview.CircleImageView

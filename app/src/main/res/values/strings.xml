@@ -206,7 +206,6 @@
     <string name="read_books">Read Books</string>
     <string name="interview_questions_answer">Interview Questions Answers</string>
     <string name="output">Output:</string>
-    <string name="see_price">Buy Now</string>
     <string name="app_main_images">App main images</string>
     <string name="profile_bio_default_text">Your bio..</string>
     <string name="usernameet">Username</string>
@@ -230,7 +229,7 @@
     <string name="write_your_descriptions">Write your descriptions</string>
     <string name="write_your_answer_here">Write your reply here</string>
     <string name="or_sign_up_with_email">or Sign up with email</string>
-    <string name="buy_now">Buy Now</string>
+    <string name="buy_now">Upgrade Now</string>
     <string name="or_sign_in_with_google">Or Sign in with Google</string>
     <string name="limited_time_offer">Limited time offer</string>
     <string name="my_questions">My Questions</string>

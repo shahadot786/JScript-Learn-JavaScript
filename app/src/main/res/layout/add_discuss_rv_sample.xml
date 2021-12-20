@@ -40,16 +40,15 @@
         android:layout_marginTop="4dp"
         android:contentDescription="@string/app_main_images"
         android:visibility="gone"
-        app:layout_constraintBottom_toTopOf="@+id/profession"
+        app:layout_constraintBottom_toTopOf="@+id/time"
         app:layout_constraintStart_toEndOf="@+id/userName"
         app:layout_constraintTop_toTopOf="@+id/userName"
         app:srcCompat="@drawable/pro_big" />
 
     <TextView
-        android:id="@+id/profession"
+        android:id="@+id/time"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/profession"
         android:textColor="@color/colorGreySoft"
         android:textSize="11sp"
         app:layout_constraintStart_toStartOf="@+id/userName"
@@ -72,28 +71,15 @@
         tools:targetApi="o" />
 
     <androidx.appcompat.widget.AppCompatTextView
-        android:id="@+id/time"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:drawablePadding="4dp"
-        android:gravity="center"
-        android:textColor="@color/color_text_discuss"
-        android:textSize="11sp"
-        app:drawableLeftCompat="@drawable/ic_calender_white"
-        app:layout_constraintStart_toStartOf="@+id/question"
-        app:layout_constraintTop_toBottomOf="@+id/question" />
-
-    <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/views"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
         android:drawablePadding="4dp"
         android:gravity="center"
         android:textColor="@color/color_text_discuss"
         android:textSize="11sp"
         app:drawableLeftCompat="@drawable/ic_watch_icon"
-        app:layout_constraintStart_toEndOf="@+id/time"
+        app:layout_constraintStart_toStartOf="@+id/profileImage"
         app:layout_constraintTop_toBottomOf="@+id/question" />
 
     <androidx.appcompat.widget.AppCompatTextView

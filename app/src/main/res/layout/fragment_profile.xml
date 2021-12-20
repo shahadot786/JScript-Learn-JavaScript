@@ -124,9 +124,9 @@
                     android:id="@+id/profession"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/profession"
                     android:textColor="@color/textColorGrey"
                     android:textSize="11sp"
+                    android:text="@string/profession"
                     app:layout_constraintEnd_toEndOf="@+id/userName"
                     app:layout_constraintStart_toStartOf="@+id/userName"
                     app:layout_constraintTop_toBottomOf="@+id/userName" />

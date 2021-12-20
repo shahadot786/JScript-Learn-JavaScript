@@ -72,9 +72,9 @@ public class ProfileFragment extends Fragment {
         dialog.setCancelable(false);
         dialog.setCanceledOnTouchOutside(false);
         //pro status
-        if (UiConfig.PRO_VISIBILITY_STATUS_SHOW){
+        if (UiConfig.PRO_VISIBILITY_STATUS_SHOW) {
             binding.proBadge.setVisibility(View.GONE);
-        }else {
+        } else {
             binding.proBadge.setVisibility(View.VISIBLE);
         }
         //promotion visibility
@@ -95,7 +95,7 @@ public class ProfileFragment extends Fragment {
                     .addListenerForSingleValueEvent(new ValueEventListener() {
                         @Override
                         public void onDataChange(@NonNull DataSnapshot snapshot) {
-                            if (snapshot.exists()){
+                            if (snapshot.exists()) {
                                 UserModel user = snapshot.getValue(UserModel.class);
                                 assert user != null;
                                 Picasso.get()
@@ -148,9 +148,13 @@ public class ProfileFragment extends Fragment {
                                 String github = profile.getGithubLink();
                                 String linkedin = profile.getLinkedinLink();
                                 String twitter = profile.getTwitterLink();
+                                if (profession.isEmpty()) {
+                                    binding.profession.setText(getResources().getString(R.string.profession));
+                                } else {
+                                    binding.profession.setText(profession);
+                                }
 
                                 //set profession and bio
-                                binding.profession.setText(profession);
                                 binding.userBioText.setText(bio);
                                 //insert link data
                                 binding.linkFacebook.setOnClickListener(new View.OnClickListener() {
@@ -273,7 +277,6 @@ public class ProfileFragment extends Fragment {
                 startActivity(intent);
             }
         });
-
 
 
         return binding.getRoot();

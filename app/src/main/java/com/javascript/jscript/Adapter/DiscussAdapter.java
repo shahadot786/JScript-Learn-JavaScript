@@ -90,21 +90,6 @@ public class DiscussAdapter extends RecyclerView.Adapter<DiscussAdapter.viewHold
 
                     }
                 });
-        //fetch profession
-        FirebaseDatabase.getInstance().getReference().child("UpdateProfile")
-                .child(model.getPostedBy()).addValueEventListener(new ValueEventListener() {
-            @Override
-            public void onDataChange(@NonNull DataSnapshot snapshot) {
-                ProfileModel profileModel = snapshot.getValue(ProfileModel.class);
-                assert profileModel != null;
-                holder.binding.profession.setText(profileModel.getProfession());
-            }
-
-            @Override
-            public void onCancelled(@NonNull DatabaseError error) {
-
-            }
-        });
         //check multiple views
         FirebaseDatabase.getInstance().getReference()
                 .child("Discuss")

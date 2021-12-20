@@ -134,22 +134,6 @@ public class DiscussDetailsActivity extends AppCompatActivity {
 
             }
         });
-        //get user profession
-        database.getReference()
-                .child("UpdateProfile")
-                .child(postedBy).addValueEventListener(new ValueEventListener() {
-            @Override
-            public void onDataChange(@NonNull DataSnapshot snapshot) {
-                ProfileModel model = snapshot.getValue(ProfileModel.class);
-                assert model != null;
-                binding.profession.setText(model.getProfession());
-            }
-
-            @Override
-            public void onCancelled(@NonNull DatabaseError error) {
-
-            }
-        });
         //reply codes
         binding.commentPostBtn.setOnClickListener(new View.OnClickListener() {
             @Override

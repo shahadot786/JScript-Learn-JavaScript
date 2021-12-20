@@ -2,6 +2,8 @@ package com.javascript.jscript.Discuss;
 
 import android.app.ProgressDialog;
 import android.content.Intent;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
@@ -19,6 +21,8 @@ import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
+import com.javascript.jscript.Activities.GoogleSignInActivity;
+import com.javascript.jscript.Activities.SplashActivity;
 import com.javascript.jscript.Config.UiConfig;
 import com.javascript.jscript.Fragment.DiscussFragment;
 import com.javascript.jscript.Model.DiscussModel;
@@ -39,6 +43,7 @@ public class AddDiscussActivity extends AppCompatActivity {
     FirebaseDatabase database;
     TextInputLayout question, descriptions;
     ProgressDialog dialog;
+    private boolean connected = false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -96,29 +101,39 @@ public class AddDiscussActivity extends AppCompatActivity {
         binding.postBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                //check first if the fields are empty
-                if (questionValidation() && descriptionsValidation()) {
-                    //show dialog
-                    dialog.show();
-                    DiscussModel post = new DiscussModel();
-                    post.setPostedBy(FirebaseAuth.getInstance().getUid());
-                    post.setQuestions(binding.questionEditText.getText().toString());
-                    post.setDescription(binding.descriptionEditText.getText().toString());
-                    post.setPostedAt(new Date().getTime());
+                //network check
+                ConnectivityManager connectivityManager = (ConnectivityManager) getSystemService(SplashActivity.CONNECTIVITY_SERVICE);
+                if (connectivityManager.getNetworkInfo(ConnectivityManager.TYPE_MOBILE).getState() == NetworkInfo.State.CONNECTED ||
+                        connectivityManager.getNetworkInfo(ConnectivityManager.TYPE_WIFI).getState() == NetworkInfo.State.CONNECTED) {
+                    //we are connected to a network
+                    connected = true;
+                    //check first if the fields are empty
+                    if (questionValidation() && descriptionsValidation()) {
+                        //show dialog
+                        dialog.show();
+                        DiscussModel post = new DiscussModel();
+                        post.setPostedBy(FirebaseAuth.getInstance().getUid());
+                        post.setQuestions(binding.questionEditText.getText().toString());
+                        post.setDescription(binding.descriptionEditText.getText().toString());
+                        post.setPostedAt(new Date().getTime());
 
-                    database.getReference().child("Discuss")
-                            .push()
-                            .setValue(post).addOnSuccessListener(new OnSuccessListener<Void>() {
-                        @Override
-                        public void onSuccess(@NonNull Void unused) {
-                            dialog.dismiss();
-                            Toast.makeText(AddDiscussActivity.this, "Posted Successfully.", Toast.LENGTH_SHORT).show();
-                            Intent intent = new Intent(AddDiscussActivity.this,DiscussFragment.class);
-                            intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-                            finish();
-                        }
-                    });
+                        database.getReference().child("Discuss")
+                                .push()
+                                .setValue(post).addOnSuccessListener(new OnSuccessListener<Void>() {
+                            @Override
+                            public void onSuccess(@NonNull Void unused) {
+                                dialog.dismiss();
+                                Toast.makeText(AddDiscussActivity.this, "Posted Successfully.", Toast.LENGTH_SHORT).show();
+                                Intent intent = new Intent(AddDiscussActivity.this,DiscussFragment.class);
+                                intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                                finish();
+                            }
+                        });
 
+                    }
+                } else {
+                    Toast.makeText(AddDiscussActivity.this, "You\'re offline, please connect to network first", Toast.LENGTH_SHORT).show();
+                    connected = false;
                 }
             }
         });

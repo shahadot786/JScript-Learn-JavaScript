@@ -1,10 +1,13 @@
 package com.javascript.jscript.Activities;
 
 import android.app.ProgressDialog;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -33,6 +36,7 @@ public class EditProfileActivity extends AppCompatActivity {
     ProgressDialog dialog;
     private TextInputLayout professionInput;
     private TextInputLayout bioInput;
+    private boolean connected = false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -126,27 +130,38 @@ public class EditProfileActivity extends AppCompatActivity {
         binding.updateBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if (professionValidation() && bioValidation()) {
-                    dialog.show();
-                    ProfileModel profileModel = new ProfileModel();
-                    profileModel.setUsername(Objects.requireNonNull(binding.usernameEdit.getText()).toString());
-                    profileModel.setProfession(Objects.requireNonNull(binding.professionEdit.getText()).toString());
-                    profileModel.setFbLink(Objects.requireNonNull(binding.fblinkEditText.getText()).toString());
-                    profileModel.setInstaLink(Objects.requireNonNull(binding.instalinkEditText.getText()).toString());
-                    profileModel.setGithubLink(Objects.requireNonNull(binding.githublinkEditText.getText()).toString());
-                    profileModel.setLinkedinLink(Objects.requireNonNull(binding.linkedinlinkEditText.getText()).toString());
-                    profileModel.setTwitterLink(Objects.requireNonNull(binding.twitterlinkEditText.getText()).toString());
-                    profileModel.setUserBio(Objects.requireNonNull(binding.bioEditText.getText()).toString());
-                    //send data to database
-                    database.getReference().child("UpdateProfile")
-                            .child(auth.getUid())
-                            .setValue(profileModel).addOnSuccessListener(new OnSuccessListener<Void>() {
-                        @Override
-                        public void onSuccess(@NonNull Void unused) {
-                            dialog.dismiss();
-                            finish();
-                        }
-                    });
+                //network check
+                ConnectivityManager connectivityManager = (ConnectivityManager) getSystemService(SplashActivity.CONNECTIVITY_SERVICE);
+                if (connectivityManager.getNetworkInfo(ConnectivityManager.TYPE_MOBILE).getState() == NetworkInfo.State.CONNECTED ||
+                        connectivityManager.getNetworkInfo(ConnectivityManager.TYPE_WIFI).getState() == NetworkInfo.State.CONNECTED) {
+                    //we are connected to a network
+                    connected = true;
+                    if (professionValidation() && bioValidation()) {
+                        dialog.show();
+                        ProfileModel profileModel = new ProfileModel();
+                        profileModel.setUsername(Objects.requireNonNull(binding.usernameEdit.getText()).toString());
+                        profileModel.setProfession(Objects.requireNonNull(binding.professionEdit.getText()).toString());
+                        profileModel.setFbLink(Objects.requireNonNull(binding.fblinkEditText.getText()).toString());
+                        profileModel.setInstaLink(Objects.requireNonNull(binding.instalinkEditText.getText()).toString());
+                        profileModel.setGithubLink(Objects.requireNonNull(binding.githublinkEditText.getText()).toString());
+                        profileModel.setLinkedinLink(Objects.requireNonNull(binding.linkedinlinkEditText.getText()).toString());
+                        profileModel.setTwitterLink(Objects.requireNonNull(binding.twitterlinkEditText.getText()).toString());
+                        profileModel.setUserBio(Objects.requireNonNull(binding.bioEditText.getText()).toString());
+                        //send data to database
+                        database.getReference().child("UpdateProfile")
+                                .child(auth.getUid())
+                                .setValue(profileModel).addOnSuccessListener(new OnSuccessListener<Void>() {
+                            @Override
+                            public void onSuccess(@NonNull Void unused) {
+                                dialog.dismiss();
+                                finish();
+                            }
+                        });
+                    }
+
+                } else {
+                    Toast.makeText(EditProfileActivity.this, "You\'re offline, please connect to network first", Toast.LENGTH_SHORT).show();
+                    connected = false;
                 }
             }
         });

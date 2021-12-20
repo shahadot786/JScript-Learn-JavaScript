@@ -1,29 +1,32 @@
 package com.javascript.jscript.Activities;
 
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.Intent;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
 import android.net.Uri;
 import android.os.Bundle;
+import android.util.Log;
 import android.util.Patterns;
 import android.view.View;
 import android.view.inputmethod.InputMethodManager;
-import com.google.android.material.textfield.TextInputLayout;
-
 import android.widget.TextView;
 import android.widget.Toast;
 
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
+
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
+import com.google.android.material.textfield.TextInputLayout;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseAuthInvalidCredentialsException;
+import com.google.firebase.auth.FirebaseAuthInvalidUserException;
 import com.google.firebase.auth.FirebaseUser;
 import com.javascript.jscript.R;
 import com.javascript.jscript.databinding.ActivitySignInBinding;
-
 
 import java.util.Objects;
 import java.util.regex.Pattern;
@@ -49,6 +52,7 @@ public class SignInActivity extends AppCompatActivity {
     FirebaseAuth auth;
     FirebaseUser currentUser;
     ProgressDialog dialog;
+    private boolean connected = false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -56,7 +60,7 @@ public class SignInActivity extends AppCompatActivity {
         //binding
         binding = ActivitySignInBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
-        dialog = new ProgressDialog(this,ProgressDialog.THEME_DEVICE_DEFAULT_DARK);
+        dialog = new ProgressDialog(this, ProgressDialog.THEME_DEVICE_DEFAULT_DARK);
         dialog.setProgressStyle(ProgressDialog.STYLE_SPINNER);
         dialog.setTitle("Sign In");
         dialog.setMessage("Please Wait...");
@@ -75,7 +79,7 @@ public class SignInActivity extends AppCompatActivity {
             public void onClick(View view) {
                 TextView signIn = findViewById(R.id.signInWithGoogle);
                 signIn.setTextColor(getResources().getColor(R.color.activeGreen));
-                startActivity(new Intent(SignInActivity.this,GoogleSignInActivity.class));
+                startActivity(new Intent(SignInActivity.this, GoogleSignInActivity.class));
             }
         });
 
@@ -83,7 +87,7 @@ public class SignInActivity extends AppCompatActivity {
         binding.goToSignUp.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(SignInActivity.this,SignUpActivity.class);
+                Intent intent = new Intent(SignInActivity.this, SignUpActivity.class);
                 startActivity(intent);
             }
         });
@@ -95,34 +99,56 @@ public class SignInActivity extends AppCompatActivity {
         binding.signInBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if (!validateEmail() | !validatePassword()) {
-                    return;
-                }
-                //hide keyboard
-                InputMethodManager inputMethodManager = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
-                inputMethodManager.hideSoftInputFromWindow(view.getWindowToken(), 0);
-                //other codes start here
-                String email = Objects.requireNonNull(binding.editTextEmail.getText()).toString();
-                String password = Objects.requireNonNull(binding.editTextPassword.getText()).toString();
-                auth.signInWithEmailAndPassword(email,password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
-                    @Override
-                    public void onComplete(@NonNull Task<AuthResult> task) {
-                        dialog.show();
-                        if (task.isSuccessful()){
-                            Intent intent = new Intent(SignInActivity.this,MainActivity.class);
-                            startActivity(intent);
-                            Toast.makeText(SignInActivity.this, "Sign In Successfully", Toast.LENGTH_SHORT).show();
-                        }else {
-                            Toast.makeText(SignInActivity.this, "Sign In Error", Toast.LENGTH_SHORT).show();
-                        }
+                //network check
+                ConnectivityManager connectivityManager = (ConnectivityManager) getSystemService(SplashActivity.CONNECTIVITY_SERVICE);
+                if (connectivityManager.getNetworkInfo(ConnectivityManager.TYPE_MOBILE).getState() == NetworkInfo.State.CONNECTED ||
+                        connectivityManager.getNetworkInfo(ConnectivityManager.TYPE_WIFI).getState() == NetworkInfo.State.CONNECTED) {
+                    //we are connected to a network
+                    connected = true;
+                    if (!validateEmail() | !validatePassword()) {
+                        return;
                     }
-                });
-                dialog.dismiss();
+                    //hide keyboard
+                    InputMethodManager inputMethodManager = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
+                    inputMethodManager.hideSoftInputFromWindow(view.getWindowToken(), 0);
+                    //other codes start here
+                    String email = Objects.requireNonNull(binding.editTextEmail.getText()).toString();
+                    String password = Objects.requireNonNull(binding.editTextPassword.getText()).toString();
+                    auth.signInWithEmailAndPassword(email, password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
+                        @Override
+                        public void onComplete(@NonNull Task<AuthResult> task) {
+                            if (!task.isSuccessful()) {
+                                try {
+                                    throw Objects.requireNonNull(task.getException());
+                                } catch (FirebaseAuthInvalidUserException invalidEmail) {
+                                    Log.d("TAG", "onComplete: invalid_email");
+                                    Toast.makeText(SignInActivity.this, "Please enter your registered email address!", Toast.LENGTH_SHORT).show();
+                                } catch (FirebaseAuthInvalidCredentialsException wrongPassword) {
+                                    Log.d("TAG", "onComplete: wrong_password");
+                                    Toast.makeText(SignInActivity.this, "Please enter a correct password!", Toast.LENGTH_SHORT).show();
+                                } catch (Exception e) {
+                                    Log.d("TAG", "onComplete: " + e.getMessage());
+                                }
+                            } else {
+                                dialog.show();
+                                Intent intent = new Intent(SignInActivity.this, MainActivity.class);
+                                startActivity(intent);
+                                Toast.makeText(SignInActivity.this, "Sign In Successfully", Toast.LENGTH_SHORT).show();
 
+                            }
+                        }
+                    });
+                    dialog.dismiss();
+
+
+                } else {
+                    Toast.makeText(SignInActivity.this, "You\'re offline, please connect to network first", Toast.LENGTH_SHORT).show();
+                    connected = false;
+                }
             }
-
         });
     }//end of onCreate
+
     //other codes and method here
     //email Validation
     private boolean validateEmail() {
@@ -139,6 +165,7 @@ public class SignInActivity extends AppCompatActivity {
             return true;
         }
     }
+
     //password Validation
     private boolean validatePassword() {
         String passwordInput = Objects.requireNonNull(textInputPassword.getEditText()).getText().toString().trim();
@@ -146,12 +173,11 @@ public class SignInActivity extends AppCompatActivity {
             textInputPassword.setError("Password is required.");
             return false;
         } else if (!PASSWORD_PATTERN.matcher(passwordInput).matches()) {
-            if (passwordInput.length() < 6){
+            if (passwordInput.length() < 6) {
                 textInputPassword.setError("At least 6 Characters");
-            }else if (passwordInput.length() > 15){
+            } else if (passwordInput.length() > 15) {
                 textInputPassword.setError("Password too long");
-            }
-            else{
+            } else {
                 textInputPassword.setError("No white spaces");
             }
             return false;

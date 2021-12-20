@@ -3,23 +3,27 @@ package com.javascript.jscript.Activities;
 import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.Intent;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
 import android.net.Uri;
 import android.os.Bundle;
+import android.util.Log;
 import android.util.Patterns;
 import android.view.View;
 import android.view.inputmethod.InputMethodManager;
-import android.widget.EditText;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.content.ContextCompat;
 
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.android.material.textfield.TextInputLayout;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseAuthInvalidCredentialsException;
+import com.google.firebase.auth.FirebaseAuthUserCollisionException;
+import com.google.firebase.auth.FirebaseAuthWeakPasswordException;
 import com.google.firebase.database.FirebaseDatabase;
 import com.javascript.jscript.Model.UserModel;
 import com.javascript.jscript.R;
@@ -51,6 +55,7 @@ public class SignUpActivity extends AppCompatActivity {
     //firebase code
     FirebaseAuth auth;
     FirebaseDatabase database;
+    private boolean connected = false;
 
 
     @Override
@@ -59,7 +64,7 @@ public class SignUpActivity extends AppCompatActivity {
         //binding
         binding = ActivitySignUpBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
-        dialog = new ProgressDialog(this,ProgressDialog.THEME_DEVICE_DEFAULT_DARK);
+        dialog = new ProgressDialog(this, ProgressDialog.THEME_DEVICE_DEFAULT_DARK);
         dialog.setProgressStyle(ProgressDialog.STYLE_SPINNER);
         dialog.setTitle("Sign Up");
         dialog.setMessage("Please Wait...");
@@ -78,37 +83,61 @@ public class SignUpActivity extends AppCompatActivity {
         binding.registerBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                //input fields validations check
-                if (!validateUsername()  | !validateEmail() | !validatePassword()) {
-                    return;
-                }
-                //hide keyboard
-                InputMethodManager inputMethodManager = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
-                inputMethodManager.hideSoftInputFromWindow(view.getWindowToken(), 0);
+                //network check
+                ConnectivityManager connectivityManager = (ConnectivityManager) getSystemService(SplashActivity.CONNECTIVITY_SERVICE);
+                if (connectivityManager.getNetworkInfo(ConnectivityManager.TYPE_MOBILE).getState() == NetworkInfo.State.CONNECTED ||
+                        connectivityManager.getNetworkInfo(ConnectivityManager.TYPE_WIFI).getState() == NetworkInfo.State.CONNECTED) {
+                    //we are connected to a network
+                    connected = true;
+                    //input fields validations check
+                    if (!validateUsername() | !validateEmail() | !validatePassword()) {
+                        return;
+                    }
+                    //hide keyboard
+                    InputMethodManager inputMethodManager = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
+                    inputMethodManager.hideSoftInputFromWindow(view.getWindowToken(), 0);
 
-                //other code start here
-                String userName = binding.editTextUsername.getText().toString();
-                String email = binding.editTextEmail.getText().toString();
-                String password = binding.editTextPassword.getText().toString();
-                auth.createUserWithEmailAndPassword(email,password)
-                        .addOnCompleteListener(new OnCompleteListener<AuthResult>() {
-                            @Override
-                            public void onComplete(@NonNull Task<AuthResult> task) {
-                                dialog.show();
-                                if (task.isSuccessful()){
-                                    UserModel userModel = new UserModel(userName,email,password);
-                                    database.getReference().child("UserData")
-                                            .child(Objects.requireNonNull(FirebaseAuth.getInstance().getUid()))
-                                            .setValue(userModel);
-                                    Toast.makeText(SignUpActivity.this, "Sign Up Successfully", Toast.LENGTH_SHORT).show();
-                                    Intent intent = new Intent(SignUpActivity.this,MainActivity.class);
-                                    startActivity(intent);
-                                }else {
-                                    Toast.makeText(SignUpActivity.this, "Sign Up Error", Toast.LENGTH_SHORT).show();
+                    //other code start here
+                    String userName = binding.editTextUsername.getText().toString();
+                    String email = binding.editTextEmail.getText().toString();
+                    String password = binding.editTextPassword.getText().toString();
+                    auth.createUserWithEmailAndPassword(email, password)
+                            .addOnCompleteListener(new OnCompleteListener<AuthResult>() {
+                                @Override
+                                public void onComplete(@NonNull Task<AuthResult> task) {
+
+                                    if (!task.isSuccessful()) {
+                                        try {
+                                            throw Objects.requireNonNull(task.getException());
+                                        } catch (FirebaseAuthWeakPasswordException weakPassword) {
+                                            Log.d("TAG", "onComplete: weak_password");
+                                            Toast.makeText(SignUpActivity.this, "Weak password", Toast.LENGTH_SHORT).show();
+                                        } catch (FirebaseAuthInvalidCredentialsException malformedEmail) {
+                                            Log.d("TAG", "onComplete: malformed_email");
+                                        } catch (FirebaseAuthUserCollisionException existEmail) {
+                                            Log.d("TAG", "onComplete: exist_email");
+                                            Toast.makeText(SignUpActivity.this, "Email already exist", Toast.LENGTH_SHORT).show();
+                                        } catch (Exception e) {
+                                            Log.d("TAG", "onComplete: " + e.getMessage());
+                                        }
+                                    } else {
+                                        dialog.show();
+                                        UserModel userModel = new UserModel(userName, email, password);
+                                        database.getReference().child("UserData")
+                                                .child(Objects.requireNonNull(FirebaseAuth.getInstance().getUid()))
+                                                .setValue(userModel);
+                                        Toast.makeText(SignUpActivity.this, "Sign Up Successfully", Toast.LENGTH_SHORT).show();
+                                        Intent intent = new Intent(SignUpActivity.this, MainActivity.class);
+                                        startActivity(intent);
+                                    }
                                 }
-                            }
-                        });
-                dialog.dismiss();
+                            });
+                    dialog.dismiss();
+
+                } else {
+                    Toast.makeText(SignUpActivity.this, "You\'re offline, please connect to network first", Toast.LENGTH_SHORT).show();
+                    connected = false;
+                }
             }
 
         });
@@ -134,11 +163,12 @@ public class SignUpActivity extends AppCompatActivity {
         if (usernameInput.isEmpty()) {
             textInputUserName.setError("Username is required.");
             return false;
-        }else {
+        } else {
             textInputUserName.setError(null);
             return true;
         }
     }
+
     //email Validation
     private boolean validateEmail() {
         String emailInput = textInputEmail.getEditText().getText().toString().trim();
@@ -154,6 +184,7 @@ public class SignUpActivity extends AppCompatActivity {
             return true;
         }
     }
+
     //password Validation
     private boolean validatePassword() {
         String passwordInput = textInputPassword.getEditText().getText().toString().trim();
@@ -161,11 +192,11 @@ public class SignUpActivity extends AppCompatActivity {
             textInputPassword.setError("Password is required.");
             return false;
         } else if (!PASSWORD_PATTERN.matcher(passwordInput).matches()) {
-            if (passwordInput.length() < 6){
+            if (passwordInput.length() < 6) {
                 textInputPassword.setError("At least 6 Characters");
-            }else if (passwordInput.length() > 15){
+            } else if (passwordInput.length() > 15) {
                 textInputPassword.setError("Password too long");
-            }else{
+            } else {
                 textInputPassword.setError("No white spaces");
             }
             return false;

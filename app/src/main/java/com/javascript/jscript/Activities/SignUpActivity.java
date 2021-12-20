@@ -51,7 +51,6 @@ public class SignUpActivity extends AppCompatActivity {
     private TextInputLayout textInputEmail;
     private TextInputLayout textInputPassword;
     ProgressDialog dialog;
-
     //firebase code
     FirebaseAuth auth;
     FirebaseDatabase database;
@@ -68,8 +67,8 @@ public class SignUpActivity extends AppCompatActivity {
         dialog.setProgressStyle(ProgressDialog.STYLE_SPINNER);
         dialog.setTitle("Sign Up");
         dialog.setMessage("Please Wait...");
-        dialog.setCancelable(true);
-        dialog.setCanceledOnTouchOutside(true);
+        dialog.setCancelable(false);
+        dialog.setCanceledOnTouchOutside(false);
 
         //initialize id
         textInputUserName = findViewById(R.id.text_input_username);

@@ -91,6 +91,13 @@ public class SignInActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+        //goto forgot password
+        binding.forgotPassword.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(SignInActivity.this,ForgotPasswordActivity.class));
+            }
+        });
         //Data Policy OnClickListener
         binding.dataPolicy.setOnClickListener
                 (View -> startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(getString(R.string.url_play_privacy_policy)))));

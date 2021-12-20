@@ -46,6 +46,7 @@ public class DiscussFragment extends Fragment {
     FirebaseDatabase database;
     ArrayList<DiscussModel> dashboardList;
     SwipeRefreshLayout swipeRefreshLayout;
+    ImageView search,notification;
 
     public DiscussFragment() {
         // Required empty public constructor
@@ -64,6 +65,9 @@ public class DiscussFragment extends Fragment {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_discuss, container, false);
         setHasOptionsMenu(true);
+        //find id
+        search = view.findViewById(R.id.search);
+        notification  = view.findViewById(R.id.notification);
         //recyclerview
         recyclerView = view.findViewById(R.id.rv_discuss);
         recyclerView.showShimmerAdapter();
@@ -74,6 +78,13 @@ public class DiscussFragment extends Fragment {
         } else {
             proBadge.setVisibility(View.VISIBLE);
         }
+        //notification click listener
+        notification.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getActivity(),NotificationsActivity.class));
+            }
+        });
         //text input click
         View discuss_view = view.findViewById(R.id.discuss_view);
         discuss_view.setOnClickListener(new View.OnClickListener() {
@@ -176,36 +187,8 @@ public class DiscussFragment extends Fragment {
 
         return view;
     }
-
-    //on create option menu
-
-    @Override
-    public void onCreateOptionsMenu(@NonNull Menu menu, @NonNull MenuInflater inflater) {
-        MenuItem menuItem = menu.findItem(R.id.settings);
-        menuItem.setVisible(false);
-        inflater.inflate(R.menu.menu_discuss, menu);
-        MenuItem item = menu.findItem(R.id.search);
-        item.setVisible(false);
-        SearchView searchView = (SearchView) item.getActionView();
-        searchView.setQueryHint("Search questions...");
-        searchView.setBackgroundResource(R.drawable.ic_programs_image_bg);
-        //text
-        EditText txtSearch = ((EditText)searchView.findViewById(androidx.appcompat.R.id.search_src_text));
-        txtSearch.setHintTextColor(getResources().getColor(R.color.textColorPlaceholder));
-        txtSearch.setTextColor(Color.WHITE);
-        //query listener
-        super.onCreateOptionsMenu(menu, inflater);
-
-    }
-
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
-
-        if (item.getItemId() == R.id.notification) {
-            startActivity(new Intent(getContext(), NotificationsActivity.class));
-            return true;
-        }
-
         return super.onOptionsItemSelected(item);
     }
 }

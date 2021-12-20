@@ -9,7 +9,7 @@
     <ImageView
         android:id="@+id/imageView3"
         android:layout_width="wrap_content"
-        android:layout_height="150dp"
+        android:layout_height="130dp"
         android:layout_marginTop="16dp"
         android:contentDescription="@string/app_main_images"
         app:layout_constraintEnd_toEndOf="parent"
@@ -139,19 +139,30 @@
     <Button
         android:id="@+id/signInBtn"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="48dp"
         android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
         android:layout_marginEnd="16dp"
         android:fontFamily="@font/oswald"
-        android:paddingTop="12dp"
-        android:paddingBottom="12dp"
+        android:paddingTop="0dp"
+        android:paddingBottom="0dp"
         android:text="@string/lets_start_learning"
         android:textColor="@color/colorPrimary"
-        android:textSize="18sp"
+        android:textSize="14sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/forgotPassword" />
+
+    <TextView
+        android:id="@+id/forgotPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/forgot_password"
+        android:textColor="@color/activeGreen"
+        android:textSize="11sp"
+        app:layout_constraintEnd_toEndOf="@+id/text_input_password"
         app:layout_constraintTop_toBottomOf="@+id/text_input_password" />
 
     <TextView
@@ -159,7 +170,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/or_sign_in_with_google"
-        android:textSize="16sp"
+        android:textSize="12sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="@+id/signInBtn"
         app:layout_constraintStart_toStartOf="@+id/signInBtn"
@@ -173,8 +184,8 @@
         android:fontFamily="@font/oswald"
         android:text="@string/privacy_term"
         android:textColor="@color/activeGreen"
-        android:textSize="12sp"
-        android:textStyle="bold"
+        android:textSize="11sp"
+        android:textStyle="normal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"

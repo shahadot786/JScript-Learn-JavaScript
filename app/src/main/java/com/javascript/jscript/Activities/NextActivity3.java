@@ -1,14 +1,12 @@
 package com.javascript.jscript.Activities;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.content.ContextCompat;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.view.WindowManager;
 
-import com.javascript.jscript.R;
 import com.javascript.jscript.databinding.ActivityNext3Binding;
 
 public class NextActivity3 extends AppCompatActivity {

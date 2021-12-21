@@ -2,8 +2,6 @@ package com.javascript.jscript.Learn;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.constraintlayout.widget.ConstraintLayout;
-
 import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
@@ -17,8 +15,6 @@ import android.widget.TextView;
 import com.javascript.jscript.R;
 import com.javascript.jscript.Utils.AdNetwork;
 import com.javascript.jscript.databinding.ActivityLearnItemsListBinding;
-
-import java.util.List;
 import java.util.Objects;
 
 public class LearnItemsListActivity extends AppCompatActivity {

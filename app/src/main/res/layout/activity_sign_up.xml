@@ -41,7 +41,7 @@
                 android:fontFamily="@font/oswald"
                 android:text="@string/signup"
                 android:textColor="@color/colorWhite"
-                android:textSize="24sp"
+                android:textSize="20sp"
                 android:textStyle="bold"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/imageView3" />
@@ -52,7 +52,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="4dp"
                 android:text="@string/an_account"
-                android:textSize="14sp"
+                android:textSize="12sp"
                 app:layout_constraintEnd_toStartOf="@+id/goToSignIn"
                 app:layout_constraintHorizontal_chainStyle="packed"
                 app:layout_constraintStart_toStartOf="@+id/textView3"
@@ -66,7 +66,7 @@
                 android:fontFamily="@font/oswald"
                 android:text="@string/signIn"
                 android:textColor="@color/activeGreen"
-                android:textSize="14sp"
+                android:textSize="12sp"
                 android:textStyle="bold"
                 app:layout_constraintBottom_toBottomOf="@+id/textView5"
                 app:layout_constraintStart_toEndOf="@+id/textView5"
@@ -97,7 +97,7 @@
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/editTextUsername"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="55dp"
                     android:hint="@string/username"
                     android:inputType="text"
                     android:textColor="@color/colorWhite" />
@@ -127,7 +127,7 @@
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/editTextEmail"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="55dp"
                     android:hint="@string/email"
                     android:inputType="textEmailAddress"
                     android:textColor="@color/colorWhite" />
@@ -160,7 +160,7 @@
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/editTextPassword"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="55dp"
                     android:hint="@string/password"
                     android:inputType="textPassword"
                     android:textColor="@color/colorWhite" />
@@ -169,7 +169,7 @@
             <Button
                 android:id="@+id/registerBtn"
                 android:layout_width="match_parent"
-                android:layout_height="48dp"
+                android:layout_height="55dp"
                 android:layout_marginStart="16dp"
                 android:layout_marginEnd="16dp"
                 android:fontFamily="@font/oswald"
@@ -202,7 +202,7 @@
                 android:fontFamily="@font/oswald"
                 android:text="@string/privacy_term"
                 android:textColor="@color/activeGreen"
-                android:textSize="12sp"
+                android:textSize="11sp"
                 android:textStyle="bold"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"

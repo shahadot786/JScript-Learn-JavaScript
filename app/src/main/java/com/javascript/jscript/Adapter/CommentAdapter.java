@@ -5,9 +5,6 @@ import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageView;
-import android.widget.TextView;
-
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -16,7 +13,6 @@ import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
-import com.javascript.jscript.Config.UiConfig;
 import com.javascript.jscript.Model.CommentModel;
 import com.javascript.jscript.Model.UserModel;
 import com.javascript.jscript.R;
@@ -39,13 +35,6 @@ public class CommentAdapter extends RecyclerView.Adapter<CommentAdapter.viewHold
     @Override
     public viewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(context).inflate(R.layout.comments_rv_sample,parent,false);
-        /*//pro status
-        ImageView proBadge = view.findViewById(R.id.proBadge);
-        if (UiConfig.PRO_VISIBILITY_STATUS_SHOW){
-            proBadge.setVisibility(View.GONE);
-        }else {
-            proBadge.setVisibility(View.VISIBLE);
-        }*/
         return new viewHolder(view);
     }
 

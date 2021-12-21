@@ -157,7 +157,8 @@
                 app:layout_constraintBottom_toBottomOf="@+id/books_item_gridview_pro"
                 app:layout_constraintEnd_toEndOf="@+id/books_item_gridview_pro"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/proView" />
+                app:layout_constraintTop_toBottomOf="@+id/proView"
+                tools:ignore="ImageContrastCheck" />
 
 
         </androidx.constraintlayout.widget.ConstraintLayout>

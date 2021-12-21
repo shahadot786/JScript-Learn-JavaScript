@@ -9,7 +9,7 @@
     <ImageView
         android:id="@+id/imageView3"
         android:layout_width="wrap_content"
-        android:layout_height="130dp"
+        android:layout_height="150dp"
         android:layout_marginTop="16dp"
         android:contentDescription="@string/app_main_images"
         app:layout_constraintEnd_toEndOf="parent"
@@ -27,7 +27,7 @@
         android:fontFamily="@font/oswald"
         android:text="@string/login_message"
         android:textColor="@color/colorWhite"
-        android:textSize="24sp"
+        android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView3" />
@@ -38,6 +38,7 @@
         android:layout_height="wrap_content"
         android:text="@string/login_message2"
 
+        android:textSize="11sp"
         app:layout_constraintStart_toStartOf="@+id/textView3"
         app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
@@ -97,7 +98,7 @@
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/editTextEmail"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="55dp"
             android:hint="@string/email"
             android:inputType="textEmailAddress"
             android:textColor="@color/colorWhite" />
@@ -130,7 +131,7 @@
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/editTextPassword"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="55dp"
             android:hint="@string/password"
             android:inputType="textPassword"
             android:textColor="@color/colorWhite" />
@@ -139,7 +140,7 @@
     <Button
         android:id="@+id/signInBtn"
         android:layout_width="match_parent"
-        android:layout_height="48dp"
+        android:layout_height="55dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="12dp"
         android:layout_marginEnd="16dp"

@@ -15,8 +15,6 @@ import com.google.android.gms.ads.AdView;
 import com.javascript.jscript.BuildConfig;
 import com.javascript.jscript.Config.UiConfig;
 import com.javascript.jscript.Model.LearnDetailsModel;
-import com.javascript.jscript.Model.QuizListModel;
-import com.javascript.jscript.Quiz.QuizDetailsActivity;
 import com.javascript.jscript.R;
 import com.javascript.jscript.Utils.AdNetwork;
 import com.javascript.jscript.databinding.ActivityLearnDetailsBinding;

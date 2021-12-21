@@ -152,13 +152,14 @@
                 android:id="@+id/interviewProImage"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:contentDescription="@string/app_main_images"
                 android:src="@drawable/ic_pro_locked_128dp"
                 android:visibility="visible"
-                android:contentDescription="@string/app_main_images"
                 app:layout_constraintBottom_toBottomOf="@+id/interview_item_gridview_pro"
                 app:layout_constraintEnd_toEndOf="@+id/interview_item_gridview_pro"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/proView" />
+                app:layout_constraintTop_toBottomOf="@+id/proView"
+                tools:ignore="ImageContrastCheck" />
 
 
         </androidx.constraintlayout.widget.ConstraintLayout>

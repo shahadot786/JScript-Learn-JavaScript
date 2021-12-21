@@ -7,18 +7,9 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.fragment.app.Fragment;
-
 import com.javascript.jscript.Activities.FeedBackActivity;
 import com.javascript.jscript.Activities.PremiumActivity;
 import com.javascript.jscript.Config.UiConfig;
-import com.javascript.jscript.Fragment.BooksFragment;
-import com.javascript.jscript.Fragment.InterviewQAFragment;
-import com.javascript.jscript.Fragment.LearnFragment;
-import com.javascript.jscript.Fragment.ProgramsFragment;
-import com.javascript.jscript.Fragment.QuizFragment;
-import com.javascript.jscript.Model.ProfileModel;
 import com.javascript.jscript.R;
 import com.smarteist.autoimageslider.SliderViewAdapter;
 

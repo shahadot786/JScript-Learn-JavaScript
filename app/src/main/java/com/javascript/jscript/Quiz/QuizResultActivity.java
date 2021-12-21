@@ -3,8 +3,6 @@ package com.javascript.jscript.Quiz;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.AppCompatButton;
-
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
@@ -14,7 +12,6 @@ import android.widget.TextView;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
 import com.javascript.jscript.Config.UiConfig;
-import com.javascript.jscript.Fragment.QuizFragment;
 import com.javascript.jscript.R;
 import com.javascript.jscript.databinding.ActivityQuizResultBinding;
 

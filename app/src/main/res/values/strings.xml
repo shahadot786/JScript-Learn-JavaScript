@@ -205,9 +205,6 @@
     <string name="programs_header_image">Programs Header Image</string>
     <string name="javascripts_practice_programs">Practice Programs</string>
     <string name="pro">PRO</string>
-    <string name="dashboard">Leaderboard</string>
-    <string name="add_quiz">Add Quiz</string>
-    <string name="how_to">Rules ?</string>
     <string name="subjects">Subjects:</string>
     <string name="practice_programs">Practice Programs</string>
     <string name="read_books">Read Books</string>
@@ -217,8 +214,7 @@
 
     <!--Quiz-->
     <string name="play_quiz">Play Quiz</string>
-    <string name="_1_10">1–10</string>
-    <string name="quiz_test_text">Question will appear hereQuestion will appear hereQuestion will appear hereQuestion will appear hereQuestion will appear hereQuestion will appear here</string>
+    <string name="how_to">How to?</string>
     <string name="option_1">Option 1</string>
     <string name="quiz_success_message">Hey Congratulations You Win the Quiz !</string>
     <string name="quiz_fail_message">Ops ! You Lose the Quiz.</string>

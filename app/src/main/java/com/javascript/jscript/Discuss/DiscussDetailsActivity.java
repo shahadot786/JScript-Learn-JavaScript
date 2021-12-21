@@ -25,7 +25,6 @@ import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
-import com.javascript.jscript.Activities.SplashActivity;
 import com.javascript.jscript.Adapter.CommentAdapter;
 import com.javascript.jscript.BuildConfig;
 import com.javascript.jscript.Config.UiConfig;

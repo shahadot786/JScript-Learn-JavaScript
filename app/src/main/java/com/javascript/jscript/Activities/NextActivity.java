@@ -7,9 +7,6 @@ import android.view.WindowManager;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.google.firebase.auth.FirebaseAuth;
-import com.google.firebase.auth.FirebaseUser;
-import com.javascript.jscript.Config.UiConfig;
 import com.javascript.jscript.databinding.ActivityNextBinding;
 
 public class NextActivity extends AppCompatActivity {

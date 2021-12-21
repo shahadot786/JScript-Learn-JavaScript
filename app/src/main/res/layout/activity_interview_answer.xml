@@ -51,7 +51,7 @@
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="24dp"
                 android:layout_marginEnd="16dp"
-                android:text="What are global variables? How are these variable declared?What are global variables? How are these variable declared?"
+                android:fontFamily="@font/open_sans"
                 android:textSize="16sp"
                 android:textStyle="bold"
                 app:layout_constraintEnd_toEndOf="parent"

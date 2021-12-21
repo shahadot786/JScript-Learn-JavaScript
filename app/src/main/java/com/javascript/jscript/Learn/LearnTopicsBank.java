@@ -1,7 +1,6 @@
 package com.javascript.jscript.Learn;
 
 import com.javascript.jscript.Model.LearnDetailsModel;
-import com.javascript.jscript.Model.QuizListModel;
 
 import java.util.ArrayList;
 import java.util.List;

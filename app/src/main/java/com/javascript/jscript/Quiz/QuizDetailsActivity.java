@@ -3,23 +3,18 @@ package com.javascript.jscript.Quiz;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.AppCompatButton;
-import androidx.constraintlayout.widget.ConstraintLayout;
-
 import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
-
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
 import com.javascript.jscript.BuildConfig;
 import com.javascript.jscript.Config.UiConfig;
-import com.javascript.jscript.Interview.BasicInterviewQA;
 import com.javascript.jscript.Model.QuizListModel;
 import com.javascript.jscript.R;
 import com.javascript.jscript.Utils.AdNetwork;

@@ -24,7 +24,7 @@
             android:layout_marginTop="4dp"
             android:layout_marginEnd="12dp"
             android:text="@string/title_js"
-            android:textSize="18sp"
+            android:textSize="16sp"
             app:layout_constraintEnd_toEndOf="@+id/imageView13"
             app:layout_constraintHorizontal_chainStyle="packed"
             app:layout_constraintStart_toStartOf="@+id/imageView13"
@@ -32,10 +32,10 @@
 
         <ImageView
             android:id="@+id/proBadge"
-            android:layout_width="30dp"
+            android:layout_width="20dp"
             android:layout_height="20dp"
             android:layout_marginStart="4dp"
-            android:layout_marginTop="4dp"
+            android:layout_marginTop="6dp"
             android:contentDescription="@string/app_main_images"
             app:layout_constraintBottom_toBottomOf="@+id/textView29"
             app:layout_constraintStart_toEndOf="@+id/textView29"
@@ -45,7 +45,7 @@
         <ImageView
             android:id="@+id/imageView13"
             android:layout_width="wrap_content"
-            android:layout_height="100dp"
+            android:layout_height="80dp"
             android:layout_marginTop="16dp"
             android:contentDescription="@string/app_main_images"
             android:src="@drawable/ic_main_icon_round"
@@ -56,8 +56,8 @@
 
         <ImageView
             android:id="@+id/proCancelBtn"
-            android:layout_width="35dp"
-            android:layout_height="35dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
             android:layout_marginTop="16dp"
             android:layout_marginEnd="16dp"
             android:contentDescription="@string/app_main_images"
@@ -301,7 +301,7 @@
                 <ImageView
                     android:id="@+id/imageView23"
                     android:layout_width="40dp"
-                    android:layout_height="50dp"
+                    android:layout_height="40dp"
                     android:layout_marginEnd="8dp"
                     android:contentDescription="@string/app_main_images"
                     android:src="@drawable/ic_bookmark_favorite"
@@ -314,7 +314,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="16dp"
                     android:text="@string/best_value"
-                    android:textSize="20sp"
+                    android:textSize="18sp"
                     android:textStyle="bold"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"

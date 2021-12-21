@@ -48,13 +48,6 @@ public class DiscussAdapter extends RecyclerView.Adapter<DiscussAdapter.viewHold
     public viewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
 
         View view = LayoutInflater.from(context).inflate(R.layout.add_discuss_rv_sample, parent, false);
-        //pro status
-        /*ImageView proBadge = view.findViewById(R.id.proBadge);
-        if (UiConfig.PRO_VISIBILITY_STATUS_SHOW){
-            proBadge.setVisibility(View.GONE);
-        }else {
-            proBadge.setVisibility(View.VISIBLE);
-        }*/
         return new viewHolder(view);
     }
 

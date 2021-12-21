@@ -44,7 +44,7 @@ public class ProgramsCodeActivity extends AppCompatActivity {
         codeView = findViewById(R.id.codeView);
         codeView.setTheme(CodeViewTheme.ANDROIDSTUDIO).fillColor();
         //code view for output
-        outCodeView = findViewById(R.id.answerCodeView);
+        outCodeView = findViewById(R.id.learnCodeView);
         outCodeView.setTheme(CodeViewTheme.ANDROIDSTUDIO).fillColor();
 
         loadCodes();

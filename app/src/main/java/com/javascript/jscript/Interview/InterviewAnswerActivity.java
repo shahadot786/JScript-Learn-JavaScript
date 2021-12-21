@@ -11,8 +11,6 @@ import android.widget.TextView;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
 import com.javascript.jscript.Config.UiConfig;
-import com.javascript.jscript.Programs.BasicProgramsCodes;
-import com.javascript.jscript.Programs.ProgramsCodeActivity;
 import com.javascript.jscript.R;
 import com.javascript.jscript.databinding.ActivityInterviewAnswerBinding;
 
@@ -46,7 +44,7 @@ public class InterviewAnswerActivity extends AppCompatActivity {
 
         //find text view id
         textQuestion = findViewById(R.id.textQuestion);
-        ansCodeView = findViewById(R.id.answerCodeView);
+        ansCodeView = findViewById(R.id.learnCodeView);
         ansCodeView.setTheme(CodeViewTheme.ANDROIDSTUDIO).fillColor();
 
         loadQuestion();

@@ -48,8 +48,7 @@ public class LearnItemsListActivity extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                 Intent intent = new Intent(LearnItemsListActivity.this, LearnDetailsActivity.class);
-                intent.putExtra("position",list[i]);
-                intent.putExtra("output",list[i]);
+                intent.putExtra("learnTopics",list[i]);
                 startActivity(intent);
                 adNetwork.showInterstitialAd();
             }

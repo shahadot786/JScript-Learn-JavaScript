@@ -59,7 +59,7 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
             <thereisnospon.codeview.CodeView
-                android:id="@+id/answerCodeView"
+                android:id="@+id/learnCodeView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"

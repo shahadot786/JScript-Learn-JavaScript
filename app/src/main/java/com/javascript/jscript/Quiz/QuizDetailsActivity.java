@@ -168,17 +168,19 @@ public class QuizDetailsActivity extends AppCompatActivity {
         shareBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String shareBody = questionList.get(0).getQuestion() + "\n"+
-                        questionList.get(0).getOption1() + "\n"+
-                        questionList.get(0).getOption2() + "\n"+
-                        questionList.get(0).getOption3() + "\n"+
-                        questionList.get(0).getOption4() + "\n\n\n\n" +
-                        "Play Quiz in JScript : Learn JavaScript" + "\n"+
+                String shareBody =
+                        "Question: "+questionList.get(currentQuestionPosition).getQuestion() + "\n\n"+
+                        "1. "+questionList.get(currentQuestionPosition).getOption1() + "\n"+
+                        "2. "+questionList.get(currentQuestionPosition).getOption2() + "\n"+
+                        "3. "+questionList.get(currentQuestionPosition).getOption3() + "\n"+
+                        "4. "+questionList.get(currentQuestionPosition).getOption4() + "\n\n\n\n" +
+                        "Play Quiz in JScript" + "\n"+
                         "https://play.google.com/store/apps/details?id=" +
                         BuildConfig.APPLICATION_ID;
 
                 Intent shareIntent = new Intent();
                 shareIntent.setAction(Intent.ACTION_SEND);
+                shareIntent.putExtra(Intent.EXTRA_SUBJECT,"JavaScript Quiz");
                 shareIntent.putExtra(Intent.EXTRA_TEXT,shareBody);
                 shareIntent.setType("text/plain");
                 startActivity(shareIntent);

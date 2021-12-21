@@ -1,15 +1,18 @@
 package com.javascript.jscript.Activities;
 
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.annotation.SuppressLint;
 import android.content.Intent;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.Toast;
+
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.javascript.jscript.BuildConfig;
 import com.javascript.jscript.Config.UiConfig;
@@ -22,6 +25,8 @@ import java.util.Objects;
 public class FollowUsActivity extends AppCompatActivity {
 
     ActivityFollowUsBinding binding;
+    private boolean connected = false;
+
     @SuppressLint("SetTextI18n")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,9 +35,9 @@ public class FollowUsActivity extends AppCompatActivity {
         setContentView(binding.getRoot());
         //pro status
         ImageView proBadge = findViewById(R.id.proBadge);
-        if (UiConfig.PRO_VISIBILITY_STATUS_SHOW){
+        if (UiConfig.PRO_VISIBILITY_STATUS_SHOW) {
             proBadge.setVisibility(View.GONE);
-        }else {
+        } else {
             proBadge.setVisibility(View.VISIBLE);
         }
         //toolbar
@@ -92,7 +97,17 @@ public class FollowUsActivity extends AppCompatActivity {
         binding.contactUs.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(Intent.ACTION_VIEW,Uri.parse("mailto:" + "info@shrcreation.com")));
+                //network check
+                ConnectivityManager connectivityManager = (ConnectivityManager) getSystemService(FollowUsActivity.CONNECTIVITY_SERVICE);
+                if (connectivityManager.getNetworkInfo(ConnectivityManager.TYPE_MOBILE).getState() == NetworkInfo.State.CONNECTED ||
+                        connectivityManager.getNetworkInfo(ConnectivityManager.TYPE_WIFI).getState() == NetworkInfo.State.CONNECTED) {
+                    //we are connected to a network
+                    connected = true;
+                    startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("mailto:" + "info@shrcreation.com")));
+                } else {
+                    Toast.makeText(FollowUsActivity.this, "You\'re offline, please connect to network first", Toast.LENGTH_SHORT).show();
+                    connected = false;
+                }
             }
         });
     }

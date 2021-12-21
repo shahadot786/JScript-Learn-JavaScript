@@ -101,8 +101,11 @@ public class QuizFragment extends Fragment {
             public void onClick(View view) {
                 AlertDialog.Builder dialog = new AlertDialog.Builder(getActivity(), R.style.AppCompatAlertDialogStyle);
                 dialog.setCancelable(false);
-                dialog.setTitle("How to play?");
-                dialog.setMessage("1. Every quiz subjects has different types of quiz.\n2. Every types of quiz has a 10 different questions.\n3. User can add quiz. \n4. Minimum 8 Correct Answer For Win.");
+                dialog.setTitle("Rules");
+                dialog.setMessage("1. Every quiz subjects has different types of quiz." +
+                        "\n2. Every types of quiz has a 10 different questions." +
+                        "\n3. Minimum 8 Correct Answer For Win." +
+                        "\n4. ");
                 dialog.setPositiveButton(R.string.dialog_ok, new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialogInterface, int i) {

@@ -60,14 +60,6 @@ public class DiscussDetailsActivity extends AppCompatActivity {
         setContentView(binding.getRoot());
         swipeRefreshLayout = findViewById(R.id.swipeRefreshComment);
         commentShimmer = findViewById(R.id.commentRv);
-        //pro status
-        /*ImageView proBadge = findViewById(R.id.proBadge);
-        //conditions
-        if (UiConfig.PRO_VISIBILITY_STATUS_SHOW) {
-            proBadge.setVisibility(View.GONE);
-        } else {
-            proBadge.setVisibility(View.VISIBLE);
-        }*/
         //get data by intent
         intent = getIntent();
         postId = intent.getStringExtra("postId");
@@ -97,6 +89,7 @@ public class DiscussDetailsActivity extends AppCompatActivity {
             public void onDataChange(@NonNull DataSnapshot snapshot) {
                 DiscussModel discuss = snapshot.getValue(DiscussModel.class);
                 //for share data
+                assert discuss != null;
                 question = discuss.getQuestions();
                 description = discuss.getDescription();
                 //set data to id's
@@ -121,6 +114,7 @@ public class DiscussDetailsActivity extends AppCompatActivity {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
                 UserModel user = snapshot.getValue(UserModel.class);
+                assert user != null;
                 Picasso.get()
                         .load(user.getProfile())
                         .placeholder(R.drawable.ic_profile_default_image)
@@ -138,7 +132,7 @@ public class DiscussDetailsActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 //network check
-                ConnectivityManager connectivityManager = (ConnectivityManager) getSystemService(SplashActivity.CONNECTIVITY_SERVICE);
+                ConnectivityManager connectivityManager = (ConnectivityManager) getSystemService(DiscussDetailsActivity.CONNECTIVITY_SERVICE);
                 if (connectivityManager.getNetworkInfo(ConnectivityManager.TYPE_MOBILE).getState() == NetworkInfo.State.CONNECTED ||
                         connectivityManager.getNetworkInfo(ConnectivityManager.TYPE_WIFI).getState() == NetworkInfo.State.CONNECTED) {
                     //we are connected to a network
@@ -316,7 +310,8 @@ public class DiscussDetailsActivity extends AppCompatActivity {
         Intent shareIntent = new Intent();
         shareIntent.setAction(Intent.ACTION_SEND);
         shareIntent.putExtra(Intent.EXTRA_SUBJECT, "Q&A Discussions");
-        shareIntent.putExtra(Intent.EXTRA_TEXT, question + "\n\n" + description + "\n\nLearn JavaScript in JScript & solve problems.\n" +
+        shareIntent.putExtra(Intent.EXTRA_TEXT, "Question: "+question + "\n\n" + "Descriptions: \n\n"+description +
+                "\n\nLearn JavaScript in JScript & solve problems.\n" +
                 "https://play.google.com/store/apps/details?id=" +
                 BuildConfig.APPLICATION_ID);
         shareIntent.setType("text/plain");

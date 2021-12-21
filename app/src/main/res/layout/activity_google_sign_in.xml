@@ -28,17 +28,21 @@
         app:layout_constraintStart_toStartOf="@+id/signInGoogle"
         app:layout_constraintTop_toBottomOf="@+id/imageView14" />
 
-    <ImageView
+    <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/signInGoogle"
         android:layout_width="200dp"
         android:layout_height="50dp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:background="@drawable/ic_quiz_option_bg"
+        android:backgroundTint="@color/color_linkedin"
         android:layout_marginTop="16dp"
+        android:text="@string/sign_in_with_google"
         android:contentDescription="@string/app_main_images"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2"
-        app:srcCompat="@drawable/ic_google_sign_up" />
+        app:layout_constraintTop_toBottomOf="@+id/textView2"/>
 
     <TextView
         android:id="@+id/privacy"
@@ -64,13 +68,15 @@
         app:layout_constraintEnd_toEndOf="@+id/signInGoogle"
         app:layout_constraintStart_toStartOf="@+id/signInGoogle" />
 
-    <TextView
+    <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/signUpEmail"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/or_sign_up_with_email"
-        android:textSize="14sp"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:gravity="center"
         android:textStyle="bold"
+        android:background="@drawable/ic_quiz_option_bg"
+        android:layout_marginTop="16dp"
+        android:text="@string/or_sign_up_with_email"
         app:layout_constraintEnd_toEndOf="@+id/signInGoogle"
         app:layout_constraintStart_toStartOf="@+id/signInGoogle"
         app:layout_constraintTop_toBottomOf="@+id/signInGoogle" />

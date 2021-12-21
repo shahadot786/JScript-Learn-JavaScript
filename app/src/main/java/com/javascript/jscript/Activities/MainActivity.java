@@ -26,8 +26,6 @@ import com.javascript.jscript.Fragment.ProfileFragment;
 import com.javascript.jscript.Fragment.QuizFragment;
 import com.javascript.jscript.R;
 import com.javascript.jscript.databinding.ActivityMainBinding;
-
-
 import me.ibrahimsn.lib.OnItemSelectedListener;
 
 
@@ -101,7 +99,7 @@ public class MainActivity extends AppCompatActivity {
                         transaction.setCustomAnimations(R.anim.slide_in_right, R.anim.slide_out_left, R.anim.slide_in_left, R.anim.slide_out_right);
                         transaction.replace(R.id.container, new ProfileFragment());
                         if (UiConfig.BANNER_AD_VISIBILITY) {
-                            bannerAd.setVisibility(View.GONE);
+                            bannerAd.setVisibility(View.VISIBLE);
                         }
                         break;
                     case 4:
@@ -153,6 +151,7 @@ public class MainActivity extends AppCompatActivity {
             case R.id.share:
                 Intent sendIntent = new Intent();
                 sendIntent.setAction(Intent.ACTION_SEND);
+                sendIntent.putExtra(Intent.EXTRA_SUBJECT,"Learn JavaScript");
                 sendIntent.putExtra(Intent.EXTRA_TEXT, getResources().getString(R.string.share_message) + "\n\n" +
                         "https://play.google.com/store/apps/details?id=" +
                         BuildConfig.APPLICATION_ID + "\n\n" + getResources().getString(R.string.share_message2)

@@ -4,6 +4,7 @@ import static android.content.ContentValues.TAG;
 
 import android.app.ProgressDialog;
 import android.content.Intent;
+import android.content.res.ColorStateList;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.net.Uri;
@@ -71,6 +72,9 @@ public class GoogleSignInActivity extends AppCompatActivity {
         binding.signInGoogle.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                binding.signInGoogle.setBackgroundTintList(ColorStateList.valueOf(getResources().getColor(R.color.activeGreen)));
+                TextView signUpGoogle = findViewById(R.id.signInGoogle);
+                signUpGoogle.setTextColor(getResources().getColor(R.color.colorPrimary));
                 //network check
                 ConnectivityManager connectivityManager = (ConnectivityManager) getSystemService(SplashActivity.CONNECTIVITY_SERVICE);
                 if (connectivityManager.getNetworkInfo(ConnectivityManager.TYPE_MOBILE).getState() == NetworkInfo.State.CONNECTED ||
@@ -96,8 +100,9 @@ public class GoogleSignInActivity extends AppCompatActivity {
         binding.signUpEmail.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                binding.signUpEmail.setBackgroundResource(R.drawable.ic_quiz_option_bg_green);
                 TextView signUp = findViewById(R.id.signUpEmail);
-                signUp.setTextColor(getResources().getColor(R.color.activeGreen));
+                signUp.setTextColor(getResources().getColor(R.color.colorPrimary));
                 startActivity(new Intent(GoogleSignInActivity.this, SignUpActivity.class));
             }
         });

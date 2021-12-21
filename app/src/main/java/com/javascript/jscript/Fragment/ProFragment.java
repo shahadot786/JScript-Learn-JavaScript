@@ -121,7 +121,7 @@ public class ProFragment extends Fragment {
                 startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(getString(R.string.play_website))));
             }
         });
-        binding.viewFeedback3.setOnClickListener(new View.OnClickListener() {
+        binding.contactUs.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(Intent.ACTION_VIEW,Uri.parse("mailto:" + "info@shrcreation.com")));

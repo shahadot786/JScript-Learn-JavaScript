@@ -460,7 +460,7 @@
                 app:layout_constraintTop_toBottomOf="@+id/view_website" />
 
             <View
-                android:id="@+id/viewFeedback3"
+                android:id="@+id/contactUs"
                 android:layout_width="0dp"
                 android:layout_height="0dp"
                 android:background="@drawable/ic_follow_link_bg"

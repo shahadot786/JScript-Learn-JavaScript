@@ -71,6 +71,15 @@
                 app:layout_constraintTop_toBottomOf="@+id/titleC">
 
                 <TextView
+                    android:id="@+id/output"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/output"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/learnCodeView" />
+
+                <TextView
                     android:id="@+id/learnDetails"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
@@ -99,10 +108,10 @@
                     android:id="@+id/learnOutputView"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="16dp"
+                    android:layout_marginTop="8dp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/learnCodeView" />
+                    app:layout_constraintTop_toBottomOf="@+id/output" />
 
 
             </androidx.constraintlayout.widget.ConstraintLayout>
@@ -125,7 +134,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="50dp"
                     android:layout_marginStart="8dp"
-                    android:background="@drawable/ic_quiz_option_bg"
+                    android:background="@drawable/ic_learn_share_button_bg"
                     android:text="@string/share"
                     android:textColor="@color/colorWhite"
                     android:textStyle="bold"
@@ -145,6 +154,7 @@
                     android:text="@string/previous"
                     android:textColor="@color/colorWhite"
                     android:textStyle="bold"
+                    android:visibility="gone"
                     app:layout_constraintBottom_toBottomOf="@+id/learnShareBtn"
                     app:layout_constraintEnd_toStartOf="@+id/learnNextBtn"
                     app:layout_constraintHorizontal_bias="0.5"

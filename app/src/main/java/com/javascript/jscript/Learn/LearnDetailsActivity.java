@@ -33,7 +33,7 @@ public class LearnDetailsActivity extends AppCompatActivity {
     private AdNetwork adNetwork;
     private List<LearnDetailsModel> learnList;
     private int currentTopicPosition = 0;
-    TextView title,details;
+    TextView title,details,outputTxt;
     CodeView codes,output;
     private AppCompatButton prevBtn,nextBtn,shareBtn;
 
@@ -62,10 +62,11 @@ public class LearnDetailsActivity extends AppCompatActivity {
         //find id
         title = findViewById(R.id.learnTitle);
         details = findViewById(R.id.learnDetails);
+        outputTxt = findViewById(R.id.output);
         //code
         codes = findViewById(R.id.learnCodeView);
         output = findViewById(R.id.learnOutputView);
-        codes.setTheme(CodeViewTheme.ANDROIDSTUDIO).fillColor();
+        codes.setTheme(CodeViewTheme.ATELIER_SAVANNA_DARK).fillColor();
         output.setTheme(CodeViewTheme.ANDROIDSTUDIO).fillColor();
 
         //button's
@@ -82,9 +83,11 @@ public class LearnDetailsActivity extends AppCompatActivity {
         output.showCode(learnList.get(0).getOutput());
         if (learnList.get(0).getCodes().equals("")){
             codes.setVisibility(View.GONE);
+            outputTxt.setVisibility(View.GONE);
         }
         if (learnList.get(0).getOutput().equals("")){
             output.setVisibility(View.GONE);
+            outputTxt.setVisibility(View.GONE);
         }
 
         nextBtn.setOnClickListener(new View.OnClickListener() {
@@ -110,7 +113,6 @@ public class LearnDetailsActivity extends AppCompatActivity {
                 if (currentTopicPosition == 0){
                     prevBtn.setVisibility(View.GONE);
                     nextBtn.setText(R.string.next);
-                    nextBtn.setBackgroundResource(R.drawable.ic_quiz_option_bg);
                 }else {
                     prevBtn.setVisibility(View.VISIBLE);
                 }
@@ -120,7 +122,7 @@ public class LearnDetailsActivity extends AppCompatActivity {
         shareBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                shareBtn.setBackgroundResource(R.drawable.ic_learn_share_button_bg);
+                shareBtn.setBackgroundResource(R.drawable.ic_quiz_option_bg);
                 String shareBody =
                         "Topic: "+learnList.get(currentTopicPosition).getTitle() + "\n\n"+
                         "Details: "+learnList.get(currentTopicPosition).getDetails() + "\n\n\n"+
@@ -151,11 +153,14 @@ public class LearnDetailsActivity extends AppCompatActivity {
             details.setText(learnList.get(currentTopicPosition).getDetails());
             codes.showCode(learnList.get(currentTopicPosition).getCodes());
             output.showCode(learnList.get(currentTopicPosition).getOutput());
+            //empty conditions
             if (learnList.get(currentTopicPosition).getCodes().equals("")){
                 codes.setVisibility(View.GONE);
+                outputTxt.setVisibility(View.GONE);
             }
             if (learnList.get(currentTopicPosition).getOutput().equals("")){
                 output.setVisibility(View.GONE);
+                outputTxt.setVisibility(View.GONE);
             }
 
         }else {
@@ -174,9 +179,11 @@ public class LearnDetailsActivity extends AppCompatActivity {
             output.showCode(learnList.get(currentTopicPosition).getOutput());
             if (learnList.get(currentTopicPosition).getCodes().equals("")){
                 codes.setVisibility(View.GONE);
+                outputTxt.setVisibility(View.GONE);
             }
             if (learnList.get(currentTopicPosition).getOutput().equals("")){
                 output.setVisibility(View.GONE);
+                outputTxt.setVisibility(View.GONE);
             }
 
         }

@@ -89,11 +89,10 @@ public class FollowUsActivity extends AppCompatActivity {
                 startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(getString(R.string.play_website))));
             }
         });
-        binding.viewFeedback.setOnClickListener(new View.OnClickListener() {
+        binding.contactUs.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(FollowUsActivity.this,FeedBackActivity.class);
-                startActivity(intent);
+                startActivity(new Intent(Intent.ACTION_VIEW,Uri.parse("mailto:" + "info@shrcreation.com")));
             }
         });
     }

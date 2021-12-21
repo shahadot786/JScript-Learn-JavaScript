@@ -15,9 +15,9 @@
     <string name="play_website">https://www.shrcreation.com</string>
     <string name="play_rate_now">https://play.google.com/store/apps/details?id=com.javascript.jscript</string>
     <string name="share_message">Hey check out this app to learn Javascript:</string>
-    <string name="share_message2">JavaScript tutorial provides basic and advanced concepts of JavaScript. Our JavaScript tutorial is designed for beginners and professionals.</string>
-    <string name="share_message3">JavaScript tutorial provides basic and advanced concepts of JavaScript. Our JavaScript tutorial is designed for beginners and professionals.</string>
-    <string name="share_message4">JavaScript tutorial provides basic and advanced concepts of JavaScript. Our JavaScript tutorial is designed for beginners and professionals.</string>
+    <string name="share_message2">Learn, Practice Programs, Play Quiz and Discuss your problems frequently.</string>
+    <string name="share_message3">Learn JavaScript start to end with QA &amp; Practice Programs. More than 4000+ Programs.</string>
+    <string name="share_message4">Discuss your problems in details with the large JScript QA community.</string>
 
     <!--Admob Ads-->
     <string name="app_id">ca-app-pub-1183995713269973~4276200822</string>
@@ -169,7 +169,7 @@
     <string name="invalid_username">Not a valid username</string>
     <string name="invalid_password">Password must be >5 characters</string>
     <string name="login_failed">"Login failed"</string>
-    <string name="sign_in_with_google">Sign In With Google</string>
+    <string name="sign_in_with_google">Sign in with Google</string>
     <string name="just_one_tap_to_go">Just one tap to go</string>
     <string name="start">BUY NOW</string>
     <string name="cp_programs_constant">1000</string>
@@ -228,7 +228,7 @@
     <string name="post">Post</string>
     <string name="write_your_descriptions">Write your descriptions</string>
     <string name="write_your_answer_here">Write your reply here</string>
-    <string name="or_sign_up_with_email">or Sign up with email</string>
+    <string name="or_sign_up_with_email">Sign up with Email</string>
     <string name="buy_now">Upgrade Now</string>
     <string name="or_sign_in_with_google">Or Sign in with Google</string>
     <string name="limited_time_offer">Limited time offer</string>

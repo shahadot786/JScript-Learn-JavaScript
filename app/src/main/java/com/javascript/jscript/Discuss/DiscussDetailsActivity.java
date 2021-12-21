@@ -96,7 +96,6 @@ public class DiscussDetailsActivity extends AppCompatActivity {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
                 DiscussModel discuss = snapshot.getValue(DiscussModel.class);
-                assert discuss != null;
                 //for share data
                 question = discuss.getQuestions();
                 description = discuss.getDescription();
@@ -122,7 +121,6 @@ public class DiscussDetailsActivity extends AppCompatActivity {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
                 UserModel user = snapshot.getValue(UserModel.class);
-                assert user != null;
                 Picasso.get()
                         .load(user.getProfile())
                         .placeholder(R.drawable.ic_profile_default_image)

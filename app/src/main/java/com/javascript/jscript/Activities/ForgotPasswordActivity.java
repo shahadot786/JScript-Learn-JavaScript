@@ -100,7 +100,7 @@ public class ForgotPasswordActivity extends AppCompatActivity {
     private boolean validateEmail() {
         String emailInput = Objects.requireNonNull(textInputLayoutEmail.getEditText()).getText().toString().trim();
         if (emailInput.isEmpty()) {
-            textInputLayoutEmail.setError("Field can't be empty");
+            textInputLayoutEmail.setError("Email is required");
             return false;
         } else if (!Patterns.EMAIL_ADDRESS.matcher(emailInput).matches()) {
             textInputLayoutEmail.setError("Please enter a valid email address");

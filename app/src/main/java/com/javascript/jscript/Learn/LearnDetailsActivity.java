@@ -9,9 +9,16 @@ import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
+import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 import com.javascript.jscript.BuildConfig;
 import com.javascript.jscript.Config.UiConfig;
 import com.javascript.jscript.Model.LearnDetailsModel;
@@ -34,12 +41,17 @@ public class LearnDetailsActivity extends AppCompatActivity {
     TextView title,details,outputTxt;
     CodeView codes,output;
     private AppCompatButton prevBtn,nextBtn,shareBtn;
+    FirebaseDatabase database;
+    FirebaseAuth auth;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         binding = ActivityLearnDetailsBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
+        //firebase instance
+        database = FirebaseDatabase.getInstance();
+        auth = FirebaseAuth.getInstance();
         //toolbar
         setSupportActionBar(binding.toolbar2);
         LearnDetailsActivity.this.setTitle("Details");
@@ -162,6 +174,43 @@ public class LearnDetailsActivity extends AppCompatActivity {
             }
 
         }else {
+            //send progress value
+            database.getReference()
+                    .child("Progress")
+                    .child(Objects.requireNonNull(FirebaseAuth.getInstance().getUid()))
+                    .child("learnProgress")
+                    .addListenerForSingleValueEvent(new ValueEventListener() {
+                        @Override
+                        public void onDataChange(@NonNull DataSnapshot snapshot) {
+                            int learnCount = 0;
+                            if (snapshot.exists()){
+                                learnCount = snapshot.getValue(Integer.class);
+                            }
+                            database.getReference()
+                                    .child("Progress")
+                                    .child(Objects.requireNonNull(FirebaseAuth.getInstance().getUid()))
+                                    .child("learnProgress")
+                                    .setValue(learnCount + 1)
+                                    .addOnSuccessListener(new OnSuccessListener<Void>() {
+                                        @Override
+                                        public void onSuccess(@NonNull Void unused) {
+                                            Toast.makeText(LearnDetailsActivity.this, "Learn Progress", Toast.LENGTH_SHORT).show();
+                                        }
+                                    });
+
+
+
+                        }
+
+                        @Override
+                        public void onCancelled(@NonNull DatabaseError error) {
+
+                        }
+                    });
+
+
+
+
             finish();
         }
     }

@@ -33,12 +33,4 @@ public class CourseProgress {
     public void setProgramsCount(int programsCount) {
         this.programsCount = programsCount;
     }
-
-    public int getInterviewCount() {
-        return interviewCount;
-    }
-
-    public void setInterviewCount(int interviewCount) {
-        this.interviewCount = interviewCount;
-    }
 }

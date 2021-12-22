@@ -18,8 +18,9 @@
                 android:thicknessRatio="16"
                 android:useLevel="true">
                 <gradient
-                    android:startColor="@color/color_app_gradient_start"
-                    android:endColor="@color/color_app_gradient_end"
+                    android:startColor="@color/color_instagram"
+                    android:endColor="@color/color_linkedin"
+                    android:centerColor="@color/color_play_store"
                     android:type="linear"/>
             </shape>
         </rotate>

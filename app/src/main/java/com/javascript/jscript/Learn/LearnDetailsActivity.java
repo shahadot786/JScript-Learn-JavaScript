@@ -204,6 +204,7 @@ public class LearnDetailsActivity extends AppCompatActivity {
                         }
                     });
 
+
             finish();
         }
     }

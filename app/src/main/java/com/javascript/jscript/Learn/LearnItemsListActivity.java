@@ -28,8 +28,6 @@ public class LearnItemsListActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         binding = ActivityLearnItemsListBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
-
-        adNetwork = new AdNetwork(LearnItemsListActivity.this);
         //toolbar
         setSupportActionBar(binding.toolbar2);
         LearnItemsListActivity.this.setTitle("Learn");
@@ -39,10 +37,13 @@ public class LearnItemsListActivity extends AppCompatActivity {
         LearnItemsListActivity.CustomAdapter adapter = new LearnItemsListActivity.CustomAdapter();
         learnList.setAdapter(adapter);
         //load ad
+        adNetwork = new AdNetwork(LearnItemsListActivity.this);
         adNetwork.loadInterstitialAd();
+
         learnList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                //intent
                 Intent intent = new Intent(LearnItemsListActivity.this, LearnDetailsActivity.class);
                 intent.putExtra("learnTopics",list[i]);
                 startActivity(intent);
@@ -50,8 +51,7 @@ public class LearnItemsListActivity extends AppCompatActivity {
             }
         });
 
-
-    }
+    }//ends of onCreate
     private void loadItems() {
         final String basic[] = {
                 "Learn Basic",

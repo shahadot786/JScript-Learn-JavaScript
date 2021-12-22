@@ -43,6 +43,16 @@ public class ProfileFragment extends Fragment {
     FirebaseStorage storage;
     FirebaseDatabase database;
     ProgressDialog dialog;
+    //fixed count
+    private final int listCountLearn = 400;
+    private final int listCountQuiz = 800;
+    private final int listCountPrograms = 1000;
+    private final int listCountInterview = 500;
+    //note: all divided result is 100(listCount / dividedCount = 100)
+    private final int dividedLearn = 4;
+    private final int dividedQuiz = 8;
+    private final int dividedPrograms = 10;
+    private final int dividedInterview = 5;
 
 
     public ProfileFragment() {
@@ -277,7 +287,6 @@ public class ProfileFragment extends Fragment {
                 startActivity(intent);
             }
         });
-
         //code of learn progress
         database.getReference().child("Progress")
                 .child(Objects.requireNonNull(FirebaseAuth.getInstance().getUid()))
@@ -292,33 +301,33 @@ public class ProfileFragment extends Fragment {
                             int programProgress = progress.getProgramsCount();
                             int interviewProgress = progress.getInterviewCount();
                             //learn progress
-                            if (learnProgress<=100){
-                                binding.learnProgressBar.setProgress(learnProgress);
-                                binding.learnText.setText(String.format("%s%%", learnProgress));
+                            if (learnProgress<=listCountLearn){
+                                binding.learnProgressBar.setProgress(learnProgress/dividedLearn);
+                                binding.learnText.setText(String.format("%s%%", learnProgress/dividedLearn));
                             }else {
                                 binding.learnProgressBar.setProgress(100);
                                 binding.learnText.setText(String.format("%s%%", 100));
                             }
                             //quiz progress
-                            if (quizProgress<=100){
-                                binding.quizProgressBar.setProgress(quizProgress);
-                                binding.quizText.setText(String.format("%s%%", quizProgress));
+                            if (quizProgress<=listCountQuiz){
+                                binding.quizProgressBar.setProgress(quizProgress/dividedQuiz);
+                                binding.quizText.setText(String.format("%s%%", quizProgress/dividedQuiz));
                             }else {
                                 binding.quizProgressBar.setProgress(100);
                                 binding.quizText.setText(String.format("%s%%", 100));
                             }
                             //programs progress
-                            if (programProgress<=100){
-                                binding.programsProgressBar.setProgress(programProgress);
-                                binding.programsText.setText(String.format("%s%%", programProgress));
+                            if (programProgress<=listCountPrograms){
+                                binding.programsProgressBar.setProgress(programProgress/dividedPrograms);
+                                binding.programsText.setText(String.format("%s%%", programProgress/dividedPrograms));
                             }else {
                                 binding.programsProgressBar.setProgress(100);
                                 binding.programsText.setText(String.format("%s%%", 100));
                             }
                             //interview progress
-                            if (interviewProgress<=100){
-                                binding.interviewProgressBar.setProgress(interviewProgress);
-                                binding.interviewText.setText(String.format("%s%%", interviewProgress));
+                            if (interviewProgress<=listCountInterview){
+                                binding.interviewProgressBar.setProgress(interviewProgress/dividedInterview);
+                                binding.interviewText.setText(String.format("%s%%", interviewProgress/dividedInterview));
                             }else {
                                 binding.interviewProgressBar.setProgress(100);
                                 binding.interviewText.setText(String.format("%s%%", 100));

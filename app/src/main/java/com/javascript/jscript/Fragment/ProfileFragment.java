@@ -27,6 +27,7 @@ import com.javascript.jscript.Activities.EditProfileActivity;
 import com.javascript.jscript.Activities.GoogleSignInActivity;
 import com.javascript.jscript.Activities.PremiumActivity;
 import com.javascript.jscript.Config.UiConfig;
+import com.javascript.jscript.Model.CourseProgress;
 import com.javascript.jscript.Model.ProfileModel;
 import com.javascript.jscript.Model.UserModel;
 import com.javascript.jscript.R;
@@ -83,6 +84,31 @@ public class ProfileFragment extends Fragment {
         } else {
             binding.promotion.setVisibility(View.GONE);
         }
+
+        database.getReference().child("Progress")
+                .child(Objects.requireNonNull(FirebaseAuth.getInstance().getUid()))
+                .addListenerForSingleValueEvent(new ValueEventListener() {
+                    @Override
+                    public void onDataChange(@NonNull DataSnapshot snapshot) {
+                        if (snapshot.exists()){
+                            CourseProgress progress = snapshot.getValue(CourseProgress.class);
+                            assert progress != null;
+                            int learnProgress = progress.getLearnCount();
+                            if (learnProgress<=100){
+                                binding.learnProgressBar.setProgress(learnProgress);
+                                binding.progressText.setText(String.format("%s%%", learnProgress));
+                            }else {
+                                binding.learnProgressBar.setProgress(100);
+                                binding.progressText.setText(String.format("%s%%", 100));
+                            }
+                        }
+                    }
+
+                    @Override
+                    public void onCancelled(@NonNull DatabaseError error) {
+
+                    }
+                });
 
         /*check if user is sign in or sign out*/
         FirebaseUser currentUser = auth.getCurrentUser();
@@ -277,6 +303,12 @@ public class ProfileFragment extends Fragment {
                 startActivity(intent);
             }
         });
+
+        //code of learn progress
+
+
+
+
 
 
         return binding.getRoot();

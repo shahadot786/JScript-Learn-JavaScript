@@ -21,6 +21,7 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 import com.javascript.jscript.BuildConfig;
 import com.javascript.jscript.Config.UiConfig;
+import com.javascript.jscript.Model.CourseProgress;
 import com.javascript.jscript.Model.LearnDetailsModel;
 import com.javascript.jscript.R;
 import com.javascript.jscript.Utils.AdNetwork;
@@ -178,7 +179,7 @@ public class LearnDetailsActivity extends AppCompatActivity {
             database.getReference()
                     .child("Progress")
                     .child(Objects.requireNonNull(FirebaseAuth.getInstance().getUid()))
-                    .child("learnProgress")
+                    .child("learnCount")
                     .addListenerForSingleValueEvent(new ValueEventListener() {
                         @Override
                         public void onDataChange(@NonNull DataSnapshot snapshot) {
@@ -189,7 +190,7 @@ public class LearnDetailsActivity extends AppCompatActivity {
                             database.getReference()
                                     .child("Progress")
                                     .child(Objects.requireNonNull(FirebaseAuth.getInstance().getUid()))
-                                    .child("learnProgress")
+                                    .child("learnCount")
                                     .setValue(learnCount + 1)
                                     .addOnSuccessListener(new OnSuccessListener<Void>() {
                                         @Override

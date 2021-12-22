@@ -241,5 +241,7 @@
     <string name="interview">Interview</string>
     <string name="programs">Programs</string>
     <string name="_0">0%</string>
+    <string name="my_progress">My Progress :</string>
+    <string name="click_to_finish">Click to finish</string>
 
 </resources>

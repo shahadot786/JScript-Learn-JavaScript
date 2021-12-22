@@ -77,7 +77,7 @@
                     android:layout_marginTop="8dp"
                     android:text="@string/output"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/learnCodeView" />
+                    app:layout_constraintTop_toBottomOf="@+id/questionDes" />
 
                 <TextView
                     android:id="@+id/learnDetails"
@@ -96,7 +96,7 @@
                     tools:ignore="SpeakableTextPresentCheck" />
 
                 <thereisnospon.codeview.CodeView
-                    android:id="@+id/learnCodeView"
+                    android:id="@+id/questionDes"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="16dp"

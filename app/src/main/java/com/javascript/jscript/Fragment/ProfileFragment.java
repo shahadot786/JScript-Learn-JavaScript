@@ -288,6 +288,10 @@ public class ProfileFragment extends Fragment {
                             CourseProgress progress = snapshot.getValue(CourseProgress.class);
                             assert progress != null;
                             int learnProgress = progress.getLearnCount();
+                            int quizProgress = progress.getQuizCount();
+                            int programProgress = progress.getProgramsCount();
+                            int interviewProgress = progress.getInterviewCount();
+                            //learn progress
                             if (learnProgress<=100){
                                 binding.learnProgressBar.setProgress(learnProgress);
                                 binding.learnText.setText(String.format("%s%%", learnProgress));
@@ -295,6 +299,31 @@ public class ProfileFragment extends Fragment {
                                 binding.learnProgressBar.setProgress(100);
                                 binding.learnText.setText(String.format("%s%%", 100));
                             }
+                            //quiz progress
+                            if (quizProgress<=100){
+                                binding.quizProgressBar.setProgress(quizProgress);
+                                binding.quizText.setText(String.format("%s%%", quizProgress));
+                            }else {
+                                binding.quizProgressBar.setProgress(100);
+                                binding.quizText.setText(String.format("%s%%", 100));
+                            }
+                            //programs progress
+                            if (programProgress<=100){
+                                binding.programsProgressBar.setProgress(programProgress);
+                                binding.programsText.setText(String.format("%s%%", programProgress));
+                            }else {
+                                binding.programsProgressBar.setProgress(100);
+                                binding.programsText.setText(String.format("%s%%", 100));
+                            }
+                            //interview progress
+                            if (interviewProgress<=100){
+                                binding.interviewProgressBar.setProgress(interviewProgress);
+                                binding.interviewText.setText(String.format("%s%%", interviewProgress));
+                            }else {
+                                binding.interviewProgressBar.setProgress(100);
+                                binding.interviewText.setText(String.format("%s%%", 100));
+                            }
+
                         }
                     }
 

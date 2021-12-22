@@ -1,13 +1,21 @@
 package com.javascript.jscript.Programs;
 
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
+import android.content.res.ColorStateList;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
 
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
+
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
+import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 import com.javascript.jscript.Config.UiConfig;
 import com.javascript.jscript.R;
 import com.javascript.jscript.databinding.ActivityProgramsCodeBinding;
@@ -19,21 +27,26 @@ import thereisnospon.codeview.CodeViewTheme;
 
 public class ProgramsCodeActivity extends AppCompatActivity {
     ActivityProgramsCodeBinding binding;
-    CodeView codeView,outCodeView;
+    CodeView codeView, outCodeView;
     private AdView bannerAd;
+    FirebaseDatabase database;
+    FirebaseAuth auth;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         binding = ActivityProgramsCodeBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
+        //firebase instance
+        database = FirebaseDatabase.getInstance();
+        auth = FirebaseAuth.getInstance();
         //ad request
         bannerAd = findViewById(R.id.adView);
         AdRequest adRequest = new AdRequest.Builder().build();
         bannerAd.loadAd(adRequest);
-        if (UiConfig.BANNER_AD_VISIBILITY){
+        if (UiConfig.BANNER_AD_VISIBILITY) {
             bannerAd.setVisibility(View.VISIBLE);
-        }else {
+        } else {
             bannerAd.setVisibility(View.GONE);
         }
         //toolbar
@@ -44,16 +57,58 @@ public class ProgramsCodeActivity extends AppCompatActivity {
         codeView = findViewById(R.id.codeView);
         codeView.setTheme(CodeViewTheme.ATELIER_SAVANNA_DARK).fillColor();
         //code view for output
-        outCodeView = findViewById(R.id.learnCodeView);
+        outCodeView = findViewById(R.id.questionDes);
         outCodeView.setTheme(CodeViewTheme.ANDROIDSTUDIO).fillColor();
 
         loadCodes();
         loadOutputs();
-    }
+
+        //progress value
+        binding.finish.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                binding.finish.setBackgroundTintList(ColorStateList.valueOf(getResources().getColor(R.color.colorSecondary)));
+                binding.finish.setTextColor(getResources().getColor(R.color.textColorGrey));
+                //send progress value
+                database.getReference()
+                        .child("Progress")
+                        .child(Objects.requireNonNull(FirebaseAuth.getInstance().getUid()))
+                        .child("programsCount")
+                        .addListenerForSingleValueEvent(new ValueEventListener() {
+                            @Override
+                            public void onDataChange(@NonNull DataSnapshot snapshot) {
+                                int programsCount = 0;
+                                if (snapshot.exists()) {
+                                    programsCount = snapshot.getValue(Integer.class);
+                                }
+                                database.getReference()
+                                        .child("Progress")
+                                        .child(Objects.requireNonNull(FirebaseAuth.getInstance().getUid()))
+                                        .child("programsCount")
+                                        .setValue(programsCount + 1)
+                                        .addOnSuccessListener(new OnSuccessListener<Void>() {
+                                            @Override
+                                            public void onSuccess(@NonNull Void unused) {
+
+                                            }
+                                        });
+                            }
+
+                            @Override
+                            public void onCancelled(@NonNull DatabaseError error) {
+
+                            }
+                        });
+                finish();
+            }
+        });
+
+    }//ends of onCreate
+
     //load code
     private void loadCodes() {
         String code = null;
-        switch (getIntent().getStringExtra("position")){
+        switch (getIntent().getStringExtra("position")) {
             case "Basic":
                 code = BasicProgramsCodes.basic;
                 break;
@@ -78,10 +133,11 @@ public class ProgramsCodeActivity extends AppCompatActivity {
         codeView.showCode(code);
 
     }
+
     //load output
     private void loadOutputs() {
         String output = null;
-        switch (getIntent().getStringExtra("output")){
+        switch (getIntent().getStringExtra("output")) {
             case "Basic":
                 output = BasicProgramsCodes.basicOutput1;
                 break;
@@ -99,6 +155,7 @@ public class ProgramsCodeActivity extends AppCompatActivity {
         outCodeView.showCode(output);
 
     }
+
     //option menu item select
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {

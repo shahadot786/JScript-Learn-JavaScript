@@ -1,8 +1,5 @@
 package com.javascript.jscript.Quiz;
 
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.AppCompatButton;
 import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.graphics.Color;
@@ -11,8 +8,19 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.AppCompatButton;
+
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
+import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 import com.javascript.jscript.BuildConfig;
 import com.javascript.jscript.Config.UiConfig;
 import com.javascript.jscript.Model.QuizListModel;
@@ -26,18 +34,24 @@ import java.util.Objects;
 public class QuizDetailsActivity extends AppCompatActivity {
 
     ActivityQuizDetailsBinding binding;
+    FirebaseDatabase database;
+    FirebaseAuth auth;
     private AdView bannerAd;
     private AdNetwork adNetwork;
     private List<QuizListModel> questionList;
     private int currentQuestionPosition = 0;
     private String selectedOptionByUser = "";
-    TextView quizCount,question;
-    private AppCompatButton option1,option2,option3,option4,nextBtn,shareBtn;
+    TextView quizCount, question;
+    private AppCompatButton option1, option2, option3, option4, nextBtn, shareBtn;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         binding = ActivityQuizDetailsBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
+        //firebase instance
+        database = FirebaseDatabase.getInstance();
+        auth = FirebaseAuth.getInstance();
         //toolbar
         setSupportActionBar(binding.toolbar2);
         QuizDetailsActivity.this.setTitle("Quiz");
@@ -50,9 +64,9 @@ public class QuizDetailsActivity extends AppCompatActivity {
         bannerAd = findViewById(R.id.adView);
         AdRequest adRequest = new AdRequest.Builder().build();
         bannerAd.loadAd(adRequest);
-        if (UiConfig.BANNER_AD_VISIBILITY){
+        if (UiConfig.BANNER_AD_VISIBILITY) {
             bannerAd.setVisibility(View.VISIBLE);
-        }else {
+        } else {
             bannerAd.setVisibility(View.GONE);
         }
         //quiz code
@@ -70,7 +84,7 @@ public class QuizDetailsActivity extends AppCompatActivity {
 
         questionList = QuizQuestionsBank.getQuestions(getSelectedTopicName);
 
-        String count = currentQuestionPosition+1 +" - "+ questionList.size();
+        String count = currentQuestionPosition + 1 + " - " + questionList.size();
         quizCount.setText(count);
         question.setText(questionList.get(0).getQuestion());
         option1.setText(questionList.get(0).getOption1());
@@ -81,7 +95,7 @@ public class QuizDetailsActivity extends AppCompatActivity {
         option1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if (selectedOptionByUser.isEmpty()){
+                if (selectedOptionByUser.isEmpty()) {
                     selectedOptionByUser = option1.getText().toString();
                     option1.setBackgroundResource(R.drawable.ic_quiz_option_bg_red);
                     option1.setTextColor(Color.WHITE);
@@ -98,7 +112,7 @@ public class QuizDetailsActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                if (selectedOptionByUser.isEmpty()){
+                if (selectedOptionByUser.isEmpty()) {
                     selectedOptionByUser = option2.getText().toString();
                     option2.setBackgroundResource(R.drawable.ic_quiz_option_bg_red);
                     option2.setTextColor(Color.WHITE);
@@ -115,7 +129,7 @@ public class QuizDetailsActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                if (selectedOptionByUser.isEmpty()){
+                if (selectedOptionByUser.isEmpty()) {
                     selectedOptionByUser = option3.getText().toString();
                     option3.setBackgroundResource(R.drawable.ic_quiz_option_bg_red);
                     option3.setTextColor(Color.WHITE);
@@ -132,7 +146,7 @@ public class QuizDetailsActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                if (selectedOptionByUser.isEmpty()){
+                if (selectedOptionByUser.isEmpty()) {
                     selectedOptionByUser = option4.getText().toString();
                     option4.setBackgroundResource(R.drawable.ic_quiz_option_bg_red);
                     option4.setTextColor(Color.WHITE);
@@ -149,10 +163,9 @@ public class QuizDetailsActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                if (selectedOptionByUser.isEmpty()){
+                if (selectedOptionByUser.isEmpty()) {
                     Toast.makeText(QuizDetailsActivity.this, "Please select an option", Toast.LENGTH_SHORT).show();
-                }
-                else {
+                } else {
                     adNetwork.showInterstitialAd();
                     changeNextQuestion();
                 }
@@ -164,19 +177,19 @@ public class QuizDetailsActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 String shareBody =
-                        "Question: "+questionList.get(currentQuestionPosition).getQuestion() + "\n\n"+
-                        "1. "+questionList.get(currentQuestionPosition).getOption1() + "\n"+
-                        "2. "+questionList.get(currentQuestionPosition).getOption2() + "\n"+
-                        "3. "+questionList.get(currentQuestionPosition).getOption3() + "\n"+
-                        "4. "+questionList.get(currentQuestionPosition).getOption4() + "\n\n\n\n" +
-                        "Play Quiz in JScript" + "\n"+
-                        "https://play.google.com/store/apps/details?id=" +
-                        BuildConfig.APPLICATION_ID;
+                        "Question: " + questionList.get(currentQuestionPosition).getQuestion() + "\n\n" +
+                                "1. " + questionList.get(currentQuestionPosition).getOption1() + "\n" +
+                                "2. " + questionList.get(currentQuestionPosition).getOption2() + "\n" +
+                                "3. " + questionList.get(currentQuestionPosition).getOption3() + "\n" +
+                                "4. " + questionList.get(currentQuestionPosition).getOption4() + "\n\n\n\n" +
+                                "Play Quiz in JScript" + "\n" +
+                                "https://play.google.com/store/apps/details?id=" +
+                                BuildConfig.APPLICATION_ID;
 
                 Intent shareIntent = new Intent();
                 shareIntent.setAction(Intent.ACTION_SEND);
-                shareIntent.putExtra(Intent.EXTRA_SUBJECT,"JavaScript Quiz");
-                shareIntent.putExtra(Intent.EXTRA_TEXT,shareBody);
+                shareIntent.putExtra(Intent.EXTRA_SUBJECT, "JavaScript Quiz");
+                shareIntent.putExtra(Intent.EXTRA_TEXT, shareBody);
                 shareIntent.setType("text/plain");
                 startActivity(shareIntent);
             }
@@ -186,13 +199,13 @@ public class QuizDetailsActivity extends AppCompatActivity {
 
     //for change question
     @SuppressLint("SetTextI18n")
-    private void changeNextQuestion(){
+    private void changeNextQuestion() {
         currentQuestionPosition++;
-        if ((currentQuestionPosition + 1) == questionList.size()){
+        if ((currentQuestionPosition + 1) == questionList.size()) {
             nextBtn.setText("Submit Quiz");
         }
 
-        if (currentQuestionPosition < questionList.size()){
+        if (currentQuestionPosition < questionList.size()) {
             selectedOptionByUser = "";
 
             option1.setTextColor(Color.WHITE);
@@ -208,7 +221,7 @@ public class QuizDetailsActivity extends AppCompatActivity {
             option4.setBackgroundResource(R.drawable.ic_quiz_option_bg);
 
 
-            String count = currentQuestionPosition+1 +" - "+ questionList.size();
+            String count = currentQuestionPosition + 1 + " - " + questionList.size();
             quizCount.setText(count);
             question.setText(questionList.get(currentQuestionPosition).getQuestion());
             option1.setText(questionList.get(currentQuestionPosition).getOption1());
@@ -216,25 +229,55 @@ public class QuizDetailsActivity extends AppCompatActivity {
             option3.setText(questionList.get(currentQuestionPosition).getOption3());
             option4.setText(questionList.get(currentQuestionPosition).getOption4());
 
-        }
-        else {
-            Intent intent = new Intent(QuizDetailsActivity.this,QuizResultActivity.class);
-            intent.putExtra("correct",getCorrectAnswers());
-            intent.putExtra("incorrect",getInCorrectAnswers());
+        } else {
+            //send progress value
+            database.getReference()
+                    .child("Progress")
+                    .child(Objects.requireNonNull(FirebaseAuth.getInstance().getUid()))
+                    .child("quizCount")
+                    .addListenerForSingleValueEvent(new ValueEventListener() {
+                        @Override
+                        public void onDataChange(@NonNull DataSnapshot snapshot) {
+                            int quizCount = 0;
+                            if (snapshot.exists()) {
+                                quizCount = snapshot.getValue(Integer.class);
+                            }
+                            database.getReference()
+                                    .child("Progress")
+                                    .child(Objects.requireNonNull(FirebaseAuth.getInstance().getUid()))
+                                    .child("quizCount")
+                                    .setValue(quizCount + 1)
+                                    .addOnSuccessListener(new OnSuccessListener<Void>() {
+                                        @Override
+                                        public void onSuccess(@NonNull Void unused) {
+
+                                        }
+                                    });
+                        }
+
+                        @Override
+                        public void onCancelled(@NonNull DatabaseError error) {
+
+                        }
+                    });
+            Intent intent = new Intent(QuizDetailsActivity.this, QuizResultActivity.class);
+            intent.putExtra("correct", getCorrectAnswers());
+            intent.putExtra("incorrect", getInCorrectAnswers());
             startActivity(intent);
             finish();
         }
 
     }
+
     //get correct answer
-    private int getCorrectAnswers(){
+    private int getCorrectAnswers() {
         int correctAnswers = 0;
 
-        for (int i=0;i<questionList.size();i++){
+        for (int i = 0; i < questionList.size(); i++) {
             final String getUserSelectedAnswer = questionList.get(i).getUserSelectedAnswer();
             final String getAnswer = questionList.get(i).getAnswer();
 
-            if (getUserSelectedAnswer.equals(getAnswer)){
+            if (getUserSelectedAnswer.equals(getAnswer)) {
                 correctAnswers++;
             }
 
@@ -243,14 +286,14 @@ public class QuizDetailsActivity extends AppCompatActivity {
     }
 
     //get wrong answer
-    private int getInCorrectAnswers(){
+    private int getInCorrectAnswers() {
         int correctAnswers = 0;
 
-        for (int i=0;i<questionList.size();i++){
+        for (int i = 0; i < questionList.size(); i++) {
             final String getUserSelectedAnswer = questionList.get(i).getUserSelectedAnswer();
             final String getAnswer = questionList.get(i).getAnswer();
 
-            if (!getUserSelectedAnswer.equals(getAnswer)){
+            if (!getUserSelectedAnswer.equals(getAnswer)) {
                 correctAnswers++;
             }
 
@@ -259,25 +302,23 @@ public class QuizDetailsActivity extends AppCompatActivity {
     }
 
     //for answer
-    private void revealAnswer(){
+    private void revealAnswer() {
         final String getAnswer = questionList.get(currentQuestionPosition).getAnswer();
-        if (option1.getText().toString().equals(getAnswer)){
+        if (option1.getText().toString().equals(getAnswer)) {
             option1.setBackgroundResource(R.drawable.ic_quiz_option_bg_green);
             option1.setTextColor(Color.WHITE);
-        }
-        else if (option2.getText().toString().equals(getAnswer)){
+        } else if (option2.getText().toString().equals(getAnswer)) {
             option2.setBackgroundResource(R.drawable.ic_quiz_option_bg_green);
             option2.setTextColor(Color.WHITE);
-        }
-        else if (option3.getText().toString().equals(getAnswer)){
+        } else if (option3.getText().toString().equals(getAnswer)) {
             option3.setBackgroundResource(R.drawable.ic_quiz_option_bg_green);
             option3.setTextColor(Color.WHITE);
-        }
-        else if (option4.getText().toString().equals(getAnswer)){
+        } else if (option4.getText().toString().equals(getAnswer)) {
             option4.setBackgroundResource(R.drawable.ic_quiz_option_bg_green);
             option4.setTextColor(Color.WHITE);
         }
     }
+
     //option menu item select
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {

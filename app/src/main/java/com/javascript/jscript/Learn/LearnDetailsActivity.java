@@ -1,15 +1,14 @@
 package com.javascript.jscript.Learn;
 
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.AppCompatButton;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.TextView;
-import android.widget.Toast;
+
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.AppCompatButton;
 
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
@@ -21,7 +20,6 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 import com.javascript.jscript.BuildConfig;
 import com.javascript.jscript.Config.UiConfig;
-import com.javascript.jscript.Model.CourseProgress;
 import com.javascript.jscript.Model.LearnDetailsModel;
 import com.javascript.jscript.R;
 import com.javascript.jscript.Utils.AdNetwork;
@@ -39,9 +37,9 @@ public class LearnDetailsActivity extends AppCompatActivity {
     private AdNetwork adNetwork;
     private List<LearnDetailsModel> learnList;
     private int currentTopicPosition = 0;
-    TextView title,details,outputTxt;
-    CodeView codes,output;
-    private AppCompatButton prevBtn,nextBtn,shareBtn;
+    TextView title, details, outputTxt;
+    CodeView codes, output;
+    private AppCompatButton prevBtn, nextBtn, shareBtn;
     FirebaseDatabase database;
     FirebaseAuth auth;
 
@@ -65,9 +63,9 @@ public class LearnDetailsActivity extends AppCompatActivity {
         AdView bannerAd = findViewById(R.id.adView);
         AdRequest adRequest = new AdRequest.Builder().build();
         bannerAd.loadAd(adRequest);
-        if (UiConfig.BANNER_AD_VISIBILITY){
+        if (UiConfig.BANNER_AD_VISIBILITY) {
             bannerAd.setVisibility(View.VISIBLE);
-        }else {
+        } else {
             bannerAd.setVisibility(View.GONE);
         }
         //find id
@@ -75,7 +73,7 @@ public class LearnDetailsActivity extends AppCompatActivity {
         details = findViewById(R.id.learnDetails);
         outputTxt = findViewById(R.id.output);
         //code
-        codes = findViewById(R.id.learnCodeView);
+        codes = findViewById(R.id.questionDes);
         output = findViewById(R.id.learnOutputView);
         codes.setTheme(CodeViewTheme.ATELIER_SAVANNA_DARK).fillColor();
         output.setTheme(CodeViewTheme.ANDROIDSTUDIO).fillColor();
@@ -92,11 +90,11 @@ public class LearnDetailsActivity extends AppCompatActivity {
         details.setText(learnList.get(0).getDetails());
         codes.showCode(learnList.get(0).getCodes());
         output.showCode(learnList.get(0).getOutput());
-        if (learnList.get(0).getCodes().equals("")){
+        if (learnList.get(0).getCodes().equals("")) {
             codes.setVisibility(View.GONE);
             outputTxt.setVisibility(View.GONE);
         }
-        if (learnList.get(0).getOutput().equals("")){
+        if (learnList.get(0).getOutput().equals("")) {
             output.setVisibility(View.GONE);
             outputTxt.setVisibility(View.GONE);
         }
@@ -107,9 +105,9 @@ public class LearnDetailsActivity extends AppCompatActivity {
                 nextBtn.setBackgroundResource(R.drawable.ic_learn_next_button_bg);
                 adNetwork.showInterstitialAd();
                 changeNextQuestion();
-                if (currentTopicPosition == 0){
+                if (currentTopicPosition == 0) {
                     prevBtn.setVisibility(View.GONE);
-                }else {
+                } else {
                     prevBtn.setVisibility(View.VISIBLE);
                 }
             }
@@ -121,10 +119,10 @@ public class LearnDetailsActivity extends AppCompatActivity {
                 prevBtn.setBackgroundResource(R.drawable.ic_learn_prev_button_bg);
                 adNetwork.showInterstitialAd();
                 changePrevQuestion();
-                if (currentTopicPosition == 0){
+                if (currentTopicPosition == 0) {
                     prevBtn.setVisibility(View.GONE);
                     nextBtn.setText(R.string.next);
-                }else {
+                } else {
                     prevBtn.setVisibility(View.VISIBLE);
                 }
             }
@@ -135,18 +133,18 @@ public class LearnDetailsActivity extends AppCompatActivity {
             public void onClick(View view) {
                 shareBtn.setBackgroundResource(R.drawable.ic_quiz_option_bg);
                 String shareBody =
-                        "Topic: "+learnList.get(currentTopicPosition).getTitle() + "\n\n"+
-                        "Details: "+learnList.get(currentTopicPosition).getDetails() + "\n\n\n"+
-                        "Codes:\n\n"+learnList.get(currentTopicPosition).getCodes() + "\n\n\n"+
-                        "Output:\n\n"+learnList.get(currentTopicPosition).getOutput() + "\n"+"\n\n\n\n" +
-                        "Learn JavaScript in JScript" + "\n"+
-                        "https://play.google.com/store/apps/details?id=" +
-                        BuildConfig.APPLICATION_ID;
+                        "Topic: " + learnList.get(currentTopicPosition).getTitle() + "\n\n" +
+                                "Details: " + learnList.get(currentTopicPosition).getDetails() + "\n\n\n" +
+                                "Codes:\n\n" + learnList.get(currentTopicPosition).getCodes() + "\n\n\n" +
+                                "Output:\n\n" + learnList.get(currentTopicPosition).getOutput() + "\n" + "\n\n\n\n" +
+                                "Learn JavaScript in JScript" + "\n" +
+                                "https://play.google.com/store/apps/details?id=" +
+                                BuildConfig.APPLICATION_ID;
 
                 Intent shareIntent = new Intent();
                 shareIntent.setAction(Intent.ACTION_SEND);
-                shareIntent.putExtra(Intent.EXTRA_SUBJECT,learnList.get(currentTopicPosition).getTitle());
-                shareIntent.putExtra(Intent.EXTRA_TEXT,shareBody);
+                shareIntent.putExtra(Intent.EXTRA_SUBJECT, learnList.get(currentTopicPosition).getTitle());
+                shareIntent.putExtra(Intent.EXTRA_TEXT, shareBody);
                 shareIntent.setType("text/plain");
                 startActivity(shareIntent);
             }
@@ -155,26 +153,26 @@ public class LearnDetailsActivity extends AppCompatActivity {
 
     private void changeNextQuestion() {
         currentTopicPosition++;
-        if ((currentTopicPosition + 1) == learnList.size()){
+        if ((currentTopicPosition + 1) == learnList.size()) {
             nextBtn.setText(R.string.complete);
         }
 
-        if (currentTopicPosition < learnList.size()){
+        if (currentTopicPosition < learnList.size()) {
             title.setText(learnList.get(currentTopicPosition).getTitle());
             details.setText(learnList.get(currentTopicPosition).getDetails());
             codes.showCode(learnList.get(currentTopicPosition).getCodes());
             output.showCode(learnList.get(currentTopicPosition).getOutput());
             //empty conditions
-            if (learnList.get(currentTopicPosition).getCodes().equals("")){
+            if (learnList.get(currentTopicPosition).getCodes().equals("")) {
                 codes.setVisibility(View.GONE);
                 outputTxt.setVisibility(View.GONE);
             }
-            if (learnList.get(currentTopicPosition).getOutput().equals("")){
+            if (learnList.get(currentTopicPosition).getOutput().equals("")) {
                 output.setVisibility(View.GONE);
                 outputTxt.setVisibility(View.GONE);
             }
 
-        }else {
+        } else {
             //send progress value
             database.getReference()
                     .child("Progress")
@@ -184,7 +182,7 @@ public class LearnDetailsActivity extends AppCompatActivity {
                         @Override
                         public void onDataChange(@NonNull DataSnapshot snapshot) {
                             int learnCount = 0;
-                            if (snapshot.exists()){
+                            if (snapshot.exists()) {
                                 learnCount = snapshot.getValue(Integer.class);
                             }
                             database.getReference()
@@ -198,9 +196,6 @@ public class LearnDetailsActivity extends AppCompatActivity {
 
                                         }
                                     });
-
-
-
                         }
 
                         @Override
@@ -209,27 +204,25 @@ public class LearnDetailsActivity extends AppCompatActivity {
                         }
                     });
 
-
-
-
             finish();
         }
     }
+
     private void changePrevQuestion() {
         currentTopicPosition--;
-        if ((currentTopicPosition+2) == learnList.size()){
+        if ((currentTopicPosition + 2) == learnList.size()) {
             nextBtn.setText(R.string.next);
         }
-        if (currentTopicPosition < learnList.size()){
+        if (currentTopicPosition < learnList.size()) {
             title.setText(learnList.get(currentTopicPosition).getTitle());
             details.setText(learnList.get(currentTopicPosition).getDetails());
             codes.showCode(learnList.get(currentTopicPosition).getCodes());
             output.showCode(learnList.get(currentTopicPosition).getOutput());
-            if (learnList.get(currentTopicPosition).getCodes().equals("")){
+            if (learnList.get(currentTopicPosition).getCodes().equals("")) {
                 codes.setVisibility(View.GONE);
                 outputTxt.setVisibility(View.GONE);
             }
-            if (learnList.get(currentTopicPosition).getOutput().equals("")){
+            if (learnList.get(currentTopicPosition).getOutput().equals("")) {
                 output.setVisibility(View.GONE);
                 outputTxt.setVisibility(View.GONE);
             }

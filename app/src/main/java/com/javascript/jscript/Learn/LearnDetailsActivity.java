@@ -195,7 +195,7 @@ public class LearnDetailsActivity extends AppCompatActivity {
                                     .addOnSuccessListener(new OnSuccessListener<Void>() {
                                         @Override
                                         public void onSuccess(@NonNull Void unused) {
-                                            Toast.makeText(LearnDetailsActivity.this, "Learn Progress", Toast.LENGTH_SHORT).show();
+
                                         }
                                     });
 

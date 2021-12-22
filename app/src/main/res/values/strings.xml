@@ -236,6 +236,10 @@
     <!--Learn-->
     <string name="complete">Complete</string>
     <string name="previous">Previous</string>
-    <string name="learn_progress">Learn Progress</string>
+    <string name="learn_progress">Learn</string>
+    <string name="quiz_progress">Quiz</string>
+    <string name="interview">Interview</string>
+    <string name="programs">Programs</string>
+    <string name="_0">0%</string>
 
 </resources>

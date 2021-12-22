@@ -84,32 +84,6 @@ public class ProfileFragment extends Fragment {
         } else {
             binding.promotion.setVisibility(View.GONE);
         }
-
-        database.getReference().child("Progress")
-                .child(Objects.requireNonNull(FirebaseAuth.getInstance().getUid()))
-                .addListenerForSingleValueEvent(new ValueEventListener() {
-                    @Override
-                    public void onDataChange(@NonNull DataSnapshot snapshot) {
-                        if (snapshot.exists()){
-                            CourseProgress progress = snapshot.getValue(CourseProgress.class);
-                            assert progress != null;
-                            int learnProgress = progress.getLearnCount();
-                            if (learnProgress<=100){
-                                binding.learnProgressBar.setProgress(learnProgress);
-                                binding.progressText.setText(String.format("%s%%", learnProgress));
-                            }else {
-                                binding.learnProgressBar.setProgress(100);
-                                binding.progressText.setText(String.format("%s%%", 100));
-                            }
-                        }
-                    }
-
-                    @Override
-                    public void onCancelled(@NonNull DatabaseError error) {
-
-                    }
-                });
-
         /*check if user is sign in or sign out*/
         FirebaseUser currentUser = auth.getCurrentUser();
         if (currentUser == null) {
@@ -305,9 +279,30 @@ public class ProfileFragment extends Fragment {
         });
 
         //code of learn progress
+        database.getReference().child("Progress")
+                .child(Objects.requireNonNull(FirebaseAuth.getInstance().getUid()))
+                .addListenerForSingleValueEvent(new ValueEventListener() {
+                    @Override
+                    public void onDataChange(@NonNull DataSnapshot snapshot) {
+                        if (snapshot.exists()){
+                            CourseProgress progress = snapshot.getValue(CourseProgress.class);
+                            assert progress != null;
+                            int learnProgress = progress.getLearnCount();
+                            if (learnProgress<=100){
+                                binding.learnProgressBar.setProgress(learnProgress);
+                                binding.learnText.setText(String.format("%s%%", learnProgress));
+                            }else {
+                                binding.learnProgressBar.setProgress(100);
+                                binding.learnText.setText(String.format("%s%%", 100));
+                            }
+                        }
+                    }
 
+                    @Override
+                    public void onCancelled(@NonNull DatabaseError error) {
 
-
+                    }
+                });
 
 
 

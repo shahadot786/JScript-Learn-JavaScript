@@ -135,8 +135,8 @@ public class LearnDetailsActivity extends AppCompatActivity {
                 String shareBody =
                         "Topic: " + learnList.get(currentTopicPosition).getTitle() + "\n\n" +
                                 "Details: " + learnList.get(currentTopicPosition).getDetails() + "\n\n\n" +
-                                "Codes:\n\n" + learnList.get(currentTopicPosition).getCodes() + "\n\n\n" +
-                                "Output:\n\n" + learnList.get(currentTopicPosition).getOutput() + "\n" + "\n\n\n\n" +
+                                learnList.get(currentTopicPosition).getCodes() + "\n\n\n" +
+                                learnList.get(currentTopicPosition).getOutput() + "\n" + "\n\n\n\n" +
                                 "Learn JavaScript in JScript" + "\n" +
                                 "https://play.google.com/store/apps/details?id=" +
                                 BuildConfig.APPLICATION_ID;
@@ -166,10 +166,15 @@ public class LearnDetailsActivity extends AppCompatActivity {
             if (learnList.get(currentTopicPosition).getCodes().equals("")) {
                 codes.setVisibility(View.GONE);
                 outputTxt.setVisibility(View.GONE);
+            }else {
+                codes.setVisibility(View.VISIBLE);
             }
             if (learnList.get(currentTopicPosition).getOutput().equals("")) {
                 output.setVisibility(View.GONE);
                 outputTxt.setVisibility(View.GONE);
+            }else {
+                output.setVisibility(View.VISIBLE);
+                outputTxt.setVisibility(View.VISIBLE);
             }
 
         } else {

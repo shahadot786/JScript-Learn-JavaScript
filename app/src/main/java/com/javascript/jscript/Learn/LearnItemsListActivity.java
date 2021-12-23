@@ -53,65 +53,152 @@ public class LearnItemsListActivity extends AppCompatActivity {
 
     }//ends of onCreate
     private void loadItems() {
-        final String basic[] = {
-                "Learn Basic",
-                "Basic1",
-                "Basic2",
-                "In this example, you will learn to write a JavaScript program that will remove a property from an object.",
-                "Basic",
-                "Basic1",
-                "Basic2",
-                "In this example, you will learn to write a JavaScript program that will remove a property from an object.",
-                "Basic",
-                "Basic1",
-                "Basic2",
-                "In this example, you will learn to write a JavaScript program that will remove a property from an object.",
-                "Basic",
-                "Basic1",
-                "Basic2"
+        //free content list
+        final String[] Fundamental = {
+                "Introduction",
+                "Code structure",
+                "The modern mode",
+                "Variables",
+                "Data types",
+                "Type conversion",
+                "Operators",
+                "Comparisons",
+                "Interaction: alert, prompt, confirm",
+                "Conditionals",
+                "Loops",
+                "Switch statements",
+                "Functions",
+                "Function expressions",
+                "Arrow functions, the basics"
+
+        };
+        final String[] basic = {
+                "Learn Basic"
+        };
+        final String[] Objects = {
+                "Learn Objects"
+        };
+        final String[] advanced = {
+                "Learn advanced"
+        };
+        final String[] Typescript = {
+                "Typescript"
         };
 
-        final String advanced[] = {
-                "Learn advanced",
-                "advanced2",
-                "advanced",
-                "In this example, you will learn to write a JavaScript program that will remove a property from an object.",
-                "advanced",
-                "advanced",
+        final String[] angular = {
+                "Learn angular"
+        };
+        //pro content list
+        final String[] VueJs = {
+                "Vue Js"
+        };
+        final String[] NextJs = {
+                "Next Js"
+        };
+        final String[] ReactJs = {
+                "React Js"
+        };
+        final String[] EmberJs = {
+                "Ember Js"
+        };
+        final String[] SvelteJs = {
+                "Svelte Js"
+        };
+        final String[] Gatsby = {
+                "Gatsby Js"
+        };
+        final String[] NuxtJs = {
+                "Nuxt Js"
+        };
+        final String[] Bootstrap = {
+                "Bootstrap Js"
+        };
+        final String[] NodeJs = {
+                "Node Js"
+        };
+        final String[] SpringBoot = {
+                "Spring Boot Js"
+        };
+        final String[] ExpressJs = {
+                "Express Js"
+        };
+        final String[] Laravel = {
+                "Laravel Js"
+        };
+        final String[] Micronaut = {
+                "Micronaut Js"
+        };
+        final String[] MochaJs = {
+                "Mocha Js"
         };
 
-        final String expert[] = {
-                "Learn expert",
-                "expert",
-                "expert",
-                "In this example, you will learn to write a JavaScript program that will remove a property from an object.",
-                "expert",
-                "expert",
-        };
-
-        final String angular[] = {
-                "Learn angular",
-                "angular",
-                "angular",
-                "In this example, you will learn to write a JavaScript program that will remove a property from an object.",
-                "angular",
-                "angular",
-        };
 
         String programsItems = getIntent().getStringExtra("learnItems");
         switch (programsItems){
+            //free content
+            case "Fundamental":
+                list = Fundamental;
+                break;
             case "Basic":
                 list = basic;
+                break;
+            case "Objects":
+                list = Objects;
                 break;
             case "Advanced":
                 list = advanced;
                 break;
-            case "Expert":
-                list = expert;
+            case "Typescript":
+                list = Typescript;
                 break;
             case "Angular":
                 list = angular;
                 break;
+            //pro content
+            case "Vue Js":
+                list = VueJs;
+                break;
+            case "Next Js":
+                list = NextJs;
+                break;
+            case "React Js":
+                list = ReactJs;
+                break;
+            case "Ember Js":
+                list = EmberJs;
+                break;
+            case "Svelte Js":
+                list = SvelteJs;
+                break;
+            case "Gatsby Js":
+                list = Gatsby;
+                break;
+            case "Nuxt Js":
+                list = NuxtJs;
+                break;
+            case "Bootstrap":
+                list = Bootstrap;
+                break;
+            case "Node Js":
+                list = NodeJs;
+                break;
+            case "Spring Boot":
+                list = SpringBoot;
+                break;
+            case "Express Js":
+                list = ExpressJs;
+                break;
+            case "Laravel":
+                list = Laravel;
+                break;
+            case "Micronaut":
+                list = Micronaut;
+                break;
+            case "Mocha Js":
+                list = MochaJs;
+                break;
+
+
         }
     }
 

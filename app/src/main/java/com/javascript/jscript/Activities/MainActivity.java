@@ -71,7 +71,7 @@ public class MainActivity extends AppCompatActivity {
                         transaction.setCustomAnimations(R.anim.slide_in_right, R.anim.slide_out_left, R.anim.slide_in_left, R.anim.slide_out_right);
                         transaction.replace(R.id.container, new HomeFragment());
                         if (UiConfig.BANNER_AD_VISIBILITY) {
-                            bannerAd.setVisibility(View.VISIBLE);
+                            bannerAd.setVisibility(View.GONE);
                         }
                         break;
                     case 1:
@@ -80,7 +80,7 @@ public class MainActivity extends AppCompatActivity {
                         transaction.setCustomAnimations(R.anim.slide_in_right, R.anim.slide_out_left, R.anim.slide_in_left, R.anim.slide_out_right);
                         transaction.replace(R.id.container, new QuizFragment());
                         if (UiConfig.BANNER_AD_VISIBILITY) {
-                            bannerAd.setVisibility(View.VISIBLE);
+                            bannerAd.setVisibility(View.GONE);
                         }
                         break;
                     case 2:
@@ -89,7 +89,7 @@ public class MainActivity extends AppCompatActivity {
                         transaction.setCustomAnimations(R.anim.slide_in_right, R.anim.slide_out_left, R.anim.slide_in_left, R.anim.slide_out_right);
                         transaction.replace(R.id.container, new DiscussFragment());
                         if (UiConfig.BANNER_AD_VISIBILITY) {
-                            bannerAd.setVisibility(View.VISIBLE);
+                            bannerAd.setVisibility(View.GONE);
                         }
                         break;
 
@@ -99,7 +99,7 @@ public class MainActivity extends AppCompatActivity {
                         transaction.setCustomAnimations(R.anim.slide_in_right, R.anim.slide_out_left, R.anim.slide_in_left, R.anim.slide_out_right);
                         transaction.replace(R.id.container, new ProfileFragment());
                         if (UiConfig.BANNER_AD_VISIBILITY) {
-                            bannerAd.setVisibility(View.VISIBLE);
+                            bannerAd.setVisibility(View.GONE);
                         }
                         break;
                     case 4:

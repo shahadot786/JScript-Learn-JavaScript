@@ -108,7 +108,7 @@ public class PremiumActivity extends AppCompatActivity implements PurchasesUpdat
 
             @Override
             public void onBillingServiceDisconnected() {
-                ///Toast.makeText(getApplicationContext(), "Service Disconnected", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplicationContext(), "Service Disconnected", Toast.LENGTH_SHORT).show();
             }
         });
         //subscribe button click listener
@@ -148,13 +148,13 @@ public class PremiumActivity extends AppCompatActivity implements PurchasesUpdat
                     if (billingResult.getResponseCode() == BillingClient.BillingResponseCode.OK) {
                         getProductsDetails();
                     } else {
-                        //Toast.makeText(getApplicationContext(), "Error " + billingResult.getDebugMessage(), Toast.LENGTH_SHORT).show();
+                        Toast.makeText(getApplicationContext(), "Error " + billingResult.getDebugMessage(), Toast.LENGTH_SHORT).show();
                     }
                 }
 
                 @Override
                 public void onBillingServiceDisconnected() {
-                    //Toast.makeText(getApplicationContext(), "Service Disconnected ", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getApplicationContext(), "Service Disconnected ", Toast.LENGTH_SHORT).show();
                 }
             });
         }
@@ -174,13 +174,13 @@ public class PremiumActivity extends AppCompatActivity implements PurchasesUpdat
                     if (billingResult.getResponseCode() == BillingClient.BillingResponseCode.OK) {
                         initiatePurchase();
                     } else {
-                        //Toast.makeText(getApplicationContext(), "Error " + billingResult.getDebugMessage(), Toast.LENGTH_SHORT).show();
+                        Toast.makeText(getApplicationContext(), "Error " + billingResult.getDebugMessage(), Toast.LENGTH_SHORT).show();
                     }
                 }
 
                 @Override
                 public void onBillingServiceDisconnected() {
-                    //Toast.makeText(getApplicationContext(), "Service Disconnected ", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getApplicationContext(), "Service Disconnected ", Toast.LENGTH_SHORT).show();
                 }
             });
         }
@@ -219,10 +219,11 @@ public class PremiumActivity extends AppCompatActivity implements PurchasesUpdat
                                 itemDescription.setText(itemInfo.getDescription());
                             } else {
                                 //try to add item/product id "purchase" inside managed product in google play console
-                                //Toast.makeText(getApplicationContext(), "Purchase Item not Found", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(getApplicationContext(), "Purchase Item not Found", Toast.LENGTH_SHORT).show();
                             }
                         } else {
-                            //Toast.makeText(getApplicationContext(), " Error " + billingResult.getDebugMessage(), Toast.LENGTH_SHORT).show();
+                            Toast.makeText(getApplicationContext(),
+                                    " Error " + billingResult.getDebugMessage(), Toast.LENGTH_SHORT).show();
                         }
                     }
                 });
@@ -249,10 +250,11 @@ public class PremiumActivity extends AppCompatActivity implements PurchasesUpdat
                                 itemPrice.setText(itemInfo.getPrice());
                             } else {
                                 //try to add item/product id "purchase" inside managed product in google play console
-                                //Toast.makeText(getApplicationContext(), "Purchase Item not Found", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(getApplicationContext(), "Purchase Item not Found", Toast.LENGTH_SHORT).show();
                             }
                         } else {
-                            //Toast.makeText(getApplicationContext(), " Error " + billingResult.getDebugMessage(), Toast.LENGTH_SHORT).show();
+                            Toast.makeText(getApplicationContext(),
+                                    " Error " + billingResult.getDebugMessage(), Toast.LENGTH_SHORT).show();
                         }
                     }
                 });
@@ -277,11 +279,11 @@ public class PremiumActivity extends AppCompatActivity implements PurchasesUpdat
         }
         //if purchase cancelled
         else if (billingResult.getResponseCode() == BillingClient.BillingResponseCode.USER_CANCELED) {
-            //Toast.makeText(getApplicationContext(), "Purchase Canceled", Toast.LENGTH_SHORT).show();
+            Toast.makeText(getApplicationContext(), "Purchase Canceled", Toast.LENGTH_SHORT).show();
         }
         // Handle any other error msgs
         else {
-            //Toast.makeText(getApplicationContext(), "Error " + billingResult.getDebugMessage(), Toast.LENGTH_SHORT).show();
+            Toast.makeText(getApplicationContext(), "Error " + billingResult.getDebugMessage(), Toast.LENGTH_SHORT).show();
         }
     }
 
@@ -292,7 +294,7 @@ public class PremiumActivity extends AppCompatActivity implements PurchasesUpdat
                 if (!verifyValidSignature(purchase.getOriginalJson(), purchase.getSignature())) {
                     // Invalid purchase
                     // show error to user
-                    //Toast.makeText(getApplicationContext(), "Error : invalid Purchase", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getApplicationContext(), "Error : invalid Purchase", Toast.LENGTH_SHORT).show();
                     return;
                 }
                 // else purchase is valid
@@ -310,14 +312,15 @@ public class PremiumActivity extends AppCompatActivity implements PurchasesUpdat
                     // restart activity
                     if (!getPurchaseValueFromPref()) {
                         savePurchaseValueToPref(true);
-                        //Toast.makeText(getApplicationContext(), "Item Purchased", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(getApplicationContext(), "Item Purchased", Toast.LENGTH_SHORT).show();
                         this.recreate();
                     }
                 }
             }
             //if purchase is pending
             else if (PRODUCT_ID.equals(purchase.getSkus().get(0)) && purchase.getPurchaseState() == Purchase.PurchaseState.PENDING) {
-                //Toast.makeText(getApplicationContext(), "Purchase is Pending. Please complete Transaction", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplicationContext(),
+                        "Purchase is Pending. Please complete Transaction", Toast.LENGTH_SHORT).show();
             }
             //if purchase is unknown mark false
             else if (PRODUCT_ID.equals(purchase.getSkus().get(0)) && purchase.getPurchaseState() == Purchase.PurchaseState.UNSPECIFIED_STATE) {
@@ -326,7 +329,7 @@ public class PremiumActivity extends AppCompatActivity implements PurchasesUpdat
                 UiConfig.PRO_VISIBILITY_STATUS_SHOW = true;
                 UiConfig.BANNER_AD_VISIBILITY = true;
                 UiConfig.ENABLE_EXIT_DIALOG = true;
-                //Toast.makeText(getApplicationContext(), "Purchase Status Unknown", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplicationContext(), "Purchase Status Unknown", Toast.LENGTH_SHORT).show();
             }
         }
     }

@@ -35,13 +35,17 @@ public class LearnFragment extends Fragment {
     ImageView proImage;
     private AdNetwork adNetwork;
 
-    String[] itemsName = {"Basic","Advanced","Expert"};
-    String[] itemsNamePro = {"Angular","Vue","React","Angular","Vue","React","Angular","Vue","React"};
+    String[] itemsName = {"Fundamental","Basic","Objects","Advanced","Typescript","Angular"};
+    String[] itemsNamePro = {"Vue Js","Next Js","React Js","Ember Js","Svelte Js","Gatsby","Nuxt Js","Bootstrap","Node Js","Spring Boot","Express Js",
+            "Laravel","Micronaut","Mocha"};
 
     Integer[] itemImages = {
+            R.drawable.ic_fundamental_icon,
             R.drawable.ic_programs_basic_image,
+            R.drawable.ic_objects_icon,
             R.drawable.ic_programs_advanced_image,
-            R.drawable.ic_programs_advanced_image
+            R.drawable.ic_typescript_icon,
+            R.drawable.ic_angular_icon
 
     };
     Integer[] itemImagesPro = {
@@ -52,6 +56,11 @@ public class LearnFragment extends Fragment {
             R.drawable.ic_programs_advanced_image,
             R.drawable.ic_programs_advanced_image,
             R.drawable.ic_programs_basic_image,
+            R.drawable.ic_programs_advanced_image,
+            R.drawable.ic_programs_advanced_image,
+            R.drawable.ic_programs_advanced_image,
+            R.drawable.ic_programs_advanced_image,
+            R.drawable.ic_programs_advanced_image,
             R.drawable.ic_programs_advanced_image,
             R.drawable.ic_programs_advanced_image
 
@@ -151,15 +160,27 @@ public class LearnFragment extends Fragment {
                 Intent intent = new Intent(getActivity(), LearnItemsListActivity.class);
                 switch (i){
                     case 0:
-                        intent.putExtra("learnItems","Basic");
+                        intent.putExtra("learnItems","Fundamental");
                         startActivity(intent);
                         break;
                     case 1:
-                        intent.putExtra("learnItems","Advanced");
+                        intent.putExtra("learnItems","Basic");
                         startActivity(intent);
                         break;
                     case 2:
-                        intent.putExtra("learnItems","Expert");
+                        intent.putExtra("learnItems","Objects");
+                        startActivity(intent);
+                        break;
+                    case 3:
+                        intent.putExtra("learnItems","Advanced");
+                        startActivity(intent);
+                        break;
+                    case 4:
+                        intent.putExtra("learnItems","Typescript");
+                        startActivity(intent);
+                        break;
+                    case 5:
+                        intent.putExtra("learnItems","Angular");
                         startActivity(intent);
                         break;
 
@@ -176,17 +197,63 @@ public class LearnFragment extends Fragment {
                 Intent intent = new Intent(getActivity(), LearnItemsListActivity.class);
                 switch (i){
                     case 0:
-                        intent.putExtra("learnItems","Angular");
+                        intent.putExtra("learnItems","Vue Js");
                         startActivity(intent);
                         break;
                     case 1:
-                        intent.putExtra("learnItems","Vue");
+                        intent.putExtra("learnItems","Next Js");
                         startActivity(intent);
                         break;
                     case 2:
-                        intent.putExtra("learnItems","React");
+                        intent.putExtra("learnItems","React Js");
                         startActivity(intent);
                         break;
+                    case 3:
+                        intent.putExtra("learnItems","Ember Js");
+                        startActivity(intent);
+                        break;
+                    case 4:
+                        intent.putExtra("learnItems","Svelte Js");
+                        startActivity(intent);
+                        break;
+                    case 5:
+                        intent.putExtra("learnItems","Gatsby");
+                        startActivity(intent);
+                        break;
+                    case 6:
+                        intent.putExtra("learnItems","Nuxt Js");
+                        startActivity(intent);
+                        break;
+                    case 7:
+                        intent.putExtra("learnItems","Bootstrap");
+                        startActivity(intent);
+                        break;
+                    case 8:
+                        intent.putExtra("learnItems","Node Js");
+                        startActivity(intent);
+                        break;
+                    case 9:
+                        intent.putExtra("learnItems","Spring Boot");
+                        startActivity(intent);
+                        break;
+                    case 10:
+                        intent.putExtra("learnItems","Express Js");
+                        startActivity(intent);
+                        break;
+                    case 11:
+                        intent.putExtra("learnItems","Laravel");
+                        startActivity(intent);
+                        break;
+                    case 12:
+                        intent.putExtra("learnItems","Micronaut");
+                        startActivity(intent);
+                        break;
+                    case 13:
+                        intent.putExtra("learnItems","Mocha Js");
+                        startActivity(intent);
+                        break;
+
+
 
                 }
             }

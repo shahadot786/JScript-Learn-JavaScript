@@ -84,7 +84,7 @@ public class LearnDetailsActivity extends AppCompatActivity {
         shareBtn = findViewById(R.id.learnShareBtn);
 
         final String getSelectedTopicName = getIntent().getStringExtra("learnTopics");
-        learnList = LearnTopicsBank.getTopics(getSelectedTopicName);
+        learnList = LearnDetailsContent.getTopics(getSelectedTopicName);
 
         title.setText(learnList.get(0).getTitle());
         details.setText(learnList.get(0).getDetails());
@@ -227,10 +227,15 @@ public class LearnDetailsActivity extends AppCompatActivity {
             if (learnList.get(currentTopicPosition).getCodes().equals("")) {
                 codes.setVisibility(View.GONE);
                 outputTxt.setVisibility(View.GONE);
+            }else {
+                codes.setVisibility(View.VISIBLE);
             }
             if (learnList.get(currentTopicPosition).getOutput().equals("")) {
                 output.setVisibility(View.GONE);
                 outputTxt.setVisibility(View.GONE);
+            }else {
+                output.setVisibility(View.VISIBLE);
+                outputTxt.setVisibility(View.VISIBLE);
             }
 
         }

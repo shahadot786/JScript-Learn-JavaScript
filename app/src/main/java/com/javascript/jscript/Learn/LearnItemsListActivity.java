@@ -60,16 +60,14 @@ public class LearnItemsListActivity extends AppCompatActivity {
                 "The modern mode",
                 "Variables",
                 "Data types",
+                "Interaction: alert, prompt, confirm",
                 "Type conversion",
                 "Operators",
                 "Comparisons",
-                "Interaction: alert, prompt, confirm",
                 "Conditionals",
                 "Loops",
-                "Switch statements",
                 "Functions",
-                "Function expressions",
-                "Arrow functions, the basics"
+                "Arrow functions"
 
         };
         final String[] basic = {

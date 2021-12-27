@@ -18,9 +18,7 @@ public class LearnDetailsContent {
                 , "<html>\n" +
                 "   <body>   \n" +
                 "      <script language = \"javascript\" type = \"text/javascript\">\n" +
-                "         <!--\n" +
                 "            document.write(\"Hello World!\")\n" +
-                "         //-->\n" +
                 "      </script>      \n" +
                 "   </body>\n" +
                 "</html>",
@@ -100,7 +98,7 @@ public class LearnDetailsContent {
                         "document.write(\"Hello Anne!\");\n" +
                         "\n" +
                         "document.write(\"Hello Anne!\"); // This comment follows the statement",
-                "Hello Anne!\nHello Anne!"
+                ""
         );
         final LearnDetailsModel l4 = new LearnDetailsModel(
                 "Multiline Comments",
@@ -110,7 +108,7 @@ public class LearnDetailsContent {
                         "*/\n" +
                         "document.write(\"Hello Anne!\");\n" +
                         "document.write(\"Hello Anne!\");",
-                "Hello Anne!\nHello Anne!"
+                ""
         );
 
         final LearnDetailsModel l5 = new LearnDetailsModel(
@@ -210,23 +208,22 @@ public class LearnDetailsContent {
                         "For instance, the variable message can be imagined as a box labeled \"message\" with the value \"Hello!\" in it and\n" +
                         "We can put any value in the box. We can also change it as many times as we want and remember \n" +
                         "When the value is changed, the old data is removed from the variable.",
-                "let message;\n" +
+                "let message;" +
                         "\n" +
-                        "message = 'Hello!';\n" +
+                        "message = 'Hello!';" +
                         "\n" +
-                        "message = 'Anne!'; // value changed\n" +
-                        "\n" +
-                        "document.write(message);// Anne!" +
-                        "\n" +
-                        "let hello = 'Hello Anne!';\n" +
+                        "message = 'Anne!';" +
+                        "\n\n" +
+                        "document.write(message);" +
+                        "\n\n" +
+                        "let hello = 'Hello Anne!';" +
                         "\n" +
                         "let message;" +
-                        "// copy 'Hello Anne' from hello into message\n" +
-                        "message = hello;\n" +
                         "\n" +
-                        "// now two variables hold the same data\n" +
-                        "document.write(hello); // Hello Anne!\n" +
-                        "document.write(message); // Hello Anne!",
+                        "message = hello;" +
+                        "\n\n" +
+                        "document.write(hello);\n" +
+                        "document.write(message);",
                 "Anne!\n" +
                         "Hello Anne!" +
                         "\nHello Anne!"
@@ -261,9 +258,8 @@ public class LearnDetailsContent {
                         "const COLOR_BLUE = \"#00F\";\n" +
                         "const COLOR_ORANGE = \"#FF7F00\";\n" +
                         "\n" +
-                        "// ...when we need to pick a color\n" +
                         "let color = COLOR_ORANGE;\n" +
-                        "alert(color); // #FF7F00",
+                        "alert(color);",
                 "#FF7F00"
         );
         final LearnDetailsModel l6 = new LearnDetailsModel(
@@ -309,7 +305,7 @@ public class LearnDetailsContent {
                         "\nWe can put any type in a variable. For example, a variable can at one moment be a string and then store a number:" +
                         "" +
                         "",
-                "// no error\n" +
+
                         "let message = \"hello\";\n" +
                         "message = 123456;",
                 ""
@@ -321,13 +317,13 @@ public class LearnDetailsContent {
                         "There are many operations for numbers, e.g. multiplication *, division /, addition +, subtraction -, and so on." +
                         "\nThere’s also a special infinity number available. You just need to do 1/0 — so, one divided zero. This value is deemed to be the biggest number of all time and can not be viewed as the smaller outcome." +
                         "\nIf you get NaN — it means that you’ve hit a computational error. It also means that you’re trying to do a mathematical operation on something that doesn't make sense like dividing a string text with a number.",
-                "//regular numbers\n" +
+
                         "let n = 123;\n" +
                         "n = 12.345;\n" +
-                        "//Infinity\n" +
-                        "document.write(1/0);//Infinity\n" +
-                        "//NaN\n" +
-                        "document.write(\"not a number\"/4);//NaN",
+                        "\n" +
+                        "document.write(1/0);\n" +
+                        "\n" +
+                        "document.write(\"not a number\"/4);",
                 "Infinity" +
                         "\nNaN"
         );
@@ -393,7 +389,7 @@ public class LearnDetailsContent {
                         "If a variable is declared, but not assigned, then its value is undefined:",
                 "let age;\n" +
                         "\n" +
-                        "document.write(age); // shows \"undefined\"",
+                        "document.write(age);",
                 "undefined"
         );
         final LearnDetailsModel l8 = new LearnDetailsModel(
@@ -495,7 +491,7 @@ public class LearnDetailsContent {
                         "For instance:",
                 "let age = prompt('Anne, How old are you?', 21);\n" +
                         "\n" +
-                        "document.write(`You are ${age} years old!`); // You are 21 years old!",
+                        "document.write(`You are ${age} years old!`);",
                 "You are 21 years old!"
         );
         final LearnDetailsModel l3 = new LearnDetailsModel(
@@ -561,10 +557,10 @@ public class LearnDetailsContent {
                         "If you want to convert a number to a string use string conversion." +
                         "\nWe can also call the String(value) function to convert a value to a string:",
                 "let value = true;\n" +
-                        "document.write(typeof value); // boolean\n" +
+                        "document.write(typeof value);\n" +
                         "\n" +
-                        "value = String(value); // now value is a string \"true\"\n" +
-                        "document.write(typeof value); // string",
+                        "value = String(value);\n" +
+                        "document.write(typeof value);",
                 "boolean\nstring"
         );
         final LearnDetailsModel l3 = new LearnDetailsModel(
@@ -573,11 +569,11 @@ public class LearnDetailsContent {
                         "\nWe can use the Number(value) function to explicitly convert a value to a number:" +
                         "",
                 "let str = \"123\";\n" +
-                        "document.write(typeof str); // string\n" +
+                        "document.write(typeof str);\n" +
                         "\n" +
-                        "let num = Number(str); // becomes a number 123\n" +
+                        "let num = Number(str);\n" +
                         "\n" +
-                        "document.write(typeof num); // number",
+                        "document.write(typeof num);",
                 "string\nnumber"
         );
         final LearnDetailsModel l4 = new LearnDetailsModel(
@@ -591,11 +587,11 @@ public class LearnDetailsContent {
                         "Values that are intuitively “empty”, like 0, an empty string, null, undefined, and NaN, become false.\n" +
                         "Other values become true.\n" +
                         "For instance:",
-                "document.write( Boolean(1) ); // true\n" +
-                        "document.write( Boolean(0) ); // false\n" +
+                "document.write( Boolean(1) );\n" +
+                        "document.write( Boolean(0) );\n" +
                         "\n" +
-                        "document.write( Boolean(\"hello\") ); // true\n" +
-                        "document.write( Boolean(\"\") ); // false",
+                        "document.write( Boolean(\"hello\") );\n" +
+                        "document.write( Boolean(\"\") );",
                 "true\n" +
                         "false\n" +
                         "true\n" +
@@ -648,10 +644,10 @@ public class LearnDetailsContent {
                 "let x = 1;\n" +
                         "\n" +
                         "x = -x;\n" +
-                        "document.write( x ); // -1, unary negation was applied" +
+                        "document.write( x );" +
                         "\n" +
                         "let x = 1, y = 3;\n" +
-                        "document.write( y - x ); // 2, binary minus subtracts values",
+                        "document.write( y - x );",
                 "-1\n" +
                         "2"
         );
@@ -676,17 +672,15 @@ public class LearnDetailsContent {
                         "The exponentiation operator a ** b raises a to the power of b.\n" +
                         "\n" +
                         "In school maths, we write that as a^b.",
-                "//Remainder %\n" +
-                        "document.write( 5 % 2 ); // 1, a remainder of 5 divided by 2\n" +
-                        "document.write( 8 % 3 ); // 2, a remainder of 8 divided by 3\n" +
-                        "//Exponentiation **\n" +
-                        "document.write( 2 ** 2 ); // 2² = 4\n" +
-                        "document.write( 2 ** 3 ); // 2³ = 8\n" +
-                        "document.write( 2 ** 4 ); // 2⁴ = 16",
-                "//reminder\n" +
+
+                        "document.write( 5 % 2 );\n" +
+                        "document.write( 8 % 3 );\n" +
+                        "document.write( 2 ** 2 );\n" +
+                        "document.write( 2 ** 3 );\n" +
+                        "document.write( 2 ** 4 );",
+
                         "1\n" +
                         "2\n" +
-                        "//exponentiation\n" +
                         "4\n" +
                         "8\n" +
                         "16"
@@ -737,7 +731,7 @@ public class LearnDetailsContent {
                         "Here, the first expression 1 + 2 is evaluated and its result is thrown away. Then, 3 + 4 is evaluated and returned as the result.",
                 "let a = (1 + 2, 3 + 4);\n" +
                         "\n" +
-                        "document.write( a ); // 7 (the result of 3 + 4)",
+                        "document.write( a );",
                 "7"
         );
 
@@ -773,9 +767,9 @@ public class LearnDetailsContent {
                         "\n" +
                         "true – means “yes”, “correct” or “the truth”.\n" +
                         "false – means “no”, “wrong” or “not the truth”.",
-                "document.write( 2 > 1 );  // true (correct)\n" +
-                        "document.write( 2 == 1 ); // false (wrong)\n" +
-                        "document.write( 2 != 1 ); // true (correct)",
+                "document.write( 2 > 1 );\n" +
+                        "document.write( 2 == 1 );\n" +
+                        "document.write( 2 != 1 );",
                 "true\nfalse\ntrue"
         );
         final LearnDetailsModel l3 = new LearnDetailsModel(
@@ -798,9 +792,9 @@ public class LearnDetailsContent {
                         "G is the same as G.\n" +
                         "l is the same as l.\n" +
                         "o is greater than e. Stop here. The first string is greater.",
-                "document.write( 'Z' > 'A' ); // true\n" +
-                        "document.write( 'Glow' > 'Glee' ); // true\n" +
-                        "document.write( 'Bee' > 'Be' ); // true",
+                "document.write( 'Z' > 'A' );\n" +
+                        "document.write( 'Glow' > 'Glee' );\n" +
+                        "document.write( 'Bee' > 'Be' );",
                 "true\ntrue\ntrue"
         );
         final LearnDetailsModel l4 = new LearnDetailsModel(
@@ -815,16 +809,13 @@ public class LearnDetailsContent {
                         "\n\n" +
                         "For maths and other comparisons < > <= >=\n" +
                         "null/undefined are converted to numbers: null becomes 0, while undefined becomes NaN.",
-                "//strict" +
+
+                        "document.write( null === undefined );" +
                         "\n" +
-                        "document.write( null === undefined ); // false" +
-                        "//non-strict" +
-                        "\n" +
-                        "document.write( null == undefined ); // true",
-                "//strict\n" +
+                        "document.write( null == undefined );",
+
                         "false\n" +
-                        "//not-strict\n" +
-                        "true"
+                                "true"
         );
         final LearnDetailsModel l5 = new LearnDetailsModel(
                 "Avoid problems",
@@ -899,7 +890,7 @@ public class LearnDetailsContent {
                         "if (year == 2000) {\n" +
                         "  document.write( 'You guessed it right!' );\n" +
                         "} else {\n" +
-                        "  document.write( 'How can you be so wrong?' ); // any value except 2000\n" +
+                        "  document.write( 'How can you be so wrong?' );\n" +
                         "}",
                 "You guessed it right!"
         );
@@ -975,7 +966,7 @@ public class LearnDetailsContent {
                         "The for loop is more complex, but it’s also the most commonly used loop." +
                         "\n" +
                         "Let’s learn the meaning of these parts by example. The loop below runs document.write(i) for i from 0 up to (but not including) 3:",
-                "for (let i = 0; i < 3; i++) { // shows 012\n" +
+                "for (let i = 0; i < 3; i++) {\n" +
                         "   document.write(i);\n" +
                         "}",
                 "012"
@@ -988,7 +979,7 @@ public class LearnDetailsContent {
                         "\n" +
                         "For instance, the loop below outputs i while i < 3:",
                 "let i = 0;\n" +
-                        "while (i < 3) { // shows 012\n" +
+                        "while (i < 3) {\n" +
                         "  document.write( i );\n" +
                         "  i++;\n" +
                         "}",
@@ -1126,13 +1117,15 @@ public class LearnDetailsContent {
                         "Sometimes we need something a little bit more complex, like multiple expressions or statements. " +
                         "It is also possible, but we should enclose them in curly braces. Then use a normal return within them.\n" +
                         "\n" +
-                        "Like this:",
-                "let sum = (a, b) => {  // the curly brace opens a multiline function\n" +
+                        "Like this:" +
+                        "\n" +
+                        "Note:  // if we use curly braces, then we need an explicit \"return\"",
+                "let sum = (a, b) => {\n" +
                         "  let result = a + b;\n" +
-                        "  return result; // if we use curly braces, then we need an explicit \"return\"\n" +
+                        "  return result;\n" +
                         "};\n" +
                         "\n" +
-                        "document.write( sum(1, 2) ); // 3",
+                        "document.write( sum(1, 2) );",
                 "3"
         );
         final LearnDetailsModel l3 = new LearnDetailsModel(
@@ -1314,15 +1307,14 @@ public class LearnDetailsContent {
                         "Fixed values are called Literals.\n" +
                         "\n" +
                         "Variable values are called Variables.",
-                "// How to create variables:\n" +
+
                         "var x;\n" +
                         "let y;\n" +
                         "\n" +
-                        "// How to use variables:\n" +
                         "x = 4;\n" +
                         "y = 6;\n\n" +
                         "let z = x + y;\n" +
-                        "document.write(z);//10",
+                        "document.write(z);",
                 "10"
         );
         final LearnDetailsModel l2 = new LearnDetailsModel(
@@ -1332,11 +1324,10 @@ public class LearnDetailsContent {
                         "1. Numbers are written with or without decimals" +
                         "\n" +
                         "2. Strings are text, written within double or single quotes",
-                "//numbers" +
+
                         "\n" +
                         "var x = 10.5\n" +
                         "var y = 1024\n\n" +
-                        "//string\n" +
                         "var firstName = \"Anne\"\n" +
                         "var lastName = 'Moore'\n\n" +
                         "document.write(x + y);\n" +
@@ -1503,11 +1494,9 @@ public class LearnDetailsContent {
                 "<html>\n" +
                         "   <head>      \n" +
                         "      <script type = \"text/javascript\">\n" +
-                        "         <!--\n" +
                         "            function sayHello() {\n" +
                         "               document.write(\"Hello World!\")\n" +
                         "            }\n" +
-                        "         //-->\n" +
                         "      </script>     \n" +
                         "   </head>\n" +
                         "   \n" +
@@ -1526,9 +1515,7 @@ public class LearnDetailsContent {
                         "   \n" +
                         "   <body>\n" +
                         "      <script type = \"text/javascript\">\n" +
-                        "         <!--\n" +
                         "            document.write(\"Hello World\")\n" +
-                        "         //-->\n" +
                         "      </script>\n" +
                         "      \n" +
                         "      <p>This is web page body </p>\n" +
@@ -1543,19 +1530,15 @@ public class LearnDetailsContent {
                 "<html>\n" +
                         "   <head>\n" +
                         "      <script type = \"text/javascript\">\n" +
-                        "         <!--\n" +
                         "            function sayHello() {\n" +
                         "               alert(\"Hello World\")\n" +
                         "            }\n" +
-                        "         //-->\n" +
                         "      </script>\n" +
                         "   </head>\n" +
                         "   \n" +
                         "   <body>\n" +
                         "      <script type = \"text/javascript\">\n" +
-                        "         <!--\n" +
                         "            document.write(\"Hello World\")\n" +
-                        "         //-->\n" +
                         "      </script>\n" +
                         "      \n" +
                         "      <input type = \"button\" onclick = \"sayHello()\" value = \"Say Hello\" />\n" +
@@ -1628,13 +1611,11 @@ public class LearnDetailsContent {
                 "<html>\n" +
                         "   <body onload = checkScope();>   \n" +
                         "      <script type = \"text/javascript\">\n" +
-                        "         <!--\n" +
-                        "            var myVar = \"global\";      // Declare a global variable\n" +
+                        "            var myVar = \"global\";\n" +
                         "            function checkScope( ) {\n" +
-                        "               var myVar = \"local\";    // Declare a local variable\n" +
+                        "               var myVar = \"local\";\n" +
                         "               document.write(myVar);\n" +
                         "            }\n" +
-                        "         //-->\n" +
                         "      </script>     \n" +
                         "   </body>\n" +
                         "</html>",

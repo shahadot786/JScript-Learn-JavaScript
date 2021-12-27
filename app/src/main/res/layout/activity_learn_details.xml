@@ -161,7 +161,7 @@
                     android:maxLines="10"
                     android:minHeight="48dp"
                     android:scrollbars="vertical"
-                    android:textColor="@color/textColorPlaceholder"
+                    android:textColor="@color/color_code"
                     android:textColorHint="@color/textColorPlaceholder"
                     android:textSize="12sp"
                     app:layout_constraintBottom_toBottomOf="@+id/codeView"

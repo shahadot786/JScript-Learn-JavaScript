@@ -53,5 +53,6 @@
     <color name="color_pro_bg">#C11C1F32</color>
     <color name="color_text_discuss">#DDDCDC</color>
     <color name="color_codes">#171c19</color>
+    <color name="color_code">#B06139</color>
 
 </resources>

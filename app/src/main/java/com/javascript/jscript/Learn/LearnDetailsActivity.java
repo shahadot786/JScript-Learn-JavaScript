@@ -1,10 +1,15 @@
 package com.javascript.jscript.Learn;
 
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.Gravity;
+import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.ViewGroup;
+import android.view.inputmethod.InputMethodManager;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -12,6 +17,7 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.AppCompatButton;
+import androidx.constraintlayout.widget.ConstraintLayout;
 
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
@@ -41,18 +47,30 @@ public class LearnDetailsActivity extends AppCompatActivity {
     private AdNetwork adNetwork;
     private List<LearnDetailsModel> learnList;
     private int currentTopicPosition = 0;
-    TextView title, details, outputTxt;
+    TextView title, details, outputTxt,toastText;
     EditText codesET;
     CodeView codes, output;
     private AppCompatButton prevBtn, nextBtn, shareBtn;
     FirebaseDatabase database;
     FirebaseAuth auth;
+    ConstraintLayout writeCodes;
+    LayoutInflater inflater;
+    View toastLayout;
+    Toast toast;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         binding = ActivityLearnDetailsBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
+        //custom toast
+        inflater = getLayoutInflater();
+        toastLayout = inflater.inflate(R.layout.custom_toast_layout,(ViewGroup) findViewById(R.id.toastLayout));
+        toastText = (TextView) toastLayout.findViewById(R.id.toastText);
+        toast = new Toast(getApplicationContext());
+        toast.setGravity(Gravity.BOTTOM,0,500);
+        toast.setDuration(Toast.LENGTH_LONG);
+        toast.setView(toastLayout);
         //firebase instance
         database = FirebaseDatabase.getInstance();
         auth = FirebaseAuth.getInstance();
@@ -78,6 +96,7 @@ public class LearnDetailsActivity extends AppCompatActivity {
         details = findViewById(R.id.learnDetails);
         outputTxt = findViewById(R.id.output);
         codesET = findViewById(R.id.codesET);
+        writeCodes = findViewById(R.id.writeCode);
         //code
         codes = findViewById(R.id.questionDes);
         output = findViewById(R.id.learnOutputView);
@@ -99,40 +118,42 @@ public class LearnDetailsActivity extends AppCompatActivity {
         if (learnList.get(0).getCodes().equals("")) {
             codes.setVisibility(View.GONE);
             outputTxt.setVisibility(View.GONE);
+            writeCodes.setVisibility(View.GONE);
         }
         if (learnList.get(0).getOutput().equals("")) {
             output.setVisibility(View.GONE);
             outputTxt.setVisibility(View.GONE);
+            writeCodes.setVisibility(View.GONE);
         }
 
         //run code
         binding.codesRun.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                    String getCodesET = codesET.getText().toString().trim();
-                    if (getCodesET.isEmpty()){
-                        Toast.makeText(LearnDetailsActivity.this, "Write your code first", Toast.LENGTH_SHORT).show();
-                    }else if (getCodesET.equals(learnList.get(currentTopicPosition).getTitle())){
-                        Toast.makeText(LearnDetailsActivity.this, learnList.get(currentTopicPosition).getTitle(), Toast.LENGTH_SHORT).show();
-                    }else {
-                        Toast.makeText(LearnDetailsActivity.this, "Correct your code", Toast.LENGTH_SHORT).show();
-                    }
-
-
+                runCodes();
+                //hide keyboard
+                InputMethodManager inputMethodManager = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
+                inputMethodManager.hideSoftInputFromWindow(view.getWindowToken(), 0);
             }
         });
 
         nextBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                nextBtn.setBackgroundResource(R.drawable.ic_learn_next_button_bg);
-                adNetwork.showInterstitialAd();
-                changeNextQuestion();
-                if (currentTopicPosition == 0) {
-                    prevBtn.setVisibility(View.GONE);
-                } else {
-                    prevBtn.setVisibility(View.VISIBLE);
+                if (isCodesEmpty() ){
+                    nextBtn.setBackgroundResource(R.drawable.ic_learn_next_button_bg);
+                    adNetwork.showInterstitialAd();
+                    changeNextQuestion();
+                    if (currentTopicPosition == 0) {
+                        prevBtn.setVisibility(View.GONE);
+                    } else {
+                        prevBtn.setVisibility(View.VISIBLE);
+                    }
                 }
+                //hide keyboard
+                InputMethodManager inputMethodManager = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
+                inputMethodManager.hideSoftInputFromWindow(view.getWindowToken(), 0);
+
             }
         });
 
@@ -173,7 +194,6 @@ public class LearnDetailsActivity extends AppCompatActivity {
             }
         });
     }//ends of onCreate
-
     private void changeNextQuestion() {
         currentTopicPosition++;
         if ((currentTopicPosition + 1) == learnList.size()) {
@@ -190,15 +210,18 @@ public class LearnDetailsActivity extends AppCompatActivity {
             if (learnList.get(currentTopicPosition).getCodes().equals("")) {
                 codes.setVisibility(View.GONE);
                 outputTxt.setVisibility(View.GONE);
+                writeCodes.setVisibility(View.GONE);
             }else {
                 codes.setVisibility(View.VISIBLE);
             }
             if (learnList.get(currentTopicPosition).getOutput().equals("")) {
                 output.setVisibility(View.GONE);
                 outputTxt.setVisibility(View.GONE);
+                writeCodes.setVisibility(View.GONE);
             }else {
                 output.setVisibility(View.VISIBLE);
                 outputTxt.setVisibility(View.VISIBLE);
+                writeCodes.setVisibility(View.VISIBLE);
             }
 
         } else {
@@ -244,6 +267,7 @@ public class LearnDetailsActivity extends AppCompatActivity {
             nextBtn.setText(R.string.next);
         }
         if (currentTopicPosition < learnList.size()) {
+            codesET.setText(learnList.get(currentTopicPosition).getCodes());
             title.setText(learnList.get(currentTopicPosition).getTitle());
             details.setText(learnList.get(currentTopicPosition).getDetails());
             codes.showCode(learnList.get(currentTopicPosition).getCodes());
@@ -254,27 +278,48 @@ public class LearnDetailsActivity extends AppCompatActivity {
             }else {
                 codes.setVisibility(View.VISIBLE);
             }
+            writeCodes.setVisibility(View.GONE);
             if (learnList.get(currentTopicPosition).getOutput().equals("")) {
                 output.setVisibility(View.GONE);
                 outputTxt.setVisibility(View.GONE);
             }else {
                 output.setVisibility(View.VISIBLE);
                 outputTxt.setVisibility(View.VISIBLE);
+                writeCodes.setVisibility(View.VISIBLE);
             }
 
         }
     }
     //write codes method
+    public void runCodes(){
+        String getCodesET = codesET.getText().toString().trim();
+        if (getCodesET.isEmpty()){
+            toastText.setText(R.string.write_above_code);
+            toast.show();
+        }else if (getCodesET.equals(learnList.get(currentTopicPosition).getCodes())){
+            toastText.setText(learnList.get(currentTopicPosition).getOutput());
+            toast.show();
+        }else {
+            toastText.setText(R.string.correct_code);
+            toast.show();
+        }
+    }
     //check is field empty
     public boolean isCodesEmpty(){
+        String codesCheck = learnList.get(currentTopicPosition).getCodes();
+        String outputCheck = learnList.get(currentTopicPosition).getOutput();
         String codesText = binding.codesET.getText().toString().trim();
-        if (codesText.isEmpty()){
-            Toast.makeText(LearnDetailsActivity.this, "First test code", Toast.LENGTH_SHORT).show();
-            return false;
-        }else {
-            binding.codesET.setError(null);
-            return true;
+        if (!codesCheck.equals("") && !outputCheck.equals("")){
+            if (codesText.isEmpty()){
+                toastText.setText(R.string.write_above_code);
+                toast.show();
+                return false;
+            }else {
+                binding.codesET.setError(null);
+            }
         }
+        return true;
+
     }
 
     @Override

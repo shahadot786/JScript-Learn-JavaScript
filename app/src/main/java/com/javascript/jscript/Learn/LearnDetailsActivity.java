@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -39,6 +40,7 @@ public class LearnDetailsActivity extends AppCompatActivity {
     private List<LearnDetailsModel> learnList;
     private int currentTopicPosition = 0;
     TextView title, details, outputTxt;
+    EditText codesET;
     CodeView codes, output;
     private AppCompatButton prevBtn, nextBtn, shareBtn;
     FirebaseDatabase database;
@@ -73,6 +75,7 @@ public class LearnDetailsActivity extends AppCompatActivity {
         title = findViewById(R.id.learnTitle);
         details = findViewById(R.id.learnDetails);
         outputTxt = findViewById(R.id.output);
+        codesET = findViewById(R.id.codesET);
         //code
         codes = findViewById(R.id.questionDes);
         output = findViewById(R.id.learnOutputView);
@@ -99,6 +102,23 @@ public class LearnDetailsActivity extends AppCompatActivity {
             output.setVisibility(View.GONE);
             outputTxt.setVisibility(View.GONE);
         }
+
+        //run code
+        binding.codesRun.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                    String getCodesET = codesET.getText().toString().trim();
+                    if (getCodesET.isEmpty()){
+                        Toast.makeText(LearnDetailsActivity.this, "Write your code first", Toast.LENGTH_SHORT).show();
+                    }else if (getCodesET.equals(learnList.get(currentTopicPosition).getTitle())){
+                        Toast.makeText(LearnDetailsActivity.this, learnList.get(currentTopicPosition).getTitle(), Toast.LENGTH_SHORT).show();
+                    }else {
+                        Toast.makeText(LearnDetailsActivity.this, "Correct your code", Toast.LENGTH_SHORT).show();
+                    }
+
+
+            }
+        });
 
         nextBtn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -159,6 +179,7 @@ public class LearnDetailsActivity extends AppCompatActivity {
         }
 
         if (currentTopicPosition < learnList.size()) {
+            codesET.setText("");
             title.setText(learnList.get(currentTopicPosition).getTitle());
             details.setText(learnList.get(currentTopicPosition).getDetails());
             codes.showCode(learnList.get(currentTopicPosition).getCodes());

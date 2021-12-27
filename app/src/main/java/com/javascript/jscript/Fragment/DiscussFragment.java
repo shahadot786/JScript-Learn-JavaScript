@@ -3,6 +3,8 @@ package com.javascript.jscript.Fragment;
 import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.graphics.Color;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.Menu;
@@ -13,6 +15,7 @@ import android.view.ViewGroup;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.widget.SearchView;
@@ -26,6 +29,7 @@ import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
+import com.javascript.jscript.Activities.FeedBackActivity;
 import com.javascript.jscript.Adapter.DiscussAdapter;
 import com.javascript.jscript.Config.UiConfig;
 import com.javascript.jscript.Discuss.AddDiscussActivity;
@@ -45,6 +49,7 @@ public class DiscussFragment extends Fragment {
     FirebaseDatabase database;
     ArrayList<DiscussModel> dashboardList;
     SwipeRefreshLayout swipeRefreshLayout;
+    private boolean connected = false;
 
     public DiscussFragment() {
         // Required empty public constructor
@@ -115,6 +120,16 @@ public class DiscussFragment extends Fragment {
         recyclerView.setLayoutManager(layoutManager);
         recyclerView.setNestedScrollingEnabled(false);
 
+        //network check
+        ConnectivityManager connectivityManager = (ConnectivityManager) getActivity().getSystemService(FeedBackActivity.CONNECTIVITY_SERVICE);
+        if (connectivityManager.getNetworkInfo(ConnectivityManager.TYPE_MOBILE).getState() == NetworkInfo.State.CONNECTED ||
+                connectivityManager.getNetworkInfo(ConnectivityManager.TYPE_WIFI).getState() == NetworkInfo.State.CONNECTED) {
+            //we are connected to a network
+            connected = true;
+        }else {
+            Toast.makeText(getActivity(), "You\'re offline, please connect to network first", Toast.LENGTH_SHORT).show();
+            connected = false;
+        }
 
         database.getReference().child("Discuss")
                 .addValueEventListener(new ValueEventListener() {

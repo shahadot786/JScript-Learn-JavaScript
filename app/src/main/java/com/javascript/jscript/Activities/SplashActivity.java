@@ -4,6 +4,8 @@ import static com.javascript.jscript.Activities.PremiumActivity.PURCHASE_KEY;
 
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
 import android.os.Bundle;
 import android.os.Handler;
 import android.view.WindowManager;
@@ -11,6 +13,7 @@ import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -28,7 +31,8 @@ public class SplashActivity extends AppCompatActivity {
     FirebaseUser currentUser;
     FirebaseAuth auth;
     FirebaseDatabase database;
-    final String PREFS_NAME = "JScript_for_new_user";
+    private boolean connected = false;
+    final String PREFS_NAME = "JScript_for_new_user";//change every update
     public static final String PREF_FILE = "JScript_Learn_JavaScript";
 
     @Override
@@ -37,6 +41,16 @@ public class SplashActivity extends AppCompatActivity {
         //set fullscreen
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_splash);
+        //network check
+        ConnectivityManager connectivityManager = (ConnectivityManager) getSystemService(FeedBackActivity.CONNECTIVITY_SERVICE);
+        if (connectivityManager.getNetworkInfo(ConnectivityManager.TYPE_MOBILE).getState() == NetworkInfo.State.CONNECTED ||
+                connectivityManager.getNetworkInfo(ConnectivityManager.TYPE_WIFI).getState() == NetworkInfo.State.CONNECTED) {
+            //we are connected to a network
+            connected = true;
+        }else {
+            Toast.makeText(SplashActivity.this, "You\'re offline, please connect to network first", Toast.LENGTH_SHORT).show();
+            connected = false;
+        }
         //animations
         topAmin = AnimationUtils.loadAnimation(this, R.anim.top_animation);
         bottomAnim = AnimationUtils.loadAnimation(this, R.anim.bottom_animation);

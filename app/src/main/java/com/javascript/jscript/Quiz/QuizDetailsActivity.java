@@ -4,6 +4,7 @@ import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
+import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.TextView;
@@ -21,8 +22,10 @@ import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
+import com.javascript.jscript.Activities.CodesActivity;
 import com.javascript.jscript.BuildConfig;
 import com.javascript.jscript.Config.UiConfig;
+import com.javascript.jscript.Learn.LearnDetailsActivity;
 import com.javascript.jscript.Model.QuizListModel;
 import com.javascript.jscript.R;
 import com.javascript.jscript.Utils.AdNetwork;
@@ -319,10 +322,20 @@ public class QuizDetailsActivity extends AppCompatActivity {
         }
     }
 
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.menu_codes, menu);
+        return super.onCreateOptionsMenu(menu);
+    }
+
     //option menu item select
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
-        finish();
+        if (item.getItemId() == R.id.codes) {
+            startActivity(new Intent(QuizDetailsActivity.this, CodesActivity.class));
+        }else {
+            finish();
+        }
         return super.onOptionsItemSelected(item);
     }
 

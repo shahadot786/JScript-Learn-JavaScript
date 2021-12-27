@@ -2,6 +2,7 @@ package com.javascript.jscript.Learn;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.EditText;
@@ -20,6 +21,7 @@ import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
+import com.javascript.jscript.Activities.CodesActivity;
 import com.javascript.jscript.BuildConfig;
 import com.javascript.jscript.Config.UiConfig;
 import com.javascript.jscript.Model.LearnDetailsModel;
@@ -275,11 +277,20 @@ public class LearnDetailsActivity extends AppCompatActivity {
         }
     }
 
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.menu_codes, menu);
+        return super.onCreateOptionsMenu(menu);
+    }
 
     //option menu item select
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
-        finish();
+        if (item.getItemId() == R.id.codes) {
+            startActivity(new Intent(LearnDetailsActivity.this, CodesActivity.class));
+        }else {
+            finish();
+        }
         return super.onOptionsItemSelected(item);
     }
 }

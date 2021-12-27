@@ -246,5 +246,6 @@
     <string name="write_only_this">//document.write(\"Your code\");</string>
     <string name="write_your_code_here">Write your code here:</string>
     <string name="run">Run</string>
+    <string name="test_codes">Test Codes</string>
 
 </resources>

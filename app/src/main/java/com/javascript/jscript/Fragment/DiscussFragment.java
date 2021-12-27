@@ -130,7 +130,7 @@ public class DiscussFragment extends Fragment {
             Toast.makeText(getActivity(), "You\'re offline, please connect to network first", Toast.LENGTH_SHORT).show();
             connected = false;
         }
-        
+
         database.getReference().child("Discuss")
                 .addValueEventListener(new ValueEventListener() {
                     @SuppressLint("NotifyDataSetChanged")

@@ -29,7 +29,7 @@ public class CodesActivity extends AppCompatActivity {
         setContentView(binding.getRoot());
         //toolbar
         setSupportActionBar(binding.toolbar2);
-        CodesActivity.this.setTitle("Test Codes");
+        CodesActivity.this.setTitle("Online Compiler");
         Objects.requireNonNull(getSupportActionBar()).setDisplayHomeAsUpEnabled(true);
         //webview
         web = findViewById(R.id.webView);
@@ -38,6 +38,7 @@ public class CodesActivity extends AppCompatActivity {
         web.setWebViewClient(new Callback());
         //Codepen
         web.loadUrl("https://codepen.io/shrcreation/pen/mdBpEYd");
+       //web.loadUrl("https://rextester.com/l/js_online_compiler");
 
     }//ends of OnCreate
 

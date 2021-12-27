@@ -152,6 +152,7 @@
                     android:layout_height="0dp"
                     android:layout_marginStart="8dp"
                     android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
                     android:layout_marginBottom="8dp"
                     android:background="@android:color/transparent"
                     android:gravity="top"
@@ -171,14 +172,18 @@
 
                 <TextView
                     android:id="@+id/codesRun"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="40dp"
+                    android:layout_height="30dp"
                     android:layout_marginEnd="8dp"
+                    android:background="@drawable/ic_quiz_option_bg"
+                    android:backgroundTint="@color/colorYellow"
+                    android:gravity="center"
                     android:text="@string/run"
-                    android:textColor="@color/colorYellow"
+                    android:textColor="@color/colorPrimary"
                     android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="@+id/codeView"
                     app:layout_constraintEnd_toEndOf="@+id/codeView"
-                    app:layout_constraintTop_toTopOf="@+id/codesET" />
+                    app:layout_constraintTop_toTopOf="@+id/codeView" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 

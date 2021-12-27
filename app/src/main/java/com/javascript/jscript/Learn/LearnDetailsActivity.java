@@ -2,6 +2,7 @@ package com.javascript.jscript.Learn;
 
 import android.content.Context;
 import android.content.Intent;
+import android.content.res.ColorStateList;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.os.Bundle;
@@ -33,7 +34,6 @@ import com.javascript.jscript.Activities.CodesActivity;
 import com.javascript.jscript.Activities.EditProfileActivity;
 import com.javascript.jscript.BuildConfig;
 import com.javascript.jscript.Config.UiConfig;
-import com.javascript.jscript.Interview.InterviewAnswerActivity;
 import com.javascript.jscript.Model.LearnDetailsModel;
 import com.javascript.jscript.R;
 import com.javascript.jscript.Utils.AdNetwork;
@@ -73,7 +73,7 @@ public class LearnDetailsActivity extends AppCompatActivity {
         toastLayout = inflater.inflate(R.layout.custom_toast_layout,(ViewGroup) findViewById(R.id.toastLayout));
         toastText = (TextView) toastLayout.findViewById(R.id.toastText);
         toast = new Toast(getApplicationContext());
-        toast.setGravity(Gravity.BOTTOM,0,500);
+        toast.setGravity(Gravity.BOTTOM,0,200);
         toast.setDuration(Toast.LENGTH_LONG);
         toast.setView(toastLayout);
         //firebase instance
@@ -145,7 +145,6 @@ public class LearnDetailsActivity extends AppCompatActivity {
         nextBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if (isCodesEmpty() ){
                     nextBtn.setBackgroundResource(R.drawable.ic_learn_next_button_bg);
                     adNetwork.showInterstitialAd();
                     changeNextQuestion();
@@ -154,7 +153,6 @@ public class LearnDetailsActivity extends AppCompatActivity {
                     } else {
                         prevBtn.setVisibility(View.VISIBLE);
                     }
-                }
                 //hide keyboard
                 InputMethodManager inputMethodManager = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
                 inputMethodManager.hideSoftInputFromWindow(view.getWindowToken(), 0);
@@ -206,6 +204,8 @@ public class LearnDetailsActivity extends AppCompatActivity {
         }
 
         if (currentTopicPosition < learnList.size()) {
+            binding.codesRun.setBackgroundTintList(ColorStateList.valueOf(getResources().getColor(R.color.colorYellow)));
+            binding.codesRun.setTextColor(getResources().getColor(R.color.colorPrimary));
             codesET.setText("");
             title.setText(learnList.get(currentTopicPosition).getTitle());
             details.setText(learnList.get(currentTopicPosition).getDetails());
@@ -272,6 +272,8 @@ public class LearnDetailsActivity extends AppCompatActivity {
             nextBtn.setText(R.string.next);
         }
         if (currentTopicPosition < learnList.size()) {
+            binding.codesRun.setBackgroundTintList(ColorStateList.valueOf(getResources().getColor(R.color.activeGreen)));
+            binding.codesRun.setTextColor(getResources().getColor(R.color.colorWhite));
             codesET.setText(learnList.get(currentTopicPosition).getCodes());
             title.setText(learnList.get(currentTopicPosition).getTitle());
             details.setText(learnList.get(currentTopicPosition).getDetails());
@@ -302,6 +304,9 @@ public class LearnDetailsActivity extends AppCompatActivity {
             toastText.setText(R.string.write_above_code);
             toast.show();
         }else if (getCodesET.equals(learnList.get(currentTopicPosition).getCodes())){
+            //change color
+            binding.codesRun.setBackgroundTintList(ColorStateList.valueOf(getResources().getColor(R.color.activeGreen)));
+            binding.codesRun.setTextColor(getResources().getColor(R.color.colorWhite));
             toastText.setText(learnList.get(currentTopicPosition).getOutput());
             toast.show();
         }else {
@@ -310,7 +315,7 @@ public class LearnDetailsActivity extends AppCompatActivity {
         }
     }
     //check is field empty
-    public boolean isCodesEmpty(){
+    /*public boolean isCodesEmpty(){
         String codesCheck = learnList.get(currentTopicPosition).getCodes();
         String outputCheck = learnList.get(currentTopicPosition).getOutput();
         String codesText = binding.codesET.getText().toString().trim();
@@ -325,7 +330,7 @@ public class LearnDetailsActivity extends AppCompatActivity {
         }
         return true;
 
-    }
+    }*/
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {

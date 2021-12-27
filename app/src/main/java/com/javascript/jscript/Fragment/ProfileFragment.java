@@ -2,6 +2,8 @@ package com.javascript.jscript.Fragment;
 
 import android.app.ProgressDialog;
 import android.content.Intent;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -24,6 +26,7 @@ import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.StorageReference;
 import com.google.firebase.storage.UploadTask;
 import com.javascript.jscript.Activities.EditProfileActivity;
+import com.javascript.jscript.Activities.FeedBackActivity;
 import com.javascript.jscript.Activities.GoogleSignInActivity;
 import com.javascript.jscript.Activities.PremiumActivity;
 import com.javascript.jscript.Config.UiConfig;
@@ -43,6 +46,7 @@ public class ProfileFragment extends Fragment {
     FirebaseStorage storage;
     FirebaseDatabase database;
     ProgressDialog dialog;
+    private boolean connected = false;
     //fixed count
     private final int listCountLearn = 400;
     private final int listCountQuiz = 800;
@@ -254,10 +258,21 @@ public class ProfileFragment extends Fragment {
         binding.uploadCoverImg.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent();
-                intent.setAction(Intent.ACTION_GET_CONTENT);
-                intent.setType("image/*");
-                startActivityForResult(intent, 11);
+                //network check
+                ConnectivityManager connectivityManager = (ConnectivityManager) getActivity().getSystemService(FeedBackActivity.CONNECTIVITY_SERVICE);
+                if (connectivityManager.getNetworkInfo(ConnectivityManager.TYPE_MOBILE).getState() == NetworkInfo.State.CONNECTED ||
+                        connectivityManager.getNetworkInfo(ConnectivityManager.TYPE_WIFI).getState() == NetworkInfo.State.CONNECTED) {
+                    //we are connected to a network
+                    connected = true;
+                    Intent intent = new Intent();
+                    intent.setAction(Intent.ACTION_GET_CONTENT);
+                    intent.setType("image/*");
+                    startActivityForResult(intent, 11);
+                }
+                else {
+                    Toast.makeText(getActivity(), "You\'re offline, please connect to network first", Toast.LENGTH_SHORT).show();
+                    connected = false;
+                }
 
             }
         });
@@ -265,10 +280,20 @@ public class ProfileFragment extends Fragment {
         binding.profileImage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent();
-                intent.setAction(Intent.ACTION_GET_CONTENT);
-                intent.setType("image/*");
-                startActivityForResult(intent, 22);
+                //network check
+                ConnectivityManager connectivityManager = (ConnectivityManager) getActivity().getSystemService(FeedBackActivity.CONNECTIVITY_SERVICE);
+                if (connectivityManager.getNetworkInfo(ConnectivityManager.TYPE_MOBILE).getState() == NetworkInfo.State.CONNECTED ||
+                        connectivityManager.getNetworkInfo(ConnectivityManager.TYPE_WIFI).getState() == NetworkInfo.State.CONNECTED) {
+                    //we are connected to a network
+                    connected = true;
+                    Intent intent = new Intent();
+                    intent.setAction(Intent.ACTION_GET_CONTENT);
+                    intent.setType("image/*");
+                    startActivityForResult(intent, 22);
+                }else {
+                    Toast.makeText(getActivity(), "You\'re offline, please connect to network first", Toast.LENGTH_SHORT).show();
+                    connected = false;
+                }
             }
         });
         //edit profile

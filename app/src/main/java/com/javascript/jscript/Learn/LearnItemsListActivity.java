@@ -55,7 +55,7 @@ public class LearnItemsListActivity extends AppCompatActivity {
     private void loadItems() {
         //free content list
         final String[] Fundamental = {
-                "Introduction",
+                "Fundamental Introduction",
                 "Code structure",
                 "The modern mode",
                 "Variables",
@@ -67,11 +67,20 @@ public class LearnItemsListActivity extends AppCompatActivity {
                 "Conditionals",
                 "Loops",
                 "Functions",
-                "Arrow functions"
-
-        };
+                "Arrow functions"};
         final String[] basic = {
-                "Learn Basic"
+                "Basic Introduction",
+                "Syntax",
+                "Enabling",
+                "Placement",
+                "Basic Variables",
+                "Basic Data Types",
+                "Basic Operators",
+                "Basic Conditions",
+                "Switch",
+                "Basic Loops",
+                "Basic Functions",
+                "Events"
         };
         final String[] Objects = {
                 "Learn Objects"

@@ -22,7 +22,6 @@
     <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_marginBottom="50dp"
         android:fillViewport="true"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -52,12 +51,13 @@
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/open_sans"
                     android:padding="10dp"
+                    android:textIsSelectable="true"
                     android:textSize="16sp"
                     android:textStyle="bold"
-                    android:textIsSelectable="true"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
             </androidx.constraintlayout.widget.ConstraintLayout>
 
             <androidx.constraintlayout.widget.ConstraintLayout
@@ -75,7 +75,7 @@
                     android:id="@+id/output"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="8dp"
+                    android:layout_marginTop="6dp"
                     android:text="@string/output"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/questionDes" />
@@ -84,7 +84,7 @@
                     android:id="@+id/learnDetails"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="16dp"
+                    android:layout_marginTop="8dp"
                     android:background="@drawable/ic_quiz_option_bg"
                     android:fontFamily="@font/open_sans"
                     android:minHeight="48dp"
@@ -100,7 +100,7 @@
                     android:id="@+id/questionDes"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="16dp"
+                    android:layout_marginTop="8dp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/learnDetails" />
@@ -118,17 +118,81 @@
             </androidx.constraintlayout.widget.ConstraintLayout>
 
             <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/writeCode"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                app:layout_constraintEnd_toEndOf="@+id/detailsC"
+                app:layout_constraintStart_toStartOf="@+id/detailsC"
+                app:layout_constraintTop_toBottomOf="@+id/detailsC">
+
+                <TextView
+                    android:id="@+id/codesText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/write_your_code_here"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <View
+                    android:id="@+id/codeView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="75dp"
+                    android:layout_marginTop="4dp"
+                    android:background="@drawable/ic_programs_image_bg"
+                    android:backgroundTint="@color/color_codes"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/codesText" />
+
+                <EditText
+                    android:id="@+id/codesET"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="4dp"
+                    android:background="@android:color/transparent"
+                    android:gravity="top"
+                    android:hint="@string/write_only_this"
+                    android:importantForAutofill="no"
+                    android:inputType="textMultiLine"
+                    android:maxLines="4"
+                    android:minHeight="48dp"
+                    android:textColor="@color/textColorPlaceholder"
+                    android:textColorHint="@color/textColorPlaceholder"
+                    android:textSize="11sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/codeView"
+                    app:layout_constraintEnd_toStartOf="@+id/codesRun"
+                    app:layout_constraintStart_toStartOf="@+id/codeView"
+                    app:layout_constraintTop_toTopOf="@+id/codeView" />
+
+                <TextView
+                    android:id="@+id/codesRun"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:text="@string/run"
+                    android:textColor="@color/colorYellow"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="@+id/codeView"
+                    app:layout_constraintTop_toTopOf="@+id/codesET" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/changeTopics"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
-                android:layout_marginTop="8dp"
+                android:layout_marginTop="16dp"
                 android:layout_marginEnd="16dp"
-                android:layout_marginBottom="8dp"
+                android:layout_marginBottom="150dp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.5"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/detailsC">
+                app:layout_constraintTop_toBottomOf="@+id/writeCode">
 
                 <androidx.appcompat.widget.AppCompatButton
                     android:id="@+id/learnShareBtn"
@@ -183,6 +247,7 @@
         </androidx.constraintlayout.widget.ConstraintLayout>
 
     </androidx.core.widget.NestedScrollView>
+
     <com.google.android.gms.ads.AdView
         android:id="@+id/adView"
         android:layout_width="wrap_content"
@@ -197,4 +262,5 @@
         app:layout_constraintStart_toStartOf="parent">
 
     </com.google.android.gms.ads.AdView>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

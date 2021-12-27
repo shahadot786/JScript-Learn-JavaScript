@@ -28,7 +28,7 @@
     <color name="colorGreen">#82D364</color>
     <color name="colorRed">#F53B3B</color>
     <color name="color3">#3A96F1</color>
-    <color name="colorYellow">#FFD512</color>
+    <color name="colorYellow">#C2940A</color>
     <color name="colorLinkBg">#16171b</color>
 
     <!--Never Change Colors-->
@@ -52,5 +52,6 @@
     <color name="color_app_gradient_start">#00601b</color>
     <color name="color_pro_bg">#C11C1F32</color>
     <color name="color_text_discuss">#DDDCDC</color>
+    <color name="color_codes">#171c19</color>
 
 </resources>

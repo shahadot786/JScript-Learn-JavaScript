@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -238,6 +239,18 @@ public class LearnDetailsActivity extends AppCompatActivity {
                 outputTxt.setVisibility(View.VISIBLE);
             }
 
+        }
+    }
+    //write codes method
+    //check is field empty
+    public boolean isCodesEmpty(){
+        String codesText = binding.codesET.getText().toString().trim();
+        if (codesText.isEmpty()){
+            Toast.makeText(LearnDetailsActivity.this, "First test code", Toast.LENGTH_SHORT).show();
+            return false;
+        }else {
+            binding.codesET.setError(null);
+            return true;
         }
     }
 

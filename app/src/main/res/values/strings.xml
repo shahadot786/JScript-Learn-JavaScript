@@ -243,5 +243,8 @@
     <string name="_0">0%</string>
     <string name="my_progress">My Progress :</string>
     <string name="click_to_finish">Click to finish</string>
+    <string name="write_only_this">//document.write(\"Your code\");</string>
+    <string name="write_your_code_here">Write your code here:</string>
+    <string name="run">Run</string>
 
 </resources>

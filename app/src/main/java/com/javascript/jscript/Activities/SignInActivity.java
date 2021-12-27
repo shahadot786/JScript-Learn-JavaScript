@@ -9,7 +9,10 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.util.Log;
 import android.util.Patterns;
+import android.view.Gravity;
+import android.view.LayoutInflater;
 import android.view.View;
+import android.view.ViewGroup;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -53,6 +56,10 @@ public class SignInActivity extends AppCompatActivity {
     FirebaseUser currentUser;
     ProgressDialog dialog;
     private boolean connected = false;
+    LayoutInflater inflater;
+    TextView toastText;
+    View toastLayout;
+    Toast toast;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -60,6 +67,15 @@ public class SignInActivity extends AppCompatActivity {
         //binding
         binding = ActivitySignInBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
+        //custom toast
+        inflater = getLayoutInflater();
+        toastLayout = inflater.inflate(R.layout.custom_toast_layout,(ViewGroup) findViewById(R.id.toastLayout));
+        toastText = (TextView) toastLayout.findViewById(R.id.toastText);
+        toast = new Toast(getApplicationContext());
+        toast.setGravity(Gravity.BOTTOM,0,150);
+        toast.setDuration(Toast.LENGTH_LONG);
+        toast.setView(toastLayout);
+        //dialog
         dialog = new ProgressDialog(this, ProgressDialog.THEME_DEVICE_DEFAULT_DARK);
         dialog.setProgressStyle(ProgressDialog.STYLE_SPINNER);
         dialog.setTitle("Sign In");
@@ -129,10 +145,12 @@ public class SignInActivity extends AppCompatActivity {
                                     throw Objects.requireNonNull(task.getException());
                                 } catch (FirebaseAuthInvalidUserException invalidEmail) {
                                     Log.d("TAG", "onComplete: invalid_email");
-                                    Toast.makeText(SignInActivity.this, "Please enter your registered email address!", Toast.LENGTH_SHORT).show();
+                                    toastText.setText(R.string.enter_register_email);
+                                    toast.show();
                                 } catch (FirebaseAuthInvalidCredentialsException wrongPassword) {
                                     Log.d("TAG", "onComplete: wrong_password");
-                                    Toast.makeText(SignInActivity.this, "Please enter a correct password!", Toast.LENGTH_SHORT).show();
+                                    toastText.setText(R.string.PleaseCorrectPassword);
+                                    toast.show();
                                 } catch (Exception e) {
                                     Log.d("TAG", "onComplete: " + e.getMessage());
                                 }
@@ -140,7 +158,8 @@ public class SignInActivity extends AppCompatActivity {
                                 dialog.show();
                                 Intent intent = new Intent(SignInActivity.this, MainActivity.class);
                                 startActivity(intent);
-                                Toast.makeText(SignInActivity.this, "Sign In Successfully", Toast.LENGTH_SHORT).show();
+                                toastText.setText(R.string.SignInSuccessfully);
+                                toast.show();
 
                             }
                         }
@@ -149,7 +168,8 @@ public class SignInActivity extends AppCompatActivity {
 
 
                 } else {
-                    Toast.makeText(SignInActivity.this, "You\'re offline, please connect to network first", Toast.LENGTH_SHORT).show();
+                    toastText.setText(R.string.no_connection_text);
+                    toast.show();
                     connected = false;
                 }
             }

@@ -10,7 +10,10 @@ import android.net.NetworkInfo;
 import android.net.Uri;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.Gravity;
+import android.view.LayoutInflater;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -45,12 +48,25 @@ public class GoogleSignInActivity extends AppCompatActivity {
     FirebaseDatabase database;
     ProgressDialog dialog;
     private boolean connected = false;
+    LayoutInflater inflater;
+    TextView toastText;
+    View toastLayout;
+    Toast toast;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         binding = ActivityGoogleSignInBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
+        //custom toast
+        inflater = getLayoutInflater();
+        toastLayout = inflater.inflate(R.layout.custom_toast_layout,(ViewGroup) findViewById(R.id.toastLayout));
+        toastText = (TextView) toastLayout.findViewById(R.id.toastText);
+        toast = new Toast(getApplicationContext());
+        toast.setGravity(Gravity.BOTTOM,0,150);
+        toast.setDuration(Toast.LENGTH_LONG);
+        toast.setView(toastLayout);
+        //firebase instance
         auth = FirebaseAuth.getInstance();
         database = FirebaseDatabase.getInstance();
         //progress dialog
@@ -83,7 +99,8 @@ public class GoogleSignInActivity extends AppCompatActivity {
                     connected = true;
                     signIn();
                 } else {
-                    Toast.makeText(GoogleSignInActivity.this, "You\'re offline, please connect to network first", Toast.LENGTH_SHORT).show();
+                    toastText.setText(R.string.no_connection_text);
+                    toast.show();
                     connected = false;
                 }
             }

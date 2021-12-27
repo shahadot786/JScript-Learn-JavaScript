@@ -244,10 +244,33 @@
     <string name="my_progress">My Progress :</string>
     <string name="click_to_finish">Click to finish</string>
     <string name="write_only_this">//Please do the exact above code here..</string>
-    <string name="write_your_code_here">Write your code here:</string>
+    <string name="write_your_code_here">Test above code here:</string>
     <string name="run">Run</string>
     <string name="test_codes">Compiler</string>
     <string name="write_above_code">Write above code and run</string>
-    <string name="correct_code">Correct your code</string>
+    <string name="correct_code">Correct your code or copy above code</string>
+    <string name="no_connection_text">You\'re offline, please connect to network first</string>
+    <string name="enter_register_email">Please enter your registered email address</string>
+    <string name="net_connection_check">Please check your email address!</string>
+    <string name="correct_email">Enter correct email address!</string>
+    <string name="Service_Disconnected">Service Disconnected</string>
+    <string name="Error">Error</string>
+    <string name="PurchaseItemnotFound">Purchase Item not Found</string>
+    <string name="PurchaseCanceled">Purchase Canceled</string>
+    <string name="ErrorinvalidPurchase">Error : invalid Purchase</string>
+    <string name="ItemPurchased">Item Purchased</string>
+    <string name="PurchaseisPending">Purchase is Pending. Please complete Transaction</string>
+    <string name="PurchaseStatusUnknown">Purchase Status Unknown</string>
+    <string name="PleaseCorrectPassword">Please enter a correct password!</string>
+    <string name="SignInSuccessfully">Sign In Successfully</string>
+    <string name="WeakPassword">Weak password</string>
+    <string name="EmailAlreadyExist">Email already exist</string>
+    <string name="SignUpSuccessfully">Sign Up Successfully</string>
+    <string name="PostedSuccessfully">Posted Successfully</string>
+    <string name="Please_select_an_option">Please select an option</string>
+    <string name="Pleaseupdateyourprofilefirst">Please update your profile first</string>
+    <string name="valid_input">Please insert valid input in your update profile</string>
+    <string name="UploadSuccessfully">Upload Successfully</string>
+    <string name="WrongImageUpload">Wrong Image Upload</string>
 
 </resources>

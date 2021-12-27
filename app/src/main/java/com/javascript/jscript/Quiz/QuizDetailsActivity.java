@@ -3,10 +3,15 @@ package com.javascript.jscript.Quiz;
 import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.graphics.Color;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
 import android.os.Bundle;
+import android.view.Gravity;
+import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -23,8 +28,10 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 import com.javascript.jscript.Activities.CodesActivity;
+import com.javascript.jscript.Activities.EditProfileActivity;
 import com.javascript.jscript.BuildConfig;
 import com.javascript.jscript.Config.UiConfig;
+import com.javascript.jscript.Interview.InterviewAnswerActivity;
 import com.javascript.jscript.Learn.LearnDetailsActivity;
 import com.javascript.jscript.Model.QuizListModel;
 import com.javascript.jscript.R;
@@ -39,19 +46,35 @@ public class QuizDetailsActivity extends AppCompatActivity {
     ActivityQuizDetailsBinding binding;
     FirebaseDatabase database;
     FirebaseAuth auth;
-    private AdView bannerAd;
     private AdNetwork adNetwork;
     private List<QuizListModel> questionList;
     private int currentQuestionPosition = 0;
     private String selectedOptionByUser = "";
     TextView quizCount, question;
-    private AppCompatButton option1, option2, option3, option4, nextBtn, shareBtn;
+    private AppCompatButton option1;
+    private AppCompatButton option2;
+    private AppCompatButton option3;
+    private AppCompatButton option4;
+    private AppCompatButton nextBtn;
+    private boolean connected = false;
+    LayoutInflater inflater;
+    TextView toastText;
+    View toastLayout;
+    Toast toast;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         binding = ActivityQuizDetailsBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
+        //custom toast
+        inflater = getLayoutInflater();
+        toastLayout = inflater.inflate(R.layout.custom_toast_layout,(ViewGroup) findViewById(R.id.toastLayout));
+        toastText = (TextView) toastLayout.findViewById(R.id.toastText);
+        toast = new Toast(getApplicationContext());
+        toast.setGravity(Gravity.BOTTOM,0,100);
+        toast.setDuration(Toast.LENGTH_LONG);
+        toast.setView(toastLayout);
         //firebase instance
         database = FirebaseDatabase.getInstance();
         auth = FirebaseAuth.getInstance();
@@ -64,7 +87,7 @@ public class QuizDetailsActivity extends AppCompatActivity {
         adNetwork = new AdNetwork(QuizDetailsActivity.this);
         adNetwork.loadInterstitialAd();
         //banner
-        bannerAd = findViewById(R.id.adView);
+        AdView bannerAd = findViewById(R.id.adView);
         AdRequest adRequest = new AdRequest.Builder().build();
         bannerAd.loadAd(adRequest);
         if (UiConfig.BANNER_AD_VISIBILITY) {
@@ -81,7 +104,7 @@ public class QuizDetailsActivity extends AppCompatActivity {
         option3 = findViewById(R.id.option3);
         option4 = findViewById(R.id.option4);
         nextBtn = findViewById(R.id.nextBtn);
-        shareBtn = findViewById(R.id.quizShareBtn);
+        AppCompatButton shareBtn = findViewById(R.id.quizShareBtn);
 
         final String getSelectedTopicName = getIntent().getStringExtra("question");
 
@@ -167,7 +190,8 @@ public class QuizDetailsActivity extends AppCompatActivity {
             public void onClick(View view) {
 
                 if (selectedOptionByUser.isEmpty()) {
-                    Toast.makeText(QuizDetailsActivity.this, "Please select an option", Toast.LENGTH_SHORT).show();
+                    toastText.setText(R.string.Please_select_an_option);
+                    toast.show();
                 } else {
                     adNetwork.showInterstitialAd();
                     changeNextQuestion();
@@ -332,7 +356,19 @@ public class QuizDetailsActivity extends AppCompatActivity {
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         if (item.getItemId() == R.id.codes) {
-            startActivity(new Intent(QuizDetailsActivity.this, CodesActivity.class));
+            //network check
+            ConnectivityManager connectivityManager = (ConnectivityManager) getSystemService(EditProfileActivity.CONNECTIVITY_SERVICE);
+            if (connectivityManager.getNetworkInfo(ConnectivityManager.TYPE_MOBILE).getState() == NetworkInfo.State.CONNECTED ||
+                    connectivityManager.getNetworkInfo(ConnectivityManager.TYPE_WIFI).getState() == NetworkInfo.State.CONNECTED) {
+                //we are connected to a network
+                connected = true;
+                startActivity(new Intent(QuizDetailsActivity.this, CodesActivity.class));
+            }else {
+                toastText.setText(R.string.no_connection_text);
+                toast.show();
+                connected = false;
+            }
+
         }else {
             finish();
         }

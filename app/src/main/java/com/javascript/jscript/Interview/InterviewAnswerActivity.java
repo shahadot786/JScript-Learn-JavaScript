@@ -5,11 +5,17 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.content.res.ColorStateList;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
 import android.os.Bundle;
+import android.view.Gravity;
+import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
@@ -20,6 +26,7 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 import com.javascript.jscript.Activities.CodesActivity;
+import com.javascript.jscript.Activities.EditProfileActivity;
 import com.javascript.jscript.Config.UiConfig;
 import com.javascript.jscript.Learn.LearnDetailsActivity;
 import com.javascript.jscript.R;
@@ -32,11 +39,24 @@ public class InterviewAnswerActivity extends AppCompatActivity {
     FirebaseDatabase database;
     FirebaseAuth auth;
     TextView textQuestion,questionDes;
+    private boolean connected = false;
+    LayoutInflater inflater;
+    TextView toastText;
+    View toastLayout;
+    Toast toast;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         binding = ActivityInterviewAnswerBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
+        //custom toast
+        inflater = getLayoutInflater();
+        toastLayout = inflater.inflate(R.layout.custom_toast_layout,(ViewGroup) findViewById(R.id.toastLayout));
+        toastText = (TextView) toastLayout.findViewById(R.id.toastText);
+        toast = new Toast(getApplicationContext());
+        toast.setGravity(Gravity.BOTTOM,0,100);
+        toast.setDuration(Toast.LENGTH_LONG);
+        toast.setView(toastLayout);
         //firebase instance
         database = FirebaseDatabase.getInstance();
         auth = FirebaseAuth.getInstance();
@@ -151,7 +171,19 @@ public class InterviewAnswerActivity extends AppCompatActivity {
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         if (item.getItemId() == R.id.codes) {
-            startActivity(new Intent(InterviewAnswerActivity.this, CodesActivity.class));
+            //network check
+            ConnectivityManager connectivityManager = (ConnectivityManager) getSystemService(EditProfileActivity.CONNECTIVITY_SERVICE);
+            if (connectivityManager.getNetworkInfo(ConnectivityManager.TYPE_MOBILE).getState() == NetworkInfo.State.CONNECTED ||
+                    connectivityManager.getNetworkInfo(ConnectivityManager.TYPE_WIFI).getState() == NetworkInfo.State.CONNECTED) {
+                //we are connected to a network
+                connected = true;
+                startActivity(new Intent(InterviewAnswerActivity.this, CodesActivity.class));
+            }else {
+                toastText.setText(R.string.no_connection_text);
+                toast.show();
+                connected = false;
+            }
+
         }else {
             finish();
         }

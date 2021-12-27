@@ -9,8 +9,12 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.util.Log;
 import android.util.Patterns;
+import android.view.Gravity;
+import android.view.LayoutInflater;
 import android.view.View;
+import android.view.ViewGroup;
 import android.view.inputmethod.InputMethodManager;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
@@ -55,6 +59,10 @@ public class SignUpActivity extends AppCompatActivity {
     FirebaseAuth auth;
     FirebaseDatabase database;
     private boolean connected = false;
+    LayoutInflater inflater;
+    TextView toastText;
+    View toastLayout;
+    Toast toast;
 
 
     @Override
@@ -63,6 +71,15 @@ public class SignUpActivity extends AppCompatActivity {
         //binding
         binding = ActivitySignUpBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
+        //custom toast
+        inflater = getLayoutInflater();
+        toastLayout = inflater.inflate(R.layout.custom_toast_layout,(ViewGroup) findViewById(R.id.toastLayout));
+        toastText = (TextView) toastLayout.findViewById(R.id.toastText);
+        toast = new Toast(getApplicationContext());
+        toast.setGravity(Gravity.BOTTOM,0,100);
+        toast.setDuration(Toast.LENGTH_LONG);
+        toast.setView(toastLayout);
+        //dialog
         dialog = new ProgressDialog(this, ProgressDialog.THEME_DEVICE_DEFAULT_DARK);
         dialog.setProgressStyle(ProgressDialog.STYLE_SPINNER);
         dialog.setTitle("Sign Up");
@@ -110,12 +127,14 @@ public class SignUpActivity extends AppCompatActivity {
                                             throw Objects.requireNonNull(task.getException());
                                         } catch (FirebaseAuthWeakPasswordException weakPassword) {
                                             Log.d("TAG", "onComplete: weak_password");
-                                            Toast.makeText(SignUpActivity.this, "Weak password", Toast.LENGTH_SHORT).show();
+                                            toastText.setText(R.string.WeakPassword);
+                                            toast.show();
                                         } catch (FirebaseAuthInvalidCredentialsException malformedEmail) {
                                             Log.d("TAG", "onComplete: malformed_email");
                                         } catch (FirebaseAuthUserCollisionException existEmail) {
                                             Log.d("TAG", "onComplete: exist_email");
-                                            Toast.makeText(SignUpActivity.this, "Email already exist", Toast.LENGTH_SHORT).show();
+                                            toastText.setText(R.string.EmailAlreadyExist);
+                                            toast.show();
                                         } catch (Exception e) {
                                             Log.d("TAG", "onComplete: " + e.getMessage());
                                         }
@@ -125,7 +144,8 @@ public class SignUpActivity extends AppCompatActivity {
                                         database.getReference().child("UserData")
                                                 .child(Objects.requireNonNull(FirebaseAuth.getInstance().getUid()))
                                                 .setValue(userModel);
-                                        Toast.makeText(SignUpActivity.this, "Sign Up Successfully", Toast.LENGTH_SHORT).show();
+                                        toastText.setText(R.string.SignUpSuccessfully);
+                                        toast.show();
                                         Intent intent = new Intent(SignUpActivity.this, MainActivity.class);
                                         startActivity(intent);
                                     }
@@ -134,7 +154,8 @@ public class SignUpActivity extends AppCompatActivity {
                     dialog.dismiss();
 
                 } else {
-                    Toast.makeText(SignUpActivity.this, "You\'re offline, please connect to network first", Toast.LENGTH_SHORT).show();
+                    toastText.setText(R.string.no_connection_text);
+                    toast.show();
                     connected = false;
                 }
             }

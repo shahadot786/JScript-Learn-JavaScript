@@ -2,10 +2,17 @@ package com.javascript.jscript.Programs;
 
 import android.content.Intent;
 import android.content.res.ColorStateList;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
 import android.os.Bundle;
+import android.view.Gravity;
+import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.ViewGroup;
+import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -19,8 +26,9 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 import com.javascript.jscript.Activities.CodesActivity;
+import com.javascript.jscript.Activities.EditProfileActivity;
 import com.javascript.jscript.Config.UiConfig;
-import com.javascript.jscript.Learn.LearnDetailsActivity;
+import com.javascript.jscript.Interview.InterviewAnswerActivity;
 import com.javascript.jscript.R;
 import com.javascript.jscript.databinding.ActivityProgramsCodeBinding;
 
@@ -35,12 +43,25 @@ public class ProgramsCodeActivity extends AppCompatActivity {
     private AdView bannerAd;
     FirebaseDatabase database;
     FirebaseAuth auth;
+    private boolean connected = false;
+    LayoutInflater inflater;
+    TextView toastText;
+    View toastLayout;
+    Toast toast;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         binding = ActivityProgramsCodeBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
+        //custom toast
+        inflater = getLayoutInflater();
+        toastLayout = inflater.inflate(R.layout.custom_toast_layout,(ViewGroup) findViewById(R.id.toastLayout));
+        toastText = (TextView) toastLayout.findViewById(R.id.toastText);
+        toast = new Toast(getApplicationContext());
+        toast.setGravity(Gravity.BOTTOM,0,100);
+        toast.setDuration(Toast.LENGTH_LONG);
+        toast.setView(toastLayout);
         //firebase instance
         database = FirebaseDatabase.getInstance();
         auth = FirebaseAuth.getInstance();
@@ -169,7 +190,19 @@ public class ProgramsCodeActivity extends AppCompatActivity {
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         if (item.getItemId() == R.id.codes) {
-            startActivity(new Intent(ProgramsCodeActivity.this, CodesActivity.class));
+            //network check
+            ConnectivityManager connectivityManager = (ConnectivityManager) getSystemService(EditProfileActivity.CONNECTIVITY_SERVICE);
+            if (connectivityManager.getNetworkInfo(ConnectivityManager.TYPE_MOBILE).getState() == NetworkInfo.State.CONNECTED ||
+                    connectivityManager.getNetworkInfo(ConnectivityManager.TYPE_WIFI).getState() == NetworkInfo.State.CONNECTED) {
+                //we are connected to a network
+                connected = true;
+                startActivity(new Intent(ProgramsCodeActivity.this, CodesActivity.class));
+            }else {
+                toastText.setText(R.string.no_connection_text);
+                toast.show();
+                connected = false;
+            }
+
         }else {
             finish();
         }

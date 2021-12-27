@@ -6,9 +6,11 @@ import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.net.Uri;
 import android.os.Bundle;
+import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
@@ -57,6 +59,9 @@ public class ProfileFragment extends Fragment {
     private final int dividedQuiz = 8;
     private final int dividedPrograms = 10;
     private final int dividedInterview = 5;
+    TextView toastText;
+    View toastLayout;
+    Toast toast;
 
 
     public ProfileFragment() {
@@ -79,7 +84,15 @@ public class ProfileFragment extends Fragment {
     public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
+        View view = inflater.inflate(R.layout.fragment_profile,container,false);
         binding = FragmentProfileBinding.inflate(inflater, container, false);
+        //Toast
+        toastLayout = inflater.inflate(R.layout.custom_toast_layout,(ViewGroup) view.findViewById(R.id.toastLayout));
+        toastText = (TextView) toastLayout.findViewById(R.id.toastText);
+        toast = new Toast(getActivity().getBaseContext());
+        toast.setGravity(Gravity.BOTTOM,0,200);
+        toast.setDuration(Toast.LENGTH_LONG);
+        toast.setView(toastLayout);
         //dialog
         dialog.setProgressStyle(ProgressDialog.STYLE_SPINNER);
         dialog.setTitle("Image Uploading");
@@ -175,13 +188,15 @@ public class ProfileFragment extends Fragment {
                                     @Override
                                     public void onClick(View view) {
                                         if (fb.isEmpty()) {
-                                            Toast.makeText(getActivity(), "Please update your profile first.", Toast.LENGTH_SHORT).show();
+                                            toastText.setText(R.string.Pleaseupdateyourprofilefirst);
+                                            toast.show();
                                         } else if (fb.startsWith("https://")) {
                                             startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(fb)));
                                         } else if (fb.startsWith("http://")) {
                                             startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(fb)));
                                         } else {
-                                            Toast.makeText(getActivity(), "Please insert valid input in your update profile.", Toast.LENGTH_SHORT).show();
+                                            toastText.setText(R.string.valid_input);
+                                            toast.show();
                                         }
                                     }
                                 });//facebook
@@ -189,13 +204,15 @@ public class ProfileFragment extends Fragment {
                                     @Override
                                     public void onClick(View view) {
                                         if (insta.isEmpty()) {
-                                            Toast.makeText(getActivity(), "Please update your profile first.", Toast.LENGTH_SHORT).show();
+                                            toastText.setText(R.string.Pleaseupdateyourprofilefirst);
+                                            toast.show();
                                         } else if (insta.startsWith("https://")) {
                                             startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(insta)));
                                         } else if (insta.startsWith("http://")) {
                                             startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(insta)));
                                         } else {
-                                            Toast.makeText(getActivity(), "Please insert valid input in your update profile.", Toast.LENGTH_SHORT).show();
+                                            toastText.setText(R.string.valid_input);
+                                            toast.show();
                                         }
                                     }
                                 });//instagram
@@ -203,13 +220,15 @@ public class ProfileFragment extends Fragment {
                                     @Override
                                     public void onClick(View view) {
                                         if (github.isEmpty()) {
-                                            Toast.makeText(getActivity(), "Please update your profile first.", Toast.LENGTH_SHORT).show();
+                                            toastText.setText(R.string.Pleaseupdateyourprofilefirst);
+                                            toast.show();
                                         } else if (github.startsWith("https://")) {
                                             startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(github)));
                                         } else if (github.startsWith("http://")) {
                                             startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(github)));
                                         } else {
-                                            Toast.makeText(getActivity(), "Please insert valid input in your update profile.", Toast.LENGTH_SHORT).show();
+                                            toastText.setText(R.string.valid_input);
+                                            toast.show();
                                         }
                                     }
                                 });//github
@@ -217,13 +236,15 @@ public class ProfileFragment extends Fragment {
                                     @Override
                                     public void onClick(View view) {
                                         if (linkedin.isEmpty()) {
-                                            Toast.makeText(getActivity(), "Please update your profile first.", Toast.LENGTH_SHORT).show();
+                                            toastText.setText(R.string.Pleaseupdateyourprofilefirst);
+                                            toast.show();
                                         } else if (linkedin.startsWith("https://")) {
                                             startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(linkedin)));
                                         } else if (linkedin.startsWith("http://")) {
                                             startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(linkedin)));
                                         } else {
-                                            Toast.makeText(getActivity(), "Please insert valid input in your update profile.", Toast.LENGTH_SHORT).show();
+                                            toastText.setText(R.string.valid_input);
+                                            toast.show();
                                         }
                                     }
                                 });//linkedin
@@ -231,13 +252,15 @@ public class ProfileFragment extends Fragment {
                                     @Override
                                     public void onClick(View view) {
                                         if (twitter.isEmpty()) {
-                                            Toast.makeText(getActivity(), "Please update your profile first.", Toast.LENGTH_SHORT).show();
+                                            toastText.setText(R.string.Pleaseupdateyourprofilefirst);
+                                            toast.show();
                                         } else if (twitter.startsWith("https://")) {
                                             startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(twitter)));
                                         } else if (twitter.startsWith("http://")) {
                                             startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(twitter)));
                                         } else {
-                                            Toast.makeText(getActivity(), "Please insert valid input.", Toast.LENGTH_SHORT).show();
+                                            toastText.setText(R.string.valid_input);
+                                            toast.show();
                                         }
                                     }
                                 });//twitter
@@ -270,7 +293,8 @@ public class ProfileFragment extends Fragment {
                     startActivityForResult(intent, 11);
                 }
                 else {
-                    Toast.makeText(getActivity(), "You\'re offline, please connect to network first", Toast.LENGTH_SHORT).show();
+                    toastText.setText(R.string.no_connection_text);
+                    toast.show();
                     connected = false;
                 }
 
@@ -291,7 +315,8 @@ public class ProfileFragment extends Fragment {
                     intent.setType("image/*");
                     startActivityForResult(intent, 22);
                 }else {
-                    Toast.makeText(getActivity(), "You\'re offline, please connect to network first", Toast.LENGTH_SHORT).show();
+                    toastText.setText(R.string.no_connection_text);
+                    toast.show();
                     connected = false;
                 }
             }
@@ -387,7 +412,8 @@ public class ProfileFragment extends Fragment {
                     @Override
                     public void onSuccess(@NonNull UploadTask.TaskSnapshot taskSnapshot) {
                         dialog.dismiss();
-                        Toast.makeText(getContext(), "Upload Successfully", Toast.LENGTH_SHORT).show();
+                        toastText.setText(R.string.UploadSuccessfully);
+                        toast.show();
                         reference.getDownloadUrl().addOnSuccessListener(new OnSuccessListener<Uri>() {
                             @Override
                             public void onSuccess(@NonNull Uri uri) {
@@ -413,7 +439,8 @@ public class ProfileFragment extends Fragment {
                     @Override
                     public void onSuccess(@NonNull UploadTask.TaskSnapshot taskSnapshot) {
                         dialog.dismiss();
-                        Toast.makeText(getContext(), "Upload Successfully", Toast.LENGTH_SHORT).show();
+                        toastText.setText(R.string.UploadSuccessfully);
+                        toast.show();
                         reference.getDownloadUrl().addOnSuccessListener(new OnSuccessListener<Uri>() {
                             @Override
                             public void onSuccess(@NonNull Uri uri) {
@@ -428,7 +455,8 @@ public class ProfileFragment extends Fragment {
                 });
             }
         } else {
-            Toast.makeText(getContext(), "Wrong Image Upload", Toast.LENGTH_SHORT).show();
+            toastText.setText(R.string.WrongImageUpload);
+            toast.show();
         }
     }
 

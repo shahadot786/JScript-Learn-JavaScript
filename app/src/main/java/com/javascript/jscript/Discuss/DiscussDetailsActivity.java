@@ -5,9 +5,13 @@ import android.content.Intent;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.os.Bundle;
+import android.view.Gravity;
+import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.ViewGroup;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
@@ -50,6 +54,10 @@ public class DiscussDetailsActivity extends AppCompatActivity {
     SwipeRefreshLayout swipeRefreshLayout;
     ShimmerRecyclerView commentShimmer;
     private boolean connected = false;
+    LayoutInflater inflater;
+    TextView toastText;
+    View toastLayout;
+    Toast toast;
 
 
     @Override
@@ -57,6 +65,15 @@ public class DiscussDetailsActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         binding = ActivityDiscussDetailsBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
+        //custom toast
+        inflater = getLayoutInflater();
+        toastLayout = inflater.inflate(R.layout.custom_toast_layout,(ViewGroup) findViewById(R.id.toastLayout));
+        toastText = (TextView) toastLayout.findViewById(R.id.toastText);
+        toast = new Toast(getApplicationContext());
+        toast.setGravity(Gravity.BOTTOM,0,100);
+        toast.setDuration(Toast.LENGTH_LONG);
+        toast.setView(toastLayout);
+        //swipe refresh
         swipeRefreshLayout = findViewById(R.id.swipeRefreshComment);
         commentShimmer = findViewById(R.id.commentRv);
         //get data by intent
@@ -201,7 +218,8 @@ public class DiscussDetailsActivity extends AppCompatActivity {
                     }
 
                 } else {
-                    Toast.makeText(DiscussDetailsActivity.this, "You\'re offline, please connect to network first", Toast.LENGTH_SHORT).show();
+                    toastText.setText(R.string.no_connection_text);
+                    toast.show();
                     connected = false;
                 }
             }

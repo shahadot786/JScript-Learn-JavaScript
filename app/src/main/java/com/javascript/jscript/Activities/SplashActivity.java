@@ -8,6 +8,10 @@ import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.os.Bundle;
 import android.os.Handler;
+import android.view.Gravity;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
 import android.view.WindowManager;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
@@ -34,6 +38,10 @@ public class SplashActivity extends AppCompatActivity {
     private boolean connected = false;
     final String PREFS_NAME = "JScript_for_new_user";//change every update
     public static final String PREF_FILE = "JScript_Learn_JavaScript";
+    LayoutInflater inflater;
+    TextView toastText;
+    View toastLayout;
+    Toast toast;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,6 +49,14 @@ public class SplashActivity extends AppCompatActivity {
         //set fullscreen
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_splash);
+        //custom toast
+        inflater = getLayoutInflater();
+        toastLayout = inflater.inflate(R.layout.custom_toast_layout,(ViewGroup) findViewById(R.id.toastLayout));
+        toastText = (TextView) toastLayout.findViewById(R.id.toastText);
+        toast = new Toast(getApplicationContext());
+        toast.setGravity(Gravity.BOTTOM,0,40);
+        toast.setDuration(Toast.LENGTH_LONG);
+        toast.setView(toastLayout);
         //network check
         ConnectivityManager connectivityManager = (ConnectivityManager) getSystemService(FeedBackActivity.CONNECTIVITY_SERVICE);
         if (connectivityManager.getNetworkInfo(ConnectivityManager.TYPE_MOBILE).getState() == NetworkInfo.State.CONNECTED ||
@@ -48,7 +64,8 @@ public class SplashActivity extends AppCompatActivity {
             //we are connected to a network
             connected = true;
         }else {
-            Toast.makeText(SplashActivity.this, "You\'re offline, please connect to network first", Toast.LENGTH_SHORT).show();
+            toastText.setText(R.string.no_connection_text);
+            toast.show();
             connected = false;
         }
         //animations

@@ -6,9 +6,13 @@ import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.net.Uri;
 import android.os.Bundle;
+import android.view.Gravity;
+import android.view.LayoutInflater;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
@@ -26,6 +30,10 @@ public class FollowUsActivity extends AppCompatActivity {
 
     ActivityFollowUsBinding binding;
     private boolean connected = false;
+    LayoutInflater inflater;
+    TextView toastText;
+    View toastLayout;
+    Toast toast;
 
     @SuppressLint("SetTextI18n")
     @Override
@@ -33,6 +41,14 @@ public class FollowUsActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         binding = ActivityFollowUsBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
+        //custom toast
+        inflater = getLayoutInflater();
+        toastLayout = inflater.inflate(R.layout.custom_toast_layout,(ViewGroup) findViewById(R.id.toastLayout));
+        toastText = (TextView) toastLayout.findViewById(R.id.toastText);
+        toast = new Toast(getApplicationContext());
+        toast.setGravity(Gravity.BOTTOM,0,100);
+        toast.setDuration(Toast.LENGTH_LONG);
+        toast.setView(toastLayout);
         //pro status
         ImageView proBadge = findViewById(R.id.proBadge);
         if (UiConfig.PRO_VISIBILITY_STATUS_SHOW) {
@@ -105,7 +121,8 @@ public class FollowUsActivity extends AppCompatActivity {
                     connected = true;
                     startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("mailto:" + "info@shrcreation.com")));
                 } else {
-                    Toast.makeText(FollowUsActivity.this, "You\'re offline, please connect to network first", Toast.LENGTH_SHORT).show();
+                    toastText.setText(R.string.no_connection_text);
+                    toast.show();
                     connected = false;
                 }
             }

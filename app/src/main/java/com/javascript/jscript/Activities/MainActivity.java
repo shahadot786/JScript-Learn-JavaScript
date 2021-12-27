@@ -2,11 +2,17 @@ package com.javascript.jscript.Activities;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
 import android.net.Uri;
 import android.os.Bundle;
+import android.view.Gravity;
+import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.ViewGroup;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
@@ -35,6 +41,11 @@ public class MainActivity extends AppCompatActivity {
     ActivityMainBinding binding;
     private AdView bannerAd;
     FirebaseAuth auth;
+    private boolean connected = false;
+    LayoutInflater inflater;
+    TextView toastText;
+    View toastLayout;
+    Toast toast;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,9 +53,18 @@ public class MainActivity extends AppCompatActivity {
         //binding
         binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
+        //custom toast
+        inflater = getLayoutInflater();
+        toastLayout = inflater.inflate(R.layout.custom_toast_layout,(ViewGroup) findViewById(R.id.toastLayout));
+        toastText = (TextView) toastLayout.findViewById(R.id.toastText);
+        toast = new Toast(getApplicationContext());
+        toast.setGravity(Gravity.BOTTOM,0,100);
+        toast.setDuration(Toast.LENGTH_LONG);
+        toast.setView(toastLayout);
+        //toolbar
         setSupportActionBar(binding.toolbar);
+        //firebase instance
         auth = FirebaseAuth.getInstance();
-
         //by default fragment code
         FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
         binding.toolbar.setVisibility(View.VISIBLE);
@@ -163,7 +183,18 @@ public class MainActivity extends AppCompatActivity {
                 return true;
             //rate now
             case R.id.rate:
-                startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("http://play.google.com/store/apps/details?id=" + BuildConfig.APPLICATION_ID)));
+                //network check
+                ConnectivityManager connectivityManager = (ConnectivityManager) getSystemService(FeedBackActivity.CONNECTIVITY_SERVICE);
+                if (connectivityManager.getNetworkInfo(ConnectivityManager.TYPE_MOBILE).getState() == NetworkInfo.State.CONNECTED ||
+                        connectivityManager.getNetworkInfo(ConnectivityManager.TYPE_WIFI).getState() == NetworkInfo.State.CONNECTED) {
+                    //we are connected to a network
+                    connected = true;
+                    startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("http://play.google.com/store/apps/details?id=" + BuildConfig.APPLICATION_ID)));
+                }
+                else {
+                    toastText.setText(R.string.no_connection_text);
+                    toast.show();
+                }
                 return true;
             //follow us
             case R.id.follow_us:
@@ -172,16 +203,49 @@ public class MainActivity extends AppCompatActivity {
                 return true;
             //more apps
             case R.id.more_apps:
-                startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(getString(R.string.url_play_more_apps))));
+                //network check
+                ConnectivityManager connectivityManager2 = (ConnectivityManager) getSystemService(FeedBackActivity.CONNECTIVITY_SERVICE);
+                if (connectivityManager2.getNetworkInfo(ConnectivityManager.TYPE_MOBILE).getState() == NetworkInfo.State.CONNECTED ||
+                        connectivityManager2.getNetworkInfo(ConnectivityManager.TYPE_WIFI).getState() == NetworkInfo.State.CONNECTED) {
+                    //we are connected to a network
+                    connected = true;
+                    startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(getString(R.string.url_play_more_apps))));
+                }
+                else {
+                    toastText.setText(R.string.no_connection_text);
+                    toast.show();
+                }
                 return true;
             //privacy policy
             case R.id.privacy:
-                Intent intent1 = new Intent(Intent.ACTION_VIEW, Uri.parse(getString(R.string.url_play_privacy_policy)));
-                startActivity(intent1);
+                //network check
+                ConnectivityManager connectivityManager3 = (ConnectivityManager) getSystemService(FeedBackActivity.CONNECTIVITY_SERVICE);
+                if (connectivityManager3.getNetworkInfo(ConnectivityManager.TYPE_MOBILE).getState() == NetworkInfo.State.CONNECTED ||
+                        connectivityManager3.getNetworkInfo(ConnectivityManager.TYPE_WIFI).getState() == NetworkInfo.State.CONNECTED) {
+                    //we are connected to a network
+                    connected = true;
+                    Intent intent1 = new Intent(Intent.ACTION_VIEW, Uri.parse(getString(R.string.url_play_privacy_policy)));
+                    startActivity(intent1);
+                }
+                else {
+                    toastText.setText(R.string.no_connection_text);
+                    toast.show();
+                }
                 return true;
             //contact us
             case R.id.contact_us:
-                startActivity(new Intent(Intent.ACTION_VIEW,Uri.parse("mailto:" + "info@shrcreation.com")));
+                //network check
+                ConnectivityManager connectivityManager4 = (ConnectivityManager) getSystemService(FeedBackActivity.CONNECTIVITY_SERVICE);
+                if (connectivityManager4.getNetworkInfo(ConnectivityManager.TYPE_MOBILE).getState() == NetworkInfo.State.CONNECTED ||
+                        connectivityManager4.getNetworkInfo(ConnectivityManager.TYPE_WIFI).getState() == NetworkInfo.State.CONNECTED) {
+                    //we are connected to a network
+                    connected = true;
+                    startActivity(new Intent(Intent.ACTION_VIEW,Uri.parse("mailto:" + "info@shrcreation.com")));
+                }
+                else {
+                    toastText.setText(R.string.no_connection_text);
+                    toast.show();
+                }
                 return true;
             //logout
             case R.id.logout:

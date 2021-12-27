@@ -5,9 +5,13 @@ import android.content.Intent;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.os.Bundle;
+import android.view.Gravity;
+import android.view.LayoutInflater;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
@@ -39,12 +43,24 @@ public class AddDiscussActivity extends AppCompatActivity {
     TextInputLayout question, descriptions;
     ProgressDialog dialog;
     private boolean connected = false;
+    LayoutInflater inflater;
+    TextView toastText;
+    View toastLayout;
+    Toast toast;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         binding = ActivityAddDiscussBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
+        //custom toast
+        inflater = getLayoutInflater();
+        toastLayout = inflater.inflate(R.layout.custom_toast_layout,(ViewGroup) findViewById(R.id.toastLayout));
+        toastText = (TextView) toastLayout.findViewById(R.id.toastText);
+        toast = new Toast(getApplicationContext());
+        toast.setGravity(Gravity.BOTTOM,0,100);
+        toast.setDuration(Toast.LENGTH_LONG);
+        toast.setView(toastLayout);
         //progress dialog
         dialog = new ProgressDialog(AddDiscussActivity.this, ProgressDialog.THEME_DEVICE_DEFAULT_DARK);
         dialog.setProgressStyle(ProgressDialog.STYLE_SPINNER);
@@ -71,7 +87,7 @@ public class AddDiscussActivity extends AppCompatActivity {
         database = FirebaseDatabase.getInstance();
         //get firebase value
         //fetch update image
-        database.getReference().child("UserData").child(auth.getUid())
+        database.getReference().child("UserData").child(Objects.requireNonNull(auth.getUid()))
                 .addListenerForSingleValueEvent(new ValueEventListener() {
                     @Override
                     public void onDataChange(@NonNull DataSnapshot snapshot) {
@@ -118,7 +134,8 @@ public class AddDiscussActivity extends AppCompatActivity {
                             @Override
                             public void onSuccess(@NonNull Void unused) {
                                 dialog.dismiss();
-                                Toast.makeText(AddDiscussActivity.this, "Posted Successfully.", Toast.LENGTH_SHORT).show();
+                                toastText.setText(R.string.PostedSuccessfully);
+                                toast.show();
                                 Intent intent = new Intent(AddDiscussActivity.this,DiscussFragment.class);
                                 intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                                 finish();
@@ -127,7 +144,8 @@ public class AddDiscussActivity extends AppCompatActivity {
 
                     }
                 } else {
-                    Toast.makeText(AddDiscussActivity.this, "You\'re offline, please connect to network first", Toast.LENGTH_SHORT).show();
+                    toastText.setText(R.string.no_connection_text);
+                    toast.show();
                     connected = false;
                 }
             }

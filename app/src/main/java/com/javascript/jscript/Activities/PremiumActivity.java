@@ -2,12 +2,16 @@ package com.javascript.jscript.Activities;
 
 import static com.android.billingclient.api.BillingClient.SkuType.INAPP;
 
+import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.net.Uri;
 import android.os.Bundle;
+import android.view.Gravity;
+import android.view.LayoutInflater;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -41,6 +45,10 @@ public class PremiumActivity extends AppCompatActivity implements PurchasesUpdat
 
     ActivityPremiumBinding binding;
     private BillingClient billingClient;
+    LayoutInflater inflater;
+    TextView toastText;
+    View toastLayout;
+    Toast toast;
     public static final String PREF_FILE = "JScript_Learn_JavaScript";
     public static final String PURCHASE_KEY = "lifetime_product";
     public static final String PRODUCT_ID = "shr_jscript_final";
@@ -50,6 +58,14 @@ public class PremiumActivity extends AppCompatActivity implements PurchasesUpdat
         super.onCreate(savedInstanceState);
         binding = ActivityPremiumBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
+        //custom toast
+        inflater = getLayoutInflater();
+        toastLayout = inflater.inflate(R.layout.custom_toast_layout,(ViewGroup) findViewById(R.id.toastLayout));
+        toastText = (TextView) toastLayout.findViewById(R.id.toastText);
+        toast = new Toast(getApplicationContext());
+        toast.setGravity(Gravity.BOTTOM,0,150);
+        toast.setDuration(Toast.LENGTH_LONG);
+        toast.setView(toastLayout);
         //pro cancel button
         binding.proCancelBtn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -108,7 +124,8 @@ public class PremiumActivity extends AppCompatActivity implements PurchasesUpdat
 
             @Override
             public void onBillingServiceDisconnected() {
-                Toast.makeText(getApplicationContext(), "Service Disconnected", Toast.LENGTH_SHORT).show();
+                toastText.setText(R.string.Service_Disconnected);
+                toast.show();
             }
         });
         //subscribe button click listener
@@ -143,18 +160,21 @@ public class PremiumActivity extends AppCompatActivity implements PurchasesUpdat
         } else {
             billingClient = BillingClient.newBuilder(activity).enablePendingPurchases().setListener(PremiumActivity.this).build();
             billingClient.startConnection(new BillingClientStateListener() {
+                @SuppressLint("SetTextI18n")
                 @Override
                 public void onBillingSetupFinished(@NonNull BillingResult billingResult) {
                     if (billingResult.getResponseCode() == BillingClient.BillingResponseCode.OK) {
                         getProductsDetails();
                     } else {
-                        Toast.makeText(getApplicationContext(), "Error " + billingResult.getDebugMessage(), Toast.LENGTH_SHORT).show();
+                        toastText.setText(R.string.Error + billingResult.getDebugMessage());
+                        toast.show();
                     }
                 }
 
                 @Override
                 public void onBillingServiceDisconnected() {
-                    Toast.makeText(getApplicationContext(), "Service Disconnected ", Toast.LENGTH_SHORT).show();
+                    toastText.setText(R.string.Service_Disconnected);
+                    toast.show();
                 }
             });
         }
@@ -169,18 +189,21 @@ public class PremiumActivity extends AppCompatActivity implements PurchasesUpdat
         else {
             billingClient = BillingClient.newBuilder(activity).enablePendingPurchases().setListener(PremiumActivity.this).build();
             billingClient.startConnection(new BillingClientStateListener() {
+                @SuppressLint("SetTextI18n")
                 @Override
                 public void onBillingSetupFinished(@NonNull BillingResult billingResult) {
                     if (billingResult.getResponseCode() == BillingClient.BillingResponseCode.OK) {
                         initiatePurchase();
                     } else {
-                        Toast.makeText(getApplicationContext(), "Error " + billingResult.getDebugMessage(), Toast.LENGTH_SHORT).show();
+                        toastText.setText(R.string.Error + billingResult.getDebugMessage());
+                        toast.show();
                     }
                 }
 
                 @Override
                 public void onBillingServiceDisconnected() {
-                    Toast.makeText(getApplicationContext(), "Service Disconnected ", Toast.LENGTH_SHORT).show();
+                    toastText.setText(R.string.Service_Disconnected);
+                    toast.show();
                 }
             });
         }
@@ -207,6 +230,7 @@ public class PremiumActivity extends AppCompatActivity implements PurchasesUpdat
         params.setSkusList(skuList).setType(INAPP);
         billingClient.querySkuDetailsAsync(params.build(),
                 new SkuDetailsResponseListener() {
+                    @SuppressLint("SetTextI18n")
                     @Override
                     public void onSkuDetailsResponse(@NonNull BillingResult billingResult,
                                                      List<SkuDetails> skuDetailsList) {
@@ -219,11 +243,12 @@ public class PremiumActivity extends AppCompatActivity implements PurchasesUpdat
                                 itemDescription.setText(itemInfo.getDescription());
                             } else {
                                 //try to add item/product id "purchase" inside managed product in google play console
-                                Toast.makeText(getApplicationContext(), "Purchase Item not Found", Toast.LENGTH_SHORT).show();
+                                toastText.setText(R.string.PurchaseItemnotFound);
+                                toast.show();
                             }
                         } else {
-                            Toast.makeText(getApplicationContext(),
-                                    " Error " + billingResult.getDebugMessage(), Toast.LENGTH_SHORT).show();
+                            toastText.setText(R.string.Error + billingResult.getDebugMessage());
+                            toast.show();
                         }
                     }
                 });
@@ -236,6 +261,7 @@ public class PremiumActivity extends AppCompatActivity implements PurchasesUpdat
         params.setSkusList(skuList).setType(INAPP);
         billingClient.querySkuDetailsAsync(params.build(),
                 new SkuDetailsResponseListener() {
+                    @SuppressLint("SetTextI18n")
                     @Override
                     public void onSkuDetailsResponse(@NonNull BillingResult billingResult,
                                                      List<SkuDetails> skuDetailsList) {
@@ -250,16 +276,18 @@ public class PremiumActivity extends AppCompatActivity implements PurchasesUpdat
                                 itemPrice.setText(itemInfo.getPrice());
                             } else {
                                 //try to add item/product id "purchase" inside managed product in google play console
-                                Toast.makeText(getApplicationContext(), "Purchase Item not Found", Toast.LENGTH_SHORT).show();
+                                toastText.setText(R.string.PurchaseItemnotFound);
+                                toast.show();
                             }
                         } else {
-                            Toast.makeText(getApplicationContext(),
-                                    " Error " + billingResult.getDebugMessage(), Toast.LENGTH_SHORT).show();
+                            toastText.setText(R.string.Error + billingResult.getDebugMessage());
+                            toast.show();
                         }
                     }
                 });
     }
 
+    @SuppressLint("SetTextI18n")
     @Override
     public void onPurchasesUpdated(BillingResult billingResult, @Nullable List<Purchase> purchases) {
         //if item subscribed
@@ -279,11 +307,13 @@ public class PremiumActivity extends AppCompatActivity implements PurchasesUpdat
         }
         //if purchase cancelled
         else if (billingResult.getResponseCode() == BillingClient.BillingResponseCode.USER_CANCELED) {
-            Toast.makeText(getApplicationContext(), "Purchase Canceled", Toast.LENGTH_SHORT).show();
+            toastText.setText(R.string.PurchaseCanceled);
+            toast.show();
         }
         // Handle any other error msgs
         else {
-            Toast.makeText(getApplicationContext(), "Error " + billingResult.getDebugMessage(), Toast.LENGTH_SHORT).show();
+            toastText.setText(R.string.Error + billingResult.getDebugMessage());
+            toast.show();
         }
     }
 
@@ -294,7 +324,8 @@ public class PremiumActivity extends AppCompatActivity implements PurchasesUpdat
                 if (!verifyValidSignature(purchase.getOriginalJson(), purchase.getSignature())) {
                     // Invalid purchase
                     // show error to user
-                    Toast.makeText(getApplicationContext(), "Error : invalid Purchase", Toast.LENGTH_SHORT).show();
+                    toastText.setText(R.string.ErrorinvalidPurchase);
+                    toast.show();
                     return;
                 }
                 // else purchase is valid
@@ -312,15 +343,16 @@ public class PremiumActivity extends AppCompatActivity implements PurchasesUpdat
                     // restart activity
                     if (!getPurchaseValueFromPref()) {
                         savePurchaseValueToPref(true);
-                        Toast.makeText(getApplicationContext(), "Item Purchased", Toast.LENGTH_SHORT).show();
+                        toastText.setText(R.string.ItemPurchased);
+                        toast.show();
                         this.recreate();
                     }
                 }
             }
             //if purchase is pending
             else if (PRODUCT_ID.equals(purchase.getSkus().get(0)) && purchase.getPurchaseState() == Purchase.PurchaseState.PENDING) {
-                Toast.makeText(getApplicationContext(),
-                        "Purchase is Pending. Please complete Transaction", Toast.LENGTH_SHORT).show();
+                toastText.setText(R.string.PurchaseisPending);
+                toast.show();
             }
             //if purchase is unknown mark false
             else if (PRODUCT_ID.equals(purchase.getSkus().get(0)) && purchase.getPurchaseState() == Purchase.PurchaseState.UNSPECIFIED_STATE) {
@@ -329,7 +361,8 @@ public class PremiumActivity extends AppCompatActivity implements PurchasesUpdat
                 UiConfig.PRO_VISIBILITY_STATUS_SHOW = true;
                 UiConfig.BANNER_AD_VISIBILITY = true;
                 UiConfig.ENABLE_EXIT_DIALOG = true;
-                Toast.makeText(getApplicationContext(), "Purchase Status Unknown", Toast.LENGTH_SHORT).show();
+                toastText.setText(R.string.PurchaseStatusUnknown);
+                toast.show();
             }
         }
     }

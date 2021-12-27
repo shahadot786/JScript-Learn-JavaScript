@@ -7,9 +7,13 @@ import android.net.NetworkInfo;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.util.Patterns;
+import android.view.Gravity;
+import android.view.LayoutInflater;
 import android.view.View;
+import android.view.ViewGroup;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
@@ -32,12 +36,24 @@ public class ForgotPasswordActivity extends AppCompatActivity {
     TextInputLayout textInputLayoutEmail;
     EditText emailReset;
     private boolean connected = false;
+    LayoutInflater inflater;
+    TextView toastText;
+    View toastLayout;
+    Toast toast;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         binding = ActivityForgotPasswordBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
+        //custom toast
+        inflater = getLayoutInflater();
+        toastLayout = inflater.inflate(R.layout.custom_toast_layout,(ViewGroup) findViewById(R.id.toastLayout));
+        toastText = (TextView) toastLayout.findViewById(R.id.toastText);
+        toast = new Toast(getApplicationContext());
+        toast.setGravity(Gravity.BOTTOM,0,100);
+        toast.setDuration(Toast.LENGTH_LONG);
+        toast.setView(toastLayout);
         //firebase instance
         auth = FirebaseAuth.getInstance();
         //find id
@@ -62,7 +78,8 @@ public class ForgotPasswordActivity extends AppCompatActivity {
                     String email = emailReset.getText().toString().trim();
                     //other codes
                     if (TextUtils.isEmpty(email)) {
-                        Toast.makeText(getApplication(), "Enter your registered email id", Toast.LENGTH_SHORT).show();
+                        toastText.setText(R.string.enter_register_email);
+                        toast.show();
                         return;
                     }
                     auth.sendPasswordResetEmail(email)
@@ -70,15 +87,18 @@ public class ForgotPasswordActivity extends AppCompatActivity {
                                 @Override
                                 public void onComplete(@NonNull Task<Void> task) {
                                     if (task.isSuccessful()) {
-                                        Toast.makeText(ForgotPasswordActivity.this, "Please check your email address!", Toast.LENGTH_SHORT).show();
+                                        toastText.setText(R.string.net_connection_check);
+                                        toast.show();
                                         startActivity(new Intent(ForgotPasswordActivity.this, SignInActivity.class));
                                     } else {
-                                        Toast.makeText(ForgotPasswordActivity.this, "Enter correct email address!", Toast.LENGTH_SHORT).show();
+                                        toastText.setText(R.string.correct_email);
+                                        toast.show();
                                     }
                                 }
                             });
                 } else {
-                    Toast.makeText(ForgotPasswordActivity.this, "You\'re offline, please connect to network first", Toast.LENGTH_SHORT).show();
+                    toastText.setText(R.string.no_connection_text);
+                    toast.show();
                     connected = false;
                 }
             }

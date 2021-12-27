@@ -2,6 +2,8 @@ package com.javascript.jscript.Learn;
 
 import android.content.Context;
 import android.content.Intent;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
 import android.os.Bundle;
 import android.view.Gravity;
 import android.view.LayoutInflater;
@@ -28,8 +30,10 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 import com.javascript.jscript.Activities.CodesActivity;
+import com.javascript.jscript.Activities.EditProfileActivity;
 import com.javascript.jscript.BuildConfig;
 import com.javascript.jscript.Config.UiConfig;
+import com.javascript.jscript.Interview.InterviewAnswerActivity;
 import com.javascript.jscript.Model.LearnDetailsModel;
 import com.javascript.jscript.R;
 import com.javascript.jscript.Utils.AdNetwork;
@@ -53,6 +57,7 @@ public class LearnDetailsActivity extends AppCompatActivity {
     private AppCompatButton prevBtn, nextBtn, shareBtn;
     FirebaseDatabase database;
     FirebaseAuth auth;
+    private boolean connected = false;
     ConstraintLayout writeCodes;
     LayoutInflater inflater;
     View toastLayout;
@@ -332,7 +337,19 @@ public class LearnDetailsActivity extends AppCompatActivity {
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         if (item.getItemId() == R.id.codes) {
-            startActivity(new Intent(LearnDetailsActivity.this, CodesActivity.class));
+            //network check
+            ConnectivityManager connectivityManager = (ConnectivityManager) getSystemService(EditProfileActivity.CONNECTIVITY_SERVICE);
+            if (connectivityManager.getNetworkInfo(ConnectivityManager.TYPE_MOBILE).getState() == NetworkInfo.State.CONNECTED ||
+                    connectivityManager.getNetworkInfo(ConnectivityManager.TYPE_WIFI).getState() == NetworkInfo.State.CONNECTED) {
+                //we are connected to a network
+                connected = true;
+                startActivity(new Intent(LearnDetailsActivity.this, CodesActivity.class));
+            }else {
+                toastText.setText(R.string.no_connection_text);
+                toast.show();
+                connected = false;
+            }
+
         }else {
             finish();
         }

@@ -6,6 +6,7 @@ import android.graphics.Color;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.os.Bundle;
+import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -50,6 +51,9 @@ public class DiscussFragment extends Fragment {
     ArrayList<DiscussModel> dashboardList;
     SwipeRefreshLayout swipeRefreshLayout;
     private boolean connected = false;
+    TextView toastText;
+    View toastLayout;
+    Toast toast;
 
     public DiscussFragment() {
         // Required empty public constructor
@@ -68,6 +72,12 @@ public class DiscussFragment extends Fragment {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_discuss, container, false);
         setHasOptionsMenu(true);
+        toastLayout = inflater.inflate(R.layout.custom_toast_layout,(ViewGroup) view.findViewById(R.id.toastLayout));
+        toastText = (TextView) toastLayout.findViewById(R.id.toastText);
+        toast = new Toast(getActivity().getBaseContext());
+        toast.setGravity(Gravity.BOTTOM,0,200);
+        toast.setDuration(Toast.LENGTH_LONG);
+        toast.setView(toastLayout);
         //recyclerview
         recyclerView = view.findViewById(R.id.rv_discuss);
         recyclerView.showShimmerAdapter();
@@ -127,7 +137,8 @@ public class DiscussFragment extends Fragment {
             //we are connected to a network
             connected = true;
         }else {
-            Toast.makeText(getActivity(), "You\'re offline, please connect to network first", Toast.LENGTH_SHORT).show();
+            toastText.setText(R.string.no_connection_text);
+            toast.show();
             connected = false;
         }
 

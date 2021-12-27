@@ -52,12 +52,13 @@
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/open_sans"
                     android:padding="10dp"
+                    android:textIsSelectable="true"
                     android:textSize="16sp"
                     android:textStyle="bold"
-                    android:textIsSelectable="true"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
             </androidx.constraintlayout.widget.ConstraintLayout>
 
             <androidx.constraintlayout.widget.ConstraintLayout

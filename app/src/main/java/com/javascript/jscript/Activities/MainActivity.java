@@ -129,11 +129,7 @@ public class MainActivity extends AppCompatActivity {
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.menu_items, menu);
         //after upgrade to pro
-        if (UiConfig.PRO_VISIBILITY_STATUS_SHOW) {
-            menu.findItem(R.id.upgrade_pro).setVisible(true);
-        } else {
-            menu.findItem(R.id.upgrade_pro).setVisible(false);
-        }
+        menu.findItem(R.id.upgrade_pro).setVisible(UiConfig.PRO_VISIBILITY_STATUS_SHOW);
 
         return true;
     }

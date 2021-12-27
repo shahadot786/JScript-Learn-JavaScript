@@ -1,7 +1,9 @@
 package com.javascript.jscript.Programs;
 
+import android.content.Intent;
 import android.content.res.ColorStateList;
 import android.os.Bundle;
+import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 
@@ -16,7 +18,9 @@ import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
+import com.javascript.jscript.Activities.CodesActivity;
 import com.javascript.jscript.Config.UiConfig;
+import com.javascript.jscript.Learn.LearnDetailsActivity;
 import com.javascript.jscript.R;
 import com.javascript.jscript.databinding.ActivityProgramsCodeBinding;
 
@@ -155,11 +159,20 @@ public class ProgramsCodeActivity extends AppCompatActivity {
         outCodeView.showCode(output);
 
     }
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.menu_codes, menu);
+        return super.onCreateOptionsMenu(menu);
+    }
 
     //option menu item select
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
-        finish();
+        if (item.getItemId() == R.id.codes) {
+            startActivity(new Intent(ProgramsCodeActivity.this, CodesActivity.class));
+        }else {
+            finish();
+        }
         return super.onOptionsItemSelected(item);
     }
 

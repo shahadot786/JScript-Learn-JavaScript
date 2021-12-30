@@ -63,9 +63,11 @@ public class QuizResultActivity extends AppCompatActivity {
         //check the result is bellow 10
         if (getCorrectAnswer <8){
             quizTrophy.setImageResource(R.drawable.ic_quiz_fail_64);
+            quizTrophy.setVisibility(View.VISIBLE);
             quizMessage.setText(getResources().getString(R.string.quiz_fail_message));
         }else {
             quizTrophy.setImageResource(R.drawable.ic_quiz_success_64);
+            quizTrophy.setVisibility(View.VISIBLE);
             quizMessage.setText(getResources().getString(R.string.quiz_success_message));
             binding.quizAnimation.setVisibility(View.VISIBLE);
         }

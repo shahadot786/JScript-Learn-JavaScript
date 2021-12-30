@@ -32,8 +32,6 @@ import com.javascript.jscript.Activities.CodesActivity;
 import com.javascript.jscript.Activities.EditProfileActivity;
 import com.javascript.jscript.BuildConfig;
 import com.javascript.jscript.Config.UiConfig;
-import com.javascript.jscript.Interview.InterviewAnswerActivity;
-import com.javascript.jscript.Learn.LearnDetailsActivity;
 import com.javascript.jscript.Model.QuizListModel;
 import com.javascript.jscript.R;
 import com.javascript.jscript.Utils.AdNetwork;
@@ -234,7 +232,7 @@ public class QuizDetailsActivity extends AppCompatActivity {
             public void onTick(long l) {
                 //When tick
                 //Convert millisecond to minute and second
-                String sDuration = String.format(Locale.ENGLISH," %01d . %01d",
+                String sDuration = String.format(Locale.ENGLISH,"%01d : %01d",
                         TimeUnit.MILLISECONDS.toMinutes(l),
                         TimeUnit.MILLISECONDS.toSeconds(l) -
                                 TimeUnit.MINUTES.toSeconds(TimeUnit.MILLISECONDS.toMinutes(l)));

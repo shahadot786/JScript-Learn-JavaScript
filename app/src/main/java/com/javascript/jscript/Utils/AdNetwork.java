@@ -62,7 +62,6 @@ public class AdNetwork {
     }
 
     //show ad
-
     public void showInterstitialAd(){
         if (UiConfig.INTERSTITIAL__AD_VISIBILITY){
             if (mInterstitialAd != null){

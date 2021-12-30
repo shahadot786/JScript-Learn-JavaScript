@@ -60,8 +60,8 @@
 
                 <com.airbnb.lottie.LottieAnimationView
                     android:id="@+id/view26"
-                    android:layout_width="25dp"
-                    android:layout_height="25dp"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
                     android:layout_marginTop="4dp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
@@ -75,6 +75,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="4dp"
                     android:textStyle="bold"
+                    android:textSize="12sp"
                     app:layout_constraintEnd_toStartOf="@+id/view26"
                     app:layout_constraintTop_toTopOf="parent" />
 

@@ -93,7 +93,7 @@ public class SplashActivity extends AppCompatActivity {
         ///check first time installer
         SharedPreferences settings = getSharedPreferences(PREFS_NAME, 0);
         //Variables
-        int SPLASH_SCREEN = 40000;
+        int SPLASH_SCREEN = 6000;
         if (settings.getBoolean("my_first_time", true)) {
             //the app is being launched for first time, do something
             //Log.d("Comments", "First time");

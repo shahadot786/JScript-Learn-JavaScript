@@ -15,7 +15,6 @@ import android.view.ViewGroup;
 import android.view.WindowManager;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
-import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -29,8 +28,7 @@ import com.javascript.jscript.R;
 
 public class SplashActivity extends AppCompatActivity {
 
-    Animation topAmin, bottomAnim;
-    ImageView image;
+    Animation bottomAnim;
     TextView slogan;
     FirebaseUser currentUser;
     FirebaseAuth auth;
@@ -69,13 +67,10 @@ public class SplashActivity extends AppCompatActivity {
             connected = false;
         }
         //animations
-        topAmin = AnimationUtils.loadAnimation(this, R.anim.top_animation);
         bottomAnim = AnimationUtils.loadAnimation(this, R.anim.bottom_animation);
         //hooks
-        image = findViewById(R.id.splash_logo);
         slogan = findViewById(R.id.slogan_text);
         //set animations
-        image.setAnimation(topAmin);
         slogan.setAnimation(bottomAnim);
         auth = FirebaseAuth.getInstance();
         currentUser = auth.getCurrentUser();
@@ -98,7 +93,7 @@ public class SplashActivity extends AppCompatActivity {
         ///check first time installer
         SharedPreferences settings = getSharedPreferences(PREFS_NAME, 0);
         //Variables
-        int SPLASH_SCREEN = 4000;
+        int SPLASH_SCREEN = 40000;
         if (settings.getBoolean("my_first_time", true)) {
             //the app is being launched for first time, do something
             //Log.d("Comments", "First time");

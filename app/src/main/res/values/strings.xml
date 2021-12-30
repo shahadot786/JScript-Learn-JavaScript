@@ -272,5 +272,6 @@
     <string name="valid_input">Please insert valid input in your update profile</string>
     <string name="UploadSuccessfully">Upload Successfully</string>
     <string name="WrongImageUpload">Wrong Image Upload</string>
+    <string name="remember_my_password">Remember password!</string>
 
 </resources>

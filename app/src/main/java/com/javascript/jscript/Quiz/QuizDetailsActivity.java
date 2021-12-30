@@ -6,6 +6,7 @@ import android.graphics.Color;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.os.Bundle;
+import android.os.CountDownTimer;
 import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.Menu;
@@ -39,7 +40,9 @@ import com.javascript.jscript.Utils.AdNetwork;
 import com.javascript.jscript.databinding.ActivityQuizDetailsBinding;
 
 import java.util.List;
+import java.util.Locale;
 import java.util.Objects;
+import java.util.concurrent.TimeUnit;
 
 public class QuizDetailsActivity extends AppCompatActivity {
 
@@ -58,7 +61,7 @@ public class QuizDetailsActivity extends AppCompatActivity {
     private AppCompatButton nextBtn;
     private boolean connected = false;
     LayoutInflater inflater;
-    TextView toastText;
+    TextView toastText,qTimer;
     View toastLayout;
     Toast toast;
 
@@ -67,6 +70,8 @@ public class QuizDetailsActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         binding = ActivityQuizDetailsBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
+        //find id
+        qTimer = findViewById(R.id.qTimer);
         //custom toast
         inflater = getLayoutInflater();
         toastLayout = inflater.inflate(R.layout.custom_toast_layout,(ViewGroup) findViewById(R.id.toastLayout));
@@ -117,7 +122,7 @@ public class QuizDetailsActivity extends AppCompatActivity {
         option2.setText(questionList.get(0).getOption2());
         option3.setText(questionList.get(0).getOption3());
         option4.setText(questionList.get(0).getOption4());
-
+        //options
         option1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -199,7 +204,7 @@ public class QuizDetailsActivity extends AppCompatActivity {
 
             }
         });
-
+        //share
         shareBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -221,6 +226,34 @@ public class QuizDetailsActivity extends AppCompatActivity {
                 startActivity(shareIntent);
             }
         });
+        //timer
+        //Initialize timer duration
+        long duration = TimeUnit.MINUTES.toMillis(1);
+        new CountDownTimer(duration, 1000) {
+            @Override
+            public void onTick(long l) {
+                //When tick
+                //Convert millisecond to minute and second
+                String sDuration = String.format(Locale.ENGLISH," %01d . %01d",
+                        TimeUnit.MILLISECONDS.toMinutes(l),
+                        TimeUnit.MILLISECONDS.toSeconds(l) -
+                                TimeUnit.MINUTES.toSeconds(TimeUnit.MILLISECONDS.toMinutes(l)));
+
+                //Set converted string to textview
+                qTimer.setText(sDuration);
+            }
+
+            @SuppressLint("SetTextI18n")
+            @Override
+            public void onFinish() {
+
+                //When finish
+                //Hide textView
+                qTimer.setText("Finished");
+                finish();
+
+            }
+        }.start();
 
     }//on create
 

@@ -67,6 +67,7 @@ public class QuizResultActivity extends AppCompatActivity {
         }else {
             quizTrophy.setImageResource(R.drawable.ic_quiz_success_64);
             quizMessage.setText(getResources().getString(R.string.quiz_success_message));
+            binding.quizAnimation.setVisibility(View.VISIBLE);
         }
 
 

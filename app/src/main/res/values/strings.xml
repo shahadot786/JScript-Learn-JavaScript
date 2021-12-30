@@ -216,7 +216,7 @@
     <string name="play_quiz">Play Quiz</string>
     <string name="how_to">How to?</string>
     <string name="option_1">Option 1</string>
-    <string name="quiz_success_message">Hey Congratulations You Win the Quiz !</string>
+    <string name="quiz_success_message">Congratulations, You can be proud of yourself!</string>
     <string name="quiz_fail_message">Ops ! You Lose the Quiz.</string>
     <string name="start_new_quiz">Start New Quiz</string>
     <string name="wrong_answer">Wrong Answer :</string>

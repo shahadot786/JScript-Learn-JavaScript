@@ -94,50 +94,7 @@ public class ProFragment extends Fragment {
         Calendar calendar = Calendar.getInstance();
         int year = calendar.get(Calendar.YEAR);
         binding.txtCopyrights.setText("© " + year + " All Rights Reserved");
-
-        //work with link
-        binding.viewInstagram.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(getString(R.string.link_instagram))));
-            }
-        });
-        binding.viewFacebook.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(getString(R.string.link_facebook))));
-            }
-        });
-        binding.viewLinkedin.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(getString(R.string.link_linkedin))));
-            }
-        });
-        binding.viewTwitter.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(getString(R.string.link_twitter))));
-            }
-        });
-        binding.viewPlayStore.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(getString(R.string.url_play_more_apps))));
-            }
-        });
-        binding.viewGithub.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(getString(R.string.link_github))));
-            }
-        });
-        binding.viewWebsite.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(getString(R.string.play_website))));
-            }
-        });
+        //contact us
         binding.contactUs.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

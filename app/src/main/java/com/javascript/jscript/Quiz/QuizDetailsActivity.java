@@ -226,7 +226,7 @@ public class QuizDetailsActivity extends AppCompatActivity {
         });
         //timer
         //Initialize timer duration
-        long duration = TimeUnit.MINUTES.toMillis(1);
+        long duration = TimeUnit.MINUTES.toMillis(2);
         new CountDownTimer(duration, 1000) {
             @Override
             public void onTick(long l) {

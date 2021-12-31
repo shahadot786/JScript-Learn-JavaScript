@@ -273,5 +273,6 @@
     <string name="UploadSuccessfully">Upload Successfully</string>
     <string name="WrongImageUpload">Wrong Image Upload</string>
     <string name="remember_my_password">Remember password!</string>
+    <string name="congratulations">Congratulations, Welcome to Pro</string>
 
 </resources>

@@ -23,25 +23,40 @@ public class InterviewQAFragment extends Fragment {
     ImageView proImage;
     private AdNetwork adNetwork;
 
-    String[] itemsName = {"Basic","Advanced","Expert"};
-    String[] itemsNamePro = {"Angular","Vue","React","Angular","Vue","React","Angular","Vue","React"};
+    String[] itemsName = {"Fundamental","Basic","Objects","OOPs","DOM","BOM","Advanced","Typescript","Angular","Ajax","Json","Examples"};
+    String[] itemsNamePro = {"Vue Js","Next Js","React Js","Ember Js","Svelte Js","Gatsby","Nuxt Js","Bootstrap","Node Js","Spring Boot","Express Js",
+            "Laravel","Micronaut","Mocha"};
 
     Integer[] itemImages = {
+            R.drawable.ic_fundamental_icon,
             R.drawable.ic_programs_basic_image,
+            R.drawable.ic_objects_icon,
+            R.drawable.ic_oops_icon,
+            R.drawable.ic_dom_icon,
+            R.drawable.ic_bom_icon,
             R.drawable.ic_programs_advanced_image,
-            R.drawable.ic_programs_advanced_image
+            R.drawable.ic_typescript_icon,
+            R.drawable.ic_angular_icon,
+            R.drawable.ic_ajax_icon,
+            R.drawable.ic_json_icon,
+            R.drawable.ic_example_icon
 
     };
     Integer[] itemImagesPro = {
-            R.drawable.ic_programs_basic_image,
-            R.drawable.ic_programs_advanced_image,
-            R.drawable.ic_programs_advanced_image,
-            R.drawable.ic_programs_basic_image,
-            R.drawable.ic_programs_advanced_image,
-            R.drawable.ic_programs_advanced_image,
-            R.drawable.ic_programs_basic_image,
-            R.drawable.ic_programs_advanced_image,
-            R.drawable.ic_programs_advanced_image
+            R.drawable.ic_js_vue_icon,
+            R.drawable.ic_next_js,
+            R.drawable.ic_react_icon,
+            R.drawable.ic_emberjs_icon,
+            R.drawable.ic_svelte_icon,
+            R.drawable.ic_gatsbyjs_icon,
+            R.drawable.ic_nuxt_icon,
+            R.drawable.ic_bootstrap_icon,
+            R.drawable.ic_node_icon,
+            R.drawable.ic_springio_icon,
+            R.drawable.ic_expressjs_icon,
+            R.drawable.ic_laravel_icon,
+            R.drawable.ic_micronaut_icon,
+            R.drawable.ic_mochajs_icon
 
     };
 
@@ -101,15 +116,51 @@ public class InterviewQAFragment extends Fragment {
                 Intent intent = new Intent(getActivity(), InterviewItemsListActivity.class);
                 switch (i){
                     case 0:
-                        intent.putExtra("interviewItems","Basic");
+                        intent.putExtra("interviewItems","Fundamental");
                         startActivity(intent);
                         break;
                     case 1:
-                        intent.putExtra("interviewItems","Advanced");
+                        intent.putExtra("interviewItems","Basic");
                         startActivity(intent);
                         break;
                     case 2:
-                        intent.putExtra("interviewItems","Expert");
+                        intent.putExtra("interviewItems","Objects");
+                        startActivity(intent);
+                        break;
+                    case 3:
+                        intent.putExtra("interviewItems","OOPs");
+                        startActivity(intent);
+                        break;
+                    case 4:
+                        intent.putExtra("interviewItems","DOM");
+                        startActivity(intent);
+                        break;
+                    case 5:
+                        intent.putExtra("interviewItems","BOM");
+                        startActivity(intent);
+                        break;
+                    case 6:
+                        intent.putExtra("interviewItems","Advanced");
+                        startActivity(intent);
+                        break;
+                    case 7:
+                        intent.putExtra("interviewItems","Typescript");
+                        startActivity(intent);
+                        break;
+                    case 8:
+                        intent.putExtra("interviewItems","Angular");
+                        startActivity(intent);
+                        break;
+                    case 9:
+                        intent.putExtra("interviewItems","Ajax");
+                        startActivity(intent);
+                        break;
+                    case 10:
+                        intent.putExtra("interviewItems","Json");
+                        startActivity(intent);
+                        break;
+                    case 11:
+                        intent.putExtra("interviewItems","Examples");
                         startActivity(intent);
                         break;
 
@@ -118,7 +169,6 @@ public class InterviewQAFragment extends Fragment {
                 adNetwork.showInterstitialAd();
             }
         });
-
         //items pro
         gridViewPro.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
@@ -126,17 +176,63 @@ public class InterviewQAFragment extends Fragment {
                 Intent intent = new Intent(getActivity(), InterviewItemsListActivity.class);
                 switch (i){
                     case 0:
-                        intent.putExtra("interviewItems","Angular");
+                        intent.putExtra("interviewItems","Vue Js");
                         startActivity(intent);
                         break;
                     case 1:
-                        intent.putExtra("interviewItems","Vue");
+                        intent.putExtra("interviewItems","Next Js");
                         startActivity(intent);
                         break;
                     case 2:
-                        intent.putExtra("interviewItems","React");
+                        intent.putExtra("interviewItems","React Js");
                         startActivity(intent);
                         break;
+                    case 3:
+                        intent.putExtra("interviewItems","Ember Js");
+                        startActivity(intent);
+                        break;
+                    case 4:
+                        intent.putExtra("interviewItems","Svelte Js");
+                        startActivity(intent);
+                        break;
+                    case 5:
+                        intent.putExtra("interviewItems","Gatsby");
+                        startActivity(intent);
+                        break;
+                    case 6:
+                        intent.putExtra("interviewItems","Nuxt Js");
+                        startActivity(intent);
+                        break;
+                    case 7:
+                        intent.putExtra("interviewItems","Bootstrap");
+                        startActivity(intent);
+                        break;
+                    case 8:
+                        intent.putExtra("interviewItems","Node Js");
+                        startActivity(intent);
+                        break;
+                    case 9:
+                        intent.putExtra("interviewItems","Spring Boot");
+                        startActivity(intent);
+                        break;
+                    case 10:
+                        intent.putExtra("interviewItems","Express Js");
+                        startActivity(intent);
+                        break;
+                    case 11:
+                        intent.putExtra("interviewItems","Laravel");
+                        startActivity(intent);
+                        break;
+                    case 12:
+                        intent.putExtra("interviewItems","Micronaut");
+                        startActivity(intent);
+                        break;
+                    case 13:
+                        intent.putExtra("interviewItems","Mocha Js");
+                        startActivity(intent);
+                        break;
+
+
 
                 }
             }

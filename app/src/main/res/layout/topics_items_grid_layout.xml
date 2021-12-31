@@ -37,8 +37,9 @@
 
         <ImageView
             android:id="@+id/itemsImages"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginBottom="10dp"
             android:layout_gravity="bottom|center_horizontal"
             android:contentDescription="@string/app_main_images"
             app:srcCompat="@drawable/ic_programs_basic_image" />

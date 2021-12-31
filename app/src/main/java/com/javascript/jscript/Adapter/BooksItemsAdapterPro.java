@@ -43,7 +43,7 @@ public class BooksItemsAdapterPro extends BaseAdapter {
         LayoutInflater inflater;
         if (view == null){
             inflater = (LayoutInflater) contextPro.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-            gridViewPro = inflater.inflate(R.layout.programs_items_grid_layout,null);
+            gridViewPro = inflater.inflate(R.layout.topics_items_grid_layout,null);
         }
 
         TextView items = gridViewPro.findViewById(R.id.programs_items);

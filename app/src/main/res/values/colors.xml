@@ -5,7 +5,7 @@
     <!--<color name="colorPrimary">#1C1F32</color>-->
     <color name="colorPrimary">#1C1F32</color>
     <color name="colorSecondary">#2A2E43</color>
-    <color name="activeGreen">#1C15C55D</color>
+    <color name="activeGreen">#15c55d</color>
     <color name="activeRed">#dc4036</color>
     <color name="activeGrey">#403F3F</color>
     <color name="activeGreenLight">#1FC600</color>

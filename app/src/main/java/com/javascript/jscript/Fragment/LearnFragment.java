@@ -35,7 +35,7 @@ public class LearnFragment extends Fragment {
     ImageView proImage;
     private AdNetwork adNetwork;
 
-    String[] itemsName = {"Fundamental","Basic","Objects","Advanced","Typescript","Angular"};
+    String[] itemsName = {"Fundamental","Basic","Objects","OOPs","DOM","BOM","Advanced","Typescript","Angular","Ajax","Json","Examples"};
     String[] itemsNamePro = {"Vue Js","Next Js","React Js","Ember Js","Svelte Js","Gatsby","Nuxt Js","Bootstrap","Node Js","Spring Boot","Express Js",
             "Laravel","Micronaut","Mocha"};
 
@@ -43,26 +43,32 @@ public class LearnFragment extends Fragment {
             R.drawable.ic_fundamental_icon,
             R.drawable.ic_programs_basic_image,
             R.drawable.ic_objects_icon,
+            R.drawable.ic_oops_icon,
+            R.drawable.ic_dom_icon,
+            R.drawable.ic_bom_icon,
             R.drawable.ic_programs_advanced_image,
             R.drawable.ic_typescript_icon,
-            R.drawable.ic_angular_icon
+            R.drawable.ic_angular_icon,
+            R.drawable.ic_ajax_icon,
+            R.drawable.ic_json_icon,
+            R.drawable.ic_example_icon
 
     };
     Integer[] itemImagesPro = {
-            R.drawable.ic_programs_basic_image,
-            R.drawable.ic_programs_advanced_image,
-            R.drawable.ic_programs_advanced_image,
-            R.drawable.ic_programs_basic_image,
-            R.drawable.ic_programs_advanced_image,
-            R.drawable.ic_programs_advanced_image,
-            R.drawable.ic_programs_basic_image,
-            R.drawable.ic_programs_advanced_image,
-            R.drawable.ic_programs_advanced_image,
-            R.drawable.ic_programs_advanced_image,
-            R.drawable.ic_programs_advanced_image,
-            R.drawable.ic_programs_advanced_image,
-            R.drawable.ic_programs_advanced_image,
-            R.drawable.ic_programs_advanced_image
+            R.drawable.ic_js_vue_icon,
+            R.drawable.ic_next_js,
+            R.drawable.ic_react_icon,
+            R.drawable.ic_emberjs_icon,
+            R.drawable.ic_svelte_icon,
+            R.drawable.ic_gatsbyjs_icon,
+            R.drawable.ic_nuxt_icon,
+            R.drawable.ic_bootstrap_icon,
+            R.drawable.ic_node_icon,
+            R.drawable.ic_springio_icon,
+            R.drawable.ic_expressjs_icon,
+            R.drawable.ic_laravel_icon,
+            R.drawable.ic_micronaut_icon,
+            R.drawable.ic_mochajs_icon
 
     };
 
@@ -172,15 +178,39 @@ public class LearnFragment extends Fragment {
                         startActivity(intent);
                         break;
                     case 3:
-                        intent.putExtra("learnItems","Advanced");
+                        intent.putExtra("learnItems","OOPs");
                         startActivity(intent);
                         break;
                     case 4:
-                        intent.putExtra("learnItems","Typescript");
+                        intent.putExtra("learnItems","DOM");
                         startActivity(intent);
                         break;
                     case 5:
+                        intent.putExtra("learnItems","BOM");
+                        startActivity(intent);
+                        break;
+                    case 6:
+                        intent.putExtra("learnItems","Advanced");
+                        startActivity(intent);
+                        break;
+                    case 7:
+                        intent.putExtra("learnItems","Typescript");
+                        startActivity(intent);
+                        break;
+                    case 8:
                         intent.putExtra("learnItems","Angular");
+                        startActivity(intent);
+                        break;
+                    case 9:
+                        intent.putExtra("learnItems","Ajax");
+                        startActivity(intent);
+                        break;
+                    case 10:
+                        intent.putExtra("learnItems","Json");
+                        startActivity(intent);
+                        break;
+                    case 11:
+                        intent.putExtra("learnItems","Examples");
                         startActivity(intent);
                         break;
 
@@ -189,7 +219,6 @@ public class LearnFragment extends Fragment {
                 adNetwork.showInterstitialAd();
             }
         });
-
         //items pro
         gridViewPro.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override

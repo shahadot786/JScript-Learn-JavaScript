@@ -110,12 +110,43 @@ public class DiscussDetailsActivity extends AppCompatActivity {
                 description = discuss.getDescription();
                 //set data to id's
                 String time = TimeAgo.using(discuss.getPostedAt());
+                String views = discuss.getPostViews()+"";
+                String comments = discuss.getCommentCount() + "";
+                String shares = discuss.getShareCount() + "";
+                binding.time.setText(time);
                 binding.question.setText(discuss.getQuestions());
                 binding.descriptions.setText(discuss.getDescription());
-                binding.views.setText(discuss.getPostViews() + "");
-                binding.comment.setText(discuss.getCommentCount() + "");
-                binding.share.setText(discuss.getShareCount() + "");
-                binding.time.setText(time);
+                //1K and 1M views logic
+                int view = Integer.parseInt(views);
+                if (view >= 1000){
+                    binding.views.setText((view / 1000)+"."+((view % 1000)/100)+"K");
+                }else {
+                    binding.views.setText(views);
+                }
+                if (view >= 1000000){
+                    binding.views.setText((view / 1000000)+"."+((view % 1000000)/10000)+"M");
+                }
+                //1K and 1M comments logic
+                int comment = Integer.parseInt(comments);
+                if (comment >= 1000){
+                    binding.comment.setText((comment / 1000)+"."+((comment % 1000)/100)+"K");
+                }else {
+                    binding.comment.setText(comments);
+                }
+                if (comment >= 1000000){
+                    binding.comment.setText((comment / 1000000)+"."+((comment % 1000000)/10000)+"M");
+                }
+                //1K and 1M shares logic
+                int share = Integer.parseInt(shares);
+                if (share >= 1000){
+                    binding.share.setText((share / 1000)+"."+((share % 1000)/100)+"K");
+                }else {
+                    binding.share.setText(shares);
+                }
+                if (share >= 1000000){
+                    binding.share.setText((share / 1000000)+"."+((share % 1000000)/10000)+"M");
+                }
+
             }
 
             @Override

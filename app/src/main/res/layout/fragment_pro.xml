@@ -140,7 +140,7 @@
         android:paddingTop="15dp"
         android:paddingEnd="25dp"
         android:paddingBottom="15dp"
-        android:text="@string/contact_us"
+        android:text="@string/rate_now"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"

@@ -35,9 +35,10 @@ public class LearnFragment extends Fragment {
     ImageView proImage;
     private AdNetwork adNetwork;
 
-    String[] itemsName = {"Fundamental","Basic","Objects","OOPs","DOM","BOM","Advanced","Typescript","Angular","Ajax","Json","Examples"};
-    String[] itemsNamePro = {"Vue Js","Next Js","React Js","Ember Js","Svelte Js","Gatsby","Nuxt Js","Bootstrap","Node Js","Spring Boot","Express Js",
-            "Laravel","Micronaut","Mocha"};
+    String[] itemsName = {"Fundamental","Basic","Objects","OOPs","DOM","BOM","Advanced","AJAX"};
+    String[] itemsNamePro = {"Typescript","Angular","Vue Js","Next Js","React Js","Ember Js","Svelte Js","Gatsby","Nuxt Js","Bootstrap"
+            /*"Node Js","Spring Boot","Express Js",
+            "Laravel","Micronaut","Mocha"*/};
 
     Integer[] itemImages = {
             R.drawable.ic_fundamental_icon,
@@ -47,14 +48,13 @@ public class LearnFragment extends Fragment {
             R.drawable.ic_dom_icon,
             R.drawable.ic_bom_icon,
             R.drawable.ic_programs_advanced_image,
-            R.drawable.ic_typescript_icon,
-            R.drawable.ic_angular_icon,
-            R.drawable.ic_ajax_icon,
-            R.drawable.ic_json_icon,
-            R.drawable.ic_example_icon
+            R.drawable.ic_ajax_icon
+            //R.drawable.ic_json_icon
 
     };
     Integer[] itemImagesPro = {
+            R.drawable.ic_typescript_icon,
+            R.drawable.ic_angular_icon,
             R.drawable.ic_js_vue_icon,
             R.drawable.ic_next_js,
             R.drawable.ic_react_icon,
@@ -62,13 +62,13 @@ public class LearnFragment extends Fragment {
             R.drawable.ic_svelte_icon,
             R.drawable.ic_gatsbyjs_icon,
             R.drawable.ic_nuxt_icon,
-            R.drawable.ic_bootstrap_icon,
+            R.drawable.ic_bootstrap_icon/*
             R.drawable.ic_node_icon,
             R.drawable.ic_springio_icon,
             R.drawable.ic_expressjs_icon,
             R.drawable.ic_laravel_icon,
             R.drawable.ic_micronaut_icon,
-            R.drawable.ic_mochajs_icon
+            R.drawable.ic_mochajs_icon*/
 
     };
 
@@ -194,25 +194,13 @@ public class LearnFragment extends Fragment {
                         startActivity(intent);
                         break;
                     case 7:
-                        intent.putExtra("learnItems","Typescript");
+                        intent.putExtra("learnItems","AJAX");
                         startActivity(intent);
                         break;
-                    case 8:
-                        intent.putExtra("learnItems","Angular");
+                    /*case 8:
+                        intent.putExtra("learnItems","JSON");
                         startActivity(intent);
-                        break;
-                    case 9:
-                        intent.putExtra("learnItems","Ajax");
-                        startActivity(intent);
-                        break;
-                    case 10:
-                        intent.putExtra("learnItems","Json");
-                        startActivity(intent);
-                        break;
-                    case 11:
-                        intent.putExtra("learnItems","Examples");
-                        startActivity(intent);
-                        break;
+                        break;*/
 
                 }
                 //show ad
@@ -226,64 +214,70 @@ public class LearnFragment extends Fragment {
                 Intent intent = new Intent(getActivity(), LearnItemsListActivity.class);
                 switch (i){
                     case 0:
-                        intent.putExtra("learnItems","Vue Js");
+                        intent.putExtra("learnItems","Typescript");
                         startActivity(intent);
                         break;
                     case 1:
-                        intent.putExtra("learnItems","Next Js");
+                        intent.putExtra("learnItems","Angular");
                         startActivity(intent);
                         break;
                     case 2:
-                        intent.putExtra("learnItems","React Js");
+                        intent.putExtra("learnItems","Vue Js");
                         startActivity(intent);
                         break;
                     case 3:
-                        intent.putExtra("learnItems","Ember Js");
+                        intent.putExtra("learnItems","Next Js");
                         startActivity(intent);
                         break;
                     case 4:
-                        intent.putExtra("learnItems","Svelte Js");
+                        intent.putExtra("learnItems","React Js");
                         startActivity(intent);
                         break;
                     case 5:
-                        intent.putExtra("learnItems","Gatsby");
+                        intent.putExtra("learnItems","Ember Js");
                         startActivity(intent);
                         break;
                     case 6:
-                        intent.putExtra("learnItems","Nuxt Js");
+                        intent.putExtra("learnItems","Svelte Js");
                         startActivity(intent);
                         break;
                     case 7:
-                        intent.putExtra("learnItems","Bootstrap");
+                        intent.putExtra("learnItems","Gatsby");
                         startActivity(intent);
                         break;
                     case 8:
-                        intent.putExtra("learnItems","Node Js");
+                        intent.putExtra("learnItems","Nuxt Js");
                         startActivity(intent);
                         break;
                     case 9:
-                        intent.putExtra("learnItems","Spring Boot");
+                        intent.putExtra("learnItems","Bootstrap");
                         startActivity(intent);
                         break;
-                    case 10:
-                        intent.putExtra("learnItems","Express Js");
+                    /*case 10:
+                        intent.putExtra("learnItems","Node Js");
                         startActivity(intent);
                         break;
                     case 11:
-                        intent.putExtra("learnItems","Laravel");
+                        intent.putExtra("learnItems","Spring Boot");
                         startActivity(intent);
                         break;
                     case 12:
-                        intent.putExtra("learnItems","Micronaut");
+                        intent.putExtra("learnItems","Express Js");
                         startActivity(intent);
                         break;
                     case 13:
+                        intent.putExtra("learnItems","Laravel");
+                        startActivity(intent);
+                        break;
+                    case 14:
+                        intent.putExtra("learnItems","Micronaut");
+                        startActivity(intent);
+                        break;
+                    case 15:
                         intent.putExtra("learnItems","Mocha Js");
                         startActivity(intent);
                         break;
-
-
-
+*/
                 }
             }
         });

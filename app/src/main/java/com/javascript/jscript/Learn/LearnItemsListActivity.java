@@ -83,10 +83,55 @@ public class LearnItemsListActivity extends AppCompatActivity {
                 "Events"
         };
         final String[] Objects = {
-                "Learn Objects"
+                "Learn Objects",
+                "Number Objects",
+                "Boolean Objects",
+                "Strings Objects",
+                "Arrays Objects",
+                "Date Objects",
+                "Math Objects",
+                "RegExp Objects"
+        };
+        final String[] OOPs = {
+                "JS Class",
+                "JS Object",
+                "JS Prototype",
+                "JS Constructor Method",
+                "JS Static Method",
+                "JS Encapsulation",
+                "JS Inheritance",
+                "JS Polymorphism",
+                "JS Abstraction"
+        };
+        final String[] DOM = {
+                "HTML DOM",
+                "DOM Methods",
+                "DOM Documents",
+                "DOM Elements",
+                "DOM HTML",
+                "DOM Forms",
+                "DOM CSS",
+                "DOM Animations"
+        };
+        final String[] BOM = {
+                "JS Window",
+                "JS Screen",
+                "JS Location",
+                "JS History",
+                "JS Navigator",
+                "JS Timing",
+                "JS Cookies"
+
         };
         final String[] advanced = {
-                "Learn advanced"
+                "JS Error Handling",
+                "JS Validations",
+                "JS Multimedia",
+                "JS Debugging",
+                "JS Web APIs",
+                "Web Storage API",
+                "Web Workers API",
+                "JS Graphics"
         };
         final String[] Typescript = {
                 "Typescript"
@@ -95,6 +140,16 @@ public class LearnItemsListActivity extends AppCompatActivity {
         final String[] angular = {
                 "Learn angular"
         };
+        final String[] AJAX = {
+                "AJAX Introduction",
+                "AJAX XMLHttp",
+                "AJAX Response",
+                "AJAX PHP",
+                "AJAX ASP",
+                "AJAX Database",
+                "AJAX Applications"
+        };
+        //final String[] JSON = {};
         //pro content list
         final String[] VueJs = {
                 "Vue Js"
@@ -152,6 +207,15 @@ public class LearnItemsListActivity extends AppCompatActivity {
             case "Objects":
                 list = Objects;
                 break;
+            case "OOPs":
+                list = OOPs;
+                break;
+            case "DOM":
+                list = DOM;
+                break;
+            case "BOM":
+                list = BOM;
+                break;
             case "Advanced":
                 list = advanced;
                 break;
@@ -161,6 +225,12 @@ public class LearnItemsListActivity extends AppCompatActivity {
             case "Angular":
                 list = angular;
                 break;
+            case "AJAX":
+                list = AJAX;
+                break;
+            /*case "JSON":
+                list = JSON;
+                break;*/
             //pro content
             case "Vue Js":
                 list = VueJs;

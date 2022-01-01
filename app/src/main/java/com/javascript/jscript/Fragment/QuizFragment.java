@@ -27,9 +27,10 @@ public class QuizFragment extends Fragment {
     ImageView proImage;
     private AdNetwork adNetwork;
 
-    String[] itemsName = {"Fundamental","Basic","Objects","OOPs","DOM","BOM","Advanced","Typescript","Angular","Ajax","Json","Examples"};
-    String[] itemsNamePro = {"Vue Js","Next Js","React Js","Ember Js","Svelte Js","Gatsby","Nuxt Js","Bootstrap","Node Js","Spring Boot","Express Js",
-            "Laravel","Micronaut","Mocha"};
+    String[] itemsName = {"Fundamental","Basic","Objects","OOPs","DOM","BOM","Advanced","AJAX"};
+    String[] itemsNamePro = {"Typescript","Angular","Vue Js","Next Js","React Js","Ember Js","Svelte Js","Gatsby","Nuxt Js","Bootstrap"
+            /*"Node Js","Spring Boot","Express Js",
+            "Laravel","Micronaut","Mocha"*/};
 
     Integer[] itemImages = {
             R.drawable.ic_fundamental_icon,
@@ -39,14 +40,13 @@ public class QuizFragment extends Fragment {
             R.drawable.ic_dom_icon,
             R.drawable.ic_bom_icon,
             R.drawable.ic_programs_advanced_image,
-            R.drawable.ic_typescript_icon,
-            R.drawable.ic_angular_icon,
-            R.drawable.ic_ajax_icon,
-            R.drawable.ic_json_icon,
-            R.drawable.ic_example_icon
+            R.drawable.ic_ajax_icon
+            //R.drawable.ic_json_icon
 
     };
     Integer[] itemImagesPro = {
+            R.drawable.ic_typescript_icon,
+            R.drawable.ic_angular_icon,
             R.drawable.ic_js_vue_icon,
             R.drawable.ic_next_js,
             R.drawable.ic_react_icon,
@@ -54,13 +54,13 @@ public class QuizFragment extends Fragment {
             R.drawable.ic_svelte_icon,
             R.drawable.ic_gatsbyjs_icon,
             R.drawable.ic_nuxt_icon,
-            R.drawable.ic_bootstrap_icon,
+            R.drawable.ic_bootstrap_icon/*
             R.drawable.ic_node_icon,
             R.drawable.ic_springio_icon,
             R.drawable.ic_expressjs_icon,
             R.drawable.ic_laravel_icon,
             R.drawable.ic_micronaut_icon,
-            R.drawable.ic_mochajs_icon
+            R.drawable.ic_mochajs_icon*/
 
     };
 
@@ -172,25 +172,13 @@ public class QuizFragment extends Fragment {
                         startActivity(intent);
                         break;
                     case 7:
-                        intent.putExtra("quizItems","Typescript");
+                        intent.putExtra("quizItems","AJAX");
                         startActivity(intent);
                         break;
-                    case 8:
-                        intent.putExtra("quizItems","Angular");
+                    /*case 8:
+                        intent.putExtra("quizItems","JSON");
                         startActivity(intent);
-                        break;
-                    case 9:
-                        intent.putExtra("quizItems","Ajax");
-                        startActivity(intent);
-                        break;
-                    case 10:
-                        intent.putExtra("quizItems","Json");
-                        startActivity(intent);
-                        break;
-                    case 11:
-                        intent.putExtra("quizItems","Examples");
-                        startActivity(intent);
-                        break;
+                        break;*/
 
                 }
                 //show ad
@@ -204,63 +192,70 @@ public class QuizFragment extends Fragment {
                 Intent intent = new Intent(getActivity(), QuizTopicListActivity.class);
                 switch (i){
                     case 0:
-                        intent.putExtra("quizItems","Vue Js");
+                        intent.putExtra("quizItems","Typescript");
                         startActivity(intent);
                         break;
                     case 1:
-                        intent.putExtra("quizItems","Next Js");
+                        intent.putExtra("quizItems","Angular");
                         startActivity(intent);
                         break;
                     case 2:
-                        intent.putExtra("quizItems","React Js");
+                        intent.putExtra("quizItems","Vue Js");
                         startActivity(intent);
                         break;
                     case 3:
-                        intent.putExtra("quizItems","Ember Js");
+                        intent.putExtra("quizItems","Next Js");
                         startActivity(intent);
                         break;
                     case 4:
-                        intent.putExtra("quizItems","Svelte Js");
+                        intent.putExtra("quizItems","React Js");
                         startActivity(intent);
                         break;
                     case 5:
-                        intent.putExtra("quizItems","Gatsby");
+                        intent.putExtra("quizItems","Ember Js");
                         startActivity(intent);
                         break;
                     case 6:
-                        intent.putExtra("quizItems","Nuxt Js");
+                        intent.putExtra("quizItems","Svelte Js");
                         startActivity(intent);
                         break;
                     case 7:
-                        intent.putExtra("quizItems","Bootstrap");
+                        intent.putExtra("quizItems","Gatsby");
                         startActivity(intent);
                         break;
                     case 8:
-                        intent.putExtra("quizItems","Node Js");
+                        intent.putExtra("quizItems","Nuxt Js");
                         startActivity(intent);
                         break;
                     case 9:
-                        intent.putExtra("quizItems","Spring Boot");
+                        intent.putExtra("quizItems","Bootstrap");
                         startActivity(intent);
                         break;
-                    case 10:
-                        intent.putExtra("quizItems","Express Js");
+                    /*case 10:
+                        intent.putExtra("quizItems","Node Js");
                         startActivity(intent);
                         break;
                     case 11:
-                        intent.putExtra("quizItems","Laravel");
+                        intent.putExtra("quizItems","Spring Boot");
                         startActivity(intent);
                         break;
                     case 12:
-                        intent.putExtra("quizItems","Micronaut");
+                        intent.putExtra("quizItems","Express Js");
                         startActivity(intent);
                         break;
                     case 13:
+                        intent.putExtra("quizItems","Laravel");
+                        startActivity(intent);
+                        break;
+                    case 14:
+                        intent.putExtra("quizItems","Micronaut");
+                        startActivity(intent);
+                        break;
+                    case 15:
                         intent.putExtra("quizItems","Mocha Js");
                         startActivity(intent);
                         break;
-
-
+*/
 
                 }
             }

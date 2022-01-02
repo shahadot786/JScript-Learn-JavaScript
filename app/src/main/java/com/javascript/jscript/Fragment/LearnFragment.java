@@ -36,9 +36,8 @@ public class LearnFragment extends Fragment {
     private AdNetwork adNetwork;
 
     String[] itemsName = {"Fundamental","Basic","Objects","OOPs","DOM","BOM","Advanced","AJAX","Typescript"};
-    String[] itemsNamePro = {"Angular","Vue Js","Next Js","React Js","Ember Js","Svelte Js","Gatsby","Nuxt Js","Bootstrap"
-            /*"Node Js","Spring Boot","Express Js",
-            "Laravel","Micronaut","Mocha"*/};
+    String[] itemsNamePro = {"Angular","Vue Js","Next Js","React Js","Ember Js","Bootstrap","Node Js","Express Js","Laravel","jQuery"
+            /*"Svelte Js","Gatsby","Nuxt Js","Spring Boot","Micronaut","Mocha"*/};
 
     Integer[] itemImages = {
             R.drawable.ic_fundamental_icon,
@@ -59,14 +58,16 @@ public class LearnFragment extends Fragment {
             R.drawable.ic_next_js,
             R.drawable.ic_react_icon,
             R.drawable.ic_emberjs_icon,
+            R.drawable.ic_bootstrap_icon,
+            R.drawable.ic_node_icon,
+            R.drawable.ic_expressjs_icon,
+            R.drawable.ic_laravel_icon,
+            R.drawable.ic_jquery_icon
+            /*
             R.drawable.ic_svelte_icon,
             R.drawable.ic_gatsbyjs_icon,
             R.drawable.ic_nuxt_icon,
-            R.drawable.ic_bootstrap_icon/*
-            R.drawable.ic_node_icon,
             R.drawable.ic_springio_icon,
-            R.drawable.ic_expressjs_icon,
-            R.drawable.ic_laravel_icon,
             R.drawable.ic_micronaut_icon,
             R.drawable.ic_mochajs_icon*/
 
@@ -238,6 +239,35 @@ public class LearnFragment extends Fragment {
                         startActivity(intent);
                         break;
                     case 5:
+                        intent.putExtra("learnItems","Bootstrap");
+                        startActivity(intent);
+                        break;
+                    case 6:
+                        intent.putExtra("learnItems","Node Js");
+                        startActivity(intent);
+                        break;
+                    case 7:
+                        intent.putExtra("learnItems","Express Js");
+                        startActivity(intent);
+                        break;
+                    case 8:
+                        intent.putExtra("learnItems","Laravel");
+                        startActivity(intent);
+                        break;
+                    case 9:
+                        intent.putExtra("learnItems","jQuery");
+                        startActivity(intent);
+                        break;
+                    /*
+                    case 14:
+                        intent.putExtra("learnItems","Micronaut");
+                        startActivity(intent);
+                        break;
+                    case 15:
+                        intent.putExtra("learnItems","Mocha Js");
+                        startActivity(intent);
+                        break;
+                    case 5:
                         intent.putExtra("learnItems","Svelte Js");
                         startActivity(intent);
                         break;
@@ -249,32 +279,8 @@ public class LearnFragment extends Fragment {
                         intent.putExtra("learnItems","Nuxt Js");
                         startActivity(intent);
                         break;
-                    case 8:
-                        intent.putExtra("learnItems","Bootstrap");
-                        startActivity(intent);
-                        break;
-                    /*case 10:
-                        intent.putExtra("learnItems","Node Js");
-                        startActivity(intent);
-                        break;
                     case 11:
                         intent.putExtra("learnItems","Spring Boot");
-                        startActivity(intent);
-                        break;
-                    case 12:
-                        intent.putExtra("learnItems","Express Js");
-                        startActivity(intent);
-                        break;
-                    case 13:
-                        intent.putExtra("learnItems","Laravel");
-                        startActivity(intent);
-                        break;
-                    case 14:
-                        intent.putExtra("learnItems","Micronaut");
-                        startActivity(intent);
-                        break;
-                    case 15:
-                        intent.putExtra("learnItems","Mocha Js");
                         startActivity(intent);
                         break;
 */

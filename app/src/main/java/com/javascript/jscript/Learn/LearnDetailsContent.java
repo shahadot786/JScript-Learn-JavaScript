@@ -13469,6 +13469,1966 @@ public class LearnDetailsContent {
         list.add(l2);
         return list;
     }
+    //ReactJs
+    //ReactJs Introduction
+    private static List<LearnDetailsModel> ReactJsIntroduction(){
+        final List<LearnDetailsModel> list = new ArrayList<>();
+        final LearnDetailsModel l1 = new LearnDetailsModel(
+                "Introduction",
+                "ReactJS is a simple, feature rich, component based JavaScript UI library. It can be used to develop small applications as well as big, complex applications. ReactJS provides minimal and solid feature set to kick-start a web application. React community compliments React library by providing large set of ready-made components to develop web application in a record time. React community also provides advanced concept like state management, routing, etc., on top of the React library.",
+                "",
+                ""
+        );
+        final LearnDetailsModel l2 = new LearnDetailsModel(
+                "React versions",
+                "The initial version, 0.3.0 of React is released on May, 2013 and the latest version, 17.0.1 is released on October, 2020. The major version introduces breaking changes and the minor version introduces new feature without breaking the existing functionality. Bug fixes are released as and when necessary. React follows the Sematic Versioning (semver) principle.",
+                "",
+                ""
+        );
+        final LearnDetailsModel l3 = new LearnDetailsModel(
+                "Features",
+                "The salient features of React library are as follows −\n" +
+                        "\n" +
+                        "Solid base architecture\n" +
+                        "Extensible architecture\n" +
+                        "Component based library\n" +
+                        "JSX based design architecture\n" +
+                        "Declarative UI library",
+                "",
+                ""
+        );
+        final LearnDetailsModel l4 = new LearnDetailsModel(
+                "Benefits",
+                "Few benefits of using React library are as follows −\n" +
+                        "\n" +
+                        "Easy to learn\n" +
+                        "Easy to adept in modern as well as legacy application\n" +
+                        "Faster way to code a functionality\n" +
+                        "Availability of large number of ready-made component\n" +
+                        "Large and active community",
+                "",
+                ""
+        );
+        final LearnDetailsModel l5 = new LearnDetailsModel(
+                "Applications",
+                "Few popular websites powered by React library are listed below −\n" +
+                        "\n" +
+                        "Facebook, popular social media application\n" +
+                        "Instagram, popular photo sharing application\n" +
+                        "Netflix, popular media streaming application\n" +
+                        "Code Academy, popular online training application\n" +
+                        "Reddit, popular content sharing application\n" +
+                        "As you see, most popular application in every field is being developed by React Library.",
+                "",
+                ""
+        );
+        list.add(l1);
+        list.add(l2);
+        list.add(l3);
+        list.add(l4);
+        list.add(l5);
+        return list;
+    }
+    //ReactJs Architecture
+    private static List<LearnDetailsModel> ReactJsArchitecture(){
+        final List<LearnDetailsModel> list = new ArrayList<>();
+        final LearnDetailsModel l1 = new LearnDetailsModel(
+                "Architecture",
+                "React library is built on a solid foundation. It is simple, flexible and extensible. As we learned earlier, React is a library to create user interface in a web application. React’s primary purpose is to enable the developer to create user interface using pure JavaScript. Normally, every user interface library introduces a new template language (which we need to learn) to design the user interface and provides an option to write logic, either inside the template or separately.\n" +
+                        "\n" +
+                        "Instead of introducing new template language, React introduces three simple concepts as given below −\n" +
+                        "\n" +
+                        "React elements\n" +
+                        "JavaScript representation of HTML DOM. React provides an API, React.createElement to create React Element.\n" +
+                        "\n" +
+                        "JSX\n" +
+                        "A JavaScript extension to design user interface. JSX is an XML based, extensible language supporting HTML syntax with little modification. JSX can be compiled to React Elements and used to create user interface.\n" +
+                        "\n" +
+                        "React component\n" +
+                        "React component is the primary building block of the React application. It uses React elements and JSX to design its user interface. React component is basically a JavaScript class (extends the React.component class) or pure JavaScript function. React component has properties, state management, life cycle and event handler. React component can be able to do simple as well as advanced logic.\n" +
+                        "\n" +
+                        "Let us learn more about components in the React Component chapter.",
+                "",
+                ""
+        );
+        final LearnDetailsModel l2 = new LearnDetailsModel(
+                "Workflow of a React application",
+                "Let us understand the workflow of a React application in this chapter by creating and analyzing a simple React application.\n" +
+                        "\n" +
+                        "Open a command prompt and go to your workspace.\n" +
+                        "\n" +
+                        "cd /go/to/your/workspace\n\n" +
+                        "Next, create a folder, static_site and change directory to newly created folder.\n" +
+                        "\n" +
+                        "mkdir static_site \n" +
+                        "cd static_site",
+                "<!DOCTYPE html> \n" +
+                        "<html> \n" +
+                        "   <head> \n" +
+                        "      <meta charset=\"UTF-8\" /> \n" +
+                        "      <title>React Application</title> \n" +
+                        "   </head> \n" +
+                        "   <body> \n" +
+                        "      <div id=\"react-app\"></div> \n" +
+                        "      <script src=\"https://unpkg.com/react@17/umd/react.development.js\" crossorigin></script> \n" +
+                        "      <script src=\"https://unpkg.com/react-dom@17/umd/react-dom.development.js\" crossorigin></script> \n" +
+                        "      <script language=\"JavaScript\"> \n" +
+                        "         element = React.createElement('h1', {}, 'Hello React!') \n" +
+                        "         ReactDOM.render(element, document.getElementById('react-app')); \n" +
+                        "      </script> \n" +
+                        "   </body> \n" +
+                        "</html>",
+                "Next, open your favorite browser. Enter http://localhost:5000 in the address bar and then press enter."
+        );
+        final LearnDetailsModel l3 = new LearnDetailsModel(
+                "Element",
+                "React.createElement\n" +
+                        "Used to create React elements. It expects three parameters −\n" +
+                        "\n" +
+                        "Element tag\n" +
+                        "Element attributes as object\n" +
+                        "Element content - It can contain nested React element as well\n" +
+                        "ReactDOM.render\n" +
+                        "Used to render the element into the container. It expects two parameters −\n" +
+                        "\n" +
+                        "React Element OR JSX\n" +
+                        "Root element of the webpage\n" +
+                        "Nested React element\n" +
+                        "As React.createElement allows nested React element, let us add nested element as shown below −",
+                "<script language=\"JavaScript\">\n" +
+                        "   element = React.createElement('div', {}, React.createElement('h1', {}, 'Hello React!'));\n" +
+                        "   ReactDOM.render(element, document.getElementById('react-app')); \n" +
+                        "</script>",
+                "<div><h1> Hello React!</h1></div>"
+        );
+        final LearnDetailsModel l4 = new LearnDetailsModel(
+                "Use JSX",
+                "Next, let us remove the React element entirely and introduce JSX syntax as shown below −",
+                "<!DOCTYPE html> \n" +
+                        "<html> \n" +
+                        "   <head> \n" +
+                        "      <meta charset=\"UTF-8\" /> \n" +
+                        "      <title>React Application</title> \n" +
+                        "   </head> \n" +
+                        "   <body> \n" +
+                        "      <div id=\"react-app\"></div> \n" +
+                        "      <script src=\"https://unpkg.com/react@17/umd/react.development.js\" crossorigin></script> \n" +
+                        "      <script src=\"https://unpkg.com/react-dom@17/umd/react-dom.development.js\" crossorigin></script> \n" +
+                        "      <script src=\"https://unpkg.com/@babel/standalone/babel.min.js\"></script> \n" +
+                        "      <script type=\"text/babel\"> \n" +
+                        "         ReactDOM.render(\n" +
+                        "            <div><h1>Hello React!</h1></div>, \n" +
+                        "            document.getElementById('react-app') \n" +
+                        "         ); \n" +
+                        "     </script> \n" +
+                        "   </body> \n" +
+                        "</html>",
+                ""
+        );
+        final LearnDetailsModel l5 = new LearnDetailsModel(
+                "Architecture of the React Application",
+                "React library is just UI library and it does not enforce any particular pattern to write a complex application. Developers are free to choose the design pattern of their choice. React community advocates certain design pattern. One of the patterns is Flux pattern. React library also provides lot of concepts like Higher Order component, Context, Render props, Refs etc., to write better code. React Hooks is evolving concept to do state management in big projects. Let us try to understand the high level architecture of a React application." +
+                        "\n\n" +
+                        "React app starts with a single root component.\n" +
+                        "\n" +
+                        "Root component is build using one or more component.\n" +
+                        "\n" +
+                        "Each component can be nested with other component to any level.\n" +
+                        "\n" +
+                        "Composition is one of the core concepts of React library. So, each component is build by composing smaller components instead of inheriting one component from another component.\n" +
+                        "\n" +
+                        "Most of the components are user interface components.\n" +
+                        "\n" +
+                        "React app can include third party component for specific purpose such as routing, animation, state management, etc.",
+                "",
+                ""
+        );
+        list.add(l1);
+        list.add(l2);
+        list.add(l3);
+        list.add(l4);
+        list.add(l5);
+        return list;
+    }
+    //ReactJs Creating a React Application
+    private static List<LearnDetailsModel> ReactJsCreatingReactApplication(){
+        final List<LearnDetailsModel> list = new ArrayList<>();
+        final LearnDetailsModel l1 = new LearnDetailsModel(
+                "Creating a React Application",
+                "As we learned earlier, React library can be used in both simple and complex application. Simple application normally includes the React library in its script section. In complex application, developers have to split the code into multiple files and organize the code into a standard structure. Here, React toolchain provides pre-defined structure to bootstrap the application. Also, developers are free to use their own project structure to organize the code.\n" +
+                        "\n" +
+                        "Let us see how to create simple as well as complex React application −\n" +
+                        "\n" +
+                        "Simple application using CDN\n" +
+                        "\n" +
+                        "Complex application using React Create App cli\n" +
+                        "\n" +
+                        "Complex application using customized method",
+                "",
+                ""
+        );
+        final LearnDetailsModel l2 = new LearnDetailsModel(
+                "Using Rollup bundler",
+                "Rollup is one of the small and fast JavaScript bundlers. Let us learn how to use rollup bundler in this chapter.\n" +
+                        "\n" +
+                        "Open a terminal and go to your workspace.\n" +
+                        "\n" +
+                        "cd /go/to/your/workspace\n" +
+                        "Next, create a folder, expense-manager-rollup and move to newly created folder. Also, open the folder in your favorite editor or IDE.\n" +
+                        "\n" +
+                        "mkdir expense-manager-rollup \n" +
+                        "cd expense-manager-rollup\n" +
+                        "Next, create and initialize the project.\n" +
+                        "\n" +
+                        "npm init -y\n" +
+                        "Next, install React libraries (react and react-dom).\n" +
+                        "\n" +
+                        "npm install react@^17.0.0 react-dom@^17.0.0 --save\n" +
+                        "Next, install babel and its preset libraries as development dependency.\n" +
+                        "\n" +
+                        "npm install @babel/preset-env @babel/preset-react \n" +
+                        "@babel/core @babel/plugin-proposal-class-properties -D\n" +
+                        "Next, install rollup and its plugin libraries as development dependency.\n" +
+                        "\n" +
+                        "npm i -D rollup postcss@8.1 @rollup/plugin-babel \n" +
+                        "@rollup/plugin-commonjs @rollup/plugin-node-resolve \n" +
+                        "@rollup/plugin-replace rollup-plugin-livereload \n" +
+                        "rollup-plugin-postcss rollup-plugin-serve postcss@8.1 \n" +
+                        "postcss-modules@4 rollup-plugin-postcss\n" +
+                        "Next, install corejs and regenerator runtime for async programming.\n" +
+                        "\n" +
+                        "npm i regenerator-runtime core-js\n" +
+                        "Next, create a babel configuration file, .babelrc under the root folder to configure the babel compiler.\n" +
+                        "\n" +
+                        "{\n" +
+                        "   \"presets\": [\n" +
+                        "      [\n" +
+                        "         \"@babel/preset-env\",\n" +
+                        "         {\n" +
+                        "            \"useBuiltIns\": \"usage\",\n" +
+                        "            \"corejs\": 3,\n" +
+                        "            \"targets\": \"> 0.25%, not dead\"\n" +
+                        "         }\n" +
+                        "      ],\n" +
+                        "      \"@babel/preset-react\"\n" +
+                        "   ],\n" +
+                        "   \"plugins\": [\n" +
+                        "      \"@babel/plugin-proposal-class-properties\"\n" +
+                        "   ]\n" +
+                        "}\n" +
+                        "Next, create a rollup.config.js file in the root folder to configure the rollup bundler.\n" +
+                        "\n" +
+                        "import babel from '@rollup/plugin-babel';\n" +
+                        "import resolve from '@rollup/plugin-node-resolve';\n" +
+                        "import commonjs from '@rollup/plugin-commonjs';\n" +
+                        "import replace from '@rollup/plugin-replace';\n" +
+                        "import serve from 'rollup-plugin-serve';\n" +
+                        "import livereload from 'rollup-plugin-livereload';\n" +
+                        "import postcss from 'rollup-plugin-postcss'\n" +
+                        "\n" +
+                        "export default {\n" +
+                        "   input: 'src/index.js',\n" +
+                        "   output: {\n" +
+                        "      file: 'public/index.js',\n" +
+                        "      format: 'iife',\n" +
+                        "   },\n" +
+                        "   plugins: [\n" +
+                        "      commonjs({\n" +
+                        "         include: [\n" +
+                        "            'node_modules/**',\n" +
+                        "         ],\n" +
+                        "         exclude: [\n" +
+                        "            'node_modules/process-es6/**',\n" +
+                        "         ],\n" +
+                        "      }),\n" +
+                        "      resolve(),\n" +
+                        "      babel({\n" +
+                        "         exclude: 'node_modules/**'\n" +
+                        "      }),\n" +
+                        "      replace({\n" +
+                        "         'process.env.NODE_ENV': JSON.stringify('production'),\n" +
+                        "      }),\n" +
+                        "      postcss({\n" +
+                        "         autoModules: true\n" +
+                        "      }),\n" +
+                        "      livereload('public'),\n" +
+                        "      serve({\n" +
+                        "         contentBase: 'public',\n" +
+                        "         port: 3000,\n" +
+                        "         open: true,\n" +
+                        "      }), // index.html should be in root of project\n" +
+                        "   ]\n" +
+                        "}\n" +
+                        "Next, update the package.json and include our entry point (public/index.js and public/styles.css) and command to build and run the application.\n" +
+                        "\n" +
+                        "...\n" +
+                        "\"main\": \"public/index.js\",\n" +
+                        "\"style\": \"public/styles.css\",\n" +
+                        "\"files\": [\n" +
+                        "   \"public\"\n" +
+                        "],\n" +
+                        "\"scripts\": {\n" +
+                        "   \"start\": \"rollup -c -w\",\n" +
+                        "   \"build\": \"rollup\"\n" +
+                        "},\n" +
+                        "...\n" +
+                        "Next, create a src folder in the root directory of the application, which will hold all the source code of the application.\n" +
+                        "\n" +
+                        "Next, create a folder, components under src to include our React components. The idea is to create two files, <component>.js to write the component logic and <component.css> to include the component specific styles.\n" +
+                        "\n" +
+                        "The final structure of the application will be as follows −\n" +
+                        "\n" +
+                        "|-- package-lock.json\n" +
+                        "|-- package.json\n" +
+                        "|-- rollup.config.js\n" +
+                        "|-- .babelrc\n" +
+                        "`-- public\n" +
+                        "   |-- index.html\n" +
+                        "`-- src\n" +
+                        "   |-- index.js\n" +
+                        "   `-- components\n" +
+                        "   |  |-- mycom.js\n" +
+                        "   |  |-- mycom.css\n" +
+                        "Let us create a new component, HelloWorld to confirm our setup is working fine. Create a file, HelloWorld.js under components folder and write a simple component to emit Hello World message.\n" +
+                        "\n" +
+                        "import React from \"react\";\n" +
+                        "\n" +
+                        "class HelloWorld extends React.Component {\n" +
+                        "   render() {\n" +
+                        "      return (\n" +
+                        "         <div>\n" +
+                        "            <h1>Hello World!</h1>\n" +
+                        "         </div>\n" +
+                        "      );\n" +
+                        "   }\n" +
+                        "}\n" +
+                        "export default HelloWorld;\n" +
+                        "Next, create our main file, index.js under src folder and call our newly created component.\n" +
+                        "\n" +
+                        "import React from 'react';\n" +
+                        "import ReactDOM from 'react-dom';\n" +
+                        "import HelloWorld from './components/HelloWorld';\n" +
+                        "\n" +
+                        "ReactDOM.render(\n" +
+                        "   <React.StrictMode>\n" +
+                        "      <HelloWorld />\n" +
+                        "   </React.StrictMode>,\n" +
+                        "   document.getElementById('root')\n" +
+                        ");\n" +
+                        "Next, create a public folder in the root directory.\n" +
+                        "\n" +
+                        "Next, create a html file, index.html (under public folder*), which will be our entry point of the application.\n" +
+                        "\n" +
+                        "<!DOCTYPE html>\n" +
+                        "<html lang=\"en\">\n" +
+                        "   <head>\n" +
+                        "      <meta charset=\"utf-8\">\n" +
+                        "      <title>Expense Manager :: Rollup version</title>\n" +
+                        "   </head>\n" +
+                        "   <body>\n" +
+                        "      <div id=\"root\"></div>\n" +
+                        "      <script type=\"text/JavaScript\" src=\"./index.js\"></script>\n" +
+                        "   </body>\n" +
+                        "</html>\n" +
+                        "Next, build and run the application.\n" +
+                        "\n" +
+                        "npm start\n" +
+                        "The npm build command will execute the rollup and bundle our application into a single file, dist/index.js file and start serving the application. The dev command will recompile the code whenever the source code is changed and also reload the changes in the browser.",
+                "> expense-manager-rollup@1.0.0 build /path/to/your/workspace/expense-manager-rollup \n" +
+                        "> rollup -c \n" +
+                        "rollup v2.36.1 \n" +
+                        "bundles src/index.js → dist\\index.js... \n" +
+                        "LiveReload enabled \n" +
+                        "http://localhost:10001 -> /path/to/your/workspace/expense-manager-rollup/dist \n" +
+                        "created dist\\index.js in 4.7s \n" +
+                        "\n" +
+                        "waiting for changes...",
+                "Next, open the browser and enter http://localhost:3000 in the address bar and press enter."
+        );
+        final LearnDetailsModel l3 = new LearnDetailsModel(
+                "Using Parcel bundler",
+                "Parcel is fast bundler with zero configuration. It expects just the entry point of the application and it will resolve the dependency itself and bundle the application. Let us learn how to use parcel bundler in this chapter.\n" +
+                        "\n" +
+                        "First, install the parcel bundler.\n" +
+                        "\n" +
+                        "npm install -g parcel-bundler\n" +
+                        "Open a terminal and go to your workspace.\n" +
+                        "\n" +
+                        "cd /go/to/your/workspace\n" +
+                        "Next, create a folder, expense-manager-parcel and move to newly created folder. Also, open the folder in your favorite editor or IDE.\n" +
+                        "\n" +
+                        "mkdir expense-manager-parcel \n" +
+                        "cd expense-manager-parcel\n" +
+                        "Next, create and initialize the project.\n" +
+                        "\n" +
+                        "npm init -y\n" +
+                        "Next, install React libraries (react and react-dom).\n" +
+                        "\n" +
+                        "npm install react@^17.0.0 react-dom@^17.0.0 --save\n" +
+                        "Next, install babel and its preset libraries as development dependency.\n" +
+                        "\n" +
+                        "npm install @babel/preset-env @babel/preset-react @babel/core @babel/plugin-proposal-class-properties -D\n" +
+                        "Next, create a babel configuration file, .babelrc under the root folder to configure the babel compiler.\n" +
+                        "\n" +
+                        "{\n" +
+                        "   \"presets\": [\n" +
+                        "      \"@babel/preset-env\",\n" +
+                        "      \"@babel/preset-react\"\n" +
+                        "   ],\n" +
+                        "   \"plugins\": [\n" +
+                        "      \"@babel/plugin-proposal-class-properties\"\n" +
+                        "   ]\n" +
+                        "}\n" +
+                        "Next, update the package.json and include our entry point (src/index.js) and commands to build and run the application.\n" +
+                        "\n" +
+                        "... \n" +
+                        "\"main\": \"src/index.js\", \n" +
+                        "\"scripts\": {\n" +
+                        "   \"start\": \"parcel public/index.html\",\n" +
+                        "   \"build\": \"parcel build public/index.html --out-dir dist\" \n" +
+                        "},\n" +
+                        "...\n" +
+                        "Next, create a src folder in the root directory of the application, which will hold all the source code of the application.\n" +
+                        "\n" +
+                        "Next, create a folder, components under src to include our React components. The idea is to create two files, <component>.js to write the component logic and <component.css> to include the component specific styles.\n" +
+                        "\n" +
+                        "The final structure of the application will be as follows −\n" +
+                        "\n" +
+                        "|-- package-lock.json\n" +
+                        "|-- package.json\n" +
+                        "|-- .babelrc\n" +
+                        "`-- public\n" +
+                        "   |-- index.html\n" +
+                        "`-- src\n" +
+                        "   |-- index.js\n" +
+                        "   `-- components\n" +
+                        "   |  |-- mycom.js\n" +
+                        "   |  |-- mycom.css\n" +
+                        "Let us create a new component, HelloWorld to confirm our setup is working fine. Create a file, HelloWorld.js under components folder and write a simple component to emit Hello World message.\n" +
+                        "\n" +
+                        "import React from \"react\";\n" +
+                        "\n" +
+                        "class HelloWorld extends React.Component {\n" +
+                        "   render() {\n" +
+                        "      return (\n" +
+                        "         <div>\n" +
+                        "            <h1>Hello World!</h1>\n" +
+                        "         </div>\n" +
+                        "      );\n" +
+                        "   }\n" +
+                        "}\n" +
+                        "export default HelloWorld;\n" +
+                        "Next, create our main file, index.js under src folder and call our newly created component.\n" +
+                        "\n" +
+                        "import React from 'react';\n" +
+                        "import ReactDOM from 'react-dom';\n" +
+                        "import HelloWorld from './components/HelloWorld';\n" +
+                        "\n" +
+                        "ReactDOM.render(\n" +
+                        "   <React.StrictMode>\n" +
+                        "      <HelloWorld />\n" +
+                        "   </React.StrictMode>,\n" +
+                        "   document.getElementById('root')\n" +
+                        ");\n" +
+                        "Next, create a public folder in the root directory.\n" +
+                        "\n" +
+                        "Next, create a html file, index.html (in the public folder), which will be our entry point of the application.\n" +
+                        "\n" +
+                        "<!DOCTYPE html>\n" +
+                        "<html lang=\"en\">\n" +
+                        "   <head>\n" +
+                        "      <meta charset=\"utf-8\">\n" +
+                        "      <title>Expense Manager :: Parcel version</title>\n" +
+                        "   </head>\n" +
+                        "   <body>\n" +
+                        "      <div id=\"root\"></div>\n" +
+                        "      <script type=\"text/JavaScript\" src=\"../src/index.js\"></script>\n" +
+                        "   </body>\n" +
+                        "</html>\n" +
+                        "Next, build and run the application.\n" +
+                        "\n" +
+                        "npm start\n" +
+                        "The npm build command will execute the parcel command. It will bundle and serve the application on the fly. It recompiles whenever the source code is changed and also reload the changes in the browser.\n" +
+                        "\n" +
+                        "> expense-manager-parcel@1.0.0 dev /go/to/your/workspace/expense-manager-parcel \n" +
+                        "> parcel index.html Server running at http://localhost:1234 \n" +
+                        "√ Built in 10.41s.",
+                "",
+                ""
+        );
+        list.add(l1);
+        list.add(l2);
+        list.add(l3);
+        return list;
+    }
+    //ReactJs JSX
+    private static List<LearnDetailsModel> ReactJsJSX(){
+        final List<LearnDetailsModel> list = new ArrayList<>();
+        final LearnDetailsModel l1 = new LearnDetailsModel(
+                "JSX",
+                "As we learned earlier, React JSX is an extension to JavaScript. It enables developer to create virtual DOM using XML syntax. It compiles down to pure JavaScript (React.createElement function calls). Since it compiles to JavaScript, it can be used inside any valid JavaScript code. For example, below codes are perfectly valid.\n" +
+                        "\n" +
+                        "Assign to a variable.\n" +
+                        "var greeting = <h1>Hello React!</h1>\n" +
+                        "Assign to a variable based on a condition.\n" +
+                        "var canGreet = true; \n" +
+                        "if(canGreet) { \n" +
+                        "   greeting = <h1>Hello React!</h1> \n" +
+                        "}\n" +
+                        "Can be used as return value of a function.\n" +
+                        "function Greeting() { \n" +
+                        "   return <h1>Hello React!</h1> \n" +
+                        "   \n" +
+                        "} \n" +
+                        "greeting = Greeting()\n" +
+                        "Can be used as argument of a function.\n" +
+                        "function Greet(message) { \n" +
+                        "   ReactDOM.render(message, document.getElementById('react-app') \n" +
+                        "} \n" +
+                        "Greet(<h1>Hello React!</h1>)",
+                "",
+                ""
+        );
+        final LearnDetailsModel l2 = new LearnDetailsModel(
+                "Expressions",
+                "JSX supports expression in pure JavaScript syntax. Expression has to be enclosed inside the curly braces, { }. Expression can contain all variables available in the context, where the JSX is defined. Let us create simple JSX with expression.",
+                "<script type=\"text/babel\">\n" +
+                        "   var cTime = new Date().toTimeString();\n" +
+                        "   ReactDOM.render(\n" +
+                        "      <div><p>The current time is {cTime}</p></div>, \n" +
+                        "      document.getElementById('react-app') );\n" +
+                        "</script>",
+                "The Current time is 21:19:56 GMT+0(USA Standard Time)"
+        );
+        final LearnDetailsModel l3 = new LearnDetailsModel(
+                "Functions",
+                "JSX supports user defined JavaScript function. Function usage is similar to expression. Let us create a simple function and use it inside JSX.",
+                "<script type=\"text/babel\">\n" +
+                        "   var cTime = new Date().toTimeString();\n" +
+                        "   ReactDOM.render(\n" +
+                        "      <div><p>The current time is {cTime}</p></div>, \n" +
+                        "      document.getElementById('react-app') \n" +
+                        "   );\n" +
+                        "</script>",
+                "The Current time is 21:20:56 GMT+0(USA Standard Time)"
+        );
+        final LearnDetailsModel l4 = new LearnDetailsModel(
+                "Attributes",
+                "JSX supports HTML like attributes. All HTML tags and its attributes are supported. Attributes has to be specified using camelCase convention (and it follows JavaScript DOM API) instead of normal HTML attribute name. For example, class attribute in HTML has to be defined as className. The following are few other examples −\n" +
+                        "\n" +
+                        "htmlFor instead of for\n" +
+                        "tabIndex instead of tabindex\n" +
+                        "onClick instead of onclick",
+                "<style>\n" +
+                        "   .red { color: red }\n" +
+                        "</style>\n" +
+                        "<script type=\"text/babel\">\n" +
+                        "   function getCurrentTime() {\n" +
+                        "      return new Date().toTimeString();\n" +
+                        "   }\n" +
+                        "   ReactDOM.render(\n" +
+                        "      <div>\n" +
+                        "         <p>The current time is <span className=\"red\">{getCurrentTime()}</span></p>\n" +
+                        "      </div>,\n" +
+                        "      document.getElementById('react-app') \n" +
+                        "   );\n" +
+                        "</script>",
+                "The Current time is 21:21:56 GMT+0(USA Standard Time)"
+        );
+        final LearnDetailsModel l5 = new LearnDetailsModel(
+                "Expression in attributes",
+                "JSX supports expression to be specified inside the attributes. In attributes, double quote should not be used along with expression. Either expression or string using double quote has to be used. The above example can be changed to use expression in attributes.",
+                "<style>\n" +
+                        "   .red { color: red }\n" +
+                        "</style>\n" +
+                        "\n" +
+                        "<script type=\"text/babel\">\n" +
+                        "   function getCurrentTime() {\n" +
+                        "      return new Date().toTimeString();\n" +
+                        "   }\n" +
+                        "   var class_name = \"red\";\n" +
+                        "   ReactDOM.render(\n" +
+                        "      <div>\n" +
+                        "         <p>The current time is <span className={class_name}>{getCurrentTime()}</span></p>\n" +
+                        "      </div>, \n" +
+                        "      document.getElementById('react-app') \n" +
+                        "   );\n" +
+                        "</script>",
+                ""
+        );
+        list.add(l1);
+        list.add(l2);
+        list.add(l3);
+        list.add(l4);
+        list.add(l5);
+        return list;
+    }
+    //ReactJs Component
+    private static List<LearnDetailsModel> ReactJsComponent(){
+        final List<LearnDetailsModel> list = new ArrayList<>();
+        final LearnDetailsModel l1 = new LearnDetailsModel(
+                "Component",
+                "React component is the building block of a React application. Let us learn how to create a new React component and the features of React components in this chapter.\n" +
+                        "\n" +
+                        "A React component represents a small chunk of user interface in a webpage. The primary job of a React component is to render its user interface and update it whenever its internal state is changed. In addition to rendering the UI, it manages the events belongs to its user interface. To summarize, React component provides below functionalities.\n" +
+                        "\n" +
+                        "Initial rendering of the user interface.\n" +
+                        "Management and handling of events.\n" +
+                        "Updating the user interface whenever the internal state is changed.\n" +
+                        "React component accomplish these feature using three concepts −\n" +
+                        "\n" +
+                        "Properties − Enables the component to receive input.\n" +
+                        "\n" +
+                        "Events − Enable the component to manage DOM events and end-user interaction.\n" +
+                        "\n" +
+                        "State − Enable the component to stay stateful. Stateful component updates its UI with respect to its state.\n" +
+                        "\n" +
+                        "Let us learn all the concept one-by-one in the upcoming chapters.",
+                "",
+                ""
+        );
+        final LearnDetailsModel l2 = new LearnDetailsModel(
+                "Creating a React component",
+                "React library has two component types. The types are categorized based on the way it is being created.\n" +
+                        "\n" +
+                        "Function component − Uses plain JavaScript function.\n" +
+                        "ES6 class component − Uses ES6 class.\n" +
+                        "The core difference between function and class component are −\n" +
+                        "\n" +
+                        "Function components are very minimal in nature. Its only requirement is to return a React element.\n" +
+                        "\n" +
+                        "function Hello() { \n" +
+                        "   return '<div>Hello</div>' \n" +
+                        "}\n" +
+                        "The same functionality can be done using ES6 class component with little extra coding.\n" +
+                        "\n" +
+                        "class ExpenseEntryItem extends React.Component {         \n" +
+                        "   render() { \n" +
+                        "      return ( \n" +
+                        "         <div>Hello</div> \n" +
+                        "      ); \n" +
+                        "   }\n" +
+                        "}\n" +
+                        "Class components supports state management out of the box whereas function components does not support state management. But, React provides a hook, useState() for the function components to maintain its state.\n" +
+                        "\n" +
+                        "Class component have a life cycle and access to each life cycle events through dedicated callback apis. Function component does not have life cycle. Again, React provides a hook, useEffect() for the function component to access different stages of the component.",
+                "",
+                ""
+        );
+        final LearnDetailsModel l3 = new LearnDetailsModel(
+                "Creating a class component",
+                "Let us create a new React component (in our expense-manager app), ExpenseEntryItem to showcase an expense entry item. Expense entry item consists of name, amount, date and category. The object representation of the expense entry item is −\n" +
+                        "\n" +
+                        "{ \n" +
+                        "   'name': 'Mango juice', \n" +
+                        "   'amount': 30.00, \n" +
+                        "   'spend_date': '2020-10-10' \n" +
+                        "   'category': 'Food', \n" +
+                        "}\n" +
+                        "Open expense-manager application in your favorite editor.\n" +
+                        "\n" +
+                        "Next, create a file, ExpenseEntryItem.css under src/components folder to style our component.\n" +
+                        "\n" +
+                        "Next, create a file, ExpenseEntryItem.js under src/components folder by extending React.Component.\n" +
+                        "\n" +
+                        "import React from 'react'; \n" +
+                        "import './ExpenseEntryItem.css'; \n" +
+                        "class ExpenseEntryItem extends React.Component { \n" +
+                        "}\n" +
+                        "Next, create a method render inside the ExpenseEntryItem class.\n" +
+                        "\n" +
+                        "class ExpenseEntryItem extends React.Component { \n" +
+                        "   render() { \n" +
+                        "   } \n" +
+                        "}\n" +
+                        "Next, create the user interface using JSX and return it from render method.\n" +
+                        "\n" +
+                        "class ExpenseEntryItem extends React.Component {\n" +
+                        "   render() {\n" +
+                        "      return (\n" +
+                        "         <div>\n" +
+                        "            <div><b>Item:</b> <em>Mango Juice</em></div>\n" +
+                        "            <div><b>Amount:</b> <em>30.00</em></div>\n" +
+                        "            <div><b>Spend Date:</b> <em>2020-10-10</em></div>\n" +
+                        "            <div><b>Category:</b> <em>Food</em></div>\n" +
+                        "         </div>\n" +
+                        "      );\n" +
+                        "   }\n" +
+                        "}\n" +
+                        "Next, specify the component as default export class.\n" +
+                        "\n" +
+                        "import React from 'react';\n" +
+                        "import './ExpenseEntryItem.css';\n" +
+                        "\n" +
+                        "class ExpenseEntryItem extends React.Component {\n" +
+                        "   render() {\n" +
+                        "      return (\n" +
+                        "         <div>\n" +
+                        "            <div><b>Item:</b> <em>Mango Juice</em></div>\n" +
+                        "            <div><b>Amount:</b> <em>30.00</em></div>\n" +
+                        "            <div><b>Spend Date:</b> <em>2020-10-10</em></div>\n" +
+                        "            <div><b>Category:</b> <em>Food</em></div>\n" +
+                        "         </div>\n" +
+                        "      );\n" +
+                        "   }\n" +
+                        "}\n" +
+                        "export default ExpenseEntryItem;\n" +
+                        "Now, we successfully created our first React component. Let us use our newly created component in index.js.\n" +
+                        "\n" +
+                        "import React from 'react';\n" +
+                        "import ReactDOM from 'react-dom';\n" +
+                        "import ExpenseEntryItem from './components/ExpenseEntryItem'\n" +
+                        "\n" +
+                        "ReactDOM.render(\n" +
+                        "   <React.StrictMode>\n" +
+                        "      <ExpenseEntryItem />\n" +
+                        "   </React.StrictMode>,\n" +
+                        "   document.getElementById('root')\n" +
+                        ");",
+                "",
+                ""
+        );
+        final LearnDetailsModel l4 = new LearnDetailsModel(
+                "Creating a function component",
+                "React component can also be created using plain JavaScript function but with limited features. Function based React component does not support state management and other advanced features. It can be used to quickly create a simple component.\n" +
+                        "\n" +
+                        "The above ExpenseEntryItem can be rewritten in function as specified below −",
+                "function ExpenseEntryItem() {\n" +
+                        "   return (\n" +
+                        "      <div>\n" +
+                        "         <div><b>Item:</b> <em>Mango Juice</em></div>\n" +
+                        "         <div><b>Amount:</b> <em>30.00</em></div>\n" +
+                        "         <div><b>Spend Date:</b> <em>2020-10-10</em></div>\n" +
+                        "         <div><b>Category:</b> <em>Food</em></div>\n" +
+                        "      </div>\n" +
+                        "   );\n" +
+                        "}",
+                ""
+        );
+        list.add(l1);
+        list.add(l2);
+        list.add(l3);
+        list.add(l4);
+        return list;
+    }
+    //ReactJs Styling
+    private static List<LearnDetailsModel> ReactJsStyling(){
+        final List<LearnDetailsModel> list = new ArrayList<>();
+        final LearnDetailsModel l1 = new LearnDetailsModel(
+                "Styling",
+                "In general, React allows component to be styled using CSS class through className attribute. Since, the React JSX supports JavaScript expression, a lot of common CSS methodology can be used. Some of the top options are as follows −\n" +
+                        "\n" +
+                        "CSS stylesheet − Normal CSS styles along with className\n" +
+                        "\n" +
+                        "Inline styling − CSS styles as JavaScript objects along with camelCase properties.\n" +
+                        "\n" +
+                        "CSS Modules − Locally scoped CSS styles.\n" +
+                        "\n" +
+                        "Styled component − Component level styles.\n" +
+                        "\n" +
+                        "Sass stylesheet − Supports Sass based CSS styles by converting the styles to normal css at build time.\n" +
+                        "\n" +
+                        "Post processing stylesheet − Supports Post processing styles by converting the styles to normal css at build time.\n" +
+                        "\n" +
+                        "Let use learn how to apply the three important methodology to style our component in this chapter.\n" +
+                        "\n" +
+                        "CSS Stylesheet\n" +
+                        "\n" +
+                        "Inline Styling\n" +
+                        "\n" +
+                        "CSS Modules",
+                "",
+                ""
+        );
+        final LearnDetailsModel l2 = new LearnDetailsModel(
+                "CSS Stylesheet",
+                "CSS stylesheet is usual, common and time-tested methodology. Simply create a CSS stylesheet for a component and enter all your styles for that particular component. Then, in the component, use className to refer the styles.\n" +
+                        "\n" +
+                        "Let us style our ExpenseEntryItem component.\n" +
+                        "\n" +
+                        "Open expense-manager application in your favorite editor.\n" +
+                        "\n" +
+                        "Next, open ExpenseEntryItem.css file and add few styles.\n" +
+                        "\n" +
+                        "div.itemStyle { \n" +
+                        "   color: brown; \n" +
+                        "   font-size: 14px; \n" +
+                        "}",
+                "import React from 'react';\n" +
+                        "import './ExpenseEntryItem.css';\n" +
+                        "\n" +
+                        "class ExpenseEntryItem extends React.Component {\n" +
+                        "   render() {\n" +
+                        "      return (\n" +
+                        "         <div className=\"itemStyle\">\n" +
+                        "            <div><b>Item:</b> <em>Mango Juice</em></div>\n" +
+                        "            <div><b>Amount:</b> <em>30.00</em></div>\n" +
+                        "            <div><b>Spend Date:</b> <em>2020-10-10</em></div>\n" +
+                        "            <div><b>Category:</b> <em>Food</em></div>\n" +
+                        "         </div>\n" +
+                        "      );\n" +
+                        "   }\n" +
+                        "}\n" +
+                        "export default ExpenseEntryItem;",
+                ""
+        );
+        final LearnDetailsModel l3 = new LearnDetailsModel(
+                "Inline Styling",
+                "Inline Styling is one of the safest ways to style the React component. It declares all the styles as JavaScript objects using DOM based css properties and set it to the component through style attributes.\n" +
+                        "\n" +
+                        "Let us add inline styling in our component.\n" +
+                        "\n" +
+                        "Open expense-manager application in your favorite editor and modify ExpenseEntryItem.js file in the src folder. Declare a variable of type object and set the styles.\n" +
+                        "\n" +
+                        "itemStyle = {\n" +
+                        "   color: 'brown', \n" +
+                        "   fontSize: '14px' \n" +
+                        "}\n" +
+                        "Here, fontSize represent the css property, font-size. All css properties can be used by representing it in camelCase format.",
+                "render() {\n" +
+                        "   return (\n" +
+                        "      <div style={\n" +
+                        "         {\n" +
+                        "            color: 'brown',\n" +
+                        "            fontSize: '14px'\n" +
+                        "         }         \n" +
+                        "      }>\n" +
+                        "         <div><b>Item:</b> <em>Mango Juice</em></div>\n" +
+                        "         <div><b>Amount:</b> <em>30.00</em></div>\n" +
+                        "         <div><b>Spend Date:</b> <em>2020-10-10</em></div>\n" +
+                        "         <div><b>Category:</b> <em>Food</em></div>\n" +
+                        "      </div>\n" +
+                        "   );\n" +
+                        "}",
+                ""
+        );
+        final LearnDetailsModel l4 = new LearnDetailsModel(
+                "CSS Modules",
+                "Css Modules provides safest as well as easiest way to define the style. It uses normal css stylesheet with normal syntax. While importing the styles, CSS modules converts all the styles into locally scoped styles so that the name conflicts will not happen. Let us change our component to use CSS modules\n" +
+                        "\n" +
+                        "Open expense-manager application in your favorite editor.\n" +
+                        "\n" +
+                        "Next, create a new stylesheet, ExpenseEntryItem.module.css file under src/components folder and write regular css styles.\n" +
+                        "\n" +
+                        "div.itemStyle {\n" +
+                        "   color: 'brown'; \n" +
+                        "   font-size: 14px; \n" +
+                        "}\n" +
+                        "Here, file naming convention is very important. React toolchain will pre-process the css files ending with .module.css through CSS Module. Otherwise, it will be considered as a normal stylesheet.\n" +
+                        "\n" +
+                        "Next, open ExpenseEntryItem.js file in the src/component folder and import the styles.\n" +
+                        "\n" +
+                        "import styles from './ExpenseEntryItem.module.css'\n" +
+                        "Next, use the styles as JavaScript expression in the component.\n" +
+                        "\n" +
+                        "<div className={styles.itemStyle}>\n" +
+                        "Now, we have successfully used the CSS modules in our application.\n" +
+                        "\n" +
+                        "The final and complete code is −",
+                "import React from 'react';\n" +
+                        "import './ExpenseEntryItem.css';\n" +
+                        "import styles from './ExpenseEntryItem.module.css'\n" +
+                        "\n" +
+                        "class ExpenseEntryItem extends React.Component {\n" +
+                        "   render() {\n" +
+                        "      return (\n" +
+                        "         <div className={styles.itemStyle} >\n" +
+                        "            <div><b>Item:</b> <em>Mango Juice</em></div>\n" +
+                        "            <div><b>Amount:</b> <em>30.00</em></div>\n" +
+                        "            <div><b>Spend Date:</b> <em>2020-10-10</em></div>\n" +
+                        "            <div><b>Category:</b> <em>Food</em></div>\n" +
+                        "         </div>\n" +
+                        "      );\n" +
+                        "   }\n" +
+                        "}\n" +
+                        "export default ExpenseEntryItem;",
+                ""
+        );
+        list.add(l1);
+        list.add(l2);
+        list.add(l3);
+        list.add(l4);
+        return list;
+    }
+    //ReactJs Properties
+    private static List<LearnDetailsModel> ReactJsProperties(){
+        final List<LearnDetailsModel> list = new ArrayList<>();
+        final LearnDetailsModel l1 = new LearnDetailsModel(
+                "Properties (props)",
+                "React enables developers to create dynamic and advanced component using properties. Every component can have attributes similar to HTML attributes and each attribute’s value can be accessed inside the component using properties (props).\n" +
+                        "\n" +
+                        "For example, Hello component with a name attribute can be accessed inside the component through this.props.name variable.\n" +
+                        "\n" +
+                        "<Hello name=\"React\" />\n" +
+                        "// value of name will be \"Hello* const name = this.props.name\n" +
+                        "React properties supports attribute’s value of different types. They are as follows,\n" +
+                        "\n" +
+                        "String\n" +
+                        "Number\n" +
+                        "Datetime\n" +
+                        "Array\n" +
+                        "List\n" +
+                        "Objects\n" +
+                        "Let us learn one by one in this chapter.\n" +
+                        "\n" +
+                        "Create a component using Properties\n" +
+                        "\n" +
+                        "Nested Components\n" +
+                        "\n" +
+                        "Use Component\n" +
+                        "\n" +
+                        "Component Collection",
+                "",
+                ""
+        );
+        list.add(l1);
+        return list;
+    }
+    //ReactJs Events
+    private static List<LearnDetailsModel> ReactJsEvents(){
+        final List<LearnDetailsModel> list = new ArrayList<>();
+        final LearnDetailsModel l1 = new LearnDetailsModel(
+                "Adding Events",
+                "React events are written in camelCase syntax:\n" +
+                        "\n" +
+                        "onClick instead of onclick.\n" +
+                        "\n" +
+                        "React event handlers are written inside curly braces:\n" +
+                        "\n" +
+                        "onClick={shoot}  instead of onClick=\"shoot()\".\n" +
+                        "\n" +
+                        "React:\n" +
+                        "<button onClick={shoot}>Take the Shot!</button>\n" +
+                        "HTML:\n" +
+                        "<button onclick=\"shoot()\">Take the Shot!</button>",
+                "function Football() {\n" +
+                        "  const shoot = () => {\n" +
+                        "    alert(\"Great Shot!\");\n" +
+                        "  }\n" +
+                        "\n" +
+                        "  return (\n" +
+                        "    <button onClick={shoot}>Take the shot!</button>\n" +
+                        "  );\n" +
+                        "}\n" +
+                        "\n" +
+                        "ReactDOM.render(<Football />, document.getElementById('root'));",
+                "Great Shot!"
+        );
+        final LearnDetailsModel l2 = new LearnDetailsModel(
+                "Passing Arguments",
+                "To pass an argument to an event handler, use an arrow function.",
+                "function Football() {\n" +
+                        "  const shoot = (a) => {\n" +
+                        "    alert(a);\n" +
+                        "  }\n" +
+                        "\n" +
+                        "  return (\n" +
+                        "    <button onClick={() => shoot(\"Goal!\")}>Take the shot!</button>\n" +
+                        "  );\n" +
+                        "}\n" +
+                        "\n" +
+                        "ReactDOM.render(<Football />, document.getElementById('root'));",
+                "Goal!"
+        );
+        final LearnDetailsModel l3 = new LearnDetailsModel(
+                "React Event Object",
+                "Event handlers have access to the React event that triggered the function.\n" +
+                        "\n" +
+                        "In our example the event is the \"click\" event.",
+                "function Football() {\n" +
+                        "  const shoot = (a, b) => {\n" +
+                        "    alert(b.type);\n" +
+                        "    /*\n" +
+                        "    'b' represents the React event that triggered the function,\n" +
+                        "    in this case the 'click' event\n" +
+                        "    */\n" +
+                        "  }\n" +
+                        "\n" +
+                        "  return (\n" +
+                        "    <button onClick={(event) => shoot(\"Goal!\", event)}>Take the shot!</button>\n" +
+                        "  );\n" +
+                        "}\n" +
+                        "\n" +
+                        "ReactDOM.render(<Football />, document.getElementById('root'));",
+                ""
+        );
+        list.add(l1);
+        list.add(l2);
+        list.add(l3);
+        return list;
+    }
+    //ReactJs Conditional
+    private static List<LearnDetailsModel> ReactJsConditional(){
+        final List<LearnDetailsModel> list = new ArrayList<>();
+        final LearnDetailsModel l1 = new LearnDetailsModel(
+                "Conditional Rendering",
+                "In React, you can conditionally render components.\n" +
+                        "\n" +
+                        "There are several ways to do this.\n" +
+                        "\n" +
+                        "if Statement\n" +
+                        "We can use the if JavaScript operator to decide which component to render.",
+                "function MissedGoal() {\n" +
+                        "  return <h1>MISSED!</h1>;\n" +
+                        "}\n" +
+                        "\n" +
+                        "function MadeGoal() {\n" +
+                        "  return <h1>Goal!</h1>;\n" +
+                        "}",
+                ""
+        );
+        final LearnDetailsModel l2 = new LearnDetailsModel(
+                "Logical && Operator",
+                "Another way to conditionally render a React component is by using the && operator.",
+                "function Garage(props) {\n" +
+                        "  const cars = props.cars;\n" +
+                        "  return (\n" +
+                        "    <>\n" +
+                        "      <h1>Garage</h1>\n" +
+                        "      {cars.length > 0 &&\n" +
+                        "        <h2>\n" +
+                        "          You have {cars.length} cars in your garage.\n" +
+                        "        </h2>\n" +
+                        "      }\n" +
+                        "    </>\n" +
+                        "  );\n" +
+                        "}\n" +
+                        "\n" +
+                        "const cars = ['Ford', 'BMW', 'Audi'];\n" +
+                        "ReactDOM.render(\n" +
+                        "  <Garage cars={cars} />,\n" +
+                        "  document.getElementById('root')\n" +
+                        ");",
+                ""
+        );
+        final LearnDetailsModel l3 = new LearnDetailsModel(
+                "Ternary Operator",
+                "Another way to conditionally render elements is by using a ternary operator.",
+                "function Goal(props) {\n" +
+                        "  const isGoal = props.isGoal;\n" +
+                        "  return (\n" +
+                        "    <>\n" +
+                        "      { isGoal ? <MadeGoal/> : <MissedGoal/> }\n" +
+                        "    </>\n" +
+                        "  );\n" +
+                        "}\n" +
+                        "\n" +
+                        "ReactDOM.render(\n" +
+                        "  <Goal isGoal={false} />,\n" +
+                        "  document.getElementById('root')\n" +
+                        ");",
+                ""
+        );
+        list.add(l1);
+        list.add(l2);
+        list.add(l3);
+        return list;
+    }
+    //ReactJs Lists
+    private static List<LearnDetailsModel> ReactJsLists(){
+        final List<LearnDetailsModel> list = new ArrayList<>();
+        final LearnDetailsModel l1 = new LearnDetailsModel(
+                "React Lists",
+                "In React, you will render lists with some type of loop.\n" +
+                        "\n" +
+                        "The JavaScript map() array method is generally the preferred method.\n" +
+                        "\n" +
+                        "If you need a refresher on the map() method, check out the ES6 section.",
+                "function Car(props) {\n" +
+                        "  return <li>I am a { props.brand }</li>;\n" +
+                        "}\n" +
+                        "\n" +
+                        "function Garage() {\n" +
+                        "  const cars = ['Ford', 'BMW', 'Audi'];\n" +
+                        "  return (\n" +
+                        "    <>\n" +
+                        "      <h1>Who lives in my garage?</h1>\n" +
+                        "      <ul>\n" +
+                        "        {cars.map((car) => <Car brand={car} />)}\n" +
+                        "      </ul>\n" +
+                        "    </>\n" +
+                        "  );\n" +
+                        "}\n" +
+                        "\n" +
+                        "ReactDOM.render(<Garage />, document.getElementById('root'));",
+                ""
+        );
+        final LearnDetailsModel l2 = new LearnDetailsModel(
+                "Keys",
+                "Keys allow React to keep track of elements. This way, if an item is updated or removed, only that item will be re-rendered instead of the entire list.\n" +
+                        "\n" +
+                        "Keys need to be unique to each sibling. But they can be duplicated globally.\n" +
+                        "\n" +
+                        "Generally, the key should be a unique ID assigned to each item. As a last resort, you can use the array index as a key.",
+                "function Car(props) {\n" +
+                        "  return <li>I am a { props.brand }</li>;\n" +
+                        "}\n" +
+                        "\n" +
+                        "function Garage() {\n" +
+                        "  const cars = [\n" +
+                        "    {id: 1, brand: 'Ford'},\n" +
+                        "    {id: 2, brand: 'BMW'},\n" +
+                        "    {id: 3, brand: 'Audi'}\n" +
+                        "  ];\n" +
+                        "  return (\n" +
+                        "    <>\n" +
+                        "      <h1>Who lives in my garage?</h1>\n" +
+                        "      <ul>\n" +
+                        "        {cars.map((car) => <Car key={car.id} brand={car.brand} />)}\n" +
+                        "      </ul>\n" +
+                        "    </>\n" +
+                        "  );\n" +
+                        "}\n" +
+                        "\n" +
+                        "ReactDOM.render(<Garage />, document.getElementById('root'));",
+                ""
+        );
+        list.add(l1);
+        list.add(l2);
+        return list;
+    }
+    //ReactJs Forms
+    private static List<LearnDetailsModel> ReactJsForms(){
+        final List<LearnDetailsModel> list = new ArrayList<>();
+        final LearnDetailsModel l1 = new LearnDetailsModel(
+                "Adding Forms in React",
+                "Just like in HTML, React uses forms to allow users to interact with the web page." +
+                        "\n\n" +
+                        "You add a form with React like any other element:",
+                "function MyForm() {\n" +
+                        "  return (\n" +
+                        "    <form>\n" +
+                        "      <label>Enter your name:\n" +
+                        "        <input type=\"text\" />\n" +
+                        "      </label>\n" +
+                        "    </form>\n" +
+                        "  )\n" +
+                        "}\n" +
+                        "ReactDOM.render(<MyForm />, document.getElementById('root'));",
+                ""
+        );
+        final LearnDetailsModel l2 = new LearnDetailsModel(
+                "Handling Forms",
+                "Handling forms is about how you handle the data when it changes value or gets submitted.\n" +
+                        "\n" +
+                        "In HTML, form data is usually handled by the DOM.\n" +
+                        "\n" +
+                        "In React, form data is usually handled by the components.\n" +
+                        "\n" +
+                        "When the data is handled by the components, all the data is stored in the component state.\n" +
+                        "\n" +
+                        "You can control changes by adding event handlers in the onChange attribute.\n" +
+                        "\n" +
+                        "We can use the useState Hook to keep track of each inputs value and provide a \"single source of truth\" for the entire application.",
+                "import { useState } from \"react\";\n" +
+                        "import ReactDOM from 'react-dom';\n" +
+                        "\n" +
+                        "function MyForm() {\n" +
+                        "  const [name, setName] = useState(\"\");\n" +
+                        "\n" +
+                        "  return (\n" +
+                        "    <form>\n" +
+                        "      <label>Enter your name:\n" +
+                        "        <input\n" +
+                        "          type=\"text\" \n" +
+                        "          value={name}\n" +
+                        "          onChange={(e) => setName(e.target.value)}\n" +
+                        "        />\n" +
+                        "      </label>\n" +
+                        "    </form>\n" +
+                        "  )\n" +
+                        "}\n" +
+                        "\n" +
+                        "ReactDOM.render(<MyForm />, document.getElementById('root'));",
+                ""
+        );
+        final LearnDetailsModel l3 = new LearnDetailsModel(
+                "Submitting Forms",
+                "You can control the submit action by adding an event handler in the onSubmit attribute for the <form>:",
+                "import { useState } from \"react\";\n" +
+                        "import ReactDOM from 'react-dom';\n" +
+                        "\n" +
+                        "function MyForm() {\n" +
+                        "  const [name, setName] = useState(\"\");\n" +
+                        "\n" +
+                        "  const handleSubmit = (event) => {\n" +
+                        "    event.preventDefault();\n" +
+                        "    alert('The name you entered was: ${name}')\n" +
+                        "  }\n" +
+                        "\n" +
+                        "  return (\n" +
+                        "    <form onSubmit={handleSubmit}>\n" +
+                        "      <label>Enter your name:\n" +
+                        "        <input \n" +
+                        "          type=\"text\" \n" +
+                        "          value={name}\n" +
+                        "          onChange={(e) => setName(e.target.value)}\n" +
+                        "        />\n" +
+                        "      </label>\n" +
+                        "      <input type=\"submit\" />\n" +
+                        "    </form>\n" +
+                        "  )\n" +
+                        "}\n" +
+                        "\n" +
+                        "ReactDOM.render(<MyForm />, document.getElementById('root'));",
+                ""
+        );
+        final LearnDetailsModel l4 = new LearnDetailsModel(
+                "Multiple Input Fields",
+                "You can control the values of more than one input field by adding a name attribute to each element.\n" +
+                        "\n" +
+                        "We will initialize our state with an empty object.\n" +
+                        "\n" +
+                        "To access the fields in the event handler use the event.target.name and event.target.value syntax.\n" +
+                        "\n" +
+                        "To update the state, use square brackets [bracket notation] around the property name.",
+                "import { useState } from \"react\";\n" +
+                        "import ReactDOM from \"react-dom\";\n" +
+                        "\n" +
+                        "function MyForm() {\n" +
+                        "  const [inputs, setInputs] = useState({});\n" +
+                        "\n" +
+                        "  const handleChange = (event) => {\n" +
+                        "    const name = event.target.name;\n" +
+                        "    const value = event.target.value;\n" +
+                        "    setInputs(values => ({...values, [name]: value}))\n" +
+                        "  }\n" +
+                        "\n" +
+                        "  const handleSubmit = (event) => {\n" +
+                        "    event.preventDefault();\n" +
+                        "    alert(inputs);\n" +
+                        "  }\n" +
+                        "\n" +
+                        "  return (\n" +
+                        "    <form onSubmit={handleSubmit}>\n" +
+                        "      <label>Enter your name:\n" +
+                        "      <input \n" +
+                        "        type=\"text\" \n" +
+                        "        name=\"username\" \n" +
+                        "        value={inputs.username || \"\"} \n" +
+                        "        onChange={handleChange}\n" +
+                        "      />\n" +
+                        "      </label>\n" +
+                        "      <label>Enter your age:\n" +
+                        "        <input \n" +
+                        "          type=\"number\" \n" +
+                        "          name=\"age\" \n" +
+                        "          value={inputs.age || \"\"} \n" +
+                        "          onChange={handleChange}\n" +
+                        "        />\n" +
+                        "        </label>\n" +
+                        "        <input type=\"submit\" />\n" +
+                        "    </form>\n" +
+                        "  )\n" +
+                        "}\n" +
+                        "\n" +
+                        "ReactDOM.render(<MyForm />, document.getElementById('root'));",
+                ""
+        );final LearnDetailsModel l5 = new LearnDetailsModel(
+                "Textarea",
+                "The textarea element in React is slightly different from ordinary HTML.\n" +
+                        "\n" +
+                        "In HTML the value of a textarea was the text between the start tag <textarea> and the end tag </textarea>.",
+                "import { useState } from \"react\";\n" +
+                        "import ReactDOM from \"react-dom\";\n" +
+                        "\n" +
+                        "function MyForm() {\n" +
+                        "  const [textarea, setTextarea] = useState(\n" +
+                        "    \"The content of a textarea goes in the value attribute\"\n" +
+                        "  );\n" +
+                        "\n" +
+                        "  const handleChange = (event) => {\n" +
+                        "    setTextarea(event.target.value)\n" +
+                        "  }\n" +
+                        "\n" +
+                        "  return (\n" +
+                        "    <form>\n" +
+                        "      <textarea value={textarea} onChange={handleChange} />\n" +
+                        "    </form>\n" +
+                        "  )\n" +
+                        "}\n" +
+                        "\n" +
+                        "ReactDOM.render(<MyForm />, document.getElementById('root'));",
+                ""
+        );
+        final LearnDetailsModel l6 = new LearnDetailsModel(
+                "Select",
+                "A drop down list, or a select box, in React is also a bit different from HTML.\n" +
+                        "\n" +
+                        "in HTML, the selected value in the drop down list was defined with the selected attribute:",
+                "function MyForm() {\n" +
+                        "  const [myCar, setMyCar] = useState(\"Volvo\");\n" +
+                        "\n" +
+                        "  const handleChange = (event) => {\n" +
+                        "    setMyCar(event.target.value)\n" +
+                        "  }\n" +
+                        "\n" +
+                        "  return (\n" +
+                        "    <form>\n" +
+                        "      <select value={myCar} onChange={handleChange}>\n" +
+                        "        <option value=\"Ford\">Ford</option>\n" +
+                        "        <option value=\"Volvo\">Volvo</option>\n" +
+                        "        <option value=\"Fiat\">Fiat</option>\n" +
+                        "      </select>\n" +
+                        "    </form>\n" +
+                        "  )\n" +
+                        "}",
+                ""
+        );
+        list.add(l1);
+        list.add(l2);
+        list.add(l3);
+        list.add(l4);
+        list.add(l5);
+        list.add(l6);
+        return list;
+    }
+    //ReactJs Styling Sass
+    private static List<LearnDetailsModel> ReactJsStylingSass(){
+        final List<LearnDetailsModel> list = new ArrayList<>();
+        final LearnDetailsModel l1 = new LearnDetailsModel(
+                "Styling React Using Sass",
+                "What is Sass\n" +
+                        "Sass is a CSS pre-processor.\n" +
+                        "\n" +
+                        "Sass files are executed on the server and sends CSS to the browser.\n" +
+                        "\n" +
+                        "You can learn more about Sass in our Sass Tutorial.\n" +
+                        "\n" +
+                        "Can I use Sass?\n" +
+                        "If you use the create-react-app in your project, you can easily install and use Sass in your React projects.\n" +
+                        "\n" +
+                        "Install Sass by running this command in your terminal:\n" +
+                        "\n" +
+                        ">npm i sass\n" +
+                        "Now you are ready to include Sass files in your project!",
+                "",
+                ""
+        );
+        final LearnDetailsModel l2 = new LearnDetailsModel(
+                "Create a Sass file",
+                "Create a Sass file the same way as you create CSS files, but Sass files have the file extension .scss\n" +
+                        "\n" +
+                        "In Sass files you can use variables and other Sass functions:\n" +
+                        "\n" +
+                        "my-sass.scss:\n" +
+                        "Create a variable to define the color of the text:\n" +
+                        "\n" +
+                        "$myColor: red;\n" +
+                        "\n" +
+                        "h1 {\n" +
+                        "  color: $myColor;\n" +
+                        "}" +
+                        "\n\n" +
+                        "Import the Sass file the same way as you imported a CSS file:",
+                "import React from 'react';\n" +
+                        "import ReactDOM from 'react-dom';\n" +
+                        "import './my-sass.scss';\n" +
+                        "\n" +
+                        "const Header = () => {\n" +
+                        "  return (\n" +
+                        "    <>\n" +
+                        "      <h1>Hello Style!</h1>\n" +
+                        "      <p>Add a little style!.</p>\n" +
+                        "    </>\n" +
+                        "  );\n" +
+                        "}\n" +
+                        "\n" +
+                        "ReactDOM.render(<Header />, document.getElementById('root'));",
+                ""
+        );
+        list.add(l1);
+        list.add(l2);
+        return list;
+    }
+    //ReactJs Hooks
+    private static List<LearnDetailsModel> ReactJsHooks(){
+        final List<LearnDetailsModel> list = new ArrayList<>();
+        final LearnDetailsModel l1 = new LearnDetailsModel(
+                "What is a Hook?",
+                "Hooks allow us to \"hook\" into React features such as state and lifecycle methods." +
+                        "\n" +
+                        "Here is an example of a Hook. Don't worry if it doesn't make sense." +
+                        "\n\n" +
+                        "You must import Hooks from react.\n" +
+                        "\n" +
+                        "Here we are using the useState Hook to keep track of the application state.\n" +
+                        "\n" +
+                        "State generally refers to application data or properties that need to be tracked.",
+                "import React, { useState } from \"react\";\n" +
+                        "import ReactDOM from \"react-dom\";\n" +
+                        "\n" +
+                        "function FavoriteColor() {\n" +
+                        "  const [color, setColor] = useState(\"red\");\n" +
+                        "\n" +
+                        "  return (\n" +
+                        "    <>\n" +
+                        "      <h1>My favorite color is {color}!</h1>\n" +
+                        "      <button\n" +
+                        "        type=\"button\"\n" +
+                        "        onClick={() => setColor(\"blue\")}\n" +
+                        "      >Blue</button>\n" +
+                        "      <button\n" +
+                        "        type=\"button\"\n" +
+                        "        onClick={() => setColor(\"red\")}\n" +
+                        "      >Red</button>\n" +
+                        "      <button\n" +
+                        "        type=\"button\"\n" +
+                        "        onClick={() => setColor(\"pink\")}\n" +
+                        "      >Pink</button>\n" +
+                        "      <button\n" +
+                        "        type=\"button\"\n" +
+                        "        onClick={() => setColor(\"green\")}\n" +
+                        "      >Green</button>\n" +
+                        "    </>\n" +
+                        "  );\n" +
+                        "}\n" +
+                        "\n" +
+                        "ReactDOM.render(<FavoriteColor />, document.getElementById('root'));",
+                ""
+        );
+        final LearnDetailsModel l2 = new LearnDetailsModel(
+                "Hook Rules",
+                "There are 3 rules for hooks:\n" +
+                        "\n" +
+                        "Hooks can only be called inside React function components.\n" +
+                        "Hooks can only be called at the top level of a component.\n" +
+                        "Hooks cannot be conditional\n" +
+                        "Note: Hooks will not work in React class components.",
+                "",
+                ""
+        );
+        final LearnDetailsModel l3 = new LearnDetailsModel(
+                "Custom Hooks",
+                "If you have stateful logic that needs to be reused in several components, you can build your own custom Hooks.",
+                "",
+                ""
+        );
+        list.add(l1);
+        list.add(l2);
+        list.add(l3);
+        return list;
+    }
+    //EmberJs
+    //EmberJs Introduction
+    private static List<LearnDetailsModel> EmberJsIntroduction(){
+        final List<LearnDetailsModel> list = new ArrayList<>();
+        final LearnDetailsModel l1 = new LearnDetailsModel(
+                "What is Ember.js?",
+                "Ember.js is an open source, free JavaScript client-side framework used for developing web applications. It allows building client side JavaScript applications by providing a complete solution which contains data management and an application flow.\n" +
+                        "\n" +
+                        "The original name of Ember.js was SproutCore MVC framework. It was developed by Yehuda Katz and initially released on in December 2011. The stable release of Ember.js is 2.10.0 and this was released on November 28, 2016.",
+                "",
+                ""
+        );
+        final LearnDetailsModel l2 = new LearnDetailsModel(
+                "Why Ember.js?",
+                "Consider the following points to understand the use of Ember.js −\n" +
+                        "\n" +
+                        "Ember.js is an open source JavaScript framework under MIT license.\n" +
+                        "\n" +
+                        "It provides the new binding syntax using the HTMLBars template engine which is a superset of the Handerlbars templating engine.\n" +
+                        "\n" +
+                        "It provides the Glimmer rendering engine to increase the rendering speed.\n" +
+                        "\n" +
+                        "It provides the Command Line Interface utility that integrates Ember patterns into development process and focuses easily on the developer productivity.\n" +
+                        "\n" +
+                        "It supports data binding to create the link between two properties and when one property changes, the other property will get upgraded with the new value.",
+                "",
+                ""
+        );
+        final LearnDetailsModel l3 = new LearnDetailsModel(
+                "Features of Ember.js",
+                "Following are the some of the most prominent features of Ember.js −\n" +
+                        "\n" +
+                        "Ember.js is used for creating reusable and maintainable JavaScript web applications.\n" +
+                        "\n" +
+                        "Ember.js has HTML and CSS at the core of the development model.\n" +
+                        "\n" +
+                        "It provides the instance initializers.\n" +
+                        "\n" +
+                        "The routes are core features of the Ember.js which are used for managing the URL's.\n" +
+                        "\n" +
+                        "Ember.js provides Ember Inspector tool for debugging Ember applications.\n" +
+                        "\n" +
+                        "Ember.js uses templates that help to automatically update the model, if the content of applications gets changed.",
+                "",
+                ""
+        );
+        final LearnDetailsModel l4 = new LearnDetailsModel(
+                "Audience",
+                "This tutorial is designed for software programmers who aspire to learn the basics of EmberJS and its programming concepts in simple and easy ways. This tutorial will give you enough understanding on the components of EmberJS with suitable examples.",
+                "",
+                ""
+        );
+        final LearnDetailsModel l5 = new LearnDetailsModel(
+                "Prerequisites",
+                "Before proceeding with this tutorial, you should have a basic understanding of HTML, CSS, JavaScript, Document Object Model (DOM) and any text editor. As we are going to develop web-based applications using EmberJS, it will be good if you have a good understanding on how the Internet and the web-based applications work.",
+                "",
+                ""
+        );
+        list.add(l1);
+        list.add(l2);
+        list.add(l3);
+        list.add(l4);
+        list.add(l5);
+        return list;
+    }
+    //EmberJs Core Concepts
+    private static List<LearnDetailsModel> EmberJsCoreConcepts(){
+        final List<LearnDetailsModel> list = new ArrayList<>();
+        final LearnDetailsModel l1 = new LearnDetailsModel(
+                "Core Concepts",
+                "Ember.js has the following core concepts −\n" +
+                        "\n" +
+                        "Router\n" +
+                        "Templates\n" +
+                        "Models\n" +
+                        "Components",
+                "",
+                ""
+        );
+        final LearnDetailsModel l2 = new LearnDetailsModel(
+                "Router and Route Handlers",
+                "The URL loads the app by entering the URL in the address bar and user will click a link within the app. The Ember uses the router to map the URL to a route handler. The router matches the existing URL to the route which is then used for loading data, displaying the templates and setting up an application state.\n" +
+                        "\n" +
+                        "The Route handler performs the following actions −\n" +
+                        "\n" +
+                        "It provides the template.\n" +
+                        "\n" +
+                        "It defines the model that will be accessible to the template.\n" +
+                        "\n" +
+                        "If there is no permission for the user to visit a particular part of the app, then the router will redirect to a new route.",
+                "",
+                ""
+        );
+        final LearnDetailsModel l3 = new LearnDetailsModel(
+                "Templates",
+                "Templates are powerful UI for the end-users. Ember template provides user interface look of an application which uses the syntax of Handlebars templates. It builds the front-end application, which is like the regular HTML. It also supports the regular expression and dynamically updates the expression.",
+                "",
+                ""
+        );
+        final LearnDetailsModel l4 = new LearnDetailsModel(
+                "Model",
+                "The route handlers render the model that persists information to the web server. It manipulates the data stored in the database. The model is the simple class that extends the functionality of the Ember Data. Ember Data is a library that is tightly coupled with Ember.js to manipulate with the data stored in the database.",
+                "",
+                ""
+        );
+        final LearnDetailsModel l5 = new LearnDetailsModel(
+                "Components",
+                "The component controls the user interface behavior which includes two parts −\n" +
+                        "\n" +
+                        "a template which is written in JavaScript\n" +
+                        "\n" +
+                        "a source file which is written in JavaScript that provides behavior of the components.",
+                "",
+                ""
+        );
+        list.add(l1);
+        list.add(l2);
+        list.add(l3);
+        list.add(l4);
+        list.add(l5);
+        return list;
+    }
+    //EmberJs Application
+    private static List<LearnDetailsModel> EmberJsApplication(){
+        final List<LearnDetailsModel> list = new ArrayList<>();
+        final LearnDetailsModel l1 = new LearnDetailsModel(
+                "Creating and Running Application",
+                "Creating Application\n" +
+                        "Let us create one simple app using Ember.js. First create one folder where you create your applications. For instance, if you have created the \"emberjs-app\" folder, then navigate to this folder as −\n" +
+                        "\n" +
+                        "$ cd ~/emberjs-app\n" +
+                        "Inside the \"emberjs=app\" folder, create a new project by using the new command −\n" +
+                        "\n" +
+                        "$ ember new demo-app\n" +
+                        "When you create a project, new command provides the following directory structure with files and directories −\n" +
+                        "\n" +
+                        "|-- app\n" +
+                        "|-- bower_components\n" +
+                        "|-- config\n" +
+                        "|-- dist\n" +
+                        "|-- node_modules\n" +
+                        "|-- public\n" +
+                        "|-- tests\n" +
+                        "|-- tmp\n" +
+                        "|-- vendor\n" +
+                        "\n" +
+                        "bower.json\n" +
+                        "ember-cli-build.js\n" +
+                        "package.json\n" +
+                        "README.md\n" +
+                        "testem.js\n" +
+                        "app − It specifies the folders and files of models, routes, components, templates and styles.\n" +
+                        "\n" +
+                        "bower_components / bower.json − It is used for managing the components such as HTML, CSS, JavaScript, image files etc and can be installed by using the npm. The bower_components directory contains all the Bower components and bower.json contains the list of dependencies which are installed by Ember, Ember CLI Shims and QUnit.\n" +
+                        "\n" +
+                        "config − It contains the environment.js directory which is used for configuring the settings of an application.\n" +
+                        "\n" +
+                        "dist − It includes the output files which are deployed when building the app.\n" +
+                        "\n" +
+                        "node_modules / package.json − NPM is a node package manager for Node.js which is used for installing, sharing and managing the dependencies in the projects. The package.json file includes the current npm dependencies of an application and the listed packages get installed in the node_modules directory.\n" +
+                        "\n" +
+                        "public − It includes assets like images, fonts, etc.\n" +
+                        "\n" +
+                        "vendor − It is a directory in which the front-end dependencies such as JavaScript, CSS are not controlled by Bower go.\n" +
+                        "\n" +
+                        "tests / testem.js − The automated tests are stored under the tests folder and the test runner testem of Ember CLI's is arranged in testem.js.\n" +
+                        "\n" +
+                        "tmp − It contains the temporary files of Ember CLI.\n" +
+                        "\n" +
+                        "ember-cli-build.js − It specifies how to build the app by using the Ember CLI.",
+                "",
+                ""
+        );
+        final LearnDetailsModel l2 = new LearnDetailsModel(
+                "Running Application",
+                "To run the application, navigate to the newly created project directory −\n" +
+                        "\n" +
+                        "$ cd demo-app\n" +
+                        "We have created the new project and it is ready to run with the command given below −\n" +
+                        "\n" +
+                        "$ ember server\n" +
+                        "Now open the browser and navigate to http://localhost:4200/. You will get the Ember Welcome page.",
+                "",
+                ""
+        );
+        list.add(l1);
+        list.add(l2);
+        return list;
+    }
+    //EmberJs Object Model
+    private static List<LearnDetailsModel> EmberJsObjectModel(){
+        final List<LearnDetailsModel> list = new ArrayList<>();
+        final LearnDetailsModel l1 = new LearnDetailsModel(
+                "Object Model",
+                "In Ember.js, all objects are derived from the Ember.Object. Object-oriented analysis and design technique is called object modeling. The Ember.Object supports features such as mixins and constructor methods by using the class system. Ember uses the Ember.Enumerable interface to extend the JavaScript Array prototype to give the observation changes for arrays and also uses the formatting and localization methods to extend the String prototype.\n" +
+                        "\n" +
+                        "The following table lists down the different types of object model in Ember.js along with their description −" +
+                        "\n\n" +
+                        "1. Classes and Instances\n" +
+                        "Class is a template or blue print, that has a collection of variables and functions, whereas instances are related to the object of that class. You can create new Ember class by using the Ember.Object's extend() method.\n" +
+                        "\n" +
+                        "2. Reopening Classes and Instances\n" +
+                        "This is nothing but updating the class implementation without redefining it.\n" +
+                        "\n" +
+                        "3. Computed Properties\n" +
+                        "A computed property declares functions as properties and Ember.js automatically calls the computed properties when needed and combines one or more properties in one variable.\n" +
+                        "\n" +
+                        "4. Computed Properties and Aggregate Data\n" +
+                        "The computed property accesses all items in an array to determine its value.\n" +
+                        "\n" +
+                        "5. Observers\n" +
+                        "The observer observes the property such as computed properties and updates the text of the computed property.\n" +
+                        "\n" +
+                        "6. Bindings\n" +
+                        "The binding is a powerful feature of Ember.js which helps to create a link between two properties and if one of the properties gets changed, the other one is updated automatically.",
+                "",
+                ""
+        );
+        list.add(l1);
+        return list;
+    }
+    //EmberJs Router
+    private static List<LearnDetailsModel> EmberJsRouter(){
+        final List<LearnDetailsModel> list = new ArrayList<>();
+        final LearnDetailsModel l1 = new LearnDetailsModel(
+                "Router",
+                "Router is a core feature of EmberJs which translates an URL into a series of templates and represents the state of an application.The Ember uses the router to map the URL to a route handler. The router matches the current URL to other routes which are used for loading data, displaying the templates and to set up an application state.\n" +
+                        "\n" +
+                        "Route handler performs some actions such as −\n" +
+                        "\n" +
+                        "It provides the template.\n" +
+                        "\n" +
+                        "It defines the model and it will be accessible to the template.\n" +
+                        "\n" +
+                        "If there is no permission for user to visit the particular part of an app, then router will redirect to a new route.\n" +
+                        "\n" +
+                        "The following table lists down the different routers in Ember.js along with their description −" +
+                        "\n\n" +
+                        "1. Defining Routes\n" +
+                        "The router matches the current URL with routes responsible for displaying template, loading data and setting up an application state.\n" +
+                        "\n" +
+                        "2. Specifying a Route's Model\n" +
+                        "To specify a routes model, you need a template to display the data from the model.\n" +
+                        "\n" +
+                        "3. Rendering a Template\n" +
+                        "The routes are used to render the external template to the screen.\n" +
+                        "\n" +
+                        "4. Redirecting\n" +
+                        "It is a URL redirection mechanism that redirects the user to a different page when the requested URL is not found.\n" +
+                        "\n" +
+                        "5. Preventing and Retrying Transitions\n" +
+                        "The transition.abort() and transition.retry() methods can be used to abort and retry the transition respectively during a route transition.\n" +
+                        "\n" +
+                        "6. Loading/Error Substates\n" +
+                        "Ember router provides information of a route loading and errors which occur when loading a route.\n" +
+                        "\n" +
+                        "7. Query Parameters\n" +
+                        "Query parameters come into view at the right side of the “?” mark in a URL represented as optional key-value pairs.\n" +
+                        "\n" +
+                        "8. Asynchronous Routing\n" +
+                        "Ember.js router has the ability to handle complex async logic within an application by using asynchronous routing.",
+                "",
+                ""
+        );
+        list.add(l1);
+        return list;
+    }
+    //EmberJs Templates
+    private static List<LearnDetailsModel> EmberJsTemplates(){
+        final List<LearnDetailsModel> list = new ArrayList<>();
+        final LearnDetailsModel l1 = new LearnDetailsModel(
+                "Templates",
+                "A template is used to create a standard layout across multiple pages. When you change a template, the pages that are based on that template automatically get changed. Templates provide standardization controls.\n" +
+                        "\n" +
+                        "The below table shows some more details about templates −" +
+                        "\n\n" +
+                        "1. Handlebars Basics\n" +
+                        "The Handlebars templating library allows building rich user interface by including static HTML and dynamic content.\n" +
+                        "\n" +
+                        "2. Built-in Helpers\n" +
+                        "Helpers provide extra functionality to the templates and modifies the raw value from models and components into proper format for users.\n" +
+                        "\n" +
+                        "3. Conditionals\n" +
+                        "Ember.js defines the two conditional statements which help to control the flow of program.\n" +
+                        "\n" +
+                        "4. Displaying List of Items\n" +
+                        "You can display the list of items in an array by using the #each helper.\n" +
+                        "\n" +
+                        "5. Displaying Keys in an Object\n" +
+                        "You can display the keys in the object by using the #each-in helper.\n" +
+                        "\n" +
+                        "6. Links\n" +
+                        "The {{link-to}} component can be used to create a link to a route.\n" +
+                        "\n" +
+                        "7. Actions\n" +
+                        "The HTML element can be made clickable by using the {{action}} helper.\n" +
+                        "\n" +
+                        "8. Input Helpers\n" +
+                        "The common form controls can be created by using the {{input}} and {{textarea}} helpers in the Ember.js\n" +
+                        "\n" +
+                        "9. Development Helpers\n" +
+                        "The template development can be made easier by using some helpers of Handlebars and Ember.\n" +
+                        "\n" +
+                        "10. Writing Helpers\n" +
+                        "You can add extra functionality to the templates and converts the raw values from models and components into proper format for the users.",
+                "",
+                ""
+        );
+        list.add(l1);
+        return list;
+    }
+    //EmberJs Components
+    private static List<LearnDetailsModel> EmberJsComponents(){
+        final List<LearnDetailsModel> list = new ArrayList<>();
+        final LearnDetailsModel l1 = new LearnDetailsModel(
+                "Components",
+                "The Ember.js components uses the W3C web component specification and provides true encapsulation UI widgets. It contains the three main specification as templates, shadow DOM and custom elements. The component is declared within the data-template-name which has a path name instead of a plain string and are prefixed with \"components/\".\n" +
+                        "\n" +
+                        "The following table lists down the action events of actions −" +
+                        "\n\n" +
+                        "1. Defining a Component\n" +
+                        "You can easily define a component in Ember.js and each component must have a dash in their name.\n" +
+                        "\n" +
+                        "2. Component Lifecycle\n" +
+                        "Component lifecycle uses some of the methods in order to execute the code at specific times in a component's life.\n" +
+                        "\n" +
+                        "3. Passing Properties to a Component\n" +
+                        "The component doesn't access the property directly in the template scope. Therefore, just declare the property at the time of component deceleration.\n" +
+                        "\n" +
+                        "4. Wrapping Content in a Component\n" +
+                        "You can wrap the content in a component by using the templates.\n" +
+                        "\n" +
+                        "5. Customizing a Component's Element\n" +
+                        "You can customize the component's element such as attributes, class names by using a subclass of Ember.Component in the JavaScript.\n" +
+                        "\n" +
+                        "6. Using Block Params\n" +
+                        "The passed properties in a component can give back the result in a block expression.\n" +
+                        "\n" +
+                        "7. Handling Events\n" +
+                        "The user events such as double-click, hovering, key press etc can be handled by event handlers. To do this, apply the event name as a method on the component.\n" +
+                        "\n" +
+                        "8. Triggering Changes with Actions\n" +
+                        "Components can trigger the changes and communicate with events by using the actions.\n" +
+                        "\n",
+                "",
+                ""
+        );
+        list.add(l1);
+        return list;
+    }
+    //EmberJs Models
+    private static List<LearnDetailsModel> EmberJsModels(){
+        final List<LearnDetailsModel> list = new ArrayList<>();
+        final LearnDetailsModel l1 = new LearnDetailsModel(
+                "Models",
+                "Model is a class that extends the functionality of the Ember Data. When a user refreshes the page, the contents of page should be represented by a model. In Ember.js, every route has an associated model. The model helps to improve the performance of application. The Ember Data manipulates the stored data in the server and also works easily with streaming APIs like socket.io and Firebase or WebSockets.\n" +
+                        "\n" +
+                        "Core Concepts\n" +
+                        "Store\n" +
+                        "Models\n" +
+                        "Records\n" +
+                        "Adapter\n" +
+                        "Caching",
+                "",
+                ""
+        );
+        final LearnDetailsModel l2 = new LearnDetailsModel(
+                "Store",
+                "The store is a central repository and cache of all records available in an application. The route and controllers can access the stored data of your application. The DS.Store is created automatically to share the data among the entire object.",
+                "import Ember from 'ember';\n" +
+                        "\n" +
+                        "export default Ember.Route.extend ({\n" +
+                        "   model() {\n" +
+                        "      return this.store.find();\n" +
+                        "   }\n" +
+                        "});",
+                ""
+        );
+        final LearnDetailsModel l3 = new LearnDetailsModel(
+                "Models",
+                "Model is a class that extends the functionality of the Ember Data, which specifies relationships with other objects. When a user refreshes the page, the contents of page should be represented by a model.",
+                "import DS from 'ember-data';\n" +
+                        "\n" +
+                        "export default DS.Model.extend ({\n" +
+                        "   owner: DS.attr(),\n" +
+                        "   city: DS.attr()\n" +
+                        "});",
+                ""
+        );
+        final LearnDetailsModel l4 = new LearnDetailsModel(
+                "Records",
+                "A record is an instance of a model that includes the information, which is loaded from a server and you can identify the record by its model type and ID.",
+                "//It finds the record of type 'person' and an 'ID' of 1\n" +
+                        "this.get('store').findRecord('person', 1); // => { id: 1, name: 'steve-buscemi' }",
+                ""
+        );
+        final LearnDetailsModel l5 = new LearnDetailsModel(
+                "Adapter",
+                "An adapter is an object that is responsible for translating requested records from Ember into appropriate calls to particular server backend. For instance, if you want to find a person with ID of 1, then Ember will load the URL by using HTTP as /person/1.",
+                "",
+                ""
+        );
+        final LearnDetailsModel l6 = new LearnDetailsModel(
+                "Caching",
+                "he records can be cached automatically by the store and returns the same object instance when you load the records from the server for the second time. This improves the performance of your application and displays the application UI to the user as fast as possible.\n" +
+                        "\n" +
+                        "The following table lists down the details about models −" +
+                        "\n\n" +
+                        "1. Defining Models\n" +
+                        "Model is a simple class that extends the functionality of the Ember Data.\n" +
+                        "\n" +
+                        "2. Finding Records\n" +
+                        "You can retrieve the records by using the Ember data store.\n" +
+                        "\n" +
+                        "3. Creating and Deleting Records\n" +
+                        "You can create and delete the records on the instance of model.\n" +
+                        "\n" +
+                        "4. Relationships\n" +
+                        "Ember.js provides relationship types to specify how the models are related to each other.\n" +
+                        "\n" +
+                        "5. Pushing Records Into The Store\n" +
+                        "You can push the records into the store's cache without requesting the records from an application.\n" +
+                        "\n" +
+                        "6. Handling Metadata\n" +
+                        "Metadata is a data that is used for specific model or type instead of using record.\n" +
+                        "\n" +
+                        "7. Customizing Adapters\n" +
+                        "Ember.js Adapter specifies how data is kept on at the backend data store such as URL format and REST API headers.",
+                "",
+                ""
+        );
+        list.add(l1);
+        list.add(l2);
+        list.add(l3);
+        list.add(l4);
+        list.add(l5);
+        list.add(l6);
+        return list;
+    }
+    //EmberJs Managing Dependencies
+    private static List<LearnDetailsModel> EmberJsManagingDependencies(){
+        final List<LearnDetailsModel> list = new ArrayList<>();
+        final LearnDetailsModel l1 = new LearnDetailsModel(
+                "Managing Dependencies",
+                "Ember uses NPM and Bower for managing dependencies which are defined in package.json for NPM and bower.json for Bower. For instance, you may require installing SASS for your style sheets which is not installed by Ember while developing Ember app. To accomplish this, use the Ember Addons for sharing the reusable libraries. If you want to install any CSS framework or JavaScript datepicker dependencies, then use the Bower package manager.",
+                "",
+                ""
+        );
+        final LearnDetailsModel l2 = new LearnDetailsModel(
+                "Addons",
+                "The Ember CLI can be used to install the Ember Addons by using the following command −\n" +
+                        "The ember install command will save all the dependencies to the respective configuration file.",
+                "ember install ember-cli-sass",
+                ""
+        );
+        final LearnDetailsModel l3 = new LearnDetailsModel(
+                "Bower",
+                "It is a package manager for the web which manages the components of HTML, CSS, JavaScript or image files. It basically maintains and monitors all packages and examines new updates. It uses the configuration file bower.json to keep track of applications placed at the root of the Ember CLI project.\n" +
+                        "\n" +
+                        "You can install the project dependencies by using the following command −",
+                "bower install <dependencies> --save",
+                ""
+        );
+        final LearnDetailsModel l4 = new LearnDetailsModel(
+                "Assets",
+                "You can place the third-party JavaScript in the vendor/ folder of your project which are not available as an Addon or Bower package and place the own assets such as robots.txt, favicon, etc. in the public/ folder of your project. The dependencies which are not installed by Ember while developing the Ember app, should be included by using the manifest file ember-cli-build.js.",
+                "",
+                ""
+        );
+        final LearnDetailsModel l5 = new LearnDetailsModel(
+                "AMD JavaScript modules",
+                "You can give the asset path as the first argument and the list of modules and exports as the second argument. You can include these assets in the ember-cli-build.js manifest file as −",
+                "app.import('bower_components/ic-ajax/dist/named-amd/main.js', {\n" +
+                        "   exports: {\n" +
+                        "      'ic-ajax': [\n" +
+                        "         'default',\n" +
+                        "         'defineFixture',\n" +
+                        "         'lookupFixture',\n" +
+                        "         'raw',\n" +
+                        "         'request'\n" +
+                        "      ]\n" +
+                        "   }\n" +
+                        "});",
+                ""
+        );
+        final LearnDetailsModel l6 = new LearnDetailsModel(
+                "Environment Specific Assets",
+                "The different assets can be used in different environments by defining object as first parameter which is an environment name and the value of an object should be used as asset in that environment. In the ember-cli-build.js manifest file, you can include as −",
+                "app.import ({\n" +
+                        "   development: 'bower_components/ember/ember.js',\n" +
+                        "   production:  'bower_components/ember/ember.prod.js'\n" +
+                        "});",
+                ""
+        );
+        final LearnDetailsModel l7 = new LearnDetailsModel(
+                "Other Assets",
+                "Once all the assets are placed in the public/ folder, they will get copied into the dist/ directory. For instance, if you copy a favicon placed at the public/images/favicon.ico folder, this will get copied into the dist/images/favicon.ico directory. The third-party assets can be added manually in the vendor/ folder or by using the Bower package manager via the import() option. The assets which are not added by using the import() option, will not be present in the final build.\n" +
+                        "\n" +
+                        "For instance, consider the following line of code which imports the assets into the dist/ folder.\n" +
+                        "\n" +
+                        "app.import('bower_components/font-awesome/fonts/fontawesome-webfont.ttf');\n" +
+                        "The above line of code creates a font file in dist/font-awesome/fonts/fontawesomewebfont.ttf. You can also place the above file at a different path as shown below −\n" +
+                        "\n" +
+                        "app.import('bower_components/font-awesome/fonts/fontawesome-webfont.ttf', {\n" +
+                        "   destDir: 'assets'\n" +
+                        "});\n" +
+                        "It will copy the font file in dist/assets/fontawesome-webfont.ttf.",
+                "",
+                ""
+        );
+        list.add(l1);
+        list.add(l2);
+        list.add(l3);
+        list.add(l4);
+        list.add(l5);
+        list.add(l6);
+        list.add(l7);
+        return list;
+    }
+
 
 
     /*final LearnDetailsModel l1 = new LearnDetailsModel(
@@ -13831,6 +15791,52 @@ public class LearnDetailsContent {
                 return NextJsAPIMiddleWares();
             case "NextJs Response Helpers":
                 return NextJsResponseHelpers();
+            //ReactJs
+            case "ReactJs Introduction":
+                return ReactJsIntroduction();
+            case "ReactJs Architecture":
+                return ReactJsArchitecture();
+            case "ReactJs Creating a React Application":
+                return ReactJsCreatingReactApplication();
+            case "ReactJs JSX":
+                return ReactJsJSX();
+            case "ReactJs Component":
+                return ReactJsComponent();
+            case "ReactJs Styling":
+                return ReactJsStyling();
+            case "ReactJs Properties":
+                return ReactJsProperties();
+            case "ReactJs Events":
+                return ReactJsEvents();
+            case "ReactJs Conditional":
+                return ReactJsConditional();
+            case "ReactJs Lists":
+                return ReactJsLists();
+            case "ReactJs Forms":
+                return ReactJsForms();
+            case "ReactJs Styling Sass":
+                return ReactJsStylingSass();
+            case "ReactJs Hooks":
+                return ReactJsHooks();
+            //EmberJS
+            case "EmberJs Introduction":
+                return EmberJsIntroduction();
+            case "EmberJs Core Concepts":
+                return EmberJsCoreConcepts();
+            case "EmberJs Application":
+                return EmberJsApplication();
+            case "EmberJs Object Model":
+                return EmberJsObjectModel();
+            case "EmberJs Router":
+                return EmberJsRouter();
+            case "EmberJs Templates":
+                return EmberJsTemplates();
+            case "EmberJs Components":
+                return EmberJsComponents();
+            case "EmberJs Models":
+                return EmberJsModels();
+            case "EmberJs Managing Dependencies":
+                return EmberJsManagingDependencies();
 
             default:
                 return defaultT();
@@ -13840,7 +15846,7 @@ public class LearnDetailsContent {
     }
 
 }
-    /*private static List<LearnDetailsModel> NextJsResponseHelpers(){
+    /*private static List<LearnDetailsModel> EmberJsManagingDependencies(){
         final List<LearnDetailsModel> list = new ArrayList<>();
         final LearnDetailsModel l1 = new LearnDetailsModel();
 

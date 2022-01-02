@@ -220,28 +220,36 @@ public class LearnItemsListActivity extends AppCompatActivity {
                 "NextJs Response Helpers"
         };
         final String[] ReactJs = {
-                "React Js"
+                "ReactJs Introduction",
+                "ReactJs Architecture",
+                "ReactJs Creating a React Application",
+                "ReactJs JSX",
+                "ReactJs Component",
+                "ReactJs Styling",
+                "ReactJs Properties",
+                "ReactJs Events",
+                "ReactJs Conditional",
+                "ReactJs Lists",
+                "ReactJs Forms",
+                "ReactJs Styling Sass",
+                "ReactJs Hooks"
         };
         final String[] EmberJs = {
-                "Ember Js"
-        };
-        final String[] SvelteJs = {
-                "Svelte Js"
-        };
-        final String[] Gatsby = {
-                "Gatsby Js"
-        };
-        final String[] NuxtJs = {
-                "Nuxt Js"
+                "EmberJs Introduction",
+                "EmberJs Core Concepts",
+                "EmberJs Application",
+                "EmberJs Object Model",
+                "EmberJs Router",
+                "EmberJs Templates",
+                "EmberJs Components",
+                "EmberJs Models",
+                "EmberJs Managing Dependencies"
         };
         final String[] Bootstrap = {
-                "Bootstrap Js"
+                "Bootstrap "
         };
-        /*final String[] NodeJs = {
+        final String[] NodeJs = {
                 "Node Js"
-        };
-        final String[] SpringBoot = {
-                "Spring Boot Js"
         };
         final String[] ExpressJs = {
                 "Express Js"
@@ -249,11 +257,54 @@ public class LearnItemsListActivity extends AppCompatActivity {
         final String[] Laravel = {
                 "Laravel Js"
         };
+        final String[] jQuery = {
+                "jQuery"
+        };
+        /*
+        final String[] SpringBoot = {
+                "Spring Boot Js"
+        };
         final String[] Micronaut = {
                 "Micronaut Js"
         };
         final String[] MochaJs = {
                 "Mocha Js"
+        };
+        final String[] SvelteJs = {
+                "SvelteJs Introduction",
+                "SvelteJs ",
+                "SvelteJs ",
+                "SvelteJs ",
+                "SvelteJs ",
+                "SvelteJs ",
+                "SvelteJs ",
+                "SvelteJs ",
+                "SvelteJs ",
+                "SvelteJs ",
+                "SvelteJs ",
+                "SvelteJs ",
+                "SvelteJs ",
+                "SvelteJs ",
+        };
+        final String[] Gatsby = {
+                "GatsbyJs ",
+                "GatsbyJs ",
+                "GatsbyJs ",
+                "GatsbyJs ",
+                "GatsbyJs ",
+                "GatsbyJs ",
+                "GatsbyJs ",
+                "GatsbyJs ",
+        };
+        final String[] NuxtJs = {
+                "NuxtJs ",
+                "NuxtJs ",
+                "NuxtJs ",
+                "NuxtJs ",
+                "NuxtJs ",
+                "NuxtJs ",
+                "NuxtJs ",
+                "NuxtJs ",
         };*/
 
 
@@ -306,6 +357,31 @@ public class LearnItemsListActivity extends AppCompatActivity {
             case "Ember Js":
                 list = EmberJs;
                 break;
+            case "Bootstrap":
+                list = Bootstrap;
+                break;
+            case "Node Js":
+                list = NodeJs;
+                break;
+            case "Express Js":
+                list = ExpressJs;
+                break;
+            case "Laravel":
+                list = Laravel;
+                break;
+            case "jQuery":
+                list = jQuery;
+                break;
+            /*
+            case "Spring Boot":
+                list = SpringBoot;
+                break;
+            case "Micronaut":
+                list = Micronaut;
+                break;
+            case "Mocha Js":
+                list = MochaJs;
+                break;
             case "Svelte Js":
                 list = SvelteJs;
                 break;
@@ -315,27 +391,7 @@ public class LearnItemsListActivity extends AppCompatActivity {
             case "Nuxt Js":
                 list = NuxtJs;
                 break;
-            case "Bootstrap":
-                list = Bootstrap;
-                break;
-            /*case "Node Js":
-                list = NodeJs;
-                break;
-            case "Spring Boot":
-                list = SpringBoot;
-                break;
-            case "Express Js":
-                list = ExpressJs;
-                break;
-            case "Laravel":
-                list = Laravel;
-                break;
-            case "Micronaut":
-                list = Micronaut;
-                break;
-            case "Mocha Js":
-                list = MochaJs;
-                break;*/
+                */
 
 
         }

@@ -6832,6 +6832,2287 @@ public class LearnDetailsContent {
         list.add(l4);
         return list;
     }
+    //Typescript
+    //Typescript Introduction
+    private static List<LearnDetailsModel> TypescriptIntroduction(){
+        final List<LearnDetailsModel> list = new ArrayList<>();
+        final LearnDetailsModel l1 = new LearnDetailsModel(
+                "What is TypeScript?",
+                "By definition, “TypeScript is JavaScript for application-scale development.”\n" +
+                        "\n" +
+                        "TypeScript is a strongly typed, object oriented, compiled language. It was designed by Anders Hejlsberg (designer of C#) at Microsoft. TypeScript is both a language and a set of tools. TypeScript is a typed superset of JavaScript compiled to JavaScript. In other words, TypeScript is JavaScript plus some additional features.",
+                "",
+                ""
+        );
+        final LearnDetailsModel l2 = new LearnDetailsModel(
+                "Features of TypeScript",
+                "TypeScript is just JavaScript. TypeScript starts with JavaScript and ends with JavaScript. Typescript adopts the basic building blocks of your program from JavaScript. Hence, you only need to know JavaScript to use TypeScript. All TypeScript code is converted into its JavaScript equivalent for the purpose of execution.\n" +
+                        "\n" +
+                        "TypeScript supports other JS libraries. Compiled TypeScript can be consumed from any JavaScript code. TypeScript-generated JavaScript can reuse all of the existing JavaScript frameworks, tools, and libraries.\n" +
+                        "\n" +
+                        "JavaScript is TypeScript. This means that any valid .js file can be renamed to .ts and compiled with other TypeScript files.\n" +
+                        "\n" +
+                        "TypeScript is portable. TypeScript is portable across browsers, devices, and operating systems. It can run on any environment that JavaScript runs on. Unlike its counterparts, TypeScript doesn't need a dedicated VM or a specific runtime environment to execute.",
+                "",
+                ""
+        );
+        final LearnDetailsModel l3 = new LearnDetailsModel(
+                "TypeScript and ECMAScript",
+                "The ECMAScript specification is a standardized specification of a scripting language. There are six editions of ECMA-262 published. Version 6 of the standard is codenamed \"Harmony\". TypeScript is aligned with the ECMAScript6 specification.\n" +
+                        "\n" +
+                        "TypeScript adopts its basic language features from the ECMAScript5 specification, i.e., the official specification for JavaScript. TypeScript language features like Modules and class-based orientation are in line with the EcmaScript 6 specification. Additionally, TypeScript also embraces features like generics and type annotations that aren't a part of the EcmaScript6 specification.",
+                "",
+                ""
+        );
+        final LearnDetailsModel l4 = new LearnDetailsModel(
+                "Why Use TypeScript?",
+                "TypeScript is superior to its other counterparts like CoffeeScript and Dart programming languages in a way that TypeScript is extended JavaScript. In contrast, languages like Dart, CoffeeScript are new languages in themselves and require language-specific execution environment.\n" +
+                        "\n" +
+                        "The benefits of TypeScript include −\n" +
+                        "\n" +
+                        "Compilation − JavaScript is an interpreted language. Hence, it needs to be run to test that it is valid. It means you write all the codes just to find no output, in case there is an error. Hence, you have to spend hours trying to find bugs in the code. The TypeScript transpiler provides the error-checking feature. TypeScript will compile the code and generate compilation errors, if it finds some sort of syntax errors. This helps to highlight errors before the script is run.\n" +
+                        "\n" +
+                        "Strong Static Typing − JavaScript is not strongly typed. TypeScript comes with an optional static typing and type inference system through the TLS (TypeScript Language Service). The type of a variable, declared with no type, may be inferred by the TLS based on its value.\n" +
+                        "\n" +
+                        "TypeScript supports type definitions for existing JavaScript libraries. TypeScript Definition file (with .d.ts extension) provides definition for external JavaScript libraries. Hence, TypeScript code can contain these libraries.\n" +
+                        "\n" +
+                        "TypeScript supports Object Oriented Programming concepts like classes, interfaces, inheritance, etc.",
+                "",
+                ""
+        );
+        final LearnDetailsModel l5 = new LearnDetailsModel(
+                "Components of TypeScript",
+                "At its heart, TypeScript has the following three components −\n" +
+                        "\n" +
+                        "Language − It comprises of the syntax, keywords, and type annotations.\n" +
+                        "\n" +
+                        "The TypeScript Compiler − The TypeScript compiler (tsc) converts the instructions written in TypeScript to its JavaScript equivalent.\n" +
+                        "\n" +
+                        "The TypeScript Language Service − The \"Language Service\" exposes an additional layer around the core compiler pipeline that are editor-like applications. The language service supports the common set of a typical editor operations like statement completions, signature help, code formatting and outlining, colorization, etc.",
+                "",
+                ""
+        );
+        final LearnDetailsModel l6 = new LearnDetailsModel(
+                "TypeScript Advantages",
+                "1. TypeScript is an open-source language with continuous development and maintenance by Microsoft.\n\n" +
+                        "2. TypeScript runs on any browser or JavaScript engine.\n\n" +
+                        "3. TypeScript is similar to JavaScript and uses the same syntax and semantics. All of TypeScript's code finally gets converted into JavaScript. This allows a quicker learning curve for front-end developers currently coding in JavaScript.\n\n" +
+                        "4. TypeScript is also closer in syntax to backend languages like Java and Scala. This helps backend developers write front-end code faster.\n\n" +
+                        "5. TypeScript code can be called from an existing JavaScript code. TypeScript also works with existing JavaScript frameworks and libraries without any issues.\n\n" +
+                        "6. The TypeScript Definition file, with .d.ts extension, provides support for existing JavaScript libraries like Jquery, D3.js, etc. So, TypeScript code can add JavaScript libraries using type definitions to avail the benefits of type-checking, code autocompletion, and documentation in existing dynamically-typed JavaScript libraries.\n\n" +
+                        "7. TypeScript has support for the latest JavaScript features from ECMAScript 2015 . It includes features from ES6 and ES7 that can run in ES5-level JavaScript engines like Node.js. This offers a massive advantage of using features from future JavaScript versions in current JavaScript engines.\n\n" +
+                        "8. TypeScript has easy integration with task runner tools like Grunt and Gulp to automate the workflow.",
+                "",
+                ""
+        );
+        list.add(l1);
+        list.add(l2);
+        list.add(l3);
+        list.add(l4);
+        list.add(l5);
+        list.add(l6);
+
+        return list;
+    }
+    //TypeScript Basic Syntax
+    private static List<LearnDetailsModel> TypeScriptBasicSyntax(){
+        final List<LearnDetailsModel> list = new ArrayList<>();
+        final LearnDetailsModel l1 = new LearnDetailsModel(
+                "TypeScript Basic Syntax",
+                "Syntax defines a set of rules for writing programs. Every language specification defines its own syntax. A TypeScript program is composed of −\n" +
+                        "\n" +
+                        "Modules\n" +
+                        "Functions\n" +
+                        "Variables\n" +
+                        "Statements and Expressions\n" +
+                        "Comments" +
+                        "\n\n" +
+                        "Your First TypeScript Code" +
+                        "\n\n" +
+                        "Let us start with the traditional “Hello World!” example −\n" +
+                        "\n" +
+                        "var message:string = \"Hello World!\" \n" +
+                        "console.log(message)\n\n" +
+                        "On compiling, it will generate following JavaScript code.\n" +
+                        "\n" +
+                        "//Generated by typescript 1.8.10\n" +
+                        "var message = \"Hello World!\";\n" +
+                        "console.log(message);\n\n" +
+                        "Line 1 declares a variable by the name message. Variables are a mechanism to store values in a program.\n" +
+                        "\n" +
+                        "Line 2 prints the variable’s value to the prompt. Here, console refers to the terminal window. The function log () is used to display text on the screen.",
+                "var message = \"Hello World!\";\n" +
+                        "console.log(message);",
+                "Hello World!"
+        );
+        final LearnDetailsModel l2 = new LearnDetailsModel(
+                "Identifiers in TypeScript",
+                "Identifiers are names given to elements in a program like variables, functions etc. The rules for identifiers are −\n" +
+                        "\n" +
+                        "Identifiers can include both, characters and digits. However, the identifier cannot begin with a digit.\n" +
+                        "\n" +
+                        "Identifiers cannot include special symbols except for underscore (_) or a dollar sign ($).\n" +
+                        "\n" +
+                        "Identifiers cannot be keywords.\n" +
+                        "\n" +
+                        "They must be unique.\n" +
+                        "\n" +
+                        "Identifiers are case-sensitive.\n" +
+                        "\n" +
+                        "Identifiers cannot contain spaces.",
+                "",
+                ""
+        );
+        final LearnDetailsModel l3 = new LearnDetailsModel(
+                "Whitespace and Line Breaks",
+                "TypeScript ignores spaces, tabs, and newlines that appear in programs. You can use spaces, tabs, and newlines freely in your program and you are free to format and indent your programs in a neat and consistent way that makes the code easy to read and understand.",
+                "",
+                ""
+        );
+        final LearnDetailsModel l4 = new LearnDetailsModel(
+                "TypeScript is Case-sensitive",
+                "TypeScript is case-sensitive. This means that TypeScript differentiates between uppercase and lowercase characters.",
+                "",
+                ""
+        );
+        final LearnDetailsModel l5 = new LearnDetailsModel(
+                "Semicolons are optional",
+                "Each line of instruction is called a statement. Semicolons are optional in TypeScript.\n" +
+                        "\n" +
+                        "Example\n" +
+                        "\n" +
+                        "console.log(\"hello world\")\n" +
+                        "console.log(\"We are learning TypeScript\")\n" +
+                        "A single line can contain multiple statements. However, these statements must be separated by a semicolon.",
+                "console.log(\"hello world\")\n" +
+                        "console.log(\"We are learning TypeScript\")",
+                ""
+        );
+        final LearnDetailsModel l6 = new LearnDetailsModel(
+                "Comments in TypeScript",
+                "Comments are a way to improve the readability of a program. Comments can be used to include additional information about a program like author of the code, hints about a function/ construct etc. Comments are ignored by the compiler.\n" +
+                        "\n" +
+                        "TypeScript supports the following types of comments −\n" +
+                        "\n" +
+                        "Single-line comments ( // ) − Any text between a // and the end of a line is treated as a comment\n" +
+                        "\n" +
+                        "Multi-line comments (/* */) − These comments may span multiple lines.\n" +
+                        "\n" +
+                        "Example\n" +
+                        "\n" +
+                        "//this is single line comment \n" +
+                        " \n" +
+                        "/* This is a  \n" +
+                        "   Multi-line comment \n" +
+                        "*/",
+                "//this is single line comment \n" +
+                        " \n" +
+                        "/* This is a  \n" +
+                        "   Multi-line comment \n" +
+                        "*/",
+                ""
+        );
+        final LearnDetailsModel l7 = new LearnDetailsModel(
+                "TypeScript and Object Orientation",
+                "TypeScript is Object-Oriented JavaScript. Object Orientation is a software development paradigm that follows real-world modelling. Object Orientation considers a program as a collection of objects that communicate with each other via mechanism called methods. TypeScript supports these object oriented components too.\n" +
+                        "\n" +
+                        "Object − An object is a real time representation of any entity. According to Grady Brooch, every object must have three features −\n" +
+                        "\n" +
+                        "State − described by the attributes of an object\n" +
+                        "\n" +
+                        "Behavior − describes how the object will act\n" +
+                        "\n" +
+                        "Identity − a unique value that distinguishes an object from a set of similar such objects.\n" +
+                        "\n" +
+                        "Class − A class in terms of OOP is a blueprint for creating objects. A class encapsulates data for the object.\n" +
+                        "\n" +
+                        "Method − Methods facilitate communication between objects.\n" +
+                        "\n" +
+                        "Example: TypeScript and Object Orientation\n" +
+                        "\n" +
+                        "class Greeting { \n" +
+                        "   greet():void { \n" +
+                        "      console.log(\"Hello World!!!\") \n" +
+                        "   } \n" +
+                        "} \n" +
+                        "var obj = new Greeting(); \n" +
+                        "obj.greet();\n\n" +
+                        "The above example defines a class Greeting. The class has a method greet (). The method prints the string “Hello World” on the terminal. The new keyword creates an object of the class (obj). The object invokes the method greet ().\n" +
+                        "\n" +
+                        "On compiling, it will generate following JavaScript code.\n" +
+                        "\n" +
+                        "//Generated by typescript 1.8.10\n" +
+                        "var Greeting = (function () {\n" +
+                        "   function Greeting() {\n" +
+                        "   }\n" +
+                        "   Greeting.prototype.greet = function () {\n" +
+                        "      console.log(\"Hello World!!!\");\n" +
+                        "   };\n" +
+                        "\treturn Greeting;\n" +
+                        "}());\n" +
+                        "\n" +
+                        "var obj = new Greeting();\n" +
+                        "obj.greet()",
+                "var Greeting = (function () {\n" +
+                        "   function Greeting() {\n" +
+                        "   }\n" +
+                        "   Greeting.prototype.greet = function () {\n" +
+                        "      console.log(\"Hello World!!!\");\n" +
+                        "   };\n" +
+                        "\treturn Greeting;\n" +
+                        "}());\n" +
+                        "\n" +
+                        "var obj = new Greeting();\n" +
+                        "obj.greet()",
+                "Hello World!!!"
+        );
+        list.add(l1);
+        list.add(l2);
+        list.add(l3);
+        list.add(l4);
+        list.add(l5);
+        list.add(l6);
+        list.add(l7);
+        return list;
+    }
+    //TypeScript Types
+    private static List<LearnDetailsModel> TypeScriptTypes(){
+        final List<LearnDetailsModel> list = new ArrayList<>();
+        final LearnDetailsModel l1 = new LearnDetailsModel(
+                "TypeScript Types",
+                "The Type System represents the different types of values supported by the language. The Type System checks the validity of the supplied values, before they are stored or manipulated by the program. This ensures that the code behaves as expected. The Type System further allows for richer code hinting and automated documentation too.\n" +
+                        "\n" +
+                        "TypeScript provides data types as a part of its optional Type System. The data type classification is as given below −" +
+                        "\n\n" +
+                        "1. Any type\n" +
+                        "2. Built-in Types\n" +
+                        "3. User-defined Types" +
+                        "\n\n" +
+                        "The Any type:\n" +
+                        "The any data type is the super type of all types in TypeScript. It denotes a dynamic type. Using the any type is equivalent to opting out of type checking for a variable.",
+                "",
+                ""
+        );
+        final LearnDetailsModel l2 = new LearnDetailsModel(
+                "Built-in types",
+                "The following table illustrates all the built-in types in TypeScript −" +
+                        "\n\n" +
+                        "1. number => Double precision 64-bit floating point values. It can be used to represent both, integers and fractions.\n\n" +
+                        "2. string => Represents a sequence of Unicode characters\n\n" +
+                        "3. boolean => Represents logical values, true and false\n\n" +
+                        "4. void => Used on function return types to represent non-returning functions\n\n" +
+                        "5. null => Represents an intentional absence of an object value.\n\n" +
+                        "6. undefined => Denotes value given to all uninitialized variables" +
+                        "\n\n" +
+                        "Note − There is no integer type in TypeScript and JavaScript.",
+                "",
+                ""
+        );
+        final LearnDetailsModel l3 = new LearnDetailsModel(
+                "Null and undefined ─ Are they the same?",
+                "The null and the undefined datatype are often a source of confusion. The null and undefined cannot be used to reference the data type of a variable. They can only be assigned as values to a variable.\n" +
+                        "\n" +
+                        "However, null and undefined are not the same. A variable initialized with undefined means that the variable has no value or object assigned to it while null means that the variable has been set to an object whose value is undefined.\n" +
+                        "\n" +
+                        "User-defined Types:\n\n" +
+                        "User-defined types include Enumerations (enums), classes, interfaces, arrays, and tuple. These are discussed in detail in the later chapters.",
+                "",
+                ""
+        );
+        list.add(l1);
+        list.add(l2);
+        list.add(l3);
+        return list;
+    }
+    //TypeScript Variables
+    private static List<LearnDetailsModel> TypeScriptVariables(){
+        final List<LearnDetailsModel> list = new ArrayList<>();
+        final LearnDetailsModel l1 = new LearnDetailsModel(
+                "TypeScript Variables",
+                "A variable, by definition, is “a named space in the memory” that stores values. In other words, it acts as a container for values in a program. TypeScript variables must follow the JavaScript naming rules −\n" +
+                        "\n" +
+                        "Variable names can contain alphabets and numeric digits.\n" +
+                        "\n" +
+                        "They cannot contain spaces and special characters, except the underscore (_) and the dollar ($) sign.\n" +
+                        "\n" +
+                        "Variable names cannot begin with a digit.\n" +
+                        "\n" +
+                        "A variable must be declared before it is used. Use the var keyword to declare variables.",
+                "",
+                ""
+        );
+        final LearnDetailsModel l2 = new LearnDetailsModel(
+                "Variable Declaration in TypeScript",
+                "The type syntax for declaring a variable in TypeScript is to include a colon (:) after the variable name, followed by its type. Just as in JavaScript, we use the var keyword to declare a variable.\n" +
+                        "\n" +
+                        "When you declare a variable, you have four options −\n" +
+                        "\n" +
+                        "Declare its type and value in one statement.\n" +
+                        "\n" +
+                        "Declare Type\n" +
+                        "Declare its type but no value. In this case, the variable will be set to undefined.\n" +
+                        "\n" +
+                        "Undefined\n" +
+                        "Declare its value but no type. The variable type will be set to the data type of the assigned value.\n" +
+                        "\n" +
+                        "Any\n" +
+                        "Declare neither value not type. In this case, the data type of the variable will be any and will be initialized to undefined.\n" +
+                        "\n" +
+                        "Any and Undefined\n" +
+                        "The following table illustrates the valid syntax for variable declaration as discussed above −" +
+                        "\n\n" +
+                        "var name:string = ”mary”\n" +
+                        "\n" +
+                        "The variable stores a value of type string" +
+                        "\n\n" +
+                        "var name:string;\n" +
+                        "\n" +
+                        "The variable is a string variable. The variable’s value is set to undefined by default" +
+                        "\n\n" +
+                        "var name = ”mary”\n" +
+                        "\n" +
+                        "The variable’s type is inferred from the data type of the value. Here, the variable is of the type string" +
+                        "\n\n" +
+                        "var name;\n" +
+                        "\n" +
+                        "The variable’s data type is any. Its value is set to undefined by default." +
+                        "\n\n\n" +
+                        "Example: Variables in TypeScript\n" +
+                        "var name:string = \"Anne\"; \n" +
+                        "var score1:number = 50;\n" +
+                        "var score2:number = 42.50\n" +
+                        "var sum = score1 + score2 \n" +
+                        "console.log(\"name\"+name) \n" +
+                        "console.log(\"first score: \"+score1) \n" +
+                        "console.log(\"second score: \"+score2) \n" +
+                        "console.log(\"sum of the scores: \"+sum)\n\n" +
+                        "On compiling, it will generate following JavaScript code.\n" +
+                        "\n" +
+                        "//Generated by typescript 1.8.10\n" +
+                        "var name = \"Anne\";\n" +
+                        "var score1 = 50;\n" +
+                        "var score2 = 42.50;\n" +
+                        "var sum = score1 + score2;\n" +
+                        "console.log(\"name\" + name);\n" +
+                        "console.log(\"first score: \" + score1);\n" +
+                        "console.log(\"second score : \" + score2);\n" +
+                        "console.log(\"sum of the scores: \" + sum);",
+                "var name = \"Anne\";\n" +
+                        "var score1 = 50;\n" +
+                        "var score2 = 42.50;\n" +
+                        "var sum = score1 + score2;\n" +
+                        "console.log(\"name\" + name);\n" +
+                        "console.log(\"first score: \" + score1);\n" +
+                        "console.log(\"second score : \" + score2);\n" +
+                        "console.log(\"sum of the scores: \" + sum);",
+                "name:Anne \n" +
+                        "first score:50 \n" +
+                        "second score:42.50 \n" +
+                        "sum of the scores:92.50"
+        );
+        final LearnDetailsModel l3 = new LearnDetailsModel(
+                "Type Assertion in TypeScript",
+                "TypeScript allows changing a variable from one type to another. TypeScript refers to this process as Type Assertion. The syntax is to put the target type between < > symbols and place it in front of the variable or expression. The following example explains this concept −\n" +
+                        "\n" +
+                        "Example\n" +
+                        "var str = '1' \n" +
+                        "var str2:number = <number> <any> str   //str is now of type number \n" +
+                        "console.log(typeof(str2))\n\n" +
+                        "If you hover the mouse pointer over the type assertion statement in Visual Studio Code, it displays the change in the variable’s data type. Basically it allows the assertion from type S to T succeed if either S is a subtype of T or T is a subtype of S.\n" +
+                        "\n" +
+                        "The reason why it's not called \"type casting\" is that casting generally implies some sort of runtime support while, “type assertions” are purely a compile time construct and a way for you to provide hints to the compiler on how you want your code to be analyzed.\n" +
+                        "\n" +
+                        "On compiling, it will generate following JavaScript code.\n" +
+                        "\n" +
+                        "\"use strict\";\n" +
+                        "var str = '1';\n" +
+                        "var str2 = str; //str is now of type number \n" +
+                        "console.log(typeof (str2));",
+                "\"use strict\";\n" +
+                        "var str = '1';\n" +
+                        "var str2 = str;\n" +
+                        "console.log(typeof (str2));",
+                "string"
+        );
+        final LearnDetailsModel l4 = new LearnDetailsModel(
+                "Inferred Typing in TypeScript",
+                "Given the fact that, Typescript is strongly typed, this feature is optional. TypeScript also encourages dynamic typing of variables. This means that, TypeScript encourages declaring a variable without a type. In such cases, the compiler will determine the type of the variable on the basis of the value assigned to it. TypeScript will find the first usage of the variable within the code, determine the type to which it has been initially set and then assume the same type for this variable in the rest of your code block.\n" +
+                        "\n" +
+                        "The same is explained in the following code snippet −\n" +
+                        "\n" +
+                        "Example: Inferred Typing\n" +
+                        "var num = 2;    // data type inferred as  number \n" +
+                        "console.log(\"value of num \"+num); \n" +
+                        "num = \"12\";\n" +
+                        "console.log(num);\n\n" +
+                        "In the above code snippet −\n" +
+                        "\n" +
+                        "The code declares a variable and sets its value to 2. Note that the variable declaration doesn't specify the data type. Hence, the program uses inferred typing to determine the data type of the variable, i.e., it assigns the type of the first value that the variable is set to. In this case, num is set to the type number.\n" +
+                        "\n" +
+                        "When the code tries to set the variable’s value to string. The compiler throws an error as the variable’s type is already set to number.",
+                "var num = 2;\n" +
+                        "console.log(\"value of num \"+num); \n" +
+                        "num = \"12\";\n" +
+                        "console.log(num);",
+                "error TS2011: Cannot convert 'string' to 'number'."
+        );
+        final LearnDetailsModel l5 = new LearnDetailsModel(
+                "TypeScript Variable Scope",
+                "The scope of a variable specifies where the variable is defined. The availability of a variable within a program is determined by its scope. TypeScript variables can be of the following scopes −\n" +
+                        "\n" +
+                        "Global Scope − Global variables are declared outside the programming constructs. These variables can be accessed from anywhere within your code.\n" +
+                        "\n" +
+                        "Class Scope − These variables are also called fields. Fields or class variables are declared within the class but outside the methods. These variables can be accessed using the object of the class. Fields can also be static. Static fields can be accessed using the class name.\n" +
+                        "\n" +
+                        "Local Scope − Local variables, as the name suggests, are declared within the constructs like methods, loops etc. Local variables are accessible only within the construct where they are declared.",
+                "var global_num = 12\n" +
+                        "class Numbers { \n" +
+                        "   num_val = 13;\n" +
+                        "   static sval = 10;\n" +
+                        "   \n" +
+                        "   storeNum():void { \n" +
+                        "      var local_num = 14;\n" +
+                        "   } \n" +
+                        "} \n" +
+                        "console.log(\"Global num: \"+global_num)  \n" +
+                        "console.log(Numbers.sval)\n" +
+                        "var obj = new Numbers(); \n" +
+                        "console.log(\"Global num: \"+obj.num_val) ",
+                "Global num: 12\n" +
+                        "10\n" +
+                        "Global num: 13"
+        );
+
+        list.add(l1);
+        list.add(l2);
+        list.add(l3);
+        list.add(l4);
+        list.add(l5);
+        return list;
+    }
+    //TypeScript Operators
+    private static List<LearnDetailsModel> TypeScriptOperators(){
+        final List<LearnDetailsModel> list = new ArrayList<>();
+        final LearnDetailsModel l1 = new LearnDetailsModel(
+                "What is an Operator?",
+                "An operator defines some function that will be performed on the data. The data on which operators work are called operands. Consider the following expression −\n" +
+                        "\n" +
+                        "7 + 5 = 12\n" +
+                        "\n" +
+                        "Here, the values 7, 5, and 12 are operands, while + and = are operators.\n" +
+                        "\n" +
+                        "The major operators in TypeScript can be classified as −\n" +
+                        "\n" +
+                        "Arithmetic operators\n" +
+                        "Logical operators\n" +
+                        "Relational operators\n" +
+                        "Bitwise operators\n" +
+                        "Assignment operators\n" +
+                        "Ternary/conditional operator\n" +
+                        "String operator\n" +
+                        "Type Operator",
+                "",
+                ""
+        );
+        final LearnDetailsModel l2 = new LearnDetailsModel(
+                "Arithmetic Operators",
+                "Assume the values in variables a and b are 10 and 5 respectively." +
+                        "\n\n" +
+                        "1. + (Addition) => returns the sum of the operands(a + b is 15)\n\n" +
+                        "2. - (Subtraction) => returns the difference of the values(a - b is 5)\n\n" +
+                        "3. * (Multiplication) => returns the product of the values(a * b is 50)\n\n" +
+                        "4. / (Division) => performs division operation and returns the quotient(a / b is 2)\n\n" +
+                        "5. % (Modulus) => performs division operation and returns the remainder(a % b is 0)\n\n" +
+                        "6. ++ (Increment) => Increments the value of the variable by one(a++ is 11)\n\n" +
+                        "7. -- (Decrement) => Decrements the value of the variable by one(a-- is 9)",
+                "",
+                ""
+        );
+        final LearnDetailsModel l3 = new LearnDetailsModel(
+                "Relational Operators",
+                "Relational Operators test or define the kind of relationship between two entities. Relational operators return a Boolean value, i.e., true/ false.\n" +
+                        "\n" +
+                        "Assume the value of A is 10 and B is 20." +
+                        "\n\n" +
+                        "(>) Greater than => (A > B) is False\n\n" +
+                        "(<) Lesser than => (A < B) is True\n\n" +
+                        "(>=) Greater than or equal to => (A >= B) is False\n\n" +
+                        "(<=) Lesser than or equal to => (A <= B) is True\n\n" +
+                        "(==) Equality => (A == B) is false\n\n" +
+                        "(!=) Not equal => (A != B) is True",
+                "",
+                ""
+        );
+        final LearnDetailsModel l4 = new LearnDetailsModel(
+                "Logical Operators",
+                "Logical Operators are used to combine two or more conditions. Logical operators too return a Boolean value. Assume the value of variable A is 10 and B is 20." +
+                        "\n\n" +
+                        "&& (And) => The operator returns true only if all the expressions specified return true (A > 10 && B > 10) is False\n\n" +
+                        "|| (OR) => The operator returns true if at least one of the expressions specified return true (A > 10 || B >10) is True\n\n" +
+                        "! (NOT) => The operator returns the inverse of the expression’s result. For E.g.: !(>5) returns false !(A >10 ) is True",
+                "",
+                ""
+        );
+        final LearnDetailsModel l5 = new LearnDetailsModel(
+                "Bitwise Operators",
+                "Assume variable A = 2 and B = 3" +
+                        "\n\n" +
+                        "& (Bitwise AND) => It performs a Boolean AND operation on each bit of its integer arguments. (A & B) is 2\n\n" +
+                        "| (BitWise OR) => It performs a Boolean OR operation on each bit of its integer arguments. (A | B) is 3\n\n" +
+                        "^ (Bitwise XOR) => It performs a Boolean exclusive OR operation on each bit of its integer arguments. Exclusive OR means that either operand one is true or operand two is true, but not both. (A ^ B) is 1\n\n" +
+                        "~ (Bitwise Not) => It is a unary operator and operates by reversing all the bits in the operand. (~B) is -4\n\n" +
+                        "<< (Left Shift) => It moves all the bits in its first operand to the left by the number of places specified in the second operand. New bits are filled with zeros. Shifting a value left by one position is equivalent to multiplying it by 2, shifting two positions is equivalent to multiplying by 4, and so on. (A << 1) is 4\n\n" +
+                        ">> (Right Shift) => Binary Right Shift Operator. The left operand’s value is moved right by the number of bits specified by the right operand. (A >> 1) is 1\n\n" +
+                        ">>> (Right shift with Zero) => This operator is just like the >> operator, except that the bits shifted in on the left are always zero. (A >>> 1) is 1",
+                "",
+                ""
+        );
+        final LearnDetailsModel l6 = new LearnDetailsModel(
+                "Assignment Operators",
+                "Note − Same logic applies to Bitwise operators, so they will become <<=, >>=, >>=, &=, |= and ^=. Bellow are Assignment Operators:" +
+                        "\n\n" +
+                        "= (Simple Assignment) => Assigns values from the right side operand to the left side operand \nC = A + B will assign the value of A + B into C\n\n" +
+                        "+= (Add and Assignment) => It adds the right operand to the left operand and assigns the result to the left operand.\nC += A is equivalent to C = C + A\n\n" +
+                        "-= (Subtract and Assignment) => It subtracts the right operand from the left operand and assigns the result to the left operand.\nC -= A is equivalent to C = C - A\n\n" +
+                        "*= (Multiply and Assignment) => It multiplies the right operand with the left operand and assigns the result to the left operand.\nC *= A is equivalent to C = C * A\n\n" +
+                        "/= (Divide and Assignment) => It divides the left operand with the right operand and assigns the result to the left operand.",
+                "",
+                ""
+        );
+        final LearnDetailsModel l7 = new LearnDetailsModel(
+                "The negation operator (-)",
+                "Changes the sign of a value. Let’s take an example.\n" +
+                        "\n" +
+                        "var x:number = 4 \n" +
+                        "var y = -x; \n" +
+                        "console.log(\"value of x: \",x);   //outputs 4 \n" +
+                        "console.log(\"value of y: \",y);   //outputs -4\n\n" +
+                        "On compiling, it will generate following JavaScript code.\n" +
+                        "\n" +
+                        "//Generated by typescript 1.8.10\n" +
+                        "var x = 4;\n" +
+                        "var y = -x;\n" +
+                        "console.log(\"value of x: \", x);   //outputs 4\n" +
+                        "console.log(\"value of y: \", y);   //outputs -4",
+                "var x:number = 4 \n" +
+                        "var y = -x; \n" +
+                        "console.log(\"value of x: \",x);\n" +
+                        "console.log(\"value of y: \",y);",
+                "value of x:  4 \n" +
+                        "value of y:  -4"
+        );
+        final LearnDetailsModel l8 = new LearnDetailsModel(
+                "String Operators: Concatenation operator (+)",
+                "The + operator when applied to strings appends the second string to the first. The following example helps us to understand this concept.\n" +
+                        "\n" +
+                        "var msg:string = \"hello\"+\"world\" \n" +
+                        "console.log(msg)\n" +
+                        "On compiling, it will generate following JavaScript code.\n" +
+                        "\n" +
+                        "//Generated by typescript 1.8.10\n" +
+                        "var msg = \"hello\" + \"world\";\n" +
+                        "console.log(msg);",
+                "var msg:string = \"hello\"+\"world\" \n" +
+                        "console.log(msg)",
+                "helloworld"
+        );
+        final LearnDetailsModel l9 = new LearnDetailsModel(
+                "Conditional Operator (?)",
+                "This operator is used to represent a conditional expression. The conditional operator is also sometimes referred to as the ternary operator. The syntax is as given below −\n" +
+                        "\n" +
+                        "Test ? expr1 : expr2\n" +
+                        "Test − refers to the conditional expression\n" +
+                        "\n" +
+                        "expr1 − value returned if the condition is true\n" +
+                        "\n" +
+                        "expr2 − value returned if the condition is false\n" +
+                        "\n" +
+                        "Let’s take a look at the following code −\n" +
+                        "\n" +
+                        "var num:number = -2 \n" +
+                        "var result = num > 0 ?\"positive\":\"non-positive\" \n" +
+                        "console.log(result)\n\n" +
+                        "Line 2 checks whether the value in the variable num is greater than zero. If num is set to a value greater than zero, it returns the string “positive” else the string “non-positive” is returned.\n" +
+                        "\n" +
+                        "On compiling, it will generate following JavaScript code.\n" +
+                        "\n" +
+                        "//Generated by typescript 1.8.10\n" +
+                        "var num = -2;\n" +
+                        "var result = num > 0 ? \"positive\" : \"non-positive\";\n" +
+                        "console.log(result);",
+                "var num:number = -2 \n" +
+                        "var result = num > 0 ?\"positive\":\"non-positive\" \n" +
+                        "console.log(result)",
+                "non-positive"
+        );
+
+        final LearnDetailsModel l10 = new LearnDetailsModel(
+                "Type Operators",
+                "typeof operator\n" +
+                        "It is a unary operator. This operator returns the data type of the operand. Take a look at the following example −\n" +
+                        "\n" +
+                        "var num = 12 \n" +
+                        "console.log(typeof num);   //output: number\n\n" +
+                        "On compiling, it will generate following JavaScript code.\n" +
+                        "\n" +
+                        "//Generated by typescript 1.8.10\n" +
+                        "var num = 12;\n" +
+                        "console.log(typeof num);   //output: number",
+                "var num = 12 \n" +
+                        "console.log(typeof num);",
+                "number"
+        );
+        final LearnDetailsModel l11 = new LearnDetailsModel(
+                "instanceof",
+                "This operator can be used to test if an object is of a specified type or not. The use of instanceof operator is discussed in the chapter classes.",
+                "",
+                ""
+        );
+
+        list.add(l1);
+        list.add(l2);
+        list.add(l3);
+        list.add(l4);
+        list.add(l5);
+        list.add(l6);
+        list.add(l7);
+        list.add(l8);
+        list.add(l9);
+        list.add(l10);
+        list.add(l11);
+        return list;
+    }
+    //TypeScript Decision Making
+    private static List<LearnDetailsModel> TypeScriptDecisionMaking(){
+        final List<LearnDetailsModel> list = new ArrayList<>();
+        final LearnDetailsModel l1 = new LearnDetailsModel(
+                "TypeScript Decision Making",
+                "Decision-making structures require that the programmer specifies one or more conditions to be evaluated or tested by the program, along with a statement or statements to be executed if the condition is determined to be true, and optionally, other statements to be executed if the condition is determined to be false.",
+                "",
+                ""
+        );final LearnDetailsModel l2 = new LearnDetailsModel(
+                "Statements",
+                "A decision-making construct evaluates a condition before the instructions are executed. Decision-making constructs in TypeScript are classified as follows −" +
+                        "\n\n" +
+                        "1.if statement\n" +
+                        "An ‘if’ statement consists of a Boolean expression followed by one or more statements.\n" +
+                        "\n" +
+                        "2.if...else statement\n" +
+                        "An ‘if’ statement can be followed by an optional ‘else’ statement, which executes when the Boolean expression is false.\n" +
+                        "\n" +
+                        "3.else…if and nested if statements\n" +
+                        "You can use one ‘if’ or ‘else if’ statement inside another ‘if’ or ‘else if’ statement(s).\n" +
+                        "\n" +
+                        "4.switch statement\n" +
+                        "A ‘switch’ statement allows a variable to be tested against a list of values.",
+                "",
+                ""
+        );
+        list.add(l1);
+        list.add(l2);
+        return list;
+    }
+    //TypeScript Loops
+    private static List<LearnDetailsModel> TypeScriptLoops(){
+        final List<LearnDetailsModel> list = new ArrayList<>();
+        final LearnDetailsModel l1 = new LearnDetailsModel(
+                "TypeScript Loops",
+                "You may encounter situations, when a block of code needs to be executed several number of times. " +
+                        "In general, statements are executed sequentially: The first statement in a function is executed first, followed by the second, and so on.\n" +
+                        "\n" +
+                        "Programming languages provide various control structures that allow for more complicated execution paths.\n" +
+                        "A loop statement allows us to execute a statement or group of statements multiple times.\n" +
+                        "TypeScript provides different types of loops to handle looping requirements.",
+                "",
+                ""
+        );
+        final LearnDetailsModel l2 = new LearnDetailsModel(
+                "Definite Loop",
+                "A loop whose number of iterations are definite/fixed is termed as a definite loop. The for loop is an implementation of a definite loop." +
+                        "\n\n" +
+                        "1. for loop\n" +
+                        "The for loop is an implementation of a definite loop.",
+                "",
+                ""
+        );
+        final LearnDetailsModel l3 = new LearnDetailsModel(
+                "Indefinite Loop",
+                "An indefinite loop is used when the number of iterations in a loop is indeterminate or unknown.\n" +
+                        "\n" +
+                        "Indefinite loops can be implemented using −" +
+                        "\n\n" +
+                        "1. while loop\n" +
+                        "The while loop executes the instructions each time the condition specified evaluates to true.\n" +
+                        "\n" +
+                        "2. do… while\n" +
+                        "The do…while loop is similar to the while loop except that the do...while loop doesn't evaluate the condition for the first time the loop executes.",
+                "",
+                ""
+        );
+        final LearnDetailsModel l4 = new LearnDetailsModel(
+                "Example: while versus do..while",
+                "The example initially declares a while loop. The loop is entered only if the expression passed to while evaluates to true. In this example, the value of n is not greater than zero, hence the expression returns false and the loop is skipped.\n" +
+                        "\n" +
+                        "On the other hand, the do…while loop executes statement once. This is because the initial iteration does not consider the Boolean expression. However, for the subsequent iteration, the while checks the condition and takes the control out of the loop.",
+                "var n:number = 5 \n" +
+                        "while(n > 5) { \n" +
+                        "   console.log(\"Entered while\") \n" +
+                        "} \n" +
+                        "do { \n" +
+                        "   console.log(\"Entered do…while\") \n" +
+                        "} \n" +
+                        "while(n>5)",
+                "Entered do…while"
+        );
+        final LearnDetailsModel l5 = new LearnDetailsModel(
+                "The break Statement",
+                "The break statement is used to take the control out of a construct. Using break in a loop causes the program to exit the loop. Its syntax is as follows −\n" +
+                        "\n" +
+                        "Syntax: " +
+                        "break" +
+                        "\n\n" +
+                        "Example\n" +
+                        "Now, take a look at the following example code −\n" +
+                        "\n" +
+                        "var i:number = 1 \n" +
+                        "while(i<=10) { \n" +
+                        "   if (i % 5 == 0) {   \n" +
+                        "      console.log (\"The first multiple of 5  between 1 and 10 is : \"+i) \n" +
+                        "      break     //exit the loop if the first multiple is found \n" +
+                        "   } \n" +
+                        "   i++ \n" +
+                        "}  //outputs 5 and exits the loop",
+                "var i:number = 1 \n" +
+                        "while(i<=10) { \n" +
+                        "   if (i % 5 == 0) {   \n" +
+                        "      console.log (\"The first multiple of 5  between 1 and 10 is : \"+i) \n" +
+                        "      break\n" +
+                        "   } \n" +
+                        "   i++ \n" +
+                        "}",
+                "The first multiple of 5  between 1 and 10 is : 5"
+        );
+        final LearnDetailsModel l6 = new LearnDetailsModel(
+                "The continue Statement",
+                "The continue statement skips the subsequent statements in the current iteration and takes the control back to the beginning of the loop. Unlike the break statement, the continue doesn’t exit the loop. It terminates the current iteration and starts the subsequent iteration.\n" +
+                        "\n" +
+                        "Syntax: " +
+                        "continue" +
+                        "\n\n" +
+                        "Example\n" +
+                        "An example of the continue statement is given below −\n" +
+                        "\n" +
+                        "var num:number = 0\n" +
+                        "var count:number = 0;\n" +
+                        "\n" +
+                        "for(num=0;num<=20;num++) {\n" +
+                        "   if (num % 2==0) {\n" +
+                        "      continue\n" +
+                        "   }\n" +
+                        "   count++\n" +
+                        "}\n" +
+                        "console.log (\" The count of odd values between 0 and 20 is: \"+count)    //outputs 10 \n\n" +
+                        "The above example displays the number of odd values between 0 and 20. The loop exits the current iteration if the number is even. This is achieved using the continue statement.\n" +
+                        "\n" +
+                        "On compiling, it will generate following JavaScript code.\n" +
+                        "\n" +
+                        "//Generated by typescript 1.8.10\n" +
+                        "var num = 0;\n" +
+                        "var count = 0;\n" +
+                        "\n" +
+                        "for (num = 0; num <= 20; num++) {\n" +
+                        "   if (num % 2 == 0) {\n" +
+                        "      continue;\n" +
+                        "   }\n" +
+                        "   count++;\n" +
+                        "}\n" +
+                        "console.log(\" The count of odd values between 0 and 20 is: \" + count);     //outputs 10",
+                "var num:number = 0\n" +
+                        "var count:number = 0;\n" +
+                        "\n" +
+                        "for(num=0;num<=20;num++) {\n" +
+                        "   if (num % 2==0) {\n" +
+                        "      continue\n" +
+                        "   }\n" +
+                        "   count++\n" +
+                        "}\n" +
+                        "console.log (\" The count of odd values between 0 and 20 is: \"+count)",
+                "The count of odd values between 0 and 20 is: 10"
+        );
+        final LearnDetailsModel l7 = new LearnDetailsModel(
+                "The Infinite Loop",
+                "An infinite loop is a loop that runs endlessly. The for loop and the while loop can be used to make an endless loop.\n" +
+                        "\n" +
+                        "Syntax: Infinite Loop using for loop\n" +
+                        "for(;;) { \n" +
+                        "   //statements \n" +
+                        "}\n\n" +
+                        "Example: Infinite loop using for loop\n" +
+                        "for(;;) { \n" +
+                        "   console.log(“This is an endless loop”) \n" +
+                        "}\n\n" +
+                        "Syntax: Infinite loop using while loop\n" +
+                        "while(true) { \n" +
+                        "   //statements \n" +
+                        "} \n\n" +
+                        "Example: Infinite loop using while loop\n" +
+                        "while(true) { \n" +
+                        "   console.log(“This is an endless loop”) \n" +
+                        "}",
+                "",
+                ""
+        );
+        list.add(l1);
+        list.add(l2);
+        list.add(l3);
+        list.add(l4);
+        list.add(l5);
+        list.add(l6);
+        list.add(l7);
+        return list;
+    }
+    //TypeScript Functions
+    private static List<LearnDetailsModel> TypeScriptFunctions(){
+        final List<LearnDetailsModel> list = new ArrayList<>();
+        final LearnDetailsModel l1 = new LearnDetailsModel(
+                "TypeScript Functions",
+                "Functions are the building blocks of readable, maintainable, and reusable code. A function is a set of statements to perform a specific task. Functions organize the program into logical blocks of code. Once defined, functions may be called to access code. This makes the code reusable. Moreover, functions make it easy to read and maintain the program’s code.\n" +
+                        "\n" +
+                        "A function declaration tells the compiler about a function's name, return type, and parameters. A function definition provides the actual body of the function." +
+                        "\n\n" +
+                        "1. Defining a Function\n" +
+                        "A function definition specifies what and how a specific task would be done.\n" +
+                        "\n" +
+                        "2. Calling a Function\n" +
+                        "A function must be called so as to execute it.\n" +
+                        "\n" +
+                        "3. Returning Functions\n" +
+                        "Functions may also return value along with control, back to the caller.\n" +
+                        "\n" +
+                        "4. Parameterized Function\n" +
+                        "Parameters are a mechanism to pass values to functions.",
+                "",
+                ""
+        );
+        final LearnDetailsModel l2 = new LearnDetailsModel(
+                "Optional Parameters",
+                "Optional parameters can be used when arguments need not be compulsorily passed for a function’s execution. A parameter can be marked optional by appending a question mark to its name. The optional parameter should be set as the last argument in a function. The syntax to declare a function with optional parameter is as given below −\n" +
+                        "\n" +
+                        "function function_name (param1[:type], param2[:type], param3[:type])",
+                "function disp_details(id:number,name:string,mail_id?:string) { \n" +
+                        "   console.log(\"ID:\", id); \n" +
+                        "   console.log(\"Name\",name); \n" +
+                        "   \n" +
+                        "   if(mail_id!=undefined)  \n" +
+                        "   console.log(\"Email Id\",mail_id); \n" +
+                        "}\n" +
+                        "disp_details(123,\"Anne\");\n" +
+                        "disp_details(111,\"Luke\",\"luke@xyz.com\");",
+                "ID:123 \n" +
+                        "Name Anne \n" +
+                        "ID: 111 \n" +
+                        "Name  Luke \n" +
+                        "Email Id luke@xyz.com"
+        );
+        final LearnDetailsModel l3 = new LearnDetailsModel(
+                "Rest Parameters",
+                "Rest parameters are similar to variable arguments in Java. Rest parameters don’t restrict the number of values that you can pass to a function. However, the values passed must all be of the same type. In other words, rest parameters act as placeholders for multiple arguments of the same type.\n" +
+                        "\n" +
+                        "To declare a rest parameter, the parameter name is prefixed with three periods. Any nonrest parameter should come before the rest parameter.",
+                "function addNumbers(...nums:number[]) {  \n" +
+                        "   var i;   \n" +
+                        "   var sum:number = 0; \n" +
+                        "   \n" +
+                        "   for(i = 0;i<nums.length;i++) { \n" +
+                        "      sum = sum + nums[i]; \n" +
+                        "   } \n" +
+                        "   console.log(\"sum of the numbers\",sum) \n" +
+                        "} \n" +
+                        "addNumbers(1,2,3) \n" +
+                        "addNumbers(10,10,10,10,10)",
+                "sum of numbers 6\n" +
+                        "sum of numbers 50"
+        );
+        final LearnDetailsModel l4 = new LearnDetailsModel(
+                "Default Parameters",
+                "Function parameters can also be assigned values by default. However, such parameters can also be explicitly passed values.\n" +
+                        "\n" +
+                        "Syntax:\n" +
+                        "function function_name(param1[:type],param2[:type] = default_value) { \n" +
+                        "}\n" +
+                        "Note − A parameter cannot be declared optional and default at the same time.",
+                "function calculate_discount(price:number,rate:number = 0.50) { \n" +
+                        "   var discount = price * rate; \n" +
+                        "   console.log(\"Discount Amount: \",discount); \n" +
+                        "} \n" +
+                        "calculate_discount(1000) \n" +
+                        "calculate_discount(1000,0.30)",
+                "Discount amount : 500 \n" +
+                        "Discount amount : 300"
+        );
+        final LearnDetailsModel l5 = new LearnDetailsModel(
+                "Anonymous Function",
+                "Functions that are not bound to an identifier (function name) are called as anonymous functions. These functions are dynamically declared at runtime. Anonymous functions can accept inputs and return outputs, just as standard functions do. An anonymous function is usually not accessible after its initial creation.\n" +
+                        "\n" +
+                        "Variables can be assigned an anonymous function. Such an expression is called a function expression.\n" +
+                        "\n" +
+                        "Syntax:\n" +
+                        "var res = function( [arguments] ) { ... }",
+                "var msg = function() { \n" +
+                        "   return \"hello world\";  \n" +
+                        "} \n" +
+                        "console.log(msg())",
+                "hello world"
+        );
+        final LearnDetailsModel l6 = new LearnDetailsModel(
+                "The Function Constructor",
+                "ypeScript also supports defining a function with the built-in JavaScript constructor called Function ().\n" +
+                        "\n" +
+                        "Syntax:\n" +
+                        "var res = new Function( [arguments] ) { ... }.",
+                "var myFunction = new Function(\"a\", \"b\", \"return a * b\"); \n" +
+                        "var x = myFunction(4, 3); \n" +
+                        "console.log(x);",
+                "12"
+        );
+        final LearnDetailsModel l7 = new LearnDetailsModel(
+                "Recursion and TypeScript Functions",
+                "Recursion is a technique for iterating over an operation by having a function call to itself repeatedly until it arrives at a result. Recursion is best applied when you need to call the same function repeatedly with different parameters from within a loop.",
+                "function factorial(number) {\n" +
+                        "   if (number <= 0) {\n" +
+                        "      return 1; \n" +
+                        "   } else {     \n" +
+                        "      return (number * factorial(number - 1));\n" +
+                        "   } \n" +
+                        "}; \n" +
+                        "console.log(factorial(6));",
+                "720"
+        );
+        final LearnDetailsModel l8 = new LearnDetailsModel(
+                "Lambda Functions",
+                "Lambda refers to anonymous functions in programming. Lambda functions are a concise mechanism to represent anonymous functions. These functions are also called as Arrow functions.\n" +
+                        "\n" +
+                        "Lambda Function - Anatomy\n" +
+                        "There are 3 parts to a Lambda function −\n" +
+                        "\n" +
+                        "Parameters − A function may optionally have parameters\n" +
+                        "\n" +
+                        "The fat arrow notation/lambda notation (=>) − It is also called as the goes to operator\n" +
+                        "\n" +
+                        "Statements − represent the function’s instruction set\n" +
+                        "\n" +
+                        "Tip − By convention, the use of single letter parameter is encouraged for a compact and precise function declaration.\n" +
+                        "\n" +
+                        "Lambda Expression\n" +
+                        "It is an anonymous function expression that points to a single line of code. Its syntax is as follows −\n" +
+                        "\n" +
+                        "( [param1, parma2,…param n] )=>statement;",
+                "var foo = (x:number)=>10 + x \n" +
+                        "console.log(foo(100))",
+                "110"
+        );
+        final LearnDetailsModel l9 = new LearnDetailsModel(
+                "Function Overloads",
+                "Functions have the capability to operate differently on the basis of the input provided to them. In other words, a program can have multiple methods with the same name with different implementation. This mechanism is termed as Function Overloading. TypeScript provides support for function overloading.\n" +
+                        "\n" +
+                        "To overload a function in TypeScript, you need to follow the steps given below −\n" +
+                        "\n" +
+                        "Step 1 − Declare multiple functions with the same name but different function signature. Function signature includes the following.\n" +
+                        "\n" +
+                        "The data type of the parameter\n" +
+                        "\n" +
+                        "function disp(string):void; \n" +
+                        "function disp(number):void;\n" +
+                        "The number of parameters\n" +
+                        "\n" +
+                        "function disp(n1:number):void; \n" +
+                        "function disp(x:number,y:number):void;\n" +
+                        "The sequence of parameters\n" +
+                        "\n" +
+                        "function disp(n1:number,s1:string):void; \n" +
+                        "function disp(s:string,n:number):void;\n" +
+                        "Note − The function signature doesn't include the function’s return type.\n" +
+                        "\n" +
+                        "Step 2 − The declaration must be followed by the function definition. The parameter types should be set to any if the parameter types differ during overload. Additionally, for case b explained above, you may consider marking one or more parameters as optional during the function definition.\n" +
+                        "\n" +
+                        "Step 3 − Finally, you must invoke the function to make it functional.",
+                "function disp(s1:string):void; \n" +
+                        "function disp(n1:number,s1:string):void; \n" +
+                        "\n" +
+                        "function disp(x:any,y?:any):void { \n" +
+                        "   console.log(x); \n" +
+                        "   console.log(y); \n" +
+                        "} \n" +
+                        "disp(\"abc\") \n" +
+                        "disp(1,\"xyz\");",
+                "abc\n" +
+                        "1\n" +
+                        "xyz"
+        );
+
+        list.add(l1);
+        list.add(l2);
+        list.add(l3);
+        list.add(l4);
+        list.add(l5);
+        list.add(l6);
+        list.add(l7);
+        list.add(l8);
+        list.add(l9);
+
+        return list;
+    }
+    //TypeScript Numbers
+    private static List<LearnDetailsModel> TypeScriptNumbers(){
+        final List<LearnDetailsModel> list = new ArrayList<>();
+        final LearnDetailsModel l1 = new LearnDetailsModel(
+                "TypeScript Numbers",
+                "TypeScript like JavaScript supports numeric values as Number objects. A number object converts numeric literal to an instance of the number class. The Number class acts as a wrapper and enables manipulation of numeric literals as they were objects.\n" +
+                        "\n" +
+                        "Syntax\n" +
+                        "var var_name = new Number(value)\n" +
+                        "In case a non-numeric argument is passed as an argument to the Number’s constructor, it returns NaN (Not–a–Number)",
+                "",
+                ""
+        );
+        final LearnDetailsModel l2 = new LearnDetailsModel(
+                "Example: MAX_VALUE & MIN_VALUE",
+                "On compiling, it will generate the same code in JavaScript.",
+                "console.log(\"TypeScript Number Properties: \"); \n" +
+                        "console.log(\"Maximum value that a number variable can hold: \" + Number.MAX_VALUE); \n" +
+                        "console.log(\"The least value that a number variable can hold: \" + Number.MIN_VALUE); \n" +
+                        "console.log(\"Value of Negative Infinity: \" + Number.NEGATIVE_INFINITY); \n" +
+                        "console.log(\"Value of Negative Infinity:\" + Number.POSITIVE_INFINITY);",
+                "TypeScript Number Properties:  \n" +
+                        "Maximum value that a number variable can hold: 1.7976931348623157e+308 \n" +
+                        "The least value that a number variable can hold: 5e-324 \n" +
+                        "Value of Negative Infinity: -Infinity \n" +
+                        "Value of Negative Infinity:Infinity"
+        );
+        final LearnDetailsModel l3 = new LearnDetailsModel(
+                "Example: NaN",
+                "On compiling, it will generate the same code in JavaScript.",
+                "var month = 0 \n" +
+                        "if( month<=0 || month >12) { \n" +
+                        "   month = Number.NaN \n" +
+                        "   console.log(\"Month is \"+ month) \n" +
+                        "} else { \n" +
+                        "   console.log(\"Value Accepted..\") \n" +
+                        "}",
+                "Month is NaN"
+        );
+        final LearnDetailsModel l4 = new LearnDetailsModel(
+                "Example: prototype",
+                "On compiling, it will generate the following JavaScript code −",
+                "function employee(id:number,name:string) { \n" +
+                        "   this.id = id \n" +
+                        "   this.name = name \n" +
+                        "} \n" +
+                        "\n" +
+                        "var emp = new employee(123,\"Smith\") \n" +
+                        "employee.prototype.email = \"smith@abc.com\" \n" +
+                        "\n" +
+                        "console.log(\"Employee 's Id: \"+emp.id) \n" +
+                        "console.log(\"Employee's name: \"+emp.name) \n" +
+                        "console.log(\"Employee's Email ID: \"+emp.email)",
+                "Employee’s Id: 123 \n" +
+                        "Employee's name: Smith \n" +
+                        "Employee’s Email ID: smith@abc.com"
+        );final LearnDetailsModel l5 = new LearnDetailsModel(
+                "Number Methods",
+                "The Number object contains only the default methods that are a part of every object's definition. Some of the commonly used methods are listed below −" +
+                        "\n\n" +
+                        "1.toExponential()\n" +
+                        "Forces a number to display in exponential notation, even if the number is in the range in which JavaScript normally uses standard notation.\n" +
+                        "\n" +
+                        "2.toFixed()\n" +
+                        "Formats a number with a specific number of digits to the right of the decimal.\n" +
+                        "\n" +
+                        "3.toLocaleString()\n" +
+                        "Returns a string value version of the current number in a format that may vary according to a browser's local settings.\n" +
+                        "\n" +
+                        "4.toPrecision()\n" +
+                        "Defines how many total digits (including digits to the left and right of the decimal) to display of a number. A negative precision will throw an error.\n" +
+                        "\n" +
+                        "5.toString()\n" +
+                        "Returns the string representation of the number's value. The function is passed the radix, an integer between 2 and 36 specifying the base to use for representing numeric values.\n" +
+                        "\n" +
+                        "6.valueOf()\n" +
+                        "Returns the number's primitive value.",
+                "",
+                ""
+        );
+        list.add(l1);
+        list.add(l2);
+        list.add(l3);
+        list.add(l4);
+        list.add(l5);
+        return list;
+    }
+    //TypeScript Strings
+    private static List<LearnDetailsModel> TypeScriptStrings(){
+        final List<LearnDetailsModel> list = new ArrayList<>();
+        final LearnDetailsModel l1 = new LearnDetailsModel(
+                "TypeScript Strings",
+                "The String object lets you work with a series of characters. It wraps the string primitive data type with a number of helper methods.\n" +
+                        "\n" +
+                        "Syntax\n" +
+                        "var var_name = new String(string);" +
+                        "\n\n" +
+                        "A list of the methods available in String object along with their description is given below −" +
+                        "\n\n" +
+                        "1.Constructor\n" +
+                        "Returns a reference to the String function that created the object.\n" +
+                        "\n" +
+                        "2.Length\n" +
+                        "Returns the length of the string.\n" +
+                        "\n" +
+                        "3.Prototype\n" +
+                        "The prototype property allows you to add properties and methods to an object.",
+                "",
+                ""
+        );
+        final LearnDetailsModel l2 = new LearnDetailsModel(
+                "String Methods",
+                "A list of the methods available in String object along with their description is given below −" +
+                        "\n\n" +
+                        "1.charAt()\n" +
+                        "Returns the character at the specified index.\n" +
+                        "\n" +
+                        "2.charCodeAt()\n" +
+                        "Returns a number indicating the Unicode value of the character at the given index.\n" +
+                        "\n" +
+                        "3.concat()\n" +
+                        "Combines the text of two strings and returns a new string.\n" +
+                        "\n" +
+                        "4.indexOf()\n" +
+                        "Returns the index within the calling String object of the first occurrence of the specified value, or -1 if not found.\n" +
+                        "\n" +
+                        "5.lastIndexOf()\n" +
+                        "Returns the index within the calling String object of the last occurrence of the specified value, or -1 if not found.\n" +
+                        "\n" +
+                        "6.localeCompare()\n" +
+                        "Returns a number indicating whether a reference string comes before or after or is the same as the given string in sort order.\n" +
+                        "\n" +
+                        "7.match()\n" +
+                        "Used to match a regular expression against a string.\n" +
+                        "\n" +
+                        "8.replace()\n" +
+                        "Used to find a match between a regular expression and a string, and to replace the matched substring with a new substring.\n" +
+                        "\n" +
+                        "9.search()\n" +
+                        "Executes the search for a match between a regular expression and a specified string.\n" +
+                        "\n" +
+                        "10.slice()\n" +
+                        "Extracts a section of a string and returns a new string.\n" +
+                        "\n" +
+                        "11.split()\n" +
+                        "Splits a String object into an array of strings by separating the string into substrings.\n" +
+                        "\n" +
+                        "12.substr()\n" +
+                        "Returns the characters in a string beginning at the specified location through the specified number of characters.\n" +
+                        "\n" +
+                        "13.substring()\n" +
+                        "Returns the characters in a string between two indexes into the string.\n" +
+                        "\n" +
+                        "14.toLocaleLowerCase()\n" +
+                        "The characters within a string are converted to lower case while respecting the current locale.\n" +
+                        "\n" +
+                        "15.toLocaleUpperCase()\n" +
+                        "The characters within a string are converted to upper case while respecting the current locale.\n" +
+                        "\n" +
+                        "16.toLowerCase()\n" +
+                        "Returns the calling string value converted to lower case.\n" +
+                        "\n" +
+                        "17.toString()\n" +
+                        "Returns a string representing the specified object.\n" +
+                        "\n" +
+                        "18.toUpperCase()\n" +
+                        "Returns the calling string value converted to uppercase.\n" +
+                        "\n" +
+                        "19.valueOf()\n" +
+                        "Returns the primitive value of the specified object.",
+                "",
+                ""
+        );
+
+        list.add(l1);
+        list.add(l2);
+        return list;
+    }
+    //TypeScript Arrays
+    private static List<LearnDetailsModel> TypeScriptArrays(){
+        final List<LearnDetailsModel> list = new ArrayList<>();
+        final LearnDetailsModel l1 = new LearnDetailsModel(
+                "TypeScript Arrays",
+                "The use of variables to store values poses the following limitations −\n" +
+                        "\n" +
+                        "Variables are scalar in nature. In other words, a variable declaration can only contain a single at a time. This means that to store n values in a program n variable declarations will be needed. Hence, the use of variables is not feasible when one needs to store a larger collection of values.\n" +
+                        "\n" +
+                        "Variables in a program are allocated memory in random order, thereby making it difficult to retrieve/read the values in the order of their declaration.\n" +
+                        "\n" +
+                        "TypeScript introduces the concept of arrays to tackle the same. An array is a homogenous collection of values. To simplify, an array is a collection of values of the same data type. It is a user defined type." +
+                        "\n\n" +
+                        "Features of an Array\n\n" +
+                        "Here is a list of the features of an array −\n" +
+                        "\n" +
+                        "An array declaration allocates sequential memory blocks.\n" +
+                        "\n" +
+                        "Arrays are static. This means that an array once initialized cannot be resized.\n" +
+                        "\n" +
+                        "Each memory block represents an array element.\n" +
+                        "\n" +
+                        "Array elements are identified by a unique integer called as the subscript / index of the element.\n" +
+                        "\n" +
+                        "Like variables, arrays too, should be declared before they are used. Use the var keyword to declare an array.\n" +
+                        "\n" +
+                        "Array initialization refers to populating the array elements.\n" +
+                        "\n" +
+                        "Array element values can be updated or modified but cannot be deleted.\n" +
+                        "\n" +
+                        "Declaring and Initializing Arrays\n\n" +
+                        "To declare an initialize an array in Typescript use the following syntax −\n" +
+                        "\n" +
+                        "Syntax:\n" +
+                        "var array_name[:datatype];        //declaration \n" +
+                        "array_name = [val1,val2,valn..]   //initialization\n" +
+                        "An array declaration without the data type is deemed to be of the type any. The type of such an array is inferred from the data type of the array’s first element during initialization.",
+                "",
+                ""
+        );
+        final LearnDetailsModel l2 = new LearnDetailsModel(
+                "Accessing Array Elements",
+                "The array name followed by the subscript is used refer to an array element. Its syntax is as follows −\n" +
+                        "\n" +
+                        "array_name[subscript] = value",
+                "var alphas:string[]; \n" +
+                        "alphas = [\"1\",\"2\",\"3\",\"4\"] \n" +
+                        "console.log(alphas[0]); \n" +
+                        "console.log(alphas[1]);",
+                "1\n" +
+                        "2 "
+        );
+        final LearnDetailsModel l3 = new LearnDetailsModel(
+                "Array Object",
+                "An array can also be created using the Array object. The Array constructor can be passed.\n" +
+                        "\n" +
+                        "A numeric value that represents the size of the array or\n" +
+                        "\n" +
+                        "A list of comma separated values.\n" +
+                        "\n" +
+                        "The following example shows how to create an array using this method.",
+                "var arr_names:number[] = new Array(4)  \n" +
+                        "\n" +
+                        "for(var i = 0;i<arr_names.length;i++) { \n" +
+                        "   arr_names[i] = i * 2 \n" +
+                        "   console.log(arr_names[i]) \n" +
+                        "}",
+                "0 \n" +
+                        "2 \n" +
+                        "4 \n" +
+                        "6"
+        );
+        final LearnDetailsModel l4 = new LearnDetailsModel(
+                "Array Methods",
+                "A list of the methods of the Array object along with their description is given below." +
+                        "\n\n" +
+                        "1.concat()\n" +
+                        "Returns a new array comprised of this array joined with other array(s) and/or value(s).\n" +
+                        "\n" +
+                        "2.every()\n" +
+                        "Returns true if every element in this array satisfies the provided testing function.\n" +
+                        "\n" +
+                        "3.filter()\n" +
+                        "Creates a new array with all of the elements of this array for which the provided filtering function returns true.\n" +
+                        "\n" +
+                        "4.forEach()\n" +
+                        "Calls a function for each element in the array.\n" +
+                        "\n" +
+                        "5.indexOf()\n" +
+                        "Returns the first (least) index of an element within the array equal to the specified value, or -1 if none is found.\n" +
+                        "\n" +
+                        "6.join()\n" +
+                        "Joins all elements of an array into a string.\n" +
+                        "\n" +
+                        "7.lastIndexOf()\n" +
+                        "Returns the last (greatest) index of an element within the array equal to the specified value, or -1 if none is found.\n" +
+                        "\n" +
+                        "8.map()\n" +
+                        "Creates a new array with the results of calling a provided function on every element in this array.\n" +
+                        "\n" +
+                        "9.pop()\n" +
+                        "Removes the last element from an array and returns that element.\n" +
+                        "\n" +
+                        "10.push()\n" +
+                        "Adds one or more elements to the end of an array and returns the new length of the array.\n" +
+                        "\n" +
+                        "11.reduce()\n" +
+                        "Apply a function simultaneously against two values of the array (from left-to-right) as to reduce it to a single value.\n" +
+                        "\n" +
+                        "12.reduceRight()\n" +
+                        "Apply a function simultaneously against two values of the array (from right-to-left) as to reduce it to a single value.\n" +
+                        "\n" +
+                        "13.reverse()\n" +
+                        "Reverses the order of the elements of an array -- the first becomes the last, and the last becomes the first.\n" +
+                        "\n" +
+                        "14.shift()\n" +
+                        "Removes the first element from an array and returns that element.\n" +
+                        "\n" +
+                        "15.slice()\n" +
+                        "Extracts a section of an array and returns a new array.\n" +
+                        "\n" +
+                        "16.some()\n" +
+                        "Returns true if at least one element in this array satisfies the provided testing function.\n" +
+                        "\n" +
+                        "17.sort()\n" +
+                        "Sorts the elements of an array.\n" +
+                        "\n" +
+                        "18.splice()\n" +
+                        "Adds and/or removes elements from an array.\n" +
+                        "\n" +
+                        "19.toString()\n" +
+                        "Returns a string representing the array and its elements.\n" +
+                        "\n" +
+                        "20.unshift()\n" +
+                        "Adds one or more elements to the front of an array and returns the new length of the array.",
+                "",
+                ""
+        );
+        final LearnDetailsModel l5 = new LearnDetailsModel(
+                "Array Destructuring",
+                "Refers to breaking up the structure of an entity. TypeScript supports destructuring when used in the context of an array.",
+                "var arr:number[] = [12,13] \n" +
+                        "var[x,y] = arr \n" +
+                        "console.log(x) \n" +
+                        "console.log(y)",
+                "12 \n" +
+                        "13"
+        );
+        final LearnDetailsModel l6 = new LearnDetailsModel(
+                "Array Traversal using for…in loop",
+                "One can use the for…in loop to traverse through an array.",
+                "var j:any; \n" +
+                        "var nums:number[] = [1001,1002,1003,1004] \n" +
+                        "\n" +
+                        "for(j in nums) { \n" +
+                        "   console.log(nums[j]) \n" +
+                        "}",
+                "1001 \n" +
+                        "1002 \n" +
+                        "1003 \n" +
+                        "1004"
+        );
+        final LearnDetailsModel l7 = new LearnDetailsModel(
+                "Arrays in TypeScript",
+                "TypeScript supports the following concepts in arrays −",
+                "1.Multi-dimensional arrays\n" +
+                        "TypeScript supports multidimensional arrays. The simplest form of the multidimensional array is the twodimensional array.\n" +
+                        "\n" +
+                        "2.Passing arrays to functions\n" +
+                        "You can pass to the function a pointer to an array by specifying the array's name without an index.\n" +
+                        "\n" +
+                        "3.Return array from functions\n" +
+                        "Allows a function to return an array",
+                ""
+        );
+
+        list.add(l1);
+        list.add(l2);
+        list.add(l3);
+        list.add(l4);
+        list.add(l5);
+        list.add(l6);
+        list.add(l7);
+        return list;
+    }
+    //TypeScript Tuples
+    private static List<LearnDetailsModel> TypeScriptTuples(){
+        final List<LearnDetailsModel> list = new ArrayList<>();
+        final LearnDetailsModel l1 = new LearnDetailsModel(
+                "TypeScript Tuples",
+                "At times, there might be a need to store a collection of values of varied types. Arrays will not serve this purpose. TypeScript gives us a data type called tuple that helps to achieve such a purpose.\n" +
+                        "\n" +
+                        "It represents a heterogeneous collection of values. In other words, tuples enable storing multiple fields of different types. Tuples can also be passed as parameters to functions.\n" +
+                        "\n" +
+                        "Syntax:\n" +
+                        "var tuple_name = [value1,value2,value3,…value n]",
+                "var myTuple = [10,\"Hello\"];",
+                ""
+        );
+        final LearnDetailsModel l2 = new LearnDetailsModel(
+                "Accessing values in Tuples",
+                "Tuple values are individually called items. Tuples are index based. This means that items in a tuple can be accessed using their corresponding numeric index. Tuple item’s index starts from zero and extends up to n-1(where n is the tuple’s size).\n" +
+                        "\n" +
+                        "Syntax:\n" +
+                        "tuple_name[index]",
+                "var myTuple = [10,\"Hello\"];\n" +
+                        "console.log(myTuple[0]) \n" +
+                        "console.log(myTuple[1])",
+                "10 \n" +
+                        "Hello"
+        );
+        final LearnDetailsModel l3 = new LearnDetailsModel(
+                "Tuple Operations",
+                "Tuples in TypeScript supports various operations like pushing a new item, removing an item from the tuple, etc." +
+                        "\n\n" +
+                        "The push() appends an item to the tuple\n" +
+                        "\n" +
+                        "The pop() removes and returns the last value in the tuple",
+                "var myTuple = [10,\"Hello\",\"World\",\"typeScript\"]; \n" +
+                        "console.log(\"Items before push \"+myTuple.length)\n" +
+                        "\n" +
+                        "myTuple.push(12)\n" +
+                        "console.log(\"Items after push \"+myTuple.length) \n" +
+                        "console.log(\"Items before pop \"+myTuple.length) \n" +
+                        "console.log(myTuple.pop()+\" popped from the tuple\")\n" +
+                        "  \n" +
+                        "console.log(\"Items after pop \"+myTuple.length)",
+                "Items before push 4 \n" +
+                        "Items after push 5 \n" +
+                        "Items before pop 5 \n" +
+                        "12 popped from the tuple \n" +
+                        "Items after pop 4"
+        );
+        final LearnDetailsModel l4 = new LearnDetailsModel(
+                "Updating Tuples",
+                "Tuples are mutable which means you can update or change the values of tuple elements.",
+                "var mytuple = [10,\"Hello\",\"World\",\"typeScript\"];\n" +
+                        "console.log(\"Tuple value at index 0 \"+mytuple[0]) \n" +
+                        "\n" +
+                        "mytuple[0] = 121     \n" +
+                        "console.log(\"Tuple value at index 0 changed to   \"+mytuple[0])",
+                "Tuple value at index 0 10 \n" +
+                        "Tuple value at index 0 changed to 121"
+        );
+        final LearnDetailsModel l5 = new LearnDetailsModel(
+                "Destructuring a Tuple",
+                "Destructuring refers to breaking up the structure of an entity. TypeScript supports destructuring when used in the context of a tuple.",
+                "var a =[10,\"hello\"] \n" +
+                        "var [b,c] = a \n" +
+                        "console.log( b )\n" +
+                        "console.log( c )",
+                "10 \n" +
+                        "hello"
+        );
+        list.add(l1);
+        list.add(l2);
+        list.add(l3);
+        list.add(l4);
+        list.add(l5);
+        return list;
+    }
+    //TypeScript Union
+    private static List<LearnDetailsModel> TypeScriptUnion(){
+        final List<LearnDetailsModel> list = new ArrayList<>();
+        final LearnDetailsModel l1 = new LearnDetailsModel(
+                "TypeScript Union",
+                "TypeScript 1.4 gives programs the ability to combine one or two types. Union types are a powerful way to express a value that can be one of the several types. Two or more data types are combined using the pipe symbol (|) to denote a Union Type. In other words, a union type is written as a sequence of types separated by vertical bars.\n" +
+                        "\n" +
+                        "Syntax: Union literal\n" +
+                        "Type1|Type2|Type3 ",
+                "var val:string|number \n" +
+                        "val = 12 \n" +
+                        "console.log(\"numeric value of val \"+val) \n" +
+                        "val = \"This is a string\" \n" +
+                        "console.log(\"string value of val \"+val)",
+                "numeric value of val  12 \n" +
+                        "string value of val this is a string"
+        );
+        final LearnDetailsModel l2 = new LearnDetailsModel(
+                "Example: Union Type and function parameter",
+                "The function disp() can accept argument either of the type string or a string array.",
+                "function disp(name:string|string[]) { \n" +
+                        "   if(typeof name == \"string\") { \n" +
+                        "      console.log(name) \n" +
+                        "   } else { \n" +
+                        "      var i; \n" +
+                        "      \n" +
+                        "      for(i = 0;i<name.length;i++) { \n" +
+                        "         console.log(name[i])\n" +
+                        "      } \n" +
+                        "   } \n" +
+                        "} \n" +
+                        "disp(\"anne\") \n" +
+                        "console.log(\"Printing names array....\") \n" +
+                        "disp([\"Mark\",\"Tom\",\"Mary\",\"John\"])",
+                "anne \n" +
+                        "Printing names array…. \n" +
+                        "anne \n" +
+                        "Tom\n" +
+                        "Mary\n" +
+                        "John"
+        );
+        final LearnDetailsModel l3 = new LearnDetailsModel(
+                "Union Type and Arrays",
+                "Union types can also be applied to arrays, properties and interfaces. The following illustrates the use of union type with an array.",
+                "var arr:number[]|string[]; \n" +
+                        "var i:number; \n" +
+                        "arr = [1,2,4] \n" +
+                        "console.log(\"**numeric array**\")  \n" +
+                        "\n" +
+                        "for(i = 0;i<arr.length;i++) { \n" +
+                        "   console.log(arr[i]) \n" +
+                        "}  \n" +
+                        "\n" +
+                        "arr = [\"USA\",\"UK\",\"Paris\"] \n" +
+                        "console.log(\"**string array**\")  \n" +
+                        "\n" +
+                        "for(i = 0;i<arr.length;i++) { \n" +
+                        "   console.log(arr[i]) \n" +
+                        "}",
+                "**numeric array** \n" +
+                        "1 \n" +
+                        "2 \n" +
+                        "4 \n" +
+                        "**string array** \n" +
+                        "USA \n" +
+                        "UK \n" +
+                        "Paris"
+        );
+        list.add(l1);
+        list.add(l2);
+        list.add(l3);
+        return list;
+    }
+    //TypeScript Interfaces
+    private static List<LearnDetailsModel> TypeScriptInterfaces(){
+        final List<LearnDetailsModel> list = new ArrayList<>();
+        final LearnDetailsModel l1 = new LearnDetailsModel(
+                "TypeScript Interfaces",
+                "An interface is a syntactical contract that an entity should conform to. In other words, an interface defines the syntax that any entity must adhere to.\n" +
+                        "\n" +
+                        "Interfaces define properties, methods, and events, which are the members of the interface. Interfaces contain only the declaration of the members. It is the responsibility of the deriving class to define the members. It often helps in providing a standard structure that the deriving classes would follow.",
+                "var person = { \n" +
+                        "   FirstName:\"Anne\", \n" +
+                        "   LastName:\"Moore\", \n" +
+                        "   sayHi: ()=>{ return \"Hi\"} \n" +
+                        "};",
+                ""
+        );
+        final LearnDetailsModel l2 = new LearnDetailsModel(
+                "Declaring Interfaces",
+                "The interface keyword is used to declare an interface. Here is the syntax to declare an interface −\n" +
+                        "\n" +
+                        "Syntax:\n" +
+                        "interface interface_name { \n" +
+                        "}" +
+                        "\n\n" +
+                        "The example defines an interface. The customer object is of the type IPerson. Hence, it will now be binding on the object to define all properties as specified by the interface.\n" +
+                        "\n" +
+                        "Another object with following signature, is still considered as IPerson because that object is treated by its size or signature.",
+                "interface IPerson { \n" +
+                        "   firstName:string, \n" +
+                        "   lastName:string, \n" +
+                        "   sayHi: ()=>string \n" +
+                        "} \n" +
+                        "\n" +
+                        "var customer:IPerson = { \n" +
+                        "   firstName:\"Anne\",\n" +
+                        "   lastName:\"Moore\", \n" +
+                        "   sayHi: ():string =>{return \"Hi there\"} \n" +
+                        "} \n" +
+                        "\n" +
+                        "console.log(\"Customer Object \") \n" +
+                        "console.log(customer.firstName) \n" +
+                        "console.log(customer.lastName) \n" +
+                        "console.log(customer.sayHi())  \n" +
+                        "\n" +
+                        "var employee:IPerson = { \n" +
+                        "   firstName:\"Emma\",\n" +
+                        "   lastName:\"Watson\", \n" +
+                        "   sayHi: ():string =>{return \"Hello!!!\"} \n" +
+                        "} \n" +
+                        "  \n" +
+                        "console.log(\"Employee  Object \") \n" +
+                        "console.log(employee.firstName);\n" +
+                        "console.log(employee.lastName);",
+                "Customer object \n" +
+                        "Anne \n" +
+                        "Moore \n" +
+                        "Hi there \n" +
+                        "Employee  object \n" +
+                        "Emma  \n" +
+                        "Watson \n" +
+                        "Hello!!!"
+        );
+        final LearnDetailsModel l3 = new LearnDetailsModel(
+                "Union Type and Interface",
+                "The following example shows the use of Union Type and Interface −",
+                "interface RunOptions { \n" +
+                        "   program:string; \n" +
+                        "   commandline:string[]|string|(()=>string); \n" +
+                        "} \n" +
+                        "\n" +
+                        "var options:RunOptions = {program:\"test1\",commandline:\"Hello\"}; \n" +
+                        "console.log(options.commandline)  \n" +
+                        "\n" +
+                        "options = {program:\"test1\",commandline:[\"Hello\",\"World\"]}; \n" +
+                        "console.log(options.commandline[0]); \n" +
+                        "console.log(options.commandline[1]);  \n" +
+                        "\n" +
+                        "options = {program:\"test1\",commandline:()=>{return \"**Hello World**\";}}; \n" +
+                        "\n" +
+                        "var fn:any = options.commandline; \n" +
+                        "console.log(fn());",
+                "Hello \n" +
+                        "Hello \n" +
+                        "World \n" +
+                        "**Hello World**"
+        );
+        final LearnDetailsModel l4 = new LearnDetailsModel(
+                "Interfaces and Arrays",
+                "Interface can define both the kind of key an array uses and the type of entry it contains. Index can be of type string or type number.",
+                "interface namelist { \n" +
+                        "   [index:number]:string \n" +
+                        "} \n" +
+                        "\n" +
+                        "var list2:namelist = [\"Anne\",1,\"Bran\"] //Error. 1 is not type string  \n" +
+                        "interface ages { \n" +
+                        "   [index:string]:number \n" +
+                        "} \n" +
+                        "\n" +
+                        "var agelist:ages; \n" +
+                        "agelist[\"Anne\"] = 15   // Ok \n" +
+                        "agelist[2] = \"nine\"   // Error",
+                ""
+        );
+        final LearnDetailsModel l5 = new LearnDetailsModel(
+                "Interfaces and Inheritance",
+                "An interface can be extended by other interfaces. In other words, an interface can inherit from other interface. Typescript allows an interface to inherit from multiple interfaces.\n" +
+                        "\n" +
+                        "Use the extends keyword to implement inheritance among interfaces.\n" +
+                        "\n" +
+                        "Syntax: Single Interface Inheritance\n\n" +
+                        "Child_interface_name extends super_interface_name\n\n" +
+                        "Syntax: Multiple Interface Inheritance\n\n" +
+                        "Child_interface_name extends super_interface1_name, \n" +
+                        "super_interface2_name,…,super_interfaceN_name",
+                "",
+                ""
+        );
+        final LearnDetailsModel l6 = new LearnDetailsModel(
+                "Simple Interface Inheritance",
+                "Example: Simple Interface Inheritance",
+                "interface Person { \n" +
+                        "   age:number \n" +
+                        "} \n" +
+                        "\n" +
+                        "interface Musician extends Person { \n" +
+                        "   instrument:string \n" +
+                        "} \n" +
+                        "\n" +
+                        "var guitar = <Musician>{}; \n" +
+                        "guitar.age = 21 \n" +
+                        "guitar.instrument = \"Guitar\" \n" +
+                        "console.log(\"Age:  \"+guitar.age) console.log(\"Instrument:  \"+guitar.instrument)",
+                "Age: 21 \n" +
+                        "Instrument: Guitar"
+        );final LearnDetailsModel l7 = new LearnDetailsModel(
+                "Multiple Interface Inheritance",
+                "Example: Multiple Interface Inheritance" +
+                        "\n\n" +
+                        "The object Iobj is of the type interface leaf. The interface leaf by the virtue of inheritance now has two attributes- v1 and v2 respectively. Hence, the object Iobj must now contain these attributes.",
+                "interface IParent1 { \n" +
+                        "   v1:number \n" +
+                        "} \n" +
+                        "\n" +
+                        "interface IParent2 { \n" +
+                        "   v2:number \n" +
+                        "} \n" +
+                        "\n" +
+                        "interface Child extends IParent1, IParent2 { } \n" +
+                        "var Iobj:Child = { v1:12, v2:23} \n" +
+                        "console.log(\"value 1: \"+this.v1+\" value 2: \"+this.v2)",
+                "value 1: 12   value 2: 23"
+        );
+        list.add(l1);
+        list.add(l2);
+        list.add(l3);
+        list.add(l4);
+        list.add(l5);
+        list.add(l6);
+        list.add(l7);
+        return list;
+    }
+    //TypeScript Classes
+    private static List<LearnDetailsModel> TypeScriptClasses(){
+        final List<LearnDetailsModel> list = new ArrayList<>();
+        final LearnDetailsModel l1 = new LearnDetailsModel(
+                "TypeScript Classes",
+                "TypeScript is object oriented JavaScript. TypeScript supports object-oriented programming features like classes, interfaces, etc. A class in terms of OOP is a blueprint for creating objects. A class encapsulates data for the object. Typescript gives built in support for this concept called class. JavaScript ES5 or earlier didn’t support classes. Typescript gets this feature from ES6.\n" +
+                        "\n" +
+                        "Creating classes\n" +
+                        "Use the class keyword to declare a class in TypeScript. The syntax for the same is given below −\n" +
+                        "\n" +
+                        "Syntax\n" +
+                        "class class_name { \n" +
+                        "   //class scope \n" +
+                        "}\n" +
+                        "The class keyword is followed by the class name. The rules for identifiers must be considered while naming a class.\n" +
+                        "\n" +
+                        "A class definition can include the following −\n" +
+                        "\n" +
+                        "Fields − A field is any variable declared in a class. Fields represent data pertaining to objects\n" +
+                        "\n" +
+                        "Constructors − Responsible for allocating memory for the objects of the class\n" +
+                        "\n" +
+                        "Functions − Functions represent actions an object can take. They are also at times referred to as methods\n" +
+                        "\n" +
+                        "These components put together are termed as the data members of the class.\n" +
+                        "\n" +
+                        "Consider a class Person in typescript.\n" +
+                        "\n" +
+                        "class Person {\n" +
+                        "}",
+                "class Car { \n" +
+                        "   //field \n" +
+                        "   engine:string; \n" +
+                        " \n" +
+                        "   //constructor \n" +
+                        "   constructor(engine:string) { \n" +
+                        "      this.engine = engine \n" +
+                        "   }  \n" +
+                        "\n" +
+                        "   //function \n" +
+                        "   disp():void { \n" +
+                        "      console.log(\"Engine is  :   \"+this.engine) \n" +
+                        "   } \n" +
+                        "}",
+                ""
+        );
+        final LearnDetailsModel l2 = new LearnDetailsModel(
+                "Creating Instance objects",
+                "To create an instance of the class, use the new keyword followed by the class name. The syntax for the same is given below −\n" +
+                        "\n" +
+                        "Syntax\n" +
+                        "var object_name = new class_name([ arguments ])\n" +
+                        "The new keyword is responsible for instantiation.\n" +
+                        "\n" +
+                        "The right-hand side of the expression invokes the constructor. The constructor should be passed values if it is parameterized.\n" +
+                        "\n" +
+                        "Example: Instantiating a class\n" +
+                        "var obj = new Car(\"Engine 1\")",
+                "var obj = new Car(\"Engine 1\")",
+                ""
+        );
+        final LearnDetailsModel l3 = new LearnDetailsModel(
+                "Accessing Attributes and Functions",
+                "A class’s attributes and functions can be accessed through the object. Use the ‘ . ’ dot notation (called as the period) to access the data members of a class.\n" +
+                        "\n" +
+                        "//accessing an attribute \n" +
+                        "obj.field_name \n" +
+                        "\n" +
+                        "//accessing a function \n" +
+                        "obj.function_name()",
+                "class Car { \n" +
+                        "   //field \n" +
+                        "   engine:string; \n" +
+                        "   \n" +
+                        "   //constructor \n" +
+                        "   constructor(engine:string) { \n" +
+                        "      this.engine = engine \n" +
+                        "   }  \n" +
+                        "   \n" +
+                        "   //function \n" +
+                        "   disp():void { \n" +
+                        "      console.log(\"Function displays Engine is  :   \"+this.engine) \n" +
+                        "   } \n" +
+                        "} \n" +
+                        "\n" +
+                        "//create an object \n" +
+                        "var obj = new Car(\"XXSY1\")\n" +
+                        "\n" +
+                        "//access the field \n" +
+                        "console.log(\"Reading attribute value Engine as :  \"+obj.engine)  \n" +
+                        "\n" +
+                        "//access the function\n" +
+                        "obj.disp()",
+                ""
+        );
+        final LearnDetailsModel l4 = new LearnDetailsModel(
+                "Class Inheritance",
+                "TypeScript supports the concept of Inheritance. Inheritance is the ability of a program to create new classes from an existing class. The class that is extended to create newer classes is called the parent class/super class. The newly created classes are called the child/sub classes.\n" +
+                        "\n" +
+                        "A class inherits from another class using the ‘extends’ keyword. Child classes inherit all properties and methods except private members and constructors from the parent class.\n" +
+                        "\n" +
+                        "Syntax\n" +
+                        "class child_class_name extends parent_class_name",
+                "class Shape { \n" +
+                        "   Area:number \n" +
+                        "   \n" +
+                        "   constructor(a:number) { \n" +
+                        "      this.Area = a \n" +
+                        "   } \n" +
+                        "} \n" +
+                        "\n" +
+                        "class Circle extends Shape { \n" +
+                        "   disp():void { \n" +
+                        "      console.log(\"Area of the circle:  \"+this.Area) \n" +
+                        "   } \n" +
+                        "}\n" +
+                        "  \n" +
+                        "var obj = new Circle(223); \n" +
+                        "obj.disp()",
+                "Area of the Circle: 223"
+        );
+        final LearnDetailsModel l5 = new LearnDetailsModel(
+                "Class inheritance and Method Overriding",
+                "Method Overriding is a mechanism by which the child class redefines the superclass’s method. The following example illustrates the same −" +
+                        "\n\n" +
+                        "The super keyword is used to refer to the immediate parent of a class. The keyword can be used to refer to the super class version of a variable, property or method. Line 13 invokes the super class version of the doWork() function." +
+                        "",
+                "class PrinterClass { \n" +
+                        "   doPrint():void {\n" +
+                        "      console.log(\"doPrint() from Parent called…\") \n" +
+                        "   } \n" +
+                        "} \n" +
+                        "\n" +
+                        "class StringPrinter extends PrinterClass { \n" +
+                        "   doPrint():void { \n" +
+                        "      super.doPrint() \n" +
+                        "      console.log(\"doPrint() is printing a string…\")\n" +
+                        "   } \n" +
+                        "} \n" +
+                        "\n" +
+                        "var obj = new StringPrinter() \n" +
+                        "obj.doPrint()",
+                "doPrint() from Parent called… \n" +
+                        "doPrint() is printing a string…"
+        );
+        final LearnDetailsModel l6 = new LearnDetailsModel(
+                "The static Keyword",
+                "The static keyword can be applied to the data members of a class. A static variable retains its values till the program finishes execution. Static members are referenced by the class name.",
+                "class StaticMem {  \n" +
+                        "   static num:number; \n" +
+                        "   \n" +
+                        "   static disp():void { \n" +
+                        "      console.log(\"The value of num is\"+ StaticMem.num) \n" +
+                        "   } \n" +
+                        "} \n" +
+                        "\n" +
+                        "StaticMem.num = 12\n" +
+                        "StaticMem.disp()",
+                "The value of num is 12"
+        );
+        final LearnDetailsModel l7 = new LearnDetailsModel(
+                "The instanceof operator",
+                "The instanceof operator returns true if the object belongs to the specified type.",
+                "class Person{ } \n" +
+                        "var obj = new Person() \n" +
+                        "var isPerson = obj instanceof Person; \n" +
+                        "console.log(\" obj is an instance of Person \" + isPerson);",
+                "obj is an instance of Person True"
+        );
+        final LearnDetailsModel l8 = new LearnDetailsModel(
+                "Data Hiding",
+                "A class can control the visibility of its data members to members of other classes. This capability is termed as Data Hiding or Encapsulation.\n" +
+                        "\n" +
+                        "Object Orientation uses the concept of access modifiers or access specifiers to implement the concept of Encapsulation. The access specifiers/modifiers define the visibility of a class’s data members outside its defining class.\n" +
+                        "\n" +
+                        "The access modifiers supported by TypeScript are −" +
+                        "\n\n" +
+                        "1.public\n" +
+                        "\n" +
+                        "A public data member has universal accessibility. Data members in a class are public by default.\n" +
+                        "\n" +
+                        "2.private\n" +
+                        "\n" +
+                        "Private data members are accessible only within the class that defines these members. If an external class member tries to access a private member, the compiler throws an error.\n" +
+                        "\n" +
+                        "3.protected\n" +
+                        "\n" +
+                        "A protected data member is accessible by the members within the same class as that of the former and also by the members of the child classes.",
+                "class Encapsulate { \n" +
+                        "   str:string = \"hello\" \n" +
+                        "   private str2:string = \"world\" \n" +
+                        "}\n" +
+                        " \n" +
+                        "var obj = new Encapsulate() \n" +
+                        "console.log(obj.str)     //accessible \n" +
+                        "console.log(obj.str2)   //compilation Error as str2 is private",
+                ""
+        );final LearnDetailsModel l9 = new LearnDetailsModel(
+                "Classes and Interfaces",
+                "Classes can also implement interfaces.The class AgriLoan implements the interface Loan. Hence, it is now binding on the class to include the property interest as its member.",
+                "interface ILoan { \n" +
+                        "   interest:number \n" +
+                        "} \n" +
+                        "\n" +
+                        "class AgriLoan implements ILoan { \n" +
+                        "   interest:number \n" +
+                        "   rebate:number \n" +
+                        "   \n" +
+                        "   constructor(interest:number,rebate:number) { \n" +
+                        "      this.interest = interest \n" +
+                        "      this.rebate = rebate \n" +
+                        "   } \n" +
+                        "} \n" +
+                        "\n" +
+                        "var obj = new AgriLoan(10,1) \n" +
+                        "console.log(\"Interest is : \"+obj.interest+\" Rebate is : \"+obj.rebate )",
+                "Interest is : 10 Rebate is : 1"
+        );
+
+        list.add(l1);
+        list.add(l2);
+        list.add(l3);
+        list.add(l4);
+        list.add(l5);
+        list.add(l6);
+        list.add(l7);
+        list.add(l8);
+        list.add(l9);
+
+        return list;
+    }
+    //TypeScript Objects
+    private static List<LearnDetailsModel> TypeScriptObjects(){
+        final List<LearnDetailsModel> list = new ArrayList<>();
+        final LearnDetailsModel l1 = new LearnDetailsModel(
+                "TypeScript Objects",
+                "An object is an instance which contains set of key value pairs. The values can be scalar values or functions or even array of other objects. The syntax is given below −\n" +
+                        "\n" +
+                        "Syntax:\n" +
+                        "var object_name = { \n" +
+                        "   key1: “value1”, //scalar value \n" +
+                        "   key2: “value”,  \n" +
+                        "   key3: function() {\n" +
+                        "      //functions \n" +
+                        "   }, \n" +
+                        "   key4:[“content1”, “content2”] //collection  \n" +
+                        "};\n" +
+                        "As shown above, an object can contain scalar values, functions and structures like arrays and tuples.",
+                "var person = { \n" +
+                        "   firstname:\"Anne\", \n" +
+                        "   lastname:\"Moore\" \n" +
+                        "}; \n" +
+                        "console.log(person.firstname) \n" +
+                        "console.log(person.lastname)",
+                "Anne\n" +
+                        "Moore"
+        );
+        final LearnDetailsModel l2 = new LearnDetailsModel(
+                "TypeScript Type Template",
+                "Let’s say you created an object literal in JavaScript as −\n" +
+                        "\n" +
+                        "var person = { \n" +
+                        "   firstname:\"Tom\", \n" +
+                        "   lastname:\"Hanks\" \n" +
+                        "};\n" +
+                        "In case you want to add some value to an object, JavaScript allows you to make the necessary modification. Suppose we need to add a function to the person object later this is the way you can do this.\n" +
+                        "\n" +
+                        "person.sayHello = function(){ return \"hello\";}\n" +
+                        "If you use the same code in Typescript the compiler gives an error. This is because in Typescript, concrete objects should have a type template. Objects in Typescript must be an instance of a particular type.\n" +
+                        "\n" +
+                        "You can solve this by using a method template in declaration.",
+                "var person = {\n" +
+                        "   firstName:\"Anne\", \n" +
+                        "   lastName:\"Moore\", \n" +
+                        "   sayHello:function() {  }\n" +
+                        "} \n" +
+                        "person.sayHello = function() {  \n" +
+                        "   console.log(\"hello \"+person.firstName)\n" +
+                        "}  \n" +
+                        "person.sayHello()",
+                "hello Anne"
+        );
+        final LearnDetailsModel l3 = new LearnDetailsModel(
+                "Objects as function parameters",
+                "Example: Objects as function parameters.The example declares an object literal. The function expression is invoked passing person object.",
+                "var person = { \n" +
+                        "   firstname:\"Anne\", \n" +
+                        "   lastname:\"Moore\" \n" +
+                        "}; \n" +
+                        "var invokeperson = function(obj: { firstname:string, lastname :string }) { \n" +
+                        "   console.log(\"first name :\"+obj.firstname) \n" +
+                        "   console.log(\"last name :\"+obj.lastname) \n" +
+                        "} \n" +
+                        "invokeperson(person)",
+                "first name :Anne \n" +
+                        "last name :Moore"
+        );
+        final LearnDetailsModel l4 = new LearnDetailsModel(
+                "Anonymous Object",
+                "Example: Anonymous Object",
+                "var invokeperson = function(obj:{ firstname:string, lastname :string}) { \n" +
+                        "   console.log(\"first name :\"+obj.firstname) \n" +
+                        "   console.log(\"last name :\"+obj.lastname) \n" +
+                        "} \n" +
+                        "invokeperson({firstname:\"Harry\",lastname:\"Potter\"});",
+                "first name :Harry \n" +
+                        "last name :Potter"
+        );
+        final LearnDetailsModel l5 = new LearnDetailsModel(
+                "Duck-typing",
+                "In duck-typing, two objects are considered to be of the same type if both share the same set of properties. Duck-typing verifies the presence of certain properties in the objects, rather than their actual type, to check their suitability. The concept is generally explained by the following phrase −\n" +
+                        "\n" +
+                        "“When I see a bird that walks like a duck and swims like a duck and quacks like a duck, I call that bird a duck.”\n" +
+                        "\n" +
+                        "The TypeScript compiler implements the duck-typing system that allows object creation on the fly while keeping type safety. The following example shows how we can pass objects that don’t explicitly implement an interface but contain all of the required members to a function.",
+                "interface IPoint { \n" +
+                        "   x:number \n" +
+                        "   y:number \n" +
+                        "} \n" +
+                        "function addPoints(p1:IPoint,p2:IPoint):IPoint { \n" +
+                        "   var x = p1.x + p2.x \n" +
+                        "   var y = p1.y + p2.y \n" +
+                        "   return {x:x,y:y} \n" +
+                        "} \n" +
+                        "\n" +
+                        "//Valid \n" +
+                        "var newPoint = addPoints({x:3,y:4},{x:5,y:1})  \n" +
+                        "\n" +
+                        "//Error \n" +
+                        "var newPoint2 = addPoints({x:1},{x:4,y:3})",
+                ""
+        );
+        list.add(l1);
+        list.add(l2);
+        list.add(l3);
+        list.add(l4);
+        list.add(l5);
+
+        return list;
+    }
+    //TypeScript Namespaces
+    private static List<LearnDetailsModel> TypeScriptNamespaces(){
+        final List<LearnDetailsModel> list = new ArrayList<>();
+        final LearnDetailsModel l1 = new LearnDetailsModel(
+                "TypeScript Namespaces",
+                "A namespace is a way to logically group related code. This is inbuilt into TypeScript unlike in JavaScript where variables declarations go into a global scope and if multiple JavaScript files are used within same project there will be possibility of overwriting or misconstruing the same variables, which will lead to the “global namespace pollution problem” in JavaScript.\n" +
+                        "\n" +
+                        "Defining a Namespace\n" +
+                        "A namespace definition begins with the keyword namespace followed by the namespace name as follows −\n" +
+                        "\n" +
+                        "namespace SomeNameSpaceName { \n" +
+                        "   export interface ISomeInterfaceName {      }  \n" +
+                        "   export class SomeClassName {      }  \n" +
+                        "} \n" +
+                        "The classes or interfaces which should be accessed outside the namespace should be marked with keyword export.\n" +
+                        "\n" +
+                        "To access the class or interface in another namespace, the syntax will be namespaceName.className\n" +
+                        "\n" +
+                        "SomeNameSpaceName.SomeClassName;\n" +
+                        "If the first namespace is in separate TypeScript file, then it should be referenced using triple slash reference syntax.\n" +
+                        "\n" +
+                        "/// <reference path = \"SomeFileName.ts\" />",
+                "FileName :IShape.ts \n" +
+                        "---------- \n" +
+                        "namespace Drawing { \n" +
+                        "   export interface IShape { \n" +
+                        "      draw(); \n" +
+                        "   }\n" +
+                        "}  \n" +
+                        "\n" +
+                        "FileName :Circle.ts \n" +
+                        "---------- \n" +
+                        "/// <reference path = \"IShape.ts\" /> \n" +
+                        "namespace Drawing { \n" +
+                        "   export class Circle implements IShape { \n" +
+                        "      public draw() { \n" +
+                        "         console.log(\"Circle is drawn\"); \n" +
+                        "      }  \n" +
+                        "      \n" +
+                        "      FileName :Triangle.ts \n" +
+                        "      ---------- \n" +
+                        "      /// <reference path = \"IShape.ts\" /> \n" +
+                        "      namespace Drawing { \n" +
+                        "         export class Triangle implements IShape { \n" +
+                        "            public draw() { \n" +
+                        "               console.log(\"Triangle is drawn\"); \n" +
+                        "            } \n" +
+                        "         } \n" +
+                        "         \n" +
+                        "         FileName : TestShape.ts \n" +
+                        "         /// <reference path = \"IShape.ts\" />   \n" +
+                        "         /// <reference path = \"Circle.ts\" /> \n" +
+                        "         /// <reference path = \"Triangle.ts\" />  \n" +
+                        "         function drawAllShapes(shape:Drawing.IShape) { \n" +
+                        "            shape.draw(); \n" +
+                        "         } \n" +
+                        "         drawAllShapes(new Drawing.Circle());\n" +
+                        "         drawAllShapes(new Drawing.Triangle());\n" +
+                        "      }\n" +
+                        "   }\n" +
+                        "}",
+                "Circle is drawn \n" +
+                        "Triangle is drawn"
+        );
+        final LearnDetailsModel l2 = new LearnDetailsModel(
+                "Nested Namespaces",
+                "You can define one namespace inside another namespace as follows −",
+                "namespace namespace_name1 { \n" +
+                        "   export namespace namespace_name2 {\n" +
+                        "      export class class_name {    } \n" +
+                        "   } \n" +
+                        "}",
+                ""
+        );
+        list.add(l1);
+        list.add(l2);
+        return list;
+    }
+    //TypeScript Modules
+    private static List<LearnDetailsModel> TypeScriptModules(){
+        final List<LearnDetailsModel> list = new ArrayList<>();
+        final LearnDetailsModel l1 = new LearnDetailsModel(
+                "TypeScript Modules",
+                "A module is designed with the idea to organize code written in TypeScript. Modules are broadly divided into −\n" +
+                        "\n" +
+                        "Internal Modules\n" +
+                        "External Modules",
+                "",
+                ""
+        );
+        final LearnDetailsModel l2 = new LearnDetailsModel(
+                "Internal Module",
+                "Internal modules came in earlier version of Typescript. This was used to logically group classes, interfaces, functions into one unit and can be exported in another module. This logical grouping is named namespace in latest version of TypeScript. So internal modules are obsolete instead we can use namespace. Internal modules are still supported, but its recommended to use namespace over internal modules.\n" +
+                        "\n" +
+                        "Internal Module Syntax (Old)\n" +
+                        "module shrCreation { \n" +
+                        "   export function add(x, y) {  \n" +
+                        "      console.log(x+y); \n" +
+                        "   } \n" +
+                        "}\n" +
+                        "Namespace Syntax (New)\n" +
+                        "namespace shrCreation { \n" +
+                        "   export function add(x, y) { console.log(x + y);} \n" +
+                        "}",
+                "var shrCreation; \n" +
+                        "(function (shrCreation) { \n" +
+                        "   function add(x, y) { \n" +
+                        "      console.log(x + y); \n" +
+                        "   } \n" +
+                        "   shrCreation.add = add; \n" +
+                        "})(shrCreation || (shrCreation = {}));",
+                ""
+        );
+        final LearnDetailsModel l3 = new LearnDetailsModel(
+                "External Module",
+                "External modules in TypeScript exists to specify and load dependencies between multiple external js files. If there is only one js file used, then external modules are not relevant. Traditionally dependency management between JavaScript files was done using browser script tags (<script></script>). But that’s not extendable, as its very linear while loading modules. That means instead of loading files one after other there is no asynchronous option to load modules. When you are programming js for the server for example NodeJs you don’t even have script tags.\n" +
+                        "\n" +
+                        "There are two scenarios for loading dependents js files from a single main JavaScript file.\n" +
+                        "\n" +
+                        "Client Side - RequireJs\n" +
+                        "Server Side - NodeJs\n" +
+                        "Selecting a Module Loader\n" +
+                        "To support loading external JavaScript files, we need a module loader. This will be another js library. For browser the most common library used is RequieJS. This is an implementation of AMD (Asynchronous Module Definition) specification. Instead of loading files one after the other, AMD can load them all separately, even when they are dependent on each other.\n" +
+                        "\n" +
+                        "Defining External Module\n" +
+                        "When defining external module in TypeScript targeting CommonJS or AMD, each file is considered as a module. So it’s optional to use internal module with in external module.\n" +
+                        "\n" +
+                        "If you are migrating TypeScript from AMD to CommonJs module systems, then there is no additional work needed. The only thing you need to change is just the compiler flag Unlike in JavaScript there is an overhead in migrating from CommonJs to AMD or vice versa.\n" +
+                        "\n" +
+                        "The syntax for declaring an external module is using keyword ‘export’ and ‘import’.\n" +
+                        "\n" +
+                        "Syntax\n" +
+                        "//FileName : SomeInterface.ts \n" +
+                        "export interface SomeInterface { \n" +
+                        "   //code declarations \n" +
+                        "}\n" +
+                        "To use the declared module in another file, an import keyword is used as given below. The file name is only specified no extension used.\n" +
+                        "\n" +
+                        "import someInterfaceRef = require(“./SomeInterface”);",
+                "// IShape.ts \n" +
+                        "export interface IShape { \n" +
+                        "   draw(); \n" +
+                        "}\n" +
+                        "\n" +
+                        "// Circle.ts \n" +
+                        "import shape = require(\"./IShape\"); \n" +
+                        "export class Circle implements shape.IShape { \n" +
+                        "   public draw() { \n" +
+                        "      console.log(\"Cirlce is drawn (external module)\"); \n" +
+                        "   } \n" +
+                        "} \n" +
+                        "\n" +
+                        "// Triangle.ts \n" +
+                        "import shape = require(\"./IShape\"); \n" +
+                        "export class Triangle implements shape.IShape { \n" +
+                        "   public draw() { \n" +
+                        "      console.log(\"Triangle is drawn (external module)\"); \n" +
+                        "   } \n" +
+                        "}\n" +
+                        "   \n" +
+                        "// TestShape.ts \n" +
+                        "import shape = require(\"./IShape\"); \n" +
+                        "import circle = require(\"./Circle\"); \n" +
+                        "import triangle = require(\"./Triangle\");  \n" +
+                        "\n" +
+                        "function drawAllShapes(shapeToDraw: shape.IShape) {\n" +
+                        "   shapeToDraw.draw(); \n" +
+                        "} \n" +
+                        "\n" +
+                        "drawAllShapes(new circle.Circle()); \n" +
+                        "drawAllShapes(new triangle.Triangle()); ",
+                ""
+        );
+        list.add(l1);
+        list.add(l2);
+        list.add(l3);
+        return list;
+    }
+
+
+
+    /*final LearnDetailsModel l1 = new LearnDetailsModel(
+            "",
+            "",
+            "",
+            ""
+    );
+    final LearnDetailsModel l2 = new LearnDetailsModel(
+            "",
+            "",
+            "",
+            ""
+    );
+    final LearnDetailsModel l3 = new LearnDetailsModel(
+            "",
+            "",
+            "",
+            ""
+    );
+    final LearnDetailsModel l4 = new LearnDetailsModel(
+            "",
+            "",
+            "",
+            ""
+    );
+    final LearnDetailsModel l5 = new LearnDetailsModel(
+            "",
+            "",
+            "",
+            ""
+    );
+    final LearnDetailsModel l6 = new LearnDetailsModel(
+            "",
+            "",
+            "",
+            ""
+    );
+    final LearnDetailsModel l7 = new LearnDetailsModel(
+            "",
+            "",
+            "",
+            ""
+    );
+    final LearnDetailsModel l8 = new LearnDetailsModel(
+            "",
+            "",
+            "",
+            ""
+    );
+
+        list.add(l1);
+        list.add(l2);
+        list.add(l3);
+        list.add(l4);
+        list.add(l5);
+        list.add(l6);
+        list.add(l7);
+        list.add(l8);
+        return list;*/
 
     //default
     private static List<LearnDetailsModel> defaultT() {
@@ -7002,6 +9283,43 @@ public class LearnDetailsContent {
                 return AJAXDatabase();
             case "AJAX Applications":
                 return AJAXApplications();
+            //Typescript
+            case "Typescript Introduction":
+                return TypescriptIntroduction();
+            case "TypeScript Basic Syntax":
+                return TypeScriptBasicSyntax();
+            case "TypeScript Types":
+                return TypeScriptTypes();
+            case "TypeScript Variables":
+                return TypeScriptVariables();
+            case "TypeScript Operators":
+                return TypeScriptOperators();
+            case "TypeScript Decision Making":
+                return TypeScriptDecisionMaking();
+            case "TypeScript Loops":
+                return TypeScriptLoops();
+            case "TypeScript Functions":
+                return TypeScriptFunctions();
+            case "TypeScript Numbers":
+                return TypeScriptNumbers();
+            case "TypeScript Strings":
+                return TypeScriptStrings();
+            case "TypeScript Arrays":
+                return TypeScriptArrays();
+            case "TypeScript Tuples":
+                return TypeScriptTuples();
+            case "TypeScript Union":
+                return TypeScriptUnion();
+            case "TypeScript Interfaces":
+                return TypeScriptInterfaces();
+            case "TypeScript Classes":
+                return TypeScriptClasses();
+            case "TypeScript Objects":
+                return TypeScriptObjects();
+            case "TypeScript Namespaces":
+                return TypeScriptNamespaces();
+            case "TypeScript Modules":
+                return TypeScriptModules();
 
             default:
                 return defaultT();
@@ -7011,7 +9329,7 @@ public class LearnDetailsContent {
     }
 
 }
-    /*private static List<LearnDetailsModel> AJAXApplications(){
+    /*private static List<LearnDetailsModel> TypeScriptModules(){
         final List<LearnDetailsModel> list = new ArrayList<>();
         final LearnDetailsModel l1 = new LearnDetailsModel();
 

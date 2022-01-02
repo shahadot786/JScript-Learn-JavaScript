@@ -133,13 +133,6 @@ public class LearnItemsListActivity extends AppCompatActivity {
                 "Web Workers API",
                 "JS Graphics"
         };
-        final String[] Typescript = {
-                "Typescript"
-        };
-
-        final String[] angular = {
-                "Learn angular"
-        };
         final String[] AJAX = {
                 "AJAX Introduction",
                 "AJAX XMLHttp",
@@ -151,6 +144,31 @@ public class LearnItemsListActivity extends AppCompatActivity {
         };
         //final String[] JSON = {};
         //pro content list
+        final String[] Typescript = {
+                "Typescript Introduction",
+                "TypeScript Basic Syntax",
+                "TypeScript Types",
+                "TypeScript Variables",
+                "TypeScript Operators",
+                "TypeScript Decision Making",
+                "TypeScript Loops",
+                "TypeScript Functions",
+                "TypeScript Numbers",
+                "TypeScript Strings",
+                "TypeScript Arrays",
+                "TypeScript Tuples",
+                "TypeScript Union",
+                "TypeScript Interfaces",
+                "TypeScript Classes",
+                "TypeScript Objects",
+                "TypeScript Namespaces",
+                "TypeScript Modules"
+
+        };
+
+        final String[] angular = {
+                "Learn angular"
+        };
         final String[] VueJs = {
                 "Vue Js"
         };
@@ -219,12 +237,6 @@ public class LearnItemsListActivity extends AppCompatActivity {
             case "Advanced":
                 list = advanced;
                 break;
-            case "Typescript":
-                list = Typescript;
-                break;
-            case "Angular":
-                list = angular;
-                break;
             case "AJAX":
                 list = AJAX;
                 break;
@@ -232,6 +244,12 @@ public class LearnItemsListActivity extends AppCompatActivity {
                 list = JSON;
                 break;*/
             //pro content
+            case "Typescript":
+                list = Typescript;
+                break;
+            case "Angular":
+                list = angular;
+                break;
             case "Vue Js":
                 list = VueJs;
                 break;

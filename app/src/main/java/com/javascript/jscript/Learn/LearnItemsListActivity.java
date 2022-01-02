@@ -167,7 +167,25 @@ public class LearnItemsListActivity extends AppCompatActivity {
         };
 
         final String[] angular = {
-                "Learn angular"
+                "AngularJS Introduction",
+                "AngularJS MVC Architecture",
+                "AngularJS First Application",
+                "AngularJS Directives",
+                "AngularJS Expressions",
+                "AngularJS Controllers",
+                "AngularJS Filters",
+                "AngularJS Tables",
+                "AngularJS HTML DOM",
+                "AngularJS Modules",
+                "AngularJS Forms",
+                "AngularJS Includes",
+                "AngularJS Ajax",
+                "AngularJS Views",
+                "AngularJS Scopes",
+                "AngularJS Services",
+                "AngularJS Dependency Injection",
+                "AngularJS Custom Directives"
+
         };
         final String[] VueJs = {
                 "Vue Js"
@@ -193,7 +211,7 @@ public class LearnItemsListActivity extends AppCompatActivity {
         final String[] Bootstrap = {
                 "Bootstrap Js"
         };
-        final String[] NodeJs = {
+        /*final String[] NodeJs = {
                 "Node Js"
         };
         final String[] SpringBoot = {
@@ -210,7 +228,7 @@ public class LearnItemsListActivity extends AppCompatActivity {
         };
         final String[] MochaJs = {
                 "Mocha Js"
-        };
+        };*/
 
 
         String programsItems = getIntent().getStringExtra("learnItems");
@@ -274,7 +292,7 @@ public class LearnItemsListActivity extends AppCompatActivity {
             case "Bootstrap":
                 list = Bootstrap;
                 break;
-            case "Node Js":
+            /*case "Node Js":
                 list = NodeJs;
                 break;
             case "Spring Boot":
@@ -291,7 +309,7 @@ public class LearnItemsListActivity extends AppCompatActivity {
                 break;
             case "Mocha Js":
                 list = MochaJs;
-                break;
+                break;*/
 
 
         }

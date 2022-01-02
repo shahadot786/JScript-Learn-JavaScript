@@ -12,6 +12,8 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.EditText;
 import android.widget.TextView;
@@ -48,10 +50,11 @@ import thereisnospon.codeview.CodeViewTheme;
 public class LearnDetailsActivity extends AppCompatActivity {
 
     ActivityLearnDetailsBinding binding;
+    Animation bottomAnim;
     private AdNetwork adNetwork;
     private List<LearnDetailsModel> learnList;
     private int currentTopicPosition = 0;
-    TextView title, details, outputTxt,toastText;
+    TextView title, details, outputTxt, toastText;
     EditText codesET;
     CodeView codes, output;
     private AppCompatButton prevBtn, nextBtn, shareBtn;
@@ -70,10 +73,10 @@ public class LearnDetailsActivity extends AppCompatActivity {
         setContentView(binding.getRoot());
         //custom toast
         inflater = getLayoutInflater();
-        toastLayout = inflater.inflate(R.layout.custom_toast_layout,(ViewGroup) findViewById(R.id.toastLayout));
+        toastLayout = inflater.inflate(R.layout.custom_toast_layout, (ViewGroup) findViewById(R.id.toastLayout));
         toastText = (TextView) toastLayout.findViewById(R.id.toastText);
         toast = new Toast(getApplicationContext());
-        toast.setGravity(Gravity.BOTTOM,0,200);
+        toast.setGravity(Gravity.BOTTOM, 0, 200);
         toast.setDuration(Toast.LENGTH_LONG);
         toast.setView(toastLayout);
         //firebase instance
@@ -107,6 +110,13 @@ public class LearnDetailsActivity extends AppCompatActivity {
         output = findViewById(R.id.learnOutputView);
         codes.setTheme(CodeViewTheme.ATELIER_SAVANNA_DARK).fillColor();
         output.setTheme(CodeViewTheme.ANDROIDSTUDIO).fillColor();
+        //animations
+        bottomAnim = AnimationUtils.loadAnimation(this, R.anim.bottom_animation);
+        title.setAnimation(bottomAnim);
+        details.setAnimation(bottomAnim);
+        output.setAnimation(bottomAnim);
+        codesET.setAnimation(bottomAnim);
+        writeCodes.setAnimation(bottomAnim);
 
         //button's
         prevBtn = findViewById(R.id.learnPrevBtn);
@@ -145,14 +155,14 @@ public class LearnDetailsActivity extends AppCompatActivity {
         nextBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                    nextBtn.setBackgroundResource(R.drawable.ic_learn_next_button_bg);
-                    adNetwork.showInterstitialAd();
-                    changeNextQuestion();
-                    if (currentTopicPosition == 0) {
-                        prevBtn.setVisibility(View.GONE);
-                    } else {
-                        prevBtn.setVisibility(View.VISIBLE);
-                    }
+                nextBtn.setBackgroundResource(R.drawable.ic_learn_next_button_bg);
+                adNetwork.showInterstitialAd();
+                changeNextQuestion();
+                if (currentTopicPosition == 0) {
+                    prevBtn.setVisibility(View.GONE);
+                } else {
+                    prevBtn.setVisibility(View.VISIBLE);
+                }
                 //hide keyboard
                 InputMethodManager inputMethodManager = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
                 inputMethodManager.hideSoftInputFromWindow(view.getWindowToken(), 0);
@@ -197,6 +207,7 @@ public class LearnDetailsActivity extends AppCompatActivity {
             }
         });
     }//ends of onCreate
+
     private void changeNextQuestion() {
         currentTopicPosition++;
         if ((currentTopicPosition + 1) == learnList.size()) {
@@ -216,14 +227,14 @@ public class LearnDetailsActivity extends AppCompatActivity {
                 codes.setVisibility(View.GONE);
                 outputTxt.setVisibility(View.GONE);
                 writeCodes.setVisibility(View.GONE);
-            }else {
+            } else {
                 codes.setVisibility(View.VISIBLE);
             }
             if (learnList.get(currentTopicPosition).getOutput().equals("")) {
                 output.setVisibility(View.GONE);
                 outputTxt.setVisibility(View.GONE);
                 writeCodes.setVisibility(View.GONE);
-            }else {
+            } else {
                 output.setVisibility(View.VISIBLE);
                 outputTxt.setVisibility(View.VISIBLE);
                 writeCodes.setVisibility(View.VISIBLE);
@@ -272,6 +283,7 @@ public class LearnDetailsActivity extends AppCompatActivity {
             nextBtn.setText(R.string.next);
         }
         if (currentTopicPosition < learnList.size()) {
+
             binding.codesRun.setBackgroundTintList(ColorStateList.valueOf(getResources().getColor(R.color.activeGreen)));
             binding.codesRun.setTextColor(getResources().getColor(R.color.colorWhite));
             codesET.setText(learnList.get(currentTopicPosition).getCodes());
@@ -282,14 +294,14 @@ public class LearnDetailsActivity extends AppCompatActivity {
             if (learnList.get(currentTopicPosition).getCodes().equals("")) {
                 codes.setVisibility(View.GONE);
                 outputTxt.setVisibility(View.GONE);
-            }else {
+            } else {
                 codes.setVisibility(View.VISIBLE);
             }
             writeCodes.setVisibility(View.GONE);
             if (learnList.get(currentTopicPosition).getOutput().equals("")) {
                 output.setVisibility(View.GONE);
                 outputTxt.setVisibility(View.GONE);
-            }else {
+            } else {
                 output.setVisibility(View.VISIBLE);
                 outputTxt.setVisibility(View.VISIBLE);
                 writeCodes.setVisibility(View.VISIBLE);
@@ -297,19 +309,20 @@ public class LearnDetailsActivity extends AppCompatActivity {
 
         }
     }
+
     //write codes method
-    public void runCodes(){
+    public void runCodes() {
         String getCodesET = codesET.getText().toString().trim();
-        if (getCodesET.isEmpty()){
+        if (getCodesET.isEmpty()) {
             toastText.setText(R.string.write_above_code);
             toast.show();
-        }else if (getCodesET.equals(learnList.get(currentTopicPosition).getCodes())){
+        } else if (getCodesET.equals(learnList.get(currentTopicPosition).getCodes())) {
             //change color
             binding.codesRun.setBackgroundTintList(ColorStateList.valueOf(getResources().getColor(R.color.activeGreen)));
             binding.codesRun.setTextColor(getResources().getColor(R.color.colorWhite));
             toastText.setText(learnList.get(currentTopicPosition).getOutput());
             toast.show();
-        }else {
+        } else {
             toastText.setText(R.string.correct_code);
             toast.show();
         }
@@ -349,13 +362,13 @@ public class LearnDetailsActivity extends AppCompatActivity {
                 //we are connected to a network
                 connected = true;
                 startActivity(new Intent(LearnDetailsActivity.this, CodesActivity.class));
-            }else {
+            } else {
                 toastText.setText(R.string.no_connection_text);
                 toast.show();
                 connected = false;
             }
 
-        }else {
+        } else {
             finish();
         }
         return super.onOptionsItemSelected(item);

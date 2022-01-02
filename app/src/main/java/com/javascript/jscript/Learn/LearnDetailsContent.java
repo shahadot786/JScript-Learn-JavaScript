@@ -9052,6 +9052,1986 @@ public class LearnDetailsContent {
         list.add(l3);
         return list;
     }
+    //AngularJS
+    //AngularJS Introduction
+    private static List<LearnDetailsModel> AngularJSIntroduction(){
+        final List<LearnDetailsModel> list = new ArrayList<>();
+        final LearnDetailsModel l1 = new LearnDetailsModel(
+                "Why to Learn AngularJS?",
+                "AngularJS is an open-source web application framework. It was originally developed in 2009 by Misko Hevery and Adam Abrons. It is now maintained by Google. Its latest version is 1.2.21.\n" +
+                        "\n" +
+                        "AngularJS is a efficient framework that can create Rich Internet Applications (RIA).\n" +
+                        "\n" +
+                        "AngularJS provides developers an options to write client side applications using JavaScript in a clean Model View Controller (MVC) way.\n" +
+                        "\n" +
+                        "Applications written in AngularJS are cross-browser compliant. AngularJS automatically handles JavaScript code suitable for each browser.\n" +
+                        "\n" +
+                        "AngularJS is open source, completely free, and used by thousands of developers around the world. It is licensed under the Apache license version 2.0.\n" +
+                        "\n" +
+                        "Overall, AngularJS is a framework to build large scale, high-performance, and easyto-maintain web applications.",
+                "",
+                ""
+        );
+        final LearnDetailsModel l2 = new LearnDetailsModel(
+                "Hello World using AngularJS.",
+                "Just to give you a little excitement about AngularJS, I'm going to give you a small conventional AngularJS Hello World program, You can try it using Demo link.",
+                "<html>\n" +
+                        "   <head>\n" +
+                        "      <title>AngularJS First Application</title>\n" +
+                        "   </head>\n" +
+                        "   \n" +
+                        "   <body>\n" +
+                        "      <h1>Sample Application</h1>\n" +
+                        "      \n" +
+                        "      <div ng-app = \"\">\n" +
+                        "         <p>Enter your Name: <input type = \"text\" ng-model = \"name\"></p>\n" +
+                        "         <p>Hello <span ng-bind = \"name\"></span>!</p>\n" +
+                        "      </div>\n" +
+                        "      \n" +
+                        "      <script src = \"https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js\">\n" +
+                        "      </script>\n" +
+                        "      \n" +
+                        "   </body>\n" +
+                        "</html>",
+                ""
+        );
+        final LearnDetailsModel l3 = new LearnDetailsModel(
+                "General Features",
+                "The general features of AngularJS are as follows −\n" +
+                        "\n" +
+                        "AngularJS is a efficient framework that can create Rich Internet Applications (RIA).\n" +
+                        "\n" +
+                        "AngularJS provides developers an options to write client side applications using JavaScript in a clean Model View Controller (MVC) way.\n" +
+                        "\n" +
+                        "Applications written in AngularJS are cross-browser compliant. AngularJS automatically handles JavaScript code suitable for each browser.\n" +
+                        "\n" +
+                        "AngularJS is open source, completely free, and used by thousands of developers around the world. It is licensed under the Apache license version 2.0.\n" +
+                        "\n" +
+                        "Overall, AngularJS is a framework to build large scale, high-performance, and easyto-maintain web applications.",
+                "",
+                ""
+        );
+        final LearnDetailsModel l4 = new LearnDetailsModel(
+                "Core Features",
+                "The core features of AngularJS are as follows −\n" +
+                        "\n" +
+                        "Data-binding − It is the automatic synchronization of data between model and view components.\n" +
+                        "\n" +
+                        "Scope − These are objects that refer to the model. They act as a glue between controller and view.\n" +
+                        "\n" +
+                        "Controller − These are JavaScript functions bound to a particular scope.\n" +
+                        "\n" +
+                        "Services − AngularJS comes with several built-in services such as $http to make a XMLHttpRequests. These are singleton objects which are instantiated only once in app.\n" +
+                        "\n" +
+                        "Filters − These select a subset of items from an array and returns a new array.\n" +
+                        "\n" +
+                        "Directives − Directives are markers on DOM elements such as elements, attributes, css, and more. These can be used to create custom HTML tags that serve as new, custom widgets. AngularJS has built-in directives such as ngBind, ngModel, etc.\n" +
+                        "\n" +
+                        "Templates − These are the rendered view with information from the controller and model. These can be a single file (such as index.html) or multiple views in one page using partials.\n" +
+                        "\n" +
+                        "Routing − It is concept of switching views.\n" +
+                        "\n" +
+                        "Model View Whatever − MVW is a design pattern for dividing an application into different parts called Model, View, and Controller, each with distinct responsibilities. AngularJS does not implement MVC in the traditional sense, but rather something closer to MVVM (Model-View-ViewModel). The Angular JS team refers it humorously as Model View Whatever.\n" +
+                        "\n" +
+                        "Deep Linking − Deep linking allows to encode the state of application in the URL so that it can be bookmarked. The application can then be restored from the URL to the same state.\n" +
+                        "\n" +
+                        "Dependency Injection − AngularJS has a built-in dependency injection subsystem that helps the developer to create, understand, and test the applications easily.",
+                "",
+                ""
+        );
+        final LearnDetailsModel l5 = new LearnDetailsModel(
+                "Advantages of AngularJS",
+                "The advantages of AngularJS are −\n" +
+                        "\n" +
+                        "It provides the capability to create Single Page Application in a very clean and maintainable way.\n" +
+                        "\n" +
+                        "It provides data binding capability to HTML. Thus, it gives user a rich and responsive experience.\n" +
+                        "\n" +
+                        "AngularJS code is unit testable.\n" +
+                        "\n" +
+                        "AngularJS uses dependency injection and make use of separation of concerns.\n" +
+                        "\n" +
+                        "AngularJS provides reusable components.\n" +
+                        "\n" +
+                        "With AngularJS, the developers can achieve more functionality with short code.\n" +
+                        "\n" +
+                        "In AngularJS, views are pure html pages, and controllers written in JavaScript do the business processing.\n" +
+                        "\n" +
+                        "On the top of everything, AngularJS applications can run on all major browsers and smart phones, including Android and iOS based phones/tablets.",
+                "",
+                ""
+        );
+        final LearnDetailsModel l6 = new LearnDetailsModel(
+                "Disadvantages of AngularJS",
+                "Though AngularJS comes with a lot of merits, here are some points of concern −\n" +
+                        "\n" +
+                        "Not Secure − Being JavaScript only framework, application written in AngularJS are not safe. Server side authentication and authorization is must to keep an application secure.\n" +
+                        "\n" +
+                        "Not degradable − If the user of your application disables JavaScript, then nothing would be visible, except the basic page.",
+                "",
+                ""
+        );
+        final LearnDetailsModel l7 = new LearnDetailsModel(
+                "AngularJS Directives",
+                "The AngularJS framework can be divided into three major parts −\n" +
+                        "\n" +
+                        "ng-app − This directive defines and links an AngularJS application to HTML.\n" +
+                        "\n" +
+                        "ng-model − This directive binds the values of AngularJS application data to HTML input controls.\n" +
+                        "\n" +
+                        "ng-bind − This directive binds the AngularJS application data to HTML tags.",
+                "",
+                ""
+        );
+
+        list.add(l1);
+        list.add(l2);
+        list.add(l3);
+        list.add(l4);
+        list.add(l5);
+        list.add(l6);
+        list.add(l7);
+
+        return list;
+    }
+    //AngularJS MVC Architecture
+    private static List<LearnDetailsModel> AngularJSMVCArchitecture(){
+        final List<LearnDetailsModel> list = new ArrayList<>();
+        final LearnDetailsModel l1 = new LearnDetailsModel(
+                "AngularJS MVC Architecture",
+                "Model View Controller or MVC as it is popularly called, is a software design pattern for developing web applications. A Model View Controller pattern is made up of the following three parts −\n" +
+                        "\n" +
+                        "Model − It is the lowest level of the pattern responsible for maintaining data.\n" +
+                        "\n" +
+                        "View − It is responsible for displaying all or a portion of the data to the user.\n" +
+                        "\n" +
+                        "Controller − It is a software Code that controls the interactions between the Model and View.\n" +
+                        "\n" +
+                        "MVC is popular because it isolates the application logic from the user interface layer and supports separation of concerns. The controller receives all requests for the application and then works with the model to prepare any data needed by the view. The view then uses the data prepared by the controller to generate a final presentable response. The MVC abstraction can be graphically represented.",
+                "",
+                ""
+        );
+        final LearnDetailsModel l2 = new LearnDetailsModel(
+                "The Model",
+                "The model is responsible for managing application data. It responds to the request from view and to the instructions from controller to update itself.",
+                "",
+                ""
+        );
+        final LearnDetailsModel l3 = new LearnDetailsModel(
+                "The View",
+                "A presentation of data in a particular format, triggered by the controller's decision to present the data. They are script-based template systems such as JSP, ASP, PHP and very easy to integrate with AJAX technology.",
+                "",
+                ""
+        );
+        final LearnDetailsModel l4 = new LearnDetailsModel(
+                "The Controller",
+                "The controller responds to user input and performs interactions on the data model objects. The controller receives input, validates it, and then performs business operations that modify the state of the data model.\n" +
+                        "\n" +
+                        "AngularJS is a MVC based framework. In the coming chapters, we will see how AngularJS uses MVC methodology.",
+                "",
+                ""
+        );
+        list.add(l1);
+        list.add(l2);
+        list.add(l3);
+        list.add(l4);
+        return list;
+    }
+    //AngularJS First Application
+    private static List<LearnDetailsModel> AngularJSFirstApplication(){
+        final List<LearnDetailsModel> list = new ArrayList<>();
+        final LearnDetailsModel l1 = new LearnDetailsModel(
+                "AngularJS First Application",
+                "Before creating actual Hello World ! application using AngularJS, let us see the parts of a AngularJS application. An AngularJS application consists of following three important parts −\n" +
+                        "\n" +
+                        "ng-app − This directive defines and links an AngularJS application to HTML.\n" +
+                        "\n" +
+                        "ng-model − This directive binds the values of AngularJS application data to HTML input controls.\n" +
+                        "\n" +
+                        "ng-bind − This directive binds the AngularJS Application data to HTML tags.",
+                "",
+                ""
+        );
+        final LearnDetailsModel l2 = new LearnDetailsModel(
+                "Creating AngularJS Application",
+                "Step 1: Load framework\n" +
+                        "Being a pure JavaScript framework, it can be added using <Script> tag.\n" +
+                        "\n" +
+                        "<script \n" +
+                        "   src = \"https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js\">\n" +
+                        "</script>\n\n" +
+                        "Step 2: Define AngularJS application using ng-app directive\n" +
+                        "<div ng-app = \"\">\n" +
+                        "   ...\n" +
+                        "</div>\n\n" +
+                        "Step 3: Define a model name using ng-model directive\n" +
+                        "<p>Enter your Name: <input type = \"text\" ng-model = \"name\"></p>\n\n" +
+                        "Step 4: Bind the value of above model defined using ng-bind directive\n" +
+                        "<p>Hello <span ng-bind = \"name\"></span>!</p>",
+                "",
+                ""
+        );
+        final LearnDetailsModel l3 = new LearnDetailsModel(
+                "Executing AngularJS Application",
+                "Use the above-mentioned three steps in an HTML page.\n" +
+                        "\n" +
+                        "testAngularJS.htm",
+                "<html>\n" +
+                        "   <head>\n" +
+                        "      <title>AngularJS First Application</title>\n" +
+                        "   </head>\n" +
+                        "   \n" +
+                        "   <body>\n" +
+                        "      <h1>Sample Application</h1>\n" +
+                        "      \n" +
+                        "      <div ng-app = \"\">\n" +
+                        "         <p>Enter your Name: <input type = \"text\" ng-model = \"name\"></p>\n" +
+                        "         <p>Hello <span ng-bind = \"name\"></span>!</p>\n" +
+                        "      </div>\n" +
+                        "      \n" +
+                        "      <script src = \"https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js\">\n" +
+                        "      </script>\n" +
+                        "      \n" +
+                        "   </body>\n" +
+                        "</html>",
+                ""
+        );
+        final LearnDetailsModel l4 = new LearnDetailsModel(
+                "How AngularJS Integrates with HTML",
+                "The ng-app directive indicates the start of AngularJS application.\n" +
+                        "\n" +
+                        "The ng-model directive creates a model variable named name, which can be used with the HTML page and within the div having ng-app directive.\n" +
+                        "\n" +
+                        "The ng-bind then uses the name model to be displayed in the HTML <span> tag whenever user enters input in the text box.\n" +
+                        "\n" +
+                        "Closing</div> tag indicates the end of AngularJS application.",
+                "",
+                ""
+        );
+        list.add(l1);
+        list.add(l2);
+        list.add(l3);
+        list.add(l4);
+        return list;
+    }
+    //AngularJS Directives
+    private static List<LearnDetailsModel> AngularJSDirectives(){
+        final List<LearnDetailsModel> list = new ArrayList<>();
+        final LearnDetailsModel l1 = new LearnDetailsModel(
+                "AngularJS Directives",
+                "AngularJS directives are used to extend HTML. They are special attributes starting with ng-prefix. Let us discuss the following directives −\n" +
+                        "\n" +
+                        "ng-app − This directive starts an AngularJS Application.\n" +
+                        "\n" +
+                        "ng-init − This directive initializes application data.\n" +
+                        "\n" +
+                        "ng-model − This directive defines the model that is variable to be used in AngularJS.\n" +
+                        "\n" +
+                        "ng-repeat − This directive repeats HTML elements for each item in a collection.",
+                "",
+                ""
+        );
+        final LearnDetailsModel l2 = new LearnDetailsModel(
+                "ng-app directive",
+                "The ng-app directive starts an AngularJS Application. It defines the root element. It automatically initializes or bootstraps the application when the web page containing AngularJS Application is loaded. It is also used to load various AngularJS modules in AngularJS Application. In the following example, we define a default AngularJS application using ng-app attribute of a <div> element.",
+                "<div ng-app = \"\">\n" +
+                        "   ...\n" +
+                        "</div>",
+                ""
+        );
+        final LearnDetailsModel l3 = new LearnDetailsModel(
+                "ng-init directive",
+                "The ng-init directive initializes an AngularJS Application data. It is used to assign values to the variables. In the following example, we initialize an array of countries. We use JSON syntax to define the array of countries.",
+                "<div ng-app = \"\" ng-init = \"countries = [{locale:'en-US',name:'United States'}, \n" +
+                        "   {locale:'en-GB',name:'United Kingdom'}, {locale:'en-FR',name:'France'}]\">\n" +
+                        "   ...\n" +
+                        "</div>",
+                ""
+        );
+        final LearnDetailsModel l4 = new LearnDetailsModel(
+                "ng-model directive",
+                "The ng-model directive defines the model/variable to be used in AngularJS Application. In the following example, we define a model named name.",
+                "<div ng-app = \"\">\n" +
+                        "   ...\n" +
+                        "   <p>Enter your Name: <input type = \"text\" ng-model = \"name\"></p>\n" +
+                        "</div>",
+                ""
+        );
+        final LearnDetailsModel l5 = new LearnDetailsModel(
+                "ng-repeat directive",
+                "The ng-repeat directive repeats HTML elements for each item in a collection. In the following example, we iterate over the array of countries.",
+                "<div ng-app = \"\">\n" +
+                        "   ...\n" +
+                        "   <p>List of Countries with locale:</p>\n" +
+                        "   \n" +
+                        "   <ol>\n" +
+                        "      <li ng-repeat = \"country in countries\">\n" +
+                        "         {{ 'Country: ' + country.name + ', Locale: ' + country.locale }}\n" +
+                        "      </li>\n" +
+                        "   </ol>\n" +
+                        "</div>",
+                ""
+        );
+        list.add(l1);
+        list.add(l2);
+        list.add(l3);
+        list.add(l4);
+        list.add(l5);
+        return list;
+    }
+    //AngularJS Expressions
+    private static List<LearnDetailsModel> AngularJSExpressions(){
+        final List<LearnDetailsModel> list = new ArrayList<>();
+        final LearnDetailsModel l1 = new LearnDetailsModel(
+                "AngularJS Expressions",
+                "Expressions are used to bind application data to HTML. Expressions are written inside double curly braces such as in {{ expression}}. Expressions behave similar to ngbind directives. AngularJS expressions are pure JavaScript expressions and output the data where they are used.\n" +
+                        "\n" +
+                        "Using numbers\n" +
+                        "<p>Expense on Books : {{cost * quantity}} Rs</p>\n\n" +
+                        "Using Strings\n" +
+                        "<p>Hello {{student.firstname + \" \" + student.lastname}}!</p>\n\n" +
+                        "Using Object\n" +
+                        "<p>Roll No: {{student.rollno}}</p>\n\n" +
+                        "Using Array\n" +
+                        "<p>Marks(Math): {{marks[3]}}</p>",
+                "",
+                ""
+        );
+        final LearnDetailsModel l2 = new LearnDetailsModel(
+                "Example",
+                "The following example shows the use of all the above-mentioned expressions −\n" +
+                        "\n" +
+                        "testAngularJS.htm",
+                "<html>\n" +
+                        "   <head>\n" +
+                        "      <title>AngularJS Expressions</title>\n" +
+                        "   </head>\n" +
+                        "   \n" +
+                        "   <body>\n" +
+                        "      <h1>Sample Application</h1>\n" +
+                        "      \n" +
+                        "      <div ng-app = \"\" ng-init = \"quantity = 1;cost = 24; \n" +
+                        "         student = {firstname:'Anne',lastname:'Moore',rollno:101};\n" +
+                        "         marks = [80,90,75,73,60]\">\n" +
+                        "         <p>Hello {{student.firstname + \" \" + student.lastname}}!</p>\n" +
+                        "         <p>Expense on Books : {{cost * quantity}} USD</p>\n" +
+                        "         <p>Roll No: {{student.rollno}}</p>\n" +
+                        "         <p>Marks(Math): {{marks[3]}}</p>\n" +
+                        "      </div>\n" +
+                        "      \n" +
+                        "      <script src = \"https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js\">\n" +
+                        "      </script>\n" +
+                        "      \n" +
+                        "   </body>\n" +
+                        "</html>",
+                "Open the file testAngularJS.htm in a web browser and see the result."
+        );
+        list.add(l1);
+        list.add(l2);
+        return list;
+    }
+    //AngularJS Controllers
+    private static List<LearnDetailsModel> AngularJSControllers(){
+        final List<LearnDetailsModel> list = new ArrayList<>();
+        final LearnDetailsModel l1 = new LearnDetailsModel(
+                "AngularJS Controllers",
+                "AngularJS application mainly relies on controllers to control the flow of data in the application. A controller is defined using ng-controller directive. A controller is a JavaScript object that contains attributes/properties, and functions. Each controller accepts $scope as a parameter, which refers to the application/module that the controller needs to handle.\n" +
+                        "\n" +
+                        "<div ng-app = \"\" ng-controller = \"studentController\">\n" +
+                        "   ...\n" +
+                        "</div>\n" +
+                        "Here, we declare a controller named studentController, using the ng-controller directive. We define it as follows −\n" +
+                        "\n" +
+                        "<script>\n" +
+                        "   function studentController($scope) {\n" +
+                        "      $scope.student = {\n" +
+                        "         firstName: \"Mahesh\",\n" +
+                        "         lastName: \"Parashar\",\n" +
+                        "         \n" +
+                        "         fullName: function() {\n" +
+                        "            var studentObject;\n" +
+                        "            studentObject = $scope.student;\n" +
+                        "            return studentObject.firstName + \" \" + studentObject.lastName;\n" +
+                        "         }\n" +
+                        "      };\n" +
+                        "   }\n" +
+                        "</script>\n" +
+                        "The studentController is defined as a JavaScript object with $scope as an argument.\n" +
+                        "\n" +
+                        "The $scope refers to application which uses the studentController object.\n" +
+                        "\n" +
+                        "The $scope.student is a property of studentController object.\n" +
+                        "\n" +
+                        "The firstName and the lastName are two properties of $scope.student object. We pass the default values to them.\n" +
+                        "\n" +
+                        "The property fullName is the function of $scope.student object, which returns the combined name.\n" +
+                        "\n" +
+                        "In the fullName function, we get the student object and then return the combined name.\n" +
+                        "\n" +
+                        "As a note, we can also define the controller object in a separate JS file and refer that file in the HTML page.\n" +
+                        "\n" +
+                        "Now we can use studentController's student property using ng-model or using expressions as follows −\n" +
+                        "\n" +
+                        "Enter first name: <input type = \"text\" ng-model = \"student.firstName\"><br>\n" +
+                        "Enter last name: <input type = \"text\" ng-model = \"student.lastName\"><br>\n" +
+                        "<br>\n" +
+                        "You are entering: {{student.fullName()}}\n" +
+                        "We bound student.firstName and student.lastname to two input boxes.\n" +
+                        "\n" +
+                        "We bound student.fullName() to HTML.\n" +
+                        "\n" +
+                        "Now whenever you type anything in first name and last name input boxes, you can see the full name getting updated automatically.",
+                "",
+                ""
+        );
+        final LearnDetailsModel l2 = new LearnDetailsModel(
+                "Example",
+                "The following example shows the use of controller −\n" +
+                        "\n" +
+                        "testAngularJS.htm",
+                "<html>\n" +
+                        "   <head>\n" +
+                        "      <title>Angular JS Controller</title>\n" +
+                        "      <script src = \"https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js\">\n" +
+                        "      </script>\n" +
+                        "   </head>\n" +
+                        "   \n" +
+                        "   <body>\n" +
+                        "      <h2>AngularJS Sample Application</h2>\n" +
+                        "      \n" +
+                        "      <div ng-app = \"mainApp\" ng-controller = \"studentController\">\n" +
+                        "         Enter first name: <input type = \"text\" ng-model = \"student.firstName\"><br>\n" +
+                        "         <br>\n" +
+                        "         Enter last name: <input type = \"text\" ng-model = \"student.lastName\"><br>\n" +
+                        "         <br>\n" +
+                        "         You are entering: {{student.fullName()}}\n" +
+                        "      </div>\n" +
+                        "      \n" +
+                        "      <script>\n" +
+                        "         var mainApp = angular.module(\"mainApp\", []);\n" +
+                        "         \n" +
+                        "         mainApp.controller('studentController', function($scope) {\n" +
+                        "            $scope.student = {\n" +
+                        "               firstName: \"Anne\",\n" +
+                        "               lastName: \"Moore\",\n" +
+                        "               \n" +
+                        "               fullName: function() {\n" +
+                        "                  var studentObject;\n" +
+                        "                  studentObject = $scope.student;\n" +
+                        "                  return studentObject.firstName + \" \" + studentObject.lastName;\n" +
+                        "               }\n" +
+                        "            };\n" +
+                        "         });\n" +
+                        "      </script>\n" +
+                        "      \n" +
+                        "   </body>\n" +
+                        "</html>",
+                "Open the file testAngularJS.htm in a web browser and see the result."
+        );
+        list.add(l1);
+        list.add(l2);
+        return list;
+    }
+    //AngularJS Filters
+    private static List<LearnDetailsModel> AngularJSFilters(){
+        final List<LearnDetailsModel> list = new ArrayList<>();
+        final LearnDetailsModel l1 = new LearnDetailsModel(
+                "AngularJS Filters",
+                "Filters are used to modify the data. They can be clubbed in expression or directives using pipe (|) character. The following list shows the commonly used filters." +
+                        "\n\n" +
+                        "1. uppercase\n" +
+                        "\n" +
+                        "converts a text to upper case text.\n" +
+                        "\n" +
+                        "2. lowercase\n" +
+                        "\n" +
+                        "converts a text to lower case text.\n" +
+                        "\n" +
+                        "3. currency\n" +
+                        "\n" +
+                        "formats text in a currency format.\n" +
+                        "\n" +
+                        "4. filter\n" +
+                        "\n" +
+                        "filter the array to a subset of it based on provided criteria.\n" +
+                        "\n" +
+                        "5. orderby\n" +
+                        "\n" +
+                        "orders the array based on provided criteria.",
+                "",
+                ""
+        );
+        final LearnDetailsModel l2 = new LearnDetailsModel(
+                "Uppercase Filter",
+                "Add uppercase filter to an expression using pipe character. Here we've added uppercase filter to print student name in all capital letters.",
+                "Enter first name:<input type = \"text\" ng-model = \"student.firstName\">\n" +
+                        "Enter last name: <input type = \"text\" ng-model = \"student.lastName\">\n" +
+                        "Name in Upper Case: {{student.fullName() | uppercase}}",
+                ""
+        );
+        final LearnDetailsModel l3 = new LearnDetailsModel(
+                "Lowercase Filter",
+                "Add lowercase filter to an expression using pipe character. Here we've added lowercase filter to print student name in all lowercase letters.",
+                "Enter first name:<input type = \"text\" ng-model = \"student.firstName\">\n" +
+                        "Enter last name: <input type = \"text\" ng-model = \"student.lastName\">\n" +
+                        "Name in Lower Case: {{student.fullName() | lowercase}}",
+                ""
+        );
+        final LearnDetailsModel l4 = new LearnDetailsModel(
+                "Currency Filter",
+                "Add currency filter to an expression returning number using pipe character. Here we've added currency filter to print fees using currency format.",
+                "Enter fees: <input type = \"text\" ng-model = \"student.fees\">\n" +
+                        "fees: {{student.fees | currency}}",
+                ""
+        );final LearnDetailsModel l5 = new LearnDetailsModel(
+                "Filter",
+                "To display only required subjects, we use subjectName as filter.",
+                "Enter subject: <input type = \"text\" ng-model = \"subjectName\">\n" +
+                        "Subject:\n" +
+                        "<ul>\n" +
+                        "   <li ng-repeat = \"subject in student.subjects | filter: subjectName\">\n" +
+                        "      {{ subject.name + ', marks:' + subject.marks }}\n" +
+                        "   </li>\n" +
+                        "</ul>",
+                ""
+        );final LearnDetailsModel l6 = new LearnDetailsModel(
+                "OrderBy Filter",
+                "To order subjects by marks, we use orderBy marks.",
+                "Subject:\n" +
+                        "<ul>\n" +
+                        "   <li ng-repeat = \"subject in student.subjects | orderBy:'marks'\">\n" +
+                        "      {{ subject.name + ', marks:' + subject.marks }}\n" +
+                        "   </li>\n" +
+                        "</ul>",
+                ""
+        );final LearnDetailsModel l7 = new LearnDetailsModel(
+                "Example",
+                "The following example shows use of all the above mentioned filters.\n" +
+                        "\n" +
+                        "testAngularJS.htm",
+                "<html>\n" +
+                        "   <head>\n" +
+                        "      <title>Angular JS Filters</title>\n" +
+                        "      <script src = \"https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js\">\n" +
+                        "      </script>\n" +
+                        "   </head>\n" +
+                        "   \n" +
+                        "   <body>\n" +
+                        "      <h2>AngularJS Sample Application</h2>\n" +
+                        "      \n" +
+                        "      <div ng-app = \"mainApp\" ng-controller = \"studentController\">\n" +
+                        "         <table border = \"0\">\n" +
+                        "            <tr>\n" +
+                        "               <td>Enter first name:</td>\n" +
+                        "               <td><input type = \"text\" ng-model = \"student.firstName\"></td>\n" +
+                        "            </tr>\n" +
+                        "            <tr>\n" +
+                        "               <td>Enter last name: </td>\n" +
+                        "               <td><input type = \"text\" ng-model = \"student.lastName\"></td>\n" +
+                        "            </tr>\n" +
+                        "            <tr>\n" +
+                        "               <td>Enter fees: </td>\n" +
+                        "               <td><input type = \"text\" ng-model = \"student.fees\"></td>\n" +
+                        "            </tr>\n" +
+                        "            <tr>\n" +
+                        "               <td>Enter subject: </td>\n" +
+                        "               <td><input type = \"text\" ng-model = \"subjectName\"></td>\n" +
+                        "            </tr>\n" +
+                        "         </table>\n" +
+                        "         <br/>\n" +
+                        "         \n" +
+                        "         <table border = \"0\">\n" +
+                        "            <tr>\n" +
+                        "               <td>Name in Upper Case: </td><td>{{student.fullName() | uppercase}}</td>\n" +
+                        "            </tr>\n" +
+                        "            <tr>\n" +
+                        "               <td>Name in Lower Case: </td><td>{{student.fullName() | lowercase}}</td>\n" +
+                        "            </tr>\n" +
+                        "            <tr>\n" +
+                        "               <td>fees: </td><td>{{student.fees | currency}}\n" +
+                        "               </td>\n" +
+                        "            </tr>\n" +
+                        "            <tr>\n" +
+                        "               <td>Subject:</td>\n" +
+                        "               <td>\n" +
+                        "                  <ul>\n" +
+                        "                     <li ng-repeat = \"subject in student.subjects | filter: subjectName |orderBy:'marks'\">\n" +
+                        "                        {{ subject.name + ', marks:' + subject.marks }}\n" +
+                        "                     </li>\n" +
+                        "                  </ul>\n" +
+                        "               </td>\n" +
+                        "            </tr>\n" +
+                        "         </table>\n" +
+                        "      </div>\n" +
+                        "      \n" +
+                        "      <script>\n" +
+                        "         var mainApp = angular.module(\"mainApp\", []);\n" +
+                        "         \n" +
+                        "         mainApp.controller('studentController', function($scope) {\n" +
+                        "            $scope.student = {\n" +
+                        "               firstName: \"Anne\",\n" +
+                        "               lastName: \"Moore\",\n" +
+                        "               fees:500,\n" +
+                        "               \n" +
+                        "               subjects:[\n" +
+                        "                  {name:'Physics',marks:70},\n" +
+                        "                  {name:'Chemistry',marks:80},\n" +
+                        "                  {name:'Math',marks:65}\n" +
+                        "               ],\n" +
+                        "               fullName: function() {\n" +
+                        "                  var studentObject;\n" +
+                        "                  studentObject = $scope.student;\n" +
+                        "                  return studentObject.firstName + \" \" + studentObject.lastName;\n" +
+                        "               }\n" +
+                        "            };\n" +
+                        "         });\n" +
+                        "      </script>\n" +
+                        "      \n" +
+                        "   </body>\n" +
+                        "</html>",
+                "Open the file testAngularJS.htm in a web browser. See the result.\n\n" +
+                        "Name in Upper Case:\tANNE MOORE\n" +
+                        "Name in Lower Case:\tanne moore\n" +
+                        "fees:\t$500.00\n" +
+                        "Subject:\t\n" +
+                        "Math, marks:65\n" +
+                        "Physics, marks:70\n" +
+                        "Chemistry, marks:80\n"
+        );
+        list.add(l1);
+        list.add(l2);
+        list.add(l3);
+        list.add(l4);
+        list.add(l5);
+        list.add(l6);
+        list.add(l7);
+        return list;
+    }
+    //AngularJS Tables
+    private static List<LearnDetailsModel> AngularJSTables(){
+        final List<LearnDetailsModel> list = new ArrayList<>();
+        final LearnDetailsModel l1 = new LearnDetailsModel(
+                "AngularJS Tables",
+                "Table data is generally repeatable. The ng-repeat directive can be used to draw table easily. The following example shows the use of ng-repeat directive to draw a table −",
+                "<table>\n" +
+                        "   <tr>\n" +
+                        "      <th>Name</th>\n" +
+                        "      <th>Marks</th>\n" +
+                        "   </tr>\n" +
+                        "   \n" +
+                        "   <tr ng-repeat = \"subject in student.subjects\">\n" +
+                        "      <td>{{ subject.name }}</td>\n" +
+                        "      <td>{{ subject.marks }}</td>\n" +
+                        "   </tr>\n" +
+                        "</table>" +
+                        "\n\n\n" +
+                        "<style>\n" +
+                        "   table, th , td {\n" +
+                        "      border: 1px solid grey;\n" +
+                        "      border-collapse: collapse;\n" +
+                        "      padding: 5px;\n" +
+                        "   }\n" +
+                        "   table tr:nth-child(odd) {\n" +
+                        "      background-color: #f2f2f2;\n" +
+                        "   }\n" +
+                        "   table tr:nth-child(even) {\n" +
+                        "      background-color: #ffffff;\n" +
+                        "   }\n" +
+                        "</style>",
+                ""
+        );
+        final LearnDetailsModel l2 = new LearnDetailsModel(
+                "Example",
+                "The following example shows the use of all the above-mentioned directives.\n" +
+                        "\n" +
+                        "testAngularJS.htm",
+                "<html>\n" +
+                        "   <head>\n" +
+                        "      <title>Angular JS Table</title>\n" +
+                        "      <script src = \"https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js\"></script>\n" +
+                        "      \n" +
+                        "      <style>\n" +
+                        "         table, th , td {\n" +
+                        "            border: 1px solid grey;\n" +
+                        "            border-collapse: collapse;\n" +
+                        "            padding: 5px;\n" +
+                        "         }\n" +
+                        "         table tr:nth-child(odd) {\n" +
+                        "            background-color: #f2f2f2;\n" +
+                        "         }\n" +
+                        "         table tr:nth-child(even) {\n" +
+                        "            background-color: #ffffff;\n" +
+                        "         }\n" +
+                        "      </style>\n" +
+                        "   </head>\n" +
+                        "   \n" +
+                        "   <body>\n" +
+                        "      <h2>AngularJS Sample Application</h2>\n" +
+                        "      <div ng-app = \"mainApp\" ng-controller = \"studentController\">\n" +
+                        "         \n" +
+                        "         <table border = \"0\">\n" +
+                        "            <tr>\n" +
+                        "               <td>Enter first name:</td>\n" +
+                        "               <td><input type = \"text\" ng-model = \"student.firstName\"></td>\n" +
+                        "            </tr>\n" +
+                        "            <tr>\n" +
+                        "               <td>Enter last name: </td>\n" +
+                        "               <td>\n" +
+                        "                  <input type = \"text\" ng-model = \"student.lastName\">\n" +
+                        "               </td>\n" +
+                        "            </tr>\n" +
+                        "            <tr>\n" +
+                        "               <td>Name: </td>\n" +
+                        "               <td>{{student.fullName()}}</td>\n" +
+                        "            </tr>\n" +
+                        "            <tr>\n" +
+                        "               <td>Subject:</td>\n" +
+                        "               \n" +
+                        "               <td>\n" +
+                        "                  <table>\n" +
+                        "                     <tr>\n" +
+                        "                        <th>Name</th>.\n" +
+                        "                        <th>Marks</th>\n" +
+                        "                     </tr>\n" +
+                        "                     <tr ng-repeat = \"subject in student.subjects\">\n" +
+                        "                        <td>{{ subject.name }}</td>\n" +
+                        "                        <td>{{ subject.marks }}</td>\n" +
+                        "                     </tr>\n" +
+                        "                  </table>\n" +
+                        "               </td>\n" +
+                        "            </tr>\n" +
+                        "         </table>\n" +
+                        "      </div>\n" +
+                        "      \n" +
+                        "      <script>\n" +
+                        "         var mainApp = angular.module(\"mainApp\", []);\n" +
+                        "         \n" +
+                        "         mainApp.controller('studentController', function($scope) {\n" +
+                        "            $scope.student = {\n" +
+                        "               firstName: \"Anne\",\n" +
+                        "               lastName: \"Moore\",\n" +
+                        "               fees:500,\n" +
+                        "               \n" +
+                        "               subjects:[\n" +
+                        "                  {name:'Physics',marks:70},\n" +
+                        "                  {name:'Chemistry',marks:80},\n" +
+                        "                  {name:'Math',marks:65},\n" +
+                        "                  {name:'English',marks:75},\n" +
+                        "                  {name:'Hindi',marks:67}\n" +
+                        "               ],\n" +
+                        "               fullName: function() {\n" +
+                        "                  var studentObject;\n" +
+                        "                  studentObject = $scope.student;\n" +
+                        "                  return studentObject.firstName + \" \" + studentObject.lastName;\n" +
+                        "               }\n" +
+                        "            };\n" +
+                        "         });\n" +
+                        "      </script>\n" +
+                        "      \n" +
+                        "   </body>\n" +
+                        "</html>",
+                "Open the file testAngularJS.htm in a web browser and see the result."
+        );
+        list.add(l1);
+        list.add(l2);
+        return list;
+    }
+    //AngularJS HTML DOM
+    private static List<LearnDetailsModel> AngularJSHTMLDOM(){
+        final List<LearnDetailsModel> list = new ArrayList<>();
+        final LearnDetailsModel l1 = new LearnDetailsModel(
+                "AngularJS HTML DOM",
+                "The following directives are used to bind application data to the attributes of HTML DOM elements −" +
+                        "\n\n" +
+                        "1. ng-disabled\n" +
+                        "\n" +
+                        "disables a given control.\n" +
+                        "\n" +
+                        "2. ng-show\n" +
+                        "\n" +
+                        "shows a given control.\n" +
+                        "\n" +
+                        "3. ng-hide\n" +
+                        "\n" +
+                        "hides a given control.\n" +
+                        "\n" +
+                        "4. ng-click\n" +
+                        "\n" +
+                        "represents a AngularJS click event.",
+                "",
+                ""
+        );
+        final LearnDetailsModel l2 = new LearnDetailsModel(
+                "ng-disabled Directive",
+                "Add ng-disabled attribute to an HTML button and pass it a model. Bind the model to a checkbox and see the variation.",
+                "<input type = \"checkbox\" ng-model = \"enableDisableButton\">Disable Button\n" +
+                        "<button ng-disabled = \"enableDisableButton\">Click Me!</button>",
+                ""
+        );
+        final LearnDetailsModel l3 = new LearnDetailsModel(
+                "ng-show Directive",
+                "Add ng-show attribute to an HTML button and pass it a model. Bind the model to a checkbox and see the variation.",
+                "<input type = \"checkbox\" ng-model = \"showHide1\">Show Button\n" +
+                        "<button ng-show = \"showHide1\">Click Me!</button>",
+                ""
+        );
+        final LearnDetailsModel l4 = new LearnDetailsModel(
+                "ng-hide Directive",
+                "Add ng-hide attribute to an HTML button and pass it a model. Bind the model to a checkbox and see the variation.",
+                "<input type = \"checkbox\" ng-model = \"showHide2\">Hide Button\n" +
+                        "<button ng-hide = \"showHide2\">Click Me!</button>",
+                ""
+        );
+        final LearnDetailsModel l5 = new LearnDetailsModel(
+                "ng-click Directive",
+                "Add ng-click attribute to an HTML button and update a model. Bind the model to HTML and see the variation.",
+                "<p>Total click: {{ clickCounter }}</p>\n" +
+                        "<button ng-click = \"clickCounter = clickCounter + 1\">Click Me!</button>",
+                ""
+        );
+        final LearnDetailsModel l6 = new LearnDetailsModel(
+                "Example",
+                "The following example shows use of all the above mentioned directives.\n" +
+                        "\n" +
+                        "testAngularJS.htm",
+                "<html>\n" +
+                        "   <head>\n" +
+                        "      <title>AngularJS HTML DOM</title>\n" +
+                        "   </head>\n" +
+                        "   \n" +
+                        "   <body>\n" +
+                        "      <h2>AngularJS Sample Application</h2>\n" +
+                        "      \n" +
+                        "      <div ng-app = \"\">\n" +
+                        "         <table border = \"0\">\n" +
+                        "            <tr>\n" +
+                        "               <td><input type = \"checkbox\" ng-model = \"enableDisableButton\">Disable Button</td>\n" +
+                        "               <td><button ng-disabled = \"enableDisableButton\">Click Me!</button></td>\n" +
+                        "            </tr>\n" +
+                        "            <tr>\n" +
+                        "               <td><input type = \"checkbox\" ng-model = \"showHide1\">Show Button</td>\n" +
+                        "               <td><button ng-show = \"showHide1\">Click Me!</button></td>\n" +
+                        "            </tr>\n" +
+                        "            <tr>\n" +
+                        "               <td><input type = \"checkbox\" ng-model = \"showHide2\">Hide Button</td>\n" +
+                        "               <td><button ng-hide = \"showHide2\">Click Me!</button></td>\n" +
+                        "            </tr>\n" +
+                        "            <tr>\n" +
+                        "               <td><p>Total click: {{ clickCounter }}</p></td>\n" +
+                        "               <td><button ng-click = \"clickCounter = clickCounter + 1\">Click Me!</button></td>\n" +
+                        "            </tr>\n" +
+                        "         </table>\n" +
+                        "      </div>\n" +
+                        "      \n" +
+                        "      <script src = \"https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js\">\n" +
+                        "      </script>\n" +
+                        "      \n" +
+                        "   </body>\n" +
+                        "</html>",
+                "Open the file testAngularJS.htm in a web browser and see the result."
+        );
+        list.add(l1);
+        list.add(l2);
+        list.add(l3);
+        list.add(l4);
+        list.add(l5);
+        list.add(l6);
+        return list;
+    }
+    //AngularJS Modules
+    private static List<LearnDetailsModel> AngularJSModules(){
+        final List<LearnDetailsModel> list = new ArrayList<>();
+        final LearnDetailsModel l1 = new LearnDetailsModel(
+                "AngularJS Modules",
+                "AngularJS supports modular approach. Modules are used to separate logic such as services, controllers, application etc. from the code and maintain the code clean. We define modules in separate js files and name them as per the module.js file. In the following example, we are going to create two modules −\n" +
+                        "\n" +
+                        "Application Module − used to initialize an application with controller(s).\n" +
+                        "\n" +
+                        "Controller Module − used to define the controller.",
+                "",
+                ""
+        );
+        final LearnDetailsModel l2 = new LearnDetailsModel(
+                "Application Module",
+                "Here is a file named mainApp.js that contains the following code −" +
+                        "\n\n" +
+                        "Here, we declare an application mainApp module using angular.module function and pass an empty array to it. This array generally contains dependent modules.",
+                "var mainApp = angular.module(\"mainApp\", []);",
+                ""
+        );
+        final LearnDetailsModel l3 = new LearnDetailsModel(
+                "Controller Module",
+                "Here, we declare a controller studentController module using mainApp.controller function." +
+                        "\n" +
+                        "studentController.js",
+                "mainApp.controller(\"studentController\", function($scope) {\n" +
+                        "   $scope.student = {\n" +
+                        "      firstName: \"Anne\",\n" +
+                        "      lastName: \"Moore\",\n" +
+                        "      fees:500,\n" +
+                        "      \n" +
+                        "      subjects:[\n" +
+                        "         {name:'Physics',marks:70},\n" +
+                        "         {name:'Chemistry',marks:80},\n" +
+                        "         {name:'Math',marks:65},\n" +
+                        "         {name:'English',marks:75},\n" +
+                        "         {name:'Hindi',marks:67}\n" +
+                        "      ],\n" +
+                        "      fullName: function() {\n" +
+                        "         var studentObject;\n" +
+                        "         studentObject = $scope.student;\n" +
+                        "         return studentObject.firstName + \" \" + studentObject.lastName;\n" +
+                        "      }\n" +
+                        "   };\n" +
+                        "});",
+                ""
+        );
+        final LearnDetailsModel l4 = new LearnDetailsModel(
+                "Use Modules",
+                "Here, we use application module using ng-app directive, and controller using ngcontroller directive. We import the mainApp.js and studentController.js in the main HTML page.",
+                "<div ng-app = \"mainApp\" ng-controller = \"studentController\">\n" +
+                        "   ...\n" +
+                        "   <script src = \"mainApp.js\"></script>\n" +
+                        "   <script src = \"studentController.js\"></script>\n" +
+                        "\t\n" +
+                        "</div>",
+                ""
+        );
+        list.add(l1);
+        list.add(l2);
+        list.add(l3);
+        list.add(l4);
+        return list;
+    }
+    //AngularJS Forms
+    private static List<LearnDetailsModel> AngularJSForms(){
+        final List<LearnDetailsModel> list = new ArrayList<>();
+        final LearnDetailsModel l1 = new LearnDetailsModel(
+                "AngularJS Forms",
+                "AngularJS enriches form filling and validation. We can use ng-click event to handle the click button and use $dirty and $invalid flags to do the validation in a seamless way. Use novalidate with a form declaration to disable any browser-specific validation. The form controls make heavy use of AngularJS events. Let us have a look at the events first.\n" +
+                        "\n" +
+                        "Events\n" +
+                        "AngularJS provides multiple events associated with the HTML controls. For example, ng-click directive is generally associated with a button. AngularJS supports the following events −\n" +
+                        "\n" +
+                        "ng-click\n" +
+                        "ng-dbl-click\n" +
+                        "ng-mousedown\n" +
+                        "ng-mouseup\n" +
+                        "ng-mouseenter\n" +
+                        "ng-mouseleave\n" +
+                        "ng-mousemove\n" +
+                        "ng-mouseover\n" +
+                        "ng-keydown\n" +
+                        "ng-keyup\n" +
+                        "ng-keypress\n" +
+                        "ng-change",
+                "",
+                ""
+        );
+        final LearnDetailsModel l2 = new LearnDetailsModel(
+                "ng-click",
+                "Reset data of a form using on-click directive of a button.",
+                "<input name = \"firstname\" type = \"text\" ng-model = \"firstName\" required>\n" +
+                        "<input name = \"lastname\" type = \"text\" ng-model = \"lastName\" required>\n" +
+                        "<input name = \"email\" type = \"email\" ng-model = \"email\" required>\n" +
+                        "<button ng-click = \"reset()\">Reset</button>\n" +
+                        "\n" +
+                        "<script>\n" +
+                        "   function studentController($scope) { \n" +
+                        "      $scope.reset = function() {\n" +
+                        "         $scope.firstName = \"Anne\";\n" +
+                        "         $scope.lastName = \"Moore\";\n" +
+                        "         $scope.email = \"AnneMoore@shrcreation.com\";\n" +
+                        "      }   \n" +
+                        "      \n" +
+                        "      $scope.reset();\n" +
+                        "   }\n" +
+                        "</script>",
+                ""
+        );
+        final LearnDetailsModel l3 = new LearnDetailsModel(
+                "Validate Data",
+                "The following can be used to track error.\n" +
+                        "\n" +
+                        "$dirty − states that value has been changed.\n" +
+                        "\n" +
+                        "$invalid − states that value entered is invalid.\n" +
+                        "\n" +
+                        "$error − states the exact error.",
+                "",
+                ""
+        );
+        final LearnDetailsModel l4 = new LearnDetailsModel(
+                "Example",
+                "The following example will showcase all the above-mentioned directives.\n" +
+                        "\n" +
+                        "testAngularJS.htm",
+                "<html>\n" +
+                        "   <head>\n" +
+                        "      <title>Angular JS Forms</title>\n" +
+                        "      <script src = \"https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js\"></script>\n" +
+                        "      \n" +
+                        "      <style>\n" +
+                        "         table, th , td {\n" +
+                        "            border: 1px solid grey;\n" +
+                        "            border-collapse: collapse;\n" +
+                        "            padding: 5px;\n" +
+                        "         }\n" +
+                        "         table tr:nth-child(odd) {\n" +
+                        "            background-color: #f2f2f2;\n" +
+                        "         }\n" +
+                        "         table tr:nth-child(even) {\n" +
+                        "            background-color: #ffffff;\n" +
+                        "         }\n" +
+                        "      </style>\n" +
+                        "      \n" +
+                        "   </head>\n" +
+                        "   <body>\n" +
+                        "      \n" +
+                        "      <h2>AngularJS Sample Application</h2>\n" +
+                        "      <div ng-app = \"mainApp\" ng-controller = \"studentController\">\n" +
+                        "         \n" +
+                        "         <form name = \"studentForm\" novalidate>\n" +
+                        "            <table border = \"0\">\n" +
+                        "               <tr>\n" +
+                        "                  <td>Enter first name:</td>\n" +
+                        "                  <td><input name = \"firstname\" type = \"text\" ng-model = \"firstName\" required>\n" +
+                        "                     <span style = \"color:red\" ng-show = \"studentForm.firstname.$dirty && studentForm.firstname.$invalid\">\n" +
+                        "                        <span ng-show = \"studentForm.firstname.$error.required\">First Name is required.</span>\n" +
+                        "                     </span>\n" +
+                        "                  </td>\n" +
+                        "               </tr>\n" +
+                        "               \n" +
+                        "               <tr>\n" +
+                        "                  <td>Enter last name: </td>\n" +
+                        "                  <td><input name = \"lastname\"  type = \"text\" ng-model = \"lastName\" required>\n" +
+                        "                     <span style = \"color:red\" ng-show = \"studentForm.lastname.$dirty && studentForm.lastname.$invalid\">\n" +
+                        "                        <span ng-show = \"studentForm.lastname.$error.required\">Last Name is required.</span>\n" +
+                        "                     </span>\n" +
+                        "                  </td>\n" +
+                        "               </tr>\n" +
+                        "               \n" +
+                        "               <tr>\n" +
+                        "                  <td>Email: </td><td><input name = \"email\" type = \"email\" ng-model = \"email\" length = \"100\" required>\n" +
+                        "                     <span style = \"color:red\" ng-show = \"studentForm.email.$dirty && studentForm.email.$invalid\">\n" +
+                        "                        <span ng-show = \"studentForm.email.$error.required\">Email is required.</span>\n" +
+                        "                        <span ng-show = \"studentForm.email.$error.email\">Invalid email address.</span>\n" +
+                        "                     </span>\n" +
+                        "                  </td>\n" +
+                        "               </tr>\n" +
+                        "               \n" +
+                        "               <tr>\n" +
+                        "                  <td>\n" +
+                        "                     <button ng-click = \"reset()\">Reset</button>\n" +
+                        "                  </td>\n" +
+                        "                  <td>\n" +
+                        "                     <button ng-disabled = \"studentForm.firstname.$dirty &&\n" +
+                        "                        studentForm.firstname.$invalid || studentForm.lastname.$dirty &&\n" +
+                        "                        studentForm.lastname.$invalid || studentForm.email.$dirty &&\n" +
+                        "                        studentForm.email.$invalid\" ng-click=\"submit()\">Submit</button>\n" +
+                        "                  </td>\n" +
+                        "               </tr>\n" +
+                        "\t\t\t\t\t\n" +
+                        "            </table>\n" +
+                        "         </form>\n" +
+                        "      </div>\n" +
+                        "      \n" +
+                        "      <script>\n" +
+                        "         var mainApp = angular.module(\"mainApp\", []);\n" +
+                        "         \n" +
+                        "         mainApp.controller('studentController', function($scope) {\n" +
+                        "            $scope.reset = function() {\n" +
+                        "               $scope.firstName = \"Anne\";\n" +
+                        "               $scope.lastName = \"Moore\";\n" +
+                        "               $scope.email = \"AnneMoore@shrcreation.com\";\n" +
+                        "            }\n" +
+                        "            \n" +
+                        "            $scope.reset();\n" +
+                        "         });\n" +
+                        "      </script>\n" +
+                        "      \n" +
+                        "   </body>\n" +
+                        "</html>",
+                "Open the file testAngularJS.htm in a web browser and see the result."
+        );
+
+        list.add(l1);
+        list.add(l2);
+        list.add(l3);
+        list.add(l4);
+        return list;
+    }
+    //AngularJS Includes
+    private static List<LearnDetailsModel> AngularJSIncludes(){
+        final List<LearnDetailsModel> list = new ArrayList<>();
+        final LearnDetailsModel l1 = new LearnDetailsModel(
+                "AngularJS Includes",
+                "HTML does not support embedding HTML pages within the HTML page. To achieve this functionality, we can use one of the following options −\n" +
+                        "\n" +
+                        "Using Ajax − Make a server call to get the corresponding HTML page and set it in the innerHTML of HTML control.\n" +
+                        "\n" +
+                        "Using Server Side Includes − JSP, PHP and other web side server technologies can include HTML pages within a dynamic page.\n" +
+                        "\n" +
+                        "Using AngularJS, we can embed HTML pages within an HTML page using ng-include directive.",
+                "<div ng-app = \"\" ng-controller = \"studentController\">\n" +
+                        "   <div ng-include = \"'main.htm'\"></div>\n" +
+                        "   <div ng-include = \"'subjects.htm'\"></div>\n" +
+                        "</div>",
+                ""
+        );
+        final LearnDetailsModel l2 = new LearnDetailsModel(
+                "Example",
+                "The following example will showcase all the case." +
+                        "\n\n" +
+                        "main.htm\n\n" +
+                        "<table border = \"0\">\n" +
+                        "   <tr>\n" +
+                        "      <td>Enter first name:</td>\n" +
+                        "      <td><input type = \"text\" ng-model = \"student.firstName\"></td>\n" +
+                        "   </tr>\n" +
+                        "   \n" +
+                        "   <tr>\n" +
+                        "      <td>Enter last name: </td>\n" +
+                        "      <td><input type = \"text\" ng-model = \"student.lastName\"></td>\n" +
+                        "   </tr>\n" +
+                        "   \n" +
+                        "   <tr>\n" +
+                        "      <td>Name: </td>\n" +
+                        "      <td>{{student.fullName()}}</td>\n" +
+                        "   </tr>\n" +
+                        "</table>" +
+                        "\n\n" +
+                        "subjects.htm\n\n" +
+                        "<p>Subjects:</p>\n" +
+                        "<table>\n" +
+                        "   <tr>\n" +
+                        "      <th>Name</th>\n" +
+                        "      <th>Marks</th>\n" +
+                        "   </tr>\n" +
+                        "   \n" +
+                        "   <tr ng-repeat = \"subject in student.subjects\">\n" +
+                        "      <td>{{ subject.name }}</td>\n" +
+                        "      <td>{{ subject.marks }}</td>\n" +
+                        "   </tr>\n" +
+                        "</table>",
+                "<html>\n" +
+                        "   <head>\n" +
+                        "      <title>Angular JS Includes</title>\n" +
+                        "      <script src = \"https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js\">\n" +
+                        "      </script>\n" +
+                        "      \n" +
+                        "      <style>\n" +
+                        "         table, th , td {\n" +
+                        "            border: 1px solid grey;\n" +
+                        "            border-collapse: collapse;\n" +
+                        "            padding: 5px;\n" +
+                        "         }\n" +
+                        "         table tr:nth-child(odd) {\n" +
+                        "            background-color: #f2f2f2;\n" +
+                        "         }\n" +
+                        "         table tr:nth-child(even) {\n" +
+                        "            background-color: #ffffff;\n" +
+                        "         }\n" +
+                        "      </style>\n" +
+                        "   </head>\n" +
+                        "   \n" +
+                        "   <body>\n" +
+                        "      <h2>AngularJS Sample Application</h2>\n" +
+                        "      \n" +
+                        "      <div ng-app = \"mainApp\" ng-controller = \"studentController\">\n" +
+                        "         <div ng-include = \"'/angularjs/src/include/main.htm'\"></div>\n" +
+                        "         <div ng-include = \"'/angularjs/src/include/subjects.htm'\"></div>\n" +
+                        "      </div>\n" +
+                        "      \n" +
+                        "      <script>\n" +
+                        "         var mainApp = angular.module(\"mainApp\", []);\n" +
+                        "         \n" +
+                        "         mainApp.controller('studentController', function($scope) {\n" +
+                        "            $scope.student = {\n" +
+                        "               firstName: \"Anne\",\n" +
+                        "               lastName: \"Moore\",\n" +
+                        "               fees:500,\n" +
+                        "               \n" +
+                        "               subjects:[\n" +
+                        "                  {name:'Physics',marks:70},\n" +
+                        "                  {name:'Chemistry',marks:80},\n" +
+                        "                  {name:'Math',marks:65},\n" +
+                        "                  {name:'English',marks:75},\n" +
+                        "                  {name:'Hindi',marks:67}\n" +
+                        "               ],\n" +
+                        "               fullName: function() {\n" +
+                        "                  var studentObject;\n" +
+                        "                  studentObject = $scope.student;\n" +
+                        "                  return studentObject.firstName + \" \" + studentObject.lastName;\n" +
+                        "               }\n" +
+                        "            };\n" +
+                        "         });\n" +
+                        "      </script>\n" +
+                        "      \n" +
+                        "   </body>\n" +
+                        "</html>",
+                "To execute this example, you need to deploy testAngularJS.htm, \n" +
+                        "main.htm, and subjects.htm to a web server. Open the file \n" +
+                        "testAngularJS.htm using the URL of your server in a web browser and see the result."
+        );
+        list.add(l1);
+        list.add(l2);
+        return list;
+    }
+    //AngularJS Ajax
+    private static List<LearnDetailsModel> AngularJSAjax(){
+        final List<LearnDetailsModel> list = new ArrayList<>();
+        final LearnDetailsModel l1 = new LearnDetailsModel(
+                "AngularJS Ajax",
+                "AngularJS provides $http control which works as a service to read data from the server. The server makes a database call to get the desired records. AngularJS needs data in JSON format. Once the data is ready, $http can be used to get the data from server in the following manner −" +
+                        "\n\n" +
+                        "Here, the file data.txt contains student records. $http service makes an ajax call and sets response to its property students. students model can be used to draw tables in HTML.",
+                "function studentController($scope,$https:) {\n" +
+                        "   var url = \"data.txt\";\n" +
+                        "\n" +
+                        "   $https:.get(url).success( function(response) {\n" +
+                        "      $scope.students = response; \n" +
+                        "   });\n" +
+                        "}",
+                ""
+        );
+        final LearnDetailsModel l2 = new LearnDetailsModel(
+                "Examples",
+                "The following example will showcase all the case.\n\n" +
+                        "data.txt\n" +
+                        "[\n" +
+                        "   {\n" +
+                        "      \"Name\" : \"Anne Moore\",\n" +
+                        "      \"RollNo\" : 101,\n" +
+                        "      \"Percentage\" : \"80%\"\n" +
+                        "   },\n" +
+                        "   {\n" +
+                        "      \"Name\" : \"Emma Watson\",\n" +
+                        "      \"RollNo\" : 201,\n" +
+                        "      \"Percentage\" : \"70%\"\n" +
+                        "   },\n" +
+                        "   {\n" +
+                        "      \"Name\" : \"Robert\",\n" +
+                        "      \"RollNo\" : 191,\n" +
+                        "      \"Percentage\" : \"75%\"\n" +
+                        "   },\n" +
+                        "   {\n" +
+                        "      \"Name\" : \"Duke Joe\",\n" +
+                        "      \"RollNo\" : 111,\n" +
+                        "      \"Percentage\" : \"77%\"\n" +
+                        "   }\n" +
+                        "]",
+                "<html>\n" +
+                        "   <head>\n" +
+                        "      <title>Angular JS Includes</title>\n" +
+                        "      \n" +
+                        "      <style>\n" +
+                        "         table, th , td {\n" +
+                        "            border: 1px solid grey;\n" +
+                        "            border-collapse: collapse;\n" +
+                        "            padding: 5px;\n" +
+                        "         }\n" +
+                        "         table tr:nth-child(odd) {\n" +
+                        "            background-color: #f2f2f2;\n" +
+                        "         }\n" +
+                        "         table tr:nth-child(even) {\n" +
+                        "            background-color: #ffffff;\n" +
+                        "         }\n" +
+                        "      </style>\n" +
+                        "   </head>\n" +
+                        "   \n" +
+                        "   <body>\n" +
+                        "      <h2>AngularJS Sample Application</h2>\n" +
+                        "      <div ng-app = \"\" ng-controller = \"studentController\">\n" +
+                        "      \n" +
+                        "         <table>\n" +
+                        "            <tr>\n" +
+                        "               <th>Name</th>\n" +
+                        "               <th>Roll No</th>\n" +
+                        "               <th>Percentage</th>\n" +
+                        "            </tr>\n" +
+                        "         \n" +
+                        "            <tr ng-repeat = \"student in students\">\n" +
+                        "               <td>{{ student.Name }}</td>\n" +
+                        "               <td>{{ student.RollNo }}</td>\n" +
+                        "               <td>{{ student.Percentage }}</td>\n" +
+                        "            </tr>\n" +
+                        "         </table>\n" +
+                        "      </div>\n" +
+                        "      \n" +
+                        "      <script>\n" +
+                        "         function studentController($scope,$http) {\n" +
+                        "            var url = \"/data.txt\";\n" +
+                        "\n" +
+                        "            $http.get(url).then( function(response) {\n" +
+                        "               $scope.students = response.data;\n" +
+                        "            });\n" +
+                        "         }\n" +
+                        "      </script>\n" +
+                        "      \n" +
+                        "      <script src = \"https://ajax.googleapis.com/ajax/libs/angularjs/1.2.15/angular.min.js\">\n" +
+                        "      </script>\n" +
+                        "      \n" +
+                        "   </body>\n" +
+                        "</html>",
+                "To execute this example, you need to deploy testAngularJS." +
+                        "\nhtm and data.txt file to a web server. Open the file testAngularJS." +
+                        "\nhtm using the URL of your server in a web browser and see the result."
+        );
+        list.add(l1);
+        list.add(l2);
+        return list;
+    }
+    //AngularJS Views
+    private static List<LearnDetailsModel> AngularJSViews(){
+        final List<LearnDetailsModel> list = new ArrayList<>();
+        final LearnDetailsModel l1 = new LearnDetailsModel(
+                "AngularJS Views",
+                "AngularJS supports Single Page Application via multiple views on a single page. To do this, AngularJS has provided ng-view and ng-template directives, and $routeProvider services.\n" +
+                        "\n" +
+                        "ng-view Directive\n" +
+                        "The ng-view directive simply creates a place holder where a corresponding view (HTML or ng-template view) can be placed based on the configuration.\n" +
+                        "\n" +
+                        "Usage\n" +
+                        "Define a div with ng-view within the main module.",
+                "<div ng-app = \"mainApp\">\n" +
+                        "   ...\n" +
+                        "   <div ng-view></div>\n" +
+                        "\n" +
+                        "</div> ",
+                ""
+        );
+        final LearnDetailsModel l2 = new LearnDetailsModel(
+                "ng-template Directive",
+                "The ng-template directive is used to create an HTML view using script tag. It contains id attribute which is used by $routeProvider to map a view with a controller.\n" +
+                        "\n" +
+                        "Usage\n" +
+                        "Define a script block with type as ng-template within the main module.",
+                "<div ng-app = \"mainApp\">\n" +
+                        "   ...\n" +
+                        "\t\n" +
+                        "   <script type = \"text/ng-template\" id = \"addStudent.htm\">\n" +
+                        "      <h2> Add Student </h2>\n" +
+                        "      {{message}}\n" +
+                        "   </script>\n" +
+                        "\n" +
+                        "</div>  ",
+                ""
+        );
+        final LearnDetailsModel l3 = new LearnDetailsModel(
+                "$routeProvider Service",
+                "The $routeProvider is a key service which sets the configuration of URLs, maps them with the corresponding HTML page or ng-template, and attaches a controller with the same.\n" +
+                        "\n" +
+                        "Usage\n" +
+                        "Define a script block with type as ng-template within the main module.",
+                "<div ng-app = \"mainApp\"> \n" +
+                        "   ... \n" +
+                        "   <script type = \"text/ng-template\" id = \"addStudent.htm\"> \n" +
+                        "      <h2> Add Student </h2> \n" +
+                        "      {{message}} \n" +
+                        "   </script>  \n" +
+                        "</div>",
+                ""
+        );
+        final LearnDetailsModel l4 = new LearnDetailsModel(
+                "Example",
+                "The following example shows the use of all the above-mentioned directives.\n" +
+                        "\n" +
+                        "testAngularJS.htm",
+                "<html>\n" +
+                        "   <head>\n" +
+                        "      <title>Angular JS Views</title>\n" +
+                        "      <script src = \"https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js\"></script>\n" +
+                        "      <script src = \"https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular-route.min.js\">\n" +
+                        "      </script>\n" +
+                        "   </head>\n" +
+                        "   \n" +
+                        "   <body>\n" +
+                        "      <h2>AngularJS Sample Application</h2>\n" +
+                        "      <div ng-app = \"mainApp\">\n" +
+                        "         <p><a href = \"#addStudent\">Add Student</a></p>\n" +
+                        "         <p><a href = \"#viewStudents\">View Students</a></p>\n" +
+                        "         <div ng-view></div>\n" +
+                        "         \n" +
+                        "         <script type = \"text/ng-template\" id = \"addStudent.htm\">\n" +
+                        "            <h2> Add Student </h2>\n" +
+                        "            {{message}}\n" +
+                        "         </script>\n" +
+                        "         \n" +
+                        "         <script type = \"text/ng-template\" id = \"viewStudents.htm\">\n" +
+                        "            <h2> View Students </h2>\n" +
+                        "            {{message}}\n" +
+                        "         </script>\n" +
+                        "      </div>\n" +
+                        "      \n" +
+                        "      <script>\n" +
+                        "         var mainApp = angular.module(\"mainApp\", ['ngRoute']);\n" +
+                        "         mainApp.config(['$routeProvider', function($routeProvider) {\n" +
+                        "            $routeProvider\n" +
+                        "            \n" +
+                        "            .when('/addStudent', {\n" +
+                        "               templateUrl: 'addStudent.htm',\n" +
+                        "               controller: 'AddStudentController'\n" +
+                        "            })\n" +
+                        "            .when('/viewStudents', {\n" +
+                        "               templateUrl: 'viewStudents.htm',\n" +
+                        "               controller: 'ViewStudentsController'\n" +
+                        "            })\n" +
+                        "            .otherwise({\n" +
+                        "               redirectTo: '/addStudent'\n" +
+                        "            });\n" +
+                        "         }]);\n" +
+                        "         mainApp.controller('AddStudentController', function($scope) {\n" +
+                        "            $scope.message = \"This page will be used to display add student form\";\n" +
+                        "         });\n" +
+                        "         mainApp.controller('ViewStudentsController', function($scope) {\n" +
+                        "            $scope.message = \"This page will be used to display all the students\";\n" +
+                        "         });\n" +
+                        "      </script>\n" +
+                        "      \n" +
+                        "   </body>\n" +
+                        "</html>",
+                "Open the file testAngularJS.htm in a web browser and see the result."
+        );
+        list.add(l1);
+        list.add(l2);
+        list.add(l3);
+        list.add(l4);
+        return list;
+    }
+    //AngularJS Scopes
+    private static List<LearnDetailsModel> AngularJSScopes(){
+        final List<LearnDetailsModel> list = new ArrayList<>();
+        final LearnDetailsModel l1 = new LearnDetailsModel(
+                "AngularJS Scopes",
+                "Scope is a special JavaScript object that connects controller with views. Scope contains model data. In controllers, model data is accessed via $scope object." +
+                        "\n\n" +
+                        "The following important points are considered in above example −\n" +
+                        "\n" +
+                        "The $scope is passed as first argument to controller during its constructor definition.\n" +
+                        "\n" +
+                        "The $scope.message and $scope.type are the models which are used in the HTML page.\n" +
+                        "\n" +
+                        "We assign values to models that are reflected in the application module, whose controller is shapeController.\n" +
+                        "\n" +
+                        "We can define functions in $scope.",
+                "<script>\n" +
+                        "   var mainApp = angular.module(\"mainApp\", []);\n" +
+                        "   \n" +
+                        "   mainApp.controller(\"shapeController\", function($scope) {\n" +
+                        "      $scope.message = \"In shape controller\";\n" +
+                        "      $scope.type = \"Shape\";\n" +
+                        "   });\n" +
+                        "</script>",
+                ""
+        );
+        final LearnDetailsModel l2 = new LearnDetailsModel(
+                "Scope Inheritance",
+                "Scope is controller-specific. If we define nested controllers, then the child controller inherits the scope of its parent controller." +
+                        "\n\n" +
+                        "The following important points are considered in above example −\n" +
+                        "\n" +
+                        "We assign values to the models in shapeController.\n" +
+                        "\n" +
+                        "We override message in child controller named circleController. When message is used within the module of controller named circleController, the overridden message is used.",
+                "<script>\n" +
+                        "   var mainApp = angular.module(\"mainApp\", []);\n" +
+                        "   \n" +
+                        "   mainApp.controller(\"shapeController\", function($scope) {\n" +
+                        "      $scope.message = \"In shape controller\";\n" +
+                        "      $scope.type = \"Shape\";\n" +
+                        "   });\n" +
+                        "   mainApp.controller(\"circleController\", function($scope) {\n" +
+                        "      $scope.message = \"In circle controller\";\n" +
+                        "   });\n" +
+                        "\t\n" +
+                        "</script>",
+                ""
+        );
+        final LearnDetailsModel l3 = new LearnDetailsModel(
+                "Example",
+                "The following example shows use of all the above mentioned directives.\n" +
+                        "\n" +
+                        "testAngularJS.htm",
+                "<html>\n" +
+                        "   <head>\n" +
+                        "      <title>Angular JS Forms</title>\n" +
+                        "   </head>\n" +
+                        "   \n" +
+                        "   <body>\n" +
+                        "      <h2>AngularJS Sample Application</h2>\n" +
+                        "      \n" +
+                        "      <div ng-app = \"mainApp\" ng-controller = \"shapeController\">\n" +
+                        "         <p>{{message}} <br/> {{type}} </p>\n" +
+                        "         \n" +
+                        "         <div ng-controller = \"circleController\">\n" +
+                        "            <p>{{message}} <br/> {{type}} </p>\n" +
+                        "         </div>\n" +
+                        "         \n" +
+                        "         <div ng-controller = \"squareController\">\n" +
+                        "            <p>{{message}} <br/> {{type}} </p>\n" +
+                        "         </div>\n" +
+                        "\t\t\t\n" +
+                        "      </div>\n" +
+                        "      <script src = \"https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js\">\n" +
+                        "      </script>\n" +
+                        "      \n" +
+                        "      <script>\n" +
+                        "         var mainApp = angular.module(\"mainApp\", []);\n" +
+                        "         \n" +
+                        "         mainApp.controller(\"shapeController\", function($scope) {\n" +
+                        "            $scope.message = \"In shape controller\";\n" +
+                        "            $scope.type = \"Shape\";\n" +
+                        "         });\n" +
+                        "         mainApp.controller(\"circleController\", function($scope) {\n" +
+                        "            $scope.message = \"In circle controller\";\n" +
+                        "         });\n" +
+                        "         mainApp.controller(\"squareController\", function($scope) {\n" +
+                        "            $scope.message = \"In square controller\";\n" +
+                        "            $scope.type = \"Square\";\n" +
+                        "         });\n" +
+                        "\t\t\t\n" +
+                        "      </script>\n" +
+                        "      \n" +
+                        "   </body>\n" +
+                        "</html>",
+                "Open the file testAngularJS.htm in a web browser and see the result."
+        );
+        list.add(l1);
+        list.add(l2);
+        list.add(l3);
+        return list;
+    }
+    //AngularJS Services
+    private static List<LearnDetailsModel> AngularJSServices(){
+        final List<LearnDetailsModel> list = new ArrayList<>();
+        final LearnDetailsModel l1 = new LearnDetailsModel(
+                "AngularJS Services",
+                "AngularJS supports the concept of Separation of Concerns using services architecture. Services are JavaScript functions, which are responsible to perform only specific tasks. This makes them individual entities which are maintainable and testable. The controllers and filters can call them on requirement basis. Services are normally injected using the dependency injection mechanism of AngularJS.\n" +
+                        "\n" +
+                        "AngularJS provides many inbuilt services. For example, $http, $route, $window, $location, etc. Each service is responsible for a specific task such as the $http is used to make ajax call to get the server data, the $route is used to define the routing information, and so on. The inbuilt services are always prefixed with $ symbol.\n" +
+                        "\n" +
+                        "There are two ways to create a service −\n" +
+                        "\n" +
+                        "Factory\n" +
+                        "Service",
+                "",
+                ""
+        );
+        final LearnDetailsModel l2 = new LearnDetailsModel(
+                "Using Factory Method",
+                "In this method, we first define a factory and then assign method to it.",
+                "var mainApp = angular.module(\"mainApp\", []);\n" +
+                        "mainApp.factory('MathService', function() {\n" +
+                        "   var factory = {};\n" +
+                        "   \n" +
+                        "   factory.multiply = function(a, b) {\n" +
+                        "      return a * b\n" +
+                        "   }\n" +
+                        "   \n" +
+                        "   return factory;\n" +
+                        "}); ",
+                ""
+        );
+        final LearnDetailsModel l3 = new LearnDetailsModel(
+                "Using Service Method",
+                "In this method, we define a service and then assign method to it. We also inject an already available service to it.",
+                "mainApp.service('CalcService', function(MathService) {\n" +
+                        "   this.square = function(a) {\n" +
+                        "      return MathService.multiply(a,a);\n" +
+                        "   }\n" +
+                        "});",
+                ""
+        );
+        final LearnDetailsModel l4 = new LearnDetailsModel(
+                "Example",
+                "The following example shows use of all the above mentioned directives −\n" +
+                        "\n" +
+                        "testAngularJS.htm",
+                "<html>\n" +
+                        "   <head>\n" +
+                        "      <title>Angular JS Services</title>\n" +
+                        "      <script src = \"https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js\">\n" +
+                        "      </script>\n" +
+                        "   </head>\n" +
+                        "   \n" +
+                        "   <body>\n" +
+                        "      <h2>AngularJS Sample Application</h2>\n" +
+                        "      \n" +
+                        "      <div ng-app = \"mainApp\" ng-controller = \"CalcController\">\n" +
+                        "         <p>Enter a number: <input type = \"number\" ng-model = \"number\" /></p>\n" +
+                        "         <button ng-click = \"square()\">X<sup>2</sup></button>\n" +
+                        "         <p>Result: {{result}}</p>\n" +
+                        "      </div>\n" +
+                        "      \n" +
+                        "      <script>\n" +
+                        "         var mainApp = angular.module(\"mainApp\", []);\n" +
+                        "         \n" +
+                        "         mainApp.factory('MathService', function() {\n" +
+                        "            var factory = {};\n" +
+                        "            \n" +
+                        "            factory.multiply = function(a, b) {\n" +
+                        "               return a * b\n" +
+                        "            }\n" +
+                        "            return factory;\n" +
+                        "         });\n" +
+                        "         mainApp.service('CalcService', function(MathService) {\n" +
+                        "            this.square = function(a) {\n" +
+                        "               return MathService.multiply(a,a);\n" +
+                        "            }\n" +
+                        "         });\n" +
+                        "         mainApp.controller('CalcController', function($scope, CalcService) {\n" +
+                        "            $scope.square = function() {\n" +
+                        "               $scope.result = CalcService.square($scope.number);\n" +
+                        "            }\n" +
+                        "         });\n" +
+                        "      </script>\n" +
+                        "      \n" +
+                        "   </body>\n" +
+                        "</html>",
+                "Open the file testAngularJS.htm in a web browser and see the result."
+        );
+        list.add(l1);
+        list.add(l2);
+        list.add(l3);
+        list.add(l4);
+        return list;
+    }
+    //AngularJS Dependency Injection
+    private static List<LearnDetailsModel> AngularJSInjection(){
+        final List<LearnDetailsModel> list = new ArrayList<>();
+        final LearnDetailsModel l1 = new LearnDetailsModel(
+                "AngularJS Dependency Injection",
+                "Dependency Injection is a software design in which components are given their dependencies instead of hard coding them within the component. It relieves a component from locating the dependency and makes dependencies configurable. It also helps in making components reusable, maintainable and testable.\n" +
+                        "\n" +
+                        "AngularJS provides a supreme Dependency Injection mechanism. It provides following core components which can be injected into each other as dependencies.\n" +
+                        "\n" +
+                        "Value\n" +
+                        "Factory\n" +
+                        "Service\n" +
+                        "Provider\n" +
+                        "Constant",
+                "",
+                ""
+        );
+        final LearnDetailsModel l2 = new LearnDetailsModel(
+                "Value",
+                "Value is a simple JavaScript object, which is required to pass values to the controller during config phase (config phase is when AngularJS bootstraps itself).",
+                "//define a module\n" +
+                        "var mainApp = angular.module(\"mainApp\", []);\n" +
+                        "\n" +
+                        "//create a value object as \"defaultInput\" and pass it a data.\n" +
+                        "mainApp.value(\"defaultInput\", 5);\n" +
+                        "...\n" +
+                        "\n" +
+                        "//inject the value in the controller using its name \"defaultInput\"\n" +
+                        "mainApp.controller('CalcController', function($scope, CalcService, defaultInput) {\n" +
+                        "   $scope.number = defaultInput;\n" +
+                        "   $scope.result = CalcService.square($scope.number);\n" +
+                        "   \n" +
+                        "   $scope.square = function() {\n" +
+                        "      $scope.result = CalcService.square($scope.number);\n" +
+                        "   }\n" +
+                        "});",
+                ""
+        );
+        final LearnDetailsModel l3 = new LearnDetailsModel(
+                "Factory",
+                "Factory is a function which is used to return value. It creates a value on demand whenever a service or a controller requires it. It generally uses a factory function to calculate and return the value.",
+                "//define a module\n" +
+                        "var mainApp = angular.module(\"mainApp\", []);\n" +
+                        "\n" +
+                        "//create a factory \"MathService\" which provides a method multiply to return multiplication of two numbers\n" +
+                        "mainApp.factory('MathService', function() {\n" +
+                        "   var factory = {};\n" +
+                        "   \n" +
+                        "   factory.multiply = function(a, b) {\n" +
+                        "      return a * b\n" +
+                        "   }\n" +
+                        "   return factory;\n" +
+                        "}); \n" +
+                        "\n" +
+                        "//inject the factory \"MathService\" in a service to utilize the multiply method of factory.\n" +
+                        "mainApp.service('CalcService', function(MathService) {\n" +
+                        "   this.square = function(a) {\n" +
+                        "      return MathService.multiply(a,a);\n" +
+                        "   }\n" +
+                        "});\n" +
+                        "...",
+                ""
+        );
+        final LearnDetailsModel l4 = new LearnDetailsModel(
+                "Service",
+                "Service is a singleton JavaScript object containing a set of functions to perform certain tasks. Service is defined using service() function and it is then injected into the controllers.",
+                "//define a module\n" +
+                        "var mainApp = angular.module(\"mainApp\", []);\n" +
+                        "...\n" +
+                        "\n" +
+                        "//create a service which defines a method square to return square of a number.\n" +
+                        "mainApp.service('CalcService', function(MathService) {\n" +
+                        "   this.square = function(a) {\n" +
+                        "      return MathService.multiply(a,a); \n" +
+                        "   }\n" +
+                        "});\n" +
+                        "\n" +
+                        "//inject the service \"CalcService\" into the controller\n" +
+                        "mainApp.controller('CalcController', function($scope, CalcService, defaultInput) {\n" +
+                        "   $scope.number = defaultInput;\n" +
+                        "   $scope.result = CalcService.square($scope.number);\n" +
+                        "   \n" +
+                        "   $scope.square = function() {\n" +
+                        "      $scope.result = CalcService.square($scope.number);\n" +
+                        "   }\n" +
+                        "});",
+                ""
+        );
+        final LearnDetailsModel l5 = new LearnDetailsModel(
+                "Provider",
+                "Provider is used by AngularJS internally to create services, factory, etc. during the config phase. The following script can be used to create MathService that we created earlier. Provider is a special factory method with get() method which is used to return the value/service/factory.",
+                "//define a module\n" +
+                        "var mainApp = angular.module(\"mainApp\", []);\n" +
+                        "...\n" +
+                        "\n" +
+                        "//create a service using provider which defines a method square to return square of a number.\n" +
+                        "mainApp.config(function($provide) {\n" +
+                        "   $provide.provider('MathService', function() {\n" +
+                        "      this.$get = function() {\n" +
+                        "         var factory = {};  \n" +
+                        "         \n" +
+                        "         factory.multiply = function(a, b) {\n" +
+                        "            return a * b; \n" +
+                        "         }\n" +
+                        "         return factory;\n" +
+                        "      };\n" +
+                        "   });\n" +
+                        "});",
+                ""
+        );
+        final LearnDetailsModel l6 = new LearnDetailsModel(
+                "Constant",
+                "Constants are used to pass values at the config phase considering the fact that value cannot be used during the config phase.",
+                "mainApp.constant(\"configParam\", \"constant value\");",
+                ""
+        );
+        final LearnDetailsModel l7 = new LearnDetailsModel(
+                "Example",
+                "The following example shows the use of all the above-mentioned directives −\n" +
+                        "\n" +
+                        "testAngularJS.htm",
+                "<html>\n" +
+                        "   <head>\n" +
+                        "      <title>AngularJS Dependency Injection</title>\n" +
+                        "   </head>\n" +
+                        "   \n" +
+                        "   <body>\n" +
+                        "      <h2>AngularJS Sample Application</h2>\n" +
+                        "      \n" +
+                        "      <div ng-app = \"mainApp\" ng-controller = \"CalcController\">\n" +
+                        "         <p>Enter a number: <input type = \"number\" ng-model = \"number\" /></p>\n" +
+                        "         <button ng-click = \"square()\">X<sup>2</sup></button>\n" +
+                        "         <p>Result: {{result}}</p>\n" +
+                        "      </div>\n" +
+                        "      \n" +
+                        "      <script src = \"https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js\">\n" +
+                        "      </script>\n" +
+                        "      \n" +
+                        "      <script>\n" +
+                        "         var mainApp = angular.module(\"mainApp\", []);\n" +
+                        "         \n" +
+                        "         mainApp.config(function($provide) {\n" +
+                        "            $provide.provider('MathService', function() {\n" +
+                        "               this.$get = function() {\n" +
+                        "                  var factory = {};\n" +
+                        "                  \n" +
+                        "                  factory.multiply = function(a, b) {\n" +
+                        "                     return a * b;\n" +
+                        "                  }\n" +
+                        "                  return factory;\n" +
+                        "               };\n" +
+                        "            });\n" +
+                        "         });\n" +
+                        "\t\t\t\n" +
+                        "         mainApp.value(\"defaultInput\", 5);\n" +
+                        "         \n" +
+                        "         mainApp.factory('MathService', function() {\n" +
+                        "            var factory = {};\n" +
+                        "            \n" +
+                        "            factory.multiply = function(a, b) {\n" +
+                        "               return a * b;\n" +
+                        "            }\n" +
+                        "            return factory;\n" +
+                        "         });\n" +
+                        "         mainApp.service('CalcService', function(MathService) {\n" +
+                        "            this.square = function(a) {\n" +
+                        "               return MathService.multiply(a,a);\n" +
+                        "            }\n" +
+                        "         });\n" +
+                        "         mainApp.controller('CalcController', function($scope, CalcService, defaultInput) {\n" +
+                        "            $scope.number = defaultInput;\n" +
+                        "            $scope.result = CalcService.square($scope.number);\n" +
+                        "\n" +
+                        "            $scope.square = function() {\n" +
+                        "               $scope.result = CalcService.square($scope.number);\n" +
+                        "            }\n" +
+                        "         });\n" +
+                        "      </script>\n" +
+                        "      \n" +
+                        "   </body>\n" +
+                        "</html>",
+                "Open testAngularJS.htm in a web browser and see the result."
+        );
+        list.add(l1);
+        list.add(l2);
+        list.add(l3);
+        list.add(l4);
+        list.add(l5);
+        list.add(l6);
+        list.add(l7);
+        return list;
+    }
+    //AngularJS Custom Directives
+    private static List<LearnDetailsModel> AngularJSCustomDirectives(){
+        final List<LearnDetailsModel> list = new ArrayList<>();
+        final LearnDetailsModel l1 = new LearnDetailsModel(
+                "AngularJS Custom Directives",
+                "Custom directives are used in AngularJS to extend the functionality of HTML. Custom directives are defined using \"directive\" function. A custom directive simply replaces the element for which it is activated. AngularJS application during bootstrap finds the matching elements and do one time activity using its compile() method of the custom directive then process the element using link() method of the custom directive based on the scope of the directive. AngularJS provides support to create custom directives for following type of elements.\n" +
+                        "\n" +
+                        "Element directives − Directive activates when a matching element is encountered.\n" +
+                        "\n" +
+                        "Attribute − Directive activates when a matching attribute is encountered.\n" +
+                        "\n" +
+                        "CSS − Directive activates when a matching css style is encountered.\n" +
+                        "\n" +
+                        "Comment − Directive activates when a matching comment is encountered.",
+                "",
+                ""
+        );
+        final LearnDetailsModel l2 = new LearnDetailsModel(
+                "Understanding Custom Directive",
+                "Define custom html tags.\n" +
+                        "\n" +
+                        "<student name = \"Anne\"></student><br/>\n" +
+                        "<student name = \"Emma\"></student>" +
+                        "\n\n" +
+                        "Define controller to update the scope for directive. Here we are using name attribute's value as scope's child.\n" +
+                        "\n" +
+                        "mainApp.controller('StudentController', function($scope) {\n" +
+                        "   $scope.Mahesh = {};\n" +
+                        "   $scope.Mahesh.name = \"Mahesh Parashar\";\n" +
+                        "   $scope.Mahesh.rollno  = 1;\n" +
+                        "   \n" +
+                        "   $scope.Piyush = {};\n" +
+                        "   $scope.Piyush.name = \"Piyush Parashar\";\n" +
+                        "   $scope.Piyush.rollno  = 2;\n" +
+                        "});" +
+                        "\n\n" +
+                        "Define custom directive to handle above custom html tags bellow codes.",
+                "var mainApp = angular.module(\"mainApp\", []);\n" +
+                        "\n" +
+                        "//Create a directive, first parameter is the html element to be attached.\t  \n" +
+                        "//We are attaching student html tag. \n" +
+                        "//This directive will be activated as soon as any student element is encountered in html\n" +
+                        "\n" +
+                        "mainApp.directive('student', function() {\n" +
+                        "   //define the directive object\n" +
+                        "   var directive = {};\n" +
+                        "   \n" +
+                        "   //restrict = E, signifies that directive is Element directive\n" +
+                        "   directive.restrict = 'E';\n" +
+                        "   \n" +
+                        "   //template replaces the complete element with its text. \n" +
+                        "   directive.template = \"Student: <b>{{student.name}}</b> , \n" +
+                        "      Roll No: <b>{{student.rollno}}</b>\";\n" +
+                        "   \n" +
+                        "   //scope is used to distinguish each student element based on criteria.\n" +
+                        "   directive.scope = {\n" +
+                        "      student : \"=name\"\n" +
+                        "   }\n" +
+                        "   \n" +
+                        "   //compile is called during application initialization. AngularJS calls \n" +
+                        "      it once when html page is loaded.\n" +
+                        "\t\n" +
+                        "   directive.compile = function(element, attributes) {\n" +
+                        "      element.css(\"border\", \"1px solid #cccccc\");\n" +
+                        "      \n" +
+                        "      //linkFunction is linked with each element with scope to get the element specific data.\n" +
+                        "      var linkFunction = function($scope, element, attributes) {\n" +
+                        "         element.html(\"Student: <b>\"+$scope.student.name +\"</b> , \n" +
+                        "            Roll No: <b>\"+$scope.student.rollno+\"</b><br/>\");\n" +
+                        "         element.css(\"background-color\", \"#ff00ff\");\n" +
+                        "      }\n" +
+                        "      return linkFunction;\n" +
+                        "   }\n" +
+                        "   \n" +
+                        "   return directive;\n" +
+                        "});",
+                ""
+        );
+        final LearnDetailsModel l3 = new LearnDetailsModel(
+                "Example",
+                "The following example shows the use of all the above-mentioned directives",
+                "<html>\n" +
+                        "   <head>\n" +
+                        "      <title>Angular JS Custom Directives</title>\n" +
+                        "   </head>\n" +
+                        "   \n" +
+                        "   <body>\n" +
+                        "      <h2>AngularJS Sample Application</h2>\n" +
+                        "      \n" +
+                        "      <div ng-app = \"mainApp\" ng-controller = \"StudentController\">\n" +
+                        "         <student name = \"Mahesh\"></student><br/>\n" +
+                        "         <student name = \"Piyush\"></student>\n" +
+                        "      </div>\n" +
+                        "\t\t\n" +
+                        "      <script src = \"https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js\">\n" +
+                        "      </script>\n" +
+                        "      \n" +
+                        "      <script>\n" +
+                        "         var mainApp = angular.module(\"mainApp\", []);\n" +
+                        "         \n" +
+                        "         mainApp.directive('student', function() {\n" +
+                        "            var directive = {};\n" +
+                        "            directive.restrict = 'E';\n" +
+                        "            directive.template = \"Student: <b>{{student.name}}</b> , \n" +
+                        "               Roll No: <b>{{student.rollno}}</b>\";\n" +
+                        "            \n" +
+                        "            directive.scope = {\n" +
+                        "               student : \"=name\"\n" +
+                        "            }\n" +
+                        "            directive.compile = function(element, attributes) {\n" +
+                        "               element.css(\"border\", \"1px solid #cccccc\");\n" +
+                        "               \n" +
+                        "               var linkFunction = function($scope, element, attributes) {\n" +
+                        "                  element.html(\"Student: <b>\"+$scope.student.name +\"</b> , \n" +
+                        "                     Roll No: <b>\"+$scope.student.rollno+\"</b><br/>\");\n" +
+                        "                  element.css(\"background-color\", \"#ff00ff\");\n" +
+                        "               }\n" +
+                        "               return linkFunction;\n" +
+                        "            }\n" +
+                        "            \n" +
+                        "            return directive;\n" +
+                        "         });\n" +
+                        "         mainApp.controller('StudentController', function($scope) {\n" +
+                        "            $scope.Mahesh = {};\n" +
+                        "            $scope.Mahesh.name = \"Mahesh Parashar\";\n" +
+                        "            $scope.Mahesh.rollno  = 1;\n" +
+                        "\n" +
+                        "            $scope.Piyush = {};\n" +
+                        "            $scope.Piyush.name = \"Piyush Parashar\";\n" +
+                        "            $scope.Piyush.rollno  = 2;\n" +
+                        "         });\n" +
+                        "      </script>\n" +
+                        "      \n" +
+                        "   </body>\n" +
+                        "</html>",
+                "Open textAngularJS.htm in a web browser. See the result."
+        );
+
+        list.add(l1);
+        list.add(l2);
+        list.add(l3);
+        return list;
+    }
 
 
 
@@ -9320,6 +11300,43 @@ public class LearnDetailsContent {
                 return TypeScriptNamespaces();
             case "TypeScript Modules":
                 return TypeScriptModules();
+            //AngularJS
+            case "AngularJS Introduction":
+                return AngularJSIntroduction();
+            case "AngularJS MVC Architecture":
+                return AngularJSMVCArchitecture();
+            case "AngularJS First Application":
+                return AngularJSFirstApplication();
+            case "AngularJS Directives":
+                return AngularJSDirectives();
+            case "AngularJS Expressions":
+                return AngularJSExpressions();
+            case "AngularJS Controllers":
+                return AngularJSControllers();
+            case "AngularJS Filters":
+                return AngularJSFilters();
+            case "AngularJS Tables":
+                return AngularJSTables();
+            case "AngularJS HTML DOM":
+                return AngularJSHTMLDOM();
+            case "AngularJS Modules":
+                return AngularJSModules();
+            case "AngularJS Forms":
+                return AngularJSForms();
+            case "AngularJS Includes":
+                return AngularJSIncludes();
+            case "AngularJS Ajax":
+                return AngularJSAjax();
+            case "AngularJS Views":
+                return AngularJSViews();
+            case "AngularJS Scopes":
+                return AngularJSScopes();
+            case "AngularJS Services":
+                return AngularJSServices();
+            case "AngularJS Dependency Injection":
+                return AngularJSInjection();
+            case "AngularJS Custom Directives":
+                return AngularJSCustomDirectives();
 
             default:
                 return defaultT();
@@ -9329,7 +11346,7 @@ public class LearnDetailsContent {
     }
 
 }
-    /*private static List<LearnDetailsModel> TypeScriptModules(){
+    /*private static List<LearnDetailsModel> AngularJSCustomDirectives(){
         final List<LearnDetailsModel> list = new ArrayList<>();
         final LearnDetailsModel l1 = new LearnDetailsModel();
 

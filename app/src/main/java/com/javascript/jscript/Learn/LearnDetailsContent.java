@@ -11032,7 +11032,2443 @@ public class LearnDetailsContent {
         list.add(l3);
         return list;
     }
+    //VueJs
+    //VueJs Introduction
+    private static List<LearnDetailsModel> VueJsIntroduction(){
+        final List<LearnDetailsModel> list = new ArrayList<>();
+        final LearnDetailsModel l1 = new LearnDetailsModel(
+                "VueJs Introduction",
+                "VueJS is an open source progressive JavaScript framework used to develop interactive web interfaces. It is one of the famous frameworks used to simplify web development. VueJS focusses on the view layer. It can be easily integrated into big projects for front-end development without any issues.\n" +
+                        "\n" +
+                        "The installation for VueJS is very easy to start with. Any developer can easily understand and build interactive web interfaces in a matter of time. VueJS is created by Evan You, an ex-employee from Google. The first version of VueJS was released in Feb 2014. It recently has clocked to 64,828 stars on GitHub, making it very popular.",
+                "",
+                ""
+        );
+        final LearnDetailsModel l2 = new LearnDetailsModel(
+                "Features",
+                "Following are the features available with VueJS.\n" +
+                        "\n" +
+                        "Virtual DOM\n" +
+                        "VueJS makes the use of virtual DOM, which is also used by other frameworks such as React, Ember, etc. The changes are not made to the DOM, instead a replica of the DOM is created which is present in the form of JavaScript data structures. Whenever any changes are to be made, they are made to the JavaScript data structures and the latter is compared with the original data structure. The final changes are then updated to the real DOM, which the user will see changing. This is good in terms of optimization, it is less expensive and the changes can be made at a faster rate.\n" +
+                        "\n" +
+                        "Data Binding\n" +
+                        "The data binding feature helps manipulate or assign values to HTML attributes, change the style, assign classes with the help of binding directive called v-bind available with VueJS.\n" +
+                        "\n" +
+                        "Components\n" +
+                        "Components are one of the important features of VueJS that helps create custom elements, which can be reused in HTML.\n" +
+                        "\n" +
+                        "Event Handling\n" +
+                        "v-on is the attribute added to the DOM elements to listen to the events in VueJS.\n" +
+                        "\n" +
+                        "Animation/Transition\n" +
+                        "VueJS provides various ways to apply transition to HTML elements when they are added/updated or removed from the DOM. VueJS has a built-in transition component that needs to be wrapped around the element for transition effect. We can easily add third party animation libraries and also add more interactivity to the interface.\n" +
+                        "\n" +
+                        "Computed Properties\n" +
+                        "This is one of the important features of VueJS. It helps to listen to the changes made to the UI elements and performs the necessary calculations. There is no need of additional coding for this.\n" +
+                        "\n" +
+                        "Templates\n" +
+                        "VueJS provides HTML-based templates that bind the DOM with the Vue instance data. Vue compiles the templates into virtual DOM Render functions. We can make use of the template of the render functions and to do so we have to replace the template with the render function.\n" +
+                        "\n" +
+                        "Directives\n" +
+                        "VueJS has built-in directives such as v-if, v-else, v-show, v-on, v-bind, and v-model, which are used to perform various actions on the frontend.\n" +
+                        "\n" +
+                        "Watchers\n" +
+                        "Watchers are applied to data that changes. For example, form input elements. Here, we don’t have to add any additional events. Watcher takes care of handling any data changes making the code simple and fast.\n" +
+                        "\n" +
+                        "Routing\n" +
+                        "Navigation between pages is performed with the help of vue-router.\n" +
+                        "\n" +
+                        "Lightweight\n" +
+                        "VueJS script is very lightweight and the performance is also very fast.\n" +
+                        "\n" +
+                        "Vue-CLI\n" +
+                        "VueJS can be installed at the command line using the vue-cli command line interface. It helps to build and compile the project easily using vue-cli.",
+                "",
+                ""
+        );
+        final LearnDetailsModel l3 = new LearnDetailsModel(
+                "Comparison with Other Frameworks",
+                "Now let us compare VueJS with other frameworks such as React, Angular, Ember, Knockout, and Polymer.\n" +
+                        "\n" +
+                        "VueJS v/s React\n" +
+                        "Virtual DOM\n" +
+                        "\n" +
+                        "Virtual DOM is a virtual representation of the DOM tree. With virtual DOM, a JavaScript object is created which is the same as the real DOM. Any time a change needs to be made to the DOM, a new JavaScript object is created and the changes are made. Later, both the JavaScript objects are compared and the final changes are updated in the real DOM.\n" +
+                        "\n" +
+                        "VueJS and React both use virtual DOM, which makes it faster.\n" +
+                        "\n" +
+                        "Template v/s JSX\n" +
+                        "\n" +
+                        "VueJS uses html, js and css separately. It is very easy for a beginner to understand and adopt the VueJS style. The template based approach for VueJS is very easy.\n" +
+                        "\n" +
+                        "React uses jsx approach. Everything is JavaScript for ReactJS. HTML and CSS are all part of JavaScript.\n" +
+                        "\n" +
+                        "Installation Tools\n" +
+                        "\n" +
+                        "React uses create react app and VueJS uses vue-cli /CDN/npm. Both are very easy to use and the project is set up with all the basic requirements. React needs webpack for the build, whereas VueJS does not. We can start with VueJS coding anywhere in jsfiddle or codepen using the cdn library.\n" +
+                        "\n" +
+                        "Popularity\n" +
+                        "\n" +
+                        "React is popular than VueJS. The job opportunity with React is more than VueJS. There is a big name behind React i.e. Facebook which makes it more popular. Since, React uses the core concept of JavaScript, it uses the best practice of JavaScript. One who works with React will definitely be a very good with all the JavaScript concepts.\n" +
+                        "\n" +
+                        "VueJS is a developing framework. Presently, the job opportunities with VueJS are less in comparison to React. According to a survey, many people are adapting to VueJS, which can make it more popular in comparison to React and Angular. There is a good community working on the different features of VueJS. The vue-router is maintained by this community with regular updates.\n" +
+                        "\n" +
+                        "VueJS has taken the good parts from Angular and React and has built a powerful library. VueJS is much faster in comparison to React/Angular because of its lightweight library.",
+                "",
+                ""
+        );
+        final LearnDetailsModel l4 = new LearnDetailsModel(
+                "VueJS v/s Angular",
+                "Similarities\n" +
+                        "\n" +
+                        "VueJS has a lot of similarities with Angular. Directives such as v-if, v-for are almost similar to ngIf, ngFor of Angular. They both have a command line interface for project installation and to build it. VueJS uses Vue-cli and Angular uses angular-cli. Both offer two-way data binding, server side rendering, etc.\n" +
+                        "\n" +
+                        "Complexity\n" +
+                        "\n" +
+                        "Vuejs is very easy to learn and start with. As discussed earlier, a beginner can take the CDN library of VueJS and get started in codepen and jsfiddle.\n" +
+                        "\n" +
+                        "For Angular, we need to go through a series of steps for installation and it is little difficult for beginners to get started with Angular. It uses TypeScript for coding which is difficult for people coming from core JavaScript background. However, it is easier to learn for users belonging to Java and C# background.\n" +
+                        "\n" +
+                        "Performance\n" +
+                        "\n" +
+                        "To decide the performance, it is up to the users. VueJS file size is much lighter than Angular. A comparison of the framework performance is provided in the following link http://stefankrause.net/js-frameworks-benchmark4/webdriver-ts/table.html\n" +
+                        "\n" +
+                        "Popularity\n" +
+                        "\n" +
+                        "At present, Angular is more popular than VueJS. A lot of organizations use Angular, making it very popular. Job opportunities are also more for candidates experienced in Angular. However, VueJS is taking up the place in the market and can be considered as a good competitor for Angular and React.\n" +
+                        "\n" +
+                        "Dependencies\n" +
+                        "\n" +
+                        "Angular provides a lot of built-in features. We have to import the required modules and get started with it, for example, @angular/animations, @angular/form.\n" +
+                        "\n" +
+                        "VueJS does not have all the built-in features as Angular and needs to depend on third party libraries to work on it.\n" +
+                        "\n" +
+                        "Flexibility\n" +
+                        "\n" +
+                        "VueJS can be easily merged with any other big project without any issues. Angular will not be that easy to start working with any other existing project.\n" +
+                        "\n" +
+                        "Backward Compatibility\n" +
+                        "\n" +
+                        "We had AngularJS, Angular2 and now Angular4. AngularJS and Angular2 have vast difference. Project application developed in AngularJS cannot be converted to Angular2 because of the core differences.\n" +
+                        "\n" +
+                        "The recent version of VueJS is 2.0 and it is good with backward compatibility. It provides good documentation, which is very easy to understand.\n" +
+                        "\n" +
+                        "Typescript\n" +
+                        "\n" +
+                        "Angular uses TypeScript for its coding. Users need to have knowledge of Typescript to get started with Angular. However, we can start with VueJS coding anywhere in jsfiddle or codepen using the cdn library. We can work with standard JavaScript, which is very easy to start with.",
+                "",
+                ""
+        );
+        final LearnDetailsModel l5 = new LearnDetailsModel(
+                "VueJS v/s Ember",
+                "Similarities\n" +
+                        "\n" +
+                        "Ember provides Ember command line tool, i.e. ember-cli for easy installation and compiling for Ember projects.\n" +
+                        "\n" +
+                        "VueJS has also a command line tool vue-cli to start and build projects.\n" +
+                        "\n" +
+                        "They both have features such as router, template, and components which makes them very rich as the UI framework.\n" +
+                        "\n" +
+                        "Performance\n" +
+                        "\n" +
+                        "VueJS has better performance in comparison to Ember. Ember has added a glimmer rendering engine with the aim of improving the re-render performance, which is a similar concept as VueJS and React using virtual DOM. However, VueJS has a better performance when compared to Ember.",
+                "",
+                ""
+        );
+        final LearnDetailsModel l6 = new LearnDetailsModel(
+                "VueJS v/s Knockout",
+                "Knockout provides a good browser support. It is supported on the lower version of the IE whereas VueJS is not supported on IE8 and below. Knockout development has slowed down over time. There is not much popularity for the same in recent times.\n" +
+                        "\n" +
+                        "On the other hand, VueJS has started gaining popularity with the Vue team providing regular updates.",
+                "",
+                ""
+        );
+        final LearnDetailsModel l7 = new LearnDetailsModel(
+                "VueJS v/s Polymer",
+                "Polymer library has been developed by Google. It is used in many Google projects such as Google I/O, Google Earth, Google Play Music, etc. It offers data binding and computed properties similar to VueJS.\n" +
+                        "\n" +
+                        "Polymer custom element definition comprises plain JavaScript/CSS, element properties, lifecycle callbacks, and JavaScript methods. In comparison, VueJS allows to easily use JavaScript/html and CSS.\n" +
+                        "\n" +
+                        "Polymer uses web component features and requires polyfills for browsers, which does not support these features. VueJS does not have such dependencies and works fine in all browsers from IE9+.",
+                "",
+                ""
+        );
 
+        list.add(l1);
+        list.add(l2);
+        list.add(l3);
+        list.add(l4);
+        list.add(l5);
+        list.add(l6);
+        list.add(l7);
+        return list;
+    }
+    //VueJs First Program
+    private static List<LearnDetailsModel> VueJsFirstProgram(){
+        final List<LearnDetailsModel> list = new ArrayList<>();
+        final LearnDetailsModel l1 = new LearnDetailsModel(
+                "VueJs First Program",
+                "As Vue is basically built for frontend development, we are going to deal with lot of HTML, JavaScript and CSS files in the upcoming chapters. To understand the details, let us start with a simple example.\n" +
+                        "\n" +
+                        "In this example, we are going to use the development verison of vuejs.",
+                "",
+                ""
+        );
+        final LearnDetailsModel l2 = new LearnDetailsModel(
+                "Example",
+                "Example of first program.",
+                "<html>\n" +
+                        "   <head>\n" +
+                        "      <title>VueJs Introduction</title>\n" +
+                        "      <script type = \"text/javascript\" src = \"js/vue.js\"></script>\n" +
+                        "   </head>\n" +
+                        "   <body>\n" +
+                        "      <div id = \"intro\" style = \"text-align:center;\">\n" +
+                        "         <h1>{{ message }}</h1>\n" +
+                        "      </div>\n" +
+                        "      <script type = \"text/javascript\">\n" +
+                        "         var vue_det = new Vue({\n" +
+                        "            el: '#intro',\n" +
+                        "            data: {\n" +
+                        "               message: 'My first VueJS Task'\n" +
+                        "            }\n" +
+                        "         });\n" +
+                        "      </script>\n" +
+                        "   </body>\n" +
+                        "</html>",
+                ""
+        );
+        list.add(l1);
+        list.add(l2);
+        return list;
+    }
+    //VueJS Instances
+    private static List<LearnDetailsModel> VueJSInstances(){
+        final List<LearnDetailsModel> list = new ArrayList<>();
+        final LearnDetailsModel l1 = new LearnDetailsModel(
+                "VueJS Instances",
+                "To start with VueJS, we need to create the instance of Vue, which is called the root Vue Instance.\n" +
+                        "\n" +
+                        "Syntax\n" +
+                        "var app = new Vue({\n" +
+                        "   // options\n" +
+                        "})",
+                "",
+                ""
+        );
+        final LearnDetailsModel l2 = new LearnDetailsModel(
+                "Example",
+                "Let us look at an example to understand what needs to be part of the Vue constructor.\n" +
+                        "\n" +
+                        "<html>\n" +
+                        "   <head>\n" +
+                        "      <title>VueJs Instance</title>\n" +
+                        "      <script type = \"text/javascript\" src = \"js/vue.js\"></script>\n" +
+                        "   </head>\n" +
+                        "   <body>\n" +
+                        "      <div id = \"vue_det\">\n" +
+                        "         <h1>Firstname : {{firstname}}</h1>\n" +
+                        "         <h1>Lastname : {{lastname}}</h1>\n" +
+                        "         <h1>{{mydetails()}}</h1>\n" +
+                        "      </div>\n" +
+                        "      <script type = \"text/javascript\" src = \"js/vue_instance.js\"></script>\n" +
+                        "   </body>\n" +
+                        "</html>\n\n" +
+                        "For Vue, there is a parameter called el. It takes the id of the DOM element. In the above example, we have the id #vue_det. It is the id of the div element, which is present in .html.\n" +
+                        "\n" +
+                        "<div id = \"vue_det\"></div>\n" +
+                        "Now, whatever we are going to do will affect the div element and nothing outside it.\n" +
+                        "\n" +
+                        "Next, we have defined the data object. It has value firstname, lastname, and address.\n" +
+                        "\n" +
+                        "The same is assigned inside the div. For example,\n" +
+                        "\n" +
+                        "<div id = \"vue_det\">\n" +
+                        "   <h1>Firstname : {{firstname}}</h1>\n" +
+                        "   <h1>Lastname : {{lastname}}</h1>\n" +
+                        "</div>\n" +
+                        "The Firstname : {{firstname}} value will be replaced inside the interpolation, i.e. {{}} with the value assigned in the data object, i.e. Ria. The same goes for last name.\n" +
+                        "\n" +
+                        "Next, we have methods where we have defined a function mydetails and a returning value. It is assigned inside the div as\n" +
+                        "\n" +
+                        "<h1>{{mydetails()}}</h1>\n" +
+                        "Hence, inside {{} } the function mydetails is called. The value returned in the Vue instance will be printed inside {{}}. Check the output for reference.",
+                "var  vm = new Vue({\n" +
+                        "   el: '#vue_det',\n" +
+                        "   data: {\n" +
+                        "      firstname : \"Anne\",\n" +
+                        "      lastname  : \"Moore\",\n" +
+                        "      address    : \"USA\"\n" +
+                        "   },\n" +
+                        "   methods: {\n" +
+                        "      mydetails : function() {\n" +
+                        "         return \"I am \"+this.firstname +\" \"+ this.lastname;\n" +
+                        "      }\n" +
+                        "   }\n" +
+                        "})",
+                ""
+        );
+
+        list.add(l1);
+        list.add(l2);
+        return list;
+    }
+    //VueJS Template
+    private static List<LearnDetailsModel> VueJSTemplate(){
+        final List<LearnDetailsModel> list = new ArrayList<>();
+        final LearnDetailsModel l1 = new LearnDetailsModel(
+                "VueJS Template",
+                "We have learnt in the earlier chapters, how to get an output in the form of text content on the screen. In this chapter, we will learn how to get an output in the form of HTML template on the screen.\n" +
+                        "\n" +
+                        "To understand this, let us consider an example and see the output in the browser." +
+                        "\n\n" +
+                        "<html>\n" +
+                        "   <head>\n" +
+                        "      <title>VueJs Instance</title>\n" +
+                        "      <script type = \"text/javascript\" src = \"js/vue.js\"></script>\n" +
+                        "   </head>\n" +
+                        "   <body>\n" +
+                        "      <div id = \"vue_det\">\n" +
+                        "         <h1>Firstname : {{firstname}}</h1>\n" +
+                        "         <h1>Lastname : {{lastname}}</h1>\n" +
+                        "         <div>{{htmlcontent}}</div>\n" +
+                        "      </div>\n" +
+                        "      <script type = \"text/javascript\" src = \"js/vue_template.js\"></script>\n" +
+                        "   </body>\n" +
+                        "</html>",
+                "var vm = new Vue({\n" +
+                        "   el: '#vue_det',\n" +
+                        "   data: {\n" +
+                        "      firstname : \"Anne\",\n" +
+                        "      lastname  : \"Moore\",\n" +
+                        "      htmlcontent : \"<div><h1>Vue Js Template</h1></div>\"\n" +
+                        "   }\n" +
+                        "})",
+                ""
+        );
+        list.add(l1);
+        return list;
+    }
+    //VueJS Components
+    private static List<LearnDetailsModel> VueJSComponents(){
+        final List<LearnDetailsModel> list = new ArrayList<>();
+        final LearnDetailsModel l1 = new LearnDetailsModel(
+                "VueJS Components",
+                "Vue Components are one of the important features of VueJS that creates custom elements, which can be reused in HTML.\n" +
+                        "\n" +
+                        "Let’s work with an example and create a component, that will give a better understanding on how components work with VueJS." +
+                        "\n\n" +
+                        "Example\n" +
+                        "<html>\n" +
+                        "   <head>\n" +
+                        "      <title>VueJs Instance</title>\n" +
+                        "      <script type = \"text/javascript\" src = \"js/vue.js\"></script>\n" +
+                        "   </head>\n" +
+                        "   <body>\n" +
+                        "      <div id = \"component_test\">\n" +
+                        "         <testcomponent></testcomponent>\n" +
+                        "      </div>\n" +
+                        "      <div id = \"component_test1\">\n" +
+                        "         <testcomponent></testcomponent>\n" +
+                        "      </div>\n" +
+                        "      <script type = \"text/javascript\" src = \"js/vue_component.js\"></script>\n" +
+                        "   </body>\n" +
+                        "</html>",
+                "Vue.component('testcomponent',{\n" +
+                        "   template : '<div><h1>This is coming from component</h1></div>'\n" +
+                        "});\n" +
+                        "var vm = new Vue({\n" +
+                        "   el: '#component_test'\n" +
+                        "});\n" +
+                        "var vm1 = new Vue({\n" +
+                        "   el: '#component_test1'\n" +
+                        "});",
+                ""
+        );
+        final LearnDetailsModel l2 = new LearnDetailsModel(
+                "Dynamic Components",
+                "Dynamic components are created using the keyword <component></component> and it is bound using a property as shown in the following example.",
+                "<html>\n" +
+                        "   <head>\n" +
+                        "      <title>VueJs Instance</title>\n" +
+                        "      <script type = \"text/javascript\" src = \"js/vue.js\"></script>\n" +
+                        "   </head>\n" +
+                        "   <body>\n" +
+                        "      <div id = \"databinding\">\n" +
+                        "         <component v-bind:is = \"view\"></component>\n" +
+                        "      </div>\n" +
+                        "      <script type = \"text/javascript\">\n" +
+                        "         var vm = new Vue({\n" +
+                        "            el: '#databinding',\n" +
+                        "            data: {\n" +
+                        "               view: 'component1'\n" +
+                        "            },\n" +
+                        "            components: {\n" +
+                        "               'component1': {\n" +
+                        "                  template: '<div><span style = \"font-size:25;color:red;\">Dynamic Component</span></div>'\n" +
+                        "               }\n" +
+                        "            }\n" +
+                        "         });\n" +
+                        "      </script>\n" +
+                        "   </body>\n" +
+                        "</html>",
+                ""
+        );
+        list.add(l1);
+        list.add(l2);
+        return list;
+    }
+    //VueJS Computed Properties
+    private static List<LearnDetailsModel> VueJSComputedProperties(){
+        final List<LearnDetailsModel> list = new ArrayList<>();
+        final LearnDetailsModel l1 = new LearnDetailsModel(
+                "VueJS Computed Properties",
+                "We have already seen methods for Vue instance and for components. Computed properties are like methods but with some difference in comparison to methods, which we will discuss in this chapter.\n" +
+                        "\n" +
+                        "At the end of this chapter, we will be able to make a decision on when to use methods and when to use computed properties.\n" +
+                        "\n" +
+                        "Let’s understand computed properties using an example." +
+                        "\n\n" +
+                        "Example\n" +
+                        "<html>\n" +
+                        "   <head>\n" +
+                        "      <title>VueJs Instance</title>\n" +
+                        "      <script type = \"text/javascript\" src = \"js/vue.js\"></script>\n" +
+                        "   </head>\n" +
+                        "   <body>\n" +
+                        "      <div id = \"computed_props\">\n" +
+                        "         FirstName : <input type = \"text\" v-model = \"firstname\" /> <br/><br/>\n" +
+                        "         LastName : <input type = \"text\" v-model = \"lastname\"/> <br/><br/>\n" +
+                        "         <h1>My name is {{firstname}} {{lastname}}</h1>\n" +
+                        "         <h1>Using computed method : {{getfullname}}</h1>\n" +
+                        "      </div>\n" +
+                        "      <script type = \"text/javascript\" src = \"js/vue_computedprops.js\"></script>\n" +
+                        "   </body>\n" +
+                        "</html>" +
+                        "\n\n" +
+                        "Here, we have created .html file with firstname and lastname. Firstname and Lastname is a textbox which are bound using properties firstname and lastname.\n" +
+                        "\n" +
+                        "We are calling the computed method getfullname, which returns the firstname and the lastname entered.\n" +
+                        "\n" +
+                        "computed :{\n" +
+                        "   getfullname : function(){\n" +
+                        "      return this.firstname +\" \"+ this.lastname;\n" +
+                        "   }\n" +
+                        "}",
+                "var vm = new Vue({\n" +
+                        "   el: '#computed_props',\n" +
+                        "   data: {\n" +
+                        "      firstname :\"\",\n" +
+                        "      lastname :\"\",\n" +
+                        "      birthyear : \"\"\n" +
+                        "   },\n" +
+                        "   computed :{\n" +
+                        "      getfullname : function(){\n" +
+                        "         return this.firstname +\" \"+ this.lastname;\n" +
+                        "      }\n" +
+                        "   }\n" +
+                        "})",
+                ""
+        );
+        final LearnDetailsModel l2 = new LearnDetailsModel(
+                "Get/Set in Computed Properties",
+                "We have defined one input box which is bound to fullname, which is a computed property. It returns a function called get, which gives the fullname, i.e. the first name and the lastname. Also, we have displayed the firstname and lastname as −\n" +
+                        "\n" +
+                        "<h1>{{firstName}}</h1>\n" +
+                        "<h1>{{lastName}}</h1>",
+                "<html>\n" +
+                        "   <head>\n" +
+                        "      <title>VueJs Instance</title>\n" +
+                        "      <script type = \"text/javascript\" src = \"js/vue.js\"></script>\n" +
+                        "   </head>\n" +
+                        "   <body>\n" +
+                        "      <div id = \"computed_props\">\n" +
+                        "         <input type = \"text\" v-model = \"fullname\" />\n" +
+                        "         <h1>{{firstName}}</h1>\n" +
+                        "         <h1>{{lastName}}</h1>\n" +
+                        "      </div>\n" +
+                        "      <script type = \"text/javascript\">\n" +
+                        "         var vm = new Vue({\n" +
+                        "            el: '#computed_props',\n" +
+                        "            data: {\n" +
+                        "               firstName : \"Terry\",\n" +
+                        "               lastName : \"Ben\"\n" +
+                        "            },\n" +
+                        "            methods: {\n" +
+                        "            },\n" +
+                        "            computed :{\n" +
+                        "               fullname : {\n" +
+                        "                  get : function() {\n" +
+                        "                     return this.firstName+\" \"+this.lastName;\n" +
+                        "                  }\n" +
+                        "               }\n" +
+                        "            }\n" +
+                        "         });\n" +
+                        "      </script>\n" +
+                        "   </body>\n" +
+                        "</html>",
+                ""
+        );
+        list.add(l1);
+        list.add(l2);
+        return list;
+    }
+    //VueJS Binding
+    private static List<LearnDetailsModel> VueJSBinding(){
+        final List<LearnDetailsModel> list = new ArrayList<>();
+        final LearnDetailsModel l1 = new LearnDetailsModel(
+                "VueJS Binding",
+                "In this chapter will learn how to manipulate or assign values to HTML attributes, change the style, and assign classes with the help of binding directive called v-bind available with VueJS.\n" +
+                        "\n" +
+                        "Let’s consider an example to understand why we need and when to use v-bind directive for data binding." +
+                        "\n\n" +
+                        "In bellow example, we have displayed a title variable and three anchor links. We have also assigned a value to the href from the data object." +
+                        "\n\n" +
+                        "The first clickme shows the href as hreflink, and the second one shows it in {{hreflink}}, while the last one displays the correct url as we require.\n" +
+                        "\n" +
+                        "Hence, to assign values to HTML attributes, we need to bind it with the directive v-bind as follows.\n" +
+                        "\n" +
+                        "<a v-bind:href = \"hreflink\" target = \"_blank\">Click Me </a>\n" +
+                        "VueJS also provides a shorthand for v-bind as follows.\n" +
+                        "\n" +
+                        "<a :href = \"hreflink\" target = \"_blank\">Click Me </a>\n" +
+                        "If we see the inspect element in the browser, the anchor tag does not show the v-bind attribute, however, it displays the plain HTML. None of the VueJS properties are seen when we inpsect the DOM.",
+                "<html>\n" +
+                        "   <head>\n" +
+                        "      <title>VueJs Instance</title>\n" +
+                        "      <script type = \"text/javascript\" src = \"js/vue.js\"></script>\n" +
+                        "   </head>\n" +
+                        "   <body>\n" +
+                        "      <div id = \"databinding\">\n" +
+                        "         {{title}}<br/>\n" +
+                        "         <a href = \"hreflink\" target = \"_blank\"> Click Me </a> <br/>\n" +
+                        "         <a href = \"{{hreflink}}\" target = \"_blank\">Click Me </a>  <br/>\n" +
+                        "         <a v-bind:href = \"hreflink\" target = \"_blank\">Click Me </a>   <br/>\n" +
+                        "      </div>\n" +
+                        "      <script type = \"text/javascript\">\n" +
+                        "         var vm = new Vue({\n" +
+                        "            el: '#databinding',\n" +
+                        "            data: {\n" +
+                        "               title : \"DATA BINDING\",\n" +
+                        "               hreflink : \"http://www.google.com\"\n" +
+                        "            }\n" +
+                        "         });\n" +
+                        "      </script>\n" +
+                        "   </body>\n" +
+                        "</html>",
+                ""
+        );
+        final LearnDetailsModel l2 = new LearnDetailsModel(
+                "Binding HTML Classes",
+                "To bind HTML class, we need to use v-bind: class. Let’s consider an example and bind classes in it." +
+                        "\n\n" +
+                        "There is a div created with v-bind: class=” {active: isactive}”.\n" +
+                        "\n" +
+                        "Here, isactive is a variable which is based on true or false. It will apply the class active to the div. In the data object, we have assigned the isactive variable as true. There is a class defined in the style .active with the background color as red.",
+                "<html>\n" +
+                        "   <head>\n" +
+                        "      <title>VueJs Instance</title>\n" +
+                        "      <script type = \"text/javascript\" src = \"js/vue.js\"></script>\n" +
+                        "   </head>\n" +
+                        "   <body>\n" +
+                        "      <style>\n" +
+                        "         .active {\n" +
+                        "            background: red;\n" +
+                        "         }\n" +
+                        "      </style>\n" +
+                        "      <div id = \"classbinding\">\n" +
+                        "         <div v-bind:class = \"{active:isactive}\"><b>{{title}}</b></div>\n" +
+                        "      </div>\n" +
+                        "      <script type = \"text/javascript\">\n" +
+                        "         var vm = new Vue({\n" +
+                        "            el: '#classbinding',\n" +
+                        "            data: {\n" +
+                        "               title : \"CLASS BINDING\",\n" +
+                        "               isactive : true\n" +
+                        "            }\n" +
+                        "         });\n" +
+                        "      </script>\n" +
+                        "   </body>\n" +
+                        "</html>",
+                ""
+        );
+        list.add(l1);
+        list.add(l2);
+        return list;
+    }
+    //VueJS Events
+    private static List<LearnDetailsModel> VueJSEvents(){
+        final List<LearnDetailsModel> list = new ArrayList<>();
+        final LearnDetailsModel l1 = new LearnDetailsModel(
+                "Click Event",
+                "v-on is the attribute added to the DOM elements to listen to the events in VueJS.",
+                "<html>\n" +
+                        "   <head>\n" +
+                        "      <title>VueJs Instance</title>\n" +
+                        "      <script type = \"text/javascript\" src = \"js/vue.js\"></script>\n" +
+                        "   </head>\n" +
+                        "   <body>\n" +
+                        "      <div id = \"databinding\">\n" +
+                        "         <button v-on:click = \"displaynumbers\">Click ME</button>\n" +
+                        "         <h2> Add Number 100 + 200 = {{total}}</h2>\n" +
+                        "      </div>\n" +
+                        "      <script type = \"text/javascript\">\n" +
+                        "         var vm = new Vue({\n" +
+                        "            el: '#databinding',\n" +
+                        "            data: {\n" +
+                        "               num1: 100,\n" +
+                        "               num2 : 200,\n" +
+                        "               total : ''\n" +
+                        "            },\n" +
+                        "            methods : {\n" +
+                        "               displaynumbers : function(event) {\n" +
+                        "                  console.log(event);\n" +
+                        "                  return this.total =  this.num1+ this.num2;\n" +
+                        "               }\n" +
+                        "            },\n" +
+                        "         });\n" +
+                        "      </script>\n" +
+                        "   </body>\n" +
+                        "</html>",
+                ""
+        );
+        final LearnDetailsModel l2 = new LearnDetailsModel(
+                "Event Modifiers",
+                "Vue has event modifiers available on v-on attribute. Following are the modifiers available −\n" +
+                        "\n" +
+                        ".once\n" +
+                        "Allows the event to execute only once.\n" +
+                        "\n" +
+                        "Syntax\n" +
+                        "<button v-on:click.once = \"buttonclicked\">Click Once</button>\n" +
+                        "We need to add dot operator while calling the modifiers as shown in the syntax above. Let us use it in an example and understand the working of the once modifier.",
+                "<html>\n" +
+                        "   <head>\n" +
+                        "      <title>VueJs Instance</title>\n" +
+                        "      <script type = \"text/javascript\" src = \"js/vue.js\"></script>\n" +
+                        "   </head>\n" +
+                        "   <body>\n" +
+                        "      <div id = \"databinding\">\n" +
+                        "         <button v-on:click.once = \"buttonclickedonce\" v-bind:style = \"styleobj\">Click Once</button>\n" +
+                        "         Output:{{clicknum}}\n" +
+                        "         <br/><br/>\n" +
+                        "         <button v-on:click = \"buttonclicked\"  v-bind:style = \"styleobj\">Click Me</button>\n" +
+                        "         Output:{{clicknum1}}\n" +
+                        "      </div>\n" +
+                        "      <script type = \"text/javascript\">\n" +
+                        "         var vm = new Vue({\n" +
+                        "            el: '#databinding',\n" +
+                        "            data: {\n" +
+                        "               clicknum : 0,\n" +
+                        "               clicknum1 :0,\n" +
+                        "               styleobj: {\n" +
+                        "                  backgroundColor: '#2196F3!important',\n" +
+                        "                  cursor: 'pointer',\n" +
+                        "                  padding: '8px 16px',\n" +
+                        "                  verticalAlign: 'middle',\n" +
+                        "               }\n" +
+                        "            },\n" +
+                        "            methods : {\n" +
+                        "               buttonclickedonce : function() {\n" +
+                        "                  this.clicknum++;\n" +
+                        "               },\n" +
+                        "               buttonclicked : function() {\n" +
+                        "                  this.clicknum1++;\n" +
+                        "               }\n" +
+                        "            }\n" +
+                        "         });\n" +
+                        "      </script>\n" +
+                        "   </body>\n" +
+                        "</html>",
+                ""
+        );
+        final LearnDetailsModel l3 = new LearnDetailsModel(
+                "Event - Key Modifiers",
+                "VueJS offers key modifiers based on which we can control the event handling. Consider we have a textbox and we want the method to be called only when we press Enter. We can do so by adding key modifiers to the events as follows.\n" +
+                        "\n" +
+                        "Syntax\n" +
+                        "<input type = \"text\"  v-on:keyup.enter = \"showinputvalue\"/>\n" +
+                        "The key that we want to apply to our event is V-on.eventname.keyname (as shown above)\n" +
+                        "\n" +
+                        "We can make use of multiple keynames. For example, V-on.keyup.ctrl.enter",
+                "<html>\n" +
+                        "   <head>\n" +
+                        "      <title>VueJs Instance</title>\n" +
+                        "      <script type = \"text/javascript\" src = \"js/vue.js\"></script>\n" +
+                        "   </head>\n" +
+                        "   <body>\n" +
+                        "      <div id = \"databinding\">\n" +
+                        "         <input type = \"text\" v-on:keyup.enter = \"showinputvalue\" v-bind:style = \"styleobj\" placeholder = \"Enter your name\"/>\n" +
+                        "         <h3> {{name}}</h3>\n" +
+                        "      </div>\n" +
+                        "      <script type = \"text/javascript\">\n" +
+                        "         var vm = new Vue({\n" +
+                        "            el: '#databinding',\n" +
+                        "            data: {\n" +
+                        "               name:'',\n" +
+                        "               styleobj: {\n" +
+                        "                  width: \"30%\",\n" +
+                        "                  padding: \"12px 20px\",\n" +
+                        "                  margin: \"8px 0\",\n" +
+                        "                  boxSizing: \"border-box\"\n" +
+                        "               }\n" +
+                        "            },\n" +
+                        "            methods : {\n" +
+                        "               showinputvalue : function(event) {\n" +
+                        "                  this.name=event.target.value;\n" +
+                        "               }\n" +
+                        "            }\n" +
+                        "         });\n" +
+                        "      </script>\n" +
+                        "   </body>\n" +
+                        "</html>",
+                ""
+        );
+        final LearnDetailsModel l4 = new LearnDetailsModel(
+                "Custom Events",
+                "Parent can pass data to its component using the prop attribute, however, we need to tell the parent when there are changes in the child component. For this, we can use custom events.\n" +
+                        "\n" +
+                        "The parent component can listen to the child component event using v-on attribute.",
+                "<html>\n" +
+                        "   <head>\n" +
+                        "      <title>VueJs Instance</title>\n" +
+                        "      <script type = \"text/javascript\" src = \"js/vue.js\"></script>\n" +
+                        "   </head>\n" +
+                        "   <body>\n" +
+                        "      <div id = \"databinding\">\n" +
+                        "         <div id = \"counter-event-example\">\n" +
+                        "            <p style = \"font-size:25px;\">Language displayed : <b>{{ languageclicked }}</b></p>\n" +
+                        "            <button-counter\n" +
+                        "            v-for = \"(item, index) in languages\"\n" +
+                        "            v-bind:item = \"item\"\n" +
+                        "            v-bind:index = \"index\"\n" +
+                        "            v-on:showlanguage = \"languagedisp\"></button-counter>\n" +
+                        "         </div>\n" +
+                        "      </div>\n" +
+                        "      <script type = \"text/javascript\">\n" +
+                        "         Vue.component('button-counter', {\n" +
+                        "            template: '<button v-on:click = \"displayLanguage(item)\"><span style = \"font-size:25px;\">{{ item }}</span></button>',\n" +
+                        "            data: function () {\n" +
+                        "               return {\n" +
+                        "                  counter: 0\n" +
+                        "               }\n" +
+                        "            },\n" +
+                        "            props:['item'],\n" +
+                        "            methods: {\n" +
+                        "               displayLanguage: function (lng) {\n" +
+                        "                  console.log(lng);\n" +
+                        "                  this.$emit('showlanguage', lng);\n" +
+                        "               }\n" +
+                        "            },\n" +
+                        "         });\n" +
+                        "         var vm = new Vue({\n" +
+                        "            el: '#databinding',\n" +
+                        "            data: {\n" +
+                        "               languageclicked: \"\",\n" +
+                        "               languages : [\"Java\", \"PHP\", \"C++\", \"C\", \"Javascript\", \"C#\", \"Python\", \"HTML\"]\n" +
+                        "            },\n" +
+                        "            methods: {\n" +
+                        "               languagedisp: function (a) {\n" +
+                        "                  this.languageclicked = a;\n" +
+                        "               }\n" +
+                        "            }\n" +
+                        "         })\n" +
+                        "      </script>\n" +
+                        "   </body>\n" +
+                        "</html>",
+                ""
+        );
+        list.add(l1);
+        list.add(l2);
+        list.add(l3);
+        list.add(l4);
+        return list;
+    }
+    //VueJS Rendering
+    private static List<LearnDetailsModel> VueJSRendering(){
+        final List<LearnDetailsModel> list = new ArrayList<>();
+        final LearnDetailsModel l1 = new LearnDetailsModel(
+                "Conditional Rendering",
+                "In this chapter, we will learn about conditional rendering and list rendering. In conditional rendering, we will discuss about using if, if-else, if-else-if, show, etc. In list rendering, we will discuss how to use for loop." +
+                        "\n\n" +
+                        "Let’s get started and work on a example first to explain the details for conditional rendering. With conditional rendering, we want to output only when the condition is met and the conditional check is done with the help of if, if-else, if-else-if, show, etc." +
+                        "\n\n" +
+                        "In the bellow example, we have created a button and two h1 tags with the message.\n" +
+                        "\n" +
+                        "A variable called show is declared and initialized to a value true. It is displayed close to the button. On the click of the button, we are calling a method showdata, which toggles the value of the variable show. This means on the click of the button, the value of the variable show will change from true to false and false to true.\n" +
+                        "\n" +
+                        "We have assigned if to the h1 tag as shown in the following code snippet.\n" +
+                        "\n" +
+                        "<button v-on:click = \"showdata\" v-bind:style = \"styleobj\">Click Me</button>\n" +
+                        "<h1 v-if = \"show\">This is h1 tag</h1>",
+                "<html>\n" +
+                        "   <head>\n" +
+                        "      <title>VueJs Instance</title>\n" +
+                        "      <script type = \"text/javascript\" src = \"js/vue.js\"></script>\n" +
+                        "   </head>\n" +
+                        "   <body>\n" +
+                        "      <div id = \"databinding\">\n" +
+                        "         <button v-on:click = \"showdata\" v-bind:style = \"styleobj\">Click Me</button>\n" +
+                        "         <span style = \"font-size:25px;\"><b>{{show}}</b></span>\n" +
+                        "         <h1 v-if = \"show\">This is h1 tag</h1>\n" +
+                        "         <h2>This is h2 tag</h2>\n" +
+                        "      </div>\n" +
+                        "      <script type = \"text/javascript\">\n" +
+                        "         var vm = new Vue({\n" +
+                        "            el: '#databinding',\n" +
+                        "            data: {\n" +
+                        "               show: true,\n" +
+                        "               styleobj: {\n" +
+                        "                  backgroundColor: '#2196F3!important',\n" +
+                        "                  cursor: 'pointer',\n" +
+                        "                  padding: '8px 16px',\n" +
+                        "                  verticalAlign: 'middle',\n" +
+                        "               }\n" +
+                        "            },\n" +
+                        "            methods : {\n" +
+                        "               showdata : function() {\n" +
+                        "                  this.show = !this.show;\n" +
+                        "               }\n" +
+                        "            },\n" +
+                        "         });\n" +
+                        "      </script>\n" +
+                        "   </body>\n" +
+                        "</html>",
+                ""
+        );final LearnDetailsModel l2 = new LearnDetailsModel(
+                "List Rendering",
+                "Let us now discuss list rendering with v-for directive.",
+                "<html>\n" +
+                        "   <head>\n" +
+                        "      <title>VueJs Instance</title>\n" +
+                        "      <script type = \"text/javascript\" src = \"js/vue.js\"></script>\n" +
+                        "   </head>\n" +
+                        "   <body>\n" +
+                        "      <div id = \"databinding\">\n" +
+                        "         <input type = \"text\" v-on:keyup.enter = \"showinputvalue\"\n" +
+                        "            v-bind:style = \"styleobj\" placeholder = \"Enter Fruits Names\"/>\n" +
+                        "         <h1 v-if = \"items.length>0\">Display Fruits Name</h1>\n" +
+                        "         <ul>\n" +
+                        "            <li v-for = \"a in items\">{{a}}</li>\n" +
+                        "         </ul>\n" +
+                        "      </div>\n" +
+                        "      <script type = \"text/javascript\">\n" +
+                        "         var vm = new Vue({\n" +
+                        "            el: '#databinding',\n" +
+                        "            data: {\n" +
+                        "               items:[],\n" +
+                        "               styleobj: {\n" +
+                        "                  width: \"30%\",\n" +
+                        "                  padding: \"12px 20px\",\n" +
+                        "                  margin: \"8px 0\",\n" +
+                        "                  boxSizing: \"border-box\"\n" +
+                        "               }\n" +
+                        "            },\n" +
+                        "            methods : {\n" +
+                        "               showinputvalue : function(event) {\n" +
+                        "                  this.items.push(event.target.value);\n" +
+                        "               }\n" +
+                        "            },\n" +
+                        "         });\n" +
+                        "      </script>\n" +
+                        "   </body>\n" +
+                        "</html>",
+                ""
+        );
+        list.add(l1);
+        list.add(l2);
+        return list;
+    }
+    //VueJS Animation
+    private static List<LearnDetailsModel> VueJSAnimation(){
+        final List<LearnDetailsModel> list = new ArrayList<>();
+        final LearnDetailsModel l1 = new LearnDetailsModel(
+                "In this chapter, we will discuss the transition and animation features available in VueJS." +
+                        "\n\n" +
+                        "Transition\n" +
+                        "VueJS provides various ways to apply transition to the HTML elements when they are added/updated in the DOM. VueJS has a built-in transition component that needs to be wrapped around the element, which needs transition.\n" +
+                        "\n" +
+                        "Syntax\n" +
+                        "<transition name = \"nameoftransition\">\n" +
+                        "   <div></div>\n" +
+                        "</transition>\n" +
+                        "Let us consider an example to understand the working of transition.",
+                "<html>\n" +
+                        "   <head>\n" +
+                        "      <title>VueJs Instance</title>\n" +
+                        "      <script type = \"text/javascript\" src = \"js/vue.js\"></script>\n" +
+                        "   </head>\n" +
+                        "   <body>\n" +
+                        "      <style>\n" +
+                        "         .fade-enter-active, .fade-leave-active {\n" +
+                        "            transition: opacity 2s\n" +
+                        "         }\n" +
+                        "         .fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {\n" +
+                        "            opacity: 0\n" +
+                        "         }\n" +
+                        "      </style>\n" +
+                        "      <div id = \"databinding\">\n" +
+                        "         <button v-on:click = \"show = !show\">Click Me</button>\n" +
+                        "         <transition name = \"fade\">\n" +
+                        "            <p v-show = \"show\" v-bind:style = \"styleobj\">Animation Example</p>\n" +
+                        "         </transition>\n" +
+                        "      </div>\n" +
+                        "      <script type = \"text/javascript\">\n" +
+                        "         var vm = new Vue({\n" +
+                        "            el: '#databinding',\n" +
+                        "            data: {\n" +
+                        "               show:true,\n" +
+                        "               styleobj :{\n" +
+                        "                  fontSize:'30px',\n" +
+                        "                  color:'red'\n" +
+                        "               }\n" +
+                        "            },\n" +
+                        "            methods : {\n" +
+                        "            }\n" +
+                        "         });\n" +
+                        "      </script>\n" +
+                        "   </body>\n" +
+                        "</html>",
+                "",
+                ""
+        );
+        final LearnDetailsModel l2 = new LearnDetailsModel(
+                "Animation",
+                "Animations are applied the same way as transition is done. Animation also has classes that needs to be declared for the effect to take place.\n" +
+                        "\n" +
+                        "Let us consider an example to see how animation works.",
+                "<html>\n" +
+                        "   <head>\n" +
+                        "      <title>VueJs Instance</title>\n" +
+                        "      <script type = \"text/javascript\" src = \"js/vue.js\"></script>\n" +
+                        "   </head>\n" +
+                        "   <body>\n" +
+                        "      <style>\n" +
+                        "         .shiftx-enter-active {\n" +
+                        "            animation: shift-in 2s;\n" +
+                        "         }\n" +
+                        "         .shiftx-leave-active {\n" +
+                        "            animation: shift-in 2s reverse;\n" +
+                        "         }\n" +
+                        "         @keyframes shift-in {\n" +
+                        "            0%   {transform:rotateX(0deg);}\n" +
+                        "            25%  {transform:rotateX(90deg);}\n" +
+                        "            50%  {transform:rotateX(120deg);}\n" +
+                        "            75%  {transform:rotateX(180deg);}\n" +
+                        "            100% {transform:rotateX(360deg);}\n" +
+                        "         }\n" +
+                        "      </style>\n" +
+                        "      <div id = \"databinding\">\n" +
+                        "         <button v-on:click = \"show = !show\">Click Me</button>\n" +
+                        "         <transition name = \"shiftx\">\n" +
+                        "            <p v-show = \"show\">\n" +
+                        "               <img src = \"images/img.jpg\" style = \"width:100px;height:100px;\" />\n" +
+                        "            </p>\n" +
+                        "         </transition>\n" +
+                        "      </div>\n" +
+                        "      <script type = \"text/javascript\">\n" +
+                        "         var vm = new Vue({\n" +
+                        "            el: '#databinding',\n" +
+                        "            data: {\n" +
+                        "               show:true\n" +
+                        "            },\n" +
+                        "            methods : {\n" +
+                        "            }\n" +
+                        "         });\n" +
+                        "      </script>\n" +
+                        "   </body>\n" +
+                        "</html>",
+                ""
+        );
+        final LearnDetailsModel l3 = new LearnDetailsModel(
+                "Custom Transition Classes",
+                "VueJS provides a list of custom classes, which can be added as attributes to the transition element.\n" +
+                        "\n" +
+                        "enter-class\n" +
+                        "enter-active-class\n" +
+                        "leave-class\n" +
+                        "leave-active-class\n" +
+                        "Custom classes basically come into play when we want to use an external CSS library such as animate.css.",
+                "<html>\n" +
+                        "   <head>\n" +
+                        "      <link href = \"https://cdn.jsdelivr.net/npm/animate.css@3.5.1\" rel = \"stylesheet\" type = \"text/css\">\n" +
+                        "      <script type = \"text/javascript\" src = \"js/vue.js\"></script>\n" +
+                        "   </head>\n" +
+                        "   <body>\n" +
+                        "      <div id = \"animate\" style = \"text-align:center\">\n" +
+                        "         <button @click = \"show = !show\"><span style = \"font-size:25px;\">Animate</span></button>\n" +
+                        "         <transition\n" +
+                        "            name = \"custom-classes-transition\"\n" +
+                        "            enter-active-class = \"animated swing\"\n" +
+                        "            leave-active-class = \"animated bounceIn\">\n" +
+                        "            <p v-if = \"show\"><span style = \"font-size:25px;\">Example</span></p>\n" +
+                        "         </transition>\n" +
+                        "      </div>\n" +
+                        "      <script type = \"text/javascript\">\n" +
+                        "         var vm =  new Vue({\n" +
+                        "            el: '#animate',\n" +
+                        "            data: {\n" +
+                        "               show: true\n" +
+                        "            }\n" +
+                        "         });\n" +
+                        "      </script>\n" +
+                        "   </body>\n" +
+                        "</html>",
+                ""
+        );
+        list.add(l1);
+        list.add(l2);
+        list.add(l3);
+        return list;
+    }
+    //VueJS Directives
+    private static List<LearnDetailsModel> VueJSDirectives(){
+        final List<LearnDetailsModel> list = new ArrayList<>();
+        final LearnDetailsModel l1 = new LearnDetailsModel(
+                "VueJS Directives",
+                "Directives are instruction for VueJS to do things in a certain way. We have already seen directives such as v-if, v-show, v-else, v-for, v-bind , v-model, v-on, etc.\n" +
+                        "\n" +
+                        "In this chapter, we will take a look at custom directives. We will create global directives similar to how we did for components.\n" +
+                        "\n" +
+                        "Syntax\n" +
+                        "Vue.directive('nameofthedirective', {\n" +
+                        "   bind(e1, binding, vnode) {\n" +
+                        "   }\n" +
+                        "})\n" +
+                        "We need to create a directive using Vue.directive. It takes the name of the directive as shown above. Let us consider an example to show the details of the working of directives.",
+                "<html>\n" +
+                        "   <head>\n" +
+                        "      <title>VueJs Instance</title>\n" +
+                        "      <script type = \"text/javascript\" src = \"js/vue.js\"></script>\n" +
+                        "   </head>\n" +
+                        "   <body>\n" +
+                        "      <div id = \"databinding\">\n" +
+                        "         <div v-changestyle>VueJS Directive</div>\n" +
+                        "      </div>\n" +
+                        "      <script type = \"text/javascript\">\n" +
+                        "         Vue.directive(\"changestyle\",{\n" +
+                        "            bind(e1,binding, vnode) {\n" +
+                        "               console.log(e1);\n" +
+                        "               e1.style.color = \"red\";\n" +
+                        "               e1.style.fontSize = \"30px\";\n" +
+                        "            }\n" +
+                        "         });\n" +
+                        "         var vm = new Vue({\n" +
+                        "            el: '#databinding',\n" +
+                        "            data: {\n" +
+                        "            },\n" +
+                        "            methods : {\n" +
+                        "            },\n" +
+                        "         });\n" +
+                        "      </script>\n" +
+                        "   </body>\n" +
+                        "</html>",
+                ""
+        );
+        final LearnDetailsModel l2 = new LearnDetailsModel(
+                "Filters",
+                "VueJS supports filters that help with text formatting. It is used along with v-bind and interpolations ({{}}). We need a pipe symbol at the end of JavaScript expression for filters.",
+                "<html>\n" +
+                        "   <head>\n" +
+                        "      <title>VueJs Instance</title>\n" +
+                        "      <script type = \"text/javascript\" src = \"js/vue.js\"></script>\n" +
+                        "   </head>\n" +
+                        "   <body>\n" +
+                        "      <div id = \"databinding\">\n" +
+                        "         <input  v-model = \"name\" placeholder = \"Enter Name\" /><br/>\n" +
+                        "         <span style = \"font-size:25px;\"><b>Letter count is : {{name | countletters}}</b></span>\n" +
+                        "      </div>\n" +
+                        "      <script type = \"text/javascript\">\n" +
+                        "         var vm = new Vue({\n" +
+                        "            el: '#databinding',\n" +
+                        "            data: {\n" +
+                        "               name : \"\"\n" +
+                        "            },\n" +
+                        "            filters : {\n" +
+                        "               countletters : function(value) {\n" +
+                        "                  return value.length;\n" +
+                        "               }\n" +
+                        "            }\n" +
+                        "         });\n" +
+                        "      </script>\n" +
+                        "   </body>\n" +
+                        "</html>",
+                ""
+        );
+        list.add(l1);
+        list.add(l2);
+        return list;
+    }
+    //VueJS Routing
+    private static List<LearnDetailsModel> VueJSRouting(){
+        final List<LearnDetailsModel> list = new ArrayList<>();
+        final LearnDetailsModel l1 = new LearnDetailsModel(
+                "Direct Download from CDN",
+                "VueJS does not have a built-in router feauture. We need to follow some additional steps to install it." +
+                        "\n\n" +
+                        "Direct Download from CDN\n" +
+                        "The latest version of vue-router is available at https://unpkg.com/vue-router/dist/vue-router.js\n" +
+                        "\n" +
+                        "Unpkg.com provides npm-based cdn links. The above link is always updated to the recent version. We can download and host it, and use it with a script tag along with vue.js as follows −\n" +
+                        "\n" +
+                        "<script src = \"/path/to/vue.js\"></script>\n" +
+                        "<script src = \"/path/to/vue-router.js\"></script>\n" +
+                        "Using NPM\n" +
+                        "Run the following command to install the vue-router.\n" +
+                        "\n" +
+                        "npm  install vue-router\n" +
+                        "Using GitHub\n" +
+                        "We can clone the repository from GitHub as follows −\n" +
+                        "\n" +
+                        "git clone https://github.com/vuejs/vue-router.git node_modules/vue-router\n" +
+                        "cd node_modules/vue-router\n" +
+                        "npm install\n" +
+                        "npm run build\n" +
+                        "Let us start with a simple example using vue-router.js.",
+                "<html>\n" +
+                        "   <head>\n" +
+                        "      <title>VueJs Instance</title>\n" +
+                        "      <script type = \"text/javascript\" src = \"js/vue.js\"></script>\n" +
+                        "      <script type = \"text/javascript\" src = \"js/vue-router.js\"></script>\n" +
+                        "   </head>\n" +
+                        "   <body>\n" +
+                        "      <div id = \"app\">\n" +
+                        "         <h1>Routing Example</h1>\n" +
+                        "         <p>\n" +
+                        "            <router-link to = \"/route1\">Router Link 1</router-link>\n" +
+                        "            <router-link to = \"/route2\">Router Link 2</router-link>\n" +
+                        "         </p>\n" +
+                        "         <!-- route outlet -->\n" +
+                        "         <!-- component matched by the route will render here -->\n" +
+                        "         <router-view></router-view>\n" +
+                        "      </div>\n" +
+                        "      <script type = \"text/javascript\">\n" +
+                        "         const Route1 = { template: '<div style = \"border-radius:20px;background-color:cyan;width:200px;height:50px;margin:10px;font-size:25px;padding:10px;\">This is router 1</div>' }\n" +
+                        "         const Route2 = { template: '<div style = \"border-radius:20px;background-color:green;width:200px;height:50px;margin:10px;font-size:25px;padding:10px;\">This is router 2</div>' }\n" +
+                        "         const routes = [\n" +
+                        "            { path: '/route1', component: Route1 },\n" +
+                        "            { path: '/route2', component: Route2 }\n" +
+                        "         ];\n" +
+                        "         const router = new VueRouter({\n" +
+                        "            routes // short for `routes: routes`\n" +
+                        "         });\n" +
+                        "         var vm = new Vue({\n" +
+                        "            el: '#app',\n" +
+                        "            router\n" +
+                        "         });\n" +
+                        "      </script>\n" +
+                        "   </body>\n" +
+                        "</html>",
+                ""
+        );
+
+        list.add(l1);
+        return list;
+    }
+    //VueJS Mixins
+    private static List<LearnDetailsModel> VueJSMixins(){
+        final List<LearnDetailsModel> list = new ArrayList<>();
+        final LearnDetailsModel l1 = new LearnDetailsModel(
+                "VueJS Mixins",
+                "Mixins are basically to be used with components. They share reusable code among components. When a component uses mixin, all options of mixin become a part of the component options.",
+                "<html>\n" +
+                        "   <head>\n" +
+                        "      <title>VueJs Instance</title>\n" +
+                        "      <script type = \"text/javascript\" src = \"js/vue.js\"></script>\n" +
+                        "   </head>\n" +
+                        "   <body>\n" +
+                        "      <div id = \"databinding\"></div>\n" +
+                        "      <script type = \"text/javascript\">\n" +
+                        "         var vm = new Vue({\n" +
+                        "            el: '#databinding',\n" +
+                        "            data: {\n" +
+                        "            },\n" +
+                        "            methods : {\n" +
+                        "            },\n" +
+                        "         });\n" +
+                        "         var myMixin = {\n" +
+                        "            created: function () {\n" +
+                        "               this.startmixin()\n" +
+                        "            },\n" +
+                        "            methods: {\n" +
+                        "               startmixin: function () {\n" +
+                        "                  alert(\"Welcome  to mixin example\");\n" +
+                        "               }\n" +
+                        "            }\n" +
+                        "         };\n" +
+                        "         var Component = Vue.extend({\n" +
+                        "            mixins: [myMixin]\n" +
+                        "         })\n" +
+                        "         var component = new Component();\n" +
+                        "      </script>\n" +
+                        "   </body>\n" +
+                        "</html>",
+                ""
+        );
+        list.add(l1);
+        return list;
+    }
+    //VueJS Examples
+    private static List<LearnDetailsModel> VueJSExamples(){
+        final List<LearnDetailsModel> list = new ArrayList<>();
+        final LearnDetailsModel l1 = new LearnDetailsModel(
+                "Currency Converter",
+                "Example 1: Currency Converter" +
+                        "\n\n" +
+                        "Explanation − In the above example, we have created a currency converter that converts one value of currency to the selected value of other currency. We have created two dropdowns of currency. When we enter the amount to convert in the textbox, the same is displayed below after conversion. We are using the computed property to do the necessary calculation for currency conversion.",
+                "<html>\n" +
+                        "   <head>\n" +
+                        "      <title>VueJs Instance</title>\n" +
+                        "      <script type = \"text/javascript\" src = \"js/vue.js\"></script>\n" +
+                        "   </head>\n" +
+                        "   <body>\n" +
+                        "      <style>\n" +
+                        "         #databinding{\n" +
+                        "            padding: 20px 15px 15px 15px;\n" +
+                        "            margin: 0 0 25px 0;\n" +
+                        "            width: auto;\n" +
+                        "            background-color: #e7e7e7;\n" +
+                        "         }\n" +
+                        "         span, option, input {\n" +
+                        "            font-size:25px;\n" +
+                        "         }\n" +
+                        "      </style>\n" +
+                        "      \n" +
+                        "      <div id = \"databinding\" style = \"\">\n" +
+                        "         <h1>Currency Converter</h1>\n" +
+                        "         <span>Enter Amount:</span><input type = \"number\" v-model.number = \"amount\" placeholder = \"Enter Amount\" /><br/><br/>\n" +
+                        "         <span>Convert From:</span>\n" +
+                        "         <select v-model = \"convertfrom\" style = \"width:300px;font-size:25px;\">\n" +
+                        "            <option v-for = \"(a, index) in currencyfrom\"  v-bind:value = \"a.name\">{{a.desc}}</option>\n" +
+                        "         </select>\n" +
+                        "         <span>Convert To:</span>\n" +
+                        "         <select v-model = \"convertto\" style = \"width:300px;font-size:25px;\">\n" +
+                        "            <option v-for = \"(a, index) in currencyfrom\" v-bind:value = \"a.name\">{{a.desc}}</option>\n" +
+                        "         </select><br/><br/>\n" +
+                        "         <span> {{amount}} {{convertfrom}} equals {{finalamount}} {{convertto}}</span>\n" +
+                        "      </div>\n" +
+                        "      \n" +
+                        "      <script type = \"text/javascript\">\n" +
+                        "         var vm = new Vue({\n" +
+                        "            el: '#databinding',\n" +
+                        "            data: {\n" +
+                        "               name:'',\n" +
+                        "               currencyfrom : [\n" +
+                        "                  {name : \"USD\", desc:\"US Dollar\"},\n" +
+                        "                  {name:\"EUR\", desc:\"Euro\"},\n" +
+                        "                  {name:\"INR\", desc:\"Indian Rupee\"},\n" +
+                        "                  {name:\"BHD\", desc:\"Bahraini Dinar\"}\n" +
+                        "               ],\n" +
+                        "               convertfrom: \"INR\",\n" +
+                        "               convertto:\"USD\",\n" +
+                        "               amount :\"\"\n" +
+                        "            },\n" +
+                        "            computed :{\n" +
+                        "               finalamount:function() {\n" +
+                        "                  var to = this.convertto;\n" +
+                        "                  var from = this.convertfrom;\n" +
+                        "                  var final;\n" +
+                        "                  switch(from) {\n" +
+                        "                     case \"INR\":\n" +
+                        "                     if (to == \"USD\") {\n" +
+                        "                        final = this.amount * 0.016;\n" +
+                        "                     }\n" +
+                        "                     if (to == \"EUR\") {\n" +
+                        "                        final = this.amount * 0.013;\n" +
+                        "                     }\n" +
+                        "                     if (to == \"INR\") {\n" +
+                        "                        final = this.amount;\n" +
+                        "                     }\n" +
+                        "                     if (to == \"BHD\") {\n" +
+                        "                        final = this.amount * 0.0059;\n" +
+                        "                     }\n" +
+                        "                     break;\n" +
+                        "                     case \"USD\":\n" +
+                        "                     if (to == \"INR\") {\n" +
+                        "                        final = this.amount * 63.88;\n" +
+                        "                     }\n" +
+                        "                     if (to == \"EUR\") {\n" +
+                        "                        final = this.amount * 0.84;\n" +
+                        "                     }\n" +
+                        "                     if (to == \"USD\") {\n" +
+                        "                        final = this.amount;\n" +
+                        "                     }\n" +
+                        "                     if (to == \"BHD\") {\n" +
+                        "                        final = this.amount * 0.38;\n" +
+                        "                     }\n" +
+                        "                     break;\n" +
+                        "                     case \"EUR\":\n" +
+                        "                     if (to == \"INR\") {\n" +
+                        "                        final = this.amount * 76.22;\n" +
+                        "                     }\n" +
+                        "                     if (to == \"USD\") {\n" +
+                        "                        final = this.amount * 1.19;\n" +
+                        "                     }\n" +
+                        "                     if (to == \"EUR\") {\n" +
+                        "                        final = this.amount;\n" +
+                        "                     }\n" +
+                        "                     if (to == \"BHD\") {\n" +
+                        "                        final = this.amount * 0.45;\n" +
+                        "                     }\n" +
+                        "                     break;\n" +
+                        "                     case \"BHD\":\n" +
+                        "                     if (to == \"INR\") {\n" +
+                        "                        final = this.amount *169.44;\n" +
+                        "                     }\n" +
+                        "                     if (to == \"USD\") {\n" +
+                        "                        final = this.amount * 2.65;\n" +
+                        "                     }\n" +
+                        "                     if (to == \"EUR\") {\n" +
+                        "                        final = this.amount * 2.22;\n" +
+                        "                     }\n" +
+                        "                     if (to == \"BHD\") {\n" +
+                        "                        final = this.amount;\n" +
+                        "                     }\n" +
+                        "                     break\n" +
+                        "                  }\n" +
+                        "                  return final;\n" +
+                        "               }\n" +
+                        "            }\n" +
+                        "         });\n" +
+                        "      </script>\n" +
+                        "   </body>\n" +
+                        "</html>",
+                ""
+        );
+        final LearnDetailsModel l2 = new LearnDetailsModel(
+                "Customer Details",
+                "Example 2: Customer Details" +
+                        "\n\n" +
+                        "Explanation − In the above example, we have three texboxes to enter - the First Name, Last Name and Address. There is an add button, which adds the values entered in the textboxes in a table format with a delete button.\n" +
+                        "\n" +
+                        "The table format is created using components. The click button interacts with the parent component using the emit event to delete the element from the array. The values entered are stored in the array and the same are shared with the child component using the prop property.",
+                "<html>\n" +
+                        "   <head>\n" +
+                        "      <title>VueJs Instance</title>\n" +
+                        "      <script type = \"text/javascript\" src = \"js/vue.js\"></script>\n" +
+                        "   </head>\n" +
+                        "   <body>\n" +
+                        "      <style>\n" +
+                        "         #databinding{\n" +
+                        "            padding: 20px 15px 15px 15px;\n" +
+                        "            margin: 0 0 25px 0;\n" +
+                        "            width: auto;\n" +
+                        "         }\n" +
+                        "         span, option, input {\n" +
+                        "            font-size:20px;\n" +
+                        "         }\n" +
+                        "         .Table{\n" +
+                        "            display: table;\n" +
+                        "            width:80%;\n" +
+                        "         }\n" +
+                        "         .Title{\n" +
+                        "            display: table-caption;\n" +
+                        "            text-align: center;\n" +
+                        "            font-weight: bold;\n" +
+                        "            font-size: larger;\n" +
+                        "         }\n" +
+                        "         .Heading{\n" +
+                        "            display: table-row;\n" +
+                        "            font-weight: bold;\n" +
+                        "            text-align: center;\n" +
+                        "         }\n" +
+                        "         .Row{\n" +
+                        "            display: table-row;\n" +
+                        "         }\n" +
+                        "         .Cell{\n" +
+                        "            display: table-cell;\n" +
+                        "            border: solid;\n" +
+                        "            border-width: thin;\n" +
+                        "            padding-left: 5px;\n" +
+                        "            padding-right: 5px;\n" +
+                        "            width:30%;\n" +
+                        "         }\n" +
+                        "      </style>\n" +
+                        "      \n" +
+                        "      <div id = \"databinding\" style = \"\">\n" +
+                        "         <h1>Customer Details</h1>\n" +
+                        "         <span>First Name</span>\n" +
+                        "         <input type = \"text\" placeholder = \"Enter First Name\" v-model = \"fname\"/>\n" +
+                        "         <span>Last Name</span>\n" +
+                        "         <input type = \"text\" placeholder = \"Enter Last Name\" v-model = \"lname\"/>\n" +
+                        "         <span>Address</span>\n" +
+                        "         <input type = \"text\" placeholder = \"Enter Address\" v-model = \"addr\"/>\n" +
+                        "         <button v-on:click = \"showdata\" v-bind:style = \"styleobj\">Add</button>\n" +
+                        "         <br/>\n" +
+                        "         <br/>\n" +
+                        "         <customercomponent\n" +
+                        "            v-for = \"(item, index) in custdet\"\n" +
+                        "            v-bind:item = \"item\"\n" +
+                        "            v-bind:index = \"index\"\n" +
+                        "            v-bind:itr = \"item\"\n" +
+                        "            v-bind:key = \"item.fname\"\n" +
+                        "            v-on:removeelement = \"custdet.splice(index, 1)\">\n" +
+                        "         </customercomponent>\n" +
+                        "      </div>\n" +
+                        "      \n" +
+                        "      <script type = \"text/javascript\">\n" +
+                        "         Vue.component('customercomponent',{\n" +
+                        "            template : '<div class = \"Table\"><div class = \"Row\"  v-bind:style = \"styleobj\"><div class = \"Cell\"><p>{{itr.fname}}</p></div><div class = \"Cell\"><p>{{itr.lname}}</p></div><div class = \"Cell\"><p>{{itr.addr}}</p></div><div class = \"Cell\"><p><button v-on:click = \"$emit(\\'removeelement\\')\">X</button></p></div></div></div>',\n" +
+                        "            props: ['itr', 'index'],\n" +
+                        "            data: function() {\n" +
+                        "               return {\n" +
+                        "                  styleobj : {\n" +
+                        "                     backgroundColor:this.getcolor(),\n" +
+                        "                     fontSize : 20\n" +
+                        "                  }\n" +
+                        "               }\n" +
+                        "            },\n" +
+                        "            methods:{\n" +
+                        "               getcolor : function() {\n" +
+                        "                  if (this.index % 2) {\n" +
+                        "                     return \"#FFE633\";\n" +
+                        "                  } else {\n" +
+                        "                     return \"#D4CA87\";\n" +
+                        "                  }\n" +
+                        "               }\n" +
+                        "            }\n" +
+                        "         });\n" +
+                        "         var vm = new Vue({\n" +
+                        "            el: '#databinding',\n" +
+                        "            data: {\n" +
+                        "               fname:'',\n" +
+                        "               lname:'',\n" +
+                        "               addr : '',\n" +
+                        "               custdet:[],\n" +
+                        "               styleobj: {\n" +
+                        "                  backgroundColor: '#2196F3!important',\n" +
+                        "                  cursor: 'pointer',\n" +
+                        "                  padding: '8px 16px',\n" +
+                        "                  verticalAlign: 'middle',\n" +
+                        "               }\n" +
+                        "            },\n" +
+                        "            methods :{\n" +
+                        "               showdata : function() {\n" +
+                        "                  this.custdet.push({\n" +
+                        "                     fname: this.fname,\n" +
+                        "                     lname: this.lname,\n" +
+                        "                     addr : this.addr\n" +
+                        "                  });\n" +
+                        "                  this.fname = \"\";\n" +
+                        "                  this.lname = \"\";\n" +
+                        "                  this.addr = \"\";\n" +
+                        "               }\n" +
+                        "            }\n" +
+                        "         });\n" +
+                        "      </script>\n" +
+                        "   </body>\n" +
+                        "</html>",
+                ""
+        );
+        list.add(l1);
+        list.add(l2);
+        return list;
+    }
+    //NextJs
+    //NextJs Introduction
+    private static List<LearnDetailsModel> NextJsIntroduction(){
+        final List<LearnDetailsModel> list = new ArrayList<>();
+        final LearnDetailsModel l1 = new LearnDetailsModel(
+                "NextJs Introduction",
+                "The Next.js is React Based framework with server side rendering capability. It is very fast and SEO friendly. Using Next.js, you can create robust react based application quite easily and test them.",
+                "",
+                ""
+        );
+        final LearnDetailsModel l2 = new LearnDetailsModel(
+                "Overview",
+                "The Next.js is React Based framework with server side rendering capability. It is very fast and SEO friendly.\n" +
+                        "\n" +
+                        "Using Next.js, you can create robust react based application quite easily and test them. Following are the key features of Next.js.\n" +
+                        "\n" +
+                        "Hot Code Reload − Next.js server detects modified files and reloads them automatically.\n" +
+                        "\n" +
+                        "Automatic Routing − No need to configure any url for routing. files are to be placed in pages folder. All urls will be mapped to file system. Customization can be done.\n" +
+                        "\n" +
+                        "Component specific styles − styled-jsx provides support for global as well as component specific styles.\n" +
+                        "\n" +
+                        "Server side rendering − react components are pretender on server hence loads faster on client.\n" +
+                        "\n" +
+                        "Node Ecosystem − Next.js being react based gels well with Node ecosystem.\n" +
+                        "\n" +
+                        "Automatic code split − Next.js renders pages with libraries they need. Next.js instead of creating a single large javascript file, creates multiples resources. When a page is loaded, only required javascript page is loaded with it.\n" +
+                        "\n" +
+                        "Prefetch − Next.js provides Link component which is used to link multiple components supports a prefetch property to prefetch page resources in background.\n" +
+                        "\n" +
+                        "Dynamic Components − Next.js allows to import JavaScript modules and React Components dynamically.\n" +
+                        "\n" +
+                        "Export Static Site − Next.js allows to export full static site from your web application.\n" +
+                        "\n" +
+                        "Built-in Typescript Support − Next.js is written in Typescripts and provides excellent Typescript support.",
+                "",
+                ""
+        );
+        final LearnDetailsModel l3 = new LearnDetailsModel(
+                "Audience",
+                "This tutorial is designed for software programmers who want to learn the basics of Next.js and its concepts in a simple and easy manner. This tutorial will give you enough understanding on the various functionalities of Next.js with suitable examples.",
+                "",
+                ""
+        );
+        final LearnDetailsModel l4 = new LearnDetailsModel(
+                "Prerequisites",
+                "Before proceeding with this tutorial, you should have a basic understanding of JavaScript and React.",
+                "",
+                ""
+        );
+        list.add(l1);
+        list.add(l2);
+        list.add(l3);
+        list.add(l4);
+        return list;
+    }
+    //NextJs Pages
+    private static List<LearnDetailsModel> NextJsPages(){
+        final List<LearnDetailsModel> list = new ArrayList<>();
+        final LearnDetailsModel l1 = new LearnDetailsModel(
+                "NextJs Pages",
+                "n Next.js, we can create pages and navigate between them using file system routing feature. We'll use Link component to have a client side navigation between pages.\n" +
+                        "\n" +
+                        "In Next.js, a page is a React Component and are exported from pages directory. Each page is associated with a route based on its file name. For example\n" +
+                        "\n" +
+                        "pages/index.js is linked with '/' route.\n" +
+                        "\n" +
+                        "pages/posts/first.js is linked with '/posts/first' route and so on.\n" +
+                        "\n" +
+                        "Let's update the nextjs project created in Environment Setup chapter.\n" +
+                        "\n" +
+                        "Create post directory and first.js within it with following contents.\n" +
+                        "\n" +
+                        "export default function FirstPost() {\n" +
+                        "   return <h1>My First Post</h1>\n" +
+                        "}\n" +
+                        "Add Link Support to go back to Home page. Update first.js as follows −\n" +
+                        "\n" +
+                        "import Link from 'next/link'\n" +
+                        "\n" +
+                        "export default function FirstPost() {\n" +
+                        "   return (\n" +
+                        "      <>\n" +
+                        "         <h1>My First Post</h1>\n" +
+                        "         <h2>\n" +
+                        "            <Link href=\"/\">\n" +
+                        "               <a>Home</a>\n" +
+                        "            </Link>\n" +
+                        "         </h2>\n" +
+                        "      </>\t  \n" +
+                        "   )\n" +
+                        "}\n" +
+                        "Add Link Support to home page to navigate to first page. Update index.js as follows −\n" +
+                        "\n" +
+                        "import Link from 'next/link'\n" +
+                        "\n" +
+                        "function HomePage() {\n" +
+                        "   return (\n" +
+                        "      <>\n" +
+                        "         <div>Welcome to Next.js!</div>\n" +
+                        "         <Link href=\"/posts/first\"><a>First Post</a></Link>\n" +
+                        "      </>\t    \n" +
+                        "   )\n" +
+                        "}\n" +
+                        "\n" +
+                        "export default HomePage",
+                "",
+                ""
+        );
+        final LearnDetailsModel l2 = new LearnDetailsModel(
+                "Start Next.js Server",
+                "Run the following command to start the server −.",
+                "npm run dev\n" +
+                        "> nextjs@1.0.0 dev \\Node\\nextjs\n" +
+                        "> next\n" +
+                        "\n" +
+                        "ready - started server on http://localhost:3000\n" +
+                        "event - compiled successfully\n" +
+                        "event - build page: /\n" +
+                        "wait  - compiling...\n" +
+                        "event - compiled successfully\n" +
+                        "event - build page: /next/dist/pages/_error\n" +
+                        "wait  - compiling...\n" +
+                        "event - compiled successfully",
+                ""
+        );
+        list.add(l1);
+        list.add(l2);
+        return list;
+    }
+    //NextJs Static File Serving
+    private static List<LearnDetailsModel> NextJsStaticFileServing(){
+        final List<LearnDetailsModel> list = new ArrayList<>();
+        final LearnDetailsModel l1 = new LearnDetailsModel(
+                "NextJs Static File Serving",
+                "In Next.js, we can serve static pages like images very easily by putting them in public, a top level directory. We can refer these files in similar fashion like pages in pages directory.\n" +
+                        "\n" +
+                        "In Next.js, a page is a React Component and are exported from pages directory. Each page is associated with a route based on its file name.\n" +
+                        "\n" +
+                        "Let's update the nextjs project used in Pages chapter.\n" +
+                        "\n" +
+                        "Create public directory and place any images within it. We've taken logo.png, TutorialsPoint Logo image.\n" +
+                        "\n" +
+                        "Update first.js as follows −\n" +
+                        "\n" +
+                        "import Link from 'next/link'\n" +
+                        "\n" +
+                        "export default function FirstPost() {\n" +
+                        "   return (\n" +
+                        "      <>\n" +
+                        "         <h1>My First Post</h1>\n" +
+                        "         <h2>\n" +
+                        "            <Link href=\"/\">\n" +
+                        "               <a>Home</a>\n" +
+                        "            </Link>\n" +
+                        "         </h2>\n" +
+                        "         <br/\">\n" +
+                        "         <img src=\"/logo.png\" alt=\"ShrCreation Logo\" />\n" +
+                        "      </>\t  \n" +
+                        "   )\n" +
+                        "}\n" +
+                        "Here we've added a reference to logo.png in index.js file.",
+                "",
+                ""
+        );
+        final LearnDetailsModel l2 = new LearnDetailsModel(
+                "Start Next.js Server",
+                "Run the following command to start the server −.",
+                "npm run dev\n" +
+                        "> nextjs@1.0.0 dev \\Node\\nextjs\n" +
+                        "> next\n" +
+                        "\n" +
+                        "ready - started server on http://localhost:3000\n" +
+                        "event - compiled successfully\n" +
+                        "event - build page: /\n" +
+                        "wait  - compiling...\n" +
+                        "event - compiled successfully\n" +
+                        "event - build page: /next/dist/pages/_error\n" +
+                        "wait  - compiling...\n" +
+                        "event - compiled successfully",
+                ""
+        );
+        list.add(l1);
+        list.add(l2);
+        return list;
+    }
+    //NextJs Meta Data
+    private static List<LearnDetailsModel> NextJsMetaData(){
+        final List<LearnDetailsModel> list = new ArrayList<>();
+        final LearnDetailsModel l1 = new LearnDetailsModel(
+                "NextJs Meta Data",
+                "In Next.js, we can serve modify the head section of each react pages very easily with the help of <Head> react component which is inbuilt.\n" +
+                        "\n" +
+                        "Let's update the nextjs project used in Pages chapter.\n" +
+                        "\n" +
+                        "Update index.js as follows −\n" +
+                        "\n" +
+                        "import Link from 'next/link'\n" +
+                        "import Head from 'next/head'\n" +
+                        "\n" +
+                        "function HomePage() {\n" +
+                        "   return (\n" +
+                        "      <>\n" +
+                        "         <Head>\n" +
+                        "            <title>Welcome to Next.js!</title>\n" +
+                        "         </Head>\n" +
+                        "         <div>Welcome to Next.js!</div>\n" +
+                        "         <Link href=\"/posts/first\"><a>First Post</a></Link>\n" +
+                        "         <br/>\n" +
+                        "         <img src=\"/logo.png\" alt=\"ShrCreation Logo\" />\n" +
+                        "      </>\t    \n" +
+                        "   )\n" +
+                        "}\n" +
+                        "\n" +
+                        "export default HomePage\n" +
+                        "Update first.js as follows −\n" +
+                        "\n" +
+                        "import Link from 'next/link'\n" +
+                        "import Head from 'next/head'\n" +
+                        "\n" +
+                        "export default function FirstPost() {\n" +
+                        "   return (\n" +
+                        "      <>\n" +
+                        "      <Head>\n" +
+                        "         <title>My First Post</title>\n" +
+                        "      </Head>\n" +
+                        "      <h1>My First Post</h1>\n" +
+                        "      <h2>\n" +
+                        "         <Link href=\"/\">\n" +
+                        "            <a>Home</a>\n" +
+                        "         </Link>\n" +
+                        "      </h2>\n" +
+                        "      </>\t  \n" +
+                        "   )\n" +
+                        "}\n" +
+                        "Here we've added a reference to logo.png in index.js file.",
+                "",
+                ""
+        );
+        final LearnDetailsModel l2 = new LearnDetailsModel(
+                "Start Next.js Server",
+                "Run the following command to start the server −.",
+                "npm run dev\n" +
+                        "> nextjs@1.0.0 dev \\Node\\nextjs\n" +
+                        "> next\n" +
+                        "\n" +
+                        "ready - started server on http://localhost:3000\n" +
+                        "event - compiled successfully\n" +
+                        "event - build page: /\n" +
+                        "wait  - compiling...\n" +
+                        "event - compiled successfully\n" +
+                        "event - build page: /next/dist/pages/_error\n" +
+                        "wait  - compiling...\n" +
+                        "event - compiled successfully",
+                ""
+        );
+        list.add(l1);
+        list.add(l2);
+        return list;
+    }
+    //NextJs CSS Support
+    private static List<LearnDetailsModel> NextJsCSSSupport(){
+        final List<LearnDetailsModel> list = new ArrayList<>();
+        final LearnDetailsModel l1 = new LearnDetailsModel(
+                "NextJs CSS Support",
+                "In Next.js, we can use inbuild css-in-js library named styled-jsx. It allows to write css within a react component and these styles will be scoped to component.\n" +
+                        "\n" +
+                        "In this example, we'll create a Container object which will be used to style other components by containing them.\n" +
+                        "\n" +
+                        "Let's update the nextjs project used in Meta Data chapter.\n" +
+                        "\n" +
+                        "First create a Components directory at root level and add a file container.module.css as follows −\n" +
+                        "\n" +
+                        ".container {\n" +
+                        "   max-width: 36rem;\n" +
+                        "   padding: 0 1rem;\n" +
+                        "   margin: 3rem auto 6rem;\n" +
+                        "   border: 1px solid red;  \n" +
+                        "}\n" +
+                        "Create container.js file in Components directory\n" +
+                        "\n" +
+                        "import styles from './container.module.css'\n" +
+                        "\n" +
+                        "function Container({ children }) {\n" +
+                        "   return <div className={styles.container}>{children}</div>\n" +
+                        "}\n" +
+                        "\n" +
+                        "export default Container\n" +
+                        "Now use Container component in first.js.\n" +
+                        "\n" +
+                        "import Link from 'next/link'\n" +
+                        "import Head from 'next/head'\n" +
+                        "import Container from '../../components/container'\n" +
+                        "\n" +
+                        "export default function FirstPost() {\n" +
+                        "   return (\n" +
+                        "      <>\n" +
+                        "         <Container>\n" +
+                        "            <Head>\n" +
+                        "               <title>My First Post</title>\n" +
+                        "            </Head>\n" +
+                        "            <h1>My First Post</h1>\n" +
+                        "            <h2>\n" +
+                        "            <Link href=\"/\">\n" +
+                        "               <a>Home</a>\n" +
+                        "            </Link>\n" +
+                        "            </h2>\n" +
+                        "         </Container>\n" +
+                        "      </>\t  \n" +
+                        "   )\n" +
+                        "}",
+                "",
+                ""
+        );
+        final LearnDetailsModel l2 = new LearnDetailsModel(
+                "Start Next.js Server",
+                "Run the following command to start the server −.",
+                "npm run dev\n" +
+                        "> nextjs@1.0.0 dev \\Node\\nextjs\n" +
+                        "> next\n" +
+                        "\n" +
+                        "ready - started server on http://localhost:3000\n" +
+                        "event - compiled successfully\n" +
+                        "event - build page: /\n" +
+                        "wait  - compiling...\n" +
+                        "event - compiled successfully\n" +
+                        "event - build page: /next/dist/pages/_error\n" +
+                        "wait  - compiling...\n" +
+                        "event - compiled successfully",
+                ""
+        );
+        list.add(l1);
+        list.add(l2);
+        return list;
+    }
+    //NextJs Global CSS Support
+    private static List<LearnDetailsModel> NextJsGlobalCSSSupport(){
+        final List<LearnDetailsModel> list = new ArrayList<>();
+        final LearnDetailsModel l1 = new LearnDetailsModel(
+                "Global CSS Support",
+                "In Next.js, Let's create global styles which will be applied on all pages.\n" +
+                        "\n" +
+                        "In this example, we'll create a styles.css which will be used on all components using _app.js component.\n" +
+                        "\n" +
+                        "Let's update the nextjs project used in CSS Support chapter.\n" +
+                        "\n" +
+                        "First create a styles directory at root level and add a file styles.css as follows −\n" +
+                        "\n" +
+                        "html,\n" +
+                        "body {\n" +
+                        "   padding: 0;\n" +
+                        "   margin: 0;\n" +
+                        "   line-height: 1.6;\n" +
+                        "   font-size: 18px;\n" +
+                        "   background-color: lime;\n" +
+                        "}\n" +
+                        "\n" +
+                        "* {\n" +
+                        "   box-sizing: border-box;\n" +
+                        "}\n" +
+                        "\n" +
+                        "a {\n" +
+                        "   color: #15c55d;\n" +
+                        "   text-decoration: none;\n" +
+                        "}\n" +
+                        "\n" +
+                        "a:hover {\n" +
+                        "   text-decoration: underline;\n" +
+                        "}\n" +
+                        "\n" +
+                        "img {\n" +
+                        "   max-width: 100%;\n" +
+                        "   display: block;\n" +
+                        "}\n" +
+                        "Create _app.js file in pages directory\n" +
+                        "\n" +
+                        "import '../styles/styles.css'\n" +
+                        "\n" +
+                        "export default function App({ Component, pageProps }) {\n" +
+                        "   return <Component {...pageProps} />\n" +
+                        "}",
+                "",
+                ""
+        );
+        final LearnDetailsModel l2 = new LearnDetailsModel(
+                "Start Next.js Server",
+                "Run the following command to start the server −.",
+                "npm run dev\n" +
+                        "> nextjs@1.0.0 dev \\Node\\nextjs\n" +
+                        "> next\n" +
+                        "\n" +
+                        "ready - started server on http://localhost:3000\n" +
+                        "event - compiled successfully\n" +
+                        "event - build page: /\n" +
+                        "wait  - compiling...\n" +
+                        "event - compiled successfully\n" +
+                        "event - build page: /next/dist/pages/_error\n" +
+                        "wait  - compiling...\n" +
+                        "event - compiled successfully",
+                ""
+        );
+        list.add(l1);
+        list.add(l2);
+        return list;
+    }
+    //NextJs Pre-Rendering
+    private static List<LearnDetailsModel> NextJsPreRendering(){
+        final List<LearnDetailsModel> list = new ArrayList<>();
+        final LearnDetailsModel l1 = new LearnDetailsModel(
+                "Pre-Rendering",
+                "In Next.js, we know it generates HTML for a page called pre-rendering. Next.JS supports two types of pre-rendering.\n" +
+                        "\n" +
+                        "Static Generation − This method generates the HTML page at build time. This pre-rendered HTML is sent on each request. This method is useful for marketing websites, blogs, e-commerce products listing wesites, helps, documentation websites.\n" +
+                        "\n" +
+                        "Server Side Generation − This method generates the HTML page on each request. This method is suitable when an html page contents can vary with each request.",
+                "",
+                ""
+        );
+        final LearnDetailsModel l2 = new LearnDetailsModel(
+                "Per Page Pre-rendering",
+                "Next.JS allows to set pre-rendering method for each page where most of pages follow static generation and other pages will use server side rendering.",
+                "",
+                ""
+        );
+        final LearnDetailsModel l3 = new LearnDetailsModel(
+                "Static Generation Without Data",
+                "Static generation can be done without data in which case, HTML pages will be ready without need to prefetch the data and then start rendering. Data can be fetched later or on request. This technique helps in showing user an User Interface without any data in case data takes time to come.",
+                "",
+                ""
+        );
+        final LearnDetailsModel l4 = new LearnDetailsModel(
+                "Static Generation With Data",
+                "Static generation can be done with data in which case, HTML pages will not be ready until data is fetched, as HTML may be dependent on data. Each component has a special method getStaticProps which can be used to fetch data and pass data as props of the page so that page can render accordings to passed props.\n" +
+                        "\n" +
+                        "getStaticProps() function runs at build time in production and runs for every request in dev mode.\n" +
+                        "\n" +
+                        "Let's create an example to demonstrate the same.\n" +
+                        "\n" +
+                        "In this example, we'll create a update index.js and first.js page to make a server hit to get data.\n" +
+                        "\n" +
+                        "Let's update the nextjs project used in Global CSS Support chapter.\n" +
+                        "\n" +
+                        "Update index.js file in pages directory to use getServerSideProps() method. This method will be called per request.",
+                "import Link from 'next/link'\n" +
+                        "import Head from 'next/head'\n" +
+                        "\n" +
+                        "function HomePage(props) {\n" +
+                        "   return (\n" +
+                        "      <>\n" +
+                        "         <Head>\n" +
+                        "            <title>Welcome to Next.js!</title>\n" +
+                        "         </Head>\n" +
+                        "         <div>Welcome to Next.js!</div>\n" +
+                        "         <Link href=\"/posts/first\"><a>First Post</a></Link>\n" +
+                        "         <br/>\n" +
+                        "         <div>Next stars: {props.stars}</div>\n" +
+                        "         <img src=\"/logo.png\" alt=\"ShrCreation Logo\" />\n" +
+                        "      </>\t    \n" +
+                        "   )\n" +
+                        "}\n" +
+                        "\n" +
+                        "export async function getServerSideProps(context) {\n" +
+                        "   const res = await fetch('https://api.github.com/repos/vercel/next.js')\n" +
+                        "   const json = await res.json()\n" +
+                        "   return {\n" +
+                        "      props: { stars: json.stargazers_count }\n" +
+                        "   }\n" +
+                        "}\n" +
+                        "\n" +
+                        "export default HomePage" +
+                        "\n\n\n" +
+                        "Update first.js file in pages directory to use getStaticProps() method. This method will be called once.\n" +
+                        "\n" +
+                        "import Link from 'next/link'\n" +
+                        "import Head from 'next/head'\n" +
+                        "import Container from '../../components/container'\n" +
+                        "\n" +
+                        "export default function FirstPost(props) {\n" +
+                        "   return (\n" +
+                        "      <>\n" +
+                        "         <Container>\n" +
+                        "            <Head>\n" +
+                        "               <title>My First Post</title>\n" +
+                        "            </Head>\n" +
+                        "            <h1>My First Post</h1>\n" +
+                        "            <h2>\n" +
+                        "               <Link href=\"/\">\n" +
+                        "                  <a>Home</a>\n" +
+                        "               </Link>\n" +
+                        "               <div>Next stars: {props.stars}</div>\n" +
+                        "            </h2>\n" +
+                        "         </Container>\n" +
+                        "      </>\t  \n" +
+                        "   )\n" +
+                        "}\n" +
+                        "\n" +
+                        "export async function getStaticProps() {\n" +
+                        "   const res = await fetch('https://api.github.com/repos/vercel/next.js')\n" +
+                        "   const json = await res.json()\n" +
+                        "   return {\n" +
+                        "      props: { stars: json.stargazers_count }\n" +
+                        "   }\n" +
+                        "}",
+                ""
+        );
+        final LearnDetailsModel l5 = new LearnDetailsModel(
+                "Start Next.js Server",
+                "Run the following command to start the server −.",
+                "npm run dev\n" +
+                        "> nextjs@1.0.0 dev \\Node\\nextjs\n" +
+                        "> next\n" +
+                        "\n" +
+                        "ready - started server on http://localhost:3000\n" +
+                        "event - compiled successfully\n" +
+                        "event - build page: /\n" +
+                        "wait  - compiling...\n" +
+                        "event - compiled successfully\n" +
+                        "event - build page: /next/dist/pages/_error\n" +
+                        "wait  - compiling...\n" +
+                        "event - compiled successfully",
+                ""
+        );
+        list.add(l1);
+        list.add(l2);
+        list.add(l3);
+        list.add(l4);
+        list.add(l5);
+        return list;
+    }
+    //NextJs Routing
+    private static List<LearnDetailsModel> NextJsRouting(){
+        final List<LearnDetailsModel> list = new ArrayList<>();
+        final LearnDetailsModel l1 = new LearnDetailsModel(
+                "Routing",
+                "Next.js uses file system based router. Whenever we add any page to pages directory, it is automatically available via url. Following are the rules of this router.\n" +
+                        "\n" +
+                        "Index Routes − An index.js file present in a folder maps to root of directory. For example −\n" +
+                        "\n" +
+                        "pages/index.js maps to '/'.\n" +
+                        "\n" +
+                        "pages/posts/index.js maps to '/posts'.\n" +
+                        "\n" +
+                        "Nested Routes − Any nested folder structure in pages directory because router url automatically. For example −\n" +
+                        "\n" +
+                        "pages/settings/dashboard/about.js maps to '/settings/dashboard/about'.\n" +
+                        "\n" +
+                        "pages/posts/first.js maps to '/posts/first'.\n" +
+                        "\n" +
+                        "Dynamic Routes − We can use named parameter as well to match url. Use brackets for the same. For example −\n" +
+                        "\n" +
+                        "pages/posts/[id].js maps to '/posts/:id' where we can use URL like '/posts/1'.\n" +
+                        "\n" +
+                        "pages/[user]/settings.js maps to '/posts/:user/settings' where we can use URL like '/abc/settings'.\n" +
+                        "\n" +
+                        "pages/posts/[...all].js maps to '/posts/*' where we can use any URL like '/posts/2020/jun/'.",
+                "",
+                ""
+        );
+        final LearnDetailsModel l2 = new LearnDetailsModel(
+                "Page Linking",
+                "Next.JS allows to link pages on client side using Link react component. It has following properties −\n" +
+                        "\n" +
+                        "href − name of the page in pages directory. For example /posts/first which refers to first.js present in pages/posts directory.\n" +
+                        "\n" +
+                        "Let's create an example to demonstrate the same.\n" +
+                        "\n" +
+                        "In this example, we'll update index.js and first.js page to make a server hit to get data.\n" +
+                        "\n" +
+                        "Let's update the nextjs project used in Global CSS Support chapter.\n" +
+                        "\n" +
+                        "Update index.js file in pages directory as following.",
+                "import Link from 'next/link'\n" +
+                        "import Head from 'next/head'\n" +
+                        "\n" +
+                        "function HomePage(props) {\n" +
+                        "   return (\n" +
+                        "      <>\n" +
+                        "         <Head>\n" +
+                        "            <title>Welcome to Next.js!</title>\n" +
+                        "         </Head>\n" +
+                        "         <div>Welcome to Next.js!</div>\n" +
+                        "         <Link href=\"/posts/first\">> <a>First Post</a></Link>\n" +
+                        "         <br/>\n" +
+                        "         <div>Next stars: {props.stars}</div>\n" +
+                        "         <img src=\"/logo.png\" alt=\"ShrCreation Logo\" />\n" +
+                        "      </>\t    \n" +
+                        "   )\n" +
+                        "}\n" +
+                        "\n" +
+                        "export async function getServerSideProps(context) {\n" +
+                        "   const res = await fetch('https://api.github.com/repos/vercel/next.js')\n" +
+                        "   const json = await res.json()\n" +
+                        "   return {\n" +
+                        "      props: { stars: json.stargazers_count }\n" +
+                        "   }\n" +
+                        "}\n" +
+                        "\n" +
+                        "export default HomePage",
+                ""
+        );
+        final LearnDetailsModel l3 = new LearnDetailsModel(
+                "Start Next.js Server",
+                "Run the following command to start the server −.",
+                "npm run dev\n" +
+                        "> nextjs@1.0.0 dev \\Node\\nextjs\n" +
+                        "> next\n" +
+                        "\n" +
+                        "ready - started server on http://localhost:3000\n" +
+                        "event - compiled successfully\n" +
+                        "event - build page: /\n" +
+                        "wait  - compiling...\n" +
+                        "event - compiled successfully\n" +
+                        "event - build page: /next/dist/pages/_error\n" +
+                        "wait  - compiling...\n" +
+                        "event - compiled successfully",
+                ""
+        );
+        list.add(l1);
+        list.add(l2);
+        list.add(l3);
+        return list;
+    }
+    //NextJs Dynamic Routing
+    private static List<LearnDetailsModel> NextJsDynamicRouting(){
+        final List<LearnDetailsModel> list = new ArrayList<>();
+        final LearnDetailsModel l1 = new LearnDetailsModel(
+                "Dynamic Routing",
+                "In Next.js, we can create routes dynamically. In this example, we'll create pages on the fly and their routing.\n" +
+                        "\n" +
+                        "Step 1. Define [id].js file − [id].js represents the dynamic page where id will be relative path. Define this file in pages/post directory.\n" +
+                        "\n" +
+                        "Step 2. Define lib/posts.js − posts.js represents the ids and contents. lib directory is to be created in root directory.",
+                "",
+                ""
+        );
+        final LearnDetailsModel l2 = new LearnDetailsModel(
+                "[id].js",
+                "Update [id].js file with getStaticPaths() method which sets the paths and getStaticProps() method to get the contents based on id.",
+                "import Link from 'next/link'\n" +
+                        "import Head from 'next/head'\n" +
+                        "import Container from '../../components/container'\n" +
+                        "\n" +
+                        "import { getAllPostIds, getPostData } from '../../lib/posts'\n" +
+                        "\n" +
+                        "export default function Post({ postData }) {\n" +
+                        "   return (\n" +
+                        "      <Container>\n" +
+                        "         {postData.id}\n" +
+                        "         <br />\n" +
+                        "         {postData.title}\n" +
+                        "         <br />\n" +
+                        "         {postData.date}\n" +
+                        "      </Container>\n" +
+                        "   )\n" +
+                        "}\n" +
+                        "export async function getStaticPaths() {\n" +
+                        "   const paths = getAllPostIds()\n" +
+                        "   return {\n" +
+                        "      paths,\n" +
+                        "      fallback: false\n" +
+                        "   }\n" +
+                        "}\n" +
+                        "\n" +
+                        "export async function getStaticProps({ params }) {\n" +
+                        "   const postData = getPostData(params.id)\n" +
+                        "      return {\n" +
+                        "      props: {\n" +
+                        "         postData\n" +
+                        "      }\n" +
+                        "   }\n" +
+                        "}",
+                ""
+        );
+        final LearnDetailsModel l3 = new LearnDetailsModel(
+                "posts.js",
+                "posts.js contains getAllPostIds() to get the ids and getPostData() to get corresponding contents.",
+                "export function getPostData(id) {\n" +
+                        "   const postOne = {\n" +
+                        "      title: 'One',\n" +
+                        "      id: 1,\n" +
+                        "      date: '7/12/2020'\n" +
+                        "   }\n" +
+                        "\n" +
+                        "   const postTwo = {\n" +
+                        "      title: 'Two',\n" +
+                        "      id: 2,\n" +
+                        "      date: '7/12/2020'\n" +
+                        "   }\n" +
+                        "   if(id == 'one'){\n" +
+                        "      return postOne;\n" +
+                        "   }else if(id == 'two'){\n" +
+                        "      return postTwo;\n" +
+                        "   }  \n" +
+                        "}\n" +
+                        "\n" +
+                        "export function getAllPostIds() {\n" +
+                        "   return [{\n" +
+                        "      params: {\n" +
+                        "         id: 'one'\n" +
+                        "      }\n" +
+                        "   },\n" +
+                        "   {\n" +
+                        "      params: {\n" +
+                        "         id: 'two'\n" +
+                        "      }\n" +
+                        "   }\n" +
+                        "];\n" +
+                        "}",
+                ""
+        );final LearnDetailsModel l4 = new LearnDetailsModel(
+                "Start Next.js Server",
+                "Run the following command to start the server −.",
+                "npm run dev\n" +
+                        "> nextjs@1.0.0 dev \\Node\\nextjs\n" +
+                        "> next\n" +
+                        "\n" +
+                        "ready - started server on http://localhost:3000\n" +
+                        "event - compiled successfully\n" +
+                        "event - build page: /\n" +
+                        "wait  - compiling...\n" +
+                        "event - compiled successfully\n" +
+                        "event - build page: /next/dist/pages/_error\n" +
+                        "wait  - compiling...\n" +
+                        "event - compiled successfully",
+                ""
+        );
+        list.add(l1);
+        list.add(l2);
+        list.add(l3);
+        list.add(l4);
+        return list;
+    }
+    //NextJs Imperative Routing
+    private static List<LearnDetailsModel> NextJsImperativeRouting(){
+        final List<LearnDetailsModel> list = new ArrayList<>();
+        final LearnDetailsModel l1 = new LearnDetailsModel(
+                "Imperative Routing",
+                "In Next.js, so far we are using Link react component to navigate from one page to other. There is a programmatic way as well to achive the same using Router component. Generally Router component is used with html tags.\n" +
+                        "\n" +
+                        "Update index.js file in pages directory as following.",
+                "import Router from 'next/router'\n" +
+                        "import Head from 'next/head'\n" +
+                        "\n" +
+                        "function HomePage(props) {\n" +
+                        "   return (\n" +
+                        "      <>\n" +
+                        "         <Head>\n" +
+                        "            <title>Welcome to Next.js!</title>\n" +
+                        "         </Head>\n" +
+                        "         <div>Welcome to Next.js!</div>\n" +
+                        "         <span onClick={() => Router.push('/posts/one')}>First Post</span>\n" +
+                        "         <br/>\n" +
+                        "         <div>Next stars: {props.stars}</div>\n" +
+                        "         <img src=\"/logo.png\" alt=\"ShrCreation Logo\" />\n" +
+                        "      </>\t    \n" +
+                        "   )\n" +
+                        "}\n" +
+                        "\n" +
+                        "export async function getServerSideProps(context) {\n" +
+                        "   const res = await fetch('https://api.github.com/repos/vercel/next.js')\n" +
+                        "   const json = await res.json()\n" +
+                        "   return {\n" +
+                        "      props: { stars: json.stargazers_count }\n" +
+                        "   }\n" +
+                        "}\n" +
+                        "\n" +
+                        "export default HomePage",
+                ""
+        );
+        final LearnDetailsModel l2 = new LearnDetailsModel(
+                "Start Next.js Server",
+                "Run the following command to start the server −.",
+                "npm run dev\n" +
+                        "> nextjs@1.0.0 dev \\Node\\nextjs\n" +
+                        "> next\n" +
+                        "\n" +
+                        "ready - started server on http://localhost:3000\n" +
+                        "event - compiled successfully\n" +
+                        "event - build page: /\n" +
+                        "wait  - compiling...\n" +
+                        "event - compiled successfully\n" +
+                        "event - build page: /next/dist/pages/_error\n" +
+                        "wait  - compiling...\n" +
+                        "event - compiled successfully",
+                ""
+        );
+        list.add(l1);
+        list.add(l2);
+        return list;
+    }
+    //NextJs Shallow Routing
+    private static List<LearnDetailsModel> NextJsShallowRouting(){
+        final List<LearnDetailsModel> list = new ArrayList<>();
+        final LearnDetailsModel l1 = new LearnDetailsModel(
+                "Shallow Routing",
+                "In Next.js, shallow routing refers to navigating to same page but no calls to getServerSideProps, getStaticProps, and getInitialProps methods.\n" +
+                        "\n" +
+                        "To do shallow routing, we use Router with shallow flag as true. See the below example.\n" +
+                        "\n" +
+                        "Update index.js file in pages directory as following.",
+                "import Router from 'next/router'\n" +
+                        "import Head from 'next/head'\n" +
+                        "\n" +
+                        "function HomePage(props) {\n" +
+                        "   return (\n" +
+                        "      <>\n" +
+                        "         <Head>\n" +
+                        "            <title>Welcome to Next.js!</title>\n" +
+                        "         </Head>\n" +
+                        "         <div>Welcome to Next.js!</div>\n" +
+                        "         <span onClick={() => Router.push('/?counter=1', undefined, { shallow: true })}>Reload</span>\n" +
+                        "         <br/>\n" +
+                        "         <div>Next stars: {props.stars}</div>\n" +
+                        "         <img src=\"/logo.png\" alt=\"ShrCreation Logo\" />\n" +
+                        "      </>\t    \n" +
+                        "   )\n" +
+                        "}\n" +
+                        "\n" +
+                        "export async function getServerSideProps(context) {\n" +
+                        "   const res = await fetch('https://api.github.com/repos/vercel/next.js')\n" +
+                        "   const json = await res.json()\n" +
+                        "   return {\n" +
+                        "      props: { stars: json.stargazers_count }\n" +
+                        "   }\n" +
+                        "}\n" +
+                        "\n" +
+                        "export default HomePage",
+                ""
+        );
+        final LearnDetailsModel l2 = new LearnDetailsModel(
+                "Start Next.js Server",
+                "Run the following command to start the server −.",
+                "npm run dev\n" +
+                        "> nextjs@1.0.0 dev \\Node\\nextjs\n" +
+                        "> next\n" +
+                        "\n" +
+                        "ready - started server on http://localhost:3000\n" +
+                        "event - compiled successfully\n" +
+                        "event - build page: /\n" +
+                        "wait  - compiling...\n" +
+                        "event - compiled successfully\n" +
+                        "event - build page: /next/dist/pages/_error\n" +
+                        "wait  - compiling...\n" +
+                        "event - compiled successfully",
+                ""
+        );
+        list.add(l1);
+        list.add(l2);
+        return list;
+    }
+    //NextJs Api Routes
+    private static List<LearnDetailsModel> NextJsApiRoutes(){
+        final List<LearnDetailsModel> list = new ArrayList<>();
+        final LearnDetailsModel l1 = new LearnDetailsModel(
+                "Api Routes",
+                "API Routes is a way to create rest API using Next.js. Next.js maps any file present in /pages/api folder and will be treated as API end point. An example of API function −\n" +
+                        "\n" +
+                        "export default (req, res) => {\n" +
+                        "   ...\n" +
+                        "}\n" +
+                        "Following are some important points to consider.\n" +
+                        "\n" +
+                        "req − req is an instance of http.IncomingMessage and is used to get data from request.\n" +
+                        "\n" +
+                        "res − res is an instance of http.ServerResponse and is used to send data as response.\n" +
+                        "\n" +
+                        "Let's create an example to demonstrate the same.\n" +
+                        "\n" +
+                        "In this example, we are going to create an user.js in pages/api directory.\n" +
+                        "\n" +
+                        "Let's update the nextjs project used in Global CSS Support chapter.\n" +
+                        "\n" +
+                        "Create user.js file in pages/api directory as following.",
+                "export default (req, res) => {\n" +
+                        "   res.statusCode = 200\n" +
+                        "   res.setHeader('Content-Type', 'application/json')\n" +
+                        "   res.end(JSON.stringify({ name: 'Robert' }))\n" +
+                        "}",
+                ""
+        );
+        final LearnDetailsModel l2 = new LearnDetailsModel(
+                "Start Next.js Server",
+                "Run the following command to start the server −.",
+                "npm run dev\n" +
+                        "\n" +
+                        "> nextjs@1.0.0 dev D:\\Node\\nextjs\n" +
+                        "> next\n" +
+                        "\n" +
+                        "ready - started server on http://localhost:3000\n" +
+                        "info  - Loaded env from D:\\Node\\nextjs\\.env.local\n" +
+                        "event - compiled successfully\n" +
+                        "event - build page: /api/user\n" +
+                        "wait  - compiling...\n" +
+                        "event - compiled successfully\n" +
+                        "event - build page: /next/dist/pages/_error\n" +
+                        "wait  - compiling...\n" +
+                        "event - compiled successfully",
+                "{\"name\":\"Robert\"}"
+        );
+        list.add(l1);
+        list.add(l2);
+        return list;
+    }
+    //NextJs API MiddleWares
+    private static List<LearnDetailsModel> NextJsAPIMiddleWares(){
+        final List<LearnDetailsModel> list = new ArrayList<>();
+        final LearnDetailsModel l1 = new LearnDetailsModel(
+                "API MiddleWares",
+                "API Routes in Next.JS have built-in middlewares which helps in parsing the incoming request.\n" +
+                        "\n" +
+                        "Following are the middlewares\n" +
+                        "\n" +
+                        "req.cookies − cookies object contains the cookies sent by the request. Default value is {}.\n" +
+                        "\n" +
+                        "req.query − query object contains the query string. Default value is {}.\n" +
+                        "\n" +
+                        "req.body − query object contains the request body parsed using 'content-type'. Default value is null.\n" +
+                        "\n" +
+                        "Let's create an example to demonstrate the same.\n" +
+                        "\n" +
+                        "In this example, we are going to update an user.js in pages/api directory.\n" +
+                        "\n" +
+                        "Let's update the nextjs project used in API Routes chapter.\n" +
+                        "\n" +
+                        "Create user.js file in pages/api directory as following.",
+                "export default (req, res) => {\n" +
+                        "   res.statusCode = 200\n" +
+                        "   res.setHeader('Content-Type', 'application/json')\n" +
+                        "   res.end(JSON.stringify({ query: req.query }))\n" +
+                        "}",
+                ""
+        );
+        final LearnDetailsModel l2 = new LearnDetailsModel(
+                "Start Next.js Server",
+                "Run the following command to start the server −.",
+                "npm run dev\n" +
+                        "\n" +
+                        "> nextjs@1.0.0 dev D:\\Node\\nextjs\n" +
+                        "> next\n" +
+                        "\n" +
+                        "ready - started server on http://localhost:3000\n" +
+                        "info  - Loaded env from D:\\Node\\nextjs\\.env.local\n" +
+                        "event - compiled successfully\n" +
+                        "event - build page: /api/user\n" +
+                        "wait  - compiling...\n" +
+                        "event - compiled successfully\n" +
+                        "event - build page: /next/dist/pages/_error\n" +
+                        "wait  - compiling...\n" +
+                        "event - compiled successfully",
+                "{\"query\":{\"counter\":\"1\"}}"
+        );
+        list.add(l1);
+        list.add(l2);
+        return list;
+    }
+    //NextJs Response Helpers
+    private static List<LearnDetailsModel> NextJsResponseHelpers(){
+        final List<LearnDetailsModel> list = new ArrayList<>();
+        final LearnDetailsModel l1 = new LearnDetailsModel(
+                "Response Helpers",
+                "res object have express.js like helper methods to ease development to create services.\n" +
+                        "\n" +
+                        "Following are the response helper methods\n" +
+                        "\n" +
+                        "res.status(code) − This methods set the status of response. Code passed must be a valid HTTP status.\n" +
+                        "\n" +
+                        "req.json(json) − This method returns a JSON response. json passed must be a valid JSON object.\n" +
+                        "\n" +
+                        "req.send(body) − This methods sends an HTTP response. Response can be string, object or Buffer.\n" +
+                        "\n" +
+                        "Let's create an example to demonstrate the same.\n" +
+                        "\n" +
+                        "In this example, we are going to update an user.js in pages/api directory.\n" +
+                        "\n" +
+                        "Let's update the nextjs project used in API Routes chapter.\n" +
+                        "\n" +
+                        "Create user.js file in pages/api directory as following.",
+                "export default (req, res) => {\n" +
+                        "   res.status(200).json({ name: 'Robert' });\n" +
+                        "}",
+                ""
+        );
+        final LearnDetailsModel l2 = new LearnDetailsModel(
+                "Start Next.js Server",
+                "Run the following command to start the server −.",
+                "npm run dev\n" +
+                        "\n" +
+                        "> nextjs@1.0.0 dev D:\\Node\\nextjs\n" +
+                        "> next\n" +
+                        "\n" +
+                        "ready - started server on http://localhost:3000\n" +
+                        "info  - Loaded env from D:\\Node\\nextjs\\.env.local\n" +
+                        "event - compiled successfully\n" +
+                        "event - build page: /api/user\n" +
+                        "wait  - compiling...\n" +
+                        "event - compiled successfully\n" +
+                        "event - build page: /next/dist/pages/_error\n" +
+                        "wait  - compiling...\n" +
+                        "event - compiled successfully",
+                "{ name: 'Robert' }"
+        );
+        list.add(l1);
+        list.add(l2);
+        return list;
+    }
 
 
     /*final LearnDetailsModel l1 = new LearnDetailsModel(
@@ -11337,6 +13773,64 @@ public class LearnDetailsContent {
                 return AngularJSInjection();
             case "AngularJS Custom Directives":
                 return AngularJSCustomDirectives();
+            //VueJS
+            case "VueJs Introduction":
+                return VueJsIntroduction();
+            case "VueJs First Program":
+                return VueJsFirstProgram();
+            case "VueJS Instances":
+                return VueJSInstances();
+            case "VueJS Template":
+                return VueJSTemplate();
+            case "VueJS Components":
+                return VueJSComponents();
+            case "VueJS Computed Properties":
+                return VueJSComputedProperties();
+            case "VueJS Binding":
+                return VueJSBinding();
+            case "VueJS Events":
+                return VueJSEvents();
+            case "VueJS Rendering":
+                return VueJSRendering();
+            case "VueJS Animation":
+                return VueJSAnimation();
+            case "VueJS Directives":
+                return VueJSDirectives();
+            case "VueJS Routing":
+                return VueJSRouting();
+            case "VueJS Mixins":
+                return VueJSMixins();
+            case "VueJS Examples":
+                return VueJSExamples();
+            //NextJS
+            case "NextJs Introduction":
+                return NextJsIntroduction();
+            case "NextJs Pages":
+                return NextJsPages();
+            case "NextJs Static File Serving":
+                return NextJsStaticFileServing();
+            case "NextJs Meta Data":
+                return NextJsMetaData();
+            case "NextJs CSS Support":
+                return NextJsCSSSupport();
+            case "NextJs Global CSS Support":
+               return NextJsGlobalCSSSupport();
+            case "NextJs Pre-Rendering":
+                return NextJsPreRendering();
+            case "NextJs Routing":
+                return NextJsRouting();
+            case "NextJs Dynamic Routing":
+                return NextJsDynamicRouting();
+            case "NextJs Imperative Routing":
+                return NextJsImperativeRouting();
+            case "NextJs Shallow Routing":
+                return NextJsShallowRouting();
+            case "NextJs Api Routes":
+                return NextJsApiRoutes();
+            case "NextJs API MiddleWares":
+                return NextJsAPIMiddleWares();
+            case "NextJs Response Helpers":
+                return NextJsResponseHelpers();
 
             default:
                 return defaultT();
@@ -11346,7 +13840,7 @@ public class LearnDetailsContent {
     }
 
 }
-    /*private static List<LearnDetailsModel> AngularJSCustomDirectives(){
+    /*private static List<LearnDetailsModel> NextJsResponseHelpers(){
         final List<LearnDetailsModel> list = new ArrayList<>();
         final LearnDetailsModel l1 = new LearnDetailsModel();
 

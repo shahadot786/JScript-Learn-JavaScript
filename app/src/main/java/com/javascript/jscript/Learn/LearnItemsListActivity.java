@@ -188,10 +188,36 @@ public class LearnItemsListActivity extends AppCompatActivity {
 
         };
         final String[] VueJs = {
-                "Vue Js"
+                "VueJs Introduction",
+                "VueJs First Program",
+                "VueJS Instances",
+                "VueJS Template",
+                "VueJS Components",
+                "VueJS Computed Properties",
+                "VueJS Binding",
+                "VueJS Events",
+                "VueJS Rendering",
+                "VueJS Animation",
+                "VueJS Directives",
+                "VueJS Routing",
+                "VueJS Mixins",
+                "VueJS Examples"
         };
         final String[] NextJs = {
-                "Next Js"
+                "NextJs Introduction",
+                "NextJs Pages",
+                "NextJs Static File Serving",
+                "NextJs Meta Data",
+                "NextJs CSS Support",
+                "NextJs Global CSS Support",
+                "NextJs Pre-Rendering",
+                "NextJs Routing",
+                "NextJs Dynamic Routing",
+                "NextJs Imperative Routing",
+                "NextJs Shallow Routing",
+                "NextJs Api Routes",
+                "NextJs API MiddleWares",
+                "NextJs Response Helpers"
         };
         final String[] ReactJs = {
                 "React Js"

@@ -19021,10 +19021,2236 @@ public class LearnDetailsContent {
         list.add(l3);
         return list;
     }
+    //NodeJs
+    //NodeJs Introduction
+    private static List<LearnDetailsModel> NodeJsIntroduction(){
+        final List<LearnDetailsModel> list = new ArrayList<>();
+        final LearnDetailsModel l1 = new LearnDetailsModel(
+                "What is Node.js?",
+                "Node.js is a server-side platform built on Google Chrome's JavaScript Engine (V8 Engine). Node.js was developed by Ryan Dahl in 2009 and its latest version is v0.10.36. The definition of Node.js as supplied by its official documentation is as follows −\n" +
+                        "\n" +
+                        "Node.js is a platform built on Chrome's JavaScript runtime for easily building fast and scalable network applications. Node.js uses an event-driven, non-blocking I/O model that makes it lightweight and efficient, perfect for data-intensive real-time applications that run across distributed devices.\n" +
+                        "\n" +
+                        "Node.js is an open source, cross-platform runtime environment for developing server-side and networking applications. Node.js applications are written in JavaScript, and can be run within the Node.js runtime on OS X, Microsoft Windows, and Linux.\n" +
+                        "\n" +
+                        "Node.js also provides a rich library of various JavaScript modules which simplifies the development of web applications using Node.js to a great extent.",
+                "Node.js = Runtime Environment + JavaScript Library",
+                ""
+        );
+        final LearnDetailsModel l2 = new LearnDetailsModel(
+                "Features of Node.js",
+                "Following are some of the important features that make Node.js the first choice of software architects.\n" +
+                        "\n" +
+                        "Asynchronous and Event Driven − All APIs of Node.js library are asynchronous, that is, non-blocking. It essentially means a Node.js based server never waits for an API to return data. The server moves to the next API after calling it and a notification mechanism of Events of Node.js helps the server to get a response from the previous API call.\n" +
+                        "\n" +
+                        "Very Fast − Being built on Google Chrome's V8 JavaScript Engine, Node.js library is very fast in code execution.\n" +
+                        "\n" +
+                        "Single Threaded but Highly Scalable − Node.js uses a single threaded model with event looping. Event mechanism helps the server to respond in a non-blocking way and makes the server highly scalable as opposed to traditional servers which create limited threads to handle requests. Node.js uses a single threaded program and the same program can provide service to a much larger number of requests than traditional servers like Apache HTTP Server.\n" +
+                        "\n" +
+                        "No Buffering − Node.js applications never buffer any data. These applications simply output the data in chunks.\n" +
+                        "\n" +
+                        "License − Node.js is released under the MIT license",
+                "",
+                ""
+        );
+        final LearnDetailsModel l3 = new LearnDetailsModel(
+                "Who Uses Node.js?",
+                "Following is the link on github wiki containing an exhaustive list of projects, application and companies which are using Node.js. This list includes eBay, General Electric, GoDaddy, Microsoft, PayPal, Uber, Wikipins, Yahoo!, and Yammer to name a few.\n" +
+                        "\n" +
+                        "Projects, Applications, and Companies Using Node" +
+                        "\n\n" +
+                        "https://github.com/nodejs/node",
+                "",
+                ""
+        );
+        final LearnDetailsModel l4 = new LearnDetailsModel(
+                "Where to Use Node.js?",
+                "Following are the areas where Node.js is proving itself as a perfect technology partner.\n" +
+                        "\n" +
+                        "I/O bound Applications\n" +
+                        "Data Streaming Applications\n" +
+                        "Data Intensive Real-time Applications (DIRT)\n" +
+                        "JSON APIs based Applications\n" +
+                        "Single Page Applications",
+                "",
+                ""
+        );
+        final LearnDetailsModel l5 = new LearnDetailsModel(
+                "Where Not to Use Node.js?",
+                "It is not advisable to use Node.js for CPU intensive applications.",
+                "",
+                ""
+        );
+        final LearnDetailsModel l6 = new LearnDetailsModel(
+                "Audience",
+                "This tutorial is designed for software programmers who want to learn the basics of Node.js and its architectural concepts. This tutorial will give you enough understanding on all the necessary components of Node.js with suitable examples." +
+                        "",
+                "",
+                ""
+        );
+        final LearnDetailsModel l7 = new LearnDetailsModel(
+                "Prerequisites",
+                "Before proceeding with this tutorial, you should have a basic understanding of JavaScript. As we are going to develop web-based applications using Node.js, it will be good if you have some understanding of other web technologies such as HTML, CSS, AJAX, etc.",
+                "",
+                ""
+        );
+        list.add(l1);
+        list.add(l2);
+        list.add(l3);
+        list.add(l4);
+        list.add(l5);
+        list.add(l6);
+        list.add(l7);
+        return list;
+    }
+    //NodeJs First Application
+    private static List<LearnDetailsModel> NodeJsFirstApplication(){
+        final List<LearnDetailsModel> list = new ArrayList<>();
+        final LearnDetailsModel l1 = new LearnDetailsModel(
+                "First Application",
+                "Before creating an actual \"Hello, World!\" application using Node.js, let us see the components of a Node.js application. A Node.js application consists of the following three important components −\n" +
+                        "\n" +
+                        "Import required modules − We use the require directive to load Node.js modules.\n" +
+                        "\n" +
+                        "Create server − A server which will listen to client's requests similar to Apache HTTP Server.\n" +
+                        "\n" +
+                        "Read request and return response − The server created in an earlier step will read the HTTP request made by the client which can be a browser or a console and return the response.",
+                "",
+                ""
+        );
+        final LearnDetailsModel l2 = new LearnDetailsModel(
+                "Creating Node.js Application",
+                "Step 1 - Import Required Module\n" +
+                        "We use the require directive to load the http module and store the returned HTTP instance into an http variable as follows −",
+                "var http = require(\"http\");",
+                ""
+        );
+        final LearnDetailsModel l3 = new LearnDetailsModel(
+                "Step 2 - Create Server",
+                "We use the created http instance and call http.createServer() method to create a server instance and then we bind it at port 8081 using the listen method associated with the server instance. Pass it a function with parameters request and response. Write the sample implementation to always return \"Hello World\".",
+                "http.createServer(function (request, response) {\n" +
+                        "   // Send the HTTP header \n" +
+                        "   // HTTP Status: 200 : OK\n" +
+                        "   // Content Type: text/plain\n" +
+                        "   response.writeHead(200, {'Content-Type': 'text/plain'});\n" +
+                        "   \n" +
+                        "   // Send the response body as \"Hello World\"\n" +
+                        "   response.end('Hello World\\n');\n" +
+                        "}).listen(8081);\n" +
+                        "\n" +
+                        "// Console will print the message\n" +
+                        "console.log('Server running at http://127.0.0.1:8081/');",
+                ""
+        );
+        final LearnDetailsModel l4 = new LearnDetailsModel(
+                "Step 3 - Testing Request & Response",
+                "Let's put step 1 and 2 together in a file called main.js and start our HTTP server as shown below −",
+                "var http = require(\"http\");\n" +
+                        "\n" +
+                        "http.createServer(function (request, response) {\n" +
+                        "   // Send the HTTP header \n" +
+                        "   // HTTP Status: 200 : OK\n" +
+                        "   // Content Type: text/plain\n" +
+                        "   response.writeHead(200, {'Content-Type': 'text/plain'});\n" +
+                        "   \n" +
+                        "   // Send the response body as \"Hello World\"\n" +
+                        "   response.end('Hello World\\n');\n" +
+                        "}).listen(8081);\n" +
+                        "\n" +
+                        "// Console will print the message\n" +
+                        "console.log('Server running at http://127.0.0.1:8081/');",
+                ""
+        );
+        final LearnDetailsModel l5 = new LearnDetailsModel(
+                "Make a Request to the Node.js Server",
+                "Now execute the main.js to start the server as follows −",
+                "$ node main.js",
+                "Hello World"
+        );
+        list.add(l1);
+        list.add(l2);
+        list.add(l3);
+        list.add(l4);
+        list.add(l5);
+        return list;
+    }
+    //NodeJs REPL Terminal
+    private static List<LearnDetailsModel> NodeJsREPLTerminal(){
+        final List<LearnDetailsModel> list = new ArrayList<>();
+        final LearnDetailsModel l1 = new LearnDetailsModel(
+                "REPL Terminal",
+                "REPL stands for Read Eval Print Loop and it represents a computer environment like a Windows console or Unix/Linux shell where a command is entered and the system responds with an output in an interactive mode. Node.js or Node comes bundled with a REPL environment. It performs the following tasks −\n" +
+                        "\n" +
+                        "Read − Reads user's input, parses the input into JavaScript data-structure, and stores in memory.\n" +
+                        "\n" +
+                        "Eval − Takes and evaluates the data structure.\n" +
+                        "\n" +
+                        "Print − Prints the result.\n" +
+                        "\n" +
+                        "Loop − Loops the above command until the user presses ctrl-c twice.\n" +
+                        "\n" +
+                        "The REPL feature of Node is very useful in experimenting with Node.js codes and to debug JavaScript codes.",
+                "",
+                ""
+        );
+        final LearnDetailsModel l2 = new LearnDetailsModel(
+                "Online REPL Terminal",
+                "To simplify your learning, we have set up an easy to use Node.js REPL environment online, where you can practice Node.js syntax − Launch Node.js REPL Terminal ",
+                "",
+                ""
+        );
+        final LearnDetailsModel l3 = new LearnDetailsModel(
+                "Starting REPL",
+                "REPL can be started by simply running node on shell/console without any arguments as follows.\n" +
+                        "\n" +
+                        "$ node" +
+                        "\n\n" +
+                        "You will see the REPL Command prompt > where you can type any Node.js command −",
+                "$ node\n" +
+                        ">",
+                ""
+        );
+        final LearnDetailsModel l4 = new LearnDetailsModel(
+                "Simple Expression",
+                "Let's try a simple mathematics at the Node.js REPL command prompt −",
+                "$ node\n" +
+                        "> 1 + 3\n" +
+                        "4\n" +
+                        "> 1 + ( 2 * 3 ) - 4\n" +
+                        "3\n" +
+                        ">",
+                ""
+        );
+        final LearnDetailsModel l5 = new LearnDetailsModel(
+                "Use Variables",
+                "You can make use variables to store values and print later like any conventional script. If var keyword is not used, then the value is stored in the variable and printed. Whereas if var keyword is used, then the value is stored but not printed. You can print variables using console.log().",
+                "$ node\n" +
+                        "> x = 10\n" +
+                        "10\n" +
+                        "> var y = 10\n" +
+                        "undefined\n" +
+                        "> x + y\n" +
+                        "20\n" +
+                        "> console.log(\"Hello World\")\n" +
+                        "Hello World\n" +
+                        "undefined",
+                ""
+        );
+        final LearnDetailsModel l6 = new LearnDetailsModel(
+                "Multiline Expression",
+                "Node REPL supports multiline expression similar to JavaScript. Let's check the following do-while loop in action −",
+                "$ node\n" +
+                        "> var x = 0\n" +
+                        "undefined\n" +
+                        "> do {\n" +
+                        "   ... x++;\n" +
+                        "   ... console.log(\"x: \" + x);\n" +
+                        "   ... } \n" +
+                        "while ( x < 5 );\n" +
+                        "x: 1\n" +
+                        "x: 2\n" +
+                        "x: 3\n" +
+                        "x: 4\n" +
+                        "x: 5\n" +
+                        "undefined\n" +
+                        ">",
+                ""
+        );
+        final LearnDetailsModel l7 = new LearnDetailsModel(
+                "Underscore Variable",
+                "You can use underscore (_) to get the last result −",
+                "$ node\n" +
+                        "> var x = 10\n" +
+                        "undefined\n" +
+                        "> var y = 20\n" +
+                        "undefined\n" +
+                        "> x + y\n" +
+                        "30\n" +
+                        "> var sum = _\n" +
+                        "undefined\n" +
+                        "> console.log(sum)\n" +
+                        "30\n" +
+                        "undefined\n" +
+                        ">",
+                ""
+        );final LearnDetailsModel l8 = new LearnDetailsModel(
+                "REPL Commands",
+                "ctrl + c − terminate the current command.\n" +
+                        "\n" +
+                        "ctrl + c twice − terminate the Node REPL.\n" +
+                        "\n" +
+                        "ctrl + d − terminate the Node REPL.\n" +
+                        "\n" +
+                        "Up/Down Keys − see command history and modify previous commands.\n" +
+                        "\n" +
+                        "tab Keys − list of current commands.\n" +
+                        "\n" +
+                        ".help − list of all commands.\n" +
+                        "\n" +
+                        ".break − exit from multiline expression.\n" +
+                        "\n" +
+                        ".clear − exit from multiline expression.\n" +
+                        "\n" +
+                        ".save filename − save the current Node REPL session to a file.\n" +
+                        "\n" +
+                        ".load filename − load file content in current Node REPL session.",
+                "",
+                ""
+        );final LearnDetailsModel l9 = new LearnDetailsModel(
+                "Stopping REPL",
+                "As mentioned above, you will need to use ctrl-c twice to come out of Node.js REPL.",
+                "$ node\n" +
+                        ">\n" +
+                        "(^C again to quit)\n" +
+                        ">",
+                ""
+        );
+        list.add(l1);
+        list.add(l2);
+        list.add(l3);
+        list.add(l4);
+        list.add(l5);
+        list.add(l6);
+        list.add(l7);
+        list.add(l8);
+        list.add(l9);
+        return list;
+    }
+    //NodeJs NPM
+    private static List<LearnDetailsModel> NodeJsNPM(){
+        final List<LearnDetailsModel> list = new ArrayList<>();
+        final LearnDetailsModel l1 = new LearnDetailsModel(
+                "What is NodeJs NPM?",
+                "Node Package Manager (NPM) provides two main functionalities −\n" +
+                        "\n" +
+                        "Online repositories for node.js packages/modules which are searchable on search.nodejs.org\n" +
+                        "\n" +
+                        "Command line utility to install Node.js packages, do version management and dependency management of Node.js packages.\n" +
+                        "\n" +
+                        "NPM comes bundled with Node.js installable after v0.6.3 version. To verify the same, open console and type the following command and see the result −\n" +
+                        "\n" +
+                        "$ npm --version\n" +
+                        "2.7.1\n" +
+                        "If you are running an old version of NPM then it is quite easy to update it to the latest version. Just use the following command from root −\n",
+                "$ sudo npm install npm -g\n" +
+                        "/usr/bin/npm -> /usr/lib/node_modules/npm/bin/npm-cli.js\n" +
+                        "npm@2.7.1 /usr/lib/node_modules/npm",
+                ""
+        );
+        final LearnDetailsModel l2 = new LearnDetailsModel(
+                "Installing Modules using NPM",
+                "There is a simple syntax to install any Node.js module −\n" +
+                        "\n" +
+                        "$ npm install <Module Name>\n" +
+                        "For example, following is the command to install a famous Node.js web framework module called express −\n" +
+                        "\n" +
+                        "$ npm install express\n" +
+                        "Now you can use this module in your js file as following −",
+                "var express = require('express');",
+                ""
+        );
+        final LearnDetailsModel l3 = new LearnDetailsModel(
+                "Global vs Local Installation",
+                "By default, NPM installs any dependency in the local mode. Here local mode refers to the package installation in node_modules directory lying in the folder where Node application is present. Locally deployed packages are accessible via require() method. For example, when we installed express module, it created node_modules directory in the current directory where it installed the express module.\n" +
+                        "\n" +
+                        "$ ls -l\n" +
+                        "total 0\n" +
+                        "drwxr-xr-x 3 root root 20 Mar 17 02:23 node_modules\n" +
+                        "Alternatively, you can use npm ls command to list down all the locally installed modules.\n" +
+                        "\n" +
+                        "Globally installed packages/dependencies are stored in system directory. Such dependencies can be used in CLI (Command Line Interface) function of any node.js but cannot be imported using require() in Node application directly. Now let's try installing the express module using global installation.\n" +
+                        "\n" +
+                        "$ npm install express -g\n" +
+                        "This will produce a similar result but the module will be installed globally. Here, the first line shows the module version and the location where it is getting installed.",
+                "",
+                ""
+        );
+        final LearnDetailsModel l4 = new LearnDetailsModel(
+                "Using package.json",
+                "package.json is present in the root directory of any Node application/module and is used to define the properties of a package. Let's open package.json of express package present in node_modules/express/",
+                "{\n" +
+                        "   \"name\": \"express\",\n" +
+                        "      \"description\": \"Fast, unopinionated, minimalist web framework\",\n" +
+                        "      \"version\": \"4.11.2\",\n" +
+                        "      \"author\": {\n" +
+                        "      \n" +
+                        "         \"name\": \"TJ Holowaychuk\",\n" +
+                        "         \"email\": \"tj@vision-media.ca\"\n" +
+                        "      },\n" +
+                        "   \n" +
+                        "   \"contributors\": [{\n" +
+                        "      \"name\": \"Aaron Heckmann\",\n" +
+                        "      \"email\": \"aaron.heckmann+github@gmail.com\"\n" +
+                        "   }, \n" +
+                        "   \n" +
+                        "   {\n" +
+                        "      \"name\": \"Ciaran Jessup\",\n" +
+                        "      \"email\": \"ciaranj@gmail.com\"\n" +
+                        "   },\n" +
+                        "   \n" +
+                        "   {\n" +
+                        "      \"name\": \"Douglas Christopher Wilson\",\n" +
+                        "      \"email\": \"doug@somethingdoug.com\"\n" +
+                        "   },\n" +
+                        "   \n" +
+                        "   {\n" +
+                        "      \"name\": \"Guillermo Rauch\",\n" +
+                        "      \"email\": \"rauchg@gmail.com\"\n" +
+                        "   },\n" +
+                        "   \n" +
+                        "   {\n" +
+                        "      \"name\": \"Jonathan Ong\",\n" +
+                        "      \"email\": \"me@jongleberry.com\"\n" +
+                        "   },\n" +
+                        "   \n" +
+                        "   {\n" +
+                        "      \"name\": \"Roman Shtylman\",\n" +
+                        "      \"email\": \"shtylman+expressjs@gmail.com\"\n" +
+                        "   },\n" +
+                        "   \n" +
+                        "   {\n" +
+                        "      \"name\": \"Young Jae Sim\",\n" +
+                        "      \"email\": \"hanul@hanul.me\"\n" +
+                        "   } ],\n" +
+                        "   \n" +
+                        "   \"license\": \"MIT\", \"repository\": {\n" +
+                        "      \"type\": \"git\",\n" +
+                        "      \"url\": \"https://github.com/strongloop/express\"\n" +
+                        "   },\n" +
+                        "   \n" +
+                        "   \"homepage\": \"https://expressjs.com/\", \"keywords\": [\n" +
+                        "      \"express\",\n" +
+                        "      \"framework\",\n" +
+                        "      \"sinatra\",\n" +
+                        "      \"web\",\n" +
+                        "      \"rest\",\n" +
+                        "      \"restful\",\n" +
+                        "      \"router\",\n" +
+                        "      \"app\",\n" +
+                        "      \"api\"\n" +
+                        "   ],\n" +
+                        "   \n" +
+                        "   \"dependencies\": {\n" +
+                        "      \"accepts\": \"~1.2.3\",\n" +
+                        "      \"content-disposition\": \"0.5.0\",\n" +
+                        "      \"cookie-signature\": \"1.0.5\",\n" +
+                        "      \"debug\": \"~2.1.1\",\n" +
+                        "      \"depd\": \"~1.0.0\",\n" +
+                        "      \"escape-html\": \"1.0.1\",\n" +
+                        "      \"etag\": \"~1.5.1\",\n" +
+                        "      \"finalhandler\": \"0.3.3\",\n" +
+                        "      \"fresh\": \"0.2.4\",\n" +
+                        "      \"media-typer\": \"0.3.0\",\n" +
+                        "      \"methods\": \"~1.1.1\",\n" +
+                        "      \"on-finished\": \"~2.2.0\",\n" +
+                        "      \"parseurl\": \"~1.3.0\",\n" +
+                        "      \"path-to-regexp\": \"0.1.3\",\n" +
+                        "      \"proxy-addr\": \"~1.0.6\",\n" +
+                        "      \"qs\": \"2.3.3\",\n" +
+                        "      \"range-parser\": \"~1.0.2\",\n" +
+                        "      \"send\": \"0.11.1\",\n" +
+                        "      \"serve-static\": \"~1.8.1\",\n" +
+                        "      \"type-is\": \"~1.5.6\",\n" +
+                        "      \"vary\": \"~1.0.0\",\n" +
+                        "      \"cookie\": \"0.1.2\",\n" +
+                        "      \"merge-descriptors\": \"0.0.2\",\n" +
+                        "      \"utils-merge\": \"1.0.0\"\n" +
+                        "   },\n" +
+                        "   \n" +
+                        "   \"devDependencies\": {\n" +
+                        "      \"after\": \"0.8.1\",\n" +
+                        "      \"ejs\": \"2.1.4\",\n" +
+                        "      \"istanbul\": \"0.3.5\",\n" +
+                        "      \"marked\": \"0.3.3\",\n" +
+                        "      \"mocha\": \"~2.1.0\",\n" +
+                        "      \"should\": \"~4.6.2\",\n" +
+                        "      \"supertest\": \"~0.15.0\",\n" +
+                        "      \"hjs\": \"~0.0.6\",\n" +
+                        "      \"body-parser\": \"~1.11.0\",\n" +
+                        "      \"connect-redis\": \"~2.2.0\",\n" +
+                        "      \"cookie-parser\": \"~1.3.3\",\n" +
+                        "      \"express-session\": \"~1.10.2\",\n" +
+                        "      \"jade\": \"~1.9.1\",\n" +
+                        "      \"method-override\": \"~2.3.1\",\n" +
+                        "      \"morgan\": \"~1.5.1\",\n" +
+                        "      \"multiparty\": \"~4.1.1\",\n" +
+                        "      \"vhost\": \"~3.0.0\"\n" +
+                        "   },\n" +
+                        "   \n" +
+                        "   \"engines\": {\n" +
+                        "      \"node\": \">= 0.10.0\"\n" +
+                        "   },\n" +
+                        "   \n" +
+                        "   \"files\": [\n" +
+                        "      \"LICENSE\",\n" +
+                        "      \"History.md\",\n" +
+                        "      \"Readme.md\",\n" +
+                        "      \"index.js\",\n" +
+                        "      \"lib/\"\n" +
+                        "   ],\n" +
+                        "   \n" +
+                        "   \"scripts\": {\n" +
+                        "      \"test\": \"mocha --require test/support/env \n" +
+                        "         --reporter spec --bail --check-leaks test/ test/acceptance/\",\n" +
+                        "      \"test-cov\": \"istanbul cover node_modules/mocha/bin/_mocha \n" +
+                        "         -- --require test/support/env --reporter dot --check-leaks test/ test/acceptance/\",\n" +
+                        "      \"test-tap\": \"mocha --require test/support/env \n" +
+                        "         --reporter tap --check-leaks test/ test/acceptance/\",\n" +
+                        "      \"test-travis\": \"istanbul cover node_modules/mocha/bin/_mocha \n" +
+                        "         --report lcovonly -- --require test/support/env \n" +
+                        "         --reporter spec --check-leaks test/ test/acceptance/\"\n" +
+                        "   },\n" +
+                        "   \n" +
+                        "   \"gitHead\": \"63ab25579bda70b4927a179b580a9c580b6c7ada\",\n" +
+                        "   \"bugs\": {\n" +
+                        "      \"url\": \"https://github.com/strongloop/express/issues\"\n" +
+                        "   },\n" +
+                        "   \n" +
+                        "   \"_id\": \"express@4.11.2\",\n" +
+                        "   \"_shasum\": \"8df3d5a9ac848585f00a0777601823faecd3b148\",\n" +
+                        "   \"_from\": \"express@*\",\n" +
+                        "   \"_npmVersion\": \"1.4.28\",\n" +
+                        "   \"_npmUser\": {\n" +
+                        "      \"name\": \"dougwilson\",\n" +
+                        "      \"email\": \"doug@somethingdoug.com\"\n" +
+                        "   },\n" +
+                        "   \n" +
+                        "   \"maintainers\": [{\n" +
+                        "      \"name\": \"tjholowaychuk\",\n" +
+                        "      \"email\": \"tj@vision-media.ca\"\n" +
+                        "   },\n" +
+                        "   \n" +
+                        "   {\n" +
+                        "      \"name\": \"jongleberry\",\n" +
+                        "      \"email\": \"jonathanrichardong@gmail.com\"\n" +
+                        "   },\n" +
+                        "   \n" +
+                        "   {\n" +
+                        "      \"name\": \"shtylman\",\n" +
+                        "      \"email\": \"shtylman@gmail.com\"\n" +
+                        "   },\n" +
+                        "   \n" +
+                        "   {\n" +
+                        "      \"name\": \"dougwilson\",\n" +
+                        "      \"email\": \"doug@somethingdoug.com\"\n" +
+                        "   },\n" +
+                        "   \n" +
+                        "   {\n" +
+                        "      \"name\": \"aredridel\",\n" +
+                        "      \"email\": \"aredridel@nbtsc.org\"\n" +
+                        "   },\n" +
+                        "   \n" +
+                        "   {\n" +
+                        "      \"name\": \"strongloop\",\n" +
+                        "      \"email\": \"callback@strongloop.com\"\n" +
+                        "   },\n" +
+                        "   \n" +
+                        "   {\n" +
+                        "      \"name\": \"rfeng\",\n" +
+                        "      \"email\": \"enjoyjava@gmail.com\"\n" +
+                        "   }],\n" +
+                        "   \n" +
+                        "   \"dist\": {\n" +
+                        "      \"shasum\": \"8df3d5a9ac848585f00a0777601823faecd3b148\",\n" +
+                        "      \"tarball\": \"https://registry.npmjs.org/express/-/express-4.11.2.tgz\"\n" +
+                        "   },\n" +
+                        "   \n" +
+                        "   \"directories\": {},\n" +
+                        "      \"_resolved\": \"https://registry.npmjs.org/express/-/express-4.11.2.tgz\",\n" +
+                        "      \"readme\": \"ERROR: No README data found!\"\n" +
+                        "}",
+                ""
+        );
+        final LearnDetailsModel l5 = new LearnDetailsModel(
+                "Attributes of Package.json",
+                "name − name of the package\n" +
+                        "\n" +
+                        "version − version of the package\n" +
+                        "\n" +
+                        "description − description of the package\n" +
+                        "\n" +
+                        "homepage − homepage of the package\n" +
+                        "\n" +
+                        "author − author of the package\n" +
+                        "\n" +
+                        "contributors − name of the contributors to the package\n" +
+                        "\n" +
+                        "dependencies − list of dependencies. NPM automatically installs all the dependencies mentioned here in the node_module folder of the package.\n" +
+                        "\n" +
+                        "repository − repository type and URL of the package\n" +
+                        "\n" +
+                        "main − entry point of the package\n" +
+                        "\n" +
+                        "keywords − keywords",
+                "",
+                ""
+        );
+        final LearnDetailsModel l6 = new LearnDetailsModel(
+                "Uninstalling a Module",
+                "Use the following command to uninstall a Node.js module.\n" +
+                        "\n" +
+                        "$ npm uninstall express\n" +
+                        "Once NPM uninstalls the package, you can verify it by looking at the content of /node_modules/ directory or type the following command −\n" +
+                        "\n" +
+                        "$ npm ls",
+                "",
+                ""
+        );
+        final LearnDetailsModel l7 = new LearnDetailsModel(
+                "Updating a Module",
+                "Update package.json and change the version of the dependency to be updated and run the following command.",
+                "$ npm update express",
+                ""
+        );
+        final LearnDetailsModel l8 = new LearnDetailsModel(
+                "Search a Module",
+                "Search a package name using NPM.",
+                "$ npm search express",
+                ""
+        );final LearnDetailsModel l9 = new LearnDetailsModel(
+                "Create a Module",
+                "Creating a module requires package.json to be generated. Let's generate package.json using NPM, which will generate the basic skeleton of the package.json.",
+                "$ npm init\n" +
+                        "This utility will walk you through creating a package.json file.\n" +
+                        "It only covers the most common items, and tries to guess sane defaults.\n" +
+                        "\n" +
+                        "See 'npm help json' for definitive documentation on these fields\n" +
+                        "and exactly what they do.\n" +
+                        "\n" +
+                        "Use 'npm install <pkg> --save' afterwards to install a package and\n" +
+                        "save it as a dependency in the package.json file.\n" +
+                        "\n" +
+                        "Press ^C at any time to quit.\n" +
+                        "name: (webmaster)",
+                ""
+        );
+
+        list.add(l1);
+        list.add(l2);
+        list.add(l3);
+        list.add(l4);
+        list.add(l5);
+        list.add(l6);
+        list.add(l7);
+        list.add(l8);
+        list.add(l9);
+
+        return list;
+    }
+    //NodeJs Callbacks Concept
+    private static List<LearnDetailsModel> NodeJsCallbacksConcept(){
+        final List<LearnDetailsModel> list = new ArrayList<>();
+        final LearnDetailsModel l1 = new LearnDetailsModel(
+                "What is Callback?",
+                "Callback is an asynchronous equivalent for a function. A callback function is called at the completion of a given task. Node makes heavy use of callbacks. All the APIs of Node are written in such a way that they support callbacks.\n" +
+                        "\n" +
+                        "For example, a function to read a file may start reading file and return the control to the execution environment immediately so that the next instruction can be executed. Once file I/O is complete, it will call the callback function while passing the callback function, the content of the file as a parameter. So there is no blocking or wait for File I/O. This makes Node.js highly scalable, as it can process a high number of requests without waiting for any function to return results.",
+                "",
+                ""
+        );
+        final LearnDetailsModel l2 = new LearnDetailsModel(
+                "Blocking Code Example",
+                "Create a text file named input.txt with the following content −\n" +
+                        "\n" +
+                        "SHR Creation is giving self learning content\n" +
+                        "to teach the world in simple and easy way!!!!!\n" +
+                        "Create a js file named main.js with the following code −" +
+                        "\n\n" +
+                        "Now run the main.js to see the result −\n" +
+                        "\n" +
+                        "$ node main.js",
+                "var fs = require(\"fs\");\n" +
+                        "var data = fs.readFileSync('input.txt');\n" +
+                        "\n" +
+                        "console.log(data.toString());\n" +
+                        "console.log(\"Program Ended\");",
+                ""
+        );
+        final LearnDetailsModel l3 = new LearnDetailsModel(
+                "Non-Blocking Code Example",
+                "Create a text file named input.txt with the following content.\n" +
+                        "\n" +
+                        "SHR Creation is giving self learning content\n" +
+                        "to teach the world in simple and easy way!!!!!\n" +
+                        "Update main.js to have the following code −" +
+                        "\n\n" +
+                        "Now run the main.js to see the result −\n" +
+                        "\n" +
+                        "$ node main.js",
+                "var fs = require(\"fs\");\n" +
+                        "\n" +
+                        "fs.readFile('input.txt', function (err, data) {\n" +
+                        "   if (err) return console.error(err);\n" +
+                        "   console.log(data.toString());\n" +
+                        "});\n" +
+                        "\n" +
+                        "console.log(\"Program Ended\");",
+                ""
+        );
+        list.add(l1);
+        list.add(l2);
+        list.add(l3);
+        return list;
+    }
+    //NodeJs Event Loop
+    private static List<LearnDetailsModel> NodeJsEventLoop(){
+        final List<LearnDetailsModel> list = new ArrayList<>();
+        final LearnDetailsModel l1 = new LearnDetailsModel(
+                "Event Loop",
+                "Node.js is a single-threaded application, but it can support concurrency via the concept of event and callbacks. Every API of Node.js is asynchronous and being single-threaded, they use async function calls to maintain concurrency. Node uses observer pattern. Node thread keeps an event loop and whenever a task gets completed, it fires the corresponding event which signals the event-listener function to execute.",
+                "",
+                ""
+        );
+        final LearnDetailsModel l2 = new LearnDetailsModel(
+                "Event-Driven Programming",
+                "Node.js uses events heavily and it is also one of the reasons why Node.js is pretty fast compared to other similar technologies. As soon as Node starts its server, it simply initiates its variables, declares functions and then simply waits for the event to occur.\n" +
+                        "\n" +
+                        "In an event-driven application, there is generally a main loop that listens for events, and then triggers a callback function when one of those events is detected." +
+                        "\n\n" +
+                        "Although events look quite similar to callbacks, the difference lies in the fact that callback functions are called when an asynchronous function returns its result, whereas event handling works on the observer pattern. The functions that listen to events act as Observers. Whenever an event gets fired, its listener function starts executing. Node.js has multiple in-built events available through events module and EventEmitter class which are used to bind events and event-listeners as follows −",
+                "// Import events module\n" +
+                        "var events = require('events');\n" +
+                        "\n" +
+                        "// Create an eventEmitter object\n" +
+                        "var eventEmitter = new events.EventEmitter();",
+                ""
+        );
+        final LearnDetailsModel l3 = new LearnDetailsModel(
+                "Example",
+                "Create a js file named main.js with the following code −" +
+                        "\n\n" +
+                        "After write the bellow codes, Now let's try to run the above program and check its output −\n" +
+                        "\n" +
+                        "$ node main.js",
+                "// Import events module\n" +
+                        "var events = require('events');\n" +
+                        "\n" +
+                        "// Create an eventEmitter object\n" +
+                        "var eventEmitter = new events.EventEmitter();\n" +
+                        "\n" +
+                        "// Create an event handler as follows\n" +
+                        "var connectHandler = function connected() {\n" +
+                        "   console.log('connection succesful.');\n" +
+                        "  \n" +
+                        "   // Fire the data_received event \n" +
+                        "   eventEmitter.emit('data_received');\n" +
+                        "}\n" +
+                        "\n" +
+                        "// Bind the connection event with the handler\n" +
+                        "eventEmitter.on('connection', connectHandler);\n" +
+                        " \n" +
+                        "// Bind the data_received event with the anonymous function\n" +
+                        "eventEmitter.on('data_received', function() {\n" +
+                        "   console.log('data received succesfully.');\n" +
+                        "});\n" +
+                        "\n" +
+                        "// Fire the connection event \n" +
+                        "eventEmitter.emit('connection');\n" +
+                        "\n" +
+                        "console.log(\"Program Ended.\");",
+                ""
+        );
+        final LearnDetailsModel l4 = new LearnDetailsModel(
+                "How Node Applications Work?",
+                "In Node Application, any async function accepts a callback as the last parameter and a callback function accepts an error as the first parameter. Let's revisit the previous example again. Create a text file named input.txt with the following content.\n" +
+                        "\n" +
+                        "SHR Creation is giving self learning content\n" +
+                        "to teach the world in simple and easy way!!!!!\n" +
+                        "Create a js file named main.js having the following code −" +
+                        "\n\n" +
+                        "Explanation:\n" +
+                        "Here fs.readFile() is a async function whose purpose is to read a file. If an error occurs during the read operation, then the err object will contain the corresponding error, else data will contain the contents of the file. readFile passes err and data to the callback function after the read operation is complete, which finally prints the content.",
+                "var fs = require(\"fs\");\n" +
+                        "\n" +
+                        "fs.readFile('input.txt', function (err, data) {\n" +
+                        "   if (err) {\n" +
+                        "      console.log(err.stack);\n" +
+                        "      return;\n" +
+                        "   }\n" +
+                        "   console.log(data.toString());\n" +
+                        "});\n" +
+                        "console.log(\"Program Ended\");",
+                "Program Ended\n" +
+                        "SHR Creation is giving self learning content\n" +
+                        "to teach the world in simple and easy way!!!!!"
+        );
+        list.add(l1);
+        list.add(l2);
+        list.add(l3);
+        list.add(l4);
+        return list;
+    }
+    //NodeJs Event Emitter
+    private static List<LearnDetailsModel> NodeJsEventEmitter(){
+        final List<LearnDetailsModel> list = new ArrayList<>();
+        final LearnDetailsModel l1 = new LearnDetailsModel(
+                "Event Emitter ",
+                "Many objects in a Node emit events, for example, a net.Server emits an event each time a peer connects to it, an fs.readStream emits an event when the file is opened. All objects which emit events are the instances of events.EventEmitter.",
+                "",
+                ""
+        );
+        final LearnDetailsModel l2 = new LearnDetailsModel(
+                "EventEmitter Class",
+                "As we have seen in the previous section, EventEmitter class lies in the events module. It is accessible via the following code −" +
+                        "\n\n" +
+                        "When an EventEmitter instance faces any error, it emits an 'error' event. When a new listener is added, 'newListener' event is fired and when a listener is removed, 'removeListener' event is fired.\n" +
+                        "\n" +
+                        "EventEmitter provides multiple properties like on and emit. on property is used to bind a function with the event and emit is used to fire an event.",
+                "// Import events module\n" +
+                        "var events = require('events');\n" +
+                        "\n" +
+                        "// Create an eventEmitter object\n" +
+                        "var eventEmitter = new events.EventEmitter();",
+                ""
+        );
+        final LearnDetailsModel l3 = new LearnDetailsModel(
+                "Methods",
+                "1. addListener(event, listener)\n" +
+                        "\n" +
+                        "Adds a listener at the end of the listeners array for the specified event. No checks are made to see if the listener has already been added. Multiple calls passing the same combination of event and listener will result in the listener being added multiple times. Returns emitter, so calls can be chained.\n" +
+                        "\n" +
+                        "2. on(event, listener)\n" +
+                        "\n" +
+                        "Adds a listener at the end of the listeners array for the specified event. No checks are made to see if the listener has already been added. Multiple calls passing the same combination of event and listener will result in the listener being added multiple times. Returns emitter, so calls can be chained.\n" +
+                        "\n" +
+                        "3. once(event, listener)\n" +
+                        "\n" +
+                        "Adds a one time listener to the event. This listener is invoked only the next time the event is fired, after which it is removed. Returns emitter, so calls can be chained.\n" +
+                        "\n" +
+                        "4. removeListener(event, listener)\n" +
+                        "\n" +
+                        "Removes a listener from the listener array for the specified event. Caution − It changes the array indices in the listener array behind the listener. removeListener will remove, at most, one instance of a listener from the listener array. If any single listener has been added multiple times to the listener array for the specified event, then removeListener must be called multiple times to remove each instance. Returns emitter, so calls can be chained.\n" +
+                        "\n" +
+                        "5. removeAllListeners([event])\n" +
+                        "\n" +
+                        "Removes all listeners, or those of the specified event. It's not a good idea to remove listeners that were added elsewhere in the code, especially when it's on an emitter that you didn't create (e.g. sockets or file streams). Returns emitter, so calls can be chained.\n" +
+                        "\n" +
+                        "6. setMaxListeners(n)\n" +
+                        "\n" +
+                        "By default, EventEmitters will print a warning if more than 10 listeners are added for a particular event. This is a useful default which helps finding memory leaks. Obviously not all Emitters should be limited to 10. This function allows that to be increased. Set to zero for unlimited.\n" +
+                        "\n" +
+                        "7. listeners(event)\n" +
+                        "\n" +
+                        "Returns an array of listeners for the specified event.\n" +
+                        "\n" +
+                        "8. emit(event, [arg1], [arg2], [...])\n" +
+                        "\n" +
+                        "Execute each of the listeners in order with the supplied arguments. Returns true if the event had listeners, false otherwise.",
+                "",
+                ""
+        );
+        final LearnDetailsModel l4 = new LearnDetailsModel(
+                "Class Methods",
+                "listenerCount(emitter, event)\n" +
+                        "\n" +
+                        "Returns the number of listeners for a given event.",
+                "",
+                ""
+        );
+        final LearnDetailsModel l5 = new LearnDetailsModel(
+                "Events",
+                "1. newListener\n" +
+                        "\n" +
+                        "event − String: the event name\n" +
+                        "\n" +
+                        "listener − Function: the event handler function\n" +
+                        "\n" +
+                        "This event is emitted any time a listener is added. When this event is triggered, the listener may not yet have been added to the array of listeners for the event.\n" +
+                        "\n" +
+                        "2. removeListener\n" +
+                        "\n" +
+                        "event − String The event name\n" +
+                        "\n" +
+                        "listener − Function The event handler function\n" +
+                        "\n" +
+                        "This event is emitted any time someone removes a listener. When this event is triggered, the listener may not yet have been removed from the array of listeners for the event.",
+                "",
+                ""
+        );final LearnDetailsModel l6 = new LearnDetailsModel(
+                "Example",
+                "Create a js file named main.js with the following Node.js code −" +
+                        "\n\n" +
+                        "After write the bellow codes, Now run the main.js to see the result −\n" +
+                        "\n" +
+                        "$ node main.js",
+                "var events = require('events');\n" +
+                        "var eventEmitter = new events.EventEmitter();\n" +
+                        "\n" +
+                        "// listener #1\n" +
+                        "var listner1 = function listner1() {\n" +
+                        "   console.log('listner1 executed.');\n" +
+                        "}\n" +
+                        "\n" +
+                        "// listener #2\n" +
+                        "var listner2 = function listner2() {\n" +
+                        "   console.log('listner2 executed.');\n" +
+                        "}\n" +
+                        "\n" +
+                        "// Bind the connection event with the listner1 function\n" +
+                        "eventEmitter.addListener('connection', listner1);\n" +
+                        "\n" +
+                        "// Bind the connection event with the listner2 function\n" +
+                        "eventEmitter.on('connection', listner2);\n" +
+                        "\n" +
+                        "var eventListeners = require('events').EventEmitter.listenerCount\n" +
+                        "   (eventEmitter,'connection');\n" +
+                        "console.log(eventListeners + \" Listner(s) listening to connection event\");\n" +
+                        "\n" +
+                        "// Fire the connection event \n" +
+                        "eventEmitter.emit('connection');\n" +
+                        "\n" +
+                        "// Remove the binding of listner1 function\n" +
+                        "eventEmitter.removeListener('connection', listner1);\n" +
+                        "console.log(\"Listner1 will not listen now.\");\n" +
+                        "\n" +
+                        "// Fire the connection event \n" +
+                        "eventEmitter.emit('connection');\n" +
+                        "\n" +
+                        "eventListeners = require('events').EventEmitter.listenerCount(eventEmitter,'connection');\n" +
+                        "console.log(eventListeners + \" Listner(s) listening to connection event\");\n" +
+                        "\n" +
+                        "console.log(\"Program Ended.\");",
+                ""
+        );
+        list.add(l1);
+        list.add(l2);
+        list.add(l3);
+        list.add(l4);
+        list.add(l5);
+        list.add(l6);
+        return list;
+    }
+    //NodeJs Buffers
+    private static List<LearnDetailsModel> NodeJsBuffers(){
+        final List<LearnDetailsModel> list = new ArrayList<>();
+        final LearnDetailsModel l1 = new LearnDetailsModel(
+                "NodeJs Buffers",
+                "Pure JavaScript is Unicode friendly, but it is not so for binary data. While dealing with TCP streams or the file system, it's necessary to handle octet streams. Node provides Buffer class which provides instances to store raw data similar to an array of integers but corresponds to a raw memory allocation outside the V8 heap.\n" +
+                        "\n" +
+                        "Buffer class is a global class that can be accessed in an application without importing the buffer module.",
+                "",
+                ""
+        );
+        final LearnDetailsModel l2 = new LearnDetailsModel(
+                "Creating Buffers",
+                "Node Buffer can be constructed in a variety of ways.\n" +
+                        "\n" +
+                        "Method 1\n" +
+                        "Following is the syntax to create an uninitiated Buffer of 10 octets −\n" +
+                        "\n" +
+                        "var buf = new Buffer(10);\n" +
+                        "Method 2\n" +
+                        "Following is the syntax to create a Buffer from a given array −\n" +
+                        "\n" +
+                        "var buf = new Buffer([10, 20, 30, 40, 50]);\n" +
+                        "Method 3\n" +
+                        "Following is the syntax to create a Buffer from a given string and optionally encoding type −\n" +
+                        "\n" +
+                        "var buf = new Buffer(\"Simply Easy Learning\", \"utf-8\");\n" +
+                        "Though \"utf8\" is the default encoding, you can use any of the following encodings \"ascii\", \"utf8\", \"utf16le\", \"ucs2\", \"base64\" or \"hex\".",
+                "",
+                ""
+        );
+        final LearnDetailsModel l3 = new LearnDetailsModel(
+                "Writing to Buffers",
+                "Syntax\n" +
+                        "Following is the syntax of the method to write into a Node Buffer −",
+                "buf.write(string[, offset][, length][, encoding])",
+                ""
+        );
+        final LearnDetailsModel l4 = new LearnDetailsModel(
+                "Parameters",
+                "Here is the description of the parameters used −\n" +
+                        "\n" +
+                        "string − This is the string data to be written to buffer.\n" +
+                        "\n" +
+                        "offset − This is the index of the buffer to start writing at. Default value is 0.\n" +
+                        "\n" +
+                        "length − This is the number of bytes to write. Defaults to buffer.length.\n" +
+                        "\n" +
+                        "encoding − Encoding to use. 'utf8' is the default encoding.",
+                "",
+                ""
+        );
+        final LearnDetailsModel l5 = new LearnDetailsModel(
+                "Return Value",
+                "This method returns the number of octets written. If there is not enough space in the buffer to fit the entire string, it will write a part of the string.",
+                "buf = new Buffer(256);\n" +
+                        "len = buf.write(\"Simply Easy Learning\");\n" +
+                        "\n" +
+                        "console.log(\"Octets written : \"+  len);",
+                "Octets written : 20"
+        );
+        final LearnDetailsModel l6 = new LearnDetailsModel(
+                "Reading from Buffers",
+                "Syntax\n" +
+                        "Following is the syntax of the method to read data from a Node Buffer −",
+                "buf.toString([encoding][, start][, end])",
+                ""
+        );
+        final LearnDetailsModel l7 = new LearnDetailsModel(
+                "Parameters",
+                "Here is the description of the parameters used −\n" +
+                        "\n" +
+                        "encoding − Encoding to use. 'utf8' is the default encoding.\n" +
+                        "\n" +
+                        "start − Beginning index to start reading, defaults to 0.\n" +
+                        "\n" +
+                        "end − End index to end reading, defaults is complete buffer.",
+                "",
+                ""
+        );
+        final LearnDetailsModel l8 = new LearnDetailsModel(
+                "Return Value",
+                "This method decodes and returns a string from buffer data encoded using the specified character set encoding.",
+                "buf = new Buffer(26);\n" +
+                        "for (var i = 0 ; i < 26 ; i++) {\n" +
+                        "  buf[i] = i + 97;\n" +
+                        "}\n" +
+                        "\n" +
+                        "console.log( buf.toString('ascii'));       // outputs: abcdefghijklmnopqrstuvwxyz\n" +
+                        "console.log( buf.toString('ascii',0,5));   // outputs: abcde\n" +
+                        "console.log( buf.toString('utf8',0,5));    // outputs: abcde\n" +
+                        "console.log( buf.toString(undefined,0,5)); // encoding defaults to 'utf8', outputs abcde",
+                "abcdefghijklmnopqrstuvwxyz\n" +
+                        "abcde\n" +
+                        "abcde\n" +
+                        "abcde"
+        );
+        final LearnDetailsModel l9 = new LearnDetailsModel(
+                "Convert Buffer to JSON",
+                "Syntax\n" +
+                        "Following is the syntax of the method to convert a Node Buffer into JSON object −",
+                "buf.toJSON()",
+                ""
+        );
+        final LearnDetailsModel l10 = new LearnDetailsModel(
+                "Return Value",
+                "This method returns a JSON-representation of the Buffer instance.",
+                "var buf = new Buffer('Simply Easy Learning');\n" +
+                        "var json = buf.toJSON(buf);\n" +
+                        "\n" +
+                        "console.log(json);",
+                "{ type: 'Buffer',\n" +
+                        "   data: \n" +
+                        "   [ \n" +
+                        "      83,\n" +
+                        "      105,\n" +
+                        "      109,\n" +
+                        "      112,\n" +
+                        "      108,\n" +
+                        "      121,\n" +
+                        "      32,\n" +
+                        "      69,\n" +
+                        "      97,\n" +
+                        "      115,\n" +
+                        "      121,\n" +
+                        "      32,\n" +
+                        "      76,\n" +
+                        "      101,\n" +
+                        "      97,\n" +
+                        "      114,\n" +
+                        "      110,\n" +
+                        "      105,\n" +
+                        "      110,\n" +
+                        "      103 \n" +
+                        "   ]\n" +
+                        "}"
+        );
+        final LearnDetailsModel l11 = new LearnDetailsModel(
+                "Concatenate Buffers",
+                "Syntax\n" +
+                        "Following is the syntax of the method to concatenate Node buffers to a single Node Buffer −",
+                "Buffer.concat(list[, totalLength])",
+                ""
+        );
+        final LearnDetailsModel l12 = new LearnDetailsModel(
+                "Parameters",
+                "Here is the description of the parameters used −\n" +
+                        "\n" +
+                        "list − Array List of Buffer objects to be concatenated.\n" +
+                        "\n" +
+                        "totalLength − This is the total length of the buffers when concatenated.",
+                "",
+                ""
+        );final LearnDetailsModel l13 = new LearnDetailsModel(
+                "Return Value",
+                "This method returns a Buffer instance.",
+                "var buffer1 = new Buffer('SHR Creation ');\n" +
+                        "var buffer2 = new Buffer('Simply Easy Learning');\n" +
+                        "var buffer3 = Buffer.concat([buffer1,buffer2]);\n" +
+                        "\n" +
+                        "console.log(\"buffer3 content: \" + buffer3.toString());",
+                "buffer3 content: SHR Creation Simply Easy Learning"
+        );final LearnDetailsModel l14 = new LearnDetailsModel(
+                "Compare Buffers",
+                "Syntax\n" +
+                        "Following is the syntax of the method to compare two Node buffers −",
+                "buf.compare(otherBuffer);",
+                ""
+        );final LearnDetailsModel l15 = new LearnDetailsModel(
+                "Parameters",
+                "Here is the description of the parameters used −\n" +
+                        "\n" +
+                        "otherBuffer − This is the other buffer which will be compared with buf\n" +
+                        "\n" +
+                        "Return Value\n" +
+                        "Returns a number indicating whether it comes before or after or is the same as the otherBuffer in sort order.",
+                "var buffer1 = new Buffer('ABC');\n" +
+                        "var buffer2 = new Buffer('ABCD');\n" +
+                        "var result = buffer1.compare(buffer2);\n" +
+                        "\n" +
+                        "if(result < 0) {\n" +
+                        "   console.log(buffer1 +\" comes before \" + buffer2);\n" +
+                        "} else if(result === 0) {\n" +
+                        "   console.log(buffer1 +\" is same as \" + buffer2);\n" +
+                        "} else {\n" +
+                        "   console.log(buffer1 +\" comes after \" + buffer2);\n" +
+                        "}",
+                "ABC comes before ABCD"
+        );final LearnDetailsModel l16 = new LearnDetailsModel(
+                "Copy Buffer",
+                "Syntax\n" +
+                        "Following is the syntax of the method to copy a node buffer −",
+                "buf.copy(targetBuffer[, targetStart][, sourceStart][, sourceEnd])",
+                ""
+        );final LearnDetailsModel l17 = new LearnDetailsModel(
+                "Parameters",
+                "Here is the description of the parameters used −\n" +
+                        "\n" +
+                        "targetBuffer − Buffer object where buffer will be copied.\n" +
+                        "\n" +
+                        "targetStart − Number, Optional, Default: 0\n" +
+                        "\n" +
+                        "sourceStart − Number, Optional, Default: 0\n" +
+                        "\n" +
+                        "sourceEnd − Number, Optional, Default: buffer.length" +
+                        "\n\n" +
+                        "Return Value\n" +
+                        "No return value. Copies data from a region of this buffer to a region in the target buffer even if the target memory region overlaps with the source. If undefined, the targetStart and sourceStart parameters default to 0, while sourceEnd defaults to buffer.length.",
+                "var buffer1 = new Buffer('ABC');\n" +
+                        "\n" +
+                        "//copy a buffer\n" +
+                        "var buffer2 = new Buffer(3);\n" +
+                        "buffer1.copy(buffer2);\n" +
+                        "console.log(\"buffer2 content: \" + buffer2.toString());",
+                "buffer2 content: ABC"
+        );final LearnDetailsModel l18 = new LearnDetailsModel(
+                "Slice Buffer",
+                "Syntax\n" +
+                        "Following is the syntax of the method to get a sub-buffer of a node buffer −",
+                "buf.slice([start][, end])",
+                ""
+        );final LearnDetailsModel l19 = new LearnDetailsModel(
+                "Parameters",
+                "Here is the description of the parameters used −\n" +
+                        "\n" +
+                        "start − Number, Optional, Default: 0\n" +
+                        "\n" +
+                        "end − Number, Optional, Default: buffer.length\n" +
+                        "\n" +
+                        "Return Value\n" +
+                        "Returns a new buffer which references the same memory as the old one, but offset and cropped by the start (defaults to 0) and end (defaults to buffer.length) indexes. Negative indexes start from the end of the buffer.",
+                "var buffer1 = new Buffer('SHR Creation');\n" +
+                        "\n" +
+                        "//slicing a buffer\n" +
+                        "var buffer2 = buffer1.slice(0,9);\n" +
+                        "console.log(\"buffer2 content: \" + buffer2.toString());",
+                "buffer2 content: SHR Creat"
+        );final LearnDetailsModel l20 = new LearnDetailsModel(
+                "Buffer Length",
+                "Syntax\n" +
+                        "Following is the syntax of the method to get a size of a node buffer in bytes −\n" +
+                        "\n" +
+                        "buf.length;\n" +
+                        "Return Value\n" +
+                        "Returns the size of a buffer in bytes.",
+                "var buffer = new Buffer('SHR Creation');\n" +
+                        "\n" +
+                        "//length of the buffer\n" +
+                        "console.log(\"buffer length: \" + buffer.length);",
+                "buffer length: 14"
+        );final LearnDetailsModel l21 = new LearnDetailsModel(
+                "Class Methods",
+                "1. Buffer.isEncoding(encoding)\n" +
+                        "\n" +
+                        "Returns true if the encoding is a valid encoding argument, false otherwise.\n" +
+                        "\n" +
+                        "2. Buffer.isBuffer(obj)\n" +
+                        "\n" +
+                        "Tests if obj is a Buffer.\n" +
+                        "\n" +
+                        "3. Buffer.byteLength(string[, encoding])\n" +
+                        "\n" +
+                        "Gives the actual byte length of a string. encoding defaults to 'utf8'. It is not the same as String.prototype.length, since String.prototype.length returns the number of characters in a string.\n" +
+                        "\n" +
+                        "4. Buffer.concat(list[, totalLength])\n" +
+                        "\n" +
+                        "Returns a buffer which is the result of concatenating all the buffers in the list together.\n" +
+                        "\n" +
+                        "5. Buffer.compare(buf1, buf2)\n" +
+                        "\n" +
+                        "The same as buf1.compare(buf2). Useful for sorting an array of buffers.",
+                "",
+                ""
+        );
+
+        list.add(l1);
+        list.add(l2);
+        list.add(l3);
+        list.add(l4);
+        list.add(l5);
+        list.add(l6);
+        list.add(l7);
+        list.add(l8);
+        list.add(l9);
+        list.add(l10);
+        list.add(l11);
+        list.add(l12);
+        list.add(l13);
+        list.add(l14);
+        list.add(l15);
+        list.add(l16);
+        list.add(l17);
+        list.add(l18);
+        list.add(l19);
+        list.add(l20);
+        list.add(l21);
+
+        return list;
+    }
+    //NodeJs Streams
+    private static List<LearnDetailsModel> NodeJsStreams(){
+        final List<LearnDetailsModel> list = new ArrayList<>();
+        final LearnDetailsModel l1 = new LearnDetailsModel(
+                "What are Streams?",
+                "Streams are objects that let you read data from a source or write data to a destination in continuous fashion. In Node.js, there are four types of streams −\n" +
+                        "\n" +
+                        "Readable − Stream which is used for read operation.\n" +
+                        "\n" +
+                        "Writable − Stream which is used for write operation.\n" +
+                        "\n" +
+                        "Duplex − Stream which can be used for both read and write operation.\n" +
+                        "\n" +
+                        "Transform − A type of duplex stream where the output is computed based on input.\n" +
+                        "\n" +
+                        "Each type of Stream is an EventEmitter instance and throws several events at different instance of times. For example, some of the commonly used events are −\n" +
+                        "\n" +
+                        "data − This event is fired when there is data is available to read.\n" +
+                        "\n" +
+                        "end − This event is fired when there is no more data to read.\n" +
+                        "\n" +
+                        "error − This event is fired when there is any error receiving or writing data.\n" +
+                        "\n" +
+                        "finish − This event is fired when all the data has been flushed to underlying system.\n" +
+                        "\n" +
+                        "This tutorial provides a basic understanding of the commonly used operations on Streams.",
+                "",
+                ""
+        );
+        final LearnDetailsModel l2 = new LearnDetailsModel(
+                "Reading from a Stream",
+                "Create a text file named input.txt having the following content −\n" +
+                        "\n" +
+                        "SHR Creation is giving self learning content\n" +
+                        "to teach the world in simple and easy way!!!!!\n" +
+                        "Create a js file named main.js with the following code −" +
+                        "\n\n" +
+                        "After write the bellow codes, Now run the main.js to see the result −\n" +
+                        "\n" +
+                        "$ node main.js",
+                "var fs = require(\"fs\");\n" +
+                        "var data = '';\n" +
+                        "\n" +
+                        "// Create a readable stream\n" +
+                        "var readerStream = fs.createReadStream('input.txt');\n" +
+                        "\n" +
+                        "// Set the encoding to be utf8. \n" +
+                        "readerStream.setEncoding('UTF8');\n" +
+                        "\n" +
+                        "// Handle stream events --> data, end, and error\n" +
+                        "readerStream.on('data', function(chunk) {\n" +
+                        "   data += chunk;\n" +
+                        "});\n" +
+                        "\n" +
+                        "readerStream.on('end',function() {\n" +
+                        "   console.log(data);\n" +
+                        "});\n" +
+                        "\n" +
+                        "readerStream.on('error', function(err) {\n" +
+                        "   console.log(err.stack);\n" +
+                        "});\n" +
+                        "\n" +
+                        "console.log(\"Program Ended\");",
+                "Program Ended\n" +
+                        "SHR Creation is giving self learning content\n" +
+                        "to teach the world in simple and easy way!!!!!"
+        );
+        final LearnDetailsModel l3 = new LearnDetailsModel(
+                "Writing to a Stream",
+                "Create a js file named main.js with the following code −" +
+                        "\n\n" +
+                        "Now run the main.js to see the result −\n" +
+                        "\n" +
+                        "$ node main.js",
+                "var fs = require(\"fs\");\n" +
+                        "var data = 'Simply Easy Learning';\n" +
+                        "\n" +
+                        "// Create a writable stream\n" +
+                        "var writerStream = fs.createWriteStream('output.txt');\n" +
+                        "\n" +
+                        "// Write the data to stream with encoding to be utf8\n" +
+                        "writerStream.write(data,'UTF8');\n" +
+                        "\n" +
+                        "// Mark the end of file\n" +
+                        "writerStream.end();\n" +
+                        "\n" +
+                        "// Handle stream events --> finish, and error\n" +
+                        "writerStream.on('finish', function() {\n" +
+                        "   console.log(\"Write completed.\");\n" +
+                        "});\n" +
+                        "\n" +
+                        "writerStream.on('error', function(err) {\n" +
+                        "   console.log(err.stack);\n" +
+                        "});\n" +
+                        "\n" +
+                        "console.log(\"Program Ended\");",
+                "Simply Easy Learning"
+        );
+        final LearnDetailsModel l4 = new LearnDetailsModel(
+                "Piping the Streams",
+                "Piping is a mechanism where we provide the output of one stream as the input to another stream. It is normally used to get data from one stream and to pass the output of that stream to another stream. There is no limit on piping operations. Now we'll show a piping example for reading from one file and writing it to another file.\n" +
+                        "\n" +
+                        "Create a js file named main.js with the following code −" +
+                        "\n\n" +
+                        "Now run the main.js to see the result −\n" +
+                        "\n" +
+                        "$ node main.js",
+                "var fs = require(\"fs\");\n" +
+                        "\n" +
+                        "// Create a readable stream\n" +
+                        "var readerStream = fs.createReadStream('input.txt');\n" +
+                        "\n" +
+                        "// Create a writable stream\n" +
+                        "var writerStream = fs.createWriteStream('output.txt');\n" +
+                        "\n" +
+                        "// Pipe the read and write operations\n" +
+                        "// read input.txt and write data to output.txt\n" +
+                        "readerStream.pipe(writerStream);\n" +
+                        "\n" +
+                        "console.log(\"Program Ended\");",
+                "SHR Creation is giving self learning content\n" +
+                        "to teach the world in simple and easy way!!!!!"
+        );
+        final LearnDetailsModel l5 = new LearnDetailsModel(
+                "Chaining the Streams",
+                "Chaining is a mechanism to connect the output of one stream to another stream and create a chain of multiple stream operations. It is normally used with piping operations. Now we'll use piping and chaining to first compress a file and then decompress the same.\n" +
+                        "\n" +
+                        "Create a js file named main.js with the following code −" +
+                        "\n\n" +
+                        "Now run the main.js to see the result −\n" +
+                        "\n" +
+                        "$ node main.js",
+                "var fs = require(\"fs\");\n" +
+                        "var zlib = require('zlib');\n" +
+                        "\n" +
+                        "// Compress the file input.txt to input.txt.gz\n" +
+                        "fs.createReadStream('input.txt')\n" +
+                        "   .pipe(zlib.createGzip())\n" +
+                        "   .pipe(fs.createWriteStream('input.txt.gz'));\n" +
+                        "  \n" +
+                        "console.log(\"File Compressed.\");",
+                "File Compressed."
+        );
+        list.add(l1);
+        list.add(l2);
+        list.add(l3);
+        list.add(l4);
+        list.add(l5);
+        return list;
+    }
+    //NodeJs File System
+    private static List<LearnDetailsModel> NodeJsFileSystem(){
+        final List<LearnDetailsModel> list = new ArrayList<>();
+        final LearnDetailsModel l1 = new LearnDetailsModel(
+                "File System",
+                "Node implements File I/O using simple wrappers around standard POSIX functions. The Node File System (fs) module can be imported using the following syntax −",
+                "var fs = require(\"fs\")",
+                ""
+        );
+        final LearnDetailsModel l2 = new LearnDetailsModel(
+                "Synchronous vs Asynchronous",
+                "Every method in the fs module has synchronous as well as asynchronous forms. Asynchronous methods take the last parameter " +
+                        "as the completion function callback and the first parameter of the callback function as error. " +
+                        "It is better to use an asynchronous method instead of a synchronous method, as the former never blocks a " +
+                        "program during its execution, whereas the second one does." +
+                        "\n\n" +
+                        "Example\n" +
+                        "Create a text file named input.txt with the following content −\n" +
+                        "\n" +
+                        "SHR Creation is giving self learning content\n" +
+                        "to teach the world in simple and easy way!!!!!" +
+                        "\n\n" +
+                        "After write the bellow codes, Now run the main.js to see the result −\n" +
+                        "\n" +
+                        "$ node main.js",
+                "var fs = require(\"fs\");\n" +
+                        "\n" +
+                        "// Asynchronous read\n" +
+                        "fs.readFile('input.txt', function (err, data) {\n" +
+                        "   if (err) {\n" +
+                        "      return console.error(err);\n" +
+                        "   }\n" +
+                        "   console.log(\"Asynchronous read: \" + data.toString());\n" +
+                        "});\n" +
+                        "\n" +
+                        "// Synchronous read\n" +
+                        "var data = fs.readFileSync('input.txt');\n" +
+                        "console.log(\"Synchronous read: \" + data.toString());\n" +
+                        "\n" +
+                        "console.log(\"Program Ended\");",
+                "Synchronous read: SHR Creation is giving self learning content\n" +
+                        "to teach the world in simple and easy way!!!!!\n" +
+                        "\n" +
+                        "Program Ended\n" +
+                        "Asynchronous read: SHR Creation is giving self learning content\n" +
+                        "to teach the world in simple and easy way!!!!!"
+        );
+        final LearnDetailsModel l3 = new LearnDetailsModel(
+                "Open a File",
+                "Syntax\n" +
+                        "Following is the syntax of the method to open a file in asynchronous mode −",
+                "fs.open(path, flags[, mode], callback)",
+                ""
+        );
+        final LearnDetailsModel l4 = new LearnDetailsModel(
+                "Parameters",
+                "Here is the description of the parameters used −\n" +
+                        "\n" +
+                        "path − This is the string having file name including path.\n" +
+                        "\n" +
+                        "flags − Flags indicate the behavior of the file to be opened. All possible values have been mentioned below.\n" +
+                        "\n" +
+                        "mode − It sets the file mode (permission and sticky bits), but only if the file was created. It defaults to 0666, readable and writeable.\n" +
+                        "\n" +
+                        "callback − This is the callback function which gets two arguments (err, fd).",
+                "",
+                ""
+        );
+        final LearnDetailsModel l5 = new LearnDetailsModel(
+                "Flags",
+                "Flags for read/write operations are −" +
+                        "\n\n" +
+                        "1. r\n" +
+                        "\n" +
+                        "Open file for reading. An exception occurs if the file does not exist.\n" +
+                        "\n" +
+                        "2. r+\n" +
+                        "\n" +
+                        "Open file for reading and writing. An exception occurs if the file does not exist.\n" +
+                        "\n" +
+                        "3. rs\n" +
+                        "\n" +
+                        "Open file for reading in synchronous mode.\n" +
+                        "\n" +
+                        "4. rs+\n" +
+                        "\n" +
+                        "Open file for reading and writing, asking the OS to open it synchronously. See notes for 'rs' about using this with caution.\n" +
+                        "\n" +
+                        "5. w\n" +
+                        "\n" +
+                        "Open file for writing. The file is created (if it does not exist) or truncated (if it exists).\n" +
+                        "\n" +
+                        "6. wx\n" +
+                        "\n" +
+                        "Like 'w' but fails if the path exists.\n" +
+                        "\n" +
+                        "7. w+\n" +
+                        "\n" +
+                        "Open file for reading and writing. The file is created (if it does not exist) or truncated (if it exists).\n" +
+                        "\n" +
+                        "8. wx+\n" +
+                        "\n" +
+                        "Like 'w+' but fails if path exists.\n" +
+                        "\n" +
+                        "9. a\n" +
+                        "\n" +
+                        "Open file for appending. The file is created if it does not exist.\n" +
+                        "\n" +
+                        "10. ax\n" +
+                        "\n" +
+                        "Like 'a' but fails if the path exists.\n" +
+                        "\n" +
+                        "11. a+\n" +
+                        "\n" +
+                        "Open file for reading and appending. The file is created if it does not exist.\n" +
+                        "\n" +
+                        "12. ax+\n" +
+                        "\n" +
+                        "Like 'a+' but fails if the the path exists.",
+                "",
+                ""
+        );
+        final LearnDetailsModel l6 = new LearnDetailsModel(
+                "Example",
+                "Let us create a js file named main.js having the following code to open a file input.txt for reading and writing." +
+                        "\n\n" +
+                        "Now run the main.js to see the result −\n" +
+                        "\n" +
+                        "$ node main.js",
+                "var fs = require(\"fs\");\n" +
+                        "\n" +
+                        "// Asynchronous - Opening File\n" +
+                        "console.log(\"Going to open file!\");\n" +
+                        "fs.open('input.txt', 'r+', function(err, fd) {\n" +
+                        "   if (err) {\n" +
+                        "      return console.error(err);\n" +
+                        "   }\n" +
+                        "   console.log(\"File opened successfully!\");     \n" +
+                        "});",
+                "Going to open file!\n" +
+                        "File opened successfully!"
+        );
+        final LearnDetailsModel l7 = new LearnDetailsModel(
+                "Get File Information",
+                "Syntax\n" +
+                        "Following is the syntax of the method to get the information about a file −",
+                "fs.stat(path, callback)",
+                ""
+        );
+        final LearnDetailsModel l8 = new LearnDetailsModel(
+                "Parameters",
+                "Here is the description of the parameters used −\n" +
+                        "\n" +
+                        "path − This is the string having file name including path.\n" +
+                        "\n" +
+                        "callback − This is the callback function which gets two arguments (err, stats) where stats is an object of fs.Stats type which is printed below in the example.\n" +
+                        "\n" +
+                        "Apart from the important attributes which are printed below in the example, there are several useful methods available in fs.Stats class which can be used to check file type. These methods are given in the following table." +
+                        "\n\n\n" +
+                        "1. stats.isFile()\n" +
+                        "\n" +
+                        "Returns true if file type of a simple file.\n" +
+                        "\n" +
+                        "2. stats.isDirectory()\n" +
+                        "\n" +
+                        "Returns true if file type of a directory.\n" +
+                        "\n" +
+                        "3. stats.isBlockDevice()\n" +
+                        "\n" +
+                        "Returns true if file type of a block device.\n" +
+                        "\n" +
+                        "4. stats.isCharacterDevice()\n" +
+                        "\n" +
+                        "Returns true if file type of a character device.\n" +
+                        "\n" +
+                        "5. stats.isSymbolicLink()\n" +
+                        "\n" +
+                        "Returns true if file type of a symbolic link.\n" +
+                        "\n" +
+                        "6. stats.isFIFO()\n" +
+                        "\n" +
+                        "Returns true if file type of a FIFO.\n" +
+                        "\n" +
+                        "7. stats.isSocket()\n" +
+                        "\n" +
+                        "Returns true if file type of asocket.",
+                "",
+                ""
+        );
+        final LearnDetailsModel l9 = new LearnDetailsModel(
+                "Example",
+                "Let us create a js file named main.js with the following code −" +
+                        "\n\n" +
+                        "Now run the main.js to see the result −\n" +
+                        "\n" +
+                        "$ node main.js",
+                "var fs = require(\"fs\");\n" +
+                        "\n" +
+                        "console.log(\"Going to get file info!\");\n" +
+                        "fs.stat('input.txt', function (err, stats) {\n" +
+                        "   if (err) {\n" +
+                        "      return console.error(err);\n" +
+                        "   }\n" +
+                        "   console.log(stats);\n" +
+                        "   console.log(\"Got file info successfully!\");\n" +
+                        "   \n" +
+                        "   // Check file type\n" +
+                        "   console.log(\"isFile ? \" + stats.isFile());\n" +
+                        "   console.log(\"isDirectory ? \" + stats.isDirectory());    \n" +
+                        "});",
+                "Going to get file info!\n" +
+                        "{ \n" +
+                        "   dev: 1792,\n" +
+                        "   mode: 33188,\n" +
+                        "   nlink: 1,\n" +
+                        "   uid: 48,\n" +
+                        "   gid: 48,\n" +
+                        "   rdev: 0,\n" +
+                        "   blksize: 4096,\n" +
+                        "   ino: 4318127,\n" +
+                        "   size: 97,\n" +
+                        "   blocks: 8,\n" +
+                        "   atime: Sun Mar 22 2015 13:40:00 GMT-0500 (CDT),\n" +
+                        "   mtime: Sun Mar 22 2015 13:40:57 GMT-0500 (CDT),\n" +
+                        "   ctime: Sun Mar 22 2015 13:40:57 GMT-0500 (CDT) \n" +
+                        "}\n" +
+                        "Got file info successfully!\n" +
+                        "isFile ? true\n" +
+                        "isDirectory ? false"
+        );
+        final LearnDetailsModel l10 = new LearnDetailsModel(
+                "Writing a File",
+                "Syntax\n" +
+                        "Following is the syntax of one of the methods to write into a file −\n" +
+                        "\n" +
+                        "fs.writeFile(filename, data[, options], callback)\n" +
+                        "This method will over-write the file if the file already exists. If you want to write into an existing file then you should use another method available.\n" +
+                        "\n" +
+                        "Parameters\n" +
+                        "Here is the description of the parameters used −\n" +
+                        "\n" +
+                        "path − This is the string having the file name including path.\n" +
+                        "\n" +
+                        "data − This is the String or Buffer to be written into the file.\n" +
+                        "\n" +
+                        "options − The third parameter is an object which will hold {encoding, mode, flag}. By default. encoding is utf8, mode is octal value 0666. and flag is 'w'\n" +
+                        "\n" +
+                        "callback − This is the callback function which gets a single parameter err that returns an error in case of any writing error.\n" +
+                        "\n" +
+                        "Example\n" +
+                        "Let us create a js file named main.js having the following code −" +
+                        "\n\n" +
+                        "Now run the main.js to see the result −\n" +
+                        "\n" +
+                        "$ node main.js",
+                "var fs = require(\"fs\");\n" +
+                        "\n" +
+                        "console.log(\"Going to write into existing file\");\n" +
+                        "fs.writeFile('input.txt', 'Simply Easy Learning!', function(err) {\n" +
+                        "   if (err) {\n" +
+                        "      return console.error(err);\n" +
+                        "   }\n" +
+                        "   \n" +
+                        "   console.log(\"Data written successfully!\");\n" +
+                        "   console.log(\"Let's read newly written data\");\n" +
+                        "   \n" +
+                        "   fs.readFile('input.txt', function (err, data) {\n" +
+                        "      if (err) {\n" +
+                        "         return console.error(err);\n" +
+                        "      }\n" +
+                        "      console.log(\"Asynchronous read: \" + data.toString());\n" +
+                        "   });\n" +
+                        "});",
+                "Going to write into existing file\n" +
+                        "Data written successfully!\n" +
+                        "Let's read newly written data\n" +
+                        "Asynchronous read: Simply Easy Learning!"
+        );
+        final LearnDetailsModel l11 = new LearnDetailsModel(
+                "Reading a File",
+                "Syntax\n" +
+                        "Following is the syntax of one of the methods to read from a file −\n" +
+                        "\n" +
+                        "fs.read(fd, buffer, offset, length, position, callback)\n" +
+                        "This method will use file descriptor to read the file. If you want to read the file directly using the file name, then you should use another method available.\n" +
+                        "\n" +
+                        "Parameters\n" +
+                        "Here is the description of the parameters used −\n" +
+                        "\n" +
+                        "fd − This is the file descriptor returned by fs.open().\n" +
+                        "\n" +
+                        "buffer − This is the buffer that the data will be written to.\n" +
+                        "\n" +
+                        "offset − This is the offset in the buffer to start writing at.\n" +
+                        "\n" +
+                        "length − This is an integer specifying the number of bytes to read.\n" +
+                        "\n" +
+                        "position − This is an integer specifying where to begin reading from in the file. If position is null, data will be read from the current file position.\n" +
+                        "\n" +
+                        "callback − This is the callback function which gets the three arguments, (err, bytesRead, buffer).\n" +
+                        "\n" +
+                        "Example\n" +
+                        "Let us create a js file named main.js with the following code −" +
+                        "\n\n" +
+                        "Now run the main.js to see the result −\n" +
+                        "\n" +
+                        "$ node main.js",
+                "var fs = require(\"fs\");\n" +
+                        "var buf = new Buffer(1024);\n" +
+                        "\n" +
+                        "console.log(\"Going to open an existing file\");\n" +
+                        "fs.open('input.txt', 'r+', function(err, fd) {\n" +
+                        "   if (err) {\n" +
+                        "      return console.error(err);\n" +
+                        "   }\n" +
+                        "   console.log(\"File opened successfully!\");\n" +
+                        "   console.log(\"Going to read the file\");\n" +
+                        "   \n" +
+                        "   fs.read(fd, buf, 0, buf.length, 0, function(err, bytes){\n" +
+                        "      if (err){\n" +
+                        "         console.log(err);\n" +
+                        "      }\n" +
+                        "      console.log(bytes + \" bytes read\");\n" +
+                        "      \n" +
+                        "      // Print only read bytes to avoid junk.\n" +
+                        "      if(bytes > 0){\n" +
+                        "         console.log(buf.slice(0, bytes).toString());\n" +
+                        "      }\n" +
+                        "   });\n" +
+                        "});",
+                "Going to open an existing file\n" +
+                        "File opened successfully!\n" +
+                        "Going to read the file\n" +
+                        "97 bytes read\n" +
+                        "SHR Creation is giving self learning content\n" +
+                        "to teach the world in simple and easy way!!!!!"
+        );
+        final LearnDetailsModel l12 = new LearnDetailsModel(
+                "Closing a File",
+                "Syntax\n" +
+                        "Following is the syntax to close an opened file −\n" +
+                        "\n" +
+                        "fs.close(fd, callback)\n" +
+                        "Parameters\n" +
+                        "Here is the description of the parameters used −\n" +
+                        "\n" +
+                        "fd − This is the file descriptor returned by file fs.open() method.\n" +
+                        "\n" +
+                        "callback − This is the callback function No arguments other than a possible exception are given to the completion callback.\n" +
+                        "\n" +
+                        "Example\n" +
+                        "Let us create a js file named main.js having the following code −" +
+                        "\n\n" +
+                        "Now run the main.js to see the result −\n" +
+                        "\n" +
+                        "$ node main.js",
+                "var fs = require(\"fs\");\n" +
+                        "var buf = new Buffer(1024);\n" +
+                        "\n" +
+                        "console.log(\"Going to open an existing file\");\n" +
+                        "fs.open('input.txt', 'r+', function(err, fd) {\n" +
+                        "   if (err) {\n" +
+                        "      return console.error(err);\n" +
+                        "   }\n" +
+                        "   console.log(\"File opened successfully!\");\n" +
+                        "   console.log(\"Going to read the file\");\n" +
+                        "   \n" +
+                        "   fs.read(fd, buf, 0, buf.length, 0, function(err, bytes) {\n" +
+                        "      if (err) {\n" +
+                        "         console.log(err);\n" +
+                        "      }\n" +
+                        "\n" +
+                        "      // Print only read bytes to avoid junk.\n" +
+                        "      if(bytes > 0) {\n" +
+                        "         console.log(buf.slice(0, bytes).toString());\n" +
+                        "      }\n" +
+                        "\n" +
+                        "      // Close the opened file.\n" +
+                        "      fs.close(fd, function(err) {\n" +
+                        "         if (err) {\n" +
+                        "            console.log(err);\n" +
+                        "         } \n" +
+                        "         console.log(\"File closed successfully.\");\n" +
+                        "      });\n" +
+                        "   });\n" +
+                        "});",
+                "Going to open an existing file\n" +
+                        "File opened successfully!\n" +
+                        "Going to read the file\n" +
+                        "SHR Creation is giving self learning content\n" +
+                        "to teach the world in simple and easy way!!!!!\n" +
+                        "\n" +
+                        "File closed successfully."
+        );final LearnDetailsModel l13 = new LearnDetailsModel(
+                "Truncate a File",
+                "Syntax\n" +
+                        "Following is the syntax of the method to truncate an opened file −\n" +
+                        "\n" +
+                        "fs.ftruncate(fd, len, callback)\n" +
+                        "Parameters\n" +
+                        "Here is the description of the parameters used −\n" +
+                        "\n" +
+                        "fd − This is the file descriptor returned by fs.open().\n" +
+                        "\n" +
+                        "len − This is the length of the file after which the file will be truncated.\n" +
+                        "\n" +
+                        "callback − This is the callback function No arguments other than a possible exception are given to the completion callback.\n" +
+                        "\n" +
+                        "Example\n" +
+                        "Let us create a js file named main.js having the following code −" +
+                        "\n\n" +
+                        "Now run the main.js to see the result −\n" +
+                        "\n" +
+                        "$ node main.js",
+                "var fs = require(\"fs\");\n" +
+                        "var buf = new Buffer(1024);\n" +
+                        "\n" +
+                        "console.log(\"Going to open an existing file\");\n" +
+                        "fs.open('input.txt', 'r+', function(err, fd) {\n" +
+                        "   if (err) {\n" +
+                        "      return console.error(err);\n" +
+                        "   }\n" +
+                        "   console.log(\"File opened successfully!\");\n" +
+                        "   console.log(\"Going to truncate the file after 10 bytes\");\n" +
+                        "   \n" +
+                        "   // Truncate the opened file.\n" +
+                        "   fs.ftruncate(fd, 10, function(err) {\n" +
+                        "      if (err) {\n" +
+                        "         console.log(err);\n" +
+                        "      } \n" +
+                        "      console.log(\"File truncated successfully.\");\n" +
+                        "      console.log(\"Going to read the same file\"); \n" +
+                        "      \n" +
+                        "      fs.read(fd, buf, 0, buf.length, 0, function(err, bytes){\n" +
+                        "         if (err) {\n" +
+                        "            console.log(err);\n" +
+                        "         }\n" +
+                        "\n" +
+                        "         // Print only read bytes to avoid junk.\n" +
+                        "         if(bytes > 0) {\n" +
+                        "            console.log(buf.slice(0, bytes).toString());\n" +
+                        "         }\n" +
+                        "\n" +
+                        "         // Close the opened file.\n" +
+                        "         fs.close(fd, function(err) {\n" +
+                        "            if (err) {\n" +
+                        "               console.log(err);\n" +
+                        "            } \n" +
+                        "            console.log(\"File closed successfully.\");\n" +
+                        "         });\n" +
+                        "      });\n" +
+                        "   });\n" +
+                        "});",
+                "Going to open an existing file\n" +
+                        "File opened successfully!\n" +
+                        "Going to truncate the file after 10 bytes\n" +
+                        "File truncated successfully.\n" +
+                        "Going to read the same file\n" +
+                        "Tutorials \n" +
+                        "File closed successfully."
+        );final LearnDetailsModel l14 = new LearnDetailsModel(
+                "Delete a File",
+                "Syntax\n" +
+                        "Following is the syntax of the method to delete a file −\n" +
+                        "\n" +
+                        "fs.unlink(path, callback)\n" +
+                        "Parameters\n" +
+                        "Here is the description of the parameters used −\n" +
+                        "\n" +
+                        "path − This is the file name including path.\n" +
+                        "\n" +
+                        "callback − This is the callback function No arguments other than a possible exception are given to the completion callback.\n" +
+                        "\n" +
+                        "Example\n" +
+                        "Let us create a js file named main.js having the following code −" +
+                        "\n\n" +
+                        "Now run the main.js to see the result −\n" +
+                        "\n" +
+                        "$ node main.js",
+                "var fs = require(\"fs\");\n" +
+                        "\n" +
+                        "console.log(\"Going to delete an existing file\");\n" +
+                        "fs.unlink('input.txt', function(err) {\n" +
+                        "   if (err) {\n" +
+                        "      return console.error(err);\n" +
+                        "   }\n" +
+                        "   console.log(\"File deleted successfully!\");\n" +
+                        "});",
+                "Going to delete an existing file\n" +
+                        "File deleted successfully!"
+        );final LearnDetailsModel l15 = new LearnDetailsModel(
+                "Create a Directory",
+                "Syntax\n" +
+                        "Following is the syntax of the method to create a directory −\n" +
+                        "\n" +
+                        "fs.mkdir(path[, mode], callback)\n" +
+                        "Parameters\n" +
+                        "Here is the description of the parameters used −\n" +
+                        "\n" +
+                        "path − This is the directory name including path.\n" +
+                        "\n" +
+                        "mode − This is the directory permission to be set. Defaults to 0777.\n" +
+                        "\n" +
+                        "callback − This is the callback function No arguments other than a possible exception are given to the completion callback.\n" +
+                        "\n" +
+                        "Example\n" +
+                        "Let us create a js file named main.js having the following code −" +
+                        "\n\n" +
+                        "Now run the main.js to see the result −\n" +
+                        "\n" +
+                        "$ node main.js",
+                "var fs = require(\"fs\");\n" +
+                        "\n" +
+                        "console.log(\"Going to create directory /tmp/test\");\n" +
+                        "fs.mkdir('/tmp/test',function(err) {\n" +
+                        "   if (err) {\n" +
+                        "      return console.error(err);\n" +
+                        "   }\n" +
+                        "   console.log(\"Directory created successfully!\");\n" +
+                        "});",
+                "Going to create directory /tmp/test\n" +
+                        "Directory created successfully!"
+        );final LearnDetailsModel l16 = new LearnDetailsModel(
+                "Read a Directory",
+                "Syntax\n" +
+                        "Following is the syntax of the method to read a directory −\n" +
+                        "\n" +
+                        "fs.readdir(path, callback)\n" +
+                        "Parameters\n" +
+                        "Here is the description of the parameters used −\n" +
+                        "\n" +
+                        "path − This is the directory name including path.\n" +
+                        "\n" +
+                        "callback − This is the callback function which gets two arguments (err, files) where files is an array of the names of the files in the directory excluding '.' and '..'.\n" +
+                        "\n" +
+                        "Example\n" +
+                        "Let us create a js file named main.js having the following code −" +
+                        "\n\n" +
+                        "Now run the main.js to see the result −\n" +
+                        "\n" +
+                        "$ node main.js",
+                "var fs = require(\"fs\");\n" +
+                        "\n" +
+                        "console.log(\"Going to read directory /tmp\");\n" +
+                        "fs.readdir(\"/tmp/\",function(err, files) {\n" +
+                        "   if (err) {\n" +
+                        "      return console.error(err);\n" +
+                        "   }\n" +
+                        "   files.forEach( function (file) {\n" +
+                        "      console.log( file );\n" +
+                        "   });\n" +
+                        "});",
+                "Going to read directory /tmp\n" +
+                        "ccmzx99o.out\n" +
+                        "ccyCSbkF.out\n" +
+                        "employee.ser\n" +
+                        "hsperfdata_apache\n" +
+                        "test\n" +
+                        "test.txt"
+        );final LearnDetailsModel l17 = new LearnDetailsModel(
+                "Remove a Directory",
+                "Syntax\n" +
+                        "Following is the syntax of the method to remove a directory −\n" +
+                        "\n" +
+                        "fs.rmdir(path, callback)\n" +
+                        "Parameters\n" +
+                        "Here is the description of the parameters used −\n" +
+                        "\n" +
+                        "path − This is the directory name including path.\n" +
+                        "\n" +
+                        "callback − This is the callback function No arguments other than a possible exception are given to the completion callback.\n" +
+                        "\n" +
+                        "Example\n" +
+                        "Let us create a js file named main.js having the following code −" +
+                        "\n\n" +
+                        "Now run the main.js to see the result −\n" +
+                        "\n" +
+                        "$ node main.js",
+                "var fs = require(\"fs\");\n" +
+                        "\n" +
+                        "console.log(\"Going to delete directory /tmp/test\");\n" +
+                        "fs.rmdir(\"/tmp/test\",function(err) {\n" +
+                        "   if (err) {\n" +
+                        "      return console.error(err);\n" +
+                        "   }\n" +
+                        "   console.log(\"Going to read directory /tmp\");\n" +
+                        "   \n" +
+                        "   fs.readdir(\"/tmp/\",function(err, files) {\n" +
+                        "      if (err) {\n" +
+                        "         return console.error(err);\n" +
+                        "      }\n" +
+                        "      files.forEach( function (file) {\n" +
+                        "         console.log( file );\n" +
+                        "      });\n" +
+                        "   });\n" +
+                        "});",
+                "Going to read directory /tmp\n" +
+                        "ccmzx99o.out\n" +
+                        "ccyCSbkF.out\n" +
+                        "employee.ser\n" +
+                        "hsperfdata_apache\n" +
+                        "test.txt"
+        );
+        list.add(l1);
+        list.add(l2);
+        list.add(l3);
+        list.add(l4);
+        list.add(l5);
+        list.add(l6);
+        list.add(l7);
+        list.add(l8);
+        list.add(l9);
+        list.add(l10);
+        list.add(l11);
+        list.add(l12);
+        list.add(l13);
+        list.add(l14);
+        list.add(l15);
+        list.add(l16);
+        list.add(l17);
+        return list;
+    }
+    //NodeJs Global Objects
+    private static List<LearnDetailsModel> NodeJsGlobalObjects(){
+        final List<LearnDetailsModel> list = new ArrayList<>();
+        final LearnDetailsModel l1 = new LearnDetailsModel(
+                "What is Global Objects?",
+                "Node.js global objects are global in nature and they are available in all modules. We do not need to include these objects in our application, rather we can use them directly. These objects are modules, functions, strings and object itself as explained below.",
+                "",
+                ""
+        );
+        final LearnDetailsModel l2 = new LearnDetailsModel(
+                "__filename",
+                "The __filename represents the filename of the code being executed. This is the resolved absolute path of this code file. For a main program, this is not necessarily the same filename used in the command line. The value inside a module is the path to that module file.\n" +
+                        "\n" +
+                        "Example\n" +
+                        "Create a js file named main.js with the following code −" +
+                        "\n\n" +
+                        "Now run the main.js to see the result −\n" +
+                        "\n" +
+                        "$ node main.js\n" +
+                        "Based on the location of your program, it will print the main file name as follows −\n" +
+                        "\n" +
+                        "/web/com/1427091028_21099/main.js",
+                "// Let's try to print the value of __filename\n" +
+                        "\n" +
+                        "console.log( __filename );",
+                ""
+        );
+        final LearnDetailsModel l3 = new LearnDetailsModel(
+                "__dirname",
+                "The __dirname represents the name of the directory that the currently executing script resides in.\n" +
+                        "\n" +
+                        "Example\n" +
+                        "Create a js file named main.js with the following code −" +
+                        "\n\n" +
+                        "Now run the main.js to see the result −\n" +
+                        "\n" +
+                        "$ node main.js\n" +
+                        "Based on the location of your program, it will print current directory name as follows −\n" +
+                        "\n" +
+                        "/web/com/1427091028_21099",
+                "// Let's try to print the value of __dirname\n" +
+                        "\n" +
+                        "console.log( __dirname );",
+                ""
+        );
+        final LearnDetailsModel l4 = new LearnDetailsModel(
+                "setTimeout(cb, ms)",
+                "The setTimeout(cb, ms) global function is used to run callback cb after at least ms milliseconds. The actual delay depends on external factors like OS timer granularity and system load. A timer cannot span more than 24.8 days.\n" +
+                        "\n" +
+                        "This function returns an opaque value that represents the timer which can be used to clear the timer.\n" +
+                        "\n" +
+                        "Example\n" +
+                        "Create a js file named main.js with the following code −" +
+                        "\n\n" +
+                        "Now run the main.js to see the result −\n" +
+                        "\n" +
+                        "$ node main.js",
+                "function printHello() {\n" +
+                        "   console.log( \"Hello, World!\");\n" +
+                        "}\n" +
+                        "\n" +
+                        "// Now call above function after 2 seconds\n" +
+                        "setTimeout(printHello, 2000);",
+                "Hello, World!"
+        );
+        final LearnDetailsModel l5 = new LearnDetailsModel(
+                "clearTimeout(t)",
+                "The clearTimeout(t) global function is used to stop a timer that was previously created with setTimeout(). Here t is the timer returned by the setTimeout() function.\n" +
+                        "\n" +
+                        "Example\n" +
+                        "Create a js file named main.js with the following code −" +
+                        "\n\n" +
+                        "Now run the main.js to see the result −\n" +
+                        "\n" +
+                        "$ node main.js",
+                "function printHello() {\n" +
+                        "   console.log( \"Hello, World!\");\n" +
+                        "}\n" +
+                        "\n" +
+                        "// Now call above function after 2 seconds\n" +
+                        "var t = setTimeout(printHello, 2000);\n" +
+                        "\n" +
+                        "// Now clear the timer\n" +
+                        "clearTimeout(t);",
+                "Verify the output where you will not find anything printed."
+        );
+        final LearnDetailsModel l6 = new LearnDetailsModel(
+                "setInterval(cb, ms)",
+                "The setInterval(cb, ms) global function is used to run callback cb repeatedly after at least ms milliseconds. The actual delay depends on external factors like OS timer granularity and system load. A timer cannot span more than 24.8 days.\n" +
+                        "\n" +
+                        "This function returns an opaque value that represents the timer which can be used to clear the timer using the function clearInterval(t).\n" +
+                        "\n" +
+                        "Example\n" +
+                        "Create a js file named main.js with the following code −" +
+                        "\n\n" +
+                        "Now run the main.js to see the result −\n" +
+                        "\n" +
+                        "$ node main.js",
+                "function printHello() {\n" +
+                        "   console.log( \"Hello, World!\");\n" +
+                        "}\n" +
+                        "\n" +
+                        "// Now call above function after 2 seconds\n" +
+                        "setInterval(printHello, 2000);",
+                "The above program will execute printHello() after every 2 second. Due to system limitation."
+        );
+        final LearnDetailsModel l7 = new LearnDetailsModel(
+                "Global Objects",
+                "The following table provides a list of other objects which we use frequently in our applications. For a more detail, you can refer to the official documentation.",
+                "1. Console\n" +
+                        "Used to print information on stdout and stderr.\n" +
+                        "\n" +
+                        "2. Process\n" +
+                        "Used to get information on current process. Provides multiple events related to process activities.",
+                ""
+        );
+        list.add(l1);
+        list.add(l2);
+        list.add(l3);
+        list.add(l4);
+        list.add(l5);
+        list.add(l6);
+        list.add(l7);
+        return list;
+    }
+    //NodeJs Web Module
+    private static List<LearnDetailsModel> NodeJsWebModule(){
+        final List<LearnDetailsModel> list = new ArrayList<>();
+        final LearnDetailsModel l1 = new LearnDetailsModel(
+                "What is a Web Server?",
+                "A Web Server is a software application which handles HTTP requests sent by the HTTP client, like web browsers, and returns web pages in response to the clients. Web servers usually deliver html documents along with images, style sheets, and scripts.\n" +
+                        "\n" +
+                        "Most of the web servers support server-side scripts, using scripting languages or redirecting the task to an application server which retrieves data from a database and performs complex logic and then sends a result to the HTTP client through the Web server.\n" +
+                        "\n" +
+                        "Apache web server is one of the most commonly used web servers. It is an open source project.",
+                "",
+                ""
+        );
+        final LearnDetailsModel l2 = new LearnDetailsModel(
+                "Web Application Architecture",
+                "A Web application is usually divided into four layers −" +
+                        "\n\n" +
+                        "Client − This layer consists of web browsers, mobile browsers or applications which can make HTTP requests to the web server.\n" +
+                        "\n" +
+                        "Server − This layer has the Web server which can intercept the requests made by the clients and pass them the response.\n" +
+                        "\n" +
+                        "Business − This layer contains the application server which is utilized by the web server to do the required processing. This layer interacts with the data layer via the database or some external programs.\n" +
+                        "\n" +
+                        "Data − This layer contains the databases or any other source of data.",
+                "",
+                ""
+        );
+        final LearnDetailsModel l3 = new LearnDetailsModel(
+                "Creating a Web Server using Node",
+                "Node.js provides an http module which can be used to create an HTTP client of a server. Following is the bare minimum structure of the HTTP server which listens at 8081 port.\n" +
+                        "\n" +
+                        "Create a js file named server.js −" +
+                        "\n\n\n" +
+                        "Next let's create the following html file named index.htm in the same directory where you created server.js.\n" +
+                        "\n" +
+                        "File: index.htm\n" +
+                        "\n" +
+                        "<html>\n" +
+                        "   <head>\n" +
+                        "      <title>Sample Page</title>\n" +
+                        "   </head>\n" +
+                        "   \n" +
+                        "   <body>\n" +
+                        "      Hello World!\n" +
+                        "   </body>\n" +
+                        "</html>\n" +
+                        "Now let us run the server.js to see the result −\n" +
+                        "\n" +
+                        "$ node server.js",
+                "var http = require('http');\n" +
+                        "var fs = require('fs');\n" +
+                        "var url = require('url');\n" +
+                        "\n" +
+                        "// Create a server\n" +
+                        "http.createServer( function (request, response) {  \n" +
+                        "   // Parse the request containing file name\n" +
+                        "   var pathname = url.parse(request.url).pathname;\n" +
+                        "   \n" +
+                        "   // Print the name of the file for which request is made.\n" +
+                        "   console.log(\"Request for \" + pathname + \" received.\");\n" +
+                        "   \n" +
+                        "   // Read the requested file content from file system\n" +
+                        "   fs.readFile(pathname.substr(1), function (err, data) {\n" +
+                        "      if (err) {\n" +
+                        "         console.log(err);\n" +
+                        "         \n" +
+                        "         // HTTP Status: 404 : NOT FOUND\n" +
+                        "         // Content Type: text/plain\n" +
+                        "         response.writeHead(404, {'Content-Type': 'text/html'});\n" +
+                        "      } else {\t\n" +
+                        "         //Page found\t  \n" +
+                        "         // HTTP Status: 200 : OK\n" +
+                        "         // Content Type: text/plain\n" +
+                        "         response.writeHead(200, {'Content-Type': 'text/html'});\t\n" +
+                        "         \n" +
+                        "         // Write the content of the file to response body\n" +
+                        "         response.write(data.toString());\t\t\n" +
+                        "      }\n" +
+                        "      \n" +
+                        "      // Send the response body \n" +
+                        "      response.end();\n" +
+                        "   });   \n" +
+                        "}).listen(8081);\n" +
+                        "\n" +
+                        "// Console will print the message\n" +
+                        "console.log('Server running at http://127.0.0.1:8081/');",
+                ""
+        );
+        final LearnDetailsModel l4 = new LearnDetailsModel(
+                "Creating Web client using Node",
+                "A web client can be created using http module. Let's check the following example.\n" +
+                        "\n" +
+                        "Create a js file named client.js −" +
+                        "\n\n\n" +
+                        "Now run the client.js from a different command terminal other than server.js to see the result −\n" +
+                        "\n" +
+                        "$ node client.js",
+                "var http = require('http');\n" +
+                        "\n" +
+                        "// Options to be used by request \n" +
+                        "var options = {\n" +
+                        "   host: 'localhost',\n" +
+                        "   port: '8081',\n" +
+                        "   path: '/index.htm'  \n" +
+                        "};\n" +
+                        "\n" +
+                        "// Callback function is used to deal with response\n" +
+                        "var callback = function(response) {\n" +
+                        "   // Continuously update stream with data\n" +
+                        "   var body = '';\n" +
+                        "   response.on('data', function(data) {\n" +
+                        "      body += data;\n" +
+                        "   });\n" +
+                        "   \n" +
+                        "   response.on('end', function() {\n" +
+                        "      // Data received completely.\n" +
+                        "      console.log(body);\n" +
+                        "   });\n" +
+                        "}\n" +
+                        "// Make a request to the server\n" +
+                        "var req = http.request(options, callback);\n" +
+                        "req.end();",
+                "Server running at http://127.0.0.1:8081/\n" +
+                        "Request for /index.htm received."
+        );
+        list.add(l1);
+        list.add(l2);
+        list.add(l3);
+        list.add(l4);
+        return list;
+    }
 
 
-
-    /*final LearnDetailsModel l1 = new LearnDetailsModel(
+    /*
+    final LearnDetailsModel l1 = new LearnDetailsModel(
             "",
             "",
             "",
@@ -19072,6 +21298,30 @@ public class LearnDetailsContent {
             "",
             ""
     );
+    final LearnDetailsModel l9 = new LearnDetailsModel(
+            "",
+            "",
+            "",
+            ""
+    );
+    final LearnDetailsModel l10 = new LearnDetailsModel(
+            "",
+            "",
+            "",
+            ""
+    );
+    final LearnDetailsModel l11 = new LearnDetailsModel(
+            "",
+            "",
+            "",
+            ""
+    );
+    final LearnDetailsModel l12 = new LearnDetailsModel(
+            "",
+            "",
+            "",
+            ""
+    );
 
         list.add(l1);
         list.add(l2);
@@ -19081,6 +21331,10 @@ public class LearnDetailsContent {
         list.add(l6);
         list.add(l7);
         list.add(l8);
+        list.add(l9);
+        list.add(l10);
+        list.add(l11);
+        list.add(l12);
         return list;*/
 
     //default
@@ -19493,6 +21747,31 @@ public class LearnDetailsContent {
                 return BootstrapHelperClasses();
             case "Bootstrap Responsive Utilities":
                 return BootstrapResponsiveUtilities();
+            //NodeJs
+            case "NodeJs Introduction":
+                return NodeJsIntroduction();
+            case "NodeJs First Application":
+                return NodeJsFirstApplication();
+            case "NodeJs REPL Terminal":
+                return NodeJsREPLTerminal();
+            case "NodeJs NPM":
+                return NodeJsNPM();
+            case "NodeJs Callbacks Concept":
+                return NodeJsCallbacksConcept();
+            case "NodeJs Event Loop":
+                return NodeJsEventLoop();
+            case "NodeJs Event Emitter":
+                return NodeJsEventEmitter();
+            case "NodeJs Buffers":
+                return NodeJsBuffers();
+            case "NodeJs Streams":
+                return NodeJsStreams();
+            case "NodeJs File System":
+                return NodeJsFileSystem();
+            case "NodeJs Global Objects":
+                return NodeJsGlobalObjects();
+            case "NodeJs Web Module":
+                return NodeJsWebModule();
 
             default:
                 return defaultT();
@@ -19502,7 +21781,7 @@ public class LearnDetailsContent {
     }
 
 }
-    /*private static List<LearnDetailsModel> BootstrapResponsiveUtilities(){
+    /*private static List<LearnDetailsModel> NodeJsWebModule(){
         final List<LearnDetailsModel> list = new ArrayList<>();
         final LearnDetailsModel l1 = new LearnDetailsModel();
 

@@ -259,20 +259,18 @@ public class LearnItemsListActivity extends AppCompatActivity {
                 "Bootstrap Responsive Utilities"
         };
         final String[] NodeJs = {
-                "NodeJs ",
-                "NodeJs ",
-                "NodeJs ",
-                "NodeJs ",
-                "NodeJs ",
-                "NodeJs ",
-                "NodeJs ",
-                "NodeJs ",
-                "NodeJs ",
-                "NodeJs ",
-                "NodeJs ",
-                "NodeJs ",
-                "NodeJs ",
-                "NodeJs ",
+                "NodeJs Introduction",
+                "NodeJs First Application",
+                "NodeJs REPL Terminal",
+                "NodeJs NPM",
+                "NodeJs Callbacks Concept",
+                "NodeJs Event Loop",
+                "NodeJs Event Emitter",
+                "NodeJs Buffers",
+                "NodeJs Streams",
+                "NodeJs File System",
+                "NodeJs Global Objects",
+                "NodeJs Web Module"
         };
         final String[] ExpressJs = {
                 "ExpressJs Introduction",

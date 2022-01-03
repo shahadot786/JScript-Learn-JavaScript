@@ -249,16 +249,60 @@ public class LearnItemsListActivity extends AppCompatActivity {
                 "Bootstrap "
         };
         final String[] NodeJs = {
-                "Node Js"
+                "NodeJs ",
+                "NodeJs ",
+                "NodeJs ",
+                "NodeJs ",
+                "NodeJs ",
+                "NodeJs ",
+                "NodeJs ",
+                "NodeJs ",
+                "NodeJs ",
+                "NodeJs ",
+                "NodeJs ",
+                "NodeJs ",
+                "NodeJs ",
+                "NodeJs ",
         };
         final String[] ExpressJs = {
-                "Express Js"
+                "ExpressJs Introduction",
+                "ExpressJs Environment",
+                "ExpressJs Hello World",
+                "ExpressJs Routing",
+                "ExpressJs HTTP Methods",
+                "ExpressJs URL Building",
+                "ExpressJs Middleware",
+                "ExpressJs Templating",
+                "ExpressJs Static Files",
+                "ExpressJs Form Data",
+                "ExpressJs Database",
+                "ExpressJs Cookies",
+                "ExpressJs Sessions",
+                "ExpressJs Authentication",
+                "ExpressJs RESTFul APIs",
+                "ExpressJs Scaffolding",
+                "ExpressJs Error Handling",
+                "ExpressJs Debugging",
+                "ExpressJs Best Practices"
         };
         final String[] Laravel = {
-                "Laravel Js"
+                "Laravel ",
+                "Laravel ",
+                "Laravel ",
+                "Laravel ",
+                "Laravel ",
+                "Laravel ",
+                "Laravel ",
         };
         final String[] jQuery = {
-                "jQuery"
+                "jQuery ",
+                "jQuery ",
+                "jQuery ",
+                "jQuery ",
+                "jQuery ",
+                "jQuery ",
+                "jQuery ",
+                "jQuery ",
         };
         /*
         final String[] SpringBoot = {

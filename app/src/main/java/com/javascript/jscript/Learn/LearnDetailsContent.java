@@ -15428,7 +15428,1548 @@ public class LearnDetailsContent {
         list.add(l7);
         return list;
     }
+    //ExpressJs
+    //ExpressJs Introduction
+    private static List<LearnDetailsModel> ExpressJsIntroduction(){
+        final List<LearnDetailsModel> list = new ArrayList<>();
+        final LearnDetailsModel l1 = new LearnDetailsModel(
+                "What is Express?",
+                "ExpressJS is a web application framework that provides you with a simple API to build websites, web apps and back ends. With ExpressJS, you need not worry about low level protocols, processes, etc." +
+                        "\n" +
+                        "Express provides a minimal interface to build our applications. It provides us the tools that are required to build our app. It is flexible as there are numerous modules available on npm, which can be directly plugged into Express.\n" +
+                        "\n" +
+                        "Express was developed by TJ Holowaychuk and is maintained by the Node.js foundation and numerous open source contributors.",
+                "",
+                ""
+        );
+        final LearnDetailsModel l2 = new LearnDetailsModel(
+                "Why Express?",
+                "Unlike its competitors like Rails and Django, which have an opinionated way of building applications, Express has no \"best way\" to do something. It is very flexible and pluggable.\n" +
+                        "\n" +
+                        "Pug\n" +
+                        "Pug (earlier known as Jade) is a terse language for writing HTML templates. It −\n" +
+                        "\n" +
+                        "Produces HTML\n" +
+                        "Supports dynamic code\n" +
+                        "Supports re-usability (DRY)\n" +
+                        "It is one of the most popular template language used with Express.",
+                "",
+                ""
+        );
+        final LearnDetailsModel l3 = new LearnDetailsModel(
+                "MongoDB and Mongoose",
+                "MongoDB is an open-source, document database designed for ease of development and scaling. This database is also used to store data.\n" +
+                        "\n" +
+                        "Mongoose is a client API for node.js which makes it easy to access our database from our Express application.",
+                "",
+                ""
+        );
+        final LearnDetailsModel l4 = new LearnDetailsModel(
+                "Audience",
+                "This tutorial has been created for anyone who has a basic knowledge of HTML, Javascript and how client-servers work. After completing this tutorial, you will be able to build moderately complex websites and back-ends for you mobile applications.",
+                "",
+                ""
+        );
+        final LearnDetailsModel l5 = new LearnDetailsModel(
+                "Prerequisites",
+                "You should have basic knowledge of Javascript and HTML. If you are not acquainted with these, we suggest you to go through tutorials on those areas first. It will definitely help, if you have some exposure to HTTP, although it is not mandatory. Having a basic knowledge of MongoDB will help you with the Database chapter.",
+                "",
+                ""
+        );
 
+        list.add(l1);
+        list.add(l2);
+        list.add(l3);
+        list.add(l4);
+        list.add(l5);
+
+        return list;
+    }
+    //ExpressJs Environment
+    private static List<LearnDetailsModel> ExpressJsEnvironment(){
+        final List<LearnDetailsModel> list = new ArrayList<>();
+        final LearnDetailsModel l1 = new LearnDetailsModel(
+                "How to setup ExpressJS Environment?",
+                "In this chapter, we will learn how to start developing and using the Express Framework. To start with, you should have the Node and the npm (node package manager) installed. If you don’t already have these, go to the NodeJS chapter" +
+                        " to install node on your local system. Confirm that node and npm are installed by running the following commands in your terminal." +
+                        "\n\n" +
+                        "node --version\n" +
+                        "npm --version\n\n" +
+                        "You should get an output similar to the following.\n" +
+                        "\n" +
+                        "v5.0.0\n" +
+                        "3.5.2\n" +
+                        "Now that we have Node and npm set up, let us understand what npm is and how to use it.",
+                "",
+                ""
+        );
+        final LearnDetailsModel l2 = new LearnDetailsModel(
+                "Node Package Manager(npm)",
+                "npm is the package manager for node. The npm Registry is a public collection of packages of open-source code for Node.js, front-end web apps, mobile apps, robots, routers, and countless other needs of the JavaScript community. npm allows us to access all these packages and install them locally. " +
+                        "",
+                "",
+                ""
+        );
+        final LearnDetailsModel l3 = new LearnDetailsModel(
+                "How to use npm?",
+                "There are two ways to install a package using npm: globally and locally.\n" +
+                        "\n" +
+                        "Globally − This method is generally used to install development tools and CLI based packages. To install a package globally, use the following code.\n" +
+                        "\n" +
+                        "npm install -g <package-name>\n" +
+                        "Locally − This method is generally used to install frameworks and libraries. A locally installed package can be used only within the directory it is installed. To install a package locally, use the same command as above without the -g flag.\n" +
+                        "\n" +
+                        "npm install <package-name>\n" +
+                        "Whenever we create a project using npm, we need to provide a package.json file, which has all the details about our project. npm makes it easy for us to set up this file. Let us set up our development project.\n" +
+                        "\n" +
+                        "Step 1 − Start your terminal/cmd, create a new folder named hello-world and cd (create directory) into it −\n" +
+                        "\n" +
+                        "npm init info\n" +
+                        "Step 2 − Now to create the package.json file using npm, use the following code.\n" +
+                        "\n" +
+                        "npm init\n" +
+                        "It will ask you for the following information.\n" +
+                        "\n" +
+                        "npm init info\n" +
+                        "Just keep pressing enter, and enter your name at the “author name” field.\n" +
+                        "\n" +
+                        "Step 3 − Now we have our package.json file set up, we will further install Express. To install Express and add it to our package.json file, use the following command −\n" +
+                        "\n" +
+                        "npm install --save express\n" +
+                        "To confirm that Express has installed correctly, run the following code.\n" +
+                        "\n" +
+                        "ls node_modules #(dir node_modules for windows)\n" +
+                        "Tip − The --save flag can be replaced by the -S flag. This flag ensures that Express is added as a dependency to our package.json file. This has an advantage, the next time we need to install all the dependencies of our project we can just run the command npm install and it will find the dependencies in this file and install them for us.\n" +
+                        "\n" +
+                        "This is all we need to start development using the Express framework. To make our development process a lot easier, we will install a tool from npm, nodemon. This tool restarts our server as soon as we make a change in any of our files, otherwise we need to restart the server manually after each file modification. To install nodemon, use the following command −\n" +
+                        "\n" +
+                        "npm install -g nodemon\n" +
+                        "You can now start working on Express.",
+                "",
+                ""
+        );
+        list.add(l1);
+        list.add(l2);
+        list.add(l3);
+        return list;
+    }
+    //ExpressJs Hello World
+    private static List<LearnDetailsModel> ExpressJsHelloWorld(){
+        final List<LearnDetailsModel> list = new ArrayList<>();
+        final LearnDetailsModel l1 = new LearnDetailsModel(
+                "Hello World",
+                "We have set up the development, now it is time to start developing our first app using Express. Create a new file called index.js and type the following in it." +
+                        "\n\n" +
+                        "Save the file, go to your terminal and type the following.\n" +
+                        "\n" +
+                        "nodemon index.js" +
+                        "\n\n" +
+                        "This will start the server. To test this app, open your browser and go to http://localhost:3000 and a message will be displayed as in the following output.",
+                "var express = require('express');\n" +
+                        "var app = express();\n" +
+                        "\n" +
+                        "app.get('/', function(req, res){\n" +
+                        "   res.send(\"Hello world!\");\n" +
+                        "});\n" +
+                        "\n" +
+                        "app.listen(3000);",
+                "Hello world!"
+        );
+        final LearnDetailsModel l2 = new LearnDetailsModel(
+                "How the App Works?",
+                "The first line imports Express in our file, we have access to it through the variable Express. We use it to create an application and assign it to var app.",
+                "",
+                ""
+        );
+        final LearnDetailsModel l3 = new LearnDetailsModel(
+                "app.get(route, callback)",
+                "This function tells what to do when a get request at the given route is called. The callback function has 2 parameters, request(req) and response(res). The request object(req) represents the HTTP request and has properties for the request query string, parameters, body, HTTP headers, etc. Similarly, the response object represents the HTTP response that the Express app sends when it receives an HTTP request.\n" +
+                        "\n" +
+                        "res.send()\n" +
+                        "This function takes an object as input and it sends this to the requesting client. Here we are sending the string \"Hello World!\".\n" +
+                        "\n" +
+                        "app.listen(port, [host], [backlog], [callback]])\n" +
+                        "This function binds and listens for connections on the specified host and port. Port is the only required parameter here." +
+                        "\n\n" +
+                        "1. port\n" +
+                        "\n" +
+                        "A port number on which the server should accept incoming requests.\n" +
+                        "\n" +
+                        "2. host\n" +
+                        "\n" +
+                        "Name of the domain. You need to set it when you deploy your apps to the cloud.\n" +
+                        "\n" +
+                        "3. backlog\n" +
+                        "\n" +
+                        "The maximum number of queued pending connections. The default is 511.\n" +
+                        "\n" +
+                        "4. callback\n" +
+                        "\n" +
+                        "An asynchronous function that is called when the server starts listening for requests.",
+                "",
+                ""
+        );
+        list.add(l1);
+        list.add(l2);
+        list.add(l3);
+        return list;
+    }
+    //ExpressJs Routing
+    private static List<LearnDetailsModel> ExpressJsRouting(){
+        final List<LearnDetailsModel> list = new ArrayList<>();
+        final LearnDetailsModel l1 = new LearnDetailsModel(
+                "Routing",
+                "Web frameworks provide resources such as HTML pages, scripts, images, etc. at different routes.\n" +
+                        "\n" +
+                        "The following function is used to define routes in an Express application −\n" +
+                        "\n" +
+                        "app.method(path, handler)\n" +
+                        "This METHOD can be applied to any one of the HTTP verbs – get, set, put, delete. An alternate method also exists, which executes independent of the request type.\n" +
+                        "\n" +
+                        "Path is the route at which the request will run.\n" +
+                        "\n" +
+                        "Handler is a callback function that executes when a matching request type is found on the relevant route. For example," +
+                        "\n\n" +
+                        "If we run our application and go to localhost:3000/hello, the server receives a get request at route \"/hello\", our Express app executes the callback function attached to this route and sends \"Hello World!\" as the response.",
+                "var express = require('express');\n" +
+                        "var app = express();\n" +
+                        "\n" +
+                        "app.get('/hello', function(req, res){\n" +
+                        "   res.send(\"Hello World!\");\n" +
+                        "});\n" +
+                        "\n" +
+                        "app.listen(3000);",
+                ""
+        );
+        final LearnDetailsModel l2 = new LearnDetailsModel(
+                "Multiple Different Methods",
+                "We can also have multiple different methods at the same route. For example," +
+                        "\n\n" +
+                        "To test this request, open up your terminal and use cURL to execute the following request −\n" +
+                        "\n" +
+                        "curl -X POST \"http://localhost:3000/hello\"" +
+                        "\n\n" +
+                        "A special method, all, is provided by Express to handle all types of http methods at a particular route using the same function. To use this method, try the following.\n" +
+                        "\n" +
+                        "app.all('/test', function(req, res){\n" +
+                        "   res.send(\"HTTP method doesn't have any effect on this route!\");\n" +
+                        "});\n" +
+                        "This method is generally used for defining middleware, which we'll discuss in the middleware chapter.",
+                "var express = require('express');\n" +
+                        "var app = express();\n" +
+                        "\n" +
+                        "app.get('/hello', function(req, res){\n" +
+                        "   res.send(\"Hello World!\");\n" +
+                        "});\n" +
+                        "\n" +
+                        "app.post('/hello', function(req, res){\n" +
+                        "   res.send(\"You just called the post method at '/hello'!\\n\");\n" +
+                        "});\n" +
+                        "\n" +
+                        "app.listen(3000);",
+                ""
+        );
+        final LearnDetailsModel l3 = new LearnDetailsModel(
+                "Routers",
+                "Defining routes like above is very tedious to maintain. To separate the routes from our main index.js file, we will use Express.Router. Create a new file called things.js and type the following in it." +
+                        "\n\n" +
+                        "\n" +
+                        "var express = require('express');\n" +
+                        "var router = express.Router();\n" +
+                        "\n" +
+                        "router.get('/', function(req, res){\n" +
+                        "   res.send('GET route on things.');\n" +
+                        "});\n" +
+                        "router.post('/', function(req, res){\n" +
+                        "   res.send('POST route on things.');\n" +
+                        "});\n" +
+                        "\n" +
+                        "//export this router to use in our index.js\n" +
+                        "module.exports = router;" +
+                        "\n\n\n" +
+                        "Now to use this router in our index.js, type in the following before the app.listen function call." +
+                        "\n\n" +
+                        "The app.use function call on route '/things' attaches the things router with this route. Now whatever requests our app gets at the '/things', will be handled by our things.js router. The '/' route in things.js is actually a subroute of '/things'. Visit localhost:3000/things/ and you will see the following output." +
+                        "\n\n\n" +
+                        "Routers are very helpful in separating concerns and keep relevant portions of our code together. They help in building maintainable code. You should define your routes relating to an entity in a single file and include it using the above method in your index.js file.",
+                "var express = require('Express');\n" +
+                        "var app = express();\n" +
+                        "\n" +
+                        "var things = require('./things.js');\n" +
+                        "\n" +
+                        "//both index.js and things.js should be in same directory\n" +
+                        "app.use('/things', things);\n" +
+                        "\n" +
+                        "app.listen(3000);",
+                "GET route on things."
+        );
+        list.add(l1);
+        list.add(l2);
+        list.add(l3);
+        return list;
+    }
+    //ExpressJs HTTP Methods
+    private static List<LearnDetailsModel> ExpressJsHTTPMethods(){
+        final List<LearnDetailsModel> list = new ArrayList<>();
+        final LearnDetailsModel l1 = new LearnDetailsModel(
+                "HTTP Methods",
+                "The HTTP method is supplied in the request and specifies the operation that the client has requested. The following table lists the most used HTTP methods −" +
+                        "\n\n" +
+                        "1. GET\n" +
+                        "\n" +
+                        "The GET method requests a representation of the specified resource. Requests using GET should only retrieve data and should have no other effect.\n" +
+                        "\n" +
+                        "2. POST\n" +
+                        "\n" +
+                        "The POST method requests that the server accept the data enclosed in the request as a new object/entity of the resource identified by the URI.\n" +
+                        "\n" +
+                        "3. PUT\n" +
+                        "\n" +
+                        "The PUT method requests that the server accept the data enclosed in the request as a modification to existing object identified by the URI. If it does not exist then the PUT method should create one.\n" +
+                        "\n" +
+                        "4. DELETE\n" +
+                        "\n" +
+                        "The DELETE method requests that the server delete the specified resource.\n" +
+                        "\n" +
+                        "These are the most common HTTP methods.",
+                "",
+                ""
+        );
+        final LearnDetailsModel l2 = new LearnDetailsModel(
+                "GET Method",
+                "A GET request retrieves data from a web server by specifying parameters in the URL portion of the request. This is the main method used for document retrieval. The following example makes use of GET method to fetch hello.htm:",
+                "GET /hello.htm HTTP/1.1\n" +
+                        "User-Agent: Mozilla/4.0 (compatible; MSIE5.01; Windows NT)\n" +
+                        "Host: www.shrcreation.com\n" +
+                        "Accept-Language: en-us\n" +
+                        "Accept-Encoding: gzip, deflate\n" +
+                        "Connection: Keep-Alive",
+                ""
+        );
+        final LearnDetailsModel l3 = new LearnDetailsModel(
+                "POST Method",
+                "The POST method is used when you want to send some data to the server, for example, file update, form data, etc. The following example makes use of POST method to send a form data to the server, which will be processed by a process.cgi and finally a response will be returned:",
+                "POST /cgi-bin/process.cgi HTTP/1.1\n" +
+                        "User-Agent: Mozilla/4.0 (compatible; MSIE5.01; Windows NT)\n" +
+                        "Host: www.shrcreation.com\n" +
+                        "Content-Type: text/xml; charset=utf-8\n" +
+                        "Content-Length: 88\n" +
+                        "Accept-Language: en-us\n" +
+                        "Accept-Encoding: gzip, deflate\n" +
+                        "Connection: Keep-Alive",
+                ""
+        );
+        final LearnDetailsModel l4 = new LearnDetailsModel(
+                "PUT Method",
+                "The PUT method is used to request the server to store the included entity-body at a location specified by the given URL. The following example requests the server to save the given entity-body in hello.htm at the root of the server:",
+                "PUT /hello.htm HTTP/1.1\n" +
+                        "User-Agent: Mozilla/4.0 (compatible; MSIE5.01; Windows NT)\n" +
+                        "Host: www.shrcreation.com\n" +
+                        "Accept-Language: en-us\n" +
+                        "Connection: Keep-Alive\n" +
+                        "Content-type: text/html\n" +
+                        "Content-Length: 182",
+                ""
+        );
+        final LearnDetailsModel l5 = new LearnDetailsModel(
+                "DELETE Method",
+                "The DELETE method is used to request the server to delete a file at a location specified by the given URL. The following example requests the server to delete the given file hello.htm at the root of the server:\n" +
+                        "\n",
+                "DELETE /hello.htm HTTP/1.1\n" +
+                        "User-Agent: Mozilla/4.0 (compatible; MSIE5.01; Windows NT)\n" +
+                        "Host: www.shrcreation.com\n" +
+                        "Accept-Language: en-us\n" +
+                        "Connection: Keep-Alive",
+                ""
+        );
+        list.add(l1);
+        list.add(l2);
+        list.add(l3);
+        list.add(l4);
+        list.add(l5);
+        return list;
+    }
+    //ExpressJs URL Building
+    private static List<LearnDetailsModel> ExpressJsURLBuilding(){
+        final List<LearnDetailsModel> list = new ArrayList<>();
+        final LearnDetailsModel l1 = new LearnDetailsModel(
+                "What is URL Building?",
+                "We can now define routes, but those are static or fixed. To use the dynamic routes, we SHOULD provide different types of routes. Using dynamic routes allows us to pass parameters and process based on them.\n" +
+                        "\n" +
+                        "Here is an example of a dynamic route −" +
+                        "\n\n" +
+                        "To test this go to http://localhost:3000/123. The following output will be displayed.",
+                "var express = require('express');\n" +
+                        "var app = express();\n" +
+                        "\n" +
+                        "app.get('/:id', function(req, res){\n" +
+                        "   res.send('The id you specified is ' + req.params.id);\n" +
+                        "});\n" +
+                        "app.listen(3000);",
+                "The id you specified is 123"
+        );
+        final LearnDetailsModel l2 = new LearnDetailsModel(
+                "What is Pattern Matched Routes?",
+                "ou can also use regex to restrict URL parameter matching. Let us assume you need the id to be a 5-digit long number. You can use the following route definition −" +
+                        "\n\n" +
+                        "Note that this will only match the requests that have a 5-digit long id. You can use more complex regexes to match/validate your routes. If none of your routes match the request, you'll get a \"Cannot GET <your-request-route>\" message as response. ",
+                "var express = require('express');\n" +
+                        "var app = express();\n" +
+                        "\n" +
+                        "app.get('/things/:id([0-9]{5})', function(req, res){\n" +
+                        "   res.send('id: ' + req.params.id);\n" +
+                        "});\n" +
+                        "\n" +
+                        "app.listen(3000);",
+                ""
+        );
+        list.add(l1);
+        list.add(l2);
+        return list;
+    }
+    //ExpressJs Middleware
+    private static List<LearnDetailsModel> ExpressJsMiddleware(){
+        final List<LearnDetailsModel> list = new ArrayList<>();
+        final LearnDetailsModel l1 = new LearnDetailsModel(
+                "What is Middleware?",
+                "Middleware functions are functions that have access to the request object (req), the response object (res), and the next middleware function in the application’s request-response cycle. These functions are used to modify req and res objects for tasks like parsing request bodies, adding response headers, etc.\n" +
+                        "\n" +
+                        "Here is a simple example of a middleware function in action −",
+                "var express = require('express');\n" +
+                        "var app = express();\n" +
+                        "\n" +
+                        "//Simple request time logger\n" +
+                        "app.use(function(req, res, next){\n" +
+                        "   console.log(\"A new request received at \" + Date.now());\n" +
+                        "   \n" +
+                        "   //This function call is very important. It tells that more processing is\n" +
+                        "   //required for the current request and is in the next middleware\n" +
+                        "   function route handler.\n" +
+                        "   next();\n" +
+                        "});\n" +
+                        "\n" +
+                        "app.listen(3000);",
+                ""
+        );
+        final LearnDetailsModel l2 = new LearnDetailsModel(
+                "Order of Middleware Calls",
+                "One of the most important things about middleware in Express is the order in which they are written/included in your file; the order in which they are executed, given that the route matches also needs to be considered.\n" +
+                        "\n" +
+                        "For example, in the following code snippet, the first function executes first, then the route handler and then the end function. This example summarizes how to use middleware before and after route handler; also how a route handler can be used as a middleware itself.",
+                "var express = require('express');\n" +
+                        "var app = express();\n" +
+                        "\n" +
+                        "//First middleware before response is sent\n" +
+                        "app.use(function(req, res, next){\n" +
+                        "   console.log(\"Start\");\n" +
+                        "   next();\n" +
+                        "});\n" +
+                        "\n" +
+                        "//Route handler\n" +
+                        "app.get('/', function(req, res, next){\n" +
+                        "   res.send(\"Middle\");\n" +
+                        "   next();\n" +
+                        "});\n" +
+                        "\n" +
+                        "app.use('/', function(req, res){\n" +
+                        "   console.log('End');\n" +
+                        "});\n" +
+                        "\n" +
+                        "app.listen(3000);",
+                "Start\n" +
+                        "End"
+        );
+        final LearnDetailsModel l3 = new LearnDetailsModel(
+                "Third Party Middleware",
+                "Following are some of the most commonly used middleware; we will also learn how to use/mount these −" +
+                        "\n\n" +
+                        "body-parser\n" +
+                        "This is used to parse the body of requests which have payloads attached to them. To mount body parser, we need to install it using npm install --save body-parser and to mount it, include the following lines in your index.js −\n" +
+                        "\n" +
+                        "var bodyParser = require('body-parser');\n" +
+                        "\n" +
+                        "//To parse URL encoded data\n" +
+                        "app.use(bodyParser.urlencoded({ extended: false }))\n" +
+                        "\n" +
+                        "//To parse json data\n" +
+                        "app.use(bodyParser.json())\n" +
+                        "To view all available options for body-parser, visit its github page.\n" +
+                        "\n" +
+                        "cookie-parser\n" +
+                        "It parses Cookie header and populate req.cookies with an object keyed by cookie names. To mount cookie parser, we need to install it using npm install --save cookie-parser and to mount it, include the following lines in your index.js −\n" +
+                        "\n" +
+                        "var cookieParser = require('cookie-parser');\n" +
+                        "app.use(cookieParser())\n" +
+                        "express-session\n" +
+                        "It creates a session middleware with the given options. We will discuss its usage in the Sessions section.\n" +
+                        "\n" +
+                        "We have many other third party middleware in ExpressJS. However, we have discussed only a few important ones here.",
+                "",
+                ""
+        );
+        list.add(l1);
+        list.add(l2);
+        list.add(l3);
+        return list;
+    }
+    //ExpressJs Templating
+    private static List<LearnDetailsModel> ExpressJsTemplating(){
+        final List<LearnDetailsModel> list = new ArrayList<>();
+        final LearnDetailsModel l1 = new LearnDetailsModel(
+                "What is Templating?",
+                "Pug is a templating engine for Express. Templating engines are used to remove the cluttering of our server code with HTML, concatenating strings wildly to existing HTML templates. Pug is a very powerful templating engine which has a variety of features including filters, includes, inheritance, interpolation, etc. There is a lot of ground to cover on this.\n" +
+                        "\n" +
+                        "To use Pug with Express, we need to install it,\n" +
+                        "\n" +
+                        "npm install --save pug\n\n" +
+                        "Now that Pug is installed, set it as the templating engine for your app. You don't need to 'require' it. Add the following code to your index.js file." +
+                        "\n\n" +
+                        "app.set('view engine', 'pug');\n" +
+                        "app.set('views','./views');\n" +
+                        "Now create a new directory called views. Inside that create a file called first_view.pug, and enter the following data in it.\n" +
+                        "\n" +
+                        "doctype html\n" +
+                        "html\n" +
+                        "   head\n" +
+                        "      title = \"Hello Pug\"\n" +
+                        "   body\n" +
+                        "      p.greetings#people Hello World!\n" +
+                        "To run this page, add the following route to your app −\n" +
+                        "\n" +
+                        "app.get('/first_template', function(req, res){\n" +
+                        "   res.render('first_view');\n" +
+                        "});\n" +
+                        "You will get the output as − Hello World! Pug converts this very simple looking markup to html. We don’t need to keep track of closing our tags, no need to use class and id keywords, rather use '.' and '#' to define them. The above code first gets converted to −",
+                "<!DOCTYPE html>\n" +
+                        "<html>\n" +
+                        "   <head>\n" +
+                        "      <title>Hello Pug</title>\n" +
+                        "   </head>\n" +
+                        "   \n" +
+                        "   <body>\n" +
+                        "      <p class = \"greetings\" id = \"people\">Hello World!</p>\n" +
+                        "   </body>\n" +
+                        "</html>",
+                ""
+        );
+        final LearnDetailsModel l2 = new LearnDetailsModel(
+                "Important Features of Pug",
+                "Let us now explore a few important features of Pug.\n" +
+                        "\n" +
+                        "Simple Tags\n" +
+                        "Tags are nested according to their indentation. Like in the above example, <title> was indented within the <head> tag, so it was inside it. But the <body> tag was on the same indentation, so it was a sibling of the <head> tag.\n" +
+                        "\n" +
+                        "We don’t need to close tags, as soon as Pug encounters the next tag on same or outer indentation level, it closes the tag for us.\n" +
+                        "\n" +
+                        "To put text inside of a tag, we have 3 methods −\n" +
+                        "\n" +
+                        "Space separated\n" +
+                        "\n" +
+                        "h1 Welcome to Pug\n" +
+                        "Piped text\n" +
+                        "\n" +
+                        "div\n" +
+                        "   | To insert multiline text, \n" +
+                        "   | You can use the pipe operator.\n" +
+                        "Block of text\n" +
+                        "\n" +
+                        "div.\n" +
+                        "   But that gets tedious if you have a lot of text.\n" +
+                        "   You can use \".\" at the end of tag to denote block of text.\n" +
+                        "   To put tags inside this block, simply enter tag in a new line and \n" +
+                        "   indent it accordingly.",
+                "",
+                ""
+        );
+        final LearnDetailsModel l3 = new LearnDetailsModel(
+                "Comments",
+                "Pug uses the same syntax as JavaScript(//) for creating comments. These comments are converted to the html comments(<!--comment-->). For example,\n" +
+                        "\n" +
+                        "//This is a Pug comment\n" +
+                        "This comment gets converted to the following.\n" +
+                        "\n" +
+                        "<!--This is a Pug comment-->",
+                "",
+                ""
+        );
+        final LearnDetailsModel l4 = new LearnDetailsModel(
+                "Attributes",
+                "To define attributes, we use a comma separated list of attributes, in parenthesis. Class and ID attributes have special representations. The following line of code covers defining attributes, classes and id for a given html tag.\n" +
+                        "\n" +
+                        "div.container.column.main#division(width = \"100\", height = \"100\")\n" +
+                        "This line of code, gets converted to the following. −\n" +
+                        "\n" +
+                        "<div class = \"container column main\" id = \"division\" width = \"100\" height = \"100\"></div>",
+                "",
+                ""
+        );
+        final LearnDetailsModel l5 = new LearnDetailsModel(
+                "Passing Values to Templates",
+                "When we render a Pug template, we can actually pass it a value from our route handler, which we can then use in our template. Create a new route handler with the following.\n" +
+                        "\n" +
+                        "var express = require('express');\n" +
+                        "var app = express();\n" +
+                        "\n" +
+                        "app.get('/dynamic_view', function(req, res){\n" +
+                        "   res.render('dynamic', {\n" +
+                        "      name: \"TutorialsPoint\", \n" +
+                        "      url:\"http://www.tutorialspoint.com\"\n" +
+                        "   });\n" +
+                        "});\n" +
+                        "\n" +
+                        "app.listen(3000);\n" +
+                        "And create a new view file in views directory, called dynamic.pug, with the following code −",
+                "html\n" +
+                        "   head\n" +
+                        "      title=name\n" +
+                        "   body\n" +
+                        "      h1=name\n" +
+                        "      a(href = url) URL",
+                ""
+        );
+        final LearnDetailsModel l6 = new LearnDetailsModel(
+                "Conditionals",
+                "We can use conditional statements and looping constructs as well.\n" +
+                        "\n" +
+                        "Consider the following −\n" +
+                        "\n" +
+                        "If a User is logged in, the page should display \"Hi, User\" and if not, then the \"Login/Sign Up\" link. To achieve this, we can define a simple template like −",
+                "html\n" +
+                        "   head\n" +
+                        "      title Simple template\n" +
+                        "   body\n" +
+                        "      if(user)\n" +
+                        "         h1 Hi, #{user.name}\n" +
+                        "      else\n" +
+                        "         a(href = \"/sign_up\") Sign Up",
+                ""
+        );
+        final LearnDetailsModel l7 = new LearnDetailsModel(
+                "Include and Components",
+                "Pug provides a very intuitive way to create components for a web page. For example, if you see a news website, the header with logo and categories is always fixed. Instead of copying that to every view we create, we can use the include feature. Following example shows how we can use this feature −\n" +
+                        "\n" +
+                        "Create 3 views with the following code −\n" +
+                        "\n" +
+                        "HEADER.PUG\n" +
+                        "\n" +
+                        "div.header.\n" +
+                        "   I'm the header for this website.\n" +
+                        "CONTENT.PUG\n" +
+                        "\n" +
+                        "html\n" +
+                        "   head\n" +
+                        "      title Simple template\n" +
+                        "   body\n" +
+                        "      include ./header.pug\n" +
+                        "      h3 I'm the main content\n" +
+                        "      include ./footer.pug\n" +
+                        "FOOTER.PUG\n" +
+                        "\n" +
+                        "div.footer.\n" +
+                        "   I'm the footer for this website.\n" +
+                        "Create a route for this as follows −",
+                "var express = require('express');\n" +
+                        "var app = express();\n" +
+                        "\n" +
+                        "app.get('/components', function(req, res){\n" +
+                        "    res.render('content');\n" +
+                        "});\n" +
+                        "\n" +
+                        "app.listen(3000);",
+                ""
+        );
+        list.add(l1);
+        list.add(l2);
+        list.add(l3);
+        list.add(l4);
+        list.add(l5);
+        list.add(l6);
+        list.add(l7);
+        return list;
+    }
+    //ExpressJs Static Files
+    private static List<LearnDetailsModel> ExpressJsStaticFiles(){
+        final List<LearnDetailsModel> list = new ArrayList<>();
+        final LearnDetailsModel l1 = new LearnDetailsModel(
+                "How to Serving static files?",
+                "Static files are files that clients download as they are from the server. Create a new directory, public. Express, by default does not allow you to serve static files. You need to enable it using the following built-in middleware.\n" +
+                        "\n" +
+                        "app.use(express.static('public'));\n" +
+                        "Note − Express looks up the files relative to the static directory, so the name of the static directory is not part of the URL.\n" +
+                        "\n" +
+                        "Note that the root route is now set to your public dir, so all static files you load will be considering public as root. To test that this is working fine, add any image file in your new public dir and change its name to \"testimage.jpg\". In your views, create a new view and include this file like −",
+                "html\n" +
+                        "   head\n" +
+                        "   body\n" +
+                        "      h3 Testing static file serving:\n" +
+                        "      img(src = \"/testimage.jpg\", alt = \"Testing Image",
+                ""
+        );
+        final LearnDetailsModel l2 = new LearnDetailsModel(
+                "Multiple Static Directories",
+                "We can also set multiple static assets directories using the following program −",
+                "var express = require('express');\n" +
+                        "var app = express();\n" +
+                        "\n" +
+                        "app.use(express.static('public'));\n" +
+                        "app.use(express.static('images'));\n" +
+                        "\n" +
+                        "app.listen(3000);",
+                ""
+        );
+        final LearnDetailsModel l3 = new LearnDetailsModel(
+                "Virtual Path Prefix",
+                "We can also provide a path prefix for serving static files. For example, if you want to provide a path prefix like '/static', you need to include the following code in your index.js file −",
+                "var express = require('express');\n" +
+                        "var app = express();\n" +
+                        "\n" +
+                        "app.use('/static', express.static('public'));\n" +
+                        "\n" +
+                        "app.listen(3000);",
+                ""
+        );
+        list.add(l1);
+        list.add(l2);
+        list.add(l3);
+        return list;
+    }
+    //ExpressJs Form Data
+    private static List<LearnDetailsModel> ExpressJsFormData(){
+        final List<LearnDetailsModel> list = new ArrayList<>();
+        final LearnDetailsModel l1 = new LearnDetailsModel(
+                "What is Form data?",
+                "Forms are an integral part of the web. Almost every website we visit offers us forms that submit or fetch some information for us. To get started with forms, we will first install the body-parser(for parsing JSON and url-encoded data) and multer(for parsing multipart/form data) middleware.\n" +
+                        "\n" +
+                        "To install the body-parser and multer, go to your terminal and use −\n" +
+                        "\n" +
+                        "npm install --save body-parser multer\n" +
+                        "Replace your index.js file contents with the following code −",
+                "var express = require('express');\n" +
+                        "var bodyParser = require('body-parser');\n" +
+                        "var multer = require('multer');\n" +
+                        "var upload = multer();\n" +
+                        "var app = express();\n" +
+                        "\n" +
+                        "app.get('/', function(req, res){\n" +
+                        "   res.render('form');\n" +
+                        "});\n" +
+                        "\n" +
+                        "app.set('view engine', 'pug');\n" +
+                        "app.set('views', './views');\n" +
+                        "\n" +
+                        "// for parsing application/json\n" +
+                        "app.use(bodyParser.json()); \n" +
+                        "\n" +
+                        "// for parsing application/xwww-\n" +
+                        "app.use(bodyParser.urlencoded({ extended: true })); \n" +
+                        "//form-urlencoded\n" +
+                        "\n" +
+                        "// for parsing multipart/form-data\n" +
+                        "app.use(upload.array()); \n" +
+                        "app.use(express.static('public'));\n" +
+                        "\n" +
+                        "app.post('/', function(req, res){\n" +
+                        "   console.log(req.body);\n" +
+                        "   res.send(\"recieved your request!\");\n" +
+                        "});\n" +
+                        "app.listen(3000);",
+                ""
+        );
+        final LearnDetailsModel l2 = new LearnDetailsModel(
+                "form.pug",
+                "After importing the body parser and multer, we will use the body-parser for parsing json and x-www-form-urlencoded header requests, while we will use multer for parsing multipart/form-data.\n" +
+                        "\n" +
+                        "Let us create an html form to test this out. Create a new view called form.pug with the following code −",
+                "html\n" +
+                        "html\n" +
+                        "   head\n" +
+                        "      title Form Tester\n" +
+                        "   body\n" +
+                        "      form(action = \"/\", method = \"POST\")\n" +
+                        "         div\n" +
+                        "            label(for = \"say\") Say:\n" +
+                        "            input(name = \"say\" value = \"Hi\")\n" +
+                        "         br\n" +
+                        "         div\n" +
+                        "            label(for = \"to\") To:\n" +
+                        "            input(name = \"to\" value = \"Express forms\")\n" +
+                        "         br\n" +
+                        "         button(type = \"submit\") Send my greetings",
+                "Run your server using the following.\n" +
+                        "\n" +
+                        "nodemon index.js"
+        );
+        list.add(l1);
+        list.add(l2);
+        return list;
+    }
+    //ExpressJs Database
+    private static List<LearnDetailsModel> ExpressJsDatabase(){
+        final List<LearnDetailsModel> list = new ArrayList<>();
+        final LearnDetailsModel l1 = new LearnDetailsModel(
+                "What is Database?",
+                "We keep receiving requests, but end up not storing them anywhere. We need a Database to store the data. For this, we will make use of the NoSQL database called MongoDB." +
+                        "\n\n" +
+                        "In order to use Mongo with Express, we need a client API for node. There are multiple options for us, but for this tutorial, we will stick to mongoose. Mongoose is used for document Modeling in Node for MongoDB. For document modeling, we create a Model (much like a class in document oriented programming), and then we produce documents using this Model (like we create documents of a class in OOP). All our processing will be done on these \"documents\", then finally, we will write these documents in our database.",
+                "",
+                ""
+        );
+        final LearnDetailsModel l2 = new LearnDetailsModel(
+                "Setting up Mongoose",
+                "Now that you have installed Mongo, let us install Mongoose, the same way we have been installing our other node packages −\n" +
+                        "\n" +
+                        "npm install --save mongoose\n" +
+                        "Before we start using mongoose, we have to create a database using the Mongo shell. To create a new database, open your terminal and enter \"mongo\". A Mongo shell will start, enter the following code −\n" +
+                        "\n" +
+                        "use my_db\n" +
+                        "A new database will be created for you. Whenever you open up the mongo shell, it will default to \"test\" db and you will have to change to your database using the same command as above.\n" +
+                        "\n" +
+                        "To use Mongoose, we will require it in our index.js file and then connect to the mongodb service running on mongodb://localhost.\n" +
+                        "\n" +
+                        "var mongoose = require('mongoose');\n" +
+                        "mongoose.connect('mongodb://localhost/my_db');\n" +
+                        "Now our app is connected to our database, let us create a new Model. This model will act as a collection in our database. To create a new Model, use the following code, before defining any route −",
+                "var personSchema = mongoose.Schema({\n" +
+                        "   name: String,\n" +
+                        "   age: Number,\n" +
+                        "   nationality: String\n" +
+                        "});\n" +
+                        "var Person = mongoose.model(\"Person\", personSchema);",
+                ""
+        );
+        final LearnDetailsModel l3 = new LearnDetailsModel(
+                "Saving Documents",
+                "Now, we will create a new html form; this form will help you get the details of a person and save it to our database. " +
+                        "To create the form, create a new view file called person.pug in views directory with the following content −" +
+                        "\n\n" +
+                        "Also add a new get route in index.js to render this document −\n" +
+                        "\n" +
+                        "app.get('/person', function(req, res){\n" +
+                        "   res.render('person');\n" +
+                        "});",
+                "html\n" +
+                        "head\n" +
+                        "   title Person\n" +
+                        "   body\n" +
+                        "      form(action = \"/person\", method = \"POST\")\n" +
+                        "      div\n" +
+                        "         label(for = \"name\") Name: \n" +
+                        "         input(name = \"name\")\n" +
+                        "      br\n" +
+                        "      div\n" +
+                        "         label(for = \"age\") Age: \n" +
+                        "         input(name = \"age\")\n" +
+                        "      br\n" +
+                        "      div\n" +
+                        "         label(for = \"nationality\") Nationality: \n" +
+                        "         input(name = \"nationality\")\n" +
+                        "      br\n" +
+                        "      button(type = \"submit\") Create new person",
+                ""
+        );
+        final LearnDetailsModel l4 = new LearnDetailsModel(
+                "Retrieving Documents",
+                "Mongoose provides a lot of functions for retrieving documents, we will focus on 3 of those. All these functions also take a callback as the last parameter, and just like the save function, their arguments are error and response. The three functions are as follows −\n" +
+                        "\n" +
+                        "Model.find(conditions, callback)\n" +
+                        "This function finds all the documents matching the fields in conditions object. Same operators used in Mongo also work in mongoose. For example,",
+                "Person.find(function(err, response){\n" +
+                        "   console.log(response);\n" +
+                        "});",
+                ""
+        );
+        final LearnDetailsModel l5 = new LearnDetailsModel(
+                "Updating Documents",
+                "Mongoose provides 3 functions to update documents. The functions are described below −\n" +
+                        "\n" +
+                        "Model.update(condition, updates, callback)\n" +
+                        "This function takes a conditions and updates an object as input and applies the changes to all the documents matching the conditions in the collection. For example, following code will update the nationality \"American\" in all Person documents −",
+                "Person.update({age: 25}, {nationality: \"American\"}, function(err, response){\n" +
+                        "   console.log(response);\n" +
+                        "});",
+                ""
+        );
+        final LearnDetailsModel l6 = new LearnDetailsModel(
+                "Deleting Documents",
+                "We have covered Create, Read and Update, now we will see how Mongoose can be used to Delete documents. We have 3 functions here, exactly like update.\n" +
+                        "\n" +
+                        "Model.remove(condition, [callback])\n" +
+                        "This function takes a condition object as input and removes all documents matching the conditions. For example, if we need to remove all people aged 20, use the following syntax −",
+                "Person.remove({age:20});",
+                ""
+        );
+        list.add(l1);
+        list.add(l2);
+        list.add(l3);
+        list.add(l4);
+        list.add(l5);
+        list.add(l6);
+        return list;
+    }
+    //ExpressJs Cookies
+    private static List<LearnDetailsModel> ExpressJsCookies(){
+        final List<LearnDetailsModel> list = new ArrayList<>();
+        final LearnDetailsModel l1 = new LearnDetailsModel(
+                "How to use Cookies?",
+                "Cookies are simple, small files/data that are sent to client with a server request and stored on the client side. Every time the user loads the website back, this cookie is sent with the request. This helps us keep track of the user’s actions.\n" +
+                        "\n" +
+                        "The following are the numerous uses of the HTTP Cookies −\n" +
+                        "\n" +
+                        "Session management\n" +
+                        "Personalization(Recommendation systems)\n" +
+                        "User tracking" +
+                        "\n\n" +
+                        "To use cookies with Express, we need the cookie-parser middleware. To install it, use the following code −\n" +
+                        "\n" +
+                        "npm install --save cookie-parser" +
+                        "\n\n" +
+                        "Now to use cookies with Express, we will require the cookie-parser. cookie-parser is a middleware which parses cookies attached to the client request object. To use it, we will require it in our index.js file; this can be used the same way as we use other middleware. Here, we will use the following code.\n" +
+                        "\n" +
+                        "var cookieParser = require('cookie-parser');\n" +
+                        "app.use(cookieParser());\n" +
+                        "cookie-parser parses Cookie header and populates req.cookies with an object keyed by the cookie names. To set a new cookie, let us define a new route in your Express app like −",
+                "var express = require('express');\n" +
+                        "var app = express();\n" +
+                        "\n" +
+                        "app.get('/', function(req, res){\n" +
+                        "   res.cookie('name', 'express').send('cookie set'); //Sets name = express\n" +
+                        "});\n" +
+                        "\n" +
+                        "app.listen(3000);",
+                ""
+        );
+        final LearnDetailsModel l2 = new LearnDetailsModel(
+                "Adding Cookies with Expiration Time",
+                "ou can add cookies that expire. To add a cookie that expires, just pass an object with property 'expire' set to the time when you want it to expire. For example,",
+                "//Expires after 360000 ms from the time it is set.\n" +
+                        "res.cookie(name, 'value', {expire: 360000 + Date.now()}); ",
+                ""
+        );
+        final LearnDetailsModel l3 = new LearnDetailsModel(
+                "Deleting Existing Cookies",
+                "To delete a cookie, use the clearCookie function. For example, if you need to clear a cookie named foo, use the following code.",
+                "var express = require('express');\n" +
+                        "var app = express();\n" +
+                        "\n" +
+                        "app.get('/clear_cookie_foo', function(req, res){\n" +
+                        "   res.clearCookie('foo');\n" +
+                        "   res.send('cookie foo cleared');\n" +
+                        "});\n" +
+                        "\n" +
+                        "app.listen(3000);",
+                ""
+        );
+        list.add(l1);
+        list.add(l2);
+        list.add(l3);
+        return list;
+    }
+    //ExpressJs Sessions
+    private static List<LearnDetailsModel> ExpressJsSessions(){
+        final List<LearnDetailsModel> list = new ArrayList<>();
+        final LearnDetailsModel l1 = new LearnDetailsModel(
+                "How to use Sessions?",
+                "HTTP is stateless; in order to associate a request to any other request, you need a way to store user data between HTTP requests. Cookies and URL parameters are both suitable ways to transport data between the client and the server. But they are both readable and on the client side. Sessions solve exactly this problem. You assign the client an ID and it makes all further requests using that ID. Information associated with the client is stored on the server linked to this ID.\n" +
+                        "\n" +
+                        "We will need the Express-session, so install it using the following code.\n" +
+                        "\n" +
+                        "npm install --save express-session",
+                "",
+                ""
+        );
+        final LearnDetailsModel l2 = new LearnDetailsModel(
+                "cookie-parser",
+                "We will put the session and cookie-parser middleware in place. In this example, we will use the default store for storing sessions, i.e., MemoryStore. Never use this in production environments. The session middleware handles all things for us, i.e., creating the session, setting the session cookie and creating the session object in req object.\n" +
+                        "\n" +
+                        "Whenever we make a request from the same client again, we will have their session information stored with us (given that the server was not restarted). We can add more properties to the session object. In the following example, we will create a view counter for a client." +
+                        "\n\n" +
+                        "What the bellow code does is, when a user visits the site, it creates a new session for the user and assigns them a cookie. Next time the user comes, the cookie is checked and the page_view session variable is updated accordingly.\n" +
+                        "\n" +
+                        "Now if you run the app and go to localhost:3000, the following output will be displayed.",
+                "var express = require('express');\n" +
+                        "var cookieParser = require('cookie-parser');\n" +
+                        "var session = require('express-session');\n" +
+                        "\n" +
+                        "var app = express();\n" +
+                        "\n" +
+                        "app.use(cookieParser());\n" +
+                        "app.use(session({secret: \"Shh, its a secret!\"}));\n" +
+                        "\n" +
+                        "app.get('/', function(req, res){\n" +
+                        "   if(req.session.page_views){\n" +
+                        "      req.session.page_views++;\n" +
+                        "      res.send(\"You visited this page \" + req.session.page_views + \" times\");\n" +
+                        "   } else {\n" +
+                        "      req.session.page_views = 1;\n" +
+                        "      res.send(\"Welcome to this page for the first time!\");\n" +
+                        "   }\n" +
+                        "});\n" +
+                        "app.listen(3000);",
+                "Welcome to this page for the first time!"
+        );
+        list.add(l1);
+        list.add(l2);
+        return list;
+    }
+    //ExpressJs Authentication
+    private static List<LearnDetailsModel> ExpressJsAuthentication(){
+        final List<LearnDetailsModel> list = new ArrayList<>();
+        final LearnDetailsModel l1 = new LearnDetailsModel(
+                "How to use Authentication?",
+                "Authentication is a process in which the credentials provided are compared to those on file in a database of authorized users' information on a local operating system or within an authentication server. If the credentials match, the process is completed and the user is granted authorization for access.\n" +
+                        "\n" +
+                        "For us to create an authentication system, we will need to create a sign up page and a user-password store. The following code creates an account for us and stores it in memory. This is just for the purpose of demo; it is recommended that a persistent storage (database or files) is always used to store user information.",
+                "var express = require('express');\n" +
+                        "var app = express();\n" +
+                        "var bodyParser = require('body-parser');\n" +
+                        "var multer = require('multer');\n" +
+                        "var upload = multer(); \n" +
+                        "var session = require('express-session');\n" +
+                        "var cookieParser = require('cookie-parser');\n" +
+                        "\n" +
+                        "app.set('view engine', 'pug');\n" +
+                        "app.set('views','./views');\n" +
+                        "\n" +
+                        "app.use(bodyParser.json());\n" +
+                        "app.use(bodyParser.urlencoded({ extended: true })); \n" +
+                        "app.use(upload.array());\n" +
+                        "app.use(cookieParser());\n" +
+                        "app.use(session({secret: \"Your secret key\"}));\n" +
+                        "\n" +
+                        "var Users = [];\n" +
+                        "\n" +
+                        "app.get('/signup', function(req, res){\n" +
+                        "   res.render('signup');\n" +
+                        "});\n" +
+                        "\n" +
+                        "app.post('/signup', function(req, res){\n" +
+                        "   if(!req.body.id || !req.body.password){\n" +
+                        "      res.status(\"400\");\n" +
+                        "      res.send(\"Invalid details!\");\n" +
+                        "   } else {\n" +
+                        "      Users.filter(function(user){\n" +
+                        "         if(user.id === req.body.id){\n" +
+                        "            res.render('signup', {\n" +
+                        "               message: \"User Already Exists! Login or choose another user id\"});\n" +
+                        "         }\n" +
+                        "      });\n" +
+                        "      var newUser = {id: req.body.id, password: req.body.password};\n" +
+                        "      Users.push(newUser);\n" +
+                        "      req.session.user = newUser;\n" +
+                        "      res.redirect('/protected_page');\n" +
+                        "   }\n" +
+                        "});\n" +
+                        "\n" +
+                        "app.listen(3000);",
+                ""
+        );
+        final LearnDetailsModel l2 = new LearnDetailsModel(
+                "SIGNUP.JADE",
+                "Now for the signup form, create a new view called signup.jade.",
+                "html\n" +
+                        "   head\n" +
+                        "      title Signup\n" +
+                        "   body\n" +
+                        "      if(message)\n" +
+                        "         h4 #{message}\n" +
+                        "         form(action = \"/signup\" method = \"POST\")\n" +
+                        "         input(name = \"id\" type = \"text\" required placeholder = \"User ID\")\n" +
+                        "         input(name = \"password\" type = \"password\" required placeholder = \"Password\")\n" +
+                        "         button(type = \"Submit\") Sign me up!",
+                ""
+        );
+        list.add(l1);
+        list.add(l2);
+        return list;
+    }
+    //ExpressJs RESTFul APIs
+    private static List<LearnDetailsModel> ExpressJsRESTFulAPIs(){
+        final List<LearnDetailsModel> list = new ArrayList<>();
+        final LearnDetailsModel l1 = new LearnDetailsModel(
+                "What is RESTFul APIs?",
+                "An API is always needed to create mobile applications, single page applications, use AJAX calls and provide data to clients. An popular architectural style of how to structure and name these APIs and the endpoints is called REST(Representational Transfer State). HTTP 1.1 was designed keeping REST principles in mind. REST was introduced by Roy Fielding in 2000 in his Paper Fielding Dissertations.\n" +
+                        "\n" +
+                        "RESTful URIs and methods provide us with almost all information we need to process a request. The table given below summarizes how the various verbs should be used and how URIs should be named. We will be creating a movies API towards the end; let us now discuss how it will be structured.",
+                "",
+                ""
+        );
+        final LearnDetailsModel l2 = new LearnDetailsModel(
+                "index.js",
+                "Let us now create this API in Express. We will be using JSON as our transport data format as it is easy to work with in JavaScript and has other benefits. Replace your index.js file with the movies.js file as in the following program.",
+                "var express = require('express');\n" +
+                        "var bodyParser = require('body-parser');\n" +
+                        "var multer = require('multer');\n" +
+                        "var upload = multer();\n" +
+                        "\n" +
+                        "var app = express();\n" +
+                        "\n" +
+                        "app.use(cookieParser());\n" +
+                        "app.use(bodyParser.json());\n" +
+                        "app.use(bodyParser.urlencoded({ extended: true }));\n" +
+                        "app.use(upload.array());\n" +
+                        "\n" +
+                        "//Require the Router we defined in movies.js\n" +
+                        "var movies = require('./movies.js');\n" +
+                        "\n" +
+                        "//Use the Router on the sub route /movies\n" +
+                        "app.use('/movies', movies);\n" +
+                        "\n" +
+                        "app.listen(3000);",
+                ""
+        );
+        final LearnDetailsModel l3 = new LearnDetailsModel(
+                "Router",
+                "Start by setting up the movies.js file. We are not using a database to store the movies but are storing them in memory; so every time the server restarts, the movies added by us will vanish. This can easily be mimicked using a database or a file (using node fs module).\n" +
+                        "\n" +
+                        "Once you import Express then, create a Router and export it using module.exports −",
+                "var express = require('express');\n" +
+                        "var router = express.Router();\n" +
+                        "var movies = [\n" +
+                        "   {id: 101, name: \"Fight Club\", year: 1999, rating: 8.1},\n" +
+                        "   {id: 102, name: \"Inception\", year: 2010, rating: 8.7},\n" +
+                        "   {id: 103, name: \"The Dark Knight\", year: 2008, rating: 9},\n" +
+                        "   {id: 104, name: \"12 Angry Men\", year: 1957, rating: 8.9}\n" +
+                        "];\n" +
+                        "\n" +
+                        "//Routes will go here\n" +
+                        "module.exports = router;",
+                ""
+        );
+        final LearnDetailsModel l4 = new LearnDetailsModel(
+                "GET routes",
+                "Let us define the GET route for getting all the movies −\n" +
+                        "\n" +
+                        "router.get('/', function(req, res){\n" +
+                        "   res.json(movies);\n" +
+                        "});\n" +
+                        "To test out if this is working fine, run your app, then open your terminal and enter −\n" +
+                        "\n" +
+                        "curl -i -H \"Accept: application/json\" -H \"Content-Type: application/json\" -X GET \n" +
+                        "localhost:3000/movies\n" +
+                        "The following response will be displayed −\n" +
+                        "\n" +
+                        "[{\"id\":101,\"name\":\"Fight Club\",\"year\":1999,\"rating\":8.1},\n" +
+                        "{\"id\":102,\"name\":\"Inception\",\"year\":2010,\"rating\":8.7},\n" +
+                        "{\"id\":103,\"name\":\"The Dark Knight\",\"year\":2008,\"rating\":9},\n" +
+                        "{\"id\":104,\"name\":\"12 Angry Men\",\"year\":1957,\"rating\":8.9}]\n" +
+                        "We have a route to get all the movies. Let us now create a route to get a specific movie by its id.\n" +
+                        "\n" +
+                        "router.get('/:id([0-9]{3,})', function(req, res){\n" +
+                        "   var currMovie = movies.filter(function(movie){\n" +
+                        "      if(movie.id == req.params.id){\n" +
+                        "         return true;\n" +
+                        "      }\n" +
+                        "   });\n" +
+                        "   if(currMovie.length == 1){\n" +
+                        "      res.json(currMovie[0])\n" +
+                        "   } else {\n" +
+                        "      res.status(404);//Set status to 404 as movie was not found\n" +
+                        "      res.json({message: \"Not Found\"});\n" +
+                        "   }\n" +
+                        "});\n" +
+                        "This will get us the movies according to the id that we provided. To check the output, use the following command in your terminal −\n" +
+                        "\n" +
+                        "curl -i -H \"Accept: application/json\" -H \"Content-Type: application/json\" -X GET \n" +
+                        "localhost:3000/movies/101\n" +
+                        "You'll get the following response −\n" +
+                        "\n" +
+                        "{\"id\":101,\"name\":\"Fight Club\",\"year\":1999,\"rating\":8.1}\n" +
+                        "If you visit an invalid route, it will produce a cannot GET error while if you visit a valid route with an id that doesn’t exist, it will produce a 404 error.\n" +
+                        "\n" +
+                        "We are done with the GET routes, let us now move on to the POST route.",
+                "",
+                ""
+        );
+        final LearnDetailsModel l5 = new LearnDetailsModel(
+                "POST route",
+                "Use the following route to handle the POSTed data −",
+                "router.post('/', function(req, res){\n" +
+                        "   //Check if all fields are provided and are valid:\n" +
+                        "   if(!req.body.name ||\n" +
+                        "      !req.body.year.toString().match(/^[0-9]{4}$/g) ||\n" +
+                        "      !req.body.rating.toString().match(/^[0-9]\\.[0-9]$/g)){\n" +
+                        "      \n" +
+                        "      res.status(400);\n" +
+                        "      res.json({message: \"Bad Request\"});\n" +
+                        "   } else {\n" +
+                        "      var newId = movies[movies.length-1].id+1;\n" +
+                        "      movies.push({\n" +
+                        "         id: newId,\n" +
+                        "         name: req.body.name,\n" +
+                        "         year: req.body.year,\n" +
+                        "         rating: req.body.rating\n" +
+                        "      });\n" +
+                        "      res.json({message: \"New movie created.\", location: \"/movies/\" + newId});\n" +
+                        "   }\n" +
+                        "});",
+                ""
+        );final LearnDetailsModel l6 = new LearnDetailsModel(
+                "PUT route",
+                "The PUT route is almost the same as the POST route. We will be specifying the id for the object that'll be updated/created. Create the route in the following way.",
+                "router.put('/:id', function(req, res){\n" +
+                        "   //Check if all fields are provided and are valid:\n" +
+                        "   if(!req.body.name ||\n" +
+                        "      !req.body.year.toString().match(/^[0-9]{4}$/g) ||\n" +
+                        "      !req.body.rating.toString().match(/^[0-9]\\.[0-9]$/g) ||\n" +
+                        "      !req.params.id.toString().match(/^[0-9]{3,}$/g)){\n" +
+                        "      \n" +
+                        "      res.status(400);\n" +
+                        "      res.json({message: \"Bad Request\"});\n" +
+                        "   } else {\n" +
+                        "      //Gets us the index of movie with given id.\n" +
+                        "      var updateIndex = movies.map(function(movie){\n" +
+                        "         return movie.id;\n" +
+                        "      }).indexOf(parseInt(req.params.id));\n" +
+                        "      \n" +
+                        "      if(updateIndex === -1){\n" +
+                        "         //Movie not found, create new\n" +
+                        "         movies.push({\n" +
+                        "            id: req.params.id,\n" +
+                        "            name: req.body.name,\n" +
+                        "            year: req.body.year,\n" +
+                        "            rating: req.body.rating\n" +
+                        "         });\n" +
+                        "         res.json({message: \"New movie created.\", location: \"/movies/\" + req.params.id});\n" +
+                        "      } else {\n" +
+                        "         //Update existing movie\n" +
+                        "         movies[updateIndex] = {\n" +
+                        "            id: req.params.id,\n" +
+                        "            name: req.body.name,\n" +
+                        "            year: req.body.year,\n" +
+                        "            rating: req.body.rating\n" +
+                        "         };\n" +
+                        "         res.json({message: \"Movie id \" + req.params.id + \" updated.\", \n" +
+                        "            location: \"/movies/\" + req.params.id});\n" +
+                        "      }\n" +
+                        "   }\n" +
+                        "});",
+                ""
+        );final LearnDetailsModel l7 = new LearnDetailsModel(
+                "DELETE route",
+                "Use the following code to create a delete route. −",
+                "router.delete('/:id', function(req, res){\n" +
+                        "   var removeIndex = movies.map(function(movie){\n" +
+                        "      return movie.id;\n" +
+                        "   }).indexOf(req.params.id); //Gets us the index of movie with given id.\n" +
+                        "   \n" +
+                        "   if(removeIndex === -1){\n" +
+                        "      res.json({message: \"Not found\"});\n" +
+                        "   } else {\n" +
+                        "      movies.splice(removeIndex, 1);\n" +
+                        "      res.send({message: \"Movie id \" + req.params.id + \" removed.\"});\n" +
+                        "   }\n" +
+                        "});",
+                ""
+        );final LearnDetailsModel l8 = new LearnDetailsModel(
+                "movies.js",
+                "Check the route in the same way as we checked the other routes. On successful deletion(for example id 105), you will get the following output −\n" +
+                        "\n" +
+                        "{message: \"Movie id 105 removed.\"}\n" +
+                        "Finally, our movies.js file will look like the following.",
+                "var express = require('express');\n" +
+                        "var router = express.Router();\n" +
+                        "var movies = [\n" +
+                        "   {id: 101, name: \"Fight Club\", year: 1999, rating: 8.1},\n" +
+                        "   {id: 102, name: \"Inception\", year: 2010, rating: 8.7},\n" +
+                        "   {id: 103, name: \"The Dark Knight\", year: 2008, rating: 9},\n" +
+                        "   {id: 104, name: \"12 Angry Men\", year: 1957, rating: 8.9}\n" +
+                        "];\n" +
+                        "router.get('/:id([0-9]{3,})', function(req, res){\n" +
+                        "   var currMovie = movies.filter(function(movie){\n" +
+                        "      if(movie.id == req.params.id){\n" +
+                        "         return true;\n" +
+                        "      }\n" +
+                        "   });\n" +
+                        "   \n" +
+                        "   if(currMovie.length == 1){\n" +
+                        "      res.json(currMovie[0])\n" +
+                        "   } else {\n" +
+                        "      res.status(404);  //Set status to 404 as movie was not found\n" +
+                        "      res.json({message: \"Not Found\"});\n" +
+                        "   }\n" +
+                        "});\n" +
+                        "router.post('/', function(req, res){\n" +
+                        "   //Check if all fields are provided and are valid:\n" +
+                        "   if(!req.body.name ||\n" +
+                        "      !req.body.year.toString().match(/^[0-9]{4}$/g) ||\n" +
+                        "      !req.body.rating.toString().match(/^[0-9]\\.[0-9]$/g)){\n" +
+                        "      res.status(400);\n" +
+                        "      res.json({message: \"Bad Request\"});\n" +
+                        "   } else {\n" +
+                        "      var newId = movies[movies.length-1].id+1;\n" +
+                        "      movies.push({\n" +
+                        "         id: newId,\n" +
+                        "         name: req.body.name,\n" +
+                        "         year: req.body.year,\n" +
+                        "         rating: req.body.rating\n" +
+                        "      });\n" +
+                        "      res.json({message: \"New movie created.\", location: \"/movies/\" + newId});\n" +
+                        "   }\n" +
+                        "});\n" +
+                        "\n" +
+                        "router.put('/:id', function(req, res) {\n" +
+                        "   //Check if all fields are provided and are valid:\n" +
+                        "   if(!req.body.name ||\n" +
+                        "      !req.body.year.toString().match(/^[0-9]{4}$/g) ||\n" +
+                        "      !req.body.rating.toString().match(/^[0-9]\\.[0-9]$/g) ||\n" +
+                        "      !req.params.id.toString().match(/^[0-9]{3,}$/g)){\n" +
+                        "      res.status(400);\n" +
+                        "      res.json({message: \"Bad Request\"});\n" +
+                        "   } else {\n" +
+                        "      //Gets us the index of movie with given id.\n" +
+                        "      var updateIndex = movies.map(function(movie){\n" +
+                        "         return movie.id;\n" +
+                        "      }).indexOf(parseInt(req.params.id));\n" +
+                        "      \n" +
+                        "      if(updateIndex === -1){\n" +
+                        "         //Movie not found, create new\n" +
+                        "         movies.push({\n" +
+                        "            id: req.params.id,\n" +
+                        "            name: req.body.name,\n" +
+                        "            year: req.body.year,\n" +
+                        "            rating: req.body.rating\n" +
+                        "         });\n" +
+                        "         res.json({\n" +
+                        "            message: \"New movie created.\", location: \"/movies/\" + req.params.id});\n" +
+                        "      } else {\n" +
+                        "         //Update existing movie\n" +
+                        "         movies[updateIndex] = {\n" +
+                        "            id: req.params.id,\n" +
+                        "            name: req.body.name,\n" +
+                        "            year: req.body.year,\n" +
+                        "            rating: req.body.rating\n" +
+                        "         };\n" +
+                        "         res.json({message: \"Movie id \" + req.params.id + \" updated.\",\n" +
+                        "            location: \"/movies/\" + req.params.id});\n" +
+                        "      }\n" +
+                        "   }\n" +
+                        "});\n" +
+                        "\n" +
+                        "router.delete('/:id', function(req, res){\n" +
+                        "   var removeIndex = movies.map(function(movie){\n" +
+                        "      return movie.id;\n" +
+                        "   }).indexOf(req.params.id); //Gets us the index of movie with given id.\n" +
+                        "   \n" +
+                        "   if(removeIndex === -1){\n" +
+                        "      res.json({message: \"Not found\"});\n" +
+                        "   } else {\n" +
+                        "      movies.splice(removeIndex, 1);\n" +
+                        "      res.send({message: \"Movie id \" + req.params.id + \" removed.\"});\n" +
+                        "   }\n" +
+                        "});\n" +
+                        "module.exports = router;",
+                ""
+        );
+        list.add(l1);
+        list.add(l2);
+        list.add(l3);
+        list.add(l4);
+        list.add(l5);
+        list.add(l6);
+        list.add(l7);
+        list.add(l8);
+        return list;
+    }
+    //ExpressJs Scaffolding
+    private static List<LearnDetailsModel> ExpressJsScaffolding(){
+        final List<LearnDetailsModel> list = new ArrayList<>();
+        final LearnDetailsModel l1 = new LearnDetailsModel(
+                "What is Scaffolding?",
+                "Scaffolding allows us to easily create a skeleton for a web application. We manually create our public directory, add middleware, create separate route files, etc. A scaffolding tool sets up all these things for us so that we can directly get started with building our application.\n" +
+                        "\n" +
+                        "The scaffolder we will use is called Yeoman. It is a scaffolding tool built for Node.js but also has generators for several other frameworks (like flask, rails, django, etc.). To install Yeoman, enter the following command in your terminal −\n" +
+                        "\n" +
+                        "npm install -g yeoman" +
+                        "\n\n" +
+                        "Yeoman uses generators to scaffold out applications. To check out the generators available on npm to use with Yeoman." +
+                        "\n\n" +
+                        "In this tutorial, we will use the 'generator-Express-simple'. To install this generator, enter the following command in your terminal −\n" +
+                        "\n" +
+                        "npm install -g generator-express-simple\n" +
+                        "To use this generator, enter the following command −\n" +
+                        "\n" +
+                        "yo express-simple test-app",
+                "",
+                ""
+        );
+        final LearnDetailsModel l2 = new LearnDetailsModel(
+                "test-app",
+                "You will be asked a few simple questions like what things you want to use with your app. Select the following answers, or if you already know about these technologies then go about choosing how you want them to be.",
+                "express-simple comes with bootstrap and jquery\n" +
+                        "[?] Select the express version you want: 4.x\n" +
+                        "[?] Do you want an mvc express app: Yes\n" +
+                        "[?] Select the css preprocessor you would like to use: sass\n" +
+                        "[?] Select view engine you would like to use: jade\n" +
+                        "[?] Select the build tool you want to use for this project: gulp\n" +
+                        "[?] Select the build tool you want to use for this project: gulp\n" +
+                        "[?] Select the language you want to use for the build tool: javascript\n" +
+                        "   create public/sass/styles.scss\n" +
+                        "   create public/js/main.js\n" +
+                        "   create views/layout.jade\n" +
+                        "   create views/index.jade\n" +
+                        "   create views/404.jade\n" +
+                        "   create app.js\n" +
+                        "   create config.js\n" +
+                        "   create routes/index.js\n" +
+                        "   create package.json\n" +
+                        "   create bower.json\n" +
+                        "identical .bowerrc\n" +
+                        "identical .editorconfig\n" +
+                        "identical .gitignore\n" +
+                        "identical .jshintrc\n" +
+                        "   create gulpfile.js\n" +
+                        "\n" +
+                        "I'm all done. Running bower install & npm install for you to install the\n" +
+                        "required dependencies. If this fails, try running the command yourself.",
+                ""
+        );
+        list.add(l1);
+        list.add(l2);
+        return list;
+    }
+    //ExpressJs Error Handling
+    private static List<LearnDetailsModel> ExpressJsErrorHandling(){
+        final List<LearnDetailsModel> list = new ArrayList<>();
+        final LearnDetailsModel l1 = new LearnDetailsModel(
+                "How to Handling the errors?",
+                "Error handling in Express is done using middleware. But this middleware has special properties. The error handling middleware are defined in the same way as other middleware functions, except that error-handling functions MUST have four arguments instead of three – err, req, res, next. For example, to send a response on any error, we can use −",
+                "app.use(function(err, req, res, next) {\n" +
+                        "   console.error(err.stack);\n" +
+                        "   res.status(500).send('Something broke!');\n" +
+                        "});",
+                ""
+        );
+        final LearnDetailsModel l2 = new LearnDetailsModel(
+                "next(err)",
+                "For error handling, we have the next(err) function. A call to this function skips all middleware and matches us to the next error handler for that route. Let us understand this through an example.",
+                "ar express = require('express');\n" +
+                        "var app = express();\n" +
+                        "\n" +
+                        "app.get('/', function(req, res){\n" +
+                        "   //Create an error and pass it to the next function\n" +
+                        "   var err = new Error(\"Something went wrong\");\n" +
+                        "   next(err);\n" +
+                        "});\n" +
+                        "\n" +
+                        "/*\n" +
+                        " * other route handlers and middleware here\n" +
+                        " * ....\n" +
+                        " */\n" +
+                        "\n" +
+                        "//An error handling middleware\n" +
+                        "app.use(function(err, req, res, next) {\n" +
+                        "   res.status(500);\n" +
+                        "   res.send(\"Oops, something went wrong.\")\n" +
+                        "});\n" +
+                        "\n" +
+                        "app.listen(3000);",
+                ""
+        );
+        list.add(l1);
+        list.add(l2);
+        return list;
+    }
+    //ExpressJs Debugging
+    private static List<LearnDetailsModel> ExpressJsDebugging(){
+        final List<LearnDetailsModel> list = new ArrayList<>();
+        final LearnDetailsModel l1 = new LearnDetailsModel(
+                "Debugging",
+                "Express uses the Debug module to internally log information about route matching, middleware functions, application mode, etc.\n" +
+                        "\n" +
+                        "To see all internal logs used in Express, set the DEBUG environment variable to Express:* when starting the app −",
+                "DEBUG = express:* node index.js",
+                ""
+        );
+        final LearnDetailsModel l2 = new LearnDetailsModel(
+                "DEBUG",
+                "These logs are very helpful when a component of your app is not functioning right. This verbose output might be a little overwhelming. You can also restrict the DEBUG variable to specific area to be logged. For example, if you wish to restrict the logger to application and router, you can use the following code.",
+                "DEBUG = express:application,express:router node index.js",
+                ""
+        );
+        list.add(l1);
+        list.add(l2);
+        return list;
+    }
+    //ExpressJs Best Practices
+    private static List<LearnDetailsModel> ExpressJsBestPractices(){
+        final List<LearnDetailsModel> list = new ArrayList<>();
+        final LearnDetailsModel l1 = new LearnDetailsModel(
+                "Best Practices for you",
+                "Unlike Django and Rails which have a defined way of doing things, file structure, etc., Express does not follow a defined way. This means you can structure the application the way you like. But as your application grows in size, it is very difficult to maintain it if it doesn't have a well-defined structure. In this chapter, we will look at the generally used directory structures and separation of concerns to build our applications.\n" +
+                        "\n" +
+                        "First, we will discuss the best practices for creating node and Express applications.\n" +
+                        "\n" +
+                        "Always begin a node project using npm init.\n" +
+                        "\n" +
+                        "Always install dependencies with a --save or --save-dev. This will ensure that if you move to a different platform, you can just run npm install to install all dependencies.\n" +
+                        "\n" +
+                        "Stick with lowercase file names and camelCase variables. If you look at any npm module, its named in lowercase and separated with dashes. Whenever you require these modules, use camelCase.\n" +
+                        "\n" +
+                        "Don’t push node_modules to your repositories. Instead npm installs everything on development machines.\n" +
+                        "\n" +
+                        "Use a config file to store variables\n" +
+                        "\n" +
+                        "Group and isolate routes to their own file. For example, take the CRUD operations in the movies example we saw in the REST API page.",
+                "",
+                ""
+        );
+        final LearnDetailsModel l2 = new LearnDetailsModel(
+                "Directory Structure",
+                "Let us now discuss the Express’ Directory Structure.\n" +
+                        "\n" +
+                        "Websites\n" +
+                        "Express does not have a community defined structure for creating applications. The following is a majorly used project structure for a website.",
+                "test-project/\n" +
+                        "   node_modules/\n" +
+                        "   config/\n" +
+                        "      db.js                //Database connection and configuration\n" +
+                        "      credentials.js       //Passwords/API keys for external services used by your app\n" +
+                        "      config.js            //Other environment variables\n" +
+                        "   models/                 //For mongoose schemas\n" +
+                        "      users.js\n" +
+                        "      things.js\n" +
+                        "   routes/                 //All routes for different entities in different files \n" +
+                        "      users.js\n" +
+                        "      things.js\n" +
+                        "   views/\n" +
+                        "      index.pug\n" +
+                        "      404.pug\n" +
+                        "        ...\n" +
+                        "   public/                 //All static content being served\n" +
+                        "      images/\n" +
+                        "      css/\n" +
+                        "      javascript/\n" +
+                        "   app.js\n" +
+                        "   routes.js               //Require all routes in this and then require this file in \n" +
+                        "   app.js \n" +
+                        "   package.json",
+                ""
+        );
+        final LearnDetailsModel l3 = new LearnDetailsModel(
+                "RESTful APIs",
+                "APIs are simpler to design; they don't need a public or a views directory. Use the following structure to build APIs −",
+                "test-project/\n" +
+                        "   node_modules/\n" +
+                        "   config/\n" +
+                        "      db.js                //Database connection and configuration\n" +
+                        "      credentials.js       //Passwords/API keys for external services used by your app\n" +
+                        "   models/                 //For mongoose schemas\n" +
+                        "      users.js\n" +
+                        "      things.js\n" +
+                        "   routes/                 //All routes for different entities in different files \n" +
+                        "      users.js\n" +
+                        "      things.js\n" +
+                        "   app.js\n" +
+                        "   routes.js               //Require all routes in this and then require this file in \n" +
+                        "   app.js \n" +
+                        "   package.json",
+                ""
+        );
+        list.add(l1);
+        list.add(l2);
+        list.add(l3);
+        return list;
+    }
 
 
     /*final LearnDetailsModel l1 = new LearnDetailsModel(
@@ -15837,6 +17378,45 @@ public class LearnDetailsContent {
                 return EmberJsModels();
             case "EmberJs Managing Dependencies":
                 return EmberJsManagingDependencies();
+            //ExpressJs
+            case "ExpressJs Introduction":
+                return ExpressJsIntroduction();
+            case "ExpressJs Environment":
+                return ExpressJsEnvironment();
+            case "ExpressJs Hello World":
+                return ExpressJsHelloWorld();
+            case "ExpressJs Routing":
+                return ExpressJsRouting();
+            case "ExpressJs HTTP Methods":
+                return ExpressJsHTTPMethods();
+            case "ExpressJs URL Building":
+                return ExpressJsURLBuilding();
+            case "ExpressJs Middleware":
+                return ExpressJsMiddleware();
+            case "ExpressJs Templating":
+                return ExpressJsTemplating();
+            case "ExpressJs Static Files":
+                return ExpressJsStaticFiles();
+            case "ExpressJs Form Data":
+                return ExpressJsFormData();
+            case "ExpressJs Database":
+                return ExpressJsDatabase();
+            case "ExpressJs Cookies":
+                return ExpressJsCookies();
+            case "ExpressJs Sessions":
+                return ExpressJsSessions();
+            case "ExpressJs Authentication":
+                return ExpressJsAuthentication();
+            case "ExpressJs RESTFul APIs":
+                return ExpressJsRESTFulAPIs();
+            case "ExpressJs Scaffolding":
+                return ExpressJsScaffolding();
+            case "ExpressJs Error Handling":
+                return ExpressJsErrorHandling();
+            case "ExpressJs Debugging":
+                return ExpressJsDebugging();
+            case "ExpressJs Best Practices":
+                return ExpressJsBestPractices();
 
             default:
                 return defaultT();
@@ -15846,7 +17426,7 @@ public class LearnDetailsContent {
     }
 
 }
-    /*private static List<LearnDetailsModel> EmberJsManagingDependencies(){
+    /*private static List<LearnDetailsModel> ExpressJsBestPractices(){
         final List<LearnDetailsModel> list = new ArrayList<>();
         final LearnDetailsModel l1 = new LearnDetailsModel();
 

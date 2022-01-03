@@ -70,6 +70,7 @@ public class LearnDetailsContent {
 
         return list;
     }
+
     //CodeStructure
     private static List<LearnDetailsModel> CodeStructure() {
         final List<LearnDetailsModel> list = new ArrayList<>();
@@ -131,6 +132,7 @@ public class LearnDetailsContent {
 
         return list;
     }
+
     //useStrict
     private static List<LearnDetailsModel> useStrict() {
         final List<LearnDetailsModel> list = new ArrayList<>();
@@ -180,6 +182,7 @@ public class LearnDetailsContent {
 
         return list;
     }
+
     //Variables
     private static List<LearnDetailsModel> Variables() {
         final List<LearnDetailsModel> list = new ArrayList<>();
@@ -292,6 +295,7 @@ public class LearnDetailsContent {
 
         return list;
     }
+
     //Data types
     private static List<LearnDetailsModel> DataTypes() {
         final List<LearnDetailsModel> list = new ArrayList<>();
@@ -306,7 +310,7 @@ public class LearnDetailsContent {
                         "" +
                         "",
 
-                        "let message = \"hello\";\n" +
+                "let message = \"hello\";\n" +
                         "message = 123456;",
                 ""
         );
@@ -318,7 +322,7 @@ public class LearnDetailsContent {
                         "\nThere’s also a special infinity number available. You just need to do 1/0 — so, one divided zero. This value is deemed to be the biggest number of all time and can not be viewed as the smaller outcome." +
                         "\nIf you get NaN — it means that you’ve hit a computational error. It also means that you’re trying to do a mathematical operation on something that doesn't make sense like dividing a string text with a number.",
 
-                        "let n = 123;\n" +
+                "let n = 123;\n" +
                         "n = 12.345;\n" +
                         "\n" +
                         "document.write(1/0);\n" +
@@ -466,6 +470,7 @@ public class LearnDetailsContent {
 
         return list;
     }
+
     //Interaction
     private static List<LearnDetailsModel> Interaction() {
         final List<LearnDetailsModel> list = new ArrayList<>();
@@ -533,6 +538,7 @@ public class LearnDetailsContent {
 
         return list;
     }
+
     //TypeConversion
     private static List<LearnDetailsModel> TypeConversion() {
         final List<LearnDetailsModel> list = new ArrayList<>();
@@ -619,6 +625,7 @@ public class LearnDetailsContent {
 
         return list;
     }
+
     //Operators
     private static List<LearnDetailsModel> Operators() {
         final List<LearnDetailsModel> list = new ArrayList<>();
@@ -673,13 +680,13 @@ public class LearnDetailsContent {
                         "\n" +
                         "In school maths, we write that as a^b.",
 
-                        "document.write( 5 % 2 );\n" +
+                "document.write( 5 % 2 );\n" +
                         "document.write( 8 % 3 );\n" +
                         "document.write( 2 ** 2 );\n" +
                         "document.write( 2 ** 3 );\n" +
                         "document.write( 2 ** 4 );",
 
-                        "1\n" +
+                "1\n" +
                         "2\n" +
                         "4\n" +
                         "8\n" +
@@ -743,6 +750,7 @@ public class LearnDetailsContent {
 
         return list;
     }
+
     //Comparisons
     private static List<LearnDetailsModel> Comparisons() {
         final List<LearnDetailsModel> list = new ArrayList<>();
@@ -810,12 +818,12 @@ public class LearnDetailsContent {
                         "For maths and other comparisons < > <= >=\n" +
                         "null/undefined are converted to numbers: null becomes 0, while undefined becomes NaN.",
 
-                        "document.write( null === undefined );" +
+                "document.write( null === undefined );" +
                         "\n" +
                         "document.write( null == undefined );",
 
-                        "false\n" +
-                                "true"
+                "false\n" +
+                        "true"
         );
         final LearnDetailsModel l5 = new LearnDetailsModel(
                 "Avoid problems",
@@ -846,6 +854,7 @@ public class LearnDetailsContent {
 
         return list;
     }
+
     //Conditionals
     private static List<LearnDetailsModel> Conditionals() {
         final List<LearnDetailsModel> list = new ArrayList<>();
@@ -943,8 +952,9 @@ public class LearnDetailsContent {
 
         return list;
     }
+
     //Loops
-    private static List<LearnDetailsModel> Loops(){
+    private static List<LearnDetailsModel> Loops() {
         final List<LearnDetailsModel> list = new ArrayList<>();
         final LearnDetailsModel l1 = new LearnDetailsModel(
                 "Loops",
@@ -1016,8 +1026,9 @@ public class LearnDetailsContent {
         list.add(l5);
         return list;
     }
+
     //Functions
-    private static List<LearnDetailsModel> Functions(){
+    private static List<LearnDetailsModel> Functions() {
         final List<LearnDetailsModel> list = new ArrayList<>();
         final LearnDetailsModel l1 = new LearnDetailsModel(
                 "Functions",
@@ -1097,8 +1108,9 @@ public class LearnDetailsContent {
         list.add(l3);
         return list;
     }
+
     //Arrow functions
-    private static List<LearnDetailsModel> ArrowFunctions(){
+    private static List<LearnDetailsModel> ArrowFunctions() {
         final List<LearnDetailsModel> list = new ArrayList<>();
         final LearnDetailsModel l1 = new LearnDetailsModel(
                 "Arrow functions, the basics",
@@ -1144,9 +1156,10 @@ public class LearnDetailsContent {
         list.add(l3);
         return list;
     }
+
     //Basics
     //Introduction
-    private static List<LearnDetailsModel> BasicIntroduction(){
+    private static List<LearnDetailsModel> BasicIntroduction() {
         final List<LearnDetailsModel> list = new ArrayList<>();
         final LearnDetailsModel l1 = new LearnDetailsModel(
                 "Learn JScript Tutorial",
@@ -1291,8 +1304,9 @@ public class LearnDetailsContent {
         list.add(l8);
         return list;
     }
+
     //Syntax
-    private static List<LearnDetailsModel> Syntax(){
+    private static List<LearnDetailsModel> Syntax() {
         final List<LearnDetailsModel> list = new ArrayList<>();
         final LearnDetailsModel l1 = new LearnDetailsModel(
                 "JavaScript Syntax",
@@ -1308,7 +1322,7 @@ public class LearnDetailsContent {
                         "\n" +
                         "Variable values are called Variables.",
 
-                        "var x;\n" +
+                "var x;\n" +
                         "let y;\n" +
                         "\n" +
                         "x = 4;\n" +
@@ -1325,7 +1339,7 @@ public class LearnDetailsContent {
                         "\n" +
                         "2. Strings are text, written within double or single quotes",
 
-                        "\n" +
+                "\n" +
                         "var x = 10.5\n" +
                         "var y = 1024\n\n" +
                         "var firstName = \"Anne\"\n" +
@@ -1355,8 +1369,9 @@ public class LearnDetailsContent {
 
         return list;
     }
+
     //Enabling
-    private static List<LearnDetailsModel> Enabling(){
+    private static List<LearnDetailsModel> Enabling() {
         final List<LearnDetailsModel> list = new ArrayList<>();
         final LearnDetailsModel l1 = new LearnDetailsModel(
                 "Enabling JavaScript in Browsers",
@@ -1469,8 +1484,9 @@ public class LearnDetailsContent {
         list.add(l6);
         return list;
     }
+
     //Placement
-    private static List<LearnDetailsModel> Placement(){
+    private static List<LearnDetailsModel> Placement() {
         final List<LearnDetailsModel> list = new ArrayList<>();
         final LearnDetailsModel l1 = new LearnDetailsModel(
                 "JavaScript - Placement in HTML File",
@@ -1574,8 +1590,9 @@ public class LearnDetailsContent {
 
         return list;
     }
+
     //BasicVariables
-    private static List<LearnDetailsModel> BasicVariables(){
+    private static List<LearnDetailsModel> BasicVariables() {
         final List<LearnDetailsModel> list = new ArrayList<>();
         final LearnDetailsModel l1 = new LearnDetailsModel(
                 "JavaScript Variable",
@@ -1639,8 +1656,9 @@ public class LearnDetailsContent {
 
         return list;
     }
+
     //Basic Data Types
-    private static List<LearnDetailsModel> BasicDataTypes(){
+    private static List<LearnDetailsModel> BasicDataTypes() {
         final List<LearnDetailsModel> list = new ArrayList<>();
         final LearnDetailsModel l1 = new LearnDetailsModel(
                 "Javascript Data Types",
@@ -1697,8 +1715,9 @@ public class LearnDetailsContent {
         list.add(l3);
         return list;
     }
+
     //Basic Operators
-    private static List<LearnDetailsModel> BasicOperators(){
+    private static List<LearnDetailsModel> BasicOperators() {
         final List<LearnDetailsModel> list = new ArrayList<>();
         final LearnDetailsModel l1 = new LearnDetailsModel(
                 "What is an Operator?",
@@ -2114,8 +2133,9 @@ public class LearnDetailsContent {
 
         return list;
     }
+
     //Basic Conditions
-    private static List<LearnDetailsModel> BasicConditions(){
+    private static List<LearnDetailsModel> BasicConditions() {
         final List<LearnDetailsModel> list = new ArrayList<>();
         final LearnDetailsModel l1 = new LearnDetailsModel(
                 "Basic Conditions",
@@ -2182,8 +2202,9 @@ public class LearnDetailsContent {
 
         return list;
     }
+
     //Switch
-    private static List<LearnDetailsModel> Switch(){
+    private static List<LearnDetailsModel> Switch() {
         final List<LearnDetailsModel> list = new ArrayList<>();
         final LearnDetailsModel l1 = new LearnDetailsModel(
                 "Switch Case",
@@ -2301,8 +2322,9 @@ public class LearnDetailsContent {
 
         return list;
     }
+
     //Basic Loops
-    private static List<LearnDetailsModel> BasicLoops(){
+    private static List<LearnDetailsModel> BasicLoops() {
         final List<LearnDetailsModel> list = new ArrayList<>();
         final LearnDetailsModel l1 = new LearnDetailsModel(
                 "JavaScript Loops",
@@ -2432,8 +2454,9 @@ public class LearnDetailsContent {
         list.add(l5);
         return list;
     }
+
     //Basic Functions
-    private static List<LearnDetailsModel> BasicFunctions(){
+    private static List<LearnDetailsModel> BasicFunctions() {
         final List<LearnDetailsModel> list = new ArrayList<>();
         final LearnDetailsModel l1 = new LearnDetailsModel(
                 "Function Definition",
@@ -2514,8 +2537,9 @@ public class LearnDetailsContent {
 
         return list;
     }
+
     //Events
-    private static List<LearnDetailsModel> Events(){
+    private static List<LearnDetailsModel> Events() {
         final List<LearnDetailsModel> list = new ArrayList<>();
         final LearnDetailsModel l1 = new LearnDetailsModel(
                 "What is an Event ?",
@@ -2609,9 +2633,10 @@ public class LearnDetailsContent {
 
         return list;
     }
+
     //JS Objects
     //Learn Objects
-    private static List<LearnDetailsModel> LearnObjects(){
+    private static List<LearnDetailsModel> LearnObjects() {
         final List<LearnDetailsModel> list = new ArrayList<>();
         final LearnDetailsModel l1 = new LearnDetailsModel(
                 "Objects",
@@ -2781,8 +2806,9 @@ public class LearnDetailsContent {
 
         return list;
     }
+
     //Number Objects
-    private static List<LearnDetailsModel> NumberObjects(){
+    private static List<LearnDetailsModel> NumberObjects() {
         final List<LearnDetailsModel> list = new ArrayList<>();
         final LearnDetailsModel l1 = new LearnDetailsModel(
                 "Number Object",
@@ -2845,8 +2871,9 @@ public class LearnDetailsContent {
         list.add(l3);
         return list;
     }
+
     //Boolean Objects
-    private static List<LearnDetailsModel> BooleanObjects(){
+    private static List<LearnDetailsModel> BooleanObjects() {
         final List<LearnDetailsModel> list = new ArrayList<>();
         final LearnDetailsModel l1 = new LearnDetailsModel(
                 "Boolean Objects",
@@ -2877,8 +2904,9 @@ public class LearnDetailsContent {
         list.add(l3);
         return list;
     }
+
     //Strings Objects
-    private static List<LearnDetailsModel> StringsObjects(){
+    private static List<LearnDetailsModel> StringsObjects() {
         final List<LearnDetailsModel> list = new ArrayList<>();
         final LearnDetailsModel l1 = new LearnDetailsModel(
                 "Strings Objects",
@@ -3024,8 +3052,9 @@ public class LearnDetailsContent {
 
         return list;
     }
+
     //Arrays Objects
-    private static List<LearnDetailsModel> ArraysObjects(){
+    private static List<LearnDetailsModel> ArraysObjects() {
         final List<LearnDetailsModel> list = new ArrayList<>();
         final LearnDetailsModel l1 = new LearnDetailsModel(
                 "Arrays Objects",
@@ -3146,8 +3175,9 @@ public class LearnDetailsContent {
         list.add(l3);
         return list;
     }
+
     //Date Objects
-    private static List<LearnDetailsModel> DateObjects(){
+    private static List<LearnDetailsModel> DateObjects() {
         final List<LearnDetailsModel> list = new ArrayList<>();
         final LearnDetailsModel l1 = new LearnDetailsModel(
                 "Date Objects",
@@ -3370,8 +3400,9 @@ public class LearnDetailsContent {
         list.add(l4);
         return list;
     }
+
     //Math Objects
-    private static List<LearnDetailsModel> MathObjects(){
+    private static List<LearnDetailsModel> MathObjects() {
         final List<LearnDetailsModel> list = new ArrayList<>();
         final LearnDetailsModel l1 = new LearnDetailsModel(
                 "Math Objects",
@@ -3484,8 +3515,9 @@ public class LearnDetailsContent {
         list.add(l3);
         return list;
     }
+
     //RegExp Objects
-    private static List<LearnDetailsModel> RegExpObjects(){
+    private static List<LearnDetailsModel> RegExpObjects() {
         final List<LearnDetailsModel> list = new ArrayList<>();
         final LearnDetailsModel l1 = new LearnDetailsModel(
                 "RegExp Objects",
@@ -3769,8 +3801,9 @@ public class LearnDetailsContent {
         list.add(l9);
         return list;
     }
+
     //JS Class
-    private static List<LearnDetailsModel> JSClass(){
+    private static List<LearnDetailsModel> JSClass() {
         final List<LearnDetailsModel> list = new ArrayList<>();
         final LearnDetailsModel l1 = new LearnDetailsModel(
                 "JavaScript Classes",
@@ -3833,8 +3866,9 @@ public class LearnDetailsContent {
         list.add(l3);
         return list;
     }
+
     //JS Object
-    private static List<LearnDetailsModel> JSObject(){
+    private static List<LearnDetailsModel> JSObject() {
         final List<LearnDetailsModel> list = new ArrayList<>();
         final LearnDetailsModel l1 = new LearnDetailsModel(
                 "JavaScript Objects",
@@ -3934,8 +3968,9 @@ public class LearnDetailsContent {
         list.add(l5);
         return list;
     }
+
     //JS Prototype
-    private static List<LearnDetailsModel> JSPrototype(){
+    private static List<LearnDetailsModel> JSPrototype() {
         final List<LearnDetailsModel> list = new ArrayList<>();
         final LearnDetailsModel l1 = new LearnDetailsModel(
                 "JavaScript Prototype Object",
@@ -3988,8 +4023,9 @@ public class LearnDetailsContent {
         list.add(l3);
         return list;
     }
+
     //JS Constructor Method
-    private static List<LearnDetailsModel> JSConstructorMethod(){
+    private static List<LearnDetailsModel> JSConstructorMethod() {
         final List<LearnDetailsModel> list = new ArrayList<>();
         final LearnDetailsModel l1 = new LearnDetailsModel(
                 "Constructor Method",
@@ -4021,8 +4057,9 @@ public class LearnDetailsContent {
         list.add(l2);
         return list;
     }
+
     //JS Static Method
-    private static List<LearnDetailsModel> JSStaticMethod(){
+    private static List<LearnDetailsModel> JSStaticMethod() {
         final List<LearnDetailsModel> list = new ArrayList<>();
         final LearnDetailsModel l1 = new LearnDetailsModel(
                 "Static Method",
@@ -4058,8 +4095,9 @@ public class LearnDetailsContent {
         list.add(l2);
         return list;
     }
+
     //JS Encapsulation
-    private static List<LearnDetailsModel> JSEncapsulation(){
+    private static List<LearnDetailsModel> JSEncapsulation() {
         final List<LearnDetailsModel> list = new ArrayList<>();
         final LearnDetailsModel l1 = new LearnDetailsModel(
                 "JavaScript Encapsulation",
@@ -4158,8 +4196,9 @@ public class LearnDetailsContent {
         list.add(l3);
         return list;
     }
+
     //JS Inheritance
-    private static List<LearnDetailsModel> JSInheritance(){
+    private static List<LearnDetailsModel> JSInheritance() {
         final List<LearnDetailsModel> list = new ArrayList<>();
         final LearnDetailsModel l1 = new LearnDetailsModel(
                 "JavaScript Inheritance",
@@ -4219,8 +4258,9 @@ public class LearnDetailsContent {
         list.add(l3);
         return list;
     }
+
     //JS Polymorphism
-    private static List<LearnDetailsModel> JSPolymorphism(){
+    private static List<LearnDetailsModel> JSPolymorphism() {
         final List<LearnDetailsModel> list = new ArrayList<>();
         final LearnDetailsModel l1 = new LearnDetailsModel(
                 "JavaScript Polymorphism",
@@ -4261,8 +4301,9 @@ public class LearnDetailsContent {
 
         return list;
     }
+
     //JS Abstraction
-    private static List<LearnDetailsModel> JSAbstraction(){
+    private static List<LearnDetailsModel> JSAbstraction() {
         final List<LearnDetailsModel> list = new ArrayList<>();
         final LearnDetailsModel l1 = new LearnDetailsModel(
                 "JavaScript Abstraction",
@@ -4301,9 +4342,10 @@ public class LearnDetailsContent {
         list.add(l2);
         return list;
     }
+
     //DOM
     //HTML DOM
-    private static List<LearnDetailsModel> HTMLDOM(){
+    private static List<LearnDetailsModel> HTMLDOM() {
         final List<LearnDetailsModel> list = new ArrayList<>();
         final LearnDetailsModel l1 = new LearnDetailsModel(
                 "Introductions",
@@ -4358,8 +4400,9 @@ public class LearnDetailsContent {
 
         return list;
     }
+
     //DOM Methods
-    private static List<LearnDetailsModel> DOMMethods(){
+    private static List<LearnDetailsModel> DOMMethods() {
         final List<LearnDetailsModel> list = new ArrayList<>();
         final LearnDetailsModel l1 = new LearnDetailsModel(
                 "HTML DOM Methods",
@@ -4402,8 +4445,9 @@ public class LearnDetailsContent {
         list.add(l2);
         return list;
     }
+
     //DOM Documents
-    private static List<LearnDetailsModel> DOMDocuments(){
+    private static List<LearnDetailsModel> DOMDocuments() {
         final List<LearnDetailsModel> list = new ArrayList<>();
         final LearnDetailsModel l1 = new LearnDetailsModel(
                 "HTML DOM Document",
@@ -4477,8 +4521,9 @@ public class LearnDetailsContent {
         list.add(l2);
         return list;
     }
+
     //DOM Elements
-    private static List<LearnDetailsModel> DOMElements(){
+    private static List<LearnDetailsModel> DOMElements() {
         final List<LearnDetailsModel> list = new ArrayList<>();
         final LearnDetailsModel l1 = new LearnDetailsModel(
                 "HTML DOM Elements",
@@ -4513,13 +4558,15 @@ public class LearnDetailsContent {
                         "This example returns a list of all elements with class=\"intro\".",
                 "const x = document.getElementsByClassName(\"intro\");",
                 ""
-        );final LearnDetailsModel l4 = new LearnDetailsModel(
+        );
+        final LearnDetailsModel l4 = new LearnDetailsModel(
                 "Finding HTML Elements by CSS Selectors",
                 "If you want to find all HTML elements that match a specified CSS selector (id, class names, types, attributes, values of attributes, etc), use the querySelectorAll() method.\n" +
                         "This example returns a list of all <p> elements with class=\"intro\".",
                 "const x = document.querySelectorAll(\"p.intro\");",
                 ""
-        );final LearnDetailsModel l5 = new LearnDetailsModel(
+        );
+        final LearnDetailsModel l5 = new LearnDetailsModel(
                 "Finding HTML Elements by HTML Object Collections",
                 "This example finds the form element with id=\"frm1\", in the forms collection, and displays all element values:",
                 "const x = document.forms[\"frm1\"];\n" +
@@ -4537,8 +4584,9 @@ public class LearnDetailsContent {
         list.add(l5);
         return list;
     }
+
     //DOM HTML
-    private static List<LearnDetailsModel> DOMHTML(){
+    private static List<LearnDetailsModel> DOMHTML() {
         final List<LearnDetailsModel> list = new ArrayList<>();
         final LearnDetailsModel l1 = new LearnDetailsModel(
                 "HTML DOM - Changing HTML",
@@ -4629,8 +4677,9 @@ public class LearnDetailsContent {
         list.add(l4);
         return list;
     }
+
     //DOM Forms
-    private static List<LearnDetailsModel> DOMForms(){
+    private static List<LearnDetailsModel> DOMForms() {
         final List<LearnDetailsModel> list = new ArrayList<>();
         final LearnDetailsModel l1 = new LearnDetailsModel(
                 "JavaScript Form Validation",
@@ -4683,8 +4732,9 @@ public class LearnDetailsContent {
 
         return list;
     }
+
     //DOM CSS
-    private static List<LearnDetailsModel> DOMCSS(){
+    private static List<LearnDetailsModel> DOMCSS() {
         final List<LearnDetailsModel> list = new ArrayList<>();
         final LearnDetailsModel l1 = new LearnDetailsModel(
                 "HTML DOM - Changing CSS",
@@ -4738,8 +4788,9 @@ public class LearnDetailsContent {
         list.add(l2);
         return list;
     }
+
     //DOM Animations
-    private static List<LearnDetailsModel> DOMAnimations(){
+    private static List<LearnDetailsModel> DOMAnimations() {
         final List<LearnDetailsModel> list = new ArrayList<>();
         final LearnDetailsModel l1 = new LearnDetailsModel(
                 "A Basic Web Page",
@@ -4830,9 +4881,10 @@ public class LearnDetailsContent {
 
         return list;
     }
+
     //BOM
     //JavaScript Window
-    private static List<LearnDetailsModel> JSWindow(){
+    private static List<LearnDetailsModel> JSWindow() {
         final List<LearnDetailsModel> list = new ArrayList<>();
         final LearnDetailsModel l1 = new LearnDetailsModel(
                 "JavaScript Window",
@@ -4891,8 +4943,9 @@ public class LearnDetailsContent {
 
         return list;
     }
+
     //JS Screen
-    private static List<LearnDetailsModel> JSScreen(){
+    private static List<LearnDetailsModel> JSScreen() {
         final List<LearnDetailsModel> list = new ArrayList<>();
         final LearnDetailsModel l1 = new LearnDetailsModel(
                 "Window Screen",
@@ -4969,8 +5022,9 @@ public class LearnDetailsContent {
 
         return list;
     }
+
     //JS Location
-    private static List<LearnDetailsModel> JSLocation(){
+    private static List<LearnDetailsModel> JSLocation() {
         final List<LearnDetailsModel> list = new ArrayList<>();
         final LearnDetailsModel l1 = new LearnDetailsModel(
                 "Window Location",
@@ -5052,8 +5106,9 @@ public class LearnDetailsContent {
 
         return list;
     }
+
     //JS History
-    private static List<LearnDetailsModel> JSHistory(){
+    private static List<LearnDetailsModel> JSHistory() {
         final List<LearnDetailsModel> list = new ArrayList<>();
         final LearnDetailsModel l1 = new LearnDetailsModel(
                 "Window History",
@@ -5116,8 +5171,9 @@ public class LearnDetailsContent {
         list.add(l3);
         return list;
     }
+
     //JS Navigator
-    private static List<LearnDetailsModel> JSNavigator(){
+    private static List<LearnDetailsModel> JSNavigator() {
         final List<LearnDetailsModel> list = new ArrayList<>();
         final LearnDetailsModel l1 = new LearnDetailsModel(
                 "Window Navigator",
@@ -5181,8 +5237,9 @@ public class LearnDetailsContent {
         list.add(l5);
         return list;
     }
+
     //JS Timing
-    private static List<LearnDetailsModel> JSTiming(){
+    private static List<LearnDetailsModel> JSTiming() {
         final List<LearnDetailsModel> list = new ArrayList<>();
         final LearnDetailsModel l1 = new LearnDetailsModel(
                 "Timing Events",
@@ -5288,8 +5345,9 @@ public class LearnDetailsContent {
 
         return list;
     }
+
     //JS Cookies
-    private static List<LearnDetailsModel> JSCookies(){
+    private static List<LearnDetailsModel> JSCookies() {
         final List<LearnDetailsModel> list = new ArrayList<>();
         final LearnDetailsModel l1 = new LearnDetailsModel(
                 "What are Cookies?",
@@ -5498,9 +5556,10 @@ public class LearnDetailsContent {
         list.add(l8);
         return list;
     }
+
     //Advanced
     //JS Error Handling
-    private static List<LearnDetailsModel> JSErrorHandling(){
+    private static List<LearnDetailsModel> JSErrorHandling() {
         final List<LearnDetailsModel> list = new ArrayList<>();
         final LearnDetailsModel l1 = new LearnDetailsModel(
                 "Syntax Errors",
@@ -5637,8 +5696,9 @@ public class LearnDetailsContent {
         list.add(l5);
         return list;
     }
+
     //JS Validations
-    private static List<LearnDetailsModel> JSValidations(){
+    private static List<LearnDetailsModel> JSValidations() {
         final List<LearnDetailsModel> list = new ArrayList<>();
         final LearnDetailsModel l1 = new LearnDetailsModel(
                 "JavaScript - Form Validation",
@@ -5700,7 +5760,8 @@ public class LearnDetailsContent {
                         "   </body>\n" +
                         "</html>",
                 ""
-        );final LearnDetailsModel l2 = new LearnDetailsModel(
+        );
+        final LearnDetailsModel l2 = new LearnDetailsModel(
                 "Basic Form Validation",
                 "First let us see how to do a basic form validation. In the above form, we are calling validate() to validate data when onsubmit event is occurring. The following code shows the implementation of this validate() function.",
                 "<script type = \"text/javascript\">\n" +
@@ -5734,7 +5795,8 @@ public class LearnDetailsContent {
                         "   //-->\n" +
                         "</script>",
                 ""
-        );final LearnDetailsModel l3 = new LearnDetailsModel(
+        );
+        final LearnDetailsModel l3 = new LearnDetailsModel(
                 "Data Format Validation",
                 "Now we will see how we can validate our entered form data before submitting it to the web server.\n" +
                         "\n" +
@@ -5762,8 +5824,9 @@ public class LearnDetailsContent {
         list.add(l3);
         return list;
     }
+
     //JS Multimedia
-    private static List<LearnDetailsModel> JSMultimedia(){
+    private static List<LearnDetailsModel> JSMultimedia() {
         final List<LearnDetailsModel> list = new ArrayList<>();
         final LearnDetailsModel l1 = new LearnDetailsModel(
                 "JavaScript Multimedia",
@@ -5882,8 +5945,9 @@ public class LearnDetailsContent {
 
         return list;
     }
+
     //JS Debugging
-    private static List<LearnDetailsModel> JSDebugging(){
+    private static List<LearnDetailsModel> JSDebugging() {
         final List<LearnDetailsModel> list = new ArrayList<>();
         final LearnDetailsModel l1 = new LearnDetailsModel(
                 "JavaScript Debugging",
@@ -5976,8 +6040,9 @@ public class LearnDetailsContent {
         list.add(l5);
         return list;
     }
+
     //JS Web APIs
-    private static List<LearnDetailsModel> JSWebAPIs(){
+    private static List<LearnDetailsModel> JSWebAPIs() {
         final List<LearnDetailsModel> list = new ArrayList<>();
         final LearnDetailsModel l1 = new LearnDetailsModel(
                 "What is Web API?",
@@ -6031,8 +6096,9 @@ public class LearnDetailsContent {
         list.add(l3);
         return list;
     }
+
     //Web Storage API
-    private static List<LearnDetailsModel> WebStorageAPI(){
+    private static List<LearnDetailsModel> WebStorageAPI() {
         final List<LearnDetailsModel> list = new ArrayList<>();
         final LearnDetailsModel l1 = new LearnDetailsModel(
                 "Web Storage API",
@@ -6102,8 +6168,9 @@ public class LearnDetailsContent {
         list.add(l7);
         return list;
     }
+
     //Web Workers API
-    private static List<LearnDetailsModel> WebWorkersAPI(){
+    private static List<LearnDetailsModel> WebWorkersAPI() {
         final List<LearnDetailsModel> list = new ArrayList<>();
         final LearnDetailsModel l1 = new LearnDetailsModel(
                 "What is a Web Worker?",
@@ -6185,8 +6252,9 @@ public class LearnDetailsContent {
         list.add(l5);
         return list;
     }
+
     //JS Graphics
-    private static List<LearnDetailsModel> JSGraphics(){
+    private static List<LearnDetailsModel> JSGraphics() {
         final List<LearnDetailsModel> list = new ArrayList<>();
         final LearnDetailsModel l1 = new LearnDetailsModel(
                 "JavaScript Graphics",
@@ -6239,9 +6307,10 @@ public class LearnDetailsContent {
         list.add(l4);
         return list;
     }
+
     //AJAX
     //Ajax Introduction
-    private static List<LearnDetailsModel> AjaxIntroduction(){
+    private static List<LearnDetailsModel> AjaxIntroduction() {
         final List<LearnDetailsModel> list = new ArrayList<>();
         final LearnDetailsModel l1 = new LearnDetailsModel(
                 "Why to Learn Ajax?",
@@ -6264,12 +6333,14 @@ public class LearnDetailsContent {
                         "Data-driven as opposed to page-driven.",
                 "",
                 ""
-        );final LearnDetailsModel l2 = new LearnDetailsModel(
+        );
+        final LearnDetailsModel l2 = new LearnDetailsModel(
                 "Rich Internet Application Technology",
                 "AJAX is the most viable Rich Internet Application (RIA) technology so far. It is getting tremendous industry momentum and several tool kit and frameworks are emerging. But at the same time, AJAX has browser incompatibility and it is supported by JavaScript, which is hard to maintain and debug.",
                 "",
                 ""
-        );final LearnDetailsModel l3 = new LearnDetailsModel(
+        );
+        final LearnDetailsModel l3 = new LearnDetailsModel(
                 "AJAX is Based on Open Standards",
                 "AJAX is based on the following open standards −\n" +
                         "\n" +
@@ -6285,8 +6356,9 @@ public class LearnDetailsContent {
         list.add(l3);
         return list;
     }
+
     //Ajax XMLHttp
-    private static List<LearnDetailsModel> AjaxXMLHttp(){
+    private static List<LearnDetailsModel> AjaxXMLHttp() {
         final List<LearnDetailsModel> list = new ArrayList<>();
         final LearnDetailsModel l1 = new LearnDetailsModel(
                 "The XMLHttpRequest Object",
@@ -6367,8 +6439,9 @@ public class LearnDetailsContent {
         list.add(l5);
         return list;
     }
+
     //AJAX Response
-    private static List<LearnDetailsModel> AJAXResponse(){
+    private static List<LearnDetailsModel> AJAXResponse() {
         final List<LearnDetailsModel> list = new ArrayList<>();
         final LearnDetailsModel l1 = new LearnDetailsModel(
                 "AJAX - Server Response",
@@ -6428,8 +6501,9 @@ public class LearnDetailsContent {
 
         return list;
     }
+
     //AJAXPHP
-    private static List<LearnDetailsModel> AJAXPHP(){
+    private static List<LearnDetailsModel> AJAXPHP() {
         final List<LearnDetailsModel> list = new ArrayList<>();
         final LearnDetailsModel l1 = new LearnDetailsModel(
                 "AJAX PHP Example",
@@ -6529,8 +6603,9 @@ public class LearnDetailsContent {
         list.add(l2);
         return list;
     }
+
     //AJAX ASP
-    private static List<LearnDetailsModel> AJAXASP(){
+    private static List<LearnDetailsModel> AJAXASP() {
         final List<LearnDetailsModel> list = new ArrayList<>();
         final LearnDetailsModel l1 = new LearnDetailsModel(
                 "AJAX ASP Example",
@@ -6634,8 +6709,9 @@ public class LearnDetailsContent {
         list.add(l2);
         return list;
     }
+
     //AJAX Database
-    private static List<LearnDetailsModel> AJAXDatabase(){
+    private static List<LearnDetailsModel> AJAXDatabase() {
         final List<LearnDetailsModel> list = new ArrayList<>();
         final LearnDetailsModel l1 = new LearnDetailsModel(
                 "AJAX Database Example",
@@ -6729,8 +6805,9 @@ public class LearnDetailsContent {
         list.add(l2);
         return list;
     }
+
     //AJAX Applications
-    private static List<LearnDetailsModel> AJAXApplications(){
+    private static List<LearnDetailsModel> AJAXApplications() {
         final List<LearnDetailsModel> list = new ArrayList<>();
         final LearnDetailsModel l1 = new LearnDetailsModel(
                 "XML Applications",
@@ -6832,9 +6909,10 @@ public class LearnDetailsContent {
         list.add(l4);
         return list;
     }
+
     //Typescript
     //Typescript Introduction
-    private static List<LearnDetailsModel> TypescriptIntroduction(){
+    private static List<LearnDetailsModel> TypescriptIntroduction() {
         final List<LearnDetailsModel> list = new ArrayList<>();
         final LearnDetailsModel l1 = new LearnDetailsModel(
                 "What is TypeScript?",
@@ -6914,8 +6992,9 @@ public class LearnDetailsContent {
 
         return list;
     }
+
     //TypeScript Basic Syntax
-    private static List<LearnDetailsModel> TypeScriptBasicSyntax(){
+    private static List<LearnDetailsModel> TypeScriptBasicSyntax() {
         final List<LearnDetailsModel> list = new ArrayList<>();
         final LearnDetailsModel l1 = new LearnDetailsModel(
                 "TypeScript Basic Syntax",
@@ -7075,8 +7154,9 @@ public class LearnDetailsContent {
         list.add(l7);
         return list;
     }
+
     //TypeScript Types
-    private static List<LearnDetailsModel> TypeScriptTypes(){
+    private static List<LearnDetailsModel> TypeScriptTypes() {
         final List<LearnDetailsModel> list = new ArrayList<>();
         final LearnDetailsModel l1 = new LearnDetailsModel(
                 "TypeScript Types",
@@ -7124,8 +7204,9 @@ public class LearnDetailsContent {
         list.add(l3);
         return list;
     }
+
     //TypeScript Variables
-    private static List<LearnDetailsModel> TypeScriptVariables(){
+    private static List<LearnDetailsModel> TypeScriptVariables() {
         final List<LearnDetailsModel> list = new ArrayList<>();
         final LearnDetailsModel l1 = new LearnDetailsModel(
                 "TypeScript Variables",
@@ -7290,8 +7371,9 @@ public class LearnDetailsContent {
         list.add(l5);
         return list;
     }
+
     //TypeScript Operators
-    private static List<LearnDetailsModel> TypeScriptOperators(){
+    private static List<LearnDetailsModel> TypeScriptOperators() {
         final List<LearnDetailsModel> list = new ArrayList<>();
         final LearnDetailsModel l1 = new LearnDetailsModel(
                 "What is an Operator?",
@@ -7482,15 +7564,17 @@ public class LearnDetailsContent {
         list.add(l11);
         return list;
     }
+
     //TypeScript Decision Making
-    private static List<LearnDetailsModel> TypeScriptDecisionMaking(){
+    private static List<LearnDetailsModel> TypeScriptDecisionMaking() {
         final List<LearnDetailsModel> list = new ArrayList<>();
         final LearnDetailsModel l1 = new LearnDetailsModel(
                 "TypeScript Decision Making",
                 "Decision-making structures require that the programmer specifies one or more conditions to be evaluated or tested by the program, along with a statement or statements to be executed if the condition is determined to be true, and optionally, other statements to be executed if the condition is determined to be false.",
                 "",
                 ""
-        );final LearnDetailsModel l2 = new LearnDetailsModel(
+        );
+        final LearnDetailsModel l2 = new LearnDetailsModel(
                 "Statements",
                 "A decision-making construct evaluates a condition before the instructions are executed. Decision-making constructs in TypeScript are classified as follows −" +
                         "\n\n" +
@@ -7512,8 +7596,9 @@ public class LearnDetailsContent {
         list.add(l2);
         return list;
     }
+
     //TypeScript Loops
-    private static List<LearnDetailsModel> TypeScriptLoops(){
+    private static List<LearnDetailsModel> TypeScriptLoops() {
         final List<LearnDetailsModel> list = new ArrayList<>();
         final LearnDetailsModel l1 = new LearnDetailsModel(
                 "TypeScript Loops",
@@ -7671,8 +7756,9 @@ public class LearnDetailsContent {
         list.add(l7);
         return list;
     }
+
     //TypeScript Functions
-    private static List<LearnDetailsModel> TypeScriptFunctions(){
+    private static List<LearnDetailsModel> TypeScriptFunctions() {
         final List<LearnDetailsModel> list = new ArrayList<>();
         final LearnDetailsModel l1 = new LearnDetailsModel(
                 "TypeScript Functions",
@@ -7862,8 +7948,9 @@ public class LearnDetailsContent {
 
         return list;
     }
+
     //TypeScript Numbers
-    private static List<LearnDetailsModel> TypeScriptNumbers(){
+    private static List<LearnDetailsModel> TypeScriptNumbers() {
         final List<LearnDetailsModel> list = new ArrayList<>();
         final LearnDetailsModel l1 = new LearnDetailsModel(
                 "TypeScript Numbers",
@@ -7918,7 +8005,8 @@ public class LearnDetailsContent {
                 "Employee’s Id: 123 \n" +
                         "Employee's name: Smith \n" +
                         "Employee’s Email ID: smith@abc.com"
-        );final LearnDetailsModel l5 = new LearnDetailsModel(
+        );
+        final LearnDetailsModel l5 = new LearnDetailsModel(
                 "Number Methods",
                 "The Number object contains only the default methods that are a part of every object's definition. Some of the commonly used methods are listed below −" +
                         "\n\n" +
@@ -7949,8 +8037,9 @@ public class LearnDetailsContent {
         list.add(l5);
         return list;
     }
+
     //TypeScript Strings
-    private static List<LearnDetailsModel> TypeScriptStrings(){
+    private static List<LearnDetailsModel> TypeScriptStrings() {
         final List<LearnDetailsModel> list = new ArrayList<>();
         final LearnDetailsModel l1 = new LearnDetailsModel(
                 "TypeScript Strings",
@@ -8040,8 +8129,9 @@ public class LearnDetailsContent {
         list.add(l2);
         return list;
     }
+
     //TypeScript Arrays
-    private static List<LearnDetailsModel> TypeScriptArrays(){
+    private static List<LearnDetailsModel> TypeScriptArrays() {
         final List<LearnDetailsModel> list = new ArrayList<>();
         final LearnDetailsModel l1 = new LearnDetailsModel(
                 "TypeScript Arrays",
@@ -8225,8 +8315,9 @@ public class LearnDetailsContent {
         list.add(l7);
         return list;
     }
+
     //TypeScript Tuples
-    private static List<LearnDetailsModel> TypeScriptTuples(){
+    private static List<LearnDetailsModel> TypeScriptTuples() {
         final List<LearnDetailsModel> list = new ArrayList<>();
         final LearnDetailsModel l1 = new LearnDetailsModel(
                 "TypeScript Tuples",
@@ -8301,8 +8392,9 @@ public class LearnDetailsContent {
         list.add(l5);
         return list;
     }
+
     //TypeScript Union
-    private static List<LearnDetailsModel> TypeScriptUnion(){
+    private static List<LearnDetailsModel> TypeScriptUnion() {
         final List<LearnDetailsModel> list = new ArrayList<>();
         final LearnDetailsModel l1 = new LearnDetailsModel(
                 "TypeScript Union",
@@ -8374,8 +8466,9 @@ public class LearnDetailsContent {
         list.add(l3);
         return list;
     }
+
     //TypeScript Interfaces
-    private static List<LearnDetailsModel> TypeScriptInterfaces(){
+    private static List<LearnDetailsModel> TypeScriptInterfaces() {
         final List<LearnDetailsModel> list = new ArrayList<>();
         final LearnDetailsModel l1 = new LearnDetailsModel(
                 "TypeScript Interfaces",
@@ -8507,7 +8600,8 @@ public class LearnDetailsContent {
                         "console.log(\"Age:  \"+guitar.age) console.log(\"Instrument:  \"+guitar.instrument)",
                 "Age: 21 \n" +
                         "Instrument: Guitar"
-        );final LearnDetailsModel l7 = new LearnDetailsModel(
+        );
+        final LearnDetailsModel l7 = new LearnDetailsModel(
                 "Multiple Interface Inheritance",
                 "Example: Multiple Interface Inheritance" +
                         "\n\n" +
@@ -8534,8 +8628,9 @@ public class LearnDetailsContent {
         list.add(l7);
         return list;
     }
+
     //TypeScript Classes
-    private static List<LearnDetailsModel> TypeScriptClasses(){
+    private static List<LearnDetailsModel> TypeScriptClasses() {
         final List<LearnDetailsModel> list = new ArrayList<>();
         final LearnDetailsModel l1 = new LearnDetailsModel(
                 "TypeScript Classes",
@@ -8731,7 +8826,8 @@ public class LearnDetailsContent {
                         "console.log(obj.str)     //accessible \n" +
                         "console.log(obj.str2)   //compilation Error as str2 is private",
                 ""
-        );final LearnDetailsModel l9 = new LearnDetailsModel(
+        );
+        final LearnDetailsModel l9 = new LearnDetailsModel(
                 "Classes and Interfaces",
                 "Classes can also implement interfaces.The class AgriLoan implements the interface Loan. Hence, it is now binding on the class to include the property interest as its member.",
                 "interface ILoan { \n" +
@@ -8765,8 +8861,9 @@ public class LearnDetailsContent {
 
         return list;
     }
+
     //TypeScript Objects
-    private static List<LearnDetailsModel> TypeScriptObjects(){
+    private static List<LearnDetailsModel> TypeScriptObjects() {
         final List<LearnDetailsModel> list = new ArrayList<>();
         final LearnDetailsModel l1 = new LearnDetailsModel(
                 "TypeScript Objects",
@@ -8874,8 +8971,9 @@ public class LearnDetailsContent {
 
         return list;
     }
+
     //TypeScript Namespaces
-    private static List<LearnDetailsModel> TypeScriptNamespaces(){
+    private static List<LearnDetailsModel> TypeScriptNamespaces() {
         final List<LearnDetailsModel> list = new ArrayList<>();
         final LearnDetailsModel l1 = new LearnDetailsModel(
                 "TypeScript Namespaces",
@@ -8952,8 +9050,9 @@ public class LearnDetailsContent {
         list.add(l2);
         return list;
     }
+
     //TypeScript Modules
-    private static List<LearnDetailsModel> TypeScriptModules(){
+    private static List<LearnDetailsModel> TypeScriptModules() {
         final List<LearnDetailsModel> list = new ArrayList<>();
         final LearnDetailsModel l1 = new LearnDetailsModel(
                 "TypeScript Modules",
@@ -9052,9 +9151,10 @@ public class LearnDetailsContent {
         list.add(l3);
         return list;
     }
+
     //AngularJS
     //AngularJS Introduction
-    private static List<LearnDetailsModel> AngularJSIntroduction(){
+    private static List<LearnDetailsModel> AngularJSIntroduction() {
         final List<LearnDetailsModel> list = new ArrayList<>();
         final LearnDetailsModel l1 = new LearnDetailsModel(
                 "Why to Learn AngularJS?",
@@ -9194,8 +9294,9 @@ public class LearnDetailsContent {
 
         return list;
     }
+
     //AngularJS MVC Architecture
-    private static List<LearnDetailsModel> AngularJSMVCArchitecture(){
+    private static List<LearnDetailsModel> AngularJSMVCArchitecture() {
         final List<LearnDetailsModel> list = new ArrayList<>();
         final LearnDetailsModel l1 = new LearnDetailsModel(
                 "AngularJS MVC Architecture",
@@ -9237,8 +9338,9 @@ public class LearnDetailsContent {
         list.add(l4);
         return list;
     }
+
     //AngularJS First Application
-    private static List<LearnDetailsModel> AngularJSFirstApplication(){
+    private static List<LearnDetailsModel> AngularJSFirstApplication() {
         final List<LearnDetailsModel> list = new ArrayList<>();
         final LearnDetailsModel l1 = new LearnDetailsModel(
                 "AngularJS First Application",
@@ -9314,8 +9416,9 @@ public class LearnDetailsContent {
         list.add(l4);
         return list;
     }
+
     //AngularJS Directives
-    private static List<LearnDetailsModel> AngularJSDirectives(){
+    private static List<LearnDetailsModel> AngularJSDirectives() {
         final List<LearnDetailsModel> list = new ArrayList<>();
         final LearnDetailsModel l1 = new LearnDetailsModel(
                 "AngularJS Directives",
@@ -9379,8 +9482,9 @@ public class LearnDetailsContent {
         list.add(l5);
         return list;
     }
+
     //AngularJS Expressions
-    private static List<LearnDetailsModel> AngularJSExpressions(){
+    private static List<LearnDetailsModel> AngularJSExpressions() {
         final List<LearnDetailsModel> list = new ArrayList<>();
         final LearnDetailsModel l1 = new LearnDetailsModel(
                 "AngularJS Expressions",
@@ -9430,8 +9534,9 @@ public class LearnDetailsContent {
         list.add(l2);
         return list;
     }
+
     //AngularJS Controllers
-    private static List<LearnDetailsModel> AngularJSControllers(){
+    private static List<LearnDetailsModel> AngularJSControllers() {
         final List<LearnDetailsModel> list = new ArrayList<>();
         final LearnDetailsModel l1 = new LearnDetailsModel(
                 "AngularJS Controllers",
@@ -9532,8 +9637,9 @@ public class LearnDetailsContent {
         list.add(l2);
         return list;
     }
+
     //AngularJS Filters
-    private static List<LearnDetailsModel> AngularJSFilters(){
+    private static List<LearnDetailsModel> AngularJSFilters() {
         final List<LearnDetailsModel> list = new ArrayList<>();
         final LearnDetailsModel l1 = new LearnDetailsModel(
                 "AngularJS Filters",
@@ -9583,7 +9689,8 @@ public class LearnDetailsContent {
                 "Enter fees: <input type = \"text\" ng-model = \"student.fees\">\n" +
                         "fees: {{student.fees | currency}}",
                 ""
-        );final LearnDetailsModel l5 = new LearnDetailsModel(
+        );
+        final LearnDetailsModel l5 = new LearnDetailsModel(
                 "Filter",
                 "To display only required subjects, we use subjectName as filter.",
                 "Enter subject: <input type = \"text\" ng-model = \"subjectName\">\n" +
@@ -9594,7 +9701,8 @@ public class LearnDetailsContent {
                         "   </li>\n" +
                         "</ul>",
                 ""
-        );final LearnDetailsModel l6 = new LearnDetailsModel(
+        );
+        final LearnDetailsModel l6 = new LearnDetailsModel(
                 "OrderBy Filter",
                 "To order subjects by marks, we use orderBy marks.",
                 "Subject:\n" +
@@ -9604,7 +9712,8 @@ public class LearnDetailsContent {
                         "   </li>\n" +
                         "</ul>",
                 ""
-        );final LearnDetailsModel l7 = new LearnDetailsModel(
+        );
+        final LearnDetailsModel l7 = new LearnDetailsModel(
                 "Example",
                 "The following example shows use of all the above mentioned filters.\n" +
                         "\n" +
@@ -9707,8 +9816,9 @@ public class LearnDetailsContent {
         list.add(l7);
         return list;
     }
+
     //AngularJS Tables
-    private static List<LearnDetailsModel> AngularJSTables(){
+    private static List<LearnDetailsModel> AngularJSTables() {
         final List<LearnDetailsModel> list = new ArrayList<>();
         final LearnDetailsModel l1 = new LearnDetailsModel(
                 "AngularJS Tables",
@@ -9836,8 +9946,9 @@ public class LearnDetailsContent {
         list.add(l2);
         return list;
     }
+
     //AngularJS HTML DOM
-    private static List<LearnDetailsModel> AngularJSHTMLDOM(){
+    private static List<LearnDetailsModel> AngularJSHTMLDOM() {
         final List<LearnDetailsModel> list = new ArrayList<>();
         final LearnDetailsModel l1 = new LearnDetailsModel(
                 "AngularJS HTML DOM",
@@ -9938,8 +10049,9 @@ public class LearnDetailsContent {
         list.add(l6);
         return list;
     }
+
     //AngularJS Modules
-    private static List<LearnDetailsModel> AngularJSModules(){
+    private static List<LearnDetailsModel> AngularJSModules() {
         final List<LearnDetailsModel> list = new ArrayList<>();
         final LearnDetailsModel l1 = new LearnDetailsModel(
                 "AngularJS Modules",
@@ -10003,8 +10115,9 @@ public class LearnDetailsContent {
         list.add(l4);
         return list;
     }
+
     //AngularJS Forms
-    private static List<LearnDetailsModel> AngularJSForms(){
+    private static List<LearnDetailsModel> AngularJSForms() {
         final List<LearnDetailsModel> list = new ArrayList<>();
         final LearnDetailsModel l1 = new LearnDetailsModel(
                 "AngularJS Forms",
@@ -10161,8 +10274,9 @@ public class LearnDetailsContent {
         list.add(l4);
         return list;
     }
+
     //AngularJS Includes
-    private static List<LearnDetailsModel> AngularJSIncludes(){
+    private static List<LearnDetailsModel> AngularJSIncludes() {
         final List<LearnDetailsModel> list = new ArrayList<>();
         final LearnDetailsModel l1 = new LearnDetailsModel(
                 "AngularJS Includes",
@@ -10278,8 +10392,9 @@ public class LearnDetailsContent {
         list.add(l2);
         return list;
     }
+
     //AngularJS Ajax
-    private static List<LearnDetailsModel> AngularJSAjax(){
+    private static List<LearnDetailsModel> AngularJSAjax() {
         final List<LearnDetailsModel> list = new ArrayList<>();
         final LearnDetailsModel l1 = new LearnDetailsModel(
                 "AngularJS Ajax",
@@ -10382,8 +10497,9 @@ public class LearnDetailsContent {
         list.add(l2);
         return list;
     }
+
     //AngularJS Views
-    private static List<LearnDetailsModel> AngularJSViews(){
+    private static List<LearnDetailsModel> AngularJSViews() {
         final List<LearnDetailsModel> list = new ArrayList<>();
         final LearnDetailsModel l1 = new LearnDetailsModel(
                 "AngularJS Views",
@@ -10499,8 +10615,9 @@ public class LearnDetailsContent {
         list.add(l4);
         return list;
     }
+
     //AngularJS Scopes
-    private static List<LearnDetailsModel> AngularJSScopes(){
+    private static List<LearnDetailsModel> AngularJSScopes() {
         final List<LearnDetailsModel> list = new ArrayList<>();
         final LearnDetailsModel l1 = new LearnDetailsModel(
                 "AngularJS Scopes",
@@ -10602,8 +10719,9 @@ public class LearnDetailsContent {
         list.add(l3);
         return list;
     }
+
     //AngularJS Services
-    private static List<LearnDetailsModel> AngularJSServices(){
+    private static List<LearnDetailsModel> AngularJSServices() {
         final List<LearnDetailsModel> list = new ArrayList<>();
         final LearnDetailsModel l1 = new LearnDetailsModel(
                 "AngularJS Services",
@@ -10697,8 +10815,9 @@ public class LearnDetailsContent {
         list.add(l4);
         return list;
     }
+
     //AngularJS Dependency Injection
-    private static List<LearnDetailsModel> AngularJSInjection(){
+    private static List<LearnDetailsModel> AngularJSInjection() {
         final List<LearnDetailsModel> list = new ArrayList<>();
         final LearnDetailsModel l1 = new LearnDetailsModel(
                 "AngularJS Dependency Injection",
@@ -10889,8 +11008,9 @@ public class LearnDetailsContent {
         list.add(l7);
         return list;
     }
+
     //AngularJS Custom Directives
-    private static List<LearnDetailsModel> AngularJSCustomDirectives(){
+    private static List<LearnDetailsModel> AngularJSCustomDirectives() {
         final List<LearnDetailsModel> list = new ArrayList<>();
         final LearnDetailsModel l1 = new LearnDetailsModel(
                 "AngularJS Custom Directives",
@@ -11032,9 +11152,10 @@ public class LearnDetailsContent {
         list.add(l3);
         return list;
     }
+
     //VueJs
     //VueJs Introduction
-    private static List<LearnDetailsModel> VueJsIntroduction(){
+    private static List<LearnDetailsModel> VueJsIntroduction() {
         final List<LearnDetailsModel> list = new ArrayList<>();
         final LearnDetailsModel l1 = new LearnDetailsModel(
                 "VueJs Introduction",
@@ -11203,8 +11324,9 @@ public class LearnDetailsContent {
         list.add(l7);
         return list;
     }
+
     //VueJs First Program
-    private static List<LearnDetailsModel> VueJsFirstProgram(){
+    private static List<LearnDetailsModel> VueJsFirstProgram() {
         final List<LearnDetailsModel> list = new ArrayList<>();
         final LearnDetailsModel l1 = new LearnDetailsModel(
                 "VueJs First Program",
@@ -11242,8 +11364,9 @@ public class LearnDetailsContent {
         list.add(l2);
         return list;
     }
+
     //VueJS Instances
-    private static List<LearnDetailsModel> VueJSInstances(){
+    private static List<LearnDetailsModel> VueJSInstances() {
         final List<LearnDetailsModel> list = new ArrayList<>();
         final LearnDetailsModel l1 = new LearnDetailsModel(
                 "VueJS Instances",
@@ -11313,8 +11436,9 @@ public class LearnDetailsContent {
         list.add(l2);
         return list;
     }
+
     //VueJS Template
-    private static List<LearnDetailsModel> VueJSTemplate(){
+    private static List<LearnDetailsModel> VueJSTemplate() {
         final List<LearnDetailsModel> list = new ArrayList<>();
         final LearnDetailsModel l1 = new LearnDetailsModel(
                 "VueJS Template",
@@ -11349,8 +11473,9 @@ public class LearnDetailsContent {
         list.add(l1);
         return list;
     }
+
     //VueJS Components
-    private static List<LearnDetailsModel> VueJSComponents(){
+    private static List<LearnDetailsModel> VueJSComponents() {
         final List<LearnDetailsModel> list = new ArrayList<>();
         final LearnDetailsModel l1 = new LearnDetailsModel(
                 "VueJS Components",
@@ -11418,8 +11543,9 @@ public class LearnDetailsContent {
         list.add(l2);
         return list;
     }
+
     //VueJS Computed Properties
-    private static List<LearnDetailsModel> VueJSComputedProperties(){
+    private static List<LearnDetailsModel> VueJSComputedProperties() {
         final List<LearnDetailsModel> list = new ArrayList<>();
         final LearnDetailsModel l1 = new LearnDetailsModel(
                 "VueJS Computed Properties",
@@ -11513,8 +11639,9 @@ public class LearnDetailsContent {
         list.add(l2);
         return list;
     }
+
     //VueJS Binding
-    private static List<LearnDetailsModel> VueJSBinding(){
+    private static List<LearnDetailsModel> VueJSBinding() {
         final List<LearnDetailsModel> list = new ArrayList<>();
         final LearnDetailsModel l1 = new LearnDetailsModel(
                 "VueJS Binding",
@@ -11596,8 +11723,9 @@ public class LearnDetailsContent {
         list.add(l2);
         return list;
     }
+
     //VueJS Events
-    private static List<LearnDetailsModel> VueJSEvents(){
+    private static List<LearnDetailsModel> VueJSEvents() {
         final List<LearnDetailsModel> list = new ArrayList<>();
         final LearnDetailsModel l1 = new LearnDetailsModel(
                 "Click Event",
@@ -11784,8 +11912,9 @@ public class LearnDetailsContent {
         list.add(l4);
         return list;
     }
+
     //VueJS Rendering
-    private static List<LearnDetailsModel> VueJSRendering(){
+    private static List<LearnDetailsModel> VueJSRendering() {
         final List<LearnDetailsModel> list = new ArrayList<>();
         final LearnDetailsModel l1 = new LearnDetailsModel(
                 "Conditional Rendering",
@@ -11835,7 +11964,8 @@ public class LearnDetailsContent {
                         "   </body>\n" +
                         "</html>",
                 ""
-        );final LearnDetailsModel l2 = new LearnDetailsModel(
+        );
+        final LearnDetailsModel l2 = new LearnDetailsModel(
                 "List Rendering",
                 "Let us now discuss list rendering with v-for directive.",
                 "<html>\n" +
@@ -11879,8 +12009,9 @@ public class LearnDetailsContent {
         list.add(l2);
         return list;
     }
+
     //VueJS Animation
-    private static List<LearnDetailsModel> VueJSAnimation(){
+    private static List<LearnDetailsModel> VueJSAnimation() {
         final List<LearnDetailsModel> list = new ArrayList<>();
         final LearnDetailsModel l1 = new LearnDetailsModel(
                 "In this chapter, we will discuss the transition and animation features available in VueJS." +
@@ -12021,8 +12152,9 @@ public class LearnDetailsContent {
         list.add(l3);
         return list;
     }
+
     //VueJS Directives
-    private static List<LearnDetailsModel> VueJSDirectives(){
+    private static List<LearnDetailsModel> VueJSDirectives() {
         final List<LearnDetailsModel> list = new ArrayList<>();
         final LearnDetailsModel l1 = new LearnDetailsModel(
                 "VueJS Directives",
@@ -12099,8 +12231,9 @@ public class LearnDetailsContent {
         list.add(l2);
         return list;
     }
+
     //VueJS Routing
-    private static List<LearnDetailsModel> VueJSRouting(){
+    private static List<LearnDetailsModel> VueJSRouting() {
         final List<LearnDetailsModel> list = new ArrayList<>();
         final LearnDetailsModel l1 = new LearnDetailsModel(
                 "Direct Download from CDN",
@@ -12165,8 +12298,9 @@ public class LearnDetailsContent {
         list.add(l1);
         return list;
     }
+
     //VueJS Mixins
-    private static List<LearnDetailsModel> VueJSMixins(){
+    private static List<LearnDetailsModel> VueJSMixins() {
         final List<LearnDetailsModel> list = new ArrayList<>();
         final LearnDetailsModel l1 = new LearnDetailsModel(
                 "VueJS Mixins",
@@ -12208,8 +12342,9 @@ public class LearnDetailsContent {
         list.add(l1);
         return list;
     }
+
     //VueJS Examples
-    private static List<LearnDetailsModel> VueJSExamples(){
+    private static List<LearnDetailsModel> VueJSExamples() {
         final List<LearnDetailsModel> list = new ArrayList<>();
         final LearnDetailsModel l1 = new LearnDetailsModel(
                 "Currency Converter",
@@ -12464,9 +12599,10 @@ public class LearnDetailsContent {
         list.add(l2);
         return list;
     }
+
     //NextJs
     //NextJs Introduction
-    private static List<LearnDetailsModel> NextJsIntroduction(){
+    private static List<LearnDetailsModel> NextJsIntroduction() {
         final List<LearnDetailsModel> list = new ArrayList<>();
         final LearnDetailsModel l1 = new LearnDetailsModel(
                 "NextJs Introduction",
@@ -12520,8 +12656,9 @@ public class LearnDetailsContent {
         list.add(l4);
         return list;
     }
+
     //NextJs Pages
-    private static List<LearnDetailsModel> NextJsPages(){
+    private static List<LearnDetailsModel> NextJsPages() {
         final List<LearnDetailsModel> list = new ArrayList<>();
         final LearnDetailsModel l1 = new LearnDetailsModel(
                 "NextJs Pages",
@@ -12594,8 +12731,9 @@ public class LearnDetailsContent {
         list.add(l2);
         return list;
     }
+
     //NextJs Static File Serving
-    private static List<LearnDetailsModel> NextJsStaticFileServing(){
+    private static List<LearnDetailsModel> NextJsStaticFileServing() {
         final List<LearnDetailsModel> list = new ArrayList<>();
         final LearnDetailsModel l1 = new LearnDetailsModel(
                 "NextJs Static File Serving",
@@ -12650,8 +12788,9 @@ public class LearnDetailsContent {
         list.add(l2);
         return list;
     }
+
     //NextJs Meta Data
-    private static List<LearnDetailsModel> NextJsMetaData(){
+    private static List<LearnDetailsModel> NextJsMetaData() {
         final List<LearnDetailsModel> list = new ArrayList<>();
         final LearnDetailsModel l1 = new LearnDetailsModel(
                 "NextJs Meta Data",
@@ -12724,8 +12863,9 @@ public class LearnDetailsContent {
         list.add(l2);
         return list;
     }
+
     //NextJs CSS Support
-    private static List<LearnDetailsModel> NextJsCSSSupport(){
+    private static List<LearnDetailsModel> NextJsCSSSupport() {
         final List<LearnDetailsModel> list = new ArrayList<>();
         final LearnDetailsModel l1 = new LearnDetailsModel(
                 "NextJs CSS Support",
@@ -12799,8 +12939,9 @@ public class LearnDetailsContent {
         list.add(l2);
         return list;
     }
+
     //NextJs Global CSS Support
-    private static List<LearnDetailsModel> NextJsGlobalCSSSupport(){
+    private static List<LearnDetailsModel> NextJsGlobalCSSSupport() {
         final List<LearnDetailsModel> list = new ArrayList<>();
         final LearnDetailsModel l1 = new LearnDetailsModel(
                 "Global CSS Support",
@@ -12869,8 +13010,9 @@ public class LearnDetailsContent {
         list.add(l2);
         return list;
     }
+
     //NextJs Pre-Rendering
-    private static List<LearnDetailsModel> NextJsPreRendering(){
+    private static List<LearnDetailsModel> NextJsPreRendering() {
         final List<LearnDetailsModel> list = new ArrayList<>();
         final LearnDetailsModel l1 = new LearnDetailsModel(
                 "Pre-Rendering",
@@ -12993,8 +13135,9 @@ public class LearnDetailsContent {
         list.add(l5);
         return list;
     }
+
     //NextJs Routing
-    private static List<LearnDetailsModel> NextJsRouting(){
+    private static List<LearnDetailsModel> NextJsRouting() {
         final List<LearnDetailsModel> list = new ArrayList<>();
         final LearnDetailsModel l1 = new LearnDetailsModel(
                 "Routing",
@@ -13086,8 +13229,9 @@ public class LearnDetailsContent {
         list.add(l3);
         return list;
     }
+
     //NextJs Dynamic Routing
-    private static List<LearnDetailsModel> NextJsDynamicRouting(){
+    private static List<LearnDetailsModel> NextJsDynamicRouting() {
         final List<LearnDetailsModel> list = new ArrayList<>();
         final LearnDetailsModel l1 = new LearnDetailsModel(
                 "Dynamic Routing",
@@ -13173,7 +13317,8 @@ public class LearnDetailsContent {
                         "];\n" +
                         "}",
                 ""
-        );final LearnDetailsModel l4 = new LearnDetailsModel(
+        );
+        final LearnDetailsModel l4 = new LearnDetailsModel(
                 "Start Next.js Server",
                 "Run the following command to start the server −.",
                 "npm run dev\n" +
@@ -13196,8 +13341,9 @@ public class LearnDetailsContent {
         list.add(l4);
         return list;
     }
+
     //NextJs Imperative Routing
-    private static List<LearnDetailsModel> NextJsImperativeRouting(){
+    private static List<LearnDetailsModel> NextJsImperativeRouting() {
         final List<LearnDetailsModel> list = new ArrayList<>();
         final LearnDetailsModel l1 = new LearnDetailsModel(
                 "Imperative Routing",
@@ -13254,8 +13400,9 @@ public class LearnDetailsContent {
         list.add(l2);
         return list;
     }
+
     //NextJs Shallow Routing
-    private static List<LearnDetailsModel> NextJsShallowRouting(){
+    private static List<LearnDetailsModel> NextJsShallowRouting() {
         final List<LearnDetailsModel> list = new ArrayList<>();
         final LearnDetailsModel l1 = new LearnDetailsModel(
                 "Shallow Routing",
@@ -13314,8 +13461,9 @@ public class LearnDetailsContent {
         list.add(l2);
         return list;
     }
+
     //NextJs Api Routes
-    private static List<LearnDetailsModel> NextJsApiRoutes(){
+    private static List<LearnDetailsModel> NextJsApiRoutes() {
         final List<LearnDetailsModel> list = new ArrayList<>();
         final LearnDetailsModel l1 = new LearnDetailsModel(
                 "Api Routes",
@@ -13367,8 +13515,9 @@ public class LearnDetailsContent {
         list.add(l2);
         return list;
     }
+
     //NextJs API MiddleWares
-    private static List<LearnDetailsModel> NextJsAPIMiddleWares(){
+    private static List<LearnDetailsModel> NextJsAPIMiddleWares() {
         final List<LearnDetailsModel> list = new ArrayList<>();
         final LearnDetailsModel l1 = new LearnDetailsModel(
                 "API MiddleWares",
@@ -13419,8 +13568,9 @@ public class LearnDetailsContent {
         list.add(l2);
         return list;
     }
+
     //NextJs Response Helpers
-    private static List<LearnDetailsModel> NextJsResponseHelpers(){
+    private static List<LearnDetailsModel> NextJsResponseHelpers() {
         final List<LearnDetailsModel> list = new ArrayList<>();
         final LearnDetailsModel l1 = new LearnDetailsModel(
                 "Response Helpers",
@@ -13469,9 +13619,10 @@ public class LearnDetailsContent {
         list.add(l2);
         return list;
     }
+
     //ReactJs
     //ReactJs Introduction
-    private static List<LearnDetailsModel> ReactJsIntroduction(){
+    private static List<LearnDetailsModel> ReactJsIntroduction() {
         final List<LearnDetailsModel> list = new ArrayList<>();
         final LearnDetailsModel l1 = new LearnDetailsModel(
                 "Introduction",
@@ -13529,8 +13680,9 @@ public class LearnDetailsContent {
         list.add(l5);
         return list;
     }
+
     //ReactJs Architecture
-    private static List<LearnDetailsModel> ReactJsArchitecture(){
+    private static List<LearnDetailsModel> ReactJsArchitecture() {
         final List<LearnDetailsModel> list = new ArrayList<>();
         final LearnDetailsModel l1 = new LearnDetailsModel(
                 "Architecture",
@@ -13650,8 +13802,9 @@ public class LearnDetailsContent {
         list.add(l5);
         return list;
     }
+
     //ReactJs Creating a React Application
-    private static List<LearnDetailsModel> ReactJsCreatingReactApplication(){
+    private static List<LearnDetailsModel> ReactJsCreatingReactApplication() {
         final List<LearnDetailsModel> list = new ArrayList<>();
         final LearnDetailsModel l1 = new LearnDetailsModel(
                 "Creating a React Application",
@@ -13961,8 +14114,9 @@ public class LearnDetailsContent {
         list.add(l3);
         return list;
     }
+
     //ReactJs JSX
-    private static List<LearnDetailsModel> ReactJsJSX(){
+    private static List<LearnDetailsModel> ReactJsJSX() {
         final List<LearnDetailsModel> list = new ArrayList<>();
         final LearnDetailsModel l1 = new LearnDetailsModel(
                 "JSX",
@@ -14063,8 +14217,9 @@ public class LearnDetailsContent {
         list.add(l5);
         return list;
     }
+
     //ReactJs Component
-    private static List<LearnDetailsModel> ReactJsComponent(){
+    private static List<LearnDetailsModel> ReactJsComponent() {
         final List<LearnDetailsModel> list = new ArrayList<>();
         final LearnDetailsModel l1 = new LearnDetailsModel(
                 "Component",
@@ -14211,8 +14366,9 @@ public class LearnDetailsContent {
         list.add(l4);
         return list;
     }
+
     //ReactJs Styling
-    private static List<LearnDetailsModel> ReactJsStyling(){
+    private static List<LearnDetailsModel> ReactJsStyling() {
         final List<LearnDetailsModel> list = new ArrayList<>();
         final LearnDetailsModel l1 = new LearnDetailsModel(
                 "Styling",
@@ -14350,8 +14506,9 @@ public class LearnDetailsContent {
         list.add(l4);
         return list;
     }
+
     //ReactJs Properties
-    private static List<LearnDetailsModel> ReactJsProperties(){
+    private static List<LearnDetailsModel> ReactJsProperties() {
         final List<LearnDetailsModel> list = new ArrayList<>();
         final LearnDetailsModel l1 = new LearnDetailsModel(
                 "Properties (props)",
@@ -14384,8 +14541,9 @@ public class LearnDetailsContent {
         list.add(l1);
         return list;
     }
+
     //ReactJs Events
-    private static List<LearnDetailsModel> ReactJsEvents(){
+    private static List<LearnDetailsModel> ReactJsEvents() {
         final List<LearnDetailsModel> list = new ArrayList<>();
         final LearnDetailsModel l1 = new LearnDetailsModel(
                 "Adding Events",
@@ -14457,8 +14615,9 @@ public class LearnDetailsContent {
         list.add(l3);
         return list;
     }
+
     //ReactJs Conditional
-    private static List<LearnDetailsModel> ReactJsConditional(){
+    private static List<LearnDetailsModel> ReactJsConditional() {
         final List<LearnDetailsModel> list = new ArrayList<>();
         final LearnDetailsModel l1 = new LearnDetailsModel(
                 "Conditional Rendering",
@@ -14524,8 +14683,9 @@ public class LearnDetailsContent {
         list.add(l3);
         return list;
     }
+
     //ReactJs Lists
-    private static List<LearnDetailsModel> ReactJsLists(){
+    private static List<LearnDetailsModel> ReactJsLists() {
         final List<LearnDetailsModel> list = new ArrayList<>();
         final LearnDetailsModel l1 = new LearnDetailsModel(
                 "React Lists",
@@ -14587,8 +14747,9 @@ public class LearnDetailsContent {
         list.add(l2);
         return list;
     }
+
     //ReactJs Forms
-    private static List<LearnDetailsModel> ReactJsForms(){
+    private static List<LearnDetailsModel> ReactJsForms() {
         final List<LearnDetailsModel> list = new ArrayList<>();
         final LearnDetailsModel l1 = new LearnDetailsModel(
                 "Adding Forms in React",
@@ -14724,7 +14885,8 @@ public class LearnDetailsContent {
                         "\n" +
                         "ReactDOM.render(<MyForm />, document.getElementById('root'));",
                 ""
-        );final LearnDetailsModel l5 = new LearnDetailsModel(
+        );
+        final LearnDetailsModel l5 = new LearnDetailsModel(
                 "Textarea",
                 "The textarea element in React is slightly different from ordinary HTML.\n" +
                         "\n" +
@@ -14783,8 +14945,9 @@ public class LearnDetailsContent {
         list.add(l6);
         return list;
     }
+
     //ReactJs Styling Sass
-    private static List<LearnDetailsModel> ReactJsStylingSass(){
+    private static List<LearnDetailsModel> ReactJsStylingSass() {
         final List<LearnDetailsModel> list = new ArrayList<>();
         final LearnDetailsModel l1 = new LearnDetailsModel(
                 "Styling React Using Sass",
@@ -14841,8 +15004,9 @@ public class LearnDetailsContent {
         list.add(l2);
         return list;
     }
+
     //ReactJs Hooks
-    private static List<LearnDetailsModel> ReactJsHooks(){
+    private static List<LearnDetailsModel> ReactJsHooks() {
         final List<LearnDetailsModel> list = new ArrayList<>();
         final LearnDetailsModel l1 = new LearnDetailsModel(
                 "What is a Hook?",
@@ -14909,9 +15073,10 @@ public class LearnDetailsContent {
         list.add(l3);
         return list;
     }
+
     //EmberJs
     //EmberJs Introduction
-    private static List<LearnDetailsModel> EmberJsIntroduction(){
+    private static List<LearnDetailsModel> EmberJsIntroduction() {
         final List<LearnDetailsModel> list = new ArrayList<>();
         final LearnDetailsModel l1 = new LearnDetailsModel(
                 "What is Ember.js?",
@@ -14974,8 +15139,9 @@ public class LearnDetailsContent {
         list.add(l5);
         return list;
     }
+
     //EmberJs Core Concepts
-    private static List<LearnDetailsModel> EmberJsCoreConcepts(){
+    private static List<LearnDetailsModel> EmberJsCoreConcepts() {
         final List<LearnDetailsModel> list = new ArrayList<>();
         final LearnDetailsModel l1 = new LearnDetailsModel(
                 "Core Concepts",
@@ -15031,8 +15197,9 @@ public class LearnDetailsContent {
         list.add(l5);
         return list;
     }
+
     //EmberJs Application
-    private static List<LearnDetailsModel> EmberJsApplication(){
+    private static List<LearnDetailsModel> EmberJsApplication() {
         final List<LearnDetailsModel> list = new ArrayList<>();
         final LearnDetailsModel l1 = new LearnDetailsModel(
                 "Creating and Running Application",
@@ -15098,8 +15265,9 @@ public class LearnDetailsContent {
         list.add(l2);
         return list;
     }
+
     //EmberJs Object Model
-    private static List<LearnDetailsModel> EmberJsObjectModel(){
+    private static List<LearnDetailsModel> EmberJsObjectModel() {
         final List<LearnDetailsModel> list = new ArrayList<>();
         final LearnDetailsModel l1 = new LearnDetailsModel(
                 "Object Model",
@@ -15130,8 +15298,9 @@ public class LearnDetailsContent {
         list.add(l1);
         return list;
     }
+
     //EmberJs Router
-    private static List<LearnDetailsModel> EmberJsRouter(){
+    private static List<LearnDetailsModel> EmberJsRouter() {
         final List<LearnDetailsModel> list = new ArrayList<>();
         final LearnDetailsModel l1 = new LearnDetailsModel(
                 "Router",
@@ -15176,8 +15345,9 @@ public class LearnDetailsContent {
         list.add(l1);
         return list;
     }
+
     //EmberJs Templates
-    private static List<LearnDetailsModel> EmberJsTemplates(){
+    private static List<LearnDetailsModel> EmberJsTemplates() {
         final List<LearnDetailsModel> list = new ArrayList<>();
         final LearnDetailsModel l1 = new LearnDetailsModel(
                 "Templates",
@@ -15220,8 +15390,9 @@ public class LearnDetailsContent {
         list.add(l1);
         return list;
     }
+
     //EmberJs Components
-    private static List<LearnDetailsModel> EmberJsComponents(){
+    private static List<LearnDetailsModel> EmberJsComponents() {
         final List<LearnDetailsModel> list = new ArrayList<>();
         final LearnDetailsModel l1 = new LearnDetailsModel(
                 "Components",
@@ -15259,8 +15430,9 @@ public class LearnDetailsContent {
         list.add(l1);
         return list;
     }
+
     //EmberJs Models
-    private static List<LearnDetailsModel> EmberJsModels(){
+    private static List<LearnDetailsModel> EmberJsModels() {
         final List<LearnDetailsModel> list = new ArrayList<>();
         final LearnDetailsModel l1 = new LearnDetailsModel(
                 "Models",
@@ -15348,8 +15520,9 @@ public class LearnDetailsContent {
         list.add(l6);
         return list;
     }
+
     //EmberJs Managing Dependencies
-    private static List<LearnDetailsModel> EmberJsManagingDependencies(){
+    private static List<LearnDetailsModel> EmberJsManagingDependencies() {
         final List<LearnDetailsModel> list = new ArrayList<>();
         final LearnDetailsModel l1 = new LearnDetailsModel(
                 "Managing Dependencies",
@@ -15428,9 +15601,10 @@ public class LearnDetailsContent {
         list.add(l7);
         return list;
     }
+
     //ExpressJs
     //ExpressJs Introduction
-    private static List<LearnDetailsModel> ExpressJsIntroduction(){
+    private static List<LearnDetailsModel> ExpressJsIntroduction() {
         final List<LearnDetailsModel> list = new ArrayList<>();
         final LearnDetailsModel l1 = new LearnDetailsModel(
                 "What is Express?",
@@ -15485,8 +15659,9 @@ public class LearnDetailsContent {
 
         return list;
     }
+
     //ExpressJs Environment
-    private static List<LearnDetailsModel> ExpressJsEnvironment(){
+    private static List<LearnDetailsModel> ExpressJsEnvironment() {
         final List<LearnDetailsModel> list = new ArrayList<>();
         final LearnDetailsModel l1 = new LearnDetailsModel(
                 "How to setup ExpressJS Environment?",
@@ -15553,8 +15728,9 @@ public class LearnDetailsContent {
         list.add(l3);
         return list;
     }
+
     //ExpressJs Hello World
-    private static List<LearnDetailsModel> ExpressJsHelloWorld(){
+    private static List<LearnDetailsModel> ExpressJsHelloWorld() {
         final List<LearnDetailsModel> list = new ArrayList<>();
         final LearnDetailsModel l1 = new LearnDetailsModel(
                 "Hello World",
@@ -15614,8 +15790,9 @@ public class LearnDetailsContent {
         list.add(l3);
         return list;
     }
+
     //ExpressJs Routing
-    private static List<LearnDetailsModel> ExpressJsRouting(){
+    private static List<LearnDetailsModel> ExpressJsRouting() {
         final List<LearnDetailsModel> list = new ArrayList<>();
         final LearnDetailsModel l1 = new LearnDetailsModel(
                 "Routing",
@@ -15708,8 +15885,9 @@ public class LearnDetailsContent {
         list.add(l3);
         return list;
     }
+
     //ExpressJs HTTP Methods
-    private static List<LearnDetailsModel> ExpressJsHTTPMethods(){
+    private static List<LearnDetailsModel> ExpressJsHTTPMethods() {
         final List<LearnDetailsModel> list = new ArrayList<>();
         final LearnDetailsModel l1 = new LearnDetailsModel(
                 "HTTP Methods",
@@ -15789,8 +15967,9 @@ public class LearnDetailsContent {
         list.add(l5);
         return list;
     }
+
     //ExpressJs URL Building
-    private static List<LearnDetailsModel> ExpressJsURLBuilding(){
+    private static List<LearnDetailsModel> ExpressJsURLBuilding() {
         final List<LearnDetailsModel> list = new ArrayList<>();
         final LearnDetailsModel l1 = new LearnDetailsModel(
                 "What is URL Building?",
@@ -15827,8 +16006,9 @@ public class LearnDetailsContent {
         list.add(l2);
         return list;
     }
+
     //ExpressJs Middleware
-    private static List<LearnDetailsModel> ExpressJsMiddleware(){
+    private static List<LearnDetailsModel> ExpressJsMiddleware() {
         final List<LearnDetailsModel> list = new ArrayList<>();
         final LearnDetailsModel l1 = new LearnDetailsModel(
                 "What is Middleware?",
@@ -15912,8 +16092,9 @@ public class LearnDetailsContent {
         list.add(l3);
         return list;
     }
+
     //ExpressJs Templating
-    private static List<LearnDetailsModel> ExpressJsTemplating(){
+    private static List<LearnDetailsModel> ExpressJsTemplating() {
         final List<LearnDetailsModel> list = new ArrayList<>();
         final LearnDetailsModel l1 = new LearnDetailsModel(
                 "What is Templating?",
@@ -16087,8 +16268,9 @@ public class LearnDetailsContent {
         list.add(l7);
         return list;
     }
+
     //ExpressJs Static Files
-    private static List<LearnDetailsModel> ExpressJsStaticFiles(){
+    private static List<LearnDetailsModel> ExpressJsStaticFiles() {
         final List<LearnDetailsModel> list = new ArrayList<>();
         final LearnDetailsModel l1 = new LearnDetailsModel(
                 "How to Serving static files?",
@@ -16133,8 +16315,9 @@ public class LearnDetailsContent {
         list.add(l3);
         return list;
     }
+
     //ExpressJs Form Data
-    private static List<LearnDetailsModel> ExpressJsFormData(){
+    private static List<LearnDetailsModel> ExpressJsFormData() {
         final List<LearnDetailsModel> list = new ArrayList<>();
         final LearnDetailsModel l1 = new LearnDetailsModel(
                 "What is Form data?",
@@ -16203,8 +16386,9 @@ public class LearnDetailsContent {
         list.add(l2);
         return list;
     }
+
     //ExpressJs Database
-    private static List<LearnDetailsModel> ExpressJsDatabase(){
+    private static List<LearnDetailsModel> ExpressJsDatabase() {
         final List<LearnDetailsModel> list = new ArrayList<>();
         final LearnDetailsModel l1 = new LearnDetailsModel(
                 "What is Database?",
@@ -16306,8 +16490,9 @@ public class LearnDetailsContent {
         list.add(l6);
         return list;
     }
+
     //ExpressJs Cookies
-    private static List<LearnDetailsModel> ExpressJsCookies(){
+    private static List<LearnDetailsModel> ExpressJsCookies() {
         final List<LearnDetailsModel> list = new ArrayList<>();
         final LearnDetailsModel l1 = new LearnDetailsModel(
                 "How to use Cookies?",
@@ -16364,8 +16549,9 @@ public class LearnDetailsContent {
         list.add(l3);
         return list;
     }
+
     //ExpressJs Sessions
-    private static List<LearnDetailsModel> ExpressJsSessions(){
+    private static List<LearnDetailsModel> ExpressJsSessions() {
         final List<LearnDetailsModel> list = new ArrayList<>();
         final LearnDetailsModel l1 = new LearnDetailsModel(
                 "How to use Sessions?",
@@ -16411,8 +16597,9 @@ public class LearnDetailsContent {
         list.add(l2);
         return list;
     }
+
     //ExpressJs Authentication
-    private static List<LearnDetailsModel> ExpressJsAuthentication(){
+    private static List<LearnDetailsModel> ExpressJsAuthentication() {
         final List<LearnDetailsModel> list = new ArrayList<>();
         final LearnDetailsModel l1 = new LearnDetailsModel(
                 "How to use Authentication?",
@@ -16482,8 +16669,9 @@ public class LearnDetailsContent {
         list.add(l2);
         return list;
     }
+
     //ExpressJs RESTFul APIs
-    private static List<LearnDetailsModel> ExpressJsRESTFulAPIs(){
+    private static List<LearnDetailsModel> ExpressJsRESTFulAPIs() {
         final List<LearnDetailsModel> list = new ArrayList<>();
         final LearnDetailsModel l1 = new LearnDetailsModel(
                 "What is RESTFul APIs?",
@@ -16603,7 +16791,8 @@ public class LearnDetailsContent {
                         "   }\n" +
                         "});",
                 ""
-        );final LearnDetailsModel l6 = new LearnDetailsModel(
+        );
+        final LearnDetailsModel l6 = new LearnDetailsModel(
                 "PUT route",
                 "The PUT route is almost the same as the POST route. We will be specifying the id for the object that'll be updated/created. Create the route in the following way.",
                 "router.put('/:id', function(req, res){\n" +
@@ -16644,7 +16833,8 @@ public class LearnDetailsContent {
                         "   }\n" +
                         "});",
                 ""
-        );final LearnDetailsModel l7 = new LearnDetailsModel(
+        );
+        final LearnDetailsModel l7 = new LearnDetailsModel(
                 "DELETE route",
                 "Use the following code to create a delete route. −",
                 "router.delete('/:id', function(req, res){\n" +
@@ -16660,7 +16850,8 @@ public class LearnDetailsContent {
                         "   }\n" +
                         "});",
                 ""
-        );final LearnDetailsModel l8 = new LearnDetailsModel(
+        );
+        final LearnDetailsModel l8 = new LearnDetailsModel(
                 "movies.js",
                 "Check the route in the same way as we checked the other routes. On successful deletion(for example id 105), you will get the following output −\n" +
                         "\n" +
@@ -16770,8 +16961,9 @@ public class LearnDetailsContent {
         list.add(l8);
         return list;
     }
+
     //ExpressJs Scaffolding
-    private static List<LearnDetailsModel> ExpressJsScaffolding(){
+    private static List<LearnDetailsModel> ExpressJsScaffolding() {
         final List<LearnDetailsModel> list = new ArrayList<>();
         final LearnDetailsModel l1 = new LearnDetailsModel(
                 "What is Scaffolding?",
@@ -16827,8 +17019,9 @@ public class LearnDetailsContent {
         list.add(l2);
         return list;
     }
+
     //ExpressJs Error Handling
-    private static List<LearnDetailsModel> ExpressJsErrorHandling(){
+    private static List<LearnDetailsModel> ExpressJsErrorHandling() {
         final List<LearnDetailsModel> list = new ArrayList<>();
         final LearnDetailsModel l1 = new LearnDetailsModel(
                 "How to Handling the errors?",
@@ -16869,8 +17062,9 @@ public class LearnDetailsContent {
         list.add(l2);
         return list;
     }
+
     //ExpressJs Debugging
-    private static List<LearnDetailsModel> ExpressJsDebugging(){
+    private static List<LearnDetailsModel> ExpressJsDebugging() {
         final List<LearnDetailsModel> list = new ArrayList<>();
         final LearnDetailsModel l1 = new LearnDetailsModel(
                 "Debugging",
@@ -16890,8 +17084,9 @@ public class LearnDetailsContent {
         list.add(l2);
         return list;
     }
+
     //ExpressJs Best Practices
-    private static List<LearnDetailsModel> ExpressJsBestPractices(){
+    private static List<LearnDetailsModel> ExpressJsBestPractices() {
         final List<LearnDetailsModel> list = new ArrayList<>();
         final LearnDetailsModel l1 = new LearnDetailsModel(
                 "Best Practices for you",
@@ -16971,6 +17166,1863 @@ public class LearnDetailsContent {
         return list;
     }
 
+    //Bootstrap Introduction
+    private static List<LearnDetailsModel> BootstrapIntroduction() {
+        final List<LearnDetailsModel> list = new ArrayList<>();
+        final LearnDetailsModel l1 = new LearnDetailsModel(
+                "What is Twitter Bootstrap?",
+                "Bootstrap is a sleek, intuitive, and powerful, mobile first front-end framework for faster and easier web development. It uses HTML, CSS and Javascript.",
+                "",
+                ""
+        );
+        final LearnDetailsModel l2 = new LearnDetailsModel(
+                "History",
+                "Bootstrap was developed by Mark Otto and Jacob Thornton at Twitter. It was released as an open source product in August 2011 on GitHub.",
+                "",
+                ""
+        );
+        final LearnDetailsModel l3 = new LearnDetailsModel(
+                "Why Use Bootstrap?",
+                "Mobile first approach − Bootstrap 4, framework consists of Mobile first styles throughout the entire library instead them of in separate files.\n" +
+                        "\n" +
+                        "Browser Support − It is supported by all popular browsers.\n" +
+                        "\n" +
+                        "Popular Browser\n" +
+                        "Easy to get started − With just the knowledge of HTML and CSS anyone can get started with Bootstrap. Also the Bootstrap official site has a good documentation.\n" +
+                        "\n" +
+                        "Responsive design − Bootstrap's responsive CSS adjusts to Desktops, Tablets and Mobiles. More about the responsive design is in the chapter Bootstrap Responsive Design.\n" +
+                        "\n" +
+                        "Responsive Design\n" +
+                        "Provides a clean and uniform solution for building an interface for developers.\n" +
+                        "\n" +
+                        "It contains beautiful and functional built-in components which are easy to customize.\n" +
+                        "\n" +
+                        "It also provides web based customization.\n" +
+                        "\n" +
+                        "And best of all it is an open source.",
+                "",
+                ""
+        );
+        final LearnDetailsModel l4 = new LearnDetailsModel(
+                "What Bootstrap Package Includes?",
+                "Scaffolding − Bootstrap provides a basic structure with Grid System, link styles, and background. This is is covered in detail in the section Bootstrap Basic Structure\n" +
+                        "\n" +
+                        "CSS − Bootstrap comes with the feature of global CSS settings, fundamental HTML elements styled and enhanced with extensible classes, and an advanced grid system. This is covered in detail in the section Bootstrap with CSS.\n" +
+                        "\n" +
+                        "Components − Bootstrap contains over a dozen reusable components built to provide iconography, dropdowns, navigation, alerts, pop-overs, and much more. This is covered in detail in the section Layout Components.\n" +
+                        "\n" +
+                        "JavaScript Plugins − Bootstrap contains over a dozen custom jQuery plugins. You can easily include them all, or one by one. This is covered in details in the section Bootstrap Plugins.\n" +
+                        "\n" +
+                        "Customize − You can customize Bootstrap's components, LESS variables, and jQuery plugins to get your very own version.",
+                "",
+                ""
+        );
+        final LearnDetailsModel l5 = new LearnDetailsModel(
+                "Hello World using Bootstrap.",
+                "Just to give you a little excitement about Bootstrap, I'm going to give you a small conventional Bootstrap Hello World program.",
+                "<!DOCTYPE html>\n" +
+                        "<html>\n" +
+                        "   \n" +
+                        "   <head>\n" +
+                        "      <title>Bootstrap 101 Template</title>\n" +
+                        "      <meta name = \"viewport\" content = \"width = device-width, initial-scale = 1.0\">\n" +
+                        "      \n" +
+                        "      <!-- Bootstrap -->\n" +
+                        "      <link href = \"css/bootstrap.min.css\" rel = \"stylesheet\">\n" +
+                        "      \n" +
+                        "      <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->\n" +
+                        "      <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->\n" +
+                        "      \n" +
+                        "      <!--[if lt IE 9]>\n" +
+                        "      <script src = \"https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js\"></script>\n" +
+                        "      <script src = \"https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js\"></script>\n" +
+                        "      <![endif]-->\n" +
+                        "      \n" +
+                        "   </head>\n" +
+                        "   \n" +
+                        "   <body>\n" +
+                        "      <h1>Hello, world!</h1>\n" +
+                        "\n" +
+                        "      <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->\n" +
+                        "      <script src = \"https://code.jquery.com/jquery.js\"></script>\n" +
+                        "      \n" +
+                        "      <!-- Include all compiled plugins (below), or include individual files as needed -->\n" +
+                        "      <script src = \"js/bootstrap.min.js\"></script>\n" +
+                        "      \n" +
+                        "   </body>\n" +
+                        "</html>",
+                ""
+        );
+        final LearnDetailsModel l6 = new LearnDetailsModel(
+                "Audience",
+                "This tutorial has been prepared for anyone who has a basic knowledge of HTML and CSS and has an urge to develop websites. After completing this tutorial you will find yourself at a moderate level of expertise in developing web projects using Twitter Bootstrap.",
+                "",
+                ""
+        );
+        final LearnDetailsModel l7 = new LearnDetailsModel(
+                "Prerequisites",
+                "Before you start proceeding with this tutorial, we are assuming that you are already aware about the basics of HTML and CSS. If you are not well aware of these concepts then we will suggest you to go through our short tutorial on HTML Tutorial and CSS Tutorial.",
+                "",
+                ""
+        );
+        list.add(l1);
+        list.add(l2);
+        list.add(l3);
+        list.add(l4);
+        list.add(l5);
+        list.add(l6);
+        list.add(l7);
+        return list;
+    }
+
+    //Bootstrap Grid System
+    private static List<LearnDetailsModel> BootstrapGridSystem() {
+        final List<LearnDetailsModel> list = new ArrayList<>();
+        final LearnDetailsModel l1 = new LearnDetailsModel(
+                "What is a Grid?",
+                "As put by wikipedia −\n" +
+                        "\n" +
+                        "In graphic design, a grid is a structure (usually two-dimensional) made up of a series of intersecting straight (vertical, horizontal) lines used to structure the content. It is widely used to design layout and content structure in print design. In web design, it is a very effective method to create a consistent layout rapidly and effectively using HTML and CSS.\n" +
+                        "To put in simple words, grids in web design organise and structure content, makes the websites easy to scan and reduces the cognitive load on users.",
+                "",
+                ""
+        );
+        final LearnDetailsModel l2 = new LearnDetailsModel(
+                "What is Bootstrap Grid System?",
+                "As put by the official documentation of Bootstrap for grid system −\n" +
+                        "\n" +
+                        "Bootstrap includes a responsive, mobile first fluid grid system that appropriately scales up to 12 columns as the device or viewport size increases. It includes predefined classes for easy layout options, as well as powerful mixins for generating more semantic layouts.\n" +
+                        "Let us understand the above statement. Bootstrap 3 is mobile first in the sense that the code for Bootstrap now starts by targeting smaller screens like mobile devices, tablets, and then “expands” components and grids for larger screens such as laptops, desktops.",
+                "",
+                ""
+        );
+        final LearnDetailsModel l3 = new LearnDetailsModel(
+                "Mobile First Strategy",
+                "Content\n" +
+                        "\n" +
+                        "Determine what is most important.\n" +
+                        "Layout\n" +
+                        "\n" +
+                        "Design to smaller widths first.\n" +
+                        "Base CSS address mobile device first; media queries address for tablet, desktops.\n" +
+                        "Progressive Enhancement\n" +
+                        "\n" +
+                        "Add elements as screen size increases.",
+                "",
+                ""
+        );
+        final LearnDetailsModel l4 = new LearnDetailsModel(
+                "Working of Bootstrap Grid System",
+                "Grid systems are used for creating page layouts through a series of rows and columns that house your content. Here's how the Bootstrap grid system works −\n" +
+                        "\n" +
+                        "Rows must be placed within a .container class for proper alignment and padding.\n" +
+                        "\n" +
+                        "Use rows to create horizontal groups of columns.\n" +
+                        "\n" +
+                        "Content should be placed within the columns, and only columns may be the immediate children of rows.\n" +
+                        "\n" +
+                        "Predefined grid classes like .row and .col-xs-4 are available for quickly making grid layouts. LESS mixins can also be used for more semantic layouts.\n" +
+                        "\n" +
+                        "Columns create gutters (gaps between column content) via padding. That padding is offset in rows for the first and the last column via negative margin on .rows.\n" +
+                        "\n" +
+                        "Grid columns are created by specifying the number of twelve available columns you wish to span. For example, three equal columns would use three .col-xs-4.",
+                "",
+                ""
+        );
+        final LearnDetailsModel l5 = new LearnDetailsModel(
+                "Media Queries",
+                "Media query is a really fancy term for \"conditional CSS rule\". It simply applies some CSS, based on certain conditions set forth. If those conditions are met, the style is applied.\n" +
+                        "\n" +
+                        "Media Queries in Bootstrap allow you to move, show and hide content based on the viewport size. Following media queries are used in LESS files to create the key breakpoints in the Bootstrap grid system.",
+                "/* Extra small devices (phones, less than 768px) */\n" +
+                        "/* No media query since this is the default in Bootstrap */\n" +
+                        "\n" +
+                        "/* Small devices (tablets, 768px and up) */\n" +
+                        "@media (min-width: @screen-sm-min) { ... }\n" +
+                        "\n" +
+                        "/* Medium devices (desktops, 992px and up) */\n" +
+                        "@media (min-width: @screen-md-min) { ... }\n" +
+                        "\n" +
+                        "/* Large devices (large desktops, 1200px and up) */\n" +
+                        "@media (min-width: @screen-lg-min) { ... }" +
+                        "\n\n" +
+                        "@media (max-width: @screen-xs-max) { ... }\n" +
+                        "@media (min-width: @screen-sm-min) and (max-width: @screen-sm-max) { ... }\n" +
+                        "@media (min-width: @screen-md-min) and (max-width: @screen-md-max) { ... }\n" +
+                        "@media (min-width: @screen-lg-min) { ... }",
+                ""
+        );
+        final LearnDetailsModel l6 = new LearnDetailsModel(
+                "Basic Grid Structure",
+                "Following is basic structure of Bootstrap grid −",
+                "<div class = \"container\">\n" +
+                        "\n" +
+                        "   <div class = \"row\">\n" +
+                        "      <div class = \"col-*-*\"></div>\n" +
+                        "      <div class = \"col-*-*\"></div>\n" +
+                        "   </div>\n" +
+                        "   \n" +
+                        "   <div class = \"row\">...</div>\n" +
+                        "\t\n" +
+                        "</div>\n" +
+                        "\n" +
+                        "<div class = \"container\">\n" +
+                        "   ....\n" +
+                        "</div>",
+                ""
+        );
+        final LearnDetailsModel l7 = new LearnDetailsModel(
+                "Responsive column resets",
+                "With the four tiers of grids available, you are bound to run into issues where at certain breakpoints, the columns don't clear quite right as one is taller than the other. To fix that, use a combination of a class .clearfix and the responsive utility classes as shown in the following example −",
+                "<div class = \"container\">\n" +
+                        "   <div class = \"row\" >\n" +
+                        "   \n" +
+                        "      <div class = \"col-xs-6 col-sm-3\" style = \"background-color: #dedef8;\n" +
+                        "         box-shadow: inset 1px -1px 1px #444, inset -1px 1px 1px #444;\">\n" +
+                        "         \n" +
+                        "         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>\n" +
+                        "      </div>\n" +
+                        "      \n" +
+                        "      <div class = \"col-xs-6 col-sm-3\" style = \"background-color: #dedef8;\n" +
+                        "         box-shadow: inset 1px -1px 1px #444, inset -1px 1px 1px #444;\">\n" +
+                        "         \n" +
+                        "         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do \n" +
+                        "            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut \n" +
+                        "            enim ad minim veniam, quis nostrud exercitation ullamco laboris \n" +
+                        "            nisi ut aliquip ex ea commodo consequat.</p>\n" +
+                        "         \n" +
+                        "         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do \n" +
+                        "            eiusmod tempor incididunt ut.</p>\n" +
+                        "      </div>\n" +
+                        "\n" +
+                        "      <div class = \"clearfix visible-xs\"></div>\n" +
+                        "      \n" +
+                        "      <div class = \"col-xs-6 col-sm-3\" style = \"background-color: #dedef8;\n" +
+                        "         box-shadow: inset 1px -1px 1px #444, inset -1px 1px 1px #444;\">\n" +
+                        "         \n" +
+                        "         <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco \n" +
+                        "            laboris nisi ut aliquip ex ea commodo consequat.</p>\n" +
+                        "      </div>\n" +
+                        "      \n" +
+                        "      <div class = \"col-xs-6 col-sm-3\" style = \"background-color: #dedef8;\n" +
+                        "         box-shadow: inset 1px -1px 1px #444, inset -1px 1px 1px #444;\">\n" +
+                        "         \n" +
+                        "         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do \n" +
+                        "            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut \n" +
+                        "            enim ad minim</p>\n" +
+                        "      </div>\n" +
+                        "      \n" +
+                        "   </div>\n" +
+                        "</div>",
+                ""
+        );
+        final LearnDetailsModel l8 = new LearnDetailsModel(
+                "Offset Columns",
+                "Offsets are a useful feature for more specialized layouts. They can be used to push columns over for more spacing, (for example). The .col-xs = * classes don’t support offsets, but they are easily replicated by using an empty cell.\n" +
+                        "\n" +
+                        "To use offsets on large displays, use the .col-md-offset-* classes. These classes increase the left margin of a column by * columns where * range from 1 to 11.\n" +
+                        "\n" +
+                        "In the following example, we have <div class = \"col-md-6\">..</div>, We will center this using class .col-md-offset-3.",
+                "<div class = \"container\">\n" +
+                        "\n" +
+                        "   <h1>Hello, world!</h1>\n" +
+                        "\n" +
+                        "   <div class = \"row\" >\n" +
+                        "      <div class = \"col-xs-6 col-md-offset-3\" style = \"background-color: #dedef8; \n" +
+                        "         box-shadow: inset 1px -1px 1px #444, inset -1px 1px 1px #444;\">\n" +
+                        "         \n" +
+                        "         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>\n" +
+                        "      </div>\n" +
+                        "\n" +
+                        "   </div>\n" +
+                        "\t\n" +
+                        "</div>",
+                ""
+        );
+        final LearnDetailsModel l9 = new LearnDetailsModel(
+                "Nesting columns",
+                "To nest your content with the default grid, add a new .row and set of .col-md-* columns within an existing .col-md-* column. Nested rows should include a set of columns that add up to 12.\n" +
+                        "\n" +
+                        "In the following example, the layout has two columns, with the second one being split into four boxes over two rows.",
+                "<div class = \"container\">\n" +
+                        "   <h1>Hello, world!</h1>\n" +
+                        "\n" +
+                        "   <div class = \"row\">\n" +
+                        "\n" +
+                        "      <div class = \"col-md-3\" style = \"background-color: #dedef8; \n" +
+                        "         box-shadow: inset 1px -1px 1px #444, inset -1px 1px 1px #444;\">\n" +
+                        "         \n" +
+                        "         <h4>First Column</h4>\n" +
+                        "         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>\n" +
+                        "      </div>\n" +
+                        "\n" +
+                        "      <div class = \"col-md-9\" style = \"background-color: #dedef8;\n" +
+                        "         box-shadow: inset 1px -1px 1px #444, inset -1px 1px 1px #444;\">\n" +
+                        "         \n" +
+                        "         <h4>Second Column- Split into 4 boxes</h4>\n" +
+                        "         <div class = \"row\">\n" +
+                        "            \n" +
+                        "            <div class = \"col-md-6\" style = \"background-color: #B18904;\n" +
+                        "               box-shadow: inset 1px -1px 1px #444, inset -1px 1px 1px #444;\">\n" +
+                        "               \n" +
+                        "               <p>Consectetur art party Tonx culpa semiotics. \n" +
+                        "                  Pinterest assumenda minim organic quis.</p>\n" +
+                        "            </div>\n" +
+                        "            \n" +
+                        "            <div class = \"col-md-6\" style = \"background-color: #B18904;\n" +
+                        "               box-shadow: inset 1px -1px 1px #444, inset -1px 1px 1px #444;\">\n" +
+                        "               \n" +
+                        "               <p>sed do eiusmod tempor incididunt ut labore et dolore magna \n" +
+                        "                  aliqua. Ut enim ad minim veniam, quis nostrud exercitation \n" +
+                        "                  ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>\n" +
+                        "            </div>\n" +
+                        "\t\t\t\t\n" +
+                        "         </div>\n" +
+                        "\n" +
+                        "         <div class = \"row\">\n" +
+                        "\t\t\t\n" +
+                        "            <div class = \"col-md-6\" style = \"background-color: #B18904;\n" +
+                        "               box-shadow: inset 1px -1px 1px #444, inset -1px 1px 1px #444;\">\n" +
+                        "               \n" +
+                        "               <p>quis nostrud exercitation ullamco laboris nisi ut aliquip \n" +
+                        "                  ex ea commodo consequat.</p>\n" +
+                        "            </div>   \n" +
+                        "            \n" +
+                        "            <div class = \"col-md-6\" style = \"background-color: #B18904;\n" +
+                        "               box-shadow: inset 1px -1px 1px #444, inset -1px 1px 1px #444;\">\n" +
+                        "               \n" +
+                        "               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, \n" +
+                        "                  sed do eiusmod tempor incididunt ut labore et dolore magna \n" +
+                        "                  aliqua. Ut enim ad minim.</p>\n" +
+                        "            </div>\n" +
+                        "\t\t\t\t\n" +
+                        "         </div>\n" +
+                        "\n" +
+                        "      </div>\n" +
+                        "\n" +
+                        "   </div>\n" +
+                        "\t\n" +
+                        "</div>",
+                ""
+        );
+        final LearnDetailsModel l10 = new LearnDetailsModel(
+                "Column Ordering",
+                "Another nice feature of Bootstrap grid system is that you can easily write the columns in an order, and show them in another one. You can easily change the order of built-in grid columns with .col-md-push-* and .col-md-pull-* modifier classes where * range from 1 to 11.\n" +
+                        "\n" +
+                        "In the following example we have two columns layout with left column being the narrowest and acting as a sidebar. We will swap the order of these columns using .col-md-push-* and .col-md-pull-* classes.",
+                "<div class = \"container\">\n" +
+                        "   <h1>Hello, world!</h1>\n" +
+                        "   \n" +
+                        "   <div class = \"row\">\n" +
+                        "      <p>Before Ordering</p>\n" +
+                        "      \n" +
+                        "      <div class = \"col-md-4\" style = \"background-color: #dedef8;\n" +
+                        "         box-shadow: inset 1px -1px 1px #444, inset -1px 1px 1px #444;\">\n" +
+                        "         \n" +
+                        "         I am on left\n" +
+                        "      </div>\n" +
+                        "      \n" +
+                        "      <div class = \"col-md-8\" style = \"background-color: #dedef8;\n" +
+                        "         box-shadow: inset 1px -1px 1px #444, inset -1px 1px 1px #444;\">\n" +
+                        "         \n" +
+                        "         I am on right\n" +
+                        "      </div>\n" +
+                        "      \n" +
+                        "   </div>\n" +
+                        "\t\n" +
+                        "   <br>\n" +
+                        "   \n" +
+                        "   <div class = \"row\">\n" +
+                        "      <p>After Ordering</p>\n" +
+                        "      \n" +
+                        "      <div class = \"col-md-4 col-md-push-8\" style = \"background-color: #dedef8;\n" +
+                        "         box-shadow: inset 1px -1px 1px #444, inset -1px 1px 1px #444;\">\n" +
+                        "         \n" +
+                        "         I was on left\n" +
+                        "      </div>\n" +
+                        "      \n" +
+                        "      <div class = \"col-md-8 col-md-pull-4\" style = \"background-color: #dedef8;\n" +
+                        "         box-shadow: inset 1px -1px 1px #444, inset -1px 1px 1px #444;\">\n" +
+                        "         \n" +
+                        "         I was on right\n" +
+                        "      </div>\n" +
+                        "\t\t\n" +
+                        "   </div>\n" +
+                        "\n" +
+                        "</div>",
+                ""
+        );
+
+        list.add(l1);
+        list.add(l2);
+        list.add(l3);
+        list.add(l4);
+        list.add(l5);
+        list.add(l6);
+        list.add(l7);
+        list.add(l8);
+        list.add(l9);
+        list.add(l10);
+
+        return list;
+    }
+
+    //Bootstrap CSS Overview
+    private static List<LearnDetailsModel> BootstrapCSSOverview() {
+        final List<LearnDetailsModel> list = new ArrayList<>();
+        final LearnDetailsModel l1 = new LearnDetailsModel(
+                "HTML5 doctype",
+                "Bootstrap makes use of certain HTML elements and CSS properties that require the use of the HTML5 doctype. Hence include the below piece of code for HTML5 doctype at the beginning of all your projects using Bootstrap.",
+                "<!DOCTYPE html>\n" +
+                        "<html>\n" +
+                        "   ....\n" +
+                        "</html>",
+                ""
+        );
+        final LearnDetailsModel l2 = new LearnDetailsModel(
+                "Mobile First",
+                "Since Bootstrap 3 has been launched, Bootstrap has become mobile first. It means 'mobile first' styles can be found throughout the entire library instead of them in separate files. You need to add the viewport meta tag to the <head> element, to ensure proper rendering and touch zooming on mobile devices." +
+                        "\n\n" +
+                        "width property controls the width of the device. Setting it to device-width will make sure that it is rendered across various devices (mobiles, desktops, tablets...) properly.\n" +
+                        "\n" +
+                        "initial-scale = 1.0 ensures that when loaded, your web page will be rendered at a 1:1 scale, and no zooming will be applied out of the box.\n" +
+                        "\n" +
+                        "Add user-scalable = no to the content attribute to disable zooming capabilities on mobile devices as shown below. Users are only able to scroll and not zoom with this change, and results in your site feeling a bit more like a native application." +
+                        "\n\n" +
+                        "Normally maximum-scale = 1.0 is used along with user-scalable = no. As mentioned above user-scalable = no may give users an experience more like a native app, hence Bootstrap doesn't recommend using this attribute.",
+                "<meta name = \"viewport\" content = \"width = device-width, initial-scale = 1.0\">" +
+                        "\n\n" +
+                        "<meta name = \"viewport\" content = \"width = device-width, initial-scale = 1.0, maximum-scale = 1.0, user-scalable = no\">",
+                ""
+        );
+        final LearnDetailsModel l3 = new LearnDetailsModel(
+                "Responsive Images",
+                "Bootstrap 3 allows you to make the images responsive by adding a class .img-responsive to the <img> tag. This class applies max-width: 100%; and height: auto; to the image so that it scales nicely to the parent element.",
+                "<img src = \"...\" class = \"img-responsive\" alt = \"Responsive image\">",
+                ""
+        );
+        final LearnDetailsModel l4 = new LearnDetailsModel(
+                "Typography and Links",
+                "Bootstrap sets a basic global display (background), typography, and link styles −\n" +
+                        "\n" +
+                        "Basic Global display − Sets background-color: #fff; on the <body> element.\n" +
+                        "\n" +
+                        "Typography − Uses the @font-family-base, @font-size-base, and @line-height-base attributes as the typographic base.\n" +
+                        "\n" +
+                        "Link styles − Sets the global link color via attribute @link-color and apply link underlines only on :hover.\n" +
+                        "\n" +
+                        "If you intend to use LESS code, you may find all these within scaffolding.less.",
+                "",
+                ""
+        );
+        final LearnDetailsModel l5 = new LearnDetailsModel(
+                "Normalize",
+                "Bootstrap uses Normalize to establish cross browser consistency.\n" +
+                        "\n" +
+                        "Normalize.css is a modern, HTML5-ready alternative to CSS resets. It is a small CSS file that provides better cross-browser consistency in the default styling of HTML elements.",
+                "",
+                ""
+        );
+        final LearnDetailsModel l6 = new LearnDetailsModel(
+                "Containers",
+                "Use class .container to wrap a page's content and easily center the content's as shown below.",
+                "<div class = \"container\">\n" +
+                        "   ...\n" +
+                        "</div>",
+                ""
+        );
+        list.add(l1);
+        list.add(l2);
+        list.add(l3);
+        list.add(l4);
+        list.add(l5);
+        list.add(l6);
+        return list;
+    }
+
+    //Bootstrap Typography
+    private static List<LearnDetailsModel> BootstrapTypography() {
+        final List<LearnDetailsModel> list = new ArrayList<>();
+        final LearnDetailsModel l1 = new LearnDetailsModel(
+                "Headings",
+                "All HTML headings (h1 to h6) are styled in Bootstrap. An example is shown below −",
+                "<h1>I'm Heading1 h1</h1>\n" +
+                        "<h2>I'm Heading2 h2</h2>\n" +
+                        "<h3>I'm Heading3 h3</h3>\n" +
+                        "<h4>I'm Heading4 h4</h4>\n" +
+                        "<h5>I'm Heading5 h5</h5>\n" +
+                        "<h6>I'm Heading6 h6</h6>",
+                ""
+        );
+        final LearnDetailsModel l2 = new LearnDetailsModel(
+                "Inline Subheadings",
+                "To add an inline subheading to any of the headings, simply add <small> around any of the elements or add .small class and you will get smaller text in a lighter color as shown in the example below −",
+                "<h1>I'm Heading1 h1. <small>I'm secondary Heading1 h1</small></h1> \n" +
+                        "<h2>I'm Heading2 h2. <small>I'm secondary Heading2 h2</small></h2>\n" +
+                        "<h3>I'm Heading3 h3. <small>I'm secondary Heading3 h3</small></h3>\n" +
+                        "<h4>I'm Heading4 h4. <small>I'm secondary Heading4 h4</small></h4>\n" +
+                        "<h5>I'm Heading5 h5. <small>I'm secondary Heading5 h5</small></h5>\n" +
+                        "<h6>I'm Heading6 h6. <small>I'm secondary Heading1 h6</small></h6>",
+                ""
+        );
+        final LearnDetailsModel l3 = new LearnDetailsModel(
+                "Lead Body Copy",
+                "To add some emphasis to a paragraph, add class = \"lead\". This will give you a larger font size, lighter weight, and a taller line height as in the following example −",
+                "<h2>Lead Example</h2>\n" +
+                        "<p class = \"lead\">This is an example paragraph demonstrating \n" +
+                        "   the use of lead body copy. This is an example paragraph \n" +
+                        "   demonstrating the use of lead body copy.This is an example \n" +
+                        "   paragraph demonstrating the use of lead body copy.This is an \n" +
+                        "   example paragraph demonstrating the use of lead body copy.\n" +
+                        "   This is an example paragraph demonstrating the use of lead body copy.</p>",
+                ""
+        );
+        final LearnDetailsModel l4 = new LearnDetailsModel(
+                "Emphasis",
+                "HTML's default emphasis tags such as <small> sets text at 85% the size of the parent, <strong> emphasizes a text with heavier font-weight, and <em> emphasizes a text in italics.\n" +
+                        "\n" +
+                        "Bootstrap offers a few classes that can be used to provide emphasis on texts as seen in the following example −",
+                "<small>This content is within tag</small><br>\n" +
+                        "<strong>This content is within tag</strong><br>\n" +
+                        "<em>This content is within tag and is rendered as italics</em><br>\n" +
+                        "\n" +
+                        "<p class = \"text-left\">Left aligned text.</p>\n" +
+                        "<p class = \"text-center\">Center aligned text.</p>\n" +
+                        "<p class = \"text-right\">Right aligned text.</p>\n" +
+                        "<p class = \"text-muted\">This content is muted</p>\n" +
+                        "<p class = \"text-primary\">This content carries a primary class</p>\n" +
+                        "<p class = \"text-success\">This content carries a success class</p>\n" +
+                        "<p class = \"text-info\">This content carries a info class</p>\n" +
+                        "<p class = \"text-warning\">This content carries a warning class</p>\n" +
+                        "<p class = \"text-danger\">This content carries a danger class</p>",
+                ""
+        );
+        final LearnDetailsModel l5 = new LearnDetailsModel(
+                "Abbreviations",
+                "The HTML <abbr> element provides markup for abbreviations or acronyms, like WWW or HTTP. Bootstrap styles <abbr> elements with a light dotted border along the bottom and reveals the full text on hover (as long as you add that text to the <abbr> title attribute). To get a a slightly smaller font size add .initialism to <abbr>.",
+                "<abbr title = \"World Wide Web\">WWW</abbr><br>\n" +
+                        "<abbr title = \"Real Simple Syndication\" class = \"initialism\">RSS</abbr>",
+                ""
+        );
+        final LearnDetailsModel l6 = new LearnDetailsModel(
+                "Addresses",
+                "Using <address> tag you can display the contact information on your web page. Since the <address> defaults to display: block; you’ll need to use\n" +
+                        "\n" +
+                        "Tags to add line breaks to the enclosed address text.",
+                "<address>\n" +
+                        "   <strong>Some Company, Inc.</strong><br>\n" +
+                        "   007 street<br>\n" +
+                        "   Some City, State XXXXX<br>\n" +
+                        "   <abbr title = \"Phone\">P:</abbr> (123) 456-7890\n" +
+                        "</address>\n" +
+                        "\n" +
+                        "<address>\n" +
+                        "   <strong>Full Name</strong><br>\n" +
+                        "   <a href = \"mailto:#\">mailto@somedomain.com</a>\n" +
+                        "</address>",
+                ""
+        );
+        final LearnDetailsModel l7 = new LearnDetailsModel(
+                "Blockquotes",
+                "You can use the default <blockquote> around any HTML text. Other options include, adding a <small> tag for identifying the source of the quote and right-aligning the blockquote using class .pull-right. The following example demonstrates all these features −",
+                "<blockquote>\n" +
+                        "   <p>This is a default blockquote example. This is a default \n" +
+                        "      blockquote example. This is a default blockquote \n" +
+                        "      example.This is a default blockquote example. This is a \n" +
+                        "      default blockquote example.</p>\n" +
+                        "</blockquote>\n" +
+                        "\n" +
+                        "<blockquote>\n" +
+                        "   This is a blockquote with a source title.\n" +
+                        "   <small>Someone famous in <cite title = \"Source Title\">Source Title</cite></small>\n" +
+                        "</blockquote>\n" +
+                        "\n" +
+                        "<blockquote class = \"pull-right\">This is a blockquote aligned to the right.\n" +
+                        "   <small>Someone famous in <cite title = \"Source Title\">Source Title</cite></small>\n" +
+                        "</blockquote>",
+                ""
+        );
+        final LearnDetailsModel l8 = new LearnDetailsModel(
+                "Lists",
+                "Bootstrap supports ordered lists, unordered lists, and definition lists.\n" +
+                        "\n" +
+                        "Ordered lists − An ordered list is a list that falls in some sort of sequential order and is prefaced by numbers.\n" +
+                        "\n" +
+                        "Unordered lists − An unordered list is a list that doesn’t have any particular order and is traditionally styled with bullets. If you do not want the bullets to appear, then you can remove the styling by using the class .list-unstyled. You can also place all list items on a single line using the class .list-inline.\n" +
+                        "\n" +
+                        "Definition lists − In this type of list, each list item can consist of both the <dt> and the <dd> elements. <dt> stands for definition term, and like a dictionary, this is the term (or phrase) that is being defined. Subsequently, the <dd> is the definition of the <dt>. You can make terms and descriptions in <dl> line up side-by-side using class dl-horizontal.\n" +
+                        "\n" +
+                        "The following example demonstrates each of these types −",
+                "<h4>Example of Ordered List</h4>\n" +
+                        "<ol>\n" +
+                        "   <li>Item 1</li>\n" +
+                        "   <li>Item 2</li>\n" +
+                        "   <li>Item 3</li>\n" +
+                        "   <li>Item 4</li>\n" +
+                        "</ol>\n" +
+                        "\n" +
+                        "<h4>Example of UnOrdered List</h4>\n" +
+                        "\n" +
+                        "<ul>\n" +
+                        "   <li>Item 1</li>\n" +
+                        "   <li>Item 2</li>\n" +
+                        "   <li>Item 3</li>\n" +
+                        "   <li>Item 4</li>\n" +
+                        "</ul>\n" +
+                        "\n" +
+                        "<h4>Example of Unstyled List</h4>\n" +
+                        "\n" +
+                        "<ul class = \"list-unstyled\">\n" +
+                        "   <li>Item 1</li>\n" +
+                        "   <li>Item 2</li>\n" +
+                        "   <li>Item 3</li>\n" +
+                        "   <li>Item 4</li>\n" +
+                        "</ul>\n" +
+                        "\n" +
+                        "<h4>Example of Inline List</h4>\n" +
+                        "\n" +
+                        "<ul class = \"list-inline\">\n" +
+                        "   <li>Item 1</li>\n" +
+                        "   <li>Item 2</li>\n" +
+                        "   <li>Item 3</li>\n" +
+                        "   <li>Item 4</li>\n" +
+                        "</ul>\n" +
+                        "\n" +
+                        "<h4>Example of Definition List</h4>\n" +
+                        "\n" +
+                        "<dl>\n" +
+                        "   <dt>Description 1</dt>\n" +
+                        "   <dd>Item 1</dd>\n" +
+                        "   <dt>Description 2</dt>\n" +
+                        "   <dd>Item 2</dd>\n" +
+                        "</dl>\n" +
+                        "\n" +
+                        "<h4>Example of Horizontal Definition List</h4>\n" +
+                        "\n" +
+                        "<dl class = \"dl-horizontal\">\n" +
+                        "   <dt>Description 1</dt>\n" +
+                        "   <dd>Item 1</dd>\n" +
+                        "   <dt>Description 2</dt>\n" +
+                        "   <dd>Item 2</dd>\n" +
+                        "</dl>",
+                ""
+        );
+        list.add(l1);
+        list.add(l2);
+        list.add(l3);
+        list.add(l4);
+        list.add(l5);
+        list.add(l6);
+        list.add(l7);
+        list.add(l8);
+        return list;
+    }
+    //Bootstrap Code
+    private static List<LearnDetailsModel> BootstrapCode(){
+        final List<LearnDetailsModel> list = new ArrayList<>();
+        final LearnDetailsModel l1 = new LearnDetailsModel(
+                "Bootstrap Code",
+                "Bootstrap allows you to display code with two different key ways −\n" +
+                        "\n" +
+                        "The first is the <code> tag. If you are going to be displaying code inline, you should use the <code> tag.\n" +
+                        "\n" +
+                        "Second is the <pre> tag. If the code needs to be displayed as a standalone block element or if it has multiple lines, then you should use the <pre> tag.\n" +
+                        "\n" +
+                        "Make sure that when you use the <pre> and <code> tags, you use the unicode variants for the opening and closing tags − &lt; and &gt;.\n" +
+                        "Let us see an example below −",
+                "<p><code>&lt;header&gt;</code> is wrapped as an inline element.</p>\n" +
+                        "<p>To display code as a standalone block element use &lt;pre&gt; tag as:</p>\n" +
+                        "\n" +
+                        "<pre>\n" +
+                        "   &lt;article&gt;\n" +
+                        "      &lt;h1&gt;Article Heading&lt;/h1&gt;\n" +
+                        "   &lt;/article&gt;\n" +
+                        "</pre>",
+                ""
+        );
+        list.add(l1);
+        return list;
+    }
+    //Bootstrap Tables
+    private static List<LearnDetailsModel> BootstrapTables(){
+        final List<LearnDetailsModel> list = new ArrayList<>();
+        final LearnDetailsModel l1 = new LearnDetailsModel(
+                "Bootstrap Tables",
+                "Bootstrap provides a clean layout for building tables. Some of the table elements supported by Bootstrap are −" +
+                        "\n\n" +
+                        "1. <table>\n" +
+                        "\n" +
+                        "Wrapping element for displaying data in a tabular format\n" +
+                        "\n" +
+                        "2. <thead>\n" +
+                        "\n" +
+                        "Container element for table header rows (<tr>) to label table columns.\n" +
+                        "\n" +
+                        "3. <tbody>\n" +
+                        "\n" +
+                        "Container element for table rows (<tr>) in the body of the table.\n" +
+                        "\n" +
+                        "4. <tr>\n" +
+                        "\n" +
+                        "Container element for a set of table cells (<td> or <th>) that appears on a single row.\n" +
+                        "\n" +
+                        "5. <td>\n" +
+                        "\n" +
+                        "Default table cell.\n" +
+                        "\n" +
+                        "6. <th>\n" +
+                        "\n" +
+                        "Special table cell for column (or row, depending on scope and placement) labels. Must be used within a <thead>\n" +
+                        "\n" +
+                        "7. <caption>\n" +
+                        "\n" +
+                        "Description or summary of what the table holds.",
+                "",
+                ""
+        );
+        final LearnDetailsModel l2 = new LearnDetailsModel(
+                "Basic Table",
+                "If you want a nice, basic table style with just some light padding and horizontal dividers, add the base class of .table to any table as shown in the following example −",
+                "<table class = \"table\">\n" +
+                        "   <caption>Basic Table Layout</caption>\n" +
+                        "   \n" +
+                        "   <thead>\n" +
+                        "      <tr>\n" +
+                        "         <th>Name</th>\n" +
+                        "         <th>City</th>\n" +
+                        "      </tr>\n" +
+                        "   </thead>\n" +
+                        "   \n" +
+                        "   <tbody>\n" +
+                        "      <tr>\n" +
+                        "         <td>Anne</td>\n" +
+                        "         <td>USA</td>\n" +
+                        "      </tr>\n" +
+                        "      \n" +
+                        "      <tr>\n" +
+                        "         <td>Emma</td>\n" +
+                        "         <td>NewYork</td>\n" +
+                        "      </tr>\n" +
+                        "   </tbody>\n" +
+                        "</table>",
+                ""
+        );
+        final LearnDetailsModel l3 = new LearnDetailsModel(
+                "Optional Table Classes",
+                "Along with the base table markup and the .table class, there are a few additional classes that you can use to style the markup. Following sections will give you a glimpse of all these classes.\n" +
+                        "\n" +
+                        "Striped Table\n" +
+                        "By adding the .table-striped class, you will get stripes on rows within the <tbody> as seen in the following example −",
+                "<table class = \"table table-striped\">\n" +
+                        "   <caption>Striped Table Layout</caption>\n" +
+                        "   \n" +
+                        "   <thead>\n" +
+                        "      <tr>\n" +
+                        "         <th>Name</th>\n" +
+                        "         <th>City</th>\n" +
+                        "         <th>Pincode</th>\n" +
+                        "      </tr>\n" +
+                        "   </thead>\n" +
+                        "   \n" +
+                        "   <tbody>\n" +
+                        "      <tr>\n" +
+                        "         <td>Anne</td>\n" +
+                        "         <td>USA</td>\n" +
+                        "         <td>92002</td>\n" +
+                        "      </tr>\n" +
+                        "      \n" +
+                        "      <tr>\n" +
+                        "         <td>Emma</td>\n" +
+                        "         <td>NewYork</td>\n" +
+                        "         <td>20054</td>\n" +
+                        "      </tr>\n" +
+                        "      \n" +
+                        "      <tr>\n" +
+                        "         <td>David</td>\n" +
+                        "         <td>London</td>\n" +
+                        "         <td>45215</td>\n" +
+                        "      </tr>\n" +
+                        "   </tbody>\n" +
+                        "</table>",
+                ""
+        );
+        final LearnDetailsModel l4 = new LearnDetailsModel(
+                "Bordered Table",
+                "By adding the .table-bordered class, you will get borders surrounding every element and rounded corners around the entire table as seen in the following example −",
+                "<table class = \"table table-bordered\">\n" +
+                        "   <caption>Bordered Table Layout</caption>\n" +
+                        "   \n" +
+                        "   <thead>\n" +
+                        "      <tr>\n" +
+                        "         <th>Name</th>\n" +
+                        "         <th>City</th>\n" +
+                        "         <th>Pincode</th>\n" +
+                        "      </tr>\n" +
+                        "   </thead>\n" +
+                        "   \n" +
+                        "   <tbody>\n" +
+                        "      <tr>\n" +
+                        "         <td>Anne</td>\n" +
+                        "         <td>USA</td>\n" +
+                        "         <td>92002</td>\n" +
+                        "      </tr>\n" +
+                        "      \n" +
+                        "      <tr>\n" +
+                        "         <td>Emma</td>\n" +
+                        "         <td>NewYork</td>\n" +
+                        "         <td>20054</td>\n" +
+                        "      </tr>\n" +
+                        "      \n" +
+                        "      <tr>\n" +
+                        "         <td>David</td>\n" +
+                        "         <td>London</td>\n" +
+                        "         <td>45215</td>\n" +
+                        "      </tr>\n" +
+                        "   </tbody>\n" +
+                        "\t\n" +
+                        "</table>",
+                ""
+        );
+        final LearnDetailsModel l5 = new LearnDetailsModel(
+                "Hover Table",
+                "By adding the .table-hover class, a light gray background will be added to rows while the cursor hovers over them, as seen in the following example −",
+                "<table class = \"table table-hover\">\n" +
+                        "   <caption>Hover Table Layout</caption>\n" +
+                        "   \n" +
+                        "   <thead>\n" +
+                        "      <tr>\n" +
+                        "         <th>Name</th>\n" +
+                        "         <th>City</th>\n" +
+                        "         <th>Pincode</th>\n" +
+                        "      </tr>\n" +
+                        "   </thead>\n" +
+                        "   \n" +
+                        "   <tbody>\n" +
+                        "      <tr>\n" +
+                        "         <td>Anne</td>\n" +
+                        "         <td>USA</td>\n" +
+                        "         <td>92002</td>\n" +
+                        "      </tr>\n" +
+                        "      \n" +
+                        "      <tr>\n" +
+                        "         <td>Emma</td>\n" +
+                        "         <td>NewYork</td>\n" +
+                        "         <td>20054</td>\n" +
+                        "      </tr>\n" +
+                        "      \n" +
+                        "      <tr>\n" +
+                        "         <td>David</td>\n" +
+                        "         <td>London</td>\n" +
+                        "         <td>45215</td>\n" +
+                        "      </tr>\n" +
+                        "   </tbody>\n" +
+                        "</table>",
+                ""
+        );
+        final LearnDetailsModel l6 = new LearnDetailsModel(
+                "Condensed Table",
+                "By adding the .table-condensed class, row padding is cut in half to condense the table. as seen in the following example. This is useful if you want any denser information.",
+                "<table class = \"table table-condensed\">\n" +
+                        "   <caption>Condensed Table Layout</caption>\n" +
+                        "   \n" +
+                        "   <thead>\n" +
+                        "      <tr>\n" +
+                        "         <th>Name</th>\n" +
+                        "         <th>City</th>\n" +
+                        "         <th>Pincode</th>\n" +
+                        "      </tr>\n" +
+                        "   </thead>\n" +
+                        "   \n" +
+                        "   <tbody>\n" +
+                        "      <tr>\n" +
+                        "         <td>Anne</td>\n" +
+                        "         <td>USA</td>\n" +
+                        "         <td>92002</td>\n" +
+                        "      </tr>\n" +
+                        "      \n" +
+                        "      <tr>\n" +
+                        "         <td>Emma</td>\n" +
+                        "         <td>NewYork</td>\n" +
+                        "         <td>20054</td>\n" +
+                        "      </tr>\n" +
+                        "      \n" +
+                        "      <tr>\n" +
+                        "         <td>David</td>\n" +
+                        "         <td>London</td>\n" +
+                        "         <td>45215</td>\n" +
+                        "      </tr>\n" +
+                        "   </tbody>\n" +
+                        "</table>",
+                ""
+        );
+        final LearnDetailsModel l7 = new LearnDetailsModel(
+                "Contextual classes",
+                "The Contextual classes shown in following table will allow you to change the background color of your table rows or individual cells." +
+                        "\n\n" +
+                        "1(.active)\n" +
+                        "\n" +
+                        "Applies the hover color to a particular row or cell\n" +
+                        "\n" +
+                        "2(.success)\n" +
+                        "\n" +
+                        "Indicates a successful or positive action\n" +
+                        "\n" +
+                        "3(.warning)\n" +
+                        "\n" +
+                        "Indicates a warning that might need attention\n" +
+                        "\n" +
+                        "4(.danger)\n" +
+                        "\n" +
+                        "Indicates a dangerous or potentially negative action",
+                "<table class = \"table\">\n" +
+                        "   <caption>Contextual Table Layout</caption>\n" +
+                        "   \n" +
+                        "   <thead>\n" +
+                        "      <tr>\n" +
+                        "         <th>Product</th>\n" +
+                        "         <th>Payment Date</th>\n" +
+                        "         <th>Status</th>\n" +
+                        "      </tr>\n" +
+                        "   </thead>\n" +
+                        "   \n" +
+                        "   <tbody>\n" +
+                        "      <tr class = \"active\">\n" +
+                        "         <td>Product1</td>\n" +
+                        "         <td>23/11/2013</td>\n" +
+                        "         <td>Pending</td>\n" +
+                        "      </tr>\n" +
+                        "      \n" +
+                        "      <tr class = \"success\">\n" +
+                        "         <td>Product2</td>\n" +
+                        "         <td>10/11/2013</td>\n" +
+                        "         <td>Delivered</td>\n" +
+                        "      </tr>\n" +
+                        "      \n" +
+                        "      <tr class = \"warning\">\n" +
+                        "         <td>Product3</td>\n" +
+                        "         <td>20/10/2013</td>\n" +
+                        "         <td>In Call to confirm</td>\n" +
+                        "      </tr>\n" +
+                        "      \n" +
+                        "      <tr class = \"danger\">\n" +
+                        "         <td>Product4</td>\n" +
+                        "         <td>20/10/2013</td>\n" +
+                        "         <td>Declined</td>\n" +
+                        "      </tr>\n" +
+                        "   </tbody>\n" +
+                        "</table>",
+                ""
+        );
+        final LearnDetailsModel l8 = new LearnDetailsModel(
+                "Responsive Tables",
+                "By wrapping any .table in .table-responsive class, you will make the table scroll horizontally up to small devices (under 768px). When viewing on anything larger than 768px wide, you will not see any difference in these tables.",
+                "<div class = \"table-responsive\">\n" +
+                        "   <table class = \"table\">\n" +
+                        "      <caption>Responsive Table Layout</caption>\n" +
+                        "      \n" +
+                        "      <thead>\n" +
+                        "         <tr>\n" +
+                        "            <th>Product</th>\n" +
+                        "            <th>Payment Date</th>\n" +
+                        "            <th>Status</th>\n" +
+                        "         </tr>\n" +
+                        "      </thead>\n" +
+                        "      \n" +
+                        "      <tbody>\n" +
+                        "         <tr>\n" +
+                        "            <td>Product1</td>\n" +
+                        "            <td>23/11/2013</td>\n" +
+                        "            <td>Pending</td>\n" +
+                        "         </tr>\n" +
+                        "         \n" +
+                        "         <tr>\n" +
+                        "            <td>Product2</td>\n" +
+                        "            <td>10/11/2013</td>\n" +
+                        "            <td>Delivered</td>\n" +
+                        "         </tr>\n" +
+                        "         \n" +
+                        "         <tr>\n" +
+                        "            <td>Product3</td>\n" +
+                        "            <td>20/10/2013</td>\n" +
+                        "            <td>In Call to confirm</td>\n" +
+                        "         </tr>\n" +
+                        "         \n" +
+                        "         <tr>\n" +
+                        "            <td>Product4</td>\n" +
+                        "            <td>20/10/2013</td>\n" +
+                        "            <td>Declined</td>\n" +
+                        "         </tr>\n" +
+                        "      </tbody>\n" +
+                        "   </table>\n" +
+                        "</div>  ",
+                ""
+        );
+        list.add(l1);
+        list.add(l2);
+        list.add(l3);
+        list.add(l4);
+        list.add(l5);
+        list.add(l6);
+        list.add(l7);
+        list.add(l8);
+        return list;
+    }
+    //Bootstrap Forms
+    private static List<LearnDetailsModel> BootstrapForms(){
+        final List<LearnDetailsModel> list = new ArrayList<>();
+        final LearnDetailsModel l1 = new LearnDetailsModel(
+                "Form Layout",
+                "In this chapter, we will study how to create forms with ease using Bootstrap. Bootstrap makes it easy with the simple HTML markup and extended classes for different styles of forms. In this chapter we will study how to create forms with ease using Bootstrap." +
+                        "\n\n" +
+                        "Bootstrap provides you with following types of form layouts −\n" +
+                        "\n" +
+                        "Vertical (default) form\n" +
+                        "In-line form\n" +
+                        "Horizontal form",
+                "",
+                ""
+        );
+        final LearnDetailsModel l2 = new LearnDetailsModel(
+                "Vertical or Basic Form",
+                "The basic form structure comes with Bootstrap; individual form controls automatically receive some global styling. To create a basic form do the following −\n" +
+                        "\n" +
+                        "Add a role form to the parent <form> element.\n" +
+                        "\n" +
+                        "Wrap labels and controls in a <div> with class .form-group. This is needed for optimum spacing.\n" +
+                        "\n" +
+                        "Add a class of .form-control to all textual <input>, <textarea>, and <select> elements.",
+                "<form role = \"form\">\n" +
+                        "\n" +
+                        "   <div class = \"form-group\">\n" +
+                        "      <label for = \"name\">Name</label>\n" +
+                        "      <input type = \"text\" class = \"form-control\" id = \"name\" placeholder = \"Enter Name\">\n" +
+                        "   </div>\n" +
+                        "   \n" +
+                        "   <div class = \"form-group\">\n" +
+                        "      <label for = \"inputfile\">File input</label>\n" +
+                        "      <input type = \"file\" id = \"inputfile\">\n" +
+                        "      <p class = \"help-block\">Example block-level help text here.</p>\n" +
+                        "   </div>\n" +
+                        "   \n" +
+                        "   <div class = \"checkbox\">\n" +
+                        "      <label><input type = \"checkbox\"> Check me out</label>\n" +
+                        "   </div>\n" +
+                        "   \n" +
+                        "   <button type = \"submit\" class = \"btn btn-default\">Submit</button>\n" +
+                        "</form>",
+                ""
+        );
+        final LearnDetailsModel l3 = new LearnDetailsModel(
+                "Inline Form",
+                "To create a form where all of the elements are inline, left aligned and labels are alongside, add the class .form-inline to the <form> tag.",
+                "<form class = \"form-inline\" role = \"form\">\n" +
+                        "   \n" +
+                        "   <div class = \"form-group\">\n" +
+                        "      <label class = \"sr-only\" for = \"name\">Name</label>\n" +
+                        "      <input type = \"text\" class = \"form-control\" id = \"name\" placeholder = \"Enter Name\">\n" +
+                        "   </div>\n" +
+                        "   \n" +
+                        "   <div class = \"form-group\">\n" +
+                        "      <label class = \"sr-only\" for = \"inputfile\">File input</label>\n" +
+                        "      <input type = \"file\" id = \"inputfile\">\n" +
+                        "   </div>\n" +
+                        "   \n" +
+                        "   <div class = \"checkbox\">\n" +
+                        "      <label><input type = \"checkbox\"> Check me out</label>\n" +
+                        "   </div>\n" +
+                        "   \n" +
+                        "   <button type = \"submit\" class = \"btn btn-default\">Submit</button>\n" +
+                        "</form>",
+                ""
+        );
+        final LearnDetailsModel l4 = new LearnDetailsModel(
+                "Horizontal Form",
+                "Horizontal forms stands apart from the others not only in the amount of markup, but also in the presentation of the form. To create a form that uses the horizontal layout, do the following −\n" +
+                        "\n" +
+                        "Add a class of .form-horizontal to the parent <form> element.\n" +
+                        "\n" +
+                        "Wrap labels and controls in a <div> with class .form-group.\n" +
+                        "\n" +
+                        "Add a class of .control-label to the labels.",
+                "<form class = \"form-horizontal\" role = \"form\">\n" +
+                        "   \n" +
+                        "   <div class = \"form-group\">\n" +
+                        "      <label for = \"firstname\" class = \"col-sm-2 control-label\">First Name</label>\n" +
+                        "\t\t\n" +
+                        "      <div class = \"col-sm-10\">\n" +
+                        "         <input type = \"text\" class = \"form-control\" id = \"firstname\" placeholder = \"Enter First Name\">\n" +
+                        "      </div>\n" +
+                        "   </div>\n" +
+                        "   \n" +
+                        "   <div class = \"form-group\">\n" +
+                        "      <label for = \"lastname\" class = \"col-sm-2 control-label\">Last Name</label>\n" +
+                        "\t\t\n" +
+                        "      <div class = \"col-sm-10\">\n" +
+                        "         <input type = \"text\" class = \"form-control\" id = \"lastname\" placeholder = \"Enter Last Name\">\n" +
+                        "      </div>\n" +
+                        "   </div>\n" +
+                        "   \n" +
+                        "   <div class = \"form-group\">\n" +
+                        "      <div class = \"col-sm-offset-2 col-sm-10\">\n" +
+                        "         <div class = \"checkbox\">\n" +
+                        "            <label><input type = \"checkbox\"> Remember me</label>\n" +
+                        "         </div>\n" +
+                        "      </div>\n" +
+                        "   </div>\n" +
+                        "   \n" +
+                        "   <div class = \"form-group\">\n" +
+                        "      <div class = \"col-sm-offset-2 col-sm-10\">\n" +
+                        "         <button type = \"submit\" class = \"btn btn-default\">Sign in</button>\n" +
+                        "      </div>\n" +
+                        "   </div>\n" +
+                        "\t\n" +
+                        "</form>",
+                ""
+        );
+        final LearnDetailsModel l5 = new LearnDetailsModel(
+                "Supported Form Controls",
+                "Bootstrap natively supports the most common form controls mainly input, textarea, checkbox, radio, and select.\n" +
+                        "\n" +
+                        "Inputs\n" +
+                        "The most common form text field is the input field. This is where users will enter most of the essential form data. Bootstrap offers support for all native HTML5 input types: text, password, datetime, datetime-local, date, month, time, week, number, email, url, search, tel, and color. Proper type declaration is required to make Inputs fully styled.",
+                "<form role = \"form\">\n" +
+                        "   \n" +
+                        "   <div class = \"form-group\">\n" +
+                        "      <label for = \"name\">Label</label>\n" +
+                        "      <input type = \"text\" class = \"form-control\" placeholder = \"Text input\">\n" +
+                        "   </div>\n" +
+                        "  \n" +
+                        "</form>",
+                ""
+        );
+        final LearnDetailsModel l6 = new LearnDetailsModel(
+                "Textarea",
+                "The textarea is used when you need multiple lines of input. Change rows attribute as necessary (fewer rows = smaller box, more rows = bigger box).",
+                "<form role = \"form\">\n" +
+                        "   \n" +
+                        "   <div class = \"form-group\">\n" +
+                        "      <label for = \"name\">Text Area</label>\n" +
+                        "      <textarea class = \"form-control\" rows = \"3\"></textarea>\n" +
+                        "   </div>\n" +
+                        "   \n" +
+                        "</form>",
+                ""
+        );
+        final LearnDetailsModel l7 = new LearnDetailsModel(
+                "CheckBoxes and Radio Buttons",
+                "Checkboxes and radio buttons are great when you want users to choose from a list of preset options.\n" +
+                        "\n" +
+                        "When building a form, use checkbox if you want the user to select any number of options from a list. Use radio if you want to limit the user to just one selection.\n" +
+                        "\n" +
+                        "Use .checkbox-inline or .radio-inline class to a series of checkboxes or radios for controls appear on the same line.\n" +
+                        "\n" +
+                        "The following example demonstrates both (default and inline) types −",
+                "<label for = \"name\">Example of Default Checkbox and radio button </label>\n" +
+                        "\n" +
+                        "<div class = \"checkbox\">\n" +
+                        "   <label>\n" +
+                        "      <input type = \"checkbox\" value = \"\">Option 1\n" +
+                        "   </label>\n" +
+                        "</div>\n" +
+                        "\n" +
+                        "<div class = \"checkbox\">\n" +
+                        "   <label>\n" +
+                        "      <input type = \"checkbox\" value = \"\">Option 2\n" +
+                        "   </label>\n" +
+                        "</div>\n" +
+                        "\n" +
+                        "<div class = \"radio\">\n" +
+                        "   <label>\n" +
+                        "      <input type = \"radio\" name = \"optionsRadios\" id = \"optionsRadios1\" value = \"option1\" checked> Option 1\n" +
+                        "   </label>\n" +
+                        "</div>\n" +
+                        "\n" +
+                        "<div class = \"radio\">\n" +
+                        "   <label>\n" +
+                        "      <input type = \"radio\" name = \"optionsRadios\" id = \"optionsRadios2\" value = \"option2\">\n" +
+                        "      Option 2 - selecting it will deselect option 1\n" +
+                        "   </label>\n" +
+                        "</div>\n" +
+                        "\n" +
+                        "<label for = \"name\">Example of Inline Checkbox and radio button </label>\n" +
+                        "\n" +
+                        "<div>\n" +
+                        "   <label class = \"checkbox-inline\">\n" +
+                        "      <input type = \"checkbox\" id = \"inlineCheckbox1\" value = \"option1\"> Option 1\n" +
+                        "   </label>\n" +
+                        "   \n" +
+                        "   <label class = \"checkbox-inline\">\n" +
+                        "      <input type = \"checkbox\" id = \"inlineCheckbox2\" value = \"option2\"> Option 2\n" +
+                        "   </label>\n" +
+                        "   \n" +
+                        "   <label class = \"checkbox-inline\">\n" +
+                        "      <input type = \"checkbox\" id = \"inlineCheckbox3\" value = \"option3\"> Option 3\n" +
+                        "   </label>\n" +
+                        "   \n" +
+                        "   <label class = \"checkbox-inline\">\n" +
+                        "      <input type = \"radio\" name = \"optionsRadiosinline\" id = \"optionsRadios3\" value = \"option1\" checked> Option 1\n" +
+                        "   </label>\n" +
+                        "   \n" +
+                        "   <label class = \"checkbox-inline\">\n" +
+                        "      <input type = \"radio\" name = \"optionsRadiosinline\" id = \"optionsRadios4\" value = \"option2\"> Option 2\n" +
+                        "   </label>\n" +
+                        "</div>",
+                ""
+        );
+        final LearnDetailsModel l8 = new LearnDetailsModel(
+                "Selects",
+                "A select is used when you want to allow the user to pick from multiple options, but by default it only allows one.\n" +
+                        "\n" +
+                        "Use <select> for list options with which the user is familiar, such as states or numbers.\n" +
+                        "\n" +
+                        "Use multiple = \"multiple\" to allow the users to select more than one option.\n" +
+                        "\n" +
+                        "The following example demonstrates both (select and multiple) types −",
+                "<form role = \"form\">\n" +
+                        "   \n" +
+                        "   <div class = \"form-group\">\n" +
+                        "      <label for = \"name\">Select list</label>\n" +
+                        "      \n" +
+                        "      <select class = \"form-control\">\n" +
+                        "         <option>1</option>\n" +
+                        "         <option>2</option>\n" +
+                        "         <option>3</option>\n" +
+                        "         <option>4</option>\n" +
+                        "         <option>5</option>\n" +
+                        "      </select>\n" +
+                        "\n" +
+                        "      <label for = \"name\">Multiple Select list</label>\n" +
+                        "      \n" +
+                        "      <select multiple class = \"form-control\">\n" +
+                        "         <option>1</option>\n" +
+                        "         <option>2</option>\n" +
+                        "         <option>3</option>\n" +
+                        "         <option>4</option>\n" +
+                        "         <option>5</option>\n" +
+                        "      </select>\n" +
+                        "      \n" +
+                        "   </div>\n" +
+                        "\t\n" +
+                        "</form>",
+                ""
+        );final LearnDetailsModel l9 = new LearnDetailsModel(
+                "Static Control",
+                "Use the class .form-control-static on a <p>, when you need to place plain text next to a form label within a horizontal form.",
+                "<form class = \"form-horizontal\" role = \"form\">\n" +
+                        "   <div class = \"form-group\">\n" +
+                        "      <label class = \"col-sm-2 control-label\">Email</label>\n" +
+                        "      \n" +
+                        "      <div class = \"col-sm-10\">\n" +
+                        "         <p class = \"form-control-static\">email@example.com</p>\n" +
+                        "      </div>\n" +
+                        "      \n" +
+                        "   </div>\n" +
+                        "   \n" +
+                        "   <div class = \"form-group\">\n" +
+                        "      <label for = \"inputPassword\" class = \"col-sm-2 control-label\">Password</label>\n" +
+                        "      \n" +
+                        "      <div class = \"col-sm-10\">\n" +
+                        "         <input type = \"password\" class = \"form-control\" id = \"inputPassword\" placeholder = \"Password\">\n" +
+                        "      </div>\n" +
+                        "      \n" +
+                        "   </div>\n" +
+                        "</form>",
+                ""
+        );final LearnDetailsModel l10 = new LearnDetailsModel(
+                "Form Control States",
+                "In addition to the :focus (i.e., a user clicks into the input or tabs onto it) state, Bootstrap offers styling for disabled inputs and classes for form validation.\n" +
+                        "\n" +
+                        "Input Focus\n" +
+                        "When an input receives :focus, the outline of the input is removed and a box-shadow is applied.\n" +
+                        "\n" +
+                        "Disabled lnputs\n" +
+                        "If you need to disable an input, simply adding the disabled attribute will not only disable it; it will also change the styling and the mouse cursor when the cursor hovers over the element.\n" +
+                        "\n" +
+                        "Disabled Fieldsets\n" +
+                        "Add the disabled attribute to a <fieldset> to disable all the controls within the <fieldset> at once.\n" +
+                        "\n" +
+                        "Validation States\n" +
+                        "Bootstrap includes validation styles for errors, warnings, and success messages. To use, simply add the appropriate class (.has-warning, .has-error, or .has-success) to the parent element.\n" +
+                        "\n" +
+                        "The following example demonstrates all the form control states −",
+                "<form class = \"form-horizontal\" role = \"form\">\n" +
+                        "   <div class = \"form-group\">\n" +
+                        "      <label class = \"col-sm-2 control-label\">Focused</label>\n" +
+                        "      <div class = \"col-sm-10\">\n" +
+                        "         <input class = \"form-control\" id = \"focusedInput\" type = \"text\" value = \"This is focused...\">\n" +
+                        "      </div>\n" +
+                        "   </div>\n" +
+                        "   \n" +
+                        "   <div class = \"form-group\">\n" +
+                        "      <label for = \"inputPassword\" class = \"col-sm-2 control-label\">\n" +
+                        "         Disabled\n" +
+                        "      </label>\n" +
+                        "      <div class = \"col-sm-10\">\n" +
+                        "         <input class = \"form-control\" id = \"disabledInput\" type = \"text\" placeholder = \"Disabled input here...\" disabled>\n" +
+                        "      </div>\n" +
+                        "   </div>\n" +
+                        "   \n" +
+                        "   <fieldset disabled>\n" +
+                        "      <div class = \"form-group\">\n" +
+                        "         <label for = \"disabledTextInput\" class = \"col-sm-2 control-label\">\n" +
+                        "            Disabled input (Fieldset disabled)\n" +
+                        "         </label>\n" +
+                        "         <div class = \"col-sm-10\">\n" +
+                        "            <input type = \"text\" id = \"disabledTextInput\" class = \"form-control\" placeholder = \"Disabled input\">\n" +
+                        "         </div> \n" +
+                        "      </div>\n" +
+                        "      \n" +
+                        "      <div class = \"form-group\">\n" +
+                        "         <label for = \"disabledSelect\" class = \"col-sm-2 control-label\"> \n" +
+                        "            Disabled select menu (Fieldset disabled)\n" +
+                        "         </label>\n" +
+                        "         <div class = \"col-sm-10\">\n" +
+                        "            <select id = \"disabledSelect\" class = \"form-control\"> \n" +
+                        "               <option>Disabled select</option>\n" +
+                        "            </select> \n" +
+                        "         </div>\n" +
+                        "      </div> \n" +
+                        "   </fieldset>\n" +
+                        "   \n" +
+                        "   <div class = \"form-group has-success\">\n" +
+                        "      <label class = \"col-sm-2 control-label\" for = \"inputSuccess\">\n" +
+                        "         Input with success\n" +
+                        "      </label>\n" +
+                        "      <div class = \"col-sm-10\">\n" +
+                        "         <input type = \"text\" class = \"form-control\" id = \"inputSuccess\">\n" +
+                        "      </div>\n" +
+                        "   </div>\n" +
+                        "   \n" +
+                        "   <div class = \"form-group has-warning\">\n" +
+                        "      <label class = \"col-sm-2 control-label\" for = \"inputWarning\">\n" +
+                        "         Input with warning\n" +
+                        "      </label>\n" +
+                        "      <div class = \"col-sm-10\">\n" +
+                        "         <input type = \"text\" class = \"form-control\" id = \"inputWarning\">\n" +
+                        "      </div>\n" +
+                        "   </div>\n" +
+                        "   \n" +
+                        "   <div class = \"form-group has-error\">\n" +
+                        "      <label class = \"col-sm-2 control-label\" for = \"inputError\">\n" +
+                        "         Input with error\n" +
+                        "      </label>\n" +
+                        "      <div class = \"col-sm-10\">\n" +
+                        "         <input type = \"text\" class = \"form-control\" id = \"inputError\">\n" +
+                        "      </div>\n" +
+                        "   </div>\n" +
+                        "</form>",
+                ""
+        );final LearnDetailsModel l11 = new LearnDetailsModel(
+                "Form Control Sizing",
+                "You can set heights and widths of forms using classes like .input-lg and .col-lg-* respectively. The following example demonstrates this −",
+                "<form role = \"form\">\n" +
+                        "\n" +
+                        "   <div class = \"form-group\">\n" +
+                        "      <input class = \"form-control input-lg\" type = \"text\" placeholder =\".input-lg\">\n" +
+                        "   </div>\n" +
+                        "\n" +
+                        "   <div class = \"form-group\">\n" +
+                        "      <input class = \"form-control\" type = \"text\" placeholder = \"Default input\">\n" +
+                        "   </div>\n" +
+                        "\n" +
+                        "   <div class = \"form-group\">\n" +
+                        "      <input class = \"form-control input-sm\" type = \"text\" placeholder = \".input-sm\">\n" +
+                        "   </div>\n" +
+                        "   \n" +
+                        "   <div class = \"form-group\"></div>\n" +
+                        "   \n" +
+                        "   <div class = \"form-group\">\n" +
+                        "      <select class = \"form-control input-lg\">\n" +
+                        "         <option value = \"\">.input-lg</option>\n" +
+                        "      </select>\n" +
+                        "   </div>\n" +
+                        "   \n" +
+                        "   <div class = \"form-group\">\n" +
+                        "      <select class = \"form-control\">\n" +
+                        "         <option value = \"\">Default select</option>\n" +
+                        "      </select>\n" +
+                        "   </div>\n" +
+                        "   \n" +
+                        "   <div class = \"form-group\">\n" +
+                        "      <select class = \"form-control input-sm\">\n" +
+                        "         <option value = \"\">.input-sm</option>\n" +
+                        "      </select>\n" +
+                        "   </div>\n" +
+                        "\n" +
+                        "   <div class = \"row\">\n" +
+                        "      <div class = \"col-lg-2\">\n" +
+                        "         <input type = \"text\" class = \"form-control\" placeholder = \".col-lg-2\">\n" +
+                        "      </div>\n" +
+                        "      \n" +
+                        "      <div class = \"col-lg-3\">\n" +
+                        "         <input type = \"text\" class = \"form-control\" placeholder = \".col-lg-3\">\n" +
+                        "      </div>\n" +
+                        "      \n" +
+                        "      <div class = \"col-lg-4\">\n" +
+                        "         <input type = \"text\" class = \"form-control\" placeholder = \".col-lg-4\">\n" +
+                        "      </div>\n" +
+                        "      \n" +
+                        "   </div>\n" +
+                        "</form>",
+                ""
+        );final LearnDetailsModel l12 = new LearnDetailsModel(
+                "Help Text",
+                "Bootstrap form controls can have a block level help text that flows with the inputs. To add a full width block of content, use the .help-block after the <input>. The following example demonstrates this −",
+                "<form role = \"form\">\n" +
+                        "   <span>Example of Help Text</span>\n" +
+                        "   <input class = \"form-control\" type = \"text\" placeholder = \"\">\n" +
+                        "   \n" +
+                        "   <span class = \"help-block\">\n" +
+                        "      A longer block of help text that breaks onto a new line and may extend beyond one line.\n" +
+                        "   </span>\n" +
+                        "\t\n" +
+                        "</form>",
+                ""
+        );
+
+        list.add(l1);
+        list.add(l2);
+        list.add(l3);
+        list.add(l4);
+        list.add(l5);
+        list.add(l6);
+        list.add(l7);
+        list.add(l8);
+        list.add(l9);
+        list.add(l10);
+        list.add(l11);
+        list.add(l12);
+
+        return list;
+    }
+    //Bootstrap Buttons
+    private static List<LearnDetailsModel> BootstrapButtons(){
+        final List<LearnDetailsModel> list = new ArrayList<>();
+        final LearnDetailsModel l1 = new LearnDetailsModel(
+                "Bootstrap Buttons",
+                "This chapter covers the use age of Bootstrap button with examples. Anything that is given a class of .btn will inherit the default look of a gray button with rounded corners. However, Bootstrap provides some options to style buttons, which are summarized in the following table −" +
+                        "\n\n" +
+                        "1. btn\n" +
+                        "\n" +
+                        "Default/ Standard button.\n" +
+                        "\n" +
+                        "2. btn-primary\n" +
+                        "\n" +
+                        "Provides extra visual weight and identifies the primary action in a set of buttons.\n" +
+                        "\n" +
+                        "3. btn-success\n" +
+                        "\n" +
+                        "Indicates a successful or positive action.\n" +
+                        "\n" +
+                        "4. btn-info\n" +
+                        "\n" +
+                        "Contextual button for informational alert messages.\n" +
+                        "\n" +
+                        "5. btn-warning\n" +
+                        "\n" +
+                        "Indicates caution should be taken with this action.\n" +
+                        "\n" +
+                        "6. btn-danger\n" +
+                        "\n" +
+                        "Indicates a dangerous or potentially negative action.\n" +
+                        "\n" +
+                        "7. btn-link\n" +
+                        "\n" +
+                        "Deemphasize a button by making it look like a link while maintaining button behavior.",
+                "<!-- Standard button -->\n" +
+                        "<button type = \"button\" class = \"btn btn-default\">Default Button</button>\n" +
+                        "\n" +
+                        "<!-- Provides extra visual weight and identifies the primary action in a set of buttons -->\n" +
+                        "<button type = \"button\" class = \"btn btn-primary\">Primary Button</button>\n" +
+                        "\n" +
+                        "<!-- Indicates a successful or positive action -->\n" +
+                        "<button type = \"button\" class = \"btn btn-success\">Success Button</button>\n" +
+                        "\n" +
+                        "<!-- Contextual button for informational alert messages -->\n" +
+                        "<button type = \"button\" class = \"btn btn-info\">Info Button</button>\n" +
+                        "\n" +
+                        "<!-- Indicates caution should be taken with this action -->\n" +
+                        "<button type = \"button\" class = \"btn btn-warning\">Warning Button</button>\n" +
+                        "\n" +
+                        "<!-- Indicates a dangerous or potentially negative action -->\n" +
+                        "<button type = \"button\" class = \"btn btn-danger\">Danger Button</button>\n" +
+                        "\n" +
+                        "<!-- Deemphasize a button by making it look like a link while maintaining button behavior -->\n" +
+                        "<button type = \"button\" class = \"btn btn-link\">Link Button</button>",
+                ""
+        );
+        final LearnDetailsModel l2 = new LearnDetailsModel(
+                "Button Size",
+                "The following table summarizes the classes used to get buttons of various sizes −" +
+                        "\n\n" +
+                        "1(.btn-lg)\n" +
+                        "\n" +
+                        "This makes the button size large.\n" +
+                        "\n" +
+                        "2(.btn-sm)\n" +
+                        "\n" +
+                        "This makes the button size small.\n" +
+                        "\n" +
+                        "3(.btn-xs)\n" +
+                        "\n" +
+                        "This makes the button size extra small.\n" +
+                        "\n" +
+                        "4(.btn-block)\n" +
+                        "\n" +
+                        "This creates block level buttons—those that span the full width of a parent.\n" +
+                        "\n" +
+                        "The following example demonstrates this −",
+                "<p>\n" +
+                        "   <button type = \"button\" class = \"btn btn-primary btn-lg\">\n" +
+                        "      Large Primary button\n" +
+                        "   </button>\n" +
+                        "   \n" +
+                        "   <button type = \"button\" class = \"btn btn-default btn-lg\">\n" +
+                        "      Large button\n" +
+                        "   </button>\n" +
+                        "</p>\n" +
+                        "\n" +
+                        "<p>\n" +
+                        "   <button type = \"button\" class = \"btn btn-primary\">\n" +
+                        "      Default size Primary button\n" +
+                        "   </button>\n" +
+                        "   \n" +
+                        "   <button type = \"button\" class = \"btn btn-default\">\n" +
+                        "      Default size button\n" +
+                        "   </button>\n" +
+                        "</p>\n" +
+                        "\n" +
+                        "<p>\n" +
+                        "   <button type = \"button\" class = \"btn btn-primary btn-sm\">\n" +
+                        "      Small Primary button\n" +
+                        "   </button>\n" +
+                        "   \n" +
+                        "   <button type = \"button\" class = \"btn btn-default btn-sm\">\n" +
+                        "      Small button\n" +
+                        "   </button>\n" +
+                        "</p>\n" +
+                        "\n" +
+                        "<p>\n" +
+                        "   <button type = \"button\" class = \"btn btn-primary btn-xs\">\n" +
+                        "      Extra small Primary button\n" +
+                        "   </button>\n" +
+                        "   \n" +
+                        "   <button type = \"button\" class = \"btn btn-default btn-xs\">\n" +
+                        "      Extra small button\n" +
+                        "   </button>\n" +
+                        "</p>\n" +
+                        "\n" +
+                        "<p>\n" +
+                        "   <button type = \"button\" class = \"btn btn-primary btn-lg btn-block\">\n" +
+                        "      Block level Primary button\n" +
+                        "   </button>\n" +
+                        "   \n" +
+                        "   <button type = \"button\" class = \"btn btn-default btn-lg btn-block\">\n" +
+                        "      Block level button\n" +
+                        "   </button>\n" +
+                        "</p>",
+                ""
+        );
+        final LearnDetailsModel l3 = new LearnDetailsModel(
+                "Button State",
+                "Bootstrap provides classes which allow you to change the state of buttons as active, disabled etc. each of which are discussed in the following sections.\n" +
+                        "\n" +
+                        "Active State\n" +
+                        "Buttons will appear pressed (with a darker background, darker border, and inset shadow) when active. The following table summarizes classes used to make button elements and anchor elements active −" +
+                        "\n\n" +
+                        "Button element => Use .active class to show that it is activated.\n" +
+                        "Anchor element => Use .active class to <a> buttons to show that it is activated.\n" +
+                        "The following example demonstrates this −",
+                "<p>\n" +
+                        "   <button type = \"button\" class = \"btn btn-default btn-lg \">\n" +
+                        "      Default Button\n" +
+                        "   </button>\n" +
+                        "   \n" +
+                        "   <button type = \"button\" class = \"btn btn-default btn-lg active\">\n" +
+                        "      Active Button\n" +
+                        "   </button>\n" +
+                        "</p>\n" +
+                        "\n" +
+                        "<p>\n" +
+                        "   <button type = \"button\" class = \"btn btn-primary btn-lg\">\n" +
+                        "      Primary button\n" +
+                        "   </button>\n" +
+                        "   \n" +
+                        "   <button type = \"button\" class = \"btn btn-primary btn-lg active\">\n" +
+                        "      Active Primary button\n" +
+                        "   </button>\n" +
+                        "</p>",
+                ""
+        );
+        final LearnDetailsModel l4 = new LearnDetailsModel(
+                "Disabled State",
+                "When you disable a button, it will fade in color by 50%, and lose the gradient.\n" +
+                        "\n" +
+                        "The following table summarizes classes used to make button element and anchor element disabled −" +
+                        "\n\n" +
+                        "(Button element)" +
+                        "\nAdd the disabled attribute to <button> buttons.\n" +
+                        "(Anchor element)\n" +
+                        "Add the disabled class to <a> buttons.\n" +
+                        "\n" +
+                        "Note − This class will only change the <a>'s appearance, not its functionality. You need to use custom JavaScript to disable links here.\n" +
+                        "\n" +
+                        "The following example demonstrates this −",
+                "<p>\n" +
+                        "   <button type = \"button\" class = \"btn btn-default btn-lg\">\n" +
+                        "      Default Button\n" +
+                        "   </button>\n" +
+                        "   \n" +
+                        "   <button type = \"button\" class = \"btn btn-default btn-lg\" disabled = \"disabled\">\n" +
+                        "      Disabled Button\n" +
+                        "   </button>\n" +
+                        "</p>\n" +
+                        "\n" +
+                        "<p>\n" +
+                        "   <button type = \"button\" class = \"btn btn-primary btn-lg\">\n" +
+                        "      Primary button\n" +
+                        "   </button>\n" +
+                        "   \n" +
+                        "   <button type = \"button\" class = \"btn btn-primary btn-lg\" disabled = \"disabled\">\n" +
+                        "      Disabled Primary button\n" +
+                        "   </button>\n" +
+                        "</p>\n" +
+                        "\n" +
+                        "<p>\n" +
+                        "   <a href = \"#\" class = \"btn btn-default btn-lg\" role = \"button\">\n" +
+                        "      Link\n" +
+                        "   </a>\n" +
+                        "   \n" +
+                        "   <a href = \"#\" class = \"btn btn-default btn-lg disabled\" role = \"button\">\n" +
+                        "      Disabled Link\n" +
+                        "   </a>\n" +
+                        "</p>\n" +
+                        "\n" +
+                        "<p>\n" +
+                        "   <a href = \"#\" class = \"btn btn-primary btn-lg\" role = \"button\">\n" +
+                        "      Primary link\n" +
+                        "   </a>\n" +
+                        "   \n" +
+                        "   <a href = \"#\" class = \"btn btn-primary btn-lg disabled\" role = \"button\">\n" +
+                        "      Disabled Primary link\n" +
+                        "   </a>\n" +
+                        "</p>",
+                ""
+        );
+        final LearnDetailsModel l5 = new LearnDetailsModel(
+                "Button Tags",
+                "You may use button classes with <a>, <button>, or <input> element. But it is recommended that you use it with <button> elements mostly to avoid cross browser inconsistency issues.\n" +
+                        "\n" +
+                        "The following example demonstrates this −",
+                "<a class = \"btn btn-default\" href = \"#\" role = \"button\">Link</a>\n" +
+                        "<button class = \"btn btn-default\" type = \"submit\">Button</button>\n" +
+                        "<input class = \"btn btn-default\" type = \"button\" value = \"Input\">\n" +
+                        "<input class = \"btn btn-default\" type = \"submit\" value = \"Submit\">",
+                ""
+        );
+        list.add(l1);
+        list.add(l2);
+        list.add(l3);
+        list.add(l4);
+        list.add(l5);
+        return list;
+    }
+    //Bootstrap Images
+    private static List<LearnDetailsModel> BootstrapImages(){
+        final List<LearnDetailsModel> list = new ArrayList<>();
+        final LearnDetailsModel l1 = new LearnDetailsModel(
+                "Bootstrap Images",
+                "This chapter covers the Bootstrap support for images. Bootstrap provides three classes that can be used to apply some simple styles to images −\n" +
+                        "\n" +
+                        ".img-rounded − adds border-radius:6px to give the image rounded corners.\n" +
+                        "\n" +
+                        ".img-circle − makes the entire image round by adding border-radius:500px.\n" +
+                        "\n" +
+                        ".img-thumbnail − adds a bit of padding and a gray border −\n" +
+                        "\n" +
+                        "The following example demonstrates this −",
+                "<img src = \"/bootstrap/images/download.png\" class = \"img-rounded\">\n" +
+                        "<img src = \"/bootstrap/images/download.png\" class = \"img-circle\">\n" +
+                        "<img src = \"/bootstrap/images/download.png\" class = \"img-thumbnail\">",
+                ""
+        );
+        list.add(l1);
+        return list;
+    }
+    //Bootstrap Helper Classes
+    private static List<LearnDetailsModel> BootstrapHelperClasses(){
+        final List<LearnDetailsModel> list = new ArrayList<>();
+        final LearnDetailsModel l1 = new LearnDetailsModel(
+                "Close icon",
+                "This chapter discusses some of the helper classes in Bootstrap that might come in handy." +
+                        "\n\n" +
+                        "Use the generic close icon for dismissing content like modals and alerts. Use the class close to get the close icon.",
+                "<p>Close Icon Example\n" +
+                        "   <button type = \"button\" class = \"close\" aria-hidden = \"true\">\n" +
+                        "      &times;\n" +
+                        "   </button>\n" +
+                        "</p>",
+                ""
+        );
+        final LearnDetailsModel l2 = new LearnDetailsModel(
+                "Carets",
+                "Use carets to indicate dropdown functionality and direction. To get this functionality use the class caret with a <span> element.",
+                "<p>Caret Example<span class = \"caret\"></span></p>",
+                ""
+        );
+        final LearnDetailsModel l3 = new LearnDetailsModel(
+                "Quick Floats",
+                "You can float an element to the left or right with class pull-left or pull-right respectively the following example demonstrates this.",
+                "<div class = \"pull-left\">Quick Float to left</div>\n" +
+                        "<div class = \"pull-right\">Quick Float to right</div>",
+                ""
+        );
+        final LearnDetailsModel l4 = new LearnDetailsModel(
+                "Center Content Blocks",
+                "Use class center-block to set an element to center.",
+                "<div class = \"row\">\n" +
+                        "   <div class = \"center-block\" style = \"width:200px; background-color:#ccc;\">\n" +
+                        "      This is an example for center-block\n" +
+                        "   </div>\n" +
+                        "</div>",
+                ""
+        );
+        final LearnDetailsModel l5 = new LearnDetailsModel(
+                "Clearfix",
+                "To clear the float of any element, use the .clearfix class.",
+                "<div class = \"clearfix\" style = \"background: #D8D8D8;border: 1px solid #000; padding: 10px;\">\n" +
+                        "   \n" +
+                        "   <div class = \"pull-left\" style = \"background:#58D3F7;\">\n" +
+                        "      Quick Float to left\n" +
+                        "   </div>\n" +
+                        "   \n" +
+                        "   <div class = \"pull-right\" style = \"background: #DA81F5;\">\n" +
+                        "      Quick Float to right\n" +
+                        "   </div>\n" +
+                        "   \n" +
+                        "</div>",
+                ""
+        );
+        final LearnDetailsModel l6 = new LearnDetailsModel(
+                "Showing and Hiding Content",
+                "You can force an element to be shown or hidden (including for screen readers) with the use of classes .show and .hidden.",
+                "<div class = \"row\" style = \"padding: 91px 100px 19px 50px;\">\n" +
+                        "   \n" +
+                        "   <div class = \"show\" style = \"left-margin:10px; width:300px; background-color:#ccc;\">\n" +
+                        "      This is an example for show class\n" +
+                        "   </div>\n" +
+                        "   \n" +
+                        "   <div class = \"hidden\" style = \"width:200px; background-color:#ccc;\">\n" +
+                        "      This is an example for hide class\n" +
+                        "   </div>\n" +
+                        "   \n" +
+                        "</div>",
+                ""
+        );final LearnDetailsModel l7 = new LearnDetailsModel(
+                "Screen Reader Content",
+                "You can hide an element to all devices except screen readers with the class .sr-only.",
+                "<div class = \"row\" style = \"padding: 91px 100px 19px 50px;\">\n" +
+                        "   <form class = \"form-inline\" role = \"form\">\n" +
+                        "      \n" +
+                        "      <div class = \"form-group\">\n" +
+                        "         <label class = \"sr-only\" for = \"email\">Email address</label>\n" +
+                        "         <input type = \"email\" class = \"form-control\" placeholder = \"Enter email\">\n" +
+                        "      </div>\n" +
+                        "      \n" +
+                        "      <div class = \"form-group\">\n" +
+                        "         <label class = \"sr-only\" for = \"pass\">Password</label>\n" +
+                        "         <input type = \"password\" class = \"form-control\" placeholder = \"Password\">\n" +
+                        "      </div>\n" +
+                        "      \n" +
+                        "   </form>\n" +
+                        "</div>",
+                ""
+        );
+        list.add(l1);
+        list.add(l2);
+        list.add(l3);
+        list.add(l4);
+        list.add(l5);
+        list.add(l6);
+        list.add(l7);
+        return list;
+    }
+    //Bootstrap Responsive Utilities
+    private static List<LearnDetailsModel> BootstrapResponsiveUtilities(){
+        final List<LearnDetailsModel> list = new ArrayList<>();
+        final LearnDetailsModel l1 = new LearnDetailsModel(
+                "Responsive utilities",
+                "Bootstrap provides some handful helper classes, for faster mobile-friendly development. These can be used for showing and hiding content by device via media query, combined with large, small, and medium devices.\n" +
+                        "\n" +
+                        "Use these sparingly and avoid creating entirely different versions of the same site. Responsive utilities are currently only available for block and table toggling." +
+                        "\n\n" +
+                        "(.visible-xs) Extra small (less than 768px) visible\n\n" +
+                        "(.visible-sm) Small (up to 768 px) visible\n\n" +
+                        "(.visible-md) Medium (768 px to 991 px) visible\n\n" +
+                        "(.visible-lg) Larger (992 px and above) visible\n\n" +
+                        "(.hidden-xs) Extra small (less than 768px) hidden\n\n" +
+                        "(.hidden-sm) Small (up to 768 px) hidden\n\n" +
+                        "(.hidden-md) Medium (768 px to 991 px) hidden\n\n" +
+                        "(.hidden-lg) Larger (992 px and above) hidden",
+                "",
+                ""
+        );
+        final LearnDetailsModel l2 = new LearnDetailsModel(
+                "Print Classes",
+                "The following table lists the print classes. Use these for toggling the content for print." +
+                        "\n\n" +
+                        "(.visible-print) Yes Visible\n\n" +
+                        "(.hidden-print) Visible only to browser not to print.",
+                "",
+                ""
+        );
+        final LearnDetailsModel l3 = new LearnDetailsModel(
+                "Example",
+                "The following example demonstrates the use of above listed helper classes. Resize your browser or load the example on different devices to test the responsive utility classes.",
+                "<div class = \"container\" style = \"padding: 40px;\">\n" +
+                        "   <div class = \"row visible-on\">\n" +
+                        "      \n" +
+                        "      <div class = \"col-xs-6 col-sm-3\" style = \"background-color: #dedef8;\n" +
+                        "         box-shadow: inset 1px -1px 1px #444, inset -1px 1px 1px #444;\">\n" +
+                        "         \n" +
+                        "         <span class = \"hidden-xs\">Extra small</span>\n" +
+                        "         <span class = \"visible-xs\">✔ Visible on x-small</span>\n" +
+                        "      </div>\n" +
+                        "      \n" +
+                        "      <div class = \"col-xs-6 col-sm-3\" style = \"background-color: #dedef8;\n" +
+                        "         box-shadow: inset 1px -1px 1px #444, inset -1px 1px 1px #444;\">\n" +
+                        "         \n" +
+                        "         <span class = \"hidden-sm\">Small</span>\n" +
+                        "         <span class = \"visible-sm\">✔ Visible on small</span>\n" +
+                        "      </div>\n" +
+                        "      \n" +
+                        "      <div class = \"clearfix visible-xs\"></div>\n" +
+                        "      \n" +
+                        "      <div class = \"col-xs-6 col-sm-3\" style = \"background-color: #dedef8;\n" +
+                        "         box-shadow: inset 1px -1px 1px #444, inset -1px 1px 1px #444;\">\n" +
+                        "         \n" +
+                        "         <span class = \"hidden-md\">Medium</span>\n" +
+                        "         <span class = \"visible-md\">✔ Visible on medium</span>\n" +
+                        "      </div>\n" +
+                        "      \n" +
+                        "      <div class = \"col-xs-6 col-sm-3\" style = \"background-color: #dedef8;\n" +
+                        "         box-shadow: inset 1px -1px 1px #444, inset -1px 1px 1px #444;\">\n" +
+                        "         \n" +
+                        "         <span class = \"hidden-lg\">Large</span>\n" +
+                        "         <span class = \"visible-lg\">✔ Visible on large</span>\n" +
+                        "      </div>\n" +
+                        "      \n" +
+                        "   </div>  \n" +
+                        "</div>",
+                ""
+        );
+        list.add(l1);
+        list.add(l2);
+        list.add(l3);
+        return list;
+    }
+
+
 
     /*final LearnDetailsModel l1 = new LearnDetailsModel(
             "",
@@ -17045,6 +19097,7 @@ public class LearnDetailsContent {
 
         return list;
     }
+
     //get list topics
     public static List<LearnDetailsModel> getTopics(String selectedTopicName) {
         switch (selectedTopicName) {
@@ -17315,7 +19368,7 @@ public class LearnDetailsContent {
             case "NextJs CSS Support":
                 return NextJsCSSSupport();
             case "NextJs Global CSS Support":
-               return NextJsGlobalCSSSupport();
+                return NextJsGlobalCSSSupport();
             case "NextJs Pre-Rendering":
                 return NextJsPreRendering();
             case "NextJs Routing":
@@ -17417,6 +19470,29 @@ public class LearnDetailsContent {
                 return ExpressJsDebugging();
             case "ExpressJs Best Practices":
                 return ExpressJsBestPractices();
+            //Bootstrap
+            case "Bootstrap Introduction":
+                return BootstrapIntroduction();
+            case "Bootstrap Grid System":
+                return BootstrapGridSystem();
+            case "Bootstrap CSS Overview":
+                return BootstrapCSSOverview();
+            case "Bootstrap Typography":
+                return BootstrapTypography();
+            case "Bootstrap Code":
+                return BootstrapCode();
+            case "Bootstrap Tables":
+                return BootstrapTables();
+            case "Bootstrap Forms":
+                return BootstrapForms();
+            case "Bootstrap Buttons":
+                return BootstrapButtons();
+            case "Bootstrap Images":
+                return BootstrapImages();
+            case "Bootstrap Helper Classes":
+                return BootstrapHelperClasses();
+            case "Bootstrap Responsive Utilities":
+                return BootstrapResponsiveUtilities();
 
             default:
                 return defaultT();
@@ -17426,7 +19502,7 @@ public class LearnDetailsContent {
     }
 
 }
-    /*private static List<LearnDetailsModel> ExpressJsBestPractices(){
+    /*private static List<LearnDetailsModel> BootstrapResponsiveUtilities(){
         final List<LearnDetailsModel> list = new ArrayList<>();
         final LearnDetailsModel l1 = new LearnDetailsModel();
 

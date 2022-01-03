@@ -246,7 +246,17 @@ public class LearnItemsListActivity extends AppCompatActivity {
                 "EmberJs Managing Dependencies"
         };
         final String[] Bootstrap = {
-                "Bootstrap "
+                "Bootstrap Introduction",
+                "Bootstrap Grid System",
+                "Bootstrap CSS Overview",
+                "Bootstrap Typography",
+                "Bootstrap Code",
+                "Bootstrap Tables",
+                "Bootstrap Forms",
+                "Bootstrap Buttons",
+                "Bootstrap Images",
+                "Bootstrap Helper Classes",
+                "Bootstrap Responsive Utilities"
         };
         final String[] NodeJs = {
                 "NodeJs ",

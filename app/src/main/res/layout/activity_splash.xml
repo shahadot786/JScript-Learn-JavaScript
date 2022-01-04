@@ -12,8 +12,8 @@
         android:layout_width="0dp"
         android:layout_height="300dp"
         android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
-        app:layout_constraintBottom_toTopOf="@+id/slogan_text"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
@@ -22,17 +22,6 @@
         app:lottie_autoPlay="true"
         app:lottie_loop="true"
         app:lottie_rawRes="@raw/splash_animation" />
-
-    <ImageView
-        android:id="@+id/imageView6"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:contentDescription="@string/app_main_images"
-        app:layout_constraintBottom_toBottomOf="@+id/splash_logo"
-        app:layout_constraintEnd_toEndOf="@+id/splash_logo"
-        app:layout_constraintStart_toStartOf="@+id/splash_logo"
-        app:layout_constraintTop_toTopOf="@+id/splash_logo"
-        app:srcCompat="@drawable/ic_main_icon_round" />
 
     <TextView
         android:id="@+id/slogan_text"
@@ -43,11 +32,22 @@
         android:text="@string/jscript_learn_javascript"
         android:textAlignment="center"
         android:textSize="30sp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/loading"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/splash_logo" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/loading"
+        android:layout_width="250dp"
+        android:layout_height="100dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/loading"/>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

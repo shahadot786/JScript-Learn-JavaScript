@@ -303,14 +303,21 @@ public class LearnItemsListActivity extends AppCompatActivity {
                 "Laravel ",
         };
         final String[] jQuery = {
-                "jQuery ",
-                "jQuery ",
-                "jQuery ",
-                "jQuery ",
-                "jQuery ",
-                "jQuery ",
-                "jQuery ",
-                "jQuery ",
+                "jQuery Introduction",
+                "jQuery Basics",
+                "jQuery Selectors",
+                "jQuery Attributes",
+                "jQuery DOM Traversing",
+                "jQuery CSS",
+                "jQuery DOM",
+                "jQuery Events Handling",
+                "jQuery Ajax",
+                "jQuery Effects",
+                "jQuery Interactions",
+                "jQuery Widgets",
+                "jQuery Theming",
+                "jQuery Utilities",
+                "jQuery Plugins"
         };
         /*
         final String[] SpringBoot = {

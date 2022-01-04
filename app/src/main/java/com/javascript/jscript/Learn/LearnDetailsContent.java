@@ -21247,7 +21247,4986 @@ public class LearnDetailsContent {
         list.add(l4);
         return list;
     }
+    //jQuery
+    //jQuery Introduction
+    private static List<LearnDetailsModel> jQueryIntroduction(){
+        final List<LearnDetailsModel> list = new ArrayList<>();
+        final LearnDetailsModel l1 = new LearnDetailsModel(
+                "What is jQuery?",
+                "jQuery is a fast and concise JavaScript Library created by John Resig in 2006 with a nice motto: Write less, do more. jQuery simplifies HTML document traversing, event handling, animating, and Ajax interactions for rapid web development. jQuery is a JavaScript toolkit designed to simplify various tasks by writing less code. Here is the list of important core features supported by jQuery −\n" +
+                        "\n" +
+                        "DOM manipulation − The jQuery made it easy to select DOM elements, negotiate them and modifying their content by using cross-browser open source selector engine called Sizzle.\n" +
+                        "\n" +
+                        "Event handling − The jQuery offers an elegant way to capture a wide variety of events, such as a user clicking on a link, without the need to clutter the HTML code itself with event handlers.\n" +
+                        "\n" +
+                        "AJAX Support − The jQuery helps you a lot to develop a responsive and feature rich site using AJAX technology.\n" +
+                        "\n" +
+                        "Animations − The jQuery comes with plenty of built-in animation effects which you can use in your websites.\n" +
+                        "\n" +
+                        "Lightweight − The jQuery is very lightweight library - about 19KB in size (Minified and gzipped).\n" +
+                        "\n" +
+                        "Cross Browser Support − The jQuery has cross-browser support, and works well in IE 6.0+, FF 2.0+, Safari 3.0+, Chrome and Opera 9.0+\n" +
+                        "\n" +
+                        "Latest Technology − The jQuery supports CSS3 selectors and basic XPath syntax.",
+                "",
+                ""
+        );
+        final LearnDetailsModel l2 = new LearnDetailsModel(
+                "How to use jQuery?",
+                "There are two ways to use jQuery.\n" +
+                        "\n" +
+                        "Local Installation − You can download jQuery library on your local machine and include it in your HTML code.\n" +
+                        "\n" +
+                        "CDN Based Version − You can include jQuery library into your HTML code directly from Content Delivery Network (CDN).",
+                "",
+                ""
+        );
+        final LearnDetailsModel l3 = new LearnDetailsModel(
+                "Local Installation",
+                "Go to the https://jquery.com/download/ to download the latest version available.\n" +
+                        "\n" +
+                        "Now put downloaded jquery-2.1.3.min.js file in a directory of your website, e.g. /jquery.",
+                "",
+                ""
+        );
+        final LearnDetailsModel l4 = new LearnDetailsModel(
+                "Example",
+                "Now you can include jquery library in your HTML file as follows −",
+                "<html>\n" +
+                        "   <head>\n" +
+                        "      <title>The jQuery Example</title>\n" +
+                        "      <script type = \"text/javascript\" src = \"/jquery/jquery-2.1.3.min.js\">\n" +
+                        "      </script>\n" +
+                        "\t\t\n" +
+                        "      <script type = \"text/javascript\">\n" +
+                        "         $(document).ready(function() {\n" +
+                        "            document.write(\"Hello, World!\");\n" +
+                        "         });\n" +
+                        "      </script>\n" +
+                        "   </head>\n" +
+                        "\t\n" +
+                        "   <body>\n" +
+                        "      <h1>Hello</h1>\n" +
+                        "   </body>\n" +
+                        "</html>",
+                "Hello, World!"
+        );
+        final LearnDetailsModel l5 = new LearnDetailsModel(
+                "CDN Based Version",
+                "You can include jQuery library into your HTML code directly from Content Delivery Network (CDN). Google and Microsoft provides content deliver for the latest version.\n" +
+                        "\n" +
+                        "We are using Google CDN version of the library throughout this tutorial.\n" +
+                        "Example\n" +
+                        "Now let us rewrite above example using jQuery library from Google CDN.",
+                "<html>\n" +
+                        "   <head>\n" +
+                        "      <title>The jQuery Example</title>\n" +
+                        "      <script type = \"text/javascript\" \n" +
+                        "         src = \"https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js\">\n" +
+                        "      </script>\n" +
+                        "\t\t\n" +
+                        "      <script type = \"text/javascript\">\n" +
+                        "         $(document).ready(function() {\n" +
+                        "            document.write(\"Hello, World!\");\n" +
+                        "         });\n" +
+                        "      </script>\n" +
+                        "   </head>\n" +
+                        "\t\n" +
+                        "   <body>\n" +
+                        "      <h1>Hello</h1>\n" +
+                        "   </body>\n" +
+                        "</html>",
+                "Hello, World!"
+        );
+        final LearnDetailsModel l6 = new LearnDetailsModel(
+                "How to Call a jQuery Library Functions?",
+                "As almost everything, we do when using jQuery reads or manipulates the document object model (DOM), we need to make sure that we start adding events etc. as soon as the DOM is ready.\n" +
+                        "\n" +
+                        "If you want an event to work on your page, you should call it inside the $(document).ready() function. Everything inside it will load as soon as the DOM is loaded and before the page contents are loaded.\n" +
+                        "\n" +
+                        "To do this, we register a ready event for the document as follows −\n" +
+                        "\n" +
+                        "$(document).ready(function() {\n" +
+                        "   // do stuff when DOM is ready\n" +
+                        "});\n" +
+                        "To call upon any jQuery library function, use HTML script tags as shown below −",
+                "<html>\n" +
+                        "   <head>\n" +
+                        "      <title>The jQuery Example</title>\n" +
+                        "      <script type = \"text/javascript\" \n" +
+                        "         src = \"https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js\">\n" +
+                        "      </script>\n" +
+                        "\n" +
+                        "      <script type = \"text/javascript\" language = \"javascript\">\n" +
+                        "         $(document).ready(function() {\n" +
+                        "            $(\"div\").click(function() {alert(\"Hello, world!\");});\n" +
+                        "         });\n" +
+                        "      </script>\n" +
+                        "   </head>\n" +
+                        "\t\n" +
+                        "   <body>\n" +
+                        "      <div id = \"mydiv\">\n" +
+                        "         Click on this to see a dialogue box.\n" +
+                        "      </div>\n" +
+                        "   </body>\n" +
+                        "</html>",
+                "Hello, world!"
+        );
+        final LearnDetailsModel l7 = new LearnDetailsModel(
+                "How to Use Custom Scripts?",
+                "It is better to write our custom code in the custom JavaScript file : custom.js, as follows −\n" +
+                        "\n" +
+                        "/* Filename: custom.js */\n" +
+                        "$(document).ready(function() {\n" +
+                        "\n" +
+                        "   $(\"div\").click(function() {\n" +
+                        "      alert(\"Hello, world!\");\n" +
+                        "   });\n" +
+                        "});\n" +
+                        "Now we can include custom.js file in our HTML file as follows −",
+                "<html>\n" +
+                        "   <head>\n" +
+                        "      <title>The jQuery Example</title>\n" +
+                        "      <script type = \"text/javascript\" \n" +
+                        "         src = \"https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js\">\n" +
+                        "      </script>\n" +
+                        "\t\t\n" +
+                        "      <script type = \"text/javascript\" src = \"/jquery/custom.js\">\n" +
+                        "      </script>\n" +
+                        "   </head>\n" +
+                        "\t\n" +
+                        "   <body>\n" +
+                        "      <div id = \"mydiv\">\n" +
+                        "         Click on this to see a dialogue box.\n" +
+                        "      </div>\n" +
+                        "   </body>\n" +
+                        "</html>",
+                "Hello, world!"
+        );
+        final LearnDetailsModel l8 = new LearnDetailsModel(
+                "Using Multiple Libraries",
+                "You can use multiple libraries all together without conflicting each others. For example, you can use jQuery and MooTool javascript libraries together. You can check jQuery noConflict Method for more detail.",
+                "",
+                ""
+        );
+        final LearnDetailsModel l9 = new LearnDetailsModel(
+                "What is Next ?",
+                "Do not worry too much if you did not understand above examples. You are going to grasp them very soon in subsequent chapters.\n" +
+                        "\n" +
+                        "Next chapter would try to cover few basic concepts which are coming from conventional JavaScript.",
+                "",
+                ""
+        );
+        final LearnDetailsModel l10 = new LearnDetailsModel(
+                "Audience",
+                "This tutorial is designed for software programmers who wants to learn the basics of jQuery and its programming concepts in simple and easy ways. This tutorial will give you enough understanding on components of jQuery with suitable examples.",
+                "",
+                ""
+        );
+        final LearnDetailsModel l11 = new LearnDetailsModel(
+                "Prerequisites",
+                "Before proceeding with this tutorial, you should have a basic understanding of HTML, CSS, JavaScript, Document Object Model (DOM) and any text editor. As we are going to develop web based application using jQuery, it will be good if you have understanding on how internet and web based applications work.",
+                "",
+                ""
+        );
+        list.add(l1);
+        list.add(l2);
+        list.add(l3);
+        list.add(l4);
+        list.add(l5);
+        list.add(l6);
+        list.add(l7);
+        list.add(l8);
+        list.add(l9);
+        list.add(l10);
+        list.add(l11);
+        return list;
+    }
+    //jQuery Basics
+    private static List<LearnDetailsModel> jQueryBasics(){
+        final List<LearnDetailsModel> list = new ArrayList<>();
+        final LearnDetailsModel l1 = new LearnDetailsModel(
+                "Basics",
+                "jQuery is a framework built using JavaScript capabilities. So, you can use all the functions and other capabilities available in JavaScript. This chapter would explain most basic concepts but frequently used in jQuery.",
+                "",
+                ""
+        );
+        final LearnDetailsModel l2 = new LearnDetailsModel(
+                "String",
+                "A string in JavaScript is an immutable object that contains none, one or many characters. Following are the valid examples of a JavaScript String −",
+                "\"This is JavaScript String\"\n" +
+                        "'This is JavaScript String'\n" +
+                        "'This is \"really\" a JavaScript String'\n" +
+                        "\"This is 'really' a JavaScript String\"",
+                ""
+        );
+        final LearnDetailsModel l3 = new LearnDetailsModel(
+                "Numbers",
+                "Numbers in JavaScript are double-precision 64-bit format IEEE 754 values. They are immutable, just as strings. Following are the valid examples of a JavaScript Numbers −",
+                "5350\n" +
+                        "120.27\n" +
+                        "0.26",
+                ""
+        );
+        final LearnDetailsModel l4 = new LearnDetailsModel(
+                "Boolean",
+                "A boolean in JavaScript can be either true or false. If a number is zero, it defaults to false. If an empty string defaults to false.\n" +
+                        "\n" +
+                        "Following are the valid examples of a JavaScript Boolean −",
+                "true      // true\n" +
+                        "false     // false\n" +
+                        "0         // false\n" +
+                        "1         // true\n" +
+                        "\"\"        // false\n" +
+                        "\"hello\"   // true",
+                ""
+        );
+        final LearnDetailsModel l5 = new LearnDetailsModel(
+                "Objects",
+                "JavaScript supports Object concept very well. You can create an object using the object literal as follows −\n" +
+                        "\n" +
+                        "var emp = {\n" +
+                        "   name: \"Zara\",\n" +
+                        "   age: 10\n" +
+                        "};\n\n" +
+                        "You can write and read properties of an object using the dot notation as follows −",
+                "// Getting object properties\n" +
+                        "emp.name  // ==> Zara\n" +
+                        "emp.age   // ==> 10\n" +
+                        "\n" +
+                        "// Setting object properties\n" +
+                        "emp.name = \"Daisy\"  // <== Daisy\n" +
+                        "emp.age  =  20      // <== 20",
+                ""
+        );
+        final LearnDetailsModel l6 = new LearnDetailsModel(
+                "Arrays",
+                "You can define arrays using the array literal as follows −\n" +
+                        "\n" +
+                        "var x = [];\n" +
+                        "var y = [1, 2, 3, 4, 5];" +
+                        "\n\n" +
+                        "An array has a length property that is useful for iteration −",
+                "var x = [1, 2, 3, 4, 5];\n" +
+                        "\n" +
+                        "for (var i = 0; i < x.length; i++) {\n" +
+                        "   // Do something with x[i]\n" +
+                        "}",
+                ""
+        );
+        final LearnDetailsModel l7 = new LearnDetailsModel(
+                "Functions",
+                "A function in JavaScript can be either named or anonymous. A named function can be defined using function keyword as follows −\n" +
+                        "\n" +
+                        "function named(){\n" +
+                        "   // do some stuff here\n" +
+                        "}\n\n" +
+                        "An anonymous function can be defined in similar way as a normal function but it would not have any name.\n" +
+                        "\n" +
+                        "A anonymous function can be assigned to a variable or passed to a method as shown below.\n" +
+                        "\n" +
+                        "var handler = function (){\n" +
+                        "   // do some stuff here\n" +
+                        "}\n\n" +
+                        "JQuery makes a use of anonymous functions very frequently as follows −\n" +
+                        "\n" +
+                        "$(document).ready(function(){\n" +
+                        "   // do some stuff here\n" +
+                        "});",
+                "",
+                ""
+        );
+        final LearnDetailsModel l8 = new LearnDetailsModel(
+                "Arguments",
+                "JavaScript variable arguments is a kind of array which has length property. Following example explains it very well −\n" +
+                        "\n" +
+                        "function func(x){\n" +
+                        "   console.log(typeof x, arguments.length);\n" +
+                        "}\n" +
+                        "\n" +
+                        "func();                //==> \"undefined\", 0\n" +
+                        "func(1);               //==> \"number\", 1\n" +
+                        "func(\"1\", \"2\", \"3\");   //==> \"string\", 3\n\n" +
+                        "The arguments object also has a callee property, which refers to the function you're inside of. For example −",
+                "function func() {\n" +
+                        "   return arguments.callee; \n" +
+                        "}\n" +
+                        "\n" +
+                        "func();// ==> func",
+                ""
+        );
+        final LearnDetailsModel l9 = new LearnDetailsModel(
+                "Context",
+                "JavaScript famous keyword this always refers to the current context. Within a function this context can change, depending on how the function is called −\n" +
+                        "\n" +
+                        "$(document).ready(function() {\n" +
+                        "   // this refers to window.document\n" +
+                        "});\n" +
+                        "\n" +
+                        "$(\"div\").click(function() {\n" +
+                        "   // this refers to a div DOM element\n" +
+                        "});\n\n" +
+                        "You can specify the context for a function call using the function-built-in methods call() and apply() methods.\n" +
+                        "\n" +
+                        "The difference between them is how they pass arguments. Call passes all arguments through as arguments to the function, while apply accepts an array as the arguments.",
+                "function scope() {\n" +
+                        "   console.log(this, arguments.length);\n" +
+                        "}\n" +
+                        "\n" +
+                        "scope() // window, 0\n" +
+                        "scope.call(\"foobar\", [1,2]);  //==> \"foobar\", 1\n" +
+                        "scope.apply(\"foobar\", [1,2]); //==> \"foobar\", 2",
+                ""
+        );
+        final LearnDetailsModel l10 = new LearnDetailsModel(
+                "Scope",
+                "The scope of a variable is the region of your program in which it is defined. JavaScript variable will have only two scopes.\n" +
+                        "\n" +
+                        "Global Variables − A global variable has global scope which means it is defined everywhere in your JavaScript code.\n" +
+                        "\n" +
+                        "Local Variables − A local variable will be visible only within a function where it is defined. Function parameters are always local to that function.\n" +
+                        "\n" +
+                        "Within the body of a function, a local variable takes precedence over a global variable with the same name −",
+                "var myVar = \"global\";     // ==> Declare a global variable\n" +
+                        "\n" +
+                        "function ( ) {\n" +
+                        "   var myVar = \"local\";   // ==> Declare a local variable\n" +
+                        "   document.write(myVar); // ==> local\n" +
+                        "}",
+                ""
+        );
+        final LearnDetailsModel l11 = new LearnDetailsModel(
+                "Callback",
+                "A callback is a plain JavaScript function passed to some method as an argument or option. Some callbacks are just events, called to give the user a chance to react when a certain state is triggered.\n" +
+                        "\n" +
+                        "jQuery's event system uses such callbacks everywhere for example −\n" +
+                        "\n" +
+                        "$(\"body\").click(function(event) {\n" +
+                        "   console.log(\"clicked: \" + event.target);\n" +
+                        "});\n" +
+                        "Most callbacks provide arguments and a context. In the event-handler example, the callback is called with one argument, an Event.\n" +
+                        "\n" +
+                        "Some callbacks are required to return something, others make that return value optional. To prevent a form submission, a submit event handler can return false as follows −",
+                "$(\"#myform\").submit(function() {\n" +
+                        "   return false;\n" +
+                        "});",
+                ""
+        );
+        final LearnDetailsModel l12 = new LearnDetailsModel(
+                "Closures",
+                "Closures are created whenever a variable that is defined outside the current scope is accessed from within some inner scope.\n" +
+                        "\n" +
+                        "Following example shows how the variable counter is visible within the create, increment, and print functions, but not outside of them −",
+                "function create() {\n" +
+                        "   var counter = 0;\n" +
+                        "\t\n" +
+                        "   return {\n" +
+                        "      increment: function() {\n" +
+                        "         counter++;\n" +
+                        "      },\n" +
+                        "\t   print: function() {\n" +
+                        "         console.log(counter);\n" +
+                        "      }\n" +
+                        "   }\n" +
+                        "}\n" +
+                        "\n" +
+                        "var c = create();\n" +
+                        "c.increment();\n" +
+                        "c.print();     // ==> 1",
+                ""
+        );final LearnDetailsModel l13 = new LearnDetailsModel(
+                "Proxy Pattern",
+                "A proxy is an object that can be used to control access to another object. It implements the same interface as this other object and passes on any method invocations to it. This other object is often called the real subject.\n" +
+                        "\n" +
+                        "A proxy can be instantiated in place of this real subject and allow it to be accessed remotely. We can saves jQuery's setArray method in a closure and overwrites it as follows −",
+                "(function() {\n" +
+                        "   // log all calls to setArray\n" +
+                        "   var proxied = jQuery.fn.setArray;\n" +
+                        "\n" +
+                        "   jQuery.fn.setArray = function() {\n" +
+                        "      console.log(this, arguments);\n" +
+                        "      return proxied.apply(this, arguments);\n" +
+                        "   };\n" +
+                        "\t\n" +
+                        "})();",
+                ""
+        );final LearnDetailsModel l14 = new LearnDetailsModel(
+                "Built-in Functions",
+                "JavaScript comes along with a useful set of built-in functions. These methods can be used to manipulate Strings, Numbers and Dates.\n" +
+                        "\n" +
+                        "Following are important JavaScript functions −" +
+                        "\n\n" +
+                        "1. charAt()\n" +
+                        "\n" +
+                        "Returns the character at the specified index.\n" +
+                        "\n" +
+                        "2. concat()\n" +
+                        "\n" +
+                        "Combines the text of two strings and returns a new string.\n" +
+                        "\n" +
+                        "3. forEach()\n" +
+                        "\n" +
+                        "Calls a function for each element in the array.\n" +
+                        "\n" +
+                        "4. indexOf()\n" +
+                        "\n" +
+                        "Returns the index within the calling String object of the first occurrence of the specified value, or -1 if not found.\n" +
+                        "\n" +
+                        "5. length()\n" +
+                        "\n" +
+                        "Returns the length of the string.\n" +
+                        "\n" +
+                        "6. pop()\n" +
+                        "\n" +
+                        "Removes the last element from an array and returns that element.\n" +
+                        "\n" +
+                        "7. push()\n" +
+                        "\n" +
+                        "Adds one or more elements to the end of an array and returns the new length of the array.\n" +
+                        "\n" +
+                        "8. reverse()\n" +
+                        "\n" +
+                        "Reverses the order of the elements of an array -- the first becomes the last, and the last becomes the first.\n" +
+                        "\n" +
+                        "9. sort()\n" +
+                        "\n" +
+                        "Sorts the elements of an array.\n" +
+                        "\n" +
+                        "10. substr()\n" +
+                        "\n" +
+                        "Returns the characters in a string beginning at the specified location through the specified number of characters.\n" +
+                        "\n" +
+                        "11. toLowerCase()\n" +
+                        "\n" +
+                        "Returns the calling string value converted to lower case.\n" +
+                        "\n" +
+                        "12. toString()\n" +
+                        "\n" +
+                        "Returns the string representation of the number's value.\n" +
+                        "\n" +
+                        "13. toUpperCase()\n" +
+                        "\n" +
+                        "Returns the calling string value converted to uppercase.",
+                "",
+                ""
+        );final LearnDetailsModel l15 = new LearnDetailsModel(
+                "The Document Object Model",
+                "The Document Object Model is a tree structure of various elements of HTML as follows −" +
+                        "\n\n" +
+                        "Following are the important points about the above tree structure −\n" +
+                        "\n" +
+                        "The <html> is the ancestor of all the other elements; in other words, all the other elements are descendants of <html>.\n" +
+                        "\n" +
+                        "The <head> and <body> elements are not only descendants, but children of <html>, as well.\n" +
+                        "\n" +
+                        "Likewise, in addition to being the ancestor of <head> and <body>, <html> is also their parent.\n" +
+                        "\n" +
+                        "The <p> elements are children (and descendants) of <div>, descendants of <body> and <html>, and siblings of each other <p> elements.",
+                "",
+                ""
+        );
+        list.add(l1);
+        list.add(l2);
+        list.add(l3);
+        list.add(l4);
+        list.add(l5);
+        list.add(l6);
+        list.add(l7);
+        list.add(l8);
+        list.add(l9);
+        list.add(l10);
+        list.add(l11);
+        list.add(l12);
+        list.add(l13);
+        list.add(l14);
+        list.add(l15);
 
+        return list;
+    }
+    //jQuery Selectors
+    private static List<LearnDetailsModel> jQuerySelectors(){
+        final List<LearnDetailsModel> list = new ArrayList<>();
+        final LearnDetailsModel l1 = new LearnDetailsModel(
+                "Selectors",
+                "The jQuery library harnesses the power of Cascading Style Sheets (CSS) selectors to let us quickly and easily access elements or groups of elements in the Document Object Model (DOM).\n" +
+                        "\n" +
+                        "A jQuery Selector is a function which makes use of expressions to find out matching elements from a DOM based on the given criteria. Simply you can say, selectors are used to select one or more HTML elements using jQuery. Once an element is selected then we can perform various operations on that selected element.",
+                "",
+                ""
+        );
+        final LearnDetailsModel l2 = new LearnDetailsModel(
+                "The $() factory function",
+                "jQuery selectors start with the dollar sign and parentheses − $(). The factory function $() makes use of following three building blocks while selecting elements in a given document −" +
+                        "\n\n" +
+                        "All the bellow items can be used either on their own or in combination with other selectors. All the jQuery selectors are based on the same principle except some tweaking.\n" +
+                        "\n" +
+                        "NOTE − The factory function $() is a synonym of jQuery() function. So in case you are using any other JavaScript library where $ sign is conflicting with some thing else then you can replace $ sign by jQuery name and you can use function jQuery() instead of $()." +
+                        "\n\n" +
+                        "1. Tag Name\n" +
+                        "\n" +
+                        "Represents a tag name available in the DOM. For example $('p') selects all paragraphs <p> in the document.\n" +
+                        "\n" +
+                        "2. Tag ID\n" +
+                        "\n" +
+                        "Represents a tag available with the given ID in the DOM. For example $('#some-id') selects the single element in the document that has an ID of some-id.\n" +
+                        "\n" +
+                        "3. Tag Class\n" +
+                        "\n" +
+                        "Represents a tag available with the given class in the DOM. For example $('.some-class') selects all elements in the document that have a class of some-class.",
+                "<html>\n" +
+                        "   <head>\n" +
+                        "      <title>The jQuery Example</title>\n" +
+                        "      <script type = \"text/javascript\" \n" +
+                        "         src = \"https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js\">\n" +
+                        "      </script>\n" +
+                        "\n" +
+                        "      <script type = \"text/javascript\" language = \"javascript\">\n" +
+                        "         $(document).ready(function() {\n" +
+                        "            $(\"p\").css(\"background-color\", \"yellow\");\n" +
+                        "         });\n" +
+                        "      </script>\n" +
+                        "   </head>\n" +
+                        "\t\n" +
+                        "   <body>\n" +
+                        "      <div>\n" +
+                        "         <p class = \"myclass\">This is a paragraph.</p>\n" +
+                        "         <p id = \"myid\">This is second paragraph.</p>\n" +
+                        "         <p>This is third paragraph.</p>\n" +
+                        "      </div>\n" +
+                        "   </body>\n" +
+                        "</html>",
+                ""
+        );
+        final LearnDetailsModel l3 = new LearnDetailsModel(
+                "How to Use Selectors?",
+                "The selectors are very useful and would be required at every step while using jQuery. They get the exact element that you want from your HTML document.\n" +
+                        "\n" +
+                        "Following table lists down few basic selectors and explains them with examples." +
+                        "\n\n" +
+                        "1(Name)\n" +
+                        "Selects all elements which match with the given element Name.\n" +
+                        "\n" +
+                        "2(#ID)\n" +
+                        "Selects a single element which matches with the given ID.\n" +
+                        "\n" +
+                        "3(.Class)\n" +
+                        "Selects all elements which match with the given Class.\n" +
+                        "\n" +
+                        "4(Universal (*))\n" +
+                        "Selects all elements available in a DOM.\n" +
+                        "\n" +
+                        "5(Multiple Elements E, F, G)\n" +
+                        "Selects the combined results of all the specified selectors E, F or G.",
+                "",
+                ""
+        );
+        final LearnDetailsModel l4 = new LearnDetailsModel(
+                "Selectors Examples",
+                "Similar to previous syntax and examples, following examples would give you understanding on using different type of other useful selectors −\n" +
+                        "\n" +
+                        "Here, you have different type of other useful selectors −\n" +
+                        "You can use all the above selectors with any HTML/XML element in generic way. For example if selector $(\"li:first\") works for <li> element then $(\"p:first\") would also work for <p> element.",
+                "",
+                ""
+        );
+        list.add(l1);
+        list.add(l2);
+        list.add(l3);
+        list.add(l4);
+        return list;
+    }
+    //jQuery Attributes
+    private static List<LearnDetailsModel> jQueryAttributes(){
+        final List<LearnDetailsModel> list = new ArrayList<>();
+        final LearnDetailsModel l1 = new LearnDetailsModel(
+                "Attributes",
+                "Some of the most basic components we can manipulate when it comes to DOM elements are the properties and attributes assigned to those elements.\n" +
+                        "\n" +
+                        "Most of these attributes are available through JavaScript as DOM node properties. Some of the more common properties are −\n" +
+                        "\n" +
+                        "className\n" +
+                        "tagName\n" +
+                        "id\n" +
+                        "href\n" +
+                        "title\n" +
+                        "rel\n" +
+                        "src\n" +
+                        "Consider the following HTML markup for an image element −" +
+                        "\n\n" +
+                        "Explanation:" +
+                        "\n\n" +
+                        "In this element's markup, the tag name is img, and the markup for id, src, alt, class, and title represents the element's attributes, each of which consists of a name and a value.\n" +
+                        "\n" +
+                        "jQuery gives us the means to easily manipulate an element's attributes and gives us access to the element so that we can also change its properties.",
+                "<img id = \"imageid\" src = \"image.gif\" alt = \"Image\" class = \"myclass\" \n" +
+                        "   title = \"This is an image\"/>",
+                ""
+        );
+        final LearnDetailsModel l2 = new LearnDetailsModel(
+                "Get Attribute Value",
+                "The attr() method can be used to either fetch the value of an attribute from the first element in the matched set or set attribute values onto all matched elements.\n" +
+                        "\n" +
+                        "Example\n" +
+                        "Following is a simple example which fetches title attribute of <em> tag and set <div id = \"divid\"> value with the same value −",
+                "<html>\n" +
+                        "   <head>\n" +
+                        "      <title>The jQuery Example</title>\n" +
+                        "      <script type = \"text/javascript\" \n" +
+                        "         src = \"https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js\">\n" +
+                        "      </script>\n" +
+                        "\t\t\n" +
+                        "      <script type = \"text/javascript\" language = \"javascript\">\n" +
+                        "         $(document).ready(function() {\n" +
+                        "            var title = $(\"em\").attr(\"title\");\n" +
+                        "            $(\"#divid\").text(title);\n" +
+                        "         });\n" +
+                        "      </script>\n" +
+                        "   </head>\n" +
+                        "\t\n" +
+                        "   <body>\n" +
+                        "      <div>\n" +
+                        "         <em title = \"Bold and Brave\">This is first paragraph.</em>\n" +
+                        "         <p id = \"myid\">This is second paragraph.</p>\n" +
+                        "         <div id = \"divid\"></div>\n" +
+                        "      </div>\n" +
+                        "   </body>\n" +
+                        "</html>",
+                ""
+        );
+        final LearnDetailsModel l3 = new LearnDetailsModel(
+                "Set Attribute Value",
+                "The attr(name, value) method can be used to set the named attribute onto all elements in the wrapped set using the passed value.\n" +
+                        "\n" +
+                        "Example\n" +
+                        "Following is a simple example which set src attribute of an image tag to a correct location −",
+                "<html>\n" +
+                        "   <head>\n" +
+                        "      <title>The jQuery Example</title>\n" +
+                        "      <base href=\"https://www.tutorialspoint.com\" />\n" +
+                        "      <script type = \"text/javascript\" \n" +
+                        "         src = \"https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js\">\n" +
+                        "      </script>\n" +
+                        "\t\t\n" +
+                        "      <script type = \"text/javascript\" language = \"javascript\">\n" +
+                        "         $(document).ready(function() {\n" +
+                        "            $(\"#myimg\").attr(\"src\", \"/jquery/images/jquery.jpg\");\n" +
+                        "         });\n" +
+                        "      </script>\n" +
+                        "   </head>\n" +
+                        "\t\n" +
+                        "   <body>\n" +
+                        "      <div>\n" +
+                        "         <img id = \"myimg\" src = \"/images/jquery.jpg\" alt = \"Sample image\" />\n" +
+                        "      </div>\n" +
+                        "   </body>\n" +
+                        "</html>",
+                ""
+        );
+        final LearnDetailsModel l4 = new LearnDetailsModel(
+                "Applying Styles",
+                "The addClass( classes ) method can be used to apply defined style sheets onto all the matched elements. You can specify multiple classes separated by space.\n" +
+                        "\n" +
+                        "Example\n" +
+                        "Following is a simple example which sets class attribute of a para <p> tag −",
+                "<html>\n" +
+                        "   <head>\n" +
+                        "      <title>The jQuery Example</title>\n" +
+                        "      <script type = \"text/javascript\" \n" +
+                        "         src = \"https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js\">\n" +
+                        "      </script>\n" +
+                        "\t\t\n" +
+                        "      <script type = \"text/javascript\" language = \"javascript\">\n" +
+                        "         $(document).ready(function() {\n" +
+                        "            $(\"em\").addClass(\"selected\");\n" +
+                        "            $(\"#myid\").addClass(\"highlight\");\n" +
+                        "         });\n" +
+                        "      </script>\n" +
+                        "\t\t\n" +
+                        "      <style>\n" +
+                        "         .selected { color:red; }\n" +
+                        "         .highlight { background:yellow; }\n" +
+                        "      </style>\t\n" +
+                        "   </head>\n" +
+                        "\t\n" +
+                        "   <body>\n" +
+                        "      <em title = \"Bold and Brave\">This is first paragraph.</em>\n" +
+                        "      <p id = \"myid\">This is second paragraph.</p>\n" +
+                        "   </body>\n" +
+                        "</html>",
+                ""
+        );
+        final LearnDetailsModel l5 = new LearnDetailsModel(
+                "Attribute Methods",
+                "Following table lists down few useful methods which you can use to manipulate attributes and properties −" +
+                        "\n\n" +
+                        "1.attr( properties )\n" +
+                        "Set a key/value object as properties to all matched elements.\n" +
+                        "\n" +
+                        "2.attr( key, fn )\n" +
+                        "Set a single property to a computed value, on all matched elements.\n" +
+                        "\n" +
+                        "3.removeAttr( name )\n" +
+                        "Remove an attribute from each of the matched elements.\n" +
+                        "\n" +
+                        "4.hasClass( class )\n" +
+                        "Returns true if the specified class is present on at least one of the set of matched elements.\n" +
+                        "\n" +
+                        "5.removeClass( class )\n" +
+                        "Removes all or the specified class(es) from the set of matched elements.\n" +
+                        "\n" +
+                        "6.toggleClass( class )\n" +
+                        "Adds the specified class if it is not present, removes the specified class if it is present.\n" +
+                        "\n" +
+                        "7.html( )\n" +
+                        "Get the html contents (innerHTML) of the first matched element.\n" +
+                        "\n" +
+                        "8.html( val )\n" +
+                        "Set the html contents of every matched element.\n" +
+                        "\n" +
+                        "9.text( )\n" +
+                        "Get the combined text contents of all matched elements.\n" +
+                        "\n" +
+                        "10.text( val )\n" +
+                        "Set the text contents of all matched elements.\n" +
+                        "\n" +
+                        "11.val( )\n" +
+                        "Get the input value of the first matched element.\n" +
+                        "\n" +
+                        "12.val( val )\n" +
+                        "Set the value attribute of every matched element if it is called on <input> but if it is called on <select> with the passed <option> value then passed option would be selected, if it is called on check box or radio box then all the matching check box and radiobox would be checked.",
+                "",
+                ""
+        );
+        list.add(l1);
+        list.add(l2);
+        list.add(l3);
+        list.add(l4);
+        list.add(l5);
+        return list;
+    }
+    //jQuery DOM Traversing
+    private static List<LearnDetailsModel> jQueryDOMTraversing(){
+        final List<LearnDetailsModel> list = new ArrayList<>();
+        final LearnDetailsModel l1 = new LearnDetailsModel(
+                "DOM Traversing",
+                "jQuery is a very powerful tool which provides a variety of DOM traversal methods to help us select elements in a document randomly as well as in sequential method. Most of the DOM Traversal Methods do not modify the jQuery object and they are used to filter out elements from a document based on given conditions.",
+                "",
+                ""
+        );
+        final LearnDetailsModel l2 = new LearnDetailsModel(
+                "Find Elements by Index",
+                "Consider a simple document with the following HTML content −" +
+                        "\n\n" +
+                        "Every list has its own index, and can be located directly by using eq(index) method as below example.\n" +
+                        "\n" +
+                        "Every child element starts its index from zero, thus, list item 2 would be accessed by using $(\"li\").eq(1) and so on.\n" +
+                        "\n" +
+                        "Example\n" +
+                        "Following is a simple example which adds the color to second list item.",
+                "<html>\n" +
+                        "   <head>\n" +
+                        "      <title>The JQuery Example</title>\n" +
+                        "      <script type = \"text/javascript\" \n" +
+                        "         src = \"https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js\">\n" +
+                        "      </script>\n" +
+                        "\t\t\n" +
+                        "      <script type = \"text/javascript\" language = \"javascript\">\n" +
+                        "         $(document).ready(function() {\n" +
+                        "            $(\"li\").eq(2).addClass(\"selected\");\n" +
+                        "         });\n" +
+                        "      </script>\n" +
+                        "\t\t\n" +
+                        "      <style>\n" +
+                        "         .selected { color:red; }\n" +
+                        "      </style>\n" +
+                        "   </head>\n" +
+                        "\t\n" +
+                        "   <body>\n" +
+                        "      <div>\n" +
+                        "         <ul>\n" +
+                        "            <li>list item 1</li>\n" +
+                        "            <li>list item 2</li>\n" +
+                        "            <li>list item 3</li>\n" +
+                        "            <li>list item 4</li>\n" +
+                        "            <li>list item 5</li>\n" +
+                        "            <li>list item 6</li>\n" +
+                        "         </ul>\n" +
+                        "      </div>\n" +
+                        "   </body>\n" +
+                        "</html>",
+                "list item 1\n" +
+                        "list item 2\n" +
+                        "list item 3\n" +
+                        "list item 4\n" +
+                        "list item 5\n" +
+                        "list item 6"
+        );
+        final LearnDetailsModel l3 = new LearnDetailsModel(
+                "Filtering out Elements",
+                "The filter( selector ) method can be used to filter out all elements from the set of matched elements that do not match the specified selector(s). The selector can be written using any selector syntax.\n" +
+                        "\n" +
+                        "Example\n" +
+                        "Following is a simple example which applies color to the lists associated with middle class −",
+                "<html>\n" +
+                        "   <head>\n" +
+                        "      <title>The JQuery Example</title>\n" +
+                        "      <script type = \"text/javascript\" \n" +
+                        "         src = \"https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js\">\n" +
+                        "      </script>\n" +
+                        "\t\t\n" +
+                        "      <script type = \"text/javascript\" language = \"javascript\">\n" +
+                        "         $(document).ready(function() {\n" +
+                        "            $(\"li\").filter(\".middle\").addClass(\"selected\");\n" +
+                        "         });\n" +
+                        "      </script>\n" +
+                        "\t\t\n" +
+                        "      <style>\n" +
+                        "         .selected { color:red; }\n" +
+                        "      </style>\n" +
+                        "   </head>\n" +
+                        "\t\n" +
+                        "   <body>\n" +
+                        "      <div>\n" +
+                        "         <ul>\n" +
+                        "            <li class = \"top\">list item 1</li>\n" +
+                        "            <li class = \"top\">list item 2</li>\n" +
+                        "            <li class = \"middle\">list item 3</li>\n" +
+                        "            <li class = \"middle\">list item 4</li>\n" +
+                        "            <li class = \"bottom\">list item 5</li>\n" +
+                        "            <li class = \"bottom\">list item 6</li>\n" +
+                        "         </ul>\n" +
+                        "      </div>\n" +
+                        "   </body>\n" +
+                        "</html>",
+                ""
+        );
+        final LearnDetailsModel l4 = new LearnDetailsModel(
+                "Locating Descendant Elements",
+                "The find( selector ) method can be used to locate all the descendant elements of a particular type of elements. The selector can be written using any selector syntax.\n" +
+                        "\n" +
+                        "Example\n" +
+                        "Following is an example which selects all the <span> elements available inside different <p> elements −",
+                "<html>\n" +
+                        "   <head>\n" +
+                        "      <title>The JQuery Example</title>\n" +
+                        "      <script type = \"text/javascript\" \n" +
+                        "         src = \"https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js\">\n" +
+                        "      </script>\n" +
+                        "\t\t\n" +
+                        "      <script type = \"text/javascript\" language = \"javascript\">\n" +
+                        "         $(document).ready(function() {\n" +
+                        "            $(\"p\").find(\"span\").addClass(\"selected\");\n" +
+                        "         });\n" +
+                        "      </script>\n" +
+                        "\t\t\n" +
+                        "      <style>\n" +
+                        "         .selected { color:red; }\n" +
+                        "      </style>\n" +
+                        "   </head>\n" +
+                        "\t\n" +
+                        "   <body>\n" +
+                        "      <p>This is 1st paragraph and <span>THIS IS RED</span></p>\n" +
+                        "      <p>This is 2nd paragraph and <span>THIS IS ALSO RED</span></p>\n" +
+                        "   </body>\n" +
+                        "</html>",
+                ""
+        );
+        final LearnDetailsModel l5 = new LearnDetailsModel(
+                "JQuery DOM Filter Methods",
+                "Following table lists down useful methods which you can use to filter out various elements from a list of DOM elements −" +
+                        "\n\n" +
+                        "1.eq( index )\n" +
+                        "Reduce the set of matched elements to a single element.\n" +
+                        "\n" +
+                        "2.filter( selector )\n" +
+                        "Removes all elements from the set of matched elements that do not match the specified selector(s).\n" +
+                        "\n" +
+                        "3.filter( fn )\n" +
+                        "Removes all elements from the set of matched elements that do not match the specified function.\n" +
+                        "\n" +
+                        "4.is( selector )\n" +
+                        "Checks the current selection against an expression and returns true, if at least one element of the selection fits the given selector.\n" +
+                        "\n" +
+                        "5.map( callback )\n" +
+                        "Translate a set of elements in the jQuery object into another set of values in a jQuery array (which may, or may not contain elements).\n" +
+                        "\n" +
+                        "6.not( selector )\n" +
+                        "Removes elements matching the specified selector from the set of matched elements.\n" +
+                        "\n" +
+                        "7.slice( start, [end] )\n" +
+                        "Selects a subset of the matched elements.",
+                "",
+                ""
+        );
+        final LearnDetailsModel l6 = new LearnDetailsModel(
+                "JQuery DOM Traversing Methods",
+                "Following table lists down other useful methods which you can use to locate various elements in a DOM −",
+                "1.add( selector )\n" +
+                        "Adds more elements, matched by the given selector, to the set of matched elements.\n" +
+                        "\n" +
+                        "2.andSelf( )\n" +
+                        "Add the previous selection to the current selection.\n" +
+                        "\n" +
+                        "3.children( [selector])\n" +
+                        "Get a set of elements containing all of the unique immediate children of each of the matched set of elements.\n" +
+                        "\n" +
+                        "4.closest( selector )\n" +
+                        "Get a set of elements containing the closest parent element that matches the specified selector, the starting element included.\n" +
+                        "\n" +
+                        "5.contents( )\n" +
+                        "Find all the child nodes inside the matched elements (including text nodes), or the content document, if the element is an iframe.\n" +
+                        "\n" +
+                        "6.end( )\n" +
+                        "Revert the most recent 'destructive' operation, changing the set of matched elements to its previous state.\n" +
+                        "\n" +
+                        "7.find( selector )\n" +
+                        "Searches for descendant elements that match the specified selectors.\n" +
+                        "\n" +
+                        "8.next( [selector] )\n" +
+                        "Get a set of elements containing the unique next siblings of each of the given set of elements.\n" +
+                        "\n" +
+                        "9.nextAll( [selector] )\n" +
+                        "Find all sibling elements after the current element.\n" +
+                        "\n" +
+                        "10.offsetParent( )\n" +
+                        "Returns a jQuery collection with the positioned parent of the first matched element.\n" +
+                        "\n" +
+                        "11.parent( [selector] )\n" +
+                        "Get the direct parent of an element. If called on a set of elements, parent returns a set of their unique direct parent elements.\n" +
+                        "\n" +
+                        "12.parents( [selector] )\n" +
+                        "Get a set of elements containing the unique ancestors of the matched set of elements (except for the root element).\n" +
+                        "\n" +
+                        "13.prev( [selector] )\n" +
+                        "Get a set of elements containing the unique previous siblings of each of the matched set of elements.\n" +
+                        "\n" +
+                        "14.prevAll( [selector] )\n" +
+                        "Find all sibling elements in front of the current element.\n" +
+                        "\n" +
+                        "15.siblings( [selector] )\n" +
+                        "Get a set of elements containing all of the unique siblings of each of the matched set of elements.\n" +
+                        "\n",
+                ""
+        );
+        list.add(l1);
+        list.add(l2);
+        list.add(l3);
+        list.add(l4);
+        list.add(l5);
+        list.add(l6);
+        return list;
+    }
+    //jQuery CSS
+    private static List<LearnDetailsModel> jQueryCSS(){
+        final List<LearnDetailsModel> list = new ArrayList<>();
+        final LearnDetailsModel l1 = new LearnDetailsModel(
+                "CSS Selectors Methods",
+                "The jQuery library supports nearly all of the selectors included in Cascading Style Sheet (CSS) specifications 1 through 3, as outlined on the World Wide Web Consortium's site.\n" +
+                        "\n" +
+                        "Using JQuery library developers can enhance their websites without worrying about browsers and their versions as long as the browsers have JavaScript enabled.\n" +
+                        "\n" +
+                        "Most of the JQuery CSS Methods do not modify the content of the jQuery object and they are used to apply CSS properties on DOM elements.",
+                "",
+                ""
+        );
+        final LearnDetailsModel l2 = new LearnDetailsModel(
+                "Apply CSS Properties",
+                "This is very simple to apply any CSS property using JQuery method css( PropertyName, PropertyValue ).\n" +
+                        "\n" +
+                        "Here is the syntax for the method −\n" +
+                        "\n" +
+                        "selector.css( PropertyName, PropertyValue );\n" +
+                        "Here you can pass PropertyName as a javascript string and based on its value, PropertyValue could be string or integer.\n" +
+                        "\n" +
+                        "Example\n" +
+                        "Following is an example which adds font color to the second list item.",
+                "<html>\n" +
+                        "   <head>\n" +
+                        "      <title>The jQuery Example</title>\n" +
+                        "      <script type = \"text/javascript\" \n" +
+                        "         src = \"https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js\">\n" +
+                        "      </script>\n" +
+                        "\t\t\n" +
+                        "      <script type = \"text/javascript\" language = \"javascript\">\n" +
+                        "         $(document).ready(function() {\n" +
+                        "            $(\"li\").eq(2).css(\"color\", \"red\");\n" +
+                        "         });\n" +
+                        "      </script>\n" +
+                        "   </head>\n" +
+                        "\t\n" +
+                        "   <body>\n" +
+                        "      <div>\n" +
+                        "         <ul>\n" +
+                        "            <li>list item 1</li>\n" +
+                        "            <li>list item 2</li>\n" +
+                        "            <li>list item 3</li>\n" +
+                        "            <li>list item 4</li>\n" +
+                        "            <li>list item 5</li>\n" +
+                        "            <li>list item 6</li>\n" +
+                        "         </ul>\n" +
+                        "      </div>\n" +
+                        "   </body>\n" +
+                        "</html>",
+                ""
+        );
+        final LearnDetailsModel l3 = new LearnDetailsModel(
+                "Apply Multiple CSS Properties",
+                "You can apply multiple CSS properties using a single JQuery method CSS( {key1:val1, key2:val2....). You can apply as many properties as you like in a single call.\n" +
+                        "\n" +
+                        "Here is the syntax for the method −\n" +
+                        "\n" +
+                        "selector.css( {key1:val1, key2:val2....keyN:valN})\n" +
+                        "Here you can pass key as property and val as its value as described above.\n" +
+                        "\n" +
+                        "Example\n" +
+                        "Following is an example which adds font color as well as background color to the second list item.",
+                "<html>\n" +
+                        "   <head>\n" +
+                        "      <title>The jQuery Example</title>\n" +
+                        "      <script type = \"text/javascript\" \n" +
+                        "         src = \"https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js\">\n" +
+                        "      </script>\n" +
+                        "\t\t\n" +
+                        "      <script type = \"text/javascript\" language = \"javascript\">\n" +
+                        "         $(document).ready(function() {\n" +
+                        "            $(\"li\").eq(2).css({\"color\":\"red\", \"background-color\":\"green\"});\n" +
+                        "         });\n" +
+                        "      </script>\n" +
+                        "   </head>\n" +
+                        "\t\n" +
+                        "   <body>\n" +
+                        "      <div>\n" +
+                        "         <ul>\n" +
+                        "            <li>list item 1</li>\n" +
+                        "            <li>list item 2</li>\n" +
+                        "            <li>list item 3</li>\n" +
+                        "            <li>list item 4</li>\n" +
+                        "            <li>list item 5</li>\n" +
+                        "            <li>list item 6</li>\n" +
+                        "         </ul>\n" +
+                        "      </div>\n" +
+                        "   </body>\n" +
+                        "</html>",
+                ""
+        );
+        final LearnDetailsModel l4 = new LearnDetailsModel(
+                "Setting Element Width & Height",
+                "The width( val ) and height( val ) method can be used to set the width and height respectively of any element.\n" +
+                        "\n" +
+                        "Example\n" +
+                        "Following is a simple example which sets the width of first division element where as rest of the elements have width set by style sheet",
+                "<html>\n" +
+                        "   <head>\n" +
+                        "      <title>The jQuery Example</title>\n" +
+                        "      <script type = \"text/javascript\" \n" +
+                        "         src = \"https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js\">\n" +
+                        "      </script>\n" +
+                        "\t\t\n" +
+                        "      <script type = \"text/javascript\" language = \"javascript\">\n" +
+                        "         $(document).ready(function() {\n" +
+                        "            $(\"div:first\").width(100);\n" +
+                        "            $(\"div:first\").css(\"background-color\", \"blue\");\n" +
+                        "         });\n" +
+                        "      </script>\n" +
+                        "\t\t\n" +
+                        "      <style>\n" +
+                        "         div { \n" +
+                        "            width:70px; height:50px; float:left; \n" +
+                        "            margin:5px; background:red; cursor:pointer; \n" +
+                        "         }\n" +
+                        "      </style>\n" +
+                        "   </head>\n" +
+                        "\t\n" +
+                        "   <body>\n" +
+                        "      <div></div>\n" +
+                        "      <div>d</div>\n" +
+                        "      <div>d</div>\n" +
+                        "      <div>d</div>\n" +
+                        "      <div>d</div>\n" +
+                        "   </body>\n" +
+                        "</html>",
+                ""
+        );
+        final LearnDetailsModel l5 = new LearnDetailsModel(
+                "JQuery CSS Methods",
+                "Following table lists down all the methods which you can use to play with CSS properties −" +
+                        "\n\n" +
+                        "1.css( name )\n" +
+                        "Return a style property on the first matched element.\n" +
+                        "\n" +
+                        "2.css( name, value )\n" +
+                        "Set a single style property to a value on all matched elements.\n" +
+                        "\n" +
+                        "3.css( properties )\n" +
+                        "Set a key/value object as style properties to all matched elements.\n" +
+                        "\n" +
+                        "4.height( val )\n" +
+                        "Set the CSS height of every matched element.\n" +
+                        "\n" +
+                        "5.height( )\n" +
+                        "Get the current computed, pixel, height of the first matched element.\n" +
+                        "\n" +
+                        "6.innerHeight( )\n" +
+                        "Gets the inner height (excludes the border and includes the padding) for the first matched element.\n" +
+                        "\n" +
+                        "7.innerWidth( )\n" +
+                        "Gets the inner width (excludes the border and includes the padding) for the first matched element.\n" +
+                        "\n" +
+                        "8.offset( )\n" +
+                        "Get the current offset of the first matched element, in pixels, relative to the document.\n" +
+                        "\n" +
+                        "9.offsetParent( )\n" +
+                        "Returns a jQuery collection with the positioned parent of the first matched element.\n" +
+                        "\n" +
+                        "10.outerHeight( [margin] )\n" +
+                        "Gets the outer height (includes the border and padding by default) for the first matched element.\n" +
+                        "\n" +
+                        "11.outerWidth( [margin] )\n" +
+                        "Get the outer width (includes the border and padding by default) for the first matched element.\n" +
+                        "\n" +
+                        "12.position( )\n" +
+                        "Gets the top and left position of an element relative to its offset parent.\n" +
+                        "\n" +
+                        "13.scrollLeft( val )\n" +
+                        "When a value is passed in, the scroll left offset is set to that value on all matched elements.\n" +
+                        "\n" +
+                        "14.scrollLeft( )\n" +
+                        "Gets the scroll left offset of the first matched element.\n" +
+                        "\n" +
+                        "15.scrollTop( val )\n" +
+                        "When a value is passed in, the scroll top offset is set to that value on all matched elements.\n" +
+                        "\n" +
+                        "16.scrollTop( )\n" +
+                        "Gets the scroll top offset of the first matched element.\n" +
+                        "\n" +
+                        "17.width( val )\n" +
+                        "Set the CSS width of every matched element.\n" +
+                        "\n" +
+                        "18.width( )\n" +
+                        "Get the current computed, pixel, width of the first matched element.",
+                "",
+                ""
+        );
+        list.add(l1);
+        list.add(l2);
+        list.add(l3);
+        list.add(l4);
+        list.add(l5);
+        return list;
+    }
+    //jQuery DOM
+    private static List<LearnDetailsModel> jQueryDOM(){
+        final List<LearnDetailsModel> list = new ArrayList<>();
+        final LearnDetailsModel l1 = new LearnDetailsModel(
+                "DOM Manipulation",
+                "JQuery provides methods to manipulate DOM in efficient way. You do not need to write big code to modify the value of any element's attribute or to extract HTML code from a paragraph or division.\n" +
+                        "\n" +
+                        "JQuery provides methods such as .attr(), .html(), and .val() which act as getters, retrieving information from DOM elements for later use.",
+                "",
+                ""
+        );
+        final LearnDetailsModel l2 = new LearnDetailsModel(
+                "Content Manipulation",
+                "The html( ) method gets the html contents (innerHTML) of the first matched element.\n" +
+                        "\n" +
+                        "Here is the syntax for the method −\n" +
+                        "\n" +
+                        "selector.html( )\n" +
+                        "Example\n" +
+                        "Following is an example which makes use of .html() and .text(val) methods. Here .html() retrieves HTML content from the object and then .text( val ) method sets value of the object using passed parameter −",
+                "<html>\n" +
+                        "   <head>\n" +
+                        "      <title>The jQuery Example</title>\n" +
+                        "      <script type = \"text/javascript\" \n" +
+                        "         src = \"https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js\">\n" +
+                        "      </script>\n" +
+                        "\t\t\n" +
+                        "      <script type = \"text/javascript\" language = \"javascript\">\n" +
+                        "         $(document).ready(function() {\n" +
+                        "            $(\"div\").click(function () {\n" +
+                        "               var content = $(this).html();\n" +
+                        "               $(\"#result\").text( content );\n" +
+                        "            });\n" +
+                        "         });\n" +
+                        "      </script>\n" +
+                        "\t\t\n" +
+                        "      <style>\n" +
+                        "         #division{ margin:10px;padding:12px; border:2px solid #666; width:60px;}\n" +
+                        "      </style>\n" +
+                        "   </head>\n" +
+                        "\t\n" +
+                        "   <body>\n" +
+                        "      <p>Click on the square below:</p>\n" +
+                        "      <span id = \"result\"> </span>\n" +
+                        "\t\t\n" +
+                        "      <div id = \"division\" style = \"background-color:blue;\">\n" +
+                        "         This is Blue Square!!\n" +
+                        "      </div>\n" +
+                        "   </body>\n" +
+                        "</html>",
+                ""
+        );
+        final LearnDetailsModel l3 = new LearnDetailsModel(
+                "DOM Element Replacement",
+                "You can replace a complete DOM element with the specified HTML or DOM elements. The replaceWith( content ) method serves this purpose very well.\n" +
+                        "\n" +
+                        "Here is the syntax for the method −\n" +
+                        "\n" +
+                        "selector.replaceWith( content )\n" +
+                        "Here content is what you want to have instead of original element. This could be HTML or simple text.\n" +
+                        "\n" +
+                        "Example\n" +
+                        "Following is an example which would replace division element with \"<h1>JQuery is Great </h1>\" −",
+                "<html>\n" +
+                        "   <head>\n" +
+                        "      <title>The jQuery Example</title>\n" +
+                        "      <script type = \"text/javascript\" \n" +
+                        "         src = \"https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js\">\n" +
+                        "      </script>\n" +
+                        "\t\t\n" +
+                        "      <script type = \"text/javascript\" language = \"javascript\">\n" +
+                        "         $(document).ready(function() {\n" +
+                        "            $(\"div\").click(function () {\n" +
+                        "               $(this).replaceWith(\"<h1>JQuery is Great</h1>\");\n" +
+                        "            });\n" +
+                        "         });\n" +
+                        "      </script>\n" +
+                        "\t\t\n" +
+                        "      <style>\n" +
+                        "         #division{ margin:10px;padding:12px; border:2px solid #666; width:60px;}\n" +
+                        "      </style>\n" +
+                        "   </head>\n" +
+                        "\t\n" +
+                        "   <body>\n" +
+                        "      <p>Click on the square below:</p>\n" +
+                        "      <span id = \"result\"> </span>\n" +
+                        "\t\t\n" +
+                        "      <div id = \"division\" style = \"background-color:blue;\">\n" +
+                        "         This is Blue Square!!\n" +
+                        "      </div>\n" +
+                        "   </body>\n" +
+                        "</html>",
+                ""
+        );
+        final LearnDetailsModel l4 = new LearnDetailsModel(
+                "Removing DOM Elements",
+                "There may be a situation when you would like to remove one or more DOM elements from the document. JQuery provides two methods to handle the situation.\n" +
+                        "\n" +
+                        "The empty( ) method remove all child nodes from the set of matched elements where as the method remove( expr ) method removes all matched elements from the DOM.\n" +
+                        "\n" +
+                        "Here is the syntax for the method −\n" +
+                        "\n" +
+                        "selector.remove( [ expr ])\n" +
+                        "\n" +
+                        "or \n" +
+                        "\n" +
+                        "selector.empty( )\n" +
+                        "You can pass optional parameter expr to filter the set of elements to be removed.\n" +
+                        "\n" +
+                        "Example\n" +
+                        "Following is an example where elements are being removed as soon as they are clicked −",
+                "<html>\n" +
+                        "   <head>\n" +
+                        "      <title>The jQuery Example</title>\n" +
+                        "      <script type = \"text/javascript\" \n" +
+                        "         src = \"https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js\">\n" +
+                        "      </script>\n" +
+                        "\t\t\n" +
+                        "      <script type = \"text/javascript\" language = \"javascript\">\n" +
+                        "         $(document).ready(function() {\n" +
+                        "            $(\"div\").click(function () {\n" +
+                        "               $(this).remove( );\n" +
+                        "            });\n" +
+                        "         });\n" +
+                        "      </script>\n" +
+                        "\t\t\n" +
+                        "      <style>\n" +
+                        "         .div{ margin:10px;padding:12px; border:2px solid #666; width:60px;}\n" +
+                        "      </style>\n" +
+                        "   </head>\n" +
+                        "\t\n" +
+                        "   <body>\n" +
+                        "      <p>Click on any square below:</p>\n" +
+                        "      <span id = \"result\"> </span>\n" +
+                        "\t\t\n" +
+                        "      <div class = \"div\" style = \"background-color:blue;\"></div>\n" +
+                        "      <div class = \"div\" style = \"background-color:green;\"></div>\n" +
+                        "      <div class = \"div\" style = \"background-color:red;\"></div>\n" +
+                        "   </body>\n" +
+                        "</html>",
+                ""
+        );
+        final LearnDetailsModel l5 = new LearnDetailsModel(
+                "Inserting DOM Elements",
+                "There may be a situation when you would like to insert new one or more DOM elements in your existing document. JQuery provides various methods to insert elements at various locations.\n" +
+                        "\n" +
+                        "The after( content ) method insert content after each of the matched elements where as the method before( content ) method inserts content before each of the matched elements.\n" +
+                        "\n" +
+                        "Here is the syntax for the method −\n" +
+                        "\n" +
+                        "selector.after( content )\n" +
+                        "\n" +
+                        "or\n" +
+                        "\n" +
+                        "selector.before( content )\n" +
+                        "Here content is what you want to insert. This could be HTML or simple text.\n" +
+                        "\n" +
+                        "Example\n" +
+                        "Following is an example where <div> elements are being inserted just before the clicked element −",
+                "<html>\n" +
+                        "   <head>\n" +
+                        "      <title>The jQuery Example</title>\n" +
+                        "      <script type = \"text/javascript\" \n" +
+                        "         src = \"https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js\">\n" +
+                        "      </script>\n" +
+                        "\t\t\n" +
+                        "      <script type = \"text/javascript\" language = \"javascript\">\n" +
+                        "         $(document).ready(function() {\n" +
+                        "            $(\"div\").click(function () {\n" +
+                        "               $(this).before('<div class=\"div\"></div>' );\n" +
+                        "            });\n" +
+                        "         });\n" +
+                        "      </script>\n" +
+                        "\t\t\n" +
+                        "      <style>\n" +
+                        "         .div{ margin:10px;padding:12px; border:2px solid #666; width:60px;}\n" +
+                        "      </style>\n" +
+                        "   </head>\n" +
+                        "\t\n" +
+                        "   <body>\n" +
+                        "      <p>Click on any square below:</p>\n" +
+                        "      <span id = \"result\"> </span>\n" +
+                        "\t\t\n" +
+                        "      <div class = \"div\" style = \"background-color:blue;\"></div>\n" +
+                        "      <div class = \"div\" style = \"background-color:green;\"></div>\n" +
+                        "      <div class = \"div\" style = \"background-color:red;\"></div>\n" +
+                        "   </body>\n" +
+                        "</html>",
+                ""
+        );
+        final LearnDetailsModel l6 = new LearnDetailsModel(
+                "DOM Manipulation Methods",
+                "Following table lists down all the methods which you can use to manipulate DOM elements −" +
+                        "\n\n" +
+                        "1.after( content )\n" +
+                        "Insert content after each of the matched elements.\n" +
+                        "\n" +
+                        "2.append( content )\n" +
+                        "Append content to the inside of every matched element.\n" +
+                        "\n" +
+                        "3.appendTo( selector )\n" +
+                        "Append all of the matched elements to another, specified, set of elements.\n" +
+                        "\n" +
+                        "4.before( content )\n" +
+                        "Insert content before each of the matched elements.\n" +
+                        "\n" +
+                        "5.clone( bool )\n" +
+                        "Clone matched DOM Elements, and all their event handlers, and select the clones.\n" +
+                        "\n" +
+                        "6.clone( )\n" +
+                        "Clone matched DOM Elements and select the clones.\n" +
+                        "\n" +
+                        "7.empty( )\n" +
+                        "Remove all child nodes from the set of matched elements.\n" +
+                        "\n" +
+                        "8.html( val )\n" +
+                        "Set the html contents of every matched element.\n" +
+                        "\n" +
+                        "9.html( )\n" +
+                        "Get the html contents (innerHTML) of the first matched element.\n" +
+                        "\n" +
+                        "10.insertAfter( selector )\n" +
+                        "Insert all of the matched elements after another, specified, set of elements.\n" +
+                        "\n" +
+                        "11.insertBefore( selector )\n" +
+                        "Insert all of the matched elements before another, specified, set of elements.\n" +
+                        "\n" +
+                        "12.prepend( content )\n" +
+                        "Prepend content to the inside of every matched element.\n" +
+                        "\n" +
+                        "13.prependTo( selector )\n" +
+                        "Prepend all of the matched elements to another, specified, set of elements.\n" +
+                        "\n" +
+                        "14.remove( expr )\n" +
+                        "Removes all matched elements from the DOM.\n" +
+                        "\n" +
+                        "15.replaceAll( selector )\n" +
+                        "Replaces the elements matched by the specified selector with the matched elements.\n" +
+                        "\n" +
+                        "16.replaceWith( content )\n" +
+                        "Replaces all matched elements with the specified HTML or DOM elements.\n" +
+                        "\n" +
+                        "17.text( val )\n" +
+                        "Set the text contents of all matched elements.\n" +
+                        "\n" +
+                        "18.text( )\n" +
+                        "Get the combined text contents of all matched elements.\n" +
+                        "\n" +
+                        "19.wrap( elem )\n" +
+                        "Wrap each matched element with the specified element.\n" +
+                        "\n" +
+                        "20.wrap( html )\n" +
+                        "Wrap each matched element with the specified HTML content.\n" +
+                        "\n" +
+                        "21.wrapAll( elem )\n" +
+                        "Wrap all the elements in the matched set into a single wrapper element.\n" +
+                        "\n" +
+                        "22.wrapAll( html )\n" +
+                        "Wrap all the elements in the matched set into a single wrapper element.\n" +
+                        "\n" +
+                        "23.wrapInner( elem )\n" +
+                        "Wrap the inner child contents of each matched element (including text nodes) with a DOM element.\n" +
+                        "\n" +
+                        "24.wrapInner( html )\n" +
+                        "Wrap the inner child contents of each matched element (including text nodes) with an HTML structure.",
+                "",
+                ""
+        );
+        list.add(l1);
+        list.add(l2);
+        list.add(l3);
+        list.add(l4);
+        list.add(l5);
+        list.add(l6);
+        return list;
+    }
+    //jQuery Events Handling
+    private static List<LearnDetailsModel> jQueryEventsHandling(){
+        final List<LearnDetailsModel> list = new ArrayList<>();
+        final LearnDetailsModel l1 = new LearnDetailsModel(
+                "Events Handling",
+                "We have the ability to create dynamic web pages by using events. Events are actions that can be detected by your Web Application.\n" +
+                        "\n" +
+                        "Following are the examples events −\n" +
+                        "\n" +
+                        "A mouse click\n" +
+                        "A web page loading\n" +
+                        "Taking mouse over an element\n" +
+                        "Submitting an HTML form\n" +
+                        "A keystroke on your keyboard, etc.\n" +
+                        "When these events are triggered, you can then use a custom function to do pretty much whatever you want with the event. These custom functions call Event Handlers.",
+                "",
+                ""
+        );
+        final LearnDetailsModel l2 = new LearnDetailsModel(
+                "Binding Event Handlers",
+                "Using the jQuery Event Model, we can establish event handlers on DOM elements with the bind() method as follows −" +
+                        "\n\n" +
+                        "The full syntax of the bind() command is as follows −\n" +
+                        "\n" +
+                        "selector.bind( eventType[, eventData], handler)\n" +
+                        "Following is the description of the parameters −\n" +
+                        "\n" +
+                        "eventType − A string containing a JavaScript event type, such as click or submit. Refer to the next section for a complete list of event types.\n" +
+                        "\n" +
+                        "eventData − This is optional parameter is a map of data that will be passed to the event handler.\n" +
+                        "\n" +
+                        "handler − A function to execute each time the event is triggered.",
+                "<html>\n" +
+                        "   <head>\n" +
+                        "      <title>The jQuery Example</title>\n" +
+                        "      <script type = \"text/javascript\" \n" +
+                        "         src = \"https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js\">\n" +
+                        "      </script>\n" +
+                        "\t\t\n" +
+                        "      <script type = \"text/javascript\" language = \"javascript\">\n" +
+                        "         $(document).ready(function() {\n" +
+                        "            $('div').bind('click', function( event ){\n" +
+                        "               alert('Hi there!');\n" +
+                        "            });\n" +
+                        "         });\n" +
+                        "      </script>\n" +
+                        "\t\t\n" +
+                        "      <style>\n" +
+                        "         .div{ margin:10px;padding:12px; border:2px solid #666; width:60px;}\n" +
+                        "      </style>\n" +
+                        "   </head>\n" +
+                        "\t\n" +
+                        "   <body>\n" +
+                        "      <p>Click on any square below to see the result:</p>\n" +
+                        "\t\t\n" +
+                        "      <div class = \"div\" style = \"background-color:blue;\">ONE</div>\n" +
+                        "      <div class = \"div\" style = \"background-color:green;\">TWO</div>\n" +
+                        "      <div class = \"div\" style = \"background-color:red;\">THREE</div>\n" +
+                        "   </body>\n" +
+                        "</html>",
+                ""
+        );
+        final LearnDetailsModel l3 = new LearnDetailsModel(
+                "Removing Event Handlers",
+                "Typically, once an event handler is established, it remains in effect for the remainder of the life of the page. There may be a need when you would like to remove event handler.\n" +
+                        "\n" +
+                        "jQuery provides the unbind() command to remove an exiting event handler. The syntax of unbind() is as follows −\n" +
+                        "\n" +
+                        "selector.unbind(eventType, handler)\n" +
+                        "\n" +
+                        "or \n" +
+                        "\n" +
+                        "selector.unbind(eventType)\n" +
+                        "Following is the description of the parameters −\n" +
+                        "\n" +
+                        "eventType − A string containing a JavaScript event type, such as click or submit. Refer to the next section for a complete list of event types.\n" +
+                        "\n" +
+                        "handler − If provided, identifies the specific listener that's to be removed.",
+                "",
+                ""
+        );
+        final LearnDetailsModel l4 = new LearnDetailsModel(
+                "The Event Object",
+                "The callback function takes a single parameter; when the handler is called the JavaScript event object will be passed through it.\n" +
+                        "\n" +
+                        "The event object is often unnecessary and the parameter is omitted, as sufficient context is usually available when the handler is bound to know exactly what needs to be done when the handler is triggered, however there are certain attributes which you would need to be accessed.",
+                "",
+                ""
+        );
+        final LearnDetailsModel l5 = new LearnDetailsModel(
+                "The Event Methods",
+                "There is a list of methods which can be called on an Event Object −" +
+                        "\n\n" +
+                        "1.preventDefault()\n" +
+                        "Prevents the browser from executing the default action.\n" +
+                        "\n" +
+                        "2.isDefaultPrevented()\n" +
+                        "Returns whether event.preventDefault() was ever called on this event object.\n" +
+                        "\n" +
+                        "3.stopPropagation()\n" +
+                        "Stops the bubbling of an event to parent elements, preventing any parent handlers from being notified of the event.\n" +
+                        "\n" +
+                        "4.isPropagationStopped()\n" +
+                        "Returns whether event.stopPropagation() was ever called on this event object.\n" +
+                        "\n" +
+                        "5.stopImmediatePropagation()\n" +
+                        "Stops the rest of the handlers from being executed.\n" +
+                        "\n" +
+                        "6.isImmediatePropagationStopped()\n" +
+                        "Returns whether event.stopImmediatePropagation() was ever called on this event object.",
+                "",
+                ""
+        );
+        final LearnDetailsModel l6 = new LearnDetailsModel(
+                "Event Manipulation Methods",
+                "Following table lists down important event-related methods −",
+                "1.bind( type, [data], fn )\n" +
+                        "Binds a handler to one or more events (like click) for each matched element. Can also bind custom events.\n" +
+                        "\n" +
+                        "2.off( events [, selector ] [, handler(eventObject) ] )\n" +
+                        "This does the opposite of live, it removes a bound live event.\n" +
+                        "\n" +
+                        "3.hover( over, out )\n" +
+                        "Simulates hovering for example moving the mouse on, and off, an object.\n" +
+                        "\n" +
+                        "4.on( events [, selector ] [, data ], handler )\n" +
+                        "Binds a handler to an event (like click) for all current − and future − matched element. Can also bind custom events.\n" +
+                        "\n" +
+                        "5.one( type, [data], fn )\n" +
+                        "Binds a handler to one or more events to be executed once for each matched element.\n" +
+                        "\n" +
+                        "6.ready( fn )\n" +
+                        "Binds a function to be executed whenever the DOM is ready to be traversed and manipulated.\n" +
+                        "\n" +
+                        "7.trigger( event, [data] )\n" +
+                        "Trigger an event on every matched element.\n" +
+                        "\n" +
+                        "8.triggerHandler( event, [data] )\n" +
+                        "Triggers all bound event handlers on an element.\n" +
+                        "\n" +
+                        "9.unbind( [type], [fn] )\n" +
+                        "This does the opposite of bind, it removes bound events from each of the matched elements.",
+                ""
+        );
+        final LearnDetailsModel l7 = new LearnDetailsModel(
+                "Event Helper Methods",
+                "jQuery also provides a set of event helper functions which can be used either to trigger an event to bind any event types mentioned previous." +
+                        "\n\n" +
+                        "Trigger Methods\n" +
+                        "Following is an example which would triggers the blur event on all paragraphs −\n" +
+                        "\n" +
+                        "$(\"p\").blur();\n" +
+                        "Binding Methods\n" +
+                        "Following is an example which would bind a click event on all the <div> −\n" +
+                        "\n" +
+                        "$(\"div\").click( function () { \n" +
+                        "   // do something here\n" +
+                        "});",
+                "",
+                ""
+        );
+        list.add(l1);
+        list.add(l2);
+        list.add(l3);
+        list.add(l4);
+        list.add(l5);
+        list.add(l6);
+        list.add(l7);
+        return list;
+    }
+    //jQuery Ajax
+    private static List<LearnDetailsModel> jQueryAjax(){
+        final List<LearnDetailsModel> list = new ArrayList<>();
+        final LearnDetailsModel l1 = new LearnDetailsModel(
+                "Ajax",
+                "AJAX is an acronym standing for Asynchronous JavaScript and XML and this technology helps us to load data from the server without a browser page refresh.\n" +
+                        "\n" +
+                        "If you are new with AJAX, I would recommend you go through our Ajax Tutorial before proceeding further.\n" +
+                        "\n" +
+                        "JQuery is a great tool which provides a rich set of AJAX methods to develop next generation web application.",
+                "",
+                ""
+        );
+        final LearnDetailsModel l2 = new LearnDetailsModel(
+                "Loading Simple Data",
+                "This is very easy to load any static or dynamic data using JQuery AJAX. JQuery provides load() method to do the job −\n" +
+                        "\n" +
+                        "Syntax\n" +
+                        "Here is the simple syntax for load() method −\n" +
+                        "\n" +
+                        "[selector].load( URL, [data], [callback] );\n" +
+                        "Here is the description of all the parameters −\n" +
+                        "\n" +
+                        "URL − The URL of the server-side resource to which the request is sent. It could be a CGI, ASP, JSP, or PHP script which generates data dynamically or out of a database.\n" +
+                        "\n" +
+                        "data − This optional parameter represents an object whose properties are serialized into properly encoded parameters to be passed to the request. If specified, the request is made using the POST method. If omitted, the GET method is used.\n" +
+                        "\n" +
+                        "callback − A callback function invoked after the response data has been loaded into the elements of the matched set. The first parameter passed to this function is the response text received from the server and second parameter is the status code.\n" +
+                        "\n" +
+                        "Example\n" +
+                        "Consider the following HTML file with a small JQuery coding −",
+                "<html>\n" +
+                        "   <head>\n" +
+                        "      <title>The jQuery Example</title>\n" +
+                        "      <script type = \"text/javascript\" \n" +
+                        "         src = \"https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js\">\n" +
+                        "      </script>\n" +
+                        "\t\t\n" +
+                        "      <script type = \"text/javascript\" language = \"javascript\">\n" +
+                        "         $(document).ready(function() {\n" +
+                        "            $(\"#driver\").click(function(event){\n" +
+                        "               $('#stage').load('/jquery/result.html');\n" +
+                        "            });\n" +
+                        "         });\n" +
+                        "      </script>\n" +
+                        "   </head>\n" +
+                        "\t\n" +
+                        "   <body>\n" +
+                        "      <p>Click on the button to load /jquery/result.html file −</p>\n" +
+                        "\t\t\n" +
+                        "      <div id = \"stage\" style = \"background-color:cc0;\">\n" +
+                        "         STAGE\n" +
+                        "      </div>\n" +
+                        "\t\t\n" +
+                        "      <input type = \"button\" id = \"driver\" value = \"Load Data\" />\n" +
+                        "   </body>\n" +
+                        "</html>",
+                ""
+        );
+        final LearnDetailsModel l3 = new LearnDetailsModel(
+                "Getting JSON Data",
+                "There would be a situation when server would return JSON string against your request. JQuery utility function getJSON() parses the returned JSON string and makes the resulting string available to the callback function as first parameter to take further action.\n" +
+                        "\n" +
+                        "Syntax\n" +
+                        "Here is the simple syntax for getJSON() method −\n" +
+                        "\n" +
+                        "[selector].getJSON( URL, [data], [callback] );\n" +
+                        "Here is the description of all the parameters −\n" +
+                        "\n" +
+                        "URL − The URL of the server-side resource contacted via the GET method.\n" +
+                        "\n" +
+                        "data − An object whose properties serve as the name/value pairs used to construct a query string to be appended to the URL, or a preformatted and encoded query string.\n" +
+                        "\n" +
+                        "callback − A function invoked when the request completes. The data value resulting from digesting the response body as a JSON string is passed as the first parameter to this callback, and the status as the second.\n" +
+                        "\n" +
+                        "Example\n" +
+                        "Consider the following HTML file with a small JQuery coding −" +
+                        "\n\n\n" +
+                        "Here JQuery utility method getJSON() initiates an Ajax request to the specified URL result.json file. After loading this file, all the content would be passed to the callback function which finally would be populated inside <div> tagged with ID stage. Assuming, our result.json file has following json formatted content −\n" +
+                        "\n" +
+                        "{\n" +
+                        "   \"name\": \"Anne Moore\",\n" +
+                        "   \"age\" : \"21\",\n" +
+                        "   \"sex\": \"female\"\n" +
+                        "}",
+                "<html>\n" +
+                        "   <head>\n" +
+                        "      <title>The jQuery Example</title>\n" +
+                        "      <script type = \"text/javascript\" \n" +
+                        "         src = \"https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js\">\n" +
+                        "      </script>\n" +
+                        "\t\t\n" +
+                        "      <script type = \"text/javascript\" language = \"javascript\">\n" +
+                        "         $(document).ready(function() {\n" +
+                        "            $(\"#driver\").click(function(event){\n" +
+                        "\t\t\t\t\n" +
+                        "               $.getJSON('/jquery/result.json', function(jd) {\n" +
+                        "                  $('#stage').html('<p> Name: ' + jd.name + '</p>');\n" +
+                        "                  $('#stage').append('<p>Age : ' + jd.age+ '</p>');\n" +
+                        "                  $('#stage').append('<p> Sex: ' + jd.sex+ '</p>');\n" +
+                        "               });\n" +
+                        "\t\t\t\t\t\n" +
+                        "            });\n" +
+                        "         });\n" +
+                        "      </script>\n" +
+                        "   </head>\n" +
+                        "\t\n" +
+                        "   <body>\n" +
+                        "      <p>Click on the button to load result.json file −</p>\n" +
+                        "\t\t\n" +
+                        "      <div id = \"stage\" style = \"background-color:#eee;\">\n" +
+                        "         STAGE\n" +
+                        "      </div>\n" +
+                        "\t\t\n" +
+                        "      <input type = \"button\" id = \"driver\" value = \"Load Data\" />\n" +
+                        "   </body>\n" +
+                        "</html>",
+                ""
+        );
+        final LearnDetailsModel l4 = new LearnDetailsModel(
+                "Passing Data to the Server",
+                "Many times you collect input from the user and you pass that input to the server for further processing. JQuery AJAX made it easy enough to pass collected data to the server using data parameter of any available Ajax method.\n" +
+                        "\n" +
+                        "Example\n" +
+                        "This example demonstrate how can pass user input to a web server script which would send the same result back and we would print it −" +
+                        "\n\n\n" +
+                        "Here is the code written in result.php script −\n" +
+                        "\n" +
+                        "<?php\n" +
+                        "   if( $_REQUEST[\"name\"] ){\n" +
+                        "      $name = $_REQUEST['name'];\n" +
+                        "      echo \"Welcome \". $name;\n" +
+                        "   }\n" +
+                        "?> ",
+                "<html>\n" +
+                        "   <head>\n" +
+                        "      <title>The jQuery Example</title>\n" +
+                        "      <script type = \"text/javascript\" \n" +
+                        "         src = \"https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js\">\n" +
+                        "      </script>\n" +
+                        "\t\t\n" +
+                        "      <script type = \"text/javascript\" language = \"javascript\">\n" +
+                        "         $(document).ready(function() {\n" +
+                        "            $(\"#driver\").click(function(event){\n" +
+                        "               var name = $(\"#name\").val();\n" +
+                        "               $(\"#stage\").load('/jquery/result.php', {\"name\":name} );\n" +
+                        "            });\n" +
+                        "         });\n" +
+                        "      </script>\n" +
+                        "   </head>\n" +
+                        "\t\n" +
+                        "   <body>\n" +
+                        "      <p>Enter your name and click on the button:</p>\n" +
+                        "      <input type = \"input\" id = \"name\" size = \"40\" /><br />\n" +
+                        "\t\t\n" +
+                        "      <div id = \"stage\" style = \"background-color:cc0;\">\n" +
+                        "         STAGE\n" +
+                        "      </div>\n" +
+                        "\t\t\n" +
+                        "      <input type = \"button\" id = \"driver\" value = \"Show Result\" />\n" +
+                        "   </body>\n" +
+                        "</html>",
+                ""
+        );
+        final LearnDetailsModel l5 = new LearnDetailsModel(
+                "JQuery AJAX Methods",
+                "You have seen basic concept of AJAX using JQuery. Following table lists down all important JQuery AJAX methods which you can use based your programming need −" +
+                        "\n\n" +
+                        "1.jQuery.ajax( options )\n" +
+                        "Load a remote page using an HTTP request.\n" +
+                        "\n" +
+                        "2.jQuery.ajaxSetup( options )\n" +
+                        "Setup global settings for AJAX requests.\n" +
+                        "\n" +
+                        "3.jQuery.get( url, [data], [callback], [type] )\n" +
+                        "Load a remote page using an HTTP GET request.\n" +
+                        "\n" +
+                        "4.jQuery.getJSON( url, [data], [callback] )\n" +
+                        "Load JSON data using an HTTP GET request.\n" +
+                        "\n" +
+                        "5.jQuery.getScript( url, [callback] )\n" +
+                        "Loads and executes a JavaScript file using an HTTP GET request.\n" +
+                        "\n" +
+                        "6.jQuery.post( url, [data], [callback], [type] )\n" +
+                        "Load a remote page using an HTTP POST request.\n" +
+                        "\n" +
+                        "7.load( url, [data], [callback] )\n" +
+                        "Load HTML from a remote file and inject it into the DOM.\n" +
+                        "\n" +
+                        "8.serialize( )\n" +
+                        "Serializes a set of input elements into a string of data.\n" +
+                        "\n" +
+                        "9.serializeArray( )\n" +
+                        "Serializes all forms and form elements like the .serialize() method but returns a JSON data structure for you to work with.",
+                "",
+                ""
+        );
+        final LearnDetailsModel l6 = new LearnDetailsModel(
+                "JQuery AJAX Events",
+                "You can call various JQuery methods during the life cycle of AJAX call progress. Based on different events/stages following methods are available −" +
+                        "\n\n" +
+                        "1.ajaxComplete( callback )\n" +
+                        "Attach a function to be executed whenever an AJAX request completes.\n" +
+                        "\n" +
+                        "2.ajaxStart( callback )\n" +
+                        "Attach a function to be executed whenever an AJAX request begins and there is none already active.\n" +
+                        "\n" +
+                        "3.ajaxError( callback )\n" +
+                        "Attach a function to be executed whenever an AJAX request fails.\n" +
+                        "\n" +
+                        "4.ajaxSend( callback )\n" +
+                        "Attach a function to be executed before an AJAX request is sent.\n" +
+                        "\n" +
+                        "5.ajaxStop( callback )\n" +
+                        "Attach a function to be executed whenever all AJAX requests have ended.\n" +
+                        "\n" +
+                        "6.ajaxSuccess( callback )\n" +
+                        "Attach a function to be executed whenever an AJAX request completes successfully.",
+                "",
+                ""
+        );
+        list.add(l1);
+        list.add(l2);
+        list.add(l3);
+        list.add(l4);
+        list.add(l5);
+        list.add(l6);
+        return list;
+    }
+    //jQuery Effects
+    private static List<LearnDetailsModel> jQueryEffects(){
+        final List<LearnDetailsModel> list = new ArrayList<>();
+        final LearnDetailsModel l1 = new LearnDetailsModel(
+                "Effects",
+                "jQuery provides a trivially simple interface for doing various kind of amazing effects. jQuery methods allow us to quickly apply commonly used effects with a minimum configuration. This tutorial covers all the important jQuery methods to create visual effects.",
+                "",
+                ""
+        );
+        final LearnDetailsModel l2 = new LearnDetailsModel(
+                "Showing and Hiding Elements",
+                "The commands for showing and hiding elements are pretty much what we would expect − show() to show the elements in a wrapped set and hide() to hide them.\n" +
+                        "\n" +
+                        "Syntax\n" +
+                        "Here is the simple syntax for show() method −\n" +
+                        "\n" +
+                        "[selector].show( speed, [callback] );\n" +
+                        "Here is the description of all the parameters −\n" +
+                        "\n" +
+                        "speed − A string representing one of the three predefined speeds (\"slow\", \"normal\", or \"fast\") or the number of milliseconds to run the animation (e.g. 1000).\n" +
+                        "\n" +
+                        "callback − This optional parameter represents a function to be executed whenever the animation completes; executes once for each element animated against.\n" +
+                        "\n" +
+                        "Following is the simple syntax for hide() method −\n" +
+                        "\n" +
+                        "[selector].hide( speed, [callback] );\n" +
+                        "Here is the description of all the parameters −\n" +
+                        "\n" +
+                        "speed − A string representing one of the three predefined speeds (\"slow\", \"normal\", or \"fast\") or the number of milliseconds to run the animation (e.g. 1000).\n" +
+                        "\n" +
+                        "callback − This optional parameter represents a function to be executed whenever the animation completes; executes once for each element animated against.\n" +
+                        "\n" +
+                        "Example\n" +
+                        "Consider the following HTML file with a small JQuery coding −",
+                "<html>\n" +
+                        "   <head>\n" +
+                        "      <title>The jQuery Example</title>\n" +
+                        "      <script type = \"text/javascript\" \n" +
+                        "         src = \"https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js\">\n" +
+                        "      </script>\n" +
+                        "\t\t\n" +
+                        "      <script type = \"text/javascript\" language = \"javascript\">\n" +
+                        "         $(document).ready(function() {\n" +
+                        "\n" +
+                        "            $(\"#show\").click(function () {\n" +
+                        "               $(\".mydiv\").show( 1000 );\n" +
+                        "            });\n" +
+                        "\n" +
+                        "            $(\"#hide\").click(function () {\n" +
+                        "               $(\".mydiv\").hide( 1000 );\n" +
+                        "            });\n" +
+                        "\t\t\t\t\n" +
+                        "         });\n" +
+                        "      </script>\n" +
+                        "\t\t\n" +
+                        "      <style>\n" +
+                        "         .mydiv{ \n" +
+                        "            margin:10px;\n" +
+                        "            padding:12px; \n" +
+                        "            border:2px solid #666; \n" +
+                        "            width:100px; \n" +
+                        "            height:100px;\n" +
+                        "         }\n" +
+                        "      </style>\n" +
+                        "   </head>\n" +
+                        "\t\n" +
+                        "   <body>\n" +
+                        "      <div class = \"mydiv\">\n" +
+                        "         This is a SQUARE\n" +
+                        "      </div>\n" +
+                        "\n" +
+                        "      <input id = \"hide\" type = \"button\" value = \"Hide\" />   \n" +
+                        "      <input id = \"show\" type = \"button\" value = \"Show\" />\n" +
+                        "   </body>\n" +
+                        "</html>",
+                ""
+        );
+        final LearnDetailsModel l3 = new LearnDetailsModel(
+                "Toggling the Elements",
+                "jQuery provides methods to toggle the display state of elements between revealed or hidden. If the element is initially displayed, it will be hidden; if hidden, it will be shown.\n" +
+                        "\n" +
+                        "Syntax\n" +
+                        "Here is the simple syntax for one of the toggle() methods −\n" +
+                        "\n" +
+                        "[selector]..toggle([speed][, callback]);\n" +
+                        "Here is the description of all the parameters −\n" +
+                        "\n" +
+                        "speed − A string representing one of the three predefined speeds (\"slow\", \"normal\", or \"fast\") or the number of milliseconds to run the animation (e.g. 1000).\n" +
+                        "\n" +
+                        "callback − This optional parameter represents a function to be executed whenever the animation completes; executes once for each element animated against.\n" +
+                        "\n" +
+                        "Example\n" +
+                        "We can animate any element, such as a simple <div> containing an image −",
+                "<html>\n" +
+                        "   <head>\n" +
+                        "      <title>The jQuery Example</title>\n" +
+                        "      <script type = \"text/javascript\" \n" +
+                        "         src = \"https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js\">\n" +
+                        "      </script>\n" +
+                        "\t\t\n" +
+                        "      <script type = \"text/javascript\" language = \"javascript\">\n" +
+                        "         $(document).ready(function() {\n" +
+                        "            $(\".clickme\").click(function(event){\n" +
+                        "               $(\".target\").toggle('slow', function(){\n" +
+                        "                  $(\".log\").text('Transition Complete');\n" +
+                        "               });\n" +
+                        "            });\n" +
+                        "         });\n" +
+                        "      </script>\n" +
+                        "\t\t\n" +
+                        "      <style>\n" +
+                        "         .clickme{ \n" +
+                        "            margin:10px;\n" +
+                        "            padding:12px; \n" +
+                        "            border:2px solid #666; \n" +
+                        "            width:100px; \n" +
+                        "            height:50px;\n" +
+                        "         }\n" +
+                        "      </style>\n" +
+                        "   </head>\n" +
+                        "\t\n" +
+                        "   <body>\n" +
+                        "      <div class = \"content\">\n" +
+                        "         <div class = \"clickme\">Click Me</div>\n" +
+                        "         <div class = \"target\">\n" +
+                        "            <img src = \"./images/jquery.jpg\" alt = \"jQuery\" />\n" +
+                        "         </div>\n" +
+                        "         <div class = \"log\"></div>\n" +
+                        "      </div>\n" +
+                        "   </body>\n" +
+                        "</html>",
+                ""
+        );
+        final LearnDetailsModel l4 = new LearnDetailsModel(
+                "JQuery Effect Methods",
+                "You have seen basic concept of jQuery Effects. Following table lists down all the important methods to create different kind of effects −" +
+                        "\n\n" +
+                        "1.animate( params, [duration, easing, callback] )\n" +
+                        "A function for making custom animations.\n" +
+                        "\n" +
+                        "2.fadeIn( speed, [callback] )\n" +
+                        "Fade in all matched elements by adjusting their opacity and firing an optional callback after completion.\n" +
+                        "\n" +
+                        "3.fadeOut( speed, [callback] )\n" +
+                        "Fade out all matched elements by adjusting their opacity to 0, then setting display to \"none\" and firing an optional callback after completion.\n" +
+                        "\n" +
+                        "4.fadeTo( speed, opacity, callback )\n" +
+                        "Fade the opacity of all matched elements to a specified opacity and firing an optional callback after completion.\n" +
+                        "\n" +
+                        "5.hide( )\n" +
+                        "Hides each of the set of matched elements if they are shown.\n" +
+                        "\n" +
+                        "6.hide( speed, [callback] )\n" +
+                        "Hide all matched elements using a graceful animation and firing an optional callback after completion.\n" +
+                        "\n" +
+                        "7.show( )\n" +
+                        "Displays each of the set of matched elements if they are hidden.\n" +
+                        "\n" +
+                        "8.show( speed, [callback] )\n" +
+                        "Show all matched elements using a graceful animation and firing an optional callback after completion.\n" +
+                        "\n" +
+                        "9.slideDown( speed, [callback] )\n" +
+                        "Reveal all matched elements by adjusting their height and firing an optional callback after completion.\n" +
+                        "\n" +
+                        "10.slideToggle( speed, [callback] )\n" +
+                        "Toggle the visibility of all matched elements by adjusting their height and firing an optional callback after completion.\n" +
+                        "\n" +
+                        "11.slideUp( speed, [callback] )\n" +
+                        "Hide all matched elements by adjusting their height and firing an optional callback after completion.\n" +
+                        "\n" +
+                        "12.stop( [clearQueue, gotoEnd ])\n" +
+                        "Stops all the currently running animations on all the specified elements.\n" +
+                        "\n" +
+                        "13.toggle( )\n" +
+                        "Toggle displaying each of the set of matched elements.\n" +
+                        "\n" +
+                        "14.toggle( speed, [callback] )\n" +
+                        "Toggle displaying each of the set of matched elements using a graceful animation and firing an optional callback after completion.\n" +
+                        "\n" +
+                        "15.toggle( switch )\n" +
+                        "Toggle displaying each of the set of matched elements based upon the switch (true shows all elements, false hides all elements).\n" +
+                        "\n" +
+                        "16.jQuery.fx.off\n" +
+                        "Globally disable all animations.",
+                "",
+                ""
+        );
+        final LearnDetailsModel l5 = new LearnDetailsModel(
+                "UI Library Based Effects",
+                "To use these effects you can either download latest jQuery UI Library jquery-ui-1.11.4.custom.zip from jQuery UI Library or use Google CDN to use it in the similar way as we have done for jQuery.\n" +
+                        "\n" +
+                        "We have used Google CDN for jQuery UI using following code snippet in the HTML page so we can use jQuery UI −\n" +
+                        "\n" +
+                        "<head>\n" +
+                        "   <script src = \"https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js\">\n" +
+                        "   </script>\n" +
+                        "</head>" +
+                        "\n\n" +
+                        "1.Blind\n" +
+                        "Blinds the element away or shows it by blinding it in.\n" +
+                        "\n" +
+                        "2.Bounce\n" +
+                        "Bounces the element vertically or horizontally n-times.\n" +
+                        "\n" +
+                        "3.Clip\n" +
+                        "Clips the element on or off, vertically or horizontally.\n" +
+                        "\n" +
+                        "4.Drop\n" +
+                        "Drops the element away or shows it by dropping it in.\n" +
+                        "\n" +
+                        "5.Explode\n" +
+                        "Explodes the element into multiple pieces.\n" +
+                        "\n" +
+                        "6.Fold\n" +
+                        "Folds the element like a piece of paper.\n" +
+                        "\n" +
+                        "7.Highlight\n" +
+                        "Highlights the background with a defined color.\n" +
+                        "\n" +
+                        "8.Puff\n" +
+                        "Scale and fade out animations create the puff effect.\n" +
+                        "\n" +
+                        "9.Pulsate\n" +
+                        "Pulsates the opacity of the element multiple times.\n" +
+                        "\n" +
+                        "10.Scale\n" +
+                        "Shrink or grow an element by a percentage factor.\n" +
+                        "\n" +
+                        "11.Shake\n" +
+                        "Shakes the element vertically or horizontally n-times.\n" +
+                        "\n" +
+                        "12.Size\n" +
+                        "Resize an element to a specified width and height.\n" +
+                        "\n" +
+                        "13.Slide\n" +
+                        "Slides the element out of the viewport.\n" +
+                        "\n" +
+                        "14.Transfer\n" +
+                        "Transfers the outline of an element to another.",
+                "",
+                ""
+        );
+        list.add(l1);
+        list.add(l2);
+        list.add(l3);
+        list.add(l4);
+        list.add(l5);
+        return list;
+    }
+    //jQuery Interactions
+    private static List<LearnDetailsModel> jQueryInteractions(){
+        final List<LearnDetailsModel> list = new ArrayList<>();
+        final LearnDetailsModel l1 = new LearnDetailsModel(
+                "Interactions",
+                "Interactions could be added basic mouse-based behaviours to any element. Using with interactions, We can create sortable lists, resizeable elements, drag & drop behaviours.Interactions also make great building blocks for more complex widgets and applications." +
+                        "\n\n" +
+                        "1.Drag able\n" +
+                        "Enable drag able functionality on any DOM element.\n" +
+                        "\n" +
+                        "2.Drop able\n" +
+                        "Enable any DOM element to be drop able.\n" +
+                        "\n" +
+                        "3.Resize able\n" +
+                        "Enable any DOM element to be resize-able.\n" +
+                        "\n" +
+                        "4.Select able\n" +
+                        "Enable a DOM element (or group of elements) to be selectable.\n" +
+                        "\n" +
+                        "5.Sort able\n" +
+                        "Enable a group of DOM elements to be sortable.",
+                "",
+                ""
+        );
+        final LearnDetailsModel l2 = new LearnDetailsModel(
+                "Interaction Drag-able",
+                "The Drag-able function can be used with interactions in JqueryUI.This function can enable drag-able functionality on any DOM element.We can drag the drag-able element by clicking on it with mouse.\n" +
+                        "\n" +
+                        "Syntax\n" +
+                        "Here is the simple syntax to use drag-able −\n" +
+                        "\n" +
+                        " $( \"#draggable\" ).draggable();\n" +
+                        "Example\n" +
+                        "Following is a simple example showing the usage of drag-able −",
+                "<html>\n" +
+                        "   <head>\n" +
+                        "      <title>The jQuery Example</title>\n" +
+                        "      <script type = \"text/javascript\" \n" +
+                        "         src = \"https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js\">\n" +
+                        "      </script>\n" +
+                        "\t\t\n" +
+                        "      <script type = \"text/javascript\" \n" +
+                        "         src = \"https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js\">\n" +
+                        "      </script>\n" +
+                        "\t\t\n" +
+                        "      <script type = \"text/javascript\" language = \"javascript\">\n" +
+                        "   \n" +
+                        "         $(function() {\n" +
+                        "            $( \"#draggable\" ).draggable();\n" +
+                        "         });\n" +
+                        "\t\t \n" +
+                        "      </script>\n" +
+                        "\t\t\n" +
+                        "      <style>\n" +
+                        "         #draggable { width: 150px; height: 150px; padding: 0.5em; }\n" +
+                        "         .back{\n" +
+                        "            background-color: lightgrey;\n" +
+                        "            width: 50px;\n" +
+                        "            padding: 25px;\n" +
+                        "            border: 25px solid navy;\n" +
+                        "            margin: 25px;\n" +
+                        "         }\n" +
+                        "      </style>\n" +
+                        "   </head>\n" +
+                        "\t\n" +
+                        "   <body>\n" +
+                        "      <div id = \"draggable\" class = \"ui-widget-content\">\n" +
+                        "         <p class = \"back\">Drag</p>\n" +
+                        "      </div>\n" +
+                        "\t \n" +
+                        "   </body>\n" +
+                        "</html>",
+                ""
+        );
+        final LearnDetailsModel l3 = new LearnDetailsModel(
+                "Interaction Drop-able",
+                "The Drop-able function can be used with interactions in JqueryUI.This function can be enabled drop-able functionality on any DOM element.We can drop the drag-able element by clicking on it with mouse.\n" +
+                        "\n" +
+                        "Syntax\n" +
+                        "Here is the simple syntax to use drag-able −\n" +
+                        "\n" +
+                        "$( \"#droppable\" ).droppable();\n" +
+                        "Example\n" +
+                        "Following is a simple example showing the usage of drop-able −",
+                "<html>\n" +
+                        "   <head>\n" +
+                        "      <title>The jQuery Example</title>\n" +
+                        "      <script type = \"text/javascript\" \n" +
+                        "         src = \"https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js\">\n" +
+                        "      </script>\n" +
+                        "\t\t\n" +
+                        "      <script type = \"text/javascript\" \n" +
+                        "         src = \"https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js\">\n" +
+                        "      </script>\n" +
+                        "\t\t\n" +
+                        "      <script type = \"text/javascript\" language = \"javascript\">\n" +
+                        "   \n" +
+                        "         $(function() {\n" +
+                        "            $( \"#draggable\" ).draggable();\n" +
+                        "\t\t\t\t\n" +
+                        "            $( \"#droppable\" ).droppable({\n" +
+                        "               drop: function( event, ui ) {\n" +
+                        "                  $( this ).addClass( \"ui-state-highlight\" ).find( \"p\" ).html( \"Dropped!\" );\n" +
+                        "               }\n" +
+                        "            });\n" +
+                        "         });\n" +
+                        "\t\t \n" +
+                        "      </script>\n" +
+                        "\t\t\n" +
+                        "      <style>\n" +
+                        "         #draggable { width: 100px; height: 100px; \n" +
+                        "            padding: 0.5em; float: left; margin: 10px 10px 10px 0; }\n" +
+                        "         #droppable { width: 150px; height: 150px; \n" +
+                        "            padding: 0.5em; float: left; margin: 10px; }\n" +
+                        "      </style>\n" +
+                        "   </head>\n" +
+                        "\t\n" +
+                        "   <body>\n" +
+                        "      <div id = \"draggable\" class = \"ui-widget-content\">\n" +
+                        "         <p>Drag</p>\n" +
+                        "      </div>\n" +
+                        "\n" +
+                        " \n" +
+                        "      <div id = \"droppable\" class = \"ui-widget-header\">\n" +
+                        "         <p style = \"background-color: aquamarine;height: 50;\">Drop here</p>\n" +
+                        "      </div>\n" +
+                        "\t \n" +
+                        "   </body>\n" +
+                        "</html>",
+                ""
+        );
+        final LearnDetailsModel l4 = new LearnDetailsModel(
+                "Interaction Resize-able",
+                "The Resize able function can be used with interactions in JqueryUI. This function can be enabled Resize able functionality on any DOM element.With the cursor grab the right or bottom border and drag to the desired width or height.\n" +
+                        "\n" +
+                        "Syntax\n" +
+                        "Here is the simple syntax to use drag-able −\n" +
+                        "\n" +
+                        "$( \"#resizable\" ).resizable();\n" +
+                        "Example\n" +
+                        "Following is a simple example showing the usage of Resize-able −",
+                "<!doctype html>\n" +
+                        "<html lang = \"en\">\n" +
+                        "   <head>\n" +
+                        "      <meta charset = \"utf-8\">\n" +
+                        "      <title>jQuery UI Resizable functionality</title>\n" +
+                        "      <link \n" +
+                        "         href = \"https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css\" \n" +
+                        "         rel = \"stylesheet\">\n" +
+                        "      <script src = \"https://code.jquery.com/jquery-1.10.2.js\">\n" +
+                        "      </script>\n" +
+                        "      <script src = \"https://code.jquery.com/ui/1.10.4/jquery-ui.js\">\n" +
+                        "      </script>\n" +
+                        "\t\t\n" +
+                        "      <!-- CSS -->\n" +
+                        "      <style>\n" +
+                        "         .ui-widget-header {\n" +
+                        "            background:#b9cd6d;\n" +
+                        "            border: 1px solid #b9cd6d;\n" +
+                        "            color: #FFFFFF;\n" +
+                        "            font-weight: bold;\n" +
+                        "         }\n" +
+                        "\t\t\t\n" +
+                        "         .ui-widget-content {\n" +
+                        "            background: #cedc98;\n" +
+                        "            border: 1px solid #DDDDDD;\n" +
+                        "            color: #333333;\n" +
+                        "         }\n" +
+                        "\t\t\t\n" +
+                        "         #resizable-14{ width: 150px; height: 150px; \n" +
+                        "            padding: 0.5em;text-align: center; margin: 0; }\n" +
+                        "      </style>\n" +
+                        "\t\t\n" +
+                        "      <!-- Javascript -->\n" +
+                        "\t\t\n" +
+                        "      <script>\n" +
+                        "         $(function() {\n" +
+                        "\t\t\t\n" +
+                        "            $( \"#resizable-14\" ).resizable({\n" +
+                        "\t\t\t\t\n" +
+                        "               create: function( event, ui ) {\n" +
+                        "                  $(\"#resizable-15\").text (\"I'm Created!!\");\n" +
+                        "               },\n" +
+                        "\n" +
+                        "               resize: function (event, ui) {\n" +
+                        "                  $(\"#resizable-16\").text (\"top = \" + ui.position.top +\n" +
+                        "                     \", left = \" + ui.position.left +\n" +
+                        "                     \", width = \" + ui.size.width +\n" +
+                        "                     \", height = \" + ui.size.height);\n" +
+                        "               }\n" +
+                        "            });\n" +
+                        "\t\t\t\t\n" +
+                        "         });\n" +
+                        "      </script>\n" +
+                        "   </head>\n" +
+                        "\t\n" +
+                        "   <body>\n" +
+                        "\t\n" +
+                        "      <!-- HTML --> \n" +
+                        "      <div id = \"resizable-14\" class = \"ui-widget-content\"> \n" +
+                        "         <h3 class = \"ui-widget-header\">Resize !!</h3>\n" +
+                        "      </div><br>\n" +
+                        "\t\t\n" +
+                        "      <span id = \"resizable-15\"></span><br>\n" +
+                        "      <span id = \"resizable-16\"></span>\n" +
+                        "   </body>\n" +
+                        "</html>",
+                ""
+        );
+        final LearnDetailsModel l5 = new LearnDetailsModel(
+                "Interaction Select-able",
+                "The Select able function can be used with interactions in JqueryUI.This function can be enabled select able functionality on any DOM element.Draw a box with your cursor to select items. Hold down the Ctrl key to make multiple non-adjacent selections.\n" +
+                        "\n" +
+                        "Syntax\n" +
+                        "Here is the simple syntax to use drag-able −\n" +
+                        "\n" +
+                        "$( \"#selectable\" ).selectable();\n" +
+                        "Example\n" +
+                        "Following is a simple example showing the usage of select able −",
+                "<!doctype html>\n" +
+                        "<html lang = \"en\">\n" +
+                        "   <head>\n" +
+                        "      <meta charset = \"utf-8\">\n" +
+                        "      <title>jQuery UI Selectable - Default functionality</title>\n" +
+                        "  \n" +
+                        "      <link rel = \"stylesheet\" \n" +
+                        "         href = \"//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css\">\n" +
+                        "  \n" +
+                        "      <script type = \"text/javascript\" \n" +
+                        "         src = \"https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js\">\n" +
+                        "      </script>\n" +
+                        "\t\t\n" +
+                        "      <script type = \"text/javascript\" \n" +
+                        "         src = \"https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js\">\n" +
+                        "      </script>\n" +
+                        "\n" +
+                        "      <style>\n" +
+                        "         #feedback { font-size: 1.4em; }\n" +
+                        "         #selectable .ui-selecting { background: #FECA40; }\n" +
+                        "         #selectable .ui-selected { background: #F39814; color: white; }\n" +
+                        "         #selectable { list-style-type: none; margin: 0; padding: 0; width: 60%; }\n" +
+                        "         #selectable li { margin: 3px; padding: 0.4em; font-size: 1.4em; height: 18px; }\n" +
+                        "      </style>\n" +
+                        "\t\t\n" +
+                        "      <script>\n" +
+                        "         $(function() {\n" +
+                        "            $( \"#selectable\" ).selectable();\n" +
+                        "         });\n" +
+                        "      </script>\n" +
+                        "   </head>\n" +
+                        "\n" +
+                        "   <body>\n" +
+                        " \n" +
+                        "      <ol id = \"selectable\">\n" +
+                        "         <li class = \"ui-widget-content\">Item 1</li>\n" +
+                        "         <li class = \"ui-widget-content\">Item 2</li>\n" +
+                        "         <li class = \"ui-widget-content\">Item 3</li>\n" +
+                        "         <li class = \"ui-widget-content\">Item 4</li>\n" +
+                        "         <li class = \"ui-widget-content\">Item 5</li>\n" +
+                        "         <li class = \"ui-widget-content\">Item 6</li>\n" +
+                        "         <li class = \"ui-widget-content\">Item 7</li>\n" +
+                        "      </ol>\n" +
+                        " \n" +
+                        "   </body>\n" +
+                        "</html>",
+                ""
+        );
+        final LearnDetailsModel l6 = new LearnDetailsModel(
+                "Interaction Sort-able",
+                "The Sort able function can be used with interactions in JqueryUI.This function can be enabled sortable functionality on any DOM element.Click on and drag an element to a new spot within the list, and the other items will adjust to fit. By default, sortable items share draggable properties.\n" +
+                        "\n" +
+                        "Syntax\n" +
+                        "Here is the simple syntax to use drag-able −\n" +
+                        "\n" +
+                        "$(function() {\n" +
+                        "   $( \"#sortable\" ).sortable();\n" +
+                        "   $( \"#sortable\" ).disableSelection();\n" +
+                        "});\n" +
+                        "Example\n" +
+                        "Following is a simple example showing the usage of sort able −",
+                "<!doctype html>\n" +
+                        "<html lang = \"en\">\n" +
+                        "   <head>\n" +
+                        "      <meta charset = \"utf-8\">\n" +
+                        "      <title>jQuery UI Sortable - Default functionality</title>\n" +
+                        "      <link rel = \"stylesheet\" \n" +
+                        "         href = \"//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css\">\n" +
+                        "  \n" +
+                        "      <script type = \"text/javascript\" \n" +
+                        "         src = \"https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js\">\n" +
+                        "      </script>\n" +
+                        "\t\t\n" +
+                        "      <script type = \"text/javascript\" \n" +
+                        "         src = \"https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js\">\n" +
+                        "      </script>\n" +
+                        "\n" +
+                        "      <style>\n" +
+                        "         #sortable { list-style-type: none; margin: 0; padding: 0; width: 60%; }\n" +
+                        "         #sortable li { margin: 0 3px 3px 3px; padding: 0.4em;\n" +
+                        "            padding-left: 1.5em; font-size: 1.4em; height: 18px; }\n" +
+                        "         #sortable li span { position: absolute; margin-left: -1.3em; }\n" +
+                        "      </style>\n" +
+                        "\t\t\n" +
+                        "      <script>\n" +
+                        "         $(function() {\n" +
+                        "            $( \"#sortable\" ).sortable();\n" +
+                        "            $( \"#sortable\" ).disableSelection();\n" +
+                        "         });\n" +
+                        "      </script>\n" +
+                        "   </head>\n" +
+                        "\t\n" +
+                        "   <body>\n" +
+                        " \n" +
+                        "      <ul id = \"sortable\">\n" +
+                        "         <li class = \"ui-state-default\"><span \n" +
+                        "            class = \"ui-icon ui-icon-arrowthick-2-n-s\"></span>Item 1</li>\n" +
+                        "         <li class = \"ui-state-default\"><span \n" +
+                        "            class = \"ui-icon ui-icon-arrowthick-2-n-s\"></span>Item 2</li>\n" +
+                        "         <li class = \"ui-state-default\"><span \n" +
+                        "            class = \"ui-icon ui-icon-arrowthick-2-n-s\"></span>Item 3</li>\n" +
+                        "         <li class = \"ui-state-default\"><span \n" +
+                        "            class = \"ui-icon ui-icon-arrowthick-2-n-s\"></span>Item 4</li>\n" +
+                        "         <li class = \"ui-state-default\"><span \n" +
+                        "            class = \"ui-icon ui-icon-arrowthick-2-n-s\"></span>Item 5</li>\n" +
+                        "         <li class = \"ui-state-default\"><span \n" +
+                        "            class = \"ui-icon ui-icon-arrowthick-2-n-s\"></span>Item 6</li>\n" +
+                        "         <li class = \"ui-state-default\"><span \n" +
+                        "            class = \"ui-icon ui-icon-arrowthick-2-n-s\"></span>Item 7</li>\n" +
+                        "      </ul>\n" +
+                        "\n" +
+                        "   </body>\n" +
+                        "</html>",
+                ""
+        );
+        list.add(l1);
+        list.add(l2);
+        list.add(l3);
+        list.add(l4);
+        list.add(l5);
+        list.add(l6);
+        return list;
+    }
+    //jQuery Widgets
+    private static List<LearnDetailsModel> jQueryWidgets(){
+        final List<LearnDetailsModel> list = new ArrayList<>();
+        final LearnDetailsModel l1 = new LearnDetailsModel(
+                "Widgets",
+                "A jQuery UI widget is a specialized jQuery plug-in.Using plug-in, we can apply behaviours to the elements. However, plug-ins lack some built-in capabilities, such as a way to associate data with its elements, expose methods, merge options with defaults, and control the plug-in's lifetime." +
+                        "\n\n" +
+                        "1.Accordion\n" +
+                        "Enable to collapse the content, that is broken into logical sections.\n" +
+                        "\n" +
+                        "2.Autocomplete\n" +
+                        "Enable to provides the suggestions while you type into the field.\n" +
+                        "\n" +
+                        "3.Button\n" +
+                        "Button is an input of type submit and an anchor.\n" +
+                        "\n" +
+                        "4.Datepicker\n" +
+                        "It is to open an interactive calendar in a small overlay.\n" +
+                        "\n" +
+                        "5.Dialog\n" +
+                        "Dialog boxes are one of the nice ways of presenting information on an HTML page.\n" +
+                        "\n" +
+                        "6.Menu\n" +
+                        "Menu shows list of items.\n" +
+                        "\n" +
+                        "7.Progressbar\n" +
+                        "It shows the progress information.\n" +
+                        "\n" +
+                        "8.Select menu\n" +
+                        "Enable a style able select element/elements.\n" +
+                        "\n" +
+                        "9.Slider\n" +
+                        "The basic slider is horizontal and has a single handle that can be moved with the mouse or by using the arrow keys.\n" +
+                        "\n" +
+                        "10.Spinner\n" +
+                        "It provides a quick way to select one value from a set.\n" +
+                        "\n" +
+                        "11.Tabs\n" +
+                        "It is used to swap between content that is broken into logical sections.\n" +
+                        "\n" +
+                        "12.Tooltip\n" +
+                        "Its provides the tips for the users.",
+                "",
+                ""
+        );
+        final LearnDetailsModel l2 = new LearnDetailsModel(
+                "Widget Accordion",
+                "The Widget accordion function can be used with widgets in JqueryUI.Accordion is same like as Tabs,When user click headers to expand content that is broken into logical sections.\n" +
+                        "\n" +
+                        "Syntax\n" +
+                        "Here is the simple syntax to use Accordion −\n" +
+                        "\n" +
+                        "$(function() {\n" +
+                        "   $( \"#accordion\" ).accordion();\n" +
+                        "});\n" +
+                        "Example\n" +
+                        "Following is a simple example showing the usage of Accordion −",
+                "<!doctype html>\n" +
+                        "<html lang = \"en\">\n" +
+                        "   <head>\n" +
+                        "      <meta charset = \"utf-8\">\n" +
+                        "      <title>jQuery UI Accordion - Default functionality</title>\n" +
+                        "\t\t\n" +
+                        "      <link rel = \"stylesheet\" \n" +
+                        "         href = \"//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css\">\n" +
+                        "\t\t\n" +
+                        "      <script type = \"text/javascript\" \n" +
+                        "         src = \"https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js\">\n" +
+                        "      </script>\n" +
+                        "\t\t\n" +
+                        "      <script type = \"text/javascript\" \n" +
+                        "         src = \"https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js\">\n" +
+                        "      </script>\n" +
+                        "\t\t\n" +
+                        "  \n" +
+                        "      <script>\n" +
+                        "         $(function() {\n" +
+                        "            $( \"#accordion\" ).accordion();\n" +
+                        "         });\n" +
+                        "      </script>\n" +
+                        "   </head>\n" +
+                        "\t\n" +
+                        "   <body>\n" +
+                        "      <div id = \"accordion\">\n" +
+                        "         <h3>Android</h3>\n" +
+                        "\t\t\t\n" +
+                        "         <div>\n" +
+                        "            <p>\n" +
+                        "               Android is an open source and Linux-based operating system for\n" +
+                        "               mobile devices such as smartphones and tablet computers. \n" +
+                        "               Android was developed by the Open Handset Alliance, led by \n" +
+                        "               Google, and other companies.\n" +
+                        "            </p>\n" +
+                        "         </div>\n" +
+                        "\t\t\t\n" +
+                        "         <h3>CSS</h3>\n" +
+                        "\t\t\t\n" +
+                        "         <div>\n" +
+                        "            <p>\n" +
+                        "               CSS is the acronym for \"Cascading Style Sheet\". This \n" +
+                        "               tutorial covers both the versions CSS1,CSS2 and CSS3, \n" +
+                        "               and gives a complete understanding of CSS,\n" +
+                        "               starting from its basics to advanced concepts.\n" +
+                        "            </p>\n" +
+                        "         </div>\n" +
+                        "\t\t\t\n" +
+                        "         <h3>AngularJS</h3>\n" +
+                        "\t\t\t\n" +
+                        "         <div>\n" +
+                        "            <p>\n" +
+                        "               AngularJS is a very powerful JavaScript library. It is used in \n" +
+                        "               Single Page Application (SPA) projects. It extends HTML DOM\n" +
+                        "               with additional attributes and makes it more responsive to \n" +
+                        "               user actions. AngularJS is open source, completely free, \n" +
+                        "               and used by thousands of developers around the world.\n" +
+                        "               It is licensed under the Apache license version 2.0.\n" +
+                        "            </p>\n" +
+                        "\t\t\t\t\n" +
+                        "            <ul>\n" +
+                        "               <li>List item one</li>\n" +
+                        "               <li>List item two</li>\n" +
+                        "               <li>List item three</li>\n" +
+                        "            </ul>\n" +
+                        "\t\t\t\t\n" +
+                        "         </div>\n" +
+                        "\t\t\t\n" +
+                        "         <h3>PHP</h3>\n" +
+                        "\t\t\t\n" +
+                        "         <div>\n" +
+                        "            <p>\n" +
+                        "               The PHP Hypertext Preprocessor (PHP) is a programming language \n" +
+                        "               hat allows web developers to create dynamic content that\n" +
+                        "               interacts with databases. PHP is basically used for developing \n" +
+                        "               web based software applications. This tutorial helps you to \n" +
+                        "               build your base with PHP.\n" +
+                        "            </p>\n" +
+                        "\t\t\t\t\n" +
+                        "            <p>\n" +
+                        "               Before proceeding with this tutorial you should have at least basic \n" +
+                        "               understanding of computer programming, Internet, Database, and \n" +
+                        "               MySQL etc is very helpful.\n" +
+                        "            </p>\n" +
+                        "\t\t\t\t\n" +
+                        "         </div>\n" +
+                        "      </div>\n" +
+                        "   </body>\n" +
+                        "</html>",
+                ""
+        );
+        final LearnDetailsModel l3 = new LearnDetailsModel(
+                "Widget AutoComplete",
+                "The Widget AutoComplete function can be used with widgets in JqueryUI.The Autocomplete widgets provides suggestions while you type into the field.For suppose give Ja as an input, it will provides an output as Java or JavaScript.\n" +
+                        "\n" +
+                        "Syntax\n" +
+                        "Here is the simple syntax to use Autocomplete −\n" +
+                        "\n" +
+                        "$( \"#tags\" ).autocomplete({\n" +
+                        "   source: availableTags\n" +
+                        "});\n" +
+                        "Example\n" +
+                        "Following is a simple example showing the usage of Autocomplete −",
+                "<!doctype html>\n" +
+                        "<html lang = \"en\">\n" +
+                        "   <head>\n" +
+                        "      <meta charset = \"utf-8\">\n" +
+                        "      <title>jQuery UI Autocomplete - Default functionality</title>\n" +
+                        "\t\t\n" +
+                        "      <link rel = \"stylesheet\" \n" +
+                        "         href = \"//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css\">\n" +
+                        "\t\t\t\n" +
+                        "      <script type = \"text/javascript\" \n" +
+                        "         src = \"https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js\">\n" +
+                        "      </script>\n" +
+                        "\t\t\n" +
+                        "      <script type = \"text/javascript\" \n" +
+                        "         src = \"https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js\">\n" +
+                        "      </script>\n" +
+                        "  \n" +
+                        "      <script>\n" +
+                        "         $(function() {\n" +
+                        "            var availableTags = [\n" +
+                        "               \"ActionScript\",\n" +
+                        "               \"AppleScript\",\n" +
+                        "               \"Asp\",\n" +
+                        "               \"BASIC\",\n" +
+                        "               \"C\",\n" +
+                        "               \"C++\",\n" +
+                        "               \"Clojure\",\n" +
+                        "               \"COBOL\",\n" +
+                        "               \"ColdFusion\",\n" +
+                        "               \"Erlang\",\n" +
+                        "               \"Fortran\",\n" +
+                        "               \"Groovy\",\n" +
+                        "               \"Haskell\",\n" +
+                        "               \"Java\",\n" +
+                        "               \"JavaScript\",\n" +
+                        "               \"Lisp\",\n" +
+                        "               \"Perl\",\n" +
+                        "               \"PHP\",\n" +
+                        "               \"Python\",\n" +
+                        "               \"Ruby\",\n" +
+                        "               \"Scala\",\n" +
+                        "               \"Scheme\"\n" +
+                        "            ];\n" +
+                        "\t\t\t\t\n" +
+                        "            $( \"#tags\" ).autocomplete({\n" +
+                        "               source: availableTags\n" +
+                        "            });\n" +
+                        "\t\t\t\t\n" +
+                        "         });\n" +
+                        "      </script>\n" +
+                        "   </head>\n" +
+                        "\n" +
+                        "   <body>\n" +
+                        "      <div class = \"ui-widget\">\n" +
+                        "         <label for = \"tags\">Tags: </label>\n" +
+                        "         <input id = \"tags\">\n" +
+                        "      </div>\n" +
+                        " \n" +
+                        "   </body>\n" +
+                        "</html>",
+                ""
+        );
+        final LearnDetailsModel l4 = new LearnDetailsModel(
+                "Widget Button",
+                "The Widget button function can be used with widgets in JqueryUI.Button is an input of type submit and an anchor.\n" +
+                        "\n" +
+                        "Syntax\n" +
+                        "Here is the simple syntax to use Button −\n" +
+                        "\n" +
+                        "$(function() {\n" +
+                        "   $( \"input[type = submit], a, button\" )\n" +
+                        "   .button()\n" +
+                        "   .click(function( event ) {\n" +
+                        "      event.preventDefault();\n" +
+                        "   });\n" +
+                        "});\n" +
+                        "Example\n" +
+                        "Following is a simple example showing the usage of Button −",
+                "<!doctype html>\n" +
+                        "<html lang = \"en\">\n" +
+                        "   <head>\n" +
+                        "      <meta charset = \"utf-8\">\n" +
+                        "      <title>jQuery UI Button - Default functionality</title>\n" +
+                        "\t\t\n" +
+                        "      <link rel = \"stylesheet\" \n" +
+                        "         href = \"//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css\">\n" +
+                        "\t\t\t\n" +
+                        "      <script src = \"//code.jquery.com/jquery-1.10.2.js\">\n" +
+                        "      </script>\n" +
+                        "      <script src = \"//code.jquery.com/ui/1.11.4/jquery-ui.js\">\n" +
+                        "      </script>\n" +
+                        "\t\t\n" +
+                        "      <script>\n" +
+                        "         $(function() {\n" +
+                        "            $( \"input[type = submit], a, button\" )\n" +
+                        "            .button()\n" +
+                        "            .click(function( event ) {\n" +
+                        "               event.preventDefault();\n" +
+                        "            });\n" +
+                        "         });\n" +
+                        "      </script>\n" +
+                        "   </head>\n" +
+                        "\t\n" +
+                        "   <body>\n" +
+                        "      <button>A button element</button>\n" +
+                        "      <input type = \"submit\" value = \"A submit button\">\n" +
+                        "      <a href = \"#\">An anchor</a>\n" +
+                        "   </body>\n" +
+                        "</html>",
+                ""
+        );
+        final LearnDetailsModel l5 = new LearnDetailsModel(
+                "Widget DatePicker",
+                "The Widget DatePicker function can be used with widgets in JqueryUI. It is focus on the input to open an interactive calendar in a small overlay.\n" +
+                        "\n" +
+                        "Syntax\n" +
+                        "Here is the simple syntax to use DatePicker −\n" +
+                        "\n" +
+                        "$( \"#datepicker\" ).datepicker();\n" +
+                        "Example\n" +
+                        "Following is a simple example showing the usage of DatePicker −",
+                "<!doctype html>\n" +
+                        "<html lang = \"en\">\n" +
+                        "   <head>\n" +
+                        "      <meta charset = \"utf-8\">\n" +
+                        "      <title>jQuery UI Datepicker - Default functionality</title>\n" +
+                        "\t\t\n" +
+                        "      <link rel = \"stylesheet\" \n" +
+                        "         href = \"//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css\">\n" +
+                        "\t\t\t\n" +
+                        "      <script type = \"text/javascript\" \n" +
+                        "         src = \"https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js\">\n" +
+                        "      </script>\n" +
+                        "\t\t\n" +
+                        "      <script type = \"text/javascript\" \n" +
+                        "         src = \"https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js\">\n" +
+                        "      </script>\n" +
+                        " \n" +
+                        "      <script>\n" +
+                        "         $(function() {\n" +
+                        "            $( \"#datepicker\" ).datepicker();\n" +
+                        "         });\n" +
+                        "      </script>\n" +
+                        "   </head>\n" +
+                        "\n" +
+                        "   <body>\n" +
+                        "      <p>Date: <input type = \"text\" id = \"datepicker\"></p>\n" +
+                        "   </body>\n" +
+                        "</html>",
+                ""
+        );
+        final LearnDetailsModel l6 = new LearnDetailsModel(
+                "Widget Dialog",
+                "The Widget Dialog function can be used with widgets in JqueryUI. Dialog boxes are one of the nice ways of presenting information on an HTML page. A dialog box is a floating window with a title and content area. This window can be moved, resized, and of course, closed using \"X\" icon by default.\n" +
+                        "\n" +
+                        "Syntax\n" +
+                        "Here is the simple syntax to use Dialog −\n" +
+                        "\n" +
+                        "$( \"#dialog\" ).dialog();\n" +
+                        "Example\n" +
+                        "Following is a simple example showing the usage of Dialog −",
+                "<!doctype html>\n" +
+                        "<html lang = \"en\">\n" +
+                        "   <head>\n" +
+                        "      <meta charset = \"utf-8\">\n" +
+                        "      <title>jQuery UI Dialog - Default functionality</title>\n" +
+                        "\t\t\n" +
+                        "      <link rel = \"stylesheet\" \n" +
+                        "         href = \"//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css\">\n" +
+                        "\t\t\t\n" +
+                        "      <script type = \"text/javascript\" \n" +
+                        "         src = \"https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js\">\n" +
+                        "      </script>\n" +
+                        "\t\t\t\n" +
+                        "      <script type = \"text/javascript\" \n" +
+                        "         src = \"https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js\">\n" +
+                        "      </script>\n" +
+                        "  \n" +
+                        "      <script>\n" +
+                        "         $(function() {\n" +
+                        "            $( \"#dialog\" ).dialog();\n" +
+                        "         });\n" +
+                        "      </script>\n" +
+                        "   </head>\n" +
+                        "\t\n" +
+                        "   <body>\n" +
+                        "      <div id = \"dialog\" title = \"Basic dialog\">\n" +
+                        "         <p>This is the default dialog which is useful for displaying\n" +
+                        "            information. The dialog window can be moved, resized and closed with\n" +
+                        "            the 'x' icon.</p>\n" +
+                        "      </div>\n" +
+                        " \n" +
+                        "   </body>\n" +
+                        "</html>",
+                ""
+        );
+        final LearnDetailsModel l7 = new LearnDetailsModel(
+                "Widget Menu",
+                "The Widget Menu function can be used with widgets in JqueryUI. A simple menu shows list of items.A list is transformed, adding theming, mouse and keyboard navigation support.\n" +
+                        "\n" +
+                        "Syntax\n" +
+                        "Here is the simple syntax to use menu −\n" +
+                        "\n" +
+                        "$( \"#menu\" ).menu();\n" +
+                        "Example\n" +
+                        "Following is a simple example showing the usage of menu −",
+                "<!doctype html>\n" +
+                        "<html lang = \"en\">\n" +
+                        "   <head>\n" +
+                        "      <meta charset = \"utf-8\">\n" +
+                        "      <title>jQuery UI Menu - Default functionality</title>\n" +
+                        "\t\t\n" +
+                        "      <link rel = \"stylesheet\"\n" +
+                        "         href = \"//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css\">\n" +
+                        "\t\t\t\n" +
+                        "      <script type = \"text/javascript\" \n" +
+                        "         src = \"https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js\">\n" +
+                        "      </script>\n" +
+                        "\t\t\t\n" +
+                        "      <script type = \"text/javascript\" \n" +
+                        "         src = \"https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js\">\n" +
+                        "      </script>\n" +
+                        "\n" +
+                        "      <script>\n" +
+                        "         $(function() {\n" +
+                        "            $( \"#menu\" ).menu();\n" +
+                        "         });\n" +
+                        "      </script>\n" +
+                        "\t\t\n" +
+                        "      <style>\n" +
+                        "         .ui-menu { width: 150px; }\n" +
+                        "      </style>\n" +
+                        "   </head>\n" +
+                        "\t\n" +
+                        "   <body>\n" +
+                        "      <ul id = \"menu\">\n" +
+                        "         <li class = \"ui-state-disabled\">Team</li>\n" +
+                        "         <li>MD. Iqbal Hossain</li>\n" +
+                        "         <li>David</li>\n" +
+                        "         <li>Lucy</li>\n" +
+                        "\t\t\t\n" +
+                        "         <li>Anne\n" +
+                        "\t\t\t\n" +
+                        "            <ul>\n" +
+                        "               <li class = \"ui-state-disabled\">John</li>\n" +
+                        "               <li>Rahat</li>\n" +
+                        "               <li>Emma Watson</li>\n" +
+                        "            </ul>\n" +
+                        "\t\t\t\t\n" +
+                        "         </li>\n" +
+                        "\t\t\t\n" +
+                        "         <li>Ronaldo</li>\n" +
+                        "\t\t\t\n" +
+                        "         <li>Messi\n" +
+                        "            <ul>\n" +
+                        "               <li>Brad\n" +
+                        "                  <ul>\n" +
+                        "                     <li>Jack</li>\n" +
+                        "                     <li>Milli</li>\n" +
+                        "                     <li>Rohan</li>\n" +
+                        "                  </ul>\n" +
+                        "               </li>\n" +
+                        "\t\t\t\t\t\n" +
+                        "               <li>Rakib\n" +
+                        "                  <ul>\n" +
+                        "                     <li>Warner</li>\n" +
+                        "                     <li>Akbar</li>\n" +
+                        "                     <li>Jule</li>\n" +
+                        "                  </ul>\n" +
+                        "               </li>\n" +
+                        "\t\t\t\t\t\n" +
+                        "               <li>Hopes</li>\n" +
+                        "            </ul>\n" +
+                        "         </li>\n" +
+                        "\t\t\t\n" +
+                        "         <li class = \"ui-state-disabled\">Luke</li>\n" +
+                        "      </ul>\n" +
+                        "   </body>\n" +
+                        "</html>",
+                ""
+        );
+        final LearnDetailsModel l8 = new LearnDetailsModel(
+                "Widget ProgressBar",
+                "The Widget Progress Bar function can be used with widgets in JqueryUI. A simple progress bar shows information about progress. A simple progress bar is as shown below.\n" +
+                        "\n" +
+                        "Syntax\n" +
+                        "Here is the simple syntax to use progress bar −\n" +
+                        "\n" +
+                        "$( \"#progressbar\" ).progressbar({\n" +
+                        "   value: 37\n" +
+                        "});\n" +
+                        "Example\n" +
+                        "Following is a simple example showing the usage of progress bar −",
+                "<!doctype html>\n" +
+                        "<html lang = \"en\">\n" +
+                        "   <head>\n" +
+                        "      <meta charset = \"utf-8\">\n" +
+                        "      <title>jQuery UI Progressbar - Default functionality</title>\n" +
+                        "\t\t\n" +
+                        "      <link rel = \"stylesheet\" \n" +
+                        "         href = \"//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css\">\n" +
+                        "\t\t\t\n" +
+                        "      <script type = \"text/javascript\" \n" +
+                        "         src = \"https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js\">\n" +
+                        "      </script>\n" +
+                        "\t\t\n" +
+                        "      <script type = \"text/javascript\" \n" +
+                        "         src = \"https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js\">\n" +
+                        "      </script>\n" +
+                        "\n" +
+                        "      <script>\n" +
+                        "         $(function() {\n" +
+                        "            $( \"#progressbar\" ).progressbar({\n" +
+                        "               value: 37\n" +
+                        "            });\n" +
+                        "         });\n" +
+                        "      </script>\n" +
+                        "   </head>\n" +
+                        "\t\n" +
+                        "   <body>\n" +
+                        "      <div id = \"progressbar\"></div>\n" +
+                        "   </body>\n" +
+                        "</html>",
+                ""
+        );
+        final LearnDetailsModel l9 = new LearnDetailsModel(
+                "Widget Select Menu",
+                "The Widget Select Menu function can be used with widgets in JqueryUI.It provides a styleable select element replacement. A simple select menu is as shown below.\n" +
+                        "\n" +
+                        "Syntax\n" +
+                        "Here is the simple syntax to use Select Menu −\n" +
+                        "\n" +
+                        "$( \"#menu\" ).selectmenu();\n" +
+                        "Example\n" +
+                        "Following is a simple example showing the usage of Select Menu −",
+                "<!doctype html>\n" +
+                        "<html lang=\"en\">\n" +
+                        "   <head>\n" +
+                        "      <meta charset = \"utf-8\">\n" +
+                        "      <meta name = \"viewport\" content = \"width = device-width, initial-scale = 1\">\n" +
+                        "      <title>jQuery UI Selectmenu - Default functionality</title>\n" +
+                        "\t\t\n" +
+                        "      <link rel = \"stylesheet\" \n" +
+                        "         href = \"//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css\">\n" +
+                        "\t\t\t\n" +
+                        "      <script type = \"text/javascript\" \n" +
+                        "         src = \"https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js\">\n" +
+                        "      </script>\n" +
+                        "\t\t\n" +
+                        "      <script type = \"text/javascript\" \n" +
+                        "         src = \"https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js\">\n" +
+                        "      </script>\n" +
+                        "  \n" +
+                        "      <script>\n" +
+                        "         $(function() {\n" +
+                        "            $( \"#speed\" ).selectmenu();\n" +
+                        "            $( \"#files\" ).selectmenu();\n" +
+                        "            $( \"#number\" ).selectmenu().selectmenu( \"menuWidget\" ).addClass( \"overflow\" );\n" +
+                        "         });\n" +
+                        "      </script>\n" +
+                        "\t\t\n" +
+                        "      <style>\n" +
+                        "         fieldset {\n" +
+                        "            border: 0;\n" +
+                        "         }\n" +
+                        "\t\t\t\n" +
+                        "         label {\n" +
+                        "            display: block;\n" +
+                        "            margin: 30px 0 0 0;\n" +
+                        "         }\n" +
+                        "\t\t\t\n" +
+                        "         select {\n" +
+                        "            width: 200px;\n" +
+                        "         }\n" +
+                        "\t\t\t\n" +
+                        "         .overflow {\n" +
+                        "            height: 200px;\n" +
+                        "         }\n" +
+                        "      </style>\n" +
+                        "   </head>\n" +
+                        "\t\n" +
+                        "   <body>\n" +
+                        "      <div class = \"demo\">\n" +
+                        " \n" +
+                        "         <form action = \"#\">\n" +
+                        " \n" +
+                        "            <fieldset>\n" +
+                        "\t\t\n" +
+                        "               <label for = \"speed\">Select a speed</label>\n" +
+                        "\t\t\t\n" +
+                        "               <select name = \"speed\" id = \"speed\">\n" +
+                        "                  <option>Slower</option>\n" +
+                        "                  <option>Slow</option>\n" +
+                        "                  <option selected = \"selected\">Medium</option>\n" +
+                        "                  <option>Fast</option>\n" +
+                        "                  <option>Faster</option>\n" +
+                        "               </select>\n" +
+                        " \n" +
+                        "               <label for = \"files\">Select a file</label>\n" +
+                        "\t\t\t\t\t\n" +
+                        "               <select name = \"files\" id = \"files\">\n" +
+                        "\t\t\t\t\t\n" +
+                        "                  <optgroup label = \"Scripts\">\n" +
+                        "                     <option value = \"jquery\">jQuery.js</option>\n" +
+                        "                     <option value = \"jqueryui\">ui.jQuery.js</option>\n" +
+                        "                  </optgroup>\n" +
+                        "\t\t\t\t\t\t\n" +
+                        "                  <optgroup label = \"Other files\">\n" +
+                        "                     <option value = \"somefile\">Some unknown file</option>\n" +
+                        "                     <option value = \"someotherfile\">Some other file with a\n" +
+                        "                        very long option text</option>\n" +
+                        "                  </optgroup>\n" +
+                        "\t\t\t\t\t\t\n" +
+                        "               </select>\n" +
+                        " \n" +
+                        "               <label for = \"number\">Select a number</label>\n" +
+                        "\t\t\t\t\t\n" +
+                        "               <select name = \"number\" id = \"number\">\n" +
+                        "                  <option>1</option>\n" +
+                        "                  <option selected = \"selected\">2</option>\n" +
+                        "                  <option>3</option>\n" +
+                        "                  <option>4</option>\n" +
+                        "                  <option>5</option>\n" +
+                        "                  <option>6</option>\n" +
+                        "                  <option>7</option>\n" +
+                        "                  <option>8</option>\n" +
+                        "                  <option>9</option>\n" +
+                        "                  <option>10</option>\n" +
+                        "                  <option>11</option>\n" +
+                        "                  <option>12</option>\n" +
+                        "                  <option>13</option>\n" +
+                        "                  <option>14</option>\n" +
+                        "                  <option>15</option>\n" +
+                        "                  <option>16</option>\n" +
+                        "                  <option>17</option>\n" +
+                        "                  <option>18</option>\n" +
+                        "                  <option>19</option>\n" +
+                        "               </select>\n" +
+                        "\t\t\t\t\t\n" +
+                        "            </fieldset>\n" +
+                        " \n" +
+                        "         </form>\n" +
+                        " \n" +
+                        "      </div>\n" +
+                        "   </body>\n" +
+                        "</html>",
+                ""
+        );
+        final LearnDetailsModel l10 = new LearnDetailsModel(
+                "Widget Slider",
+                "The Widget Slider function can be used with widgets in JqueryUI.The slider is horizontal and has a single handle that can be moved with the mouse or by using the arrow keys.\n" +
+                        "\n" +
+                        "Syntax\n" +
+                        "Here is the simple syntax to use Slider −\n" +
+                        "\n" +
+                        "$(\"#slider\").slider();\n" +
+                        "Example\n" +
+                        "Following is a simple example showing the usage of Slider −",
+                "<!doctype html>\n" +
+                        "<html lang = \"en\">\n" +
+                        "   <head>\n" +
+                        "      <meta charset = \"utf-8\">\n" +
+                        "      <title>jQuery UI Slider - Default functionality</title>\n" +
+                        "\t\t\n" +
+                        "      <link rel = \"stylesheet\" \n" +
+                        "         href = \"//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css\">\n" +
+                        "\t\t\t\n" +
+                        "      <script type = \"text/javascript\" \n" +
+                        "         src = \"https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js\">\n" +
+                        "      </script>\n" +
+                        "\t\t\n" +
+                        "      <script type = \"text/javascript\" \n" +
+                        "         src = \"https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js\">\n" +
+                        "      </script>\n" +
+                        "\n" +
+                        "      <script>\n" +
+                        "         $(function() {\n" +
+                        "            $( \"#slider\" ).slider();\n" +
+                        "         });\n" +
+                        "      </script>\n" +
+                        "   </head>\n" +
+                        "\n" +
+                        "   <body>\n" +
+                        "      <div id = \"slider\"></div>\n" +
+                        "   </body>\n" +
+                        "</html>",
+                ""
+        );
+        final LearnDetailsModel l11 = new LearnDetailsModel(
+                "Widget Spinner",
+                "The Widget Spinner function can be used with widgets in JqueryUI.Spinner provide a quick way to select one value from a set.\n" +
+                        "\n" +
+                        "Syntax\n" +
+                        "Here is the simple syntax to use Spinner −\n" +
+                        "\n" +
+                        "$( \"#menu\" ).selectmenu();\n" +
+                        "Example\n" +
+                        "Following is a simple example showing the usage of Spinner −",
+                "<!doctype html>\n" +
+                        "<html lang = \"en\">\n" +
+                        "   <head>\n" +
+                        "      <meta charset = \"utf-8\">\n" +
+                        "      <title>jQuery UI Spinner - Default functionality</title>\n" +
+                        "\t\t\n" +
+                        "      <link rel = \"stylesheet\" \n" +
+                        "         href = \"//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css\">\n" +
+                        "\t\t\t\n" +
+                        "      <script src = \"//code.jquery.com/jquery-1.10.2.js\">\n" +
+                        "      </script>\n" +
+                        "      <script \n" +
+                        "         src = \"/resources/demos/external/jquery-mousewheel/jquery.mousewheel.js\">\n" +
+                        "      </script>\n" +
+                        "      <script src = \"//code.jquery.com/ui/1.11.4/jquery-ui.js\">\n" +
+                        "      </script>\n" +
+                        "\n" +
+                        "      <script>\n" +
+                        "         $(function() {\n" +
+                        "\t\t\t\n" +
+                        "            var spinner = $( \"#spinner\" ).spinner();\n" +
+                        " \n" +
+                        "            $( \"#disable\" ).click(function() {\n" +
+                        "               if ( spinner.spinner( \"option\", \"disabled\" ) ) {\n" +
+                        "                  spinner.spinner( \"enable\" );\n" +
+                        "               } else {\n" +
+                        "                  spinner.spinner( \"disable\" );\n" +
+                        "               }\n" +
+                        "            });\n" +
+                        "\t\t\t\t\n" +
+                        "            $( \"#destroy\" ).click(function() {\n" +
+                        "               if ( spinner.spinner( \"instance\" ) ) {\n" +
+                        "                  spinner.spinner( \"destroy\" );\n" +
+                        "               } else {\n" +
+                        "                  spinner.spinner();\n" +
+                        "               }\n" +
+                        "            });\n" +
+                        "\t\t\t\t\n" +
+                        "            $( \"#getvalue\" ).click(function() {\n" +
+                        "               alert( spinner.spinner( \"value\" ) );\n" +
+                        "            });\n" +
+                        "\t\t\t\t\n" +
+                        "            $( \"#setvalue\" ).click(function() {\n" +
+                        "               spinner.spinner( \"value\", 5 );\n" +
+                        "            });\n" +
+                        " \n" +
+                        "            $( \"button\" ).button();\n" +
+                        "\t\t\t\t\n" +
+                        "         });\n" +
+                        "      </script>\n" +
+                        "   </head>\n" +
+                        "\n" +
+                        "   <body>\n" +
+                        "      <p>\n" +
+                        "         <label for = \"spinner\">Select a value:</label>\n" +
+                        "         <input id = \"spinner\" name = \"value\">\n" +
+                        "      </p>\n" +
+                        "   </body>\n" +
+                        "</html>",
+                ""
+        );
+        final LearnDetailsModel l12 = new LearnDetailsModel(
+                "Widget Tab",
+                "The Widget Tab function can be used with widgets in JqueryUI.tab is used to swap between content that is broken into logical sections.\n" +
+                        "\n" +
+                        "Syntax\n" +
+                        "Here is the simple syntax to use tab −\n" +
+                        "\n" +
+                        "$( \"#tabs\" ).tabs();\n" +
+                        "Example\n" +
+                        "Following is a simple example showing the usage of Tab −",
+                "<!doctype html>\n" +
+                        "<html lang = \"en\">\n" +
+                        "   <head>\n" +
+                        "      <meta charset = \"utf-8\">\n" +
+                        "      <title>jQuery UI Tabs - Default functionality</title>\n" +
+                        "\t\t\n" +
+                        "      <link rel = \"stylesheet\" \n" +
+                        "         href = \"//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css\">\n" +
+                        "\t\t\t\n" +
+                        "      <script type = \"text/javascript\" \n" +
+                        "         src = \"https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js\"></script>\n" +
+                        "\t\t\n" +
+                        "      <script type = \"text/javascript\" \n" +
+                        "         src = \"https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js\">\n" +
+                        "      </script>\n" +
+                        "  \n" +
+                        "      <script>\n" +
+                        "         $(function() {\n" +
+                        "            $( \"#tabs\" ).tabs();\n" +
+                        "         });\n" +
+                        "      </script>\n" +
+                        "   </head>\n" +
+                        "\t\n" +
+                        "   <body>\n" +
+                        "      <div id = \"tabs\">\n" +
+                        "        <ul>\n" +
+                        "            <li><a href = \"#tabs-1\">Android</a></li>\n" +
+                        "            <li><a href = \"#tabs-2\">CSS</a></li>\n" +
+                        "            <li><a href = \"#tabs-3\">AngularJS</a></li>\n" +
+                        "         </ul>\n" +
+                        "\t\t\t\n" +
+                        "         <div id = \"tabs-1\">\n" +
+                        "            <p>Android is an open source and Linux-based operating system \n" +
+                        "               for mobile devices such as smartphones and tablet computers. \n" +
+                        "               Android was developed by the Open Handset Alliance, led by Google, \n" +
+                        "               and other companies.</p>\n" +
+                        "         </div>\n" +
+                        "\t\t\t\n" +
+                        "         <div id = \"tabs-2\">\n" +
+                        "            <p>CSS is the acronym for \"Cascading Style Sheet\". This\n" +
+                        "               tutorial covers both the versions CSS1,CSS2 and CSS3, and gives a\n" +
+                        "               complete understanding of CSS,starting from its basics to advanced \n" +
+                        "               concepts.</p>\n" +
+                        "         </div>\n" +
+                        "\t\t\t\n" +
+                        "         <div id = \"tabs-3\">\n" +
+                        "            <p>AngularJS is a very powerful JavaScript library. It is used\n" +
+                        "               in Single Page Application (SPA) projects. It extends HTML DOM \n" +
+                        "               with additional attributes and makes it more responsive to user \n" +
+                        "               actions. AngularJS is open source,completely free, and used by\n" +
+                        "               thousands of developers around the world. It is licensed under \n" +
+                        "               the Apache license version 2.0.</p>\n" +
+                        "         </div>\n" +
+                        "      </div>\n" +
+                        "   </body>\n" +
+                        "</html>",
+                ""
+        );final LearnDetailsModel l13 = new LearnDetailsModel(
+                "Widget Tooltip",
+                "The Widget Tooltip function can be used with widgets in JqueryUI.Tooltip is used to show the tips.A sample example of tooltip as shown below.\n" +
+                        "\n" +
+                        "Syntax\n" +
+                        "Here is the simple syntax to use Tooltip −\n" +
+                        "\n" +
+                        "$( document ).tooltip();\n" +
+                        "Example\n" +
+                        "Following is a simple example showing the usage of Tooltip −",
+                "<!doctype html>\n" +
+                        "<html lang = \"en\">\n" +
+                        "   <head>\n" +
+                        "      <meta charset = \"utf-8\">\n" +
+                        "      <title>jQuery UI Tooltip - Default functionality</title>\n" +
+                        "\t\t\n" +
+                        "      <link rel = \"stylesheet\" \n" +
+                        "         href = \"//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css\">\n" +
+                        "\t\t\t\n" +
+                        "      <script src = \"//code.jquery.com/jquery-1.10.2.js\">\n" +
+                        "      </script>\n" +
+                        "      <script src = \"//code.jquery.com/ui/1.11.4/jquery-ui.js\">\n" +
+                        "      </script>\n" +
+                        "\t\t\n" +
+                        "      <script>\n" +
+                        "         $(function() {\n" +
+                        "            $( document ).tooltip();\n" +
+                        "         });\n" +
+                        "      </script>\n" +
+                        "\t\t\n" +
+                        "      <style>\n" +
+                        "         label {\n" +
+                        "            display: inline-block;\n" +
+                        "            width: 15em;\n" +
+                        "         }\n" +
+                        "      </style>\n" +
+                        "   </head>\n" +
+                        "\n" +
+                        "   <body>\n" +
+                        "      <p><a href = \"#\" title = \"SHR Creation Bangladesh Pvt ltd\">\n" +
+                        "         SHR Creation</a> Free tutorials and reference manuals with\n" +
+                        "         examples for Concordion, 5G, JBPM5, SAP, Agile, SVG, Web Icons, KDB+,\n" +
+                        "         Web Analytics, Google Maps, Joomla, Self</p>\n" +
+                        "\t\t\t\n" +
+                        "      <p><a href = \"https://www.tutorialspoint.com/jquery/index.htm\"\n" +
+                        "         title = \"J Query tutorials\"> J Query</a> is a fast and \n" +
+                        "         concise JavaScript library created by John Resig in 2006. \n" +
+                        "         jQuery simplifies HTML document traversing, event handling,  \n" +
+                        "         animating, and Ajax interactions for Rapid Web Development.</p>\n" +
+                        "\t\t\t\n" +
+                        "      <p><label for = \"age\">your tutorials details</label>\n" +
+                        "         <input id = \"age\" title = \"Please enter your tutorial name. \n" +
+                        "         We will search in our data base\"></p>\n" +
+                        "   </body>\n" +
+                        "</html>",
+                ""
+        );
+        list.add(l1);
+        list.add(l2);
+        list.add(l3);
+        list.add(l4);
+        list.add(l5);
+        list.add(l6);
+        list.add(l7);
+        list.add(l8);
+        list.add(l9);
+        list.add(l10);
+        list.add(l11);
+        list.add(l12);
+        list.add(l13);
+        return list;
+    }
+    //jQuery Theming
+    private static List<LearnDetailsModel> jQueryTheming(){
+        final List<LearnDetailsModel> list = new ArrayList<>();
+        final LearnDetailsModel l1 = new LearnDetailsModel(
+                "Theming",
+                "Jquery has two different styling themes as A And B.Each with different colors for buttons, bars, content blocks, and so on.\n" +
+                        "\n" +
+                        "The syntax of J query theming as shown below −\n" +
+                        "\n" +
+                        "<div data-role = \"page\" data-theme = \"a|b\">\n" +
+                        "A Simple of A theming Example as shown below −",
+                "<!DOCTYPE html>\n" +
+                        "<html>\n" +
+                        "   <head>\n" +
+                        "      <meta name = \"viewport\" content = \"width = device-width, initial-scale = 1\">\n" +
+                        "      <link rel = \"stylesheet\" \n" +
+                        "         href = \"https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css\">\n" +
+                        "\t\t\t\n" +
+                        "      <script src = \"https://code.jquery.com/jquery-1.11.3.min.js\">\n" +
+                        "      </script>\n" +
+                        "      <script src = \"https://code.jquery.com/jquery-1.11.3.min.js\">\n" +
+                        "      </script>\n" +
+                        "      <script \n" +
+                        "         src = \"https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js\">\n" +
+                        "      </script>\n" +
+                        "   </head>\n" +
+                        "\t\n" +
+                        "   <body>\n" +
+                        "      <div data-role = \"page\" id = \"pageone\" data-theme = \"a\">\n" +
+                        "        <div data-role = \"header\">\n" +
+                        "            <h1>SHR Creation</h1>\n" +
+                        "         </div>\n" +
+                        "\n" +
+                        "         <div data-role = \"main\" class = \"ui-content\">\n" +
+                        "\t\t\t\n" +
+                        "            <p>Text link</p>\n" +
+                        "            <a href = \"#\">A Standard Text Link</a>\n" +
+                        "            <a href = \"#\" class = \"ui-btn\">Link Button</a>\n" +
+                        "            <p>A List View:</p>\n" +
+                        "\t\t\t\t\n" +
+                        "            <ul data-role = \"listview\" data-autodividers = \"true\" data-inset = \"true\">\n" +
+                        "               <li><a href = \"#\">Android </a></li>\n" +
+                        "               <li><a href = \"#\">IOS</a></li>\n" +
+                        "            </ul>\n" +
+                        "\t\t\t\t\n" +
+                        "            <label for = \"fullname\">Input Field:</label>\n" +
+                        "            <input type = \"text\" name = \"fullname\" id = \"fullname\" \n" +
+                        "               placeholder = \"Name..\">    \n" +
+                        "            <label for = \"switch\">Toggle Switch:</label>\n" +
+                        "\t\t\t\t\n" +
+                        "            <select name = \"switch\" id = \"switch\" data-role = \"slider\">\n" +
+                        "               <option value = \"on\">On</option>\n" +
+                        "               <option value = \"off\" selected>Off</option>\n" +
+                        "            </select>\n" +
+                        "\t\t\t\t\n" +
+                        "         </div>\n" +
+                        "\n" +
+                        "         <div data-role = \"footer\">\n" +
+                        "            <h1>SHR Creation</h1>\n" +
+                        "         </div>\n" +
+                        "      </div>\n" +
+                        "   </body>\n" +
+                        "</html>",
+                ""
+        );
+        final LearnDetailsModel l2 = new LearnDetailsModel(
+                "B Theme",
+                "A Simple of B theming Example as shown below −",
+                "<!DOCTYPE html>\n" +
+                        "<html>\n" +
+                        "   <head>\n" +
+                        "      <meta name = \"viewport\" content = \"width = device-width, initial-scale = 1\">\n" +
+                        "      <link rel = \"stylesheet\" \n" +
+                        "         href = \"https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css\">\n" +
+                        "      <script src = \"https://code.jquery.com/jquery-1.11.3.min.js\">\n" +
+                        "      </script>\n" +
+                        "      <script src = \"https://code.jquery.com/jquery-1.11.3.min.js\">\n" +
+                        "      </script>\n" +
+                        "      <script \n" +
+                        "         src = \"https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js\">\n" +
+                        "      </script>\n" +
+                        "   </head>\n" +
+                        "\t\n" +
+                        "   <body>\n" +
+                        "      <div data-role = \"page\" id = \"pageone\" data-theme = \"b\">\n" +
+                        "        <div data-role = \"header\">\n" +
+                        "            <h1>SHR Creation</h1>\n" +
+                        "         </div>\n" +
+                        "\n" +
+                        "         <div data-role = \"main\" class = \"ui-content\">\n" +
+                        "            <p>Text link</p>\n" +
+                        "            <a href = \"#\">A Standard Text Link</a>\n" +
+                        "            <a href = \"#\" class = \"ui-btn\">Link Button</a>\n" +
+                        "            <p>A List View:</p>\n" +
+                        "\t\t\t\t\n" +
+                        "            <ul data-role = \"listview\" data-autodividers = \"true\" data-inset = \"true\">\n" +
+                        "               <li><a href = \"#\">Android </a></li>\n" +
+                        "               <li><a href = \"#\">IOS</a></li>\n" +
+                        "            </ul>\n" +
+                        "\t\t\t\t\n" +
+                        "            <label for = \"fullname\">Input Field:</label>\n" +
+                        "            <input type = \"text\" name = \"fullname\" id = \"fullname\" \n" +
+                        "               placeholder = \"Name..\">    \n" +
+                        "            <label for = \"switch\">Toggle Switch:</label>\n" +
+                        "\t\t\t\t\n" +
+                        "            <select name = \"switch\" id = \"switch\" data-role = \"slider\">\n" +
+                        "               <option value = \"on\">On</option>\n" +
+                        "               <option value = \"off\" selected>Off</option>\n" +
+                        "            </select>\n" +
+                        "\t\t\t\t\n" +
+                        "         </div>\n" +
+                        "\n" +
+                        "         <div data-role = \"footer\">\n" +
+                        "            <h1>SHR Creation</h1>\n" +
+                        "         </div>\n" +
+                        "      </div>\n" +
+                        "   </body>\n" +
+                        "</html>",
+                ""
+        );
+        list.add(l1);
+        list.add(l2);
+        return list;
+    }
+    //jQuery Utilities
+    private static List<LearnDetailsModel> jQueryUtilities(){
+        final List<LearnDetailsModel> list = new ArrayList<>();
+        final LearnDetailsModel l1 = new LearnDetailsModel(
+                "Utilities",
+                "Jquery provides several utilities in the format of $(name space). These methods are helpful to complete the programming tasks.a few of the utility methods are as show below.",
+                "",
+                ""
+        );
+        final LearnDetailsModel l2 = new LearnDetailsModel(
+                "$.trim()",
+                "$.trim() is used to Removes leading and trailing whitespace",
+                "$.trim( \"    lots of extra whitespace    \" );",
+                ""
+        );
+        final LearnDetailsModel l3 = new LearnDetailsModel(
+                "$.each()",
+                "$.each() is used to Iterates over arrays and objects" +
+                        "\n\n" +
+                        ".each() can be called on a selection to iterate over the elements contained in the selection. .each(), not $.each(), should be used for iterating over elements in a selection.",
+                "$.each([ \"foo\", \"bar\", \"baz\" ], function( idx, val ) {\n" +
+                        "   console.log( \"element \" + idx + \" is \" + val );\n" +
+                        "});\n" +
+                        " \n" +
+                        "$.each({ foo: \"bar\", baz: \"bim\" }, function( k, v ) {\n" +
+                        "   console.log( k + \" : \" + v );\n" +
+                        "});",
+                ""
+        );
+        final LearnDetailsModel l4 = new LearnDetailsModel(
+                "$.inArray()",
+                "$.inArray() is used to Returns a value's index in an array, or -1 if the value is not in the array.",
+                "var myArray = [ 1, 2, 3, 5 ];\n" +
+                        " \n" +
+                        "if ( $.inArray( 4, myArray ) !== -1 ) {\n" +
+                        "   console.log( \"found it!\" );\n" +
+                        "}",
+                ""
+        );
+        final LearnDetailsModel l5 = new LearnDetailsModel(
+                "$.extend()",
+                "$.extend() is used to Changes the properties of the first object using the properties of subsequent objects.",
+                "var firstObject = { foo: \"bar\", a: \"b\" };\n" +
+                        "var secondObject = { foo: \"baz\" };\n" +
+                        " \n" +
+                        "var newObject = $.extend( firstObject, secondObject );\n" +
+                        " \n" +
+                        "console.log( firstObject.foo ); \n" +
+                        "console.log( newObject.foo );",
+                ""
+        );
+        final LearnDetailsModel l6 = new LearnDetailsModel(
+                "$.proxy()",
+                "$.proxy() is used to Returns a function that will always run in the provided scope — that is, sets the meaning of this inside the passed function to the second argument",
+                "var myFunction = function() {\n" +
+                        "   console.log( this );\n" +
+                        "};\n" +
+                        "\n" +
+                        "var myObject = {\n" +
+                        "   foo: \"bar\"\n" +
+                        "};\n" +
+                        " \n" +
+                        "myFunction(); // window\n" +
+                        " \n" +
+                        "var myProxyFunction = $.proxy( myFunction, myObject );\n" +
+                        " \n" +
+                        "myProxyFunction();",
+                ""
+        );
+        final LearnDetailsModel l7 = new LearnDetailsModel(
+                "$.browser",
+                "$.browser is used to give the information about browsers",
+                "jQuery.each( jQuery.browser, function( i, val ) {\n" +
+                        "   $( \"<div>\" + i + \" : <span>\" + val + \"</span>\" )\n" +
+                        "   .appendTo( document.body );\n" +
+                        "});",
+                ""
+        );
+        final LearnDetailsModel l8 = new LearnDetailsModel(
+                "$.contains()",
+                "$.contains() is used to returns true if the DOM element provided by the second argument is a descendant of the DOM element provided by the first argument, whether it is a direct child or nested more deeply.",
+                "$.contains( document.documentElement, document.body );\n" +
+                        "$.contains( document.body, document.documentElement );",
+                ""
+        );
+        final LearnDetailsModel l9 = new LearnDetailsModel(
+                "$.data()",
+                "$.data() is used to give the information about data",
+                "<html lang = \"en\">\n" +
+                        "   <head>\n" +
+                        "      <title>jQuery.data demo</title>\n" +
+                        "      <script src = \"https://code.jquery.com/jquery-1.10.2.js\">\n" +
+                        "      </script>\n" +
+                        "   </head>\n" +
+                        "\t\n" +
+                        "   <body>\n" +
+                        "      <div>\n" +
+                        "         The values stored were <span></span>\n" +
+                        "            and <span></span>\n" +
+                        "      </div>\n" +
+                        " \n" +
+                        "      <script>\n" +
+                        "         var div = $( \"div\" )[ 0 ];\n" +
+                        "\t\t\t\n" +
+                        "         jQuery.data( div, \"test\", {\n" +
+                        "            first: 25,\n" +
+                        "            last: \"tutorials\"\n" +
+                        "         });\n" +
+                        "\t\t\t\n" +
+                        "         $( \"span:first\" ).text( jQuery.data( div, \"test\" ).first );\n" +
+                        "         $( \"span:last\" ).text( jQuery.data( div, \"test\" ).last );\n" +
+                        "      </script>\n" +
+                        "   </body>\n" +
+                        "</html>",
+                "The values stored were 25 and tutorials"
+        );
+        final LearnDetailsModel l10 = new LearnDetailsModel(
+                "$.fn.extend()",
+                "$.fn.extend() is used to extends the jQuery prototype",
+                "<html lang = \"en\">\n" +
+                        "   <head>\n" +
+                        "      <script src = \"https://code.jquery.com/jquery-1.10.2.js\">\n" +
+                        "      </script>\n" +
+                        "   </head>\n" +
+                        "\t\n" +
+                        "   <body>\n" +
+                        "      <label><input type = \"checkbox\" name = \"android\"> \n" +
+                        "         Android</label>\n" +
+                        "      <label><input type = \"checkbox\" name = \"ios\"> IOS</label>\n" +
+                        " \n" +
+                        "      <script>\n" +
+                        "         jQuery.fn.extend({\n" +
+                        "\t\t\t\n" +
+                        "            check: function() {\n" +
+                        "               return this.each(function() {\n" +
+                        "                  this.checked = true;\n" +
+                        "               });\n" +
+                        "            },\n" +
+                        "            uncheck: function() {\n" +
+                        "               return this.each(function() {\n" +
+                        "                  this.checked = false;\n" +
+                        "               });\n" +
+                        "            }\n" +
+                        "         });\n" +
+                        " \n" +
+                        "         // Use the newly created .check() method\n" +
+                        "         $( \"input[type = 'checkbox']\" ).check();\n" +
+                        "\t\t\t\n" +
+                        "      </script>\n" +
+                        "   </body>\n" +
+                        "</html>",
+                ""
+        );
+        final LearnDetailsModel l11 = new LearnDetailsModel(
+                "$.isWindow()",
+                "$.isWindow() is used to recognise the window",
+                "<!doctype html>\n" +
+                        "<html lang = \"en\">\n" +
+                        "   <head>\n" +
+                        "      <meta charset = \"utf-8\">\n" +
+                        "      <title>jQuery.isWindow demo</title>\n" +
+                        "      <script src = \"https://code.jquery.com/jquery-1.10.2.js\">\n" +
+                        "      </script>\n" +
+                        "   </head>\n" +
+                        "\t\n" +
+                        "   <body>\n" +
+                        "      Is 'window' a window? <b></b>\n" +
+                        " \n" +
+                        "      <script>\n" +
+                        "         $( \"b\" ).append( \"\" + $.isWindow( window ) );\n" +
+                        "      </script>\n" +
+                        "   </body>\n" +
+                        "</html>",
+                ""
+        );
+        final LearnDetailsModel l12 = new LearnDetailsModel(
+                "$.now()",
+                "It returns a number which is representing the current time",
+                "(new Date).getTime()",
+                ""
+        );
+        final LearnDetailsModel l13 = new LearnDetailsModel(
+                "$.isXMLDoc()",
+                "$.isXMLDoc() checks whether a file is an xml or not",
+                "jQuery.isXMLDoc( document )\n" +
+                        "jQuery.isXMLDoc( document.body )",
+                ""
+        );
+        final LearnDetailsModel l14 = new LearnDetailsModel(
+                "$.globalEval()",
+                "$.globalEval() is used to execute the javascript globally",
+                "function test() {\n" +
+                        "   jQuery.globalEval( \"var newVar = true;\" )\n" +
+                        "}\n" +
+                        "test();",
+                ""
+        );
+        final LearnDetailsModel l15 = new LearnDetailsModel(
+                "$.dequeue()",
+                "$.dequeue() is used to execute the next function in the queue",
+                "<!doctype html>\n" +
+                        "<html lang = \"en\">\n" +
+                        "   <head>\n" +
+                        "      <meta charset = \"utf-8\">\n" +
+                        "      <title>jQuery.dequeue demo</title>\n" +
+                        "\t\t\n" +
+                        "      <style>\n" +
+                        "         div {\n" +
+                        "            margin: 3px;\n" +
+                        "            width: 50px;\n" +
+                        "            position: absolute;\n" +
+                        "            height: 50px;\n" +
+                        "            left: 10px;\n" +
+                        "            top: 30px;\n" +
+                        "            background-color: green;\n" +
+                        "            border-radius: 50px;\n" +
+                        "         }\n" +
+                        "         div.red {\n" +
+                        "            background-color: blue;\n" +
+                        "         }\n" +
+                        "      </style>\n" +
+                        "\t\t\n" +
+                        "      <script src = \"https://code.jquery.com/jquery-1.10.2.js\"></script>\n" +
+                        "   </head>\n" +
+                        "\n" +
+                        "   <body>\n" +
+                        "      <button>Start</button>\n" +
+                        "      <div></div>\n" +
+                        " \n" +
+                        "      <script>\n" +
+                        "         $( \"button\" ).click(function() {\n" +
+                        "            $( \"div\" )\n" +
+                        "            .animate({ left: '+ = 400px' }, 2000 )\n" +
+                        "            .animate({ top: '0px' }, 600 )\n" +
+                        "\t\t\t\t\n" +
+                        "            .queue(function() {\n" +
+                        "               $( this ).toggleClass( \"red\" );\n" +
+                        "               $.dequeue( this );\n" +
+                        "            })\n" +
+                        "\t\t\t\t\n" +
+                        "            .animate({ left:'10px', top:'30px' }, 700 );\n" +
+                        "         });\n" +
+                        "      </script>\n" +
+                        "   </body>\n" +
+                        "</html>",
+                ""
+        );
+        list.add(l1);
+        list.add(l2);
+        list.add(l3);
+        list.add(l4);
+        list.add(l5);
+        list.add(l6);
+        list.add(l7);
+        list.add(l8);
+        list.add(l9);
+        list.add(l10);
+        list.add(l11);
+        list.add(l12);
+        list.add(l13);
+        list.add(l14);
+        list.add(l15);
+        return list;
+    }
+    //jQuery Plugins
+    private static List<LearnDetailsModel> jQueryPlugins(){
+        final List<LearnDetailsModel> list = new ArrayList<>();
+        final LearnDetailsModel l1 = new LearnDetailsModel(
+                "Plugins",
+                "A plug-in is piece of code written in a standard JavaScript file. These files provide useful jQuery methods which can be used along with jQuery library methods.\n" +
+                        "\n" +
+                        "There are plenty of jQuery plug-in available which you can download from repository link at https://jquery.com/plugins",
+                "",
+                ""
+        );
+        final LearnDetailsModel l2 = new LearnDetailsModel(
+                "How to use Plugins",
+                "To make a plug-in's methods available to us, we include plug-in file very similar to jQuery library file in the <head> of the document.\n" +
+                        "\n" +
+                        "We must ensure that it appears after the main jQuery source file, and before our custom JavaScript code.\n" +
+                        "\n" +
+                        "Following example shows how to include jquery.plug-in.js plugin −",
+                "<html>\n" +
+                        "   <head>\n" +
+                        "      <title>The jQuery Example</title>\n" +
+                        "\t\t\n" +
+                        "      <script type = \"text/javascript\" \n" +
+                        "         src = \"https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js\">\n" +
+                        "      </script>\n" +
+                        "\n" +
+                        "      <script src = \"jquery.plug-in.js\" type = \"text/javascript\"></script>\n" +
+                        "      <script src = \"custom.js\" type = \"text/javascript\"></script>\n" +
+                        "      \n" +
+                        "      <script type = \"text/javascript\" language = \"javascript\">\n" +
+                        "         $(document).ready(function() {\n" +
+                        "            .......your custom code.....\n" +
+                        "         });\n" +
+                        "      </script>\n" +
+                        "   </head>\n" +
+                        "\t\n" +
+                        "   <body>\n" +
+                        "      .............................\n" +
+                        "   </body>\n" +
+                        "</html>",
+                ""
+        );
+        final LearnDetailsModel l3 = new LearnDetailsModel(
+                "How to develop a Plug-in?",
+                "This is very simple to write your own plug-in. Following is the syntax to create a a method −\n" +
+                        "\n" +
+                        "jQuery.fn.methodName = methodDefinition;\n" +
+                        "Here methodNameM is the name of new method and methodDefinition is actual method definition.\n" +
+                        "\n" +
+                        "The guideline recommended by the jQuery team is as follows −\n" +
+                        "\n" +
+                        "Any methods or functions you attach must have a semicolon (;) at the end.\n" +
+                        "\n" +
+                        "Your method must return the jQuery object, unless explicitly noted otherwise.\n" +
+                        "\n" +
+                        "You should use this.each to iterate over the current set of matched elements - it produces clean and compatible code that way.\n" +
+                        "\n" +
+                        "Prefix the filename with jquery, follow that with the name of the plugin and conclude with .js.\n" +
+                        "\n" +
+                        "Always attach the plugin to jQuery directly instead of $, so users can use a custom alias via noConflict() method.\n" +
+                        "\n" +
+                        "For example, if we write a plugin that we want to name debug, our JavaScript filename for this plugin is −\n" +
+                        "\n" +
+                        "jquery.debug.js\n" +
+                        "The use of the jquery. prefix eliminates any possible name collisions with files intended for use with other libraries.\n" +
+                        "\n" +
+                        "Example\n" +
+                        "Following is a small plug-in to have warning method for debugging purpose. Keep this code in jquery.debug.js file −" +
+                        "\n\n" +
+                        "jQuery.fn.warning = function() {\n" +
+                        "   return this.each(function() {\n" +
+                        "      alert('Tag Name:\"' + $(this).prop(\"tagName\") + '\".');\n" +
+                        "   });\n" +
+                        "};",
+                "<html>\n" +
+                        "   <head>\n" +
+                        "      <title>The jQuery Example</title>\n" +
+                        "\t\t\n" +
+                        "      <script type = \"text/javascript\" \n" +
+                        "         src = \"https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js\">\n" +
+                        "      </script>\n" +
+                        "\t\t\n" +
+                        "      <script src = \"jquery.debug.js\" type = \"text/javascript\">\n" +
+                        "      </script>\n" +
+                        "\n" +
+                        "      <script type = \"text/javascript\" language = \"javascript\">\n" +
+                        "         $(document).ready(function() {\n" +
+                        "            $(\"div\").warning();\n" +
+                        "            $(\"p\").warning();\n" +
+                        "         });\n" +
+                        "      </script>\t\n" +
+                        "   </head>\n" +
+                        "\t\n" +
+                        "   <body>\n" +
+                        "      <p>This is paragraph</p>\n" +
+                        "      <div>This is division</div>\n" +
+                        "   </body>\n" +
+                        "</html>",
+                "This is paragraph\n" +
+                        "This is division"
+        );
+        final LearnDetailsModel l4 = new LearnDetailsModel(
+                "Page Pilling",
+                "pagePiling.js is a jQuery plug-in for 'piling' your layout sections over one another and accessing them by scrolling.\n" +
+                        "\n" +
+                        "A Simple of theming example as shown below −",
+                "<!DOCTYPE html>\n" +
+                        "<html xmlns = \"https://www.w3.org/1999/xhtml\">\n" +
+                        "   <head>\n" +
+                        "      <meta http-equiv = \"Content-Type\" content = \"text/html; charset = utf-8\" />\n" +
+                        "      <link rel = \"stylesheet\" type = \"text/css\" \n" +
+                        "         href = \"https://fonts.googleapis.com/css?family=Lato:300,400,700\" />\n" +
+                        "\t\t\t\n" +
+                        "      <link rel = \"stylesheet\" type = \"text/css\" \n" +
+                        "         href = \"/jquery/src/pagepilling/jquery.pagepiling.css\" />\n" +
+                        "\t\t\t\n" +
+                        "      <link rel = \"stylesheet\" type = \"text/css\" \n" +
+                        "         href = \"/jquery/src/pagepilling/examples.css\" />\n" +
+                        "\n" +
+                        "      <script \n" +
+                        "         src = \"https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js\">\n" +
+                        "      </script>\n" +
+                        "\n" +
+                        "      <script type = \"text/javascript\" \n" +
+                        "         src = \"/jquery/src/pagepilling/jquery.pagepiling.min.js\">\n" +
+                        "      </script>\n" +
+                        "\t\t\n" +
+                        "      <script type = \"text/javascript\">\n" +
+                        "         $(document).ready(function() {\n" +
+                        "            $('#pagepiling').pagepiling({\n" +
+                        "               menu: '#menu',\n" +
+                        "               anchors: ['page1', 'page2', 'page3', 'page4'],\n" +
+                        "               sectionsColor: ['#bfda00', '#2ebe21', '#2C3E50', '#51bec4'],\n" +
+                        "\t\t\t\t\t\n" +
+                        "               navigation: {\n" +
+                        "                  'position': 'right',\n" +
+                        "                  'tooltips': ['Page 1', 'Page 2', 'Page 3', 'Pgae 4']\n" +
+                        "               },\n" +
+                        "               afterRender: function(){\n" +
+                        "                  //playing the video\n" +
+                        "                  $('video').get(0).play();\n" +
+                        "               }\n" +
+                        "            });\n" +
+                        "         });\n" +
+                        "      </script>\n" +
+                        "\n" +
+                        "      <style>\n" +
+                        "    \t   .section {\n" +
+                        "            text-align:center;\n" +
+                        "         }\n" +
+                        "         #myVideo {\n" +
+                        "            position: absolute;\n" +
+                        "            z-index: 4;\n" +
+                        "            right: 0;\n" +
+                        "\t\t\t\t\n" +
+                        "            bottom: 0;\n" +
+                        "            top:0;\n" +
+                        "            right:0;\n" +
+                        "            width: 100%;\n" +
+                        "            height: 100%;\n" +
+                        "\t\t\t\t\n" +
+                        "            background-size: 100% 100%;\n" +
+                        "            background-color: black; /* in case the video doesn't fit the whole page*/\n" +
+                        "            background-image: /* our video */;\n" +
+                        "            background-position: center center;\n" +
+                        "            background-size: contain;\n" +
+                        "            object-fit: cover; /*cover video background */\n" +
+                        "         }\n" +
+                        "         #section1 .layer {\n" +
+                        "            position: absolute;\n" +
+                        "            z-index: 5;\n" +
+                        "            width: 100%;\n" +
+                        "            left: 0;\n" +
+                        "            top: 43%;\n" +
+                        "            height: 100%;\n" +
+                        "         }\n" +
+                        "         #section1 h1 {\n" +
+                        "            color:#fff;\n" +
+                        "         }\n" +
+                        "         #infoMenu li a {\n" +
+                        "            color: #fff;\n" +
+                        "         }\n" +
+                        "      </style>\n" +
+                        "   </head>\n" +
+                        "\t\n" +
+                        "   <body>\n" +
+                        "      <ul id = \"menu\">\n" +
+                        "         <li data-menuanchor = \"page1\" class = \"active\">\n" +
+                        "            <a href = \"#page1\">Page 1</a></li>\n" +
+                        "         \n" +
+                        "         <li data-menuanchor = \"page2\"><a href = \"#page2\">\n" +
+                        "            Page 2</a></li>\n" +
+                        "         \n" +
+                        "         <li data-menuanchor = \"page3\"><a href = \"#page3\">\n" +
+                        "            Page 3</a></li>\n" +
+                        "      </ul>\n" +
+                        "\n" +
+                        "      <div id = \"pagepiling\">\n" +
+                        "        <div class = \"section\" id = \"section1\">\n" +
+                        "            <video autoplay loop muted id = \"myVideo\">\n" +
+                        "               <source src = \"imgs/flowers.mp4\" type = \"video/mp4\">\n" +
+                        "               <source src = \"imgs/flowers.webm\" type = \"video/webm\">\n" +
+                        "            </video>\n" +
+                        "         </div>\n" +
+                        "\t\t\t\n" +
+                        "         <div class = \"section\" id = \"section2\">\n" +
+                        "            <div class = \"intro\">\n" +
+                        "               <h1>No limits</h1>\n" +
+                        "               <p>Anything is possible with SHR Creation</p>\n" +
+                        "            </div>\n" +
+                        "         </div>\n" +
+                        "\t\t\t\n" +
+                        "         <div class = \"section\" id = \"section4\">\n" +
+                        "            <div class = \"intro\">\n" +
+                        "               <h1></h1>\n" +
+                        "               <p>Simple Easy Learning</p>\n" +
+                        "            </div>\n" +
+                        "         </div>\n" +
+                        "         \n" +
+                        "      </div>\n" +
+                        "   </body>\n" +
+                        "</html>",
+                ""
+        );
+        final LearnDetailsModel l5 = new LearnDetailsModel(
+                "Flickerplate",
+                "Flickerplate is a jQuery plugin for creating a slider which allows you cycle through images with animated arrows and dots navigation.\n" +
+                        "\n" +
+                        "A Simple of flickerplate example as shown below −",
+                "<!DOCTYPE html>\n" +
+                        "<html>\n" +
+                        "   <head>   \n" +
+                        "      <meta charset = \"utf-8\">\n" +
+                        "      <meta name = \"viewport\" content = \"width = device-width, \n" +
+                        "         initial-scale = 1.0, maximum-scale = 1.0, user-scalable = no\">    \n" +
+                        "\t\n" +
+                        "      <script src = \"/jquery/src/flickerplate/js/min/jquery-v1.10.2.min.js\" \n" +
+                        "         type = \"text/javascript\">\n" +
+                        "      </script>\n" +
+                        "\t\t\t\n" +
+                        "      <script src = \"/jquery/src/flickerplate/js/min/modernizr-custom-v2.7.1.min.js\" \n" +
+                        "         type = \"text/javascript\">\n" +
+                        "      </script>\n" +
+                        "\t\t\t\n" +
+                        "      <script src = \"/jquery/src/flickerplate/js/min/hammer-v2.0.3.min.js\"\n" +
+                        "         type = \"text/javascript\">\n" +
+                        "      </script>\n" +
+                        "\n" +
+                        "      <link href = \"/jquery/src/flickerplate/css/flickerplate.css\"  \n" +
+                        "         type = \"text/css\" rel = \"stylesheet\">\n" +
+                        "\t\t\t\n" +
+                        "      <script src = \"/jquery/src/flickerplate/js/min/flickerplate.min.js\" \n" +
+                        "         type = \"text/javascript\">\n" +
+                        "      </script>\t\n" +
+                        "\t\n" +
+                        "      <script>\n" +
+                        "         $(function(){\n" +
+                        "            $('.flicker-example').flickerplate({\n" +
+                        "               auto_flick        : true,\n" +
+                        "               auto_flick_delay  : 8,\n" +
+                        "               flick_animation   : 'transform-slide'\n" +
+                        "            });\n" +
+                        "         });\n" +
+                        "      </script>\n" +
+                        "\n" +
+                        "      <link href = \"/jquery/src/flickerplate/css/demo.css\"  \n" +
+                        "         type = \"text/css\" rel = \"stylesheet\">\n" +
+                        "   </head>\n" +
+                        "\t\n" +
+                        "   <body>\n" +
+                        "      <div class = \"flicker-example\">\n" +
+                        "         <ul>\n" +
+                        "            <li data-background = \"https://genblock.com/wp-content/uploads/2015\n" +
+                        "               /05/download-circles-abstract-wallpaper-\n" +
+                        "               abstract-photo-abstract-wallpaper.jpg\">\n" +
+                        "\t\t\t\t\t\n" +
+                        "               <img src = \"https://www.shrcreation.com/about/images/david.jpg\" \n" +
+                        "                  style = \"margin-left: 428px;\">\n" +
+                        "\t\t\t\t\t\t\n" +
+                        "               <div class = \"flick-title\">David</div>\n" +
+                        "\t\t\t\t\t\n" +
+                        "               <div class = \"flick-sub-text\">\n" +
+                        "                  Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source.\n" +
+                        "               </div>\n" +
+                        "\t\t\t\t\t\n" +
+                        "            </li>\n" +
+                        "            <li data-background = \"https://genblock.com/wp-content/uploads/2015\n" +
+                        "               /05/download-circles-abstract-wallpaper-\n" +
+                        "               abstract-photo-abstract-wallpaper.jpg\">\n" +
+                        "\t\t\t\t\t\n" +
+                        "               <img src = \"https://www.shrcreation.com/about/images/lucy.jpg\" \n" +
+                        "                  style = \"margin-left: 428px;\">\n" +
+                        "\t\t\t\t\t\t\n" +
+                        "               <div class = \"flick-title\">Lucy</div>\n" +
+                        "\t\t\t\t\t\n" +
+                        "               <div class = \"flick-sub-text\">\n" +
+                        "                  Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source.\n" +
+                        "               </div>\n" +
+                        "            </li>\n" +
+                        "            <li data-background = \"https://genblock.com/wp-content/uploads/2015\n" +
+                        "               /05/download-circles-abstract-wallpaper-\n" +
+                        "               abstract-photo-abstract-wallpaper.jpg\">\n" +
+                        "\t\t\t\t\t\n" +
+                        "               <img src = \"https://www.shrcreation.com/about/images/emma.jpg\" \n" +
+                        "                  style = \"margin-left: 428px;\">\n" +
+                        "\t\t\t\t\t\t\n" +
+                        "               <div class = \"flick-title\">Emma</div>\n" +
+                        "\t\t\t\t\t\n" +
+                        "               <div class = \"flick-sub-text\">\n" +
+                        "                  Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source.\n" +
+                        "               </div>\n" +
+                        "            </li>\n" +
+                        "         </ul>\n" +
+                        "      </div>\n" +
+                        "      \n" +
+                        "   </body>\n" +
+                        "</html>",
+                ""
+        );
+        final LearnDetailsModel l6 = new LearnDetailsModel(
+                "Multiscroll",
+                "multiscroll.js is a jQuery plugin for creating split pages with two vertical scrolling panels.\n" +
+                        "\n" +
+                        "A Simple of multiscroll example as shown below −",
+                "<!DOCTYPE html>\n" +
+                        "<html xmlns = \"https://www.w3.org/1999/xhtml\">\n" +
+                        "   <head>\n" +
+                        "      <meta http-equiv = \"Content-Type\" content = \"text/html; charset = utf-8\" />\t\n" +
+                        "      <title>multiscroll.js - split multi-scrolling pages plugin</title>\n" +
+                        "\t\t\n" +
+                        "      <link rel = \"stylesheet\" type = \"text/css\" \n" +
+                        "         href = \"/jquery/src/multiscroller/jquery.multiscroll.css\" />\t\t\n" +
+                        "      <link rel = \"stylesheet\" type = \"text/css\" \n" +
+                        "         href = \"/jquery/src/multiscroller/examples.css\" />\t\n" +
+                        "\t\t\t\n" +
+                        "      <script \n" +
+                        "         src = \"https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js\">\n" +
+                        "      </script>\n" +
+                        "      <script type = \"text/javascript\" \n" +
+                        "         src = \"/jquery/src/multiscroller/jquery.easings.min.js\">\n" +
+                        "      </script>\n" +
+                        "      <script type = \"text/javascript\" \n" +
+                        "         src = \"/jquery/src/multiscroller/jquery.multiscroll.js\">\n" +
+                        "      </script>\n" +
+                        "\n" +
+                        "      <script type = \"text/javascript\">\n" +
+                        "         $(document).ready(function() {\n" +
+                        "            $('#myContainer').multiscroll({\n" +
+                        "               sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE'],\n" +
+                        "               anchors: ['first', 'second', 'third'],\n" +
+                        "               menu: '#menu',\n" +
+                        "               navigation: true,\n" +
+                        "               navigationTooltips: ['One', 'Two', 'Three'],\n" +
+                        "               loopBottom: true,\n" +
+                        "               loopTop: true\n" +
+                        "            });\n" +
+                        "         });\n" +
+                        "      </script>\n" +
+                        "   </head>\n" +
+                        "\t\n" +
+                        "   <body>\n" +
+                        "      <ul id = \"menu\">\n" +
+                        "         <li data-menuanchor = \"first\"><a href = \"#first\">First slide</a></li>\n" +
+                        "         <li data-menuanchor = \"second\"><a href = \"#second\">Second slide</a></li>\n" +
+                        "         <li data-menuanchor = \"third\"><a href = \"#third\">Third slide</a></li>\n" +
+                        "      </ul>\n" +
+                        "\n" +
+                        "      <div id = \"myContainer\">\n" +
+                        "         <div class = \"ms-left\">\n" +
+                        "\t\t\t\n" +
+                        "            <div class = \"ms-section\" id = \"left1\">\n" +
+                        "              <h1>Left 1</h1>\n" +
+                        "            </div>\n" +
+                        "\n" +
+                        "            <div class = \"ms-section\" id = \"left2\">\n" +
+                        "               <h1>Left 2 </h1>\n" +
+                        "            </div>\n" +
+                        "\n" +
+                        "            <div class = \"ms-section\" id = \"left3\">\n" +
+                        "               <h1>Left 3</h1>\n" +
+                        "            </div>\n" +
+                        "\t\t\t\t\n" +
+                        "         </div>\n" +
+                        "\t\n" +
+                        "         <div class = \"ms-right\">\n" +
+                        "\t\t\t\n" +
+                        "            <div class = \"ms-section\" id = \"right1\">\n" +
+                        "               <h1>Right 1</h1>\n" +
+                        "            </div>\n" +
+                        "\n" +
+                        "            <div class = \"ms-section\" id = \"right2\">\n" +
+                        "               <h1>Right 2</h1>\n" +
+                        "            </div>\n" +
+                        "\n" +
+                        "            <div class = \"ms-section\" id = \"right3\">\n" +
+                        "               <h1>Right 3</h1>\n" +
+                        "            </div>\n" +
+                        "\t\t\t\t\n" +
+                        "         </div>\n" +
+                        "      </div>\n" +
+                        "   </body>\n" +
+                        "</html>",
+                ""
+        );
+        final LearnDetailsModel l7 = new LearnDetailsModel(
+                "Slidebar",
+                "Slidebars is a jQuery plugin for quickly and easily implementing app style off-canvas menus and sidebars into your website.\n" +
+                        "\n" +
+                        "A Simple of slidebar example as shown below −",
+                "<!doctype html>\n" +
+                        "<html>\n" +
+                        "   \n" +
+                        "   <head>\n" +
+                        "      <title>Slidebars Animation Styles</title>\n" +
+                        "      <meta name = \"viewport\" content = \"width = device-width, \n" +
+                        "         initial-scale = 1.0, minimum-scale = 1.0, \n" +
+                        "         maximum-scale = 1.0, user-scalable = no\">\n" +
+                        "      <link rel = \"stylesheet\" href = \"slidebars.css\">\n" +
+                        "      <link rel = \"stylesheet\" href = \"example-styles.css\">\n" +
+                        "   </head>\n" +
+                        "\t\n" +
+                        "   <body>\n" +
+                        "      <div id = \"sb-site\">\n" +
+                        "         <h1>Tutorilaspoint</h1>\n" +
+                        "\t\t\t\n" +
+                        "         <p>Slidebars is a jQuery plugin for quickly and easily\n" +
+                        "            implementing app style off-canvas menus and sidebars into your website.</p>\n" +
+                        "\t\t\t\n" +
+                        "         <ul>\n" +
+                        "            <li class = \"sb-toggle-left\">Click here for slider</li> \n" +
+                        "         </ul>\n" +
+                        "      </div>\n" +
+                        "\t\t\n" +
+                        "      <div class = \"sb-slidebar sb-left sb-style-push\">\n" +
+                        "         <p>Android</p>\n" +
+                        "         <hr/>\n" +
+                        "         <p>Java</p>\n" +
+                        "         <hr/>\n" +
+                        "         <p>CSS</p>\n" +
+                        "         <hr/>\n" +
+                        "         <p>PHP</p>\n" +
+                        "         <hr/>\n" +
+                        "      </div>\n" +
+                        "\t\n" +
+                        "      <script \n" +
+                        "         src = \"https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js\">\n" +
+                        "      </script>\t\n" +
+                        "      <script src = \"slidebars.js\">\n" +
+                        "      </script>\n" +
+                        "\t\t\n" +
+                        "      <script>\n" +
+                        "         (function($) {\n" +
+                        "            $(document).ready(function() {\n" +
+                        "               $.slidebars();\n" +
+                        "            });\n" +
+                        "         }) (jQuery);\n" +
+                        "      </script>\n" +
+                        "   </body>\n" +
+                        "</html>",
+                ""
+        );
+        final LearnDetailsModel l8 = new LearnDetailsModel(
+                "Rowgrid",
+                "Rowgrid.js is a jQuery plugin for showing images in a row.\n" +
+                        "\n" +
+                        "A Simple of rowgrid example as shown below −",
+                "<!doctype html>\n" +
+                        "<html lang = \"en\">\n" +
+                        "   <head>\n" +
+                        "      <meta charset = \"UTF-8\">\n" +
+                        "\t\t\n" +
+                        "      <style>\n" +
+                        "         .container:before,\n" +
+                        "         .container:after {\n" +
+                        "            content: \"\";\n" +
+                        "            display: table;\n" +
+                        "         }\n" +
+                        "         .container:after {\n" +
+                        "            clear: both;\n" +
+                        "         }\n" +
+                        "         .item {\n" +
+                        "            float: left;\n" +
+                        "            margin-bottom: 15px; \n" +
+                        "         }\n" +
+                        "         .item img {\n" +
+                        "            max-width: 100%;\n" +
+                        "            max-height: 100%;\n" +
+                        "            vertical-align: bottom;\n" +
+                        "         }\n" +
+                        "         .first-item {\n" +
+                        "            clear: both;\n" +
+                        "         }\n" +
+                        "         .last-row, .last-row ~ .item {\n" +
+                        "            margin-bottom: 0;\n" +
+                        "         }\n" +
+                        "      </style>\n" +
+                        "\t\t\n" +
+                        "      <script \n" +
+                        "         src = \"https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js\">\n" +
+                        "      </script>\n" +
+                        "      <script src = \"/jquery/src/rowgrid/jquery.row-grid.js\">\n" +
+                        "      </script>\n" +
+                        "\t\t\n" +
+                        "      <script>\n" +
+                        "         $(document).ready(function(){\n" +
+                        "            $(\".container\").rowGrid({itemSelector: \".item\", \n" +
+                        "               minMargin: 10, maxMargin: 25, firstItemClass: \"first-item\"});\n" +
+                        "         });\n" +
+                        "      </script>\n" +
+                        "   </head>\n" +
+                        "\t\n" +
+                        "   <body>\n" +
+                        "      <!-- Items with example images -->\n" +
+                        "\t\t\n" +
+                        "      <div class = \"container\">\n" +
+                        "        <div class = \"item\">\n" +
+                        "            <img src = \"https://www.shrcreation.com/images/75-logo.jpg\" \n" +
+                        "               width = \"220\" height = \"200\" />\n" +
+                        "         </div>\n" +
+                        "\t\t\t\n" +
+                        "         <div class = \"item\">\n" +
+                        "            <img src = \n" +
+                        "               \"https://www.shrcreation.com/images/absolute-classes-free.jpg\" \n" +
+                        "               width = \"180\" height = \"200\" />\n" +
+                        "         </div>\n" +
+                        "\t\t\t\n" +
+                        "         <div class = \"item\">\n" +
+                        "            <img src = \"https://www.shrcreation.com/images/absolute-classes-latest-technologies.jpg\" \n" +
+                        "               width = \"250\" height = \"200\" />\n" +
+                        "         </div>\n" +
+                        "\t\t\t\n" +
+                        "         <div class = \"item\">\n" +
+                        "            <img src = \"https://www.shrcreation.com/images/absolute-classes.jpg\" \n" +
+                        "               width = \"200\" height = \"200\" />\n" +
+                        "         </div>\n" +
+                        "\t\t\t\n" +
+                        "         <div class = \"item\">\n" +
+                        "            <img src = \"https://lorempixel.com/240/200?5\" \n" +
+                        "               width = \"240\" height = \"200\" />\n" +
+                        "         </div>\n" +
+                        "\t\t\t\n" +
+                        "         <div class = \"item\">\n" +
+                        "            <img src = \"https://lorempixel.com/210/200?6\" \n" +
+                        "               width = \"210\" height = \"200\" />\n" +
+                        "         </div>\n" +
+                        "\t\t\t\n" +
+                        "         <div class = \"item\">\n" +
+                        "            <img src = \"https://lorempixel.com/260/200?21\" \n" +
+                        "               width = \"260\" height = \"200\" />\n" +
+                        "         </div>\n" +
+                        "\t\t\t\n" +
+                        "         <div class = \"item\">\n" +
+                        "            <img src = \"https://lorempixel.com/220/200?22\" \n" +
+                        "               width = \"220\" height = \"200\" />\n" +
+                        "         </div>\n" +
+                        "\t\t\t\n" +
+                        "         <div class = \"item\">\n" +
+                        "            <img src = \"https://lorempixel.com/220/200?1\" \n" +
+                        "               width = \"220\" height = \"200\" />\n" +
+                        "         </div>\n" +
+                        "\n" +
+                        "         <div class = \"item\">\n" +
+                        "            <img src = \"https://lorempixel.com/180/200?2\" \n" +
+                        "               width = \"180\" height = \"200\" />\n" +
+                        "         </div>\n" +
+                        "\n" +
+                        "         <div class = \"item\">\n" +
+                        "            <img src = \"https://lorempixel.com/250/200?3\" \n" +
+                        "               width = \"250\" height = \"200\" />\n" +
+                        "         </div>\n" +
+                        "\n" +
+                        "         <div class = \"item\">\n" +
+                        "            <img src = \"https://lorempixel.com/200/200?4\" \n" +
+                        "               width = \"200\" height = \"200\" />\n" +
+                        "         </div>\n" +
+                        "\n" +
+                        "         <div class = \"item\">\n" +
+                        "            <img src = \"https://lorempixel.com/240/200?5\" \n" +
+                        "               width = \"240\" height = \"200\" />\n" +
+                        "         </div>\n" +
+                        "\n" +
+                        "         <div class = \"item\">\n" +
+                        "            <img src = \"https://lorempixel.com/210/200?6\" \n" +
+                        "               width = \"210\" height = \"200\" />\n" +
+                        "         </div>\n" +
+                        "\n" +
+                        "         <div class = \"item\">\n" +
+                        "            <img src = \"https://lorempixel.com/200/200?7\" \n" +
+                        "               width = \"200\" height = \"200\" />\n" +
+                        "         </div>\n" +
+                        "\n" +
+                        "         <div class = \"item\">\n" +
+                        "            <img src = \"https://lorempixel.com/190/200?8\" \n" +
+                        "               width = \"190\" height = \"200\" />\n" +
+                        "         </div>\n" +
+                        "\n" +
+                        "         <div class = \"item\">\n" +
+                        "            <img src = \"https://lorempixel.com/260/200?9\" \n" +
+                        "               width = \"260\" height = \"200\" />\n" +
+                        "         </div>\n" +
+                        "\n" +
+                        "         <div class = \"item\">\n" +
+                        "            <img src = \"https://lorempixel.com/220/200?10\" \n" +
+                        "               width = \"220\" height = \"200\" />\n" +
+                        "         </div> \n" +
+                        "\n" +
+                        "      </div>\n" +
+                        "   </body>\n" +
+                        "</html>",
+                ""
+        );
+        final LearnDetailsModel l9 = new LearnDetailsModel(
+                "Progressbar",
+                "Progressbar.js is a jQuery plugin for showing progress bar\n" +
+                        "\n" +
+                        "A Simple of progressbar example as shown below −",
+                "<!doctype html>\n" +
+                        "<html>\n" +
+                        "   <head>\n" +
+                        "      <meta charset = \"utf-8\">\n" +
+                        "      <meta http-equiv = \"X-UA-Compatible\" content = \"IE = edge,chrome = 1\">\n" +
+                        "      <meta name = \"viewport\" content = \"width = device-width, \n" +
+                        "         initial-scale = 1\">\n" +
+                        "\t\n" +
+                        "      <link href = \"https://www.jqueryscript.net/css/jquerysctipttop.css\" \n" +
+                        "         rel = \"stylesheet\" type = \"text/css\">\n" +
+                        "      <link rel = \"stylesheet\" href = \"jQuery-plugin-progressbar.css\">\n" +
+                        "\t\t\n" +
+                        "      <script src = \"https://code.jquery.com/jquery-2.1.4.min.js\"></script>\n" +
+                        "      <script src = \"jQuery-plugin-progressbar.js\"></script>\n" +
+                        "   </head>\n" +
+                        "\t\n" +
+                        "   <body>\n" +
+                        "      <div class = \"progress-bar position\"></div>\n" +
+                        "      <div class = \"progress-bar position\" data-percent = \"40\" \n" +
+                        "         data-duration = \"1000\" data-color = \"#ccc,yellow\"></div>\n" +
+                        "      <div class = \"progress-bar position\" data-percent = \"90\" \n" +
+                        "         data-color = \"#a456b1,#12b321\"></div>\n" +
+                        "\t\t\t\n" +
+                        "      <input type = \"submit\" value = \"reload\">\n" +
+                        "\t\t\n" +
+                        "      <script>\n" +
+                        "         $(\".progress-bar\").loading();\n" +
+                        "\t\t\t\n" +
+                        "         $('input').on('click', function () {\n" +
+                        "            $(\".progress-bar\").loading();\n" +
+                        "         });\n" +
+                        "      </script>\n" +
+                        "      \n" +
+                        "   </body>\n" +
+                        "</html>",
+                ""
+        );
+        final LearnDetailsModel l10 = new LearnDetailsModel(
+                "Slideshow",
+                "Slideshow.js is a jQuery plugin for quickly and easily implementing slide show of images or videos into your website.\n" +
+                        "\n" +
+                        "A Simple of slide show example as shown below −",
+                "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\" \n" +
+                        "   \"https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\">\n" +
+                        "\n" +
+                        "<html xmlns = \"https://www.w3.org/1999/xhtml\" xml:lang = \"en\" lang = \"en\">\n" +
+                        "   \n" +
+                        "   <head>\n" +
+                        "      <meta http-equiv = \"content-type\" content = \"text/html; charset = UTF-8\" />\n" +
+                        "\t\t\n" +
+                        "      <link rel = \"stylesheet\" href = \"css/supersized.css\" type = \"text/css\" \n" +
+                        "         media = \"screen\" />\n" +
+                        "      \n" +
+                        "      <link rel = \"stylesheet\" href = \"theme/supersized.shutter.css\" \n" +
+                        "         type = \"text/css\" media = \"screen\" />\n" +
+                        "\t\t\n" +
+                        "      <script type = \"text/javascript\" \n" +
+                        "         src = \"https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js\">\n" +
+                        "         </script>\n" +
+                        "      <script type = \"text/javascript\" src =\" js/jquery.easing.min.js\"></script>\n" +
+                        "\t\t\n" +
+                        "      <script type = \"text/javascript\" src =\" js/supersized.3.2.7.min.js\"></script>\n" +
+                        "      <script type = \"text/javascript\" src = \"theme/supersized.shutter.min.js\"></script>\n" +
+                        "\t\t\n" +
+                        "      <script type = \"text/javascript\">\n" +
+                        "         jQuery(function($){\n" +
+                        "            $.supersized({\n" +
+                        "               slideshow         :  1,\t\t\t\n" +
+                        "               autoplay          :  1,\t\t\t\n" +
+                        "               start_slide       :  1,\t\t\t\n" +
+                        "               stop_loop         :  0,\t\t\t\n" +
+                        "               random            :  0,\t\t\t\n" +
+                        "               slide_interval    :  3000,\t\t\n" +
+                        "               transition        :  6, \t\t\t\n" +
+                        "               transition_speed  :  1000,\t\t\n" +
+                        "               new_window        :  1,\t\t\t\n" +
+                        "               pause_hover       :  0,\t\t\t\n" +
+                        "               keyboard_nav      :  1,\t\t\t\n" +
+                        "               performance       :  1,\t\t\t\n" +
+                        "               image_protect     :  1,\t\t\t\n" +
+                        "                                                \n" +
+                        "               min_width         :  0,\t\t\t\n" +
+                        "               min_height        :  0,\t\t\t\n" +
+                        "               vertical_center   :  1,\t\t\t\n" +
+                        "               horizontal_center :  1,\t\t\t\n" +
+                        "               fit_always        :  0,\t\t\t\n" +
+                        "               fit_portrait      :  1,\t\t\t\n" +
+                        "               fit_landscape     :  0,\t\t\t\n" +
+                        "               \n" +
+                        "               slide_links       :  'blank',\t\n" +
+                        "               thumb_links       :  1,\t\t\t\n" +
+                        "               thumbnail_navigation    :   0,\t\t\t\n" +
+                        "               slides            :  \t\n" +
+                        "               [\t\t\t\n" +
+                        "                  {\n" +
+                        "                     image : 'https://buildinternet.s3.amazonaws.com/projects/supersized/3.2/slides/kazvan-1.jpg', \n" +
+                        "                        title : 'Sample demo', \n" +
+                        "                        thumb : 'https://buildinternet.s3.amazonaws.com/projects/supersized/3.2/thumbs/kazvan-1.jpg', \n" +
+                        "                        url : 'https://www.shrcreation.com'\n" +
+                        "                  },\n" +
+                        "                  {\n" +
+                        "                     image : 'https://buildinternet.s3.amazonaws.com/projects/supersized/3.2/slides/kazvan-3.jpg', \n" +
+                        "                        title : 'Sample demo', \n" +
+                        "                        thumb : 'https://buildinternet.s3.amazonaws.com/projects/supersized/3.2/thumbs/kazvan-3.jpg', \n" +
+                        "                        url : 'https://www.shrcreation.com'\n" +
+                        "                  },\n" +
+                        "                  {\n" +
+                        "                     image : 'https://buildinternet.s3.amazonaws.com/projects/supersized/3.2/slides/wojno-1.jpg', \n" +
+                        "                        title : 'Sample demo', \n" +
+                        "                        thumb : 'https://buildinternet.s3.amazonaws.com/projects/supersized/3.2/thumbs/wojno-1.jpg', \n" +
+                        "                        url : 'https://www.shrcreation.com'\n" +
+                        "                  },\n" +
+                        "                  {\n" +
+                        "                     image : 'https://buildinternet.s3.amazonaws.com/projects/supersized/3.2/slides/wojno-2.jpg', \n" +
+                        "                        title : 'Sample demo', \n" +
+                        "                        thumb : 'https://buildinternet.s3.amazonaws.com/projects/supersized/3.2/thumbs/wojno-2.jpg', \n" +
+                        "                        url : 'https://www.shrcreation.com'\n" +
+                        "                  },\n" +
+                        "                  {\n" +
+                        "                     image : 'https://buildinternet.s3.amazonaws.com/projects/supersized/3.2/slides/wojno-3.jpg', \n" +
+                        "                        title : 'Sample demo', \n" +
+                        "                        thumb : 'https://buildinternet.s3.amazonaws.com/projects/supersized/3.2/thumbs/wojno-3.jpg', \n" +
+                        "                        url : 'https://www.shrcreation.com'},\n" +
+                        "               ],\n" +
+                        "               progress_bar      :\t1,\t\t\t\n" +
+                        "               mouse_scrub       :\t0\n" +
+                        "            });\n" +
+                        "         });\n" +
+                        "      </script>\n" +
+                        "   </head>\n" +
+                        "\t\n" +
+                        "   <style type = \"text/css\">\n" +
+                        "      ul#demo-block{ margin:0 15px 15px 15px; }\n" +
+                        "      ul#demo-block li{ margin:0 0 10px 0; padding:10px; display:inline; \n" +
+                        "         float:left; clear:both; color:#aaa; background:url('img/bg-black.png'); \n" +
+                        "         font:11px Helvetica, Arial, sans-serif; }\n" +
+                        "      ul#demo-block li a{ color:#eee; font-weight:bold; }\n" +
+                        "   </style>\n" +
+                        "\n" +
+                        "   <body>\n" +
+                        "      <div id = \"prevthumb\"></div>\n" +
+                        "      <div id = \"nextthumb\"></div>\n" +
+                        "      \n" +
+                        "      <a id = \"prevslide\" class = \"load-item\"></a>\n" +
+                        "      <a id = \"nextslide\" class = \"load-item\"></a>\n" +
+                        "      \n" +
+                        "      <div id = \"thumb-tray\" class = \"load-item\">\n" +
+                        "         <div id = \"thumb-back\"></div>\n" +
+                        "         <div id = \"thumb-forward\"></div>\n" +
+                        "      </div>\n" +
+                        "      \n" +
+                        "      <div id = \"progress-back\" class = \"load-item\">\n" +
+                        "         <div id = \"progress-bar\"></div>\n" +
+                        "      </div>\n" +
+                        "      \n" +
+                        "      <div id = \"controls-wrapper\" class = \"load-item\">\n" +
+                        "         <div id = \"controls\">\n" +
+                        "            <a id = \"play-button\"><img id = \"pauseplay\" src = \"img/pause.png\"/></a>\n" +
+                        "\n" +
+                        "            <div id = \"slidecounter\">\n" +
+                        "               <span class = \"slidenumber\"></span> / <span class = \"totalslides\"></span>\n" +
+                        "            </div>\n" +
+                        "\n" +
+                        "            <div id = \"slidecaption\"></div>\n" +
+                        "\n" +
+                        "            <a id = \"tray-button\"><img id = \"tray-arrow\" src = \"img/button-tray-up.png\"/></a>\n" +
+                        "\n" +
+                        "            <ul id = \"slide-list\"></ul>\n" +
+                        "         </div>\n" +
+                        "      </div>\n" +
+                        "   </body>\n" +
+                        "</html>",
+                ""
+        );
+        final LearnDetailsModel l11 = new LearnDetailsModel(
+                "Drawsvg",
+                "Drawsvg.js is a jQuery plugin to draw svg images\n" +
+                        "\n" +
+                        "A Simple of drawsvg example as shown below −",
+                "<!DOCTYPE html>\n" +
+                        "<html lang = \"en\">\n" +
+                        "   <head>\n" +
+                        "      <meta charset = \"UTF-8\">\n" +
+                        "      <link rel = \"shortcut icon\" type = \"image/x-icon\" href = \"favicon.ico\">\n" +
+                        "      <link rel = \"stylesheet\" \n" +
+                        "         href = \"https://fonts.googleapis.com/css?family=Open+Sans:400,600\">\n" +
+                        "      <link rel = \"stylesheet\" href = \"style.css\">\n" +
+                        "   </head>\n" +
+                        "\t\n" +
+                        "   <body>\n" +
+                        "      <div class = \"intro\">\n" +
+                        "         <div class = \"container\">\n" +
+                        "            <div class = \"overlay\">\n" +
+                        "               <div class = \"inner\">\n" +
+                        "                  <h1>jQuery DrawSVG Sample</h1>\n" +
+                        "\n" +
+                        "                  <div class = \"items-wrapper\">\n" +
+                        "                     <div class =\"item active\">\n" +
+                        "                        <svg viewBox = \"0 0 201 146\" class = \"svgClass\" \n" +
+                        "                           style = \"background-color:#ffffff00\" \n" +
+                        "                              xmlns = \"https://www.w3.org/2000/svg\" width = \"201\"\n" +
+                        "                              height = \"146\">\n" +
+                        "\t\t\t\t\t\t\t\t\t\n" +
+                        "                           <g stroke = \"#FFF\" stroke-width = \"1\" fill = \"none\">\n" +
+                        "                              <path d = \"M200.5 128.586c0 9.302-7.678\n" +
+                        "                                 16.914-17.06 16.914H17.56C8.18 145.5.5 \n" +
+                        "                                 137.888.5 128.586V29.414C.5 20.112 8.178 \n" +
+                        "                                 12.5 17.56 12.5h165.88c9.382 0 17.06 \n" +
+                        "                                 7.612 17.06 16.914v99.172z\"/>\n" +
+                        "\t\t\t\t\t\t\t\t\t\t\t\n" +
+                        "                              <path d = \"M183.828 80.118c0 26.467-21.644 \n" +
+                        "                                 47.924-48.34 47.924-26.698 \n" +
+                        "                                 0-48.342-21.457-48.342-47.924s21.644-47.924 \n" +
+                        "                                 48.34-47.924c26.698 0 48.342 21.457 48.342\n" +
+                        "                                 47.924z\"/>\n" +
+                        "\t\t\t\t\t\t\t\t\t\t\t\n" +
+                        "                              <path d = \"M171.98 80.118c0 19.978-16.338\n" +
+                        "                                 36.177-36.493 36.177-20.15 \n" +
+                        "                                 0-36.49-16.2-36.49-36.177 0-19.98 \n" +
+                        "                                 16.34-36.177 36.49-36.177 20.155 0 \n" +
+                        "                                 36.494 16.2 36.494 36.178z\"/>\n" +
+                        "\t\t\t\t\t\t\t\t\t\t\t\n" +
+                        "                              <path d = \"M50.18 48.637c0 6.49-5.304 \n" +
+                        "                                 11.747-11.852 11.747-6.543\n" +
+                        "                                 0-11.847-5.258-11.847-11.747  0-6.488 \n" +
+                        "                                 5.305-11.746 11.848-11.746 6.548 0 11.852 \n" +
+                        "                                 5.26 11. 852 11.747z\"/>\n" +
+                        "\t\t\t\t\t\t\t\t\t\t\t\n" +
+                        "                              <path d = \"M17.928 39.877c3.41-7.835 \n" +
+                        "                                 11.258-13.305 20.416-13.305 9.16 0 17.006 \n" +
+                        "                                 5.47 20.416 13.305\"/>\n" +
+                        "\t\t\t\t\t\t\t\t\t\t\t\n" +
+                        "                              <path d = \"M46 12V4H26v8\"/>\n" +
+                        "                              <path d = \"M94.833 12l11.5-11.5h59.5l11.5 11.5\"/>\n" +
+                        "                              <path d = \"M26.333 92.5h35.5\"/>\n" +
+                        "                              <path d = \"M26.333 105.5h43\"/>\n" +
+                        "                              <path d = \"M26.333 117.5h52\"/>\n" +
+                        "                           </g>\n" +
+                        "\t\t\t\t\t\t\t\t\t\n" +
+                        "                        </svg>\n" +
+                        "                     </div>\n" +
+                        "\n" +
+                        "                     <div class = \"item\">\n" +
+                        "                        <svg viewBox = \"0 0 207 105\" style = \"background-color:#ffffff00\" \n" +
+                        "                           xmlns = \"https://www.w3.org/2000/svg\" width = \"207\" \n" +
+                        "                           height = \"105\">\n" +
+                        "\t\t\t\t\t\t\t\t\n" +
+                        "                           <g stroke = \"#FFF\" stroke-width = \"1\" fill = \"none\">\n" +
+                        "                              <path d = \"M127 63.496C127 85.306 144.455 \n" +
+                        "                                 103 165.998 103 187.538 103 205 85.306 \n" +
+                        "                                 205 63.496 205 41.682 187.537 24 165.998\n" +
+                        "                                 24 144.455 24 127 41.682 127 63.496z\"/>\n" +
+                        "\t\t\t\t\t\t\t\t\t\t\t\n" +
+                        "                              <path d = \"M195 63.497C195 47.206 182.015 34 166 34\"/>\n" +
+                        "\t\t\t\t\t\t\t\t\t\t\n" +
+                        "                              <path d = \"M2 63.496C2 85.306 19.455 103 \n" +
+                        "                                 41.002 103 62.542 103 80 85.306 80 63.496 \n" +
+                        "                                 80 41.682 62.54 24 41.002 24 19.455 24 2\n" +
+                        "                                 41.682 2 63.496z\"/>\n" +
+                        "\t\t\t\t\t\t\t\t\t\t\t\n" +
+                        "                              <path d = \"M64.296 22.732C57.656 18.094 \n" +
+                        "                                 47.492 16 41.002 16c-6.49 0-12.675 \n" +
+                        "                                 1.33-18.3 3.732-5.622 2.404-10.686 \n" +
+                        "                                 5.88-14.938 10.178\"/>\n" +
+                        "\t\t\t\t\t\t\t\t\t\t\t\n" +
+                        "                              <path d = \"M159.715 63.576c0 3.634 2.902 \n" +
+                        "                                 6.575 6.49 6.575 3.582 0 6.484-2.94 \n" +
+                        "                                 6.484-6.574 0-3.63-2.903-6.575-6.486-6.575-3.587\n" +
+                        "                                 0-6.49 2.946-6.49 6.576z\"/>\n" +
+                        "\t\t\t\t\t\t\t\t\t\t\t\n" +
+                        "                              <path d = \"M34.873 64.032c0 3.63 2.907 \n" +
+                        "                                 6.575 6.494 6.575 3.578 0 6.485-2.945 \n" +
+                        "                                 6.485-6.575  0-3.635-2.907-6.575-6.485-6.575-3.587 \n" +
+                        "                                 0-6.494 2.94-6.494 6.575z\"/>\n" +
+                        "\t\t\t\t\t\t\t\t\t\t\t\n" +
+                        "                              <path d = \"M163.25 57.026L141.773 3\"/>\n" +
+                        "                              <path d = \"M98 63.5H48\"/>\n" +
+                        "                              <path d = \"M101.73 57.63L70.5 14.013\"/>\n" +
+                        "                              <path d = \"M70.49 14.5h76.646v-.206\"/>\n" +
+                        "                              <path d = \"M139.134 14.505L108.468 57.95\"/>\n" +
+                        "                              <path d = \"M70.894 15.05L42.834 57.05\"/>\n" +
+                        "                              <path d = \"M70.5 14V3\"/>\n" +
+                        "                              <path d = \"M141.427 3.23s19.83-7.71 19.83 6.344\"/>\n" +
+                        "\t\t\t\t\t\t\t\t\t\t\n" +
+                        "                              <path d = \"M97.816 62.52c0 3.576 2.86 6.475 \n" +
+                        "                                 6.39 6.475s6.392-2.9 \n" +
+                        "                                 6.392-6.476c0-3.577-2.86-6.476-6.39\n" +
+                        "                                 -6.476s-6.392 2.9-6.392 6.476z\"/>\n" +
+                        "\t\t\t\t\t\t\t\t\t\t\t\n" +
+                        "                              <path d = \"M106.642 69.26l2.913 11.044\"/>\n" +
+                        "                              <path d = \"M105 83l10-5\"/>\n" +
+                        "                              <path d = \"M62.5 3.5h18\"/>\n" +
+                        "                           </g>\n" +
+                        "\t\t\t\t\t\t\t\t\t\n" +
+                        "                        </svg>\n" +
+                        "                     </div>\n" +
+                        "\n" +
+                        "                     <div class = \"item\">\n" +
+                        "                        <svg viewBox = \"0 0 201 116\" style = \"background-color:#ffffff00\" \n" +
+                        "                           xmlns = \"https://www.w3.org/2000/svg\" width = \"201\" \n" +
+                        "                           height = \"116\">\n" +
+                        "\t\t\t\t\t\t\t\t\t\n" +
+                        "                           <g stroke = \"#FFF\" stroke-width = \"1\" fill = \"none\">\n" +
+                        "                              <path d = \"M19.5 101.5V6.45C19.5 3.176 23.12.5 \n" +
+                        "                                 26.402.5H175.53c3.282 0 5.97 2.677 5.97\n" +
+                        "                                 5.95v95.05\"/>\n" +
+                        "\t\t\t\t\t\t\t\t\t\t\t\n" +
+                        "                              <path d = \"M171.5 89.5h-140v-77h140v77z\"/>\n" +
+                        "\t\t\t\t\t\t\t\t\t\t\n" +
+                        "                              <path d = \"M200.5 107.526c0 1.635-1.344 \n" +
+                        "                                 2.974-2.985 2.974H3.485c-1.64 \n" +
+                        "                                 0-2.985-1.34-2.985-2.974v-3.052c0-1.635\n" +
+                        "                                 1.344-2.974 2.985-2.974h194.03c1.64 0 2.985 \n" +
+                        "                                 1.34 2.9852.974v3.052z\"/>\n" +
+                        "\t\t\t\t\t\t\t\t\t\t\t\n" +
+                        "                              <path d = \"M1 110l10.5 5.5\"/>\n" +
+                        "                              <path d = \"M11.604 115.5H189.46\"/>\n" +
+                        "                              <path d = \"M189.5 115.5l9.5-5.5\"/>\n" +
+                        "                              <path d = \"M99.5 7.5h5\"/>\n" +
+                        "                              <path d = \"M138.5 12.5l28 28\"/>\n" +
+                        "                              <path d = \"M148.5 12.5l18 18\"/>\n" +
+                        "                              <path d = \"M159.5 12.5l7 6\"/>\n" +
+                        "                           </g>\n" +
+                        "\t\t\t\t\t\t\t\t\t\n" +
+                        "                        </svg>\n" +
+                        "                     </div>\n" +
+                        "\n" +
+                        "                     <div class = \"item\">\n" +
+                        "                        <svg viewBox = \"0 0 200 155\" style = \"background-color:#ffffff00\" \n" +
+                        "                           xmlns = \"https://www.w3.org/2000/svg\" width = \"200\" \n" +
+                        "                           height = \"155\">\n" +
+                        "\t\t\t\t\t\t\t\t\t\n" +
+                        "                           <g stroke = \"#FFF\" stroke-width = \"1\" fill = \"none\">\n" +
+                        "                              <path d=\"M161.996 151.39l-33.97-27.178-45.01 \n" +
+                        "                                 30.576-35.67-27.603L.36 154.245 38.662 20.04 \n" +
+                        "                                 80.893 4.034l39.066 17.41L161.995.213l37.792 \n" +
+                        "                                 22.932-37.792 128.246z\"/>\n" +
+                        "\t\t\t\t\t\t\t\t\t\t\t\n" +
+                        "                              <path d = \"M47.346 127.185L80.892 4.035\"/>\n" +
+                        "                              <path d = \"M83.015 154.788l36.942-133.343\"/>\n" +
+                        "                              <path d = \"M128.025 124.212l33.97-124\"/>\n" +
+                        "                              <path d = \"M46.278 23.935L32.29 75.605\"/>\n" +
+                        "                              <path d = \"M95.802 45.718L81.19 97.225\"/>\n" +
+                        "                              <path d = \"M106.91 33.115l-22.26 81.39\"/>\n" +
+                        "\t\t\t\t\t\t\t\t\t\t\n" +
+                        "                              <path d = \"M176.768 46.665c0 3.523-2.85\n" +
+                        "                                 6.376-6.366 6.376-3.514 0-6.364-2.852\n" +
+                        "                                 -6.364-6.375 0-3.512 2.85-6.37\n" +
+                        "                                 6.364-6.37 3.516 0 6.366 2.858 \n" +
+                        "                                 6.366 6.37z\"/>\n" +
+                        "\t\t\t\t\t\t\t\t\t\t\t\n" +
+                        "                              <path d = \"M180.9 52.392l-10.844 \n" +
+                        "                                 19.91-10.394-19.995s-1.143-3.215-1.\n" +
+                        "                                 143-5.067c0-6.514 5.273-11.81 11.79-11.81 \n" +
+                        "                                 6.508 0 11.782 5.296 11.782 11.81 \n" +
+                        "                                 0 1.852-1.192 5.152-1.192 5.152z\"/>\n" +
+                        "\t\t\t\t\t\t\t\t\t\t\t\n" +
+                        "                              <path d = \"M43.86 92.528c0 3.523-2.85 \n" +
+                        "                                 6.376-6.367 6.376-3.514 0-6.364-2.\n" +
+                        "                                 853-6.364-6.376 0-3.512 2.85-6.37 \n" +
+                        "                                 6.363-6.37 3.517 0 6.366 2.858 \n" +
+                        "                                 6.366 6.37z\"/>\n" +
+                        "\t\t\t\t\t\t\t\t\t\t\t\n" +
+                        "                              <path d = \"M47.99 98.255l-10.843 19.91L26.754 \n" +
+                        "                                 98.17s-1.143-3.215-1.\n" +
+                        "                                 143-5.067c0-6.514 5.275-11.81 \n" +
+                        "                                 11.793-11.81 6.507 0 11.78 5.296 \n" +
+                        "                                 11.78 11.81 0 1.852-1.192 \n" +
+                        "                                 5.152-1.192 5.152z\"/>\n" +
+                        "                           </g>\n" +
+                        "\t\t\t\t\t\t\t\t\t\n" +
+                        "                        </svg>\n" +
+                        "                     </div>\n" +
+                        "\t\t\t\t\t\t\t\n" +
+                        "                  </div>\n" +
+                        "               </div>\n" +
+                        "            </div>\n" +
+                        "         </div>\n" +
+                        "      </div>\n" +
+                        "\t\t\n" +
+                        "      <div id = \"fb-root\"></div>\n" +
+                        "      <script async src = \"//assets.codepen.io/assets/embed/ei.js\">\n" +
+                        "      </script>\n" +
+                        "      <script src = \"https://cdn.jsdelivr.net/jquery/1.11.3/jquery.min.js\">\n" +
+                        "      </script>\n" +
+                        "      <script \n" +
+                        "         src = \"https://cdn.jsdelivr.net/jquery.easing/1.3/jquery.easing.1.3.min.js\">\n" +
+                        "      </script>\n" +
+                        "      <script src = \"jquery.drawsvg.min.js\"></script>\n" +
+                        "\t\t\n" +
+                        "      <script>\n" +
+                        "         $(function() {\n" +
+                        "\n" +
+                        "            var $doc = $(document),\n" +
+                        "            $win = $(window);\n" +
+                        "\n" +
+                        "            var $intro = $('.intro'),\n" +
+                        "            $items = $intro.find('.item'),\n" +
+                        "            itemsLen = $items.length,\n" +
+                        "\t\t\t\t\n" +
+                        "            svgs = $intro.find('svg').drawsvg({\n" +
+                        "               callback: animateIntro,\n" +
+                        "               easing: 'easeOutQuart'\n" +
+                        "            }),\n" +
+                        "\t\t\t\t\n" +
+                        "            currItem = 0;\n" +
+                        "\n" +
+                        "            function animateIntro() {\n" +
+                        "               $items.removeClass('active').eq( currItem++ % itemsLen \n" +
+                        "                  ).addClass('active').find('svg').drawsvg('animate');\n" +
+                        "            }\n" +
+                        "\n" +
+                        "            animateIntro();\n" +
+                        "\n" +
+                        "            var $header = $('header'),\n" +
+                        "            headerOffTop = $header.offset().top,\n" +
+                        "            isFixed = false;\n" +
+                        "\n" +
+                        "            function menu() {\n" +
+                        "               if ( $win.scrollTop() >= headerOffTop ) {\n" +
+                        "                  if ( !isFixed ) {\n" +
+                        "                     isFixed = true;\n" +
+                        "                     $header.addClass('affix');\n" +
+                        "                  }\n" +
+                        "               } else if ( isFixed ) {\n" +
+                        "                  isFixed = false;\n" +
+                        "                  $header.removeClass('affix');\n" +
+                        "               }\n" +
+                        "            }\n" +
+                        "\n" +
+                        "            $win.on('scroll', menu);\n" +
+                        "            menu();\n" +
+                        "\n" +
+                        "            $header.on('click', 'a[href^=\"#\"]', function(e) {\n" +
+                        "               e.preventDefault();\n" +
+                        "\n" +
+                        "               var hash = this.hash,\n" +
+                        "               offset = $(hash).offset().top;\n" +
+                        "\n" +
+                        "               $('body, html').animate({\n" +
+                        "                  scrollTop: offset\n" +
+                        "               }, 600, 'easeInOutQuart', function() {\n" +
+                        "                  document.location.hash = hash;\n" +
+                        "               });\n" +
+                        "            });\n" +
+                        "\n" +
+                        "         });\n" +
+                        "      </script>\n" +
+                        "   </body>\n" +
+                        "</html>",
+                ""
+        );
+        final LearnDetailsModel l12 = new LearnDetailsModel(
+                "Logosdistort",
+                "Logosdistort.js is a jQuery plugin for quickly and easily implementing of mouse over effect on images\n" +
+                        "\n" +
+                        "A Simple of logosdistort example as shown below −",
+                "<!DOCTYPE html>\n" +
+                        "<html>\n" +
+                        "   <head>\n" +
+                        "      <meta name = \"viewport\" content = \"width = device-width, initial-scale = 1.0\">\n" +
+                        "      <link rel = \"stylesheet\" \n" +
+                        "         href = \"//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css\">\n" +
+                        "      <link href = \"assets/css/style.css\" rel = \"stylesheet\" />\n" +
+                        "      <link href = \"assets/css/perspectiveRules.css\" rel = \"stylesheet\" />\n" +
+                        "   </head>\n" +
+                        "\t\n" +
+                        "   <body>\n" +
+                        "      <div id = \"min-max-tag\"><i class = \"fa fa-chevron-circle-left\"></i></div>\n" +
+                        "\n" +
+                        "      <div id = \"demo1\">\n" +
+                        "         <div id = \"particle-target\" ></div>\n" +
+                        "         <img alt = \"logo\" src = \"assets/images/logo.png\" />\n" +
+                        "      </div>\n" +
+                        "\n" +
+                        "      <script \n" +
+                        "         src = \"https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js\">\n" +
+                        "      </script>\n" +
+                        "      <script src = \"assets/js/jquery.logosDistort.min.js\"></script>\n" +
+                        "      <script src = \"assets/js/jquery.particleground.min.js\"></script>\n" +
+                        "\t\t\n" +
+                        "      <script>\n" +
+                        "         var particles = true,\n" +
+                        "         particleDensity,\n" +
+                        "\t\t\t\n" +
+                        "         options = {\n" +
+                        "            effectWeight: 1,\n" +
+                        "            outerBuffer: 1.08,\n" +
+                        "            elementDepth: 220\n" +
+                        "         };\n" +
+                        "\n" +
+                        "         $(document).ready(function() {\n" +
+                        "\n" +
+                        "            $(\"#demo1\").logosDistort(options);\n" +
+                        "\n" +
+                        "            if (particles) {\n" +
+                        "               particleDensity = window.outerWidth * 7.5;\n" +
+                        "               if (particleDensity < 13000) {\n" +
+                        "                  particleDensity = 13000;\n" +
+                        "               } else if (particleDensity > 20000) {\n" +
+                        "                  particleDensity = 20000;\n" +
+                        "               }\n" +
+                        "               return $('#particle-target').particleground({\n" +
+                        "                  dotColor: '#1ec5ee',\n" +
+                        "                  lineColor: '#0a4e90',\n" +
+                        "                  density: particleDensity.toFixed(0),\n" +
+                        "                  parallax: false\n" +
+                        "               });\n" +
+                        "            }\n" +
+                        "         });\n" +
+                        "      </script>\n" +
+                        "\n" +
+                        "   </body>\n" +
+                        "</html>",
+                ""
+        );
+        final LearnDetailsModel l13 = new LearnDetailsModel(
+                "Weather",
+                "Weather.js is a jQuery plugin to find the information about weather details.\n" +
+                        "\n" +
+                        "A Simple of Weather.js example as shown below −",
+                "<!DOCTYPE html>\n" +
+                        "<html lang = \"en\">\n" +
+                        "   <head>\n" +
+                        "      <meta charset = \"UTF-8\">\n" +
+                        "      <meta name = \"viewport\" content = \"width = device-width, \n" +
+                        "         initial-scale = 1\">\n" +
+                        "      <link rel = \"stylesheet\" \n" +
+                        "         href = \"https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css\">\n" +
+                        "      <link rel = \"stylesheet\" \n" +
+                        "         href = \"https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css\">\n" +
+                        "      <link href = 'https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700'\n" +
+                        "         rel = 'stylesheet' type = 'text/css'>\n" +
+                        "      <link rel = \"stylesheet\" type = \"text/css\" href = \"weather.css\">\n" +
+                        "   </head>\n" +
+                        "\t\n" +
+                        "   <body id = \"weather-background\" class = \"default-weather\">\n" +
+                        "      <canvas id = \"rain-canvas\"></canvas>\n" +
+                        "      <canvas id = \"cloud-canvas\"></canvas>\n" +
+                        "      <canvas id = \"weather-canvas\"></canvas>\n" +
+                        "      <canvas id = \"time-canvas\"></canvas>\n" +
+                        "      <canvas id = \"lightning-canvas\"></canvas>\n" +
+                        "\t\t\n" +
+                        "      <div class = \"page-wrap\">\n" +
+                        "         <header class = \"search-bar\">\n" +
+                        "\t\t\t\n" +
+                        "            <p class = \"search-text\">\n" +
+                        "               <span class = \"search-location-text\">\n" +
+                        "                  What's the weather like in \n" +
+                        "                  \n" +
+                        "                  <input id = \"search-location-input\" \n" +
+                        "                     class = \"search-location-input\" type = \"text\"\n" +
+                        "                     placeholder = \"City\"> ?\n" +
+                        "               </span>\n" +
+                        "            </p>\n" +
+                        "\t\t\t\t\t\n" +
+                        "            <div class = \"search-location-button-group\">\n" +
+                        "               <button id = \"search-location-button\" \n" +
+                        "                  class = \"fa fa-search search-location-button search-button\">\n" +
+                        "                  </button>\n" +
+                        "\t\t\t\t\t\t\n" +
+                        "               <!--  -->\n" +
+                        "               <button id = \"geo-button\" class = \"geo-button fa\n" +
+                        "                  fa-location-arrow search-button\"></button>\n" +
+                        "            </div>\n" +
+                        "\t\t\t\t\n" +
+                        "         </header>\n" +
+                        "\n" +
+                        "         <div id = \"geo-error-message\" class = \"geo-error-message hide\">\n" +
+                        "            <button id = 'close-error' class = 'fa fa-times \n" +
+                        "               close-error'></button>Uh oh! It looks like we can't \n" +
+                        "               find your location. Please type your city into the search \n" +
+                        "               box above!\n" +
+                        "         </div>\n" +
+                        "\n" +
+                        "         <div id = \"front-page-description\" \n" +
+                        "\t\t\t   class = \"front-page-description middle\">\n" +
+                        "            <h1>Blank Canvas Weather</h1>\n" +
+                        "         </div>\n" +
+                        "\t\t\t\n" +
+                        "         <div class = \"attribution-links hide\" id = \"attribution-links\">\n" +
+                        "            <button id = 'close-attribution' \n" +
+                        "               class = 'fa fa-times close-attribution'></button>\n" +
+                        "\t\t\t\t\t\n" +
+                        "            <h3>Icons from <a href = \"https://thenounproject.com/\">\n" +
+                        "               Noun Project</a></h3>\n" +
+                        "\t\t\t\t\t\n" +
+                        "            <ul>\n" +
+                        "               <li class = \"icon-attribution\">\n" +
+                        "                  <a href = \"https://thenounproject.com/term/cloud/6852/\">\n" +
+                        "                  Cloud</a> by Pieter J. Smits</li>\n" +
+                        "\t\t\t\t\t\t\n" +
+                        "               <li class = \"icon-attribution\">\n" +
+                        "                  <a href = \"https://thenounproject.com/term/snow/64/\">\n" +
+                        "                  Snow</a> from National Park Service Collection</li>\n" +
+                        "\t\t\t\t\t\t\n" +
+                        "               <li class = \"icon-attribution\">\n" +
+                        "                  <a href = \"https://thenounproject.com/term/drop/11449/\">\n" +
+                        "                  Drop</a> Alex Fuller</li>\n" +
+                        "\t\t\t\t\t\t\n" +
+                        "               <li class = \"icon-attribution\">\n" +
+                        "                  <a href = \"https://thenounproject.com/term/smoke/27750/\">\n" +
+                        "                  Smoke</a> by Gerardo Martín Martínez</li>\n" +
+                        "\t\t\t\t\t\t\n" +
+                        "               <li class = \"icon-attribution\">\n" +
+                        "                  <a href = \"https://thenounproject.com/term/moon/13554/\">\n" +
+                        "                  Moon</a> by Jory Raphael</li>\n" +
+                        "\t\t\t\t\t\t\n" +
+                        "               <li class = \"icon-attribution\">\n" +
+                        "                  <a href = \"https://thenounproject.com/term/warning/18974/\">\n" +
+                        "                  Warning</a> by Icomatic</li>\n" +
+                        "\t\t\t\t\t\t\n" +
+                        "               <li class = \"icon-attribution\">\n" +
+                        "                  <a href = \"https://thenounproject.com/term/sun/13545/\">\n" +
+                        "                  Sun</a> by Jory Raphael</li>\n" +
+                        "\t\t\t\t\t\t\n" +
+                        "               <li class = \"icon-attribution\">\n" +
+                        "                  <a href = \"https://thenounproject.com/term/windsock/135621/\">\n" +
+                        "                  Windsock</a> by Golden Roof</li>\n" +
+                        "\t\t\t\t\t\t\n" +
+                        "            </ul>\t\t\n" +
+                        "         </div>\n" +
+                        "\t\t\t\n" +
+                        "         <div id = \"weather\" class = \"weather middle hide\">\n" +
+                        "            <div class = \"location\" id = \"location\"></div>\n" +
+                        "               \n" +
+                        "               <div class = \"weather-container\">\n" +
+                        "                  <div id = \"temperature-info\" class = \"temperature-info\">\n" +
+                        "                     <div class = \"temperature\" id = \"temperature\">\n" +
+                        "                     </div>\n" +
+                        "                     <div class = \"weather-description\" id = \"weather-description\">\n" +
+                        "                     </div>\n" +
+                        "                  </div>\n" +
+                        "\t\t\t\t\t\t\n" +
+                        "                  <div class = \"weather-box\">\n" +
+                        "                     <ul class = \"weather-info\" id = \"weather-info\">\n" +
+                        "                        <li class = \"weather-item humidity\">Humidity:\n" +
+                        "                           <span id = \"humidity\"></span>%</li><!---->\n" +
+                        "                        <li class = \"weather-item wind\">Wind: <span \n" +
+                        "                           id = \"wind-direction\"></span> <span \n" +
+                        "                           id = \"wind\"></span> <span \n" +
+                        "                           id = \"speed-unit\"></span></li>\n" +
+                        "                     </ul>\n" +
+                        "                  </div>\n" +
+                        "\t\t\t\t\t\t\n" +
+                        "                  <div class = \"temp-change\">\n" +
+                        "                     <button id = \"celsius\" \n" +
+                        "                        class = \"temp-change-button celsius\">°C\n" +
+                        "                        </button><button id = \"fahrenheit\" \n" +
+                        "                        class = \"temp-change-button fahrenheit\">\n" +
+                        "                        °F</button>\n" +
+                        "                  </div>\n" +
+                        "\t\t\t\t\t\t\n" +
+                        "               </div>\n" +
+                        "            </div> \n" +
+                        "\t\t\t\t\n" +
+                        "         </div>\n" +
+                        "\t\t\t\n" +
+                        "         <script \n" +
+                        "            src = \"https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js\">\n" +
+                        "            </script>\n" +
+                        "         <script src = \"weather.js\">\n" +
+                        "      </script>\n" +
+                        "      </div>\t\n" +
+                        "   </body>\n" +
+                        "</html>",
+                ""
+        );
+
+        list.add(l1);
+        list.add(l2);
+        list.add(l3);
+        list.add(l4);
+        list.add(l5);
+        list.add(l6);
+        list.add(l7);
+        list.add(l8);
+        list.add(l9);
+        list.add(l10);
+        list.add(l11);
+        list.add(l12);
+        list.add(l13);
+        return list;
+    }
 
     /*
     final LearnDetailsModel l1 = new LearnDetailsModel(
@@ -21772,6 +26751,37 @@ public class LearnDetailsContent {
                 return NodeJsGlobalObjects();
             case "NodeJs Web Module":
                 return NodeJsWebModule();
+            //jQuery
+            case "jQuery Introduction":
+                return jQueryIntroduction();
+            case "jQuery Basics":
+                return jQueryBasics();
+            case "jQuery Selectors":
+                return jQuerySelectors();
+            case "jQuery Attributes":
+                return jQueryAttributes();
+            case "jQuery DOM Traversing":
+                return jQueryDOMTraversing();
+            case "jQuery CSS":
+                return jQueryCSS();
+            case "jQuery DOM":
+                return jQueryDOM();
+            case "jQuery Events Handling":
+                return jQueryEventsHandling();
+            case "jQuery Ajax":
+                return jQueryAjax();
+            case "jQuery Effects":
+                return jQueryEffects();
+            case "jQuery Interactions":
+                return jQueryInteractions();
+            case "jQuery Widgets":
+                return jQueryWidgets();
+            case "jQuery Theming":
+                return jQueryTheming();
+            case "jQuery Utilities":
+                return jQueryUtilities();
+            case "jQuery Plugins":
+                return jQueryPlugins();
 
             default:
                 return defaultT();
@@ -21781,7 +26791,7 @@ public class LearnDetailsContent {
     }
 
 }
-    /*private static List<LearnDetailsModel> NodeJsWebModule(){
+    /*private static List<LearnDetailsModel> jQueryPlugins(){
         final List<LearnDetailsModel> list = new ArrayList<>();
         final LearnDetailsModel l1 = new LearnDetailsModel();
 

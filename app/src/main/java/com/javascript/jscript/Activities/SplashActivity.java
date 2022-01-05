@@ -2,12 +2,18 @@ package com.javascript.jscript.Activities;
 
 import static com.javascript.jscript.Activities.PremiumActivity.PURCHASE_KEY;
 
+import android.app.Activity;
+import android.app.NotificationChannel;
+import android.app.NotificationManager;
+import android.app.PendingIntent;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
+import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
+import android.text.Html;
 import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -18,13 +24,24 @@ import android.view.animation.AnimationUtils;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.NotificationCompat;
+import androidx.core.app.NotificationManagerCompat;
 
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 import com.javascript.jscript.Config.UiConfig;
+import com.javascript.jscript.Model.NotificationsModel;
+import com.javascript.jscript.Model.UserModel;
+import com.javascript.jscript.Notifications.NotificationsActivity;
 import com.javascript.jscript.R;
+
+import java.util.Objects;
 
 public class SplashActivity extends AppCompatActivity {
 
@@ -40,6 +57,7 @@ public class SplashActivity extends AppCompatActivity {
     TextView toastText;
     View toastLayout;
     Toast toast;
+    Intent intent;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -49,10 +67,10 @@ public class SplashActivity extends AppCompatActivity {
         setContentView(R.layout.activity_splash);
         //custom toast
         inflater = getLayoutInflater();
-        toastLayout = inflater.inflate(R.layout.custom_toast_layout,(ViewGroup) findViewById(R.id.toastLayout));
+        toastLayout = inflater.inflate(R.layout.custom_toast_layout, (ViewGroup) findViewById(R.id.toastLayout));
         toastText = (TextView) toastLayout.findViewById(R.id.toastText);
         toast = new Toast(getApplicationContext());
-        toast.setGravity(Gravity.BOTTOM,0,40);
+        toast.setGravity(Gravity.BOTTOM, 0, 40);
         toast.setDuration(Toast.LENGTH_LONG);
         toast.setView(toastLayout);
         //network check
@@ -61,7 +79,7 @@ public class SplashActivity extends AppCompatActivity {
                 connectivityManager.getNetworkInfo(ConnectivityManager.TYPE_WIFI).getState() == NetworkInfo.State.CONNECTED) {
             //we are connected to a network
             connected = true;
-        }else {
+        } else {
             toastText.setText(R.string.no_connection_text);
             toast.show();
             connected = false;
@@ -131,6 +149,66 @@ public class SplashActivity extends AppCompatActivity {
                 }
             }, SPLASH_SCREEN);
         }
+        //check discuss notifications
+        database.getReference()
+                .child("Notifications")
+                .child(Objects.requireNonNull(FirebaseAuth.getInstance().getUid()))
+                .addListenerForSingleValueEvent(new ValueEventListener() {
+                    @Override
+                    public void onDataChange(@NonNull DataSnapshot snapshot) {
+                        for (DataSnapshot dataSnapshot : snapshot.getChildren()) {
+                            NotificationsModel model = dataSnapshot.getValue(NotificationsModel.class);
+                            assert model != null;
+                            boolean checkOpens = model.isCheckOpen();
+                            if (!checkOpens) {
+                                //get user data
+                                database.getReference()
+                                        .child("UserData")
+                                        .child(model.getNotificationBy()).addValueEventListener(new ValueEventListener() {
+                                    @Override
+                                    public void onDataChange(@NonNull DataSnapshot snapshot) {
+                                        Activity context = SplashActivity.this;
+                                        UserModel userModel = snapshot.getValue(UserModel.class);
+                                        assert userModel != null;
+                                        //if build version is over oreo
+                                        //notification channel
+                                        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+                                            NotificationChannel channel = new NotificationChannel("JScript Notifications", "Discuss", NotificationManager.IMPORTANCE_DEFAULT);
+                                            NotificationManager manager = context.getSystemService(NotificationManager.class);
+                                            manager.createNotificationChannel(channel);
+                                        }
+                                        //notification intent
+                                        Intent intent = new Intent(context, NotificationsActivity.class);
+                                        PendingIntent pendingIntent = PendingIntent.getActivity(context, 0, intent, 0);
+                                        //notification builder
+                                        NotificationCompat.Builder builder = new NotificationCompat.Builder(context, "JScript Notifications");
+                                        //builder.setContentTitle("JScript: Learn JavaScript");
+                                        builder.setContentText(Html.fromHtml("<span style=\"font-weight:bold; color:#15c55d\">" +
+                                                userModel.getUserName() + " " + "</span>" + " Reply on your question"));
+                                        builder.setSmallIcon(R.drawable.ic_notification_small_icon);
+                                        builder.setAutoCancel(true);
+                                        builder.setContentIntent(pendingIntent);
+
+                                        //notification manager
+                                        NotificationManagerCompat managerCompat = NotificationManagerCompat.from(context);
+                                        managerCompat.notify(1, builder.build());
+                                    }
+
+                                    @Override
+                                    public void onCancelled(@NonNull DatabaseError error) {
+
+                                    }
+                                });
+                            }
+                        }
+                    }
+
+                    @Override
+                    public void onCancelled(@NonNull DatabaseError error) {
+
+                    }
+                });
+
     }
 
     private SharedPreferences getPreferenceObject() {
@@ -140,5 +218,4 @@ public class SplashActivity extends AppCompatActivity {
     private boolean getPurchaseValueFromPref() {
         return getPreferenceObject().getBoolean(PURCHASE_KEY, false);
     }
-
 }

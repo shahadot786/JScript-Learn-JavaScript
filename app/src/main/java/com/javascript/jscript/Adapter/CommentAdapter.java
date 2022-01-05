@@ -52,6 +52,7 @@ public class CommentAdapter extends RecyclerView.Adapter<CommentAdapter.viewHold
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
                 UserModel userModel = snapshot.getValue(UserModel.class);
+                assert userModel != null;
                 Picasso.get()
                         .load(userModel.getProfile())
                         .placeholder(R.drawable.ic_profile_default_image)

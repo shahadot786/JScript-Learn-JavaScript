@@ -19,6 +19,7 @@ import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
+import com.javascript.jscript.Activities.SplashActivity;
 import com.javascript.jscript.Discuss.DiscussDetailsActivity;
 import com.javascript.jscript.Model.DiscussModel;
 import com.javascript.jscript.Model.UserModel;
@@ -125,6 +126,7 @@ public class DiscussAdapter extends RecyclerView.Adapter<DiscussAdapter.viewHold
                             @Override
                             public void onClick(View view) {
                                 //goto topics details
+                                //set value for discus details
                                 Intent intent = new Intent(context.getApplicationContext(), DiscussDetailsActivity.class);
                                 intent.putExtra("postId", model.getPostId());
                                 intent.putExtra("postedBy", model.getPostedBy());

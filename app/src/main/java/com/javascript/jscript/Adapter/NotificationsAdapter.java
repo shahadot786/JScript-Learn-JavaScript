@@ -3,14 +3,20 @@ package com.javascript.jscript.Adapter;
 import static android.content.Intent.FLAG_ACTIVITY_NEW_TASK;
 
 import android.annotation.SuppressLint;
+import android.app.NotificationChannel;
+import android.app.NotificationManager;
+import android.app.PendingIntent;
 import android.content.Context;
 import android.content.Intent;
+import android.os.Build;
 import android.text.Html;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
 import androidx.annotation.NonNull;
+import androidx.core.app.NotificationCompat;
+import androidx.core.app.NotificationManagerCompat;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.github.marlonlom.utilities.timeago.TimeAgo;
@@ -21,6 +27,7 @@ import com.google.firebase.database.ValueEventListener;
 import com.javascript.jscript.Discuss.DiscussDetailsActivity;
 import com.javascript.jscript.Model.NotificationsModel;
 import com.javascript.jscript.Model.UserModel;
+import com.javascript.jscript.Notifications.NotificationsActivity;
 import com.javascript.jscript.R;
 import com.javascript.jscript.databinding.NotificationRvSampleBinding;
 import com.squareup.picasso.Picasso;
@@ -118,5 +125,7 @@ public class NotificationsAdapter extends RecyclerView.Adapter<NotificationsAdap
             binding = NotificationRvSampleBinding.bind(itemView);
         }
     }
+
+
 
 }

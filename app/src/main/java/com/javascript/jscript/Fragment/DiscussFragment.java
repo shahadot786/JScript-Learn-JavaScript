@@ -2,7 +2,6 @@ package com.javascript.jscript.Fragment;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
-import android.graphics.Color;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.os.Bundle;
@@ -13,13 +12,11 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
-import androidx.appcompat.widget.SearchView;
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
@@ -35,6 +32,7 @@ import com.javascript.jscript.Adapter.DiscussAdapter;
 import com.javascript.jscript.Config.UiConfig;
 import com.javascript.jscript.Discuss.AddDiscussActivity;
 import com.javascript.jscript.Model.DiscussModel;
+import com.javascript.jscript.Model.NotificationsModel;
 import com.javascript.jscript.Model.UserModel;
 import com.javascript.jscript.Notifications.NotificationsActivity;
 import com.javascript.jscript.R;
@@ -54,6 +52,7 @@ public class DiscussFragment extends Fragment {
     TextView toastText;
     View toastLayout;
     Toast toast;
+    View dotView;
 
     public DiscussFragment() {
         // Required empty public constructor
@@ -72,10 +71,12 @@ public class DiscussFragment extends Fragment {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_discuss, container, false);
         setHasOptionsMenu(true);
-        toastLayout = inflater.inflate(R.layout.custom_toast_layout,(ViewGroup) view.findViewById(R.id.toastLayout));
+        //find dot view
+        dotView = view.findViewById(R.id.dotViews);
+        toastLayout = inflater.inflate(R.layout.custom_toast_layout, (ViewGroup) view.findViewById(R.id.toastLayout));
         toastText = (TextView) toastLayout.findViewById(R.id.toastText);
         toast = new Toast(getActivity().getBaseContext());
-        toast.setGravity(Gravity.BOTTOM,0,200);
+        toast.setGravity(Gravity.BOTTOM, 0, 200);
         toast.setDuration(Toast.LENGTH_LONG);
         toast.setView(toastLayout);
         //recyclerview
@@ -136,7 +137,7 @@ public class DiscussFragment extends Fragment {
                 connectivityManager.getNetworkInfo(ConnectivityManager.TYPE_WIFI).getState() == NetworkInfo.State.CONNECTED) {
             //we are connected to a network
             connected = true;
-        }else {
+        } else {
             toastText.setText(R.string.no_connection_text);
             toast.show();
             connected = false;
@@ -208,35 +209,35 @@ public class DiscussFragment extends Fragment {
         MenuItem menuItem = menu.findItem(R.id.settings);
         menuItem.setVisible(false);
         inflater.inflate(R.menu.menu_discuss, menu);
-        MenuItem item = menu.findItem(R.id.search);
-        item.setVisible(false);
-        SearchView searchView = (SearchView) item.getActionView();
-        searchView.setQueryHint("Search questions...");
-        searchView.setBackgroundResource(R.drawable.ic_programs_image_bg);
-        //text
-        EditText txtSearch = ((EditText)searchView.findViewById(androidx.appcompat.R.id.search_src_text));
-        txtSearch.setHintTextColor(getResources().getColor(R.color.textColorPlaceholder));
-        txtSearch.setTextColor(Color.WHITE);
-        //query listener
-        searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
-            @Override
-            public boolean onQueryTextSubmit(String s) {
-                processsearch(s);
-                return false;
-            }
+        final MenuItem menuItem1 = menu.findItem(R.id.notification);
+        menuItem1.setVisible(true);
+        //notification icon change
+        database.getReference()
+                .child("Notifications")
+                .child(Objects.requireNonNull(FirebaseAuth.getInstance().getUid()))
+                .addListenerForSingleValueEvent(new ValueEventListener() {
+                    @Override
+                    public void onDataChange(@NonNull DataSnapshot snapshot) {
+                        for (DataSnapshot dataSnapshot : snapshot.getChildren()) {
+                            NotificationsModel model = dataSnapshot.getValue(NotificationsModel.class);
+                            assert model != null;
+                            boolean checkOpens = model.isCheckOpen();
+                            if (!checkOpens) {
+                                menuItem1.setIcon(R.drawable.ic_notification_active_24);
+                            }else {
+                                menuItem1.setIcon(R.drawable.ic_notification_icon);
+                            }
+                        }
+                    }
 
-            @Override
-            public boolean onQueryTextChange(String s) {
-                processsearch(s);
-                return false;
-            }
-        });
-        super.onCreateOptionsMenu(menu, inflater);
+                    @Override
+                    public void onCancelled(@NonNull DatabaseError error) {
+
+                    }
+                });
 
     }
 
-    private void processsearch(String s) {
-    }
 
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
@@ -248,3 +249,31 @@ public class DiscussFragment extends Fragment {
         return super.onOptionsItemSelected(item);
     }
 }
+   /* SearchView searchView = (SearchView) item.getActionView();
+        searchView.setQueryHint("Search questions...");
+        searchView.setBackgroundResource(R.drawable.ic_programs_image_bg);
+    //text
+    EditText txtSearch = ((EditText)searchView.findViewById(androidx.appcompat.R.id.search_src_text));
+        txtSearch.setHintTextColor(getResources().getColor(R.color.textColorPlaceholder));
+        txtSearch.setTextColor(Color.WHITE);
+    //query listener
+        searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
+        @Override
+        public boolean onQueryTextSubmit(String s) {
+            processsearch(s);
+            return false;
+        }
+
+        @Override
+        public boolean onQueryTextChange(String s) {
+            processsearch(s);
+            return false;
+        }
+    });
+        super.onCreateOptionsMenu(menu, inflater);
+
+}
+
+    private void processsearch(String s) {
+    }*/
+

@@ -87,7 +87,6 @@ public class NotificationsActivity extends AppCompatActivity {
                         @SuppressLint("NotifyDataSetChanged")
                         @Override
                         public void onDataChange(@NonNull DataSnapshot snapshot) {
-
                             list.clear();
                             for (DataSnapshot dataSnapshot : snapshot.getChildren()) {
                                 NotificationsModel notificationsModel = dataSnapshot.getValue(NotificationsModel.class);

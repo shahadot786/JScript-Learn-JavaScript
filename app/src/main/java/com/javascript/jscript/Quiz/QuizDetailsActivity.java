@@ -248,6 +248,7 @@ public class QuizDetailsActivity extends AppCompatActivity {
                 //When finish
                 //Hide textView
                 qTimer.setText("Finished");
+                Toast.makeText(QuizDetailsActivity.this, "Finished time", Toast.LENGTH_SHORT).show();
                 finish();
 
             }

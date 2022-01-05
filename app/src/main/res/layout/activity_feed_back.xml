@@ -80,11 +80,12 @@
 
             <TextView
                 android:id="@+id/textView11"
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
                 android:text="@string/feedback_message2"
-                android:textSize="18sp"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="@+id/profileImage"
                 app:layout_constraintTop_toBottomOf="@+id/profileImage" />
 
@@ -159,9 +160,10 @@
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/feedbackMessageEditText"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:hint="@string/feedback_message"
+                    android:layout_height="120dp"
                     android:ems="10"
+                    android:gravity="top"
+                    android:hint="@string/feedback_message"
                     android:inputType="textMultiLine|textPersonName"
                     android:maxLines="10"
                     android:overScrollMode="always"

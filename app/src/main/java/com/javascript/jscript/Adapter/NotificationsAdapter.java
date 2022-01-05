@@ -74,7 +74,7 @@ public class NotificationsAdapter extends RecyclerView.Adapter<NotificationsAdap
 
                         if (type.equals("comment")){
                             holder.binding.notificationText.setText(Html.fromHtml("<span style=\"font-weight:bold; color:#15c55d\">"+
-                                    userModel.getUserName()+" "+"</span>" + " Reply on your question"));
+                                    userModel.getUserName()+" "+"</span>" + " Reply on your post"));
                         }
 
                     }

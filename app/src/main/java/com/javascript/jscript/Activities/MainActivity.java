@@ -1,11 +1,20 @@
 package com.javascript.jscript.Activities;
 
 import android.annotation.SuppressLint;
+import android.app.Activity;
+import android.app.NotificationChannel;
+import android.app.NotificationManager;
+import android.app.PendingIntent;
 import android.content.Intent;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
+import android.media.RingtoneManager;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.net.Uri;
+import android.os.Build;
 import android.os.Bundle;
+import android.text.Html;
 import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.Menu;
@@ -18,11 +27,17 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.NotificationCompat;
+import androidx.core.app.NotificationManagerCompat;
 import androidx.fragment.app.FragmentTransaction;
 
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 import com.javascript.jscript.BuildConfig;
 import com.javascript.jscript.Config.UiConfig;
 import com.javascript.jscript.Fragment.DiscussFragment;
@@ -30,8 +45,15 @@ import com.javascript.jscript.Fragment.HomeFragment;
 import com.javascript.jscript.Fragment.ProFragment;
 import com.javascript.jscript.Fragment.ProfileFragment;
 import com.javascript.jscript.Fragment.QuizFragment;
+import com.javascript.jscript.Model.NotificationsModel;
+import com.javascript.jscript.Model.UserModel;
+import com.javascript.jscript.Notifications.NotificationsActivity;
 import com.javascript.jscript.R;
 import com.javascript.jscript.databinding.ActivityMainBinding;
+
+import java.util.Objects;
+import java.util.Random;
+
 import me.ibrahimsn.lib.OnItemSelectedListener;
 
 
@@ -40,12 +62,13 @@ public class MainActivity extends AppCompatActivity {
     private long exitTime = 0;
     ActivityMainBinding binding;
     private AdView bannerAd;
-    FirebaseAuth auth;
     private boolean connected = false;
     LayoutInflater inflater;
     TextView toastText;
     View toastLayout;
     Toast toast;
+    FirebaseAuth auth;
+    FirebaseDatabase database;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -65,17 +88,20 @@ public class MainActivity extends AppCompatActivity {
         setSupportActionBar(binding.toolbar);
         //firebase instance
         auth = FirebaseAuth.getInstance();
+        database = FirebaseDatabase.getInstance();
+        //ad request
+        bannerAd = findViewById(R.id.adView);
+        AdRequest adRequest = new AdRequest.Builder().build();
+        bannerAd.loadAd(adRequest);
         //by default fragment code
         FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
         binding.toolbar.setVisibility(View.VISIBLE);
         MainActivity.this.setTitle(getResources().getString(R.string.jscript_learn_javascript));
         transaction.replace(R.id.container, new HomeFragment());
         transaction.commit();
-
-        //ad request
-        bannerAd = findViewById(R.id.adView);
-        AdRequest adRequest = new AdRequest.Builder().build();
-        bannerAd.loadAd(adRequest);
+        if (UiConfig.BANNER_AD_VISIBILITY) {
+            bannerAd.setVisibility(View.VISIBLE);
+        }
 
         //bottom bar fragment listener
         binding.bottomBar.setOnItemSelectedListener(new OnItemSelectedListener() {
@@ -91,7 +117,7 @@ public class MainActivity extends AppCompatActivity {
                         transaction.setCustomAnimations(R.anim.slide_in_right, R.anim.slide_out_left, R.anim.slide_in_left, R.anim.slide_out_right);
                         transaction.replace(R.id.container, new HomeFragment());
                         if (UiConfig.BANNER_AD_VISIBILITY) {
-                            bannerAd.setVisibility(View.GONE);
+                            bannerAd.setVisibility(View.VISIBLE);
                         }
                         break;
                     case 1:
@@ -100,7 +126,7 @@ public class MainActivity extends AppCompatActivity {
                         transaction.setCustomAnimations(R.anim.slide_in_right, R.anim.slide_out_left, R.anim.slide_in_left, R.anim.slide_out_right);
                         transaction.replace(R.id.container, new QuizFragment());
                         if (UiConfig.BANNER_AD_VISIBILITY) {
-                            bannerAd.setVisibility(View.GONE);
+                            bannerAd.setVisibility(View.VISIBLE);
                         }
                         break;
                     case 2:
@@ -109,7 +135,7 @@ public class MainActivity extends AppCompatActivity {
                         transaction.setCustomAnimations(R.anim.slide_in_right, R.anim.slide_out_left, R.anim.slide_in_left, R.anim.slide_out_right);
                         transaction.replace(R.id.container, new DiscussFragment());
                         if (UiConfig.BANNER_AD_VISIBILITY) {
-                            bannerAd.setVisibility(View.GONE);
+                            bannerAd.setVisibility(View.VISIBLE);
                         }
                         break;
 
@@ -119,7 +145,7 @@ public class MainActivity extends AppCompatActivity {
                         transaction.setCustomAnimations(R.anim.slide_in_right, R.anim.slide_out_left, R.anim.slide_in_left, R.anim.slide_out_right);
                         transaction.replace(R.id.container, new ProfileFragment());
                         if (UiConfig.BANNER_AD_VISIBILITY) {
-                            bannerAd.setVisibility(View.GONE);
+                            bannerAd.setVisibility(View.VISIBLE);
                         }
                         break;
                     case 4:
@@ -142,6 +168,76 @@ public class MainActivity extends AppCompatActivity {
                 return false;
             }
         });
+        //check discuss notifications
+        database.getReference()
+                .child("Notifications")
+                .child(Objects.requireNonNull(FirebaseAuth.getInstance().getUid()))
+                .addListenerForSingleValueEvent(new ValueEventListener() {
+                    @Override
+                    public void onDataChange(@NonNull DataSnapshot snapshot) {
+                        for (DataSnapshot dataSnapshot : snapshot.getChildren()) {
+                            NotificationsModel model = dataSnapshot.getValue(NotificationsModel.class);
+                            assert model != null;
+                            boolean checkOpens = model.isCheckOpen();
+                            if (!checkOpens) {
+                                //get user data
+                                database.getReference()
+                                        .child("UserData")
+                                        .child(model.getNotificationBy()).addValueEventListener(new ValueEventListener() {
+                                    @Override
+                                    public void onDataChange(@NonNull DataSnapshot snapshot) {
+                                        Activity context = MainActivity.this;
+                                        UserModel userModel = snapshot.getValue(UserModel.class);
+                                        assert userModel != null;
+                                        //if build version is over oreo
+                                        //notification channel
+                                        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+                                            NotificationChannel channel = new NotificationChannel("JScript Notifications", "Discuss", NotificationManager.IMPORTANCE_DEFAULT);
+                                            NotificationManager manager = context.getSystemService(NotificationManager.class);
+                                            manager.createNotificationChannel(channel);
+                                        }
+                                        //notifications sound
+                                        Uri notifySound = RingtoneManager
+                                                .getDefaultUri(RingtoneManager.TYPE_NOTIFICATION);
+                                        //generate random number
+                                        Random random = new Random();
+                                        int notificationNumber = random.nextInt(9999-1000) +1000;
+                                        //large icon
+                                        Bitmap largeIcon = BitmapFactory.decodeResource(getResources(),R.drawable.ic_main_icon_round);
+                                        //notification intent
+                                        Intent intent = new Intent(context, NotificationsActivity.class);
+                                        PendingIntent pendingIntent = PendingIntent.getActivity(context, 0, intent, 0);
+                                        //notification builder
+                                        NotificationCompat.Builder builder = new NotificationCompat.Builder(context, "JScript Notifications");
+                                        //builder.setContentTitle("JScript: Learn JavaScript");
+                                        builder.setContentText(Html.fromHtml("\"<span style=\"font-weight:bold; color:#15c55d\">" +
+                                                userModel.getUserName() + "" +"</span>\"" + " Reply on your question"));
+                                        builder.setSmallIcon(R.drawable.ic_notification_small_icon);
+                                        builder.setLargeIcon(largeIcon);
+                                        builder.setAutoCancel(true);
+                                        builder.setSound(notifySound);
+                                        builder.setVibrate(new long[] { 100, 250, 100, 250, 100, 250 });
+                                        builder.setContentIntent(pendingIntent);
+
+                                        //notification manager
+                                        NotificationManagerCompat managerCompat = NotificationManagerCompat.from(context);
+                                        managerCompat.notify(notificationNumber, builder.build());
+                                    }
+
+                                    @Override
+                                    public void onCancelled(@NonNull DatabaseError error) {
+
+                                    }
+                                });
+                            }
+                        }
+                    }
+
+                    @Override
+                    public void onCancelled(@NonNull DatabaseError error) {
+
+                    }
+                });
     }//finished onCreate
 
     //on create option menu

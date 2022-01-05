@@ -32,7 +32,13 @@ import com.android.billingclient.api.PurchasesUpdatedListener;
 import com.android.billingclient.api.SkuDetails;
 import com.android.billingclient.api.SkuDetailsParams;
 import com.android.billingclient.api.SkuDetailsResponseListener;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 import com.javascript.jscript.Config.UiConfig;
+import com.javascript.jscript.Model.PremiumModel;
 import com.javascript.jscript.R;
 import com.javascript.jscript.Utils.Security;
 import com.javascript.jscript.databinding.ActivityPremiumBinding;
@@ -40,9 +46,12 @@ import com.javascript.jscript.databinding.ActivityPremiumBinding;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
 
 public class PremiumActivity extends AppCompatActivity implements PurchasesUpdatedListener {
 
+    FirebaseDatabase database;
+    FirebaseAuth auth;
     ActivityPremiumBinding binding;
     private BillingClient billingClient;
     LayoutInflater inflater;
@@ -58,6 +67,9 @@ public class PremiumActivity extends AppCompatActivity implements PurchasesUpdat
         super.onCreate(savedInstanceState);
         binding = ActivityPremiumBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
+        //firebase instance
+        database = FirebaseDatabase.getInstance();
+        auth = FirebaseAuth.getInstance();
         //custom toast
         inflater = getLayoutInflater();
         toastLayout = inflater.inflate(R.layout.custom_toast_layout,(ViewGroup) findViewById(R.id.toastLayout));
@@ -142,6 +154,26 @@ public class PremiumActivity extends AppCompatActivity implements PurchasesUpdat
             UiConfig.PRO_VISIBILITY_STATUS_SHOW = false;
             UiConfig.BANNER_AD_VISIBILITY = false;
             UiConfig.ENABLE_EXIT_DIALOG = false;
+            database.getReference()
+                    .child("UserData")
+                    .child(Objects.requireNonNull(FirebaseAuth.getInstance().getUid()))
+                    .child("Premium")
+                    .addValueEventListener(new ValueEventListener() {
+                        @Override
+                        public void onDataChange(@NonNull DataSnapshot snapshot) {
+                            PremiumModel model = snapshot.getValue(PremiumModel.class);
+                            assert model != null;
+                            model.setBannerAd(false);
+                            model.setInterstitialAd(false);
+                            model.setProVisibility(false);
+                        }
+
+                        @Override
+                        public void onCancelled(@NonNull DatabaseError error) {
+
+                        }
+                    });
+
         }
         //item not subscribed
         else {
@@ -149,6 +181,25 @@ public class PremiumActivity extends AppCompatActivity implements PurchasesUpdat
             UiConfig.PRO_VISIBILITY_STATUS_SHOW = true;
             UiConfig.BANNER_AD_VISIBILITY = true;
             UiConfig.ENABLE_EXIT_DIALOG = true;
+            database.getReference()
+                    .child("UserData")
+                    .child(Objects.requireNonNull(FirebaseAuth.getInstance().getUid()))
+                    .child("Premium")
+                    .addValueEventListener(new ValueEventListener() {
+                        @Override
+                        public void onDataChange(@NonNull DataSnapshot snapshot) {
+                            PremiumModel model = snapshot.getValue(PremiumModel.class);
+                            assert model != null;
+                            model.setBannerAd(true);
+                            model.setInterstitialAd(true);
+                            model.setProVisibility(true);
+                        }
+
+                        @Override
+                        public void onCancelled(@NonNull DatabaseError error) {
+
+                        }
+                    });
         }
     }//ends of OnCreate
 
@@ -298,6 +349,25 @@ public class PremiumActivity extends AppCompatActivity implements PurchasesUpdat
             UiConfig.PRO_VISIBILITY_STATUS_SHOW = false;
             UiConfig.BANNER_AD_VISIBILITY = false;
             UiConfig.ENABLE_EXIT_DIALOG = false;
+            database.getReference()
+                    .child("UserData")
+                    .child(Objects.requireNonNull(FirebaseAuth.getInstance().getUid()))
+                    .child("Premium")
+                    .addValueEventListener(new ValueEventListener() {
+                        @Override
+                        public void onDataChange(@NonNull DataSnapshot snapshot) {
+                            PremiumModel model = snapshot.getValue(PremiumModel.class);
+                            assert model != null;
+                            model.setBannerAd(false);
+                            model.setInterstitialAd(false);
+                            model.setProVisibility(false);
+                        }
+
+                        @Override
+                        public void onCancelled(@NonNull DatabaseError error) {
+
+                        }
+                    });
             startActivity(new Intent(activity, MainActivity.class));
         }
         //if item already purchased then check and reflect changes
@@ -361,6 +431,27 @@ public class PremiumActivity extends AppCompatActivity implements PurchasesUpdat
                 UiConfig.PRO_VISIBILITY_STATUS_SHOW = true;
                 UiConfig.BANNER_AD_VISIBILITY = true;
                 UiConfig.ENABLE_EXIT_DIALOG = true;
+
+                database.getReference()
+                        .child("UserData")
+                        .child(Objects.requireNonNull(FirebaseAuth.getInstance().getUid()))
+                        .child("Premium")
+                        .addValueEventListener(new ValueEventListener() {
+                            @Override
+                            public void onDataChange(@NonNull DataSnapshot snapshot) {
+                                PremiumModel model = snapshot.getValue(PremiumModel.class);
+                                assert model != null;
+                                model.setBannerAd(true);
+                                model.setInterstitialAd(true);
+                                model.setProVisibility(true);
+                            }
+
+                            @Override
+                            public void onCancelled(@NonNull DatabaseError error) {
+
+                            }
+                        });
+
                 toastText.setText(R.string.PurchaseStatusUnknown);
                 toast.show();
             }

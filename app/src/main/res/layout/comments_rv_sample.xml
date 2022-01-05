@@ -32,7 +32,7 @@
             android:paddingBottom="15dp"
             android:textIsSelectable="true"
             android:textSize="12sp"
-            android:autoLink="all"
+            android:autoLink="web"
             android:linksClickable="true"
             android:textColorLink="@color/activeGreen"
             app:layout_constraintBottom_toTopOf="@+id/userName"

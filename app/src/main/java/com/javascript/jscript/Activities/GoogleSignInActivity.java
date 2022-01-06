@@ -164,13 +164,16 @@ public class GoogleSignInActivity extends AppCompatActivity {
                             // Sign in success, update UI with the signed-in user's information
                             Log.d(TAG, "signInWithCredential:success");
                             FirebaseUser user = auth.getCurrentUser();
-                            UserModel userModel = new UserModel();
                             assert user != null;
-                            userModel.setUserID(user.getUid());
+                            String userID = user.getUid();
+                            String userName = user.getDisplayName();
+                            String userProfile = Objects.requireNonNull(user.getPhotoUrl()).toString();
+                            String userEmail = user.getEmail();
+                            UserModel userModel = new UserModel(userName,userEmail,userProfile,userID,"",false);
+                            /*userModel.setUserID(user.getUid());
                             userModel.setUserName(user.getDisplayName());
                             userModel.setProfile(Objects.requireNonNull(user.getPhotoUrl()).toString());
-                            userModel.setEmail(user.getEmail());
-
+                            userModel.setEmail(user.getEmail());*/
                             database.getReference().child("UserData")
                                     .child(user.getUid())
                                     .setValue(userModel);

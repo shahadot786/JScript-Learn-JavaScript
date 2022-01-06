@@ -5,6 +5,8 @@ public class UserModel {
     private String coverPhoto;
     private String profile;
     private String userID;
+    private String checkPremiumID;
+    private boolean checkPremium;
 
     public UserModel() {
     }
@@ -22,6 +24,23 @@ public class UserModel {
         this.userName = userName;
         this.email = email;
         this.password = password;
+    }
+
+    public UserModel(String userName, String email, String password, String checkPremiumID, boolean checkPremium) {
+        this.userName = userName;
+        this.email = email;
+        this.password = password;
+        this.checkPremiumID = checkPremiumID;
+        this.checkPremium = checkPremium;
+    }
+
+    public UserModel(String userName, String email, String profile, String userID, String checkPremiumID, boolean checkPremium) {
+        this.userName = userName;
+        this.email = email;
+        this.profile = profile;
+        this.userID = userID;
+        this.checkPremiumID = checkPremiumID;
+        this.checkPremium = checkPremium;
     }
 
     public String getUserName() {
@@ -70,5 +89,21 @@ public class UserModel {
 
     public void setUserID(String userID) {
         this.userID = userID;
+    }
+
+    public boolean isCheckPremium() {
+        return checkPremium;
+    }
+
+    public void setCheckPremium(boolean checkPremium) {
+        this.checkPremium = checkPremium;
+    }
+
+    public String getCheckPremiumID() {
+        return checkPremiumID;
+    }
+
+    public void setCheckPremiumID(String checkPremiumID) {
+        this.checkPremiumID = checkPremiumID;
     }
 }

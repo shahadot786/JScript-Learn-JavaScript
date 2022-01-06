@@ -47,6 +47,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
+import java.util.UUID;
 
 public class PremiumActivity extends AppCompatActivity implements PurchasesUpdatedListener {
 
@@ -61,6 +62,7 @@ public class PremiumActivity extends AppCompatActivity implements PurchasesUpdat
     public static final String PREF_FILE = "JScript_Learn_JavaScript";
     public static final String PURCHASE_KEY = "lifetime_product";
     public static final String PRODUCT_ID = "shr_jscript_final";
+    public static final String VERIFY_PURCHASE_KEY = "JScriptBJZXQTc4gBeak9vwJv6ZjmSOpg2786";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -154,25 +156,6 @@ public class PremiumActivity extends AppCompatActivity implements PurchasesUpdat
             UiConfig.PRO_VISIBILITY_STATUS_SHOW = false;
             UiConfig.BANNER_AD_VISIBILITY = false;
             UiConfig.ENABLE_EXIT_DIALOG = false;
-            database.getReference()
-                    .child("UserData")
-                    .child(Objects.requireNonNull(FirebaseAuth.getInstance().getUid()))
-                    .child("Premium")
-                    .addValueEventListener(new ValueEventListener() {
-                        @Override
-                        public void onDataChange(@NonNull DataSnapshot snapshot) {
-                            PremiumModel model = snapshot.getValue(PremiumModel.class);
-                            assert model != null;
-                            model.setBannerAd(false);
-                            model.setInterstitialAd(false);
-                            model.setProVisibility(false);
-                        }
-
-                        @Override
-                        public void onCancelled(@NonNull DatabaseError error) {
-
-                        }
-                    });
 
         }
         //item not subscribed
@@ -181,25 +164,6 @@ public class PremiumActivity extends AppCompatActivity implements PurchasesUpdat
             UiConfig.PRO_VISIBILITY_STATUS_SHOW = true;
             UiConfig.BANNER_AD_VISIBILITY = true;
             UiConfig.ENABLE_EXIT_DIALOG = true;
-            database.getReference()
-                    .child("UserData")
-                    .child(Objects.requireNonNull(FirebaseAuth.getInstance().getUid()))
-                    .child("Premium")
-                    .addValueEventListener(new ValueEventListener() {
-                        @Override
-                        public void onDataChange(@NonNull DataSnapshot snapshot) {
-                            PremiumModel model = snapshot.getValue(PremiumModel.class);
-                            assert model != null;
-                            model.setBannerAd(true);
-                            model.setInterstitialAd(true);
-                            model.setProVisibility(true);
-                        }
-
-                        @Override
-                        public void onCancelled(@NonNull DatabaseError error) {
-
-                        }
-                    });
         }
     }//ends of OnCreate
 
@@ -349,25 +313,18 @@ public class PremiumActivity extends AppCompatActivity implements PurchasesUpdat
             UiConfig.PRO_VISIBILITY_STATUS_SHOW = false;
             UiConfig.BANNER_AD_VISIBILITY = false;
             UiConfig.ENABLE_EXIT_DIALOG = false;
+            //set database value
             database.getReference()
                     .child("UserData")
                     .child(Objects.requireNonNull(FirebaseAuth.getInstance().getUid()))
-                    .child("Premium")
-                    .addValueEventListener(new ValueEventListener() {
-                        @Override
-                        public void onDataChange(@NonNull DataSnapshot snapshot) {
-                            PremiumModel model = snapshot.getValue(PremiumModel.class);
-                            assert model != null;
-                            model.setBannerAd(false);
-                            model.setInterstitialAd(false);
-                            model.setProVisibility(false);
-                        }
-
-                        @Override
-                        public void onCancelled(@NonNull DatabaseError error) {
-
-                        }
-                    });
+                    .child("checkPremium")
+                    .setValue(true);
+            //set 2nd verification
+            database.getReference()
+                    .child("UserData")
+                    .child(Objects.requireNonNull(FirebaseAuth.getInstance().getUid()))
+                    .child("checkPremiumID")
+                    .setValue(VERIFY_PURCHASE_KEY);
             startActivity(new Intent(activity, MainActivity.class));
         }
         //if item already purchased then check and reflect changes
@@ -431,27 +388,6 @@ public class PremiumActivity extends AppCompatActivity implements PurchasesUpdat
                 UiConfig.PRO_VISIBILITY_STATUS_SHOW = true;
                 UiConfig.BANNER_AD_VISIBILITY = true;
                 UiConfig.ENABLE_EXIT_DIALOG = true;
-
-                database.getReference()
-                        .child("UserData")
-                        .child(Objects.requireNonNull(FirebaseAuth.getInstance().getUid()))
-                        .child("Premium")
-                        .addValueEventListener(new ValueEventListener() {
-                            @Override
-                            public void onDataChange(@NonNull DataSnapshot snapshot) {
-                                PremiumModel model = snapshot.getValue(PremiumModel.class);
-                                assert model != null;
-                                model.setBannerAd(true);
-                                model.setInterstitialAd(true);
-                                model.setProVisibility(true);
-                            }
-
-                            @Override
-                            public void onCancelled(@NonNull DatabaseError error) {
-
-                            }
-                        });
-
                 toastText.setText(R.string.PurchaseStatusUnknown);
                 toast.show();
             }

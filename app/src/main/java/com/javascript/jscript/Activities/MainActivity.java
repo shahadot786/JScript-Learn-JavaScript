@@ -238,6 +238,50 @@ public class MainActivity extends AppCompatActivity {
 
                     }
                 });
+        //check database value
+        //2nd check
+        //if user buy premium or use free
+        database.getReference()
+                .child("UserData")
+                .child(Objects.requireNonNull(FirebaseAuth.getInstance().getUid()))
+                .addListenerForSingleValueEvent(new ValueEventListener() {
+                    @Override
+                    public void onDataChange(@NonNull DataSnapshot snapshot) {
+                        UserModel model = snapshot.getValue(UserModel.class);
+                        assert model != null;
+                        boolean checkPremium = model.isCheckPremium();
+                        String checkPremiumID = model.getCheckPremiumID();
+                        //check boolean
+                        if (checkPremium){
+                            UiConfig.INTERSTITIAL__AD_VISIBILITY = false;
+                            UiConfig.PRO_VISIBILITY_STATUS_SHOW = false;
+                            UiConfig.BANNER_AD_VISIBILITY = false;
+                            UiConfig.ENABLE_EXIT_DIALOG = false;
+                        }else {
+                            UiConfig.INTERSTITIAL__AD_VISIBILITY = true;
+                            UiConfig.PRO_VISIBILITY_STATUS_SHOW = true;
+                            UiConfig.BANNER_AD_VISIBILITY = true;
+                            UiConfig.ENABLE_EXIT_DIALOG = true;
+                        }
+                        //check strings
+                        if (checkPremiumID.equals("JScriptBJZXQTc4gBeak9vwJv6ZjmSOpg2786")){
+                            UiConfig.INTERSTITIAL__AD_VISIBILITY = false;
+                            UiConfig.PRO_VISIBILITY_STATUS_SHOW = false;
+                            UiConfig.BANNER_AD_VISIBILITY = false;
+                            UiConfig.ENABLE_EXIT_DIALOG = false;
+                        }else {
+                            UiConfig.INTERSTITIAL__AD_VISIBILITY = true;
+                            UiConfig.PRO_VISIBILITY_STATUS_SHOW = true;
+                            UiConfig.BANNER_AD_VISIBILITY = true;
+                            UiConfig.ENABLE_EXIT_DIALOG = true;
+                        }
+                    }
+
+                    @Override
+                    public void onCancelled(@NonNull DatabaseError error) {
+
+                    }
+                });
     }//finished onCreate
 
     //on create option menu

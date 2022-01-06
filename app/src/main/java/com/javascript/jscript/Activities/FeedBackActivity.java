@@ -32,6 +32,7 @@ import com.javascript.jscript.databinding.ActivityFeedBackBinding;
 import com.squareup.picasso.Picasso;
 
 import java.util.Objects;
+import java.util.UUID;
 
 public class FeedBackActivity extends AppCompatActivity {
     ActivityFeedBackBinding binding;
@@ -75,6 +76,19 @@ public class FeedBackActivity extends AppCompatActivity {
         setSupportActionBar(binding.toolbar2);
         FeedBackActivity.this.setTitle("Feedback");
         Objects.requireNonNull(getSupportActionBar()).setDisplayHomeAsUpEnabled(true);
+
+        //test
+        /*binding.testBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String uniqueID = UUID.randomUUID().toString();
+                database.getReference()
+                        .child("UserData")
+                        .child(Objects.requireNonNull(FirebaseAuth.getInstance().getUid()))
+                        .child("uniqueID")
+                        .setValue(uniqueID);
+            }
+        });*/
 
         //get database value
         //google sign in name and email data fetch with image

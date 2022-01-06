@@ -140,7 +140,7 @@ public class SignUpActivity extends AppCompatActivity {
                                         }
                                     } else {
                                         dialog.show();
-                                        UserModel userModel = new UserModel(userName, email, password);
+                                        UserModel userModel = new UserModel(userName, email, password,"",false);
                                         database.getReference().child("UserData")
                                                 .child(Objects.requireNonNull(FirebaseAuth.getInstance().getUid()))
                                                 .setValue(userModel);

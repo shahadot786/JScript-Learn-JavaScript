@@ -314,7 +314,7 @@ public class PremiumActivity extends AppCompatActivity implements PurchasesUpdat
             UiConfig.BANNER_AD_VISIBILITY = false;
             UiConfig.ENABLE_EXIT_DIALOG = false;
             //set database value
-            database.getReference()
+            /*database.getReference()
                     .child("UserData")
                     .child(Objects.requireNonNull(FirebaseAuth.getInstance().getUid()))
                     .child("checkPremium")
@@ -324,7 +324,8 @@ public class PremiumActivity extends AppCompatActivity implements PurchasesUpdat
                     .child("UserData")
                     .child(Objects.requireNonNull(FirebaseAuth.getInstance().getUid()))
                     .child("checkPremiumID")
-                    .setValue(VERIFY_PURCHASE_KEY);
+                    .setValue(VERIFY_PURCHASE_KEY);*/
+            //start activity
             startActivity(new Intent(activity, MainActivity.class));
         }
         //if item already purchased then check and reflect changes

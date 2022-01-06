@@ -26227,6 +26227,606 @@ public class LearnDetailsContent {
         list.add(l13);
         return list;
     }
+    //Laravel
+    //Laravel Introduction
+    private static List<LearnDetailsModel> LaravelIntroduction(){
+        final List<LearnDetailsModel> list = new ArrayList<>();
+        final LearnDetailsModel l1 = new LearnDetailsModel(
+                "What is Laravel?",
+                "Laravel is an open-source PHP framework, which is robust and easy to understand. It follows a model-view-controller design pattern. Laravel reuses the existing components of different frameworks which helps in creating a web application. The web application thus designed is more structured and pragmatic.\n" +
+                        "\n" +
+                        "Laravel offers a rich set of functionalities which incorporates the basic features of PHP frameworks like CodeIgniter, Yii and other programming languages like Ruby on Rails. Laravel has a very rich set of features which will boost the speed of web development.\n" +
+                        "\n" +
+                        "If you are familiar with Core PHP and Advanced PHP, Laravel will make your task easier. It saves a lot time if you are planning to develop a website from scratch. Moreover, a website built in Laravel is secure and prevents several web attacks.",
+                "",
+                ""
+        );
+        final LearnDetailsModel l2 = new LearnDetailsModel(
+                "Advantages of Laravel",
+                "Creating authorization and authentication systems:\n" +
+                        "Every owner of the web application makes sure that unauthorized users do not access secured or paid resources. It provides a simple way of implementing authentication. It also provides a simple way of organizing the authorization logic and control access to resources.\n" +
+                        "Integration with tools:\n" +
+                        "Laravel is integrated with many tools that build a faster app. It is not only necessary to build the app but also to create a faster app. Integration with the caching back end is one of the major steps to improve the performance of a web app. Laravel is integrated with some popular cache back ends such as Redis, and Memcached.\n" +
+                        "Mail service integration:\n" +
+                        "Laravel is integrated with the Mail Service. This service is used to send notifications to the user's emails. It provides a clean and simple API that allows you to send the email quickly through a local or cloud-based service of your choice.\n" +
+                        "Handling exception and configuration error:\n" +
+                        "Handling exception and configuration errors are the major factors on the app's usability. The manners in which the software app handles the errors have a huge impact on the user's satisfaction and the app's usability. The organization does not want to lose their customers, so for them, Laravel is the best choice. In Laravel, error and exception handling is configured in the new Laravel project.\n" +
+                        "Automation testing work:\n" +
+                        "Testing a product is very important to make sure that the software runs without any errors, bugs, and crashes. We know that automation testing is less time-consuming than manual testing, so automation testing is preferred over the manual testing. Laravel is developed with testing in mind.\n" +
+                        "Separation of business logic code from presentation code:\n" +
+                        "The separation between business logic code and presentation code allows the HTML layout designers to change the look without interacting with the developers. A bug can be resolved by the developers faster if the separation is provided between the business logic code and presentation code. We know that Laravel follows the MVC architecture, so separation is already done.\n" +
+                        "Fixing most common technical vulnerabilities:\n" +
+                        "The security vulnerability is the most important example in web application development. An American organization, i.e., OWASP Foundation, defines the most important security vulnerabilities such as SQL injection, cross-site request forgery, cross-site scripting, etc. Developers need to consider these vulnerabilities and fix them before delivery. Laravel is a secure framework as it protects the web application against all the security vulnerabilities.\n" +
+                        "Scheduling tasks configuration and management:\n" +
+                        "The web app requires some task scheduling mechanism to perform the tasks in time for example, when to send out the emails to the subscribers or when to clean up the database tables at the end of the day. To schedule the tasks, developers need first to create the Cron entry for each task, but Laravel command scheduler defines a command schedule which requires a single entry on the server.",
+                "",
+                ""
+        );
+        final LearnDetailsModel l3 = new LearnDetailsModel(
+                "Audience",
+                "This tutorial will guide the developers and students who want to learn how to develop a website using Laravel. This tutorial is particularly meant for all those developers who have no prior experience of using Laravel.",
+                "",
+                ""
+        );
+        final LearnDetailsModel l4 = new LearnDetailsModel(
+                "Prerequisites",
+                "Before you start proceeding with this tutorial, we assume that you are familiar with HTML, Core PHP, and Advance PHP. If you are new to any of these concepts, we suggest you to pick tutorials based on these concepts first, to gain a better understanding of Laravel.\n" +
+                        "\n" +
+                        "Please note that we have used Laravel version 5.7 in all the examples.",
+                "",
+                ""
+        );
+        list.add(l1);
+        list.add(l2);
+        list.add(l3);
+        list.add(l4);
+        return list;
+    }
+    //Laravel Routing
+    private static List<LearnDetailsModel> LaravelRouting(){
+        final List<LearnDetailsModel> list = new ArrayList<>();
+        final LearnDetailsModel l1 = new LearnDetailsModel(
+                "Routing",
+                "In Laravel, all requests are mapped with the help of routes. Basic routing routes the request to the associated controllers. This chapter discusses routing in Laravel.\n" +
+                        "\n" +
+                        "Routing in Laravel includes the following categories −\n" +
+                        "\n" +
+                        "Basic Routing\n" +
+                        "Route parameters\n" +
+                        "Named Routes",
+                "",
+                ""
+        );
+        final LearnDetailsModel l2 = new LearnDetailsModel(
+                "Basic Routing",
+                "All the application routes are registered within the app/routes.php file. This file tells Laravel for the URIs it should respond to and the associated controller will give it a particular call." +
+                        "",
+                "Route::get ('/', function () {\n" +
+                        "   return view('welcome');});",
+                ""
+        );
+        final LearnDetailsModel l3 = new LearnDetailsModel(
+                "Route Parameters",
+                "Sometimes in the web application, you may need to capture the parameters passed with the URL. For this, you should modify the code in routes.php file.\n" +
+                        "\n" +
+                        "You can capture the parameters in routes.php file in two ways as discussed here −\n" +
+                        "\n" +
+                        "Required Parameters\n" +
+                        "These parameters are those which should be mandatorily captured for routing the web application. For example, it is important to capture the user’s identification number from the URL. This can be possible by defining route parameters as shown below −",
+                "Route::get('ID/{id}',function($id) {\n" +
+                        "   echo 'ID: '.$id;\n" +
+                        "});",
+                ""
+        );
+        final LearnDetailsModel l4 = new LearnDetailsModel(
+                "Optional Parameters",
+                "Sometimes developers can produce parameters as optional and it is possible with the inclusion of ? after the parameter name in URL. It is important to keep the default value mentioned as a parameter name. Look at the following example that shows how to define an optional parameter −",
+                "Route::get('user/{name?}', function ($name = 'TutorialsPoint') { return $name;});",
+                ""
+        );
+        final LearnDetailsModel l5 = new LearnDetailsModel(
+                "Named Routes",
+                "Named routes allow a convenient way of creating routes. The chaining of routes can be specified using name method onto the route definition. The following code shows an example for creating named routes with controller −",
+                "Route::get('user/profile', 'UserController@showProfile')->name('profile');",
+                ""
+        );
+        list.add(l1);
+        list.add(l2);
+        list.add(l3);
+        list.add(l4);
+        list.add(l5);
+        return list;
+    }
+    //Laravel Middleware
+    private static List<LearnDetailsModel> LaravelMiddleware(){
+        final List<LearnDetailsModel> list = new ArrayList<>();
+        final LearnDetailsModel l1 = new LearnDetailsModel(
+                "What is Middleware?",
+                "Middleware acts as a bridge between a request and a response. It is a type of filtering mechanism. This chapter explains you the middleware mechanism in Laravel.\n" +
+                        "\n" +
+                        "Laravel includes a middleware that verifies whether the user of the application is authenticated or not. If the user is authenticated, it redirects to the home page otherwise, if not, it redirects to the login page.\n" +
+                        "\n" +
+                        "Middleware can be created by executing the following command −",
+                "php artisan make:middleware <middleware-name>",
+                ""
+        );
+        final LearnDetailsModel l2 = new LearnDetailsModel(
+                "Registering Middleware",
+                "We need to register each and every middleware before using it. There are two types of Middleware in Laravel.\n" +
+                        "\n" +
+                        "Global Middleware\n" +
+                        "Route Middleware\n" +
+                        "The Global Middleware will run on every HTTP request of the application, whereas the Route Middleware will be assigned to a specific route. The middleware can be registered at app/Http/Kernel.php. This file contains two properties $middleware and $routeMiddleware. $middleware property is used to register Global Middleware and $routeMiddleware property is used to register route specific middleware.\n" +
+                        "\n" +
+                        "To register the global middleware, list the class at the end of $middleware property." +
+                        "\n" +
+                        "To register the route specific middleware, add the key and value to $routeMiddleware property.",
+                "protected $routeMiddleware = [\n" +
+                        "   'auth' => \\App\\Http\\Middleware\\Authenticate::class,\n" +
+                        "   'auth.basic' => \\Illuminate\\Auth\\Middleware\\AuthenticateWithBasicAuth::class,\n" +
+                        "   'guest' => \\App\\Http\\Middleware\\RedirectIfAuthenticated::class,\n" +
+                        "];",
+                ""
+        );
+        final LearnDetailsModel l3 = new LearnDetailsModel(
+                "Middleware Example",
+                "We have created AgeMiddleware in the previous example. We can now register it in route specific middleware property. The code for that registration is shown below.\n" +
+                        "\n" +
+                        "The following is the code for app/Http/Kernel.php −",
+                "<?php\n" +
+                        "\n" +
+                        "namespace App\\Http;\n" +
+                        "use Illuminate\\Foundation\\Http\\Kernel as HttpKernel;\n" +
+                        "\n" +
+                        "class Kernel extends HttpKernel {\n" +
+                        "   protected $middleware = [\n" +
+                        "      \\Illuminate\\Foundation\\Http\\Middleware\\CheckForMaintenanceMode::class,\n" +
+                        "      \\App\\Http\\Middleware\\EncryptCookies::class,\n" +
+                        "      \\Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse::class,\n" +
+                        "      \\Illuminate\\Session\\Middleware\\StartSession::class,\n" +
+                        "      \\Illuminate\\View\\Middleware\\ShareErrorsFromSession::class,\n" +
+                        "      \\App\\Http\\Middleware\\VerifyCsrfToken::class,\n" +
+                        "   ];\n" +
+                        "  \n" +
+                        "   protected $routeMiddleware = [\n" +
+                        "      'auth' => \\App\\Http\\Middleware\\Authenticate::class,\n" +
+                        "      'auth.basic' => \\Illuminate\\Auth\\Middleware\\AuthenticateWithBasicAuth::class,\n" +
+                        "      'guest' => \\App\\Http\\Middleware\\RedirectIfAuthenticated::class,\n" +
+                        "      'Age' => \\App\\Http\\Middleware\\AgeMiddleware::class,\n" +
+                        "   ];\n" +
+                        "}",
+                ""
+        );
+        final LearnDetailsModel l4 = new LearnDetailsModel(
+                "Middleware Parameters",
+                "We can also pass parameters with the Middleware. For example, if your application has different roles like user, admin, super admin etc. and you want to authenticate the action based on role, this can be achieved by passing parameters with middleware. The middleware that we create contains the following function and we can pass our custom argument after the $next argument.",
+                "public function handle($request, Closure $next) {\n" +
+                        "   return $next($request);\n" +
+                        "}",
+                ""
+        );
+        final LearnDetailsModel l5 = new LearnDetailsModel(
+                "Terminable Middleware",
+                "Terminable middleware performs some task after the response has been sent to the browser. This can be accomplished by creating a middleware with terminate method in the middleware. Terminable middleware should be registered with global middleware. The terminate method will receive two arguments $request and $response." +
+                        "",
+                "",
+                ""
+        );
+        list.add(l1);
+        list.add(l2);
+        list.add(l3);
+        list.add(l4);
+        list.add(l5);
+        return list;
+    }
+    //Laravel Namespaces
+    private static List<LearnDetailsModel> LaravelNamespaces(){
+        final List<LearnDetailsModel> list = new ArrayList<>();
+        final LearnDetailsModel l1 = new LearnDetailsModel(
+                "Namespaces",
+                "Namespaces can be defined as a class of elements in which each element has a unique name to that associated class. It may be shared with elements in other classes.\n" +
+                        "\n" +
+                        "Declaration of namespace\n" +
+                        "The use keyword allows the developers to shorten the namespace.\n" +
+                        "\n" +
+                        "use <namespace-name>;\n" +
+                        "The default namespace used in Laravel is App, however a user can change the namespace to match with web application. Creating user defined namespace with artisan command is mentioned as follows −",
+                "php artisan app:name SocialNet",
+                ""
+        );
+        list.add(l1);
+        return list;
+    }
+    //Laravel Controllers
+    private static List<LearnDetailsModel> LaravelControllers(){
+        final List<LearnDetailsModel> list = new ArrayList<>();
+        final LearnDetailsModel l1 = new LearnDetailsModel(
+                "What are the Controllers?",
+                "Laravel controllers are an essential feature in a Laravel framework. Initially, we were handling the request logic in the form of closures in route files; now, in place of using closures in route files, we use controller classes. Controllers are used to handle the request logic within the single class, and the controllers are defined in the \"app/http/Controllers\" directory. Laravel framework follows the MVC (Model View Controller) architecture in which controllers act as moving the traffic back and forth between model and views.\n" +
+                        "\n" +
+                        "The default file of controller is available in the app/http/Controllers directory.",
+                "<?php  \n" +
+                        "namespace App\\Http\\Controllers;  \n" +
+                        "use Illuminate\\Foundation\\Bus\\DispatchesJobs;  \n" +
+                        "use Illuminate\\Routing\\Controller as BaseController;  \n" +
+                        "use Illuminate\\Foundation\\Validation\\ValidatesRequests;  \n" +
+                        "use Illuminate\\Foundation\\Auth\\Access\\AuthorizesRequests;  \n" +
+                        "class Controller extends BaseController  \n" +
+                        "{  \n" +
+                        "  use AuthorizesRequests, DispatchesJobs, ValidatesRequests;  \n" +
+                        "}",
+                ""
+        );
+        final LearnDetailsModel l2 = new LearnDetailsModel(
+                "Creating a Controller",
+                "Open the command prompt or terminal based on the operating system you are using and type the following command to create controller using the Artisan CLI (Command Line Interface).\n" +
+                        "\n" +
+                        "php artisan make:controller <controller-name> --plain\n" +
+                        "Replace the <controller-name> with the name of your controller. This will create a plain constructor as we are passing the argument — plain. If you don’t want to create a plain constructor, you can simply ignore the argument. The created constructor can be seen at app/Http/Controllers.\n" +
+                        "\n" +
+                        "You will see that some basic coding has already been done for you and you can add your custom coding. The created controller can be called from routes.php by the following syntax.",
+                "Route::get(‘base URI’,’controller@method’);",
+                ""
+        );
+        final LearnDetailsModel l3 = new LearnDetailsModel(
+                "Controller Middleware",
+                "We have seen middleware before and it can be used with controller also. Middleware can also be assigned to controller’s route or within your controller’s constructor. You can use the middleware method to assign middleware to the controller. The registered middleware can also be restricted to certain method of the controller.",
+                "Route::get('profile', [\n" +
+                        "   'middleware' => 'auth',\n" +
+                        "   'uses' => 'UserController@showProfile'\n" +
+                        "]);",
+                ""
+        );
+        final LearnDetailsModel l4 = new LearnDetailsModel(
+                "Restful Resource Controllers",
+                "Often while making an application we need to perform CRUD (Create, Read, Update, Delete) operations. Laravel makes this job easy for us. Just create a controller and Laravel will automatically provide all the methods for the CRUD operations. You can also register a single route for all the methods in routes.php file.",
+                "",
+                ""
+        );
+        final LearnDetailsModel l5 = new LearnDetailsModel(
+                "Implicit Controllers",
+                "Implicit Controllers allow you to define a single route to handle every action in the controller. You can define it in route.php file with Route:controller method as shown below.",
+                "Route::controller(‘base URI’,’<class-name-of-the-controller>’);",
+                ""
+        );
+        final LearnDetailsModel l6 = new LearnDetailsModel(
+                "Constructor Injection",
+                "The Laravel service container is used to resolve all Laravel controllers. As a result, you are able to type-hint any dependencies your controller may need in its constructor. The dependencies will automatically be resolved and injected into the controller instance." +
+                        "",
+                "",
+                ""
+        );
+        final LearnDetailsModel l7 = new LearnDetailsModel(
+                "Method Injection",
+                "In addition to constructor injection, you may also type — hint dependencies on your controller's action methods.",
+                "",
+                ""
+        );
+        list.add(l1);
+        list.add(l2);
+        list.add(l3);
+        list.add(l4);
+        list.add(l5);
+        list.add(l6);
+        list.add(l7);
+        return list;
+    }
+    //Laravel Blade Templates
+    private static List<LearnDetailsModel> LaravelBladeTemplates(){
+        final List<LearnDetailsModel> list = new ArrayList<>();
+        final LearnDetailsModel l1 = new LearnDetailsModel(
+                "Blade Templates",
+                "Laravel 5.1 introduces the concept of using Blade, a templating engine to design a unique layout. The layout thus designed can be used by other views, and includes a consistent design and structure.\n" +
+                        "\n" +
+                        "When compared to other templating engines, Blade is unique in the following ways −\n" +
+                        "\n" +
+                        "It does not restrict the developer from using plain PHP code in views.\n" +
+                        "\n" +
+                        "The blade views thus designed, are compiled and cached until they are modified." +
+                        "\n\n" +
+                        "You can observe that all views are stored in the resources/views directory and the default view for Laravel framework is welcome.blade.php.\n" +
+                        "\n" +
+                        "Please note that other blade templates are also created similarly.",
+                "",
+                ""
+        );
+        final LearnDetailsModel l2 = new LearnDetailsModel(
+                "Steps for Creating a Blade Template Layout",
+                "You will have to use the following steps to create a blade template layout −\n" +
+                        "\n" +
+                        "Step 1\n" +
+                        "Create a layout folder inside the resources/views folder. We are going to use this folder to store all layouts together.\n" +
+                        "\n" +
+                        "Create a file name master.blade.php which will have the following code associated with it −",
+                "<html>\n" +
+                        "   <head>\n" +
+                        "      <title>DemoLaravel - @yield('title')</title>\n" +
+                        "   </head>\n" +
+                        "   <body>\n" +
+                        "      @yield('content')\n" +
+                        "   </body>\n" +
+                        "</html>",
+                ""
+        );
+        final LearnDetailsModel l3 = new LearnDetailsModel(
+                "Step 2",
+                "In this step, you should extend the layout. Extending a layout involves defining the child elements. Laravel uses the Blade @extends directive for defining the child elements.\n" +
+                        "\n" +
+                        "When you are extending a layout, please note the following points −\n" +
+                        "\n" +
+                        "Views defined in the Blade Layout injects the container in a unique way.\n" +
+                        "\n" +
+                        "Various sections of view are created as child elements.\n" +
+                        "\n" +
+                        "Child elements are stored in layouts folder as child.blade.php\n" +
+                        "\n" +
+                        "An example that shows extending the layout created above is shown here −",
+                "@extends('layouts.app')\n" +
+                        "@section('title', 'Page Title')\n" +
+                        "@section('sidebar')\n" +
+                        "   @parent\n" +
+                        "<p>This refers to the master sidebar.</p>\n" +
+                        "@endsection\n" +
+                        "@section('content')\n" +
+                        "<p>This is my body content.</p>\n" +
+                        "@endsection",
+                ""
+        );
+        final LearnDetailsModel l4 = new LearnDetailsModel(
+                "Step 3",
+                "To implement the child elements in views, you should define the layout in the way it is needed." +
+                        "\n" +
+                        "You can find that each of links mentioned in the landing page are hyperlinks. Please note that you can also create them as child elements with the help of blade templates by using the procedure given above.",
+                "",
+                ""
+        );
+        list.add(l1);
+        list.add(l2);
+        list.add(l3);
+        list.add(l4);
+        return list;
+    }
+    //Laravel Working With Database
+    private static List<LearnDetailsModel> LaravelWorkingWithDatabase(){
+        final List<LearnDetailsModel> list = new ArrayList<>();
+        final LearnDetailsModel l1 = new LearnDetailsModel(
+                "Working With Database",
+                "Laravel has made processing with database very easy. Laravel currently supports following 4 databases −\n" +
+                        "\n" +
+                        "MySQL\n" +
+                        "Postgres\n" +
+                        "SQLite\n" +
+                        "SQL Server\n\n" +
+                        "The query to the database can be fired using raw SQL, the fluent query builder, and the Eloquent ORM. To understand the all CRUD (Create, Read, Update, Delete) operations with Laravel, we will use simple student management system." +
+                        "",
+                "",
+                ""
+        );
+        final LearnDetailsModel l2 = new LearnDetailsModel(
+                "Connecting to Database",
+                "Configure the database in config/database.php file and create the college database with structure in MySQL as shown in the following-" +
+                        "\n" +
+                        "Id\tint(11)\tPrimary key | Auto increment\n" +
+                        "Name\tvarchar(25)\t" +
+                        "\n\n" +
+                        "We will see how to add, delete, update and retrieve records from database using Laravel-" +
+                        "\n\n" +
+                        "1.Insert Records\n" +
+                        "We can insert the record using the DB facade with insert method.\n" +
+                        "\n" +
+                        "2.Retrieve Records\n" +
+                        "After configuring the database, we can retrieve the records using the DB facade with select method.\n" +
+                        "\n" +
+                        "3.Update Records\n" +
+                        "We can update the records using the DB facade with update method.\n" +
+                        "\n" +
+                        "4.Delete Records\n" +
+                        "We can delete the record using the DB facade with the delete method.",
+                "",
+                ""
+        );
+        final LearnDetailsModel l3 = new LearnDetailsModel(
+                "Insert Records",
+                "We can insert the record using the DB facade with insert method. The syntax of insert method is as shown in the following-" +
+                        "\n" +
+                        "Syntax:" +
+                        "\n" +
+                        "bool insert(string $query, array $bindings = array())" +
+                        "\n\n" +
+                        "Parameters:" +
+                        "\n" +
+                        "$query(string) − query to execute in database\n" +
+                        "$bindings(array) − values to bind with queries" +
+                        "\n\n" +
+                        "Returns:" +
+                        "\n" +
+                        "bool" +
+                        "\n\n" +
+                        "Description:" +
+                        "\n" +
+                        "Run an insert statement against the database.",
+                "<?php\n" +
+                        "\n" +
+                        "namespace App\\Http\\Controllers;\n" +
+                        "\n" +
+                        "use Illuminate\\Http\\Request;\n" +
+                        "use DB;\n" +
+                        "use App\\Http\\Requests;\n" +
+                        "use App\\Http\\Controllers\\Controller;\n" +
+                        "\n" +
+                        "class StudInsertController extends Controller {\n" +
+                        "   public function insertform() {\n" +
+                        "      return view('stud_create');\n" +
+                        "   }\n" +
+                        "\t\n" +
+                        "   public function insert(Request $request) {\n" +
+                        "      $name = $request->input('stud_name');\n" +
+                        "      DB::insert('insert into student (name) values(?)',[$name]);\n" +
+                        "      echo \"Record inserted successfully.<br/>\";\n" +
+                        "      echo '<a href = \"/insert\">Click Here</a> to go back.';\n" +
+                        "   }\n" +
+                        "}",
+                ""
+        );
+        final LearnDetailsModel l4 = new LearnDetailsModel(
+                "Retrieve Records",
+                "After configuring the database, we can retrieve the records using the DB facade with select method. The syntax of select method is as shown in the following-" +
+                        "\n" +
+                        "Syntax:" +
+                        "\n" +
+                        "array select(string $query, array $bindings = array())" +
+                        "\n\n" +
+                        "Parameters:" +
+                        "\n" +
+                        "$query(string) − query to execute in database\n" +
+                        "$bindings(array) − values to bind with queries" +
+                        "\n\n" +
+                        "Returns:" +
+                        "\n" +
+                        "array" +
+                        "\n\n" +
+                        "Description:" +
+                        "\n" +
+                        "Run a select statement against the database.",
+                "<?php\n" +
+                        "\n" +
+                        "namespace App\\Http\\Controllers;\n" +
+                        "\n" +
+                        "use Illuminate\\Http\\Request;\n" +
+                        "use DB;\n" +
+                        "use App\\Http\\Requests;\n" +
+                        "use App\\Http\\Controllers\\Controller;\n" +
+                        "\n" +
+                        "class StudViewController extends Controller {\n" +
+                        "   public function index() {\n" +
+                        "      $users = DB::select('select * from student');\n" +
+                        "      return view('stud_view',['users'=>$users]);\n" +
+                        "   }\n" +
+                        "}",
+                ""
+        );
+        final LearnDetailsModel l5 = new LearnDetailsModel(
+                "Update Records",
+                "We can update the records using the DB facade with update method. The syntax of update method is as shown in the following-" +
+                        "\n" +
+                        "Syntax:" +
+                        "\n" +
+                        "int update(string $query, array $bindings = array())" +
+                        "\n\n" +
+                        "Parameters:" +
+                        "\n" +
+                        "$query(string) − query to execute in database\n" +
+                        "$bindings(array) − values to bind with queries" +
+                        "\n\n" +
+                        "Returns:" +
+                        "\n" +
+                        "int" +
+                        "\n\n" +
+                        "Description:" +
+                        "\n" +
+                        "Run an update statement against the database.",
+                "<?php\n" +
+                        "\n" +
+                        "namespace App\\Http\\Controllers;\n" +
+                        "\n" +
+                        "use Illuminate\\Http\\Request;\n" +
+                        "use DB;\n" +
+                        "use App\\Http\\Requests;\n" +
+                        "use App\\Http\\Controllers\\Controller;\n" +
+                        "\n" +
+                        "class StudUpdateController extends Controller {\n" +
+                        "   public function index() {\n" +
+                        "      $users = DB::select('select * from student');\n" +
+                        "      return view('stud_edit_view',['users'=>$users]);\n" +
+                        "   }\n" +
+                        "   public function show($id) {\n" +
+                        "      $users = DB::select('select * from student where id = ?',[$id]);\n" +
+                        "      return view('stud_update',['users'=>$users]);\n" +
+                        "   }\n" +
+                        "   public function edit(Request $request,$id) {\n" +
+                        "      $name = $request->input('stud_name');\n" +
+                        "      DB::update('update student set name = ? where id = ?',[$name,$id]);\n" +
+                        "      echo \"Record updated successfully.<br/>\";\n" +
+                        "      echo '<a href = \"/edit-records\">Click Here</a> to go back.';\n" +
+                        "   }\n" +
+                        "}",
+                ""
+        );
+        final LearnDetailsModel l6 = new LearnDetailsModel(
+                "Delete Records",
+                "We can delete the record using the DB facade with the delete method. The syntax of delete method is shown in the following-" +
+                        "\n" +
+                        "Syntax:" +
+                        "\n" +
+                        "int delete(string $query, array $bindings = array())" +
+                        "\n\n" +
+                        "Parameters:" +
+                        "\n" +
+                        "Returns:" +
+                        "\n" +
+                        "int" +
+                        "\n\n" +
+                        "Description:" +
+                        "\n" +
+                        "Run a delete statement against the database.",
+                "<?php\n" +
+                        "\n" +
+                        "namespace App\\Http\\Controllers;\n" +
+                        "\n" +
+                        "use Illuminate\\Http\\Request;\n" +
+                        "use DB;\n" +
+                        "use App\\Http\\Requests;\n" +
+                        "use App\\Http\\Controllers\\Controller;\n" +
+                        "\n" +
+                        "class StudDeleteController extends Controller {\n" +
+                        "   public function index() {\n" +
+                        "      $users = DB::select('select * from student');\n" +
+                        "      return view('stud_delete_view',['users'=>$users]);\n" +
+                        "   }\n" +
+                        "   public function destroy($id) {\n" +
+                        "      DB::delete('delete from student where id = ?',[$id]);\n" +
+                        "      echo \"Record deleted successfully.<br/>\";\n" +
+                        "      echo '<a href = \"/delete-records\">Click Here</a> to go back.';\n" +
+                        "   }\n" +
+                        "}",
+                ""
+        );
+        list.add(l1);
+        list.add(l2);
+        list.add(l3);
+        list.add(l4);
+        list.add(l5);
+        list.add(l6);
+        return list;
+    }
+    //Laravel Sending Email
+    private static List<LearnDetailsModel> LaravelSendingEmail(){
+        final List<LearnDetailsModel> list = new ArrayList<>();
+        final LearnDetailsModel l1 = new LearnDetailsModel(
+                "Sending Email",
+                "Laravel uses free feature-rich library SwiftMailer to send emails. Using the library function, we can easily send emails without too many hassles. The e-mail templates are loaded in the same way as views, which means you can use the Blade syntax and inject data into your templates." +
+                        "\n" +
+                        "Syntax:" +
+                        "\nvoid send(string|array $view, array $data, Closure|string $callback)\n\n" +
+                        "Parameters:\n" +
+                        "$view(string|array) − name of the view that contains email message" +
+                        "\n" +
+                        "$data(array) − array of data to pass to view" +
+                        "\n" +
+                        "$callback − a Closure callback which receives a message instance, allowing you to customize the recipients, subject, and other aspects of the mail message\n" +
+                        "\n" +
+                        "Returns:" +
+                        "\nnothing\n\n" +
+                        "Description:" +
+                        "\n" +
+                        "Sends email.",
+                "Mail::send([‘text’=>’text.view’], $data, $callback);",
+                ""
+        );
+        list.add(l1);
+        return list;
+    }
+
 
     /*
     final LearnDetailsModel l1 = new LearnDetailsModel(
@@ -26782,6 +27382,23 @@ public class LearnDetailsContent {
                 return jQueryUtilities();
             case "jQuery Plugins":
                 return jQueryPlugins();
+            //Laravel
+            case "Laravel Introduction":
+                return LaravelIntroduction();
+            case "Laravel Routing":
+                return LaravelRouting();
+            case "Laravel Middleware":
+                return LaravelMiddleware();
+            case "Laravel Namespaces":
+                return LaravelNamespaces();
+            case "Laravel Controllers":
+                return LaravelControllers();
+            case "Laravel Blade Templates":
+                return LaravelBladeTemplates();
+            case "Laravel Working With Database":
+                return LaravelWorkingWithDatabase();
+            case "Laravel Sending Email":
+                return LaravelSendingEmail();
 
             default:
                 return defaultT();
@@ -26791,7 +27408,7 @@ public class LearnDetailsContent {
     }
 
 }
-    /*private static List<LearnDetailsModel> jQueryPlugins(){
+    /*private static List<LearnDetailsModel> LaravelSendingEmail(){
         final List<LearnDetailsModel> list = new ArrayList<>();
         final LearnDetailsModel l1 = new LearnDetailsModel();
 

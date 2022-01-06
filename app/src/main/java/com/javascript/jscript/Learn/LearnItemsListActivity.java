@@ -294,13 +294,14 @@ public class LearnItemsListActivity extends AppCompatActivity {
                 "ExpressJs Best Practices"
         };
         final String[] Laravel = {
-                "Laravel ",
-                "Laravel ",
-                "Laravel ",
-                "Laravel ",
-                "Laravel ",
-                "Laravel ",
-                "Laravel ",
+                "Laravel Introduction",
+                "Laravel Routing",
+                "Laravel Middleware",
+                "Laravel Namespaces",
+                "Laravel Controllers",
+                "Laravel Blade Templates",
+                "Laravel Working With Database",
+                "Laravel Sending Email"
         };
         final String[] jQuery = {
                 "jQuery Introduction",

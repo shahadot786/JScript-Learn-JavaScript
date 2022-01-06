@@ -140,7 +140,6 @@ public class LearnDetailsActivity extends AppCompatActivity {
             outputTxt.setVisibility(View.GONE);
             writeCodes.setVisibility(View.GONE);
         }
-
         //run code
         binding.codesRun.setOnClickListener(new View.OnClickListener() {
             @Override

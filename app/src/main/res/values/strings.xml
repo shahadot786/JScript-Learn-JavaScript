@@ -23,6 +23,7 @@
     <string name="app_id">ca-app-pub-1183995713269973~4276200822</string>
     <string name="banner_ad_unit_id">ca-app-pub-1183995713269973/7916247990</string>
     <string name="interstitial_ad_unit_id">ca-app-pub-1183995713269973/6541772361</string>
+    <string name="rewarded_ad_unit_id">ca-app-pub-1183995713269973/3002852149</string>
 
     <!--Google Sign In-->
     <!--<string name="default_web_client_id">10732582829-srv96l245sn3s9jgl6j4vfijnvplsf7p.apps.googleusercontent.com</string>-->
@@ -275,5 +276,6 @@
     <string name="remember_my_password">Remember password!</string>
     <string name="congratulations">Congratulations, Welcome to Pro</string>
     <string name="no_notification_yet">No Notification yet..</string>
+    <string name="add_times">Add Times</string>
 
 </resources>

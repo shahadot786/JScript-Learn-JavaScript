@@ -17,8 +17,13 @@ import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.google.android.gms.ads.MobileAds;
+import com.google.android.gms.ads.initialization.InitializationStatus;
+import com.google.android.gms.ads.initialization.OnInitializationCompleteListener;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.FirebaseDatabase;
@@ -54,6 +59,12 @@ public class SplashActivity extends AppCompatActivity {
         toast.setGravity(Gravity.BOTTOM, 0, 40);
         toast.setDuration(Toast.LENGTH_LONG);
         toast.setView(toastLayout);
+        //Ads Initialize
+        MobileAds.initialize(this, new OnInitializationCompleteListener() {
+            @Override
+            public void onInitializationComplete(@NonNull InitializationStatus initializationStatus) {
+            }
+        });
         //network check
         ConnectivityManager connectivityManager = (ConnectivityManager) getSystemService(FeedBackActivity.CONNECTIVITY_SERVICE);
         if (connectivityManager.getNetworkInfo(ConnectivityManager.TYPE_MOBILE).getState() == NetworkInfo.State.CONNECTED ||
@@ -77,6 +88,7 @@ public class SplashActivity extends AppCompatActivity {
         database.setPersistenceEnabled(true);
         //item subscribed
         if (getPurchaseValueFromPref()) {
+            UiConfig.REWARDED__AD_VISIBILITY = false;
             UiConfig.INTERSTITIAL__AD_VISIBILITY = false;
             UiConfig.PRO_VISIBILITY_STATUS_SHOW = false;
             UiConfig.BANNER_AD_VISIBILITY = false;
@@ -84,6 +96,7 @@ public class SplashActivity extends AppCompatActivity {
         }
         //item not subscribed
         else {
+            UiConfig.REWARDED__AD_VISIBILITY = true;
             UiConfig.INTERSTITIAL__AD_VISIBILITY = true;
             UiConfig.PRO_VISIBILITY_STATUS_SHOW = true;
             UiConfig.BANNER_AD_VISIBILITY = true;

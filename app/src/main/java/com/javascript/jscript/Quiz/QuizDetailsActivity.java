@@ -1,6 +1,7 @@
 package com.javascript.jscript.Quiz;
 
 import android.annotation.SuppressLint;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.Color;
 import android.net.ConnectivityManager;
@@ -17,9 +18,11 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.AppCompatButton;
 
+import com.airbnb.lottie.LottieAnimationView;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
 import com.google.android.gms.tasks.OnSuccessListener;
@@ -59,9 +62,11 @@ public class QuizDetailsActivity extends AppCompatActivity {
     private AppCompatButton nextBtn;
     private boolean connected = false;
     LayoutInflater inflater;
-    TextView toastText,qTimer;
+    TextView toastText, qTimer;
     View toastLayout;
     Toast toast;
+    int time = 2;
+    LottieAnimationView timerView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -70,12 +75,13 @@ public class QuizDetailsActivity extends AppCompatActivity {
         setContentView(binding.getRoot());
         //find id
         qTimer = findViewById(R.id.qTimer);
+        timerView = findViewById(R.id.timerView);
         //custom toast
         inflater = getLayoutInflater();
-        toastLayout = inflater.inflate(R.layout.custom_toast_layout,(ViewGroup) findViewById(R.id.toastLayout));
+        toastLayout = inflater.inflate(R.layout.custom_toast_layout, (ViewGroup) findViewById(R.id.toastLayout));
         toastText = (TextView) toastLayout.findViewById(R.id.toastText);
         toast = new Toast(getApplicationContext());
-        toast.setGravity(Gravity.BOTTOM,0,100);
+        toast.setGravity(Gravity.BOTTOM, 0, 100);
         toast.setDuration(Toast.LENGTH_LONG);
         toast.setView(toastLayout);
         //firebase instance
@@ -98,6 +104,8 @@ public class QuizDetailsActivity extends AppCompatActivity {
         } else {
             bannerAd.setVisibility(View.GONE);
         }
+        //rewarded ad
+        adNetwork.loadRewardedAd();
         //quiz code
         quizCount = findViewById(R.id.quizCount);
         question = findViewById(R.id.question);
@@ -226,13 +234,14 @@ public class QuizDetailsActivity extends AppCompatActivity {
         });
         //timer
         //Initialize timer duration
-        long duration = TimeUnit.MINUTES.toMillis(2);
+        //time
+        long duration = TimeUnit.MINUTES.toMillis(time);
         new CountDownTimer(duration, 1000) {
             @Override
             public void onTick(long l) {
                 //When tick
                 //Convert millisecond to minute and second
-                String sDuration = String.format(Locale.ENGLISH,"%01d : %01d",
+                String sDuration = String.format(Locale.ENGLISH, "%01d : %01d",
                         TimeUnit.MILLISECONDS.toMinutes(l),
                         TimeUnit.MILLISECONDS.toSeconds(l) -
                                 TimeUnit.MINUTES.toSeconds(TimeUnit.MILLISECONDS.toMinutes(l)));
@@ -244,13 +253,36 @@ public class QuizDetailsActivity extends AppCompatActivity {
             @SuppressLint("SetTextI18n")
             @Override
             public void onFinish() {
-
                 //When finish
                 //Hide textView
-                qTimer.setText("Finished");
-                Toast.makeText(QuizDetailsActivity.this, "Finished time", Toast.LENGTH_SHORT).show();
-                finish();
-
+                qTimer.setText("Time Finished");
+                //and remove the timer icon
+                timerView.setVisibility(View.GONE);
+                //then show the dialog
+                AlertDialog.Builder dialog = new AlertDialog.Builder(QuizDetailsActivity.this, R.style.AppCompatAlertDialogStyle);
+                dialog.setCancelable(false);
+                dialog.setTitle("Quiz Timer:");
+                dialog.setMessage("Ops! Your times are finished.");
+                //retry and play quiz again
+                dialog.setPositiveButton("Try again", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialogInterface, int i) {
+                        dialogInterface.dismiss();
+                        finish();
+                    }
+                });
+                //watch ad and remove timer
+                dialog.setNeutralButton("Remove Timer", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialogInterface, int i) {
+                        adNetwork.showRewardedAd();
+                        qTimer.setVisibility(View.GONE);
+                        timerView.setVisibility(View.GONE);
+                        dialogInterface.dismiss();
+                    }
+                });
+                //dialog showed
+                dialog.show();
             }
         }.start();
 
@@ -395,13 +427,13 @@ public class QuizDetailsActivity extends AppCompatActivity {
                 //we are connected to a network
                 connected = true;
                 startActivity(new Intent(QuizDetailsActivity.this, CodesActivity.class));
-            }else {
+            } else {
                 toastText.setText(R.string.no_connection_text);
                 toast.show();
                 connected = false;
             }
 
-        }else {
+        } else {
             finish();
         }
         return super.onOptionsItemSelected(item);

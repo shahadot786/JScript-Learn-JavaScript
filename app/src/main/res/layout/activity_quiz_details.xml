@@ -59,7 +59,7 @@
                 app:layout_constraintTop_toTopOf="parent">
 
                 <com.airbnb.lottie.LottieAnimationView
-                    android:id="@+id/view26"
+                    android:id="@+id/timerView"
                     android:layout_width="20dp"
                     android:layout_height="20dp"
                     android:layout_marginTop="4dp"
@@ -76,7 +76,7 @@
                     android:layout_marginTop="4dp"
                     android:textStyle="bold"
                     android:textSize="12sp"
-                    app:layout_constraintEnd_toStartOf="@+id/view26"
+                    app:layout_constraintEnd_toStartOf="@+id/timerView"
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <TextView
@@ -100,6 +100,7 @@
                     android:textIsSelectable="true"
                     android:textSize="16sp"
                     android:autoLink="web"
+                    android:gravity="center"
                     android:linksClickable="true"
                     android:textColorLink="@color/activeGreen"
                     app:layout_constraintEnd_toEndOf="parent"

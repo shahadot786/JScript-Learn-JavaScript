@@ -152,6 +152,7 @@ public class PremiumActivity extends AppCompatActivity implements PurchasesUpdat
 
         //item subscribed
         if (getPurchaseValueFromPref()) {
+            UiConfig.REWARDED__AD_VISIBILITY = false;
             UiConfig.INTERSTITIAL__AD_VISIBILITY = false;
             UiConfig.PRO_VISIBILITY_STATUS_SHOW = false;
             UiConfig.BANNER_AD_VISIBILITY = false;
@@ -160,6 +161,7 @@ public class PremiumActivity extends AppCompatActivity implements PurchasesUpdat
         }
         //item not subscribed
         else {
+            UiConfig.REWARDED__AD_VISIBILITY = true;
             UiConfig.INTERSTITIAL__AD_VISIBILITY = true;
             UiConfig.PRO_VISIBILITY_STATUS_SHOW = true;
             UiConfig.BANNER_AD_VISIBILITY = true;
@@ -309,6 +311,7 @@ public class PremiumActivity extends AppCompatActivity implements PurchasesUpdat
         if (billingResult.getResponseCode() == BillingClient.BillingResponseCode.OK && purchases != null) {
             handlePurchases(purchases);
             //other codes
+            UiConfig.REWARDED__AD_VISIBILITY = false;
             UiConfig.INTERSTITIAL__AD_VISIBILITY = false;
             UiConfig.PRO_VISIBILITY_STATUS_SHOW = false;
             UiConfig.BANNER_AD_VISIBILITY = false;
@@ -385,6 +388,7 @@ public class PremiumActivity extends AppCompatActivity implements PurchasesUpdat
             //if purchase is unknown mark false
             else if (PRODUCT_ID.equals(purchase.getSkus().get(0)) && purchase.getPurchaseState() == Purchase.PurchaseState.UNSPECIFIED_STATE) {
                 savePurchaseValueToPref(false);
+                UiConfig.REWARDED__AD_VISIBILITY = true;
                 UiConfig.INTERSTITIAL__AD_VISIBILITY = true;
                 UiConfig.PRO_VISIBILITY_STATUS_SHOW = true;
                 UiConfig.BANNER_AD_VISIBILITY = true;

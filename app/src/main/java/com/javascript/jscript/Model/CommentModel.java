@@ -4,6 +4,7 @@ public class CommentModel {
     private String commentBody;
     private long commentAt;
     private String commentedBy;
+    private int commentLikes;
 
     public CommentModel() {
     }
@@ -30,5 +31,13 @@ public class CommentModel {
 
     public void setCommentedBy(String commentedBy) {
         this.commentedBy = commentedBy;
+    }
+
+    public int getCommentLikes() {
+        return commentLikes;
+    }
+
+    public void setCommentLikes(int commentLikes) {
+        this.commentLikes = commentLikes;
     }
 }

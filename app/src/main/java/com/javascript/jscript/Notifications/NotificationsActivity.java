@@ -9,6 +9,7 @@ import android.view.LayoutInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -43,6 +44,8 @@ public class NotificationsActivity extends AppCompatActivity {
     TextView toastText;
     View toastLayout;
     Toast toast;
+    ImageView noNotification;
+    TextView noNotifyText;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -62,6 +65,8 @@ public class NotificationsActivity extends AppCompatActivity {
         NotificationsActivity.this.setTitle("Notifications");
         Objects.requireNonNull(getSupportActionBar()).setDisplayHomeAsUpEnabled(true);
         //find id's
+        noNotification = findViewById(R.id.noNotifications);
+        noNotifyText = findViewById(R.id.noNotifyText);
         database = FirebaseDatabase.getInstance();
         notificationRV = findViewById(R.id.notificationRV);
         notificationRV.showShimmerAdapter();
@@ -94,6 +99,10 @@ public class NotificationsActivity extends AppCompatActivity {
                                 notificationsModel.setNotificationId(dataSnapshot.getKey());
                                 list.add(notificationsModel);
 
+                            }
+                            if (list.isEmpty()){
+                                noNotification.setVisibility(View.VISIBLE);
+                                noNotifyText.setVisibility(View.VISIBLE);
                             }
                             notificationRV.setAdapter(adapter);
                             notificationRV.hideShimmerAdapter();

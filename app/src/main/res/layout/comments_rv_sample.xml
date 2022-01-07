@@ -24,17 +24,17 @@
             android:layout_marginTop="8dp"
             android:layout_marginEnd="16dp"
             android:layout_marginBottom="8dp"
+            android:autoLink="web"
             android:fontFamily="@font/open_sans"
             android:justificationMode="inter_word"
+            android:linksClickable="true"
             android:paddingStart="10dp"
             android:paddingTop="5dp"
             android:paddingEnd="10dp"
             android:paddingBottom="15dp"
+            android:textColorLink="@color/activeGreen"
             android:textIsSelectable="true"
             android:textSize="12sp"
-            android:autoLink="web"
-            android:linksClickable="true"
-            android:textColorLink="@color/activeGreen"
             app:layout_constraintBottom_toTopOf="@+id/userName"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -70,6 +70,7 @@
             android:id="@+id/time"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:fontFamily="@font/oswald_light"
             android:textSize="9sp"
             app:layout_constraintEnd_toEndOf="@+id/userName"
             app:layout_constraintTop_toBottomOf="@+id/userName" />
@@ -86,6 +87,36 @@
             app:layout_constraintEnd_toStartOf="@+id/profileImage"
             app:layout_constraintTop_toTopOf="@+id/userName"
             app:srcCompat="@drawable/pro_big" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/likes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:drawablePadding="4dp"
+            android:gravity="center"
+            android:textColor="@color/color_text_discuss"
+            android:textSize="11sp"
+            android:visibility="gone"
+            app:drawableLeftCompat="@drawable/ic_like_icon_64"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/userName" />
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/likes_loves"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="false"
+            android:visibility="gone"
+            app:lottie_rawRes="@raw/likes_loves"
+            app:layout_constraintBottom_toBottomOf="@+id/likes"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

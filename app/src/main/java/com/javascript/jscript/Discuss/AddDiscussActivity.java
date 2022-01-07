@@ -119,15 +119,15 @@ public class AddDiscussActivity extends AppCompatActivity {
                     //we are connected to a network
                     connected = true;
                     //check first if the fields are empty
-                    if (questionValidation() && descriptionsValidation()) {
+                    if (questionValidation()) {
                         //show dialog
                         dialog.show();
                         DiscussModel post = new DiscussModel();
                         post.setPostedBy(FirebaseAuth.getInstance().getUid());
-                        post.setQuestions(binding.questionEditText.getText().toString());
-                        post.setDescription(binding.descriptionEditText.getText().toString());
+                        post.setQuestions(Objects.requireNonNull(binding.questionEditText.getText()).toString());
+                        post.setDescription(Objects.requireNonNull(binding.descriptionEditText.getText()).toString());
                         post.setPostedAt(new Date().getTime());
-
+                        //set database value
                         database.getReference().child("Discuss")
                                 .push()
                                 .setValue(post).addOnSuccessListener(new OnSuccessListener<Void>() {
@@ -166,7 +166,7 @@ public class AddDiscussActivity extends AppCompatActivity {
         }
     }
 
-    //descriptions validation
+    /*//descriptions validation
     public boolean descriptionsValidation() {
         String descriptionsText = Objects.requireNonNull(descriptions.getEditText()).getText().toString().trim();
         if (descriptionsText.isEmpty()) {
@@ -176,7 +176,7 @@ public class AddDiscussActivity extends AppCompatActivity {
             descriptions.setError(null);
             return true;
         }
-    }
+    }*/
 
 
     //option menu item select

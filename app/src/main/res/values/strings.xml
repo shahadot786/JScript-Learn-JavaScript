@@ -224,8 +224,8 @@
 
     <!--Discuss-->
     <string name="share_your_problems">Write your post here..</string>
-    <string name="question">Title:</string>
-    <string name="write_your_question">Write your title?</string>
+    <string name="question">Question:</string>
+    <string name="write_your_question">Write your question?</string>
     <string name="descriptions">Descriptions:</string>
     <string name="post">Post</string>
     <string name="write_your_descriptions">Write your descriptions</string>
@@ -274,5 +274,6 @@
     <string name="WrongImageUpload">Wrong Image Upload</string>
     <string name="remember_my_password">Remember password!</string>
     <string name="congratulations">Congratulations, Welcome to Pro</string>
+    <string name="no_notification_yet">No Notification yet..</string>
 
 </resources>

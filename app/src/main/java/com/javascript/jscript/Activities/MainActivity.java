@@ -209,7 +209,7 @@ public class MainActivity extends AppCompatActivity {
                                         PendingIntent pendingIntent = PendingIntent.getActivity(context, 0, intent, 0);
                                         //notification builder
                                         NotificationCompat.Builder builder = new NotificationCompat.Builder(context, "JScript Notifications");
-                                        //builder.setContentTitle("JScript: Learn JavaScript");
+                                        builder.setContentTitle("JScript: Learn JavaScript");
                                         builder.setContentText(Html.fromHtml("\"<span style=\"font-weight:bold; color:#15c55d\">" +
                                                 userModel.getUserName() + "" +"</span>\"" + " Reply on your question"));
                                         builder.setSmallIcon(R.drawable.ic_notification_small_icon);

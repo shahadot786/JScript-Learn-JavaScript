@@ -1,16 +1,10 @@
 package com.javascript.jscript.Discuss;
 
 import android.annotation.SuppressLint;
-import android.app.Activity;
-import android.app.NotificationChannel;
-import android.app.NotificationManager;
-import android.app.PendingIntent;
 import android.content.Intent;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
-import android.os.Build;
 import android.os.Bundle;
-import android.text.Html;
 import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.Menu;
@@ -22,8 +16,6 @@ import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.app.NotificationCompat;
-import androidx.core.app.NotificationManagerCompat;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 
@@ -44,7 +36,6 @@ import com.javascript.jscript.Model.CommentModel;
 import com.javascript.jscript.Model.DiscussModel;
 import com.javascript.jscript.Model.NotificationsModel;
 import com.javascript.jscript.Model.UserModel;
-import com.javascript.jscript.Notifications.NotificationsActivity;
 import com.javascript.jscript.R;
 import com.javascript.jscript.databinding.ActivityDiscussDetailsBinding;
 import com.squareup.picasso.Picasso;
@@ -117,14 +108,20 @@ public class DiscussDetailsActivity extends AppCompatActivity {
                 assert discuss != null;
                 question = discuss.getQuestions();
                 description = discuss.getDescription();
+                //check description is empty
+                if (description.isEmpty()){
+                    binding.descriptions.setVisibility(View.GONE);
+                }else {
+                    binding.descriptions.setVisibility(View.VISIBLE);
+                }
                 //set data to id's
                 String time = TimeAgo.using(discuss.getPostedAt());
                 String views = discuss.getPostViews()+"";
                 String comments = discuss.getCommentCount() + "";
                 String shares = discuss.getShareCount() + "";
                 binding.time.setText(time);
-                binding.question.setText(discuss.getQuestions());
-                binding.descriptions.setText(discuss.getDescription());
+                binding.question.setText(question);
+                binding.descriptions.setText(description);
                 //1K and 1M views logic
                 int view = Integer.parseInt(views);
                 if (view >= 1000){
@@ -324,8 +321,6 @@ public class DiscussDetailsActivity extends AppCompatActivity {
                 commentShimmer.hideShimmerAdapter();
             }
         });
-
-
     }//ends of OnCreate
 
     //comment button empty validation

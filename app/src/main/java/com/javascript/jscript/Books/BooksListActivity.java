@@ -56,7 +56,7 @@ public class BooksListActivity extends AppCompatActivity {
 
     }
     private void loadItems() {
-        final String basic[] = {
+        final String[] basic = {
                "Books",
                 "Books1",
                 "Books",
@@ -70,19 +70,19 @@ public class BooksListActivity extends AppCompatActivity {
 
         };
 
-        final String advanced[] = {
+        final String[] advanced = {
                 "Books",
                 "Books1",
         };
 
-        final String expert[] = {
+        final String[] expert = {
                 "Books",
                 "Books1",
                 "Books",
                 "Books1",
         };
 
-        final String angular[] = {
+        final String[] angular = {
                 "angular",
                 "Books1",
                 "Books",

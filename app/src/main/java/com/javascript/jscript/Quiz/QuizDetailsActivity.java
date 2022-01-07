@@ -65,7 +65,7 @@ public class QuizDetailsActivity extends AppCompatActivity {
     TextView toastText, qTimer;
     View toastLayout;
     Toast toast;
-    int time = 2;
+    int time;
     LottieAnimationView timerView;
 
     @Override
@@ -103,6 +103,19 @@ public class QuizDetailsActivity extends AppCompatActivity {
             bannerAd.setVisibility(View.VISIBLE);
         } else {
             bannerAd.setVisibility(View.GONE);
+        }
+        //check premium time
+        if (UiConfig.PRO_VISIBILITY_STATUS_SHOW){
+            //true
+            time = 2;
+            qTimer.setVisibility(View.VISIBLE);
+            timerView.setVisibility(View.VISIBLE);
+        }
+        else {
+            //false
+            time = 100;
+            qTimer.setVisibility(View.GONE);
+            timerView.setVisibility(View.GONE);
         }
         //rewarded ad
         adNetwork.loadRewardedAd();
@@ -261,24 +274,24 @@ public class QuizDetailsActivity extends AppCompatActivity {
                 //then show the dialog
                 AlertDialog.Builder dialog = new AlertDialog.Builder(QuizDetailsActivity.this, R.style.AppCompatAlertDialogStyle);
                 dialog.setCancelable(false);
-                dialog.setTitle("Quiz Timer:");
+                dialog.setTitle("Quiz Timer");
                 dialog.setMessage("Ops! Your times are finished.");
                 //retry and play quiz again
-                dialog.setPositiveButton("Try again", new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialogInterface, int i) {
-                        dialogInterface.dismiss();
-                        finish();
-                    }
-                });
-                //watch ad and remove timer
-                dialog.setNeutralButton("Remove Timer", new DialogInterface.OnClickListener() {
+                dialog.setPositiveButton("Remove Timer", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialogInterface, int i) {
                         adNetwork.showRewardedAd();
                         qTimer.setVisibility(View.GONE);
                         timerView.setVisibility(View.GONE);
                         dialogInterface.dismiss();
+                    }
+                });
+                //watch ad and remove timer
+                dialog.setNeutralButton("Play again", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialogInterface, int i) {
+                        dialogInterface.dismiss();
+                        finish();
                     }
                 });
                 //dialog showed

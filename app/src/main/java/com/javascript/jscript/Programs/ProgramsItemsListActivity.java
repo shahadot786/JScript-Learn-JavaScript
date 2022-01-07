@@ -55,7 +55,7 @@ public class ProgramsItemsListActivity extends AppCompatActivity {
 
     }
     private void loadItems() {
-        final String basic[] = {
+        final String[] basic = {
                 "Basic",
                 "Basic1",
                 "Basic2",
@@ -98,7 +98,7 @@ public class ProgramsItemsListActivity extends AppCompatActivity {
                 "In this example, you will learn to write a JavaScript program that will remove a property from an object.",
         };
 
-        final String advanced[] = {
+        final String[] advanced = {
                 "advanced",
                 "advanced2",
                 "advanced",
@@ -107,7 +107,7 @@ public class ProgramsItemsListActivity extends AppCompatActivity {
                 "advanced",
         };
 
-        final String expert[] = {
+        final String[] expert = {
                 "expert",
                 "expert",
                 "expert",
@@ -116,7 +116,7 @@ public class ProgramsItemsListActivity extends AppCompatActivity {
                 "expert",
         };
 
-        final String angular[] = {
+        final String[] angular = {
                 "angular",
                 "angular",
                 "angular",

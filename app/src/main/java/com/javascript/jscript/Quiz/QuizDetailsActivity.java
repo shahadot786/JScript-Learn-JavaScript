@@ -287,7 +287,7 @@ public class QuizDetailsActivity extends AppCompatActivity {
                     }
                 });
                 //watch ad and remove timer
-                dialog.setNeutralButton("Play again", new DialogInterface.OnClickListener() {
+                dialog.setNegativeButton("Play again", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialogInterface, int i) {
                         dialogInterface.dismiss();

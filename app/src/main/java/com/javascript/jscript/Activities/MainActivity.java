@@ -6,6 +6,7 @@ import android.app.NotificationChannel;
 import android.app.NotificationManager;
 import android.app.PendingIntent;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.media.RingtoneManager;
@@ -249,11 +250,13 @@ public class MainActivity extends AppCompatActivity {
                         assert model != null;
                         boolean checkPremium = model.isCheckPremium();
                         if (checkPremium){
+                            UiConfig.REWARDED__AD_VISIBILITY = false;
                             UiConfig.INTERSTITIAL__AD_VISIBILITY = false;
                             UiConfig.PRO_VISIBILITY_STATUS_SHOW = false;
                             UiConfig.BANNER_AD_VISIBILITY = false;
                             UiConfig.ENABLE_EXIT_DIALOG = false;
                         }else {
+                            UiConfig.REWARDED__AD_VISIBILITY = true;
                             UiConfig.INTERSTITIAL__AD_VISIBILITY = true;
                             UiConfig.PRO_VISIBILITY_STATUS_SHOW = true;
                             UiConfig.BANNER_AD_VISIBILITY = true;

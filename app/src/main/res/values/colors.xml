@@ -19,7 +19,7 @@
     <color name="colorToolbarDark">#16171b</color>
 
     <!--Text Colors-->
-    <color name="textColorGrey">#D2D3D5</color>
+    <color name="textColorGrey">#B3B5BD</color>
     <color name="textColorBlack">#22272C</color>
     <color name="textColorPlaceholder">#A4A8A6</color>
 

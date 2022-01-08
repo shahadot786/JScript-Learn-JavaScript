@@ -55,25 +55,18 @@ public class CommentAdapter extends RecyclerView.Adapter<CommentAdapter.viewHold
         holder.binding.time.setText(time);
         //if likes are empty
         if (commentLikes.equals("0")){
-            holder.binding.likesCount.setText("0 Like");
-        }
-        else if(commentLikes.equals("1")){
-            holder.binding.likesCount.setText(Html.fromHtml("<span style=\"font-weight:bold; color:#b3b5bd\">"+
-                    "1 Like"+" "+"</span>"));
+            holder.binding.likesCount.setText("");
         }
         else {
             //1K and 1M views logic
             int Likes = Integer.parseInt(commentLikes);
             if (Likes >= 1000){
-                holder.binding.likesCount.setText(Html.fromHtml("<span style=\"font-weight:bold; color:#b3b5bd\">"+
-                        "You and "+ (Likes / 1000)+"."+((Likes % 1000)/100)+"K" + " likes"+" "+"</span>"));
+                holder.binding.likesCount.setText((Likes / 1000)+"."+((Likes % 1000)/100));
             }else {
-                holder.binding.likesCount.setText(Html.fromHtml("<span style=\"font-weight:bold; color:#b3b5bd\">"+
-                        "You and "+ commentLikes + " likes"+" "+"</span>"));
+                holder.binding.likesCount.setText(commentLikes);
             }
             if (Likes >= 1000000){
-                holder.binding.likesCount.setText(Html.fromHtml("<span style=\"font-weight:bold; color:#b3b5bd\">"+
-                        "You and "+ (Likes / 1000000)+"."+((Likes % 1000000)/10000)+"M" + " likes"+" "+"</span>"));
+                holder.binding.likesCount.setText((Likes / 1000000)+"."+((Likes % 1000000)/10000));
             }
         }
         //get user data

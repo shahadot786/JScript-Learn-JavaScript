@@ -139,24 +139,41 @@ public class DiscussAdapter extends RecyclerView.Adapter<DiscussAdapter.viewHold
                                         .child(model.getPostId())
                                         .child("views")
                                         .child(Objects.requireNonNull(FirebaseAuth.getInstance().getUid()))
-                                        .setValue(true).addOnSuccessListener(new OnSuccessListener<Void>() {
-                                    @Override
-                                    public void onSuccess(@NonNull Void unused) {
-                                        FirebaseDatabase.getInstance().getReference()
-                                                .child("Discuss")
-                                                .child(model.getPostId())
-                                                .child("postViews")
-                                                .setValue(model.getPostViews() + 1)
-                                                .addOnSuccessListener(new OnSuccessListener<Void>() {
-                                                    @Override
-                                                    public void onSuccess(@NonNull Void unused) {
+                                        .addListenerForSingleValueEvent(new ValueEventListener() {
+                                            @Override
+                                            public void onDataChange(@NonNull DataSnapshot snapshot) {
+                                                if (snapshot.exists()){
+                                                    holder.binding.views.setText(views);
+                                                }else {
+                                                    FirebaseDatabase.getInstance().getReference()
+                                                            .child("Discuss")
+                                                            .child(model.getPostId())
+                                                            .child("views")
+                                                            .child(Objects.requireNonNull(FirebaseAuth.getInstance().getUid()))
+                                                            .setValue(true).addOnSuccessListener(new OnSuccessListener<Void>() {
+                                                        @Override
+                                                        public void onSuccess(@NonNull Void unused) {
+                                                            FirebaseDatabase.getInstance().getReference()
+                                                                    .child("Discuss")
+                                                                    .child(model.getPostId())
+                                                                    .child("postViews")
+                                                                    .setValue(model.getPostViews() + 1)
+                                                                    .addOnSuccessListener(new OnSuccessListener<Void>() {
+                                                                        @Override
+                                                                        public void onSuccess(@NonNull Void unused) {
 
-                                                    }
-                                                });
-                                    }
-                                });
+                                                                        }
+                                                                    });
+                                                        }
+                                                    });
+                                                }
+                                            }
 
+                                            @Override
+                                            public void onCancelled(@NonNull DatabaseError error) {
 
+                                            }
+                                        });
                             }
                         });
                     }

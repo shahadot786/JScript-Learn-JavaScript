@@ -29,6 +29,7 @@ import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
+import com.javascript.jscript.Activities.FeedBackActivity;
 import com.javascript.jscript.Adapter.CommentAdapter;
 import com.javascript.jscript.BuildConfig;
 import com.javascript.jscript.Config.UiConfig;
@@ -95,6 +96,18 @@ public class DiscussDetailsActivity extends AppCompatActivity {
             bannerAd.setVisibility(View.VISIBLE);
         } else {
             bannerAd.setVisibility(View.GONE);
+        }
+        //network check
+        ConnectivityManager connectivityManager = (ConnectivityManager) getSystemService(FeedBackActivity.CONNECTIVITY_SERVICE);
+        if (connectivityManager.getNetworkInfo(ConnectivityManager.TYPE_MOBILE).getState() == NetworkInfo.State.CONNECTED ||
+                connectivityManager.getNetworkInfo(ConnectivityManager.TYPE_WIFI).getState() == NetworkInfo.State.CONNECTED) {
+            //we are connected to a network
+            connected = true;
+
+        }else {
+            toastText.setText(R.string.no_connection_text);
+            toast.show();
+            connected = false;
         }
         //get post data
         database.getReference()
@@ -299,35 +312,50 @@ public class DiscussDetailsActivity extends AppCompatActivity {
             @SuppressLint("NotifyDataSetChanged")
             @Override
             public void onRefresh() {
-                commentShimmer.showShimmerAdapter();
-                database.getReference()
-                        .child("Discuss")
-                        .child(postId)
-                        .child("comments")
-                        .addValueEventListener(new ValueEventListener() {
-                            @SuppressLint("NotifyDataSetChanged")
-                            @Override
-                            public void onDataChange(@NonNull DataSnapshot snapshot) {
-                                list.clear();
-                                for (DataSnapshot dataSnapshot : snapshot.getChildren()) {
-                                    CommentModel comment = dataSnapshot.getValue(CommentModel.class);
-                                    assert comment != null;
-                                    comment.setPostID(postId);
-                                    comment.setPostedBy(postedBy);
-                                    comment.setCommentID(dataSnapshot.getKey());
-                                    list.add(comment);
+                //network check
+                ConnectivityManager connectivityManager = (ConnectivityManager) getSystemService(FeedBackActivity.CONNECTIVITY_SERVICE);
+                if (connectivityManager.getNetworkInfo(ConnectivityManager.TYPE_MOBILE).getState() == NetworkInfo.State.CONNECTED ||
+                        connectivityManager.getNetworkInfo(ConnectivityManager.TYPE_WIFI).getState() == NetworkInfo.State.CONNECTED) {
+                    //we are connected to a network
+                    connected = true;
+                    commentShimmer.showShimmerAdapter();
+                    database.getReference()
+                            .child("Discuss")
+                            .child(postId)
+                            .child("comments")
+                            .addValueEventListener(new ValueEventListener() {
+                                @SuppressLint("NotifyDataSetChanged")
+                                @Override
+                                public void onDataChange(@NonNull DataSnapshot snapshot) {
+                                    list.clear();
+                                    for (DataSnapshot dataSnapshot : snapshot.getChildren()) {
+                                        CommentModel comment = dataSnapshot.getValue(CommentModel.class);
+                                        assert comment != null;
+                                        comment.setPostID(postId);
+                                        comment.setPostedBy(postedBy);
+                                        comment.setCommentID(dataSnapshot.getKey());
+                                        list.add(comment);
+                                    }
                                 }
-                            }
 
-                            @Override
-                            public void onCancelled(@NonNull DatabaseError error) {
+                                @Override
+                                public void onCancelled(@NonNull DatabaseError error) {
 
-                            }
-                        });
+                                }
+                            });
 
-                adapter.notifyDataSetChanged();
-                swipeRefreshLayout.setRefreshing(false);
-                commentShimmer.hideShimmerAdapter();
+                    adapter.notifyDataSetChanged();
+                    swipeRefreshLayout.setRefreshing(false);
+                    commentShimmer.hideShimmerAdapter();
+
+                }else {
+                    toastText.setText(R.string.no_connection_text);
+                    toast.show();
+                    connected = false;
+                    swipeRefreshLayout.setRefreshing(false);
+                    commentShimmer.hideShimmerAdapter();
+                }
+
             }
         });
     }//ends of OnCreate

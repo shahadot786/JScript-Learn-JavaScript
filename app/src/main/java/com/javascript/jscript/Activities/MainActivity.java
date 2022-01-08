@@ -6,7 +6,6 @@ import android.app.NotificationChannel;
 import android.app.NotificationManager;
 import android.app.PendingIntent;
 import android.content.Intent;
-import android.content.SharedPreferences;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.media.RingtoneManager;
@@ -79,10 +78,10 @@ public class MainActivity extends AppCompatActivity {
         setContentView(binding.getRoot());
         //custom toast
         inflater = getLayoutInflater();
-        toastLayout = inflater.inflate(R.layout.custom_toast_layout,(ViewGroup) findViewById(R.id.toastLayout));
+        toastLayout = inflater.inflate(R.layout.custom_toast_layout, (ViewGroup) findViewById(R.id.toastLayout));
         toastText = (TextView) toastLayout.findViewById(R.id.toastText);
         toast = new Toast(getApplicationContext());
-        toast.setGravity(Gravity.BOTTOM,0,100);
+        toast.setGravity(Gravity.BOTTOM, 0, 100);
         toast.setDuration(Toast.LENGTH_LONG);
         toast.setView(toastLayout);
         //toolbar
@@ -179,58 +178,116 @@ public class MainActivity extends AppCompatActivity {
                         for (DataSnapshot dataSnapshot : snapshot.getChildren()) {
                             NotificationsModel model = dataSnapshot.getValue(NotificationsModel.class);
                             assert model != null;
-                            boolean checkOpens = model.isCheckOpen();
-                            if (!checkOpens) {
-                                //get user data
-                                database.getReference()
-                                        .child("UserData")
-                                        .child(model.getNotificationBy()).addValueEventListener(new ValueEventListener() {
-                                    @Override
-                                    public void onDataChange(@NonNull DataSnapshot snapshot) {
-                                        Activity context = MainActivity.this;
-                                        UserModel userModel = snapshot.getValue(UserModel.class);
-                                        assert userModel != null;
-                                        //if build version is over oreo
-                                        //notification channel
-                                        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
-                                            NotificationChannel channel = new NotificationChannel("JScript Notifications", "Discuss", NotificationManager.IMPORTANCE_DEFAULT);
-                                            NotificationManager manager = context.getSystemService(NotificationManager.class);
-                                            manager.createNotificationChannel(channel);
+                            String types = model.getType();
+                            if (types.equals("comment")){
+                                boolean checkOpens = model.isCheckOpen();
+                                if (!checkOpens) {
+                                    String typeText = " Reply on your post";
+                                    //get user data
+                                    database.getReference()
+                                            .child("UserData")
+                                            .child(model.getNotificationBy()).addValueEventListener(new ValueEventListener() {
+                                        @Override
+                                        public void onDataChange(@NonNull DataSnapshot snapshot) {
+                                            Activity context = MainActivity.this;
+                                            UserModel userModel = snapshot.getValue(UserModel.class);
+                                            assert userModel != null;
+                                            //if build version is over oreo
+                                            //notification channel
+                                            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+                                                NotificationChannel channel = new NotificationChannel("JScript Notifications", "Discuss", NotificationManager.IMPORTANCE_DEFAULT);
+                                                NotificationManager manager = context.getSystemService(NotificationManager.class);
+                                                manager.createNotificationChannel(channel);
+                                            }
+                                            //notifications sound
+                                            Uri notifySound = RingtoneManager
+                                                    .getDefaultUri(RingtoneManager.TYPE_NOTIFICATION);
+                                            //generate random number
+                                            Random random = new Random();
+                                            int notificationNumber = random.nextInt(9999 - 1000) + 1000;
+                                            //large icon
+                                            Bitmap largeIcon = BitmapFactory.decodeResource(getResources(), R.drawable.ic_main_icon_round);
+                                            //notification intent
+                                            Intent intent = new Intent(context, NotificationsActivity.class);
+                                            PendingIntent pendingIntent = PendingIntent.getActivity(context, 0, intent, 0);
+                                            //notification builder
+                                            NotificationCompat.Builder commentBuilder = new NotificationCompat.Builder(context, "JScript Notifications");
+                                            commentBuilder.setContentTitle("JScript: Learn JavaScript");
+                                            commentBuilder.setSmallIcon(R.drawable.ic_notification_small_icon);
+                                            commentBuilder.setLargeIcon(largeIcon);
+                                            commentBuilder.setAutoCancel(true);
+                                            commentBuilder.setSound(notifySound);
+                                            commentBuilder.setVibrate(new long[]{100, 250, 100, 250, 100, 250});
+                                            commentBuilder.setContentIntent(pendingIntent);
+                                            commentBuilder.setContentText(Html.fromHtml("\"<span style=\"font-weight:bold; color:#15c55d\">" +
+                                                    userModel.getUserName() + "" + "</span>\"" + typeText));
+                                            //notification manager
+                                            NotificationManagerCompat managerCompat = NotificationManagerCompat.from(context);
+                                            managerCompat.notify(notificationNumber, commentBuilder.build());
                                         }
-                                        //notifications sound
-                                        Uri notifySound = RingtoneManager
-                                                .getDefaultUri(RingtoneManager.TYPE_NOTIFICATION);
-                                        //generate random number
-                                        Random random = new Random();
-                                        int notificationNumber = random.nextInt(9999-1000) +1000;
-                                        //large icon
-                                        Bitmap largeIcon = BitmapFactory.decodeResource(getResources(),R.drawable.ic_main_icon_round);
-                                        //notification intent
-                                        Intent intent = new Intent(context, NotificationsActivity.class);
-                                        PendingIntent pendingIntent = PendingIntent.getActivity(context, 0, intent, 0);
-                                        //notification builder
-                                        NotificationCompat.Builder builder = new NotificationCompat.Builder(context, "JScript Notifications");
-                                        builder.setContentTitle("JScript: Learn JavaScript");
-                                        builder.setContentText(Html.fromHtml("\"<span style=\"font-weight:bold; color:#15c55d\">" +
-                                                userModel.getUserName() + "" +"</span>\"" + " Reply on your question"));
-                                        builder.setSmallIcon(R.drawable.ic_notification_small_icon);
-                                        builder.setLargeIcon(largeIcon);
-                                        builder.setAutoCancel(true);
-                                        builder.setSound(notifySound);
-                                        builder.setVibrate(new long[] { 100, 250, 100, 250, 100, 250 });
-                                        builder.setContentIntent(pendingIntent);
 
-                                        //notification manager
-                                        NotificationManagerCompat managerCompat = NotificationManagerCompat.from(context);
-                                        managerCompat.notify(notificationNumber, builder.build());
-                                    }
+                                        @Override
+                                        public void onCancelled(@NonNull DatabaseError error) {
 
-                                    @Override
-                                    public void onCancelled(@NonNull DatabaseError error) {
-
-                                    }
-                                });
+                                        }
+                                    });
+                                }
                             }
+                            else if (types.equals("likes")){
+                                boolean checkOpens = model.isCheckOpen();
+                                if (!checkOpens) {
+                                    String typeText = " like on your post answer";
+                                    //get user data
+                                    database.getReference()
+                                            .child("UserData")
+                                            .child(model.getNotificationBy()).addValueEventListener(new ValueEventListener() {
+                                        @Override
+                                        public void onDataChange(@NonNull DataSnapshot snapshot) {
+                                            Activity context = MainActivity.this;
+                                            UserModel userModel = snapshot.getValue(UserModel.class);
+                                            assert userModel != null;
+                                            //if build version is over oreo
+                                            //notification channel
+                                            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+                                                NotificationChannel channel = new NotificationChannel("JScript Notifications", "Discuss", NotificationManager.IMPORTANCE_DEFAULT);
+                                                NotificationManager manager = context.getSystemService(NotificationManager.class);
+                                                manager.createNotificationChannel(channel);
+                                            }
+                                            //notifications sound
+                                            Uri notifySound = RingtoneManager
+                                                    .getDefaultUri(RingtoneManager.TYPE_NOTIFICATION);
+                                            //generate random number
+                                            Random random = new Random();
+                                            int notificationNumber = random.nextInt(9999 - 1000) + 1000;
+                                            //large icon
+                                            Bitmap largeIcon = BitmapFactory.decodeResource(getResources(), R.drawable.ic_main_icon_round);
+                                            //notification intent
+                                            Intent intent = new Intent(context, NotificationsActivity.class);
+                                            PendingIntent pendingIntent = PendingIntent.getActivity(context, 0, intent, 0);
+                                            //notification builder
+                                            NotificationCompat.Builder commentBuilder = new NotificationCompat.Builder(context, "JScript Notifications");
+                                            commentBuilder.setContentTitle("JScript: Learn JavaScript");
+                                            commentBuilder.setSmallIcon(R.drawable.ic_notification_small_icon);
+                                            commentBuilder.setLargeIcon(largeIcon);
+                                            commentBuilder.setAutoCancel(true);
+                                            commentBuilder.setSound(notifySound);
+                                            commentBuilder.setVibrate(new long[]{100, 250, 100, 250, 100, 250});
+                                            commentBuilder.setContentIntent(pendingIntent);
+                                            commentBuilder.setContentText(Html.fromHtml("\"<span style=\"font-weight:bold; color:#15c55d\">" +
+                                                    userModel.getUserName() + "" + "</span>\"" + typeText));
+                                            //notification manager
+                                            NotificationManagerCompat managerCompat = NotificationManagerCompat.from(context);
+                                            managerCompat.notify(notificationNumber, commentBuilder.build());
+                                        }
+
+                                        @Override
+                                        public void onCancelled(@NonNull DatabaseError error) {
+
+                                        }
+                                    });
+                                }
+                            }
+
                         }
                     }
 
@@ -294,7 +351,7 @@ public class MainActivity extends AppCompatActivity {
             case R.id.share:
                 Intent sendIntent = new Intent();
                 sendIntent.setAction(Intent.ACTION_SEND);
-                sendIntent.putExtra(Intent.EXTRA_SUBJECT,"Learn JavaScript");
+                sendIntent.putExtra(Intent.EXTRA_SUBJECT, "Learn JavaScript");
                 sendIntent.putExtra(Intent.EXTRA_TEXT, getResources().getString(R.string.share_message) + "\n\n" +
                         "https://play.google.com/store/apps/details?id=" +
                         BuildConfig.APPLICATION_ID + "\n\n" + getResources().getString(R.string.share_message2)
@@ -317,8 +374,7 @@ public class MainActivity extends AppCompatActivity {
                     //we are connected to a network
                     connected = true;
                     startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("http://play.google.com/store/apps/details?id=" + BuildConfig.APPLICATION_ID)));
-                }
-                else {
+                } else {
                     toastText.setText(R.string.no_connection_text);
                     toast.show();
                 }
@@ -337,8 +393,7 @@ public class MainActivity extends AppCompatActivity {
                     //we are connected to a network
                     connected = true;
                     startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(getString(R.string.url_play_more_apps))));
-                }
-                else {
+                } else {
                     toastText.setText(R.string.no_connection_text);
                     toast.show();
                 }
@@ -353,8 +408,7 @@ public class MainActivity extends AppCompatActivity {
                     connected = true;
                     Intent intent1 = new Intent(Intent.ACTION_VIEW, Uri.parse(getString(R.string.url_play_privacy_policy)));
                     startActivity(intent1);
-                }
-                else {
+                } else {
                     toastText.setText(R.string.no_connection_text);
                     toast.show();
                 }
@@ -367,9 +421,8 @@ public class MainActivity extends AppCompatActivity {
                         connectivityManager4.getNetworkInfo(ConnectivityManager.TYPE_WIFI).getState() == NetworkInfo.State.CONNECTED) {
                     //we are connected to a network
                     connected = true;
-                    startActivity(new Intent(Intent.ACTION_VIEW,Uri.parse("mailto:" + "info@shrcreation.com")));
-                }
-                else {
+                    startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("mailto:" + "info@shrcreation.com")));
+                } else {
                     toastText.setText(R.string.no_connection_text);
                     toast.show();
                 }

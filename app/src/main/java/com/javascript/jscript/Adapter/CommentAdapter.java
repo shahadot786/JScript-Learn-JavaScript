@@ -18,12 +18,14 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 import com.javascript.jscript.Model.CommentModel;
+import com.javascript.jscript.Model.NotificationsModel;
 import com.javascript.jscript.Model.UserModel;
 import com.javascript.jscript.R;
 import com.javascript.jscript.databinding.CommentsRvSampleBinding;
 import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.Objects;
 
 public class CommentAdapter extends RecyclerView.Adapter<CommentAdapter.viewHolder> {
@@ -135,6 +137,23 @@ public class CommentAdapter extends RecyclerView.Adapter<CommentAdapter.viewHold
                                                         public void onSuccess(Void unused) {
                                                             holder.binding.likes.setImageResource(R.drawable.ic_like_icon_green);
                                                             holder.binding.likesLoves.setVisibility(View.VISIBLE);
+                                                            //notification codes
+                                                            NotificationsModel notifications = new NotificationsModel();
+                                                            notifications.setNotificationBy(FirebaseAuth.getInstance().getUid());
+                                                            notifications.setNotificationAt(new Date().getTime());
+                                                            notifications.setPostId(comment.getPostID());
+                                                            notifications.setPostedBy(comment.getPostedBy());
+                                                            notifications.setType("likes");
+
+                                                            FirebaseDatabase.getInstance().getReference()
+                                                                    .child("Notifications")
+                                                                    .child(comment.getPostedBy())
+                                                                    .push()
+                                                                    .setValue(notifications).addOnSuccessListener(new OnSuccessListener<Void>() {
+                                                                @Override
+                                                                public void onSuccess(@NonNull Void unused) {
+                                                                }
+                                                            });
 
                                                         }
                                                     });

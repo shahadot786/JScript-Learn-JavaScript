@@ -131,7 +131,7 @@ public class CommentAdapter extends RecyclerView.Adapter<CommentAdapter.viewHold
                                                             holder.binding.likes.setImageResource(R.drawable.ic_like_icon_green);
                                                             holder.binding.likesLoves.setVisibility(View.VISIBLE);
                                                             //notification codes
-                                                            NotificationsModel notifications = new NotificationsModel();
+                                                            /*NotificationsModel notifications = new NotificationsModel();
                                                             notifications.setNotificationBy(FirebaseAuth.getInstance().getUid());
                                                             notifications.setNotificationAt(new Date().getTime());
                                                             notifications.setPostId(comment.getPostID());
@@ -146,7 +146,7 @@ public class CommentAdapter extends RecyclerView.Adapter<CommentAdapter.viewHold
                                                                 @Override
                                                                 public void onSuccess(@NonNull Void unused) {
                                                                 }
-                                                            });
+                                                            });*/
 
                                                         }
                                                     });

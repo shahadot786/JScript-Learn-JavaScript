@@ -233,7 +233,8 @@ public class MainActivity extends AppCompatActivity {
                                     });
                                 }
                             }
-                            else if (types.equals("likes")){
+                            //likes
+                            /*else if (types.equals("likes")){
                                 boolean checkOpens = model.isCheckOpen();
                                 if (!checkOpens) {
                                     String typeText = " like on your post answer";
@@ -286,7 +287,7 @@ public class MainActivity extends AppCompatActivity {
                                         }
                                     });
                                 }
-                            }
+                            }*/
 
                         }
                     }

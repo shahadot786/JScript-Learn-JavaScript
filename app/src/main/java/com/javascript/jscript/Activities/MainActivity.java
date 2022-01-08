@@ -182,7 +182,7 @@ public class MainActivity extends AppCompatActivity {
                             if (types.equals("comment")){
                                 boolean checkOpens = model.isCheckOpen();
                                 if (!checkOpens) {
-                                    String typeText = " Answer on your post";
+                                    String typeText = " answer on your post";
                                     //get user data
                                     database.getReference()
                                             .child("UserData")
@@ -236,7 +236,7 @@ public class MainActivity extends AppCompatActivity {
                             else if (types.equals("likes")){
                                 boolean checkOpens = model.isCheckOpen();
                                 if (!checkOpens) {
-                                    String typeText = " Like on your post answer";
+                                    String typeText = " like on your post answer";
                                     //get user data
                                     database.getReference()
                                             .child("UserData")

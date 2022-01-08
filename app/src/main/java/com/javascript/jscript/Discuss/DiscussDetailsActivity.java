@@ -377,34 +377,84 @@ public class DiscussDetailsActivity extends AppCompatActivity {
         shareIntent.setType("text/plain");
         startActivity(shareIntent);
         //fetch firebase database
+        //first get the share count values
         database.getReference()
                 .child("Discuss")
                 .child(postId)
-                .child("shareCount").addListenerForSingleValueEvent(new ValueEventListener() {
-            @Override
-            public void onDataChange(@NonNull DataSnapshot snapshot) {
-                int shareCount = 0;
-                if (snapshot.exists()) {
-                    shareCount = snapshot.getValue(Integer.class);
-                }
-                database.getReference()
-                        .child("Discuss")
-                        .child(postId)
-                        .child("shareCount")
-                        .setValue(shareCount + 1).addOnSuccessListener(new OnSuccessListener<Void>() {
+                .addValueEventListener(new ValueEventListener() {
                     @Override
-                    public void onSuccess(@NonNull Void unused) {
+                    public void onDataChange(@NonNull DataSnapshot snapshot) {
+                        DiscussModel model = snapshot.getValue(DiscussModel.class);
+                        assert model != null;
+                        String shares = model.getShareCount() + "";
+                        //then get the shares boolean value
+                        database.getReference()
+                                .child("Discuss")
+                                .child(postId)
+                                .child("shares")
+                                .child(Objects.requireNonNull(FirebaseAuth.getInstance().getUid()))
+                                .addListenerForSingleValueEvent(new ValueEventListener() {
+                                    @Override
+                                    public void onDataChange(@NonNull DataSnapshot snapshot) {
+                                        //if user shares before
+                                        if (snapshot.exists()){
+                                            binding.share.setText(shares);
+                                        }
+                                        //else new user share
+                                        else {
+                                            database.getReference()
+                                                    .child("Discuss")
+                                                    .child(postId)
+                                                    .child("shares")
+                                                    .child(Objects.requireNonNull(FirebaseAuth.getInstance().getUid()))
+                                                    .setValue(true)
+                                                    .addOnSuccessListener(new OnSuccessListener<Void>() {
+                                                        @Override
+                                                        public void onSuccess(Void unused) {
+                                                            database.getReference()
+                                                                    .child("Discuss")
+                                                                    .child(postId)
+                                                                    .child("shareCount").addListenerForSingleValueEvent(new ValueEventListener() {
+                                                                @Override
+                                                                public void onDataChange(@NonNull DataSnapshot snapshot) {
+                                                                    int shareCount = 0;
+                                                                    if (snapshot.exists()) {
+                                                                        shareCount = snapshot.getValue(Integer.class);
+                                                                    }
+                                                                    database.getReference()
+                                                                            .child("Discuss")
+                                                                            .child(postId)
+                                                                            .child("shareCount")
+                                                                            .setValue(shareCount + 1).addOnSuccessListener(new OnSuccessListener<Void>() {
+                                                                        @Override
+                                                                        public void onSuccess(@NonNull Void unused) {
+
+                                                                        }
+                                                                    });
+                                                                }
+
+                                                                @Override
+                                                                public void onCancelled(@NonNull DatabaseError error) {
+
+                                                                }
+                                                            });
+                                                        }
+                                                    });
+                                        }
+                                    }
+
+                                    @Override
+                                    public void onCancelled(@NonNull DatabaseError error) {
+
+                                    }
+                                });
+                    }
+
+                    @Override
+                    public void onCancelled(@NonNull DatabaseError error) {
 
                     }
                 });
-            }
-
-            @Override
-            public void onCancelled(@NonNull DatabaseError error) {
-
-            }
-        });
-
     }
 
 

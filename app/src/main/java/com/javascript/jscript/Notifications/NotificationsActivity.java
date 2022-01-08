@@ -78,82 +78,99 @@ public class NotificationsActivity extends AppCompatActivity {
         layoutManager.setReverseLayout(true);
         layoutManager.setStackFromEnd(true);
         notificationRV.setLayoutManager(layoutManager);
-
         //network check
         ConnectivityManager connectivityManager = (ConnectivityManager) getSystemService(FeedBackActivity.CONNECTIVITY_SERVICE);
         if (connectivityManager.getNetworkInfo(ConnectivityManager.TYPE_MOBILE).getState() == NetworkInfo.State.CONNECTED ||
                 connectivityManager.getNetworkInfo(ConnectivityManager.TYPE_WIFI).getState() == NetworkInfo.State.CONNECTED) {
             //we are connected to a network
             connected = true;
-            database.getReference()
-                    .child("Notifications")
-                    .child(Objects.requireNonNull(FirebaseAuth.getInstance().getUid()))
-                    .addValueEventListener(new ValueEventListener() {
-                        @SuppressLint("NotifyDataSetChanged")
-                        @Override
-                        public void onDataChange(@NonNull DataSnapshot snapshot) {
-                            list.clear();
-                            for (DataSnapshot dataSnapshot : snapshot.getChildren()) {
-                                NotificationsModel notificationsModel = dataSnapshot.getValue(NotificationsModel.class);
-                                assert notificationsModel != null;
-                                notificationsModel.setNotificationId(dataSnapshot.getKey());
-                                list.add(notificationsModel);
 
-                            }
-                            if (list.isEmpty()){
-                                noNotification.setVisibility(View.VISIBLE);
-                                noNotifyText.setVisibility(View.VISIBLE);
-                            }
-                            notificationRV.setAdapter(adapter);
-                            notificationRV.hideShimmerAdapter();
-                            adapter.notifyDataSetChanged();
-                        }
-
-                        @Override
-                        public void onCancelled(@NonNull DatabaseError error) {
+        }else {
+            toastText.setText(R.string.no_connection_text);
+            toast.show();
+            connected = false;
+        }
+        //set notification value
+        database.getReference()
+                .child("Notifications")
+                .child(Objects.requireNonNull(FirebaseAuth.getInstance().getUid()))
+                .addValueEventListener(new ValueEventListener() {
+                    @SuppressLint("NotifyDataSetChanged")
+                    @Override
+                    public void onDataChange(@NonNull DataSnapshot snapshot) {
+                        list.clear();
+                        for (DataSnapshot dataSnapshot : snapshot.getChildren()) {
+                            NotificationsModel notificationsModel = dataSnapshot.getValue(NotificationsModel.class);
+                            assert notificationsModel != null;
+                            notificationsModel.setNotificationId(dataSnapshot.getKey());
+                            list.add(notificationsModel);
 
                         }
-                    });
+                        //check list is empty
+                        if (list.isEmpty()){
+                            noNotification.setVisibility(View.VISIBLE);
+                            noNotifyText.setVisibility(View.VISIBLE);
+                        }
+                        notificationRV.setAdapter(adapter);
+                        notificationRV.hideShimmerAdapter();
+                        adapter.notifyDataSetChanged();
+                    }
 
+                    @Override
+                    public void onCancelled(@NonNull DatabaseError error) {
+
+                    }
+                });
+        //set swipe refresh value
             swipeRefreshLayout.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
                 @SuppressLint("NotifyDataSetChanged")
                 @Override
                 public void onRefresh() {
-                    database.getReference()
-                            .child("Notifications")
-                            .child(Objects.requireNonNull(FirebaseAuth.getInstance().getUid()))
-                            .addValueEventListener(new ValueEventListener() {
-                                @Override
-                                public void onDataChange(@NonNull DataSnapshot snapshot) {
-                                    list.clear();
-                                    for (DataSnapshot dataSnapshot : snapshot.getChildren()) {
-                                        NotificationsModel notificationsModel = dataSnapshot.getValue(NotificationsModel.class);
-                                        assert notificationsModel != null;
-                                        notificationsModel.setNotificationId(dataSnapshot.getKey());
-                                        list.add(notificationsModel);
+                    //check network
+                    ConnectivityManager connectivityManager = (ConnectivityManager) getSystemService(FeedBackActivity.CONNECTIVITY_SERVICE);
+                    if (connectivityManager.getNetworkInfo(ConnectivityManager.TYPE_MOBILE).getState() == NetworkInfo.State.CONNECTED ||
+                            connectivityManager.getNetworkInfo(ConnectivityManager.TYPE_WIFI).getState() == NetworkInfo.State.CONNECTED) {
+                        //we are connected to a network
+                        connected = true;
+                        database.getReference()
+                                .child("Notifications")
+                                .child(Objects.requireNonNull(FirebaseAuth.getInstance().getUid()))
+                                .addValueEventListener(new ValueEventListener() {
+                                    @Override
+                                    public void onDataChange(@NonNull DataSnapshot snapshot) {
+                                        list.clear();
+                                        for (DataSnapshot dataSnapshot : snapshot.getChildren()) {
+                                            NotificationsModel notificationsModel = dataSnapshot.getValue(NotificationsModel.class);
+                                            assert notificationsModel != null;
+                                            notificationsModel.setNotificationId(dataSnapshot.getKey());
+                                            list.add(notificationsModel);
+                                        }
+                                        //check list is empty
+                                        if (list.isEmpty()){
+                                            noNotification.setVisibility(View.VISIBLE);
+                                            noNotifyText.setVisibility(View.VISIBLE);
+                                        }
+                                        notificationRV.setAdapter(adapter);
+                                        notificationRV.hideShimmerAdapter();
 
                                     }
-                                    notificationRV.setAdapter(adapter);
-                                    notificationRV.hideShimmerAdapter();
 
-                                }
+                                    @Override
+                                    public void onCancelled(@NonNull DatabaseError error) {
 
-                                @Override
-                                public void onCancelled(@NonNull DatabaseError error) {
-
-                                }
-                            });
-                    adapter.notifyDataSetChanged();
-                    swipeRefreshLayout.setRefreshing(false);
+                                    }
+                                });
+                        adapter.notifyDataSetChanged();
+                        swipeRefreshLayout.setRefreshing(false);
+                    }else {
+                        toastText.setText(R.string.no_connection_text);
+                        toast.show();
+                        connected = false;
+                        notificationRV.hideShimmerAdapter();
+                        swipeRefreshLayout.setRefreshing(false);
+                    }
                 }
             });
-
-        } else {
-            toastText.setText(R.string.no_connection_text);
-            toast.show();
-            connected = false;
-            notificationRV.hideShimmerAdapter();
-        }
 
     }//ends of onCreate
 

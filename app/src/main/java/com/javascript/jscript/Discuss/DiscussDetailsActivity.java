@@ -279,6 +279,10 @@ public class DiscussDetailsActivity extends AppCompatActivity {
                         list.clear();
                         for (DataSnapshot dataSnapshot : snapshot.getChildren()) {
                             CommentModel comment = dataSnapshot.getValue(CommentModel.class);
+                            assert comment != null;
+                            comment.setPostID(postId);
+                            comment.setPostedBy(postedBy);
+                            comment.setCommentID(dataSnapshot.getKey());
                             list.add(comment);
                         }
                         adapter.notifyDataSetChanged();

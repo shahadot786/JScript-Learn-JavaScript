@@ -4,7 +4,10 @@ public class CommentModel {
     private String commentBody;
     private long commentAt;
     private String commentedBy;
-    private int commentLikes;
+    private String postID;
+    private String postedBy;
+    private String commentID;
+    private int countLikes;
 
     public CommentModel() {
     }
@@ -33,11 +36,35 @@ public class CommentModel {
         this.commentedBy = commentedBy;
     }
 
-    public int getCommentLikes() {
-        return commentLikes;
+    public String getPostID() {
+        return postID;
     }
 
-    public void setCommentLikes(int commentLikes) {
-        this.commentLikes = commentLikes;
+    public void setPostID(String postID) {
+        this.postID = postID;
+    }
+
+    public String getPostedBy() {
+        return postedBy;
+    }
+
+    public void setPostedBy(String postedBy) {
+        this.postedBy = postedBy;
+    }
+
+    public String getCommentID() {
+        return commentID;
+    }
+
+    public void setCommentID(String commentID) {
+        this.commentID = commentID;
+    }
+
+    public int getCountLikes() {
+        return countLikes;
+    }
+
+    public void setCountLikes(int countLikes) {
+        this.countLikes = countLikes;
     }
 }

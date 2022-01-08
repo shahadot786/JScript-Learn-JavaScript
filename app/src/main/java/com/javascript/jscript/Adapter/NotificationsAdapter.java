@@ -78,7 +78,7 @@ public class NotificationsAdapter extends RecyclerView.Adapter<NotificationsAdap
                         }
                         else if (type.equals("likes")){
                             holder.binding.notificationText.setText(Html.fromHtml("<span style=\"font-weight:bold; color:#15c55d\">"+
-                                    userModel.getUserName()+" "+"</span>" + " Like on your post answer"));
+                                    userModel.getUserName()+" "+"</span>" + " Like on your answer"));
                         }
 
                     }

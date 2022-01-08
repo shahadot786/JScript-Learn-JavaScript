@@ -25,6 +25,9 @@
         android:usesCleartextTraffic="true"
         tools:targetApi="m">
         <activity
+            android:name=".Activities.UpcomingCoursesActivity"
+            android:exported="false" />
+        <activity
             android:name=".Activities.CodesActivity"
             android:exported="false" />
         <activity

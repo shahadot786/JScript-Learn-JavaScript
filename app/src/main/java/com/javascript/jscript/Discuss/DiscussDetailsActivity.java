@@ -300,17 +300,21 @@ public class DiscussDetailsActivity extends AppCompatActivity {
             @Override
             public void onRefresh() {
                 commentShimmer.showShimmerAdapter();
-                //get database data
                 database.getReference()
                         .child("Discuss")
                         .child(postId)
                         .child("comments")
                         .addValueEventListener(new ValueEventListener() {
+                            @SuppressLint("NotifyDataSetChanged")
                             @Override
                             public void onDataChange(@NonNull DataSnapshot snapshot) {
                                 list.clear();
                                 for (DataSnapshot dataSnapshot : snapshot.getChildren()) {
                                     CommentModel comment = dataSnapshot.getValue(CommentModel.class);
+                                    assert comment != null;
+                                    comment.setPostID(postId);
+                                    comment.setPostedBy(postedBy);
+                                    comment.setCommentID(dataSnapshot.getKey());
                                     list.add(comment);
                                 }
                             }
@@ -320,6 +324,7 @@ public class DiscussDetailsActivity extends AppCompatActivity {
 
                             }
                         });
+
                 adapter.notifyDataSetChanged();
                 swipeRefreshLayout.setRefreshing(false);
                 commentShimmer.hideShimmerAdapter();

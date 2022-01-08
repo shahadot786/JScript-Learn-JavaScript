@@ -89,19 +89,26 @@
             app:layout_constraintTop_toTopOf="@+id/userName"
             app:srcCompat="@drawable/pro_big" />
 
-        <androidx.appcompat.widget.AppCompatTextView
+        <ImageView
             android:id="@+id/likes"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:drawablePadding="4dp"
-            android:gravity="center"
-            android:textColor="@color/color_text_discuss"
-            android:textSize="11sp"
-            app:drawableLeftCompat="@drawable/ic_like_icon_64"
+            android:layout_marginStart="8dp"
+            android:contentDescription="@string/app_main_images"
+            android:src="@drawable/ic__like_icon"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="@+id/userName" />
+
+        <TextView
+            android:id="@+id/likesCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:textSize="11sp"
+            app:layout_constraintBottom_toBottomOf="@+id/likes"
+            app:layout_constraintStart_toEndOf="@+id/likes"
+            app:layout_constraintTop_toTopOf="@+id/likes" />
 
         <com.airbnb.lottie.LottieAnimationView
             android:id="@+id/likes_loves"

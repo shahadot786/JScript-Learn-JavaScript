@@ -277,5 +277,8 @@
     <string name="congratulations">Congratulations, Welcome to Pro</string>
     <string name="no_notification_yet">No Notification yet..</string>
     <string name="add_times">Add Times</string>
+    <!--Upcoming courses-->
+    <string name="spring_boot">Spring Boot</string>
+    <string name="spring_boot_text">Spring Boot makes it easy to create stand-alone, production-grade Spring based Applications that you can just run. Most Spring Boot applications need minimal Spring configuration. Some Features: 1.Create stand-alone Spring applications 2.Embed Tomcat, Jetty or Undertow directly (no need to deploy WAR files) 3.Provide opinionated \'starter\' dependencies to simplify your build configuration 4.Automatically configure Spring and 3rd party libraries whenever possible 5.Provide production-ready features such as metrics, health checks, and externalized configuration 6.Absolutely no code generation and no requirement for XML configuration</string>
 
 </resources>

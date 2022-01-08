@@ -5,6 +5,7 @@ public class UserModel {
     private String coverPhoto;
     private String profile;
     private String userID;
+    private boolean checkPremium;
 
     public UserModel() {
     }
@@ -70,5 +71,13 @@ public class UserModel {
 
     public void setUserID(String userID) {
         this.userID = userID;
+    }
+
+    public boolean isCheckPremium() {
+        return checkPremium;
+    }
+
+    public void setCheckPremium(boolean checkPremium) {
+        this.checkPremium = checkPremium;
     }
 }

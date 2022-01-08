@@ -25,10 +25,6 @@ import com.smarteist.autoimageslider.SliderAnimations;
 import com.smarteist.autoimageslider.SliderView;
 
 public class LearnFragment extends Fragment {
-    private int[] images;
-    private String[] slideText;
-    private LearnSliderAdapter adapter;
-    private SliderView sliderView;
 
     ExpandableHeightGridView gridView , gridViewPro;
     View proView;
@@ -89,8 +85,8 @@ public class LearnFragment extends Fragment {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_learn, container, false);
         //image slider
-        sliderView = view.findViewById(R.id.sliderView);
-        slideText = new String[]{
+        SliderView sliderView = view.findViewById(R.id.sliderView);
+        String[] slideText = new String[]{
                 "95% OFF Limited Time Offer",
                 "Upcoming Courses",
                 "Learn JavaScript Offline",
@@ -100,7 +96,7 @@ public class LearnFragment extends Fragment {
                 "Read 500+ Ebooks"
         };
 
-        images = new int[]{
+        int[] images = new int[]{
                 R.drawable.pro_ad,
                 R.drawable.upcoming,
                 R.drawable.ic_learn_slider_bg_200dp,
@@ -109,8 +105,8 @@ public class LearnFragment extends Fragment {
                 R.drawable.ic_interview_slider_bg_200dp,
                 R.drawable.ic_ebook_slider_bg_200dp
         };
-        adapter = new LearnSliderAdapter(images, slideText);
-        sliderView.setSliderAdapter(adapter);
+        LearnSliderAdapter sliderAdapter = new LearnSliderAdapter(images, slideText);
+        sliderView.setSliderAdapter(sliderAdapter);
         sliderView.setSliderTransformAnimation(SliderAnimations.SIMPLETRANSFORMATION);
         sliderView.setIndicatorAnimation(IndicatorAnimationType.WORM);
         sliderView.setAutoCycleDirection(SliderView.AUTO_CYCLE_DIRECTION_BACK_AND_FORTH);
@@ -126,8 +122,6 @@ public class LearnFragment extends Fragment {
             slideText[0] = "Enjoy Premium Services";
             images[0] = R.drawable.after_pro_ad;
         }
-
-
         //pro codes
         proView = view.findViewById(R.id.LearnProView);
         proImage = view.findViewById(R.id.learnProImage);
@@ -140,8 +134,8 @@ public class LearnFragment extends Fragment {
         //pro
         gridViewPro = view.findViewById(R.id.learn_item_gridview_pro);
         gridViewPro.setExpanded(true);
-        LearnItemsAdapterPro adapter1 = new LearnItemsAdapterPro(itemsNamePro,itemImagesPro,getActivity());
-        gridViewPro.setAdapter(adapter1);
+        LearnItemsAdapterPro adapterPro = new LearnItemsAdapterPro(itemsNamePro,itemImagesPro,getActivity());
+        gridViewPro.setAdapter(adapterPro);
 
         //check user upgrade to pro
         if (UiConfig.PRO_VISIBILITY_STATUS_SHOW){

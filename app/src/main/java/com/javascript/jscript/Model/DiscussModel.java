@@ -7,7 +7,6 @@ public class DiscussModel {
     private int postViews;
     private int commentCount;
     private int shareCount;
-    private int postCount;
 
     public DiscussModel() {
     }
@@ -77,11 +76,4 @@ public class DiscussModel {
         this.shareCount = shareCount;
     }
 
-    public int getPostCount() {
-        return postCount;
-    }
-
-    public void setPostCount(int postCount) {
-        this.postCount = postCount;
-    }
 }

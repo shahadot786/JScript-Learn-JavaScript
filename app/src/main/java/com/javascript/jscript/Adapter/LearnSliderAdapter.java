@@ -9,13 +9,14 @@ import android.widget.TextView;
 
 import com.javascript.jscript.Activities.FeedBackActivity;
 import com.javascript.jscript.Activities.PremiumActivity;
+import com.javascript.jscript.Activities.UpcomingCoursesActivity;
 import com.javascript.jscript.Config.UiConfig;
 import com.javascript.jscript.R;
 import com.smarteist.autoimageslider.SliderViewAdapter;
 
 public class LearnSliderAdapter extends SliderViewAdapter<LearnSliderAdapter.SliderViewHolder> {
-    private int[] images;
-    private String[] slideText;
+    private final int[] images;
+    private final String[] slideText;
 
     public LearnSliderAdapter(int[] images, String[] slideText) {
         this.images = images;
@@ -65,20 +66,20 @@ public class LearnSliderAdapter extends SliderViewAdapter<LearnSliderAdapter.Sli
 
         }
 
-        /*if (position ==2){
+        if (position ==1){
             viewHolder.itemView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    AppCompatActivity activity = (AppCompatActivity) view.getContext();
-                    Fragment learFragment = new QuizFragment();
-                    activity.getSupportFragmentManager().beginTransaction()
-                            .replace(R.id.container,learFragment)
-                            .addToBackStack(null).commit();
+                    Context context = view.getContext();
+                    Intent intent;
+                    intent = new Intent(context, UpcomingCoursesActivity.class);
+                    intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                    context.startActivity(intent);
 
                 }
             });
         }
-        if (position ==3){
+        /*if (position ==3){
             viewHolder.itemView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {

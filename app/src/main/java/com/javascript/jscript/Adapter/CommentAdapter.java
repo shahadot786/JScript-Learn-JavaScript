@@ -2,6 +2,7 @@ package com.javascript.jscript.Adapter;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
+import android.text.Html;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -52,18 +53,25 @@ public class CommentAdapter extends RecyclerView.Adapter<CommentAdapter.viewHold
         holder.binding.time.setText(time);
         //if likes are empty
         if (commentLikes.equals("0")){
-            holder.binding.likes.setText("");
+            holder.binding.likesCount.setText("0 Like");
+        }
+        else if(commentLikes.equals("1")){
+            holder.binding.likesCount.setText(Html.fromHtml("<span style=\"font-weight:bold; color:#b3b5bd\">"+
+                    "1 Like"+" "+"</span>"));
         }
         else {
             //1K and 1M views logic
             int Likes = Integer.parseInt(commentLikes);
             if (Likes >= 1000){
-                holder.binding.likes.setText((Likes / 1000)+"."+((Likes % 1000)/100)+"K");
+                holder.binding.likesCount.setText(Html.fromHtml("<span style=\"font-weight:bold; color:#b3b5bd\">"+
+                        "You and "+ (Likes / 1000)+"."+((Likes % 1000)/100)+"K" + " likes"+" "+"</span>"));
             }else {
-                holder.binding.likes.setText(commentLikes);
+                holder.binding.likesCount.setText(Html.fromHtml("<span style=\"font-weight:bold; color:#b3b5bd\">"+
+                        "You and "+ commentLikes + " likes"+" "+"</span>"));
             }
             if (Likes >= 1000000){
-                holder.binding.likes.setText((Likes / 1000000)+"."+((Likes % 1000000)/10000)+"M");
+                holder.binding.likesCount.setText(Html.fromHtml("<span style=\"font-weight:bold; color:#b3b5bd\">"+
+                        "You and "+ (Likes / 1000000)+"."+((Likes % 1000000)/10000)+"M" + " likes"+" "+"</span>"));
             }
         }
         //get user data
@@ -98,7 +106,7 @@ public class CommentAdapter extends RecyclerView.Adapter<CommentAdapter.viewHold
                     @Override
                     public void onDataChange(@NonNull DataSnapshot snapshot) {
                         if (snapshot.exists()) {
-                            holder.binding.likes.setCompoundDrawablesWithIntrinsicBounds(R.drawable.ic_like_icon_active_green, 0, 0, 0);
+                            holder.binding.likes.setImageResource(R.drawable.ic_like_icon_green);
                         } else {
                             //set likes value
                             holder.binding.likes.setOnClickListener(new View.OnClickListener() {
@@ -125,8 +133,9 @@ public class CommentAdapter extends RecyclerView.Adapter<CommentAdapter.viewHold
                                                     .addOnSuccessListener(new OnSuccessListener<Void>() {
                                                         @Override
                                                         public void onSuccess(Void unused) {
-                                                            holder.binding.likes.setCompoundDrawablesWithIntrinsicBounds(R.drawable.ic_like_icon_active_green, 0, 0, 0);
+                                                            holder.binding.likes.setImageResource(R.drawable.ic_like_icon_green);
                                                             holder.binding.likesLoves.setVisibility(View.VISIBLE);
+
                                                         }
                                                     });
                                         }

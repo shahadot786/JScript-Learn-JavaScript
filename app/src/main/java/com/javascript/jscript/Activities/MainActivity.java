@@ -179,10 +179,11 @@ public class MainActivity extends AppCompatActivity {
                             NotificationsModel model = dataSnapshot.getValue(NotificationsModel.class);
                             assert model != null;
                             String types = model.getType();
+                            String question = model.getQuestion();
                             if (types.equals("comment")){
                                 boolean checkOpens = model.isCheckOpen();
                                 if (!checkOpens) {
-                                    String typeText = " answer on your post";
+                                    String typeText = " reply in";
                                     //get user data
                                     database.getReference()
                                             .child("UserData")
@@ -220,7 +221,7 @@ public class MainActivity extends AppCompatActivity {
                                             commentBuilder.setVibrate(new long[]{100, 250, 100, 250, 100, 250});
                                             commentBuilder.setContentIntent(pendingIntent);
                                             commentBuilder.setContentText(Html.fromHtml("\"<span style=\"font-weight:bold; color:#15c55d\">" +
-                                                    userModel.getUserName() + "" + "</span>\"" + typeText));
+                                                    userModel.getUserName() + "" + "</span>\"" + typeText + " ("+question+")"));
                                             //notification manager
                                             NotificationManagerCompat managerCompat = NotificationManagerCompat.from(context);
                                             managerCompat.notify(notificationNumber, commentBuilder.build());

@@ -240,24 +240,41 @@ public class DiscussDetailsActivity extends AppCompatActivity {
                                                 //hide keyboard
                                                 InputMethodManager inputMethodManager = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
                                                 inputMethodManager.hideSoftInputFromWindow(view.getWindowToken(), 0);
-                                                //notifications
-                                                NotificationsModel notifications = new NotificationsModel();
-                                                notifications.setNotificationBy(FirebaseAuth.getInstance().getUid());
-                                                notifications.setNotificationAt(new Date().getTime());
-                                                notifications.setPostId(postId);
-                                                notifications.setPostedBy(postedBy);
-                                                notifications.setType("comment");
+                                                //get post data
+                                                database.getReference()
+                                                        .child("Discuss")
+                                                        .child(postId)
+                                                        .addValueEventListener(new ValueEventListener() {
+                                                            @Override
+                                                            public void onDataChange(@NonNull DataSnapshot snapshot) {
+                                                                DiscussModel model = snapshot.getValue(DiscussModel.class);
+                                                                assert model != null;
+                                                                String question = model.getQuestions();
+                                                                //notifications
+                                                                NotificationsModel notifications = new NotificationsModel();
+                                                                notifications.setNotificationBy(FirebaseAuth.getInstance().getUid());
+                                                                notifications.setNotificationAt(new Date().getTime());
+                                                                notifications.setPostId(postId);
+                                                                notifications.setPostedBy(postedBy);
+                                                                notifications.setQuestion(question);
+                                                                notifications.setType("comment");
 
-                                                FirebaseDatabase.getInstance().getReference()
-                                                        .child("Notifications")
-                                                        .child(postedBy)
-                                                        .push()
-                                                        .setValue(notifications).addOnSuccessListener(new OnSuccessListener<Void>() {
-                                                    @Override
-                                                    public void onSuccess(@NonNull Void unused) {
-                                                    }
-                                                });
+                                                                FirebaseDatabase.getInstance().getReference()
+                                                                        .child("Notifications")
+                                                                        .child(postedBy)
+                                                                        .push()
+                                                                        .setValue(notifications).addOnSuccessListener(new OnSuccessListener<Void>() {
+                                                                    @Override
+                                                                    public void onSuccess(@NonNull Void unused) {
+                                                                    }
+                                                                });
+                                                            }
 
+                                                            @Override
+                                                            public void onCancelled(@NonNull DatabaseError error) {
+
+                                                            }
+                                                        });
                                             }
                                         });
                                     }

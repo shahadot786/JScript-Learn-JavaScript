@@ -8,6 +8,7 @@ private String type;
 private String postId;
 private String notificationId;
 private String postedBy;
+private String question;
 private boolean checkOpen;
 
     public NotificationsModel() {
@@ -67,5 +68,13 @@ private boolean checkOpen;
 
     public void setNotificationId(String notificationId) {
         this.notificationId = notificationId;
+    }
+
+    public String getQuestion() {
+        return question;
+    }
+
+    public void setQuestion(String question) {
+        this.question = question;
     }
 }

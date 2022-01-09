@@ -56,6 +56,7 @@ public class NotificationsAdapter extends RecyclerView.Adapter<NotificationsAdap
         NotificationsModel notifications = list.get(position);
         String time = TimeAgo.using(notifications.getNotificationAt());
         String type = notifications.getType();
+        String question = notifications.getQuestion();
 
         FirebaseDatabase.getInstance().getReference()
                 .child("UserData")
@@ -74,12 +75,14 @@ public class NotificationsAdapter extends RecyclerView.Adapter<NotificationsAdap
 
                         if (type.equals("comment")){
                             holder.binding.notificationText.setText(Html.fromHtml("<span style=\"font-weight:bold; color:#15c55d\">"+
-                                    userModel.getUserName()+" "+"</span>" + " answer on your post"));
+                                    userModel.getUserName()+" "+"</span>" + " reply in " +
+                                    "\"<span style=\"font-weight:bold; color:#b3b5bd\"> "+question
+                            +" "+" </span>\""));
                         }
-                        else if (type.equals("likes")){
+                        /*else if (type.equals("likes")){
                             holder.binding.notificationText.setText(Html.fromHtml("<span style=\"font-weight:bold; color:#15c55d\">"+
                                     userModel.getUserName()+" "+"</span>" + " like on your post answer"));
-                        }
+                        }*/
 
                     }
 

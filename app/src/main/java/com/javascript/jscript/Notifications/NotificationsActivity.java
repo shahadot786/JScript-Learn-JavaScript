@@ -24,7 +24,6 @@ import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
-import com.javascript.jscript.Activities.FeedBackActivity;
 import com.javascript.jscript.Adapter.NotificationsAdapter;
 import com.javascript.jscript.Model.NotificationsModel;
 import com.javascript.jscript.R;
@@ -40,10 +39,10 @@ public class NotificationsActivity extends AppCompatActivity {
     FirebaseDatabase database;
     SwipeRefreshLayout swipeRefreshLayout;
     private boolean connected = false;
-    LayoutInflater inflater;
-    TextView toastText;
-    View toastLayout;
     Toast toast;
+    TextView toastText;
+    LayoutInflater inflater;
+    View toastLayout;
     ImageView noNotification;
     TextView noNotifyText;
 
@@ -79,7 +78,7 @@ public class NotificationsActivity extends AppCompatActivity {
         layoutManager.setStackFromEnd(true);
         notificationRV.setLayoutManager(layoutManager);
         //network check
-        ConnectivityManager connectivityManager = (ConnectivityManager) getSystemService(FeedBackActivity.CONNECTIVITY_SERVICE);
+        ConnectivityManager connectivityManager = (ConnectivityManager) getSystemService(NotificationsActivity.CONNECTIVITY_SERVICE);
         if (connectivityManager.getNetworkInfo(ConnectivityManager.TYPE_MOBILE).getState() == NetworkInfo.State.CONNECTED ||
                 connectivityManager.getNetworkInfo(ConnectivityManager.TYPE_WIFI).getState() == NetworkInfo.State.CONNECTED) {
             //we are connected to a network
@@ -127,7 +126,7 @@ public class NotificationsActivity extends AppCompatActivity {
                 @Override
                 public void onRefresh() {
                     //check network
-                    ConnectivityManager connectivityManager = (ConnectivityManager) getSystemService(FeedBackActivity.CONNECTIVITY_SERVICE);
+                    ConnectivityManager connectivityManager = (ConnectivityManager) getSystemService(NotificationsActivity.CONNECTIVITY_SERVICE);
                     if (connectivityManager.getNetworkInfo(ConnectivityManager.TYPE_MOBILE).getState() == NetworkInfo.State.CONNECTED ||
                             connectivityManager.getNetworkInfo(ConnectivityManager.TYPE_WIFI).getState() == NetworkInfo.State.CONNECTED) {
                         //we are connected to a network

@@ -10,11 +10,10 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ImageView;
-
-import com.javascript.jscript.Books.BooksListActivity;
 import com.javascript.jscript.Activities.PremiumActivity;
 import com.javascript.jscript.Adapter.BooksItemsAdapter;
 import com.javascript.jscript.Adapter.BooksItemsAdapterPro;
+import com.javascript.jscript.Books.BooksListActivity;
 import com.javascript.jscript.Config.UiConfig;
 import com.javascript.jscript.R;
 import com.javascript.jscript.Utils.AdNetwork;
@@ -26,10 +25,9 @@ public class BooksFragment extends Fragment {
     ImageView proImage;
     private AdNetwork adNetwork;
 
-    String[] itemsName = {"Fundamental","Basic","Objects","OOPs","DOM","BOM","Advanced","AJAX"};
-    String[] itemsNamePro = {"Typescript","Angular","Vue Js","Next Js","React Js","Ember Js","Svelte Js","Gatsby","Nuxt Js","Bootstrap"
-            /*"Node Js","Spring Boot","Express Js",
-            "Laravel","Micronaut","Mocha"*/};
+    String[] itemsName = {"Fundamental","Basic","Objects","OOPs","DOM","Advanced","AJAX","Typescript"};
+    String[] itemsNamePro = {"Angular","Vue Js","Next Js","React Js","Ember Js","Bootstrap","Node Js","Express Js","Laravel","jQuery"
+            /*"Svelte Js","Gatsby","Nuxt Js","Spring Boot","Micronaut","Mocha"*/};
 
     Integer[] itemImages = {
             R.drawable.ic_fundamental_icon,
@@ -37,27 +35,28 @@ public class BooksFragment extends Fragment {
             R.drawable.ic_objects_icon,
             R.drawable.ic_oops_icon,
             R.drawable.ic_dom_icon,
-            R.drawable.ic_bom_icon,
             R.drawable.ic_programs_advanced_image,
-            R.drawable.ic_ajax_icon
+            R.drawable.ic_ajax_icon,
+            R.drawable.ic_typescript_icon,
             //R.drawable.ic_json_icon
 
     };
     Integer[] itemImagesPro = {
-            R.drawable.ic_typescript_icon,
             R.drawable.ic_angular_icon,
             R.drawable.ic_js_vue_icon,
             R.drawable.ic_next_js,
             R.drawable.ic_react_icon,
             R.drawable.ic_emberjs_icon,
+            R.drawable.ic_bootstrap_icon,
+            R.drawable.ic_node_icon,
+            R.drawable.ic_expressjs_icon,
+            R.drawable.ic_laravel_icon,
+            R.drawable.ic_jquery_icon
+            /*
             R.drawable.ic_svelte_icon,
             R.drawable.ic_gatsbyjs_icon,
             R.drawable.ic_nuxt_icon,
-            R.drawable.ic_bootstrap_icon/*
-            R.drawable.ic_node_icon,
             R.drawable.ic_springio_icon,
-            R.drawable.ic_expressjs_icon,
-            R.drawable.ic_laravel_icon,
             R.drawable.ic_micronaut_icon,
             R.drawable.ic_mochajs_icon*/
 
@@ -138,18 +137,18 @@ public class BooksFragment extends Fragment {
                         startActivity(intent);
                         break;
                     case 5:
-                        intent.putExtra("booksItems","BOM");
-                        startActivity(intent);
-                        break;
-                    case 6:
                         intent.putExtra("booksItems","Advanced");
                         startActivity(intent);
                         break;
-                    case 7:
+                    case 6:
                         intent.putExtra("booksItems","AJAX");
                         startActivity(intent);
                         break;
-                    /*case 8:
+                    case 7:
+                        intent.putExtra("booksItems","Typescript");
+                        startActivity(intent);
+                        break;
+                    /*case 9:
                         intent.putExtra("booksItems","JSON");
                         startActivity(intent);
                         break;*/
@@ -166,61 +165,46 @@ public class BooksFragment extends Fragment {
                 Intent intent = new Intent(getActivity(), BooksListActivity.class);
                 switch (i){
                     case 0:
-                        intent.putExtra("booksItems","Typescript");
-                        startActivity(intent);
-                        break;
-                    case 1:
                         intent.putExtra("booksItems","Angular");
                         startActivity(intent);
                         break;
-                    case 2:
+                    case 1:
                         intent.putExtra("booksItems","Vue Js");
                         startActivity(intent);
                         break;
-                    case 3:
+                    case 2:
                         intent.putExtra("booksItems","Next Js");
                         startActivity(intent);
                         break;
-                    case 4:
+                    case 3:
                         intent.putExtra("booksItems","React Js");
                         startActivity(intent);
                         break;
-                    case 5:
+                    case 4:
                         intent.putExtra("booksItems","Ember Js");
                         startActivity(intent);
                         break;
-                    case 6:
-                        intent.putExtra("booksItems","Svelte Js");
-                        startActivity(intent);
-                        break;
-                    case 7:
-                        intent.putExtra("booksItems","Gatsby");
-                        startActivity(intent);
-                        break;
-                    case 8:
-                        intent.putExtra("booksItems","Nuxt Js");
-                        startActivity(intent);
-                        break;
-                    case 9:
+                    case 5:
                         intent.putExtra("booksItems","Bootstrap");
                         startActivity(intent);
                         break;
-                    /*case 10:
+                    case 6:
                         intent.putExtra("booksItems","Node Js");
                         startActivity(intent);
                         break;
-                    case 11:
-                        intent.putExtra("booksItems","Spring Boot");
-                        startActivity(intent);
-                        break;
-                    case 12:
+                    case 7:
                         intent.putExtra("booksItems","Express Js");
                         startActivity(intent);
                         break;
-                    case 13:
+                    case 8:
                         intent.putExtra("booksItems","Laravel");
                         startActivity(intent);
                         break;
+                    case 9:
+                        intent.putExtra("booksItems","jQuery");
+                        startActivity(intent);
+                        break;
+                    /*
                     case 14:
                         intent.putExtra("booksItems","Micronaut");
                         startActivity(intent);
@@ -229,8 +213,23 @@ public class BooksFragment extends Fragment {
                         intent.putExtra("booksItems","Mocha Js");
                         startActivity(intent);
                         break;
+                    case 5:
+                        intent.putExtra("booksItems","Svelte Js");
+                        startActivity(intent);
+                        break;
+                    case 6:
+                        intent.putExtra("booksItems","Gatsby");
+                        startActivity(intent);
+                        break;
+                    case 7:
+                        intent.putExtra("booksItems","Nuxt Js");
+                        startActivity(intent);
+                        break;
+                    case 11:
+                        intent.putExtra("booksItems","Spring Boot");
+                        startActivity(intent);
+                        break;
 */
-
                 }
             }
         });

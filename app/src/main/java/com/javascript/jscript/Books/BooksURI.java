@@ -72,6 +72,61 @@ public class BooksURI {
     public static final String MasteringTypeScript2ndEdition ="https://drive.google.com/file/d/1hyGssajAQvC2Deukus2QWAbwAX2n89_H/view?usp=sharing";
     public static final String TypeScriptModernJavaScriptDevelopment ="https://drive.google.com/file/d/1DHV3zQkak4mGWffFVeWU40WX1w5Dxk34/view?usp=sharing";
     public static final String DecoratorsTypeScript ="https://drive.google.com/file/d/1QyZZ3Cjoqo5EV9fUsc9Xj-bygHLV0-0M/view?usp=sharing";
+    //Angular
+    public static final String AngularinAction ="https://drive.google.com/file/d/1CgRoYCOLjDf3YXpZXn3BRcJQPcjlOjn0/view?usp=sharing";
+    public static final String ProAngular ="https://drive.google.com/file/d/113cDCTlL1aPjlAknPQ-jyjZ6G0v1Zg-D/view?usp=sharing";
+    public static final String ProAngular9BuildPowerful ="https://drive.google.com/file/d/1oncrAFHZrh4kLtugnWzg668_D4JtNRip/view?usp=sharing";
+    public static final String AngularforEnterpriseReadyWebApplications ="https://drive.google.com/file/d/1DiIRxdqtMQGZAxM4KsAd_mLXL5EnSGa6/view?usp=sharing";
+    public static final String AngularUpandRunningLearningAngular ="https://drive.google.com/file/d/1AHTlxniMv2TnW50do786jfBl01n0fFBI/view?usp=sharing";
+    public static final String LearnWithAngular4CollectedEssaysAngularCLI ="https://drive.google.com/file/d/1k-XeeYe6T9LDkGdIC8IW-XpJnMnc0ZJr/view?usp=sharing";
+    public static final String Angular5ProjectsLearntoBuildSinglePage ="https://drive.google.com/file/d/1gtt8Va66tq3ZiFbghEgqUGN3p02PU0Y_/view?usp=sharing";
+    public static final String EssentialAngularforASPNETCoreMVC ="https://drive.google.com/file/d/1wDnx6IF4IvPcao8qo1ph2Qa_0H9akvZZ/view?usp=sharing";
+    public static final String GettingMEANMongoExpressAngularNode ="https://drive.google.com/file/d/1DXYXTS90DKxSMrx4HwGVcbW88mZyCKok/view?usp=sharing";
+    //VueJS
+    public static final String VuejsinAction ="https://drive.google.com/file/d/178JMCgqbhn0FEj2RI4d1MUNX8qLgHs8R/view?usp=sharing";
+    public static final String FullstackVueJS ="https://drive.google.com/file/d/18Btnre4pRrvuHTDDDB_fEVHykNjqzedZ/view?usp=sharing";
+    public static final String VuejsUpandRunning ="https://drive.google.com/file/d/1sCw4HTAOMhMlYuY8aueXUvZEHMcx-7z-/view?usp=sharing";
+    public static final String ProVuejs2 ="https://drive.google.com/file/d/1lYGy0Nc5yu_sAIWxvGr5V_HZ_pq5OBkR/view?usp=sharing";
+    public static final String LearningVuejs2 ="https://drive.google.com/file/d/1SczlcWlbcmlggxjZTrzXcknV3YLsvWDw/view?usp=sharing";
+    //NextJS
+    public static final String TheNextHandbook ="https://drive.google.com/file/d/1dQKFZ6Un8REQ4xQxpFrXOs7S30s3D8y_/view?usp=sharing";
+    public static final String LearningReactModernPatternsforDeveloping ="https://drive.google.com/file/d/1dl68yXaNwjVVjN_datHw1STk6ccswSk7/view?usp=sharing";
+    public static final String FullstackReactTheCompleteGuide ="https://drive.google.com/file/d/1mlE3J2Ttccoj6efJ0kWck9lypOXdSxmP/view?usp=sharing";
+    //ReactJS
+    public static final String ReactAction ="https://drive.google.com/file/d/1Jfys02R0jovg3z4VOvw7L3cXG4EEdgMy/view?usp=sharing";
+    public static final String LearningReactFunctionalWebDevelopment ="https://drive.google.com/file/d/1fBl0GezxFgfh049RIFGDuZ4DveVuAgZq/view?usp=sharing";
+    public static final String TheRoadtoReact ="https://drive.google.com/file/d/1ujP4V7L8s5h8vV8eGeCrLlelEhDhMDKV/view?usp=sharing";
+    public static final String ReactQuicklyPainlessWebAppswithReact ="https://drive.google.com/file/d/1QPYCRVIw8Mu1EfbQs1Ay7LTJXw4bWYtk/view?usp=sharing";
+    public static final String ReactCookbookRecipesforMasteringtheReactFramework ="https://drive.google.com/file/d/1-autxcHvb3006Eotw3-2jbJjyTPlKcmn/view?usp=sharing";
+    public static final String MasteringFullStackReactWebDevelopment ="https://drive.google.com/file/d/1JUuLtMUZh2k-z34SKW_vLAUrTuRcKBV3/view?usp=sharing";
+    public static final String ReactjsEssentials ="https://drive.google.com/file/d/1Dxluq2qLaylnbmGjaLcWAmK2_E3EEZvz/view?usp=sharing";
+    //EmberJS
+    public static final String EmberjsinAction ="https://drive.google.com/file/d/1PTVDFx5cdvcR_LNDFIsKsg1no8saULPG/view?usp=sharing";
+    public static final String EmberjsGuides ="https://drive.google.com/file/d/1tHajsBl0x9Tq9kiqEveauytZKe9h-szM/view?usp=sharing";
+    public static final String WebAppDevelopmentBookGuide ="https://drive.google.com/file/d/15VTTdSzOD7VPc9PhEpHuc12TYuhwyQHB/view?usp=sharing";
+    public static final String BuildingWebAppswithEmberjs ="https://drive.google.com/file/d/1bfoKTLThdTNqdhJFJ9yDCdrUo1ri8hxW/view?usp=sharing";
+    public static final String MasteringEmberjs ="https://drive.google.com/file/d/1U9kFRiHiSJPYUulFtc_nWSMyGIi80HbW/view?usp=sharing";
+    //Bootstrap
+    public static final String BootstrapResponsiveWebDevelopment ="https://drive.google.com/file/d/1vkzU6UGwtA-Nh4vh6x2evwfJOhB1xZuE/view?usp=sharing";
+    public static final String MasteringBootstrap4 ="https://drive.google.com/file/d/1UmOQan23bo15yK2joovKSTpWiThtodwA/view?usp=sharing";
+    public static final String IntroducingBootstrap4 ="https://drive.google.com/file/d/1nsG4-pRzaUsO-XQvYsJqoSzArVPqn1SV/view?usp=sharing";
+    public static final String LearningBootstrap4 ="https://drive.google.com/file/d/1tQziYZq5ZjNzR4TpL2zkPDUC9vD0B0K1/view?usp=sharing";
+    public static final String Anintroductiontothebootstrap ="https://drive.google.com/file/d/1jRYHKF0rtxvH-0e3nCFNZvqT22Gey-NU/view?usp=sharing";
+    public static final String PracticalBootstrapLearntoDevelopResponsively ="https://drive.google.com/file/d/1Tc1IjOt1u8yPsm-YeRhaicaUQpWLTMcy/view?usp=sharing";
+    public static final String ProMERNStackFullStackWebAppDevelopment ="https://drive.google.com/file/d/1OC37VkUclld99N9tDVTLKzvZaJya0jCL/view?usp=sharing";
+    public static final String FrontendDevelopmentwithASPNETCore ="https://drive.google.com/file/d/1A0bGUl0XNCL-Fz1diNMez6piGDWNloML/view?usp=sharing";
+    //NodeJs
+    public static final String BeginningNodejs ="https://drive.google.com/file/d/1DgrVmY3rDvQeO1KBI2oV2zjYolLkus3X/view?usp=sharing";
+    public static final String WebDevelopmentwithNodeandExpress ="https://drive.google.com/file/d/1IvT_cjumn3CwYXp6GOtWIzASfP68f16F/view?usp=sharing";
+    public static final String Nodejs8theRightWayPractical ="https://drive.google.com/file/d/1Q8-aIHqoyvGvZDxxEY15VO6ChL1jyRQy/view?usp=sharing";
+    public static final String NodejsinAction ="https://drive.google.com/file/d/1eakQMFGcuVKrXt-GIGDrSDS8Rj0dNQ8a/view?usp=sharing";
+    public static final String PracticalNodeJsBuildingRealWorldScalableWebApps ="https://drive.google.com/file/d/11520U9AXqZS5_xHmQiTN9gpCOzCm1RRi/view?usp=sharing";
+    public static final String ManningNodejsinPractice ="https://drive.google.com/file/d/1FLWoPzoTP3UEUCI2j16KanKokBECf2JM/view?usp=sharing";
+    public static final String NodejsDesignPatterns ="https://drive.google.com/file/d/1IkFrblkkbzRvI9g6RVPZIfSvny2zzgzc/view?usp=sharing";
+    public static final String SitePointFullStackJavaScriptDevelopmentwithMEAN ="https://drive.google.com/file/d/17HCP_AdVWOl7BhchAjwZCKW-PI-SA65h/view?usp=sharing";
+    public static final String ProRESTAPIDevelopmentwithNodejs ="https://drive.google.com/file/d/15RRks6zAnlK0zpLhAYL4x9_LTmBz4aVH/view?usp=sharing";
+    public static final String NodejsforPHPDevelopersPortingPHP ="https://drive.google.com/file/d/1X08IJRJminkOi2p1d4SANvcPTQe43upl/view?usp=sharing";
+    public static final String NodejsMongoDBandAngularWebDevelopment ="https://drive.google.com/file/d/1hIIQvdf5LSZKG15rNN1pcUtQOs79qFz8/view?usp=sharing";
     //
     public static final String uri3 ="";
 

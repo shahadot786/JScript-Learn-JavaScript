@@ -12606,7 +12606,9 @@ public class LearnDetailsContent {
         final List<LearnDetailsModel> list = new ArrayList<>();
         final LearnDetailsModel l1 = new LearnDetailsModel(
                 "NextJs Introduction",
-                "The Next.js is React Based framework with server side rendering capability. It is very fast and SEO friendly. Using Next.js, you can create robust react based application quite easily and test them.",
+                "The Next.js is React Based framework with server side rendering capability. It is very fast and SEO friendly. Using Next.js, you can create robust react based application quite easily and test them." +
+                        "\n" +
+                        "Next.js more resources... https://cutt.ly/UIqz3gR",
                 "",
                 ""
         );

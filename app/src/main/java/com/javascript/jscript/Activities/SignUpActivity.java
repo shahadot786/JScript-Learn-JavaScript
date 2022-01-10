@@ -121,7 +121,6 @@ public class SignUpActivity extends AppCompatActivity {
                             .addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                                 @Override
                                 public void onComplete(@NonNull Task<AuthResult> task) {
-
                                     if (!task.isSuccessful()) {
                                         try {
                                             throw Objects.requireNonNull(task.getException());

@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
+import android.graphics.Color;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.KeyEvent;
@@ -28,7 +29,7 @@ public class ReadBooksActivity extends AppCompatActivity {
     ActivityReadBooksBinding binding;
     WebView webView;
 
-    @SuppressLint("SetJavaScriptEnabled")
+    @SuppressLint({"SetJavaScriptEnabled", "MissingPermission"})
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -38,6 +39,7 @@ public class ReadBooksActivity extends AppCompatActivity {
         webView = findViewById(R.id.booksWebView);
         WebSettings webSettings = webView.getSettings();
         webSettings.setJavaScriptEnabled(true);
+        webView.setBackgroundColor(getResources().getColor(R.color.colorBlack));
         webView.setWebViewClient(new Callback());
         //ad request
         AdView bannerAd = findViewById(R.id.adView);
@@ -248,6 +250,150 @@ public class ReadBooksActivity extends AppCompatActivity {
                 break;
             case "Decorators in TypeScript":
                 uri = BooksURI.DecoratorsTypeScript;
+                break;
+            case "Angular in Action":
+                uri = BooksURI.AngularinAction;
+                break;
+            case "Pro Angular":
+                uri = BooksURI.ProAngular;
+                break;
+            case "Pro Angular 9 Build Powerful and Dynamic Web Apps":
+                uri = BooksURI.ProAngular9BuildPowerful;
+                break;
+            case "Angular for Enterprise Ready Web Applications":
+                uri = BooksURI.AngularforEnterpriseReadyWebApplications;
+                break;
+            case "Angular: Up and Running: Learning Angular":
+                uri = BooksURI.AngularUpandRunningLearningAngular;
+                break;
+            case "Learn With: Angular 4: Collected Essays: Angular CLI, Unit Testing, Debugging TypeScript, and Angular":
+                uri = BooksURI.LearnWithAngular4CollectedEssaysAngularCLI;
+                break;
+            case "Angular 5 Projects: Learn to Build Single Page Web Applications Using 70+ Projects":
+                uri = BooksURI.Angular5ProjectsLearntoBuildSinglePage;
+                break;
+            case "Essential Angular for ASP.NET Core MVC":
+                uri = BooksURI.EssentialAngularforASPNETCoreMVC;
+                break;
+            case "Getting MEAN with Mongo, Express, Angular, and Node":
+                uri = BooksURI.GettingMEANMongoExpressAngularNode;
+                break;
+            case "Vue.js in Action":
+                uri = BooksURI.VuejsinAction;
+                break;
+            case "Fullstack VueJS":
+                uri = BooksURI.FullstackVueJS;
+                break;
+            case "Vue.js Up and Running: Building Accessible and Performant Web Apps":
+                uri = BooksURI.VuejsUpandRunning;
+                break;
+            case "Pro Vue.js 2":
+                uri = BooksURI.ProVuejs2;
+                break;
+            case "Learning Vue.js 2":
+                uri = BooksURI.LearningVuejs2;
+                break;
+            case "The Next.js Handbook":
+                uri = BooksURI.TheNextHandbook;
+                break;
+            case "Learning React: Modern Patterns for Developing React Apps":
+                uri = BooksURI.LearningReactModernPatternsforDeveloping;
+                break;
+            case "Fullstack React:The Complete Guide to ReactJS and Friends":
+                uri = BooksURI.FullstackReactTheCompleteGuide;
+                break;
+            case "React in Action":
+                uri = BooksURI.ReactAction;
+                break;
+            case "Learning React: Functional Web Development with React and Redux":
+                uri = BooksURI.LearningReactFunctionalWebDevelopment;
+                break;
+            case "The Road to React":
+                uri = BooksURI.TheRoadtoReact;
+                break;
+            case "React Quickly: Painless Web Apps with React, JSX, Redux and GraphQL":
+                uri = BooksURI.ReactQuicklyPainlessWebAppswithReact;
+                break;
+            case "React Cookbook: Recipes for Mastering the React Framework":
+                uri = BooksURI.ReactCookbookRecipesforMasteringtheReactFramework;
+                break;
+            case "Mastering Full-Stack React Web Development":
+                uri = BooksURI.MasteringFullStackReactWebDevelopment;
+                break;
+            case "React.js Essentials":
+                uri = BooksURI.ReactjsEssentials;
+                break;
+            case "Ember.js in Action":
+                uri = BooksURI.EmberjsinAction;
+                break;
+            case "Ember.js Guides":
+                uri = BooksURI.EmberjsGuides;
+                break;
+            case "Web App Development Book Guide to Ember.js":
+                uri = BooksURI.WebAppDevelopmentBookGuide;
+                break;
+            case "Building Web Apps with Ember.js":
+                uri = BooksURI.BuildingWebAppswithEmberjs;
+                break;
+            case "Mastering Ember.js":
+                uri = BooksURI.MasteringEmberjs;
+                break;
+            case "Bootstrap: Responsive Web Development":
+                uri = BooksURI.BootstrapResponsiveWebDevelopment;
+                break;
+            case "Mastering Bootstrap 4":
+                uri = BooksURI.MasteringBootstrap4;
+                break;
+            case "Introducing Bootstrap 4":
+                uri = BooksURI.IntroducingBootstrap4;
+                break;
+            case "Learning Bootstrap 4":
+                uri = BooksURI.LearningBootstrap4;
+                break;
+            case "An introduction to the bootstrap":
+                uri = BooksURI.Anintroductiontothebootstrap;
+                break;
+            case "Practical Bootstrap: Learn to Develop Responsively with One of the Most Popular CSS Frameworks":
+                uri = BooksURI.PracticalBootstrapLearntoDevelopResponsively;
+                break;
+            case "Pro MERN Stack Full Stack Web App Development with Mongo, Express, React, and Node":
+                uri = BooksURI.ProMERNStackFullStackWebAppDevelopment;
+                break;
+            case "Front-end Development with ASP.NET Core, Angular, and Bootstrap":
+                uri = BooksURI.FrontendDevelopmentwithASPNETCore;
+                break;
+            case "Beginning Node.js":
+                uri = BooksURI.BeginningNodejs;
+                break;
+            case "Web Development with Node and Express Leveraging the javascript Stack":
+                uri = BooksURI.WebDevelopmentwithNodeandExpress;
+                break;
+            case "Node.js 8 the Right Way: Practical, Server-Side JavaScript That Scales":
+                uri = BooksURI.Nodejs8theRightWayPractical;
+                break;
+            case "Node.js in Action":
+                uri = BooksURI.NodejsinAction;
+                break;
+            case "Practical Node.Js: Building Real-World Scalable Web Apps":
+                uri = BooksURI.PracticalNodeJsBuildingRealWorldScalableWebApps;
+                break;
+            case "Manning Node.js in Practice":
+                uri = BooksURI.ManningNodejsinPractice;
+                break;
+            case "Node.js Design Patterns":
+                uri = BooksURI.NodejsDesignPatterns;
+                break;
+            case "SitePoint Full Stack JavaScript Development with MEAN, MongoDB Express AngularJS and Node.js":
+                uri = BooksURI.SitePointFullStackJavaScriptDevelopmentwithMEAN;
+                break;
+            case "Pro REST API Development with Node.js":
+                uri = BooksURI.ProRESTAPIDevelopmentwithNodejs;
+                break;
+            case "Node.js for PHP Developers: Porting PHP to Node.js":
+                uri = BooksURI.NodejsforPHPDevelopersPortingPHP;
+                break;
+            case "Node.js, MongoDB and Angular Web Development":
+                uri = BooksURI.NodejsMongoDBandAngularWebDevelopment;
                 break;
             case "":
                 uri = BooksURI.uri3;

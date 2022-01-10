@@ -54,6 +54,7 @@ public class BooksListActivity extends AppCompatActivity {
         //load ad
         adNetwork.loadInterstitialAd();
         books.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @SuppressLint("MissingPermission")
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                 //custom toast
@@ -169,7 +170,88 @@ public class BooksListActivity extends AppCompatActivity {
                 "TypeScript Modern JavaScript Development",
                 "Decorators in TypeScript"
         };
-        final String[] angular = {
+        final String[] Angular = {
+                "Angular in Action",
+                "Pro Angular",
+                "Pro Angular 9 Build Powerful and Dynamic Web Apps",
+                "Angular for Enterprise Ready Web Applications",
+                "Angular 2 Development with TypeScript",
+                "Angular: Up and Running: Learning Angular",
+                "Learn With: Angular 4: Collected Essays: Angular CLI, Unit Testing, Debugging TypeScript, and Angular",
+                "Angular 5 Projects: Learn to Build Single Page Web Applications Using 70+ Projects",
+                "Essential Angular for ASP.NET Core MVC",
+                "Getting MEAN with Mongo, Express, Angular, and Node"
+        };
+        final String[] VueJs = {
+                "Vue.js in Action",
+                "Fullstack VueJS",
+                "Vue.js Up and Running: Building Accessible and Performant Web Apps",
+                "Pro Vue.js 2",
+                "Learning Vue.js 2"
+        };
+        final String[] NextJs = {
+                "The Next.js Handbook",
+                "Learning React: Modern Patterns for Developing React Apps",
+                "Fullstack React:The Complete Guide to ReactJS and Friends"
+        };
+        final String[] ReactJs = {
+                "Learning React: Modern Patterns for Developing React Apps",
+                "Fullstack React:The Complete Guide to ReactJS and Friends",
+                "React in Action",
+                "Learning React: Functional Web Development with React and Redux",
+                "The Road to React",
+                "React Quickly: Painless Web Apps with React, JSX, Redux and GraphQL",
+                "React Cookbook: Recipes for Mastering the React Framework",
+                "Mastering Full-Stack React Web Development",
+                "React.js Essentials"
+        };
+        final String[] EmberJs = {
+                "Ember.js in Action",
+                "Ember.js Guides",
+                "Web App Development Book Guide to Ember.js",
+                "Building Web Apps with Ember.js",
+                "Mastering Ember.js"
+        };
+        final String[] Bootstrap = {
+                "An introduction to the bootstrap",
+                "Bootstrap: Responsive Web Development",
+                "Mastering Bootstrap 4",
+                "Introducing Bootstrap 4",
+                "Learning Bootstrap 4",
+                "Practical Bootstrap: Learn to Develop Responsively with One of the Most Popular CSS Frameworks",
+                "Pro MERN Stack Full Stack Web App Development with Mongo, Express, React, and Node",
+                "Front-end Development with ASP.NET Core, Angular, and Bootstrap"
+        };
+        final String[] NodeJs = {
+                "Beginning Node.js",
+                "Web Development with Node and Express Leveraging the javascript Stack",
+                "Node.js 8 the Right Way: Practical, Server-Side JavaScript That Scales",
+                "Node.js in Action",
+                "Practical Node.Js: Building Real-World Scalable Web Apps",
+                "Manning Node.js in Practice",
+                "Node.js Design Patterns",
+                "SitePoint Full Stack JavaScript Development with MEAN, MongoDB Express AngularJS and Node.js",
+                "Pro REST API Development with Node.js",
+                "Node.js for PHP Developers: Porting PHP to Node.js",
+                "Node.js, MongoDB and Angular Web Development"
+        };
+        final String[] ExpressJs = {
+                "angular",
+                "Books1",
+                "Books",
+                "Books1",
+                "Books",
+                "Books1",
+        };
+        final String[] Laravel = {
+                "angular",
+                "Books1",
+                "Books",
+                "Books1",
+                "Books",
+                "Books1",
+        };
+        final String[] jQuery = {
                 "angular",
                 "Books1",
                 "Books",
@@ -204,8 +286,36 @@ public class BooksListActivity extends AppCompatActivity {
             case "Typescript":
                 list = Typescript;
                 break;
-
-
+            case "Angular":
+                list = Angular;
+                break;
+            case "Vue Js":
+                list = VueJs;
+                break;
+            case "Next Js":
+                list = NextJs;
+                break;
+            case "React Js":
+                list = ReactJs;
+                break;
+            case "Ember Js":
+                list = EmberJs;
+                break;
+            case "Bootstrap":
+                list = Bootstrap;
+                break;
+            case "Node Js":
+                list = NodeJs;
+                break;
+            case "Express Js":
+                list = ExpressJs;
+                break;
+            case "Laravel":
+                list = Laravel;
+                break;
+            case "jQuery":
+                list = jQuery;
+                break;
         }
     }
 

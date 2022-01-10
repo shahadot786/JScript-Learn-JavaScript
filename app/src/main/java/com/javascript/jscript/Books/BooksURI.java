@@ -1,6 +1,7 @@
 package com.javascript.jscript.Books;
 
 public class BooksURI {
+    //Total 141 books
     //Fundamentals
     public static final String ASmarterWaytoLearnJavaScript ="https://drive.google.com/file/d/12J3w4XnUP5tAntqYkrlyVTeHKiDei88e/view?usp=sharing";
     public static final String EloquentJavascript ="https://drive.google.com/file/d/1jGTbXKH7VT_L0Lg_J7Uic7LdkAq-C1PI/view?usp=sharing";
@@ -127,25 +128,38 @@ public class BooksURI {
     public static final String ProRESTAPIDevelopmentwithNodejs ="https://drive.google.com/file/d/15RRks6zAnlK0zpLhAYL4x9_LTmBz4aVH/view?usp=sharing";
     public static final String NodejsforPHPDevelopersPortingPHP ="https://drive.google.com/file/d/1X08IJRJminkOi2p1d4SANvcPTQe43upl/view?usp=sharing";
     public static final String NodejsMongoDBandAngularWebDevelopment ="https://drive.google.com/file/d/1hIIQvdf5LSZKG15rNN1pcUtQOs79qFz8/view?usp=sharing";
-    //
-    public static final String uri3 ="";
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    //ExpressJS
+    public static final String ExpressinAction ="https://drive.google.com/file/d/1DDUkKadWJ2HqBpzlR8i1TX0NVN6-gEO8/view?usp=sharing";
+    public static final String ExpressjsGuide ="https://drive.google.com/file/d/10HjThJG_kB4_BcUuvzkqDr33lt_hV9GN/view?usp=sharing";
+    public static final String ProExpressjs ="https://drive.google.com/file/d/1G8tjh1gcjrwwtrjdBlLBX8RFWcIjC4U4/view?usp=sharing";
+    public static final String ExpressjsGuideBookonWebframework ="https://drive.google.com/file/d/1ccmdCny1Np26OsRHcph2XJw6OsNVtNr7/view?usp=sharing";
+    //Laravel
+    public static final String Laravel5Essentials ="https://drive.google.com/file/d/1L218tcurHBeGBUmDbosMNoPfqglKWkrm/view?usp=sharing";
+    public static final String LaravelUpRunningAFrameworkfor ="https://drive.google.com/file/d/1OBk_f-wNtnfFrdtPfBmFdBnLyHrMFXSx/view?usp=sharing";
+    public static final String MasteringLaravel ="https://drive.google.com/file/d/15e2MiqUQ_Bc-NDJ59BKzA4caj5YN71EZ/view?usp=sharing";
+    public static final String LaravelforBeginners ="https://drive.google.com/file/d/1Lrj59IVUITHYIYvde7AAQKqYwDcjIOBW/view?usp=sharing";
+    public static final String BeginningLaravel ="https://drive.google.com/file/d/1fsAHmbKyY_ynqM2O1A4TPzqS0xzX2J_R/view?usp=sharing";
+    public static final String Laravel51BeautyCreating ="https://drive.google.com/file/d/15h8t6eS9P8ASD9Ny8afMh5qWW6TCERK6/view?usp=sharing";
+    public static final String LearningLaravelEloquent ="https://drive.google.com/file/d/1XYUit0ER7gg1rXWoYAFq8dBOes_4vi6h/view?usp=sharing";
+    public static final String DesignPatternsinPHPandLaravel ="https://drive.google.com/file/d/1BEf-cz5bVLvnlbcNja5Is2HLUqVZWHEq/view?usp=sharing";
+    public static final String EasyLaravel5 ="https://drive.google.com/file/d/1WNQp7OOwv4clzZ467ug697zYUCvhpgc6/view?usp=sharing";
+    public static final String Laravel5Cookbook ="https://drive.google.com/file/d/1PLeJhVY0Iq_mCEhr6dudfEl1muTLPTea/view?usp=sharing";
+    public static final String LaravelCodeBright ="https://drive.google.com/file/d/15yi2ZnWQNb2Ma9Uzqp0VppFD3pyfTPhS/view?usp=sharing";
+    //jQuery
+    public static final String JavaScriptandJQueryInteractiveFront ="https://drive.google.com/file/d/10c1foNH_mnZDD5MaKh76xGHTsbc75TvK/view?usp=sharing";
+    public static final String LearningjQuery ="https://drive.google.com/file/d/1dnLa0qm9gF5Ll_R1hHRIPSa0qE3eBfwz/view?usp=sharing";
+    public static final String jQueryinAction ="https://drive.google.com/file/d/1U-Wi15zum-ulhVPIwsx2GvQ5iv-Jgnxu/view?usp=sharing";
+    public static final String JQueryCookbook ="https://drive.google.com/file/d/1G3JI0Fam2-AY2u9LTEDeTiMPfVi0AFEo/view?usp=sharing";
+    public static final String JQueryPocketReference ="https://drive.google.com/file/d/1pXJi14E73f4P8j5vCAY5SYtYVcjjmHJn/view?usp=sharing";
+    public static final String jQueryUIinAction ="https://drive.google.com/file/d/1dwOLDdLts4lFd3-U3jT7p1-wfZWxwOjP/view?usp=sharing";
+    public static final String HeadFirstjQuery ="https://drive.google.com/file/d/1OcLszw7ZQVOKDXPsl0uqpDX5Fppn2pSX/view?usp=sharing";
+    public static final String ProPHPjQuery2ndEdition ="https://drive.google.com/file/d/1ba8GDBuG5c2Dr0Ri_RsMNG4zjJ2xHoVB/view?usp=sharing";
+    public static final String JQuery14animationtechniques ="https://drive.google.com/file/d/1NBhXsIa7ykF7Z78D-LOjdLcmRN9Pcq0X/view?usp=sharing";
+    public static final String BeginningjQuery ="https://drive.google.com/file/d/1DogofE_ueJHCWmuh_iFKQfih94K0pWho/view?usp=sharing";
+    public static final String jQueryUI16TheUserInterfaceLibraryjQuery ="https://drive.google.com/file/d/1hFKHzJ9xe9emWJQQWCAXG99EecBbKF-T/view?usp=sharing";
+    public static final String WebDevelopmentwithjQuery ="https://drive.google.com/file/d/18zCXEAraVHHebcw6rDV92bCxrvOJ-Nrc/view?usp=sharing";
+    public static final String BeginningjQuery2forASPNETDevelopers ="https://drive.google.com/file/d/1FC-i1pdb5M2-9lZr5m0wAJ9bqz0tkAsV/view?usp=sharing";
+    public static final String jQueryForDummies ="https://drive.google.com/file/d/1grWcf5ytWo8cD67mLCOSIyN_8FvHjfpL/view?usp=sharing";
+    public static final String LearningPHPMySQLJavaScriptWithjQueryCSSHTML5 ="https://drive.google.com/file/d/1rWQH4XFbxh4wutQpzZ0CgZR_9ilLSaqk/view?usp=sharing";
 
 }

@@ -1,11 +1,7 @@
 package com.javascript.jscript.Books;
 
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.annotation.SuppressLint;
 import android.content.Intent;
-import android.graphics.Color;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.KeyEvent;
@@ -14,6 +10,10 @@ import android.view.View;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
+
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
+
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
 import com.javascript.jscript.Config.UiConfig;
@@ -22,7 +22,6 @@ import com.javascript.jscript.databinding.ActivityReadBooksBinding;
 
 import java.net.URISyntaxException;
 import java.util.Objects;
-
 
 
 public class ReadBooksActivity extends AppCompatActivity {
@@ -45,14 +44,14 @@ public class ReadBooksActivity extends AppCompatActivity {
         AdView bannerAd = findViewById(R.id.adView);
         AdRequest adRequest = new AdRequest.Builder().build();
         bannerAd.loadAd(adRequest);
-        if (UiConfig.BANNER_AD_VISIBILITY){
+        if (UiConfig.BANNER_AD_VISIBILITY) {
             bannerAd.setVisibility(View.VISIBLE);
-        }else {
+        } else {
             bannerAd.setVisibility(View.GONE);
         }
         //toolbar
         setSupportActionBar(binding.toolbar2);
-        ReadBooksActivity.this.setTitle("Read Books");
+        ReadBooksActivity.this.setTitle("Read Online Ebooks");
         Objects.requireNonNull(getSupportActionBar()).setDisplayHomeAsUpEnabled(true);
         //loads books uri
         loadBooksURI();
@@ -61,7 +60,7 @@ public class ReadBooksActivity extends AppCompatActivity {
 
     private void loadBooksURI() {
         String uri = null;
-        switch (getIntent().getStringExtra("booksUri")){
+        switch (getIntent().getStringExtra("booksUri")) {
             case "A Smarter Way to Learn JavaScript":
                 uri = BooksURI.ASmarterWaytoLearnJavaScript;
                 break;
@@ -395,11 +394,96 @@ public class ReadBooksActivity extends AppCompatActivity {
             case "Node.js, MongoDB and Angular Web Development":
                 uri = BooksURI.NodejsMongoDBandAngularWebDevelopment;
                 break;
-            case "":
-                uri = BooksURI.uri3;
+            case "Express in Action":
+                uri = BooksURI.ExpressinAction;
                 break;
-
-
+            case "Express.js Guide":
+                uri = BooksURI.ExpressjsGuide;
+                break;
+            case "Pro Express.js":
+                uri = BooksURI.ProExpressjs;
+                break;
+            case "Express.js: Guide Book on Web framework for Node.js":
+                uri = BooksURI.ExpressjsGuideBookonWebframework;
+                break;
+            case "Laravel 5 Essentials":
+                uri = BooksURI.Laravel5Essentials;
+                break;
+            case "Laravel: Up & Running: A Framework for Building Modern PHP Apps":
+                uri = BooksURI.LaravelUpRunningAFrameworkfor;
+                break;
+            case "Mastering Laravel":
+                uri = BooksURI.MasteringLaravel;
+                break;
+            case "Laravel for Beginners":
+                uri = BooksURI.LaravelforBeginners;
+                break;
+            case "Beginning Laravel":
+                uri = BooksURI.BeginningLaravel;
+                break;
+            case "Laravel 5.1 Beauty: Creating Beautiful Web Apps with Laravel 5.1":
+                uri = BooksURI.Laravel51BeautyCreating;
+                break;
+            case "Learning Laravel Eloquent":
+                uri = BooksURI.LearningLaravelEloquent;
+                break;
+            case "Design Patterns in PHP and Laravel":
+                uri = BooksURI.DesignPatternsinPHPandLaravel;
+                break;
+            case "Easy Laravel 5":
+                uri = BooksURI.EasyLaravel5;
+                break;
+            case "Laravel 5 Cookbook":
+                uri = BooksURI.Laravel5Cookbook;
+                break;
+            case "Laravel: Code Bright":
+                uri = BooksURI.LaravelCodeBright;
+                break;
+            case "JavaScript and JQuery: Interactive Front-End Web Development":
+                uri = BooksURI.JavaScriptandJQueryInteractiveFront;
+                break;
+            case "Learning jQuery":
+                uri = BooksURI.LearningjQuery;
+                break;
+            case "jQuery in Action":
+                uri = BooksURI.jQueryinAction;
+                break;
+            case "JQuery Cookbook":
+                uri = BooksURI.JQueryCookbook;
+                break;
+            case "JQuery Pocket Reference":
+                uri = BooksURI.JQueryPocketReference;
+                break;
+            case "jQuery UI in Action":
+                uri = BooksURI.jQueryUIinAction;
+                break;
+            case "Head First jQuery":
+                uri = BooksURI.HeadFirstjQuery;
+                break;
+            case "Pro PHP and jQuery, 2nd Edition":
+                uri = BooksURI.ProPHPjQuery2ndEdition;
+                break;
+            case "JQuery 1.4 animation techniques beginner's guide":
+                uri = BooksURI.JQuery14animationtechniques;
+                break;
+            case "Beginning jQuery":
+                uri = BooksURI.BeginningjQuery;
+                break;
+            case "jQuery UI 1.6 - The User Interface Library for jQuery":
+                uri = BooksURI.jQueryUI16TheUserInterfaceLibraryjQuery;
+                break;
+            case "Web Development with jQuery":
+                uri = BooksURI.WebDevelopmentwithjQuery;
+                break;
+            case "Beginning jQuery 2 for ASP.NET Developers":
+                uri = BooksURI.BeginningjQuery2forASPNETDevelopers;
+                break;
+            case "jQuery For Dummies":
+                uri = BooksURI.jQueryForDummies;
+                break;
+            case "Learning PHP, MySQL & JavaScript: With jQuery, CSS & HTML5":
+                uri = BooksURI.LearningPHPMySQLJavaScriptWithjQueryCSSHTML5;
+                break;
         }
         webView.loadUrl(uri);
 
@@ -410,6 +494,7 @@ public class ReadBooksActivity extends AppCompatActivity {
         public boolean shouldOverrideKeyEvent(WebView view, KeyEvent event) {
             return false;
         }
+
         public boolean shouldOverrideUrlLoading(WebView view, String url) {
             if (url.startsWith("intent")) {
                 try {
@@ -435,6 +520,7 @@ public class ReadBooksActivity extends AppCompatActivity {
         }
 
     }
+
     @Override
     public void onBackPressed() {
         if (webView.canGoBack()) {
@@ -443,6 +529,7 @@ public class ReadBooksActivity extends AppCompatActivity {
             super.onBackPressed();
         }
     }
+
     //option menu item select
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {

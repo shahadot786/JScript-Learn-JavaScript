@@ -93,7 +93,7 @@ public class LearnFragment extends Fragment {
                 "Play Quiz",
                 "Learn Practice Programs",
                 "Learn Interview Questions",
-                "Read 500+ Ebooks"
+                "Read 140+ Ebooks"
         };
 
         int[] images = new int[]{

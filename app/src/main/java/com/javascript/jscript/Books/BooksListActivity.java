@@ -45,7 +45,7 @@ public class BooksListActivity extends AppCompatActivity {
         adNetwork = new AdNetwork(BooksListActivity.this);
         //toolbar
         setSupportActionBar(binding.toolbar2);
-        BooksListActivity.this.setTitle("Books");
+        BooksListActivity.this.setTitle("JScript: Books");
         Objects.requireNonNull(getSupportActionBar()).setDisplayHomeAsUpEnabled(true);
         loadItems();
         books = findViewById(R.id.bookList);
@@ -236,28 +236,42 @@ public class BooksListActivity extends AppCompatActivity {
                 "Node.js, MongoDB and Angular Web Development"
         };
         final String[] ExpressJs = {
-                "angular",
-                "Books1",
-                "Books",
-                "Books1",
-                "Books",
-                "Books1",
+                "Getting MEAN with Mongo, Express, Angular, and Node",
+                "Web Development with Node and Express Leveraging the javascript Stack",
+                "Express in Action",
+                "Express.js Guide",
+                "Pro Express.js",
+                "Express.js: Guide Book on Web framework for Node.js"
         };
         final String[] Laravel = {
-                "angular",
-                "Books1",
-                "Books",
-                "Books1",
-                "Books",
-                "Books1",
+                "Laravel 5 Essentials",
+                "Laravel: Up & Running: A Framework for Building Modern PHP Apps",
+                "Mastering Laravel",
+                "Laravel for Beginners",
+                "Beginning Laravel",
+                "Laravel 5.1 Beauty: Creating Beautiful Web Apps with Laravel 5.1",
+                "Learning Laravel Eloquent",
+                "Design Patterns in PHP and Laravel",
+                "Easy Laravel 5",
+                "Laravel 5 Cookbook",
+                "Laravel: Code Bright",
         };
         final String[] jQuery = {
-                "angular",
-                "Books1",
-                "Books",
-                "Books1",
-                "Books",
-                "Books1",
+                "JavaScript and JQuery: Interactive Front-End Web Development",
+                "Learning jQuery",
+                "jQuery in Action",
+                "JQuery Cookbook",
+                "JQuery Pocket Reference",
+                "jQuery UI in Action",
+                "Head First jQuery",
+                "Pro PHP and jQuery, 2nd Edition",
+                "JQuery 1.4 animation techniques beginner's guide",
+                "Beginning jQuery",
+                "jQuery UI 1.6 - The User Interface Library for jQuery",
+                "Web Development with jQuery",
+                "Beginning jQuery 2 for ASP.NET Developers",
+                "jQuery For Dummies",
+                "Learning PHP, MySQL & JavaScript: With jQuery, CSS & HTML5",
         };
 
         String programsItems = getIntent().getStringExtra("booksItems");

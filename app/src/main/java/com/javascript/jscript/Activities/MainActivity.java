@@ -180,7 +180,7 @@ public class MainActivity extends AppCompatActivity {
                             assert model != null;
                             String types = model.getType();
                             String question = model.getQuestion();
-                            if (types.equals("comment")){
+                            if (types.equals("comment")) {
                                 boolean checkOpens = model.isCheckOpen();
                                 if (!checkOpens) {
                                     String typeText = " reply in";
@@ -191,40 +191,58 @@ public class MainActivity extends AppCompatActivity {
                                         @Override
                                         public void onDataChange(@NonNull DataSnapshot snapshot) {
                                             Activity context = MainActivity.this;
-                                            UserModel userModel = snapshot.getValue(UserModel.class);
-                                            assert userModel != null;
-                                            //if build version is over oreo
-                                            //notification channel
-                                            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
-                                                NotificationChannel channel = new NotificationChannel("JScript Notifications", "Discuss", NotificationManager.IMPORTANCE_DEFAULT);
-                                                NotificationManager manager = context.getSystemService(NotificationManager.class);
-                                                manager.createNotificationChannel(channel);
-                                            }
-                                            //notifications sound
-                                            Uri notifySound = RingtoneManager
-                                                    .getDefaultUri(RingtoneManager.TYPE_NOTIFICATION);
-                                            //generate random number
-                                            Random random = new Random();
-                                            int notificationNumber = random.nextInt(9999 - 1000) + 1000;
-                                            //large icon
-                                            Bitmap largeIcon = BitmapFactory.decodeResource(getResources(), R.drawable.ic_main_icon_round);
-                                            //notification intent
-                                            Intent intent = new Intent(context, NotificationsActivity.class);
-                                            PendingIntent pendingIntent = PendingIntent.getActivity(context, 0, intent, 0);
-                                            //notification builder
-                                            NotificationCompat.Builder commentBuilder = new NotificationCompat.Builder(context, "JScript Notifications");
-                                            commentBuilder.setContentTitle("JScript: Learn JavaScript");
-                                            commentBuilder.setSmallIcon(R.drawable.ic_notification_small_icon);
-                                            commentBuilder.setLargeIcon(largeIcon);
-                                            commentBuilder.setAutoCancel(true);
-                                            commentBuilder.setSound(notifySound);
-                                            commentBuilder.setVibrate(new long[]{100, 250, 100, 250, 100, 250});
-                                            commentBuilder.setContentIntent(pendingIntent);
-                                            commentBuilder.setContentText(Html.fromHtml("\"<span style=\"font-weight:bold; color:#15c55d\">" +
-                                                    userModel.getUserName() + "" + "</span>\"" + typeText + " ("+question+")"));
-                                            //notification manager
-                                            NotificationManagerCompat managerCompat = NotificationManagerCompat.from(context);
-                                            managerCompat.notify(notificationNumber, commentBuilder.build());
+                                            UserModel notifyUserName = snapshot.getValue(UserModel.class);
+                                            assert notifyUserName != null;
+                                            String notificationByUserName = notifyUserName.getUserName();
+                                            //get posted userName
+                                            database.getReference()
+                                                    .child("UserData")
+                                                    .child(model.getPostedBy())
+                                                    .addValueEventListener(new ValueEventListener() {
+                                                        @Override
+                                                        public void onDataChange(@NonNull DataSnapshot snapshot) {
+                                                            UserModel model1 = snapshot.getValue(UserModel.class);
+                                                            assert model1 != null;
+                                                            String postedByUserName = model1.getUserName();
+                                                            //if build version is over oreo
+                                                            //notification channel
+                                                            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+                                                                NotificationChannel channel = new NotificationChannel("JScript Notifications", "Discuss", NotificationManager.IMPORTANCE_DEFAULT);
+                                                                NotificationManager manager = context.getSystemService(NotificationManager.class);
+                                                                manager.createNotificationChannel(channel);
+                                                            }
+                                                            //notifications sound
+                                                            Uri notifySound = RingtoneManager
+                                                                    .getDefaultUri(RingtoneManager.TYPE_NOTIFICATION);
+                                                            //generate random number
+                                                            Random random = new Random();
+                                                            int notificationNumber = random.nextInt(9999 - 1000) + 1000;
+                                                            //large icon
+                                                            Bitmap largeIcon = BitmapFactory.decodeResource(getResources(), R.drawable.ic_main_icon_round);
+                                                            //notification intent
+                                                            Intent intent = new Intent(context, NotificationsActivity.class);
+                                                            PendingIntent pendingIntent = PendingIntent.getActivity(context, 0, intent, 0);
+                                                            //notification builder
+                                                            NotificationCompat.Builder commentBuilder = new NotificationCompat.Builder(context, "JScript Notifications");
+                                                            commentBuilder.setContentTitle("Hi! "+postedByUserName +" \uD83D\uDC9A");
+                                                            commentBuilder.setSmallIcon(R.drawable.jscript_notifications);
+                                                            commentBuilder.setLargeIcon(largeIcon);
+                                                            commentBuilder.setAutoCancel(true);
+                                                            commentBuilder.setSound(notifySound);
+                                                            commentBuilder.setVibrate(new long[]{100, 250, 100, 250, 100, 250});
+                                                            commentBuilder.setContentIntent(pendingIntent);
+                                                            commentBuilder.setContentText(Html.fromHtml("\"<span style=\"font-weight:bold; color:#15c55d\">" +
+                                                                    notificationByUserName + "" + "</span>\"" + typeText + "(" + question + ")"));
+                                                            //notification manager
+                                                            NotificationManagerCompat managerCompat = NotificationManagerCompat.from(context);
+                                                            managerCompat.notify(notificationNumber, commentBuilder.build());
+                                                        }
+
+                                                        @Override
+                                                        public void onCancelled(@NonNull DatabaseError error) {
+
+                                                        }
+                                                    });
                                         }
 
                                         @Override

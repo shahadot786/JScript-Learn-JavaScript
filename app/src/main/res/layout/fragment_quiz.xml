@@ -52,31 +52,47 @@
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="16dp"
                 android:layout_marginEnd="16dp"
-                app:lottie_rawRes="@raw/quiz"
-                app:lottie_autoPlay="true"
-                app:lottie_loop="true"
                 android:background="@drawable/ic_programs_image_bg"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+                app:layout_constraintTop_toBottomOf="@+id/toolbar"
+                app:lottie_autoPlay="true"
+                app:lottie_loop="true"
+                app:lottie_rawRes="@raw/quiz"
+                tools:ignore="ImageContrastCheck" />
 
             <TextView
                 android:id="@+id/howTo"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
-                android:background="@drawable/ic_programs_image_bg"
-                android:backgroundTint="@color/activeGreen"
-                android:paddingStart="20dp"
-                android:paddingTop="5dp"
-                android:paddingEnd="20dp"
-                android:paddingBottom="10dp"
                 android:text="@string/how_to"
-                android:textColor="@color/colorPrimary"
+                android:textColor="@color/textColorGrey"
                 android:textSize="16sp"
                 android:textStyle="bold"
                 app:layout_constraintEnd_toEndOf="@+id/sliderView"
                 app:layout_constraintTop_toBottomOf="@+id/sliderView" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/proAnimation"
+                android:layout_width="50dp"
+                android:layout_height="0dp"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="@+id/howTo"
+                app:layout_constraintStart_toStartOf="@+id/sliderView"
+                app:layout_constraintTop_toBottomOf="@+id/sliderView">
+
+                <com.airbnb.lottie.LottieAnimationView
+                    android:id="@+id/tryPro"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:lottie_autoPlay="true"
+                    app:lottie_loop="true"
+                    app:lottie_rawRes="@raw/pro_animations" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
 
             <TextView
                 android:id="@+id/textView32"

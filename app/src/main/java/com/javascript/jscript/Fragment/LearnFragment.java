@@ -1,5 +1,6 @@
 package com.javascript.jscript.Fragment;
 
+import android.content.Context;
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
@@ -9,8 +10,10 @@ import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ImageView;
 
+import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.fragment.app.Fragment;
 
+import com.airbnb.lottie.LottieAnimationView;
 import com.javascript.jscript.Activities.PremiumActivity;
 import com.javascript.jscript.Adapter.LearnItemsAdapter;
 import com.javascript.jscript.Adapter.LearnItemsAdapterPro;
@@ -122,6 +125,18 @@ public class LearnFragment extends Fragment {
             slideText[0] = "Enjoy Premium Services";
             images[0] = R.drawable.after_pro_ad;
         }
+        //pro animations
+        ConstraintLayout proAnimation = view.findViewById(R.id.proAnimation);
+        proAnimation.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Context context = view.getContext();
+                Intent intent;
+                intent = new Intent(context,PremiumActivity.class);
+                intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                context.startActivity(intent);
+            }
+        });
         //pro codes
         proView = view.findViewById(R.id.LearnProView);
         proImage = view.findViewById(R.id.learnProImage);
@@ -141,9 +156,11 @@ public class LearnFragment extends Fragment {
         if (UiConfig.PRO_VISIBILITY_STATUS_SHOW){
             proView.setVisibility(View.VISIBLE);
             proImage.setVisibility(View.VISIBLE);
+            proAnimation.setVisibility(View.VISIBLE);
         }else {
             proView.setVisibility(View.GONE);
             proImage.setVisibility(View.GONE);
+            proAnimation.setVisibility(View.GONE);
         }
         //add network context initialization
         adNetwork = new AdNetwork(getActivity());

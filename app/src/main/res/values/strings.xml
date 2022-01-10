@@ -292,5 +292,6 @@
     <string name="mocha_text">Mocha is a feature-rich JavaScript test framework running on Node.js and in the browser, making asynchronous testing simple and fun. Mocha tests run serially, allowing for flexible and accurate reporting, while mapping uncaught exceptions to the correct test cases. Hosted on GitHub.</string>
     <string name="network_connected">Network Connected</string>
     <string name="have_a_suggestions">Have a suggestions?</string>
+    <string name="try_pro">TRY PRO</string>
 
 </resources>

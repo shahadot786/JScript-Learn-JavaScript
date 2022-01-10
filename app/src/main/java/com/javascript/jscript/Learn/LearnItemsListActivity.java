@@ -30,7 +30,7 @@ public class LearnItemsListActivity extends AppCompatActivity {
         setContentView(binding.getRoot());
         //toolbar
         setSupportActionBar(binding.toolbar2);
-        LearnItemsListActivity.this.setTitle("Learn");
+        LearnItemsListActivity.this.setTitle("JScript: Learn");
         Objects.requireNonNull(getSupportActionBar()).setDisplayHomeAsUpEnabled(true);
         loadItems();
         learnList = findViewById(R.id.learnList);

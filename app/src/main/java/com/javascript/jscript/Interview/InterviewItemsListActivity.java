@@ -35,7 +35,7 @@ public class InterviewItemsListActivity extends AppCompatActivity {
         adNetwork = new AdNetwork(InterviewItemsListActivity.this);
         //toolbar
         setSupportActionBar(binding.toolbar2);
-        InterviewItemsListActivity.this.setTitle("Questions");
+        InterviewItemsListActivity.this.setTitle("JScript: Interview Questions");
         Objects.requireNonNull(getSupportActionBar()).setDisplayHomeAsUpEnabled(true);
         loadItems();
         interviews = findViewById(R.id.interviewList);

@@ -1,8 +1,10 @@
 package com.javascript.jscript.Fragment;
 
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 
+import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.fragment.app.Fragment;
 
 import android.view.LayoutInflater;
@@ -76,6 +78,18 @@ public class BooksFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_books, container, false);
+        //pro animations
+        ConstraintLayout proAnimation = view.findViewById(R.id.proAnimation);
+        proAnimation.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Context context = view.getContext();
+                Intent intent;
+                intent = new Intent(context,PremiumActivity.class);
+                intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                context.startActivity(intent);
+            }
+        });
         //pro codes
         proView = view.findViewById(R.id.booksProView);
         proImage = view.findViewById(R.id.booksProImage);
@@ -95,9 +109,11 @@ public class BooksFragment extends Fragment {
         if (UiConfig.PRO_VISIBILITY_STATUS_SHOW){
             proView.setVisibility(View.VISIBLE);
             proImage.setVisibility(View.VISIBLE);
+            proAnimation.setVisibility(View.VISIBLE);
         }else {
             proView.setVisibility(View.GONE);
             proImage.setVisibility(View.GONE);
+            proAnimation.setVisibility(View.GONE);
         }
         //add network context initialization
         adNetwork = new AdNetwork(getActivity());

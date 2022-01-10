@@ -33,7 +33,7 @@ public class ProgramsItemsListActivity extends AppCompatActivity {
         adNetwork = new AdNetwork(ProgramsItemsListActivity.this);
         //toolbar
         setSupportActionBar(binding.toolbar2);
-        ProgramsItemsListActivity.this.setTitle("Programs");
+        ProgramsItemsListActivity.this.setTitle("JScript: Practice Programs");
         Objects.requireNonNull(getSupportActionBar()).setDisplayHomeAsUpEnabled(true);
         loadItems();
         programs = findViewById(R.id.programsList);

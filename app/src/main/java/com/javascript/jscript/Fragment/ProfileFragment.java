@@ -392,8 +392,7 @@ public class ProfileFragment extends Fragment {
                     }
                 });
 
-
-
+        
         return binding.getRoot();
     }//end onCreate
 

@@ -26,38 +26,38 @@ public class InterviewQAFragment extends Fragment {
     ImageView proImage;
     private AdNetwork adNetwork;
 
-    String[] itemsName = {"Fundamental","Basic","Objects","OOPs","DOM","BOM","Advanced","AJAX"};
-    String[] itemsNamePro = {"Typescript","Angular","Vue Js","Next Js","React Js","Ember Js","Svelte Js","Gatsby","Nuxt Js","Bootstrap"
-            /*"Node Js","Spring Boot","Express Js",
-            "Laravel","Micronaut","Mocha"*/};
+    String[] itemsName = {"Basic","Objects","OOPs","DOM","BOM","Advanced","AJAX","Typescript"};
+    String[] itemsNamePro = {"Angular","Vue Js","Next Js","React Js","Ember Js","Bootstrap","Node Js","Express Js","Laravel","jQuery"
+            /*"Svelte Js","Gatsby","Nuxt Js","Spring Boot","Micronaut","Mocha"*/};
 
     Integer[] itemImages = {
-            R.drawable.ic_fundamental_icon,
             R.drawable.ic_programs_basic_image,
             R.drawable.ic_objects_icon,
             R.drawable.ic_oops_icon,
             R.drawable.ic_dom_icon,
             R.drawable.ic_bom_icon,
             R.drawable.ic_programs_advanced_image,
-            R.drawable.ic_ajax_icon
+            R.drawable.ic_ajax_icon,
+            R.drawable.ic_typescript_icon,
             //R.drawable.ic_json_icon
 
     };
     Integer[] itemImagesPro = {
-            R.drawable.ic_typescript_icon,
             R.drawable.ic_angular_icon,
             R.drawable.ic_js_vue_icon,
             R.drawable.ic_next_js,
             R.drawable.ic_react_icon,
             R.drawable.ic_emberjs_icon,
+            R.drawable.ic_bootstrap_icon,
+            R.drawable.ic_node_icon,
+            R.drawable.ic_expressjs_icon,
+            R.drawable.ic_laravel_icon,
+            R.drawable.ic_jquery_icon
+            /*
             R.drawable.ic_svelte_icon,
             R.drawable.ic_gatsbyjs_icon,
             R.drawable.ic_nuxt_icon,
-            R.drawable.ic_bootstrap_icon/*
-            R.drawable.ic_node_icon,
             R.drawable.ic_springio_icon,
-            R.drawable.ic_expressjs_icon,
-            R.drawable.ic_laravel_icon,
             R.drawable.ic_micronaut_icon,
             R.drawable.ic_mochajs_icon*/
 
@@ -133,35 +133,35 @@ public class InterviewQAFragment extends Fragment {
                 Intent intent = new Intent(getActivity(), InterviewItemsListActivity.class);
                 switch (i){
                     case 0:
-                        intent.putExtra("interviewItems","Fundamental");
-                        startActivity(intent);
-                        break;
-                    case 1:
                         intent.putExtra("interviewItems","Basic");
                         startActivity(intent);
                         break;
-                    case 2:
+                    case 1:
                         intent.putExtra("interviewItems","Objects");
                         startActivity(intent);
                         break;
-                    case 3:
+                    case 2:
                         intent.putExtra("interviewItems","OOPs");
                         startActivity(intent);
                         break;
-                    case 4:
+                    case 3:
                         intent.putExtra("interviewItems","DOM");
                         startActivity(intent);
                         break;
-                    case 5:
+                    case 4:
                         intent.putExtra("interviewItems","BOM");
                         startActivity(intent);
                         break;
-                    case 6:
+                    case 5:
                         intent.putExtra("interviewItems","Advanced");
                         startActivity(intent);
                         break;
-                    case 7:
+                    case 6:
                         intent.putExtra("interviewItems","AJAX");
+                        startActivity(intent);
+                        break;
+                    case 7:
+                        intent.putExtra("interviewItems","Typescript");
                         startActivity(intent);
                         break;
                     /*case 8:
@@ -181,61 +181,46 @@ public class InterviewQAFragment extends Fragment {
                 Intent intent = new Intent(getActivity(), InterviewItemsListActivity.class);
                 switch (i){
                     case 0:
-                        intent.putExtra("interviewItems","Typescript");
-                        startActivity(intent);
-                        break;
-                    case 1:
                         intent.putExtra("interviewItems","Angular");
                         startActivity(intent);
                         break;
-                    case 2:
+                    case 1:
                         intent.putExtra("interviewItems","Vue Js");
                         startActivity(intent);
                         break;
-                    case 3:
+                    case 2:
                         intent.putExtra("interviewItems","Next Js");
                         startActivity(intent);
                         break;
-                    case 4:
+                    case 3:
                         intent.putExtra("interviewItems","React Js");
                         startActivity(intent);
                         break;
-                    case 5:
+                    case 4:
                         intent.putExtra("interviewItems","Ember Js");
                         startActivity(intent);
                         break;
-                    case 6:
-                        intent.putExtra("interviewItems","Svelte Js");
-                        startActivity(intent);
-                        break;
-                    case 7:
-                        intent.putExtra("interviewItems","Gatsby");
-                        startActivity(intent);
-                        break;
-                    case 8:
-                        intent.putExtra("interviewItems","Nuxt Js");
-                        startActivity(intent);
-                        break;
-                    case 9:
+                    case 5:
                         intent.putExtra("interviewItems","Bootstrap");
                         startActivity(intent);
                         break;
-                    /*case 10:
+                    case 6:
                         intent.putExtra("interviewItems","Node Js");
                         startActivity(intent);
                         break;
-                    case 11:
-                        intent.putExtra("interviewItems","Spring Boot");
-                        startActivity(intent);
-                        break;
-                    case 12:
+                    case 7:
                         intent.putExtra("interviewItems","Express Js");
                         startActivity(intent);
                         break;
-                    case 13:
+                    case 8:
                         intent.putExtra("interviewItems","Laravel");
                         startActivity(intent);
                         break;
+                    case 9:
+                        intent.putExtra("interviewItems","jQuery");
+                        startActivity(intent);
+                        break;
+                    /*
                     case 14:
                         intent.putExtra("interviewItems","Micronaut");
                         startActivity(intent);
@@ -244,9 +229,23 @@ public class InterviewQAFragment extends Fragment {
                         intent.putExtra("interviewItems","Mocha Js");
                         startActivity(intent);
                         break;
+                    case 5:
+                        intent.putExtra("interviewItems","Svelte Js");
+                        startActivity(intent);
+                        break;
+                    case 6:
+                        intent.putExtra("interviewItems","Gatsby");
+                        startActivity(intent);
+                        break;
+                    case 7:
+                        intent.putExtra("interviewItems","Nuxt Js");
+                        startActivity(intent);
+                        break;
+                    case 11:
+                        intent.putExtra("interviewItems","Spring Boot");
+                        startActivity(intent);
+                        break;
 */
-
-
                 }
             }
         });

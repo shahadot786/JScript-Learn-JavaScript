@@ -28,7 +28,6 @@ import com.google.firebase.database.ValueEventListener;
 import com.javascript.jscript.Activities.CodesActivity;
 import com.javascript.jscript.Activities.EditProfileActivity;
 import com.javascript.jscript.Config.UiConfig;
-import com.javascript.jscript.Learn.LearnDetailsActivity;
 import com.javascript.jscript.R;
 import com.javascript.jscript.databinding.ActivityInterviewAnswerBinding;
 
@@ -125,16 +124,87 @@ public class InterviewAnswerActivity extends AppCompatActivity {
     //load code
     private void loadQuestion() {
         String question = null;
-        switch (getIntent().getStringExtra("question")){
-            case "Questions":
-                question = BasicInterviewQA.question1;
+        switch (getIntent().getStringExtra("Interview Questions")){
+            case "What is JavaScript?":
+                question = InterviewQuestions.What_is_JavaScript;
                 break;
-            case "Questions 2":
-                question = BasicInterviewQA.question2;
+            case "What are JavaScript Data Types?":
+                question = InterviewQuestions.WhatareJavaScriptDataTypes;
                 break;
-            case "Questions 1":
-            case "Questions Angular":
-                question = BasicInterviewQA.question3;
+            case "What is the real name of JavaScript?":
+                question = InterviewQuestions.WhatistherealnameofJavaScript;
+                break;
+            case "Enumerate the differences between Java and JavaScript?":
+                question = InterviewQuestions.EnumeratethedifferencesbetweenjavaandJavaScript;
+                break;
+            case "What is the use of isNaN function?":
+                question = InterviewQuestions.WhatistheuseofisNaNfunction;
+                break;
+            case "Which is faster between JavaScript and an ASP script?":
+                question = InterviewQuestions.WhichisfasterbetweenjavaScriptandanASP;
+                break;
+            case "What is negative Infinity?":
+                question = InterviewQuestions.WhatisnegativeInfinity;
+                break;
+            case "Is it possible to break JavaScript Code into several lines?":
+                question = InterviewQuestions.IsitpossibletobreakJavaScriptCode;
+                break;
+            case "Which company developed JavaScript?":
+                question = InterviewQuestions.WhichcompanydevelopedJavaScript;
+                break;
+            case "What are undeclared and undefined variables?":
+                question = InterviewQuestions.Whatareundeclaredandundefinedvariables;
+                break;
+            case "Write the code for adding new elements dynamically?":
+                question = InterviewQuestions.Writethecodeforaddingnewelementsdynamically;
+                break;
+            case "What are global variables? How are these variable declared?":
+                question = InterviewQuestions.WhatareglobalvariablesHowarethesevariabledeclared;
+                break;
+            case "What is a prompt box?":
+                question = InterviewQuestions.Whatisapromptbox;
+                break;
+            case "What is ‘this’ keyword in JavaScript?":
+                question = InterviewQuestions.WhatisthiskeywordinJavaScript;
+                break;
+            case "What is the working of timers in JavaScript?":
+                question = InterviewQuestions.WhatistheworkingoftimersinJavaScript;
+                break;
+            case "Which symbol is used for comments in Javascript?":
+                question = InterviewQuestions.WhichsymbolisusedforcommentsinJavascript;
+                break;
+            case "What is the difference between ViewState and SessionState?":
+                question = InterviewQuestions.WhatisthedifferencebetweenViewStateandSessionState;
+                break;
+            case "What is === operator?":
+                question = InterviewQuestions.Whatisoperator;
+                break;
+            case "How can the style/class of an element be changed?":
+                question = InterviewQuestions.Howcanthestyleclassofanelementbechanged;
+                break;
+            case "What are all the looping structures in JavaScript?":
+                question = InterviewQuestions.WhatarealltheloopingstructuresinjavaScript;
+                break;
+            case "What is called Variable typing in Javascript?":
+                question = InterviewQuestions.WhatiscalledVariabletypinginJavascript;
+                break;
+            case "What would be the result of 3+2+”7″?":
+                question = InterviewQuestions.Whatwouldbetheresultof;
+                break;
+            case "What is the function of the delete operator?":
+                question = InterviewQuestions.Whatisthefunctionofthedeleteoperator;
+                break;
+            case "What is an undefined value in JavaScript?":
+                question = InterviewQuestions.WhatisanundefinedvalueinJavaScript;
+                break;
+            case "What are all the types of Pop up boxes available in JavaScript?":
+                question = InterviewQuestions.WhatareallthetypesofPopupboxes;
+                break;
+            case "What is the data type of variables in JavaScript?":
+                question = InterviewQuestions.WhatisthedatatypeofvariablesinJavaScript;
+                break;
+            case "":
+                question = InterviewQuestions.question;
                 break;
 
         }
@@ -144,17 +214,93 @@ public class InterviewAnswerActivity extends AppCompatActivity {
     //load output
     private void loadAnswer() {
         String answer = null;
-        switch (getIntent().getStringExtra("answer")){
-            case "Questions":
-                answer = BasicInterviewQA.answer1;
+        switch (getIntent().getStringExtra("Interview Answers")){
+            case "What is JavaScript?":
+                answer = InterviewAnswers.What_is_JavaScript;
                 break;
-            case "Questions 2":
-                answer = BasicInterviewQA.answer2;
+            case "What are JavaScript Data Types?":
+                answer = InterviewAnswers.WhatareJavaScriptDataTypes;
                 break;
-            case "Questions 1":
-            case "Questions Angular":
-                answer = BasicInterviewQA.answer3;
+            case "What is the real name of JavaScript?":
+                answer = InterviewAnswers.WhatistherealnameofJavaScript;
                 break;
+            case "Enumerate the differences between Java and JavaScript?":
+                answer = InterviewAnswers.EnumeratethedifferencesbetweenjavaandJavaScript;
+                break;
+            case "What is the use of isNaN function?":
+                answer = InterviewAnswers.WhatistheuseofisNaNfunction;
+                break;
+            case "Which is faster between JavaScript and an ASP script?":
+                answer = InterviewAnswers.WhichisfasterbetweenjavaScriptandanASP;
+                break;
+            case "What is negative Infinity?":
+                answer = InterviewAnswers.WhatisnegativeInfinity;
+                break;
+            case "Is it possible to break JavaScript Code into several lines?":
+                answer = InterviewAnswers.IsitpossibletobreakJavaScriptCode;
+                break;
+            case "Which company developed JavaScript?":
+                answer = InterviewAnswers.WhichcompanydevelopedJavaScript;
+                break;
+            case "What are undeclared and undefined variables?":
+                answer = InterviewAnswers.Whatareundeclaredandundefinedvariables;
+                break;
+            case "Write the code for adding new elements dynamically?":
+                answer = InterviewAnswers.Writethecodeforaddingnewelementsdynamically;
+                break;
+            case "What are global variables? How are these variable declared?":
+                answer = InterviewAnswers.WhatareglobalvariablesHowarethesevariabledeclared;
+                break;
+            case "What is a prompt box?":
+                answer = InterviewAnswers.Whatisapromptbox;
+                break;
+            case "What is ‘this’ keyword in JavaScript?":
+                answer = InterviewAnswers.WhatisthiskeywordinJavaScript;
+                break;
+            case "What is the working of timers in JavaScript?":
+                answer = InterviewAnswers.WhatistheworkingoftimersinJavaScript;
+                break;
+            case "Which symbol is used for comments in Javascript?":
+                answer = InterviewAnswers.WhichsymbolisusedforcommentsinJavascript;
+                break;
+            case "What is the difference between ViewState and SessionState?":
+                answer = InterviewAnswers.WhatisthedifferencebetweenViewStateandSessionState;
+                break;
+            case "What is === operator?":
+                answer = InterviewAnswers.Whatisoperator;
+                break;
+            case "How can the style/class of an element be changed?":
+                answer = InterviewAnswers.Howcanthestyleclassofanelementbechanged;
+                break;
+            case "What are all the looping structures in JavaScript?":
+                answer = InterviewAnswers.WhatarealltheloopingstructuresinjavaScript;
+                break;
+            case "What is called Variable typing in Javascript?":
+                answer = InterviewAnswers.WhatiscalledVariabletypinginJavascript;
+                break;
+            case "What would be the result of 3+2+”7″?":
+                answer = InterviewAnswers.Whatwouldbetheresultof;
+                break;
+            case "What is the function of the delete operator?":
+                answer = InterviewAnswers.Whatisthefunctionofthedeleteoperator;
+                break;
+            case "What is an undefined value in JavaScript?":
+                answer = InterviewAnswers.WhatisanundefinedvalueinJavaScript;
+                break;
+            case "What are all the types of Pop up boxes available in JavaScript?":
+                answer = InterviewAnswers.WhatareallthetypesofPopupboxes;
+                break;
+            case "What is the data type of variables in JavaScript?":
+                answer = InterviewAnswers.WhatisthedatatypeofvariablesinJavaScript;
+                break;
+            case "":
+                answer = InterviewAnswers.answer;
+                break;
+
+
+
+
+
         }
         //textAnswer.setText(answer);
         questionDes.setText(answer);

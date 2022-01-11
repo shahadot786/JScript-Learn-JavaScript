@@ -25,7 +25,6 @@ import com.javascript.jscript.databinding.CommentsRvSampleBinding;
 import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
-import java.util.Date;
 import java.util.Objects;
 
 public class CommentAdapter extends RecyclerView.Adapter<CommentAdapter.viewHolder> {

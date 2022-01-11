@@ -47,7 +47,6 @@ public class GoogleSignInActivity extends AppCompatActivity {
     FirebaseAuth auth;
     FirebaseDatabase database;
     ProgressDialog dialog;
-    private boolean connected = false;
     LayoutInflater inflater;
     TextView toastText;
     View toastLayout;
@@ -96,12 +95,10 @@ public class GoogleSignInActivity extends AppCompatActivity {
                 if (connectivityManager.getNetworkInfo(ConnectivityManager.TYPE_MOBILE).getState() == NetworkInfo.State.CONNECTED ||
                         connectivityManager.getNetworkInfo(ConnectivityManager.TYPE_WIFI).getState() == NetworkInfo.State.CONNECTED) {
                     //we are connected to a network
-                    connected = true;
                     signIn();
                 } else {
                     toastText.setText(R.string.no_connection_text);
                     toast.show();
-                    connected = false;
                 }
             }
         });

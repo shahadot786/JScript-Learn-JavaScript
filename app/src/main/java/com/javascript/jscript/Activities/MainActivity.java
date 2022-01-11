@@ -62,7 +62,6 @@ public class MainActivity extends AppCompatActivity {
     private long exitTime = 0;
     ActivityMainBinding binding;
     private AdView bannerAd;
-    private boolean connected = false;
     LayoutInflater inflater;
     TextView toastText;
     View toastLayout;
@@ -392,7 +391,6 @@ public class MainActivity extends AppCompatActivity {
                 if (connectivityManager.getNetworkInfo(ConnectivityManager.TYPE_MOBILE).getState() == NetworkInfo.State.CONNECTED ||
                         connectivityManager.getNetworkInfo(ConnectivityManager.TYPE_WIFI).getState() == NetworkInfo.State.CONNECTED) {
                     //we are connected to a network
-                    connected = true;
                     startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("http://play.google.com/store/apps/details?id=" + BuildConfig.APPLICATION_ID)));
                 } else {
                     toastText.setText(R.string.no_connection_text);
@@ -411,7 +409,6 @@ public class MainActivity extends AppCompatActivity {
                 if (connectivityManager2.getNetworkInfo(ConnectivityManager.TYPE_MOBILE).getState() == NetworkInfo.State.CONNECTED ||
                         connectivityManager2.getNetworkInfo(ConnectivityManager.TYPE_WIFI).getState() == NetworkInfo.State.CONNECTED) {
                     //we are connected to a network
-                    connected = true;
                     startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(getString(R.string.url_play_more_apps))));
                 } else {
                     toastText.setText(R.string.no_connection_text);
@@ -425,7 +422,6 @@ public class MainActivity extends AppCompatActivity {
                 if (connectivityManager3.getNetworkInfo(ConnectivityManager.TYPE_MOBILE).getState() == NetworkInfo.State.CONNECTED ||
                         connectivityManager3.getNetworkInfo(ConnectivityManager.TYPE_WIFI).getState() == NetworkInfo.State.CONNECTED) {
                     //we are connected to a network
-                    connected = true;
                     Intent intent1 = new Intent(Intent.ACTION_VIEW, Uri.parse(getString(R.string.url_play_privacy_policy)));
                     startActivity(intent1);
                 } else {
@@ -440,7 +436,6 @@ public class MainActivity extends AppCompatActivity {
                 if (connectivityManager4.getNetworkInfo(ConnectivityManager.TYPE_MOBILE).getState() == NetworkInfo.State.CONNECTED ||
                         connectivityManager4.getNetworkInfo(ConnectivityManager.TYPE_WIFI).getState() == NetworkInfo.State.CONNECTED) {
                     //we are connected to a network
-                    connected = true;
                     startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("mailto:" + "info@shrcreation.com")));
                 } else {
                     toastText.setText(R.string.no_connection_text);

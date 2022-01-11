@@ -58,7 +58,6 @@ public class SignUpActivity extends AppCompatActivity {
     //firebase code
     FirebaseAuth auth;
     FirebaseDatabase database;
-    private boolean connected = false;
     LayoutInflater inflater;
     TextView toastText;
     View toastLayout;
@@ -104,7 +103,6 @@ public class SignUpActivity extends AppCompatActivity {
                 if (connectivityManager.getNetworkInfo(ConnectivityManager.TYPE_MOBILE).getState() == NetworkInfo.State.CONNECTED ||
                         connectivityManager.getNetworkInfo(ConnectivityManager.TYPE_WIFI).getState() == NetworkInfo.State.CONNECTED) {
                     //we are connected to a network
-                    connected = true;
                     //input fields validations check
                     if (!validateUsername() | !validateEmail() | !validatePassword()) {
                         return;
@@ -155,7 +153,6 @@ public class SignUpActivity extends AppCompatActivity {
                 } else {
                     toastText.setText(R.string.no_connection_text);
                     toast.show();
-                    connected = false;
                 }
             }
 

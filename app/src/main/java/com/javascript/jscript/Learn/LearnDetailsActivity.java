@@ -60,7 +60,6 @@ public class LearnDetailsActivity extends AppCompatActivity {
     private AppCompatButton prevBtn, nextBtn, shareBtn;
     FirebaseDatabase database;
     FirebaseAuth auth;
-    private boolean connected = false;
     ConstraintLayout writeCodes;
     LayoutInflater inflater;
     View toastLayout;
@@ -359,12 +358,10 @@ public class LearnDetailsActivity extends AppCompatActivity {
             if (connectivityManager.getNetworkInfo(ConnectivityManager.TYPE_MOBILE).getState() == NetworkInfo.State.CONNECTED ||
                     connectivityManager.getNetworkInfo(ConnectivityManager.TYPE_WIFI).getState() == NetworkInfo.State.CONNECTED) {
                 //we are connected to a network
-                connected = true;
                 startActivity(new Intent(LearnDetailsActivity.this, CodesActivity.class));
             } else {
                 toastText.setText(R.string.no_connection_text);
                 toast.show();
-                connected = false;
             }
 
         } else {

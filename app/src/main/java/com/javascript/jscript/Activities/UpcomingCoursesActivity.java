@@ -23,7 +23,6 @@ import java.util.Objects;
 
 public class UpcomingCoursesActivity extends AppCompatActivity {
     ActivityUpcomingCoursesBinding binding;
-    private boolean connected = false;
     LayoutInflater inflater;
     TextView toastText;
     View toastLayout;
@@ -55,7 +54,6 @@ public class UpcomingCoursesActivity extends AppCompatActivity {
                 if (connectivityManager4.getNetworkInfo(ConnectivityManager.TYPE_MOBILE).getState() == NetworkInfo.State.CONNECTED ||
                         connectivityManager4.getNetworkInfo(ConnectivityManager.TYPE_WIFI).getState() == NetworkInfo.State.CONNECTED) {
                     //we are connected to a network
-                    connected = true;
                     startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("mailto:" + "info@shrcreation.com")));
                 } else {
                     toastText.setText(R.string.no_connection_text);

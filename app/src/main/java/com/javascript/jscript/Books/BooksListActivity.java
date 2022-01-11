@@ -31,7 +31,6 @@ public class BooksListActivity extends AppCompatActivity {
     private AdNetwork adNetwork;
     ListView books;
     String[] list = {};
-    private boolean connected = false;
     Toast toast;
     TextView toastText;
     LayoutInflater inflater;
@@ -70,7 +69,6 @@ public class BooksListActivity extends AppCompatActivity {
                 if (connectivityManager.getNetworkInfo(ConnectivityManager.TYPE_MOBILE).getState() == NetworkInfo.State.CONNECTED ||
                         connectivityManager.getNetworkInfo(ConnectivityManager.TYPE_WIFI).getState() == NetworkInfo.State.CONNECTED) {
                     //we are connected to a network
-                    connected = true;
                     Intent intent = new Intent(BooksListActivity.this, ReadBooksActivity.class);
                     intent.putExtra("booksUri",list[i]);
                     startActivity(intent);
@@ -79,7 +77,6 @@ public class BooksListActivity extends AppCompatActivity {
                 }else {
                     toastText.setText(R.string.no_connection_text);
                     toast.show();
-                    connected = false;
                 }
             }
         });

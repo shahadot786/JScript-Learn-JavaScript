@@ -42,7 +42,6 @@ public class AddDiscussActivity extends AppCompatActivity {
     FirebaseDatabase database;
     TextInputLayout question, descriptions;
     ProgressDialog dialog;
-    private boolean connected = false;
     LayoutInflater inflater;
     TextView toastText;
     View toastLayout;
@@ -117,7 +116,6 @@ public class AddDiscussActivity extends AppCompatActivity {
                 if (connectivityManager.getNetworkInfo(ConnectivityManager.TYPE_MOBILE).getState() == NetworkInfo.State.CONNECTED ||
                         connectivityManager.getNetworkInfo(ConnectivityManager.TYPE_WIFI).getState() == NetworkInfo.State.CONNECTED) {
                     //we are connected to a network
-                    connected = true;
                     //check first if the fields are empty
                     if (questionValidation()) {
                         //show dialog
@@ -146,7 +144,6 @@ public class AddDiscussActivity extends AppCompatActivity {
                 } else {
                     toastText.setText(R.string.no_connection_text);
                     toast.show();
-                    connected = false;
                 }
             }
         });

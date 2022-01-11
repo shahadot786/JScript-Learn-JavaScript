@@ -12,7 +12,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 import android.widget.Toast;
-
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
@@ -48,7 +47,6 @@ public class ProfileFragment extends Fragment {
     FirebaseStorage storage;
     FirebaseDatabase database;
     ProgressDialog dialog;
-    private boolean connected = false;
     //fixed count
     private final int listCountLearn = 300;//230
     private final int listCountQuiz = 800;
@@ -286,7 +284,6 @@ public class ProfileFragment extends Fragment {
                 if (connectivityManager.getNetworkInfo(ConnectivityManager.TYPE_MOBILE).getState() == NetworkInfo.State.CONNECTED ||
                         connectivityManager.getNetworkInfo(ConnectivityManager.TYPE_WIFI).getState() == NetworkInfo.State.CONNECTED) {
                     //we are connected to a network
-                    connected = true;
                     Intent intent = new Intent();
                     intent.setAction(Intent.ACTION_GET_CONTENT);
                     intent.setType("image/*");
@@ -295,7 +292,6 @@ public class ProfileFragment extends Fragment {
                 else {
                     toastText.setText(R.string.no_connection_text);
                     toast.show();
-                    connected = false;
                 }
 
             }
@@ -309,7 +305,6 @@ public class ProfileFragment extends Fragment {
                 if (connectivityManager.getNetworkInfo(ConnectivityManager.TYPE_MOBILE).getState() == NetworkInfo.State.CONNECTED ||
                         connectivityManager.getNetworkInfo(ConnectivityManager.TYPE_WIFI).getState() == NetworkInfo.State.CONNECTED) {
                     //we are connected to a network
-                    connected = true;
                     Intent intent = new Intent();
                     intent.setAction(Intent.ACTION_GET_CONTENT);
                     intent.setType("image/*");
@@ -317,7 +312,6 @@ public class ProfileFragment extends Fragment {
                 }else {
                     toastText.setText(R.string.no_connection_text);
                     toast.show();
-                    connected = false;
                 }
             }
         });
@@ -392,9 +386,11 @@ public class ProfileFragment extends Fragment {
                     }
                 });
 
-        
+
         return binding.getRoot();
     }//end onCreate
+
+
 
     @Override
     public void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {

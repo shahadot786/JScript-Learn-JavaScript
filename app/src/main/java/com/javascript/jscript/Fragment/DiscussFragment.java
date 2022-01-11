@@ -48,7 +48,6 @@ public class DiscussFragment extends Fragment {
     FirebaseDatabase database;
     ArrayList<DiscussModel> dashboardList;
     SwipeRefreshLayout swipeRefreshLayout;
-    private boolean connected = false;
     TextView toastText;
     View toastLayout;
     Toast toast;
@@ -136,11 +135,9 @@ public class DiscussFragment extends Fragment {
         if (connectivityManager.getNetworkInfo(ConnectivityManager.TYPE_MOBILE).getState() == NetworkInfo.State.CONNECTED ||
                 connectivityManager.getNetworkInfo(ConnectivityManager.TYPE_WIFI).getState() == NetworkInfo.State.CONNECTED) {
             //we are connected to a network
-            connected = true;
         } else {
             toastText.setText(R.string.no_connection_text);
             toast.show();
-            connected = false;
         }
 
         database.getReference().child("Discuss")

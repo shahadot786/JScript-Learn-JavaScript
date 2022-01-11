@@ -56,7 +56,6 @@ public class DiscussDetailsActivity extends AppCompatActivity {
     ArrayList<CommentModel> list = new ArrayList<>();
     SwipeRefreshLayout swipeRefreshLayout;
     ShimmerRecyclerView commentShimmer;
-    private boolean connected = false;
     LayoutInflater inflater;
     TextView toastText;
     View toastLayout;
@@ -104,12 +103,10 @@ public class DiscussDetailsActivity extends AppCompatActivity {
         if (connectivityManager.getNetworkInfo(ConnectivityManager.TYPE_MOBILE).getState() == NetworkInfo.State.CONNECTED ||
                 connectivityManager.getNetworkInfo(ConnectivityManager.TYPE_WIFI).getState() == NetworkInfo.State.CONNECTED) {
             //we are connected to a network
-            connected = true;
 
         }else {
             toastText.setText(R.string.no_connection_text);
             toast.show();
-            connected = false;
         }
         //get post data
         database.getReference()
@@ -204,7 +201,6 @@ public class DiscussDetailsActivity extends AppCompatActivity {
                 if (connectivityManager.getNetworkInfo(ConnectivityManager.TYPE_MOBILE).getState() == NetworkInfo.State.CONNECTED ||
                         connectivityManager.getNetworkInfo(ConnectivityManager.TYPE_WIFI).getState() == NetworkInfo.State.CONNECTED) {
                     //we are connected to a network
-                    connected = true;
                     if (commentValidation()) {
                         CommentModel comment = new CommentModel();
                         comment.setCommentBody(binding.commentET.getText().toString());
@@ -292,7 +288,6 @@ public class DiscussDetailsActivity extends AppCompatActivity {
                 } else {
                     toastText.setText(R.string.no_connection_text);
                     toast.show();
-                    connected = false;
                 }
             }
         });
@@ -340,7 +335,6 @@ public class DiscussDetailsActivity extends AppCompatActivity {
                 if (connectivityManager.getNetworkInfo(ConnectivityManager.TYPE_MOBILE).getState() == NetworkInfo.State.CONNECTED ||
                         connectivityManager.getNetworkInfo(ConnectivityManager.TYPE_WIFI).getState() == NetworkInfo.State.CONNECTED) {
                     //we are connected to a network
-                    connected = true;
                     commentShimmer.showShimmerAdapter();
                     database.getReference()
                             .child("Discuss")
@@ -374,7 +368,6 @@ public class DiscussDetailsActivity extends AppCompatActivity {
                 }else {
                     toastText.setText(R.string.no_connection_text);
                     toast.show();
-                    connected = false;
                     swipeRefreshLayout.setRefreshing(false);
                     commentShimmer.hideShimmerAdapter();
                 }

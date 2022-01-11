@@ -38,7 +38,6 @@ public class NotificationsActivity extends AppCompatActivity {
     ArrayList<NotificationsModel> list;
     FirebaseDatabase database;
     SwipeRefreshLayout swipeRefreshLayout;
-    private boolean connected = false;
     Toast toast;
     TextView toastText;
     LayoutInflater inflater;
@@ -82,12 +81,10 @@ public class NotificationsActivity extends AppCompatActivity {
         if (connectivityManager.getNetworkInfo(ConnectivityManager.TYPE_MOBILE).getState() == NetworkInfo.State.CONNECTED ||
                 connectivityManager.getNetworkInfo(ConnectivityManager.TYPE_WIFI).getState() == NetworkInfo.State.CONNECTED) {
             //we are connected to a network
-            connected = true;
 
         }else {
             toastText.setText(R.string.no_connection_text);
             toast.show();
-            connected = false;
         }
         //set notification value
         database.getReference()
@@ -130,7 +127,6 @@ public class NotificationsActivity extends AppCompatActivity {
                     if (connectivityManager.getNetworkInfo(ConnectivityManager.TYPE_MOBILE).getState() == NetworkInfo.State.CONNECTED ||
                             connectivityManager.getNetworkInfo(ConnectivityManager.TYPE_WIFI).getState() == NetworkInfo.State.CONNECTED) {
                         //we are connected to a network
-                        connected = true;
                         database.getReference()
                                 .child("Notifications")
                                 .child(Objects.requireNonNull(FirebaseAuth.getInstance().getUid()))
@@ -164,7 +160,6 @@ public class NotificationsActivity extends AppCompatActivity {
                     }else {
                         toastText.setText(R.string.no_connection_text);
                         toast.show();
-                        connected = false;
                         notificationRV.hideShimmerAdapter();
                         swipeRefreshLayout.setRefreshing(false);
                     }

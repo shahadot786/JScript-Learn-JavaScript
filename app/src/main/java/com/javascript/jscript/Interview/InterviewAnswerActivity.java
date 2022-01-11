@@ -38,7 +38,6 @@ public class InterviewAnswerActivity extends AppCompatActivity {
     FirebaseDatabase database;
     FirebaseAuth auth;
     TextView textQuestion,questionDes;
-    private boolean connected = false;
     LayoutInflater inflater;
     TextView toastText;
     View toastLayout;
@@ -322,12 +321,10 @@ public class InterviewAnswerActivity extends AppCompatActivity {
             if (connectivityManager.getNetworkInfo(ConnectivityManager.TYPE_MOBILE).getState() == NetworkInfo.State.CONNECTED ||
                     connectivityManager.getNetworkInfo(ConnectivityManager.TYPE_WIFI).getState() == NetworkInfo.State.CONNECTED) {
                 //we are connected to a network
-                connected = true;
                 startActivity(new Intent(InterviewAnswerActivity.this, CodesActivity.class));
             }else {
                 toastText.setText(R.string.no_connection_text);
                 toast.show();
-                connected = false;
             }
 
         }else {

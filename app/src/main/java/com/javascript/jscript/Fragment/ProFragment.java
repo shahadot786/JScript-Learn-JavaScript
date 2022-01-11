@@ -36,7 +36,6 @@ public class ProFragment extends Fragment {
     FragmentProBinding binding;
     FirebaseAuth auth;
     FirebaseDatabase database;
-    private boolean connected = false;
     TextView toastText;
     View toastLayout;
     Toast toast;
@@ -103,7 +102,6 @@ public class ProFragment extends Fragment {
                 if (connectivityManager.getNetworkInfo(ConnectivityManager.TYPE_MOBILE).getState() == NetworkInfo.State.CONNECTED ||
                         connectivityManager.getNetworkInfo(ConnectivityManager.TYPE_WIFI).getState() == NetworkInfo.State.CONNECTED) {
                     //we are connected to a network
-                    connected = true;
                     startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("http://play.google.com/store/apps/details?id=" + BuildConfig.APPLICATION_ID)));
                 }
                 else {

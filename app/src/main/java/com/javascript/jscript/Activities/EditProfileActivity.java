@@ -40,7 +40,6 @@ public class EditProfileActivity extends AppCompatActivity {
     ProgressDialog dialog;
     private TextInputLayout professionInput;
     private TextInputLayout bioInput;
-    private boolean connected = false;
     LayoutInflater inflater;
     TextView toastText;
     View toastLayout;
@@ -151,7 +150,6 @@ public class EditProfileActivity extends AppCompatActivity {
                 if (connectivityManager.getNetworkInfo(ConnectivityManager.TYPE_MOBILE).getState() == NetworkInfo.State.CONNECTED ||
                         connectivityManager.getNetworkInfo(ConnectivityManager.TYPE_WIFI).getState() == NetworkInfo.State.CONNECTED) {
                     //we are connected to a network
-                    connected = true;
                     if (professionValidation() && bioValidation()) {
                         dialog.show();
                         ProfileModel profileModel = new ProfileModel();
@@ -178,7 +176,6 @@ public class EditProfileActivity extends AppCompatActivity {
                 } else {
                     toastText.setText(R.string.no_connection_text);
                     toast.show();
-                    connected = false;
                 }
             }
         });

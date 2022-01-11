@@ -37,7 +37,6 @@ public class SplashActivity extends AppCompatActivity {
     FirebaseUser currentUser;
     FirebaseAuth auth;
     FirebaseDatabase database;
-    private boolean connected = false;
     final String PREFS_NAME = "JScript_for_new_user";//change every update
     public static final String PREF_FILE = "JScript_Learn_JavaScript";
     LayoutInflater inflater;
@@ -70,11 +69,9 @@ public class SplashActivity extends AppCompatActivity {
         if (connectivityManager.getNetworkInfo(ConnectivityManager.TYPE_MOBILE).getState() == NetworkInfo.State.CONNECTED ||
                 connectivityManager.getNetworkInfo(ConnectivityManager.TYPE_WIFI).getState() == NetworkInfo.State.CONNECTED) {
             //we are connected to a network
-            connected = true;
         } else {
             toastText.setText(R.string.no_connection_text);
             toast.show();
-            connected = false;
         }
         //animations
         bottomAnim = AnimationUtils.loadAnimation(this, R.anim.bottom_animation);

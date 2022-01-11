@@ -3,15 +3,15 @@ package com.javascript.jscript.Fragment;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
-
-import androidx.constraintlayout.widget.ConstraintLayout;
-import androidx.fragment.app.Fragment;
-
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ImageView;
+
+import androidx.constraintlayout.widget.ConstraintLayout;
+import androidx.fragment.app.Fragment;
+
 import com.javascript.jscript.Activities.PremiumActivity;
 import com.javascript.jscript.Adapter.BooksItemsAdapter;
 import com.javascript.jscript.Adapter.BooksItemsAdapterPro;
@@ -22,15 +22,12 @@ import com.javascript.jscript.Utils.AdNetwork;
 import com.javascript.jscript.Utils.ExpandableHeightGridView;
 
 public class BooksFragment extends Fragment {
-    ExpandableHeightGridView gridView , gridViewPro;
+    ExpandableHeightGridView gridView, gridViewPro;
     View proView;
     ImageView proImage;
-    private AdNetwork adNetwork;
-
-    String[] itemsName = {"Fundamental","Basic","Objects","OOPs","DOM","Advanced","AJAX","Typescript"};
-    String[] itemsNamePro = {"Angular","Vue Js","Next Js","React Js","Ember Js","Bootstrap","Node Js","Express Js","Laravel","jQuery"
+    String[] itemsName = {"Fundamental", "Basic", "Objects", "OOPs", "DOM", "Advanced", "AJAX", "Typescript"};
+    String[] itemsNamePro = {"Angular", "Vue Js", "Next Js", "React Js", "Ember Js", "Bootstrap", "Node Js", "Express Js", "Laravel", "jQuery"
             /*"Svelte Js","Gatsby","Nuxt Js","Spring Boot","Micronaut","Mocha"*/};
-
     Integer[] itemImages = {
             R.drawable.ic_fundamental_icon,
             R.drawable.ic_programs_basic_image,
@@ -63,6 +60,7 @@ public class BooksFragment extends Fragment {
             R.drawable.ic_mochajs_icon*/
 
     };
+    private AdNetwork adNetwork;
 
     public BooksFragment() {
         // Required empty public constructor
@@ -85,7 +83,7 @@ public class BooksFragment extends Fragment {
             public void onClick(View view) {
                 Context context = view.getContext();
                 Intent intent;
-                intent = new Intent(context,PremiumActivity.class);
+                intent = new Intent(context, PremiumActivity.class);
                 intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                 context.startActivity(intent);
             }
@@ -96,21 +94,21 @@ public class BooksFragment extends Fragment {
         //free
         gridView = view.findViewById(R.id.books_item_gridview);
         gridView.setExpanded(true);
-        BooksItemsAdapter adapter = new BooksItemsAdapter(itemsName,itemImages,getActivity());
+        BooksItemsAdapter adapter = new BooksItemsAdapter(itemsName, itemImages, getActivity());
         gridView.setAdapter(adapter);
 
         //pro
         gridViewPro = view.findViewById(R.id.books_item_gridview_pro);
         gridViewPro.setExpanded(true);
-        BooksItemsAdapterPro adapter1 = new BooksItemsAdapterPro(itemsNamePro,itemImagesPro,getActivity());
+        BooksItemsAdapterPro adapter1 = new BooksItemsAdapterPro(itemsNamePro, itemImagesPro, getActivity());
         gridViewPro.setAdapter(adapter1);
 
         //check user upgrade to pro
-        if (UiConfig.PRO_VISIBILITY_STATUS_SHOW){
+        if (UiConfig.PRO_VISIBILITY_STATUS_SHOW) {
             proView.setVisibility(View.VISIBLE);
             proImage.setVisibility(View.VISIBLE);
             proAnimation.setVisibility(View.VISIBLE);
-        }else {
+        } else {
             proView.setVisibility(View.GONE);
             proImage.setVisibility(View.GONE);
             proAnimation.setVisibility(View.GONE);
@@ -131,37 +129,37 @@ public class BooksFragment extends Fragment {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                 Intent intent = new Intent(getActivity(), BooksListActivity.class);
-                switch (i){
+                switch (i) {
                     case 0:
-                        intent.putExtra("booksItems","Fundamental");
+                        intent.putExtra("booksItems", "Fundamental");
                         startActivity(intent);
                         break;
                     case 1:
-                        intent.putExtra("booksItems","Basic");
+                        intent.putExtra("booksItems", "Basic");
                         startActivity(intent);
                         break;
                     case 2:
-                        intent.putExtra("booksItems","Objects");
+                        intent.putExtra("booksItems", "Objects");
                         startActivity(intent);
                         break;
                     case 3:
-                        intent.putExtra("booksItems","OOPs");
+                        intent.putExtra("booksItems", "OOPs");
                         startActivity(intent);
                         break;
                     case 4:
-                        intent.putExtra("booksItems","DOM");
+                        intent.putExtra("booksItems", "DOM");
                         startActivity(intent);
                         break;
                     case 5:
-                        intent.putExtra("booksItems","Advanced");
+                        intent.putExtra("booksItems", "Advanced");
                         startActivity(intent);
                         break;
                     case 6:
-                        intent.putExtra("booksItems","AJAX");
+                        intent.putExtra("booksItems", "AJAX");
                         startActivity(intent);
                         break;
                     case 7:
-                        intent.putExtra("booksItems","Typescript");
+                        intent.putExtra("booksItems", "Typescript");
                         startActivity(intent);
                         break;
                     /*case 9:
@@ -179,45 +177,45 @@ public class BooksFragment extends Fragment {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                 Intent intent = new Intent(getActivity(), BooksListActivity.class);
-                switch (i){
+                switch (i) {
                     case 0:
-                        intent.putExtra("booksItems","Angular");
+                        intent.putExtra("booksItems", "Angular");
                         startActivity(intent);
                         break;
                     case 1:
-                        intent.putExtra("booksItems","Vue Js");
+                        intent.putExtra("booksItems", "Vue Js");
                         startActivity(intent);
                         break;
                     case 2:
-                        intent.putExtra("booksItems","Next Js");
+                        intent.putExtra("booksItems", "Next Js");
                         startActivity(intent);
                         break;
                     case 3:
-                        intent.putExtra("booksItems","React Js");
+                        intent.putExtra("booksItems", "React Js");
                         startActivity(intent);
                         break;
                     case 4:
-                        intent.putExtra("booksItems","Ember Js");
+                        intent.putExtra("booksItems", "Ember Js");
                         startActivity(intent);
                         break;
                     case 5:
-                        intent.putExtra("booksItems","Bootstrap");
+                        intent.putExtra("booksItems", "Bootstrap");
                         startActivity(intent);
                         break;
                     case 6:
-                        intent.putExtra("booksItems","Node Js");
+                        intent.putExtra("booksItems", "Node Js");
                         startActivity(intent);
                         break;
                     case 7:
-                        intent.putExtra("booksItems","Express Js");
+                        intent.putExtra("booksItems", "Express Js");
                         startActivity(intent);
                         break;
                     case 8:
-                        intent.putExtra("booksItems","Laravel");
+                        intent.putExtra("booksItems", "Laravel");
                         startActivity(intent);
                         break;
                     case 9:
-                        intent.putExtra("booksItems","jQuery");
+                        intent.putExtra("booksItems", "jQuery");
                         startActivity(intent);
                         break;
                     /*

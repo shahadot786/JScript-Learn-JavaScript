@@ -1,7 +1,13 @@
 package com.javascript.jscript.Model;
 
 public class QuizListModel {
-    private String question,option1,option2,option3,option4,answer,userSelectedAnswer;
+    private final String question;
+    private final String option1;
+    private final String option2;
+    private final String option3;
+    private final String option4;
+    private final String answer;
+    private String userSelectedAnswer;
 
 
     public QuizListModel(String question, String option1, String option2, String option3, String option4, String answer, String userSelectedAnswer) {

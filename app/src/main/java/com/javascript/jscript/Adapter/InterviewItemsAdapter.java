@@ -41,9 +41,9 @@ public class InterviewItemsAdapter extends BaseAdapter {
     public View getView(int i, View view, ViewGroup viewGroup) {
         View gridView = view;
         LayoutInflater inflater;
-        if (view == null){
+        if (view == null) {
             inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-            gridView = inflater.inflate(R.layout.topics_items_grid_layout,null);
+            gridView = inflater.inflate(R.layout.topics_items_grid_layout, null);
         }
 
         TextView items = gridView.findViewById(R.id.programs_items);

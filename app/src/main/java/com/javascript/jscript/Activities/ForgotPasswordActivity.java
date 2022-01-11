@@ -10,7 +10,6 @@ import android.util.Patterns;
 import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
-import android.view.ViewGroup;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.EditText;
 import android.widget.TextView;
@@ -47,17 +46,17 @@ public class ForgotPasswordActivity extends AppCompatActivity {
         setContentView(binding.getRoot());
         //custom toast
         inflater = getLayoutInflater();
-        toastLayout = inflater.inflate(R.layout.custom_toast_layout,(ViewGroup) findViewById(R.id.toastLayout));
-        toastText = (TextView) toastLayout.findViewById(R.id.toastText);
+        toastLayout = inflater.inflate(R.layout.custom_toast_layout, findViewById(R.id.toastLayout));
+        toastText = toastLayout.findViewById(R.id.toastText);
         toast = new Toast(getApplicationContext());
-        toast.setGravity(Gravity.BOTTOM,0,100);
+        toast.setGravity(Gravity.BOTTOM, 0, 100);
         toast.setDuration(Toast.LENGTH_LONG);
         toast.setView(toastLayout);
         //firebase instance
         auth = FirebaseAuth.getInstance();
         //find id
         textInputLayoutEmail = findViewById(R.id.text_input_email);
-        emailReset = (EditText) findViewById(R.id.editTextEmail);
+        emailReset = findViewById(R.id.editTextEmail);
         binding.forgotPasswordBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

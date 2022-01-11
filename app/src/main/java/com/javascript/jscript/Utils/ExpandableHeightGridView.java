@@ -25,6 +25,10 @@ public class ExpandableHeightGridView extends GridView {
         return expanded;
     }
 
+    public void setExpanded(boolean expanded) {
+        this.expanded = expanded;
+    }
+
     @Override
     protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
 
@@ -38,10 +42,6 @@ public class ExpandableHeightGridView extends GridView {
             super.onMeasure(widthMeasureSpec, heightMeasureSpec);
         }
 
-    }
-
-    public void setExpanded(boolean expanded){
-        this.expanded = expanded;
     }
 
 

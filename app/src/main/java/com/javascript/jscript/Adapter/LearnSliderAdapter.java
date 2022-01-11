@@ -1,4 +1,5 @@
 package com.javascript.jscript.Adapter;
+
 import android.content.Context;
 import android.content.Intent;
 import android.view.LayoutInflater;
@@ -26,7 +27,7 @@ public class LearnSliderAdapter extends SliderViewAdapter<LearnSliderAdapter.Sli
 
     @Override
     public SliderViewHolder onCreateViewHolder(ViewGroup parent) {
-        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.slider_item,null);
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.slider_item, null);
         return new SliderViewHolder(view);
     }
 
@@ -36,22 +37,22 @@ public class LearnSliderAdapter extends SliderViewAdapter<LearnSliderAdapter.Sli
         viewHolder.textView.setText(slideText[position]);
 
 
-        if (UiConfig.PRO_VISIBILITY_STATUS_SHOW){
-            if (position == 0){
+        if (UiConfig.PRO_VISIBILITY_STATUS_SHOW) {
+            if (position == 0) {
                 viewHolder.itemView.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View view) {
                         Context context = view.getContext();
                         Intent intent;
-                        intent = new Intent(context,PremiumActivity.class);
+                        intent = new Intent(context, PremiumActivity.class);
                         intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                         context.startActivity(intent);
                     }
                 });
             }
 
-        }else {
-            if (position == 0){
+        } else {
+            if (position == 0) {
                 viewHolder.itemView.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View view) {
@@ -66,7 +67,7 @@ public class LearnSliderAdapter extends SliderViewAdapter<LearnSliderAdapter.Sli
 
         }
 
-        if (position ==1){
+        if (position == 1) {
             viewHolder.itemView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
@@ -127,10 +128,11 @@ public class LearnSliderAdapter extends SliderViewAdapter<LearnSliderAdapter.Sli
         return images.length;
     }
 
-    public class SliderViewHolder extends SliderViewAdapter.ViewHolder{
+    public class SliderViewHolder extends SliderViewAdapter.ViewHolder {
 
-        private ImageView imageView;
-        private TextView textView;
+        private final ImageView imageView;
+        private final TextView textView;
+
         public SliderViewHolder(View itemView) {
             super(itemView);
             imageView = itemView.findViewById(R.id.sliderImage);

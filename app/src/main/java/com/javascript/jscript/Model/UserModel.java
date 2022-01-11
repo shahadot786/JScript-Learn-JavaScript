@@ -1,7 +1,7 @@
 package com.javascript.jscript.Model;
 
 public class UserModel {
-    private String userName,email,password;
+    private String userName, email, password;
     private String coverPhoto;
     private String profile;
     private String userID;

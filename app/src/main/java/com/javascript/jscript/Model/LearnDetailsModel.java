@@ -1,7 +1,7 @@
 package com.javascript.jscript.Model;
 
 public class LearnDetailsModel {
-    private String title,details,codes,output;
+    private String title, details, codes, output;
 
     public LearnDetailsModel(String title, String details, String codes, String output) {
         this.title = title;

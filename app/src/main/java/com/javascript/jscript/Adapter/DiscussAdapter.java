@@ -19,7 +19,6 @@ import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
-import com.javascript.jscript.Activities.SplashActivity;
 import com.javascript.jscript.Discuss.DiscussDetailsActivity;
 import com.javascript.jscript.Model.DiscussModel;
 import com.javascript.jscript.Model.UserModel;
@@ -55,40 +54,40 @@ public class DiscussAdapter extends RecyclerView.Adapter<DiscussAdapter.viewHold
     public void onBindViewHolder(@NonNull viewHolder holder, int position) {
         DiscussModel model = list.get(position);
         String time = TimeAgo.using(model.getPostedAt());
-        String views = model.getPostViews()+"";
+        String views = model.getPostViews() + "";
         String comments = model.getCommentCount() + "";
         String shares = model.getShareCount() + "";
         holder.binding.time.setText(time);
         holder.binding.question.setText(model.getQuestions());
         //1K and 1M views logic
         int view = Integer.parseInt(views);
-        if (view >= 1000){
-            holder.binding.views.setText((view / 1000)+"."+((view % 1000)/100)+"K");
-        }else {
+        if (view >= 1000) {
+            holder.binding.views.setText((view / 1000) + "." + ((view % 1000) / 100) + "K");
+        } else {
             holder.binding.views.setText(views);
         }
-        if (view >= 1000000){
-            holder.binding.views.setText((view / 1000000)+"."+((view % 1000000)/10000)+"M");
+        if (view >= 1000000) {
+            holder.binding.views.setText((view / 1000000) + "." + ((view % 1000000) / 10000) + "M");
         }
         //1K and 1M comments logic
         int comment = Integer.parseInt(comments);
-        if (comment >= 1000){
-            holder.binding.comment.setText((comment / 1000)+"."+((comment % 1000)/100)+"K");
-        }else {
+        if (comment >= 1000) {
+            holder.binding.comment.setText((comment / 1000) + "." + ((comment % 1000) / 100) + "K");
+        } else {
             holder.binding.comment.setText(comments);
         }
-        if (comment >= 1000000){
-            holder.binding.comment.setText((comment / 1000000)+"."+((comment % 1000000)/10000)+"M");
+        if (comment >= 1000000) {
+            holder.binding.comment.setText((comment / 1000000) + "." + ((comment % 1000000) / 10000) + "M");
         }
         //1K and 1M shares logic
         int share = Integer.parseInt(shares);
-        if (share >= 1000){
-            holder.binding.share.setText((share / 1000)+"."+((share % 1000)/100)+"K");
-        }else {
+        if (share >= 1000) {
+            holder.binding.share.setText((share / 1000) + "." + ((share % 1000) / 100) + "K");
+        } else {
             holder.binding.share.setText(shares);
         }
-        if (share >= 1000000){
-            holder.binding.share.setText((share / 1000000)+"."+((share % 1000000)/10000)+"M");
+        if (share >= 1000000) {
+            holder.binding.share.setText((share / 1000000) + "." + ((share % 1000000) / 10000) + "M");
         }
 
         //fetch user name and profile
@@ -142,9 +141,9 @@ public class DiscussAdapter extends RecyclerView.Adapter<DiscussAdapter.viewHold
                                         .addListenerForSingleValueEvent(new ValueEventListener() {
                                             @Override
                                             public void onDataChange(@NonNull DataSnapshot snapshot) {
-                                                if (snapshot.exists()){
+                                                if (snapshot.exists()) {
                                                     holder.binding.views.setText(views);
-                                                }else {
+                                                } else {
                                                     FirebaseDatabase.getInstance().getReference()
                                                             .child("Discuss")
                                                             .child(model.getPostId())

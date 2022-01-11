@@ -8,7 +8,6 @@ import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.MenuItem;
 import android.view.View;
-import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -32,18 +31,17 @@ import com.javascript.jscript.databinding.ActivityFeedBackBinding;
 import com.squareup.picasso.Picasso;
 
 import java.util.Objects;
-import java.util.UUID;
 
 public class FeedBackActivity extends AppCompatActivity {
     ActivityFeedBackBinding binding;
     FirebaseAuth auth;
     FirebaseDatabase database;
-    private TextInputLayout sendInput;
-    private TextInputLayout emailInput;
     LayoutInflater inflater;
     TextView toastText;
     View toastLayout;
     Toast toast;
+    private TextInputLayout sendInput;
+    private TextInputLayout emailInput;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -52,10 +50,10 @@ public class FeedBackActivity extends AppCompatActivity {
         setContentView(binding.getRoot());
         //custom toast
         inflater = getLayoutInflater();
-        toastLayout = inflater.inflate(R.layout.custom_toast_layout,(ViewGroup) findViewById(R.id.toastLayout));
-        toastText = (TextView) toastLayout.findViewById(R.id.toastText);
+        toastLayout = inflater.inflate(R.layout.custom_toast_layout, findViewById(R.id.toastLayout));
+        toastText = toastLayout.findViewById(R.id.toastText);
         toast = new Toast(getApplicationContext());
-        toast.setGravity(Gravity.BOTTOM,0,100);
+        toast.setGravity(Gravity.BOTTOM, 0, 100);
         toast.setDuration(Toast.LENGTH_LONG);
         toast.setView(toastLayout);
         //find id

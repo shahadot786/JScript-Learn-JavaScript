@@ -10,7 +10,6 @@ import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.view.ViewGroup;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -28,7 +27,6 @@ import com.google.firebase.database.ValueEventListener;
 import com.javascript.jscript.Activities.CodesActivity;
 import com.javascript.jscript.Activities.EditProfileActivity;
 import com.javascript.jscript.Config.UiConfig;
-import com.javascript.jscript.Interview.InterviewAnswerActivity;
 import com.javascript.jscript.R;
 import com.javascript.jscript.databinding.ActivityProgramsCodeBinding;
 
@@ -40,13 +38,13 @@ import thereisnospon.codeview.CodeViewTheme;
 public class ProgramsCodeActivity extends AppCompatActivity {
     ActivityProgramsCodeBinding binding;
     CodeView codeView, outCodeView;
-    private AdView bannerAd;
     FirebaseDatabase database;
     FirebaseAuth auth;
     LayoutInflater inflater;
     TextView toastText;
     View toastLayout;
     Toast toast;
+    private AdView bannerAd;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -55,10 +53,10 @@ public class ProgramsCodeActivity extends AppCompatActivity {
         setContentView(binding.getRoot());
         //custom toast
         inflater = getLayoutInflater();
-        toastLayout = inflater.inflate(R.layout.custom_toast_layout,(ViewGroup) findViewById(R.id.toastLayout));
-        toastText = (TextView) toastLayout.findViewById(R.id.toastText);
+        toastLayout = inflater.inflate(R.layout.custom_toast_layout, findViewById(R.id.toastLayout));
+        toastText = toastLayout.findViewById(R.id.toastText);
         toast = new Toast(getApplicationContext());
-        toast.setGravity(Gravity.BOTTOM,0,100);
+        toast.setGravity(Gravity.BOTTOM, 0, 100);
         toast.setDuration(Toast.LENGTH_LONG);
         toast.setView(toastLayout);
         //firebase instance
@@ -179,6 +177,7 @@ public class ProgramsCodeActivity extends AppCompatActivity {
         outCodeView.showCode(output);
 
     }
+
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.menu_codes, menu);
@@ -195,12 +194,12 @@ public class ProgramsCodeActivity extends AppCompatActivity {
                     connectivityManager.getNetworkInfo(ConnectivityManager.TYPE_WIFI).getState() == NetworkInfo.State.CONNECTED) {
                 //we are connected to a network
                 startActivity(new Intent(ProgramsCodeActivity.this, CodesActivity.class));
-            }else {
+            } else {
                 toastText.setText(R.string.no_connection_text);
                 toast.show();
             }
 
-        }else {
+        } else {
             finish();
         }
         return super.onOptionsItemSelected(item);

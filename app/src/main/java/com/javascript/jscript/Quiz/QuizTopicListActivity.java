@@ -1,8 +1,5 @@
 package com.javascript.jscript.Quiz;
 
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
@@ -13,6 +10,10 @@ import android.widget.AdapterView;
 import android.widget.BaseAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
+
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
+
 import com.javascript.jscript.R;
 import com.javascript.jscript.Utils.AdNetwork;
 import com.javascript.jscript.databinding.ActivityQuizTopicListBinding;
@@ -20,10 +21,10 @@ import com.javascript.jscript.databinding.ActivityQuizTopicListBinding;
 import java.util.Objects;
 
 public class QuizTopicListActivity extends AppCompatActivity {
-    private AdNetwork adNetwork;
     ActivityQuizTopicListBinding binding;
     ListView quizList;
     String[] list = {};
+    private AdNetwork adNetwork;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -47,7 +48,7 @@ public class QuizTopicListActivity extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                 Intent intent = new Intent(QuizTopicListActivity.this, QuizDetailsActivity.class);
-                intent.putExtra("question",list[i]);
+                intent.putExtra("question", list[i]);
                 startActivity(intent);
                 adNetwork.showInterstitialAd();
             }
@@ -55,8 +56,9 @@ public class QuizTopicListActivity extends AppCompatActivity {
 
 
     }
+
     private void loadItems() {
-        final String basic[] = {
+        final String[] basic = {
                 "Quiz",
                 "Quiz 1",
                 "Quiz 2",
@@ -68,7 +70,7 @@ public class QuizTopicListActivity extends AppCompatActivity {
 
         };
 
-        final String advanced[] = {
+        final String[] advanced = {
                 "Quiz Advanced",
                 "Quiz Advanced 1",
                 "Quiz Advanced 2",
@@ -79,7 +81,7 @@ public class QuizTopicListActivity extends AppCompatActivity {
                 "Quiz Advanced 7"
         };
 
-        final String expert[] = {
+        final String[] expert = {
                 "Quiz Expert",
                 "Quiz Expert 1",
                 "Quiz Expert 2",
@@ -90,7 +92,7 @@ public class QuizTopicListActivity extends AppCompatActivity {
                 "Quiz Expert 7"
         };
 
-        final String angular[] = {
+        final String[] angular = {
                 "Quiz Angular",
                 "Quiz Angular 1",
                 "Quiz Angular 2",
@@ -102,7 +104,7 @@ public class QuizTopicListActivity extends AppCompatActivity {
         };
 
         String quizItems = getIntent().getStringExtra("quizItems");
-        switch (quizItems){
+        switch (quizItems) {
             case "Basic":
                 list = basic;
                 break;
@@ -116,6 +118,13 @@ public class QuizTopicListActivity extends AppCompatActivity {
                 list = angular;
                 break;
         }
+    }
+
+    //option menu item select
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        finish();
+        return super.onOptionsItemSelected(item);
     }
 
     class CustomAdapter extends BaseAdapter {
@@ -139,18 +148,11 @@ public class QuizTopicListActivity extends AppCompatActivity {
         @Override
         public View getView(int i, View view, ViewGroup viewGroup) {
 
-            view = getLayoutInflater().inflate(R.layout.programs_list_items_layout,null);
+            view = getLayoutInflater().inflate(R.layout.programs_list_items_layout, null);
             TextView textView = view.findViewById(R.id.itemsTitle);
             textView.setText(list[i]);
 
             return view;
         }
-    }
-
-    //option menu item select
-    @Override
-    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
-        finish();
-        return super.onOptionsItemSelected(item);
     }
 }

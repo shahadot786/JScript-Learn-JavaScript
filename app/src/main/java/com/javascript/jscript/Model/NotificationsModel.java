@@ -2,14 +2,14 @@ package com.javascript.jscript.Model;
 
 public class NotificationsModel {
 
-private String notificationBy;
-private long notificationAt;
-private String type;
-private String postId;
-private String notificationId;
-private String postedBy;
-private String question;
-private boolean checkOpen;
+    private String notificationBy;
+    private long notificationAt;
+    private String type;
+    private String postId;
+    private String notificationId;
+    private String postedBy;
+    private String question;
+    private boolean checkOpen;
 
     public NotificationsModel() {
     }

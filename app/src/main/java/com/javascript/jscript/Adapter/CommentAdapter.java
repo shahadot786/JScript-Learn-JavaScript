@@ -2,7 +2,6 @@ package com.javascript.jscript.Adapter;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
-import android.text.Html;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -18,7 +17,6 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 import com.javascript.jscript.Model.CommentModel;
-import com.javascript.jscript.Model.NotificationsModel;
 import com.javascript.jscript.Model.UserModel;
 import com.javascript.jscript.R;
 import com.javascript.jscript.databinding.CommentsRvSampleBinding;
@@ -53,19 +51,18 @@ public class CommentAdapter extends RecyclerView.Adapter<CommentAdapter.viewHold
         holder.binding.commentedText.setText(comment.getCommentBody());
         holder.binding.time.setText(time);
         //if likes are empty
-        if (commentLikes.equals("0")){
+        if (commentLikes.equals("0")) {
             holder.binding.likesCount.setText("");
-        }
-        else {
+        } else {
             //1K and 1M views logic
             int Likes = Integer.parseInt(commentLikes);
-            if (Likes >= 1000){
-                holder.binding.likesCount.setText((Likes / 1000)+"."+((Likes % 1000)/100));
-            }else {
+            if (Likes >= 1000) {
+                holder.binding.likesCount.setText((Likes / 1000) + "." + ((Likes % 1000) / 100));
+            } else {
                 holder.binding.likesCount.setText(commentLikes);
             }
-            if (Likes >= 1000000){
-                holder.binding.likesCount.setText((Likes / 1000000)+"."+((Likes % 1000000)/10000));
+            if (Likes >= 1000000) {
+                holder.binding.likesCount.setText((Likes / 1000000) + "." + ((Likes % 1000000) / 10000));
             }
         }
         //get user data

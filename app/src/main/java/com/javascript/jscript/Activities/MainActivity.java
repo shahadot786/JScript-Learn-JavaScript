@@ -20,7 +20,6 @@ import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.view.ViewGroup;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -59,15 +58,15 @@ import me.ibrahimsn.lib.OnItemSelectedListener;
 
 public class MainActivity extends AppCompatActivity {
 
-    private long exitTime = 0;
     ActivityMainBinding binding;
-    private AdView bannerAd;
     LayoutInflater inflater;
     TextView toastText;
     View toastLayout;
     Toast toast;
     FirebaseAuth auth;
     FirebaseDatabase database;
+    private long exitTime = 0;
+    private AdView bannerAd;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -77,8 +76,8 @@ public class MainActivity extends AppCompatActivity {
         setContentView(binding.getRoot());
         //custom toast
         inflater = getLayoutInflater();
-        toastLayout = inflater.inflate(R.layout.custom_toast_layout, (ViewGroup) findViewById(R.id.toastLayout));
-        toastText = (TextView) toastLayout.findViewById(R.id.toastText);
+        toastLayout = inflater.inflate(R.layout.custom_toast_layout, findViewById(R.id.toastLayout));
+        toastText = toastLayout.findViewById(R.id.toastText);
         toast = new Toast(getApplicationContext());
         toast.setGravity(Gravity.BOTTOM, 0, 100);
         toast.setDuration(Toast.LENGTH_LONG);
@@ -223,7 +222,7 @@ public class MainActivity extends AppCompatActivity {
                                                             PendingIntent pendingIntent = PendingIntent.getActivity(context, 0, intent, 0);
                                                             //notification builder
                                                             NotificationCompat.Builder commentBuilder = new NotificationCompat.Builder(context, "JScript Notifications");
-                                                            commentBuilder.setContentTitle("Hi! "+postedByUserName +" \uD83D\uDC9A");
+                                                            commentBuilder.setContentTitle("Hi! " + postedByUserName + " \uD83D\uDC9A");
                                                             commentBuilder.setSmallIcon(R.drawable.jscript_notifications);
                                                             commentBuilder.setLargeIcon(largeIcon);
                                                             commentBuilder.setAutoCancel(true);

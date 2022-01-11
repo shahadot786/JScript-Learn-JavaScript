@@ -28,7 +28,7 @@ public class BasicProgramsCodes {
             "// call the function\n" +
             "guessNumber();";
 
-    public static final String basic1 ="// program to find the sum of natural numbers using recursion\n" +
+    public static final String basic1 = "// program to find the sum of natural numbers using recursion\n" +
             "\n" +
             "function sum(num) {\n" +
             "    if(num > 0) {\n" +
@@ -46,7 +46,7 @@ public class BasicProgramsCodes {
             "\n" +
             "// display the result\n" +
             "console.log(`The sum is ${result}`);";
-    public static final String basic2 ="// program to shuffle the deck of cards\n" +
+    public static final String basic2 = "// program to shuffle the deck of cards\n" +
             "\n" +
             "// declare card elements\n" +
             "const suits = [\"Spades\", \"Diamonds\", \"Club\", \"Heart\"];\n" +
@@ -91,7 +91,7 @@ public class BasicProgramsCodes {
             "for (let i = 0; i < 5; i++) {\n" +
             "    console.log(`${deck[i].Value} of ${deck[i].Suit}`)\n" +
             "}";
-    public static final String advanced ="// program to create JavaScript object using object literal\n" +
+    public static final String advanced = "// program to create JavaScript object using object literal\n" +
             "const person = { \n" +
             "    name: 'John',\n" +
             "    age: 20,\n" +
@@ -112,7 +112,7 @@ public class BasicProgramsCodes {
             "console.log(person.hobbies[0]);\n" +
             "person.greet();\n" +
             "console.log(person.score.maths);";
-    public static final String advanced2 ="// program to count the number of vowels in a string\n" +
+    public static final String advanced2 = "// program to count the number of vowels in a string\n" +
             "\n" +
             "function countVowel(str) { \n" +
             "\n" +
@@ -129,7 +129,7 @@ public class BasicProgramsCodes {
             "const result = countVowel(string);\n" +
             "\n" +
             "console.log(result);";
-    public static final String expert ="// program to remove a property from an object\n" +
+    public static final String expert = "// program to remove a property from an object\n" +
             "\n" +
             "// creating an object\n" +
             "const student = { \n" +
@@ -152,14 +152,13 @@ public class BasicProgramsCodes {
             "console.log(student);";
 
 
-
     //basic programs outputs
 
-    public static final String basicOutput1 ="" +
+    public static final String basicOutput1 = "" +
             "Enter the number: 9 \n" +
             "The square root of 9 is 3";
 
-    public static final String basicOutput2 ="" +
+    public static final String basicOutput2 = "" +
             "The square root of 2.25 is 1.5\\n\" +\n" +
             "            \"    The square root of -4 is NaN\\n\" +\n" +
             "            \"    The square root of hello is NaNThe square root of 2.25 is 1.5\\n\" +\n" +
@@ -176,8 +175,7 @@ public class BasicProgramsCodes {
             "            \"    The square root of -4 is NaN\\n\" +\n" +
             "            \"    The square root of hello is NaNThe square root of 2.25 is 1.5\\n\" +\n" +
             "            \"    The square root of -4 is NaN\\n\" +\n" +
-            "            \"    The square root of hello is NaN"
-            ;
+            "            \"    The square root of hello is NaN";
 
 
 }

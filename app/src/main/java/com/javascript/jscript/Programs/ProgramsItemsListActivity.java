@@ -1,8 +1,5 @@
 package com.javascript.jscript.Programs;
 
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
@@ -13,6 +10,10 @@ import android.widget.AdapterView;
 import android.widget.BaseAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
+
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
+
 import com.javascript.jscript.R;
 import com.javascript.jscript.Utils.AdNetwork;
 import com.javascript.jscript.databinding.ActivityProgramsItemsListBinding;
@@ -20,10 +21,10 @@ import com.javascript.jscript.databinding.ActivityProgramsItemsListBinding;
 import java.util.Objects;
 
 public class ProgramsItemsListActivity extends AppCompatActivity {
-    private AdNetwork adNetwork;
     ListView programs;
     String[] list = {};
     ActivityProgramsItemsListBinding binding;
+    private AdNetwork adNetwork;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -44,9 +45,9 @@ public class ProgramsItemsListActivity extends AppCompatActivity {
         programs.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                Intent intent = new Intent(ProgramsItemsListActivity.this,ProgramsCodeActivity.class);
-                intent.putExtra("position",list[i]);
-                intent.putExtra("output",list[i]);
+                Intent intent = new Intent(ProgramsItemsListActivity.this, ProgramsCodeActivity.class);
+                intent.putExtra("position", list[i]);
+                intent.putExtra("output", list[i]);
                 startActivity(intent);
                 adNetwork.showInterstitialAd();
             }
@@ -54,6 +55,7 @@ public class ProgramsItemsListActivity extends AppCompatActivity {
 
 
     }
+
     private void loadItems() {
         final String[] basic = {
                 "Basic",
@@ -126,7 +128,7 @@ public class ProgramsItemsListActivity extends AppCompatActivity {
         };
 
         String programsItems = getIntent().getStringExtra("programsItems");
-        switch (programsItems){
+        switch (programsItems) {
             case "Basic":
                 list = basic;
                 break;
@@ -142,7 +144,14 @@ public class ProgramsItemsListActivity extends AppCompatActivity {
         }
     }
 
-    class CustomAdapter extends BaseAdapter{
+    //option menu item select
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        finish();
+        return super.onOptionsItemSelected(item);
+    }
+
+    class CustomAdapter extends BaseAdapter {
 
         @Override
         public int getCount() {
@@ -163,19 +172,12 @@ public class ProgramsItemsListActivity extends AppCompatActivity {
         @Override
         public View getView(int i, View view, ViewGroup viewGroup) {
 
-            view = getLayoutInflater().inflate(R.layout.programs_list_items_layout,null);
+            view = getLayoutInflater().inflate(R.layout.programs_list_items_layout, null);
             TextView textView = view.findViewById(R.id.itemsTitle);
             textView.setText(list[i]);
 
             return view;
         }
-    }
-
-    //option menu item select
-    @Override
-    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
-        finish();
-        return super.onOptionsItemSelected(item);
     }
 
 }

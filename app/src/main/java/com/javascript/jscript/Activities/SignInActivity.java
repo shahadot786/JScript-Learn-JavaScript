@@ -12,7 +12,6 @@ import android.util.Patterns;
 import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
-import android.view.ViewGroup;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -49,8 +48,6 @@ public class SignInActivity extends AppCompatActivity {
 
     //binding
     ActivitySignInBinding binding;
-    private TextInputLayout textInputEmail;
-    private TextInputLayout textInputPassword;
     //Firebase Code
     FirebaseAuth auth;
     FirebaseUser currentUser;
@@ -59,6 +56,8 @@ public class SignInActivity extends AppCompatActivity {
     TextView toastText;
     View toastLayout;
     Toast toast;
+    private TextInputLayout textInputEmail;
+    private TextInputLayout textInputPassword;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -68,10 +67,10 @@ public class SignInActivity extends AppCompatActivity {
         setContentView(binding.getRoot());
         //custom toast
         inflater = getLayoutInflater();
-        toastLayout = inflater.inflate(R.layout.custom_toast_layout,(ViewGroup) findViewById(R.id.toastLayout));
-        toastText = (TextView) toastLayout.findViewById(R.id.toastText);
+        toastLayout = inflater.inflate(R.layout.custom_toast_layout, findViewById(R.id.toastLayout));
+        toastText = toastLayout.findViewById(R.id.toastText);
         toast = new Toast(getApplicationContext());
-        toast.setGravity(Gravity.BOTTOM,0,150);
+        toast.setGravity(Gravity.BOTTOM, 0, 150);
         toast.setDuration(Toast.LENGTH_LONG);
         toast.setView(toastLayout);
         //dialog
@@ -110,7 +109,7 @@ public class SignInActivity extends AppCompatActivity {
         binding.forgotPassword.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(SignInActivity.this,ForgotPasswordActivity.class));
+                startActivity(new Intent(SignInActivity.this, ForgotPasswordActivity.class));
             }
         });
         //Data Policy OnClickListener

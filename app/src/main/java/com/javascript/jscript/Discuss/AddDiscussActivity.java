@@ -9,7 +9,6 @@ import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.MenuItem;
 import android.view.View;
-import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -54,10 +53,10 @@ public class AddDiscussActivity extends AppCompatActivity {
         setContentView(binding.getRoot());
         //custom toast
         inflater = getLayoutInflater();
-        toastLayout = inflater.inflate(R.layout.custom_toast_layout,(ViewGroup) findViewById(R.id.toastLayout));
-        toastText = (TextView) toastLayout.findViewById(R.id.toastText);
+        toastLayout = inflater.inflate(R.layout.custom_toast_layout, findViewById(R.id.toastLayout));
+        toastText = toastLayout.findViewById(R.id.toastText);
         toast = new Toast(getApplicationContext());
-        toast.setGravity(Gravity.BOTTOM,0,100);
+        toast.setGravity(Gravity.BOTTOM, 0, 100);
         toast.setDuration(Toast.LENGTH_LONG);
         toast.setView(toastLayout);
         //progress dialog
@@ -134,7 +133,7 @@ public class AddDiscussActivity extends AppCompatActivity {
                                 dialog.dismiss();
                                 toastText.setText(R.string.PostedSuccessfully);
                                 toast.show();
-                                Intent intent = new Intent(AddDiscussActivity.this,DiscussFragment.class);
+                                Intent intent = new Intent(AddDiscussActivity.this, DiscussFragment.class);
                                 intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                                 finish();
                             }

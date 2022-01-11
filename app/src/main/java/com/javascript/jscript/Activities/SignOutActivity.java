@@ -1,12 +1,12 @@
 package com.javascript.jscript.Activities;
 
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
+
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
@@ -28,6 +28,7 @@ public class SignOutActivity extends AppCompatActivity {
     FirebaseAuth auth;
     FirebaseDatabase database;
     private AdView mRecAd;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -48,7 +49,7 @@ public class SignOutActivity extends AppCompatActivity {
                 .addListenerForSingleValueEvent(new ValueEventListener() {
                     @Override
                     public void onDataChange(@NonNull DataSnapshot snapshot) {
-                        if (snapshot.exists()){
+                        if (snapshot.exists()) {
                             UserModel user = snapshot.getValue(UserModel.class);
                             assert user != null;
                             Picasso.get()
@@ -81,20 +82,21 @@ public class SignOutActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 auth.signOut();
-                Intent intent = new Intent(SignOutActivity.this,SignInActivity.class);
+                Intent intent = new Intent(SignOutActivity.this, SignInActivity.class);
                 startActivity(intent);
             }
         });
 
         //ads disabled code
-        if (UiConfig.BANNER_AD_VISIBILITY){
+        if (UiConfig.BANNER_AD_VISIBILITY) {
             mRecAd.setVisibility(View.VISIBLE);
-        }else {
+        } else {
             mRecAd.setVisibility(View.GONE);
         }
 
 
     }
+
     //option menu item select
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {

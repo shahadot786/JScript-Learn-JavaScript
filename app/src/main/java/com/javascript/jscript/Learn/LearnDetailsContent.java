@@ -17819,8 +17819,9 @@ public class LearnDetailsContent {
         list.add(l8);
         return list;
     }
+
     //Bootstrap Code
-    private static List<LearnDetailsModel> BootstrapCode(){
+    private static List<LearnDetailsModel> BootstrapCode() {
         final List<LearnDetailsModel> list = new ArrayList<>();
         final LearnDetailsModel l1 = new LearnDetailsModel(
                 "Bootstrap Code",
@@ -17845,8 +17846,9 @@ public class LearnDetailsContent {
         list.add(l1);
         return list;
     }
+
     //Bootstrap Tables
-    private static List<LearnDetailsModel> BootstrapTables(){
+    private static List<LearnDetailsModel> BootstrapTables() {
         final List<LearnDetailsModel> list = new ArrayList<>();
         final LearnDetailsModel l1 = new LearnDetailsModel(
                 "Bootstrap Tables",
@@ -18169,8 +18171,9 @@ public class LearnDetailsContent {
         list.add(l8);
         return list;
     }
+
     //Bootstrap Forms
-    private static List<LearnDetailsModel> BootstrapForms(){
+    private static List<LearnDetailsModel> BootstrapForms() {
         final List<LearnDetailsModel> list = new ArrayList<>();
         final LearnDetailsModel l1 = new LearnDetailsModel(
                 "Form Layout",
@@ -18407,7 +18410,8 @@ public class LearnDetailsContent {
                         "\t\n" +
                         "</form>",
                 ""
-        );final LearnDetailsModel l9 = new LearnDetailsModel(
+        );
+        final LearnDetailsModel l9 = new LearnDetailsModel(
                 "Static Control",
                 "Use the class .form-control-static on a <p>, when you need to place plain text next to a form label within a horizontal form.",
                 "<form class = \"form-horizontal\" role = \"form\">\n" +
@@ -18430,7 +18434,8 @@ public class LearnDetailsContent {
                         "   </div>\n" +
                         "</form>",
                 ""
-        );final LearnDetailsModel l10 = new LearnDetailsModel(
+        );
+        final LearnDetailsModel l10 = new LearnDetailsModel(
                 "Form Control States",
                 "In addition to the :focus (i.e., a user clicks into the input or tabs onto it) state, Bootstrap offers styling for disabled inputs and classes for form validation.\n" +
                         "\n" +
@@ -18514,7 +18519,8 @@ public class LearnDetailsContent {
                         "   </div>\n" +
                         "</form>",
                 ""
-        );final LearnDetailsModel l11 = new LearnDetailsModel(
+        );
+        final LearnDetailsModel l11 = new LearnDetailsModel(
                 "Form Control Sizing",
                 "You can set heights and widths of forms using classes like .input-lg and .col-lg-* respectively. The following example demonstrates this −",
                 "<form role = \"form\">\n" +
@@ -18567,7 +18573,8 @@ public class LearnDetailsContent {
                         "   </div>\n" +
                         "</form>",
                 ""
-        );final LearnDetailsModel l12 = new LearnDetailsModel(
+        );
+        final LearnDetailsModel l12 = new LearnDetailsModel(
                 "Help Text",
                 "Bootstrap form controls can have a block level help text that flows with the inputs. To add a full width block of content, use the .help-block after the <input>. The following example demonstrates this −",
                 "<form role = \"form\">\n" +
@@ -18597,8 +18604,9 @@ public class LearnDetailsContent {
 
         return list;
     }
+
     //Bootstrap Buttons
-    private static List<LearnDetailsModel> BootstrapButtons(){
+    private static List<LearnDetailsModel> BootstrapButtons() {
         final List<LearnDetailsModel> list = new ArrayList<>();
         final LearnDetailsModel l1 = new LearnDetailsModel(
                 "Bootstrap Buttons",
@@ -18829,8 +18837,9 @@ public class LearnDetailsContent {
         list.add(l5);
         return list;
     }
+
     //Bootstrap Images
-    private static List<LearnDetailsModel> BootstrapImages(){
+    private static List<LearnDetailsModel> BootstrapImages() {
         final List<LearnDetailsModel> list = new ArrayList<>();
         final LearnDetailsModel l1 = new LearnDetailsModel(
                 "Bootstrap Images",
@@ -18851,8 +18860,9 @@ public class LearnDetailsContent {
         list.add(l1);
         return list;
     }
+
     //Bootstrap Helper Classes
-    private static List<LearnDetailsModel> BootstrapHelperClasses(){
+    private static List<LearnDetailsModel> BootstrapHelperClasses() {
         final List<LearnDetailsModel> list = new ArrayList<>();
         final LearnDetailsModel l1 = new LearnDetailsModel(
                 "Close icon",
@@ -18920,7 +18930,8 @@ public class LearnDetailsContent {
                         "   \n" +
                         "</div>",
                 ""
-        );final LearnDetailsModel l7 = new LearnDetailsModel(
+        );
+        final LearnDetailsModel l7 = new LearnDetailsModel(
                 "Screen Reader Content",
                 "You can hide an element to all devices except screen readers with the class .sr-only.",
                 "<div class = \"row\" style = \"padding: 91px 100px 19px 50px;\">\n" +
@@ -18949,8 +18960,9 @@ public class LearnDetailsContent {
         list.add(l7);
         return list;
     }
+
     //Bootstrap Responsive Utilities
-    private static List<LearnDetailsModel> BootstrapResponsiveUtilities(){
+    private static List<LearnDetailsModel> BootstrapResponsiveUtilities() {
         final List<LearnDetailsModel> list = new ArrayList<>();
         final LearnDetailsModel l1 = new LearnDetailsModel(
                 "Responsive utilities",
@@ -19023,9 +19035,10 @@ public class LearnDetailsContent {
         list.add(l3);
         return list;
     }
+
     //NodeJs
     //NodeJs Introduction
-    private static List<LearnDetailsModel> NodeJsIntroduction(){
+    private static List<LearnDetailsModel> NodeJsIntroduction() {
         final List<LearnDetailsModel> list = new ArrayList<>();
         final LearnDetailsModel l1 = new LearnDetailsModel(
                 "What is Node.js?",
@@ -19105,8 +19118,9 @@ public class LearnDetailsContent {
         list.add(l7);
         return list;
     }
+
     //NodeJs First Application
-    private static List<LearnDetailsModel> NodeJsFirstApplication(){
+    private static List<LearnDetailsModel> NodeJsFirstApplication() {
         final List<LearnDetailsModel> list = new ArrayList<>();
         final LearnDetailsModel l1 = new LearnDetailsModel(
                 "First Application",
@@ -19176,8 +19190,9 @@ public class LearnDetailsContent {
         list.add(l5);
         return list;
     }
+
     //NodeJs REPL Terminal
-    private static List<LearnDetailsModel> NodeJsREPLTerminal(){
+    private static List<LearnDetailsModel> NodeJsREPLTerminal() {
         final List<LearnDetailsModel> list = new ArrayList<>();
         final LearnDetailsModel l1 = new LearnDetailsModel(
                 "REPL Terminal",
@@ -19275,7 +19290,8 @@ public class LearnDetailsContent {
                         "undefined\n" +
                         ">",
                 ""
-        );final LearnDetailsModel l8 = new LearnDetailsModel(
+        );
+        final LearnDetailsModel l8 = new LearnDetailsModel(
                 "REPL Commands",
                 "ctrl + c − terminate the current command.\n" +
                         "\n" +
@@ -19298,7 +19314,8 @@ public class LearnDetailsContent {
                         ".load filename − load file content in current Node REPL session.",
                 "",
                 ""
-        );final LearnDetailsModel l9 = new LearnDetailsModel(
+        );
+        final LearnDetailsModel l9 = new LearnDetailsModel(
                 "Stopping REPL",
                 "As mentioned above, you will need to use ctrl-c twice to come out of Node.js REPL.",
                 "$ node\n" +
@@ -19318,8 +19335,9 @@ public class LearnDetailsContent {
         list.add(l9);
         return list;
     }
+
     //NodeJs NPM
-    private static List<LearnDetailsModel> NodeJsNPM(){
+    private static List<LearnDetailsModel> NodeJsNPM() {
         final List<LearnDetailsModel> list = new ArrayList<>();
         final LearnDetailsModel l1 = new LearnDetailsModel(
                 "What is NodeJs NPM?",
@@ -19609,7 +19627,8 @@ public class LearnDetailsContent {
                 "Search a package name using NPM.",
                 "$ npm search express",
                 ""
-        );final LearnDetailsModel l9 = new LearnDetailsModel(
+        );
+        final LearnDetailsModel l9 = new LearnDetailsModel(
                 "Create a Module",
                 "Creating a module requires package.json to be generated. Let's generate package.json using NPM, which will generate the basic skeleton of the package.json.",
                 "$ npm init\n" +
@@ -19639,8 +19658,9 @@ public class LearnDetailsContent {
 
         return list;
     }
+
     //NodeJs Callbacks Concept
-    private static List<LearnDetailsModel> NodeJsCallbacksConcept(){
+    private static List<LearnDetailsModel> NodeJsCallbacksConcept() {
         final List<LearnDetailsModel> list = new ArrayList<>();
         final LearnDetailsModel l1 = new LearnDetailsModel(
                 "What is Callback?",
@@ -19694,8 +19714,9 @@ public class LearnDetailsContent {
         list.add(l3);
         return list;
     }
+
     //NodeJs Event Loop
-    private static List<LearnDetailsModel> NodeJsEventLoop(){
+    private static List<LearnDetailsModel> NodeJsEventLoop() {
         final List<LearnDetailsModel> list = new ArrayList<>();
         final LearnDetailsModel l1 = new LearnDetailsModel(
                 "Event Loop",
@@ -19782,8 +19803,9 @@ public class LearnDetailsContent {
         list.add(l4);
         return list;
     }
+
     //NodeJs Event Emitter
-    private static List<LearnDetailsModel> NodeJsEventEmitter(){
+    private static List<LearnDetailsModel> NodeJsEventEmitter() {
         final List<LearnDetailsModel> list = new ArrayList<>();
         final LearnDetailsModel l1 = new LearnDetailsModel(
                 "Event Emitter ",
@@ -19868,7 +19890,8 @@ public class LearnDetailsContent {
                         "This event is emitted any time someone removes a listener. When this event is triggered, the listener may not yet have been removed from the array of listeners for the event.",
                 "",
                 ""
-        );final LearnDetailsModel l6 = new LearnDetailsModel(
+        );
+        final LearnDetailsModel l6 = new LearnDetailsModel(
                 "Example",
                 "Create a js file named main.js with the following Node.js code −" +
                         "\n\n" +
@@ -19922,8 +19945,9 @@ public class LearnDetailsContent {
         list.add(l6);
         return list;
     }
+
     //NodeJs Buffers
-    private static List<LearnDetailsModel> NodeJsBuffers(){
+    private static List<LearnDetailsModel> NodeJsBuffers() {
         final List<LearnDetailsModel> list = new ArrayList<>();
         final LearnDetailsModel l1 = new LearnDetailsModel(
                 "NodeJs Buffers",
@@ -20075,7 +20099,8 @@ public class LearnDetailsContent {
                         "totalLength − This is the total length of the buffers when concatenated.",
                 "",
                 ""
-        );final LearnDetailsModel l13 = new LearnDetailsModel(
+        );
+        final LearnDetailsModel l13 = new LearnDetailsModel(
                 "Return Value",
                 "This method returns a Buffer instance.",
                 "var buffer1 = new Buffer('SHR Creation ');\n" +
@@ -20084,13 +20109,15 @@ public class LearnDetailsContent {
                         "\n" +
                         "console.log(\"buffer3 content: \" + buffer3.toString());",
                 "buffer3 content: SHR Creation Simply Easy Learning"
-        );final LearnDetailsModel l14 = new LearnDetailsModel(
+        );
+        final LearnDetailsModel l14 = new LearnDetailsModel(
                 "Compare Buffers",
                 "Syntax\n" +
                         "Following is the syntax of the method to compare two Node buffers −",
                 "buf.compare(otherBuffer);",
                 ""
-        );final LearnDetailsModel l15 = new LearnDetailsModel(
+        );
+        final LearnDetailsModel l15 = new LearnDetailsModel(
                 "Parameters",
                 "Here is the description of the parameters used −\n" +
                         "\n" +
@@ -20110,13 +20137,15 @@ public class LearnDetailsContent {
                         "   console.log(buffer1 +\" comes after \" + buffer2);\n" +
                         "}",
                 "ABC comes before ABCD"
-        );final LearnDetailsModel l16 = new LearnDetailsModel(
+        );
+        final LearnDetailsModel l16 = new LearnDetailsModel(
                 "Copy Buffer",
                 "Syntax\n" +
                         "Following is the syntax of the method to copy a node buffer −",
                 "buf.copy(targetBuffer[, targetStart][, sourceStart][, sourceEnd])",
                 ""
-        );final LearnDetailsModel l17 = new LearnDetailsModel(
+        );
+        final LearnDetailsModel l17 = new LearnDetailsModel(
                 "Parameters",
                 "Here is the description of the parameters used −\n" +
                         "\n" +
@@ -20137,13 +20166,15 @@ public class LearnDetailsContent {
                         "buffer1.copy(buffer2);\n" +
                         "console.log(\"buffer2 content: \" + buffer2.toString());",
                 "buffer2 content: ABC"
-        );final LearnDetailsModel l18 = new LearnDetailsModel(
+        );
+        final LearnDetailsModel l18 = new LearnDetailsModel(
                 "Slice Buffer",
                 "Syntax\n" +
                         "Following is the syntax of the method to get a sub-buffer of a node buffer −",
                 "buf.slice([start][, end])",
                 ""
-        );final LearnDetailsModel l19 = new LearnDetailsModel(
+        );
+        final LearnDetailsModel l19 = new LearnDetailsModel(
                 "Parameters",
                 "Here is the description of the parameters used −\n" +
                         "\n" +
@@ -20159,7 +20190,8 @@ public class LearnDetailsContent {
                         "var buffer2 = buffer1.slice(0,9);\n" +
                         "console.log(\"buffer2 content: \" + buffer2.toString());",
                 "buffer2 content: SHR Creat"
-        );final LearnDetailsModel l20 = new LearnDetailsModel(
+        );
+        final LearnDetailsModel l20 = new LearnDetailsModel(
                 "Buffer Length",
                 "Syntax\n" +
                         "Following is the syntax of the method to get a size of a node buffer in bytes −\n" +
@@ -20172,7 +20204,8 @@ public class LearnDetailsContent {
                         "//length of the buffer\n" +
                         "console.log(\"buffer length: \" + buffer.length);",
                 "buffer length: 14"
-        );final LearnDetailsModel l21 = new LearnDetailsModel(
+        );
+        final LearnDetailsModel l21 = new LearnDetailsModel(
                 "Class Methods",
                 "1. Buffer.isEncoding(encoding)\n" +
                         "\n" +
@@ -20221,8 +20254,9 @@ public class LearnDetailsContent {
 
         return list;
     }
+
     //NodeJs Streams
-    private static List<LearnDetailsModel> NodeJsStreams(){
+    private static List<LearnDetailsModel> NodeJsStreams() {
         final List<LearnDetailsModel> list = new ArrayList<>();
         final LearnDetailsModel l1 = new LearnDetailsModel(
                 "What are Streams?",
@@ -20371,8 +20405,9 @@ public class LearnDetailsContent {
         list.add(l5);
         return list;
     }
+
     //NodeJs File System
-    private static List<LearnDetailsModel> NodeJsFileSystem(){
+    private static List<LearnDetailsModel> NodeJsFileSystem() {
         final List<LearnDetailsModel> list = new ArrayList<>();
         final LearnDetailsModel l1 = new LearnDetailsModel(
                 "File System",
@@ -20764,7 +20799,8 @@ public class LearnDetailsContent {
                         "to teach the world in simple and easy way!!!!!\n" +
                         "\n" +
                         "File closed successfully."
-        );final LearnDetailsModel l13 = new LearnDetailsModel(
+        );
+        final LearnDetailsModel l13 = new LearnDetailsModel(
                 "Truncate a File",
                 "Syntax\n" +
                         "Following is the syntax of the method to truncate an opened file −\n" +
@@ -20831,7 +20867,8 @@ public class LearnDetailsContent {
                         "Going to read the same file\n" +
                         "Tutorials \n" +
                         "File closed successfully."
-        );final LearnDetailsModel l14 = new LearnDetailsModel(
+        );
+        final LearnDetailsModel l14 = new LearnDetailsModel(
                 "Delete a File",
                 "Syntax\n" +
                         "Following is the syntax of the method to delete a file −\n" +
@@ -20861,7 +20898,8 @@ public class LearnDetailsContent {
                         "});",
                 "Going to delete an existing file\n" +
                         "File deleted successfully!"
-        );final LearnDetailsModel l15 = new LearnDetailsModel(
+        );
+        final LearnDetailsModel l15 = new LearnDetailsModel(
                 "Create a Directory",
                 "Syntax\n" +
                         "Following is the syntax of the method to create a directory −\n" +
@@ -20893,7 +20931,8 @@ public class LearnDetailsContent {
                         "});",
                 "Going to create directory /tmp/test\n" +
                         "Directory created successfully!"
-        );final LearnDetailsModel l16 = new LearnDetailsModel(
+        );
+        final LearnDetailsModel l16 = new LearnDetailsModel(
                 "Read a Directory",
                 "Syntax\n" +
                         "Following is the syntax of the method to read a directory −\n" +
@@ -20930,7 +20969,8 @@ public class LearnDetailsContent {
                         "hsperfdata_apache\n" +
                         "test\n" +
                         "test.txt"
-        );final LearnDetailsModel l17 = new LearnDetailsModel(
+        );
+        final LearnDetailsModel l17 = new LearnDetailsModel(
                 "Remove a Directory",
                 "Syntax\n" +
                         "Following is the syntax of the method to remove a directory −\n" +
@@ -20993,8 +21033,9 @@ public class LearnDetailsContent {
         list.add(l17);
         return list;
     }
+
     //NodeJs Global Objects
-    private static List<LearnDetailsModel> NodeJsGlobalObjects(){
+    private static List<LearnDetailsModel> NodeJsGlobalObjects() {
         final List<LearnDetailsModel> list = new ArrayList<>();
         final LearnDetailsModel l1 = new LearnDetailsModel(
                 "What is Global Objects?",
@@ -21118,8 +21159,9 @@ public class LearnDetailsContent {
         list.add(l7);
         return list;
     }
+
     //NodeJs Web Module
-    private static List<LearnDetailsModel> NodeJsWebModule(){
+    private static List<LearnDetailsModel> NodeJsWebModule() {
         final List<LearnDetailsModel> list = new ArrayList<>();
         final LearnDetailsModel l1 = new LearnDetailsModel(
                 "What is a Web Server?",
@@ -21249,9 +21291,10 @@ public class LearnDetailsContent {
         list.add(l4);
         return list;
     }
+
     //jQuery
     //jQuery Introduction
-    private static List<LearnDetailsModel> jQueryIntroduction(){
+    private static List<LearnDetailsModel> jQueryIntroduction() {
         final List<LearnDetailsModel> list = new ArrayList<>();
         final LearnDetailsModel l1 = new LearnDetailsModel(
                 "What is jQuery?",
@@ -21444,8 +21487,9 @@ public class LearnDetailsContent {
         list.add(l11);
         return list;
     }
+
     //jQuery Basics
-    private static List<LearnDetailsModel> jQueryBasics(){
+    private static List<LearnDetailsModel> jQueryBasics() {
         final List<LearnDetailsModel> list = new ArrayList<>();
         final LearnDetailsModel l1 = new LearnDetailsModel(
                 "Basics",
@@ -21636,7 +21680,8 @@ public class LearnDetailsContent {
                         "c.increment();\n" +
                         "c.print();     // ==> 1",
                 ""
-        );final LearnDetailsModel l13 = new LearnDetailsModel(
+        );
+        final LearnDetailsModel l13 = new LearnDetailsModel(
                 "Proxy Pattern",
                 "A proxy is an object that can be used to control access to another object. It implements the same interface as this other object and passes on any method invocations to it. This other object is often called the real subject.\n" +
                         "\n" +
@@ -21652,7 +21697,8 @@ public class LearnDetailsContent {
                         "\t\n" +
                         "})();",
                 ""
-        );final LearnDetailsModel l14 = new LearnDetailsModel(
+        );
+        final LearnDetailsModel l14 = new LearnDetailsModel(
                 "Built-in Functions",
                 "JavaScript comes along with a useful set of built-in functions. These methods can be used to manipulate Strings, Numbers and Dates.\n" +
                         "\n" +
@@ -21711,7 +21757,8 @@ public class LearnDetailsContent {
                         "Returns the calling string value converted to uppercase.",
                 "",
                 ""
-        );final LearnDetailsModel l15 = new LearnDetailsModel(
+        );
+        final LearnDetailsModel l15 = new LearnDetailsModel(
                 "The Document Object Model",
                 "The Document Object Model is a tree structure of various elements of HTML as follows −" +
                         "\n\n" +
@@ -21745,8 +21792,9 @@ public class LearnDetailsContent {
 
         return list;
     }
+
     //jQuery Selectors
-    private static List<LearnDetailsModel> jQuerySelectors(){
+    private static List<LearnDetailsModel> jQuerySelectors() {
         final List<LearnDetailsModel> list = new ArrayList<>();
         final LearnDetailsModel l1 = new LearnDetailsModel(
                 "Selectors",
@@ -21837,8 +21885,9 @@ public class LearnDetailsContent {
         list.add(l4);
         return list;
     }
+
     //jQuery Attributes
-    private static List<LearnDetailsModel> jQueryAttributes(){
+    private static List<LearnDetailsModel> jQueryAttributes() {
         final List<LearnDetailsModel> list = new ArrayList<>();
         final LearnDetailsModel l1 = new LearnDetailsModel(
                 "Attributes",
@@ -22006,8 +22055,9 @@ public class LearnDetailsContent {
         list.add(l5);
         return list;
     }
+
     //jQuery DOM Traversing
-    private static List<LearnDetailsModel> jQueryDOMTraversing(){
+    private static List<LearnDetailsModel> jQueryDOMTraversing() {
         final List<LearnDetailsModel> list = new ArrayList<>();
         final LearnDetailsModel l1 = new LearnDetailsModel(
                 "DOM Traversing",
@@ -22218,8 +22268,9 @@ public class LearnDetailsContent {
         list.add(l6);
         return list;
     }
+
     //jQuery CSS
-    private static List<LearnDetailsModel> jQueryCSS(){
+    private static List<LearnDetailsModel> jQueryCSS() {
         final List<LearnDetailsModel> list = new ArrayList<>();
         final LearnDetailsModel l1 = new LearnDetailsModel(
                 "CSS Selectors Methods",
@@ -22416,8 +22467,9 @@ public class LearnDetailsContent {
         list.add(l5);
         return list;
     }
+
     //jQuery DOM
-    private static List<LearnDetailsModel> jQueryDOM(){
+    private static List<LearnDetailsModel> jQueryDOM() {
         final List<LearnDetailsModel> list = new ArrayList<>();
         final LearnDetailsModel l1 = new LearnDetailsModel(
                 "DOM Manipulation",
@@ -22692,8 +22744,9 @@ public class LearnDetailsContent {
         list.add(l6);
         return list;
     }
+
     //jQuery Events Handling
-    private static List<LearnDetailsModel> jQueryEventsHandling(){
+    private static List<LearnDetailsModel> jQueryEventsHandling() {
         final List<LearnDetailsModel> list = new ArrayList<>();
         final LearnDetailsModel l1 = new LearnDetailsModel(
                 "Events Handling",
@@ -22862,8 +22915,9 @@ public class LearnDetailsContent {
         list.add(l7);
         return list;
     }
+
     //jQuery Ajax
-    private static List<LearnDetailsModel> jQueryAjax(){
+    private static List<LearnDetailsModel> jQueryAjax() {
         final List<LearnDetailsModel> list = new ArrayList<>();
         final LearnDetailsModel l1 = new LearnDetailsModel(
                 "Ajax",
@@ -23091,8 +23145,9 @@ public class LearnDetailsContent {
         list.add(l6);
         return list;
     }
+
     //jQuery Effects
-    private static List<LearnDetailsModel> jQueryEffects(){
+    private static List<LearnDetailsModel> jQueryEffects() {
         final List<LearnDetailsModel> list = new ArrayList<>();
         final LearnDetailsModel l1 = new LearnDetailsModel(
                 "Effects",
@@ -23340,8 +23395,9 @@ public class LearnDetailsContent {
         list.add(l5);
         return list;
     }
+
     //jQuery Interactions
-    private static List<LearnDetailsModel> jQueryInteractions(){
+    private static List<LearnDetailsModel> jQueryInteractions() {
         final List<LearnDetailsModel> list = new ArrayList<>();
         final LearnDetailsModel l1 = new LearnDetailsModel(
                 "Interactions",
@@ -23682,8 +23738,9 @@ public class LearnDetailsContent {
         list.add(l6);
         return list;
     }
+
     //jQuery Widgets
-    private static List<LearnDetailsModel> jQueryWidgets(){
+    private static List<LearnDetailsModel> jQueryWidgets() {
         final List<LearnDetailsModel> list = new ArrayList<>();
         final LearnDetailsModel l1 = new LearnDetailsModel(
                 "Widgets",
@@ -24469,7 +24526,8 @@ public class LearnDetailsContent {
                         "   </body>\n" +
                         "</html>",
                 ""
-        );final LearnDetailsModel l13 = new LearnDetailsModel(
+        );
+        final LearnDetailsModel l13 = new LearnDetailsModel(
                 "Widget Tooltip",
                 "The Widget Tooltip function can be used with widgets in JqueryUI.Tooltip is used to show the tips.A sample example of tooltip as shown below.\n" +
                         "\n" +
@@ -24541,8 +24599,9 @@ public class LearnDetailsContent {
         list.add(l13);
         return list;
     }
+
     //jQuery Theming
-    private static List<LearnDetailsModel> jQueryTheming(){
+    private static List<LearnDetailsModel> jQueryTheming() {
         final List<LearnDetailsModel> list = new ArrayList<>();
         final LearnDetailsModel l1 = new LearnDetailsModel(
                 "Theming",
@@ -24665,8 +24724,9 @@ public class LearnDetailsContent {
         list.add(l2);
         return list;
     }
+
     //jQuery Utilities
-    private static List<LearnDetailsModel> jQueryUtilities(){
+    private static List<LearnDetailsModel> jQueryUtilities() {
         final List<LearnDetailsModel> list = new ArrayList<>();
         final LearnDetailsModel l1 = new LearnDetailsModel(
                 "Utilities",
@@ -24929,8 +24989,9 @@ public class LearnDetailsContent {
         list.add(l15);
         return list;
     }
+
     //jQuery Plugins
-    private static List<LearnDetailsModel> jQueryPlugins(){
+    private static List<LearnDetailsModel> jQueryPlugins() {
         final List<LearnDetailsModel> list = new ArrayList<>();
         final LearnDetailsModel l1 = new LearnDetailsModel(
                 "Plugins",
@@ -26229,9 +26290,10 @@ public class LearnDetailsContent {
         list.add(l13);
         return list;
     }
+
     //Laravel
     //Laravel Introduction
-    private static List<LearnDetailsModel> LaravelIntroduction(){
+    private static List<LearnDetailsModel> LaravelIntroduction() {
         final List<LearnDetailsModel> list = new ArrayList<>();
         final LearnDetailsModel l1 = new LearnDetailsModel(
                 "What is Laravel?",
@@ -26284,8 +26346,9 @@ public class LearnDetailsContent {
         list.add(l4);
         return list;
     }
+
     //Laravel Routing
-    private static List<LearnDetailsModel> LaravelRouting(){
+    private static List<LearnDetailsModel> LaravelRouting() {
         final List<LearnDetailsModel> list = new ArrayList<>();
         final LearnDetailsModel l1 = new LearnDetailsModel(
                 "Routing",
@@ -26339,8 +26402,9 @@ public class LearnDetailsContent {
         list.add(l5);
         return list;
     }
+
     //Laravel Middleware
-    private static List<LearnDetailsModel> LaravelMiddleware(){
+    private static List<LearnDetailsModel> LaravelMiddleware() {
         final List<LearnDetailsModel> list = new ArrayList<>();
         final LearnDetailsModel l1 = new LearnDetailsModel(
                 "What is Middleware?",
@@ -26421,8 +26485,9 @@ public class LearnDetailsContent {
         list.add(l5);
         return list;
     }
+
     //Laravel Namespaces
-    private static List<LearnDetailsModel> LaravelNamespaces(){
+    private static List<LearnDetailsModel> LaravelNamespaces() {
         final List<LearnDetailsModel> list = new ArrayList<>();
         final LearnDetailsModel l1 = new LearnDetailsModel(
                 "Namespaces",
@@ -26439,8 +26504,9 @@ public class LearnDetailsContent {
         list.add(l1);
         return list;
     }
+
     //Laravel Controllers
-    private static List<LearnDetailsModel> LaravelControllers(){
+    private static List<LearnDetailsModel> LaravelControllers() {
         final List<LearnDetailsModel> list = new ArrayList<>();
         final LearnDetailsModel l1 = new LearnDetailsModel(
                 "What are the Controllers?",
@@ -26513,8 +26579,9 @@ public class LearnDetailsContent {
         list.add(l7);
         return list;
     }
+
     //Laravel Blade Templates
-    private static List<LearnDetailsModel> LaravelBladeTemplates(){
+    private static List<LearnDetailsModel> LaravelBladeTemplates() {
         final List<LearnDetailsModel> list = new ArrayList<>();
         final LearnDetailsModel l1 = new LearnDetailsModel(
                 "Blade Templates",
@@ -26588,8 +26655,9 @@ public class LearnDetailsContent {
         list.add(l4);
         return list;
     }
+
     //Laravel Working With Database
-    private static List<LearnDetailsModel> LaravelWorkingWithDatabase(){
+    private static List<LearnDetailsModel> LaravelWorkingWithDatabase() {
         final List<LearnDetailsModel> list = new ArrayList<>();
         final LearnDetailsModel l1 = new LearnDetailsModel(
                 "Working With Database",
@@ -26801,8 +26869,9 @@ public class LearnDetailsContent {
         list.add(l6);
         return list;
     }
+
     //Laravel Sending Email
-    private static List<LearnDetailsModel> LaravelSendingEmail(){
+    private static List<LearnDetailsModel> LaravelSendingEmail() {
         final List<LearnDetailsModel> list = new ArrayList<>();
         final LearnDetailsModel l1 = new LearnDetailsModel(
                 "Sending Email",

@@ -13,7 +13,6 @@ import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.view.ViewGroup;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -50,22 +49,22 @@ public class QuizDetailsActivity extends AppCompatActivity {
     ActivityQuizDetailsBinding binding;
     FirebaseDatabase database;
     FirebaseAuth auth;
-    private AdNetwork adNetwork;
-    private List<QuizListModel> questionList;
-    private int currentQuestionPosition = 0;
-    private String selectedOptionByUser = "";
     TextView quizCount, question;
-    private AppCompatButton option1;
-    private AppCompatButton option2;
-    private AppCompatButton option3;
-    private AppCompatButton option4;
-    private AppCompatButton nextBtn;
     LayoutInflater inflater;
     TextView toastText, qTimer;
     View toastLayout;
     Toast toast;
     int time;
     LottieAnimationView timerView;
+    private AdNetwork adNetwork;
+    private List<QuizListModel> questionList;
+    private int currentQuestionPosition = 0;
+    private String selectedOptionByUser = "";
+    private AppCompatButton option1;
+    private AppCompatButton option2;
+    private AppCompatButton option3;
+    private AppCompatButton option4;
+    private AppCompatButton nextBtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -77,8 +76,8 @@ public class QuizDetailsActivity extends AppCompatActivity {
         timerView = findViewById(R.id.timerView);
         //custom toast
         inflater = getLayoutInflater();
-        toastLayout = inflater.inflate(R.layout.custom_toast_layout, (ViewGroup) findViewById(R.id.toastLayout));
-        toastText = (TextView) toastLayout.findViewById(R.id.toastText);
+        toastLayout = inflater.inflate(R.layout.custom_toast_layout, findViewById(R.id.toastLayout));
+        toastText = toastLayout.findViewById(R.id.toastText);
         toast = new Toast(getApplicationContext());
         toast.setGravity(Gravity.BOTTOM, 0, 100);
         toast.setDuration(Toast.LENGTH_LONG);
@@ -104,13 +103,12 @@ public class QuizDetailsActivity extends AppCompatActivity {
             bannerAd.setVisibility(View.GONE);
         }
         //check premium time
-        if (UiConfig.PRO_VISIBILITY_STATUS_SHOW){
+        if (UiConfig.PRO_VISIBILITY_STATUS_SHOW) {
             //true
             time = 2;
             qTimer.setVisibility(View.VISIBLE);
             timerView.setVisibility(View.VISIBLE);
-        }
-        else {
+        } else {
             //false
             time = 100;
             qTimer.setVisibility(View.GONE);

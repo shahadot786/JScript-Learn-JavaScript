@@ -4,16 +4,17 @@ import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
-
-import androidx.appcompat.app.AlertDialog;
-import androidx.constraintlayout.widget.ConstraintLayout;
-import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import androidx.appcompat.app.AlertDialog;
+import androidx.constraintlayout.widget.ConstraintLayout;
+import androidx.fragment.app.Fragment;
+
 import com.javascript.jscript.Activities.PremiumActivity;
 import com.javascript.jscript.Adapter.QuizItemsAdapter;
 import com.javascript.jscript.Adapter.QuizItemsAdapterPro;
@@ -24,16 +25,13 @@ import com.javascript.jscript.Utils.AdNetwork;
 import com.javascript.jscript.Utils.ExpandableHeightGridView;
 
 public class QuizFragment extends Fragment {
-    ExpandableHeightGridView gridView , gridViewPro;
+    ExpandableHeightGridView gridView, gridViewPro;
     View proView;
     ImageView proImage;
-    private AdNetwork adNetwork;
-
-    String[] itemsName = {"Fundamental","Basic","Objects","OOPs","DOM","BOM","Advanced","AJAX"};
-    String[] itemsNamePro = {"Typescript","Angular","Vue Js","Next Js","React Js","Ember Js","Svelte Js","Gatsby","Nuxt Js","Bootstrap"
+    String[] itemsName = {"Fundamental", "Basic", "Objects", "OOPs", "DOM", "BOM", "Advanced", "AJAX"};
+    String[] itemsNamePro = {"Typescript", "Angular", "Vue Js", "Next Js", "React Js", "Ember Js", "Svelte Js", "Gatsby", "Nuxt Js", "Bootstrap"
             /*"Node Js","Spring Boot","Express Js",
             "Laravel","Micronaut","Mocha"*/};
-
     Integer[] itemImages = {
             R.drawable.ic_fundamental_icon,
             R.drawable.ic_programs_basic_image,
@@ -65,8 +63,9 @@ public class QuizFragment extends Fragment {
             R.drawable.ic_mochajs_icon*/
 
     };
-
     TextView howTo;
+    private AdNetwork adNetwork;
+
     public QuizFragment() {
         // Required empty public constructor
     }
@@ -81,7 +80,7 @@ public class QuizFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View view = inflater.inflate(R.layout.fragment_quiz,container,false);
+        View view = inflater.inflate(R.layout.fragment_quiz, container, false);
         //find id
         howTo = view.findViewById(R.id.howTo);
         //pro animations
@@ -91,7 +90,7 @@ public class QuizFragment extends Fragment {
             public void onClick(View view) {
                 Context context = view.getContext();
                 Intent intent;
-                intent = new Intent(context,PremiumActivity.class);
+                intent = new Intent(context, PremiumActivity.class);
                 intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                 context.startActivity(intent);
             }
@@ -102,21 +101,21 @@ public class QuizFragment extends Fragment {
         //free
         gridView = view.findViewById(R.id.quiz_item_gridview);
         gridView.setExpanded(true);
-        QuizItemsAdapter adapter = new QuizItemsAdapter(itemsName,itemImages,getActivity());
+        QuizItemsAdapter adapter = new QuizItemsAdapter(itemsName, itemImages, getActivity());
         gridView.setAdapter(adapter);
 
         //pro
         gridViewPro = view.findViewById(R.id.quiz_item_gridview_pro);
         gridViewPro.setExpanded(true);
-        QuizItemsAdapterPro adapter1 = new QuizItemsAdapterPro(itemsNamePro,itemImagesPro,getActivity());
+        QuizItemsAdapterPro adapter1 = new QuizItemsAdapterPro(itemsNamePro, itemImagesPro, getActivity());
         gridViewPro.setAdapter(adapter1);
 
         //check user upgrade to pro
-        if (UiConfig.PRO_VISIBILITY_STATUS_SHOW){
+        if (UiConfig.PRO_VISIBILITY_STATUS_SHOW) {
             proView.setVisibility(View.VISIBLE);
             proImage.setVisibility(View.VISIBLE);
             proAnimation.setVisibility(View.VISIBLE);
-        }else {
+        } else {
             proView.setVisibility(View.GONE);
             proImage.setVisibility(View.GONE);
             proAnimation.setVisibility(View.GONE);
@@ -158,37 +157,37 @@ public class QuizFragment extends Fragment {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                 Intent intent = new Intent(getActivity(), QuizTopicListActivity.class);
-                switch (i){
+                switch (i) {
                     case 0:
-                        intent.putExtra("quizItems","Fundamental");
+                        intent.putExtra("quizItems", "Fundamental");
                         startActivity(intent);
                         break;
                     case 1:
-                        intent.putExtra("quizItems","Basic");
+                        intent.putExtra("quizItems", "Basic");
                         startActivity(intent);
                         break;
                     case 2:
-                        intent.putExtra("quizItems","Objects");
+                        intent.putExtra("quizItems", "Objects");
                         startActivity(intent);
                         break;
                     case 3:
-                        intent.putExtra("quizItems","OOPs");
+                        intent.putExtra("quizItems", "OOPs");
                         startActivity(intent);
                         break;
                     case 4:
-                        intent.putExtra("quizItems","DOM");
+                        intent.putExtra("quizItems", "DOM");
                         startActivity(intent);
                         break;
                     case 5:
-                        intent.putExtra("quizItems","BOM");
+                        intent.putExtra("quizItems", "BOM");
                         startActivity(intent);
                         break;
                     case 6:
-                        intent.putExtra("quizItems","Advanced");
+                        intent.putExtra("quizItems", "Advanced");
                         startActivity(intent);
                         break;
                     case 7:
-                        intent.putExtra("quizItems","AJAX");
+                        intent.putExtra("quizItems", "AJAX");
                         startActivity(intent);
                         break;
                     /*case 8:
@@ -206,45 +205,45 @@ public class QuizFragment extends Fragment {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                 Intent intent = new Intent(getActivity(), QuizTopicListActivity.class);
-                switch (i){
+                switch (i) {
                     case 0:
-                        intent.putExtra("quizItems","Typescript");
+                        intent.putExtra("quizItems", "Typescript");
                         startActivity(intent);
                         break;
                     case 1:
-                        intent.putExtra("quizItems","Angular");
+                        intent.putExtra("quizItems", "Angular");
                         startActivity(intent);
                         break;
                     case 2:
-                        intent.putExtra("quizItems","Vue Js");
+                        intent.putExtra("quizItems", "Vue Js");
                         startActivity(intent);
                         break;
                     case 3:
-                        intent.putExtra("quizItems","Next Js");
+                        intent.putExtra("quizItems", "Next Js");
                         startActivity(intent);
                         break;
                     case 4:
-                        intent.putExtra("quizItems","React Js");
+                        intent.putExtra("quizItems", "React Js");
                         startActivity(intent);
                         break;
                     case 5:
-                        intent.putExtra("quizItems","Ember Js");
+                        intent.putExtra("quizItems", "Ember Js");
                         startActivity(intent);
                         break;
                     case 6:
-                        intent.putExtra("quizItems","Svelte Js");
+                        intent.putExtra("quizItems", "Svelte Js");
                         startActivity(intent);
                         break;
                     case 7:
-                        intent.putExtra("quizItems","Gatsby");
+                        intent.putExtra("quizItems", "Gatsby");
                         startActivity(intent);
                         break;
                     case 8:
-                        intent.putExtra("quizItems","Nuxt Js");
+                        intent.putExtra("quizItems", "Nuxt Js");
                         startActivity(intent);
                         break;
                     case 9:
-                        intent.putExtra("quizItems","Bootstrap");
+                        intent.putExtra("quizItems", "Bootstrap");
                         startActivity(intent);
                         break;
                     /*case 10:

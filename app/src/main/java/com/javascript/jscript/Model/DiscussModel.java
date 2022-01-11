@@ -2,7 +2,7 @@ package com.javascript.jscript.Model;
 
 public class DiscussModel {
 
-    private String postId,questions,description,postedBy;
+    private String postId, questions, description, postedBy;
     private long postedAt;
     private int postViews;
     private int commentCount;

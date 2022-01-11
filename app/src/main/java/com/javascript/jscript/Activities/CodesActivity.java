@@ -1,8 +1,5 @@
 package com.javascript.jscript.Activities;
 
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
@@ -11,6 +8,9 @@ import android.view.MenuItem;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
+
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.javascript.jscript.R;
 import com.javascript.jscript.databinding.ActivityCodesBinding;
@@ -22,6 +22,7 @@ public class CodesActivity extends AppCompatActivity {
 
     ActivityCodesBinding binding;
     WebView web;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -38,9 +39,24 @@ public class CodesActivity extends AppCompatActivity {
         web.setWebViewClient(new Callback());
         //Codepen
         web.loadUrl("https://codepen.io/shrcreation/pen/mdBpEYd");
-       //web.loadUrl("https://rextester.com/l/js_online_compiler");
+        //web.loadUrl("https://rextester.com/l/js_online_compiler");
 
     }//ends of OnCreate
+
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        finish();
+        return super.onOptionsItemSelected(item);
+    }
+
+    @Override
+    public void onBackPressed() {
+        if (web.canGoBack()) {
+            web.goBack();
+        } else {
+            super.onBackPressed();
+        }
+    }
 
     //callback method
     private class Callback extends WebViewClient {
@@ -48,6 +64,7 @@ public class CodesActivity extends AppCompatActivity {
         public boolean shouldOverrideKeyEvent(WebView view, KeyEvent event) {
             return false;
         }
+
         public boolean shouldOverrideUrlLoading(WebView view, String url) {
             if (url.startsWith("intent")) {
                 try {
@@ -72,21 +89,5 @@ public class CodesActivity extends AppCompatActivity {
             return false;
         }
 
-    }
-
-
-    @Override
-    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
-        finish();
-        return super.onOptionsItemSelected(item);
-    }
-
-    @Override
-    public void onBackPressed() {
-        if (web.canGoBack()) {
-            web.goBack();
-        } else {
-            super.onBackPressed();
-        }
     }
 }

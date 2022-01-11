@@ -3,20 +3,14 @@ package com.javascript.jscript.Adapter;
 import static android.content.Intent.FLAG_ACTIVITY_NEW_TASK;
 
 import android.annotation.SuppressLint;
-import android.app.NotificationChannel;
-import android.app.NotificationManager;
-import android.app.PendingIntent;
 import android.content.Context;
 import android.content.Intent;
-import android.os.Build;
 import android.text.Html;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
 import androidx.annotation.NonNull;
-import androidx.core.app.NotificationCompat;
-import androidx.core.app.NotificationManagerCompat;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.github.marlonlom.utilities.timeago.TimeAgo;
@@ -27,14 +21,13 @@ import com.google.firebase.database.ValueEventListener;
 import com.javascript.jscript.Discuss.DiscussDetailsActivity;
 import com.javascript.jscript.Model.NotificationsModel;
 import com.javascript.jscript.Model.UserModel;
-import com.javascript.jscript.Notifications.NotificationsActivity;
 import com.javascript.jscript.R;
 import com.javascript.jscript.databinding.NotificationRvSampleBinding;
 import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
 
-public class NotificationsAdapter extends RecyclerView.Adapter<NotificationsAdapter.viewHolder>{
+public class NotificationsAdapter extends RecyclerView.Adapter<NotificationsAdapter.viewHolder> {
 
     ArrayList<NotificationsModel> list;
     Context context;
@@ -47,7 +40,7 @@ public class NotificationsAdapter extends RecyclerView.Adapter<NotificationsAdap
     @NonNull
     @Override
     public viewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(context).inflate(R.layout.notification_rv_sample,parent,false);
+        View view = LayoutInflater.from(context).inflate(R.layout.notification_rv_sample, parent, false);
         return new viewHolder(view);
     }
 
@@ -73,11 +66,11 @@ public class NotificationsAdapter extends RecyclerView.Adapter<NotificationsAdap
                                 .into(holder.binding.profileImage);
                         holder.binding.notificationTime.setText(time);
 
-                        if (type.equals("comment")){
-                            holder.binding.notificationText.setText(Html.fromHtml("<span style=\"font-weight:bold; color:#15c55d\">"+
-                                    userModel.getUserName()+" "+"</span>" + " reply in " +
-                                    "\"<span style=\"font-weight:bold; color:#b3b5bd\"> "+question
-                            +" "+" </span>\""));
+                        if (type.equals("comment")) {
+                            holder.binding.notificationText.setText(Html.fromHtml("<span style=\"font-weight:bold; color:#15c55d\">" +
+                                    userModel.getUserName() + " " + "</span>" + " reply in " +
+                                    "\"<span style=\"font-weight:bold; color:#b3b5bd\"> " + question
+                                    + " " + " </span>\""));
                         }
                         /*else if (type.equals("likes")){
                             holder.binding.notificationText.setText(Html.fromHtml("<span style=\"font-weight:bold; color:#15c55d\">"+
@@ -103,15 +96,15 @@ public class NotificationsAdapter extends RecyclerView.Adapter<NotificationsAdap
                         .setValue(true);
                 holder.binding.openNotification.setBackgroundResource(R.drawable.ic_notification_open_bg);
                 Intent intent = new Intent(context, DiscussDetailsActivity.class);
-                intent.putExtra("postId",notifications.getPostId());
-                intent.putExtra("postedBy",notifications.getPostedBy());
+                intent.putExtra("postId", notifications.getPostId());
+                intent.putExtra("postedBy", notifications.getPostedBy());
                 intent.addFlags(FLAG_ACTIVITY_NEW_TASK);
                 context.startActivity(intent);
             }
         });
 
         boolean checkOpen = notifications.isCheckOpen();
-        if (checkOpen){
+        if (checkOpen) {
             holder.binding.openNotification.setBackgroundResource(R.drawable.ic_notification_open_bg);
         }
 
@@ -123,7 +116,7 @@ public class NotificationsAdapter extends RecyclerView.Adapter<NotificationsAdap
         return list.size();
     }
 
-    public class viewHolder extends RecyclerView.ViewHolder{
+    public class viewHolder extends RecyclerView.ViewHolder {
 
         NotificationRvSampleBinding binding;
 
@@ -132,7 +125,6 @@ public class NotificationsAdapter extends RecyclerView.Adapter<NotificationsAdap
             binding = NotificationRvSampleBinding.bind(itemView);
         }
     }
-
 
 
 }

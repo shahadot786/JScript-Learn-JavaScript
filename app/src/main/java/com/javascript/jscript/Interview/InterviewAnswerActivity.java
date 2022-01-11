@@ -1,8 +1,5 @@
 package com.javascript.jscript.Interview;
 
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.content.res.ColorStateList;
 import android.net.ConnectivityManager;
@@ -13,9 +10,11 @@ import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.view.ViewGroup;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
@@ -37,11 +36,12 @@ public class InterviewAnswerActivity extends AppCompatActivity {
     ActivityInterviewAnswerBinding binding;
     FirebaseDatabase database;
     FirebaseAuth auth;
-    TextView textQuestion,questionDes;
+    TextView textQuestion, questionDes;
     LayoutInflater inflater;
     TextView toastText;
     View toastLayout;
     Toast toast;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -49,10 +49,10 @@ public class InterviewAnswerActivity extends AppCompatActivity {
         setContentView(binding.getRoot());
         //custom toast
         inflater = getLayoutInflater();
-        toastLayout = inflater.inflate(R.layout.custom_toast_layout,(ViewGroup) findViewById(R.id.toastLayout));
-        toastText = (TextView) toastLayout.findViewById(R.id.toastText);
+        toastLayout = inflater.inflate(R.layout.custom_toast_layout, findViewById(R.id.toastLayout));
+        toastText = toastLayout.findViewById(R.id.toastText);
         toast = new Toast(getApplicationContext());
-        toast.setGravity(Gravity.BOTTOM,0,100);
+        toast.setGravity(Gravity.BOTTOM, 0, 100);
         toast.setDuration(Toast.LENGTH_LONG);
         toast.setView(toastLayout);
         //firebase instance
@@ -62,9 +62,9 @@ public class InterviewAnswerActivity extends AppCompatActivity {
         AdView bannerAd = findViewById(R.id.adView);
         AdRequest adRequest = new AdRequest.Builder().build();
         bannerAd.loadAd(adRequest);
-        if (UiConfig.BANNER_AD_VISIBILITY){
+        if (UiConfig.BANNER_AD_VISIBILITY) {
             bannerAd.setVisibility(View.VISIBLE);
-        }else {
+        } else {
             bannerAd.setVisibility(View.GONE);
         }
         //toolbar
@@ -120,10 +120,11 @@ public class InterviewAnswerActivity extends AppCompatActivity {
         });
 
     }//ends of onCreate
+
     //load code
     private void loadQuestion() {
         String question = null;
-        switch (getIntent().getStringExtra("Interview Questions")){
+        switch (getIntent().getStringExtra("Interview Questions")) {
             case "What is JavaScript?":
                 question = InterviewQuestions.What_is_JavaScript;
                 break;
@@ -210,10 +211,11 @@ public class InterviewAnswerActivity extends AppCompatActivity {
         textQuestion.setText(question);
 
     }
+
     //load output
     private void loadAnswer() {
         String answer = null;
-        switch (getIntent().getStringExtra("Interview Answers")){
+        switch (getIntent().getStringExtra("Interview Answers")) {
             case "What is JavaScript?":
                 answer = InterviewAnswers.What_is_JavaScript;
                 break;
@@ -297,15 +299,13 @@ public class InterviewAnswerActivity extends AppCompatActivity {
                 break;
 
 
-
-
-
         }
         //textAnswer.setText(answer);
         questionDes.setText(answer);
 
 
     }
+
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.menu_codes, menu);
@@ -322,12 +322,12 @@ public class InterviewAnswerActivity extends AppCompatActivity {
                     connectivityManager.getNetworkInfo(ConnectivityManager.TYPE_WIFI).getState() == NetworkInfo.State.CONNECTED) {
                 //we are connected to a network
                 startActivity(new Intent(InterviewAnswerActivity.this, CodesActivity.class));
-            }else {
+            } else {
                 toastText.setText(R.string.no_connection_text);
                 toast.show();
             }
 
-        }else {
+        } else {
             finish();
         }
         return super.onOptionsItemSelected(item);

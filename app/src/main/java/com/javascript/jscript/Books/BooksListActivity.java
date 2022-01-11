@@ -1,8 +1,5 @@
 package com.javascript.jscript.Books;
 
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.net.ConnectivityManager;
@@ -19,6 +16,9 @@ import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
+
 import com.javascript.jscript.R;
 import com.javascript.jscript.Utils.AdNetwork;
 import com.javascript.jscript.databinding.ActivityBooksListBinding;
@@ -28,13 +28,13 @@ import java.util.Objects;
 public class BooksListActivity extends AppCompatActivity {
 
     ActivityBooksListBinding binding;
-    private AdNetwork adNetwork;
     ListView books;
     String[] list = {};
     Toast toast;
     TextView toastText;
     LayoutInflater inflater;
     View toastLayout;
+    private AdNetwork adNetwork;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -58,10 +58,10 @@ public class BooksListActivity extends AppCompatActivity {
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                 //custom toast
                 inflater = getLayoutInflater();
-                toastLayout = inflater.inflate(R.layout.custom_toast_layout,(ViewGroup) findViewById(R.id.toastLayout));
-                toastText = (TextView) toastLayout.findViewById(R.id.toastText);
+                toastLayout = inflater.inflate(R.layout.custom_toast_layout, findViewById(R.id.toastLayout));
+                toastText = toastLayout.findViewById(R.id.toastText);
                 toast = new Toast(getApplicationContext());
-                toast.setGravity(Gravity.BOTTOM,0,100);
+                toast.setGravity(Gravity.BOTTOM, 0, 100);
                 toast.setDuration(Toast.LENGTH_LONG);
                 toast.setView(toastLayout);
                 //network check
@@ -70,11 +70,11 @@ public class BooksListActivity extends AppCompatActivity {
                         connectivityManager.getNetworkInfo(ConnectivityManager.TYPE_WIFI).getState() == NetworkInfo.State.CONNECTED) {
                     //we are connected to a network
                     Intent intent = new Intent(BooksListActivity.this, ReadBooksActivity.class);
-                    intent.putExtra("booksUri",list[i]);
+                    intent.putExtra("booksUri", list[i]);
                     startActivity(intent);
                     adNetwork.showInterstitialAd();
 
-                }else {
+                } else {
                     toastText.setText(R.string.no_connection_text);
                     toast.show();
                 }
@@ -83,9 +83,10 @@ public class BooksListActivity extends AppCompatActivity {
 
 
     }
+
     private void loadItems() {
         final String[] Fundamental = {
-               "A Smarter Way to Learn JavaScript",
+                "A Smarter Way to Learn JavaScript",
                 "Eloquent Javascript",
                 "JavaScript The Good Parts",
                 "JavaScript and JQuery Interactive",
@@ -272,7 +273,7 @@ public class BooksListActivity extends AppCompatActivity {
         };
 
         String programsItems = getIntent().getStringExtra("booksItems");
-        switch (programsItems){
+        switch (programsItems) {
             case "Fundamental":
                 list = Fundamental;
                 break;
@@ -330,6 +331,13 @@ public class BooksListActivity extends AppCompatActivity {
         }
     }
 
+    //option menu item select
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        finish();
+        return super.onOptionsItemSelected(item);
+    }
+
     class CustomAdapter extends BaseAdapter {
 
         @Override
@@ -351,17 +359,11 @@ public class BooksListActivity extends AppCompatActivity {
         @Override
         public View getView(int i, View view, ViewGroup viewGroup) {
 
-            view = getLayoutInflater().inflate(R.layout.programs_list_items_layout,null);
+            view = getLayoutInflater().inflate(R.layout.programs_list_items_layout, null);
             TextView textView = view.findViewById(R.id.itemsTitle);
             textView.setText(list[i]);
 
             return view;
         }
-    }
-    //option menu item select
-    @Override
-    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
-        finish();
-        return super.onOptionsItemSelected(item);
     }
 }

@@ -19,12 +19,16 @@ public class ViewPagerAdapter extends FragmentPagerAdapter {
     @NonNull
     @Override
     public Fragment getItem(int position) {
-        switch (position){
-            case 1: return new ProgramsFragment();
-            case 2: return new InterviewQAFragment();
-            case 3: return new BooksFragment();
+        switch (position) {
+            case 1:
+                return new ProgramsFragment();
+            case 2:
+                return new InterviewQAFragment();
+            case 3:
+                return new BooksFragment();
             case 0:
-            default: return new LearnFragment();
+            default:
+                return new LearnFragment();
         }
 
     }
@@ -38,13 +42,13 @@ public class ViewPagerAdapter extends FragmentPagerAdapter {
     @Override
     public CharSequence getPageTitle(int position) {
         String title = null;
-        if (position == 0){
+        if (position == 0) {
             title = "Learn";
-        }else if (position == 1){
-            title ="Programs";
-        }else if (position == 2){
-            title ="Interview";
-        }else if (position ==3){
+        } else if (position == 1) {
+            title = "Programs";
+        } else if (position == 2) {
+            title = "Interview";
+        } else if (position == 3) {
             title = "Books";
         }
         return title;

@@ -1,7 +1,5 @@
 package com.javascript.jscript.Learn;
 
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
 import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
@@ -12,17 +10,23 @@ import android.widget.AdapterView;
 import android.widget.BaseAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
+
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
+
 import com.javascript.jscript.R;
 import com.javascript.jscript.Utils.AdNetwork;
 import com.javascript.jscript.databinding.ActivityLearnItemsListBinding;
+
 import java.util.Objects;
 
 public class LearnItemsListActivity extends AppCompatActivity {
 
     ActivityLearnItemsListBinding binding;
-    private AdNetwork adNetwork;
     ListView learnList;
     String[] list = {};
+    private AdNetwork adNetwork;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -45,13 +49,14 @@ public class LearnItemsListActivity extends AppCompatActivity {
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                 //intent
                 Intent intent = new Intent(LearnItemsListActivity.this, LearnDetailsActivity.class);
-                intent.putExtra("learnTopics",list[i]);
+                intent.putExtra("learnTopics", list[i]);
                 startActivity(intent);
                 adNetwork.showInterstitialAd();
             }
         });
 
     }//ends of onCreate
+
     private void loadItems() {
         //free content list
         final String[] Fundamental = {
@@ -369,7 +374,7 @@ public class LearnItemsListActivity extends AppCompatActivity {
 
 
         String programsItems = getIntent().getStringExtra("learnItems");
-        switch (programsItems){
+        switch (programsItems) {
             //free content
             case "Fundamental":
                 list = Fundamental;
@@ -457,6 +462,13 @@ public class LearnItemsListActivity extends AppCompatActivity {
         }
     }
 
+    //option menu item select
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        finish();
+        return super.onOptionsItemSelected(item);
+    }
+
     class CustomAdapter extends BaseAdapter {
 
         @Override
@@ -478,17 +490,11 @@ public class LearnItemsListActivity extends AppCompatActivity {
         @Override
         public View getView(int i, View view, ViewGroup viewGroup) {
 
-            view = getLayoutInflater().inflate(R.layout.programs_list_items_layout,null);
+            view = getLayoutInflater().inflate(R.layout.programs_list_items_layout, null);
             TextView textView = view.findViewById(R.id.itemsTitle);
             textView.setText(list[i]);
 
             return view;
         }
-    }
-    //option menu item select
-    @Override
-    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
-        finish();
-        return super.onOptionsItemSelected(item);
     }
 }

@@ -13,7 +13,6 @@ import android.widget.ImageView;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.fragment.app.Fragment;
 
-import com.airbnb.lottie.LottieAnimationView;
 import com.javascript.jscript.Activities.PremiumActivity;
 import com.javascript.jscript.Adapter.LearnItemsAdapter;
 import com.javascript.jscript.Adapter.LearnItemsAdapterPro;
@@ -29,15 +28,12 @@ import com.smarteist.autoimageslider.SliderView;
 
 public class LearnFragment extends Fragment {
 
-    ExpandableHeightGridView gridView , gridViewPro;
+    ExpandableHeightGridView gridView, gridViewPro;
     View proView;
     ImageView proImage;
-    private AdNetwork adNetwork;
-
-    String[] itemsName = {"Fundamental","Basic","Objects","OOPs","DOM","BOM","Advanced","AJAX","Typescript"};
-    String[] itemsNamePro = {"Angular","Vue Js","Next Js","React Js","Ember Js","Bootstrap","Node Js","Express Js","Laravel","jQuery"
+    String[] itemsName = {"Fundamental", "Basic", "Objects", "OOPs", "DOM", "BOM", "Advanced", "AJAX", "Typescript"};
+    String[] itemsNamePro = {"Angular", "Vue Js", "Next Js", "React Js", "Ember Js", "Bootstrap", "Node Js", "Express Js", "Laravel", "jQuery"
             /*"Svelte Js","Gatsby","Nuxt Js","Spring Boot","Micronaut","Mocha"*/};
-
     Integer[] itemImages = {
             R.drawable.ic_fundamental_icon,
             R.drawable.ic_programs_basic_image,
@@ -71,6 +67,7 @@ public class LearnFragment extends Fragment {
             R.drawable.ic_mochajs_icon*/
 
     };
+    private AdNetwork adNetwork;
 
     public LearnFragment() {
         // Required empty public constructor
@@ -132,7 +129,7 @@ public class LearnFragment extends Fragment {
             public void onClick(View view) {
                 Context context = view.getContext();
                 Intent intent;
-                intent = new Intent(context,PremiumActivity.class);
+                intent = new Intent(context, PremiumActivity.class);
                 intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                 context.startActivity(intent);
             }
@@ -143,21 +140,21 @@ public class LearnFragment extends Fragment {
         //free
         gridView = view.findViewById(R.id.learn_item_gridview);
         gridView.setExpanded(true);
-        LearnItemsAdapter adapter = new LearnItemsAdapter(itemsName,itemImages,getActivity());
+        LearnItemsAdapter adapter = new LearnItemsAdapter(itemsName, itemImages, getActivity());
         gridView.setAdapter(adapter);
 
         //pro
         gridViewPro = view.findViewById(R.id.learn_item_gridview_pro);
         gridViewPro.setExpanded(true);
-        LearnItemsAdapterPro adapterPro = new LearnItemsAdapterPro(itemsNamePro,itemImagesPro,getActivity());
+        LearnItemsAdapterPro adapterPro = new LearnItemsAdapterPro(itemsNamePro, itemImagesPro, getActivity());
         gridViewPro.setAdapter(adapterPro);
 
         //check user upgrade to pro
-        if (UiConfig.PRO_VISIBILITY_STATUS_SHOW){
+        if (UiConfig.PRO_VISIBILITY_STATUS_SHOW) {
             proView.setVisibility(View.VISIBLE);
             proImage.setVisibility(View.VISIBLE);
             proAnimation.setVisibility(View.VISIBLE);
-        }else {
+        } else {
             proView.setVisibility(View.GONE);
             proImage.setVisibility(View.GONE);
             proAnimation.setVisibility(View.GONE);
@@ -178,41 +175,41 @@ public class LearnFragment extends Fragment {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                 Intent intent = new Intent(getActivity(), LearnItemsListActivity.class);
-                switch (i){
+                switch (i) {
                     case 0:
-                        intent.putExtra("learnItems","Fundamental");
+                        intent.putExtra("learnItems", "Fundamental");
                         startActivity(intent);
                         break;
                     case 1:
-                        intent.putExtra("learnItems","Basic");
+                        intent.putExtra("learnItems", "Basic");
                         startActivity(intent);
                         break;
                     case 2:
-                        intent.putExtra("learnItems","Objects");
+                        intent.putExtra("learnItems", "Objects");
                         startActivity(intent);
                         break;
                     case 3:
-                        intent.putExtra("learnItems","OOPs");
+                        intent.putExtra("learnItems", "OOPs");
                         startActivity(intent);
                         break;
                     case 4:
-                        intent.putExtra("learnItems","DOM");
+                        intent.putExtra("learnItems", "DOM");
                         startActivity(intent);
                         break;
                     case 5:
-                        intent.putExtra("learnItems","BOM");
+                        intent.putExtra("learnItems", "BOM");
                         startActivity(intent);
                         break;
                     case 6:
-                        intent.putExtra("learnItems","Advanced");
+                        intent.putExtra("learnItems", "Advanced");
                         startActivity(intent);
                         break;
                     case 7:
-                        intent.putExtra("learnItems","AJAX");
+                        intent.putExtra("learnItems", "AJAX");
                         startActivity(intent);
                         break;
                     case 8:
-                        intent.putExtra("learnItems","Typescript");
+                        intent.putExtra("learnItems", "Typescript");
                         startActivity(intent);
                         break;
                     /*case 9:
@@ -230,45 +227,45 @@ public class LearnFragment extends Fragment {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                 Intent intent = new Intent(getActivity(), LearnItemsListActivity.class);
-                switch (i){
+                switch (i) {
                     case 0:
-                        intent.putExtra("learnItems","Angular");
+                        intent.putExtra("learnItems", "Angular");
                         startActivity(intent);
                         break;
                     case 1:
-                        intent.putExtra("learnItems","Vue Js");
+                        intent.putExtra("learnItems", "Vue Js");
                         startActivity(intent);
                         break;
                     case 2:
-                        intent.putExtra("learnItems","Next Js");
+                        intent.putExtra("learnItems", "Next Js");
                         startActivity(intent);
                         break;
                     case 3:
-                        intent.putExtra("learnItems","React Js");
+                        intent.putExtra("learnItems", "React Js");
                         startActivity(intent);
                         break;
                     case 4:
-                        intent.putExtra("learnItems","Ember Js");
+                        intent.putExtra("learnItems", "Ember Js");
                         startActivity(intent);
                         break;
                     case 5:
-                        intent.putExtra("learnItems","Bootstrap");
+                        intent.putExtra("learnItems", "Bootstrap");
                         startActivity(intent);
                         break;
                     case 6:
-                        intent.putExtra("learnItems","Node Js");
+                        intent.putExtra("learnItems", "Node Js");
                         startActivity(intent);
                         break;
                     case 7:
-                        intent.putExtra("learnItems","Express Js");
+                        intent.putExtra("learnItems", "Express Js");
                         startActivity(intent);
                         break;
                     case 8:
-                        intent.putExtra("learnItems","Laravel");
+                        intent.putExtra("learnItems", "Laravel");
                         startActivity(intent);
                         break;
                     case 9:
-                        intent.putExtra("learnItems","jQuery");
+                        intent.putExtra("learnItems", "jQuery");
                         startActivity(intent);
                         break;
                     /*

@@ -2,7 +2,7 @@ package com.javascript.jscript.Model;
 
 public class ProfileModel {
 
-    private String  username,profession,fbLink,instaLink,githubLink,linkedinLink,twitterLink,userBio;
+    private String username, profession, fbLink, instaLink, githubLink, linkedinLink, twitterLink, userBio;
 
     public ProfileModel() {
     }

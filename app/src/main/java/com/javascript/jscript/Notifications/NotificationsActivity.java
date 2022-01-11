@@ -8,7 +8,6 @@ import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.MenuItem;
 import android.view.View;
-import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -52,10 +51,10 @@ public class NotificationsActivity extends AppCompatActivity {
         setContentView(binding.getRoot());
         //custom toast
         inflater = getLayoutInflater();
-        toastLayout = inflater.inflate(R.layout.custom_toast_layout,(ViewGroup) findViewById(R.id.toastLayout));
-        toastText = (TextView) toastLayout.findViewById(R.id.toastText);
+        toastLayout = inflater.inflate(R.layout.custom_toast_layout, findViewById(R.id.toastLayout));
+        toastText = toastLayout.findViewById(R.id.toastText);
         toast = new Toast(getApplicationContext());
-        toast.setGravity(Gravity.BOTTOM,0,100);
+        toast.setGravity(Gravity.BOTTOM, 0, 100);
         toast.setDuration(Toast.LENGTH_LONG);
         toast.setView(toastLayout);
         //toolbar
@@ -82,7 +81,7 @@ public class NotificationsActivity extends AppCompatActivity {
                 connectivityManager.getNetworkInfo(ConnectivityManager.TYPE_WIFI).getState() == NetworkInfo.State.CONNECTED) {
             //we are connected to a network
 
-        }else {
+        } else {
             toastText.setText(R.string.no_connection_text);
             toast.show();
         }
@@ -103,7 +102,7 @@ public class NotificationsActivity extends AppCompatActivity {
 
                         }
                         //check list is empty
-                        if (list.isEmpty()){
+                        if (list.isEmpty()) {
                             noNotification.setVisibility(View.VISIBLE);
                             noNotifyText.setVisibility(View.VISIBLE);
                         }
@@ -118,53 +117,53 @@ public class NotificationsActivity extends AppCompatActivity {
                     }
                 });
         //set swipe refresh value
-            swipeRefreshLayout.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
-                @SuppressLint("NotifyDataSetChanged")
-                @Override
-                public void onRefresh() {
-                    //check network
-                    ConnectivityManager connectivityManager = (ConnectivityManager) getSystemService(NotificationsActivity.CONNECTIVITY_SERVICE);
-                    if (connectivityManager.getNetworkInfo(ConnectivityManager.TYPE_MOBILE).getState() == NetworkInfo.State.CONNECTED ||
-                            connectivityManager.getNetworkInfo(ConnectivityManager.TYPE_WIFI).getState() == NetworkInfo.State.CONNECTED) {
-                        //we are connected to a network
-                        database.getReference()
-                                .child("Notifications")
-                                .child(Objects.requireNonNull(FirebaseAuth.getInstance().getUid()))
-                                .addValueEventListener(new ValueEventListener() {
-                                    @Override
-                                    public void onDataChange(@NonNull DataSnapshot snapshot) {
-                                        list.clear();
-                                        for (DataSnapshot dataSnapshot : snapshot.getChildren()) {
-                                            NotificationsModel notificationsModel = dataSnapshot.getValue(NotificationsModel.class);
-                                            assert notificationsModel != null;
-                                            notificationsModel.setNotificationId(dataSnapshot.getKey());
-                                            list.add(notificationsModel);
-                                        }
-                                        //check list is empty
-                                        if (list.isEmpty()){
-                                            noNotification.setVisibility(View.VISIBLE);
-                                            noNotifyText.setVisibility(View.VISIBLE);
-                                        }
-                                        notificationRV.setAdapter(adapter);
-                                        notificationRV.hideShimmerAdapter();
-
+        swipeRefreshLayout.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
+            @SuppressLint("NotifyDataSetChanged")
+            @Override
+            public void onRefresh() {
+                //check network
+                ConnectivityManager connectivityManager = (ConnectivityManager) getSystemService(NotificationsActivity.CONNECTIVITY_SERVICE);
+                if (connectivityManager.getNetworkInfo(ConnectivityManager.TYPE_MOBILE).getState() == NetworkInfo.State.CONNECTED ||
+                        connectivityManager.getNetworkInfo(ConnectivityManager.TYPE_WIFI).getState() == NetworkInfo.State.CONNECTED) {
+                    //we are connected to a network
+                    database.getReference()
+                            .child("Notifications")
+                            .child(Objects.requireNonNull(FirebaseAuth.getInstance().getUid()))
+                            .addValueEventListener(new ValueEventListener() {
+                                @Override
+                                public void onDataChange(@NonNull DataSnapshot snapshot) {
+                                    list.clear();
+                                    for (DataSnapshot dataSnapshot : snapshot.getChildren()) {
+                                        NotificationsModel notificationsModel = dataSnapshot.getValue(NotificationsModel.class);
+                                        assert notificationsModel != null;
+                                        notificationsModel.setNotificationId(dataSnapshot.getKey());
+                                        list.add(notificationsModel);
                                     }
-
-                                    @Override
-                                    public void onCancelled(@NonNull DatabaseError error) {
-
+                                    //check list is empty
+                                    if (list.isEmpty()) {
+                                        noNotification.setVisibility(View.VISIBLE);
+                                        noNotifyText.setVisibility(View.VISIBLE);
                                     }
-                                });
-                        adapter.notifyDataSetChanged();
-                        swipeRefreshLayout.setRefreshing(false);
-                    }else {
-                        toastText.setText(R.string.no_connection_text);
-                        toast.show();
-                        notificationRV.hideShimmerAdapter();
-                        swipeRefreshLayout.setRefreshing(false);
-                    }
+                                    notificationRV.setAdapter(adapter);
+                                    notificationRV.hideShimmerAdapter();
+
+                                }
+
+                                @Override
+                                public void onCancelled(@NonNull DatabaseError error) {
+
+                                }
+                            });
+                    adapter.notifyDataSetChanged();
+                    swipeRefreshLayout.setRefreshing(false);
+                } else {
+                    toastText.setText(R.string.no_connection_text);
+                    toast.show();
+                    notificationRV.hideShimmerAdapter();
+                    swipeRefreshLayout.setRefreshing(false);
                 }
-            });
+            }
+        });
 
     }//ends of onCreate
 

@@ -1,12 +1,13 @@
 package com.javascript.jscript.Utils;
 
 import static android.content.ContentValues.TAG;
+
 import android.app.Activity;
 import android.util.Log;
-import android.view.View;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
+
 import com.google.android.gms.ads.AdError;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.FullScreenContentCallback;
@@ -18,22 +19,21 @@ import com.google.android.gms.ads.rewarded.RewardItem;
 import com.google.android.gms.ads.rewarded.RewardedAd;
 import com.google.android.gms.ads.rewarded.RewardedAdLoadCallback;
 import com.javascript.jscript.Config.UiConfig;
-import com.javascript.jscript.Quiz.QuizDetailsActivity;
 import com.javascript.jscript.R;
 
 public class AdNetwork {
 
-    private InterstitialAd mInterstitialAd;
-    private RewardedAd mRewardedAd;
     private final Activity context;
     int counter = 1;
+    private InterstitialAd mInterstitialAd;
+    private RewardedAd mRewardedAd;
 
     public AdNetwork(Activity context) {
         this.context = context;
     }
 
     //load ad
-    public void loadInterstitialAd(){
+    public void loadInterstitialAd() {
         AdRequest adRequest = new AdRequest.Builder().build();
         InterstitialAd.load(context, context.getString(R.string.interstitial_ad_unit_id), adRequest,
                 new InterstitialAdLoadCallback() {
@@ -71,13 +71,13 @@ public class AdNetwork {
     }
 
     //show ad
-    public void showInterstitialAd(){
-        if (UiConfig.INTERSTITIAL__AD_VISIBILITY){
-            if (mInterstitialAd != null){
-                if (counter == UiConfig.INTERSTITIAL_AD_INTERVAL){
+    public void showInterstitialAd() {
+        if (UiConfig.INTERSTITIAL__AD_VISIBILITY) {
+            if (mInterstitialAd != null) {
+                if (counter == UiConfig.INTERSTITIAL_AD_INTERVAL) {
                     mInterstitialAd.show(context);
                     counter = 1;
-                }else {
+                } else {
                     counter++;
                 }
             }
@@ -112,10 +112,11 @@ public class AdNetwork {
                     }
                 });
     }
+
     //show rewarded ad
     public void showRewardedAd() {
-        if (UiConfig.REWARDED__AD_VISIBILITY){
-            if (mRewardedAd != null){
+        if (UiConfig.REWARDED__AD_VISIBILITY) {
+            if (mRewardedAd != null) {
                 mRewardedAd.show(context, new OnUserEarnedRewardListener() {
                     @Override
                     public void onUserEarnedReward(@NonNull RewardItem rewardItem) {
@@ -125,7 +126,6 @@ public class AdNetwork {
             }
         }
     }
-
 
 
 }

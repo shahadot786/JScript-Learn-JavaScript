@@ -61,7 +61,7 @@ public class ProFragment extends Fragment {
                 .addListenerForSingleValueEvent(new ValueEventListener() {
                     @Override
                     public void onDataChange(@NonNull DataSnapshot snapshot) {
-                        if (snapshot.exists()){
+                        if (snapshot.exists()) {
                             UserModel user = snapshot.getValue(UserModel.class);
                             assert user != null;
                             Picasso.get()
@@ -79,13 +79,13 @@ public class ProFragment extends Fragment {
                 });
 
         // Inflate the layout for this fragment
-        View view = inflater.inflate(R.layout.fragment_pro,container,false);
+        View view = inflater.inflate(R.layout.fragment_pro, container, false);
         binding = FragmentProBinding.inflate(inflater, container, false);
         //Toast
-        toastLayout = inflater.inflate(R.layout.custom_toast_layout,(ViewGroup) view.findViewById(R.id.toastLayout));
-        toastText = (TextView) toastLayout.findViewById(R.id.toastText);
+        toastLayout = inflater.inflate(R.layout.custom_toast_layout, view.findViewById(R.id.toastLayout));
+        toastText = toastLayout.findViewById(R.id.toastText);
         toast = new Toast(getActivity().getBaseContext());
-        toast.setGravity(Gravity.BOTTOM,0,200);
+        toast.setGravity(Gravity.BOTTOM, 0, 200);
         toast.setDuration(Toast.LENGTH_LONG);
         toast.setView(toastLayout);
         binding.proVersion.setText(BuildConfig.VERSION_NAME);
@@ -103,8 +103,7 @@ public class ProFragment extends Fragment {
                         connectivityManager.getNetworkInfo(ConnectivityManager.TYPE_WIFI).getState() == NetworkInfo.State.CONNECTED) {
                     //we are connected to a network
                     startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("http://play.google.com/store/apps/details?id=" + BuildConfig.APPLICATION_ID)));
-                }
-                else {
+                } else {
                     toastText.setText(R.string.no_connection_text);
                     toast.show();
                 }

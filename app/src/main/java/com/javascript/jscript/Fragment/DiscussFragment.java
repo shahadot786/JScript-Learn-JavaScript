@@ -72,8 +72,8 @@ public class DiscussFragment extends Fragment {
         setHasOptionsMenu(true);
         //find dot view
         dotView = view.findViewById(R.id.dotViews);
-        toastLayout = inflater.inflate(R.layout.custom_toast_layout, (ViewGroup) view.findViewById(R.id.toastLayout));
-        toastText = (TextView) toastLayout.findViewById(R.id.toastText);
+        toastLayout = inflater.inflate(R.layout.custom_toast_layout, view.findViewById(R.id.toastLayout));
+        toastText = toastLayout.findViewById(R.id.toastText);
         toast = new Toast(getActivity().getBaseContext());
         toast.setGravity(Gravity.BOTTOM, 0, 200);
         toast.setDuration(Toast.LENGTH_LONG);
@@ -221,7 +221,7 @@ public class DiscussFragment extends Fragment {
                             boolean checkOpens = model.isCheckOpen();
                             if (!checkOpens) {
                                 menuItem1.setIcon(R.drawable.ic_notification_active_24);
-                            }else {
+                            } else {
                                 menuItem1.setIcon(R.drawable.ic_notification_icon);
                             }
                         }

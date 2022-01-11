@@ -13,7 +13,6 @@ import android.util.Log;
 import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
-import android.view.ViewGroup;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -51,6 +50,7 @@ public class GoogleSignInActivity extends AppCompatActivity {
     TextView toastText;
     View toastLayout;
     Toast toast;
+    int RC_SIGN_IN = 74;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -59,10 +59,10 @@ public class GoogleSignInActivity extends AppCompatActivity {
         setContentView(binding.getRoot());
         //custom toast
         inflater = getLayoutInflater();
-        toastLayout = inflater.inflate(R.layout.custom_toast_layout,(ViewGroup) findViewById(R.id.toastLayout));
-        toastText = (TextView) toastLayout.findViewById(R.id.toastText);
+        toastLayout = inflater.inflate(R.layout.custom_toast_layout, findViewById(R.id.toastLayout));
+        toastText = toastLayout.findViewById(R.id.toastText);
         toast = new Toast(getApplicationContext());
-        toast.setGravity(Gravity.BOTTOM,0,150);
+        toast.setGravity(Gravity.BOTTOM, 0, 150);
         toast.setDuration(Toast.LENGTH_LONG);
         toast.setView(toastLayout);
         //firebase instance
@@ -123,8 +123,6 @@ public class GoogleSignInActivity extends AppCompatActivity {
 
 
     }//on create ends
-
-    int RC_SIGN_IN = 74;
 
     private void signIn() {
         Intent signInIntent = mGoogleSignInClient.getSignInIntent();

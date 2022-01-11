@@ -1,8 +1,5 @@
 package com.javascript.jscript.Interview;
 
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
@@ -12,6 +9,10 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
+
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
+
 import com.javascript.jscript.R;
 import com.javascript.jscript.Utils.AdNetwork;
 import com.javascript.jscript.databinding.ActivityInterviewItemsListBinding;
@@ -20,10 +21,10 @@ import java.util.Objects;
 
 public class InterviewItemsListActivity extends AppCompatActivity {
 
-    private AdNetwork adNetwork;
     ActivityInterviewItemsListBinding binding;
     ListView interviews;
     String[] list = {};
+    private AdNetwork adNetwork;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -44,14 +45,15 @@ public class InterviewItemsListActivity extends AppCompatActivity {
         adNetwork.loadInterstitialAd();
         interviews.setOnItemClickListener((adapterView, view, i, l) -> {
             Intent intent = new Intent(InterviewItemsListActivity.this, InterviewAnswerActivity.class);
-            intent.putExtra("Interview Questions",list[i]);
-            intent.putExtra("Interview Answers",list[i]);
+            intent.putExtra("Interview Questions", list[i]);
+            intent.putExtra("Interview Answers", list[i]);
             startActivity(intent);
             adNetwork.showInterstitialAd();
         });
 
 
     }
+
     private void loadItems() {
         final String[] basic = {
                 "What is JavaScript?",
@@ -232,7 +234,7 @@ public class InterviewItemsListActivity extends AppCompatActivity {
 
         };
         String programsItems = getIntent().getStringExtra("interviewItems");
-        switch (programsItems){
+        switch (programsItems) {
             case "Basic":
                 list = basic;
                 break;
@@ -290,6 +292,13 @@ public class InterviewItemsListActivity extends AppCompatActivity {
         }
     }
 
+    //option menu item select
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        finish();
+        return super.onOptionsItemSelected(item);
+    }
+
     class CustomAdapter extends BaseAdapter {
 
         @Override
@@ -311,18 +320,11 @@ public class InterviewItemsListActivity extends AppCompatActivity {
         @Override
         public View getView(int i, View view, ViewGroup viewGroup) {
 
-            view = getLayoutInflater().inflate(R.layout.programs_list_items_layout,null);
+            view = getLayoutInflater().inflate(R.layout.programs_list_items_layout, null);
             TextView textView = view.findViewById(R.id.itemsTitle);
             textView.setText(list[i]);
 
             return view;
         }
-    }
-
-    //option menu item select
-    @Override
-    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
-        finish();
-        return super.onOptionsItemSelected(item);
     }
 }

@@ -1,13 +1,14 @@
 package com.javascript.jscript.Quiz;
 
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.AppCompatButton;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.AppCompatButton;
 
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
@@ -20,9 +21,9 @@ import java.util.Objects;
 public class QuizResultActivity extends AppCompatActivity {
 
     ActivityQuizResultBinding binding;
-    private AppCompatButton startNewBtn;
-    private TextView quizMessage,correctAns,wrongAns;
     ImageView quizTrophy;
+    private AppCompatButton startNewBtn;
+    private TextView quizMessage, correctAns, wrongAns;
     private AdView mRecAd;
 
     @Override
@@ -46,26 +47,26 @@ public class QuizResultActivity extends AppCompatActivity {
         mRecAd.loadAd(adRequest);
         //conditions
         //ads disabled code
-        if (UiConfig.BANNER_AD_VISIBILITY){
+        if (UiConfig.BANNER_AD_VISIBILITY) {
             mRecAd.setVisibility(View.VISIBLE);
-        }else {
+        } else {
             mRecAd.setVisibility(View.GONE);
         }
 
         //get results
-        final int getCorrectAnswer = getIntent().getIntExtra("correct",0);
-        final int getWrongAnswer = getIntent().getIntExtra("incorrect",0);
+        final int getCorrectAnswer = getIntent().getIntExtra("correct", 0);
+        final int getWrongAnswer = getIntent().getIntExtra("incorrect", 0);
 
         //set results
         correctAns.setText(String.valueOf(getCorrectAnswer));
         wrongAns.setText(String.valueOf(getWrongAnswer));
 
         //check the result is bellow 10
-        if (getCorrectAnswer <8){
+        if (getCorrectAnswer < 8) {
             quizTrophy.setImageResource(R.drawable.ic_quiz_fail_64);
             quizTrophy.setVisibility(View.VISIBLE);
             quizMessage.setText(getResources().getString(R.string.quiz_fail_message));
-        }else {
+        } else {
             quizTrophy.setImageResource(R.drawable.ic_quiz_success_64);
             quizTrophy.setVisibility(View.VISIBLE);
             quizMessage.setText(getResources().getString(R.string.quiz_success_message));
@@ -82,6 +83,7 @@ public class QuizResultActivity extends AppCompatActivity {
         });
 
     }
+
     //option menu item select
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {

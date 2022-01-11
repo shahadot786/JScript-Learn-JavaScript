@@ -11,7 +11,6 @@ import android.os.Bundle;
 import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
-import android.view.ViewGroup;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -33,12 +32,8 @@ import com.android.billingclient.api.SkuDetails;
 import com.android.billingclient.api.SkuDetailsParams;
 import com.android.billingclient.api.SkuDetailsResponseListener;
 import com.google.firebase.auth.FirebaseAuth;
-import com.google.firebase.database.DataSnapshot;
-import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.FirebaseDatabase;
-import com.google.firebase.database.ValueEventListener;
 import com.javascript.jscript.Config.UiConfig;
-import com.javascript.jscript.Model.PremiumModel;
 import com.javascript.jscript.R;
 import com.javascript.jscript.Utils.Security;
 import com.javascript.jscript.databinding.ActivityPremiumBinding;
@@ -46,23 +41,33 @@ import com.javascript.jscript.databinding.ActivityPremiumBinding;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Objects;
-import java.util.UUID;
 
 public class PremiumActivity extends AppCompatActivity implements PurchasesUpdatedListener {
 
-    FirebaseDatabase database;
-    FirebaseAuth auth;
-    ActivityPremiumBinding binding;
-    private BillingClient billingClient;
-    LayoutInflater inflater;
-    TextView toastText;
-    View toastLayout;
-    Toast toast;
     public static final String PREF_FILE = "JScript_Learn_JavaScript";
     public static final String PURCHASE_KEY = "lifetime_product";
     public static final String PRODUCT_ID = "shr_jscript_final";
     public static final String VERIFY_PURCHASE_KEY = "JScriptBJZXQTc4gBeak9vwJv6ZjmSOpg2786";
+    FirebaseDatabase database;
+    FirebaseAuth auth;
+    ActivityPremiumBinding binding;
+    LayoutInflater inflater;
+    TextView toastText;
+    View toastLayout;
+    Toast toast;
+    Activity activity = this;
+    AcknowledgePurchaseResponseListener ackPurchase = new AcknowledgePurchaseResponseListener() {
+        @Override
+        public void onAcknowledgePurchaseResponse(BillingResult billingResult) {
+            if (billingResult.getResponseCode() == BillingClient.BillingResponseCode.OK) {
+                //if purchase is acknowledged
+                // Grant entitlement to the user. and restart activity
+                savePurchaseValueToPref(true);
+                activity.recreate();
+            }
+        }
+    };
+    private BillingClient billingClient;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -74,10 +79,10 @@ public class PremiumActivity extends AppCompatActivity implements PurchasesUpdat
         auth = FirebaseAuth.getInstance();
         //custom toast
         inflater = getLayoutInflater();
-        toastLayout = inflater.inflate(R.layout.custom_toast_layout,(ViewGroup) findViewById(R.id.toastLayout));
-        toastText = (TextView) toastLayout.findViewById(R.id.toastText);
+        toastLayout = inflater.inflate(R.layout.custom_toast_layout, findViewById(R.id.toastLayout));
+        toastText = toastLayout.findViewById(R.id.toastText);
         toast = new Toast(getApplicationContext());
-        toast.setGravity(Gravity.BOTTOM,0,150);
+        toast.setGravity(Gravity.BOTTOM, 0, 150);
         toast.setDuration(Toast.LENGTH_LONG);
         toast.setView(toastLayout);
         //pro cancel button
@@ -169,7 +174,6 @@ public class PremiumActivity extends AppCompatActivity implements PurchasesUpdat
         }
     }//ends of OnCreate
 
-    Activity activity = this;
     //get product details method
     public void ProductDetails() {
         if (billingClient.isReady()) {
@@ -196,6 +200,7 @@ public class PremiumActivity extends AppCompatActivity implements PurchasesUpdat
             });
         }
     }
+
     //subscribe on click method
     public void purchase() {
         //check if service is already connected
@@ -225,20 +230,25 @@ public class PremiumActivity extends AppCompatActivity implements PurchasesUpdat
             });
         }
     }
+
     //app shared preference
     private SharedPreferences getPreferenceObject() {
         return getApplicationContext().getSharedPreferences(PREF_FILE, 0);
     }
+
     private SharedPreferences.Editor getPreferenceEditObject() {
         SharedPreferences pref = getApplicationContext().getSharedPreferences(PREF_FILE, 0);
         return pref.edit();
     }
+
     private boolean getPurchaseValueFromPref() {
         return getPreferenceObject().getBoolean(PURCHASE_KEY, false);
     }
+
     private void savePurchaseValueToPref(boolean value) {
         getPreferenceEditObject().putBoolean(PURCHASE_KEY, value).commit();
     }
+
     //get product details method
     private void getProductsDetails() {
         List<String> skuList = new ArrayList<>();
@@ -270,6 +280,7 @@ public class PremiumActivity extends AppCompatActivity implements PurchasesUpdat
                     }
                 });
     }
+
     //before purchase method
     private void initiatePurchase() {
         List<String> skuList = new ArrayList<>();
@@ -398,18 +409,6 @@ public class PremiumActivity extends AppCompatActivity implements PurchasesUpdat
             }
         }
     }
-
-    AcknowledgePurchaseResponseListener ackPurchase = new AcknowledgePurchaseResponseListener() {
-        @Override
-        public void onAcknowledgePurchaseResponse(BillingResult billingResult) {
-            if (billingResult.getResponseCode() == BillingClient.BillingResponseCode.OK) {
-                //if purchase is acknowledged
-                // Grant entitlement to the user. and restart activity
-                savePurchaseValueToPref(true);
-                activity.recreate();
-            }
-        }
-    };
 
     /**
      * Verifies that the purchase was signed correctly for this developer's public key.

@@ -11,7 +11,6 @@ import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.view.ViewGroup;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -69,10 +68,10 @@ public class DiscussDetailsActivity extends AppCompatActivity {
         setContentView(binding.getRoot());
         //custom toast
         inflater = getLayoutInflater();
-        toastLayout = inflater.inflate(R.layout.custom_toast_layout,(ViewGroup) findViewById(R.id.toastLayout));
-        toastText = (TextView) toastLayout.findViewById(R.id.toastText);
+        toastLayout = inflater.inflate(R.layout.custom_toast_layout, findViewById(R.id.toastLayout));
+        toastText = toastLayout.findViewById(R.id.toastText);
         toast = new Toast(getApplicationContext());
-        toast.setGravity(Gravity.BOTTOM,0,100);
+        toast.setGravity(Gravity.BOTTOM, 0, 100);
         toast.setDuration(Toast.LENGTH_LONG);
         toast.setView(toastLayout);
         //swipe refresh
@@ -104,7 +103,7 @@ public class DiscussDetailsActivity extends AppCompatActivity {
                 connectivityManager.getNetworkInfo(ConnectivityManager.TYPE_WIFI).getState() == NetworkInfo.State.CONNECTED) {
             //we are connected to a network
 
-        }else {
+        } else {
             toastText.setText(R.string.no_connection_text);
             toast.show();
         }
@@ -121,14 +120,14 @@ public class DiscussDetailsActivity extends AppCompatActivity {
                 question = discuss.getQuestions();
                 description = discuss.getDescription();
                 //check description is empty
-                if (description.isEmpty()){
+                if (description.isEmpty()) {
                     binding.descriptions.setVisibility(View.GONE);
-                }else {
+                } else {
                     binding.descriptions.setVisibility(View.VISIBLE);
                 }
                 //set data to id's
                 String time = TimeAgo.using(discuss.getPostedAt());
-                String views = discuss.getPostViews()+"";
+                String views = discuss.getPostViews() + "";
                 String comments = discuss.getCommentCount() + "";
                 String shares = discuss.getShareCount() + "";
                 binding.time.setText(time);
@@ -136,33 +135,33 @@ public class DiscussDetailsActivity extends AppCompatActivity {
                 binding.descriptions.setText(description);
                 //1K and 1M views logic
                 int view = Integer.parseInt(views);
-                if (view >= 1000){
-                    binding.views.setText((view / 1000)+"."+((view % 1000)/100)+"K");
-                }else {
+                if (view >= 1000) {
+                    binding.views.setText((view / 1000) + "." + ((view % 1000) / 100) + "K");
+                } else {
                     binding.views.setText(views);
                 }
-                if (view >= 1000000){
-                    binding.views.setText((view / 1000000)+"."+((view % 1000000)/10000)+"M");
+                if (view >= 1000000) {
+                    binding.views.setText((view / 1000000) + "." + ((view % 1000000) / 10000) + "M");
                 }
                 //1K and 1M comments logic
                 int comment = Integer.parseInt(comments);
-                if (comment >= 1000){
-                    binding.comment.setText((comment / 1000)+"."+((comment % 1000)/100)+"K");
-                }else {
+                if (comment >= 1000) {
+                    binding.comment.setText((comment / 1000) + "." + ((comment % 1000) / 100) + "K");
+                } else {
                     binding.comment.setText(comments);
                 }
-                if (comment >= 1000000){
-                    binding.comment.setText((comment / 1000000)+"."+((comment % 1000000)/10000)+"M");
+                if (comment >= 1000000) {
+                    binding.comment.setText((comment / 1000000) + "." + ((comment % 1000000) / 10000) + "M");
                 }
                 //1K and 1M shares logic
                 int share = Integer.parseInt(shares);
-                if (share >= 1000){
-                    binding.share.setText((share / 1000)+"."+((share % 1000)/100)+"K");
-                }else {
+                if (share >= 1000) {
+                    binding.share.setText((share / 1000) + "." + ((share % 1000) / 100) + "K");
+                } else {
                     binding.share.setText(shares);
                 }
-                if (share >= 1000000){
-                    binding.share.setText((share / 1000000)+"."+((share % 1000000)/10000)+"M");
+                if (share >= 1000000) {
+                    binding.share.setText((share / 1000000) + "." + ((share % 1000000) / 10000) + "M");
                 }
 
             }
@@ -365,7 +364,7 @@ public class DiscussDetailsActivity extends AppCompatActivity {
                     swipeRefreshLayout.setRefreshing(false);
                     commentShimmer.hideShimmerAdapter();
 
-                }else {
+                } else {
                     toastText.setText(R.string.no_connection_text);
                     toast.show();
                     swipeRefreshLayout.setRefreshing(false);
@@ -414,7 +413,7 @@ public class DiscussDetailsActivity extends AppCompatActivity {
         Intent shareIntent = new Intent();
         shareIntent.setAction(Intent.ACTION_SEND);
         shareIntent.putExtra(Intent.EXTRA_SUBJECT, "Q&A Discussions");
-        shareIntent.putExtra(Intent.EXTRA_TEXT, "Question: "+question + "\n\n" + "Descriptions: \n\n"+description +
+        shareIntent.putExtra(Intent.EXTRA_TEXT, "Question: " + question + "\n\n" + "Descriptions: \n\n" + description +
                 "\n\nLearn JavaScript in JScript & solve problems.\n" +
                 "https://play.google.com/store/apps/details?id=" +
                 BuildConfig.APPLICATION_ID);
@@ -441,7 +440,7 @@ public class DiscussDetailsActivity extends AppCompatActivity {
                                     @Override
                                     public void onDataChange(@NonNull DataSnapshot snapshot) {
                                         //if user shares before
-                                        if (snapshot.exists()){
+                                        if (snapshot.exists()) {
                                             binding.share.setText(shares);
                                         }
                                         //else new user share

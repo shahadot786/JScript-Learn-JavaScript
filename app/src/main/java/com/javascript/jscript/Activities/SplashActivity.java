@@ -11,7 +11,6 @@ import android.os.Handler;
 import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
-import android.view.ViewGroup;
 import android.view.WindowManager;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
@@ -32,13 +31,13 @@ import com.javascript.jscript.R;
 
 public class SplashActivity extends AppCompatActivity {
 
+    public static final String PREF_FILE = "JScript_Learn_JavaScript";
+    final String PREFS_NAME = "JScript_for_new_user";//change every update
     Animation bottomAnim;
     TextView slogan;
     FirebaseUser currentUser;
     FirebaseAuth auth;
     FirebaseDatabase database;
-    final String PREFS_NAME = "JScript_for_new_user";//change every update
-    public static final String PREF_FILE = "JScript_Learn_JavaScript";
     LayoutInflater inflater;
     TextView toastText;
     View toastLayout;
@@ -52,8 +51,8 @@ public class SplashActivity extends AppCompatActivity {
         setContentView(R.layout.activity_splash);
         //custom toast
         inflater = getLayoutInflater();
-        toastLayout = inflater.inflate(R.layout.custom_toast_layout, (ViewGroup) findViewById(R.id.toastLayout));
-        toastText = (TextView) toastLayout.findViewById(R.id.toastText);
+        toastLayout = inflater.inflate(R.layout.custom_toast_layout, findViewById(R.id.toastLayout));
+        toastText = toastLayout.findViewById(R.id.toastText);
         toast = new Toast(getApplicationContext());
         toast.setGravity(Gravity.BOTTOM, 0, 40);
         toast.setDuration(Toast.LENGTH_LONG);

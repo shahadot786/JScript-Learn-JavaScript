@@ -3,19 +3,19 @@ package com.javascript.jscript.Interview;
 public class InterviewAnswers {
     public static final String What_is_JavaScript = "JavaScript is a client-side and server-side \nscripting language " +
             "inserted into HTML pages and is \nunderstood by web browsers. JavaScript is \nalso an Object-based Programming language";
-    public static final String WhatareJavaScriptDataTypes ="Following are the JavaScript Data types:\n" +
+    public static final String WhatareJavaScriptDataTypes = "Following are the JavaScript Data types:\n" +
             "\n" +
             "Number\n" +
             "String\n" +
             "Boolean\n" +
             "Object\n" +
             "Undefined";
-    public static final String WhatistherealnameofJavaScript ="The original name was Mocha, a name chosen by Marc Andreessen, founder of Netscape. In September of 1995, the name was changed to LiveScript. In December 1995, after receiving a trademark license from Sun, the name JavaScript was adopted.";
-    public static final String EnumeratethedifferencesbetweenjavaandJavaScript ="Java is a complete programming language. In contrast, JavaScript is a coded program that can be introduced to HTML pages. These two languages are not at all inter-dependent and are designed for different intent. Java is an object-oriented programming (OOPS) or structured programming languages like C++ or C, whereas JavaScript is a client-side scripting language.";
-    public static final String WhatistheuseofisNaNfunction ="isNan function returns true if the argument is not a number; otherwise, it is false.";
-    public static final String WhichisfasterbetweenjavaScriptandanASP ="JavaScript is faster. JavaScript is a client-side language,, and thus it does not need the assistance of the webserver to execute. On the other hand, ASP is a server-side language and hence is always slower than JavaScript. Javascript now is also a server-side language (nodejs).";
-    public static final String WhatisnegativeInfinity ="Negative Infinity is a number in JavaScript which can be derived by dividing negative number by zero.";
-    public static final String IsitpossibletobreakJavaScriptCode ="Breaking within a string statement can be done by using a backslash, ‘\\,’ at the end of the first line.\n" +
+    public static final String WhatistherealnameofJavaScript = "The original name was Mocha, a name chosen by Marc Andreessen, founder of Netscape. In September of 1995, the name was changed to LiveScript. In December 1995, after receiving a trademark license from Sun, the name JavaScript was adopted.";
+    public static final String EnumeratethedifferencesbetweenjavaandJavaScript = "Java is a complete programming language. In contrast, JavaScript is a coded program that can be introduced to HTML pages. These two languages are not at all inter-dependent and are designed for different intent. Java is an object-oriented programming (OOPS) or structured programming languages like C++ or C, whereas JavaScript is a client-side scripting language.";
+    public static final String WhatistheuseofisNaNfunction = "isNan function returns true if the argument is not a number; otherwise, it is false.";
+    public static final String WhichisfasterbetweenjavaScriptandanASP = "JavaScript is faster. JavaScript is a client-side language,, and thus it does not need the assistance of the webserver to execute. On the other hand, ASP is a server-side language and hence is always slower than JavaScript. Javascript now is also a server-side language (nodejs).";
+    public static final String WhatisnegativeInfinity = "Negative Infinity is a number in JavaScript which can be derived by dividing negative number by zero.";
+    public static final String IsitpossibletobreakJavaScriptCode = "Breaking within a string statement can be done by using a backslash, ‘\\,’ at the end of the first line.\n" +
             "\n" +
             "Example:\n" +
             "\n" +
@@ -28,8 +28,8 @@ public class InterviewAnswers {
             "z=\n" +
             "x+y;\n" +
             "The above code is perfectly fine, though not advisable as it hampers debugging.";
-    public static final String WhichcompanydevelopedJavaScript ="Netscape is the software company that developed JavaScript.";
-    public static final String Whatareundeclaredandundefinedvariables ="Undeclared variables are those that do not exist in a program and are not declared. If the program tries to read the value of an undeclared variable, then a runtime error is encountered.\n" +
+    public static final String WhichcompanydevelopedJavaScript = "Netscape is the software company that developed JavaScript.";
+    public static final String Whatareundeclaredandundefinedvariables = "Undeclared variables are those that do not exist in a program and are not declared. If the program tries to read the value of an undeclared variable, then a runtime error is encountered.\n" +
             "\n" +
             "Undefined variables are those that are declared in the program but have not been given any value. If the program tries to read the value of an undefined variable, an undefined value is returned.";
     public static final String Writethecodeforaddingnewelementsdynamically = "<html> \n" +
@@ -103,8 +103,6 @@ public class InterviewAnswers {
             "Prompt";
     public static final String WhatisthedatatypeofvariablesinJavaScript = "All variables in JavaScript are object data types.";
     public static final String answer = "";
-
-
 
 
 }

@@ -41,9 +41,9 @@ public class LearnItemsAdapterPro extends BaseAdapter {
     public View getView(int i, View view, ViewGroup viewGroup) {
         View gridViewPro = view;
         LayoutInflater inflater;
-        if (view == null){
+        if (view == null) {
             inflater = (LayoutInflater) contextPro.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-            gridViewPro = inflater.inflate(R.layout.topics_items_grid_layout,null);
+            gridViewPro = inflater.inflate(R.layout.topics_items_grid_layout, null);
         }
 
         TextView items = gridViewPro.findViewById(R.id.programs_items);

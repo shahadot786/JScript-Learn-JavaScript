@@ -3,16 +3,15 @@ package com.javascript.jscript.Fragment;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
-
-import androidx.annotation.NonNull;
-import androidx.constraintlayout.widget.ConstraintLayout;
-import androidx.fragment.app.Fragment;
-
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ImageView;
+
+import androidx.annotation.NonNull;
+import androidx.constraintlayout.widget.ConstraintLayout;
+import androidx.fragment.app.Fragment;
 
 import com.javascript.jscript.Activities.PremiumActivity;
 import com.javascript.jscript.Adapter.ProgramsItemsAdapter;
@@ -24,17 +23,13 @@ import com.javascript.jscript.Utils.AdNetwork;
 import com.javascript.jscript.Utils.ExpandableHeightGridView;
 
 public class ProgramsFragment extends Fragment {
-    ExpandableHeightGridView gridView , gridViewPro;
+    ExpandableHeightGridView gridView, gridViewPro;
     View proView;
     ImageView proImage;
-    private AdNetwork adNetwork;
-
-
-    String[] itemsName = {"Fundamental","Basic","Objects","OOPs","DOM","BOM","Advanced","AJAX"};
-    String[] itemsNamePro = {"Typescript","Angular","Vue Js","Next Js","React Js","Ember Js","Svelte Js","Gatsby","Nuxt Js","Bootstrap"
+    String[] itemsName = {"Fundamental", "Basic", "Objects", "OOPs", "DOM", "BOM", "Advanced", "AJAX"};
+    String[] itemsNamePro = {"Typescript", "Angular", "Vue Js", "Next Js", "React Js", "Ember Js", "Svelte Js", "Gatsby", "Nuxt Js", "Bootstrap"
             /*"Node Js","Spring Boot","Express Js",
             "Laravel","Micronaut","Mocha"*/};
-
     Integer[] itemImages = {
             R.drawable.ic_fundamental_icon,
             R.drawable.ic_programs_basic_image,
@@ -66,6 +61,8 @@ public class ProgramsFragment extends Fragment {
             R.drawable.ic_mochajs_icon*/
 
     };
+    private AdNetwork adNetwork;
+
     public ProgramsFragment() {
         // Required empty public constructor
     }
@@ -78,7 +75,7 @@ public class ProgramsFragment extends Fragment {
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_programs,container,false);
+        View view = inflater.inflate(R.layout.fragment_programs, container, false);
         //pro animations
         ConstraintLayout proAnimation = view.findViewById(R.id.proAnimation);
         proAnimation.setOnClickListener(new View.OnClickListener() {
@@ -86,7 +83,7 @@ public class ProgramsFragment extends Fragment {
             public void onClick(View view) {
                 Context context = view.getContext();
                 Intent intent;
-                intent = new Intent(context,PremiumActivity.class);
+                intent = new Intent(context, PremiumActivity.class);
                 intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                 context.startActivity(intent);
             }
@@ -97,21 +94,21 @@ public class ProgramsFragment extends Fragment {
         //free
         gridView = view.findViewById(R.id.programs_item_gridview);
         gridView.setExpanded(true);
-        ProgramsItemsAdapter adapter = new ProgramsItemsAdapter(itemsName,itemImages,getActivity());
+        ProgramsItemsAdapter adapter = new ProgramsItemsAdapter(itemsName, itemImages, getActivity());
         gridView.setAdapter(adapter);
 
         //pro
         gridViewPro = view.findViewById(R.id.programs_item_gridview_pro);
         gridViewPro.setExpanded(true);
-        ProgramsItemsAdapterPro adapter1 = new ProgramsItemsAdapterPro(itemsNamePro,itemImagesPro,getActivity());
+        ProgramsItemsAdapterPro adapter1 = new ProgramsItemsAdapterPro(itemsNamePro, itemImagesPro, getActivity());
         gridViewPro.setAdapter(adapter1);
 
         //check user upgrade to pro
-        if (UiConfig.PRO_VISIBILITY_STATUS_SHOW){
+        if (UiConfig.PRO_VISIBILITY_STATUS_SHOW) {
             proView.setVisibility(View.VISIBLE);
             proImage.setVisibility(View.VISIBLE);
             proAnimation.setVisibility(View.VISIBLE);
-        }else {
+        } else {
             proView.setVisibility(View.GONE);
             proImage.setVisibility(View.GONE);
             proAnimation.setVisibility(View.GONE);
@@ -132,37 +129,37 @@ public class ProgramsFragment extends Fragment {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                 Intent intent = new Intent(getActivity(), ProgramsItemsListActivity.class);
-                switch (i){
+                switch (i) {
                     case 0:
-                        intent.putExtra("programsItems","Fundamental");
+                        intent.putExtra("programsItems", "Fundamental");
                         startActivity(intent);
                         break;
                     case 1:
-                        intent.putExtra("programsItems","Basic");
+                        intent.putExtra("programsItems", "Basic");
                         startActivity(intent);
                         break;
                     case 2:
-                        intent.putExtra("programsItems","Objects");
+                        intent.putExtra("programsItems", "Objects");
                         startActivity(intent);
                         break;
                     case 3:
-                        intent.putExtra("programsItems","OOPs");
+                        intent.putExtra("programsItems", "OOPs");
                         startActivity(intent);
                         break;
                     case 4:
-                        intent.putExtra("programsItems","DOM");
+                        intent.putExtra("programsItems", "DOM");
                         startActivity(intent);
                         break;
                     case 5:
-                        intent.putExtra("programsItems","BOM");
+                        intent.putExtra("programsItems", "BOM");
                         startActivity(intent);
                         break;
                     case 6:
-                        intent.putExtra("programsItems","Advanced");
+                        intent.putExtra("programsItems", "Advanced");
                         startActivity(intent);
                         break;
                     case 7:
-                        intent.putExtra("programsItems","AJAX");
+                        intent.putExtra("programsItems", "AJAX");
                         startActivity(intent);
                         break;
                     /*case 8:
@@ -180,45 +177,45 @@ public class ProgramsFragment extends Fragment {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                 Intent intent = new Intent(getActivity(), ProgramsItemsListActivity.class);
-                switch (i){
+                switch (i) {
                     case 0:
-                        intent.putExtra("programsItems","Typescript");
+                        intent.putExtra("programsItems", "Typescript");
                         startActivity(intent);
                         break;
                     case 1:
-                        intent.putExtra("programsItems","Angular");
+                        intent.putExtra("programsItems", "Angular");
                         startActivity(intent);
                         break;
                     case 2:
-                        intent.putExtra("programsItems","Vue Js");
+                        intent.putExtra("programsItems", "Vue Js");
                         startActivity(intent);
                         break;
                     case 3:
-                        intent.putExtra("programsItems","Next Js");
+                        intent.putExtra("programsItems", "Next Js");
                         startActivity(intent);
                         break;
                     case 4:
-                        intent.putExtra("programsItems","React Js");
+                        intent.putExtra("programsItems", "React Js");
                         startActivity(intent);
                         break;
                     case 5:
-                        intent.putExtra("programsItems","Ember Js");
+                        intent.putExtra("programsItems", "Ember Js");
                         startActivity(intent);
                         break;
                     case 6:
-                        intent.putExtra("programsItems","Svelte Js");
+                        intent.putExtra("programsItems", "Svelte Js");
                         startActivity(intent);
                         break;
                     case 7:
-                        intent.putExtra("programsItems","Gatsby");
+                        intent.putExtra("programsItems", "Gatsby");
                         startActivity(intent);
                         break;
                     case 8:
-                        intent.putExtra("programsItems","Nuxt Js");
+                        intent.putExtra("programsItems", "Nuxt Js");
                         startActivity(intent);
                         break;
                     case 9:
-                        intent.putExtra("programsItems","Bootstrap");
+                        intent.putExtra("programsItems", "Bootstrap");
                         startActivity(intent);
                         break;
                     /*case 10:

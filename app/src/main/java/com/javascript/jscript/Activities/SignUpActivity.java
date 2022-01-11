@@ -12,7 +12,6 @@ import android.util.Patterns;
 import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
-import android.view.ViewGroup;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -50,10 +49,6 @@ public class SignUpActivity extends AppCompatActivity {
                     "$");
 
     ActivitySignUpBinding binding;//binding
-    //InputVariables
-    private TextInputLayout textInputUserName;
-    private TextInputLayout textInputEmail;
-    private TextInputLayout textInputPassword;
     ProgressDialog dialog;
     //firebase code
     FirebaseAuth auth;
@@ -62,7 +57,10 @@ public class SignUpActivity extends AppCompatActivity {
     TextView toastText;
     View toastLayout;
     Toast toast;
-
+    //InputVariables
+    private TextInputLayout textInputUserName;
+    private TextInputLayout textInputEmail;
+    private TextInputLayout textInputPassword;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -72,10 +70,10 @@ public class SignUpActivity extends AppCompatActivity {
         setContentView(binding.getRoot());
         //custom toast
         inflater = getLayoutInflater();
-        toastLayout = inflater.inflate(R.layout.custom_toast_layout,(ViewGroup) findViewById(R.id.toastLayout));
-        toastText = (TextView) toastLayout.findViewById(R.id.toastText);
+        toastLayout = inflater.inflate(R.layout.custom_toast_layout, findViewById(R.id.toastLayout));
+        toastText = toastLayout.findViewById(R.id.toastText);
         toast = new Toast(getApplicationContext());
-        toast.setGravity(Gravity.BOTTOM,0,100);
+        toast.setGravity(Gravity.BOTTOM, 0, 100);
         toast.setDuration(Toast.LENGTH_LONG);
         toast.setView(toastLayout);
         //dialog

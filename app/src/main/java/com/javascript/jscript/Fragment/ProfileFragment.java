@@ -12,6 +12,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 import android.widget.Toast;
+
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
@@ -42,11 +43,6 @@ import java.util.Objects;
 
 public class ProfileFragment extends Fragment {
 
-    FragmentProfileBinding binding;
-    FirebaseAuth auth;
-    FirebaseStorage storage;
-    FirebaseDatabase database;
-    ProgressDialog dialog;
     //fixed count
     private final int listCountLearn = 300;//230
     private final int listCountQuiz = 800;
@@ -57,6 +53,11 @@ public class ProfileFragment extends Fragment {
     private final int dividedQuiz = 8;
     private final int dividedPrograms = 10;
     private final int dividedInterview = 5;
+    FragmentProfileBinding binding;
+    FirebaseAuth auth;
+    FirebaseStorage storage;
+    FirebaseDatabase database;
+    ProgressDialog dialog;
     TextView toastText;
     View toastLayout;
     Toast toast;
@@ -82,13 +83,13 @@ public class ProfileFragment extends Fragment {
     public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View view = inflater.inflate(R.layout.fragment_profile,container,false);
+        View view = inflater.inflate(R.layout.fragment_profile, container, false);
         binding = FragmentProfileBinding.inflate(inflater, container, false);
         //Toast
-        toastLayout = inflater.inflate(R.layout.custom_toast_layout,(ViewGroup) view.findViewById(R.id.toastLayout));
-        toastText = (TextView) toastLayout.findViewById(R.id.toastText);
+        toastLayout = inflater.inflate(R.layout.custom_toast_layout, view.findViewById(R.id.toastLayout));
+        toastText = toastLayout.findViewById(R.id.toastText);
         toast = new Toast(getActivity().getBaseContext());
-        toast.setGravity(Gravity.BOTTOM,0,200);
+        toast.setGravity(Gravity.BOTTOM, 0, 200);
         toast.setDuration(Toast.LENGTH_LONG);
         toast.setView(toastLayout);
         //dialog
@@ -288,8 +289,7 @@ public class ProfileFragment extends Fragment {
                     intent.setAction(Intent.ACTION_GET_CONTENT);
                     intent.setType("image/*");
                     startActivityForResult(intent, 11);
-                }
-                else {
+                } else {
                     toastText.setText(R.string.no_connection_text);
                     toast.show();
                 }
@@ -309,7 +309,7 @@ public class ProfileFragment extends Fragment {
                     intent.setAction(Intent.ACTION_GET_CONTENT);
                     intent.setType("image/*");
                     startActivityForResult(intent, 22);
-                }else {
+                } else {
                     toastText.setText(R.string.no_connection_text);
                     toast.show();
                 }
@@ -337,7 +337,7 @@ public class ProfileFragment extends Fragment {
                 .addListenerForSingleValueEvent(new ValueEventListener() {
                     @Override
                     public void onDataChange(@NonNull DataSnapshot snapshot) {
-                        if (snapshot.exists()){
+                        if (snapshot.exists()) {
                             CourseProgress progress = snapshot.getValue(CourseProgress.class);
                             assert progress != null;
                             int learnProgress = progress.getLearnCount();
@@ -345,34 +345,34 @@ public class ProfileFragment extends Fragment {
                             int programProgress = progress.getProgramsCount();
                             int interviewProgress = progress.getInterviewCount();
                             //learn progress
-                            if (learnProgress<=listCountLearn){
-                                binding.learnProgressBar.setProgress(learnProgress/dividedLearn);
-                                binding.learnText.setText(String.format("%s%%", learnProgress/dividedLearn));
-                            }else {
+                            if (learnProgress <= listCountLearn) {
+                                binding.learnProgressBar.setProgress(learnProgress / dividedLearn);
+                                binding.learnText.setText(String.format("%s%%", learnProgress / dividedLearn));
+                            } else {
                                 binding.learnProgressBar.setProgress(100);
                                 binding.learnText.setText(String.format("%s%%", 100));
                             }
                             //quiz progress
-                            if (quizProgress<=listCountQuiz){
-                                binding.quizProgressBar.setProgress(quizProgress/dividedQuiz);
-                                binding.quizText.setText(String.format("%s%%", quizProgress/dividedQuiz));
-                            }else {
+                            if (quizProgress <= listCountQuiz) {
+                                binding.quizProgressBar.setProgress(quizProgress / dividedQuiz);
+                                binding.quizText.setText(String.format("%s%%", quizProgress / dividedQuiz));
+                            } else {
                                 binding.quizProgressBar.setProgress(100);
                                 binding.quizText.setText(String.format("%s%%", 100));
                             }
                             //programs progress
-                            if (programProgress<=listCountPrograms){
-                                binding.programsProgressBar.setProgress(programProgress/dividedPrograms);
-                                binding.programsText.setText(String.format("%s%%", programProgress/dividedPrograms));
-                            }else {
+                            if (programProgress <= listCountPrograms) {
+                                binding.programsProgressBar.setProgress(programProgress / dividedPrograms);
+                                binding.programsText.setText(String.format("%s%%", programProgress / dividedPrograms));
+                            } else {
                                 binding.programsProgressBar.setProgress(100);
                                 binding.programsText.setText(String.format("%s%%", 100));
                             }
                             //interview progress
-                            if (interviewProgress<=listCountInterview){
-                                binding.interviewProgressBar.setProgress(interviewProgress/dividedInterview);
-                                binding.interviewText.setText(String.format("%s%%", interviewProgress/dividedInterview));
-                            }else {
+                            if (interviewProgress <= listCountInterview) {
+                                binding.interviewProgressBar.setProgress(interviewProgress / dividedInterview);
+                                binding.interviewText.setText(String.format("%s%%", interviewProgress / dividedInterview));
+                            } else {
                                 binding.interviewProgressBar.setProgress(100);
                                 binding.interviewText.setText(String.format("%s%%", 100));
                             }
@@ -389,7 +389,6 @@ public class ProfileFragment extends Fragment {
 
         return binding.getRoot();
     }//end onCreate
-
 
 
     @Override

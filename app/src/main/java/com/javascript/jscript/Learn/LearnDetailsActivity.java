@@ -11,7 +11,6 @@ import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.view.ViewGroup;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.view.inputmethod.InputMethodManager;
@@ -51,19 +50,19 @@ public class LearnDetailsActivity extends AppCompatActivity {
 
     ActivityLearnDetailsBinding binding;
     Animation bottomAnim;
-    private AdNetwork adNetwork;
-    private List<LearnDetailsModel> learnList;
-    private int currentTopicPosition = 0;
     TextView title, details, outputTxt, toastText;
     EditText codesET;
     CodeView codes, output;
-    private AppCompatButton prevBtn, nextBtn, shareBtn;
     FirebaseDatabase database;
     FirebaseAuth auth;
     ConstraintLayout writeCodes;
     LayoutInflater inflater;
     View toastLayout;
     Toast toast;
+    private AdNetwork adNetwork;
+    private List<LearnDetailsModel> learnList;
+    private int currentTopicPosition = 0;
+    private AppCompatButton prevBtn, nextBtn, shareBtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -72,8 +71,8 @@ public class LearnDetailsActivity extends AppCompatActivity {
         setContentView(binding.getRoot());
         //custom toast
         inflater = getLayoutInflater();
-        toastLayout = inflater.inflate(R.layout.custom_toast_layout, (ViewGroup) findViewById(R.id.toastLayout));
-        toastText = (TextView) toastLayout.findViewById(R.id.toastText);
+        toastLayout = inflater.inflate(R.layout.custom_toast_layout, findViewById(R.id.toastLayout));
+        toastText = toastLayout.findViewById(R.id.toastText);
         toast = new Toast(getApplicationContext());
         toast.setGravity(Gravity.BOTTOM, 0, 200);
         toast.setDuration(Toast.LENGTH_LONG);

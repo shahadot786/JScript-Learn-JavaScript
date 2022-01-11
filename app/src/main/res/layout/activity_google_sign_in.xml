@@ -35,17 +35,18 @@
         android:id="@+id/signInGoogle"
         android:layout_width="200dp"
         android:layout_height="50dp"
-        android:gravity="center"
-        android:textStyle="bold"
+        android:layout_marginTop="16dp"
         android:background="@drawable/ic_quiz_option_bg"
         android:backgroundTint="@color/color_linkedin"
-        android:layout_marginTop="16dp"
-        android:text="@string/sign_in_with_google"
         android:contentDescription="@string/app_main_images"
+        android:gravity="center"
+        android:text="@string/sign_in_with_google"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2"/>
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
     <TextView
         android:id="@+id/privacy"

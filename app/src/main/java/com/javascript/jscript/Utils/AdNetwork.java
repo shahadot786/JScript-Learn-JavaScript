@@ -120,7 +120,7 @@ public class AdNetwork {
                 mRewardedAd.show(context, new OnUserEarnedRewardListener() {
                     @Override
                     public void onUserEarnedReward(@NonNull RewardItem rewardItem) {
-                        Toast.makeText(context, "Timer is Removed", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(context, "Removed timer..", Toast.LENGTH_SHORT).show();
                     }
                 });
             }

@@ -18,16 +18,7 @@ android {
             shrinkResources true
             minifyEnabled true
             proguardFiles getDefaultProguardFile('proguard-android.txt'),'proguard-rules.pro'
-            proguardFiles 'proguard-square-picasso.pro'
-            proguardFiles 'proguard-support-design.pro'
-            proguardFiles 'proguard-google-play-services.pro'
-            proguardFile 'proguard-support-v7-appcompat.pro'
-            proguardFile 'proguard-rey-material.pro'
         }
-    }
-    dexOptions {
-        javaMaxHeapSize "4g"
-        jumboMode true
     }
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
@@ -80,8 +71,6 @@ dependencies {
     //animations
     implementation 'com.airbnb.android:lottie:4.2.2'
     //others
-    implementation "androidx.activity:activity-ktx:1.4.0"
-    implementation "androidx.fragment:fragment-ktx:1.4.0"
     implementation 'com.onesignal:OneSignal:4.6.3'
     implementation 'androidx.lifecycle:lifecycle-livedata-ktx:2.4.0'
     implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.4.0'

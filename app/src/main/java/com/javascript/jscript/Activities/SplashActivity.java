@@ -69,6 +69,7 @@ public class SplashActivity extends AppCompatActivity {
         if (connectivityManager.getNetworkInfo(ConnectivityManager.TYPE_MOBILE).getState() == NetworkInfo.State.CONNECTED ||
                 connectivityManager.getNetworkInfo(ConnectivityManager.TYPE_WIFI).getState() == NetworkInfo.State.CONNECTED) {
             //we are connected to a network
+            toastText.setText(R.string.network_connected);
         } else {
             toastText.setText(R.string.no_connection_text);
             toast.show();
@@ -102,7 +103,7 @@ public class SplashActivity extends AppCompatActivity {
         ///check first time installer
         SharedPreferences settings = getSharedPreferences(PREFS_NAME, 0);
         //Variables
-        int SPLASH_SCREEN = 8000;
+        int SPLASH_SCREEN = 4000;
         if (settings.getBoolean("my_first_time", true)) {
             //the app is being launched for first time, do something
             //Log.d("Comments", "First time");

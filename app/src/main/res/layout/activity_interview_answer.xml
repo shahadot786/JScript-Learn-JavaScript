@@ -51,16 +51,18 @@
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="24dp"
                 android:layout_marginEnd="16dp"
-                android:fontFamily="@font/open_sans"
-                android:textSize="16sp"
-                android:textStyle="bold"
                 android:autoLink="web"
+                android:fontFamily="@font/open_sans"
                 android:linksClickable="true"
+                android:minHeight="48dp"
                 android:textColorLink="@color/activeGreen"
                 android:textIsSelectable="true"
+                android:textSize="16sp"
+                android:textStyle="bold"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="SpeakableTextPresentCheck" />
 
             <TextView
                 android:id="@+id/questionDes"
@@ -69,20 +71,22 @@
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="25dp"
                 android:layout_marginEnd="16dp"
+                android:autoLink="web"
                 android:background="@drawable/ic_programs_image_bg"
                 android:fontFamily="@font/open_sans"
-                android:textSize="14sp"
-                android:textIsSelectable="true"
-                android:paddingStart="20dp"
-                android:paddingEnd="20dp"
-                android:paddingTop="10dp"
-                android:paddingBottom="10dp"
-                android:autoLink="web"
                 android:linksClickable="true"
+                android:minHeight="48dp"
+                android:paddingStart="20dp"
+                android:paddingTop="10dp"
+                android:paddingEnd="20dp"
+                android:paddingBottom="10dp"
                 android:textColorLink="@color/activeGreen"
+                android:textIsSelectable="true"
+                android:textSize="14sp"
                 app:layout_constraintEnd_toEndOf="@+id/textQuestion"
                 app:layout_constraintStart_toStartOf="@+id/textQuestion"
-                app:layout_constraintTop_toBottomOf="@+id/textQuestion" />
+                app:layout_constraintTop_toBottomOf="@+id/textQuestion"
+                tools:ignore="SpeakableTextPresentCheck" />
 
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/finish"

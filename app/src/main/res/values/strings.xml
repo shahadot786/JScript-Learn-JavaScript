@@ -73,9 +73,9 @@
     <string name="invalid_username">Not a valid username</string>
     <string name="invalid_password">Password must be >5 characters</string>
     <string name="login_failed">"Login failed"</string>
-    <string name="refund_policy">Refund Policy</string>
     <string name="or_sign_up_with_email">Sign up with Email</string>
     <string name="or_sign_in_with_google">Or Sign in with Google</string>
+    <string name="refund_policy">Refund Policy</string>
     <string name="refund_message">* Refunds can be issued only if you send a request for refund within 48 hours of your order. \n\n * To request a refund, you can mail us your order number and date (from your Google Play Order Receipt) to our email: info@shrcreation.com</string>
 
     <!--Sign In-->
@@ -156,6 +156,7 @@
 
     <!--Pro Fragment-->
     <string name="upgrade_to_pro">Upgrade to PRO</string>
+    <string name="congratulations">Congratulations, Welcome to Premium</string>
     <string name="welcome_to_pro">Welcome to Premium</string>
     <string name="pro_des">Celebrate Your Love For Code With PRO Access</string>
     <string name="pro_des_1">Unlimited Access For All PRO Content</string>
@@ -274,7 +275,6 @@
     <string name="UploadSuccessfully">Upload Successfully</string>
     <string name="WrongImageUpload">Wrong Image Upload</string>
     <string name="remember_my_password">Remember password!</string>
-    <string name="congratulations">Congratulations, Welcome to Pro</string>
     <string name="no_notification_yet">No Notification yet..</string>
     <string name="add_times">Add Times</string>
     <!--Upcoming courses-->

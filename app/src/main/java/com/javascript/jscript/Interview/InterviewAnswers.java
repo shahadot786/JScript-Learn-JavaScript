@@ -2510,234 +2510,1243 @@ public class InterviewAnswers {
             "2.Creates SPA out-of-the-box.\n" +
             "3.Creates good SEO out-of-the-box\n" +
             "4.Have an awesome developer experience.";
-    public static final String answer289 = "";
-    public static final String answer290 = "";
-    public static final String answer291 = "";
-    public static final String answer292 = "";
-    public static final String answer293 = "";
-    public static final String answer294 = "";
-    public static final String answer295 = "";
-    public static final String answer296 = "";
-    public static final String answer297 = "";
-    public static final String answer298 = "";
-    public static final String answer299 = "";
-    public static final String answer300 = "";
-    public static final String answer301 = "";
-    public static final String answer302 = "";
-    public static final String answer303 = "";
-    public static final String answer304 = "";
-    public static final String answer305 = "";
-    public static final String answer306 = "";
-    public static final String answer307 = "";
-    public static final String answer308 = "";
-    public static final String answer309 = "";
-    public static final String answer310 = "";
-    public static final String answer311 = "";
-    public static final String answer312 = "";
-    public static final String answer313 = "";
-    public static final String answer314 = "";
-    public static final String answer315 = "";
-    public static final String answer316 = "";
-    public static final String answer317 = "";
-    public static final String answer318 = "";
-    public static final String answer319 = "";
-    public static final String answer320 = "";
-    public static final String answer321 = "";
-    public static final String answer322 = "";
-    public static final String answer323 = "";
-    public static final String answer324 = "";
-    public static final String answer325 = "";
-    public static final String answer326 = "";
-    public static final String answer327 = "";
-    public static final String answer328 = "";
-    public static final String answer329 = "";
-    public static final String answer330 = "";
-    public static final String answer331 = "";
-    public static final String answer332 = "";
-    public static final String answer333 = "";
-    public static final String answer334 = "";
-    public static final String answer335 = "";
-    public static final String answer336 = "";
-    public static final String answer337 = "";
-    public static final String answer338 = "";
-    public static final String answer339 = "";
-    public static final String answer340 = "";
-    public static final String answer341 = "";
-    public static final String answer342 = "";
-    public static final String answer343 = "";
-    public static final String answer344 = "";
-    public static final String answer345 = "";
-    public static final String answer346 = "";
-    public static final String answer347 = "";
-    public static final String answer348 = "";
-    public static final String answer349 = "";
-    public static final String answer350 = "";
-    public static final String answer351 = "";
-    public static final String answer352 = "";
-    public static final String answer353 = "";
-    public static final String answer354 = "";
-    public static final String answer355 = "";
-    public static final String answer356 = "";
-    public static final String answer357 = "";
-    public static final String answer358 = "";
-    public static final String answer359 = "";
-    public static final String answer360 = "";
-    public static final String answer361 = "";
-    public static final String answer362 = "";
-    public static final String answer363 = "";
-    public static final String answer364 = "";
-    public static final String answer365 = "";
-    public static final String answer366 = "";
-    public static final String answer367 = "";
-    public static final String answer368 = "";
-    public static final String answer369 = "";
-    public static final String answer370 = "";
-    public static final String answer371 = "";
-    public static final String answer372 = "";
-    public static final String answer373 = "";
-    public static final String answer374 = "";
-    public static final String answer375 = "";
-    public static final String answer376 = "";
-    public static final String answer377 = "";
-    public static final String answer378 = "";
-    public static final String answer379 = "";
-    public static final String answer380 = "";
-    public static final String answer381 = "";
-    public static final String answer382 = "";
-    public static final String answer383 = "";
-    public static final String answer384 = "";
-    public static final String answer385 = "";
-    public static final String answer386 = "";
-    public static final String answer387 = "";
-    public static final String answer388 = "";
-    public static final String answer389 = "";
-    public static final String answer390 = "";
-    public static final String answer391 = "";
-    public static final String answer392 = "";
-    public static final String answer393 = "";
-    public static final String answer394 = "";
-    public static final String answer395 = "";
-    public static final String answer396 = "";
-    public static final String answer397 = "";
-    public static final String answer398 = "";
-    public static final String answer399 = "";
-    public static final String answer400 = "";
-    public static final String answer401 = "";
-    public static final String answer402 = "";
-    public static final String answer403 = "";
-    public static final String answer404 = "";
-    public static final String answer405 = "";
-    public static final String answer406 = "";
-    public static final String answer407 = "";
-    public static final String answer408 = "";
-    public static final String answer409 = "";
-    public static final String answer410 = "";
-    public static final String answer411 = "";
-    public static final String answer412 = "";
-    public static final String answer413 = "";
-    public static final String answer414 = "";
-    public static final String answer415 = "";
-    public static final String answer416 = "";
-    public static final String answer417 = "";
-    public static final String answer418 = "";
-    public static final String answer419 = "";
-    public static final String answer420 = "";
-    public static final String answer421 = "";
-    public static final String answer422 = "";
-    public static final String answer423 = "";
-    public static final String answer424 = "";
-    public static final String answer425 = "";
-    public static final String answer426 = "";
-    public static final String answer427 = "";
-    public static final String answer428 = "";
-    public static final String answer429 = "";
-    public static final String answer430 = "";
-    public static final String answer431 = "";
-    public static final String answer432 = "";
-    public static final String answer433 = "";
-    public static final String answer434 = "";
-    public static final String answer435 = "";
-    public static final String answer436 = "";
-    public static final String answer437 = "";
-    public static final String answer438 = "";
-    public static final String answer439 = "";
-    public static final String answer440 = "";
-    public static final String answer441 = "";
-    public static final String answer442 = "";
-    public static final String answer443 = "";
-    public static final String answer444 = "";
-    public static final String answer445 = "";
-    public static final String answer446 = "";
-    public static final String answer447 = "";
-    public static final String answer448 = "";
-    public static final String answer449 = "";
-    public static final String answer450 = "";
-    public static final String answer451 = "";
-    public static final String answer452 = "";
-    public static final String answer453 = "";
-    public static final String answer454 = "";
-    public static final String answer455 = "";
-    public static final String answer456 = "";
-    public static final String answer457 = "";
-    public static final String answer458 = "";
-    public static final String answer459 = "";
-    public static final String answer460 = "";
-    public static final String answer461 = "";
-    public static final String answer462 = "";
-    public static final String answer463 = "";
-    public static final String answer464 = "";
-    public static final String answer465 = "";
-    public static final String answer466 = "";
-    public static final String answer467 = "";
-    public static final String answer468 = "";
-    public static final String answer469 = "";
-    public static final String answer470 = "";
-    public static final String answer471 = "";
-    public static final String answer472 = "";
-    public static final String answer473 = "";
-    public static final String answer474 = "";
-    public static final String answer475 = "";
-    public static final String answer476 = "";
-    public static final String answer477 = "";
-    public static final String answer478 = "";
-    public static final String answer479 = "";
-    public static final String answer480 = "";
-    public static final String answer481 = "";
-    public static final String answer482 = "";
-    public static final String answer483 = "";
-    public static final String answer484 = "";
-    public static final String answer485 = "";
-    public static final String answer486 = "";
-    public static final String answer487 = "";
-    public static final String answer488 = "";
-    public static final String answer489 = "";
-    public static final String answer490 = "";
-    public static final String answer491 = "";
-    public static final String answer492 = "";
-    public static final String answer493 = "";
-    public static final String answer494 = "";
-    public static final String answer495 = "";
-    public static final String answer496 = "";
-    public static final String answer497 = "";
-    public static final String answer498 = "";
-    public static final String answer499 = "";
-    public static final String answer500 = "";
-    public static final String answer = "";
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    public static final String answer289 = "React is a front-end JavaScript library developed by Facebook in 2011.\n" +
+            "It follows the component based approach which helps in building reusable UI components.\n" +
+            "It is used for developing complex and interactive web and mobile UI.\n" +
+            "Even though it was open-sourced only in 2015, it has one of the largest communities supporting it.";
+    public static final String answer290 = "Major features of React are listed below:" +
+            "\n" +
+            "1.It uses the virtual DOM instead of the real DOM.\n" +
+            "2.It uses server-side rendering.\n" +
+            "3.It follows uni-directional data flow or data binding.";
+    public static final String answer291 = "Some of the major advantages of React are:\n" +
+            "\n" +
+            "1.It increases the application’s performance\n" +
+            "2.It can be conveniently used on the client as well as server side\n" +
+            "3.Because of JSX, code’s readability increases\n" +
+            "4.React is easy to integrate with other frameworks like Meteor, Angular, etc\n" +
+            "5.Using React, writing UI test cases become extremely easy";
+    public static final String answer292 = "Limitations of React are listed below:\n" +
+            "\n" +
+            "1.React is just a library, not a full-blown framework\n" +
+            "2.Its library is very large and takes time to understand\n" +
+            "3.It can be little difficult for the novice programmers to understand\n" +
+            "4.Coding gets complex as it uses inline templating and JSX";
+    public static final String answer293 = "JSX is a shorthand for JavaScript XML. This is a type of file used by React which utilizes the expressiveness of JavaScript along with HTML like template syntax. This makes the HTML file really easy to understand. This file makes applications robust and boosts its performance. Below is an example of JSX:" +
+            "\n\n" +
+            "render(){\n" +
+            "    return(        \n" +
+            "          \n" +
+            "<div>\n" +
+            "             \n" +
+            "<h1> Hello World from JScript!!</h1>\n" +
+            " \n" +
+            "         </div>\n" +
+            " \n" +
+            "    );\n" +
+            "}";
+    public static final String answer294 = "A virtual DOM is a lightweight JavaScript object which originally is just a copy of the real DOM. It is a node tree that lists the elements, their attributes and content as Objects and their properties. React’s render function creates a node tree out of the React components. It then updates this tree in response to the mutations in the data model which is caused by various actions done by the user or by the system.\n" +
+            "This Virtual DOM works in three simple steps.." +
+            "\n\n" +
+            "1.Whenever any underlying data changes, the entire UI is re-rendered in Virtual DOM representation.\n" +
+            "2.Then the difference between the previous DOM representation and the new one is calculated.\n" +
+            "3.Once the calculations are done, the real DOM will be updated with only the things that have actually changed.";
+    public static final String answer295 = "Browsers can only read JavaScript objects but JSX in not a regular JavaScript object. Thus to enable a browser to read JSX, first, we need to transform JSX file into a JavaScript object using JSX transformers like Babel and then pass it to the browser.";
+    public static final String answer296 = "1.require vs import:" +
+            "\n" +
+            "// ES5\n" +
+            "var React = require('react');\n" +
+            " \n" +
+            "// ES6\n" +
+            "import React from 'react';" +
+            "\n\n" +
+            "2.export vs exports\n" +
+            "// ES5\n" +
+            "module.exports = Component;\n" +
+            " \n" +
+            "// ES6\n" +
+            "export default Component;" +
+            "\n\n" +
+            "3.component and function\n" +
+            "// ES5\n" +
+            "var MyComponent = React.createClass({\n" +
+            "    render: function() {\n" +
+            "        return\n" +
+            " \n" +
+            "<h3>Hello JScript!</h3>\n" +
+            ";\n" +
+            "    }\n" +
+            "});\n" +
+            " \n" +
+            "// ES6\n" +
+            "class MyComponent extends React.Component {\n" +
+            "    render() {\n" +
+            "        return\n" +
+            " \n" +
+            "<h3>Hello JScript!</h3>\n" +
+            ";\n" +
+            "    }\n" +
+            "}" +
+            "\n\n" +
+            "4.props\n" +
+            "// ES5\n" +
+            "var App = React.createClass({\n" +
+            "    propTypes: { name: React.PropTypes.string },\n" +
+            "    render: function() {\n" +
+            "        return\n" +
+            " \n" +
+            "<h3>Hello, {this.props.name}!</h3>\n" +
+            ";\n" +
+            "    }\n" +
+            "});\n" +
+            " \n" +
+            "// ES6\n" +
+            "class App extends React.Component {\n" +
+            "    render() {\n" +
+            "        return\n" +
+            " \n" +
+            "<h3>Hello, {this.props.name}!</h3>\n" +
+            ";\n" +
+            "    }\n" +
+            "}" +
+            "\n\n" +
+            "5.state\n" +
+            "// ES5\n" +
+            "var App = React.createClass({\n" +
+            "    getInitialState: function() {\n" +
+            "        return { name: 'world' };\n" +
+            "    },\n" +
+            "    render: function() {\n" +
+            "        return\n" +
+            " \n" +
+            "<h3>Hello, {this.state.name}!</h3>\n" +
+            ";\n" +
+            "    }\n" +
+            "});\n" +
+            " \n" +
+            "// ES6\n" +
+            "class App extends React.Component {\n" +
+            "    constructor() {\n" +
+            "        super();\n" +
+            "        this.state = { name: 'world' };\n" +
+            "    }\n" +
+            "    render() {\n" +
+            "        return\n" +
+            " \n" +
+            "<h3>Hello, {this.state.name}!</h3>\n" +
+            ";\n" +
+            "    }\n" +
+            "}";
+    public static final String answer297 = "Components are the building blocks of a React application’s UI. These components split up the entire UI into small independent and reusable pieces. Then it renders each of these components independent of each other without affecting the rest of the UI.";
+    public static final String answer298 = "Each React component must have a render() mandatorily. It returns a single React element which is the representation of the native DOM component. If more than one HTML element needs to be rendered, then they must be grouped together inside one enclosing tag such as <form>, <group>,<div> etc. This function must be kept pure i.e., it must return the same result each time it is invoked.";
+    public static final String answer299 = "We can embed components into one in the following way:" +
+            "\n" +
+            "class MyComponent extends React.Component{\n" +
+            "    render(){\n" +
+            "        return(          \n" +
+            "             \n" +
+            "<div>\n" +
+            "               \n" +
+            "<h1>Hello</h1>\n" +
+            " \n" +
+            "                <Header/>\n" +
+            "            </div>\n" +
+            " \n" +
+            "        );\n" +
+            "    }\n" +
+            "}\n" +
+            "class Header extends React.Component{\n" +
+            "    render(){\n" +
+            "        return\n" +
+            " \n" +
+            "<h1>Header Component</h1>\n" +
+            "   \n" +
+            "   };\n" +
+            "}\n" +
+            "ReactDOM.render(\n" +
+            "    <MyComponent/>, document.getElementById('content')\n" +
+            ");";
+    public static final String answer300 = "Props is the shorthand for Properties in React. They are read-only components which must be kept pure i.e. immutable. They are always passed down from the parent to the child components throughout the application. A child component can never send a prop back to the parent component. This help in maintaining the unidirectional data flow and are generally used to render the dynamically generated data.";
+    public static final String answer301 = "States are the heart of React components. States are the source of data and must be kept as simple as possible. Basically, states are the objects which determine components rendering and behavior. They are mutable unlike the props and create dynamic and interactive components. They are accessed via this.state().";
+    public static final String answer302 = "State of a component can be updated using this.setState()." +
+            "\n" +
+            "class MyComponent extends React.Component {\n" +
+            "    constructor() {\n" +
+            "        super();\n" +
+            "        this.state = {\n" +
+            "            name: 'Anne',\n" +
+            "            id: '101'\n" +
+            "        }\n" +
+            "    }\n" +
+            "    render()\n" +
+            "        {\n" +
+            "            setTimeout(()=>{this.setState({name:'Mathew', id:'222'})},2000)\n" +
+            "            return (                                 \n" +
+            " \n" +
+            "<div>\n" +
+            "                   \n" +
+            "<h1>Hello {this.state.name}</h1>\n" +
+            "     \n" +
+            "<h2>Your Id is {this.state.id}</h2>\n" +
+            " \n" +
+            "                   </div>\n" +
+            " \n" +
+            "            );\n" +
+            "        }\n" +
+            "    }\n" +
+            "ReactDOM.render(\n" +
+            "    <MyComponent/>, document.getElementById('content')\n" +
+            ");";
+    public static final String answer303 = "Arrow functions are more of brief syntax for writing the function expression. They are also called ‘fat arrow‘ (=>) the functions. These functions allow to bind the context of the components properly since in ES6 auto binding is not available by default. Arrow functions are mostly useful while working with the higher order functions." +
+            "\n" +
+            "//General way\n" +
+            "render() {    \n" +
+            "    return(\n" +
+            "        <MyInput onChange={this.handleChange.bind(this) } />\n" +
+            "    );\n" +
+            "}\n" +
+            "//With Arrow Function\n" +
+            "render() {  \n" +
+            "    return(\n" +
+            "        <MyInput onChange={ (e) => this.handleOnChange(e) } />\n" +
+            "    );\n" +
+            "}";
+    public static final String answer304 = "Some of the most important lifecycle methods are:\n" +
+            "\n" +
+            "componentWillMount() – Executed just before rendering takes place both on the client as well as server-side.\n" +
+            "componentDidMount() – Executed on the client side only after the first render.\n" +
+            "componentWillReceiveProps() – Invoked as soon as the props are received from the parent class and before another render is called.\n" +
+            "shouldComponentUpdate() – Returns true or false value based on certain conditions. If you want your component to update, return true else return false. By default, it returns false.\n" +
+            "componentWillUpdate() – Called just before rendering takes place in the DOM.\n" +
+            "componentDidUpdate() – Called immediately after rendering takes place.\n" +
+            "componentWillUnmount() – Called after the component is unmounted from the DOM. It is used to clear up the memory spaces.";
+    public static final String answer305 = "n React, events are the triggered reactions to specific actions like mouse hover, mouse click, key press, etc. Handling these events are similar to handling events in DOM elements. But there are some syntactical differences like:\n" +
+            "\n" +
+            "1.Events are named using camel case instead of just using the lowercase.\n" +
+            "2.Events are passed as functions instead of strings.\n\n" +
+            "The event argument contains a set of properties, which are specific to an event. Each event type contains its own properties and behavior which can be accessed via its event handler only.";
+    public static final String answer306 = "Refs is the short hand for References in React. It is an attribute which helps to store a reference to a particular React element or component, which will be returned by the components render configuration function. It is used to return references to a particular element or component returned by render(). They come in handy when we need DOM measurements or to add methods to the components." +
+            "\n" +
+            "class ReferenceDemo extends React.Component{\n" +
+            "     display() {\n" +
+            "         const name = this.inputDemo.value;\n" +
+            "         document.getElementById('disp').innerHTML = name;\n" +
+            "     }\n" +
+            "render() {\n" +
+            "    return(        \n" +
+            "          \n" +
+            "<div>\n" +
+            "            Name: <input type=\"text\" ref={input => this.inputDemo = input} />\n" +
+            "            <button name=\"Click\" onClick={this.display}>Click</button>            \n" +
+            "          \n" +
+            "<h2>Hello <span id=\"disp\"></span> !!!</h2>\n" +
+            " \n" +
+            "      </div>\n" +
+            "    );\n" +
+            "   }\n" +
+            " }";
+    public static final String answer307 = "We can modularize code by using the export and import properties. They help in writing the components separately in different files." +
+            "\n" +
+            "//ChildComponent.jsx\n" +
+            "export default class ChildComponent extends React.Component {\n" +
+            "    render() {\n" +
+            "        return(           \n" +
+            " \n" +
+            "<div>\n" +
+            "              \n" +
+            "<h1>This is a child component</h1>\n" +
+            " \n" +
+            "           </div>\n" +
+            " \n" +
+            "        );\n" +
+            "    }\n" +
+            "}\n" +
+            " \n" +
+            "//ParentComponent.jsx\n" +
+            "import ChildComponent from './childcomponent.js';\n" +
+            "class ParentComponent extends React.Component {    \n" +
+            "    render() {        \n" +
+            "        return(           \n" +
+            "             \n" +
+            "<div>               \n" +
+            "                <App />          \n" +
+            "            </div>\n" +
+            "      \n" +
+            "        );  \n" +
+            "    }\n" +
+            "}";
+    public static final String answer308 = "Higher Order Component is an advanced way of reusing the component logic. Basically, it’s a pattern that is derived from React’s compositional nature. HOC are custom components which wrap another component within it. They can accept any dynamically provided child component but they won’t modify or copy any behavior from their input components. You can say that HOC are ‘pure’ components.";
+    public static final String answer309 = "Keys are used for identifying unique Virtual DOM Elements with their corresponding data driving the UI. They help React to optimize the rendering by recycling all the existing elements in the DOM. These keys must be a unique number or string, using which React just reorders the elements instead of re-rendering them. This leads to increase in application’s performance.";
+    public static final String answer310 = "Following are some of the major problems with MVC framework:\n" +
+            "\n" +
+            "DOM manipulation was very expensive\n" +
+            "Applications were slow and inefficient\n" +
+            "There was huge memory wastage\n" +
+            "Because of circular dependencies, a complicated model was created around models and views";
+    public static final String answer311 = "Redux is one of the most trending libraries for front-end development in today’s marketplace. It is a predictable state container for JavaScript applications and is used for the entire applications state management. Applications developed with Redux are easy to test and can run in different environments showing consistent behavior.";
+    public static final String answer312 = "1.Single source of truth: The state of the entire application is stored in an object/ state tree within a single store. The single state tree makes it easier to keep track of changes over time and debug or inspect the application.\n" +
+            "2.State is read-only: The only way to change the state is to trigger an action. An action is a plain JS object describing the change. Just like state is the minimal representation of data, the action is the minimal representation of the change to that data. \n" +
+            "3.Changes are made with pure functions: In order to specify how the state tree is transformed by actions, you need pure functions. Pure functions are those whose return value depends solely on the values of their arguments.";
+    public static final String answer313 = "Redux uses ‘Store’ for storing the application’s entire state at one place. So all the component’s state are stored in the Store and they receive updates from the Store itself. The single state tree makes it easier to keep track of changes over time and debug or inspect the application.";
+    public static final String answer314 = "Actions in React must have a type property that indicates the type of ACTION being performed. They must be defined as a String constant and you can add more properties to it as well. In Redux, actions are created using the functions called Action Creators. Below is an example of Action and Action Creator:\n" +
+            "\n" +
+            "function addTodo(text) {\n" +
+            "       return {\n" +
+            "                type: ADD_TODO,    \n" +
+            "                 text    \n" +
+            "    }\n" +
+            "}";
+    public static final String answer315 = "A store is a JavaScript object which can hold the application’s state and provide a few helper methods to access the state, dispatch actions and register listeners. The entire state/ object tree of an application is saved in a single store. As a result of this, Redux is very simple and predictable. We can pass middleware to the store to handle the processing of data as well as to keep a log of various actions that change the state of stores. All the actions return a new state via reducers.";
+    public static final String answer316 = "React Router is a powerful routing library built on top of React, which helps in adding new screens and flows to the application. This keeps the URL in sync with data that’s being displayed on the web page. It maintains a standardized structure and behavior and is used for developing single page web applications. React Router has a simple API.";
+    public static final String answer317 = "Although a <div> is used to encapsulate multiple routes inside the Router. The ‘switch’ keyword is used when you want to display only a single route to be rendered amongst the several defined routes. The <switch> tag when in use matches the typed URL with the defined routes in sequential order. When the first match is found, it renders the specified route. Thereby bypassing the remaining routes.";
+    public static final String answer318 = "A Router is used to define multiple routes and when a user types a specific URL, if this URL matches the path of any ‘route’ defined inside the router, then the user is redirected to that particular route. So basically, we need to add a Router library to our app that allows creating multiple routes with each leading to us a unique view.\n" +
+            "\n" +
+            "<switch>\n" +
+            "    <route exact path=’/’ component={Home}/>\n" +
+            "    <route path=’/posts/:id’ component={Newpost}/>\n" +
+            "    <route path=’/posts’   component={Post}/>\n" +
+            "</switch>";
+    public static final String answer319 = "Ember.js is used for creating web applications that eliminates boilerplate and at the same time provides a standard application architecture.\n" +
+            "\n" +
+            "Ember helps to create applications, whose logic runs in browser and also it does not require server requests to functions. Ember update the DOM directly and instantly when any user interacts with things like button and text boxes on the browser page.";
+    public static final String answer320 = "The main components of Ember.js are\n" +
+            "\n" +
+            "Models\n" +
+            "The Router\n" +
+            "Controllers\n" +
+            "Views\n" +
+            "Components\n" +
+            "Templates\n" +
+            "Helpers";
+    public static final String answer321 = "Within an Ember application a model object is used to store persistent state.  These model object back the templates and provide data to be displayed within the HTML.";
+    public static final String answer322 = "The application ember.js is based on MVC  (Model, View, Controller) structure\n" +
+            "\n" +
+            "Models: It defines the data that is used in an application\n" +
+            "Controllers: It modifies query and edit the data and provide user interactions\n" +
+            "Views: It display the data and capture user actions";
+    public static final String answer323 = "Controller does two thing in Ember.js\n" +
+            "\n" +
+            "First it can decorate the model returned by the route\n" +
+            "It can listen to actions performed by users";
+    public static final String answer324 = "In Ember.js, instead of majority of your application’s logic living on the server, an ember.js application downloads everything it required to run in the initial page load. So user does not have to load a new page while using the app and UI will responds quickly. The advantage of this architecture is that your web application uses the same REST API as your native App.";
+    public static final String answer325 = "Router allows you to specify all the possible states of an app and map them to urls\n" +
+            "To build a hierarchy of sections by providing a mean for a container template to include a child template the {{outlet}} tag is used";
+    public static final String answer326 = "Router:  It is the connecting point between browser’s address bar and our application.  It translates address into Route\n" +
+            "\n" +
+            "Route: It is where a user request will land after it was translated by a Router.  Route decides what data should be provided to the Template";
+    public static final String answer327 = "Ember-Data is a library that retrieve records from a server, store them, update them in the browser and save them back to the server.";
+    public static final String answer328 = "Adapter queries the back end, each adapter is made up of particular back end.  For example Rest adapter deals with JSON APIs and LSAdapter deals with local storage.";
+    public static final String answer329 = "First way\n" +
+            "\n" +
+            "By extending the Em.View class, you have to create an object in your JavaScript to define a view. You can declare your functions and variables inside that.\n" +
+            "Now to insert a view in your template,  you have to follow the write the handlebar script {{ #view App.ViewName}}\n\n" +
+            "Second Way\n" +
+            "In this technique, the name of the view object is not required,while inserting into the template. But inside the object you have another property called as templateName which should be initialized with the value same as data template name attribute in handlebar’s script tag, in your template";
+    public static final String answer330 = "When you have to handle a business logic you can use controller, a controller can represent a section of a page or entire part of it.  It is like a block of logical functionality.";
+    public static final String answer331 = "The template components used in ember.js are\n" +
+            "\n" +
+            "Partial\n" +
+            "View\n" +
+            "Render\n" +
+            "Yield\n" +
+            "Outlet";
+    public static final String answer332 = "For turning a raw JSON ( JavaScript Object Notation ) payload returned from your server into a record object a serializer is responsible.  JSON APIs may represent attributes and relationship in many different ways.";
+    public static final String answer333 = "You can use call the extend () method on Ember.object to define a new ember class";
+    public static final String answer334 = "Call Ember.Handlebars.Compile() to create an ember.handlebars template.  It will return a function which can be used by ember.view for rendering.";
+    public static final String answer335 = "In order to put sample data into an application before connecting the application to long term persistence, fixtures are used.\n" +
+            "\n" +
+            "First update js/application.js to indicate that your application’s application adapter is an extension of the DS.FixtureAdapter.  Adapters are used for communicating with a source of data for your application.  Usually, this will be a web service API.\n" +
+            "Next, update the file at js/models/todo.js";
+    public static final String answer336 = "The Ember.Route class is used to define individual routes in Ember.js. An ember route is built with three parts:\n" +
+            "\n" +
+            "The first part is the entry in the Ember router (/app/router. js ), ) which maps between our route name and a specific URI.\n" +
+            "The second one is the route handler file, which is used to set up what should happen when that route is loaded.\n" +
+            "The third one is the route template, which is used to specify where we display the actual content for the page.\n" +
+            "In Ember.js, when we want to make a new page that we can visit using a URL, we need to generate a \"route\" using Ember CLI. Hence the generator will print out:\n" +
+            "\n" +
+            "Installing route\n" +
+            "Create app/routes/about.hbs\n" +
+            "Create app/templates/about.hbs\n" +
+            "Updating router\n" +
+            "Add route about\n" +
+            "Installing route test\n" +
+            "If you want to define a route, run the following command:\n" +
+            "\n" +
+            "Syntax:\n" +
+            "\n" +
+            "ember generate route route-name  \n" +
+            "The above command will generate a file name route-name.js in app/routes/ folder, a template for the route at app/templates/route-name.hbs, and a unit test file at tests/unit/routes/route-name-test.js. It will also add the route to the router.";
+    public static final String answer337 = "In Ember Data, an Adapter is used to determine how data is persisted to a backend data store. Things such as the backend host, URL format, and headers used to talk to a REST API can all be configured in an adapter. For example, the rest adapter is used to deal with JSON APIs, and LSAdapter deals with local storage.";
+    public static final String answer338 = "None : Returns tur if argument is null or undefined\n" +
+            "Empty: Utility function constrains the rules on ember.none by returning false for empty string and empty arrays\n" +
+            "isArray: Use this to check whether the value is an array\n" +
+            "MakeArray: This function is used when you want a given object in an array\n" +
+            "Typeof: This is used to get the type of the passed argument\n" +
+            "Compare: Used to compare two objects of possibly different types\n" +
+            "isEqual: It checks whether the passed two arguments are logically equal\n" +
+            "inspect: While debugging this function is useful. For a given object it returns the string description\n" +
+            "Log_Binding:  Log binding is not a function but a Boolean function. If set true ember will log all the activity that is happening on the bindings";
+    public static final String answer339 = "In Ember.js an enumerable is any object that contains a number of child objects, and enables you to work with those children using the Ember.Enumerable API. Native JavaScript array is the most common enumerable in majority of Apps.";
+    public static final String answer340 = "Ember.ArrayController is a controller that wraps an underlying array and adds additional functionality for the view layer   .  The advantage is that you have to set up your view binding only once.";
+    public static final String answer341 = "For array proxies Ember.SortableMixin provides a standard interface to specify a sort order and maintain this sorting when objects are updated, removed or added without changing the order of the underlying model array.";
+    public static final String answer342 = "Ember supports observing any property which also includes computed properties. Observers are something which contains the behavior that reacts to the changes made in other properties. Observers are used when we need to perform some behavior after binding has finished synchronizing. New ember developers often use observers. Observers are mostly used within the ember framework and for that; computed properties are the appropriate solution. An observer can be set on an object using the following syntax- \"ember.observer\" Observers in ember are synchronous. They fire as soon as they observe a change in the properties. So, because of this, it is easy to introduce bugs where properties are not yet synchronized.";
+    public static final String answer343 = "It follows:\n" +
+            "Ember.View.create({  \n" +
+            "   templateName: 'NameOfTemplate',     \n" +
+            "});";
+    public static final String answer344 = "Bootstrap is a platform for web development based on a front-end framework. It is used to create exceptional responsive designs using HTML, and CSS. These templates are used for forms, tables, buttons, typography, models, tables, navigation, carousels and images. Bootstrap also has Javascript plugins, which are optional. Bootstrap is mostly preferred for developing mobile web applications.";
+    public static final String answer345 = "Bootstrap has better features as compared to other web development platforms. It provides extensive browser support for almost every known browser such as Opera, Chrome, Firefox, Safari, etc. If you are well-acquainted with CSS and HTML, web development becomes easy on Bootstrap.\n" +
+            "Also, it supports mobile applications with the help of responsive design and can adjust CSS as per the device, screen size, etc. Instead of creating multiple files, it creates only a single file reducing the work of a developer.";
+    public static final String answer346 = "The key components of Bootstrap include:\n" +
+            "\n" +
+            "CSS: It consists of  various CSS files\n" +
+            "Scaffolding: It provides a basic structure with the Grid system, link styles, and background\n" +
+            "Layout Components: This gives the list of layout components\n" +
+            "JavaScript Plugins: It contains many jQuery and JavaScript plugins\n" +
+            "Customize: To get your own version of the framework, you can customize your components";
+    public static final String answer347 = "Some of the features of Bootstrap are:\n" +
+            "\n" +
+            "It provides an open-source for use\n" +
+            "Bootstrap has Compatibility with all browsers\n" +
+            "It has Responsive designs\n" +
+            "Easy to use and fast";
+    public static final String answer348 = "A class loader is a part of JRE or Java Runtime Environment which loads Java classes into Java virtual environment. Class loaders also perform the process of converting a named class into its equivalent binary form.";
+    public static final String answer349 = "There are two major layouts for Bootstrap:\n" +
+            "\n" +
+            "Fluid Layout- This layout is necessary for creating an app that is 100 % wider and covers all the screen width.\n" +
+            "Fixed Layout- It is used only for a standard screen (940px). Both layouts can be used for creating a responsive design.";
+    public static final String answer350 = "Bootstrap includes a responsive, mobile-first fluid grid system that appropriately scales up to 12 columns as the device or viewport size increases. It includes predefined classes for easy layout options, as well as powerful mixins for generating more semantic layouts.";
+    public static final String answer351 = "Example of a basic grid structure:\n" +
+            "<div class = \"container\">\n" +
+            "<div class = \"row\">\n" +
+            "<div class = \"col-*-*\"></div>\n" +
+            "<div class = \"col-*-*\"></div>\n" +
+            "</div>\n" +
+            " \n" +
+            "<div class = \"row\">...</div>\n" +
+            "</div>\n" +
+            "<div class = \"container\">....";
+    public static final String answer352 = "Jumbotron is used for highlighting content in bootstrap. It could either be a slogan or probably a headline. It increases the heading size and gives a margin for the content of the landing page. To implement Jumbotron in a Bootstrap, you have to use:\n" +
+            "\n" +
+            "Create a container <div> with the class of .jumbotron\n" +
+            "For example, use <div class=”container”> if you don’t want Jumbotron to reach the screen’s edge.";
+    public static final String answer353 = "There are two simple ways to display code in Bootstrap:\n" +
+            "\n" +
+            "<code> tag: This tag is used to display an inline code.\n" +
+            "<pre> tag: If you have a code with several lines or even a block element, you can display it using this.";
+    public static final String answer354 = "Bootstrap sets a basic global display (background), typography, and link styles.\n" +
+            "\n" +
+            "Basic Global display − It sets background-color: #fff; on the <body> element.\n" +
+            "\n" +
+            "Typography − This uses the @font-family-base, @font-size-base, and @line-height-base attributes as the typographic base\n" +
+            "\n" +
+            "Link styles − It sets the global link color via attribute @link-color and applies link underlines only on :hover.";
+    public static final String answer355 = "Bootstrap supports three types of lists such as:\n" +
+            "\n" +
+            "Ordered lists − An ordered list is a list that falls in some sort of sequential order and is prefaced by numbers.\n" +
+            "\n" +
+            "Unordered lists − An unordered list is a list that doesn't have any particular order and is traditionally styled with bullets. If you do not want the bullets to appear then you can remove the styling by using the class .list-unstyled.\n" +
+            "\n" +
+            "Definition lists − In this type of list, each list item can consist of both the <dt> and the <dd> elements. <dt> stands for definition term. Subsequently, the <dd> is the definition of the <dt>.";
+    public static final String answer356 = "Carousel plugin in bootstrap is used to make sliders in the web pages or your site. There are several carousel plugins that are used in bootstrap to display large contents within a small space by adding sliders.\n" +
+            "\n" +
+            "Examples: .carousel(options), .carousel(‘pause’), .carousel(cycle’), .carousel(‘prev’), .carousel(‘next’).";
+    public static final String answer357 = "Glyphicons are icon fonts which can be used in your web projects. Glyphicons Halflings are not free and require licensing. However, their creator has made them available for Bootstrap projects without any cost.\n" +
+            "\n" +
+            "To use the icons, you just have to use the following code just about anywhere in your code. Leave a space between the icon and text for proper padding.\n" +
+            "\n" +
+            "<span class = \"glyphicon glyphicon-search\"></span>";
+    public static final String answer358 = "Input groups are extended Form Controls. You can easily prepend and append text or buttons to the text-based inputs with the help of input groups. Also, you can add common elements to the user’s input. For example, you can add the dollar symbol, the @ for a Twitter username, or anything else that might be common for your application interface.\n" +
+            "\n" +
+            "To prepend or append elements to a .form-control you need to do the following:\n" +
+            "\n" +
+            "Wrap it in a <div> with class .input-group\n" +
+            "\n" +
+            "In the next step, place your extra content inside a <span> with class .input-group-addon.\n" +
+            "\n" +
+            "Now place this <span> either before or after the <input> element.";
+    public static final String answer359 = "Breadcrumbs are a great way to show hierarchy-based information for a site. In the case of blogs, breadcrumbs can show the dates of publishing, categories, or tags. They indicate the current page’s location within a navigational hierarchy.\n" +
+            "\n" +
+            "A breadcrumb in Bootstrap is simply an unordered list with a class of .breadcrumb. The separator is automatically added by CSS.";
+    public static final String answer360 = "Pagination is the handling of an unordered list by bootstrap. If you want to handle pagination, bootstrap provides the following classes:\n" +
+            "\n" +
+            ".pagination: To get pagination on your page you have to add this class\n" +
+            "\n" +
+            ".disabled, .active: Customize links by .disabled for unclickable links and .active to indicate the current page\n" +
+            "\n" +
+            ".pagination-Ig, .pagination-sm: Use these classes to get different size item";
+    public static final String answer361 = "You need to follow a few steps to build a dismissal alert:\n" +
+            "\n" +
+            "First, you have to add a basic alert by creating a wrapper <div> and adding a class of .alert and one of the four contextual classes.\n" +
+            "\n" +
+            "Also add optional .alert-dismissable to the above <div> class.\n" +
+            "\n" +
+            "Next, you have to add a close button.\n" +
+            "\n" +
+            "Finally, use the <button> element with the data-dismiss = “alert” data attribute.";
+    public static final String answer362 = "To create a basic progress bar, you need to do the following:\n" +
+            "\n" +
+            "Add a <div> with a class of .progress.\n" +
+            "\n" +
+            "Next, inside the above <div>, add an empty <div> with a class of .progress-bar.\n" +
+            "\n" +
+            "Add a style attribute with the width expressed as a percentage. For example, style = “40%”; indicates that the progress bar was at 40%.";
+    public static final String answer363 = "Column ordering is one of the most interesting features found in bootstrap. By using appropriate functions, the columns can be written easily and also in a defined order. You can also show them in another column. In order to change or alter the order of the column easily, the functions .col-md-push-* and .col-md-pull-* can be used.";
+    public static final String answer364 = "Bootstrap uses Normalize to establish cross-browser consistency.\n" +
+            "\n" +
+            "Normalize.css is a modern, HTML5-ready alternative to CSS resets. It is a small CSS file that provides better cross-browser consistency in the default styling of HTML elements.";
+    public static final String answer365 = "Bootstrap panel components are used for putting your DOM component in a box. To get a basic panel, simply add .panel and .panel-default classes to the <div> element. There are two ways of adding panel heading to a Bootstrap panel:\n" +
+            "\n" +
+            "Use any of the <h1>, <h2>, <h3>, <h4>, <h5>, or <h6> tags with a .panel-title class\n" +
+            "You can also use the .panel-heading class";
+    public static final String answer366 = "The purpose of using the Scrollspy plugin in Bootstrap is that it allows you to target certain sections of the page based on the scroll position. Thereafter, you can add .active classes, based on the scroll position, to the Bootstrap navbar.";
+    public static final String answer367 = "We use the affix plugin in Bootstrap for affixing a <div> to some certain location on a webpage. The plugin also allows toggling pinning on and off for the affixed <div>. Social icons are the most popular example of using the affix plugin in Bootstrap.\n" +
+            "\n" +
+            "The affixed <div> starts from a particular location on the webpage and scrolls with it. However, after a certain mark, it will be locked in place, thus stopping scrolling with the rest of the webpage.";
+    public static final String answer368 = "Button groups allow multiple buttons to be stacked together on a single line. You can use this when you want to place items like alignment buttons together.\n" +
+            "\n" +
+            "For basic button group, .btn-group class is used. Here, you can wrap a series of buttons with class .btn in .btn-group.";
+    public static final String answer369 = "<div class=\"alert\" role=\"alert\">Warning! I'm missing something.</div>\n" +
+            "Alert messages are used to provide feedback message and they usually require the attention of the user. Here it is important to note that Bootstrap Alerts don’t have default class. If a contextual class such as .alert-success, .alert-info, .alert-warning, or .alert-danger, is not provided, a default gray alert will be created.";
+    public static final String answer370 = "Badges are used to supplement any content with additional information. To make rectangular badges, use the .badge class with a contextual class (like .badge-secondary) within <span> elements. It's worth noting that badges scale to fit the parent element's size (if any).\n" +
+            "\n" +
+            "To make the badges more rounded, we use the .badge-pill class. ";
+    public static final String answer371 = "The following three rules should be strictly kept in mind while using Grids in Bootstrap:-\n" +
+            "\n" +
+            "A row's immediate child must be a Column.\n" +
+            "Rows are just used to contain Columns and are not utilized for anything else.\n" +
+            "Rows should be put within a container.";
+    public static final String answer372 = "Node.js is an open-source, cross-platform JavaScript runtime environment and library to run web applications outside the client’s browser. It is used to create server-side web applications.\n" +
+            "\n" +
+            "Node.js is perfect for data-intensive applications as it uses an asynchronous, event-driven model. You can use  I/O intensive web applications like video streaming sites. You can also use it for developing: Real-time web applications, Network applications, General-purpose applications, and Distributed systems.";
+    public static final String answer373 = "Node.js makes building scalable network programs easy. Some of its advantages include:\n" +
+            "\n" +
+            "It is generally fast\n" +
+            "It rarely blocks\n" +
+            "It offers a unified programming language and data type\n" +
+            "Everything is asynchronous \n" +
+            "It yields great concurrency";
+    public static final String answer374 = "A web server using Node.js typically has a workflow that is quite similar to the diagram illustrated below. Let’s explore this flow of operations in detail." +
+            "\n" +
+            "Clients send requests to the webserver to interact with the web application. Requests can be non-blocking or blocking:\n" +
+            "Querying for data\n" +
+            "Deleting data \n" +
+            "Updating the data\n" +
+            "Node.js retrieves the incoming requests and adds those to the Event Queue\n" +
+            "The requests are then passed one-by-one through the Event Loop. It checks if the requests are simple enough not to require any external resources\n" +
+            "The Event Loop processes simple requests (non-blocking operations), such as I/O Polling, and returns the responses to the corresponding clients\n" +
+            "A single thread from the Thread Pool is assigned to a single complex request. This thread is responsible for completing a particular blocking request by accessing external resources, such as computation, database, file system, etc.\n" +
+            "\n" +
+            "Once the task is carried out completely, the response is sent to the Event Loop that sends that response back to the client.";
+    public static final String answer375 = "Node.js is single-threaded for async processing. By doing async processing on a single-thread under typical web loads, more performance and scalability can be achieved instead of the typical thread-based implementation.";
+    public static final String answer376 = "The Multi-Threaded Request/Response Stateless Model is not followed by the Node JS Platform, and it adheres to the Single-Threaded Event Loop Model. The Node JS Processing paradigm is heavily influenced by the JavaScript Event-based model and the JavaScript callback system. As a result, Node.js can easily manage more concurrent client requests. The event loop is the processing model's beating heart in Node.js.";
+    public static final String answer377 = "A callback function is called after a given task. It allows other code to be run in the meantime and prevents any blocking.  Being an asynchronous platform, Node.js heavily relies on callback. All APIs of Node are written to support callbacks.";
+    public static final String answer378 = "Node.js is widely used in the following applications:\n" +
+            "\n" +
+            "Real-time chats\n" +
+            "Internet of Things\n" +
+            "Complex SPAs (Single-Page Applications)\n" +
+            "Real-time collaboration tools\n" +
+            "Streaming applications\n" +
+            "Microservices architecture";
+    public static final String answer379 = "NPM stands for Node Package Manager, responsible for managing all the packages and modules for Node.js.\n" +
+            "\n" +
+            "Node Package Manager provides two main functionalities:\n" +
+            "\n" +
+            "Provides online repositories for node.js packages/modules, which are searchable on search.nodejs.org\n" +
+            "Provides command-line utility to install Node.js packages and also manages Node.js versions and dependencies  ";
+    public static final String answer380 = "In Node.js, Modules are the blocks of encapsulated code that communicates with an external application on the basis of their related functionality. Modules can be a single file or a collection of multiples files/folders. The reason programmers are heavily reliant on modules is because of their re-usability as well as the ability to break down a complex piece of code into manageable chunks.\n" +
+            "\n" +
+            "Modules are of three types:\n" +
+            "\n" +
+            "Core Modules\n" +
+            "local Modules\n" +
+            "Third-party Modules";
+    public static final String answer381 = "Some of the reasons why Node.js is preferred include:\n" +
+            "\n" +
+            "Node.js is very fast\n" +
+            "Node Package Manager has over 50,000 bundles available at the developer’s disposal\n" +
+            "Perfect for data-intensive, real-time web applications, as Node.js never waits for an API to return data\n" +
+            "Better synchronization of code between server and client due to same code base\n" +
+            "Easy for web developers to start using Node.js in their projects as it is a JavaScript library";
+    public static final String answer382 = "MongoDB is the most common database used with Node.js. It is a NoSQL, cross-platform, document-oriented database that provides high performance, high availability, and easy scalability.";
+    public static final String answer383 = "There are two commonly used libraries in Node.js:\n" +
+            "\n" +
+            "ExpressJS - Express is a flexible Node.js web application framework that provides a wide set of features to develop web and mobile applications.\n" +
+            "Mongoose - Mongoose is also a Node.js web application framework that makes it easy to connect an application to a database.";
+    public static final String answer384 = "The “require” command is used for importing external libraries. For example - “var http=require (“HTTP”).”  This will load the HTTP library and the single exported object through the HTTP variable.\n" +
+            "\n" +
+            "Now that we have covered some of the important beginner-level Node.js interview questions let us look at some of the intermediate-level Node.js interview questions.";
+    public static final String answer385 = "An event-driven programming approach uses events to trigger various functions. An event can be anything, such as typing a key or clicking a mouse button. A call-back function is already registered with the element executes whenever an event is triggered.";
+    public static final String answer386 = "Event loops handle asynchronous callbacks in Node.js. It is the foundation of the non-blocking input/output in Node.js, making it one of the most important environmental features.";
+    public static final String answer387 = "The distinction between method and product. This is accomplished through the use of nextTick() and setImmediate(). next Tick() postpones the execution of action until the next pass around the event loop, or it simply calls the callback function once the event loop's current execution is complete, whereas setImmediate() executes a callback on the next cycle of the event loop and returns control to the event loop for any I/O operations.";
+    public static final String answer388 = "EventEmitter is a class that holds all the objects that can emit events\n" +
+            "Whenever an object from the EventEmitter class throws an event, all attached functions are called upon synchronously";
+    public static final String answer389 = "The two types of API functions in Node.js are:\n" +
+            "\n" +
+            "Asynchronous, non-blocking functions\n" +
+            "Synchronous, blocking functions";
+    public static final String answer390 = "The package.json file is the heart of a Node.js system. This file holds the metadata for a particular project. The package.json file is found in the root directory of any Node application or module\n" +
+            "\n" +
+            "This is what a package.json file looks like immediately after creating a Node.js project using the command: npm init\n" +
+            "\n" +
+            "You can edit the parameters when you create a Node.js project.";
+    public static final String answer391 = "The request object represents the HTTP request and has properties for the request query string, parameters, body, HTTP headers, and so on\n" +
+            "The response object represents the HTTP response that an Express app sends when it receives an HTTP request";
+    public static final String answer392 = "Streams are objects that enable you to read data or write data continuously.\n" +
+            "\n" +
+            "There are four types of streams:\n" +
+            "\n" +
+            "Readable – Used for reading operations\n" +
+            "\n" +
+            "Writable − Used for write operations\n" +
+            "\n" +
+            "Duplex − Can be used for both reading and write operations\n" +
+            "\n" +
+            "Transform − A type of duplex stream where the output is computed based on input";
+    public static final String answer393 = "All Node.js library APIs are asynchronous, which means they are also non-blocking\n" +
+            "A Node.js-based server never waits for an API to return data. Instead, it moves to the next API after calling it, and a notification mechanism from a Node.js event responds to the server for the previous API call";
+    public static final String answer394 = "REPL stands for Read Eval Print Loop, and it represents a computer environment. It’s similar to a Windows console or Unix/Linux shell in which a command is entered. Then, the system responds with an output";
+    public static final String answer395 = "Buffer class stores raw data similar to an array of integers but corresponds to a raw memory allocation outside the V8 heap. Buffer class is used because pure JavaScript is not compatible with binary data";
+    public static final String answer396 = "Piping is a mechanism used to connect the output of one stream to another stream. It is normally used to retrieve data from one stream and pass output to another stream";
+    public static final String answer397 = "Callback hell, also known as the pyramid of doom, is the result of intensively nested, unreadable, and unmanageable callbacks, which in turn makes the code harder to read and debug\n" +
+            "improper implementation of the asynchronous logic causes callback hell";
+    public static final String answer398 = "A reactor pattern is a concept of non-blocking I/O operations. This pattern provides a handler that is associated with each I/O operation. As soon as an I/O request is generated, it is then submitted to a de-multiplexer";
+    public static final String answer399 = "The V8 engine, developed by Google, is open-source and written in C++. Google Chrome makes use of this engine. V8, unlike the other engines, is also utilized for the popular Node.js runtime. V8 was initially intended to improve the speed of JavaScript execution within web browsers. Instead of employing an interpreter, V8 converts JavaScript code into more efficient machine code to increase performance. It turns JavaScript code into machine code during execution by utilizing a JIT (Just-In-Time) compiler, as do many current JavaScript engines such as SpiderMonkey or Rhino (Mozilla).";
+    public static final String answer400 = "Middleware is a function that receives the request and response objects. Most tasks that the middleware functions perform are:  \n" +
+            "\n" +
+            "Execute any code\n" +
+            "Update or modify the request and the response objects\n" +
+            "Finish the request-response cycle\n" +
+            "Invoke the next middleware in the stack";
+    public static final String answer401 = "The WASI class implements the WASI system called API and extra convenience methods for interacting with WASI-based applications. Every WASI instance represents a unique sandbox environment. Each WASI instance must specify its command-line parameters, environment variables, and sandbox directory structure for security reasons.";
+    public static final String answer402 = "Express.js, or simply Express, is a free, open-source, lightweight, and fast backend web application framework for Node.js. It is released as open-source software under the MIT License.\n" +
+            "\n" +
+            "It is designed for building single-page, multi-page, and hybrid web applications and APIs. It is called the de facto standard server framework for Node.js. It was founded and developed by TJ Holowaychuk in 2010 and written in JavaScript.";
+    public static final String answer403 = "As Express is a lightweight, minimal and flexible Node.js web application framework, it provides a robust set of features for web and mobile applications. Following is the list of some distinctive features of this framework:" +
+            "\n" +
+            "js can be used to design single-page, multi-page, and hybrid web applications and APIs.\n" +
+            "It allows to set up middleware to respond to HTTP/RESTful Requests.\n" +
+            "It defines a routing table to perform different HTTP operations (method and URL).\n" +
+            "It allows to dynamically rendering HTML Pages based on passing arguments to templates.\n" +
+            "It provides high performance because of its ultra-fast I/O. It prepares a thin layer; therefore, the performance is adequate.\n" +
+            "Its MVC-like structure makes it organize the web application into MVC architecture.\n" +
+            "It provides good database support. It supports RDBMS as well as NoSQL databases.\n" +
+            "It is asynchronous and single-threaded.\n" +
+            "Its robust API makes routing easy.";
+    public static final String answer404 = "Express.js or Express is a JavaScript backend framework. It is mainly designed to develop complete web applications (single-page, multi-page, and hybrid web applications) and APIs. Express is the backend component of the MEAN stack where M stands for MongoDB, which handles database; E stands for Express, which handles backend; A stands for AngularJS, which is for the front-end, and N stands for Node.";
+    public static final String answer405 = "Express.js is an automatically prebuilt Node.js framework that facilitates us to create server-side web applications faster and smarter. The main reason for choosing Express is its simplicity, minimalism, flexibility, and scalability characteristics.";
+    public static final String answer406 = "Following are the steps accustomed for An Express JS application:\n" +
+            "\n" +
+            "A folder with a constant name because the project name is made.\n" +
+            "A file named package.json is made within the folder created.\n" +
+            "“npm install” command is run on the electronic communication. It installs all the libraries gift in package.json.\n" +
+            "A file named server.js is made.\n" +
+            "“Router” file is made within the package that consists of a folder named index.js.\n" +
+            "“App” is made within the package that has the index.html file.";
+    public static final String answer407 = "The arguments which are available to an Express JS route handler-function are-\n" +
+            "\n" +
+            "Req: the request object\n" +
+            "Res: the response object\n" +
+            "Next (optional): a function that is employed to pass management to 1 of the following route handlers.\n" +
+            "The third argument is optional and should be omitted, however, in some cases, it’s helpful wherever there’s a series of handlers and management will be passed to 1 of the following route handlers skipping this one.";
+    public static final String answer408 = "In Express JS, there are 2 ways that for configuring the properties:\n" +
+            "\n" +
+            "With process.ENV:\n" +
+            "\n" +
+            "A file with the name “.env” is to be created within the project folder.\n" +
+            "All the properties are to be other within the “.env” file.\n" +
+            "Any of the properties will be employed in server.js.\n" +
+            "With require.JS:\n" +
+            "\n" +
+            "A file with the name “config.json” is to be created within the config folder within the project folder.\n" +
+            "The config properties are to be present within the config.json file.\n" +
+            "Now, ought to be accustomed access the config.json file.";
+    public static final String answer409 = "var bodyParser = require('body-parser')  \n" +
+            "app.use( bodyParser.json() );       // to support JSON-encoded   \n" +
+            "app.use(bodyParser.urlencoded({     // to support URL-encoded   \n" +
+            "  extended: true  \n" +
+            "}));";
+    public static final String answer410 = "Scaffolding is a technique used for creating the skeleton structure of an application. It facilitates users to easily create their public directories, routes, views, etc., or a web application skeleton. Generally, users manually create their public directory, add middleware, create separate route files, etc. Using a scaffolding tool, they can set up all these things to directly get started with building their application.\n" +
+            "\n" +
+            "There are two ways to install Scaffolding and use it in your application.\n" +
+            "\n" +
+            "Express application generator\n" +
+            "Yeoman\n" +
+            "Express application generator: This is used to create an application skeleton quickly. Use the following command to install the Express application generator.\n" +
+            "\n" +
+            "npm install express-generator -g  \n" +
+            "express myApp  \n" +
+            "By using the above command, a project named \"myApp\" will be created along with following the files/folders in the project.\n" +
+            "\n" +
+            "Bin: The bin folder contains one file called www is the main configuration file of the app.\n" +
+            "Public: The public folder contains JavaScript, CSS, and images, etc.\n" +
+            "Routes: This folder contains the routing files.\n" +
+            "Views: The view folder contains the view files of the application.\n" +
+            "js: The app.js file is the main file of the application.\n" +
+            "json: The package.json file is the manifest file. It contains all metadata of the project, such as the packages used in the app (called dependencies) etc.\n" +
+            "Now, we have to install all the dependencies mentioned in the package.json file by using the following command:\n" +
+            "\n" +
+            "cd myApp  \n" +
+            "npm install  \n" +
+            "Yeoman: Use the following command in your terminal to install Yeoman:\n" +
+            "\n" +
+            "npm install -g yeoman  \n" +
+            "Yeoman uses generators to scaffold out applications.";
+    public static final String answer411 = "The Scaffolding technique is also supported by other MVC frameworks other than Express. The following frameworks mainly support it: Ruby on Rails, OutSystems Platform, Play framework, Django, MonoRail, Brail, Symfony, Laravel, CodeIgniter, YII, CakePHP, Phalcon PHP, Model-Glue, PRADO, Grails, Catalyst, Seam Framework, Spring Roo, ASP.NET, etc.";
+    public static final String answer412 = "We can allow CORS in Express.js, by adding the following code in server.js:\n" +
+            "\n" +
+            "app.all('*', function(req, res, next) {  \n" +
+            "res.set('Access-Control-Allow-Origin', '*');  \n" +
+            "res.set('Access-Control-Allow-Methods', 'GET, POST, DELETE, PUT');  \n" +
+            "res.set('Access-Control-Allow-Headers', 'X-Requested-With, Content-Type');  \n" +
+            "if ('OPTIONS' == req.method) return res.send(200);  \n" +
+            "next();  \n" +
+            "});";
+    public static final String answer413 = "This is the basic Express JS Interview Questions asked in an interview. There is no definitive answer to the current question. The solution depends on the dimensions of your application and therefore the team that’s concerned.\n" +
+            "Routes and alternative application-Express logic will board as several files as you would like, in any directory structure you favor. Read the subsequent examples for inspiration:\n" +
+            "\n" +
+            "Route listings\n" +
+            "Route map\n" +
+            "MVC vogue controllers\n" +
+            "Also, there are third-party extensions for Express JS applications that modify a number of these patterns:\n" +
+            "\n" +
+            "Resourceful routing";
+    public static final String answer414 = "Error handling is much easier in the Express versions over Express 4.0. Use the following steps to do the error handling:\n" +
+            "\n" +
+            "Create an Express.js application. There is no built-in middleware like error handler in express 4.0, so you have to either install a middleware or create a custom one.\n" +
+            "\n" +
+            "Create a Middleware:\n" +
+            "\n" +
+            "Create a middleware as following:\n" +
+            "\n" +
+            "// error handler  \n" +
+            "app.use(function(err, req, res, next) {  \n" +
+            "// set locals, only providing error in development  \n" +
+            "res.locals.message = err.message;  \n" +
+            "res.locals.error = req.app.get('env') === 'development' ? err : {};  \n" +
+            "// render the error page  \n" +
+            "res.status(err.status || 500);  \n" +
+            "res.render('error');  \n" +
+            "});  \n" +
+            "Install Error Handler Middleware:\n" +
+            "\n" +
+            "Install the errorhandler as following:\n" +
+            "\n" +
+            "npm install errorhandler --save  \n" +
+            "Create a variable:\n" +
+            "\n" +
+            "var errorhandler = require('errorhandler')  \n" +
+            "Use the middleware as following:\n" +
+            "\n" +
+            "if (process.env.NODE_ENV === 'development') {  \n" +
+            " // only use in development  \n" +
+            "  app.use(errorhandler({log: errorNotification}))  \n" +
+            "}  \n" +
+            "function errorNotification(err, str, req) {  \n" +
+            " var title = 'Error in ' + req.method + ' ' + req.url  \n" +
+            " notifier.notify({  \n" +
+            "   title: title,  \n" +
+            "   message: str  \n" +
+            " })  \n" +
+            "}";
+    public static final String answer415 = "There is no need to \"render\" HTML with the res.render() function. If you have a specific file, you can use the res.sendFile() function, but you should use the express if you serve many assets from a directory.static() middleware function.";
+    public static final String answer416 = "In order to permit CORS in Express.js, add the subsequent code in server.js:\n" +
+            "\n" +
+            "For Example:\n" +
+            "\n" +
+            "app.all('*', function(req, res, next) {\n" +
+            "res.set('Access-Control-Allow-Origin', '*');\n" +
+            "res.set('Access-Control-Allow-Methods', 'GET, POST, DELETE, PUT');\n" +
+            "res.set('Access-Control-Allow-Headers', 'X-Requested-With, Content-Type');\n" +
+            "if ('OPTIONS' == req.method) return res.send(200);\n" +
+            "next();\n" +
+            "});";
+    public static final String answer417 = "Next -It passes management to a consecutive matching route. OR a operate to pass management to 1 of the following route handlers.\n" +
+            "The argument could also be omitted, however, is beneficial in cases wherever you have got a series of handlers and you’d wish to pass management to 1 of the following route handlers, and skip this one.\n" +
+            "\n" +
+            "app.get('/user details/:id?', function(req, res, next));\n" +
+            "\n" +
+            "Req and Res: It represents the request and response objects\n" +
+            "Next: It passes management to a consecutive matching route.";
+    public static final String answer418 = "In server.js add the subsequent code to send 404 errors back to a page in our ExpressJS App:\n" +
+            "\n" +
+            "/* Define fallback route */\n" +
+            "app.use(function(req, res, next) {\n" +
+            "res.status(404).json({errorCode: 404, errorMsg: \"route not found\"});\n" +
+            "});";
+    public static final String answer419 = "Laravel is an open-source and new generation web framework for PHP, developed by Taylor Otwell in 2011. It is specially designed to develop web-based applications, and follows the MVC model, suitable for creating simple, elegant, and well-structured applications. It has a current stable release with version 8 that was released on 8th Sept 2020. \n" +
+            "\n" +
+            "Laravel comes with a framework called Lumen built on top of the Laravel components, making it a perfect option for creating a Laravel based microservices application.";
+    public static final String answer420 = "The following are the pros and cons of the Laravel framework.\n" +
+            "\n" +
+            "Pros of Laravel:\n" +
+            "\n" +
+            "For managing the project dependencies, Laravel uses the Composer allowing developers to mention the package name, version, and the pre-built functionalities that are ready for use in your project, resulting in faster development of the application\n" +
+            "It comes with a blade templating engine that is easy to learn and understand. This is useful while working with the PHP/HTML languages. Web development via Laravel allows the composing of the plain PHP codes in a layout shape, thus helping in improving the execution of complex tasks.\n" +
+            "You can learn Laravel via Laracast that comes with both free and paid videos for easy learning\n" +
+            "Laravel has an object-relational mapper named Eloquent that helps implement the active record pattern and interact with the relational database. It is available as a package for Laravel.\n" +
+            "Laravel has a built-in command-line tool called Artisan support, where users can carry out repetitive tasks quickly and effortlessly\n" +
+            "With the help of the Laravel schema, developers can create database tables and add desired columns via writing a simple migration script\n" +
+            "It comes with a reverse routing feature that makes your application more flexible\n" +
+            " \n" +
+            "\n" +
+            "Cons of Laravel:\n" +
+            "\n" +
+            "It is challenging to migrate legacy system to Laravel\n" +
+            "It comes with heavy documentation that might be difficult to understand for beginners\n" +
+            "Upgrades aren't smooth";
+    public static final String answer421 = "Events are actions recognized and handled by the program. These events work on the Observer-subscriber pattern. All the events in Laravel are stored within the app/Events directory, and the lists are stored within the app/listeners directory. Events can decouple the applications’ aspects as a single event, which is capable of handling multiple listeners. ";
+    public static final String answer422 = "In Laravel, ValidatesRequests is a trait used by classes to validate the input provided by the user. To store the data, we normally use the create or store methods defined at the Laravel routes with the get method.\n" +
+            "\n" +
+            "You can get the Laravel validate method in the Illuminate\\Http\\Request object. If there is no error in the rule and it passes successfully, the code will execute as expected. But if there is any failure while validation, the code will not run and the user will get the error response for the HTTP request.\n" +
+            "\n" +
+            "Below is an example of how validation rules are defined in Laravel:\n" +
+            "\n" +
+            "/**\n" +
+            "* Store a post.\n" +
+            "*\n" +
+            "* @param  Request $request\n" +
+            "* @return Response\n" +
+            "*/\n" +
+            "public function store(Request $request)\n" +
+            "{\n" +
+            "  $validatedData = $request->validate([\n" +
+            "      'title' => 'required|unique:posts|max:255',\n" +
+            "      'body' => 'required',\n" +
+            "  ]);\n" +
+            "}\n" +
+            "In the code above, the title and the body are the required fields. The validation rule is sequential, so if there is any failure in any validation, further validation will not be checked.";
+    public static final String answer423 = "The composer comes as a dependency manager. If it is not installed on your system, you can install it using this link..https://cutt.ly/jImykv8\n" +
+            "\n" +
+            "After successfully installing the composer on your system, you need to create a project directory for your Laravel project. Later, you need to navigate the path where you have created the Laravel directory and run the following command:\n" +
+            "\n" +
+            "composer create-project laravel/laravel --prefer-dist\n" +
+            "This command will help install the Laravel in the current directory. If you want to start Laravel, run the following command.\n" +
+            "\n" +
+            "\n" +
+            "php artisan serve \n" +
+            "Laravel will get started on the development server. Now, run http://localhost:8000/ on your browser. The server requirement is as follows for installing Laravel.\n" +
+            "\n" +
+            " \n" +
+            "\n" +
+            "PHP >= 7.1.3.\n" +
+            "OpenSSL PHP Extension\n" +
+            "PDO PHP Extension\n" +
+            "Mbstring PHP Extension\n" +
+            "Tokenizer PHP Extension\n" +
+            "XML PHP Extension\n" +
+            "Ctype PHP Extension\n" +
+            "JSON PHP Extension";
+    public static final String answer424 = "PHP artisan is a command-line tool available in Laravel that comes with a variety of useful commands which help create an application quickly and hassle-free. You will get commands for every important task by default, like database seeding, migration, configuring cache, and many others. \n" +
+            "\n" +
+            "The following are some important PHP artisan commands:\n" +
+            "\n" +
+            "php artisan make:controller : Used for creating a Controller file\n" +
+            "php artisan make:model : Used for making a Model file\n" +
+            "php artisan make:migration : Used for making the Migration file\n" +
+            "php artisan make:seeder : Used for making the Seeder file\n" +
+            "php artisan make:factory : Used for making the Factory file\n" +
+            "php artisan make:policy : Used for making the Policy file\n" +
+            "php artisan make:command : Used for making a new artisan command";
+    public static final String answer425 = "Middleware provides a mechanism that helps filter the incoming HTTP request to your application. The basic middleware is explained with authentication. If the user is not authenticated, they will be redirected to the login page, and if the user is authenticated, they will be allowed for further processing. All this is possible with the help of the middleware.\n" +
+            "\n" +
+            "Laravel has a php artisan make:middleware <middleware_name> command, helping define the new middleware within your application. By default, the middleware will get stored in the app/Http/Middleware directory. \n" +
+            "\n" +
+            "If you want to run middleware for every HTTP request, list the middleware class within the $middleware property of the app/Http/Kernel.php class. If you want to assign middleware specifically, assign it in the key-value pair at the app/Http/Kernel.php class $routeMiddleware property.";
+    public static final String answer426 = "Laravel comes with the Blade templating engine, which helps users use the plain PHP code in the view and then compiles and caches that view until the next modification. You can get the files related to the blade views in the resources/views directory with the extension .blade.php.\n" +
+            "\n" +
+            "Below is an example of the Blade file.\n" +
+            "\n" +
+            "<!-- /resources/views/alert.blade.php -->\n" +
+            "<div class=\"alert alert-danger\">\n" +
+            "  {{ $slot }}\n" +
+            "</div>\n" +
+            "In the variable $slot, you can assign any desired value to inject into the component. \n" +
+            "The Component will look as follows:\n" +
+            "\n" +
+            "@component('alert')\n" +
+            "  <strong>Whoops!</strong> Something went wrong!\n" +
+            "@endcomponent\n" +
+            "@component is the blade directive here.";
+    public static final String answer427 = "CSRF is defined as a cross-site forgery attack, a type of malicious exploit where the authenticated users run unauthorized commands. In such a case, Laravel will generate CSRF tokens automatically for each active user’s session. This token will verify the authenticated user who is making that unauthorized request to the application.\n" +
+            "\n" +
+            "<form method=\"POST\" action=\"/profile\">\n" +
+            "  @csrf\n" +
+            "  ...\n" +
+            "</form>\n" +
+            "Suppose you are creating an HTML form for your application. Make sure to include a hidden CSRF token field in the form so that the middleware will check for the field and validate it. VerifyCsrfToken middleware is included within the web middleware group. You can use the @csrf blade directive for generating the token field on your application’s form.\n" +
+            "\n" +
+            "If you are using a JS-driven application, the JS HTTP library will automatically attach the CSRF token to every HTTP request.";
+    public static final String answer428 = "The Laravel facade offers a static interface for the classes available in the service container of the application. In Laravel, all the facades are stored within the Illuminate\\Support\\Facades namespaces. You can implement the facades easily without the need for injection, allowing you to use multiple facades within the same class. It comes with an expressive syntax, ensuring higher flexibility than traditional static class’s methods.\n" +
+            "\n" +
+            "Access facade will look like:\n" +
+            "\n" +
+            "use Illuminate\\Support\\Facades\\Cache;\n" +
+            "Route::get('/cache', function () {\n" +
+            "  return Cache::get('key');\n" +
+            "});";
+    public static final String answer429 = "Before proceeding with the concept of Eloquent, it is important to understand what ORM (object-relational mapping) is. ORM is a programming method that helps users convert data between the relational database and object-oriented programming languages. You can refer to it as an object-relational mapper. \n" +
+            "\n" +
+            "Eloquent is a type of ORM commonly used in Laravel, allowing users to work with the database efficiently. Every database has a specific model for interacting with the tables. \n" +
+            "\n" +
+            "Eloquent has the following types of relationships:\n" +
+            "\n" +
+            "One to One\n" +
+            "Many to One\n" +
+            "One to Many\n" +
+            "Many to Many\n" +
+            "Has one Through\n" +
+            "Has_many Through";
+    public static final String answer430 = "The following are the advantages of using the Laravel framework:\n" +
+            "\n" +
+            "Free\n" +
+            "Helpful for simple configurations of the applications\n" +
+            "This framework is based on the MVC model\n" +
+            "Comes with a wide range of modules and libraries, helping developers to speed up the development process\n" +
+            "Ensures high performance and makes the routing process easier\n" +
+            "Offers an Eloquent ORM, allowing you to handle various database-related tasks\n" +
+            "Inbuilt facility for supporting the unit tests\n" +
+            "Comes with strong community support";
+    public static final String answer431 = "The following are the significant features of the Laravel framework:\n" +
+            "\n" +
+            "Offers Eloquent ORM for handling database-related tasks\n" +
+            "Comes with a Query builder\n" +
+            "Offers an easy process for Reverse routing\n" +
+            "Offers Class auto-loading and comes with Restful controllers\n" +
+            "Comes with the Blade template engine\n" +
+            "You will have the option for the Lazy collection\n" +
+            "Unit testing is easier\n" +
+            "Offers Database seeding and supports easy migrations";
+    public static final String answer432 = "The latest stable version of Laravel is Laravel 8. Here are some good features of Laravel 8:\n" +
+            "\n" +
+            "Laravel Jetstream\n" +
+            "Models directory\n" +
+            "Model factory classes\n" +
+            "Migration squashing\n" +
+            "Time testing helpers\n" +
+            "Dynamic blade components\n" +
+            "Rate limiting improvements";
+    public static final String answer433 = "This is the directory structure of any Laravel project:\n" +
+            "\n" +
+            "app folder: It contains the source code of an application and consists of five sub-folders, namely the Console folder, Exceptions folder, Http folder, Models folder, and Providers folder. These sub-folders further contain exception handlers, controllers, middleware, service providers, and models.\n" +
+            " \n" +
+            "Note: In Laravel 7, you do not have any folder called Models. All model files are present inside the app folder rather than the app/Models folder.\n" +
+            "\n" +
+            "bootstrap folder: Contains the bootstrap files\n" +
+            "config folder: Contains the configuration files\n" +
+            "database folder: Includes the database-related files and three sub-folders, namely the factories folder, migrations folder, seeders folder, and the .gitignore file. These sub-folders further store the large set of data, database migrations, and seeds.\n" +
+            "public folder: Has the files necessary for initializing the application\n" +
+            "resources folder: Contains the files for the HTML, CSS, and JavaScript. It contains four sub-folders, namely the CSS folder, js folder, lang folder, and views folder.\n" +
+            "routes folder: Contains the route definitions\n" +
+            "storage folder: Consists of cache files, session files, and more\n" +
+            "tests folder: Contains test files, like unit test files.\n" +
+            "vendor folder: Contains all composer dependency packages\n" +
+            ".env file: Contains the environmental variables\n" +
+            "composer.json file: Contains dependencies\n" +
+            "package.json file: This file is for an application’s frontend and is similar to the composer.json file";
+    public static final String answer434 = "In Laravel, authentication is the process where you verify the users of an application. You can achieve this by identifying the username and password of users. Also, you can use another parameter for authentication. If the provided credentials are right, the user is authenticated; otherwise, the user is unauthenticated. \n" +
+            "\n" +
+            "Laravel uses guards and providers for the authentication process. Guards will specify how the users get authenticated for each request, whereas the providers will specify how the users get retrieved from the persistent storage.";
+    public static final String answer435 = "Service providers in Laravel play a central role, helping configure all applications and core services. They are robust tools that help maintain class dependencies and perform an injection. It also provides instructions to Laravel for binding the various components within Laravel's service container. \n" +
+            "\n" +
+            "For generating a service provider, use the following artisan command:\n" +
+            "\n" +
+            "php artisan make: provider ClientsServiceProvider  \n" +
+            "Every service provider in Laravel will extend the Illuminate\\Support\\ServiceProvider class and comes with the following two functions:\n" +
+            "\n" +
+            "Register()\n" +
+            "Boot()";
+    public static final String answer436 = "It is a pre-packed, official virtual machine, allowing developers to use all the necessary tools for developing Laravel. It comes with Ubuntu, Gulp, Bower, and other essential development tools allowing the development of full-scale web-based applications. It will provide a development environment used by developers without the need for installing PHP, a web server, or other server-related software on your machine.";
+    public static final String answer437 = "Laravel provides the dd() function, allowing users to dump the content of variables to a browser and then stop the execution of the further script. The dd stands for the dump and dies, and it first dumps a variable or object and kills (die) the execution of the script. If you want, you can easily isolate this function in a reusable function file or a class.";
+    public static final String answer438 = "Laravel provides @yield for defining a section in a layout, getting the content from the child page, and submitting it to a master page. So whenever you use Laravel to execute the blade file, it first checks whether you have extended the master layout or not. If so, it moves to the master layout and commences getting the @sections.";
+    public static final String answer439 = "In Laravel, requests are used to interact with incoming HTTP requests, along with the sessions, cookies, and even files, if they are submitted with the requests. The class Illuminate\\Http\\Request is responsible for requests in Laravel. \n" +
+            "\n" +
+            "Whenever you submit any request to the Laravel route, it goes to the controller method, and with the help of the dependency injection, the object of that request will be available in the controller method. You can perform various actions with a request, such as validating and authorizing.\n" +
+            "\n" +
+            "You can even create a request validation class that will store validation rules and associated error messages. Consider the following example:\n" +
+            "\n" +
+            "/**\n" +
+            "* Store a new blog post.\n" +
+            "*\n" +
+            "* @param  \\Illuminate\\Http\\Request  $request\n" +
+            "* @return \\Illuminate\\Http\\Response\n" +
+            "*/\n" +
+            "public function store(Request $request)\n" +
+            "{\n" +
+            "    $validated = $request->validate([\n" +
+            "        'title' => 'required|unique:posts|max:255',\n" +
+            "        'body' => 'required',\n" +
+            "    ]);\n" +
+            "\n" +
+            "    // The blog post is valid...\n" +
+            "}";
+    public static final String answer440 = "Closures are anonymous methods in Laravel used as a callback function, and you can also use it as a parameter in a function. \n" +
+            "\n" +
+            "You can easily pass parameters into closure by changing the closure function call in the handle() method. With the help of the closures, you can access variables present outside the scope of the variables. \n" +
+            "\n" +
+            "Example\n" +
+            "\n" +
+            "function handle(Closure $closure) { \n" +
+            "    $closure(); \n" +
+            "} \n" +
+            "handle(function(){ \n" +
+            "echo \"Hello\"'; \n" +
+            "});   \n" +
+            "You can add the closure parameter to the handle() method, and now you can call the handle() method and pass a service as a parameter.";
+    public static final String answer441 = "In Laravel, soft delete is a feature that helps soft delete models rather than actually deleting them from the database. If you wish to enable the soft deletes for a model, you need to mention the soft delete property in the model, as shown below:\n" +
+            "\n" +
+            " \n" +
+            "\n" +
+            "use Illuminate\\Database\\Eloquent\\SoftDeletes;\n" +
+            "\n" +
+            "and you can use this\n" +
+            "\n" +
+            "use SoftDeletes; in our model property.\n" +
+            "\n" +
+            "After using the delete() query, the deleted_at timestamp is set on the record if the record is not removed from the database.";
+    public static final String answer442 = "With the help of the repository pattern, you can use an object without knowing how it existed. It acts as an abstraction for the data layer, meaning there is no need to know how data persisted. Thus, the business logic depends on the repository for getting the right data. In simple words, it is used for decoupling the data access layers and the business logic in the application.";
+    public static final String answer443 = "Normally, HTML forms do not support PUT, PATCH, or DELETE actions. So, if you want to call these actions from an HTML form, you need to define their routes by adding the hidden _method field to that form. Thus, the value you send with the _method field will be used as the HTTP request method, as shown below:                              \n" +
+            "\n" +
+            "<form action=\"/foo/bar\" method=\"POST\">\n" +
+            "<input type=\"hidden\" name=\"_method\" value=\"PUT\">\n" +
+            "<input type=\"hidden\" name=\"_token\" value=\"{{ csrf_token() }}\">\n" +
+            "</form>\n" +
+            "For generating the _method input, you need to use the @method Blade Directive, like this:\n" +
+            "\n" +
+            "<form action=\"/foo/bar\" method=\"POST\">\n" +
+            "@method('PUT')\n" +
+            "@csrf\n" +
+            "</form>\n" +
+            "This is called method spoofing in Laravel.";
+    public static final String answer444 = "In Laravel, tinker is a powerful REPL tool used to interact with the Laravel application using the command line in an interactive shell. It comes with the release version of 5.4, extracted in a separate package.\n" +
+            "\n" +
+            "For installing Tinker, run the following command:\n" +
+            "\n" +
+            "composer require laravel/tinker\n" +
+            "For executing Tinker, execute the following command:\n" +
+            "\n" +
+            "php artisan tinker";
+    public static final String answer445 = "This method is used to update an existing record in a database if the condition is matched or created if there is no matching record. It will return the boolean value. \n" +
+            "\n" +
+            "You can use the following syntax:\n" +
+            "\n" +
+            "DB::table('blogs')->updateOrInsert([Conditions],[fields with value]);";
+    public static final String answer446 = "You can stop an Artisan server in three steps, as follows:\n" +
+            "\n" +
+            "First, press Ctrl + Shift + ESC together. Locate the php system walking artisan and kill it with proper click -> kill process.\n" +
+            "Later, reopen the command line and start the server again\n" +
+            "You can kill the manner by sending a kill sign with Ctrl + C";
+    public static final String answer447 = "If you want to extend the login expiration time, make the required changes to the config\\session.php file. You need to update the value of the variable “lifeline”, also you can update the variable as per your requirement.";
+    public static final String answer448 = "You can use the following method to check the current route name:\n" +
+            "\n" +
+            "request()->route()->getName()\n" +
+            "Laravel is one of the most commonly used web frameworks among all PHP web developers. There is a moderate difference between Laravel version 7 and Laravel version 8; however, the other features are still the same.";
+    public static final String answer449 = "jQuery is an efficient & fast JavaScript Library created by John Resig in 2006. The motto of jQuery is – write less, do more. It is designed to simplify the client-side scripting of HTML. The main purpose of jQuery is to provide an easy way to use JavaScript on your website to make it more interactive and attractive.\n" +
+            "It makes things like HTML document traversal and manipulation, event handling, animation, and Ajax much simpler with an easy-to-use API that works across a multitude of browsers.";
+    public static final String answer450 = "Some of the key features of jQuery are:\n" +
+            "DOM manipulation−  jQuery makes the selection of DOM elements easy, traverse them and modify their content by using cross-browser open source selector engine.\n" +
+            "\n" +
+            "Event handling− It provides an elegant way to capture a wide variety of events, such as a user clicking on a link, without the need to clutter the HTML code itself with event handlers.\n" +
+            "\n" +
+            "AJAX Support−  jQuery helps you to develop a responsive and feature-rich website with AJAX technology.\n" +
+            "\n" +
+            "Animations− This framework comes with plenty of built-in animation effects which you can use in your websites.\n" +
+            "\n" +
+            "Lightweight − It is a very lightweight library – about 19KB in size.\n" +
+            "\n" +
+            "Cross Browser Support−  jQuery has cross-browser support and works well in IE 6.0+, Safari 3.0+, Chrome and Opera 9.0+.";
+    public static final String answer451 = "There are many advantages of using jQuery. Some of them include :\n" +
+            "\n" +
+            "It is like an enhanced version of JavaScript so there is no overhead in learning a new syntax.\n" +
+            "\n" +
+            "jQuery has the ability to keep the code simple, readable, clear and reusable.\n" +
+            "\n" +
+            "It has Cross-browser support.\n" +
+            "\n" +
+            "This would remove the requirement for writing complex loops and DOM scripting library calls.\n" +
+            "\n" +
+            " jQuery helps in event detection and handling.\n" +
+            "\n" +
+            "It provides tons of plug-ins for all kind of needs.";
+    public static final String answer452 = "A jQuery Selector is a function that uses the expressions to find out matching elements from a DOM based on the given criteria. In a simple language, selectors are used to select one or more HTML elements using jQuery. Once an element is selected then we can perform various operations on that selected element.\n" +
+            "\n" +
+            "Selecting an element in DOM is done with the help of $() construct with a string parameter containing any CSS selector expression. $() will return zero or more DOM elements on which you can apply any effect or style.";
+    public static final String answer453 = "jQuery no-conflict is an option given by jQuery to overcome the conflicts between the different javascript frameworks or libraries. When you use jQuery no-conflict mode, you replace the $ to a new variable and assign jQuery some other JavaScript libraries. Also, the $ is used as a function or variable name that jQuery has.";
+    public static final String answer454 = ".empty() – This method is used to remove all the child elements from matched elements.\n" +
+            "Syntax-\n" +
+            "$(selector).empty();\n" +
+            ".remove() – This method is used to remove all the matched element. It will remove all the jQuery data associated with the matched element.\n" +
+            "Syntax-\n" +
+            "$(selector).remove();\n" +
+            ".detach() – This method is same as .remove() method except that the .detach() method doesn’t remove jQuery data associated with the matched elements.\n" +
+            "Syntax-\n" +
+            "$(selector).detach();";
+    public static final String answer455 = "jQuery provides amazing effects and you can apply them quickly with a simple configuration. The effect can be either hiding, showing, toggling, fadeout, fadein, fadeto and many more. Some other methods to provide effects include the following:\n" +
+            "\n" +
+            "animate( params, [duration, easing, callback] ) This function makes custom animations for your HTML elements.\n" +
+            "\n" +
+            "fadeIn( speed, [callback] ) This function fades in all the matched elements by adjusting their opacity and firing an optional callback after completion.\n" +
+            "\n" +
+            "fadeOut( speed, [callback] ) This function is used to fade out all the matched elements by adjusting their opacity to 0, then setting the display to “none” and firing an optional callback after completion.\n" +
+            "\n" +
+            "fadeTo( speed, opacity, callback ) This function fade the opacity of all the matched elements to a specified opacity and firing an optional callback after completion.\n" +
+            "\n" +
+            "stop( [clearQueue, gotoEnd ]) This function stops all the currently running animations.";
+    public static final String answer456 = "Ajax allows the user to exchange data with a server and update parts of a page without reloading the entire page. Some of the functions of ajax include:\n" +
+            "\n" +
+            "$.ajax() – This is considered to be the most low level and basic of functions. It is used to send requests. This function can be performed without a selector.\n" +
+            "\n" +
+            "$.ajaxSetup() – This function is used to define and set the options for various ajax calls.\n" +
+            "\n" +
+            "$.getJSON() – This is a special type of shorthand function which is used to accept the url to which the requests are sent. Optional data and optional callback functions are also possible in such functions.";
+    public static final String answer457 = "There are two different methods in jQuery to change the width of an element. The first way is to use .css(‘width’) and other way is to use .width().\n" +
+            "\n" +
+            "For example-\n" +
+            "\n" +
+            "$('#mydiv').css('width','300px');\n" +
+            "$('#mydiv').width(100);\n" +
+            "The difference in .css(‘width’) and .width() is the data type of value we specify or return from both the functions. In .css(‘width’) we have to add px in the width value while in .width() we don’t have to add px.";
+    public static final String answer458 = "A  jQuery connect is a plugin used to connect or bind a function with another function. Connect is used to execute a function from any other function or plugin.\n" +
+            "\n" +
+            "It can be used by downloading jQuery connect file from jQuery.com and then include that file in the HTML file. You have to use $.connect to connect one function to another.";
+    public static final String answer459 = "jQuery .size() method gives the total number of element present in the object. But size() method is not preferred as jQuery has .length property. It does the same thing but the .length property does not have the overhead of a function call.";
+    public static final String answer460 = "There are two ways to handle this issue:\n" +
+            "\n" +
+            "Use of event delegation – The event delegation technique works on principle by exploiting the event bubbling. It uses event bubbling to capture the events on elements which are present anywhere in the domain object model. In jQuery, the user can make use of the live and die methods for the event delegation which contains a subset of event types.\n" +
+            "For example:\n" +
+            "\n" +
+            "$('#mydiv').click(function(e){\n" +
+            "if( $(e.target).is('a') )\n" +
+            "fn.call(e.target,e);\n" +
+            "});\n" +
+            "$('#mydiv').load('my.html')\n" +
+            "Event rebinding usage – When this method is used it requires the user to call the bind method and the added new elements.\n" +
+            "For example:\n" +
+            "\n" +
+            "$('a').click(fn);\n" +
+            "$('#mydiv').load('my.html',function(){\n" +
+            "$('#mydiv a').click(fn);\n" +
+            "});";
+    public static final String answer461 = "$(window).load is an event that fires when the DOM and other contents on the page is fully loaded. This event is fired after the ready event.\n" +
+            "In most cases, the script can be executed as soon as the DOM is fully loaded. The ready() is usually the best place to write your JavaScript code. But there could be some scenario where you might need to write scripts in the load() function. For example, to get the actual width and height of an image.\n" +
+            "\n" +
+            "The $(window).load event is fired once the DOM and all the CSS, images and frames are fully loaded. So, it is the best place to write the jQuery code to get the actual image size or to get the details of anything that is loaded just before the load event is raised.";
+    public static final String answer462 = "Content Delivery Network or Content Distribution Network(CDN) is a large distributed system of servers deployed in multiple data centers across the internet. It provides the files from servers at a higher bandwidth that leads to faster loading time. These are several companies that provide free public CDNs:\n" +
+            "\n" +
+            "Google\n" +
+            "\n" +
+            "Microsoft\n" +
+            "\n" +
+            "Yahoo" +
+            "\n\n" +
+            "Advantages of using CDN:\n" +
+            "\n" +
+            "It reduces the load from the server.\n" +
+            "\n" +
+            "CDN also saves bandwidth. jQuery framework is loaded faster from these CDN.\n" +
+            "\n" +
+            "If a user regularly visits a site which is using jQuery framework from any of these CDN, it will be cached.";
+    public static final String answer463 = "jQuery library can be used in the ASP.Net project by downloading the latest jQuery library from jQuery.com and including the references to the jQuery library file in the HTML/PHP/JSP/Aspx page.\n" +
+            "\n" +
+            "For example-\n" +
+            "\n" +
+            "<script src=\"_scripts/jQuery-1.2.6.js\" type=\"text/javascript\"</script>\n" +
+            "<script language=\"javascript\">\n" +
+            "$(document).ready(function() {\n" +
+            "alert('test');\n" +
+            "});";
+    public static final String answer464 = "The jQuery serialize() method is used to create a text string in standard URL-encoded notation. It serializes the form values so that its serialized values can be used in the URL query string while making an AJAX request.\n" +
+            "\n" +
+            "Syntax:\n" +
+            "\n" +
+            "$(document).ready(function(){\n" +
+            "$(\"button\").click(function(){\n" +
+            "$(\"div\").text($(\"form\").serialize());\n" +
+            "});\n" +
+            "});";
+    public static final String answer465 = "jQuery UI is a set of user interface interactions, effects, widgets, and themes built on top of the jQuery JavaScript Library. jQuery UI works well for highly interactive web applications with different controls or simple pages with a date picker control.";
+    public static final String answer466 = "The jQuery UI Datepicker is a highly configurable plugin that adds datepicker functionality to your pages. You can customize the date format and language, restrict the selectable date ranges and add in buttons and other navigation options easily.\n" +
+            "\n" +
+            "By default, the datepicker calendar opens in a small overlay when the associated text field gains focus. For an inline calendar, simply attach the datepicker to a div or span. You have to use the jQuery reference in your HTML code to make it work:\n" +
+            "\n" +
+            "<head>\n" +
+            "<link rel=\"stylesheet\" href=\"//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css\">\n" +
+            "<script src=\"//code.jquery.com/jquery-1.10.2.js\"></script>\n" +
+            "<script src=\"//code.jquery.com/ui/1.11.4/jquery-ui.js\"></script>\n" +
+            "</head>";
+    public static final String answer467 = "The slice() method selects a subset of the matched elements by giving a range of indices. It gives the set of DOM elements on the basis of a parameter.\n" +
+            "\n" +
+            "Syntax:\n" +
+            "\n" +
+            ".slice( start, end[Optional] )\n" +
+            "Start: This is the first and mandatory parameter of the slice method. This specifies from where to start to select the elements.\n" +
+            "\n" +
+            "End: This is an optional parameter. It specifies the range of the selection. This indicates where to stop the selection of elements, excluding end element.";
+    public static final String answer468 = "Plugins are a piece of code. The jQuery plugins are a code written in a standard JavaScript file. These JavaScript files provide useful jQuery methods that can be used along with jQuery library methods." +
+            "\n" +
+            "Any method you use in plugins must have a semicolon (;) at the end. The method must return an object unless explicitly noted otherwise. It produces clean and compatible code that way. You have to prefix the filename with jQuery, follow that with the name of the plugin and conclude with .js.";
+    public static final String answer469 = "In $.map() you need to loop over each element in an array and modify its value whilst the $.Grep() method returns the filtered array using some filter condition from an existing array. The basic structure of Map() is:\n" +
+            "\n" +
+            "$.map ( array, callback(elementOfArray, indexInArray) )\n" +
+            "Syntax for $.Grep():\n" +
+            "\n" +
+            "jQuery $.grep() Method";
+    public static final String answer470 = "$ has no special meaning in JavaScript. It can be used in object naming. In jQuery, it is simply used as an alias for the jQuery object and jQuery() function.\n" +
+            "However, jQuery has no monopoly on use of $ which may create situations where you want to use it in conjunction with another JS library that also uses $. This would result in a naming conflict. jQuery provides the jQuery.noConflict() method for just this reason. Calling this method makes it necessary to use the underlying name jQuery instead in subsequent references to jQuery and its functions.";
+    public static final String answer471 = "Method chaining is a feature of jQuery that allows several methods to be executed on a jQuery selection in sequence in a single code statement. For example, the following snippets of code are equivalent:\n" +
+            "\n" +
+            "Without chaining:\n" +
+            "\n" +
+            "$( \"button#play-movie\" ).on( \"click\", playMovie );\n" +
+            "$( \"button#play-movie\" ).css( \"background-color\", \"red\" );\n" +
+            "$( \"button#play-movie\" ).show();\n" +
+            "With chaining:\n" +
+            "\n" +
+            "$( \"button#play-movie\" ).on( \"click\", playMovie )\n" +
+            ".css( \"background-color\", \"red\" )\n" +
+            ".show();\n" +
+            "With chaining, the button only needs to be selected one time. Whereas, without chaining, jQuery must search the whole DOM and find the button before each method is applied.";
+    public static final String answer472 = "The “jQuery.each()” function is a general function that will loop through a collection (object type or array type). Array-like objects with a length property are iterated by their index position and value. Other objects are iterated on their key-value properties. The “jQuery.each()” function however works differently from the $(selector).each() function that works on the DOM element using the selector. But both iterate over a jQuery object.\n" +
+            "\n" +
+            "If we pass an array to each function, it iterates over items in the array and accesses both the current item and its index position.\n" +
+            "\n" +
+            "Syntax-\n" +
+            "\n" +
+            "jQuery.each(collection, callback(indexInArray, valueOfElement))\n" +
+            "< script type = \"text/javascript\" >\n" +
+            "$(document).ready(function() {\n" +
+            "var arr = [\"Mary\", \"John\", \"Garry\", \"Tina\", \"Daisy\"];\n" +
+            "$.each(arr, function(index, value) {\n" +
+            "alert('Position is : ' + index + ' And Value is : ' + value);\n" +
+            "});\n" +
+            "});\n" +
+            "< /script>";
+    public static final String answer473 = "jQuery.attr()- It gets the value of an attribute for the first element in the set of matched elements.\n" +
+            "\n" +
+            "jQuery. prop()– It gets the value of a property for the first element in the set of matched elements.\n" +
+            "\n" +
+            "Attributes carry additional information about an HTML element and come in name=”value” pairs. You can set an attribute for an HTML element and define it when writing the source code.\n" +
+            "\n" +
+            "For example-\n" +
+            "\n" +
+            "<input id=\"txtBox\" value=\"Jquery\" type=\"text\" readonly=\"readonly\" />\n" +
+            "Here, “id”, “type” and “value” are attributes of the input elements.";
+    public static final String answer474 = "Chaining is a  powerful feature of jQuery. This means specifying multiple functions and/or selectors to an element. Chaining reduces the code segment and keeps it very clean and easy to understand. Generally, chaining uses the jQuery built-in functions that make the compilation a bit faster.\n" +
+            "\n" +
+            "For example:\n" +
+            "\n" +
+            "$(document).ready(function() {\n" +
+            "$(\"#div2\").html($(\"#txtBox\").prop(\"readonly\")) + '</br>';\n" +
+            "$(\"#div3\").html($(\"#txtBox\").attr(\"readonly\"));\n" +
+            "});";
+    public static final String answer475 = "jQuery has some important features that are used in web applications such as:\n" +
+            "\n" +
+            "1. HTML/DOM Manipulation: JavaScript do not have any features related to the DOM, but JavaScript in the browser does include some intelligence about the DOM.\n" +
+            "\n" +
+            "2. Event Handling: jQuery introduced a feature called Event handling. You can write code that runs when a user clicks on a certain part of the page, or when the mouse is moved over a form element. jQuery contains many events, such as a user clicking on a button, moving a mouse over an element, etc.\n" +
+            "\n" +
+            "3. Ajax Support: When you select an item from a DropDownList or other control on the same page then that can cause loss of data. Ajax is used to update the part of the web page without reloading the page.\n" +
+            "\n" +
+            "4. Animations in jQuery: The jQuery comes with plenty of built-in animation effects that you can use in your websites. For example, animation, show, hide and so on. In jQuery, the animate() method is used to perform such tasks.";
 }

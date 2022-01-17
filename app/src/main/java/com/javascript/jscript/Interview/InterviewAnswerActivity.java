@@ -992,10 +992,567 @@ public class InterviewAnswerActivity extends AppCompatActivity {
             case "Next.js vs gatsby?":
                 question = InterviewQuestions.question288;
                 break;
-            case "":
-                question = InterviewQuestions.question;
+            case "What is React?":
+                question = InterviewQuestions.question289;
                 break;
-
+            case "What are the features of React?":
+                question = InterviewQuestions.question290;
+                break;
+            case "List some of the major advantages of React?":
+                question = InterviewQuestions.question291;
+                break;
+            case "What are the limitations of React?":
+                question = InterviewQuestions.question292;
+                break;
+            case "What is JSX?":
+                question = InterviewQuestions.question293;
+                break;
+            case "What do you understand by Virtual DOM? Explain its works.":
+                question = InterviewQuestions.question294;
+                break;
+            case "Why can’t browsers read JSX?":
+                question = InterviewQuestions.question295;
+                break;
+            case "How different is React’s ES6 syntax when compared to ES5?":
+                question = InterviewQuestions.question296;
+                break;
+            case "“In React, everything is a component.” Explain":
+                question = InterviewQuestions.question297;
+                break;
+            case "What is the purpose of render() in React?":
+                question = InterviewQuestions.question298;
+                break;
+            case "How can you embed two or more components into one?":
+                question = InterviewQuestions.question299;
+                break;
+            case "What is Props?":
+                question = InterviewQuestions.question300;
+                break;
+            case "What is a state in React and how is it used?":
+                question = InterviewQuestions.question301;
+                break;
+            case "How can you update the state of a component?":
+                question = InterviewQuestions.question302;
+                break;
+            case "What is arrow function in React? How is it used?":
+                question = InterviewQuestions.question303;
+                break;
+            case "Explain the lifecycle methods of React components in detail.":
+                question = InterviewQuestions.question304;
+                break;
+            case "What is an event in React?":
+                question = InterviewQuestions.question305;
+                break;
+            case "What do you understand by refs in React?":
+                question = InterviewQuestions.question306;
+                break;
+            case "How do you modularize code in React?":
+                question = InterviewQuestions.question307;
+                break;
+            case "What are Higher Order Components(HOC)?":
+                question = InterviewQuestions.question308;
+                break;
+            case "What is the significance of keys in React?":
+                question = InterviewQuestions.question309;
+                break;
+            case "What were the major problems with MVC framework?":
+                question = InterviewQuestions.question310;
+                break;
+            case "What is Redux?":
+                question = InterviewQuestions.question311;
+                break;
+            case "What are the three principles that Redux follows?":
+                question = InterviewQuestions.question312;
+                break;
+            case "What do you understand by “Single source of truth”?":
+                question = InterviewQuestions.question313;
+                break;
+            case "How are Actions defined in Redux?":
+                question = InterviewQuestions.question314;
+                break;
+            case "What is the significance of Store in Redux?":
+                question = InterviewQuestions.question315;
+                break;
+            case "What is React Router?":
+                question = InterviewQuestions.question316;
+                break;
+            case "Why is switch keyword used in React Router v4?":
+                question = InterviewQuestions.question317;
+                break;
+            case "Why do we need a Router in React?":
+                question = InterviewQuestions.question318;
+                break;
+            case "Explain what Ember.js is and how it works?":
+                question = InterviewQuestions.question319;
+                break;
+            case "List out main components of Ember.js?":
+                question = InterviewQuestions.question320;
+                break;
+            case "Explain what is model in Ember.js?":
+                question = InterviewQuestions.question321;
+                break;
+            case "Explain how ember applications are structured?":
+                question = InterviewQuestions.question322;
+                break;
+            case "What controller does in Ember.js?":
+                question = InterviewQuestions.question323;
+                break;
+            case "Explain how is ember.js is different than traditional web application?":
+                question = InterviewQuestions.question324;
+                break;
+            case "Explain how Router and {{outlet}} tag can be useful in ember.js?":
+                question = InterviewQuestions.question325;
+                break;
+            case "Explain what is the difference between Router and Route in ember.js ?":
+                question = InterviewQuestions.question326;
+                break;
+            case "Explain what is Ember-data ?":
+                question = InterviewQuestions.question327;
+                break;
+            case "Explain the role of adapter and types of adapters ?":
+                question = InterviewQuestions.question328;
+                break;
+            case "Explain what are the two ways of defining and inserting a view?":
+                question = InterviewQuestions.question329;
+                break;
+            case "Explain what is controller in ember.js ?":
+                question = InterviewQuestions.question330;
+                break;
+            case "Mention the template components used in ember.js ?":
+                question = InterviewQuestions.question331;
+                break;
+            case "Explain what is serializer?":
+                question = InterviewQuestions.question332;
+                break;
+            case "How you can define a new ember class?":
+                question = InterviewQuestions.question333;
+                break;
+            case "Explain how you can create an Ember. handlebars  template ?":
+                question = InterviewQuestions.question334;
+                break;
+            case "Explain how you can add data using fixture into an application?":
+                question = InterviewQuestions.question335;
+                break;
+            case "What do you understand by ember route? How can you generate a route in Ember.js?":
+                question = InterviewQuestions.question336;
+                break;
+            case "What is an adapter in Ember.js, and why is it used?":
+                question = InterviewQuestions.question337;
+                break;
+            case "Mention some of the functions used in ember packages/ember run-time/lib and packages/ember metal/lib/utils.js ?":
+                question = InterviewQuestions.question338;
+                break;
+            case "Explain what is Enumerables in ember.js ?":
+                question = InterviewQuestions.question339;
+                break;
+            case "Explain what is Ember.ArrayController and what is the advantage of it ?":
+                question = InterviewQuestions.question340;
+                break;
+            case "Explain what is the use Ember.SortableMixin ?":
+                question = InterviewQuestions.question341;
+                break;
+            case "What do you know by observers in Ember.js?":
+                question = InterviewQuestions.question342;
+                break;
+            case "How to define a view in Ember.js?":
+                question = InterviewQuestions.question343;
+                break;
+            case "What is Bootstrap?":
+                question = InterviewQuestions.question344;
+                break;
+            case "Explain why Bootstrap is preferred for website development.":
+                question = InterviewQuestions.question345;
+                break;
+            case "What are the key components of Bootstrap?":
+                question = InterviewQuestions.question346;
+                break;
+            case "List some features of Bootstrap.":
+                question = InterviewQuestions.question347;
+                break;
+            case "What are Class loaders in Bootstrap?":
+                question = InterviewQuestions.question348;
+                break;
+            case "How many types of layout are available in Bootstrap?":
+                question = InterviewQuestions.question349;
+                break;
+            case "What is Bootstrap Grid System?":
+                question = InterviewQuestions.question350;
+                break;
+            case "Give an example of a basic grid structure in Bootstrap?":
+                question = InterviewQuestions.question351;
+                break;
+            case "Why do we use Jumbotron in Bootstrap?":
+                question = InterviewQuestions.question352;
+                break;
+            case "What are the two codes used for code display in Bootstrap?":
+                question = InterviewQuestions.question353;
+                break;
+            case "Explain the typography and links in Bootstrap.":
+                question = InterviewQuestions.question354;
+                break;
+            case "Explain types of lists supported by Bootstrap.":
+                question = InterviewQuestions.question355;
+                break;
+            case "Explain the uses of carousel plugin in Bootstrap.":
+                question = InterviewQuestions.question356;
+                break;
+            case "What are glyphicons? How to use them?":
+                question = InterviewQuestions.question357;
+                break;
+            case "What are the input groups in Bootstrap?":
+                question = InterviewQuestions.question358;
+                break;
+            case "What is Bootstrap breadcrumb?":
+                question = InterviewQuestions.question359;
+                break;
+            case "What is pagination in bootstrap and how are they classified?":
+                question = InterviewQuestions.question360;
+                break;
+            case "How will you create a Bootstrap Dismissal Alert?":
+                question = InterviewQuestions.question361;
+                break;
+            case "What are the steps to create a progress bar using bootstrap?":
+                question = InterviewQuestions.question362;
+                break;
+            case "What do you mean by column ordering in Bootstrap?":
+                question = InterviewQuestions.question363;
+                break;
+            case "What is Normalize in Bootstrap?":
+                question = InterviewQuestions.question364;
+                break;
+            case "What are Bootstrap panels? Explain how to create a Bootstrap panel with a heading.":
+                question = InterviewQuestions.question365;
+                break;
+            case "What is the purpose of using the Scrollspy plugin?":
+                question = InterviewQuestions.question366;
+                break;
+            case "Why do we use the affix plugin in Bootstrap?":
+                question = InterviewQuestions.question367;
+                break;
+            case "What is Button group and which class is used for basic button group?":
+                question = InterviewQuestions.question368;
+                break;
+            case "What will be the default Bootstrap look of the alert created with this following code:":
+                question = InterviewQuestions.question369;
+                break;
+            case "What are badges? Which class will you use to make your badge look more rounded?":
+                question = InterviewQuestions.question370;
+                break;
+            case "What are the important rules that you should follow while using Grids in Bootstrap?":
+                question = InterviewQuestions.question371;
+                break;
+            case "What is Node.js? Where can you use it?":
+                question = InterviewQuestions.question372;
+                break;
+            case "Why use Node.js?":
+                question = InterviewQuestions.question373;
+                break;
+            case "How does Node.js work?":
+                question = InterviewQuestions.question374;
+                break;
+            case "Why is Node.js Single-threaded?":
+                question = InterviewQuestions.question375;
+                break;
+            case "If Node.js is single-threaded, then how does it handle concurrency?":
+                question = InterviewQuestions.question376;
+                break;
+            case "Explain callback in Node.js.":
+                question = InterviewQuestions.question377;
+                break;
+            case "How is Node.js most frequently used?":
+                question = InterviewQuestions.question378;
+                break;
+            case "What is NPM?":
+                question = InterviewQuestions.question379;
+                break;
+            case "What are the modules in Node.js?":
+                question = InterviewQuestions.question380;
+                break;
+            case "Why is Node.js preferred over other backend technologies like Java and PHP?":
+                question = InterviewQuestions.question381;
+                break;
+            case "Which database is more popularly used with Node.js?":
+                question = InterviewQuestions.question382;
+                break;
+            case "What are some of the most commonly used libraries in Node.js?":
+                question = InterviewQuestions.question383;
+                break;
+            case "What is the command used to import external libraries?":
+                question = InterviewQuestions.question384;
+                break;
+            case "What does event-driven programming mean?":
+                question = InterviewQuestions.question385;
+                break;
+            case "What is an Event Loop in Node.js?":
+                question = InterviewQuestions.question386;
+                break;
+            case "Differentiate between process.nextTick() and setImmediate()?":
+                question = InterviewQuestions.question387;
+                break;
+            case "What is an EventEmitter in Node.js?":
+                question = InterviewQuestions.question388;
+                break;
+            case "What are the two types of API functions in Node.js?":
+                question = InterviewQuestions.question389;
+                break;
+            case "What is the package.json file?":
+                question = InterviewQuestions.question390;
+                break;
+            case "How do you create a simple Express.js application?":
+                question = InterviewQuestions.question391;
+                break;
+            case "What are streams in Node.js?":
+                question = InterviewQuestions.question392;
+                break;
+            case "Explain asynchronous and non-blocking APIs in Node.js.":
+                question = InterviewQuestions.question393;
+                break;
+            case "What is REPL in Node.js?":
+                question = InterviewQuestions.question394;
+                break;
+            case "What is the buffer class in Node.js?":
+                question = InterviewQuestions.question395;
+                break;
+            case "What is piping in Node.js?":
+                question = InterviewQuestions.question396;
+                break;
+            case "What is callback hell?":
+                question = InterviewQuestions.question397;
+                break;
+            case "What is a reactor pattern in Node.js?":
+                question = InterviewQuestions.question398;
+                break;
+            case "For Node.js, why does Google use the V8 engine?":
+                question = InterviewQuestions.question399;
+                break;
+            case "Explain the concept of middleware in Node.js.":
+                question = InterviewQuestions.question400;
+                break;
+            case "What is WASI, and why is it being introduced?":
+                question = InterviewQuestions.question401;
+                break;
+            case "What is Express.js?":
+                question = InterviewQuestions.question402;
+                break;
+            case "What are some distinctive features of Express?":
+                question = InterviewQuestions.question403;
+                break;
+            case "Is Express.js front-end or backend framework?":
+                question = InterviewQuestions.question404;
+                break;
+            case "Why do we use Express.js?":
+                question = InterviewQuestions.question405;
+                break;
+            case "Write the steps for setting up an Express JS application?":
+                question = InterviewQuestions.question406;
+                break;
+            case "What function are arguments available to Express JS route handlers?":
+                question = InterviewQuestions.question407;
+                break;
+            case "How to Config properties in Express JS?":
+                question = InterviewQuestions.question408;
+                break;
+            case "Write a code to get post a query in Express.js":
+                question = InterviewQuestions.question409;
+                break;
+            case "What do you understand by Scaffolding in Express.js?":
+                question = InterviewQuestions.question410;
+                break;
+            case "Do Other MVC frameworks also support scaffolding?":
+                question = InterviewQuestions.question411;
+                break;
+            case "How can you enable debugging in Express.js app?":
+                question = InterviewQuestions.question412;
+                break;
+            case "How Should I Structure my Express JS Application?":
+                question = InterviewQuestions.question413;
+                break;
+            case "How can you deal with error handling in Express.js? Explain with an example.":
+                question = InterviewQuestions.question414;
+                break;
+            case "How can we render a pain HTML?":
+                question = InterviewQuestions.question415;
+                break;
+            case "How to allow CORS in Express JS? Explain with an example?":
+                question = InterviewQuestions.question416;
+                break;
+            case "What is the use of next in Express JS?":
+                question = InterviewQuestions.question417;
+                break;
+            case "How to Redirect 404 Errors to A Page In ExpressJS?":
+                question = InterviewQuestions.question418;
+                break;
+            case "What is Laravel?":
+                question = InterviewQuestions.question419;
+                break;
+            case "What are the pros and cons of Laravel?":
+                question = InterviewQuestions.question420;
+                break;
+            case "What are events in Laravel?":
+                question = InterviewQuestions.question421;
+                break;
+            case "What is validation in Laravel?":
+                question = InterviewQuestions.question422;
+                break;
+            case "How do you install Laravel via composer?":
+                question = InterviewQuestions.question423;
+                break;
+            case "What is a PHP artisan in Laravel?":
+                question = InterviewQuestions.question424;
+                break;
+            case "What is middleware in Laravel?":
+                question = InterviewQuestions.question425;
+                break;
+            case "What template is used by the Laravel engine?":
+                question = InterviewQuestions.question426;
+                break;
+            case "Explain CSRF protection and CSRF token in Laravel.":
+                question = InterviewQuestions.question427;
+                break;
+            case "Explain the Laravel facade.":
+                question = InterviewQuestions.question428;
+                break;
+            case "What is Eloquent in Laravel?":
+                question = InterviewQuestions.question429;
+                break;
+            case "What are the advantages of the Laravel framework?":
+                question = InterviewQuestions.question430;
+                break;
+            case "What are the features of the Laravel framework?":
+                question = InterviewQuestions.question431;
+                break;
+            case "What are the features included in the latest version of Laravel?":
+                question = InterviewQuestions.question432;
+                break;
+            case "What is the project structure of a Laravel project?":
+                question = InterviewQuestions.question433;
+                break;
+            case "What is authentication in Laravel?":
+                question = InterviewQuestions.question434;
+                break;
+            case "What are service providers in Laravel?":
+                question = InterviewQuestions.question435;
+                break;
+            case "What is a homestead in Laravel?":
+                question = InterviewQuestions.question436;
+                break;
+            case "What is dd() in Laravel?":
+                question = InterviewQuestions.question437;
+                break;
+            case "What is yield in Laravel?":
+                question = InterviewQuestions.question438;
+                break;
+            case "What are requests in Laravel?":
+                question = InterviewQuestions.question439;
+                break;
+            case "What are closures in Laravel?":
+                question = InterviewQuestions.question440;
+                break;
+            case "What is soft delete in Laravel?":
+                question = InterviewQuestions.question441;
+                break;
+            case "What is a repository pattern in Laravel?":
+                question = InterviewQuestions.question442;
+                break;
+            case "What is method spoofing in Laravel?":
+                question = InterviewQuestions.question443;
+                break;
+            case "What is tinker in Laravel?":
+                question = InterviewQuestions.question444;
+                break;
+            case "What is the use of the updateOrinsert() method in Laravel?":
+                question = InterviewQuestions.question445;
+                break;
+            case "How do you stop an Artisan server in Laravel?":
+                question = InterviewQuestions.question446;
+                break;
+            case "How can you extend the login expiration time in Auth?":
+                question = InterviewQuestions.question447;
+                break;
+            case "How do you check the current route name?":
+                question = InterviewQuestions.question448;
+                break;
+            case "What is jQuery?":
+                question = InterviewQuestions.question449;
+                break;
+            case "What are the features of jQuery?":
+                question = InterviewQuestions.question450;
+                break;
+            case "Mention some advantages of jQuery.":
+                question = InterviewQuestions.question451;
+                break;
+            case "What are Selectors in jQuery?":
+                question = InterviewQuestions.question452;
+                break;
+            case "What is jQuery.noConflict?":
+                question = InterviewQuestions.question453;
+                break;
+            case "Differentiate among .empty() vs .remove() vs .detach() in jQuery.":
+                question = InterviewQuestions.question454;
+                break;
+            case "What are the methods used to provide effects in jQuery?":
+                question = InterviewQuestions.question455;
+                break;
+            case "What are the various Ajax functions available in jQuery?":
+                question = InterviewQuestions.question456;
+                break;
+            case "Differentiate between width() vs css(‘width’) in jQuery":
+                question = InterviewQuestions.question457;
+                break;
+            case "What is jQuery connect and how to use it?":
+                question = InterviewQuestions.question458;
+                break;
+            case "What is the difference between jquery.size() and jquery.length?":
+                question = InterviewQuestions.question459;
+                break;
+            case "How can events be prevented from stopping to work after an ajax request?":
+                question = InterviewQuestions.question460;
+                break;
+            case "What is the difference between $(window).load and $(document).ready function in jQuery?":
+                question = InterviewQuestions.question461;
+                break;
+            case "What is a CDN? What are the advantages of using CDN?":
+                question = InterviewQuestions.question462;
+                break;
+            case "How can you add a jQuery library in your project?":
+                question = InterviewQuestions.question463;
+                break;
+            case "What is the use of serialize() method in JQuery?":
+                question = InterviewQuestions.question464;
+                break;
+            case "What is jQuery UI?":
+                question = InterviewQuestions.question465;
+                break;
+            case "What is jQuery Datepicker in jQuery?":
+                question = InterviewQuestions.question466;
+                break;
+            case "What is slice() method in jQuery?":
+                question = InterviewQuestions.question467;
+                break;
+            case "What are jQuery plugins?":
+                question = InterviewQuestions.question468;
+                break;
+            case "What is the difference between Map and Grep function in jQuery?":
+                question = InterviewQuestions.question469;
+                break;
+            case "How can jQuery be used in conjunction with another JavaScript library that also uses $ for naming?":
+                question = InterviewQuestions.question470;
+                break;
+            case "What is method chaining in jQuery and what are the advantages?":
+                question = InterviewQuestions.question471;
+                break;
+            case "What is the use of jQuery .each() function?":
+                question = InterviewQuestions.question472;
+                break;
+            case "What is the difference between prop and attr?":
+                question = InterviewQuestions.question473;
+                break;
+            case "What is chaining in jQuery?":
+                question = InterviewQuestions.question474;
+                break;
+            case "What are the features of jQuery used in web applications?":
+                question = InterviewQuestions.question475;
+                break;
         }
         textQuestion.setText(question);
 
@@ -1872,10 +2429,567 @@ public class InterviewAnswerActivity extends AppCompatActivity {
             case "Next.js vs gatsby?":
                 answer = InterviewAnswers.answer288;
                 break;
-            case "":
-                answer = InterviewAnswers.answer;
+            case "What is React?":
+                answer = InterviewAnswers.answer289;
                 break;
-
+            case "What are the features of React?":
+                answer = InterviewAnswers.answer290;
+                break;
+            case "List some of the major advantages of React?":
+                answer = InterviewAnswers.answer291;
+                break;
+            case "What are the limitations of React?":
+                answer = InterviewAnswers.answer292;
+                break;
+            case "What is JSX?":
+                answer = InterviewAnswers.answer293;
+                break;
+            case "What do you understand by Virtual DOM? Explain its works.":
+                answer = InterviewAnswers.answer294;
+                break;
+            case "Why can’t browsers read JSX?":
+                answer = InterviewAnswers.answer295;
+                break;
+            case "How different is React’s ES6 syntax when compared to ES5?":
+                answer = InterviewAnswers.answer296;
+                break;
+            case "“In React, everything is a component.” Explain":
+                answer = InterviewAnswers.answer297;
+                break;
+            case "What is the purpose of render() in React?":
+                answer = InterviewAnswers.answer298;
+                break;
+            case "How can you embed two or more components into one?":
+                answer = InterviewAnswers.answer299;
+                break;
+            case "What is Props?":
+                answer = InterviewAnswers.answer300;
+                break;
+            case "What is a state in React and how is it used?":
+                answer = InterviewAnswers.answer301;
+                break;
+            case "How can you update the state of a component?":
+                answer = InterviewAnswers.answer302;
+                break;
+            case "What is arrow function in React? How is it used?":
+                answer = InterviewAnswers.answer303;
+                break;
+            case "Explain the lifecycle methods of React components in detail.":
+                answer = InterviewAnswers.answer304;
+                break;
+            case "What is an event in React?":
+                answer = InterviewAnswers.answer305;
+                break;
+            case "What do you understand by refs in React?":
+                answer = InterviewAnswers.answer306;
+                break;
+            case "How do you modularize code in React?":
+                answer = InterviewAnswers.answer307;
+                break;
+            case "What are Higher Order Components(HOC)?":
+                answer = InterviewAnswers.answer308;
+                break;
+            case "What is the significance of keys in React?":
+                answer = InterviewAnswers.answer309;
+                break;
+            case "What were the major problems with MVC framework?":
+                answer = InterviewAnswers.answer310;
+                break;
+            case "What is Redux?":
+                answer = InterviewAnswers.answer311;
+                break;
+            case "What are the three principles that Redux follows?":
+                answer = InterviewAnswers.answer312;
+                break;
+            case "What do you understand by “Single source of truth”?":
+                answer = InterviewAnswers.answer313;
+                break;
+            case "How are Actions defined in Redux?":
+                answer = InterviewAnswers.answer314;
+                break;
+            case "What is the significance of Store in Redux?":
+                answer = InterviewAnswers.answer315;
+                break;
+            case "What is React Router?":
+                answer = InterviewAnswers.answer316;
+                break;
+            case "Why is switch keyword used in React Router v4?":
+                answer = InterviewAnswers.answer317;
+                break;
+            case "Why do we need a Router in React?":
+                answer = InterviewAnswers.answer318;
+                break;
+            case "Explain what Ember.js is and how it works?":
+                answer = InterviewAnswers.answer319;
+                break;
+            case "List out main components of Ember.js?":
+                answer = InterviewAnswers.answer320;
+                break;
+            case "Explain what is model in Ember.js?":
+                answer = InterviewAnswers.answer321;
+                break;
+            case "Explain how ember applications are structured?":
+                answer = InterviewAnswers.answer322;
+                break;
+            case "What controller does in Ember.js?":
+                answer = InterviewAnswers.answer323;
+                break;
+            case "Explain how is ember.js is different than traditional web application?":
+                answer = InterviewAnswers.answer324;
+                break;
+            case "Explain how Router and {{outlet}} tag can be useful in ember.js?":
+                answer = InterviewAnswers.answer325;
+                break;
+            case "Explain what is the difference between Router and Route in ember.js ?":
+                answer = InterviewAnswers.answer326;
+                break;
+            case "Explain what is Ember-data ?":
+                answer = InterviewAnswers.answer327;
+                break;
+            case "Explain the role of adapter and types of adapters ?":
+                answer = InterviewAnswers.answer328;
+                break;
+            case "Explain what are the two ways of defining and inserting a view?":
+                answer = InterviewAnswers.answer329;
+                break;
+            case "Explain what is controller in ember.js ?":
+                answer = InterviewAnswers.answer330;
+                break;
+            case "Mention the template components used in ember.js ?":
+                answer = InterviewAnswers.answer331;
+                break;
+            case "Explain what is serializer?":
+                answer = InterviewAnswers.answer332;
+                break;
+            case "How you can define a new ember class?":
+                answer = InterviewAnswers.answer333;
+                break;
+            case "Explain how you can create an Ember. handlebars  template ?":
+                answer = InterviewAnswers.answer334;
+                break;
+            case "Explain how you can add data using fixture into an application?":
+                answer = InterviewAnswers.answer335;
+                break;
+            case "What do you understand by ember route? How can you generate a route in Ember.js?":
+                answer = InterviewAnswers.answer336;
+                break;
+            case "What is an adapter in Ember.js, and why is it used?":
+                answer = InterviewAnswers.answer337;
+                break;
+            case "Mention some of the functions used in ember packages/ember run-time/lib and packages/ember metal/lib/utils.js ?":
+                answer = InterviewAnswers.answer338;
+                break;
+            case "Explain what is Enumerables in ember.js ?":
+                answer = InterviewAnswers.answer339;
+                break;
+            case "Explain what is Ember.ArrayController and what is the advantage of it ?":
+                answer = InterviewAnswers.answer340;
+                break;
+            case "Explain what is the use Ember.SortableMixin ?":
+                answer = InterviewAnswers.answer341;
+                break;
+            case "What do you know by observers in Ember.js?":
+                answer = InterviewAnswers.answer342;
+                break;
+            case "How to define a view in Ember.js?":
+                answer = InterviewAnswers.answer343;
+                break;
+            case "What is Bootstrap?":
+                answer = InterviewAnswers.answer344;
+                break;
+            case "Explain why Bootstrap is preferred for website development.":
+                answer = InterviewAnswers.answer345;
+                break;
+            case "What are the key components of Bootstrap?":
+                answer = InterviewAnswers.answer346;
+                break;
+            case "List some features of Bootstrap.":
+                answer = InterviewAnswers.answer347;
+                break;
+            case "What are Class loaders in Bootstrap?":
+                answer = InterviewAnswers.answer348;
+                break;
+            case "How many types of layout are available in Bootstrap?":
+                answer = InterviewAnswers.answer349;
+                break;
+            case "What is Bootstrap Grid System?":
+                answer = InterviewAnswers.answer350;
+                break;
+            case "Give an example of a basic grid structure in Bootstrap?":
+                answer = InterviewAnswers.answer351;
+                break;
+            case "Why do we use Jumbotron in Bootstrap?":
+                answer = InterviewAnswers.answer352;
+                break;
+            case "What are the two codes used for code display in Bootstrap?":
+                answer = InterviewAnswers.answer353;
+                break;
+            case "Explain the typography and links in Bootstrap.":
+                answer = InterviewAnswers.answer354;
+                break;
+            case "Explain types of lists supported by Bootstrap.":
+                answer = InterviewAnswers.answer355;
+                break;
+            case "Explain the uses of carousel plugin in Bootstrap.":
+                answer = InterviewAnswers.answer356;
+                break;
+            case "What are glyphicons? How to use them?":
+                answer = InterviewAnswers.answer357;
+                break;
+            case "What are the input groups in Bootstrap?":
+                answer = InterviewAnswers.answer358;
+                break;
+            case "What is Bootstrap breadcrumb?":
+                answer = InterviewAnswers.answer359;
+                break;
+            case "What is pagination in bootstrap and how are they classified?":
+                answer = InterviewAnswers.answer360;
+                break;
+            case "How will you create a Bootstrap Dismissal Alert?":
+                answer = InterviewAnswers.answer361;
+                break;
+            case "What are the steps to create a progress bar using bootstrap?":
+                answer = InterviewAnswers.answer362;
+                break;
+            case "What do you mean by column ordering in Bootstrap?":
+                answer = InterviewAnswers.answer363;
+                break;
+            case "What is Normalize in Bootstrap?":
+                answer = InterviewAnswers.answer364;
+                break;
+            case "What are Bootstrap panels? Explain how to create a Bootstrap panel with a heading.":
+                answer = InterviewAnswers.answer365;
+                break;
+            case "What is the purpose of using the Scrollspy plugin?":
+                answer = InterviewAnswers.answer366;
+                break;
+            case "Why do we use the affix plugin in Bootstrap?":
+                answer = InterviewAnswers.answer367;
+                break;
+            case "What is Button group and which class is used for basic button group?":
+                answer = InterviewAnswers.answer368;
+                break;
+            case "What will be the default Bootstrap look of the alert created with this following code:":
+                answer = InterviewAnswers.answer369;
+                break;
+            case "What are badges? Which class will you use to make your badge look more rounded?":
+                answer = InterviewAnswers.answer370;
+                break;
+            case "What are the important rules that you should follow while using Grids in Bootstrap?":
+                answer = InterviewAnswers.answer371;
+                break;
+            case "What is Node.js? Where can you use it?":
+                answer = InterviewAnswers.answer372;
+                break;
+            case "Why use Node.js?":
+                answer = InterviewAnswers.answer373;
+                break;
+            case "How does Node.js work?":
+                answer = InterviewAnswers.answer374;
+                break;
+            case "Why is Node.js Single-threaded?":
+                answer = InterviewAnswers.answer375;
+                break;
+            case "If Node.js is single-threaded, then how does it handle concurrency?":
+                answer = InterviewAnswers.answer376;
+                break;
+            case "Explain callback in Node.js.":
+                answer = InterviewAnswers.answer377;
+                break;
+            case "How is Node.js most frequently used?":
+                answer = InterviewAnswers.answer378;
+                break;
+            case "What is NPM?":
+                answer = InterviewAnswers.answer379;
+                break;
+            case "What are the modules in Node.js?":
+                answer = InterviewAnswers.answer380;
+                break;
+            case "Why is Node.js preferred over other backend technologies like Java and PHP?":
+                answer = InterviewAnswers.answer381;
+                break;
+            case "Which database is more popularly used with Node.js?":
+                answer = InterviewAnswers.answer382;
+                break;
+            case "What are some of the most commonly used libraries in Node.js?":
+                answer = InterviewAnswers.answer383;
+                break;
+            case "What is the command used to import external libraries?":
+                answer = InterviewAnswers.answer384;
+                break;
+            case "What does event-driven programming mean?":
+                answer = InterviewAnswers.answer385;
+                break;
+            case "What is an Event Loop in Node.js?":
+                answer = InterviewAnswers.answer386;
+                break;
+            case "Differentiate between process.nextTick() and setImmediate()?":
+                answer = InterviewAnswers.answer387;
+                break;
+            case "What is an EventEmitter in Node.js?":
+                answer = InterviewAnswers.answer388;
+                break;
+            case "What are the two types of API functions in Node.js?":
+                answer = InterviewAnswers.answer389;
+                break;
+            case "What is the package.json file?":
+                answer = InterviewAnswers.answer390;
+                break;
+            case "How do you create a simple Express.js application?":
+                answer = InterviewAnswers.answer391;
+                break;
+            case "What are streams in Node.js?":
+                answer = InterviewAnswers.answer392;
+                break;
+            case "Explain asynchronous and non-blocking APIs in Node.js.":
+                answer = InterviewAnswers.answer393;
+                break;
+            case "What is REPL in Node.js?":
+                answer = InterviewAnswers.answer394;
+                break;
+            case "What is the buffer class in Node.js?":
+                answer = InterviewAnswers.answer395;
+                break;
+            case "What is piping in Node.js?":
+                answer = InterviewAnswers.answer396;
+                break;
+            case "What is callback hell?":
+                answer = InterviewAnswers.answer397;
+                break;
+            case "What is a reactor pattern in Node.js?":
+                answer = InterviewAnswers.answer398;
+                break;
+            case "For Node.js, why does Google use the V8 engine?":
+                answer = InterviewAnswers.answer399;
+                break;
+            case "Explain the concept of middleware in Node.js.":
+                answer = InterviewAnswers.answer400;
+                break;
+            case "What is WASI, and why is it being introduced?":
+                answer = InterviewAnswers.answer401;
+                break;
+            case "What is Express.js?":
+                answer = InterviewAnswers.answer402;
+                break;
+            case "What are some distinctive features of Express?":
+                answer = InterviewAnswers.answer403;
+                break;
+            case "Is Express.js front-end or backend framework?":
+                answer = InterviewAnswers.answer404;
+                break;
+            case "Why do we use Express.js?":
+                answer = InterviewAnswers.answer405;
+                break;
+            case "Write the steps for setting up an Express JS application?":
+                answer = InterviewAnswers.answer406;
+                break;
+            case "What function are arguments available to Express JS route handlers?":
+                answer = InterviewAnswers.answer407;
+                break;
+            case "How to Config properties in Express JS?":
+                answer = InterviewAnswers.answer408;
+                break;
+            case "Write a code to get post a query in Express.js":
+                answer = InterviewAnswers.answer409;
+                break;
+            case "What do you understand by Scaffolding in Express.js?":
+                answer = InterviewAnswers.answer410;
+                break;
+            case "Do Other MVC frameworks also support scaffolding?":
+                answer = InterviewAnswers.answer411;
+                break;
+            case "How can you enable debugging in Express.js app?":
+                answer = InterviewAnswers.answer412;
+                break;
+            case "How Should I Structure my Express JS Application?":
+                answer = InterviewAnswers.answer413;
+                break;
+            case "How can you deal with error handling in Express.js? Explain with an example.":
+                answer = InterviewAnswers.answer414;
+                break;
+            case "How can we render a pain HTML?":
+                answer = InterviewAnswers.answer415;
+                break;
+            case "How to allow CORS in Express JS? Explain with an example?":
+                answer = InterviewAnswers.answer416;
+                break;
+            case "What is the use of next in Express JS?":
+                answer = InterviewAnswers.answer417;
+                break;
+            case "How to Redirect 404 Errors to A Page In ExpressJS?":
+                answer = InterviewAnswers.answer418;
+                break;
+            case "What is Laravel?":
+                answer = InterviewAnswers.answer419;
+                break;
+            case "What are the pros and cons of Laravel?":
+                answer = InterviewAnswers.answer420;
+                break;
+            case "What are events in Laravel?":
+                answer = InterviewAnswers.answer421;
+                break;
+            case "What is validation in Laravel?":
+                answer = InterviewAnswers.answer422;
+                break;
+            case "How do you install Laravel via composer?":
+                answer = InterviewAnswers.answer423;
+                break;
+            case "What is a PHP artisan in Laravel?":
+                answer = InterviewAnswers.answer424;
+                break;
+            case "What is middleware in Laravel?":
+                answer = InterviewAnswers.answer425;
+                break;
+            case "What template is used by the Laravel engine?":
+                answer = InterviewAnswers.answer426;
+                break;
+            case "Explain CSRF protection and CSRF token in Laravel.":
+                answer = InterviewAnswers.answer427;
+                break;
+            case "Explain the Laravel facade.":
+                answer = InterviewAnswers.answer428;
+                break;
+            case "What is Eloquent in Laravel?":
+                answer = InterviewAnswers.answer429;
+                break;
+            case "What are the advantages of the Laravel framework?":
+                answer = InterviewAnswers.answer430;
+                break;
+            case "What are the features of the Laravel framework?":
+                answer = InterviewAnswers.answer431;
+                break;
+            case "What are the features included in the latest version of Laravel?":
+                answer = InterviewAnswers.answer432;
+                break;
+            case "What is the project structure of a Laravel project?":
+                answer = InterviewAnswers.answer433;
+                break;
+            case "What is authentication in Laravel?":
+                answer = InterviewAnswers.answer434;
+                break;
+            case "What are service providers in Laravel?":
+                answer = InterviewAnswers.answer435;
+                break;
+            case "What is a homestead in Laravel?":
+                answer = InterviewAnswers.answer436;
+                break;
+            case "What is dd() in Laravel?":
+                answer = InterviewAnswers.answer437;
+                break;
+            case "What is yield in Laravel?":
+                answer = InterviewAnswers.answer438;
+                break;
+            case "What are requests in Laravel?":
+                answer = InterviewAnswers.answer439;
+                break;
+            case "What are closures in Laravel?":
+                answer = InterviewAnswers.answer440;
+                break;
+            case "What is soft delete in Laravel?":
+                answer = InterviewAnswers.answer441;
+                break;
+            case "What is a repository pattern in Laravel?":
+                answer = InterviewAnswers.answer442;
+                break;
+            case "What is method spoofing in Laravel?":
+                answer = InterviewAnswers.answer443;
+                break;
+            case "What is tinker in Laravel?":
+                answer = InterviewAnswers.answer444;
+                break;
+            case "What is the use of the updateOrinsert() method in Laravel?":
+                answer = InterviewAnswers.answer445;
+                break;
+            case "How do you stop an Artisan server in Laravel?":
+                answer = InterviewAnswers.answer446;
+                break;
+            case "How can you extend the login expiration time in Auth?":
+                answer = InterviewAnswers.answer447;
+                break;
+            case "How do you check the current route name?":
+                answer = InterviewAnswers.answer448;
+                break;
+            case "What is jQuery?":
+                answer = InterviewAnswers.answer449;
+                break;
+            case "What are the features of jQuery?":
+                answer = InterviewAnswers.answer450;
+                break;
+            case "Mention some advantages of jQuery.":
+                answer = InterviewAnswers.answer451;
+                break;
+            case "What are Selectors in jQuery?":
+                answer = InterviewAnswers.answer452;
+                break;
+            case "What is jQuery.noConflict?":
+                answer = InterviewAnswers.answer453;
+                break;
+            case "Differentiate among .empty() vs .remove() vs .detach() in jQuery.":
+                answer = InterviewAnswers.answer454;
+                break;
+            case "What are the methods used to provide effects in jQuery?":
+                answer = InterviewAnswers.answer455;
+                break;
+            case "What are the various Ajax functions available in jQuery?":
+                answer = InterviewAnswers.answer456;
+                break;
+            case "Differentiate between width() vs css(‘width’) in jQuery":
+                answer = InterviewAnswers.answer457;
+                break;
+            case "What is jQuery connect and how to use it?":
+                answer = InterviewAnswers.answer458;
+                break;
+            case "What is the difference between jquery.size() and jquery.length?":
+                answer = InterviewAnswers.answer459;
+                break;
+            case "How can events be prevented from stopping to work after an ajax request?":
+                answer = InterviewAnswers.answer460;
+                break;
+            case "What is the difference between $(window).load and $(document).ready function in jQuery?":
+                answer = InterviewAnswers.answer461;
+                break;
+            case "What is a CDN? What are the advantages of using CDN?":
+                answer = InterviewAnswers.answer462;
+                break;
+            case "How can you add a jQuery library in your project?":
+                answer = InterviewAnswers.answer463;
+                break;
+            case "What is the use of serialize() method in JQuery?":
+                answer = InterviewAnswers.answer464;
+                break;
+            case "What is jQuery UI?":
+                answer = InterviewAnswers.answer465;
+                break;
+            case "What is jQuery Datepicker in jQuery?":
+                answer = InterviewAnswers.answer466;
+                break;
+            case "What is slice() method in jQuery?":
+                answer = InterviewAnswers.answer467;
+                break;
+            case "What are jQuery plugins?":
+                answer = InterviewAnswers.answer468;
+                break;
+            case "What is the difference between Map and Grep function in jQuery?":
+                answer = InterviewAnswers.answer469;
+                break;
+            case "How can jQuery be used in conjunction with another JavaScript library that also uses $ for naming?":
+                answer = InterviewAnswers.answer470;
+                break;
+            case "What is method chaining in jQuery and what are the advantages?":
+                answer = InterviewAnswers.answer471;
+                break;
+            case "What is the use of jQuery .each() function?":
+                answer = InterviewAnswers.answer472;
+                break;
+            case "What is the difference between prop and attr?":
+                answer = InterviewAnswers.answer473;
+                break;
+            case "What is chaining in jQuery?":
+                answer = InterviewAnswers.answer474;
+                break;
+            case "What are the features of jQuery used in web applications?":
+                answer = InterviewAnswers.answer475;
+                break;
         }
         //textAnswer.setText(answer);
         questionDes.setText(answer);

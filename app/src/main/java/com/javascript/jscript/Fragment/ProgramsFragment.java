@@ -26,37 +26,36 @@ public class ProgramsFragment extends Fragment {
     ExpandableHeightGridView gridView, gridViewPro;
     View proView;
     ImageView proImage;
-    String[] itemsName = {"Fundamental", "Basic", "Objects", "OOPs", "DOM", "BOM", "Advanced", "AJAX"};
-    String[] itemsNamePro = {"Typescript", "Angular", "Vue Js", "Next Js", "React Js", "Ember Js", "Svelte Js", "Gatsby", "Nuxt Js", "Bootstrap"
-            /*"Node Js","Spring Boot","Express Js",
-            "Laravel","Micronaut","Mocha"*/};
+    String[] itemsName = {"Basic", "Objects", "OOPs", "DOM", "Advanced", "AJAX", "Typescript"};
+    String[] itemsNamePro = {"Angular", "Vue Js", "Next Js", "React Js", "Ember Js", "Bootstrap", "Node Js", "Express Js", "Laravel", "jQuery"
+            /*"Svelte Js","Gatsby","Nuxt Js","Spring Boot","Micronaut","Mocha"*/};
     Integer[] itemImages = {
-            R.drawable.ic_fundamental_icon,
             R.drawable.ic_programs_basic_image,
             R.drawable.ic_objects_icon,
             R.drawable.ic_oops_icon,
             R.drawable.ic_dom_icon,
-            R.drawable.ic_bom_icon,
             R.drawable.ic_programs_advanced_image,
-            R.drawable.ic_ajax_icon
+            R.drawable.ic_ajax_icon,
+            R.drawable.ic_typescript_icon,
             //R.drawable.ic_json_icon
 
     };
     Integer[] itemImagesPro = {
-            R.drawable.ic_typescript_icon,
             R.drawable.ic_angular_icon,
             R.drawable.ic_js_vue_icon,
             R.drawable.ic_next_js,
             R.drawable.ic_react_icon,
             R.drawable.ic_emberjs_icon,
+            R.drawable.ic_bootstrap_icon,
+            R.drawable.ic_node_icon,
+            R.drawable.ic_expressjs_icon,
+            R.drawable.ic_laravel_icon,
+            R.drawable.ic_jquery_icon
+            /*
             R.drawable.ic_svelte_icon,
             R.drawable.ic_gatsbyjs_icon,
             R.drawable.ic_nuxt_icon,
-            R.drawable.ic_bootstrap_icon/*
-            R.drawable.ic_node_icon,
             R.drawable.ic_springio_icon,
-            R.drawable.ic_expressjs_icon,
-            R.drawable.ic_laravel_icon,
             R.drawable.ic_micronaut_icon,
             R.drawable.ic_mochajs_icon*/
 
@@ -131,35 +130,31 @@ public class ProgramsFragment extends Fragment {
                 Intent intent = new Intent(getActivity(), ProgramsItemsListActivity.class);
                 switch (i) {
                     case 0:
-                        intent.putExtra("programsItems", "Fundamental");
-                        startActivity(intent);
-                        break;
-                    case 1:
                         intent.putExtra("programsItems", "Basic");
                         startActivity(intent);
                         break;
-                    case 2:
+                    case 1:
                         intent.putExtra("programsItems", "Objects");
                         startActivity(intent);
                         break;
-                    case 3:
+                    case 2:
                         intent.putExtra("programsItems", "OOPs");
                         startActivity(intent);
                         break;
-                    case 4:
+                    case 3:
                         intent.putExtra("programsItems", "DOM");
                         startActivity(intent);
                         break;
-                    case 5:
-                        intent.putExtra("programsItems", "BOM");
-                        startActivity(intent);
-                        break;
-                    case 6:
+                    case 4:
                         intent.putExtra("programsItems", "Advanced");
                         startActivity(intent);
                         break;
-                    case 7:
+                    case 5:
                         intent.putExtra("programsItems", "AJAX");
+                        startActivity(intent);
+                        break;
+                    case 6:
+                        intent.putExtra("programsItems", "Typescript");
                         startActivity(intent);
                         break;
                     /*case 8:
@@ -179,61 +174,46 @@ public class ProgramsFragment extends Fragment {
                 Intent intent = new Intent(getActivity(), ProgramsItemsListActivity.class);
                 switch (i) {
                     case 0:
-                        intent.putExtra("programsItems", "Typescript");
-                        startActivity(intent);
-                        break;
-                    case 1:
                         intent.putExtra("programsItems", "Angular");
                         startActivity(intent);
                         break;
-                    case 2:
+                    case 1:
                         intent.putExtra("programsItems", "Vue Js");
                         startActivity(intent);
                         break;
-                    case 3:
+                    case 2:
                         intent.putExtra("programsItems", "Next Js");
                         startActivity(intent);
                         break;
-                    case 4:
+                    case 3:
                         intent.putExtra("programsItems", "React Js");
                         startActivity(intent);
                         break;
-                    case 5:
+                    case 4:
                         intent.putExtra("programsItems", "Ember Js");
                         startActivity(intent);
                         break;
-                    case 6:
-                        intent.putExtra("programsItems", "Svelte Js");
-                        startActivity(intent);
-                        break;
-                    case 7:
-                        intent.putExtra("programsItems", "Gatsby");
-                        startActivity(intent);
-                        break;
-                    case 8:
-                        intent.putExtra("programsItems", "Nuxt Js");
-                        startActivity(intent);
-                        break;
-                    case 9:
+                    case 5:
                         intent.putExtra("programsItems", "Bootstrap");
                         startActivity(intent);
                         break;
-                    /*case 10:
-                        intent.putExtra("programsItems","Node Js");
+                    case 6:
+                        intent.putExtra("programsItems", "Node Js");
                         startActivity(intent);
                         break;
-                    case 11:
-                        intent.putExtra("programsItems","Spring Boot");
+                    case 7:
+                        intent.putExtra("programsItems", "Express Js");
                         startActivity(intent);
                         break;
-                    case 12:
-                        intent.putExtra("programsItems","Express Js");
+                    case 8:
+                        intent.putExtra("programsItems", "Laravel");
                         startActivity(intent);
                         break;
-                    case 13:
-                        intent.putExtra("programsItems","Laravel");
+                    case 9:
+                        intent.putExtra("programsItems", "jQuery");
                         startActivity(intent);
                         break;
+                    /*
                     case 14:
                         intent.putExtra("programsItems","Micronaut");
                         startActivity(intent);
@@ -242,8 +222,23 @@ public class ProgramsFragment extends Fragment {
                         intent.putExtra("programsItems","Mocha Js");
                         startActivity(intent);
                         break;
+                    case 5:
+                        intent.putExtra("programsItems","Svelte Js");
+                        startActivity(intent);
+                        break;
+                    case 6:
+                        intent.putExtra("programsItems","Gatsby");
+                        startActivity(intent);
+                        break;
+                    case 7:
+                        intent.putExtra("programsItems","Nuxt Js");
+                        startActivity(intent);
+                        break;
+                    case 11:
+                        intent.putExtra("programsItems","Spring Boot");
+                        startActivity(intent);
+                        break;
 */
-
                 }
             }
         });

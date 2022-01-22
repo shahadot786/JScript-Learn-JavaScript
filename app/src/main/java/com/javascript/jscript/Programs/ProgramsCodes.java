@@ -457,95 +457,741 @@ public class ProgramsCodes {
             "\n" +
             "console.log(halv_array_swap([1,2,3,4,5,6]))\n" +
             "console.log(halv_array_swap([1,2,3,4,5,6,7]))\n";
-    public static final String codes32 ="";
-    public static final String codes33 ="";
-    public static final String codes34 ="";
-    public static final String codes35 ="";
-    public static final String codes36 ="";
-    public static final String codes37 ="";
-    public static final String codes38 ="";
-    public static final String codes39 ="";
-    public static final String codes40 = "Difference between “==” and “===”?";
-    public static final String codes41 = "How to detect the operating system on the client machine?";
-    public static final String codes42 = "What do you mean by NULL in Javascript?";
-    public static final String codes43 = "What is the use of Void (0)?";
-    public static final String codes44 = "How can a page be forced to load another page in JavaScript?";
-    public static final String codes45 = "What is the difference between an alert box and a confirmation box?";
-    public static final String codes46 = "What are escape characters?";
-    public static final String codes47 = "What are JavaScript Cookies?";
-    public static final String codes48 = "What a pop()method in JavaScript is?";
-    public static final String codes49 = "Does JavaScript has concept level scope?";
-    public static final String codes50 = "What are the disadvantages of using innerHTML in JavaScript?";
-    public static final String codes51 = "How can generic objects be created?";
-    public static final String codes52 = "Which keywords are used to handle exceptions?";
-    public static final String codes53 = "What is the use of the blur function?";
-    public static final String codes54 = "How to find an operating system in the client machine using JavaScript?";
-    public static final String codes55 = "What are the different types of errors in JavaScript?";
-    public static final String codes56 = "What is the use of the Push method in JavaScript?";
-    public static final String codes57 = "What is the unshift method in JavaScript?";
-    public static final String codes58 = "What is the ‘Strict Mode in JavaScript, and how can it be enabled?";
-    public static final String codes59 = "How closures work in JavaScript?";
-    public static final String codes60 = "How can a value be appended to an array?";
-    public static final String codes61 = "What are the important properties of an anonymous function in JavaScript?";
-    public static final String codes62 = "What is the difference between .call() and .apply()?";
-    public static final String codes63 = "What is event bubbling?";
-    public static final String codes64 = "How can a particular frame be targeted, from a hyperlink, in JavaScript?";
-    public static final String codes65 = "Why you should not use innerHTML in JavaScript?";
-    public static final String codes66 = "What is namespacing in JavaScript, and how is it used?";
-    public static final String codes67 = "How can JavaScript codes be hidden from old browsers that do not support JavaScript?";
-    public static final String codes68 = "Give an example of JavaScript Multiplication Table";
-    public static final String codes69 = "How are object properties assigned?";
-    public static final String codes70 = "How to create objects in JavaScript?";
-    public static final String codes71 = "What is the method for reading and writing a file in JavaScript?";
-    public static final String codes72 = "What are Screen objects?";
-    public static final String codes73 = "What is the unshift() method?";
-    public static final String codes74 = "What are the important JavaScript Array Method explain with example?";
-    public static final String codes75 = "What is Loop Though the Properties of an Object?";
-    public static final String codes76 = "In JavaScript what is an argument object?";
-    public static final String codes77 = "If we want to return the character from a specific index which method is used?";
-    public static final String codes78 = "What is the use of window object?";
-    public static final String codes79 = "What is the use of history object?";
-    public static final String codes80 = "How to set the cursor to wait in JavaScript?";
-    public static final String codes81 = "What is this [[[]]]?";
-    public static final String codes82 = "What is the use of Math object in JavaScript?";
-    public static final String codes83 = "What is the use of a Date object in JavaScript?";
-    public static final String codes84 = "What is the use of a Number object in JavaScript?";
-    public static final String codes85 = "What is the use of a Boolean object in JavaScript?";
-    public static final String codes86 = "What is the use of a TypedArray object in JavaScript?";
-    public static final String codes87 = "What is the use of a Set object in JavaScript?";
-    public static final String codes88 = "What is the use of a WeakSet object in JavaScript?";
-    public static final String codes89 = "What is the use of a Map object in JavaScript?";
-    public static final String codes90 = "What is the use of a WeakMap object in JavaScript?";
-    public static final String codes91 = "What is OOPS Concept in JavaScript?";
-    public static final String codes92 = "How are event handlers utilized in JavaScript?";
-    public static final String codes93 = "What is the role of deferred scripts in JavaScript?";
-    public static final String codes94 = "What are the various functional components in JavaScript?";
-    public static final String codes95 = "Write about the errors shown in JavaScript?";
-    public static final String codes96 = "What is unescape() and escape() functions?";
-    public static final String codes97 = "What are the decodeURI() and encodeURI()?";
-    public static final String codes98 = "What is JavaScript Unit Testing, and what are the challenges in JavaScript Unit Testing?";
-    public static final String codes99 = "What are some important JavaScript Unit Testing Frameworks?";
-    public static final String codes100 = "What is QuickSort Algorithm in JavaScript?";
-    public static final String codes101 = "How does QuickSort Work?";
-    public static final String codes102 = "Difference between Client side JavaScript and Server side JavaScript?";
-    public static final String codes103 = "In which location cookies are stored on the hard disk?";
-    public static final String codes104 = "What is the requirement of debugging in JavaScript?";
-    public static final String codes105 = "What is the use of debugger keyword in JavaScript?";
-    public static final String codes106 = "How do you define a class and its constructor?";
-    public static final String codes107 = "What is function overloading in JavaScript?";
-    public static final String codes108 = "What is  associative arrays in JavaScript?";
-    public static final String codes109 = "Why \"self\" is needed instead of \"this\" in JavaScript?";
-    public static final String codes110 = "Understanding JavaScript Inheritance with Example";
-    public static final String codes111 = "Why asynchronous code is important in JavaScript?";
-    public static final String codes112 = "How to empty an array in JavaScript?";
-    public static final String codes113 = "What is the difference between let, var, and const?";
-    public static final String codes114 = "Is it possible to use JavaScript to change the meta-tags of the page?";
-    public static final String codes115 = "How To modify the URL of page without reloading the page?";
-    public static final String codes116 = "Name two ways two change the context of a JavaScript method?";
-    public static final String codes117 = "How are DOM utilized in JavaScript?";
-    public static final String codes118 = "What is DOM in JavaScript?";
-    public static final String codes119 = "How to use DOM and Events?";
-    public static final String codes120 = "What is External JavaScript?";
+    public static final String codes32 ="function _keys(obj) \n" +
+            " {\n" +
+            "    if (!isObject(obj)) return [];\n" +
+            "    if (Object.keys) return Object.keys(obj);\n" +
+            "    var keys = [];\n" +
+            "    for (var key in obj) if (_.has(obj, key)) keys.push(key);\n" +
+            "    return keys;\n" +
+            "  }\n" +
+            "function isObject(obj) \n" +
+            "{\n" +
+            "    var type = typeof obj;\n" +
+            "    return type === 'function' || type === 'object' && !!obj;\n" +
+            "  }\n" +
+            "console.log(_keys({red: \"#FF0000\", green: \"#00FF00\", white: \"#FFFFFF\"}));\n";
+    public static final String codes33 ="var student =  { \n" +
+            "  name : \"Anne Moore\", \n" +
+            "  sclass : \"VI\", \n" +
+            "  rollno : 12  };\n" +
+            "console.log(student);\n" +
+            "delete student.rollno;\n" +
+            "console.log(student);\n";
+    public static final String codes34 ="//Write a JavaScript program to get the length of a JavaScript object.\n" +
+            "\n" +
+            "Object.objsize = function(Myobj) {\n" +
+            "    var osize = 0, key;\n" +
+            "    for (key in Myobj) {\n" +
+            "        if (Myobj.hasOwnProperty(key)) osize++;\n" +
+            "    }\n" +
+            "    return osize;\n" +
+            "};\n" +
+            "\n" +
+            "var student = { \n" +
+            "name : \"Anne Moore\", \n" +
+            "sclass : \"VI\", \n" +
+            "rollno : 12 };\n" +
+            "\n" +
+            "var objsize = Object.objsize(student);\n" +
+            "console.log('Size of the current object : '+objsize);\n";
+    public static final String codes35 ="var library = [ \n" +
+            "    {\n" +
+            "        title: 'Bill Gates',\n" +
+            "        author: 'The Road Ahead',\n" +
+            "        readingStatus: true\n" +
+            "    },\n" +
+            "    {\n" +
+            "        title: 'Steve Jobs',\n" +
+            "        author: 'Walter Isaacson',\n" +
+            "        readingStatus: true\n" +
+            "    },\n" +
+            "    {\n" +
+            "        title: 'Mockingjay: The Final Book of The Hunger Games',\n" +
+            "        author: 'Suzanne Collins',\n" +
+            "        readingStatus: false\n" +
+            "    }];\n" +
+            "\n" +
+            "for (var i = 0; i < library.length; i++) \n" +
+            "   {\n" +
+            "    var book = \"'\" + library[i].title + \"'\" + ' by ' + library[i].author + \".\";\n" +
+            "    if (library[i].readingStatus) {\n" +
+            "      console.log(\"Already read \" + book);\n" +
+            "    } else\n" +
+            "    {\n" +
+            "     console.log(\"You still need to read \" + book);\n" +
+            "    }\n" +
+            "   }\n" +
+            "   ";
+    public static final String codes36 ="function Cylinder(cyl_height, cyl_diameter) {\n" +
+            "  this.cyl_height = cyl_height;\n" +
+            "  this.cyl_diameter = cyl_diameter;\n" +
+            "}\n" +
+            "\n" +
+            "Cylinder.prototype.Volume = function () {\n" +
+            "  var radius = this.cyl_diameter / 2;\n" +
+            "  return this.cyl_height * Math.PI * radius * radius;\n" +
+            "};\n" +
+            "\n" +
+            "var cyl = new Cylinder(7, 4);\n" +
+            "// Volume of the cylinder with four decimal places.\n" +
+            "console.log('volume =', cyl.Volume().toFixed(4));\n";
+    public static final String codes37 ="Array.prototype.bubbleSort_algo = function() \n" +
+            "{\n" +
+            "var is_sorted = false;\n" +
+            " while (!is_sorted) \n" +
+            " {\n" +
+            "    is_sorted = true;\n" +
+            "    for (var n = 0; n < this.length - 1; n++) \n" +
+            "    {\n" +
+            "      if (this[n] > this[n+1]){\n" +
+            "        var x = this[n+1];\n" +
+            "        this[n+1] = this[n];\n" +
+            "        this[n] = x;\n" +
+            "        is_sorted = false;\n" +
+            "      }\n" +
+            "    }\n" +
+            "  }\n" +
+            "  return this;\n" +
+            "};\n" +
+            "\n" +
+            "console.log([6,4,0, 3,-2,1].bubbleSort_algo());\n";
+    public static final String codes38 ="String.prototype.sub_String = function() \n" +
+            "{\n" +
+            "  var subset = [];\n" +
+            "  for (var m = 0; m < this.length; m++) \n" +
+            "  {\n" +
+            "    for (var n = m+1; n<this.length+1; n++) \n" +
+            "    {\n" +
+            "      subset.push(this.slice(m,n));\n" +
+            "    }\n" +
+            "  }\n" +
+            "  return subset;\n" +
+            "};\n" +
+            "\n" +
+            "console.log(\"dog\".sub_String());\n";
+    public static final String codes39 ="function my_Clock() \n" +
+            "  {\n" +
+            "  this.cur_date = new Date();\n" +
+            "  this.hours = this.cur_date.getHours();\n" +
+            "  this.minutes = this.cur_date.getMinutes();\n" +
+            "  this.seconds = this.cur_date.getSeconds();\n" +
+            "  }\n" +
+            "my_Clock.prototype.run = function ()\n" +
+            "  {\n" +
+            "  setInterval(this.update.bind(this), 1000);\n" +
+            "  };\n" +
+            "my_Clock.prototype.update = function () \n" +
+            "  {\n" +
+            "  this.updateTime(1);\n" +
+            "  console.log(this.hours + \":\" + this.minutes + \":\" + this.seconds);\n" +
+            "  };\n" +
+            "my_Clock.prototype.updateTime = function (secs) \n" +
+            "  {\n" +
+            "  this.seconds+= secs;\n" +
+            " if (this.seconds >= 60)\n" +
+            "  {\n" +
+            "  this.minutes++;\n" +
+            "  this.seconds= 0;\n" +
+            "  }\n" +
+            " if (this.minutes >= 60)\n" +
+            "  {\n" +
+            "  this.hours++;\n" +
+            "  this.minutes=0;\n" +
+            "  }\n" +
+            "if (this.hours >= 24)\n" +
+            "  {\n" +
+            "  this.hours = 0;\n" +
+            "  }\n" +
+            "};\n" +
+            "var clock = new my_Clock();\n" +
+            "  clock.run();\n" +
+            "  ";
+    public static final String codes40 = "function circle(radius)\n" +
+            "{\n" +
+            "    this.radius = radius;\n" +
+            "  // area method\n" +
+            "    this.area = function () \n" +
+            "    {\n" +
+            "        return Math.PI * this.radius * this.radius;\n" +
+            "    };\n" +
+            "  // perimeter method\n" +
+            "    this.perimeter = function ()\n" +
+            "    {\n" +
+            "        return 2*Math.PI*this.radius;\n" +
+            "    };\n" +
+            "}\n" +
+            "var c = new circle(3);\n" +
+            "console.log('Area =', c.area().toFixed(2));\n" +
+            "console.log('perimeter =', c.perimeter().toFixed(2));\n";
+    public static final String codes41 = "var library = [ \n" +
+            "   {\n" +
+            "       title: 'Bill Gates',\n" +
+            "       author: 'The Road Ahead',\n" +
+            "       libraryID: 1254\n" +
+            "   },\n" +
+            "   {\n" +
+            "       title: 'Steve Jobs',\n" +
+            "       author: 'Walter Isaacson',\n" +
+            "       libraryID: 4264\n" +
+            "   },\n" +
+            "   {\n" +
+            "       title: 'Mockingjay: The Final Book of The Hunger Games',\n" +
+            "       author: 'Suzanne Collins',\n" +
+            "       libraryID: 3245\n" +
+            "   }];\n" +
+            "\n" +
+            "var sort_by = function(field_name, reverse, initial){\n" +
+            "\n" +
+            "   var key = initial ?\n" +
+            "       function(x)\n" +
+            "             {\n" +
+            "               return initial(x[field_name]);\n" +
+            "             } :\n" +
+            "       function(x) \n" +
+            "             {\n" +
+            "               return x[field_name];\n" +
+            "             };\n" +
+            "\n" +
+            "   reverse = !reverse ? 1 : -1;\n" +
+            "\n" +
+            "   return function (x, y) {\n" +
+            "       return x = key(x), y = key(y), reverse * ((x > y) - (y > x));\n" +
+            "     } ;\n" +
+            "};\n" +
+            "\n" +
+            "\n" +
+            "var newobj = library.sort(sort_by('libraryID', true, parseInt));\n" +
+            "\n" +
+            "console.log(newobj);\n";
+    public static final String codes42 = "function FindAllMethods(obj) {\n" +
+            "    return Object.getOwnPropertyNames(obj).filter(function(property) {\n" +
+            "        return typeof obj[property] == \"function\";\n" +
+            "    });\n" +
+            "}\n" +
+            "//above code finds methods only\n" +
+            "//Following code finds both properties and methods \n" +
+            "console.log(FindAllMethods(Math));\n" +
+            "console.log(FindAllMethods(Array));\n" +
+            "function all_properties(obj) \n" +
+            "{\n" +
+            " return Object.getOwnPropertyNames(obj);\n" +
+            "}\n" +
+            "\n" +
+            "console.log(all_properties(Math));\n" +
+            "\n" +
+            "console.log(all_properties(Array));\n";
+    public static final String codes43 = "function parse_URL(url) {\n" +
+            "    var a = document.createElement('a');\n" +
+            "    a.href = url;\n" +
+            "    return {\n" +
+            "        source: url,\n" +
+            "        protocol: a.protocol.replace(':', ''),\n" +
+            "        host: a.hostname,\n" +
+            "        port: a.port,\n" +
+            "        query: a.search,\n" +
+            "        params: (function () {\n" +
+            "            var ret = {},\n" +
+            "                seg = a.search.replace(/^\\?/, '').split('&'),\n" +
+            "                len = seg.length,\n" +
+            "                i = 0,\n" +
+            "                s;\n" +
+            "            for (; i < len; i++) {\n" +
+            "                if (!seg[i]) {\n" +
+            "                    continue;\n" +
+            "                }\n" +
+            "                s = seg[i].split('=');\n" +
+            "                ret[s[0]] = s[1];\n" +
+            "            }\n" +
+            "            return ret;\n" +
+            "        })(),\n" +
+            "        file: (a.pathname.match(/\\/([^\\/?#]+)$/i) || [, ''])[1],\n" +
+            "        hash: a.hash.replace('#', ''),\n" +
+            "        path: a.pathname.replace(/^([^\\/])/, '/$1'),\n" +
+            "        relative: (a.href.match(/tps?:\\/\\/[^\\/]+(.+)/) || [, ''])[1],\n" +
+            "        segments: a.pathname.replace(/^\\//, '').split('/')\n" +
+            "    };\n" +
+            "}\n" +
+            "\n" +
+            "console.log(parse_URL('https://github.com/pubnub/python/search?utf8=%E2%9C%93&q=python'));\n";
+    public static final String codes44 = "function allKeys(obj) {\n" +
+            "    if (!isObject(obj)) return [];\n" +
+            "    var keys = [];\n" +
+            "    for (var key in obj) keys.push(key);\n" +
+            "    return keys;\n" +
+            "}\n" +
+            "function isObject(obj) \n" +
+            "{\n" +
+            "    var type = typeof obj;\n" +
+            "    return type === 'function' || type === 'object' && !!obj;\n" +
+            "  }\n" +
+            "function Student(name) {\n" +
+            "  this.name = name;\n" +
+            "}\n" +
+            "Student.prototype.rollno = true;\n" +
+            "console.log(allKeys(new Student(\"Sara\")));\n";
+    public static final String codes45 = "function all_values(obj) {\n" +
+            "    var keys = _keys(obj);\n" +
+            "    var length = keys.length;\n" +
+            "    var values = Array(length);\n" +
+            "    for (var i = 0; i < length; i++) {\n" +
+            "      values[i] = obj[keys[i]];\n" +
+            "    }\n" +
+            "    return values;\n" +
+            "  }\n" +
+            "function _keys(obj) \n" +
+            " {\n" +
+            "    if (!isObject(obj)) return [];\n" +
+            "    if (Object.keys) return Object.keys(obj);\n" +
+            "    var keys = [];\n" +
+            "    for (var key in obj) if (_.has(obj, key)) keys.push(key);\n" +
+            "    return keys;\n" +
+            "  }\n" +
+            "function isObject(obj)   \n" +
+            "{  \n" +
+            "    var type = typeof obj;  \n" +
+            "    return type === 'function' || type === 'object' && !!obj;  \n" +
+            "  } \n" +
+            "console.log(all_values({red: \"#FF0000\", green: \"#00FF00\", white: \"#FFFFFF\"}));\n";
+    public static final String codes46 = "function key_value_pairs(obj) \n" +
+            "   {\n" +
+            "    var keys = _keys(obj);\n" +
+            "    var length = keys.length;\n" +
+            "    var pairs = Array(length);\n" +
+            "    for (var i = 0; i < length; i++) \n" +
+            "    {\n" +
+            "      pairs[i] = [keys[i], obj[keys[i]]];\n" +
+            "    }\n" +
+            "    return pairs;\n" +
+            "  }\n" +
+            "\n" +
+            "function _keys(obj) \n" +
+            "  {\n" +
+            "    if (!isObject(obj)) return [];\n" +
+            "    if (Object.keys) return Object.keys(obj);\n" +
+            "    var keys = [];\n" +
+            "    for (var key in obj) if (_.has(obj, key)) keys.push(key);\n" +
+            "    return keys;\n" +
+            "  }\n" +
+            "function isObject(obj) \n" +
+            " {\n" +
+            "    var type = typeof obj;\n" +
+            "    return type === 'function' || type === 'object' && !!obj;\n" +
+            "  }\n" +
+            "console.log(key_value_pairs({red: \"#FF0000\", green: \"#00FF00\", white: \"#FFFFFF\"}));\n";
+    public static final String codes47 = "function invert_key_value(obj) {\n" +
+            "    var result = {};\n" +
+            "    var keys = _keys(obj);\n" +
+            "    for (var i = 0, length = keys.length; i < length; i++) {\n" +
+            "      result[obj[keys[i]]] = keys[i];\n" +
+            "    }\n" +
+            "    return result;\n" +
+            "  }\n" +
+            "function _keys(obj) \n" +
+            "  {\n" +
+            "    if (!isObject(obj)) return [];\n" +
+            "    if (Object.keys) return Object.keys(obj);\n" +
+            "    var keys = [];\n" +
+            "    for (var key in obj) if (_.has(obj, key)) keys.push(key);\n" +
+            "    return keys;\n" +
+            "  }\n" +
+            "function isObject(obj) \n" +
+            " {\n" +
+            "    var type = typeof obj;\n" +
+            "    return type === 'function' || type === 'object' && !!obj;\n" +
+            "  }\n" +
+            "console.log(invert_key_value({red: \"#FF0000\", green: \"#00FF00\", white: \"#FFFFFF\"}));\n";
+    public static final String codes48 = "function hasKey(obj, key) {\n" +
+            "    return obj != null && hasOwnProperty.call(obj, key);\n" +
+            "  }\n" +
+            "console.log(hasKey({red: \"#FF0000\", green: \"#00FF00\", white: \"#FFFFFF\"}, \"green\"));\n";
+    public static final String codes49 = "function is_dom_element(obj) {\n" +
+            "    return !!(obj && obj.nodeType === 1);\n" +
+            "  }\n" +
+            "console.log(is_dom_element(jQuery('body')[0]));\n";
+    public static final String codes50 = "const extend_Hex = shortHex =>\n" +
+            "  '#' +\n" +
+            "  shortHex\n" +
+            "    .slice(shortHex.startsWith('#') ? 1 : 0)\n" +
+            "    .split('')\n" +
+            "    .map(x => x + x)\n" +
+            "    .join('');\n" +
+            "\n" +
+            "console.log(extend_Hex('#03f'));\n" +
+            "console.log(extend_Hex('05a'));";
+    public static final String codes51 = "const over = (...fns) => (...args) => fns.map(fn => fn.apply(null, args));\n" +
+            "const minMax = over(Math.min, Math.max);\n" +
+            "console.log(minMax(1, 2, 3, 4, 5)); \n" +
+            "console.log(minMax(1, 2, 5, 4, 3)); \n" +
+            "console.log(minMax(1, 2, 5, -4, 3));";
+    public static final String codes52 = "const filter_Non_UniqueBy = (arr, fn) =>\n" +
+            "  arr.filter((v, i) => arr.every((x, j) => (i === j) === fn(v, x, i, j)));\n" +
+            "\n" +
+            "console.log(filter_Non_UniqueBy(\n" +
+            "  [\n" +
+            "    { id: 0, value: 'a' },\n" +
+            "    { id: 1, value: 'b' },\n" +
+            "    { id: 2, value: 'c' },\n" +
+            "    { id: 1, value: 'd' },\n" +
+            "    { id: 0, value: 'e' }\n" +
+            "  ],\n" +
+            "  (a, b) => a.id == b.id\n" +
+            ")); ";
+    public static final String codes53 = "const time_taken = callback => {\n" +
+            "  const result = callback();\n" +
+            "  return result;\n" +
+            "};\n" +
+            "console.log(\"Time taken: \" + time_taken(() => Math.pow(2, 10))+\" ms\"); \n" +
+            "console.log(\"Time taken: \" + time_taken(() => Math.sqrt(225))+\" ms\");\n" +
+            "console.log(\"Time taken: \" + time_taken(() => Math.sqrt((5 * 5) + (6 * 6)))+\" ms\");\n";
+    public static final String codes54 = "const omit = (obj, arr) =>\n" +
+            "  Object.keys(obj)\n" +
+            "    .filter(k => !arr.includes(k))\n" +
+            "    .reduce((acc, key) => ((acc[key] = obj[key]), acc), {});\n" +
+            "\n" +
+            "console.log(omit({ a: 1, b: '2', c: 3 }, ['b']));\n" +
+            "console.log(omit({ a: 1, b: 2, c: 3 }, ['c']));";
+    public static final String codes55 = "const collectInto = fn => (...args) => fn(args);\n" +
+            "const Pall = collectInto(Promise.all.bind(Promise));\n" +
+            "let p1 = Promise.resolve(1);\n" +
+            "let p2 = Promise.resolve(2);\n" +
+            "let p3 = new Promise(resolve => setTimeout(resolve, 2000, 3));\n" +
+            "Pall(p1, p2, p3).then(console.log); // [1, 2, 3] (after about 2 seconds)";
+    public static final String codes56 = "const bifurcate = (arr, filter) =>\n" +
+            "  arr.reduce((acc, val, i) => (acc[filter[i] ? 0 : 1].push(val), acc), [[], []]);\n" +
+            "console.log(bifurcate(['beep', 'boop', 'foo', 'bar'], [true, true, false, true]));";
+    public static final String codes57 = "const equals = (a, b) => {\n" +
+            "  if (a === b) return true;\n" +
+            "  if (a instanceof Date && b instanceof Date) return a.getTime() === b.getTime();\n" +
+            "  if (!a || !b || (typeof a !== 'object' && typeof b !== 'object')) return a === b;\n" +
+            "  if (a === null || a === undefined || b === null || b === undefined) return false;\n" +
+            "  if (a.prototype !== b.prototype) return false;\n" +
+            "  let keys = Object.keys(a);\n" +
+            "  if (keys.length !== Object.keys(b).length) return false;\n" +
+            "  return keys.every(k => equals(a[k], b[k]));\n" +
+            "};\n" +
+            "\n" +
+            "console.log(equals({ a: [2, { e: 3 }], b: [4], c: 'foo' }, { a: [2, { e: 3 }], b: [4], c: 'foo' }));";
+    public static final String codes58 = "const get = (from, ...selectors) =>\n" +
+            "  [...selectors].map(s =>\n" +
+            "    s\n" +
+            "      .replace(/\\[([^\\[\\]]*)\\]/g, '.$1.')\n" +
+            "      .split('.')\n" +
+            "      .filter(t => t !== '')\n" +
+            "      .reduce((prev, cur) => prev && prev[cur], from)\n" +
+            "  );\n" +
+            "const obj = { selector: { to: { val: 'val to select' } }, target: [1, 2, { a: 'test' }] };\n" +
+            "\n" +
+            "console.log(get(obj, 'selector.to.val', 'target[0]', 'target[2].a')); ";
+    public static final String codes59 = "const averageBy = (arr, fn) =>\n" +
+            "  arr.map(typeof fn === 'function' ? fn : val => val[fn]).reduce((acc, val) => acc + val, 0) /\n" +
+            "  arr.length;\n" +
+            "\n" +
+            "console.log(averageBy([{ a: 40 }, { a: 20 }, { a: 80 }, { a: 60 }], o => o.a));\n" +
+            "console.log(averageBy([{ a: 4 }, { a: 2 }, { a: 8 }, { a: 6 }], 'a'));";
+    public static final String codes60 = "const deepClone = obj => {\n" +
+            "  let clone = Object.assign({}, obj);\n" +
+            "  Object.keys(clone).forEach(\n" +
+            "    key => (clone[key] = typeof obj[key] === 'object' ? deepClone(obj[key]) : obj[key])\n" +
+            "  );\n" +
+            "  return Array.isArray(obj) ? (clone.length = obj.length) && Array.from(clone) : clone;\n" +
+            "};\n" +
+            "const a = { foo: 'bar', obj: { a: 1, b: 2 } };\n" +
+            "const b = deepClone(a); // a !== b, a.obj !== b.obj\n" +
+            "console.log(b)";
+    public static final String codes61 = "const longestItem = (...vals) => [...vals].sort((a, b) => b.length - a.length)[0];\n" +
+            "console.log(longestItem('this', 'is', 'a', 'testcase'));\n" +
+            "console.log(longestItem(...['a', 'ab', 'abc']));\n" +
+            "console.log(longestItem(...['a', 'ab', 'abc'], 'abcd'));\n" +
+            "console.log(longestItem([1, 2, 3], [1, 2], [1, 2, 3, 4, 5]));\n" +
+            "console.log(longestItem([1, 2, 3], 'foobar'));";
+    public static final String codes62 = "const mapKeys = (obj, fn) =>\n" +
+            "  Object.keys(obj).reduce((acc, k) => {\n" +
+            "    acc[fn(obj[k], k, obj)] = obj[k];\n" +
+            "    return acc;\n" +
+            "  }, {});\n" +
+            "console.log(mapKeys({ a: 1, b: 2 }, (val, key) => key + val));";
+    public static final String codes63 = "const median = arr => {\n" +
+            "  const mid = Math.floor(arr.length / 2),\n" +
+            "    nums = [...arr].sort((a, b) => a - b);\n" +
+            "  return arr.length % 2 !== 0 ? nums[mid] : (nums[mid - 1] + nums[mid]) / 2;\n" +
+            "};\n" +
+            "console.log(median([5, 6, 50, 1, -5]));\n" +
+            "console.log(median([1, 2, 3, 4, 5]));";
+    public static final String codes64 = "const negate = func => (...args) => !func(...args);\n" +
+            "console.log([1, 2, 3, 4, 5, 6].filter(negate(n => n % 2 === 0)));";
+    public static final String codes65 = "const nest = (items, id = null, link = 'parent_id') =>\n" +
+            "  items\n" +
+            "    .filter(item => item[link] === id)\n" +
+            "    .map(item => ({ ...item, children: nest(items, item.id) }));\n" +
+            "// One top level comment\n" +
+            "const comments = [\n" +
+            "  { id: 1, parent_id: null },\n" +
+            "  { id: 2, parent_id: 1 },\n" +
+            "  { id: 3, parent_id: 1 },\n" +
+            "  { id: 4, parent_id: 2 },\n" +
+            "  { id: 5, parent_id: 4 }\n" +
+            "];\n" +
+            "const nestedComments = nest(comments); \n" +
+            "console.log(nestedComments);";
+    public static final String codes66 = "const off = (el, evt, fn, opts = false) => el.removeEventListener(evt, fn, opts);\n" +
+            "const fn = () => console.log('!');\n" +
+            "document.body.addEventListener('click', fn);\n" +
+            "console.log(off(document.body, 'click', fn)); ";
+    public static final String codes67 = "const pickBy = (obj, fn) =>\n" +
+            "  Object.keys(obj)\n" +
+            "    .filter(k => fn(obj[k], k))\n" +
+            "    .reduce((acc, key) => ((acc[key] = obj[key]), acc), {});\n" +
+            "console.log(pickBy({ a: 1, b: '2', c: 3 }, x => typeof x === 'number'));";
+    public static final String codes68 = "const unescapeHTML = str =>\n" +
+            "  str.replace(\n" +
+            "    /&|<|>|'|\"/g,\n" +
+            "    tag =>\n" +
+            "      ({\n" +
+            "        '&': '&',\n" +
+            "        '<': '<',\n" +
+            "        '>': '>',\n" +
+            "        ''': \"'\",\n" +
+            "        '\"': '\"'\n" +
+            "      }[tag] || tag)\n" +
+            "  );\n" +
+            "console.log(unescapeHTML('<a href=\"#\">Me & you</a>'));";
+    public static final String codes69 = "const uncurry = (fn, n = 1) => (...args) => {\n" +
+            "  const next = acc => args => args.reduce((x, y) => x(y), acc);\n" +
+            "  if (n > args.length) throw new RangeError('Arguments too few!');\n" +
+            "  return next(fn)(args.slice(0, n));\n" +
+            "};\n" +
+            "const add = x => y => z => x + y + z;\n" +
+            "const uncurriedAdd = uncurry(add, 3);\n" +
+            "console.log(uncurriedAdd(1, 2, 3));";
+    public static final String codes70 = "const transform = (obj, fn, acc) => Object.keys(obj).reduce((a, k) => fn(a, obj[k], k, obj), acc);\n" +
+            "console.log(transform(\n" +
+            "  { a: 1, b: 2, c: 1 },\n" +
+            "  (r, v, k) => {\n" +
+            "    (r[v] || (r[v] = [])).push(k);\n" +
+            "    return r;\n" +
+            "  },\n" +
+            "  {}\n" +
+            "));";
+    public static final String codes71 = "function js_style() \n" +
+            "{\n" +
+            "//font styles added by JS:\n" +
+            " text.style.fontSize = \"14pt\";\n" +
+            " text.style.fontFamily = \"Comic Sans MS\";\n" +
+            " text.style.color = \"green\";\n" +
+            "}\n";
+    public static final String codes72 = "function getFormvalue()\n" +
+            "{\n" +
+            "  var x=document.getElementById(\"form1\");\n" +
+            "  for (var i=0;i<x.length;i++)\n" +
+            "  {\n" +
+            "   if (x.elements[i].value!='Submit')\n" +
+            "    {  \n" +
+            "      console.log(x.elements[i].value);\n" +
+            "     }  \n" +
+            "   }\n" +
+            "}\n";
+    public static final String codes73 = "function set_background() {\n" +
+            " docBody = document.getElementsByTagName(\"body\")[0];\n" +
+            "  //Get all the p elements that are descendants of the body\n" +
+            "  myBodyElements = docBody.getElementsByTagName(\"p\");\n" +
+            "// get the first p elements\n" +
+            "  myp1 = myBodyElements[0];\n" +
+            "  myp1.style.background = \"rgb(255,0,0)\";\n" +
+            "// get the second p elements\n" +
+            "  myp2 = myBodyElements[1];\n" +
+            "  myp2.style.background = \"rgb(255,255,0)\";\n" +
+            "}\n";
+    public static final String codes74 = "function getAttributes()\n" +
+            "{\n" +
+            " var u = document.getElementById(\"shr\").href;\n" +
+            " alert('The value of the href attribute of the link is : '+u);\n" +
+            " var v = document.getElementById(\"shr\").hreflang;   \n" +
+            " alert('The value of the hreflang attribute of the link is : '+v);\n" +
+            " var w = document.getElementById(\"shr\").rel; \n" +
+            "  alert('The value of the rel attribute of the link is : '+w);\n" +
+            " var x = document.getElementById(\"shr\").target; \n" +
+            "  alert('The value of the taget attribute of the link is : '+x);\n" +
+            " var y = document.getElementById(\"shr\").type; \n" +
+            "  alert('The value of the type attribute of the link is : '+y);  \n" +
+            "}\n";
+    public static final String codes75 = "function insert_Row()\n" +
+            "{\n" +
+            "var x=document.getElementById('sampleTable').insertRow(0);\n" +
+            "var y = x.insertCell(0);\n" +
+            "var z = x.insertCell(1);\n" +
+            "y.innerHTML=\"New Cell1\";\n" +
+            "z.innerHTML=\"New Cell2\";\n" +
+            "}\n";
+    public static final String codes76 = "function changeContent()\n" +
+            "{\n" +
+            "rn = window.prompt(\"Input the Row number(0,1,2)\", \"0\");\n" +
+            "cn = window.prompt(\"Input the Column number(0,1)\",\"0\");\n" +
+            "content = window.prompt(\"Input the Cell content\");  \n" +
+            "var x=document.getElementById('myTable').rows[parseInt(rn,10)].cells;\n" +
+            "x[parseInt(cn,10)].innerHTML=content;\n" +
+            "}\n";
+    public static final String codes77 = "function createTable()\n" +
+            "{\n" +
+            "rn = window.prompt(\"Input number of rows\", 1);\n" +
+            "cn = window.prompt(\"Input number of columns\",1);\n" +
+            "  \n" +
+            " for(var r=0;r<parseInt(rn,10);r++)\n" +
+            "  {\n" +
+            "   var x=document.getElementById('myTable').insertRow(r);\n" +
+            "   for(var c=0;c<parseInt(cn,10);c++)  \n" +
+            "    {\n" +
+            "     var y=  x.insertCell(c);\n" +
+            "     y.innerHTML=\"Row-\"+r+\" Column-\"+c; \n" +
+            "    }\n" +
+            "   }\n" +
+            "}\n";
+    public static final String codes78 = "function removecolor()\n" +
+            "{\n" +
+            "var x=document.getElementById(\"colorSelect\");\n" +
+            "x.remove(x.selectedIndex);\n" +
+            "}\n";
+    public static final String codes79 = "function getOptions()\n" +
+            "{\n" +
+            "var x=document.getElementById(\"mySelect\");\n" +
+            "var txt1 = \"No. of items : \";\n" +
+            "var i;\n" +
+            "l=document.getElementById(\"mySelect\").length;  \n" +
+            "txt1 = txt1+l;\n" +
+            "for (i=0;i<x.length;i++)\n" +
+            "  {\n" +
+            "    txt1 = txt1 + \"\\n\" + x.options[i].text;\n" +
+            "  }\n" +
+            "alert(txt1);\n" +
+            "}\n";
+    public static final String codes80 = "function volume_sphere()\n" +
+            " {\n" +
+            "  var volume;\n" +
+            "  var radius = document.getElementById('radius').value;\n" +
+            "  radius = Math.abs(radius);\n" +
+            "  volume = (4/3) * Math.PI * Math.pow(radius, 3);\n" +
+            "  volume = volume.toFixed(4);\n" +
+            "  document.getElementById('volume').value = volume;\n" +
+            "  return false;\n" +
+            " } \n" +
+            "window.onload = document.getElementById('MyForm').onsubmit = volume_sphere;\n";
+    public static final String codes81 = "function display_random_image() \n" +
+            "{\n" +
+            "     var theImages = [{\n" +
+            "        src: \"http://farm4.staticflickr.com/3691/11268502654_f28f05966c_m.jpg\",\n" +
+            "        width: \"240\",\n" +
+            "        height: \"160\"\n" +
+            "    }, {\n" +
+            "        src: \"http://farm1.staticflickr.com/33/45336904_1aef569b30_n.jpg\",\n" +
+            "        width: \"320\",\n" +
+            "        height: \"195\"\n" +
+            "    }, {\n" +
+            "        src: \"http://farm6.staticflickr.com/5211/5384592886_80a512e2c9.jpg\",\n" +
+            "        width: \"500\",\n" +
+            "        height: \"343\"\n" +
+            "    }];\n" +
+            "    \n" +
+            "    var preBuffer = [];\n" +
+            "    for (var i = 0, j = theImages.length; i < j; i++) {\n" +
+            "        preBuffer[i] = new Image();\n" +
+            "        preBuffer[i].src = theImages[i].src;\n" +
+            "        preBuffer[i].width = theImages[i].width;\n" +
+            "        preBuffer[i].height = theImages[i].height;\n" +
+            "    }\n" +
+            "   \n" +
+            "// create random image number\n" +
+            "  function getRandomInt(min,max) \n" +
+            "    {\n" +
+            "      //  return Math.floor(Math.random() * (max - min + 1)) + min;\n" +
+            "    \n" +
+            "imn = Math.floor(Math.random() * (max - min + 1)) + min;\n" +
+            "    return preBuffer[imn];\n" +
+            "    }  \n" +
+            "\n" +
+            "// 0 is first image,   preBuffer.length - 1) is  last image\n" +
+            "  \n" +
+            "var newImage = getRandomInt(0, preBuffer.length - 1);\n" +
+            " \n" +
+            "// remove the previous images\n" +
+            "var images = document.getElementsByTagName('img');\n" +
+            "var l = images.length;\n" +
+            "for (var p = 0; p < l; p++) {\n" +
+            "    images[0].parentNode.removeChild(images[0]);\n" +
+            "}\n" +
+            "// display the image  \n" +
+            "document.body.appendChild(newImage);\n" +
+            "}\n";
+    public static final String codes82 = "//First create a list of all bold items \n" +
+            "var bold_Items;\n" +
+            "window.onload = getBold_items();\n" +
+            " \n" +
+            "// Collect all <strong> tags\n" +
+            "function getBold_items() \n" +
+            "{\n" +
+            "  bold_Items = document.getElementsByTagName('strong'); \n" +
+            "}\n" +
+            "// iterate all bold tags and change color  \n" +
+            "function highlight() \n" +
+            "{\n" +
+            "   for (var i=0; i<bold_Items.length; i++)\n" +
+            "   {                                                    \n" +
+            "    bold_Items[i].style.color = \"green\";\n" +
+            "    }\n" +
+            "}\n" +
+            "\n" +
+            "// On mouse out highlighted words become black\n" +
+            "function return_normal()\n" +
+            "{\n" +
+            "  for (var i=0; i<bold_Items.length; i++) \n" +
+            "  {\n" +
+            "       bold_Items[i].style.color = \"black\";\n" +
+            "  }\n" +
+            "}\n";
+    public static final String codes83 = "function getSize()\n" +
+            "{\n" +
+            "var w = document.documentElement.clientWidth;\n" +
+            "var h = document.documentElement.clientHeight;\n" +
+            "        \n" +
+            "// put the result into a h1 tag\n" +
+            " document.getElementById('wh').innerHTML = \"<h1>Width: \" + w + \" â€¢ Height: \" + h + \"</h1>\";\n" +
+            "}\n";
+    public static final String codes84 = "";
+    public static final String codes85 = "";
+    public static final String codes86 = "";
+    public static final String codes87 = "";
+    public static final String codes88 = "";
+    public static final String codes89 = "";
+    public static final String codes90 = "";
+    public static final String codes91 = "";
+    public static final String codes92 = "";
+    public static final String codes93 = "";
+    public static final String codes94 = "";
+    public static final String codes95 = "";
+    public static final String codes96 = "";
+    public static final String codes97 = "";
+    public static final String codes98 = "";
+    public static final String codes99 = "";
+    public static final String codes100 = "";
+    public static final String codes101 = "";
+    public static final String codes102 = "";
+    public static final String codes103 = "";
+    public static final String codes104 = "";
+    public static final String codes105 = "";
+    public static final String codes106 = "";
+    public static final String codes107 = "";
+    public static final String codes108 = "";
+    public static final String codes109 = "";
+    public static final String codes110 = "";
+    public static final String codes111 = "";
+    public static final String codes112 = "";
+    public static final String codes113 = "";
+    public static final String codes114 = "";
+    public static final String codes115 = "";
+    public static final String codes116 = "";
+    public static final String codes117 = "";
+    public static final String codes118 = "";
+    public static final String codes119 = "";
+    public static final String codes120 = "";
     public static final String codes121 = "When to Use Internal and External JavaScript Code?";
     public static final String codes122 = "Is there any difference between window and document?";
     public static final String codes123 = "Does document.onload and window.onload fire at the same time?";

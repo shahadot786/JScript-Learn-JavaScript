@@ -86,95 +86,123 @@ public class ProgramsOutputs {
     public static final String outputs30 ="/home/var/html/sql";
     public static final String outputs31 ="[4,5,6,1,2,3]\n" +
             "false";
-    public static final String outputs32 ="";
-    public static final String outputs33 ="";
-    public static final String outputs34 ="";
-    public static final String outputs35 ="";
-    public static final String outputs36 ="";
-    public static final String outputs37 ="";
-    public static final String outputs38 ="";
-    public static final String outputs39 ="";
-    public static final String outputs40 = "";
-    public static final String outputs41 = "How to detect the operating system on the client machine?";
-    public static final String outputs42 = "What do you mean by NULL in Javascript?";
-    public static final String outputs43 = "What is the use of Void (0)?";
-    public static final String outputs44 = "How can a page be forced to load another page in JavaScript?";
-    public static final String outputs45 = "What is the difference between an alert box and a confirmation box?";
-    public static final String outputs46 = "What are escape characters?";
-    public static final String outputs47 = "What are JavaScript Cookies?";
-    public static final String outputs48 = "What a pop()method in JavaScript is?";
-    public static final String outputs49 = "Does JavaScript has concept level scope?";
-    public static final String outputs50 = "What are the disadvantages of using innerHTML in JavaScript?";
-    public static final String outputs51 = "How can generic objects be created?";
-    public static final String outputs52 = "Which keywords are used to handle exceptions?";
-    public static final String outputs53 = "What is the use of the blur function?";
-    public static final String outputs54 = "How to find an operating system in the client machine using JavaScript?";
-    public static final String outputs55 = "What are the different types of errors in JavaScript?";
-    public static final String outputs56 = "What is the use of the Push method in JavaScript?";
-    public static final String outputs57 = "What is the unshift method in JavaScript?";
-    public static final String outputs58 = "What is the ‘Strict Mode in JavaScript, and how can it be enabled?";
-    public static final String outputs59 = "How closures work in JavaScript?";
-    public static final String outputs60 = "How can a value be appended to an array?";
-    public static final String outputs61 = "What are the important properties of an anonymous function in JavaScript?";
-    public static final String outputs62 = "What is the difference between .call() and .apply()?";
-    public static final String outputs63 = "What is event bubbling?";
-    public static final String outputs64 = "How can a particular frame be targeted, from a hyperlink, in JavaScript?";
-    public static final String outputs65 = "Why you should not use innerHTML in JavaScript?";
-    public static final String outputs66 = "What is namespacing in JavaScript, and how is it used?";
-    public static final String outputs67 = "How can JavaScript outputs be hidden from old browsers that do not support JavaScript?";
-    public static final String outputs68 = "Give an example of JavaScript Multiplication Table";
-    public static final String outputs69 = "How are object properties assigned?";
-    public static final String outputs70 = "How to create objects in JavaScript?";
-    public static final String outputs71 = "What is the method for reading and writing a file in JavaScript?";
-    public static final String outputs72 = "What are Screen objects?";
-    public static final String outputs73 = "What is the unshift() method?";
-    public static final String outputs74 = "What are the important JavaScript Array Method explain with example?";
-    public static final String outputs75 = "What is Loop Though the Properties of an Object?";
-    public static final String outputs76 = "In JavaScript what is an argument object?";
-    public static final String outputs77 = "If we want to return the character from a specific index which method is used?";
-    public static final String outputs78 = "What is the use of window object?";
-    public static final String outputs79 = "What is the use of history object?";
-    public static final String outputs80 = "How to set the cursor to wait in JavaScript?";
-    public static final String outputs81 = "What is this [[[]]]?";
-    public static final String outputs82 = "What is the use of Math object in JavaScript?";
-    public static final String outputs83 = "What is the use of a Date object in JavaScript?";
-    public static final String outputs84 = "What is the use of a Number object in JavaScript?";
-    public static final String outputs85 = "What is the use of a Boolean object in JavaScript?";
-    public static final String outputs86 = "What is the use of a TypedArray object in JavaScript?";
-    public static final String outputs87 = "What is the use of a Set object in JavaScript?";
-    public static final String outputs88 = "What is the use of a WeakSet object in JavaScript?";
-    public static final String outputs89 = "What is the use of a Map object in JavaScript?";
-    public static final String outputs90 = "What is the use of a WeakMap object in JavaScript?";
-    public static final String outputs91 = "What is OOPS Concept in JavaScript?";
-    public static final String outputs92 = "How are event handlers utilized in JavaScript?";
-    public static final String outputs93 = "What is the role of deferred scripts in JavaScript?";
-    public static final String outputs94 = "What are the various functional components in JavaScript?";
-    public static final String outputs95 = "Write about the errors shown in JavaScript?";
-    public static final String outputs96 = "What is unescape() and escape() functions?";
-    public static final String outputs97 = "What are the decodeURI() and encodeURI()?";
-    public static final String outputs98 = "What is JavaScript Unit Testing, and what are the challenges in JavaScript Unit Testing?";
-    public static final String outputs99 = "What are some important JavaScript Unit Testing Frameworks?";
-    public static final String outputs100 = "What is QuickSort Algorithm in JavaScript?";
-    public static final String outputs101 = "How does QuickSort Work?";
-    public static final String outputs102 = "Difference between Client side JavaScript and Server side JavaScript?";
-    public static final String outputs103 = "In which location cookies are stored on the hard disk?";
-    public static final String outputs104 = "What is the requirement of debugging in JavaScript?";
-    public static final String outputs105 = "What is the use of debugger keyword in JavaScript?";
-    public static final String outputs106 = "How do you define a class and its constructor?";
-    public static final String outputs107 = "What is function overloading in JavaScript?";
-    public static final String outputs108 = "What is  associative arrays in JavaScript?";
-    public static final String outputs109 = "Why \"self\" is needed instead of \"this\" in JavaScript?";
-    public static final String outputs110 = "Understanding JavaScript Inheritance with Example";
-    public static final String outputs111 = "Why asynchronous code is important in JavaScript?";
-    public static final String outputs112 = "How to empty an array in JavaScript?";
-    public static final String outputs113 = "What is the difference between let, var, and const?";
-    public static final String outputs114 = "Is it possible to use JavaScript to change the meta-tags of the page?";
-    public static final String outputs115 = "How To modify the URL of page without reloading the page?";
-    public static final String outputs116 = "Name two ways two change the context of a JavaScript method?";
-    public static final String outputs117 = "How are DOM utilized in JavaScript?";
-    public static final String outputs118 = "What is DOM in JavaScript?";
-    public static final String outputs119 = "How to use DOM and Events?";
-    public static final String outputs120 = "What is External JavaScript?";
+    public static final String outputs32 ="[\"red\",\"green\",\"white\"]";
+    public static final String outputs33 ="{\"name\":\"Anne Moore\",\"sclass\":\"VI\",\"rollno\":12}\n" +
+            "{\"name\":\"Anne Moore\",\"sclass\":\"VI\"}";
+    public static final String outputs34 ="Size of the current object : 3";
+    public static final String outputs35 ="Already read 'Bill Gates' by The Road Ahead.\n" +
+            "Already read 'Steve Jobs' by Walter Isaacson.\n" +
+            "You still need to read 'Mockingjay: The Final Book of The Hunger Games' by Suzanne Collins.";
+    public static final String outputs36 ="volume = 87.9646";
+    public static final String outputs37 ="[-2,0,1,3,4,6]";
+    public static final String outputs38 ="[\"d\",\"do\",\"dog\",\"o\",\"og\",\"g\"]";
+    public static final String outputs39 ="14:45:52\n" +
+            "14:45:53\n" +
+            "14:45:54\n" +
+            "14:45:55\n" +
+            "14:45:56\n" +
+            "14:45:57\n" +
+            "14:45:58\n" +
+            "14:45:59\n" +
+            "14:46:0\n" +
+            "-----";
+    public static final String outputs40 = "Area = 28.27\n" +
+            "VM1407:17 perimeter = 18.85";
+    public static final String outputs41 = "[{\"title\":\"Steve Jobs\",\"author\":\"Walter Isaacson\",\"libraryID\":4264},{\"title\":\"Mockingjay: The Final Book of The Hunger Games\",\"author\":\"Suzanne Collins\",\"libraryID\":3245},{\"title\":\"Bill Gates\",\"author\":\"The Road Ahead\",\"libraryID\":1254}]";
+    public static final String outputs42 = "[\"abs\", \"acos\", \"acosh\", \"asin\", \"asinh\", \"atan\", \"atanh\", \"atan2\", \"ceil\", \"cbrt\", \"expm1\", \"clz32\", \"cos\", \"cosh\", \"exp\", \"floor\", \"fround\", \"hypot\", \"imul\", \"log\", \"log1p\", \"log2\", \"log10\", \"max\", \"min\", \"pow\", \"random\", \"round\", \"sign\", \"sin\", \"sinh\", \"sqrt\", \"tan\", \"tanh\", \"trunc\"]\n" +
+            "[\"isArray\", \"from\", \"of\"]\n" +
+            "[\"abs\", \"acos\", \"acosh\", \"asin\", \"asinh\", \"atan\", \"atanh\", \"atan2\", \"ceil\", \"cbrt\", \"expm1\", \"clz32\", \"cos\", \"cosh\", \"exp\", \"floor\", \"fround\", \"hypot\", \"imul\", \"log\", \"log1p\", \"log2\", \"log10\", \"max\", \"min\", \"pow\", \"random\", \"round\", \"sign\", \"sin\", \"sinh\", \"sqrt\", \"tan\", \"tanh\", \"trunc\", \"E\", \"LN10\", \"LN2\", \"LOG10E\", \"LOG2E\", \"PI\", \"SQRT1_2\", \"SQRT2\"]\n" +
+            "[\"length\", \"name\", \"prototype\", \"isArray\", \"from\", \"of\"]";
+    public static final String outputs43 = "{\"source\":\"https://github.com/pubnub/python/search?utf8=%E2%9C%93&q=python\",\"protocol\":\"https\",\"host\":\"github.com\",\"port\":\"\",\"query\":\"?utf8=%E2%9C%93&q=python\",\"params\":{\"utf8\":\"%E2%9C%93\",\"q\":\"python\"},\"file\":\"search\",\"hash\":\"\",\"path\":\"/pubnub/python/search\",\"relative\":\"/pubnub/python/search?utf8=%E2%9C%93&q=python\",\"segments\":[\"pubnub\",\"python\",\"search\"]}";
+    public static final String outputs44 = "[\"name\",\"rollno\"]";
+    public static final String outputs45 = "[\"#FF0000\",\"#00FF00\",\"#FFFFFF\"]";
+    public static final String outputs46 = "[[\"red\",\"#FF0000\"],[\"green\",\"#00FF00\"],[\"white\",\"#FFFFFF\"]]";
+    public static final String outputs47 = "{\"#FF0000\":\"red\",\"#00FF00\":\"green\",\"#FFFFFF\":\"white\"}";
+    public static final String outputs48 = "true";
+    public static final String outputs49 = "true";
+    public static final String outputs50 = "#0033ff\n" +
+            "#0055aa";
+    public static final String outputs51 = "[1,5]\n" +
+            "[1,5]\n" +
+            "[-4,5]";
+    public static final String outputs52 = "[{\"id\":2,\"value\":\"c\"}]";
+    public static final String outputs53 = "Time taken: 1024 ms\n" +
+            "Time taken: 15 ms\n" +
+            "Time taken: 7.810249675906654 ms";
+    public static final String outputs54 = "{\"a\":1,\"c\":3}\n" +
+            "{\"a\":1,\"b\":2}";
+    public static final String outputs55 = "[1,2,3]";
+    public static final String outputs56 = "[[\"beep\",\"boop\",\"bar\"],[\"foo\"]]";
+    public static final String outputs57 = "true";
+    public static final String outputs58 = "[\"val to select\",1,\"test\"]";
+    public static final String outputs59 = "50\n" +
+            "5";
+    public static final String outputs60 = "{\"foo\":\"bar\",\"obj\":{\"a\":1,\"b\":2}}";
+    public static final String outputs61 = "testcase\n" +
+            "abc\n" +
+            "abcd\n" +
+            "[1,2,3,4,5]\n" +
+            "foobar";
+    public static final String outputs62 = "{\"a1\":1,\"b2\":2}";
+    public static final String outputs63 = "5\n" +
+            "3";
+    public static final String outputs64 = "[1,3,5]";
+    public static final String outputs65 = "[{\"id\":1,\"parent_id\":null,\"children\":[{\"id\":2,\"parent_id\":1,\"children\":[{\"id\":4,\"parent_id\":2,\"children\":[{\"id\":5,\"parent_id\":4,\"children\":[]}]}]},{\"id\":3,\"parent_id\":1,\"children\":[]}]}]";
+    public static final String outputs66 = "undefined";
+    public static final String outputs67 = "{\"a\":1,\"c\":3}";
+    public static final String outputs68 = "\"<a href=\\\"#\\\">Me & you</a>\"";
+    public static final String outputs69 = "6";
+    public static final String outputs70 = "{\"1\":[\"a\",\"c\"],\"2\":[\"b\"]}";
+    public static final String outputs71 = "//There are no output";
+    public static final String outputs72 = "//There are no output";
+    public static final String outputs73 = "//There are no output";
+    public static final String outputs74 = "//There are no output";
+    public static final String outputs75 = "//There are no output";
+    public static final String outputs76 = "//There are no output";
+    public static final String outputs77 = "//There are no output";
+    public static final String outputs78 = "//There are no output";
+    public static final String outputs79 = "//There are no output";
+    public static final String outputs80 = "//There are no output";
+    public static final String outputs81 = "//There are no output";
+    public static final String outputs82 = "//There are no output";
+    public static final String outputs83 = "//There are no output";
+    public static final String outputs84 = "";
+    public static final String outputs85 = "";
+    public static final String outputs86 = "";
+    public static final String outputs87 = "";
+    public static final String outputs88 = "";
+    public static final String outputs89 = "";
+    public static final String outputs90 = "";
+    public static final String outputs91 = "";
+    public static final String outputs92 = "";
+    public static final String outputs93 = "";
+    public static final String outputs94 = "";
+    public static final String outputs95 = "";
+    public static final String outputs96 = "";
+    public static final String outputs97 = "";
+    public static final String outputs98 = "";
+    public static final String outputs99 = "";
+    public static final String outputs100 = "";
+    public static final String outputs101 = "";
+    public static final String outputs102 = "";
+    public static final String outputs103 = "";
+    public static final String outputs104 = "";
+    public static final String outputs105 = "";
+    public static final String outputs106 = "";
+    public static final String outputs107 = "";
+    public static final String outputs108 = "";
+    public static final String outputs109 = "";
+    public static final String outputs110 = "";
+    public static final String outputs111 = "";
+    public static final String outputs112 = "";
+    public static final String outputs113 = "";
+    public static final String outputs114 = "";
+    public static final String outputs115 = "";
+    public static final String outputs116 = "";
+    public static final String outputs117 = "";
+    public static final String outputs118 = "";
+    public static final String outputs119 = "";
+    public static final String outputs120 = "";
     public static final String outputs121 = "When to Use Internal and External JavaScript Code?";
     public static final String outputs122 = "Is there any difference between window and document?";
     public static final String outputs123 = "Does document.onload and window.onload fire at the same time?";

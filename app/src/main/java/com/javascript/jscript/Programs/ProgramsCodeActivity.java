@@ -43,7 +43,6 @@ public class ProgramsCodeActivity extends AppCompatActivity {
     TextView toastText;
     View toastLayout;
     Toast toast;
-    private AdView bannerAd;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -62,7 +61,7 @@ public class ProgramsCodeActivity extends AppCompatActivity {
         database = FirebaseDatabase.getInstance();
         auth = FirebaseAuth.getInstance();
         //ad request
-        bannerAd = findViewById(R.id.adView);
+        AdView bannerAd = findViewById(R.id.adView);
         AdRequest adRequest = new AdRequest.Builder().build();
         bannerAd.loadAd(adRequest);
         if (UiConfig.BANNER_AD_VISIBILITY) {
@@ -80,7 +79,7 @@ public class ProgramsCodeActivity extends AppCompatActivity {
         //code view for output
         outCodeView = findViewById(R.id.questionDes);
         outCodeView.setTheme(CodeViewTheme.ANDROIDSTUDIO).fillColor();
-
+        //load values
         loadCodes();
         loadOutputs();
 
@@ -222,10 +221,165 @@ public class ProgramsCodeActivity extends AppCompatActivity {
             case "Swap two halves of a given array of integers of even length":
                 codes = ProgramsCodes.codes31;
                 break;
+            case "List the properties of a JavaScript object":
+                codes = ProgramsCodes.codes32;
+                break;
+            case "Delete a property from an object and print before or after deleting":
+                codes = ProgramsCodes.codes33;
+                break;
+            case "Find the length of an object":
+                codes = ProgramsCodes.codes34;
+                break;
+            case "Gather and display information from an object":
+                codes = ProgramsCodes.codes35;
+                break;
+            case "Calculate the volume of a Cylinder":
+                codes = ProgramsCodes.codes36;
+                break;
+            case "Sort an array using Bubble Sorting method":
+                codes = ProgramsCodes.codes37;
+                break;
+            case "Returns a subset of a string":
+                codes = ProgramsCodes.codes38;
+                break;
+            case "Create a clock and display the time in each second":
+                codes = ProgramsCodes.codes39;
+                break;
+            case "Calculate the area and perimeter of a circle":
+                codes = ProgramsCodes.codes40;
+                break;
+            case "Sort an array of JavaScript objects":
+                codes = ProgramsCodes.codes41;
+                break;
+            case "Print all the methods in an JavaScript object":
+                codes = ProgramsCodes.codes42;
+                break;
+            case "Parse an URL":
+                codes = ProgramsCodes.codes43;
+                break;
+            case "Retrieve all the names of object's own and inherited properties":
+                codes = ProgramsCodes.codes44;
+                break;
+            case "Retrieve all the values of an object's properties":
+                codes = ProgramsCodes.codes45;
+                break;
+            case "Convert an object into a list of pairs":
+                codes = ProgramsCodes.codes46;
+                break;
+            case "Get a copy of the object where the keys have become the values and the values the keys":
+                codes = ProgramsCodes.codes47;
+                break;
+            case "Check whether an object contains specified property":
+                codes = ProgramsCodes.codes48;
+                break;
+            case "Check whether a specified value is a DOM element":
+                codes = ProgramsCodes.codes49;
+                break;
+            case "Extend a 3-digit color code to a 6-digit color code":
+                codes = ProgramsCodes.codes50;
+                break;
+            case "Create a function that invokes each provided function with the arguments it receives and returns the results":
+                codes = ProgramsCodes.codes51;
+                break;
+            case "Filter out the non-unique values in an array, based on a provided comparator function":
+                codes = ProgramsCodes.codes52;
+                break;
+            case "Measure the time taken by a function to execute":
+                codes = ProgramsCodes.codes53;
+                break;
+            case "Remove the key-value pairs corresponding to the given keys from an object":
+                codes = ProgramsCodes.codes54;
+                break;
+            case "Change function that accepts an array into a variadic function":
+                codes = ProgramsCodes.codes55;
+                break;
+            case "Split values into two groups with condition":
+                codes = ProgramsCodes.codes56;
+                break;
+            case "Perform a deep comparison between two values to determine if they are equivalent":
+                codes = ProgramsCodes.codes57;
+                break;
+            case "Retrieve a set of properties indicated by the given selectors from an object":
+                codes = ProgramsCodes.codes58;
+                break;
+            case "Compute the average of an array, after mapping each element to a value using the provided function":
+                codes = ProgramsCodes.codes59;
+                break;
+            case "Create a deep clone of an object":
+                codes = ProgramsCodes.codes60;
+                break;
+            case "Take any number of iterable objects or objects with a length property and returns the longest one":
+                codes = ProgramsCodes.codes61;
+                break;
+            case "Create an object with keys generated by running the provided function for each key and the same values as the provided object":
+                codes = ProgramsCodes.codes62;
+                break;
+            case "Write a JavaScript program to get the median of an array of numbers":
+                codes = ProgramsCodes.codes63;
+                break;
+            case "Negates a predicate function":
+                codes = ProgramsCodes.codes64;
+                break;
+            case "Nest a given flat array of objects linked to one another recursively":
+                codes = ProgramsCodes.codes65;
+                break;
+            case "Remove an event listener from an element":
+                codes = ProgramsCodes.codes66;
+                break;
+            case "Create an object composed of the properties the given function returns truthy for":
+                codes = ProgramsCodes.codes67;
+                break;
+            case "Unescape escaped HTML characters":
+                codes = ProgramsCodes.codes68;
+                break;
+            case "Uncurry a function up to depth n":
+                codes = ProgramsCodes.codes69;
+                break;
+            case "Apply a function against an accumulator and each key in the object":
+                codes = ProgramsCodes.codes70;
+                break;
+            case "Modify paragraph text style through javascript code using button":
+                codes = ProgramsCodes.codes71;
+                break;
+            case "Store and display the values of text boxes of a form":
+                codes = ProgramsCodes.codes72;
+                break;
+            case "Set the background color of a paragraph":
+                codes = ProgramsCodes.codes73;
+                break;
+            case "Collect the value of href, hreflang, rel, target, and type attributes of a link":
+                codes = ProgramsCodes.codes74;
+                break;
+            case "JavaScript function to add rows to a table":
+                codes = ProgramsCodes.codes75;
+                break;
+            case "Create a function to update the content of a specific cell of a table":
+                codes = ProgramsCodes.codes76;
+                break;
+            case "Create a user defined table, accepting rows and columns":
+                codes = ProgramsCodes.codes77;
+                break;
+            case "Remove items from a dropdown list":
+                codes = ProgramsCodes.codes78;
+                break;
+            case "Count and display the items of a dropdown list, in an alert window":
+                codes = ProgramsCodes.codes79;
+                break;
+            case "Calculate the volume of a sphere":
+                codes = ProgramsCodes.codes80;
+                break;
+            case "Display a random image by clicking on a button":
+                codes = ProgramsCodes.codes81;
+                break;
+            case "Highlight the bold words of a paragraph, on mouse over a certain link":
+                codes = ProgramsCodes.codes82;
+                break;
+            case "Get the width and height of a window online":
+                codes = ProgramsCodes.codes83;
+                break;
             case "":
                 codes = ProgramsCodes.codes;
                 break;
-
         }
         codeView.showCode(codes);
 
@@ -328,10 +482,165 @@ public class ProgramsCodeActivity extends AppCompatActivity {
             case "Swap two halves of a given array of integers of even length":
                 outputs = ProgramsOutputs.outputs31;
                 break;
+            case "List the properties of a JavaScript object":
+                outputs = ProgramsOutputs.outputs32;
+                break;
+            case "Delete a property from an object and print before or after deleting":
+                outputs = ProgramsOutputs.outputs33;
+                break;
+            case "Find the length of an object":
+                outputs = ProgramsOutputs.outputs34;
+                break;
+            case "Gather and display information from an object":
+                outputs = ProgramsOutputs.outputs35;
+                break;
+            case "Calculate the volume of a Cylinder":
+                outputs = ProgramsOutputs.outputs36;
+                break;
+            case "Sort an array using Bubble Sorting method":
+                outputs = ProgramsOutputs.outputs37;
+                break;
+            case "Returns a subset of a string":
+                outputs = ProgramsOutputs.outputs38;
+                break;
+            case "Create a clock and display the time in each second":
+                outputs = ProgramsOutputs.outputs39;
+                break;
+            case "Calculate the area and perimeter of a circle":
+                outputs = ProgramsOutputs.outputs40;
+                break;
+            case "Sort an array of JavaScript objects":
+                outputs = ProgramsOutputs.outputs41;
+                break;
+            case "Print all the methods in an JavaScript object":
+                outputs = ProgramsOutputs.outputs42;
+                break;
+            case "Parse an URL":
+                outputs = ProgramsOutputs.outputs43;
+                break;
+            case "Retrieve all the names of object's own and inherited properties":
+                outputs = ProgramsOutputs.outputs44;
+                break;
+            case "Retrieve all the values of an object's properties":
+                outputs = ProgramsOutputs.outputs45;
+                break;
+            case "Convert an object into a list of pairs":
+                outputs = ProgramsOutputs.outputs46;
+                break;
+            case "Get a copy of the object where the keys have become the values and the values the keys":
+                outputs = ProgramsOutputs.outputs47;
+                break;
+            case "Check whether an object contains specified property":
+                outputs = ProgramsOutputs.outputs48;
+                break;
+            case "Check whether a specified value is a DOM element":
+                outputs = ProgramsOutputs.outputs49;
+                break;
+            case "Extend a 3-digit color code to a 6-digit color code":
+                outputs = ProgramsOutputs.outputs50;
+                break;
+            case "Create a function that invokes each provided function with the arguments it receives and returns the results":
+                outputs = ProgramsOutputs.outputs51;
+                break;
+            case "Filter out the non-unique values in an array, based on a provided comparator function":
+                outputs = ProgramsOutputs.outputs52;
+                break;
+            case "Measure the time taken by a function to execute":
+                outputs = ProgramsOutputs.outputs53;
+                break;
+            case "Remove the key-value pairs corresponding to the given keys from an object":
+                outputs = ProgramsOutputs.outputs54;
+                break;
+            case "Change function that accepts an array into a variadic function":
+                outputs = ProgramsOutputs.outputs55;
+                break;
+            case "Split values into two groups with condition":
+                outputs = ProgramsOutputs.outputs56;
+                break;
+            case "Perform a deep comparison between two values to determine if they are equivalent":
+                outputs = ProgramsOutputs.outputs57;
+                break;
+            case "Retrieve a set of properties indicated by the given selectors from an object":
+                outputs = ProgramsOutputs.outputs58;
+                break;
+            case "Compute the average of an array, after mapping each element to a value using the provided function":
+                outputs = ProgramsOutputs.outputs59;
+                break;
+            case "Create a deep clone of an object":
+                outputs = ProgramsOutputs.outputs60;
+                break;
+            case "Take any number of iterable objects or objects with a length property and returns the longest one":
+                outputs = ProgramsOutputs.outputs61;
+                break;
+            case "Create an object with keys generated by running the provided function for each key and the same values as the provided object":
+                outputs = ProgramsOutputs.outputs62;
+                break;
+            case "Write a JavaScript program to get the median of an array of numbers":
+                outputs = ProgramsOutputs.outputs63;
+                break;
+            case "Negates a predicate function":
+                outputs = ProgramsOutputs.outputs64;
+                break;
+            case "Nest a given flat array of objects linked to one another recursively":
+                outputs = ProgramsOutputs.outputs65;
+                break;
+            case "Remove an event listener from an element":
+                outputs = ProgramsOutputs.outputs66;
+                break;
+            case "Create an object composed of the properties the given function returns truthy for":
+                outputs = ProgramsOutputs.outputs67;
+                break;
+            case "Unescape escaped HTML characters":
+                outputs = ProgramsOutputs.outputs68;
+                break;
+            case "Uncurry a function up to depth n":
+                outputs = ProgramsOutputs.outputs69;
+                break;
+            case "Apply a function against an accumulator and each key in the object":
+                outputs = ProgramsOutputs.outputs70;
+                break;
+            case "Modify paragraph text style through javascript code using button":
+                outputs = ProgramsOutputs.outputs71;
+                break;
+            case "Store and display the values of text boxes of a form":
+                outputs = ProgramsOutputs.outputs72;
+                break;
+            case "Set the background color of a paragraph":
+                outputs = ProgramsOutputs.outputs73;
+                break;
+            case "Collect the value of href, hreflang, rel, target, and type attributes of a link":
+                outputs = ProgramsOutputs.outputs74;
+                break;
+            case "JavaScript function to add rows to a table":
+                outputs = ProgramsOutputs.outputs75;
+                break;
+            case "Create a function to update the content of a specific cell of a table":
+                outputs = ProgramsOutputs.outputs76;
+                break;
+            case "Create a user defined table, accepting rows and columns":
+                outputs = ProgramsOutputs.outputs77;
+                break;
+            case "Remove items from a dropdown list":
+                outputs = ProgramsOutputs.outputs78;
+                break;
+            case "Count and display the items of a dropdown list, in an alert window":
+                outputs = ProgramsOutputs.outputs79;
+                break;
+            case "Calculate the volume of a sphere":
+                outputs = ProgramsOutputs.outputs80;
+                break;
+            case "Display a random image by clicking on a button":
+                outputs = ProgramsOutputs.outputs81;
+                break;
+            case "Highlight the bold words of a paragraph, on mouse over a certain link":
+                outputs = ProgramsOutputs.outputs82;
+                break;
+            case "Get the width and height of a window online":
+                outputs = ProgramsOutputs.outputs83;
+                break;
             case "":
                 outputs = ProgramsOutputs.outputs;
                 break;
-
         }
         outCodeView.showCode(outputs);
 

@@ -27,7 +27,7 @@ public class ProgramsFragment extends Fragment {
     View proView;
     ImageView proImage;
     String[] itemsName = {"Basic", "Objects", "OOPs", "DOM", "Advanced", "AJAX", "Typescript"};
-    String[] itemsNamePro = {"Angular", "Vue Js", "Next Js", "React Js", "Ember Js", "Bootstrap", "Node Js", "Express Js", "Laravel", "jQuery"
+    String[] itemsNamePro = {"Angular", "Vue Js", "React Js", "Ember Js", "Bootstrap", "Node Js", "Express Js", "jQuery"
             /*"Svelte Js","Gatsby","Nuxt Js","Spring Boot","Micronaut","Mocha"*/};
     Integer[] itemImages = {
             R.drawable.ic_programs_basic_image,
@@ -43,13 +43,11 @@ public class ProgramsFragment extends Fragment {
     Integer[] itemImagesPro = {
             R.drawable.ic_angular_icon,
             R.drawable.ic_js_vue_icon,
-            R.drawable.ic_next_js,
             R.drawable.ic_react_icon,
             R.drawable.ic_emberjs_icon,
             R.drawable.ic_bootstrap_icon,
             R.drawable.ic_node_icon,
             R.drawable.ic_expressjs_icon,
-            R.drawable.ic_laravel_icon,
             R.drawable.ic_jquery_icon
             /*
             R.drawable.ic_svelte_icon,
@@ -182,34 +180,26 @@ public class ProgramsFragment extends Fragment {
                         startActivity(intent);
                         break;
                     case 2:
-                        intent.putExtra("programsItems", "Next Js");
-                        startActivity(intent);
-                        break;
-                    case 3:
                         intent.putExtra("programsItems", "React Js");
                         startActivity(intent);
                         break;
-                    case 4:
+                    case 3:
                         intent.putExtra("programsItems", "Ember Js");
                         startActivity(intent);
                         break;
-                    case 5:
+                    case 4:
                         intent.putExtra("programsItems", "Bootstrap");
                         startActivity(intent);
                         break;
-                    case 6:
+                    case 5:
                         intent.putExtra("programsItems", "Node Js");
                         startActivity(intent);
                         break;
-                    case 7:
+                    case 6:
                         intent.putExtra("programsItems", "Express Js");
                         startActivity(intent);
                         break;
-                    case 8:
-                        intent.putExtra("programsItems", "Laravel");
-                        startActivity(intent);
-                        break;
-                    case 9:
+                    case 7:
                         intent.putExtra("programsItems", "jQuery");
                         startActivity(intent);
                         break;

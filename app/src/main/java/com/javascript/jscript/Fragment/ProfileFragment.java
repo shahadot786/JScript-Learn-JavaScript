@@ -46,12 +46,12 @@ public class ProfileFragment extends Fragment {
     //fixed count
     private final int listCountLearn = 300;//230
     private final int listCountQuiz = 800;
-    private final int listCountPrograms = 1000;
+    private final int listCountPrograms = 300;//236
     private final int listCountInterview = 500;//475
     //note: all divided result is 100(listCount / dividedCount = 100)
     private final int dividedLearn = 3;
     private final int dividedQuiz = 8;
-    private final int dividedPrograms = 10;
+    private final int dividedPrograms = 3;
     private final int dividedInterview = 5;
     FragmentProfileBinding binding;
     FirebaseAuth auth;

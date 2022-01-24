@@ -1155,399 +1155,4265 @@ public class ProgramsCodes {
             "// put the result into a h1 tag\n" +
             " document.getElementById('wh').innerHTML = \"<h1>Width: \" + w + \" â€¢ Height: \" + h + \"</h1>\";\n" +
             "}\n";
-    public static final String codes84 = "";
-    public static final String codes85 = "";
-    public static final String codes86 = "";
-    public static final String codes87 = "";
-    public static final String codes88 = "";
-    public static final String codes89 = "";
-    public static final String codes90 = "";
-    public static final String codes91 = "";
-    public static final String codes92 = "";
-    public static final String codes93 = "";
-    public static final String codes94 = "";
-    public static final String codes95 = "";
-    public static final String codes96 = "";
-    public static final String codes97 = "";
-    public static final String codes98 = "";
-    public static final String codes99 = "";
-    public static final String codes100 = "";
-    public static final String codes101 = "";
-    public static final String codes102 = "";
-    public static final String codes103 = "";
-    public static final String codes104 = "";
-    public static final String codes105 = "";
-    public static final String codes106 = "";
-    public static final String codes107 = "";
-    public static final String codes108 = "";
-    public static final String codes109 = "";
-    public static final String codes110 = "";
-    public static final String codes111 = "";
-    public static final String codes112 = "";
-    public static final String codes113 = "";
-    public static final String codes114 = "";
-    public static final String codes115 = "";
-    public static final String codes116 = "";
-    public static final String codes117 = "";
-    public static final String codes118 = "";
-    public static final String codes119 = "";
-    public static final String codes120 = "";
-    public static final String codes121 = "When to Use Internal and External JavaScript Code?";
-    public static final String codes122 = "Is there any difference between window and document?";
-    public static final String codes123 = "Does document.onload and window.onload fire at the same time?";
-    public static final String codes124= "Is attribute similar to property?";
-    public static final String codes125 = "What are the different ways to get an element from DOM?";
-    public static final String codes126 = "What is the fastest way to select elements by using css selectors?";
-    public static final String codes127 = "How come, I can't use forEach or similar array methods on a NodeList?";
-    public static final String codes128 = "If you need to implement getElementByAttribute, how would you implement it?";
-    public static final String codes129 = "How would you add a class to an element by query selector?";
-    public static final String codes130 = "How could I verify whether one element is child of another?";
-    public static final String codes131 = "What is the best way to create a DOM element? Set innherHTML or use createElement?";
-    public static final String codes132 = "What is createDocumentFragment and why you might use it?";
-    public static final String codes133 = "What is reflow? What causes reflow? How could you reduce reflow?";
-    public static final String codes134 = "What is repaint and when does this happen?";
-    public static final String codes135 = "How could you make sure to run some javaScript when DOM is ready like $(document).ready?";
-    public static final String codes136 = "How would you destroy multiple list items with one click handler?";
-    public static final String codes137 = "Create a button that is destroyed by clicking on it but two new buttons are created in it's place.";
-    public static final String codes138 = "How could you capture all clicks in a page?";
-    public static final String codes139 = "How can you get all the texts in a web page?";
-    public static final String codes140 = "What is BOM?";
-    public static final String codes141 = "Which is the root element of Bom?";
-    public static final String codes142 = "Which object is the top object in BOM?";
-    public static final String codes143 = "Why window object is used on BOM?";
-    public static final String codes144 = "What is full form of Bom?";
-    public static final String codes145 = "Which object is the most important object in the BOM model?";
-    public static final String codes146 = "Which object is at the top of the hierarchy in document object model?\n";
-    public static final String codes147 = "What is the window object?";
-    public static final String codes148 = "How to get web browser window size?";
-    public static final String codes149 = "How to detect web browser information?";
-    public static final String codes150 = "What is IIFEs (Immediately Invoked Function Expressions)?";
-    public static final String codes151 = "Explain the difference between Object.freeze() vs const";
-    public static final String codes152 = "What is generator in JS?";
-    public static final String codes153 = "When should we use generators in ES6?";
-    public static final String codes154 = "What will be the output of the following code?";
-    public static final String codes155 = "Explain the Prototype Design Pattern";
-    public static final String codes156 = "What is the Temporal Dead Zone in ES6?";
-    public static final String codes157 = "Can you describe the main difference between a .forEach loop and a .map() loop and why you would pick one versus the other?";
-    public static final String codes158 = "Describe the Revealing Module Pattern design pattern";
-    public static final String codes159 = "What is Ajax?";
-    public static final String codes160 = "What are Ajax applications?";
-    public static final String codes161 = "How many types of triggers are present in update panel?";
-    public static final String codes162 = "What are all the controls of Ajax?";
-    public static final String codes163 = "What is the name of the DLL that contains Ajax control tool kit?";
-    public static final String codes164 = "What role of #&& in querystring?";
-    public static final String codes165 = "How to control the duration of an Ajax request?";
-    public static final String codes166 = "What are the advantages of Ajax?";
-    public static final String codes167 = "What are the disadvantages of Ajax?";
-    public static final String codes168 = "What is update panel?";
-    public static final String codes169 = "Which are the two methods used for cross domain Ajax calls?";
-    public static final String codes170 = "What are all the technologies used by Ajax?";
-    public static final String codes171 = "What are all the features of Ajax?";
-    public static final String codes172 = "What is JSON in Ajax?";
-    public static final String codes173 = "What are the components of the ASP.NET AJAX architecture?";
-    public static final String codes174 = "What is AJAX Control Extender Toolkit?";
-    public static final String codes175 = "Where AJAX cannot be used?";
-    public static final String codes176 = "What are the pre-requisites to execute AJAX applications on a server?";
-    public static final String codes177 = "What is AJAX Framework?";
-    public static final String codes178 = "Does Ajax work with another language?";
-    public static final String codes179 = "What is an asynchronous request in AJAX?";
-    public static final String codes180 = "What is a synchronous request in AJAX?";
-    public static final String codes181 = "Did adaptive path invent Ajax? Did Google? Did adaptive path help build Google’s Ajax Applications?";
-    public static final String codes182 = "What do you need to know to create my own Ajax Functionality?";
-    public static final String codes183 = "Should I use Xml or Text, Javascript, or Html as a Return Type?";
-    public static final String codes184 = "Are there usability issues with Ajax?";
-    public static final String codes185 = "Should I use an Http get or Post for my Ajax Calls?";
-    public static final String codes186 = "How do we Debug Javascript?";
-    public static final String codes187 = "How do I provide Internationalized Ajax Interactions?";
-    public static final String codes188 = "What is TypeScript?";
-    public static final String codes189 = "What are the Differences between TypeScript and JavaScript?";
-    public static final String codes190 = "Why do we need TypeScript?";
-    public static final String codes191 = "Mention some of the features of TypeScript";
-    public static final String codes192 = "What are the Benefits of using TypeScript?";
-    public static final String codes193 = "What are the Disadvantages of TypeScript?";
-    public static final String codes194 = "What are the Components of TypeScript?";
-    public static final String codes195 = "Who developed Typescript and what is the current stable version available?";
-    public static final String codes196 = "How to install TypeScript?";
-    public static final String codes197 = "How do you compile TypeScript files?";
-    public static final String codes198 = "Can we combine multiple .ts files into a single .js file?";
-    public static final String codes199 = "What are the different types of TypeScript?";
-    public static final String codes200 = "List out the built-in data types in TypeScript.";
-    public static final String codes201 = "What are Variables in TypeScript and how to create them?";
-    public static final String codes202 = "What are the object-oriented terms supported by TypeScript?";
-    public static final String codes203 = "What are Interfaces in TypeScript?";
-    public static final String codes204 = "What are Classes in TypeScript? List out some of the features.";
-    public static final String codes205 = "What are the access modifiers supported by TypeScript?";
-    public static final String codes206 = "How is TypeScript an optionally statically typed language?";
-    public static final String codes207 = "What are modules in TypeScript?";
-    public static final String codes208 = "What is namespace in Typescript and how to declare it?";
-    public static final String codes209 = "Does TypeScript support function overloading?";
-    public static final String codes210 = "Explain Decorators in TypeScript.";
-    public static final String codes211 = "What are Mixins?";
-    public static final String codes212 = "How does TypeScript support optional parameters in function?";
-    public static final String codes213 = "What is Scope variable?";
-    public static final String codes214 = "What is TypeScript Definition Manager and why do we need it?";
-    public static final String codes215 = "What is TypeScript Declare Keyword?";
-    public static final String codes216 = "What is the Default Parameters Function in TypeScript?";
-    public static final String codes217 = "What is tsconfig.json file?";
-    public static final String codes218 = "What are Generics in TypeScript?";
-    public static final String codes219 = "What is JSX in TypeScript?";
-    public static final String codes220 = "What are all the JSX modes TypeScript supports?";
-    public static final String codes221 = "What are Ambients in TypeScripts and when to use them?";
-    public static final String codes222 = "What is a TypeScript Map file?";
-    public static final String codes223 = "What is Type assertions in TypeScript?";
-    public static final String codes224 = "Explain Enum in TypeScript.";
-    public static final String codes225 = "What is method overriding in TypeScript?";
-    public static final String codes226 = "What is Lambda/Arrow function?";
-    public static final String codes227 = "What is Angular? Why was it introduced?";
-    public static final String codes228 = "What is data binding? Which type of data binding does Angular deploy?";
-    public static final String codes229 = "What are Single Page Applications (SPA)?";
-    public static final String codes230 = "What are decorators in Angular?";
-    public static final String codes231 = "Mention some advantages of Angular.";
-    public static final String codes232 = "What are the new updates with Angular10?";
-    public static final String codes233 = "What are Templates in Angular?";
-    public static final String codes234 = "What are Annotations in Angular?";
-    public static final String codes235 = "What are Directives in Angular?";
-    public static final String codes236 = "What is an AOT compilation? What are its advantages?";
-    public static final String codes237 = "What are Components in Angular?";
-    public static final String codes238 = "What are Pipes in Angular?";
-    public static final String codes239 = "What is an ngModule?";
-    public static final String codes240 = "What are filters in Angular? Name a few of them.";
-    public static final String codes241 = "What is view encapsulation in Angular?";
-    public static final String codes242 = "What are controllers?";
-    public static final String codes243 = "Explain the lifecycle hooks in Angular";
-    public static final String codes244 = "What is String Interpolation in Angular?";
-    public static final String codes245 = "What is the difference between AOT and JIT?";
-    public static final String codes246 = "Explain the @Component Decorator.";
-    public static final String codes247 = "What are Services in Angular?";
-    public static final String codes248 = "What are Promises and Observables in Angular?";
-    public static final String codes249 = "What are Template and Reactive forms?";
-    public static final String codes250 = "What is Bootstrap? How is it embedded into Angular?";
-    public static final String codes251 = "What type of DOM does Angular implement?";
-    public static final String codes252 = "What is Vue.js?";
-    public static final String codes253 = "List some features of Vue.js?";
-    public static final String codes254 = "Explain Life cycle of Vue Instance?";
-    public static final String codes255 = "How to create an instance of Vue js?";
-    public static final String codes256 = "Explain the differences between one-way data flow and two-way data binding?";
-    public static final String codes257 = "How to create Two-Way Bindings in Vue.js?";
-    public static final String codes258 = "What are filters in VUE.js?";
-    public static final String codes259 = "How to create a custom filter in Vue.js?";
-    public static final String codes260 = "What are Components in Vue.js? How to register a component inside other component?";
-    public static final String codes261 = "What are Directives in VUE.js, List some of them you used?";
-    public static final String codes262 = "List type of Directive are available in Vue.js?";
-    public static final String codes263 = "What is VUE-resource, how can you install Vue Resource?";
-    public static final String codes264 = "How to create Constants in Vue.js?";
-    public static final String codes265 = "What is virtual dom in Vue.js?";
-    public static final String codes266 = "Why we need Vue.js mixins?";
-    public static final String codes267 = "What is Vuex?";
-    public static final String codes268 = "What are filters in Vue.js?";
-    public static final String codes269 = "How to create a component in Vue.js?";
-    public static final String codes270 = "How to import js file in the Vue component?";
-    public static final String codes271 = "How to call rest API from Vue js?";
-    public static final String codes272 = "What is Next.js?";
-    public static final String codes273 = "Why is Next.js used for? / Why do world's leading companies prefer Next.js?";
-    public static final String codes274 = "What is the process to install Next.js? / How to install Next.js?";
-    public static final String codes275 = "What are the most prominent features of Next.js?";
-    public static final String codes276 = "Which types of websites most popularly use Next.js?";
-    public static final String codes277 = "Is it possible to use Next.js with Redux?";
-    public static final String codes278 = "What is the recommended method to fetch data in Next.js?";
-    public static final String codes279 = "Give an example to demonstrate how do you set up CDN in Next.js?";
-    public static final String codes280 = "Are Create-React-App and Next.js used for the same thing?";
-    public static final String codes281 = "How can you disable the etag generation in Next.js?";
-    public static final String codes282 = "How can you configure the build-id in Next.js?";
-    public static final String codes283 = "How can you create a page directory inside your project?";
-    public static final String codes284 = "Give an example to demonstrate how to create a custom error page in Next.js?";
-    public static final String codes285 = "What do you understand by code splitting in Next.js?";
-    public static final String codes286 = "How can you enable AMP in Next.js?";
-    public static final String codes287 = "Is it possible to host Next.js in a web server like Nginx?";
-    public static final String codes288 = "Next.js vs gatsby?";
-    public static final String codes289 = "What is React?";
-    public static final String codes290 = "What are the features of React?";
-    public static final String codes291 = "List some of the major advantages of React?";
-    public static final String codes292 = "What are the limitations of React?";
-    public static final String codes293 = "What is JSX?";
-    public static final String codes294 = "What do you understand by Virtual DOM? Explain its works.";
-    public static final String codes295 = "Why can’t browsers read JSX?";
-    public static final String codes296 = "How different is React’s ES6 syntax when compared to ES5?";
-    public static final String codes297 = "“In React, everything is a component.” Explain";
-    public static final String codes298 = "What is the purpose of render() in React?";
-    public static final String codes299 = "How can you embed two or more components into one?";
-    public static final String codes300 = "What is Props?";
-    public static final String codes301 = "What is a state in React and how is it used?";
-    public static final String codes302 = "How can you update the state of a component?";
-    public static final String codes303 = "What is arrow function in React? How is it used?";
-    public static final String codes304 = "Explain the lifecycle methods of React components in detail.";
-    public static final String codes305 = "What is an event in React?";
-    public static final String codes306 = "What do you understand by refs in React?";
-    public static final String codes307 = "How do you modularize code in React?";
-    public static final String codes308 = "What are Higher Order Components(HOC)?";
-    public static final String codes309 = "What is the significance of keys in React?";
-    public static final String codes310 = "What were the major problems with MVC framework?";
-    public static final String codes311 = "What is Redux?";
-    public static final String codes312 = "What are the three principles that Redux follows?";
-    public static final String codes313 = "What do you understand by “Single source of truth”?";
-    public static final String codes314 = "How are Actions defined in Redux?";
-    public static final String codes315 = "What is the significance of Store in Redux?";
-    public static final String codes316 = "What is React Router?";
-    public static final String codes317 = "Why is switch keyword used in React Router v4?";
-    public static final String codes318 = "Why do we need a Router in React?";
-    public static final String codes319 = "Explain what Ember.js is and how it works?";
-    public static final String codes320 = "List out main components of Ember.js?";
-    public static final String codes321 = "Explain what is model in Ember.js?";
-    public static final String codes322 = "Explain how ember applications are structured?";
-    public static final String codes323 = "What controller does in Ember.js?";
-    public static final String codes324 = "Explain how is ember.js is different than traditional web application?";
-    public static final String codes325 = "Explain how Router and {{outlet}} tag can be useful in ember.js?";
-    public static final String codes326 = "Explain what is the difference between Router and Route in ember.js ?";
-    public static final String codes327 = "Explain what is Ember-data ?";
-    public static final String codes328 = "Explain the role of adapter and types of adapters ?";
-    public static final String codes329 = "Explain what are the two ways of defining and inserting a view?";
-    public static final String codes330 = "Explain what is controller in ember.js ?";
-    public static final String codes331 = "Mention the template components used in ember.js ?";
-    public static final String codes332 = "Explain what is serializer?";
-    public static final String codes333 = "How you can define a new ember class?";
-    public static final String codes334 = "Explain how you can create an Ember. handlebars  template ?";
-    public static final String codes335 = "Explain how you can add data using fixture into an application?";
-    public static final String codes336 = "What do you understand by ember route? How can you generate a route in Ember.js?";
-    public static final String codes337 = "What is an adapter in Ember.js, and why is it used?";
-    public static final String codes338 = "Mention some of the functions used in ember packages/ember run-time/lib and packages/ember metal/lib/utils.js ?";
-    public static final String codes339 = "Explain what is Enumerables in ember.js ?";
-    public static final String codes340 = "Explain what is Ember.ArrayController and what is the advantage of it ?";
-    public static final String codes341 = "Explain what is the use Ember.SortableMixin ?";
-    public static final String codes342 = "What do you know by observers in Ember.js?";
-    public static final String codes343 = "How to define a view in Ember.js?";
-    public static final String codes344 = "What is Bootstrap?";
-    public static final String codes345 = "Explain why Bootstrap is preferred for website development.";
-    public static final String codes346 = "What are the key components of Bootstrap?";
-    public static final String codes347 = "List some features of Bootstrap.";
-    public static final String codes348 = "What are Class loaders in Bootstrap?";
-    public static final String codes349 = "How many types of layout are available in Bootstrap?";
-    public static final String codes350 = "What is Bootstrap Grid System?";
-    public static final String codes351 = "Give an example of a basic grid structure in Bootstrap?";
-    public static final String codes352 = "Why do we use Jumbotron in Bootstrap?";
-    public static final String codes353 = "What are the two codes used for code display in Bootstrap?";
-    public static final String codes354 = "Explain the typography and links in Bootstrap.";
-    public static final String codes355 = "Explain types of lists supported by Bootstrap.";
-    public static final String codes356 = "Explain the uses of carousel plugin in Bootstrap.";
-    public static final String codes357 = "What are glyphicons? How to use them?";
-    public static final String codes358 = "What are the input groups in Bootstrap?";
-    public static final String codes359 = "What is Bootstrap breadcrumb?";
-    public static final String codes360 = "What is pagination in bootstrap and how are they classified?";
-    public static final String codes361 = "How will you create a Bootstrap Dismissal Alert?";
-    public static final String codes362 = "What are the steps to create a progress bar using bootstrap?";
-    public static final String codes363 = "What do you mean by column ordering in Bootstrap?";
-    public static final String codes364 = "What is Normalize in Bootstrap?";
-    public static final String codes365 = "What are Bootstrap panels? Explain how to create a Bootstrap panel with a heading.";
-    public static final String codes366 = "What is the purpose of using the Scrollspy plugin?";
-    public static final String codes367 = "Why do we use the affix plugin in Bootstrap?";
-    public static final String codes368 = "What is Button group and which class is used for basic button group?";
-    public static final String codes369 = "What will be the default Bootstrap look of the alert created with this following code:";
-    public static final String codes370 = "What are badges? Which class will you use to make your badge look more rounded?";
-    public static final String codes371 = "What are the important rules that you should follow while using Grids in Bootstrap?";
-    public static final String codes372 = "What is Node.js? Where can you use it?";
-    public static final String codes373 = "Why use Node.js?";
-    public static final String codes374 = "How does Node.js work?";
-    public static final String codes375 = "Why is Node.js Single-threaded?";
-    public static final String codes376 = "If Node.js is single-threaded, then how does it handle concurrency?";
-    public static final String codes377 = "Explain callback in Node.js.";
-    public static final String codes378 = "How is Node.js most frequently used?";
-    public static final String codes379 = "What is NPM?";
-    public static final String codes380 = "What are the modules in Node.js?";
-    public static final String codes381 = "Why is Node.js preferred over other backend technologies like Java and PHP?";
-    public static final String codes382 = "Which database is more popularly used with Node.js?";
-    public static final String codes383 = "What are some of the most commonly used libraries in Node.js?";
-    public static final String codes384 = "What is the command used to import external libraries?";
-    public static final String codes385 = "What does event-driven programming mean?";
-    public static final String codes386 = "What is an Event Loop in Node.js?";
-    public static final String codes387 = "Differentiate between process.nextTick() and setImmediate()?";
-    public static final String codes388 = "What is an EventEmitter in Node.js?";
-    public static final String codes389 = "What are the two types of API functions in Node.js?";
-    public static final String codes390 = "What is the package.json file?";
-    public static final String codes391 = "How do you create a simple Express.js application?";
-    public static final String codes392 = "What are streams in Node.js?";
-    public static final String codes393 = "Explain asynchronous and non-blocking APIs in Node.js.";
-    public static final String codes394 = "What is REPL in Node.js?";
-    public static final String codes395 = "What is the buffer class in Node.js?";
-    public static final String codes396 = "What is piping in Node.js?";
-    public static final String codes397 = "What is callback hell?";
-    public static final String codes398 = "What is a reactor pattern in Node.js?";
-    public static final String codes399 = "For Node.js, why does Google use the V8 engine?";
-    public static final String codes400 = "Explain the concept of middleware in Node.js.";
-    public static final String codes401 = "What is WASI, and why is it being introduced?";
-    public static final String codes402 = "What is Express.js?";
-    public static final String codes403 = "What are some distinctive features of Express?";
-    public static final String codes404 = "Is Express.js front-end or backend framework?";
-    public static final String codes405 = "Why do we use Express.js?";
-    public static final String codes406 = "Write the steps for setting up an Express JS application?";
-    public static final String codes407 = "What function are arguments available to Express JS route handlers?";
-    public static final String codes408 = "How to Config properties in Express JS?";
-    public static final String codes409 = "Write a code to get post a query in Express.js";
-    public static final String codes410 = "What do you understand by Scaffolding in Express.js?";
-    public static final String codes411 = "Do Other MVC frameworks also support scaffolding?";
-    public static final String codes412 = "How can you enable debugging in Express.js app?";
-    public static final String codes413 = "How Should I Structure my Express JS Application?";
-    public static final String codes414 = "How can you deal with error handling in Express.js? Explain with an example.";
-    public static final String codes415 = "How can we render a pain HTML?";
-    public static final String codes416 = "How to allow CORS in Express JS? Explain with an example?";
-    public static final String codes417 = "What is the use of next in Express JS?";
-    public static final String codes418 = "How to Redirect 404 Errors to A Page In ExpressJS?";
-    public static final String codes419 = "What is Laravel?";
-    public static final String codes420 = "What are the pros and cons of Laravel?";
-    public static final String codes421 = "What are events in Laravel?";
-    public static final String codes422 = "What is validation in Laravel?";
-    public static final String codes423 = "How do you install Laravel via composer?";
-    public static final String codes424 = "What is a PHP artisan in Laravel?";
-    public static final String codes425 = "What is middleware in Laravel?";
-    public static final String codes426 = "What template is used by the Laravel engine?";
-    public static final String codes427 = "Explain CSRF protection and CSRF token in Laravel.";
-    public static final String codes428 = "Explain the Laravel facade.";
-    public static final String codes429 = "What is Eloquent in Laravel?";
-    public static final String codes430 = "What are the advantages of the Laravel framework?";
-    public static final String codes431 = "What are the features of the Laravel framework?";
-    public static final String codes432 = "What are the features included in the latest version of Laravel?";
-    public static final String codes433 = "What is the project structure of a Laravel project?";
-    public static final String codes434 = "What is authentication in Laravel?";
-    public static final String codes435 = "What are service providers in Laravel?";
-    public static final String codes436 = "What is a homestead in Laravel?";
-    public static final String codes437 = "What is dd() in Laravel?";
-    public static final String codes438 = "What is yield in Laravel?";
-    public static final String codes439 = "What are requests in Laravel?";
-    public static final String codes440 = "What are closures in Laravel?";
-    public static final String codes441 = "What is soft delete in Laravel?";
-    public static final String codes442 = "What is a repository pattern in Laravel?";
-    public static final String codes443 = "What is method spoofing in Laravel?";
-    public static final String codes444 = "What is tinker in Laravel?";
-    public static final String codes445 = "What is the use of the updateOrinsert() method in Laravel?";
-    public static final String codes446 = "How do you stop an Artisan server in Laravel?";
-    public static final String codes447 = "How can you extend the login expiration time in Auth?";
-    public static final String codes448 = "How do you check the current route name?";
-    public static final String codes449 = "What is jQuery?";
-    public static final String codes450 = "What are the features of jQuery?";
-    public static final String codes451 = "Mention some advantages of jQuery.";
-    public static final String codes452 = "What are Selectors in jQuery?";
-    public static final String codes453 = "What is jQuery.noConflict?";
-    public static final String codes454 = "Differentiate among .empty() vs .remove() vs .detach() in jQuery.";
-    public static final String codes455 = "What are the methods used to provide effects in jQuery?";
-    public static final String codes456 = "What are the various Ajax functions available in jQuery?";
-    public static final String codes457 = "Differentiate between width() vs css(‘width’) in jQuery";
-    public static final String codes458 = "What is jQuery connect and how to use it?";
-    public static final String codes459 = "What is the difference between jquery.size() and jquery.length?";
-    public static final String codes460 = "How can events be prevented from stopping to work after an ajax request?";
-    public static final String codes461 = "What is the difference between $(window).load and $(document).ready function in jQuery?";
-    public static final String codes462 = "What is a CDN? What are the advantages of using CDN?";
-    public static final String codes463 = "How can you add a jQuery library in your project?";
-    public static final String codes464 = "What is the use of serialize() method in JQuery?";
-    public static final String codes465 = "What is jQuery UI?";
-    public static final String codes466 = "What is jQuery Datepicker in jQuery?";
-    public static final String codes467 = "What is slice() method in jQuery?";
-    public static final String codes468 = "What are jQuery plugins?";
-    public static final String codes469 = "What is the difference between Map and Grep function in jQuery?";
-    public static final String codes470 = "How can jQuery be used in conjunction with another JavaScript library that also uses $ for naming?";
-    public static final String codes471 = "What is method chaining in jQuery and what are the advantages?";
-    public static final String codes472 = "What is the use of jQuery .each() function?";
-    public static final String codes473 = "What is the difference between prop and attr?";
-    public static final String codes474 = "What is chaining in jQuery?";
-    public static final String codes475 = "What are the features of jQuery used in web applications?";
-    public static final String codes = "";
+    public static final String codes84 = "// Write a JavaScript function that checks whether a passed string is palindrome or not? \n" +
+            "\n" +
+            "function check_Palindrome(str_entry){\n" +
+            "// Change the string into lower case and remove  all non-alphanumeric characters\n" +
+            "   var cstr = str_entry.toLowerCase().replace(/[^a-zA-Z0-9]+/g,'');\n" +
+            "\tvar ccount = 0;\n" +
+            "// Check whether the string is empty or not\n" +
+            "\tif(cstr===\"\") {\n" +
+            "\t\tconsole.log(\"Nothing found!\");\n" +
+            "\t\treturn false;\n" +
+            "\t}\n" +
+            "// Check if the length of the string is even or odd \n" +
+            "\tif ((cstr.length) % 2 === 0) {\n" +
+            "\t\tccount = (cstr.length) / 2;\n" +
+            "\t} else {\n" +
+            "// If the length of the string is 1 then it becomes a palindrome\n" +
+            "\t\tif (cstr.length === 1) {\n" +
+            "\t\t\tconsole.log(\"Entry is a palindrome.\");\n" +
+            "\t\t\treturn true;\n" +
+            "\t\t} else {\n" +
+            "// If the length of the string is odd ignore middle character\n" +
+            "\t\t\tccount = (cstr.length - 1) / 2;\n" +
+            "\t\t}\n" +
+            "\t}\n" +
+            "// Loop through to check the first character to the last character and then move next\n" +
+            "\tfor (var x = 0; x < ccount; x++) {\n" +
+            "// Compare characters and drop them if they do not match \n" +
+            "\t\tif (cstr[x] != cstr.slice(-1-x)[0]) {\n" +
+            "\t\t\tconsole.log(\"Entry is not a palindrome.\");\n" +
+            "\t\t\treturn false;\n" +
+            "\t\t}\n" +
+            "\t}\n" +
+            "\tconsole.log(\"The entry is a palindrome.\");\n" +
+            "\treturn true;\n" +
+            "}\n" +
+            "check_Palindrome('madam');\n" +
+            "check_Palindrome('nurses run');\n" +
+            "check_Palindrome('fox');\n";
+    public static final String codes85 = "//Write a JavaScript function that generates all combinations of a string.\n" +
+            "function substrings(str1)\n" +
+            "{\n" +
+            "var array1 = [];\n" +
+            "  for (var x = 0, y=1; x < str1.length; x++,y++) \n" +
+            "  {\n" +
+            "   array1[x]=str1.substring(x, y);\n" +
+            "    }\n" +
+            "var combi = [];\n" +
+            "var temp= \"\";\n" +
+            "var slent = Math.pow(2, array1.length);\n" +
+            "\n" +
+            "for (var i = 0; i < slent ; i++)\n" +
+            "{\n" +
+            "    temp= \"\";\n" +
+            "    for (var j=0;j<array1.length;j++) {\n" +
+            "        if ((i & Math.pow(2,j))){ \n" +
+            "            temp += array1[j];\n" +
+            "        }\n" +
+            "    }\n" +
+            "    if (temp !== \"\")\n" +
+            "    {\n" +
+            "        combi.push(temp);\n" +
+            "    }\n" +
+            "}\n" +
+            "  console.log(combi.join(\"\\n\"));\n" +
+            "}\n" +
+            "\n" +
+            "substrings(\"dog\");\n";
+    public static final String codes86 = "function alphabet_order(str)\n" +
+            "  {\n" +
+            "return str.split('').sort().join('');\n" +
+            "  }\n" +
+            "console.log(alphabet_order(\"webmaster\"));\n";
+    public static final String codes87 = "function test_prime(n)\n" +
+            "{\n" +
+            "\n" +
+            "  if (n===1)\n" +
+            "  {\n" +
+            "    return false;\n" +
+            "  }\n" +
+            "  else if(n === 2)\n" +
+            "  {\n" +
+            "    return true;\n" +
+            "  }else\n" +
+            "  {\n" +
+            "    for(var x = 2; x < n; x++)\n" +
+            "    {\n" +
+            "      if(n % x === 0)\n" +
+            "      {\n" +
+            "        return false;\n" +
+            "      }\n" +
+            "    }\n" +
+            "    return true;  \n" +
+            "  }\n" +
+            "}\n" +
+            "\n" +
+            "console.log(test_prime(37));\n";
+    public static final String codes88 = "function array_binarySearch(narray, delement) {\n" +
+            "   var mposition = Math.floor(narray.length / 2);\n" +
+            "\n" +
+            "   if (narray[mposition] === delement){\n" +
+            "      return mposition;\n" +
+            "   }\n" +
+            "   else if (narray.length === 1) \n" +
+            "   {\n" +
+            "      return null;\n" +
+            "   }\n" +
+            "   else if (narray[mposition] < delement) {\n" +
+            "      var arr = narray.slice(mposition + 1);\n" +
+            "      var res = array_binarySearch(arr, delement);\n" +
+            "      if (res === null)\n" +
+            "      {\n" +
+            "         return null;\n" +
+            "      }\n" +
+            "      else {\n" +
+            "         return mposition + 1 + res;\n" +
+            "      }\n" +
+            "   }\n" +
+            "   else {\n" +
+            "      var arr1 = narray.slice(0, mposition);\n" +
+            "      return array_binarySearch(arr1, delement);\n" +
+            "   }\n" +
+            "}\n" +
+            "\n" +
+            " var myArray = [1, 2, 3, 5, 6, 7, 10, 11, 14, 15, 17, 19, 20, 22, 23];\n" +
+            " console.log(array_binarySearch(myArray, 6));\n" +
+            " ";
+    public static final String codes89 = "function bubble_Sort(a)\n" +
+            "{\n" +
+            "    var swapp;\n" +
+            "    var n = a.length-1;\n" +
+            "    var x=a;\n" +
+            "    do {\n" +
+            "        swapp = false;\n" +
+            "        for (var i=0; i < n; i++)\n" +
+            "        {\n" +
+            "            if (x[i] < x[i+1])\n" +
+            "            {\n" +
+            "               var temp = x[i];\n" +
+            "               x[i] = x[i+1];\n" +
+            "               x[i+1] = temp;\n" +
+            "               swapp = true;\n" +
+            "            }\n" +
+            "        }\n" +
+            "        n--;\n" +
+            "    } while (swapp);\n" +
+            " return x; \n" +
+            "}\n" +
+            "\n" +
+            "console.log(bubble_Sort([12, 345, 4, 546, 122, 84, 98, 64, 9, 1, 3223, 455, 23, 234, 213]));\n";
+    public static final String codes90 = "function factorial(x) \n" +
+            "{ \n" +
+            "\n" +
+            "  if (x === 0)\n" +
+            " {\n" +
+            "    return 1;\n" +
+            " }\n" +
+            "  return x * factorial(x-1);\n" +
+            "         \n" +
+            "}\n" +
+            "console.log(factorial(5));\n";
+    public static final String codes91 = "var fibonacci_series = function (n) \n" +
+            "{\n" +
+            "  if (n===1) \n" +
+            "  {\n" +
+            "    return [0, 1];\n" +
+            "  } \n" +
+            "  else \n" +
+            "  {\n" +
+            "    var s = fibonacci_series(n - 1);\n" +
+            "    s.push(s[s.length - 1] + s[s.length - 2]);\n" +
+            "    return s;\n" +
+            "  }\n" +
+            "};\n" +
+            "\n" +
+            " console.log(fibonacci_series(8));\n" +
+            " ";
+    public static final String codes92 = "Array.prototype.merge_Sort = function () {\n" +
+            "  if (this.length <= 1) \n" +
+            "  {\n" +
+            "    return this;\n" +
+            "  }\n" +
+            "\n" +
+            "  var half = parseInt(this.length / 2);\n" +
+            "  var left = this.slice(0, half).merge_Sort();\n" +
+            "  var right = this.slice(half,     this.length).merge_Sort();\n" +
+            "  var merge = function (left, right) \n" +
+            "  {\n" +
+            "  var arry = [];\n" +
+            "  while (left.length > 0 && right.length > 0)\n" +
+            "  {\n" +
+            "    arry.push((left[0] <= right[0]) ? left.shift() : right.shift());\n" +
+            "  }\n" +
+            "    return arry.concat(left).concat(right);\n" +
+            "  };\n" +
+            "\n" +
+            "  return merge(left, right);\n" +
+            "};\n" +
+            "\n" +
+            "var a = [34,7,23,32,5,62];\n" +
+            "console.log(a.merge_Sort());\n";
+    public static final String codes93 = "function bin_to_dec(bstr) { \n" +
+            "    return parseInt((bstr + '')\n" +
+            "    .replace(/[^01]/gi, ''), 2);\n" +
+            "}\n" +
+            "console.log(bin_to_dec('110011'));\n" +
+            "console.log(bin_to_dec('100'));\n";
+    public static final String codes94 = "function gcd_two_numbers(x, y) {\n" +
+            "  if ((typeof x !== 'number') || (typeof y !== 'number')) \n" +
+            "    return false;\n" +
+            "  x = Math.abs(x);\n" +
+            "  y = Math.abs(y);\n" +
+            "  while(y) {\n" +
+            "    var t = y;\n" +
+            "    y = x % y;\n" +
+            "    x = t;\n" +
+            "  }\n" +
+            "  return x;\n" +
+            "}\n" +
+            "\n" +
+            "console.log(gcd_two_numbers(12, 13));\n" +
+            "console.log(gcd_two_numbers(9, 3));\n";
+    public static final String codes95 = "function pythagorean_theorem(x, y) {\n" +
+            "  if ((typeof x !== 'number') || (typeof y !== 'number')) \n" +
+            "return false; \n" +
+            "\t\treturn Math.sqrt(x * x + y * y);\n" +
+            "\t}\n" +
+            "\n" +
+            "console.log(pythagorean_theorem(2, 4));\n" +
+            "console.log(pythagorean_theorem(3, 4));\n";
+    public static final String codes96 = "function binomial(n, k) {\n" +
+            "     if ((typeof n !== 'number') || (typeof k !== 'number')) \n" +
+            "  return false; \n" +
+            "    var coeff = 1;\n" +
+            "    for (var x = n-k+1; x <= n; x++) coeff *= x;\n" +
+            "    for (x = 1; x <= k; x++) coeff /= x;\n" +
+            "    return coeff;\n" +
+            "}\n" +
+            "\n" +
+            "console.log(binomial(8,3));\n" +
+            "console.log(binomial(10,2));\n";
+    public static final String codes97 = "function integer_to_roman(num) {\n" +
+            "if (typeof num !== 'number') \n" +
+            "return false; \n" +
+            "\n" +
+            "var digits = String(+num).split(\"\"),\n" +
+            "key = [\"\",\"C\",\"CC\",\"CCC\",\"CD\",\"D\",\"DC\",\"DCC\",\"DCCC\",\"CM\",\n" +
+            "\"\",\"X\",\"XX\",\"XXX\",\"XL\",\"L\",\"LX\",\"LXX\",\"LXXX\",\"XC\",\n" +
+            "\"\",\"I\",\"II\",\"III\",\"IV\",\"V\",\"VI\",\"VII\",\"VIII\",\"IX\"],\n" +
+            "roman_num = \"\",\n" +
+            "i = 3;\n" +
+            "while (i--)\n" +
+            "roman_num = (key[+digits.pop() + (i * 10)] || \"\") + roman_num;\n" +
+            "return Array(+digits.join(\"\") + 1).join(\"M\") + roman_num;\n" +
+            "}\n" +
+            "\n" +
+            "console.log(integer_to_roman(27));\n";
+    public static final String codes98 = "function create_UUID(){\n" +
+            "    var dt = new Date().getTime();\n" +
+            "    var uuid = 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function(c) {\n" +
+            "        var r = (dt + Math.random()*16)%16 | 0;\n" +
+            "        dt = Math.floor(dt/16);\n" +
+            "        return (c=='x' ? r :(r&0x3|0x8)).toString(16);\n" +
+            "    });\n" +
+            "    return uuid;\n" +
+            "}\n" +
+            "\n" +
+            "console.log(create_UUID());\n";
+    public static final String codes99 = "function product_Range(a,b) {\n" +
+            "  var prd = a,i = a;\n" +
+            " \n" +
+            "  while (i++< b) {\n" +
+            "    prd*=i;\n" +
+            "  }\n" +
+            "  return prd;\n" +
+            "}\n" +
+            "\n" +
+            "\n" +
+            "function combinations(n, r) \n" +
+            "{\n" +
+            "  if (n==r) \n" +
+            "  {\n" +
+            "    return 1;\n" +
+            "  } \n" +
+            "  else \n" +
+            "  {\n" +
+            "    r=(r < n-r) ? n-r : r;\n" +
+            "    return product_Range(r+1, n)/product_Range(1,n-r);\n" +
+            "  }\n" +
+            "}\n" +
+            "\n" +
+            "\n" +
+            "console.log(combinations(6, 2));\n" +
+            "console.log(combinations(5, 3));\n";
+    public static final String codes100 = "function Hamming(n) {\n" +
+            "        var succession = [1];\n" +
+            "        var length = succession.length;\n" +
+            "        var candidate = 2;\n" +
+            "        while (length < n) {\n" +
+            "            if (isHammingNumber(candidate)) {\n" +
+            "                succession[length] = candidate;\n" +
+            "                length++;\n" +
+            "            }\n" +
+            "            candidate++;\n" +
+            "        }\n" +
+            "        return succession;\n" +
+            "  }\n" +
+            " function isHammingNumber(num) {\n" +
+            "        while (num % 5 === 0) num /= 5;\n" +
+            "        while (num % 3 === 0) num /= 3;\n" +
+            "        while (num % 2 === 0) num /= 2;\n" +
+            "\n" +
+            "        return num == 1;\n" +
+            "    }\n" +
+            "\n" +
+            "console.log(Hamming(20));\n";
+    public static final String codes101 = "function Lanczos_Gamma(num) \n" +
+            "{\n" +
+            "  var p = [\n" +
+            "    0.99999999999980993, 676.5203681218851, -1259.1392167224028,\n" +
+            "    771.32342877765313, -176.61502916214059, 12.507343278686905, -0.13857109526572012, 9.9843695780195716e-6, 1.5056327351493116e-7\n" +
+            "  ];\n" +
+            "  var i;\n" +
+            "  var g = 7;\n" +
+            "  if (num < 0.5) return Math.PI / (Math.sin(Math.PI * num) * calculus.LanczosGamma(1 - num));\n" +
+            "  num -= 1;\n" +
+            "  var a = p[0];\n" +
+            "  var t = num + g + 0.5;\n" +
+            "  for (i = 1; i < p.length; i++) {\n" +
+            "    a += p[i] / (num + i);\n" +
+            "  }\n" +
+            "  return Math.sqrt(2 * Math.PI) * Math.pow(t, num + 0.5) * Math.exp(-t) * a;\n" +
+            "}\n" +
+            "console.log(Lanczos_Gamma(5));\n";
+    public static final String codes102 = "var arr1=[3, 'a', 'a', 'a', 2, 3, 'a', 3, 'a', 2, 4, 9, 3];\n" +
+            "var mf = 1;\n" +
+            "var m = 0;\n" +
+            "var item;\n" +
+            "for (var i=0; i<arr1.length; i++)\n" +
+            "{\n" +
+            "        for (var j=i; j<arr1.length; j++)\n" +
+            "        {\n" +
+            "                if (arr1[i] == arr1[j])\n" +
+            "                 m++;\n" +
+            "                if (mf<m)\n" +
+            "                {\n" +
+            "                  mf=m; \n" +
+            "                  item = arr1[i];\n" +
+            "                }\n" +
+            "        }\n" +
+            "        m=0;\n" +
+            "}\n" +
+            "console.log(item+\" ( \" +mf +\" times ) \") ;\n";
+    public static final String codes103 = "var flatten = function(a, shallow,r){\n" +
+            "  if(!r){ r = []}\n" +
+            "   \n" +
+            "if (shallow) {\n" +
+            "  return r.concat.apply(r,a);\n" +
+            "  }\n" +
+            "      \n" +
+            "   for(var i=0; i<a.length; i++){\n" +
+            "        if(a[i].constructor == Array){\n" +
+            "            flatten(a[i],shallow,r);\n" +
+            "        }else{\n" +
+            "            r.push(a[i]);\n" +
+            "        }\n" +
+            "    }\n" +
+            "    return r;\n" +
+            "}\n" +
+            "\n" +
+            "console.log(flatten([1, [2], [3, [[4]]],[5,6]]));\n" +
+            "\n" +
+            "console.log(flatten([1, [2], [3, [[4]]],[5,6]], true));\n";
+    public static final String codes104 = "var library = [ \n" +
+            "   { author: 'Bill Gates', title: 'The Road Ahead', libraryID: 1254},\n" +
+            "   { author: 'Steve Jobs', title: 'Walter Isaacson', libraryID: 4264},\n" +
+            "   { author: 'Suzanne Collins', title: 'Mockingjay: The Final Book of The Hunger Games', libraryID: 3245}\n" +
+            "   ];\n" +
+            "\n" +
+            "function compare_to_sort(x,y) \n" +
+            " {\n" +
+            "  if (x.title < y.title)\n" +
+            "    return -1;\n" +
+            "  if (x.title > y.title)\n" +
+            "    return 1;\n" +
+            "  return 0;\n" +
+            " }\n" +
+            "\n" +
+            "console.log(library.sort(compare_to_sort));\n";
+    public static final String codes105 = "//unzip\n" +
+            "const unzip = arr =>\n" +
+            "  arr.reduce(\n" +
+            "    (acc, val) => (val.forEach((v, i) => acc[i].push(v)), acc),\n" +
+            "    Array.from({\n" +
+            "      length: Math.max(...arr.map(x => x.length))\n" +
+            "    }).map(x => [])\n" +
+            "  );\n" +
+            "console.log(unzip([['a', 1, true], ['b', 2, false]]));\n" +
+            "console.log(unzip([['a', 1, true], ['b', 2]]));";
+    public static final String codes106 = "Date.shortDays = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];\n" +
+            "\n" +
+            "function short_Days(dt)\n" +
+            "{ \n" +
+            "   return Date.shortDays[dt.getDay()];\n" +
+            "}\n" +
+            "\n" +
+            "dt = new Date();\n" +
+            "console.log(short_Days(dt));\n" +
+            "\n" +
+            "dt = new Date(2015, 10, 1);\n" +
+            "console.log(short_Days(dt));\n";
+    public static final String codes107 = "function Unix_timestamp(t)\n" +
+            "{\n" +
+            "var dt = new Date(t*1000);\n" +
+            "var hr = dt.getHours();\n" +
+            "var m = \"0\" + dt.getMinutes();\n" +
+            "var s = \"0\" + dt.getSeconds();\n" +
+            "return hr+ ':' + m.substr(-2) + ':' + s.substr(-2);  \n" +
+            "}\n" +
+            "\n" +
+            "console.log(Unix_timestamp(1412743274));\n";
+    public static final String codes108 = "function quick_Sort(origArray) {\n" +
+            "\tif (origArray.length <= 1) { \n" +
+            "\t\treturn origArray;\n" +
+            "\t} else {\n" +
+            "\n" +
+            "\t\tvar left = [];\n" +
+            "\t\tvar right = [];\n" +
+            "\t\tvar newArray = [];\n" +
+            "\t\tvar pivot = origArray.pop();\n" +
+            "\t\tvar length = origArray.length;\n" +
+            "\n" +
+            "\t\tfor (var i = 0; i < length; i++) {\n" +
+            "\t\t\tif (origArray[i] <= pivot) {\n" +
+            "\t\t\t\tleft.push(origArray[i]);\n" +
+            "\t\t\t} else {\n" +
+            "\t\t\t\tright.push(origArray[i]);\n" +
+            "\t\t\t}\n" +
+            "\t\t}\n" +
+            "\n" +
+            "\t\treturn newArray.concat(quick_Sort(left), pivot, quick_Sort(right));\n" +
+            "\t}\n" +
+            "}\n" +
+            "\n" +
+            "var myArray = [3, 0, 2, 5, -1, 4, 1 ];\n" +
+            "\n" +
+            "console.log(\"Original array: \" + myArray);\n" +
+            "var sortedArray = quick_Sort(myArray);\n" +
+            "console.log(\"Sorted array: \" + sortedArray);\n";
+    public static final String codes109 = "function merge_sort(left_part,right_part) \n" +
+            "{\n" +
+            "\tvar i = 0;\n" +
+            "\tvar j = 0;\n" +
+            "\tvar results = [];\n" +
+            "\n" +
+            "\twhile (i < left_part.length || j < right_part.length) {\n" +
+            "\t\tif (i === left_part.length) {\n" +
+            "\t\t\t// j is the only index left_part\n" +
+            "\t\t\tresults.push(right_part[j]);\n" +
+            "\t\t\tj++;\n" +
+            "\t\t} \n" +
+            "      else if (j === right_part.length || left_part[i] <= right_part[j]) {\n" +
+            "\t\t\tresults.push(left_part[i]);\n" +
+            "\t\t\ti++;\n" +
+            "\t\t} else {\n" +
+            "\t\t\tresults.push(right_part[j]);\n" +
+            "\t\t\tj++;\n" +
+            "\t\t}\n" +
+            "\t}\n" +
+            "\treturn results;\n" +
+            "}\n" +
+            "\n" +
+            "console.log(merge_sort([1,3,4], [3,7,9]));\n";
+    public static final String codes110 = "  var array_length;\n" +
+            "/* to create MAX  array */  \n" +
+            "function heap_root(input, i) {\n" +
+            "    var left = 2 * i + 1;\n" +
+            "    var right = 2 * i + 2;\n" +
+            "    var max = i;\n" +
+            "\n" +
+            "    if (left < array_length && input[left] > input[max]) {\n" +
+            "        max = left;\n" +
+            "    }\n" +
+            "\n" +
+            "    if (right < array_length && input[right] > input[max])     {\n" +
+            "        max = right;\n" +
+            "    }\n" +
+            "\n" +
+            "    if (max != i) {\n" +
+            "        swap(input, i, max);\n" +
+            "        heap_root(input, max);\n" +
+            "    }\n" +
+            "}\n" +
+            "\n" +
+            "function swap(input, index_A, index_B) {\n" +
+            "    var temp = input[index_A];\n" +
+            "\n" +
+            "    input[index_A] = input[index_B];\n" +
+            "    input[index_B] = temp;\n" +
+            "}\n" +
+            "\n" +
+            "function heapSort(input) {\n" +
+            "    \n" +
+            "    array_length = input.length;\n" +
+            "\n" +
+            "    for (var i = Math.floor(array_length / 2); i >= 0; i -= 1)      {\n" +
+            "        heap_root(input, i);\n" +
+            "      }\n" +
+            "\n" +
+            "    for (i = input.length - 1; i > 0; i--) {\n" +
+            "        swap(input, 0, i);\n" +
+            "        array_length--;\n" +
+            "      \n" +
+            "      \n" +
+            "        heap_root(input, 0);\n" +
+            "    }\n" +
+            "}\n" +
+            "\n" +
+            "var arr = [3, 0, 2, 5, -1, 4, 1];\n" +
+            "heapSort(arr);\n" +
+            "console.log(arr);\n";
+    public static final String codes111 = "const insertion_Sort = (nums) => {\n" +
+            "  for (let i = 1; i < nums.length; i++) {\n" +
+            "    let j = i - 1\n" +
+            "    let temp = nums[i]\n" +
+            "    while (j >= 0 && nums[j] > temp) {\n" +
+            "      nums[j + 1] = nums[j]\n" +
+            "      j--\n" +
+            "    }\n" +
+            "    nums[j+1] = temp\n" +
+            "  }\n" +
+            "  return nums\n" +
+            "}\n" +
+            "console.log(insertion_Sort([3, 0, 2, 5, -1, 4, 1]));\n" +
+            "console.log(insertion_Sort([2,6,5,12,-1,3,8,7,1,-4,0,23,1,-55,20,37,54,210,-23,7,483,9339,29,-3,90,-2,81,54,7372,-92,93,93,18,-43,21]));\n";
+    public static final String codes112 = "function flash_sort(arr) \n" +
+            "  {\n" +
+            "    var max = 0, min = arr[0];\n" +
+            "    var n = arr.length;\n" +
+            "    var m = ~~(0.45 * n);\n" +
+            "    var l = new Array(m);\n" +
+            " \n" +
+            "    for (var i = 1; i < n; ++i) {\n" +
+            "        if (arr[i] < min) {\n" +
+            "            min = arr[i];\n" +
+            "        }\n" +
+            "        if (arr[i] > arr[max]) {\n" +
+            "            max = i;\n" +
+            "        }\n" +
+            "    }\n" +
+            " \n" +
+            "     if (min === arr[max]) {\n" +
+            "        return arr;\n" +
+            "    }\n" +
+            " \n" +
+            "    var c1 = (m - 1) / (arr[max] - min);\n" +
+            " \n" +
+            " \n" +
+            "    for (var k = 0; k < m; k++) {\n" +
+            "        l[k] = 0;\n" +
+            "    }\n" +
+            "    for (var j = 0; j < n; ++j) {\n" +
+            "        k = ~~(c1 * (arr[j] - min));\n" +
+            "        ++l[k];\n" +
+            "    }\n" +
+            " \n" +
+            "    for (var p = 1; p < m; ++p) {\n" +
+            "        l[p] = l[p] + l[p - 1];\n" +
+            "    }\n" +
+            " \n" +
+            "    var hold = arr[max];\n" +
+            "    arr[max] = arr[0];\n" +
+            "    arr[0] = hold;\n" +
+            " \n" +
+            "    //permutation\n" +
+            "    var move = 0, t, flash;\n" +
+            "    j = 0; \n" +
+            "    k = m - 1;\n" +
+            "  \n" +
+            "    while (move < (n - 1)) {\n" +
+            "        while (j > (l[k] - 1)) {\n" +
+            "            ++j;\n" +
+            "            k = ~~(c1 * (arr[j] - min));\n" +
+            "        }\n" +
+            "        if (k < 0) break;\n" +
+            "        flash = arr[j];\n" +
+            "        while (j !== l[k]) {\n" +
+            "            k = ~~(c1 * (flash - min));\n" +
+            "            hold = arr[t = --l[k]];\n" +
+            "            arr[t] = flash;\n" +
+            "            flash = hold;\n" +
+            "            ++move;\n" +
+            "        }\n" +
+            "    }\n" +
+            " \n" +
+            "    //insertion\n" +
+            "    for (j = 1; j < n; j++) {\n" +
+            "        hold = arr[j];\n" +
+            "         i = j - 1;\n" +
+            "        while (i >= 0 && arr[i] > hold) {\n" +
+            "            arr[i + 1] = arr[i--];\n" +
+            "        }\n" +
+            "        arr[i + 1] = hold;\n" +
+            "    }\n" +
+            "    return arr;\n" +
+            "}\n" +
+            "var arra = [3, 0, 2, 5, -1, 4, 1]; \n" +
+            "console.log(\"Original Array Elements\"); \n" +
+            "console.log(arra); \n" +
+            "console.log(\"Sorted Array Elements\"); \n" +
+            "console.log(flash_sort(arra, 0, 5));\n";
+    public static final String codes113 = "function pancake_sort(arr) {\n" +
+            "    for (var i = arr.length - 1; i >= 1; i--) {\n" +
+            "        // find the index of the largest element not yet sorted\n" +
+            "        var max_idx = 0;\n" +
+            "        var max = arr[0];\n" +
+            "        for (var j = 1; j <= i; j++) {\n" +
+            "            if (arr[j] > max) {\n" +
+            "                max = arr[j];\n" +
+            "                max_idx = j;\n" +
+            "            }\n" +
+            "        }\n" +
+            " \n" +
+            "        if (max_idx == i) \n" +
+            "            continue; // element already in place\n" +
+            " \n" +
+            "        var new_slice;\n" +
+            " \n" +
+            "        // flip arr max element to index 0\n" +
+            "        if (max_idx > 0) {\n" +
+            "            new_slice = arr.slice(0, max_idx+1).reverse();\n" +
+            "            for ( j = 0; j <= max_idx; j++) \n" +
+            "                arr[j] = new_slice[j];\n" +
+            "        }\n" +
+            " \n" +
+            "        // then flip the max element to its place\n" +
+            "        new_slice = arr.slice(0, i+1).reverse();\n" +
+            "        for ( j = 0; j <= i; j++) \n" +
+            "            arr[j] = new_slice[j];\n" +
+            "    }\n" +
+            "    return arr;\n" +
+            "}\n" +
+            "\n" +
+            "var arra = [3, 0, 2, 5, -1, 4, 1]; \n" +
+            "console.log(\"Original Array Elements\"); \n" +
+            "console.log(arra); \n" +
+            "console.log(\"Sorted Array Elements\"); \n" +
+            "console.log(pancake_sort(arra, 0, 5));\n";
+    public static final String codes114 = "function shellSort(arr) {\n" +
+            "    var increment = arr.length / 2;\n" +
+            "    while (increment > 0) {\n" +
+            "        for (i = increment; i < arr.length; i++) {\n" +
+            "            var j = i;\n" +
+            "            var temp = arr[i];\n" +
+            "    \n" +
+            "            while (j >= increment && arr[j-increment] > temp) {\n" +
+            "                arr[j] = arr[j-increment];\n" +
+            "                j = j - increment;\n" +
+            "            }\n" +
+            "    \n" +
+            "            arr[j] = temp;\n" +
+            "        }\n" +
+            "    \n" +
+            "        if (increment == 2) {\n" +
+            "            increment = 1;\n" +
+            "        } else {\n" +
+            "            increment = parseInt(increment*5 / 11);\n" +
+            "        }\n" +
+            "    }\n" +
+            "  return arr;\n" +
+            "}\n" +
+            "\n" +
+            "console.log(shellSort([3, 0, 2, 5, -1, 4, 1]));\n";
+    public static final String codes115 = "let nums = [4, 9, 0, 3, 1, 5];\n" +
+            "console.log(\"Original array:\");\n" +
+            "console.log(nums);\n" +
+            "let is_Sorted = true;\n" +
+            "while (is_Sorted){\n" +
+            "   for (let i = 0; i< nums.length - 1; i++){\n" +
+            "           if (nums[i] > nums[i + 1])\n" +
+            "            {\n" +
+            "               let temp = nums[i];\n" +
+            "               nums[i] = nums[i + 1];\n" +
+            "               nums[i+1] = temp;\n" +
+            "               is_Sorted = true;\n" +
+            "            }\n" +
+            "   }\n" +
+            "\n" +
+            "   if (!is_Sorted)\n" +
+            "       break;\n" +
+            "\n" +
+            "   is_Sorted = false;\n" +
+            "\n" +
+            "   for (let j = nums.length - 1; j > 0; j--){\n" +
+            "           if (nums[j-1] > nums[j])\n" +
+            "            {\n" +
+            "               let temp = nums[j];\n" +
+            "               nums[j] = nums[j - 1];\n" +
+            "               nums[j - 1] = temp;\n" +
+            "               is_Sorted = true;\n" +
+            "            }\n" +
+            "   }\n" +
+            "}\n" +
+            "console.log(\"Sorted array:\")\n" +
+            "console.log(nums);\n";
+    public static final String codes116 = "function combsort(arr)\n" +
+            "{\n" +
+            " function is_array_sorted(arr) {\n" +
+            "      var sorted = true;\n" +
+            "      for (var i = 0; i < arr.length - 1; i++) {\n" +
+            "          if (arr[i] > arr[i + 1]) {\n" +
+            "              sorted = false;\n" +
+            "              break;\n" +
+            "          }\n" +
+            "      }\n" +
+            "      return sorted;\n" +
+            "  }\n" +
+            " \n" +
+            "  var iteration_count = 0;\n" +
+            "  var gap = arr.length - 2;\n" +
+            "  var decrease_factor = 1.25;\n" +
+            " \n" +
+            "  // Repeat iterations Until array is not sorted\n" +
+            "  \n" +
+            "  while (!is_array_sorted(arr)) \n" +
+            "  {\n" +
+            "      // If not first gap  Calculate gap\n" +
+            "      if (iteration_count > 0)\n" +
+            "         gap = (gap == 1) ? gap : Math.floor(gap / decrease_factor);\n" +
+            " \n" +
+            "  // Set front and back elements and increment to a gap\n" +
+            "      var front = 0;\n" +
+            "      var back = gap;\n" +
+            "      while (back <= arr.length - 1) \n" +
+            "      {\n" +
+            "          // Swap the elements if they are not ordered\n" +
+            "        \n" +
+            "          if (arr[front] > arr[back])\n" +
+            "          {\n" +
+            "              var temp = arr[front];\n" +
+            "              arr[front] = arr[back];\n" +
+            "              arr[back] = temp;\n" +
+            "          }\n" +
+            " \n" +
+            "          // Increment and re-run swapping\n" +
+            "        \n" +
+            "          front += 1;\n" +
+            "          back += 1;\n" +
+            "      }\n" +
+            "      iteration_count += 1;\n" +
+            "  }\n" +
+            "  return arr;\n" +
+            "}\n" +
+            "  \n" +
+            " var arra = [3, 0, 2, 5, -1, 4, 1]; \n" +
+            "console.log(\"Original Array Elements\"); \n" +
+            "console.log(arra); \n" +
+            "console.log(\"Sorted Array Elements\"); \n" +
+            "console.log(combsort(arra));\n";
+    public static final String codes117 = "function gnomeSort(arr) \n" +
+            "{\n" +
+            "    function moveBack(i) \n" +
+            "  {\n" +
+            "        for( ; i > 0 && arr[i-1] > arr[i]; i--)\n" +
+            "        {\n" +
+            "            var t = arr[i];\n" +
+            "            arr[i] = arr[i-1];\n" +
+            "            arr[i-1] = t;\n" +
+            "        }\n" +
+            "    }\n" +
+            "    for (var i = 1; i < arr.length; i++) \n" +
+            "    {\n" +
+            "        if (arr[i-1] > arr[i]) moveBack(i);\n" +
+            "    }\n" +
+            "    return arr;\n" +
+            "}\n" +
+            "\n" +
+            "var arra = [3, 0, 2, 5, -1, 4, 1]; \n" +
+            "console.log(\"Original Array Elements\"); \n" +
+            "console.log(arra); \n" +
+            "console.log(\"Sorted Array Elements\"); \n" +
+            "console.log(gnomeSort(arra));\n";
+    public static final String codes118 = "function countingSort(arr, min, max)\n" +
+            "  {\n" +
+            "    var i, z = 0, count = [];\n" +
+            " \n" +
+            "    for (i = min; i <= max; i++) {\n" +
+            "        count[i] = 0;\n" +
+            "    }\n" +
+            " \n" +
+            "    for (i=0; i < arr.length; i++) {\n" +
+            "        count[arr[i]]++;\n" +
+            "    }\n" +
+            " \n" +
+            "    for (i = min; i <= max; i++) {\n" +
+            "        while (count[i]-- > 0) {\n" +
+            "            arr[z++] = i;\n" +
+            "        }\n" +
+            "    }\n" +
+            " return arr;\n" +
+            "}\n" +
+            "var arra = [3, 0, 2, 5, 4, 1]; \n" +
+            "console.log(arra.length);\n" +
+            "console.log(\"Original Array Elements\"); \n" +
+            "console.log(arra); \n" +
+            "console.log(\"Sorted Array Elements\"); \n" +
+            "console.log(countingSort(arra, 0, 5));\n";
+    public static final String codes119 = "function Bogosort(arr){\n" +
+            "    var isSorted = function(arr){\n" +
+            "        for(var i = 1; i < arr.length; i++){\n" +
+            "            if (arr[i-1] > arr[i]) {\n" +
+            "                return false;\n" +
+            "            }\n" +
+            "        }\n" +
+            "        return true;\n" +
+            "    };\n" +
+            "\n" +
+            "    function shuffle(arr){\n" +
+            "        var count = arr.length, temp, index;\n" +
+            "\n" +
+            "        while(count > 0){\n" +
+            "            index = Math.floor(Math.random() * count);\n" +
+            "            count--;\n" +
+            "\n" +
+            "            temp = arr[count];\n" +
+            "            arr[count] = arr[index];\n" +
+            "            arr[index] = temp;\n" +
+            "        }\n" +
+            "\n" +
+            "        return arr;\n" +
+            "    }\n" +
+            "\n" +
+            "   function sort(arr){\n" +
+            "        var sorted = false;\n" +
+            "        while(!sorted){\n" +
+            "            arr = shuffle(arr);\n" +
+            "            sorted = isSorted(arr);\n" +
+            "        }\n" +
+            "        return arr;\n" +
+            "    }\n" +
+            "\n" +
+            "    return sort(arr);\n" +
+            "}\n" +
+            "\n" +
+            "\n" +
+            "var arra = [3, 0, 2, 5, -1, 4, 1]; \n" +
+            "console.log(\"Original Array Elements\"); \n" +
+            "console.log(arra); \n" +
+            "console.log(\"Sorted Array Elements\"); \n" +
+            "console.log(Bogosort(arra));\n";
+    public static final String codes120 = "<!DOCTYPE html>\n" +
+            "<html lang=\"en\">\n" +
+            "<head>\n" +
+            "<meta charset=\"utf-8\">\n" +
+            "<title>JavaScript Ajax GET Demo</title>\n" +
+            "<script>\n" +
+            "function displayFullName() {\n" +
+            "    // Creating the XMLHttpRequest object\n" +
+            "    var request = new XMLHttpRequest();\n" +
+            "\n" +
+            "    // Instantiating the request object\n" +
+            "    request.open(\"GET\", \"greet.php?fname=John&lname=Clark\");\n" +
+            "\n" +
+            "    // Defining event listener for readystatechange event\n" +
+            "    request.onreadystatechange = function() {\n" +
+            "        // Check if the request is compete and was successful\n" +
+            "        if(this.readyState === 4 && this.status === 200) {\n" +
+            "            // Inserting the response from server into an HTML element\n" +
+            "            document.getElementById(\"result\").innerHTML = this.responseText;\n" +
+            "        }\n" +
+            "    };\n" +
+            "\n" +
+            "    // Sending the request to the server\n" +
+            "    request.send();\n" +
+            "}\n" +
+            "</script>\n" +
+            "</head>\n" +
+            "<body>\n" +
+            "    <div id=\"result\">\n" +
+            "        <p>Content of the result DIV box will be replaced by the server response</p>\n" +
+            "    </div>\n" +
+            "    <button type=\"button\" onclick=\"displayFullName()\">Display Full Name</button>\n" +
+            "</body>\n" +
+            "</html>";
+    public static final String codes121 = "<!DOCTYPE html>\n" +
+            "<html lang=\"en\">\n" +
+            "<head>\n" +
+            "<meta charset=\"utf-8\">\n" +
+            "<title>JavaScript Ajax POST Demo</title>\n" +
+            "<script>\n" +
+            "function postComment() {\n" +
+            "    // Creating the XMLHttpRequest object\n" +
+            "    var request = new XMLHttpRequest();\n" +
+            "    \n" +
+            "    // Instantiating the request object\n" +
+            "    request.open(\"POST\", \"confirmation.php\");\n" +
+            "    \n" +
+            "    // Defining event listener for readystatechange event\n" +
+            "    request.onreadystatechange = function() {\n" +
+            "        // Check if the request is compete and was successful\n" +
+            "        if(this.readyState === 4 && this.status === 200) {\n" +
+            "            // Inserting the response from server into an HTML element\n" +
+            "            document.getElementById(\"result\").innerHTML = this.responseText;\n" +
+            "        }\n" +
+            "    };\n" +
+            "    \n" +
+            "    // Retrieving the form data\n" +
+            "    var myForm = document.getElementById(\"myForm\");\n" +
+            "    var formData = new FormData(myForm);\n" +
+            "\n" +
+            "    // Sending the request to the server\n" +
+            "    request.send(formData);\n" +
+            "}\n" +
+            "</script>\n" +
+            "</head>\n" +
+            "<body>\n" +
+            "    <form id=\"myForm\">\n" +
+            "        <label>Name:</label>\n" +
+            "        <div><input type=\"text\" name=\"name\"></div>\n" +
+            "        <br>\n" +
+            "        <label>Comment:</label>\n" +
+            "        <div><textarea name=\"comment\"></textarea></div>\n" +
+            "        <p><button type=\"button\" onclick=\"postComment()\">Post Comment</button></p>\n" +
+            "    </form>    \n" +
+            "    <div id=\"result\">\n" +
+            "        <p>Content of the result DIV box will be replaced by the server response</p>\n" +
+            "    </div>    \n" +
+            "</body>\n" +
+            "</html>";
+    public static final String codes122 = "<!DOCTYPE html>\n" +
+            "<html>\n" +
+            "<body>\n" +
+            "\n" +
+            "<h1>The XMLHttpRequest Object</h1>\n" +
+            "\n" +
+            "<p>The getAllResponseHeaders() function returns all the header information of a resource, like length, server-type, content-type, last-modified, etc:</p>\n" +
+            "\n" +
+            "<p id=\"demo\"></p>\n" +
+            "\n" +
+            "<script>\n" +
+            "var xhttp = new XMLHttpRequest();\n" +
+            "xhttp.onreadystatechange = function() {\n" +
+            "  if (this.readyState == 4 && this.status == 200) {\n" +
+            "    document.getElementById(\"demo\").innerHTML =\n" +
+            "    this.getAllResponseHeaders();\n" +
+            "  }\n" +
+            "};\n" +
+            "xhttp.open(\"GET\", \"ajax_info.txt\", true);\n" +
+            "xhttp.send();\n" +
+            "</script>\n" +
+            "\n" +
+            "</body>\n" +
+            "</html>";
+    public static final String codes123 = "<!DOCTYPE html>\n" +
+            "<html>\n" +
+            "<body>\n" +
+            "\n" +
+            "<h1>The XMLHttpRequest Object</h1>\n" +
+            "\n" +
+            "<p>The getResponseHeader() function is used to return specific header information from a resource, like length, server-type, content-type, last-modified, etc:</p>\n" +
+            "\n" +
+            "<p>Last modified: <span id=\"demo\"></span></p>\n" +
+            "\n" +
+            "<script>\n" +
+            "var xhttp=new XMLHttpRequest();\n" +
+            "xhttp.onreadystatechange = function() {\n" +
+            "  if (this.readyState == 4 && this.status == 200) {\n" +
+            "    document.getElementById(\"demo\").innerHTML =\n" +
+            "    this.getResponseHeader(\"Last-Modified\");\n" +
+            "  }\n" +
+            "};\n" +
+            "xhttp.open(\"GET\", \"ajax_info.txt\", true);\n" +
+            "xhttp.send();\n" +
+            "</script>\n" +
+            "\n" +
+            "</body>\n" +
+            "</html>";
+    public static final String codes124= "<!DOCTYPE html>\n" +
+            "<html>\n" +
+            "<body>\n" +
+            "\n" +
+            "<h1>The XMLHttpRequest Object</h1>\n" +
+            "\n" +
+            "<h2>Retrieve data from XML file</h2>\n" +
+            "\n" +
+            "<p><b>Status:</b> <span id=\"A1\"></span></p>\n" +
+            "<p><b>Status text:</b> <span id=\"A2\"></span></p>\n" +
+            "<p><b>Response:</b> <span id=\"A3\"></span></p>\n" +
+            "\n" +
+            "<button onclick=\"loadDoc('note.xml')\">Get XML data</button>\n" +
+            "\n" +
+            "<script>\n" +
+            "function loadDoc(url) {\n" +
+            "  var xhttp = new XMLHttpRequest();\n" +
+            "  xhttp.onreadystatechange = function() {\n" +
+            "    if (this.readyState == 4 && this.status == 200) {\n" +
+            "      document.getElementById('A1').innerHTML = this.status;\n" +
+            "      document.getElementById('A2').innerHTML = this.statusText;\n" +
+            "      document.getElementById('A3').innerHTML = this.responseText;\n" +
+            "    }\n" +
+            "  };\n" +
+            "  xhttp.open(\"GET\", url, true);\n" +
+            "  xhttp.send();\n" +
+            "}\n" +
+            "</script>\n" +
+            "\n" +
+            "</body>\n" +
+            "</html>\n";
+    public static final String codes125 = "<!DOCTYPE html>\n" +
+            "<html>\n" +
+            "<style>\n" +
+            "table,th,td {\n" +
+            "  border : 1px solid black;\n" +
+            "  border-collapse: collapse;\n" +
+            "}\n" +
+            "th,td {\n" +
+            "  padding: 5px;\n" +
+            "}\n" +
+            "</style>\n" +
+            "<body>\n" +
+            "\n" +
+            "<h1>The XMLHttpRequest Object</h1>\n" +
+            "\n" +
+            "<button type=\"button\" onclick=\"loadDoc()\">Get my CD collection</button>\n" +
+            "<br><br>\n" +
+            "<table id=\"demo\"></table>\n" +
+            "\n" +
+            "<script>\n" +
+            "function loadDoc() {\n" +
+            "  var xhttp = new XMLHttpRequest();\n" +
+            "  xhttp.onreadystatechange = function() {\n" +
+            "    if (this.readyState == 4 && this.status == 200) {\n" +
+            "      myFunction(this);\n" +
+            "    }\n" +
+            "  };\n" +
+            "  xhttp.open(\"GET\", \"cd_catalog.xml\", true);\n" +
+            "  xhttp.send();\n" +
+            "}\n" +
+            "function myFunction(xml) {\n" +
+            "  var i;\n" +
+            "  var xmlDoc = xml.responseXML;\n" +
+            "  var table=\"<tr><th>Artist</th><th>Title</th></tr>\";\n" +
+            "  var x = xmlDoc.getElementsByTagName(\"CD\");\n" +
+            "  for (i = 0; i <x.length; i++) { \n" +
+            "    table += \"<tr><td>\" +\n" +
+            "    x[i].getElementsByTagName(\"ARTIST\")[0].childNodes[0].nodeValue +\n" +
+            "    \"</td><td>\" +\n" +
+            "    x[i].getElementsByTagName(\"TITLE\")[0].childNodes[0].nodeValue +\n" +
+            "    \"</td></tr>\";\n" +
+            "  }\n" +
+            "  document.getElementById(\"demo\").innerHTML = table;\n" +
+            "}\n" +
+            "</script>\n" +
+            "\n" +
+            "</body>\n" +
+            "</html>";
+    public static final String codes126 = "<!DOCTYPE html>\n" +
+            "<html>\n" +
+            "<body>\n" +
+            "\n" +
+            "<h1>The XMLHttpRequest Object</h1>\n" +
+            "\n" +
+            "<h3>Start typing a name in the input field below:</h3>\n" +
+            "\n" +
+            "<form action=\"\"> \n" +
+            "First name: <input type=\"text\" id=\"txt1\" onkeyup=\"showHint(this.value)\">\n" +
+            "</form>\n" +
+            "\n" +
+            "<p>Suggestions: <span id=\"txtHint\"></span></p> \n" +
+            "\n" +
+            "<script>\n" +
+            "function showHint(str) {\n" +
+            "  var xhttp;\n" +
+            "  if (str.length == 0) { \n" +
+            "    document.getElementById(\"txtHint\").innerHTML = \"\";\n" +
+            "    return;\n" +
+            "  }\n" +
+            "  xhttp = new XMLHttpRequest();\n" +
+            "  xhttp.onreadystatechange = function() {\n" +
+            "    if (this.readyState == 4 && this.status == 200) {\n" +
+            "      document.getElementById(\"txtHint\").innerHTML = this.responseText;\n" +
+            "    }\n" +
+            "  };\n" +
+            "  xhttp.open(\"GET\", \"gethint.php?q=\"+str, true);\n" +
+            "  xhttp.send();   \n" +
+            "}\n" +
+            "</script>\n" +
+            "\n" +
+            "</body>\n" +
+            "</html>";
+    public static final String codes127 = "<!DOCTYPE html>\n" +
+            "<html>\n" +
+            "<body>\n" +
+            "\n" +
+            "<h1>The XMLHttpRequest Object</h1>\n" +
+            "\n" +
+            "<h3>Start typing a name in the input field below:</h3>\n" +
+            "\n" +
+            "<form action=\"\"> \n" +
+            "First name: <input type=\"text\" id=\"txt1\" onkeyup=\"showHint(this.value)\">\n" +
+            "</form>\n" +
+            "\n" +
+            "<p>Suggestions: <span id=\"txtHint\"></span></p> \n" +
+            "\n" +
+            "<script>\n" +
+            "function showHint(str) {\n" +
+            "  var xhttp;\n" +
+            "  if (str.length == 0) { \n" +
+            "    document.getElementById(\"txtHint\").innerHTML = \"\";\n" +
+            "    return;\n" +
+            "  }\n" +
+            "  xhttp = new XMLHttpRequest();\n" +
+            "  xhttp.onreadystatechange = function() {\n" +
+            "    if (this.readyState == 4 && this.status == 200) {\n" +
+            "      document.getElementById(\"txtHint\").innerHTML = this.responseText;\n" +
+            "    }\n" +
+            "  };\n" +
+            "  xhttp.open(\"GET\", \"gethint.asp?q=\"+str, true);\n" +
+            "  xhttp.send();\n" +
+            "}\n" +
+            "</script>\n" +
+            "\n" +
+            "</body>\n" +
+            "</html>\n";
+    public static final String codes128 = "<!DOCTYPE html>\n" +
+            "<html>\n" +
+            "<style>\n" +
+            "table,th,td {\n" +
+            "  border : 1px solid black;\n" +
+            "  border-collapse: collapse;\n" +
+            "}\n" +
+            "th,td {\n" +
+            "  padding: 5px;\n" +
+            "}\n" +
+            "</style>\n" +
+            "<body>\n" +
+            "\n" +
+            "<h1>The XMLHttpRequest Object</h1>\n" +
+            "\n" +
+            "<form action=\"\"> \n" +
+            "<select name=\"customers\" onchange=\"showCustomer(this.value)\">\n" +
+            "<option value=\"\">Select a customer:</option>\n" +
+            "<option value=\"ALFKI\">Alfreds Futterkiste</option>\n" +
+            "<option value=\"NORTS \">North/South</option>\n" +
+            "<option value=\"WOLZA\">Wolski Zajazd</option>\n" +
+            "</select>\n" +
+            "</form>\n" +
+            "<br>\n" +
+            "<div id=\"txtHint\">Customer info will be listed here...</div>\n" +
+            "\n" +
+            "<script>\n" +
+            "function showCustomer(str) {\n" +
+            "  var xhttp;    \n" +
+            "  if (str == \"\") {\n" +
+            "    document.getElementById(\"txtHint\").innerHTML = \"\";\n" +
+            "    return;\n" +
+            "  }\n" +
+            "  xhttp = new XMLHttpRequest();\n" +
+            "  xhttp.onreadystatechange = function() {\n" +
+            "    if (this.readyState == 4 && this.status == 200) {\n" +
+            "      document.getElementById(\"txtHint\").innerHTML = this.responseText;\n" +
+            "    }\n" +
+            "  };\n" +
+            "  xhttp.open(\"GET\", \"getcustomer.php?q=\"+str, true);\n" +
+            "  xhttp.send();\n" +
+            "}\n" +
+            "</script>\n" +
+            "\n" +
+            "</body>\n" +
+            "</html>";
+    public static final String codes129 = "<!DOCTYPE html>\n" +
+            "<html>\n" +
+            "<style>\n" +
+            "table,th,td {\n" +
+            "  border : 1px solid black;\n" +
+            "  border-collapse: collapse;\n" +
+            "}\n" +
+            "th,td {\n" +
+            "  padding: 5px;\n" +
+            "}\n" +
+            "</style>\n" +
+            "<body>\n" +
+            "\n" +
+            "<button type=\"button\" onclick=\"loadXMLDoc()\">Get my CD collection</button>\n" +
+            "<br><br>\n" +
+            "<table id=\"demo\"></table>\n" +
+            "\n" +
+            "<script>\n" +
+            "function loadXMLDoc() {\n" +
+            "  var xmlhttp = new XMLHttpRequest();\n" +
+            "  xmlhttp.onreadystatechange = function() {\n" +
+            "    if (this.readyState == 4 && this.status == 200) {\n" +
+            "      myFunction(this);\n" +
+            "    }\n" +
+            "  };\n" +
+            "  xmlhttp.open(\"GET\", \"cd_catalog.xml\", true);\n" +
+            "  xmlhttp.send();\n" +
+            "}\n" +
+            "function myFunction(xml) {\n" +
+            "  var i;\n" +
+            "  var xmlDoc = xml.responseXML;\n" +
+            "  var table=\"<tr><th>Artist</th><th>Title</th></tr>\";\n" +
+            "  var x = xmlDoc.getElementsByTagName(\"CD\");\n" +
+            "  for (i = 0; i <x.length; i++) { \n" +
+            "    table += \"<tr><td>\" +\n" +
+            "    x[i].getElementsByTagName(\"ARTIST\")[0].childNodes[0].nodeValue +\n" +
+            "    \"</td><td>\" +\n" +
+            "    x[i].getElementsByTagName(\"TITLE\")[0].childNodes[0].nodeValue +\n" +
+            "    \"</td></tr>\";\n" +
+            "  }\n" +
+            "  document.getElementById(\"demo\").innerHTML = table;\n" +
+            "}\n" +
+            "</script>\n" +
+            "\n" +
+            "</body>\n" +
+            "</html>";
+    public static final String codes130 = "<!DOCTYPE html>\n" +
+            "<html>\n" +
+            "<body>\n" +
+            "\n" +
+            "<div id='showCD'></div>\n" +
+            "\n" +
+            "<script>\n" +
+            "displayCD(0);\n" +
+            "\n" +
+            "function displayCD(i) {\n" +
+            "    var xmlhttp = new XMLHttpRequest();\n" +
+            "    xmlhttp.onreadystatechange = function() {\n" +
+            "        if (this.readyState == 4 && this.status == 200) {\n" +
+            "            myFunction(this, i);\n" +
+            "        }\n" +
+            "    };\n" +
+            "    xmlhttp.open(\"GET\", \"cd_catalog.xml\", true);\n" +
+            "    xmlhttp.send();\n" +
+            "}\n" +
+            "\n" +
+            "function myFunction(xml, i) {\n" +
+            "    var xmlDoc = xml.responseXML; \n" +
+            "    x = xmlDoc.getElementsByTagName(\"CD\");\n" +
+            "    document.getElementById(\"showCD\").innerHTML =\n" +
+            "    \"Artist: \" +\n" +
+            "    x[i].getElementsByTagName(\"ARTIST\")[0].childNodes[0].nodeValue +\n" +
+            "    \"<br>Title: \" +\n" +
+            "    x[i].getElementsByTagName(\"TITLE\")[0].childNodes[0].nodeValue +\n" +
+            "    \"<br>Year: \" + \n" +
+            "    x[i].getElementsByTagName(\"YEAR\")[0].childNodes[0].nodeValue;\n" +
+            "}\n" +
+            "</script>\n" +
+            "\n" +
+            "</body>\n" +
+            "</html>\n";
+    public static final String codes131 = "<!DOCTYPE html>\n" +
+            "<html>\n" +
+            "<body>\n" +
+            "\n" +
+            "<div id='showCD'></div><br>\n" +
+            "<input type=\"button\" onclick=\"previous()\" value=\"<<\">\n" +
+            "<input type=\"button\" onclick=\"next()\" value=\">>\">\n" +
+            "\n" +
+            "<script>\n" +
+            "var i = 0;\n" +
+            "var x;\n" +
+            "displayCD(i);\n" +
+            "\n" +
+            "function displayCD(i) {\n" +
+            "    var xmlhttp = new XMLHttpRequest();\n" +
+            "    xmlhttp.onreadystatechange = function() {\n" +
+            "        if (this.readyState == 4 && this.status == 200) {\n" +
+            "            myFunction(this, i);\n" +
+            "        }\n" +
+            "    };\n" +
+            "    xmlhttp.open(\"GET\", \"cd_catalog.xml\", true);\n" +
+            "    xmlhttp.send();\n" +
+            "}\n" +
+            "\n" +
+            "function myFunction(xml, i) {\n" +
+            "    var xmlDoc = xml.responseXML; \n" +
+            "    x = xmlDoc.getElementsByTagName(\"CD\");\n" +
+            "    document.getElementById(\"showCD\").innerHTML =\n" +
+            "    \"Artist: \" +\n" +
+            "    x[i].getElementsByTagName(\"ARTIST\")[0].childNodes[0].nodeValue +\n" +
+            "    \"<br>Title: \" +\n" +
+            "    x[i].getElementsByTagName(\"TITLE\")[0].childNodes[0].nodeValue +\n" +
+            "    \"<br>Year: \" + \n" +
+            "    x[i].getElementsByTagName(\"YEAR\")[0].childNodes[0].nodeValue;\n" +
+            "}\n" +
+            "\n" +
+            "function next() {\n" +
+            "if (i < x.length-1) {\n" +
+            "  i++;\n" +
+            "  displayCD(i);\n" +
+            "  }\n" +
+            "}\n" +
+            "\n" +
+            "function previous() {\n" +
+            "if (i > 0) {\n" +
+            "  i--;\n" +
+            "  displayCD(i);\n" +
+            "  }\n" +
+            "}\n" +
+            "</script>\n" +
+            "\n" +
+            "</body>\n" +
+            "</html>\n";
+    public static final String codes132 = "<!DOCTYPE html>\n" +
+            "<html>\n" +
+            "<style>\n" +
+            "table,th,td {\n" +
+            "  border : 1px solid black;\n" +
+            "  border-collapse: collapse;\n" +
+            "}\n" +
+            "th,td {\n" +
+            "  padding: 5px;\n" +
+            "}\n" +
+            "</style>\n" +
+            "<body>\n" +
+            "\n" +
+            "<p>Click on a CD to display album information.</p>\n" +
+            "<p id='showCD'></p>\n" +
+            "<table id=\"demo\"></table>\n" +
+            "\n" +
+            "<script>\n" +
+            "var x,xmlhttp,xmlDoc\n" +
+            "xmlhttp = new XMLHttpRequest();\n" +
+            "xmlhttp.open(\"GET\", \"cd_catalog.xml\", false);\n" +
+            "xmlhttp.send();\n" +
+            "xmlDoc = xmlhttp.responseXML; \n" +
+            "x = xmlDoc.getElementsByTagName(\"CD\");\n" +
+            "table=\"<tr><th>Artist</th><th>Title</th></tr>\";\n" +
+            "for (i = 0; i <x.length; i++) { \n" +
+            "  table += \"<tr onclick='displayCD(\" + i + \")'><td>\";\n" +
+            "  table += x[i].getElementsByTagName(\"ARTIST\")[0].childNodes[0].nodeValue;\n" +
+            "  table += \"</td><td>\";\n" +
+            "  table +=  x[i].getElementsByTagName(\"TITLE\")[0].childNodes[0].nodeValue;\n" +
+            "  table += \"</td></tr>\";\n" +
+            "}\n" +
+            "document.getElementById(\"demo\").innerHTML = table;\n" +
+            "\n" +
+            "function displayCD(i) {\n" +
+            "  document.getElementById(\"showCD\").innerHTML =\n" +
+            "  \"Artist: \" +\n" +
+            "  x[i].getElementsByTagName(\"ARTIST\")[0].childNodes[0].nodeValue +\n" +
+            "  \"<br>Title: \" +\n" +
+            "  x[i].getElementsByTagName(\"TITLE\")[0].childNodes[0].nodeValue +\n" +
+            "  \"<br>Year: \" + \n" +
+            "  x[i].getElementsByTagName(\"YEAR\")[0].childNodes[0].nodeValue;\n" +
+            "}\n" +
+            "</script>\n" +
+            "\n" +
+            "</body>\n" +
+            "</html>\n";
+    public static final String codes133 = "let years: Array<number> = [ 2016, 2017, 2018, 2019,2020,2021,2022]; \n" +
+            "for (let i=0;i<=years.length; i++) {\n" +
+            "     console.log(years[i]);\n" +
+            "}";
+    public static final String codes134 = "let years: Array<number> = [ 2016, 2017, 2018, 2019,2020,2021,2022]; \n" +
+            "for (let i in years) {\n" +
+            "     console.log(years[i])\n" +
+            "}";
+    public static final String codes135 = "let years: Array<number> = [ 2016, 2017, 2018, 2019,2020,2021,2022]; \n" +
+            "for (let  i of years) {\n" +
+            "     console.log(i)\n" +
+            "}";
+    public static final String codes136 = "let years: Array<number> = [ 2016, 2017, 2018, 2019,2020,2021,2022]; \n" +
+            "years.forEach(function(yrs, i) {\n" +
+            "  console.log(yrs);\n" +
+            "});";
+    public static final String codes137 = "let months: Array<string> = [\"Jan\", \"Feb\", \"March\", \"April\", \"May\", \"June\", \"July\", \"Aug\", \"Sept\", \"Oct\", \"Nov\", \"Dec\"]; //array with all string values.\n" +
+            "\n" +
+            "console.log(months.length);";
+    public static final String codes138 = "let months: Array<string> = [\"Jan\", \"Feb\", \"March\", \"April\", \"May\", \"June\", \"July\", \"Aug\", \"Sept\", \"Oct\", \"Nov\", \"Dec\"]; //array with all string values.\n" +
+            "\n" +
+            "console.log(months.reverse());";
+    public static final String codes139 = "let months: Array<string> = [\"Jan\", \"Feb\", \"March\", \"April\", \"May\", \"June\", \"July\", \"Aug\", \"Sept\", \"Oct\", \"Nov\", \"Dec\"]; //array with all string values.\n" +
+            "\n" +
+            "console.log(months.sort());";
+    public static final String codes140 = "let months: Array<string> = [\"Jan\", \"Feb\", \"March\", \"April\", \"May\", \"June\", \"July\", \"Aug\", \"Sept\", \"Oct\", \"Nov\", \"Dec\"]; //array with all string values.\t\t\t\t\n" +
+            "\n" +
+            "console.log(months.pop());";
+    public static final String codes141 = "let months: Array<string> = [\"Jan\", \"Feb\", \"March\", \"April\", \"May\", \"June\", \"July\", \"Aug\", \"Sept\", \"Oct\", \"Nov\", \"Dec\"]; //array with all string values.\t\t\t\n" +
+            "\n" +
+            "console.log(months.shift());";
+    public static final String codes142 = "let years: Array<number> = [2015,2016,2017,2018,2019,2020,2021]; //array will all numbers\t\t\t\n" +
+            "console.log(years.push(2022)); \t\t\t\n" +
+            "years.forEach(function(yrs, i) {\t\t\t\n" +
+            "  console.log(yrs);\n" +
+            "});";
+    public static final String codes143 = "class Students {\n" +
+            "    age : number;\n" +
+            "    name : string;\n" +
+            "    roll_no : number;\n" +
+            "    \n" +
+            "    constructor(age: number, name:string, roll_no: number) {\n" +
+            "        this.age = age;\n" +
+            "        this.name = name;\n" +
+            "        this.roll_no = roll_no;\n" +
+            "    }\n" +
+            "\n" +
+            "    getRollNo(): number {\n" +
+            "        return this.roll_no;\n" +
+            "    }\n" +
+            "\n" +
+            "    getName() : string {\n" +
+            "        return this.name;\n" +
+            "    }\n" +
+            "\n" +
+            "    getAge() : number {\n" +
+            "        return this.age;\n" +
+            "    }\n" +
+            "}";
+    public static final String codes144 = "class Person {\n" +
+            "    name: string;\n" +
+            "    age: number;\n" +
+            "\n" +
+            "    constructor(name: string, age: number) {\n" +
+            "        this.name = name;\n" +
+            "        this.age = age;\n" +
+            "    }\n" +
+            "\n" +
+            "    getName(): string {\n" +
+            "        return this.name;\n" +
+            "    }\n" +
+            "\n" +
+            "    getAge(): number {\n" +
+            "        return this.age;\n" +
+            "    }\n" +
+            "}\n" +
+            "\n" +
+            "class Student extends Person {\n" +
+            "    tmarks: number;\n" +
+            "    getMarks(): number {\n" +
+            "        return this.tmarks;\n" +
+            "    }\n" +
+            "\n" +
+            "    setMarks(tmarks) {\n" +
+            "        this.tmarks = tmarks;\n" +
+            "    }\n" +
+            "}\n" +
+            "\n" +
+            "let _std1 = new Student('Sheena', 21);\n" +
+            "_std1.getAge();\n" +
+            "_std1.setMarks(500);\n" +
+            "_std1.getMarks();";
+    public static final String codes145 = "class Person {\n" +
+            "    protected name: string;\n" +
+            "    protected age: number;\n" +
+            "\n" +
+            "    constructor(name: string, age: number) {\n" +
+            "        this.name = name;\n" +
+            "        this.age = age;\n" +
+            "    }\n" +
+            "\n" +
+            "    private getName(): string {\n" +
+            "        return this.name;\n" +
+            "    }\n" +
+            "\n" +
+            "    getDetails(): string {\n" +
+            "        return \"Name is \"+ this.getName();\n" +
+            "    }\n" +
+            "}\n" +
+            "\n" +
+            "class Student extends Person {\n" +
+            "    tmarks: number;\n" +
+            "    constructor(name: string, age: number, tmarks: number) {\n" +
+            "        super(name, age);  \n" +
+            "        this.tmarks = tmarks;    \n" +
+            "    }\n" +
+            "    getMarks(): number {\n" +
+            "        return this.tmarks;\n" +
+            "    }\n" +
+            "\n" +
+            "    getFullName(): string {\n" +
+            "        return this.name;\n" +
+            "    }\n" +
+            "    \n" +
+            "    setMarks(tmarks) {\n" +
+            "        this.tmarks = tmarks;\n" +
+            "    }\n" +
+            "}\n" +
+            "\n" +
+            "let _std1 = new Student('Anne', 21, 500);\n" +
+            "_std1.getMarks();\n" +
+            "_std1.getFullName();\n" +
+            "_std1.getDetails();";
+    public static final String codes146 = "interface Dimension {\n" +
+            "    width: string;\n" +
+            "    height: string;\n" +
+            "}\n" +
+            "\n" +
+            "function getDimension(dim: Dimension) : string {\n" +
+            "    let finaldim  = dim.width +\"-\"+ dim.height;\n" +
+            "    return finaldim;\n" +
+            "}\n" +
+            "\n" +
+            "getDimension({width:\"300px\", height:\"250px\"});";
+    public static final String codes147 = "<!DOCTYPE html>\n" +
+            "<html>\n" +
+            "<script src=\"https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js\"></script>\n" +
+            "<body>\n" +
+            "\n" +
+            "<p>Try to change the names.</p>\n" +
+            "\n" +
+            "<div ng-app=\"myApp\" ng-controller=\"myCtrl\">\n" +
+            "\n" +
+            "First Name: <input type=\"text\" ng-model=\"firstName\"><br>\n" +
+            "Last Name: <input type=\"text\" ng-model=\"lastName\"><br>\n" +
+            "<br>\n" +
+            "Full Name: {{firstName + \" \" + lastName}}\n" +
+            "\n" +
+            "</div>\n" +
+            "\n" +
+            "<script>\n" +
+            "var app = angular.module('myApp', []);\n" +
+            "app.controller('myCtrl', function($scope) {\n" +
+            "    $scope.firstName= \"Anne\";\n" +
+            "    $scope.lastName= \"Moore\";\n" +
+            "});\n" +
+            "</script>\n" +
+            "\n" +
+            "</body>\n" +
+            "</html>";
+    public static final String codes148 = "<!DOCTYPE html>\n" +
+            "<html>\n" +
+            "<script src=\"https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js\"></script>\n" +
+            "<body>\n" +
+            "\n" +
+            "<div ng-app=\"myApp\" ng-controller=\"personCtrl\">\n" +
+            "\n" +
+            "First Name: <input type=\"text\" ng-model=\"person.firstName\"><br>\n" +
+            "Last Name: <input type=\"text\" ng-model=\"person.lastName\"><br>\n" +
+            "<br>\n" +
+            "Full Name: {{fullName()}}\n" +
+            "\n" +
+            "</div>\n" +
+            "\n" +
+            "<script>\n" +
+            "var app = angular.module('myApp', []);\n" +
+            "app.controller(\"personCtrl\",function($scope) {\n" +
+            "    $scope.person = {\n" +
+            "        firstName: \"Anne\",\n" +
+            "        lastName: \"Moore\",\n" +
+            "    };\n" +
+            "    $scope.fullName = function() {\n" +
+            "        var x = $scope.person;\n" +
+            "        return x.firstName + \" \" + x.lastName;\n" +
+            "    };\n" +
+            "});\n" +
+            "</script>\n" +
+            "\n" +
+            "</body>\n" +
+            "</html>";
+    public static final String codes149 = "<!DOCTYPE html>\n" +
+            "<html>\n" +
+            "<script src=\"https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js\"></script>\n" +
+            "<body>\n" +
+            "\n" +
+            "<div ng-app=\"myApp\" ng-controller=\"myCtrl\">\n" +
+            "\n" +
+            "<ul>\n" +
+            "  <li ng-repeat=\"x in names\">{{x}}</li>\n" +
+            "</ul>\n" +
+            "\n" +
+            "</div>\n" +
+            "\n" +
+            "<script>\n" +
+            "var app = angular.module('myApp', []);\n" +
+            "\n" +
+            "app.controller('myCtrl', function($scope) {\n" +
+            "    $scope.names = [\"Emil\", \"Tobias\", \"Linus\"];\n" +
+            "});\n" +
+            "</script>\n" +
+            "\n" +
+            "<p>The variable \"x\" has a different value for each repetition, proving that each repetition has its own scope.</p>\n" +
+            "\n" +
+            "</body>\n" +
+            "</html>\n";
+    public static final String codes150 = "<!DOCTYPE html>\n" +
+            "<html>\n" +
+            "<script src=\"https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js\"></script>\n" +
+            "<body ng-app=\"myApp\">\n" +
+            "\n" +
+            "<p>The rootScope's favorite color:</p>\n" +
+            "<h1>{{color}}</h1>\n" +
+            "\n" +
+            "<div ng-controller=\"myCtrl\">\n" +
+            "\n" +
+            "<p>The scope of the controller's favorite color:</p>\n" +
+            "<h1>{{color}}</h1>\n" +
+            "\n" +
+            "</div>\n" +
+            "\n" +
+            "<p>The rootScope's favorite color is still:</p>\n" +
+            "<h1>{{color}}</h1>\n" +
+            "\n" +
+            "<script>\n" +
+            "var app = angular.module('myApp', []);\n" +
+            "app.run(function($rootScope) {\n" +
+            "    $rootScope.color = 'blue';\n" +
+            "});\n" +
+            "app.controller('myCtrl', function($scope) {\n" +
+            "    $scope.color = \"red\";\n" +
+            "});\n" +
+            "</script>\n" +
+            "\n" +
+            "<p>Notice that controller's color variable does not overwrite the rootScope's color value.</p>\n" +
+            "\n" +
+            "</body>\n" +
+            "</html>\n";
+    public static final String codes151 = "<!DOCTYPE html>\n" +
+            "<html>\n" +
+            "<script src=\"https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js\"></script>\n" +
+            "<body>\n" +
+            "\n" +
+            "<div ng-app=\"myApp\" ng-controller=\"namesCtrl\">\n" +
+            "\n" +
+            "<p>Looping with objects:</p>\n" +
+            "<ul>\n" +
+            "  <li ng-repeat=\"x in names | orderBy:'country'\">\n" +
+            "    {{ x.name + ', ' + x.country }}\n" +
+            "  </li>\n" +
+            "</ul>\n" +
+            "\n" +
+            "</div>\n" +
+            "\n" +
+            "<script>\n" +
+            "angular.module('myApp', []).controller('namesCtrl', function($scope) {\n" +
+            "    $scope.names = [\n" +
+            "        {name:'Jani',country:'Norway'},\n" +
+            "        {name:'Carl',country:'Sweden'},\n" +
+            "        {name:'Margareth',country:'England'},\n" +
+            "        {name:'Hege',country:'Norway'},\n" +
+            "        {name:'Joe',country:'Denmark'},\n" +
+            "        {name:'Gustav',country:'Sweden'},\n" +
+            "        {name:'Birgit',country:'Denmark'},\n" +
+            "        {name:'Mary',country:'England'},\n" +
+            "        {name:'Kai',country:'Norway'}\n" +
+            "        ];\n" +
+            "});\n" +
+            "</script>\n" +
+            "\n" +
+            "</body>\n" +
+            "</html>\n";
+    public static final String codes152 = "<!DOCTYPE html>\n" +
+            "<html>\n" +
+            "<script src=\"https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js\"></script>\n" +
+            "<body>\n" +
+            "\n" +
+            "<div ng-app=\"myApp\" ng-controller=\"namesCtrl\">\n" +
+            "\n" +
+            "<p>Type a letter in the input field:</p>\n" +
+            "\n" +
+            "<p><input type=\"text\" ng-model=\"test\"></p>\n" +
+            "\n" +
+            "<ul>\n" +
+            "  <li ng-repeat=\"x in names | filter:test\">\n" +
+            "    {{ x }}\n" +
+            "  </li>\n" +
+            "</ul>\n" +
+            "\n" +
+            "</div>\n" +
+            "\n" +
+            "<script>\n" +
+            "angular.module('myApp', []).controller('namesCtrl', function($scope) {\n" +
+            "    $scope.names = [\n" +
+            "        'Jani',\n" +
+            "        'Carl',\n" +
+            "        'Margareth',\n" +
+            "        'Hege',\n" +
+            "        'Joe',\n" +
+            "        'Gustav',\n" +
+            "        'Birgit',\n" +
+            "        'Mary',\n" +
+            "        'Kai'\n" +
+            "    ];\n" +
+            "});\n" +
+            "</script>\n" +
+            "\n" +
+            "<p>The list will only consists of names matching the filter.</p>\n" +
+            "\n" +
+            "\n" +
+            "</body>\n" +
+            "</html>";
+    public static final String codes153 = "<!DOCTYPE html>\n" +
+            "<html>\n" +
+            "<script src=\"https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js\"></script>\n" +
+            "<body>\n" +
+            "\n" +
+            "<div ng-app=\"myApp\" ng-controller=\"customersCtrl\"> \n" +
+            "\n" +
+            "<ul>\n" +
+            "  <li ng-repeat=\"x in myData\">\n" +
+            "    {{ x.Name + ', ' + x.Country }}\n" +
+            "  </li>\n" +
+            "</ul>\n" +
+            "\n" +
+            "</div>\n" +
+            "\n" +
+            "<script>\n" +
+            "var app = angular.module('myApp', []);\n" +
+            "app.controller('customersCtrl', function($scope, $http) {\n" +
+            "  $http.get(\"customers.php\").then(function (response) {\n" +
+            "      $scope.myData = response.data.records;\n" +
+            "  });\n" +
+            "});\n" +
+            "</script>\n" +
+            "\n" +
+            "</body>\n" +
+            "</html>\n";
+    public static final String codes154 = "<!DOCTYPE html>\n" +
+            "<html>\n" +
+            "<style>\n" +
+            "table, th , td  {\n" +
+            "  border: 1px solid grey;\n" +
+            "  border-collapse: collapse;\n" +
+            "  padding: 5px;\n" +
+            "}\n" +
+            "table tr:nth-child(odd) {\n" +
+            "  background-color: #f1f1f1;\n" +
+            "}\n" +
+            "table tr:nth-child(even) {\n" +
+            "  background-color: #ffffff;\n" +
+            "}\n" +
+            "</style>\n" +
+            "<script src=\"https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js\"></script>\n" +
+            "<body>\n" +
+            "\n" +
+            "<div ng-app=\"myApp\" ng-controller=\"customersCtrl\"> \n" +
+            "\n" +
+            "<table>\n" +
+            "  <tr ng-repeat=\"x in names\">\n" +
+            "    <td>{{ x.Name }}</td>\n" +
+            "    <td>{{ x.Country }}</td>\n" +
+            "  </tr>\n" +
+            "</table>\n" +
+            "\n" +
+            "</div>\n" +
+            "\n" +
+            "<script>\n" +
+            "var app = angular.module('myApp', []);\n" +
+            "app.controller('customersCtrl', function($scope, $http) {\n" +
+            "    $http.get(\"customers.php\")\n" +
+            "    .then(function (response) {$scope.names = response.data.records;});\n" +
+            "});\n" +
+            "</script>\n" +
+            "\n" +
+            "</body>\n" +
+            "</html>\n";
+    public static final String codes155 = "<!DOCTYPE html>\n" +
+            "<html >\n" +
+            "<style>\n" +
+            "table, th , td  {\n" +
+            "  border: 1px solid grey;\n" +
+            "  border-collapse: collapse;\n" +
+            "  padding: 5px;\n" +
+            "}\n" +
+            "table tr:nth-child(odd) {\n" +
+            "  background-color: #f1f1f1;\n" +
+            "}\n" +
+            "table tr:nth-child(even) {\n" +
+            "  background-color: #ffffff;\n" +
+            "}\n" +
+            "</style>\n" +
+            "<script src=\"https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js\"></script>\n" +
+            "<body>\n" +
+            " \n" +
+            "<div ng-app=\"myApp\" ng-controller=\"customersCtrl\">\n" +
+            " \n" +
+            "<table>\n" +
+            "  <tr ng-repeat=\"x in names\">\n" +
+            "    <td>{{ x.Name }}</td>\n" +
+            "    <td>{{ x.Country }}</td>\n" +
+            "  </tr>\n" +
+            "</table>\n" +
+            " \n" +
+            "</div>\n" +
+            " \n" +
+            "<script>\n" +
+            "var app = angular.module('myApp', []);\n" +
+            "app.controller('customersCtrl', function($scope, $http) {\n" +
+            "   $http.get(\"customers_mysql.php\")\n" +
+            "   .then(function (response) {$scope.names = response.data.records;});\n" +
+            "});\n" +
+            "</script>\n" +
+            " \n" +
+            "</body>\n" +
+            "</html>\n";
+    public static final String codes156 = "<!DOCTYPE html>\n" +
+            "<html>\n" +
+            "<style>\n" +
+            "table, th, td {\n" +
+            "  border: 1px solid grey;\n" +
+            "  border-collapse: collapse;\n" +
+            "  padding: 5px;\n" +
+            "}\n" +
+            "table tr:nth-child(odd) {\n" +
+            "  background-color: #f1f1f1;\n" +
+            "}\n" +
+            "table tr:nth-child(even) {\n" +
+            "  background-color: #ffffff;\n" +
+            "}\n" +
+            "</style>\n" +
+            "<script src=\"https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js\"></script>\n" +
+            "<body>\n" +
+            "\n" +
+            "<div ng-app=\"myApp\" ng-controller=\"customersCtrl\">\n" +
+            "\n" +
+            "<table>\n" +
+            "  <tr ng-repeat=\"x in names\">\n" +
+            "    <td>{{ x.Name }}</td>\n" +
+            "    <td>{{ x.Country }}</td>\n" +
+            "  </tr>\n" +
+            "</table>\n" +
+            "\n" +
+            "</div>\n" +
+            "\n" +
+            "<script>\n" +
+            "var app = angular.module('myApp', []);\n" +
+            "app.controller('customersCtrl', function($scope, $http) {\n" +
+            "    $http.get(\"customers_sql.aspx\")\n" +
+            "    .then(function (response) {$scope.names = response.data.records;});\n" +
+            "});\n" +
+            "</script>\n" +
+            "\n" +
+            "</body>\n" +
+            "</html>\n";
+    public static final String codes157 = "<!DOCTYPE html>\n" +
+            "<html lang=\"en\">\n" +
+            "<script src=\"https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js\"></script>\n" +
+            "<body>\n" +
+            "\n" +
+            "<div ng-app=\"myApp\" ng-controller=\"formCtrl\">\n" +
+            "  <form novalidate>\n" +
+            "    First Name:<br>\n" +
+            "    <input type=\"text\" ng-model=\"user.firstName\"><br>\n" +
+            "    Last Name:<br>\n" +
+            "    <input type=\"text\" ng-model=\"user.lastName\">\n" +
+            "    <br><br>\n" +
+            "    <button ng-click=\"reset()\">RESET</button>\n" +
+            "  </form>\n" +
+            "  <p>form = {{user}}</p>\n" +
+            "  <p>master = {{master}}</p>\n" +
+            "</div>\n" +
+            "\n" +
+            "<script>\n" +
+            "var app = angular.module('myApp', []);\n" +
+            "app.controller('formCtrl', function($scope) {\n" +
+            "    $scope.master = {firstName:\"John\", lastName:\"Doe\"};\n" +
+            "    $scope.reset = function() {\n" +
+            "        $scope.user = angular.copy($scope.master);\n" +
+            "    };\n" +
+            "    $scope.reset();\n" +
+            "});\n" +
+            "</script>\n" +
+            "\n" +
+            "</body>\n" +
+            "</html>\n";
+    public static final String codes158 = "<!DOCTYPE html>\n" +
+            "<html>\n" +
+            "<script src=\"https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js\"></script>  \n" +
+            "<body>\n" +
+            "\n" +
+            "<h2>Validation Example</h2>\n" +
+            "\n" +
+            "<form ng-app=\"myApp\" ng-controller=\"validateCtrl\" \n" +
+            "name=\"myForm\" novalidate>\n" +
+            "\n" +
+            "<p>Username:<br>\n" +
+            "<input type=\"text\" name=\"user\" ng-model=\"user\" required>\n" +
+            "<span style=\"color:red\" ng-show=\"myForm.user.$dirty && myForm.user.$invalid\">\n" +
+            "<span ng-show=\"myForm.user.$error.required\">Username is required.</span>\n" +
+            "</span>\n" +
+            "</p>\n" +
+            "\n" +
+            "<p>Email:<br>\n" +
+            "<input type=\"email\" name=\"email\" ng-model=\"email\" required>\n" +
+            "<span style=\"color:red\" ng-show=\"myForm.email.$dirty && myForm.email.$invalid\">\n" +
+            "<span ng-show=\"myForm.email.$error.required\">Email is required.</span>\n" +
+            "<span ng-show=\"myForm.email.$error.email\">Invalid email address.</span>\n" +
+            "</span>\n" +
+            "</p>\n" +
+            "\n" +
+            "<p>\n" +
+            "<input type=\"submit\"\n" +
+            "ng-disabled=\"myForm.user.$dirty && myForm.user.$invalid ||  \n" +
+            "myForm.email.$dirty && myForm.email.$invalid\">\n" +
+            "</p>\n" +
+            "\n" +
+            "</form>\n" +
+            "\n" +
+            "<script>\n" +
+            "var app = angular.module('myApp', []);\n" +
+            "app.controller('validateCtrl', function($scope) {\n" +
+            "    $scope.user = 'John Doe';\n" +
+            "    $scope.email = 'john.doe@gmail.com';\n" +
+            "});\n" +
+            "</script>\n" +
+            "\n" +
+            "</body>\n" +
+            "</html>\n";
+    public static final String codes159 = "<!DOCTYPE html>\n" +
+            "<html>\n" +
+            "<script src=\"https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js\"></script>\n" +
+            "<body>\n" +
+            "\n" +
+            "<div ng-app=\"myApp\" ng-controller=\"myCtrl\">\n" +
+            "<p>{{ x1 }}</p>\n" +
+            "<p>{{ x2 }}</p>\n" +
+            "</div>\n" +
+            "\n" +
+            "<script>\n" +
+            "var app = angular.module('myApp', []);\n" +
+            "app.controller('myCtrl', function($scope) {\n" +
+            "    $scope.x1 = \"JOHN\";\n" +
+            "    $scope.x2 = angular.isString($scope.x1);\n" +
+            "});\n" +
+            "</script>\n" +
+            "\n" +
+            "</body>\n" +
+            "</html>\n";
+    public static final String codes160 = "<!DOCTYPE html>\n" +
+            "<html>\n" +
+            "<script src=\"https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js\"></script>\n" +
+            "\n" +
+            "<body>\n" +
+            "\n" +
+            "<div ng-app=\"myApp\" ng-controller=\"myCtrl\">\n" +
+            "<p>{{ x1 }}</p>\n" +
+            "<p>{{ x2 }}</p>\n" +
+            "</div>\n" +
+            "\n" +
+            "<script>\n" +
+            "var app = angular.module('myApp', []);\n" +
+            "app.controller('myCtrl', function($scope) {\n" +
+            "    $scope.x1 = \"JOHN\";\n" +
+            "    $scope.x2 = angular.isNumber($scope.x1);\n" +
+            "});\n" +
+            "</script>\n" +
+            "\n" +
+            "</body>\n" +
+            "</html>\n";
+    public static final String codes161 = "<!DOCTYPE html>\n" +
+            "<html>\n" +
+            "<style>\n" +
+            "div {\n" +
+            "  transition: all linear 0.5s;\n" +
+            "  background-color: lightblue;\n" +
+            "  height: 100px;\n" +
+            "  width: 100%;\n" +
+            "  position: relative;\n" +
+            "  top: 0;\n" +
+            "  left: 0;\n" +
+            "}\n" +
+            "\n" +
+            ".ng-hide {\n" +
+            "  height: 0;\n" +
+            "  width: 0;\n" +
+            "  background-color: transparent;\n" +
+            "  top:-200px;\n" +
+            "  left: 200px;\n" +
+            "}\n" +
+            "\n" +
+            "</style>\n" +
+            "<script src=\"https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js\"></script>\n" +
+            "<script src=\"https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-animate.js\"></script>\n" +
+            "\n" +
+            "<body ng-app=\"ngAnimate\">\n" +
+            "\n" +
+            "<h1>Hide the DIV: <input type=\"checkbox\" ng-model=\"myCheck\"></h1>\n" +
+            "\n" +
+            "<div ng-hide=\"myCheck\"></div>\n" +
+            "\n" +
+            "</body>\n" +
+            "</html>\n";
+    public static final String codes162 = "<!DOCTYPE html>\n" +
+            "<html>\n" +
+            "<style>\n" +
+            "div {\n" +
+            "  transition: all linear 0.5s;\n" +
+            "  background-color: lightblue;\n" +
+            "  height: 100px;\n" +
+            "}\n" +
+            "\n" +
+            ".ng-hide {\n" +
+            "  height: 0;\n" +
+            "}\n" +
+            "\n" +
+            "</style>\n" +
+            "<script src=\"https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js\"></script>\n" +
+            "<script src=\"https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-animate.js\"></script>\n" +
+            "\n" +
+            "<body ng-app=\"myApp\">\n" +
+            "\n" +
+            "<h1>Hide the DIV: <input type=\"checkbox\" ng-model=\"myCheck\"></h1>\n" +
+            "\n" +
+            "<div ng-hide=\"myCheck\"></div>\n" +
+            "\n" +
+            "<script>\n" +
+            "var app = angular.module('myApp', ['ngAnimate']);\n" +
+            "</script>\n" +
+            "\n" +
+            "</body>\n" +
+            "</html>\n";
+    public static final String codes163 = "<!DOCTYPE html>\n" +
+            "<html>\n" +
+            "<script src=\"https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js\"></script>\n" +
+            "<body ng-app=\"myNoteApp\" ng-controller=\"myNoteCtrl\">\n" +
+            "\n" +
+            "<h2>My Note</h2>\n" +
+            "\n" +
+            "\n" +
+            "<textarea ng-model=\"message\" cols=\"40\" rows=\"10\"></textarea>\n" +
+            "\n" +
+            "<p>\n" +
+            "<button ng-click=\"save()\">Save</button>\n" +
+            "<button ng-click=\"clear()\">Clear</button>\n" +
+            "</p>\n" +
+            "\n" +
+            "<p>Number of characters left: <span ng-bind=\"left()\"></span></p>\n" +
+            "\n" +
+            "<script>\n" +
+            "var app = angular.module(\"myNoteApp\", []); \n" +
+            "app.controller(\"myNoteCtrl\", function($scope) {\n" +
+            "    $scope.message = \"\";\n" +
+            "    $scope.left = function() {\n" +
+            "        return 100 - $scope.message.length;\n" +
+            "    };\n" +
+            "    $scope.clear = function() {\n" +
+            "        $scope.message = \"\";\n" +
+            "    };\n" +
+            "    $scope.save = function() {\n" +
+            "        alert(\"Note Saved\");\n" +
+            "    };\n" +
+            "});\n" +
+            "</script>\n" +
+            "\n" +
+            "</body>\n" +
+            "</html>\n";
+    public static final String codes164 = "<!DOCTYPE html>\n" +
+            "<html>\n" +
+            "<script src=\"https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js\"></script>\n" +
+            "<body ng-app=\"myApp\" ng-controller=\"todoCtrl\">\n" +
+            "\n" +
+            "<h2>My Todo List</h2>\n" +
+            "\n" +
+            "<form ng-submit=\"todoAdd()\">\n" +
+            "    <input type=\"text\" ng-model=\"todoInput\" size=\"50\" placeholder=\"Add New\">\n" +
+            "    <input type=\"submit\" value=\"Add New\">\n" +
+            "</form>\n" +
+            "\n" +
+            "<br>\n" +
+            "\n" +
+            "<div ng-repeat=\"x in todoList\">\n" +
+            "    <input type=\"checkbox\" ng-model=\"x.done\"> <span ng-bind=\"x.todoText\"></span>\n" +
+            "</div>\n" +
+            "\n" +
+            "<p><button ng-click=\"remove()\">Remove marked</button></p>\n" +
+            "\n" +
+            "<script>\n" +
+            "var app = angular.module('myApp', []); \n" +
+            "app.controller('todoCtrl', function($scope) {\n" +
+            "    $scope.todoList = [{todoText:'Clean House', done:false}];\n" +
+            "\n" +
+            "    $scope.todoAdd = function() {\n" +
+            "        $scope.todoList.push({todoText:$scope.todoInput, done:false});\n" +
+            "        $scope.todoInput = \"\";\n" +
+            "    };\n" +
+            "\n" +
+            "    $scope.remove = function() {\n" +
+            "        var oldList = $scope.todoList;\n" +
+            "        $scope.todoList = [];\n" +
+            "        angular.forEach(oldList, function(x) {\n" +
+            "            if (!x.done) $scope.todoList.push(x);\n" +
+            "        });\n" +
+            "    };\n" +
+            "});\n" +
+            "</script>\n" +
+            "\n" +
+            "</body>\n" +
+            "</html>\n";
+    public static final String codes165 = "//Password should contain atleast 8 chacters, \none lowercase letter, one uppercase letter, \nOne number, and one special character." +
+            "\n\n" +
+            "Vue.component('password-helper',{\n" +
+            "        data() {\n" +
+            "            return {\n" +
+            "                password: '',\n" +
+            "                has_minimum_lenth: false,\n" +
+            "                has_number: false,\n" +
+            "                has_lowercsae: false,\n" +
+            "                has_uppercase: false,\n" +
+            "                has_special: false,\n" +
+            "            }\n" +
+            "        },\n" +
+            "        watch:{\n" +
+            "            password(){\n" +
+            "                this.has_minimum_lenth = (this.password.length > 8);\n" +
+            "                this.has_number    = /\\d/.test(this.password);\n" +
+            "                this.has_lowercase = /[a-z]/.test(this.password);\n" +
+            "                this.has_uppercase = /[A-Z]/.test(this.password);\n" +
+            "                this.has_special   = /[!@#\\$%\\^\\&*\\)\\(+=._-]/.test(this.password);\n" +
+            "            }\n" +
+            "        }\n" +
+            "    });\n" +
+            "\n" +
+            "    var app = new Vue({\n" +
+            "       el: '#app' \n" +
+            "    });" +
+            "\n" +
+            "//Add the below CSS to change the text styling." +
+            "\n" +
+            ".has_required{\n" +
+            "    text-decoration: line-through;\n" +
+            "    color:#689868;\n" +
+            "}";
+    public static final String codes166 = "<html>\n" +
+            "   <head>\n" +
+            "      <title>VueJs Instance</title>\n" +
+            "      <script type = \"text/javascript\" src = \"js/vue.js\"></script>\n" +
+            "   </head>\n" +
+            "   <body>\n" +
+            "      <div id = \"computed_props\">\n" +
+            "        Celsius : <input type = \"text\" v-model = \"celsius\">\n" +
+            "        <br> <br>\n" +
+            "        Fahrenheit : <input type = \"text\" v-model = \"fahrenheit\">\n" +
+            "    </div>\n" +
+            "      <script type = \"text/javascript\">\n" +
+            "          var vm = new Vue({\n" +
+            "            el: '#computed_props',\n" +
+            "            data: {\n" +
+            "            celsius : 0,\n" +
+            "            fahrenheit: 0\n" +
+            "            },\n" +
+            "            methods: {\n" +
+            "            },\n" +
+            "            computed :{\n" +
+            "            },\n" +
+            "            watch : {\n" +
+            "            celsius:function(val) {\n" +
+            "                this.celsius = val;\n" +
+            "                this.fahrenheit = val*1.8 + 32;             },\n" +
+            "            fahrenheit : function (val) {\n" +
+            "                this.celsius = (val-32)/1.8;\n" +
+            "                this.fahrenheit = val;\n" +
+            "            }\n" +
+            "            }\n" +
+            "        });\n" +
+            "      </script>\n" +
+            "   </body>\n" +
+            "</html>";
+    public static final String codes167 = "<html>\n" +
+            "   <head>\n" +
+            "    <title>VueJs Instance</title>\n" +
+            "    <script type = \"text/javascript\" src = \"js/vue.js\"></script>\n" +
+            "   </head>\n" +
+            "   <body>\n" +
+            "    <style>\n" +
+            "        .active {\n" +
+            "            background: yellow;\n" +
+            "        }\n" +
+            "    </style>\n" +
+            " \n" +
+            "    <div id = \"classbinding\">     //HTML Class binding\n" +
+            "        <div v-bind:class = \"{active:isactive}\"><b>{{title}}</b></div>\n" +
+            "    </div>\n" +
+            " \n" +
+            "        <div id = \"databinding\">      //Inline CSS binding\n" +
+            "        <div v-bind:style = \"{ color: activeColor, fontSize: fontSize + 'px' }\">{{title}}</div>\n" +
+            "    </div>\n" +
+            " \n" +
+            "    <div id = \"formbinding\">      //Form element binding\n" +
+            "        <h3>Radio</h3>\n" +
+            "        <input type = \"radio\" id = \"black\" value = \"Black\" v-model = \"picked\">Black\n" +
+            "        <input type = \"radio\" id = \"white\" value = \"White\" v-model = \"picked\">White\n" +
+            "        <h3>Radio element clicked : {{picked}} </h3>\n" +
+            "        <hr/>\n" +
+            "        <h3>Select</h3>\n" +
+            "        <select v-model = \"languages\">\n" +
+            "            <option disabled value = \"\">Please select one</option>\n" +
+            "            <option>Angular</option>\n" +
+            "            <option>React</option>\n" +
+            "            <option>Vue</option>\n" +
+            "            <option>Vanilla</option>\n" +
+            "        </select>\n" +
+            "        <h3>Framework Selected is : {{ languages }}</h3>\n" +
+            "        <hr/>\n" +
+            "    </div>\n" +
+            "     <script type = \"text/javascript\">\n" +
+            "          var vm = new Vue({\n" +
+            "            el: '#classbinding',\n" +
+            "            data: {\n" +
+            "            title : \"HTML BINDING\",\n" +
+            "            isactive : true\n" +
+            "            }\n" +
+            "        });\n" +
+            "          \n" +
+            "         var vm = new Vue({\n" +
+            "            el: '#databinding',\n" +
+            "            data: {\n" +
+            "            title : \"Inline Style Binding\",\n" +
+            "            activeColor: 'blue',\n" +
+            "            fontSize :'30'\n" +
+            "            }\n" +
+            "        });  \n" +
+            "          \n" +
+            "         var vm = new Vue({\n" +
+            "            el: '#formbinding',\n" +
+            "            data: {\n" +
+            "            picked : 'White',\n" +
+            "            languages : \"Vanilla\"\n" +
+            "            }\n" +
+            "        });" +
+            "      </script>" +
+            "   </body>\n" +
+            "</html>";
+    public static final String codes168 = "<html>\n" +
+            "   <head>\n" +
+            "    <title>VueJs Instance</title>\n" +
+            "    <script type = \"text/javascript\" src = \"js/vue.js\"></script>\n" +
+            "   </head>\n" +
+            "   <body>\n" +
+            "    <div id = \"databinding\">\n" +
+            "        <input type = \"text\" v-on:keyup.enter = \"showinputvalue\" v-bind:style =\n" +
+            "\"styleobj\" placeholder = \"Value you want to enter/> <!-- key modifier .enter used -->\n" +
+            "        <h3> {{name}}</h3>\n" +
+            "    </div>\n" +
+            "    <script type = \"text/javascript\">\n" +
+            "        var vm = new Vue({\n" +
+            "            el: '#databinding',\n" +
+            "            data: {\n" +
+            "            Name:'',\n" +
+            "            styleobj: {\n" +
+            "                width: \"30%\",\n" +
+            "                padding: \"12px 20px\",\n" +
+            "                margin: \"8px 0\",\n" +
+            "                boxSizing: \"border-box\"\n" +
+            "            }\n" +
+            "            },\n" +
+            "            methods : {\n" +
+            "            showinputvalue : function(event) {\n" +
+            "                this.name=event.target.value + “ was entered.”;\n" +
+            "            }\n" +
+            "            }\n" +
+            "        });\n" +
+            "    </script>\n" +
+            "   </body>\n" +
+            "</html>";
+    public static final String codes169 = "<html>\n" +
+            "   <head>\n" +
+            "    <title>VueJs Instance</title>\n" +
+            "    <script type = \"text/javascript\" src = \"js/vue.js\"></script>\n" +
+            "   </head>\n" +
+            "   <body>\n" +
+            "    <div id = \"databinding\">\n" +
+            "        <button v-on:click = \"showdata\" v-bind:style = \"styleobj\">Click Me</button>\n" +
+            "        <span style = \"font-size:25px;\"><b>{{show}}</b></span>\n" +
+            "        <h1 v-if = \"show\">This is h1 if </h1> <!-- if condn -->\n" +
+            "        <h2 v-else>This is h2 else </h2>        <!-- else condn -->\n" +
+            "        <h3 v-show = \"show\">This is h3 show </h3>   <!-- show condition -->\n" +
+            "         </div>\n" +
+            "    <script type = \"text/javascript\">\n" +
+            "      var vm = new Vue({\n" +
+            "            el: '#databinding',\n" +
+            "        data: {\n" +
+            "            show: true,\n" +
+            "            styleobj: {\n" +
+            "                backgroundColor: '#2196F3!important',\n" +
+            "                cursor: 'pointer',\n" +
+            "                padding: '8px 16px',\n" +
+            "                verticalAlign: 'middle',\n" +
+            "            }\n" +
+            "            },\n" +
+            "            methods : {\n" +
+            "            showdata : function() {\n" +
+            "                this.show = !this.show;\n" +
+            "            }\n" +
+            "            },\n" +
+            "        });\n" +
+            "    </script>\n" +
+            "   </body>\n" +
+            "</html>";
+    public static final String codes170 = "<html>\n" +
+            "   <head>\n" +
+            "    <title>VueJs Instance</title>\n" +
+            "    <script type = \"text/javascript\" src = \"js/vue.js\"></script>\n" +
+            "   </head>\n" +
+            "   <body>\n" +
+            "    <div id = \"databinding\">\n" +
+            "        <input type = \"text\" v-on:keyup.enter = \"showinputvalue\"\n" +
+            "            v-bind:style = \"styleobj\" placeholder = \"Enter Countries\"/>  <!-- v-for triggered with key event .enter -->\n" +
+            "        <h1 v-if = \"items.length>0\">Display Countries</h1>\n" +
+            "        <ul>\n" +
+            "            <li v-for = \"a in items\">{{a}}</li> \n" +
+            "        </ul>   <!-- v-for rendered as a list item -->\n" +
+            "    </div>\n" +
+            "    <script type = \"text/javascript\">\n" +
+            "        var vm = new Vue({\n" +
+            "            el: '#databinding',\n" +
+            "            data: {\n" +
+            "            items:[],\n" +
+            "            styleobj: {\n" +
+            "                width: \"30%\",\n" +
+            "                padding: \"12px 20px\",\n" +
+            "                margin: \"8px 0\",\n" +
+            "                boxSizing: \"border-box\"\n" +
+            "            }\n" +
+            "            },\n" +
+            "            methods : {\n" +
+            "            showinputvalue : function(event) {\n" +
+            "                this.items.push(event.target.value);\n" +
+            "            }\n" +
+            "            },\n" +
+            "        });\n" +
+            "    </script>\n" +
+            "   </body>\n" +
+            "</html>";
+    public static final String codes171 = "<html>\n" +
+            "   <head>\n" +
+            "    <title>VueJs Instance</title>\n" +
+            "    <script type = \"text/javascript\" src = \"js/vue.js\"></script>\n" +
+            "   </head>\n" +
+            "   <body>\n" +
+            "    <div id = \"databinding\"></div>\n" +
+            "    <script type = \"text/javascript\">\n" +
+            "      var vm = new Vue({\n" +
+            "            el: '#databinding',\n" +
+            "            data: {\n" +
+            "            },\n" +
+            "            methods : {\n" +
+            "            },\n" +
+            "        });\n" +
+            "        var myMixin = {\n" +
+            "            created: function () {\n" +
+            "            this.startmixin()\n" +
+            "            },\n" +
+            "            methods: {\n" +
+            "            startmixin: function () {\n" +
+            "                alert(\"Mixin Popup!\");\n" +
+            "            }\n" +
+            "            }\n" +
+            "        };\n" +
+            "        var Component = Vue.extend({\n" +
+            "            mixins: [myMixin]\n" +
+            "        })\n" +
+            "        var component = new Component();\n" +
+            "    </script>\n" +
+            "   </body>\n" +
+            "</html>\n";
+    public static final String codes172 = "<html>\n" +
+            "   <head>\n" +
+            "    <title>VueJs Instance</title>\n" +
+            "    <script type = \"text/javascript\" src = \"js/vue.js\"></script>\n" +
+            "   </head>\n" +
+            "   <body>\n" +
+            "    <div id = \"databinding\">\n" +
+            "        <div v-changestyle>VueJS Directive</div>\n" +
+            "    </div>\n" +
+            "    <script type = \"text/javascript\">\n" +
+            "        Vue.directive(\"changestyle\",{\n" +
+            "            bind(e1,binding, vnode) {\n" +
+            "            console.log(e1);\n" +
+            "            e1.style.color = \"blue\";\n" +
+            "            e1.style.fontSize = \"35px\";\n" +
+            "            }\n" +
+            "        });\n" +
+            "        var vm = new Vue({\n" +
+            "            el: '#databinding',\n" +
+            "            data: {\n" +
+            "            },\n" +
+            "            methods : {\n" +
+            "            },\n" +
+            "        });\n" +
+            "    </script>\n" +
+            "   </body>\n" +
+            "</html>";
+    public static final String codes173 = "<html>\n" +
+            "   <head>\n" +
+            "    <title>VueJs Instance</title>\n" +
+            "    <script type = \"text/javascript\" src = \"js/vue.js\"></script>\n" +
+            "   </head>\n" +
+            "   <body>\n" +
+            "    <div id = \"databinding\">\n" +
+            "        <input  v-model = \"name\" placeholder = \"Enter Name\" /><br/>\n" +
+            "        <span style = \"font-size:25px;\"><b>Number of letters are : {{name |\n" +
+            "countletters}}</b></span>\n" +
+            "    </div>\n" +
+            "    <script type = \"text/javascript\">\n" +
+            "        var vm = new Vue({\n" +
+            "            el: '#databinding',\n" +
+            "            data: {\n" +
+            "            name : \"\"\n" +
+            "            },\n" +
+            "            filters : {\n" +
+            "            countletters : function(value) {\n" +
+            "                return value.length;\n" +
+            "            }\n" +
+            "            }\n" +
+            "        });\n" +
+            "    </script>\n" +
+            "   </body>\n" +
+            "</html>";
+    public static final String codes174 = "<html>\n" +
+            "   <head>\n" +
+            "    <title>VueJs Instance</title>\n" +
+            "    <script type = \"text/javascript\" src = \"js/vue.js\"></script>\n" +
+            "    <script type = \"text/javascript\" src = \"js/vue-router.js\"></script>\n" +
+            "   </head>\n" +
+            "   <body>\n" +
+            "    <div id = \"app\">\n" +
+            "        <h1>Routing Example</h1>\n" +
+            "        <p>\n" +
+            "            <router-link to = \"/route1\">Router Link 1</router-link>\n" +
+            "            <router-link to = \"/route2\">Router Link 2</router-link>\n" +
+            "        </p>\n" +
+            "        <!-- route outlet →\n" +
+            "        <!-- component matched by the route will render here →\n" +
+            "        <router-view></router-view>\n" +
+            "    </div>\n" +
+            "    <script type = \"text/javascript\">\n" +
+            "        const Route1 = { template: '<div style =\n" +
+            "\"border-radius:20px;background-color:cyan;width:200px;height:50px;margin:10px;font-size:25px;padding:10px;\">This is router 1</div>' }\n" +
+            "    const Route2 = { template: '<div style = \"border-radius:20px;background-color:green;width:200px;height:50px;margin:10px;font-size:25px;padding:10px;\">This is router 2</div>' }\n" +
+            "        const routes = [\n" +
+            "            { path: '/route1', component: Route1 },\n" +
+            "            { path: '/route2', component: Route2 }\n" +
+            "        ];\n" +
+            "        const router = new VueRouter({\n" +
+            "            routes // short for `routes: routes`\n" +
+            "        });\n" +
+            "        var vm = new Vue({\n" +
+            "            el: '#app',\n" +
+            "            Router\n" +
+            "        });\n" +
+            "    </script>\n" +
+            "   </body>\n" +
+            "</html>";
+    public static final String codes175 = "<html>\n" +
+            "   <head>\n" +
+            "    <title>VueJs Instance</title>\n" +
+            "   </head>\n" +
+            "   <body>\n" +
+            "    <style>\n" +
+            "        #databinding{\n" +
+            "            padding: 20px 15px 15px 15px;\n" +
+            "            margin: 0 0 25px 0;\n" +
+            "            width: auto;\n" +
+            "        }\n" +
+            "        span, option, input {\n" +
+            "            font-size:20px;\n" +
+            "        }\n" +
+            "        .Table{\n" +
+            "            display: table;\n" +
+            "            width:80%;\n" +
+            "        }\n" +
+            "        .Title{\n" +
+            "            display: table-caption;\n" +
+            "            text-align: center;\n" +
+            "            font-weight: bold;\n" +
+            "            font-size: larger;\n" +
+            "        }\n" +
+            "        .Heading{\n" +
+            "            display: table-row;\n" +
+            "            font-weight: bold;\n" +
+            "            text-align: center;\n" +
+            "        }\n" +
+            "        .Row{\n" +
+            "            display: table-row;\n" +
+            "        }\n" +
+            "        .Cell{\n" +
+            "            display: table-cell;\n" +
+            "            border: solid;\n" +
+            "            border-width: thin;\n" +
+            "            padding-left: 5px;\n" +
+            "            padding-right: 5px;\n" +
+            "            width:30%;\n" +
+            "        }\n" +
+            "    </style>\n" +
+            "      \n" +
+            "    <div id = \"databinding\" style = \"\">\n" +
+            "        <h1>Furniture Inventory</h1>\n" +
+            "        <span>Item name</span>\n" +
+            "        <input type = \"text\" placeholder = \"Enter Item Name\" v-model = \"item\"/><br>\n" +
+            "        <span>Warehouse No.</span>\n" +
+            "        <input type = \"text\" placeholder = \"Enter Warehouse No.\" v-model = \"warehouse\"/><br>\n" +
+            "        <span>Quantity</span>\n" +
+            "        <input type = \"text\" placeholder = \"Enter Quantity\" v-model = \"quantity\"/><br>\n" +
+            "        <button v-on:click = \"showdata\" v-bind:style = \"styleobj\">Add</button>\n" +
+            "        <br/>\n" +
+            "        <br/>\n" +
+            "        <inventorycomponent\n" +
+            "            v-for = \"(i, index) in invdet\"\n" +
+            "            v-bind:item = \"i\"\n" +
+            "            v-bind:index = \"index\"\n" +
+            "            v-bind:itr = \"i\"\n" +
+            "            v-bind:key = \"i.item\"\n" +
+            "            v-on:removeelement = \"invdet.splice(index, 1)\">\n" +
+            "        </inventorycomponent>\n" +
+            "    </div>\n" +
+            "      \n" +
+            "    <script type = \"text/javascript\">\n" +
+            "       Vue.component('inventorycomponent',{\n" +
+            "            template : '<div class = \"Table\"><div class = \"Row\"  v-bind:style = \"styleobj\"><div class = \"Cell\"><p>{{itr.item}}</p></div><div class = \"Cell\"><p>{{itr.warehouse}}</p></div><div class = \"Cell\"><p>{{itr.quantity}}</p></div><div class = \"Cell\"><p><button v-on:click = \"$emit(\\'removeelement\\')\">X</button></p></div></div></div>',\n" +
+            "            props: ['itr', 'index'],\n" +
+            "            data: function() {\n" +
+            "            return {\n" +
+            "                styleobj : {\n" +
+            "                    backgroundColor:this.getcolor(),\n" +
+            "                    fontSize : 20\n" +
+            "                }\n" +
+            "            }\n" +
+            "            },\n" +
+            "            methods:{\n" +
+            "            getcolor : function() {\n" +
+            "                if (this.index % 2) {\n" +
+            "                    return \"#66CDAA\";\n" +
+            "                } else {\n" +
+            "                    return \"#90EE90\";\n" +
+            "                }\n" +
+            "            }\n" +
+            "            }\n" +
+            "        });\n" +
+            "        var vm = new Vue({\n" +
+            "            el: '#databinding',\n" +
+            "            data: {\n" +
+            "            item:'',\n" +
+            "            warehouse:'',\n" +
+            "            quantity : '',\n" +
+            "            invdet:[],\n" +
+            "            styleobj: {\n" +
+            "                backgroundColor: '#2196F3!important',\n" +
+            "                cursor: 'pointer',\n" +
+            "                padding: '8px 16px',\n" +
+            "                verticalAlign: 'middle',\n" +
+            "            }\n" +
+            "            },\n" +
+            "            methods :{\n" +
+            "            showdata : function() {\n" +
+            "                this.invdet.push({\n" +
+            "                    item: this.item,\n" +
+            "                    warehouse: this.warehouse,\n" +
+            "                    quantity : this.quantity\n" +
+            "                });\n" +
+            "                this.item = \"\";\n" +
+            "                this.warehouse = \"\";\n" +
+            "                this.quantity = \"\";\n" +
+            "            }\n" +
+            "            }\n" +
+            "        });" +
+            "      \n" +
+            "    </script>\n" +
+            "   </body>\n" +
+            "</html>";
+    public static final String codes176 = "import React, { useState } from \"react\";\n" +
+            "import ReactDOM from \"react-dom\";\n" +
+            "\n" +
+            "import \"./styles.css\";\n" +
+            "\n" +
+            "function App() {\n" +
+            "\n" +
+            "  const list = [\n" +
+            "    \"Banana\",\n" +
+            "    \"Apple\",\n" +
+            "    \"Orange\",\n" +
+            "    \"Mango\",\n" +
+            "    \"Pineapple\",\n" +
+            "    \"Watermelon\"\n" +
+            "  ];\n" +
+            "\n" +
+            "  const [filterList, setFilterList] = useState(list);\n" +
+            "\n" +
+            "  const handleSearch = (event) => {\n" +
+            "\n" +
+            "    if (event.target.value === \"\") {\n" +
+            "      setFilterList(list);\n" +
+            "      return;\n" +
+            "    }\n" +
+            "    const filteredValues = list.filter(\n" +
+            "      (item) =>\n" +
+            "        item.toLowerCase().indexOf(event.target.value.toLowerCase()) !== -1\n" +
+            "    );\n" +
+            "    setFilterList(filteredValues);\n" +
+            "  };\n" +
+            "  return (\n" +
+            "    <div className=\"app\">\n" +
+            "      <div>\n" +
+            "        Search: <input name=\"query\" type=\"text\" onChange={handleSearch} />\n" +
+            "      </div>\n" +
+            "      {filterList &&\n" +
+            "        filterList.map((item) => (\n" +
+            "          <div>{item}</div> //Display each item\n" +
+            "        ))}\n" +
+            "    </div>\n" +
+            "  );\n" +
+            "}\n" +
+            "\n" +
+            "const rootElement = document.getElementById(\"root\");\n" +
+            "ReactDOM.render(<App />, rootElement);";
+    public static final String codes177 = "const { useState } = React;\n" +
+            "\n" +
+            "function App() {\n" +
+            "  const [count, setCount] = useState(0);\n" +
+            "\n" +
+            "  return (\n" +
+            "    <div className=\"app\">\n" +
+            "      {\n" +
+            "        // if else statement to determine color of the counter\n" +
+            "      }\n" +
+            "      <h1 className={count > 0 ? \"positive\" : count < 0 ? \"negative\" : null}>\n" +
+            "        {count}\n" +
+            "      </h1>\n" +
+            "      <div className=\"button__wrapper\">\n" +
+            "        <button onClick={() => setCount(count - 1)}>-</button>\n" +
+            "        <button onClick={() => setCount(count + 1)}>+</button>\n" +
+            "      </div>\n" +
+            "    </div>\n" +
+            "  );\n" +
+            "}\n" +
+            "\n" +
+            "ReactDOM.render(<App />, document.getElementById(\"root\"));\n";
+    public static final String codes178 = "import React, {Component} from 'react';\n" +
+            "import 'highlight.js/scss/darcula.scss'; // your favourite theme\n" +
+            "import blade from './blade'; // TODO: Figure out exact path in package\n" +
+            "import hljs from 'highlight.js';\n" +
+            "\n" +
+            "hljs.registerLanguage('blade', blade);\n" +
+            "\n" +
+            "class Highlighter extends Component {\n" +
+            "    constructor(props) {\n" +
+            "        super(props);\n" +
+            "        hljs.initHighlightingOnLoad();\n" +
+            "    }\n" +
+            "\n" +
+            "    render() {\n" +
+            "        let {children} = this.props;\n" +
+            "        return\n" +
+            "        {\n" +
+            "            <pre ref={(node) => this.node = node}>\n" +
+            "                <code className=\"blade\">\n" +
+            "                    {children}\n" +
+            "                </code>\n" +
+            "            </pre>\n" +
+            "        }\n" +
+            "    }\n" +
+            "}\n" +
+            "\n" +
+            "export default Highlighter;";
+    public static final String codes179 = "function Person(\n" +
+            "props\n" +
+            ") {\n" +
+            "  return <h1>Hi, I'm {\n" +
+            "props\n" +
+            ".name}!</h1>;\n" +
+            "}\n" +
+            "\n" +
+            "ReactDOM.render(<Person name=\"Jesse\"/>, document.getElementById('root'));";
+    public static final String codes180 = "function Person(props) {\n" +
+            "  return <h2>I'm { props.name }!</h2>;\n" +
+            "}\n" +
+            "\n" +
+            "function Greeting() {\n" +
+            "  const name = \"Jesse\"\n" +
+            "  return (\n" +
+            "    <>\n" +
+            "      <h1>Hello!</h1>\n" +
+            "      <Person name=\n" +
+            "{\n" +
+            " name \n" +
+            "}\n" +
+            " />\n" +
+            "    </>\n" +
+            "  );\n" +
+            "}\n" +
+            "\n" +
+            "ReactDOM.render(<Greeting />, document.getElementById('root'));";
+    public static final String codes181 = "function App({isLoggedIn}) {\n" +
+            "  return (\n" +
+            "    <>\n" +
+            "      <h1>My Application</h1>\n" +
+            "      {isLoggedIn \n" +
+            "&&\n" +
+            " <Profile /> }\n" +
+            "    </>\n" +
+            "  );\n" +
+            "}\n" +
+            "\n" +
+            "ReactDOM.render(<App />, document.getElementById('root'));";
+    public static final String codes182 = "function GroceryList() {\n" +
+            "  const items = [\n" +
+            "    {id: 1, name: 'bread'},\n" +
+            "    {id: 2, name: 'milk'},\n" +
+            "    {id: 3, name: 'eggs'}\n" +
+            "  ];\n" +
+            "\n" +
+            "  return (\n" +
+            "    <>\n" +
+            "      <h1>Grocery List</h1>\n" +
+            "      <ul>\n" +
+            "        {items.map((item) => <li \n" +
+            "key\n" +
+            "={item.id}>{item.name}</li>)}\n" +
+            "      </ul>\n" +
+            "    </>\n" +
+            "  );\n" +
+            "}\n" +
+            "\n" +
+            "ReactDOM.render(<GroceryList />, document.getElementById('root'));";
+    public static final String codes183 = "import { useState, useEffect } from \"react\";\n" +
+            "import ReactDOM from \"react-dom\";\n" +
+            "\n" +
+            "function App() {\n" +
+            "  const [data, setData] = useState([]);\n" +
+            "\n" +
+            "  useEffect(() => {\n" +
+            "    setData(getData())\n" +
+            "  }, \n" +
+            "[]\n" +
+            ");\n" +
+            "\n" +
+            "  return <DisplayData data={data} />;\n" +
+            "}\n" +
+            "\n" +
+            "ReactDOM.render(<App />, document.getElementById('root'));";
+    public static final String codes184 = "const Header = () => {\n" +
+            "  return (\n" +
+            "    <>\n" +
+            "      <h1 style=\n" +
+            "{{backgroundColor: \"yellow\"}}\n" +
+            ">Hello Style!</h1>\n" +
+            "      <p>Add a little style!</p>\n" +
+            "    </>\n" +
+            "  );\n" +
+            "}";
+    public static final String codes185 = "import { useState } from \"react\";\n" +
+            "import ReactDOM from 'react-dom';\n" +
+            "\n" +
+            "function MyForm() {\n" +
+            "  const [name, setName] = useState(\"\");\n" +
+            "\n" +
+            "  return (\n" +
+            "    <form>\n" +
+            "      <label>Enter your name:\n" +
+            "        <input\n" +
+            "          type=\"text\" \n" +
+            "          value={name}\n" +
+            "          onChange={(e) => setName(e.target.value)}\n" +
+            "        />\n" +
+            "      </label>\n" +
+            "    </form>\n" +
+            "  )\n" +
+            "}\n" +
+            "\n" +
+            "ReactDOM.render(<MyForm />, document.getElementById('root'));";
+    public static final String codes186 = "import ReactDOM from \"react-dom\";\n" +
+            "import { BrowserRouter, Routes, Route } from \"react-router-dom\";\n" +
+            "import Layout from \"./pages/Layout\";\n" +
+            "import Home from \"./pages/Home\";\n" +
+            "import Blogs from \"./pages/Blogs\";\n" +
+            "import Contact from \"./pages/Contact\";\n" +
+            "import NoPage from \"./pages/NoPage\";\n" +
+            "\n" +
+            "export default function App() {\n" +
+            "  return (\n" +
+            "    <BrowserRouter>\n" +
+            "      <Routes>\n" +
+            "        <Route path=\"/\" element={<Layout />}>\n" +
+            "          <Route index element={<Home />} />\n" +
+            "          <Route path=\"blogs\" element={<Blogs />} />\n" +
+            "          <Route path=\"contact\" element={<Contact />} />\n" +
+            "          <Route path=\"*\" element={<NoPage />} />\n" +
+            "        </Route>\n" +
+            "      </Routes>\n" +
+            "    </BrowserRouter>\n" +
+            "  );\n" +
+            "}\n" +
+            "\n" +
+            "ReactDOM.render(<App />, document.getElementById(\"root\"));";
+    public static final String codes187 = "import Ember from 'ember';\n" +
+            "\n" +
+            "export default function() {\n" +
+            "   var Car = Ember.Object.extend ({\n" +
+            "      \n" +
+            "      //The values for below variables will be supplied by 'create' method\n" +
+            "      CarName: null,\n" +
+            "      CarModel: null,\n" +
+            "      carDetails: Ember.computed('CarName', 'CarModel', function() {\n" +
+            "\n" +
+            "         //returns values to the computed property function 'carDetails'\n" +
+            "         return ' Car Name: ' + this.get('CarName') + '<br>' + \n" +
+            "            ' Car Model: ' + this.get('CarModel');\n" +
+            "      })\n" +
+            "   });\n" +
+            "\n" +
+            "   var mycar = Car.create ({\n" +
+            "      //initializing the values of Car variables\n" +
+            "      CarName: \"Alto\",\n" +
+            "      CarModel: \"800\",\n" +
+            "   });\n" +
+            "   \n" +
+            "   //Displaying the information of the car\n" +
+            "   document.write(\"<h2>Details of the car: <br></h2>\");\n" +
+            "   document.write(mycar.get('carDetails'));\n" +
+            "}";
+    public static final String codes188 = "import Ember from 'ember';\n" +
+            "\n" +
+            "export default function() {\n" +
+            "   //reopen() method for instances\n" +
+            "   var Person = Ember.Object.extend ({\n" +
+            "      firstName: null,\n" +
+            "      lastName:  null,\n" +
+            "   });\n" +
+            "\n" +
+            "   //adding new variable to the Person class\n" +
+            "   Person.reopen ({\n" +
+            "      middleName: 'Smith',\n" +
+            "   });\n" +
+            "\n" +
+            "   document.write('Middle Name: '+Person.create().get('middleName'));\n" +
+            "   document.write(\"<br>\");\n" +
+            "\n" +
+            "   //reopenClass() method for classes\n" +
+            "   Person.reopenClass ({\n" +
+            "      //creating new function for class Person\n" +
+            "      openClass: function() {\n" +
+            "         return Person.create({isMan: true});\n" +
+            "      }\n" +
+            "   });\n" +
+            "\n" +
+            "   document.write('isMan: '+Person.openClass().get('isMan'));\n" +
+            "}";
+    public static final String codes189 = "import Ember from 'ember';   //import ember module\n" +
+            "export default function() {\n" +
+            "   \n" +
+            "   //new ember object\n" +
+            "   const Demo = Ember.Object.extend ({\n" +
+            "      init() {\n" +
+            "         alert('The default property of stateOn is : ' + this.get('stateOn'));\n" +
+            "      },\n" +
+            "      stateOn: false\n" +
+            "   });\n" +
+            "\n" +
+            "   const state = Demo.create();   //new instance from object with create() method\n" +
+            "   state.set('stateOn', true);\n" +
+            "   console.log(state.get('stateOn'));\n" +
+            "}";
+    public static final String codes190 = "import Ember from 'ember';\n" +
+            "\n" +
+            "export default function() {\n" +
+            "   var Person = Ember.Object.extend ({\n" +
+            "      \n" +
+            "      //todos is an array which holds the boolean values\n" +
+            "      todos: [\n" +
+            "         Ember.Object.create ({\n" +
+            "            isDone: true\n" +
+            "         }),\n" +
+            "         Ember.Object.create ({\n" +
+            "            isDone: false\n" +
+            "         }),\n" +
+            "         Ember.Object.create ({\n" +
+            "            isDone: true\n" +
+            "         })\n" +
+            "      ],\n" +
+            "      \n" +
+            "      //dispaly the remaining values of todos\n" +
+            "      remaining: Ember.computed('todos.@each.isDone', function() {\n" +
+            "         var todos = this.get('todos');\n" +
+            "         \n" +
+            "         //return the todos array\n" +
+            "         return todos.filterBy('isDone', false).get('length');\n" +
+            "      }),\n" +
+            "   });\n" +
+            "   \n" +
+            "   var car_obj = Person.create();\n" +
+            "   document.write(\"The remaining number of cars in todo list: \" + car_obj.get('remaining'));\n" +
+            "}";
+    public static final String codes191 = "import Ember from 'ember';\n" +
+            "\n" +
+            "export default function() {\n" +
+            "   var CarOne = Ember.Object.create ({\n" +
+            "      //primary value\n" +
+            "      TotalPrice: 860600\n" +
+            "   });\n" +
+            "\n" +
+            "   var Car = Ember.Object.extend ({\n" +
+            "      //creates property which is an alias for another property\n" +
+            "      TotalPrice: Ember.computed.alias('CarOne.TotalPrice')\n" +
+            "   });\n" +
+            "\n" +
+            "   var CarTwo = Car.create ({\n" +
+            "      CarOne: CarOne\n" +
+            "   });\n" +
+            "   document.write('Value of car before updating: ' + CarTwo.get('TotalPrice'));\n" +
+            "   \n" +
+            "   //sets the car price\n" +
+            "   CarTwo.set('TotalPrice', 930000);\n" +
+            "   \n" +
+            "   //above car price effects the CarOne\n" +
+            "   document.write('<br>Value of car after updating: ' + CarOne.get('TotalPrice'));\n" +
+            "}";
+    public static final String codes192 = "import Ember from 'ember';\n" +
+            "\n" +
+            "export default function() {\n" +
+            "   var Person = Ember.Object.extend ({\n" +
+            "      Name: null,\n" +
+            "      \n" +
+            "      //Defining the Details1 and Details2 computed property function\n" +
+            "      Details1: Ember.computed('Name', function() {\n" +
+            "         \n" +
+            "         //get the Name value\n" +
+            "         var Name = this.get('Name');\n" +
+            "         //return the Name value\n" +
+            "         return Name;\n" +
+            "      }),\n" +
+            "\n" +
+            "      Details2: Ember.observer('Details1', function() {\n" +
+            "         this.set('Name','Steve Waugh');\n" +
+            "      })\n" +
+            "   });\n" +
+            "\n" +
+            "   //initializing the Person details\n" +
+            "   var person = Person.create ({\n" +
+            "      //initial value of Name varialble\n" +
+            "      Name: 'Mark Waugh'\n" +
+            "   });\n" +
+            "\n" +
+            "   //updating the value for 'firstName' using set() method\n" +
+            "   document.write('<strong>The updated name : </strong>' +person.get('Details1'));\n" +
+            "}";
+    public static final String codes193 = "<table" +
+            "class=\"table\"" +
+            ">\n" +
+            "  <tr>\n" +
+            "    <td>John</td>\n" +
+            "    <td>Doe</td>\n" +
+            "    <td>john@example.com</td>\n" +
+            "  </tr>\n" +
+            "  <tr>\n" +
+            "    <td>Mary</td>\n" +
+            "    <td>Moe</td>\n" +
+            "    <td>mary@example.com</td>\n" +
+            "  </tr>\n" +
+            "  <tr>\n" +
+            "    <td>July</td>\n" +
+            "    <td>Dooley</td>\n" +
+            "    <td>july@example.com</td>\n" +
+            "  </tr>\n" +
+            "</table>";
+    public static final String codes194 = "<div class=\"" +
+            "alert alert-success" +
+            "\">\n" +
+            "  This alert box could indicate a successful or positive action.\n" +
+            "</div>\n" +
+            "<div class=\"" +
+            "alert alert-info" +
+            "\">\n" +
+            "  This alert box could indicate a neutral informative change or action.\n" +
+            "</div>\n" +
+            "<div class=\"" +
+            "alert alert-warning" +
+            "\">\n" +
+            "  This alert box could indicate a warning that might need attention.\n" +
+            "</div>\n" +
+            "<div class=\"" +
+            "alert alert-danger" +
+            "\">\n" +
+            "  This alert box could indicate a dangerous or potentially negative action.\n" +
+            "</div>";
+    public static final String codes195 = "<div class=\"" +
+            "btn-group-vertical" +
+            "\">\n" +
+            "  <button class=\"btn btn-primary\">Apple</button>\n" +
+            "  <button class=\"btn btn-primary\">Samsung</button>\n" +
+            "  <button class=\"btn btn-primary\">Sony</button>\n" +
+            "</div>";
+    public static final String codes196 = "<div class=\"progress\">\n" +
+            "  <div class=\"progress-bar \n" +
+            "bg-success\n" +
+            "\"\n" +
+            "    style=\"width:70%\">\n" +
+            "  </div>\n" +
+            "</div>";
+    public static final String codes197 = "<ul class=\"pagination\">\n" +
+            "  <li class=\"page-item \n" +
+            "active\n" +
+            "\"><a class=\"page-link\" href=\"#\">1</a></li>\n" +
+            "  <li class=\"page-item\"><a class=\"page-link\" href=\"#\">2</a></li>\n" +
+            "  <li class=\"page-item\"><a class=\"page-link\" href=\"#\">3</a></li>\n" +
+            "</ul>";
+    public static final String codes198 = "<ul class=\"" +
+            "list-group\n" +
+            " \n" +
+            "list-group-horizontal" +
+            "\">\n" +
+            "  <li class=\"list-group-item\">First item</li>\n" +
+            "  <li class=\"list-group-item\">Second item</li>\n" +
+            "  <li class=\"list-group-item\">Third item</li>\n" +
+            "</ul>";
+    public static final String codes199 = "<div class=\"" +
+            "card" +
+            "\">\n" +
+            "  <div class=\"" +
+            "card-header" +
+            "\">Header</div>\n" +
+            "  <div class=\"" +
+            "card-body" +
+            "\">Content</div>\n" +
+            "  <div class=\"" +
+            "card-footer" +
+            "\">Footer</div>\n" +
+            "</div>";
+    public static final String codes200 = "<div class=\"" +
+            "dropdown" +
+            "\">\n" +
+            "  <button " +
+            "data-toggle=\"dropdown\"" +
+            "\n" +
+            "  class=\"btn btn-primary " +
+            "dropdown-toggle" +
+            "\">\n" +
+            "  Dropdown Example\n" +
+            "  <div class=\"dropdown-menu\">\n" +
+            "    <a class=\"dropdown-item\" href=\"#\">Link 1</a>\n" +
+            "    <a class=\"dropdown-item\" href=\"#\">Link 2</a>\n" +
+            "    <a class=\"dropdown-item\" href=\"#\">Link 3</a>\n" +
+            "  </div>\n" +
+            "</div>";
+    public static final String codes201 = "<ul class=\"" +
+            "nav" +
+            " " +
+            "nav-pills" +
+            "\">\n" +
+            "  <li class=\"" +
+            "nav-item" +
+            "\">\n" +
+            "    <a class=\"" +
+            "nav-link" +
+            "\" href=\"#\">Link</a>" +
+            "  </li>\n" +
+            "  <li class=\"" +
+            "nav-item" +
+            "\">\n" +
+            "    <a class=\"" +
+            "nav-link" +
+            "\" href=\"#\">Link</a>" +
+            "  </li>\n" +
+            "</ul>";
+    public static final String codes202 = "<nav class=\"navbar navbar-expand-sm bg-light " +
+            "fixed-top" +
+            "\">\n" +
+            "  <ul class=\"navbar-nav\">\n" +
+            "    <li class=\"nav-item\">\n" +
+            "      <a class=\"nav-link\" href=\"#\">Link 1</a>\n" +
+            "    </li>\n" +
+            "    <li class=\"nav-item\">\n" +
+            "      <a class=\"nav-link\" href=\"#\">Link 2</a>\n" +
+            "    </li>\n" +
+            "  </ul>\n" +
+            "</nav>";
+    public static final String codes203 = "var http = require('http');\n" +
+            "http.request({\n" +
+            "host: 'www.google.com',\n" +
+            "method: 'GET',\n" +
+            "path: \"/\"\n" +
+            "}, function(response) {\n" +
+            "response.setEncoding(\"utf8\");\n" +
+            "response.on(\"readable\", function() {\n" +
+            "console.log(response.read())\n" +
+            "});\n" +
+            "}).end();";
+    public static final String codes204 = "var http = require('http');\n" +
+            "var url = require('url');\n" +
+            "var server = http.createServer(function(request, response) {\n" +
+            "var cookies = request.headers.cookie;\n" +
+            "if(!cookies) {\n" +
+            "var cookieName = \"session\";\n" +
+            "var cookieValue = \"123456\";\n" +
+            "var expiryDate = new Date();\n" +
+            "expiryDate.setDate(expiryDate.getDate() + 1);\n" +
+            "var cookieText = cookieName + '=' + cookieValue + ';expires='\n" +
+            "+ expiryDate.toUTCString() + ';';\n" +
+            "response.setHeader('Set-Cookie', cookieText);\n" +
+            "response.writeHead(302, {\n" +
+            "'Location': '/'\n" +
+            "});\n" +
+            "return response.end();\n" +
+            "}\n" +
+            "cookies.split(';').forEach(function(cookie) {\n" +
+            "var m = cookie.match(/(.*?)=(.*)$/);\n" +
+            "cookies[m[1].trim()] = (m[2] || '').trim();\n" +
+            "});\n" +
+            "response.end(\"Cookie set: \" + cookies.toString());\n" +
+            "}).listen(8080);";
+    public static final String codes205 = "var user = {\n" +
+            "first_name: \"John\",\n" +
+            "last_name: \"Smith\",\n" +
+            "age: \"38\",\n" +
+            "department: \"Software\"\n" +
+            "};\n" +
+            "console.log(user);\n" +
+            "console.log(Object.keys(user).length);\n" +
+            "delete user.last_name;\n" +
+            "console.log(user);\n" +
+            "console.log(Object.keys(user).length);";
+    public static final String codes206 = "var dirToJson = require('dir-to-json');\n" +
+            " \n" +
+            "dirToJson( \"./album\", function( err, dirTree ){\n" +
+            "    if( err ){\n" +
+            "        throw err;\n" +
+            "    }else{\n" +
+            "        console.log( dirTree );\n" +
+            "    }\n" +
+            "});";
+    public static final String codes207 = "var mysql = require(\"mysql\");\n" +
+            "var con = mysql.createConnection({\n" +
+            "    host: \"hostname\",\n" +
+            "    user: \"username\",\n" +
+            "    password: \"password\",\n" +
+            "    database: \"database\"\n" +
+            "});\n" +
+            "con.connect(function(err){\n" +
+            "    if(err) {\n" +
+            "        console.log('Error connecting to Db');\n" +
+            "        return;\n" +
+            "    }\n" +
+            "    console.log('Connection Established');\n" +
+            "})\n" +
+            "con.end(function(err) { \n" +
+            "});";
+    public static final String codes208 = "const arr = ['fish', 'crab', 'dolphin', 'whale', 'starfish'];\n" +
+            "arr.forEach(element => {\n" +
+            "  console.log(element);\n" +
+            "});";
+    public static final String codes209 = "var readline = require('readline');\n" +
+            "var fs = require('fs');\n" +
+            "\n" +
+            "var file= readline.createInterface({\n" +
+            "  input: fs.createReadStream('demo.html')\n" +
+            "});\n" +
+            "\n" +
+            "var lineno = 0;\n" +
+            "file.on('line', function (line) {\n" +
+            "  lineno++;\n" +
+            "  console.log('Line number ' + lineno + ': ' + line);\n" +
+            "});";
+    public static final String codes210 = "var MongoClient = require('mongodb').MongoClient;\n" +
+            "var url = \"mongodb://localhost:27017/mydb\";\n" +
+            "\n" +
+            "MongoClient.connect(url, function(err, db) {\n" +
+            "  if (err) throw err;\n" +
+            "  console.log(\"Database created!\");\n" +
+            "  db.close();\n" +
+            "});";
+    public static final String codes211 = "var zlib = require('zlib');\n" +
+            "var fs = require('fs');\n" +
+            "\n" +
+            "var gzip = zlib.createGzip();\n" +
+            "var r = fs.createReadStream('./demofile.txt');\n" +
+            "var w = fs.createWriteStream('./demogzipfile.txt.gz');\n" +
+            "r.pipe(gzip).pipe(w);";
+    public static final String codes212 = "var fs = require('fs');\n" +
+            " \n" +
+            "try{\n" +
+            "    // file not presenet\n" +
+            "    var data = fs.readFileSync('demo.html');\n" +
+            "} catch (err){\n" +
+            "    console.log(err);\n" +
+            "}";
+    public static final String codes213 = "mailer = require('nodemailer');\n" +
+            "\n" +
+            "smtpProtocol = mailer.createTransport({\n" +
+            "    service: \"Gmail\",\n" +
+            "    auth: {\n" +
+            "        user: \"sender@gmail.com\",\n" +
+            "        pass: \"password\"\n" +
+            "    }\n" +
+            "});\n" +
+            "\n" +
+            "var mailoption = {\n" +
+            "    from: \"sender@gmail.com\",\n" +
+            "    to: \"receiver@gmail.com\",\n" +
+            "    subject: \"Test Mail\",\n" +
+            "    html: 'Good Morning!'\n" +
+            "}\n" +
+            "\n" +
+            "smtpProtocol.sendMail(mailoption, function(err, response){\n" +
+            "    if(err) {\n" +
+            "        console.log(err);\n" +
+            "    } \n" +
+            "    console.log('Message Sent' + response.message);\n" +
+            "    smtpProtocol.close();\n" +
+            "});";
+    public static final String codes214 = "/**\n" +
+            " * Module dependencies.\n" +
+            " */\n" +
+            "\n" +
+            "var express = require('../..');\n" +
+            "var hash = require('pbkdf2-password')()\n" +
+            "var path = require('path');\n" +
+            "var session = require('express-session');\n" +
+            "\n" +
+            "var app = module.exports = express();\n" +
+            "\n" +
+            "// config\n" +
+            "\n" +
+            "app.set('view engine', 'ejs');\n" +
+            "app.set('views', path.join(__dirname, 'views'));\n" +
+            "\n" +
+            "// middleware\n" +
+            "\n" +
+            "app.use(express.urlencoded({ extended: false }))\n" +
+            "app.use(session({\n" +
+            "  resave: false, // don't save session if unmodified\n" +
+            "  saveUninitialized: false, // don't create session until something stored\n" +
+            "  secret: 'shhhh, very secret'\n" +
+            "}));\n" +
+            "\n" +
+            "// Session-persisted message middleware\n" +
+            "\n" +
+            "app.use(function(req, res, next){\n" +
+            "  var err = req.session.error;\n" +
+            "  var msg = req.session.success;\n" +
+            "  delete req.session.error;\n" +
+            "  delete req.session.success;\n" +
+            "  res.locals.message = '';\n" +
+            "  if (err) res.locals.message = '<p class=\"msg error\">' + err + '</p>';\n" +
+            "  if (msg) res.locals.message = '<p class=\"msg success\">' + msg + '</p>';\n" +
+            "  next();\n" +
+            "});\n" +
+            "\n" +
+            "// dummy database\n" +
+            "\n" +
+            "var users = {\n" +
+            "  tj: { name: 'tj' }\n" +
+            "};\n" +
+            "\n" +
+            "// when you create a user, generate a salt\n" +
+            "// and hash the password ('foobar' is the pass here)\n" +
+            "\n" +
+            "hash({ password: 'foobar' }, function (err, pass, salt, hash) {\n" +
+            "  if (err) throw err;\n" +
+            "  // store the salt & hash in the \"db\"\n" +
+            "  users.tj.salt = salt;\n" +
+            "  users.tj.hash = hash;\n" +
+            "});\n" +
+            "\n" +
+            "\n" +
+            "// Authenticate using our plain-object database of doom!\n" +
+            "\n" +
+            "function authenticate(name, pass, fn) {\n" +
+            "  if (!module.parent) console.log('authenticating %s:%s', name, pass);\n" +
+            "  var user = users[name];\n" +
+            "  // query the db for the given username\n" +
+            "  if (!user) return fn(new Error('cannot find user'));\n" +
+            "  // apply the same algorithm to the POSTed password, applying\n" +
+            "  // the hash against the pass / salt, if there is a match we\n" +
+            "  // found the user\n" +
+            "  hash({ password: pass, salt: user.salt }, function (err, pass, salt, hash) {\n" +
+            "    if (err) return fn(err);\n" +
+            "    if (hash === user.hash) return fn(null, user)\n" +
+            "    fn(new Error('invalid password'));\n" +
+            "  });\n" +
+            "}\n" +
+            "\n" +
+            "function restrict(req, res, next) {\n" +
+            "  if (req.session.user) {\n" +
+            "    next();\n" +
+            "  } else {\n" +
+            "    req.session.error = 'Access denied!';\n" +
+            "    res.redirect('/login');\n" +
+            "  }\n" +
+            "}\n" +
+            "\n" +
+            "app.get('/', function(req, res){\n" +
+            "  res.redirect('/login');\n" +
+            "});\n" +
+            "\n" +
+            "app.get('/restricted', restrict, function(req, res){\n" +
+            "  res.send('Wahoo! restricted area, click to <a href=\"/logout\">logout</a>');\n" +
+            "});\n" +
+            "\n" +
+            "app.get('/logout', function(req, res){\n" +
+            "  // destroy the user's session to log them out\n" +
+            "  // will be re-created next request\n" +
+            "  req.session.destroy(function(){\n" +
+            "    res.redirect('/');\n" +
+            "  });\n" +
+            "});\n" +
+            "\n" +
+            "app.get('/login', function(req, res){\n" +
+            "  res.render('login');\n" +
+            "});\n" +
+            "\n" +
+            "app.post('/login', function(req, res){\n" +
+            "  authenticate(req.body.username, req.body.password, function(err, user){\n" +
+            "    if (user) {\n" +
+            "      // Regenerate session when signing in\n" +
+            "      // to prevent fixation\n" +
+            "      req.session.regenerate(function(){\n" +
+            "        // Store the user's primary key\n" +
+            "        // in the session store to be retrieved,\n" +
+            "        // or in this case the entire user object\n" +
+            "        req.session.user = user;\n" +
+            "        req.session.success = 'Authenticated as ' + user.name\n" +
+            "          + ' click to <a href=\"/logout\">logout</a>. '\n" +
+            "          + ' You may now access <a href=\"/restricted\">/restricted</a>.';\n" +
+            "        res.redirect('back');\n" +
+            "      });\n" +
+            "    } else {\n" +
+            "      req.session.error = 'Authentication failed, please check your '\n" +
+            "        + ' username and password.'\n" +
+            "        + ' (use \"tj\" and \"foobar\")';\n" +
+            "      res.redirect('/login');\n" +
+            "    }\n" +
+            "  });\n" +
+            "});\n" +
+            "\n" +
+            "/* istanbul ignore next */\n" +
+            "if (!module.parent) {\n" +
+            "  app.listen(3000);\n" +
+            "  console.log('Express started on port 3000');\n" +
+            "}";
+    public static final String codes215 = "/**\n" +
+            " * Module dependencies.\n" +
+            " */\n" +
+            "\n" +
+            "var cookieSession = require('cookie-session');\n" +
+            "var express = require('../../');\n" +
+            "\n" +
+            "var app = module.exports = express();\n" +
+            "\n" +
+            "// add req.session cookie support\n" +
+            "app.use(cookieSession({ secret: 'manny is cool' }));\n" +
+            "\n" +
+            "// do something with the session\n" +
+            "app.use(count);\n" +
+            "\n" +
+            "// custom middleware\n" +
+            "function count(req, res) {\n" +
+            "  req.session.count = (req.session.count || 0) + 1\n" +
+            "  res.send('viewed ' + req.session.count + ' times\\n')\n" +
+            "}\n" +
+            "\n" +
+            "/* istanbul ignore next */\n" +
+            "if (!module.parent) {\n" +
+            "  app.listen(3000);\n" +
+            "  console.log('Express started on port 3000');\n" +
+            "}";
+    public static final String codes216 = "/**\n" +
+            " * Module dependencies.\n" +
+            " */\n" +
+            "\n" +
+            "var express = require('../../');\n" +
+            "var app = module.exports = express();\n" +
+            "var logger = require('morgan');\n" +
+            "var cookieParser = require('cookie-parser');\n" +
+            "\n" +
+            "// custom log format\n" +
+            "if (process.env.NODE_ENV !== 'test') app.use(logger(':method :url'))\n" +
+            "\n" +
+            "// parses request cookies, populating\n" +
+            "// req.cookies and req.signedCookies\n" +
+            "// when the secret is passed, used\n" +
+            "// for signing the cookies.\n" +
+            "app.use(cookieParser('my secret here'));\n" +
+            "\n" +
+            "// parses x-www-form-urlencoded\n" +
+            "app.use(express.urlencoded({ extended: false }))\n" +
+            "\n" +
+            "app.get('/', function(req, res){\n" +
+            "  if (req.cookies.remember) {\n" +
+            "    res.send('Remembered :). Click to <a href=\"/forget\">forget</a>!.');\n" +
+            "  } else {\n" +
+            "    res.send('<form method=\"post\"><p>Check to <label>'\n" +
+            "      + '<input type=\"checkbox\" name=\"remember\"/> remember me</label> '\n" +
+            "      + '<input type=\"submit\" value=\"Submit\"/>.</p></form>');\n" +
+            "  }\n" +
+            "});\n" +
+            "\n" +
+            "app.get('/forget', function(req, res){\n" +
+            "  res.clearCookie('remember');\n" +
+            "  res.redirect('back');\n" +
+            "});\n" +
+            "\n" +
+            "app.post('/', function(req, res){\n" +
+            "  var minute = 60000;\n" +
+            "  if (req.body.remember) res.cookie('remember', 1, { maxAge: minute });\n" +
+            "  res.redirect('back');\n" +
+            "});\n" +
+            "\n" +
+            "/* istanbul ignore next */\n" +
+            "if (!module.parent) {\n" +
+            "  app.listen(3000);\n" +
+            "  console.log('Express started on port 3000');\n" +
+            "}";
+    public static final String codes217 = "/**\n" +
+            " * Module dependencies.\n" +
+            " */\n" +
+            "\n" +
+            "var express = require('../../');\n" +
+            "var path = require('path');\n" +
+            "var app = module.exports = express();\n" +
+            "\n" +
+            "app.get('/', function(req, res){\n" +
+            "  res.send('<ul>' +\n" +
+            "    '<li>Download <a href=\"/files/notes/groceries.txt\">notes/groceries.txt</a>.</li>' +\n" +
+            "    '<li>Download <a href=\"/files/amazing.txt\">amazing.txt</a>.</li>' +\n" +
+            "    '<li>Download <a href=\"/files/missing.txt\">missing.txt</a>.</li>' +\n" +
+            "    '<li>Download <a href=\"/files/CCTV大赛上海分赛区.txt\">CCTV大赛上海分赛区.txt</a>.</li>' +\n" +
+            "    '</ul>')\n" +
+            "});\n" +
+            "\n" +
+            "// /files/* is accessed via req.params[0]\n" +
+            "// but here we name it :file\n" +
+            "app.get('/files/:file(*)', function(req, res, next){\n" +
+            "  var filePath = path.join(__dirname, 'files', req.params.file);\n" +
+            "\n" +
+            "  res.download(filePath, function (err) {\n" +
+            "    if (!err) return; // file sent\n" +
+            "    if (err.status !== 404) return next(err); // non-404 error\n" +
+            "    // file for download not found\n" +
+            "    res.statusCode = 404;\n" +
+            "    res.send('Cant find that file, sorry!');\n" +
+            "  });\n" +
+            "});\n" +
+            "\n" +
+            "/* istanbul ignore next */\n" +
+            "if (!module.parent) {\n" +
+            "  app.listen(3000);\n" +
+            "  console.log('Express started on port 3000');\n" +
+            "}";
+    public static final String codes218 = "/**\n" +
+            " * Module dependencies.\n" +
+            " */\n" +
+            "\n" +
+            "var express = require('../../');\n" +
+            "var path = require('path');\n" +
+            "var app = module.exports = express();\n" +
+            "var logger = require('morgan');\n" +
+            "var silent = process.env.NODE_ENV === 'test'\n" +
+            "\n" +
+            "// general config\n" +
+            "app.set('views', path.join(__dirname, 'views'));\n" +
+            "app.set('view engine', 'ejs');\n" +
+            "\n" +
+            "// our custom \"verbose errors\" setting\n" +
+            "// which we can use in the templates\n" +
+            "// via settings['verbose errors']\n" +
+            "app.enable('verbose errors');\n" +
+            "\n" +
+            "// disable them in production\n" +
+            "// use $ NODE_ENV=production node examples/error-pages\n" +
+            "if (app.settings.env === 'production') app.disable('verbose errors')\n" +
+            "\n" +
+            "silent || app.use(logger('dev'));\n" +
+            "\n" +
+            "// Routes\n" +
+            "\n" +
+            "app.get('/', function(req, res){\n" +
+            "  res.render('index.ejs');\n" +
+            "});\n" +
+            "\n" +
+            "app.get('/404', function(req, res, next){\n" +
+            "  // trigger a 404 since no other middleware\n" +
+            "  // will match /404 after this one, and we're not\n" +
+            "  // responding here\n" +
+            "  next();\n" +
+            "});\n" +
+            "\n" +
+            "app.get('/403', function(req, res, next){\n" +
+            "  // trigger a 403 error\n" +
+            "  var err = new Error('not allowed!');\n" +
+            "  err.status = 403;\n" +
+            "  next(err);\n" +
+            "});\n" +
+            "\n" +
+            "app.get('/500', function(req, res, next){\n" +
+            "  // trigger a generic (500) error\n" +
+            "  next(new Error('keyboard cat!'));\n" +
+            "});\n" +
+            "\n" +
+            "// Error handlers\n" +
+            "\n" +
+            "// Since this is the last non-error-handling\n" +
+            "// middleware use()d, we assume 404, as nothing else\n" +
+            "// responded.\n" +
+            "\n" +
+            "// $ curl http://localhost:3000/notfound\n" +
+            "// $ curl http://localhost:3000/notfound -H \"Accept: application/json\"\n" +
+            "// $ curl http://localhost:3000/notfound -H \"Accept: text/plain\"\n" +
+            "\n" +
+            "app.use(function(req, res, next){\n" +
+            "  res.status(404);\n" +
+            "\n" +
+            "  res.format({\n" +
+            "    html: function () {\n" +
+            "      res.render('404', { url: req.url })\n" +
+            "    },\n" +
+            "    json: function () {\n" +
+            "      res.json({ error: 'Not found' })\n" +
+            "    },\n" +
+            "    default: function () {\n" +
+            "      res.type('txt').send('Not found')\n" +
+            "    }\n" +
+            "  })\n" +
+            "});\n" +
+            "\n" +
+            "// error-handling middleware, take the same form\n" +
+            "// as regular middleware, however they require an\n" +
+            "// arity of 4, aka the signature (err, req, res, next).\n" +
+            "// when connect has an error, it will invoke ONLY error-handling\n" +
+            "// middleware.\n" +
+            "\n" +
+            "// If we were to next() here any remaining non-error-handling\n" +
+            "// middleware would then be executed, or if we next(err) to\n" +
+            "// continue passing the error, only error-handling middleware\n" +
+            "// would remain being executed, however here\n" +
+            "// we simply respond with an error page.\n" +
+            "\n" +
+            "app.use(function(err, req, res, next){\n" +
+            "  // we may use properties of the error object\n" +
+            "  // here and next(err) appropriately, or if\n" +
+            "  // we possibly recovered from the error, simply next().\n" +
+            "  res.status(err.status || 500);\n" +
+            "  res.render('500', { error: err });\n" +
+            "});\n" +
+            "\n" +
+            "/* istanbul ignore next */\n" +
+            "if (!module.parent) {\n" +
+            "  app.listen(3000);\n" +
+            "  console.log('Express started on port 3000');\n" +
+            "}";
+    public static final String codes219 = "/**\n" +
+            " * Module dependencies.\n" +
+            " */\n" +
+            "\n" +
+            "var escapeHtml = require('escape-html');\n" +
+            "var express = require('../..');\n" +
+            "var fs = require('fs');\n" +
+            "var marked = require('marked');\n" +
+            "var path = require('path');\n" +
+            "\n" +
+            "var app = module.exports = express();\n" +
+            "\n" +
+            "// register .md as an engine in express view system\n" +
+            "\n" +
+            "app.engine('md', function(path, options, fn){\n" +
+            "  fs.readFile(path, 'utf8', function(err, str){\n" +
+            "    if (err) return fn(err);\n" +
+            "    var html = marked.parse(str).replace(/\\{([^}]+)\\}/g, function(_, name){\n" +
+            "      return escapeHtml(options[name] || '');\n" +
+            "    });\n" +
+            "    fn(null, html);\n" +
+            "  });\n" +
+            "});\n" +
+            "\n" +
+            "app.set('views', path.join(__dirname, 'views'));\n" +
+            "\n" +
+            "// make it the default so we dont need .md\n" +
+            "app.set('view engine', 'md');\n" +
+            "\n" +
+            "app.get('/', function(req, res){\n" +
+            "  res.render('index', { title: 'Markdown Example' });\n" +
+            "});\n" +
+            "\n" +
+            "app.get('/fail', function(req, res){\n" +
+            "  res.render('missing', { title: 'Markdown Example' });\n" +
+            "});\n" +
+            "\n" +
+            "/* istanbul ignore next */\n" +
+            "if (!module.parent) {\n" +
+            "  app.listen(3000);\n" +
+            "  console.log('Express started on port 3000');\n" +
+            "}";
+    public static final String codes220 = "/**\n" +
+            " * Module dependencies.\n" +
+            " */\n" +
+            "\n" +
+            "var express = require('../..');\n" +
+            "var multiparty = require('multiparty');\n" +
+            "var format = require('util').format;\n" +
+            "\n" +
+            "var app = module.exports = express();\n" +
+            "\n" +
+            "app.get('/', function(req, res){\n" +
+            "  res.send('<form method=\"post\" enctype=\"multipart/form-data\">'\n" +
+            "    + '<p>Title: <input type=\"text\" name=\"title\" /></p>'\n" +
+            "    + '<p>Image: <input type=\"file\" name=\"image\" /></p>'\n" +
+            "    + '<p><input type=\"submit\" value=\"Upload\" /></p>'\n" +
+            "    + '</form>');\n" +
+            "});\n" +
+            "\n" +
+            "app.post('/', function(req, res, next){\n" +
+            "  // create a form to begin parsing\n" +
+            "  var form = new multiparty.Form();\n" +
+            "  var image;\n" +
+            "  var title;\n" +
+            "\n" +
+            "  form.on('error', next);\n" +
+            "  form.on('close', function(){\n" +
+            "    res.send(format('\\nuploaded %s (%d Kb) as %s'\n" +
+            "      , image.filename\n" +
+            "      , image.size / 1024 | 0\n" +
+            "      , title));\n" +
+            "  });\n" +
+            "\n" +
+            "  // listen on field event for title\n" +
+            "  form.on('field', function(name, val){\n" +
+            "    if (name !== 'title') return;\n" +
+            "    title = val;\n" +
+            "  });\n" +
+            "\n" +
+            "  // listen on part event for image file\n" +
+            "  form.on('part', function(part){\n" +
+            "    if (!part.filename) return;\n" +
+            "    if (part.name !== 'image') return part.resume();\n" +
+            "    image = {};\n" +
+            "    image.filename = part.filename;\n" +
+            "    image.size = 0;\n" +
+            "    part.on('data', function(buf){\n" +
+            "      image.size += buf.length;\n" +
+            "    });\n" +
+            "  });\n" +
+            "\n" +
+            "\n" +
+            "  // parse the form\n" +
+            "  form.parse(req);\n" +
+            "});\n" +
+            "\n" +
+            "/* istanbul ignore next */\n" +
+            "if (!module.parent) {\n" +
+            "  app.listen(4000);\n" +
+            "  console.log('Express started on port 4000');\n" +
+            "}";
+    public static final String codes221 = "\n" +
+            "// install redis first:\n" +
+            "// https://redis.io/\n" +
+            "\n" +
+            "// then:\n" +
+            "// $ npm install redis online\n" +
+            "// $ redis-server\n" +
+            "\n" +
+            "/**\n" +
+            " * Module dependencies.\n" +
+            " */\n" +
+            "\n" +
+            "var express = require('../..');\n" +
+            "var online = require('online');\n" +
+            "var redis = require('redis');\n" +
+            "var db = redis.createClient();\n" +
+            "\n" +
+            "// online\n" +
+            "\n" +
+            "online = online(db);\n" +
+            "\n" +
+            "// app\n" +
+            "\n" +
+            "var app = express();\n" +
+            "\n" +
+            "// activity tracking, in this case using\n" +
+            "// the UA string, you would use req.user.id etc\n" +
+            "\n" +
+            "app.use(function(req, res, next){\n" +
+            "  // fire-and-forget\n" +
+            "  online.add(req.headers['user-agent']);\n" +
+            "  next();\n" +
+            "});\n" +
+            "\n" +
+            "/**\n" +
+            " * List helper.\n" +
+            " */\n" +
+            "\n" +
+            "function list(ids) {\n" +
+            "  return '<ul>' + ids.map(function(id){\n" +
+            "    return '<li>' + id + '</li>';\n" +
+            "  }).join('') + '</ul>';\n" +
+            "}\n" +
+            "\n" +
+            "/**\n" +
+            " * GET users online.\n" +
+            " */\n" +
+            "\n" +
+            "app.get('/', function(req, res, next){\n" +
+            "  online.last(5, function(err, ids){\n" +
+            "    if (err) return next(err);\n" +
+            "    res.send('<p>Users online: ' + ids.length + '</p>' + list(ids));\n" +
+            "  });\n" +
+            "});\n" +
+            "\n" +
+            "/* istanbul ignore next */\n" +
+            "if (!module.parent) {\n" +
+            "  app.listen(3000);\n" +
+            "  console.log('Express started on port 3000');\n" +
+            "}";
+    public static final String codes222 = "/**\n" +
+            " * Module dependencies.\n" +
+            " */\n" +
+            "\n" +
+            "var express = require('../../');\n" +
+            "var app = module.exports = express();\n" +
+            "\n" +
+            "// Faux database\n" +
+            "\n" +
+            "var users = [\n" +
+            "  { name: 'tj' }\n" +
+            "  , { name: 'tobi' }\n" +
+            "  , { name: 'loki' }\n" +
+            "  , { name: 'jane' }\n" +
+            "  , { name: 'bandit' }\n" +
+            "];\n" +
+            "\n" +
+            "// Create HTTP error\n" +
+            "\n" +
+            "function createError(status, message) {\n" +
+            "  var err = new Error(message);\n" +
+            "  err.status = status;\n" +
+            "  return err;\n" +
+            "}\n" +
+            "\n" +
+            "// Convert :to and :from to integers\n" +
+            "\n" +
+            "app.param(['to', 'from'], function(req, res, next, num, name){\n" +
+            "  req.params[name] = parseInt(num, 10);\n" +
+            "  if( isNaN(req.params[name]) ){\n" +
+            "    next(createError(400, 'failed to parseInt '+num));\n" +
+            "  } else {\n" +
+            "    next();\n" +
+            "  }\n" +
+            "});\n" +
+            "\n" +
+            "// Load user by id\n" +
+            "\n" +
+            "app.param('user', function(req, res, next, id){\n" +
+            "  if (req.user = users[id]) {\n" +
+            "    next();\n" +
+            "  } else {\n" +
+            "    next(createError(404, 'failed to find user'));\n" +
+            "  }\n" +
+            "});\n" +
+            "\n" +
+            "/**\n" +
+            " * GET index.\n" +
+            " */\n" +
+            "\n" +
+            "app.get('/', function(req, res){\n" +
+            "  res.send('Visit /user/0 or /users/0-2');\n" +
+            "});\n" +
+            "\n" +
+            "/**\n" +
+            " * GET :user.\n" +
+            " */\n" +
+            "\n" +
+            "app.get('/user/:user', function(req, res, next){\n" +
+            "  res.send('user ' + req.user.name);\n" +
+            "});\n" +
+            "\n" +
+            "/**\n" +
+            " * GET users :from - :to.\n" +
+            " */\n" +
+            "\n" +
+            "app.get('/users/:from-:to', function(req, res, next){\n" +
+            "  var from = req.params.from;\n" +
+            "  var to = req.params.to;\n" +
+            "  var names = users.map(function(user){ return user.name; });\n" +
+            "  res.send('users ' + names.slice(from, to + 1).join(', '));\n" +
+            "});\n" +
+            "\n" +
+            "/* istanbul ignore next */\n" +
+            "if (!module.parent) {\n" +
+            "  app.listen(3000);\n" +
+            "  console.log('Express started on port 3000');\n" +
+            "}";
+    public static final String codes223 = "/**\n" +
+            " * Module dependencies.\n" +
+            " */\n" +
+            "\n" +
+            "var express = require('../../');\n" +
+            "\n" +
+            "var app = module.exports = express();\n" +
+            "\n" +
+            "// Ad-hoc example resource method\n" +
+            "\n" +
+            "app.resource = function(path, obj) {\n" +
+            "  this.get(path, obj.index);\n" +
+            "  this.get(path + '/:a..:b.:format?', function(req, res){\n" +
+            "    var a = parseInt(req.params.a, 10);\n" +
+            "    var b = parseInt(req.params.b, 10);\n" +
+            "    var format = req.params.format;\n" +
+            "    obj.range(req, res, a, b, format);\n" +
+            "  });\n" +
+            "  this.get(path + '/:id', obj.show);\n" +
+            "  this.delete(path + '/:id', function(req, res){\n" +
+            "    var id = parseInt(req.params.id, 10);\n" +
+            "    obj.destroy(req, res, id);\n" +
+            "  });\n" +
+            "};\n" +
+            "\n" +
+            "// Fake records\n" +
+            "\n" +
+            "var users = [\n" +
+            "  { name: 'tj' }\n" +
+            "  , { name: 'ciaran' }\n" +
+            "  , { name: 'aaron' }\n" +
+            "  , { name: 'guillermo' }\n" +
+            "  , { name: 'simon' }\n" +
+            "  , { name: 'tobi' }\n" +
+            "];\n" +
+            "\n" +
+            "// Fake controller.\n" +
+            "\n" +
+            "var User = {\n" +
+            "  index: function(req, res){\n" +
+            "    res.send(users);\n" +
+            "  },\n" +
+            "  show: function(req, res){\n" +
+            "    res.send(users[req.params.id] || { error: 'Cannot find user' });\n" +
+            "  },\n" +
+            "  destroy: function(req, res, id){\n" +
+            "    var destroyed = id in users;\n" +
+            "    delete users[id];\n" +
+            "    res.send(destroyed ? 'destroyed' : 'Cannot find user');\n" +
+            "  },\n" +
+            "  range: function(req, res, a, b, format){\n" +
+            "    var range = users.slice(a, b + 1);\n" +
+            "    switch (format) {\n" +
+            "      case 'json':\n" +
+            "        res.send(range);\n" +
+            "        break;\n" +
+            "      case 'html':\n" +
+            "      default:\n" +
+            "        var html = '<ul>' + range.map(function(user){\n" +
+            "          return '<li>' + user.name + '</li>';\n" +
+            "        }).join('\\n') + '</ul>';\n" +
+            "        res.send(html);\n" +
+            "        break;\n" +
+            "    }\n" +
+            "  }\n" +
+            "};\n" +
+            "\n" +
+            "// curl http://localhost:3000/users     -- responds with all users\n" +
+            "// curl http://localhost:3000/users/1   -- responds with user 1\n" +
+            "// curl http://localhost:3000/users/4   -- responds with error\n" +
+            "// curl http://localhost:3000/users/1..3 -- responds with several users\n" +
+            "// curl -X DELETE http://localhost:3000/users/1  -- deletes the user\n" +
+            "\n" +
+            "app.resource('/users', User);\n" +
+            "\n" +
+            "app.get('/', function(req, res){\n" +
+            "  res.send([\n" +
+            "    '<h1>Examples:</h1> <ul>'\n" +
+            "    , '<li>GET /users</li>'\n" +
+            "    , '<li>GET /users/1</li>'\n" +
+            "    , '<li>GET /users/3</li>'\n" +
+            "    , '<li>GET /users/1..3</li>'\n" +
+            "    , '<li>GET /users/1..3.json</li>'\n" +
+            "    , '<li>DELETE /users/4</li>'\n" +
+            "    , '</ul>'\n" +
+            "  ].join('\\n'));\n" +
+            "});\n" +
+            "\n" +
+            "/* istanbul ignore next */\n" +
+            "if (!module.parent) {\n" +
+            "  app.listen(3000);\n" +
+            "  console.log('Express started on port 3000');\n" +
+            "}";
+    public static final String codes224 = "/**\n" +
+            " * Module dependencies.\n" +
+            " */\n" +
+            "\n" +
+            "var escapeHtml = require('escape-html')\n" +
+            "var express = require('../../lib/express');\n" +
+            "\n" +
+            "var verbose = process.env.NODE_ENV !== 'test'\n" +
+            "\n" +
+            "var app = module.exports = express();\n" +
+            "\n" +
+            "app.map = function(a, route){\n" +
+            "  route = route || '';\n" +
+            "  for (var key in a) {\n" +
+            "    switch (typeof a[key]) {\n" +
+            "      // { '/path': { ... }}\n" +
+            "      case 'object':\n" +
+            "        app.map(a[key], route + key);\n" +
+            "        break;\n" +
+            "      // get: function(){ ... }\n" +
+            "      case 'function':\n" +
+            "        if (verbose) console.log('%s %s', key, route);\n" +
+            "        app[key](route, a[key]);\n" +
+            "        break;\n" +
+            "    }\n" +
+            "  }\n" +
+            "};\n" +
+            "\n" +
+            "var users = {\n" +
+            "  list: function(req, res){\n" +
+            "    res.send('user list');\n" +
+            "  },\n" +
+            "\n" +
+            "  get: function(req, res){\n" +
+            "    res.send('user ' +  escapeHtml(req.params.uid))\n" +
+            "  },\n" +
+            "\n" +
+            "  delete: function(req, res){\n" +
+            "    res.send('delete users');\n" +
+            "  }\n" +
+            "};\n" +
+            "\n" +
+            "var pets = {\n" +
+            "  list: function(req, res){\n" +
+            "    res.send('user ' + escapeHtml(req.params.uid) + '\\'s pets')\n" +
+            "  },\n" +
+            "\n" +
+            "  delete: function(req, res){\n" +
+            "    res.send('delete ' + escapeHtml(req.params.uid) + '\\'s pet ' + escapeHtml(req.params.pid))\n" +
+            "  }\n" +
+            "};\n" +
+            "\n" +
+            "app.map({\n" +
+            "  '/users': {\n" +
+            "    get: users.list,\n" +
+            "    delete: users.delete,\n" +
+            "    '/:uid': {\n" +
+            "      get: users.get,\n" +
+            "      '/pets': {\n" +
+            "        get: pets.list,\n" +
+            "        '/:pid': {\n" +
+            "          delete: pets.delete\n" +
+            "        }\n" +
+            "      }\n" +
+            "    }\n" +
+            "  }\n" +
+            "});\n" +
+            "\n" +
+            "/* istanbul ignore next */\n" +
+            "if (!module.parent) {\n" +
+            "  app.listen(3000);\n" +
+            "  console.log('Express started on port 3000');\n" +
+            "}";
+    public static final String codes225 = "/**\n" +
+            " * Module dependencies.\n" +
+            " */\n" +
+            "\n" +
+            "var express = require('../../lib/express');\n" +
+            "\n" +
+            "var app = express();\n" +
+            "\n" +
+            "// Example requests:\n" +
+            "//     curl http://localhost:3000/user/0\n" +
+            "//     curl http://localhost:3000/user/0/edit\n" +
+            "//     curl http://localhost:3000/user/1\n" +
+            "//     curl http://localhost:3000/user/1/edit (unauthorized since this is not you)\n" +
+            "//     curl -X DELETE http://localhost:3000/user/0 (unauthorized since you are not an admin)\n" +
+            "\n" +
+            "// Dummy users\n" +
+            "var users = [\n" +
+            "  { id: 0, name: 'tj', email: 'tj@vision-media.ca', role: 'member' }\n" +
+            "  , { id: 1, name: 'ciaran', email: 'ciaranj@gmail.com', role: 'member' }\n" +
+            "  , { id: 2, name: 'aaron', email: 'aaron.heckmann+github@gmail.com', role: 'admin' }\n" +
+            "];\n" +
+            "\n" +
+            "function loadUser(req, res, next) {\n" +
+            "  // You would fetch your user from the db\n" +
+            "  var user = users[req.params.id];\n" +
+            "  if (user) {\n" +
+            "    req.user = user;\n" +
+            "    next();\n" +
+            "  } else {\n" +
+            "    next(new Error('Failed to load user ' + req.params.id));\n" +
+            "  }\n" +
+            "}\n" +
+            "\n" +
+            "function andRestrictToSelf(req, res, next) {\n" +
+            "  // If our authenticated user is the user we are viewing\n" +
+            "  // then everything is fine :)\n" +
+            "  if (req.authenticatedUser.id === req.user.id) {\n" +
+            "    next();\n" +
+            "  } else {\n" +
+            "    // You may want to implement specific exceptions\n" +
+            "    // such as UnauthorizedError or similar so that you\n" +
+            "    // can handle these can be special-cased in an error handler\n" +
+            "    // (view ./examples/pages for this)\n" +
+            "    next(new Error('Unauthorized'));\n" +
+            "  }\n" +
+            "}\n" +
+            "\n" +
+            "function andRestrictTo(role) {\n" +
+            "  return function(req, res, next) {\n" +
+            "    if (req.authenticatedUser.role === role) {\n" +
+            "      next();\n" +
+            "    } else {\n" +
+            "      next(new Error('Unauthorized'));\n" +
+            "    }\n" +
+            "  }\n" +
+            "}\n" +
+            "\n" +
+            "// Middleware for faux authentication\n" +
+            "// you would of course implement something real,\n" +
+            "// but this illustrates how an authenticated user\n" +
+            "// may interact with middleware\n" +
+            "\n" +
+            "app.use(function(req, res, next){\n" +
+            "  req.authenticatedUser = users[0];\n" +
+            "  next();\n" +
+            "});\n" +
+            "\n" +
+            "app.get('/', function(req, res){\n" +
+            "  res.redirect('/user/0');\n" +
+            "});\n" +
+            "\n" +
+            "app.get('/user/:id', loadUser, function(req, res){\n" +
+            "  res.send('Viewing user ' + req.user.name);\n" +
+            "});\n" +
+            "\n" +
+            "app.get('/user/:id/edit', loadUser, andRestrictToSelf, function(req, res){\n" +
+            "  res.send('Editing user ' + req.user.name);\n" +
+            "});\n" +
+            "\n" +
+            "app.delete('/user/:id', loadUser, andRestrictTo('admin'), function(req, res){\n" +
+            "  res.send('Deleted user ' + req.user.name);\n" +
+            "});\n" +
+            "\n" +
+            "/* istanbul ignore next */\n" +
+            "if (!module.parent) {\n" +
+            "  app.listen(3000);\n" +
+            "  console.log('Express started on port 3000');\n" +
+            "}";
+    public static final String codes226 = "/**\n" +
+            " * Module dependencies.\n" +
+            " */\n" +
+            "\n" +
+            "var express = require('../../');\n" +
+            "\n" +
+            "var app = module.exports = express();\n" +
+            "\n" +
+            "// create an error with .status. we\n" +
+            "// can then use the property in our\n" +
+            "// custom error handler (Connect respects this prop as well)\n" +
+            "\n" +
+            "function error(status, msg) {\n" +
+            "  var err = new Error(msg);\n" +
+            "  err.status = status;\n" +
+            "  return err;\n" +
+            "}\n" +
+            "\n" +
+            "// if we wanted to supply more than JSON, we could\n" +
+            "// use something similar to the content-negotiation\n" +
+            "// example.\n" +
+            "\n" +
+            "// here we validate the API key,\n" +
+            "// by mounting this middleware to /api\n" +
+            "// meaning only paths prefixed with \"/api\"\n" +
+            "// will cause this middleware to be invoked\n" +
+            "\n" +
+            "app.use('/api', function(req, res, next){\n" +
+            "  var key = req.query['api-key'];\n" +
+            "\n" +
+            "  // key isn't present\n" +
+            "  if (!key) return next(error(400, 'api key required'));\n" +
+            "\n" +
+            "  // key is invalid\n" +
+            "  if (!~apiKeys.indexOf(key)) return next(error(401, 'invalid api key'));\n" +
+            "\n" +
+            "  // all good, store req.key for route access\n" +
+            "  req.key = key;\n" +
+            "  next();\n" +
+            "});\n" +
+            "\n" +
+            "// map of valid api keys, typically mapped to\n" +
+            "// account info with some sort of database like redis.\n" +
+            "// api keys do _not_ serve as authentication, merely to\n" +
+            "// track API usage or help prevent malicious behavior etc.\n" +
+            "\n" +
+            "var apiKeys = ['foo', 'bar', 'baz'];\n" +
+            "\n" +
+            "// these two objects will serve as our faux database\n" +
+            "\n" +
+            "var repos = [\n" +
+            "  { name: 'express', url: 'https://github.com/expressjs/express' },\n" +
+            "  { name: 'stylus', url: 'https://github.com/learnboost/stylus' },\n" +
+            "  { name: 'cluster', url: 'https://github.com/learnboost/cluster' }\n" +
+            "];\n" +
+            "\n" +
+            "var users = [\n" +
+            "  { name: 'tobi' }\n" +
+            "  , { name: 'loki' }\n" +
+            "  , { name: 'jane' }\n" +
+            "];\n" +
+            "\n" +
+            "var userRepos = {\n" +
+            "  tobi: [repos[0], repos[1]]\n" +
+            "  , loki: [repos[1]]\n" +
+            "  , jane: [repos[2]]\n" +
+            "};\n" +
+            "\n" +
+            "// we now can assume the api key is valid,\n" +
+            "// and simply expose the data\n" +
+            "\n" +
+            "// example: http://localhost:3000/api/users/?api-key=foo\n" +
+            "app.get('/api/users', function(req, res, next){\n" +
+            "  res.send(users);\n" +
+            "});\n" +
+            "\n" +
+            "// example: http://localhost:3000/api/repos/?api-key=foo\n" +
+            "app.get('/api/repos', function(req, res, next){\n" +
+            "  res.send(repos);\n" +
+            "});\n" +
+            "\n" +
+            "// example: http://localhost:3000/api/user/tobi/repos/?api-key=foo\n" +
+            "app.get('/api/user/:name/repos', function(req, res, next){\n" +
+            "  var name = req.params.name;\n" +
+            "  var user = userRepos[name];\n" +
+            "\n" +
+            "  if (user) res.send(user);\n" +
+            "  else next();\n" +
+            "});\n" +
+            "\n" +
+            "// middleware with an arity of 4 are considered\n" +
+            "// error handling middleware. When you next(err)\n" +
+            "// it will be passed through the defined middleware\n" +
+            "// in order, but ONLY those with an arity of 4, ignoring\n" +
+            "// regular middleware.\n" +
+            "app.use(function(err, req, res, next){\n" +
+            "  // whatever you want here, feel free to populate\n" +
+            "  // properties on `err` to treat it differently in here.\n" +
+            "  res.status(err.status || 500);\n" +
+            "  res.send({ error: err.message });\n" +
+            "});\n" +
+            "\n" +
+            "// our custom JSON 404 middleware. Since it's placed last\n" +
+            "// it will be the last middleware called, if all others\n" +
+            "// invoke next() and do not respond.\n" +
+            "app.use(function(req, res){\n" +
+            "  res.status(404);\n" +
+            "  res.send({ error: \"Sorry, can't find that\" })\n" +
+            "});\n" +
+            "\n" +
+            "/* istanbul ignore next */\n" +
+            "if (!module.parent) {\n" +
+            "  app.listen(3000);\n" +
+            "  console.log('Express started on port 3000');\n" +
+            "}";
+    public static final String codes227 = "colors = { \"color1\": \"Red\", \"color2\": \"Green\", 'color3': \"Blue\" };\n" +
+            "\n" +
+            "$.each(colors, function(key, value) {\n" +
+            "    $('#divSelect').append($(\"<option/>\", {\n" +
+            "        value: key,\n" +
+            "        text: value\n" +
+            "    }));\n" +
+            "});\n";
+    public static final String codes228 = "var obj1 = { what: \"A regular JS object\" },\n" +
+            "obj2 = $('body');\n" +
+            "\n" +
+            "if ( obj1.jquery )\n" +
+            "{\n" +
+            "     console.log('obj1 is a jQuery object.');    \n" +
+            "}\n" +
+            "\n" +
+            "if (obj2.jquery )\n" +
+            "{ \n" +
+            "      console.log('obj2 is a jQuery object.');\n" +
+            "}\n";
+    public static final String codes229 = "var element = $('<h1>',{\n" +
+            "    text : \"jQuery\",\n" +
+            "    class : \"test\"\n" +
+            "});\n" +
+            "\n" +
+            "$('#output').text( element.get(0).outerHTML);\n";
+    public static final String codes230 = "var y = ['Red', 'Green', 'White', 'black', 'Yellow'];\n" +
+            "var remove_Item = 'White';\n" +
+            "\n" +
+            "console.log('Array before removing the element = '+y);\n" +
+            "y = $.grep(y, function(value) {\n" +
+            "  return value != remove_Item;\n" +
+            "});\n" +
+            "console.log('Array after removing the element = '+y);\n";
+    public static final String codes231 = "$( document ).ajaxComplete(function() {\n" +
+            "  $( \".log\" ).text( \"Triggered ajaxComplete handler.\" );\n" +
+            "});\n" +
+            "\n" +
+            "$( \".jquery\" ).click(function() {\n" +
+            "  $( \".result\" ).load( \"https://www.w3resource.com/jquery-exercises/jq-ajax-test.html\" );\n" +
+            "});\n";
+    public static final String codes232 = "// Sample function (f1) to be added to a callbacks list\n" +
+            "var f1 = function( value1, value2 ) {\n" +
+            "  console.log( \"f1: \" + value1 + \",\" + value2 );\n" +
+            "};\n" +
+            " \n" +
+            "// Another function (f2) to also be added to the list\n" +
+            "var f2 = function( value1, value2 ) {\n" +
+            "  console.log( \"f2: \" + value1 + \",\" + value2 );\n" +
+            "};\n" +
+            " \n" +
+            "var callbacks = $.Callbacks();\n" +
+            " \n" +
+            "// Add the two functions\n" +
+            "callbacks.add( f1 );\n" +
+            "callbacks.add( f2 );\n" +
+            " \n" +
+            "// Empty all callbacks\n" +
+            "callbacks.empty();\n" +
+            " \n" +
+            "// Test to confirm all callbacks have been removed\n" +
+            "console.log( callbacks.has( f1 ) );\n" +
+            "console.log( callbacks.has( f2 ) );\n";
+    public static final String codes233 = "var f1 = function( value ) {\n" +
+            "  console.log( \"f1: \" + value );\n" +
+            "};\n" +
+            "\n" +
+            "var f2 = function( value ) {\n" +
+            "  console.log( \"f2: \" + value );\n" +
+            "};\n" +
+            " \n" +
+            "var callbacks = $.Callbacks();\n" +
+            " \n" +
+            "// Add the function \"f1\" to the list\n" +
+            "callbacks.add(f1);\n" +
+            " \n" +
+            "// Fire the above items\n" +
+            "callbacks.fire( \"jQuery\" );\n" +
+            "\n" +
+            " \n" +
+            "// Add the function f2 to the list\n" +
+            "callbacks.add(f2 );\n" +
+            " \n" +
+            "// Fire the above items  again\n" +
+            "callbacks.fire( \"Javascript\" );\n" +
+            " \n" +
+            "// Outputs:\n" +
+            "// \"foo: world\"\n" +
+            "// \"bar: world\"\n";
+    public static final String codes234 = "// A sample function f1 to be added to a callbacks list\n" +
+            "var f1 = function( value ) {\n" +
+            "  console.log( \"f1:\" + value );\n" +
+            "};\n" +
+            " \n" +
+            "var callbacks = $.Callbacks();\n" +
+            " \n" +
+            "// Add f1 to the callback list\n" +
+            "callbacks.add( f1 );\n" +
+            " \n" +
+            "// Fire the items on the list, passing an argument\n" +
+            "callbacks.fire( \"JavaScript\" );\n" +
+            "\n" +
+            "\n" +
+            "// Lock the callbacks list\n" +
+            "callbacks.lock();\n" +
+            " \n" +
+            "// Try firing the items again\n" +
+            "callbacks.fire( \"jQuery\" );\n" +
+            "\n" +
+            "//As the list was locked, no items were called,\n" +
+            "// so \"jQuery\" isn't logged\n";
+    public static final String codes235 = "$( \"p\" ).on( \"test.myNamespace\", function( event ) {\n" +
+            "console.log(event.namespace );\n" +
+            "});\n" +
+            "$( \"button\" ).click(function( event ) {\n" +
+            "$( \"p\" ).trigger( \"test.myNamespace\" );\n" +
+            "});\n";
+    public static final String codes236 = "$(\"h3\").each(function(i){\n" +
+            "   $(this).on(\"click\", {x:i}, function(event){\n" +
+            "     var info = \"Header\" + $(this).index() + \". paragraph has Event data: \" + event.data.x;    \n" +
+            "    $(\"<p>\"+info+\"</p>\").appendTo( \"body\" );      \n" +
+            "   });\n" +
+            "});\n";
 
 
 }

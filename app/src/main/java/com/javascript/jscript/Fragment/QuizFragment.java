@@ -132,10 +132,11 @@ public class QuizFragment extends Fragment {
                 dialog.setCancelable(false);
                 dialog.setTitle("How to Play?");
                 dialog.setMessage("" +
-                        "=> Every quiz subjects has different types of quiz\n" +
-                        "=> Every types of quiz has a 10 different questions\n" +
+                        "=> Each subject has a different set of quiz\n" +
+                        "=> Each set of quizzes has 10 different questions\n" +
                         "=> Minimum 8 Correct Answer For Win\n" +
-                        "=> 2 Minutes to complete the quiz\n");
+                        "=> 3 Minutes to complete all the questions\n" +
+                        "=> Watch an Ad for remove timer when finished time");
                 dialog.setPositiveButton(R.string.dialog_ok, new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialogInterface, int i) {

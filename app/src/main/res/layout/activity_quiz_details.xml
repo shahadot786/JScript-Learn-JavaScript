@@ -58,6 +58,17 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent">
 
+                <!--<TextView
+                    android:id="@+id/removeTimer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/remove_timer"
+                    android:textColor="#FF6E40"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />-->
+
                 <com.airbnb.lottie.LottieAnimationView
                     android:id="@+id/timerView"
                     android:layout_width="20dp"
@@ -129,6 +140,7 @@
                     android:layout_marginTop="32dp"
                     android:background="@drawable/ic_quiz_option_bg"
                     android:text="@string/option_1"
+                    android:visibility="visible"
                     app:layout_constraintBottom_toTopOf="@+id/option2"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.5"
@@ -144,6 +156,7 @@
                     android:layout_marginTop="8dp"
                     android:background="@drawable/ic_quiz_option_bg"
                     android:text="@string/option_1"
+                    android:visibility="visible"
                     app:layout_constraintBottom_toTopOf="@+id/option3"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.5"
@@ -158,6 +171,7 @@
                     android:layout_marginTop="8dp"
                     android:background="@drawable/ic_quiz_option_bg"
                     android:text="@string/option_1"
+                    android:visibility="visible"
                     app:layout_constraintBottom_toTopOf="@+id/option4"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.5"
@@ -172,6 +186,7 @@
                     android:layout_marginTop="8dp"
                     android:background="@drawable/ic_quiz_option_bg"
                     android:text="@string/option_1"
+                    android:visibility="visible"
                     app:layout_constraintBottom_toTopOf="@+id/quizShareBtn"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.5"

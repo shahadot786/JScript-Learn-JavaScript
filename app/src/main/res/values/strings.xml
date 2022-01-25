@@ -293,5 +293,6 @@
     <string name="network_connected">Connected to Network</string>
     <string name="have_a_suggestions">Have a suggestions?</string>
     <string name="try_pro">TRY PRO</string>
+    <string name="remove_timer">Remove Timer</string>
 
 </resources>

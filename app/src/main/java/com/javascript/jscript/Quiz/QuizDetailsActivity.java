@@ -106,12 +106,12 @@ public class QuizDetailsActivity extends AppCompatActivity {
         //check premium time
         if (UiConfig.PRO_VISIBILITY_STATUS_SHOW) {
             //true
-            time = 2;
+            time = 3;
             qTimer.setVisibility(View.VISIBLE);
             timerView.setVisibility(View.VISIBLE);
         } else {
             //false
-            time = 100;
+            time = 1000;
             qTimer.setVisibility(View.GONE);
             timerView.setVisibility(View.GONE);
         }
@@ -134,10 +134,10 @@ public class QuizDetailsActivity extends AppCompatActivity {
         option3.setAllCaps(false);
         option4.setAllCaps(false);
         //text size
-        option1.setTextSize(14);
-        option2.setTextSize(14);
-        option3.setTextSize(14);
-        option4.setTextSize(14);
+        option1.setTextSize(15);
+        option2.setTextSize(15);
+        option3.setTextSize(15);
+        option4.setTextSize(15);
 
         final String getSelectedTopicName = getIntent().getStringExtra("question");
 
@@ -363,7 +363,7 @@ public class QuizDetailsActivity extends AppCompatActivity {
         currentQuestionPosition++;
         if ((currentQuestionPosition + 1) == questionList.size()) {
             nextBtn.setText("Submit Quiz");
-            prevBtn.setVisibility(View.GONE);
+            //prevBtn.setVisibility(View.GONE);
         }
 
         if (currentQuestionPosition < questionList.size()) {
@@ -389,6 +389,26 @@ public class QuizDetailsActivity extends AppCompatActivity {
             option2.setText(questionList.get(currentQuestionPosition).getOption2());
             option3.setText(questionList.get(currentQuestionPosition).getOption3());
             option4.setText(questionList.get(currentQuestionPosition).getOption4());
+            /*if (questionList.get(currentQuestionPosition).getOption1().equals("")){
+                option1.setVisibility(View.GONE);
+            }else {
+                option1.setText(questionList.get(currentQuestionPosition).getOption1());
+            }
+            if (questionList.get(currentQuestionPosition).getOption2().equals("")){
+                option2.setVisibility(View.GONE);
+            }else {
+                option2.setText(questionList.get(currentQuestionPosition).getOption2());
+            }
+            if (questionList.get(currentQuestionPosition).getOption3().equals("")){
+                option3.setVisibility(View.GONE);
+            }else {
+                option3.setText(questionList.get(currentQuestionPosition).getOption3());
+            }
+            if (questionList.get(currentQuestionPosition).getOption4().equals("")){
+                option4.setVisibility(View.GONE);
+            }else {
+                option4.setText(questionList.get(currentQuestionPosition).getOption4());
+            }*/
 
         } else {
             //send progress value

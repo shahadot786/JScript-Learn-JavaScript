@@ -45,12 +45,12 @@ public class ProfileFragment extends Fragment {
 
     //fixed count
     private final int listCountLearn = 300;//230
-    private final int listCountQuiz = 800;
+    private final int listCountQuiz = 2000;//1900
     private final int listCountPrograms = 300;//236
     private final int listCountInterview = 500;//475
     //note: all divided result is 100(listCount / dividedCount = 100)
     private final int dividedLearn = 3;
-    private final int dividedQuiz = 8;
+    private final int dividedQuiz = 20;
     private final int dividedPrograms = 3;
     private final int dividedInterview = 5;
     FragmentProfileBinding binding;

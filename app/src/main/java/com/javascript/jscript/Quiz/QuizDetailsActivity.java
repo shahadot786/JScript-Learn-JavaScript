@@ -65,6 +65,7 @@ public class QuizDetailsActivity extends AppCompatActivity {
     private AppCompatButton option3;
     private AppCompatButton option4;
     private AppCompatButton nextBtn;
+    private AppCompatButton prevBtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -125,7 +126,18 @@ public class QuizDetailsActivity extends AppCompatActivity {
         option3 = findViewById(R.id.option3);
         option4 = findViewById(R.id.option4);
         nextBtn = findViewById(R.id.nextBtn);
+        prevBtn = findViewById(R.id.prevBtn);
         AppCompatButton shareBtn = findViewById(R.id.quizShareBtn);
+        //all caps
+        option1.setAllCaps(false);
+        option2.setAllCaps(false);
+        option3.setAllCaps(false);
+        option4.setAllCaps(false);
+        //text size
+        option1.setTextSize(14);
+        option2.setTextSize(14);
+        option3.setTextSize(14);
+        option4.setTextSize(14);
 
         final String getSelectedTopicName = getIntent().getStringExtra("question");
 
@@ -214,10 +226,22 @@ public class QuizDetailsActivity extends AppCompatActivity {
                     toastText.setText(R.string.Please_select_an_option);
                     toast.show();
                 } else {
+                    prevBtn.setVisibility(View.VISIBLE);
                     adNetwork.showInterstitialAd();
                     changeNextQuestion();
                 }
 
+            }
+        });
+        prevBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if (currentQuestionPosition == 0){
+                    prevBtn.setVisibility(View.GONE);
+                }else {
+                    adNetwork.showInterstitialAd();
+                    backToPrevQuestion();
+                }
             }
         });
         //share
@@ -298,6 +322,41 @@ public class QuizDetailsActivity extends AppCompatActivity {
 
     }//on create
 
+    @SuppressLint("SetTextI18n")
+    private void backToPrevQuestion() {
+        currentQuestionPosition --;
+        if ((currentQuestionPosition - 2) == questionList.size()) {
+            nextBtn.setText("Next");
+        }
+        if (currentQuestionPosition < questionList.size()) {
+            selectedOptionByUser = "";
+
+            option1.setTextColor(getResources().getColor(R.color.textColorGrey));
+            option1.setBackgroundResource(R.drawable.ic_quiz_option_bg);
+
+            option2.setTextColor(getResources().getColor(R.color.textColorGrey));
+            option2.setBackgroundResource(R.drawable.ic_quiz_option_bg);
+
+            option3.setTextColor(getResources().getColor(R.color.textColorGrey));
+            option3.setBackgroundResource(R.drawable.ic_quiz_option_bg);
+
+            option4.setTextColor(getResources().getColor(R.color.textColorGrey));
+            option4.setBackgroundResource(R.drawable.ic_quiz_option_bg);
+
+
+            String count = currentQuestionPosition + 1 + " - " + questionList.size();
+            quizCount.setText(count);
+            question.setText(questionList.get(currentQuestionPosition).getQuestion());
+            option1.setText(questionList.get(currentQuestionPosition).getOption1());
+            option2.setText(questionList.get(currentQuestionPosition).getOption2());
+            option3.setText(questionList.get(currentQuestionPosition).getOption3());
+            option4.setText(questionList.get(currentQuestionPosition).getOption4());
+
+        }
+
+
+    }
+
     //for change question
     @SuppressLint("SetTextI18n")
     private void changeNextQuestion() {
@@ -309,16 +368,16 @@ public class QuizDetailsActivity extends AppCompatActivity {
         if (currentQuestionPosition < questionList.size()) {
             selectedOptionByUser = "";
 
-            option1.setTextColor(Color.WHITE);
+            option1.setTextColor(getResources().getColor(R.color.textColorGrey));
             option1.setBackgroundResource(R.drawable.ic_quiz_option_bg);
 
-            option2.setTextColor(Color.WHITE);
+            option2.setTextColor(getResources().getColor(R.color.textColorGrey));
             option2.setBackgroundResource(R.drawable.ic_quiz_option_bg);
 
-            option3.setTextColor(Color.WHITE);
+            option3.setTextColor(getResources().getColor(R.color.textColorGrey));
             option3.setBackgroundResource(R.drawable.ic_quiz_option_bg);
 
-            option4.setTextColor(Color.WHITE);
+            option4.setTextColor(getResources().getColor(R.color.textColorGrey));
             option4.setBackgroundResource(R.drawable.ic_quiz_option_bg);
 
 

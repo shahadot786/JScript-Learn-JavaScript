@@ -325,7 +325,7 @@ public class QuizDetailsActivity extends AppCompatActivity {
     @SuppressLint("SetTextI18n")
     private void backToPrevQuestion() {
         currentQuestionPosition --;
-        if ((currentQuestionPosition - 2) == questionList.size()) {
+        if ((currentQuestionPosition + 2) == questionList.size()) {
             nextBtn.setText("Next");
         }
         if (currentQuestionPosition < questionList.size()) {
@@ -363,6 +363,7 @@ public class QuizDetailsActivity extends AppCompatActivity {
         currentQuestionPosition++;
         if ((currentQuestionPosition + 1) == questionList.size()) {
             nextBtn.setText("Submit Quiz");
+            prevBtn.setVisibility(View.GONE);
         }
 
         if (currentQuestionPosition < questionList.size()) {

@@ -145,7 +145,7 @@ public class QuizDetailsActivity extends AppCompatActivity {
                 if (selectedOptionByUser.isEmpty()) {
                     selectedOptionByUser = option1.getText().toString();
                     option1.setBackgroundResource(R.drawable.ic_quiz_option_bg_red);
-                    option1.setTextColor(Color.WHITE);
+                    option1.setTextColor(getResources().getColor(R.color.colorPrimary));
 
                     revealAnswer();
 
@@ -162,7 +162,7 @@ public class QuizDetailsActivity extends AppCompatActivity {
                 if (selectedOptionByUser.isEmpty()) {
                     selectedOptionByUser = option2.getText().toString();
                     option2.setBackgroundResource(R.drawable.ic_quiz_option_bg_red);
-                    option2.setTextColor(Color.WHITE);
+                    option2.setTextColor(getResources().getColor(R.color.colorPrimary));
 
                     revealAnswer();
 
@@ -179,7 +179,7 @@ public class QuizDetailsActivity extends AppCompatActivity {
                 if (selectedOptionByUser.isEmpty()) {
                     selectedOptionByUser = option3.getText().toString();
                     option3.setBackgroundResource(R.drawable.ic_quiz_option_bg_red);
-                    option3.setTextColor(Color.WHITE);
+                    option3.setTextColor(getResources().getColor(R.color.colorPrimary));
 
                     revealAnswer();
 
@@ -196,7 +196,7 @@ public class QuizDetailsActivity extends AppCompatActivity {
                 if (selectedOptionByUser.isEmpty()) {
                     selectedOptionByUser = option4.getText().toString();
                     option4.setBackgroundResource(R.drawable.ic_quiz_option_bg_red);
-                    option4.setTextColor(Color.WHITE);
+                    option4.setTextColor(getResources().getColor(R.color.colorPrimary));
 
                     revealAnswer();
 
@@ -407,16 +407,16 @@ public class QuizDetailsActivity extends AppCompatActivity {
         final String getAnswer = questionList.get(currentQuestionPosition).getAnswer();
         if (option1.getText().toString().equals(getAnswer)) {
             option1.setBackgroundResource(R.drawable.ic_quiz_option_bg_green);
-            option1.setTextColor(Color.WHITE);
+            option1.setTextColor(getResources().getColor(R.color.colorPrimary));
         } else if (option2.getText().toString().equals(getAnswer)) {
             option2.setBackgroundResource(R.drawable.ic_quiz_option_bg_green);
-            option2.setTextColor(Color.WHITE);
+            option2.setTextColor(getResources().getColor(R.color.colorPrimary));
         } else if (option3.getText().toString().equals(getAnswer)) {
             option3.setBackgroundResource(R.drawable.ic_quiz_option_bg_green);
-            option3.setTextColor(Color.WHITE);
+            option3.setTextColor(getResources().getColor(R.color.colorPrimary));
         } else if (option4.getText().toString().equals(getAnswer)) {
             option4.setBackgroundResource(R.drawable.ic_quiz_option_bg_green);
-            option4.setTextColor(Color.WHITE);
+            option4.setTextColor(getResources().getColor(R.color.colorPrimary));
         }
     }
 
@@ -431,7 +431,7 @@ public class QuizDetailsActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         if (item.getItemId() == R.id.codes) {
             //network check
-            ConnectivityManager connectivityManager = (ConnectivityManager) getSystemService(EditProfileActivity.CONNECTIVITY_SERVICE);
+            ConnectivityManager connectivityManager = (ConnectivityManager) getSystemService(QuizDetailsActivity.CONNECTIVITY_SERVICE);
             if (connectivityManager.getNetworkInfo(ConnectivityManager.TYPE_MOBILE).getState() == NetworkInfo.State.CONNECTED ||
                     connectivityManager.getNetworkInfo(ConnectivityManager.TYPE_WIFI).getState() == NetworkInfo.State.CONNECTED) {
                 //we are connected to a network

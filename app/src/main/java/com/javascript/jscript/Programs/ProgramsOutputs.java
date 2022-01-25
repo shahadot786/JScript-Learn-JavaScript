@@ -505,7 +505,7 @@ public class ProgramsOutputs {
             "{ first_name: 'John', age: '38', department: 'Software' }\n" +
             "3";
     public static final String outputs206 = "//There are no output";
-    public static final String outputs207 = "";
+    public static final String outputs207 = "//There are no output";
     public static final String outputs208 = "fish\n" +
             "crab\n" +
             "dolphin\n" +

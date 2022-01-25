@@ -58,66 +58,145 @@ public class QuizTopicListActivity extends AppCompatActivity {
     }
 
     private void loadItems() {
-        final String[] basic = {
-                "Quiz",
-                "Quiz 1",
-                "Quiz 2",
-                "Quiz 3",
-                "Quiz 4",
-                "Quiz 5",
-                "Quiz 6",
-                "Quiz 7"
+        final String[] Fundamental = {
+                "Fundamental Quiz 1",
 
         };
+        final String[] Basic = {
+                "",
 
-        final String[] advanced = {
-                "Quiz Advanced",
-                "Quiz Advanced 1",
-                "Quiz Advanced 2",
-                "Quiz Advanced 3",
-                "Quiz Advanced 4",
-                "Quiz Advanced 5",
-                "Quiz Advanced 6",
-                "Quiz Advanced 7"
         };
+        final String[] Objects = {
+                "",
 
-        final String[] expert = {
-                "Quiz Expert",
-                "Quiz Expert 1",
-                "Quiz Expert 2",
-                "Quiz Expert 3",
-                "Quiz Expert 4",
-                "Quiz Expert 5",
-                "Quiz Expert 6",
-                "Quiz Expert 7"
         };
+        final String[] OOPs = {
+                "",
 
-        final String[] angular = {
-                "Quiz Angular",
-                "Quiz Angular 1",
-                "Quiz Angular 2",
-                "Quiz Angular 3",
-                "Quiz Angular 4",
-                "Quiz Angular 5",
-                "Quiz Angular 6",
-                "Quiz Angular 7"
         };
+        final String[] DOM = {
+                "",
 
+        };
+        final String[] BOM = {
+                "",
+
+        };
+        final String[] Advanced = {
+                "",
+
+        };
+        final String[] AJAX = {
+                "",
+
+        };
+        final String[] Typescript = {
+                "",
+
+        };
+        //pro content
+        final String[] Angular = {
+                "",
+
+        };
+        final String[] VueJs = {
+                "",
+
+        };
+        final String[] NextJs = {
+                "",
+
+        };
+        final String[] ReactJs = {
+                "",
+
+        };
+        final String[] EmberJs = {
+                "",
+
+        };
+        final String[] Bootstrap = {
+                "",
+
+        };
+        final String[] NodeJs = {
+                "",
+
+        };
+        final String[] ExpressJs = {
+                "",
+
+        };
+        final String[] Laravel = {
+                "",
+
+        };
+        final String[] jQuery = {
+                "",
+
+        };
         String quizItems = getIntent().getStringExtra("quizItems");
         switch (quizItems) {
+            case "Fundamental":
+                list = Fundamental;
+                break;
             case "Basic":
-                list = basic;
+                list = Basic;
+                break;
+            case "Objects":
+                list = Objects;
+                break;
+            case "OOPs":
+                list = OOPs;
+                break;
+            case "DOM":
+                list = DOM;
+                break;
+            case "BOM":
+                list = BOM;
                 break;
             case "Advanced":
-                list = advanced;
+                list = Advanced;
                 break;
-            case "Expert":
-                list = expert;
+            case "AJAX":
+                list = AJAX;
                 break;
+            case "Typescript":
+                list = Typescript;
+                break;
+            //pro content
             case "Angular":
-                list = angular;
+                list = Angular;
+                break;
+            case "Vue Js":
+                list = VueJs;
+                break;
+            case "Next Js":
+                list = NextJs;
+                break;
+            case "React Js":
+                list = ReactJs;
+                break;
+            case "Ember Js":
+                list = EmberJs;
+                break;
+            case "Bootstrap":
+                list = Bootstrap;
+                break;
+            case "Node Js":
+                list = NodeJs;
+                break;
+            case "Express Js":
+                list = ExpressJs;
+                break;
+            case "Laravel":
+                list = Laravel;
+                break;
+            case "jQuery":
+                list = jQuery;
                 break;
         }
+
     }
 
     //option menu item select

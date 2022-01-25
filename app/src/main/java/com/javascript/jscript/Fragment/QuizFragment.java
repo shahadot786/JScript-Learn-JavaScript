@@ -10,11 +10,9 @@ import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ImageView;
 import android.widget.TextView;
-
 import androidx.appcompat.app.AlertDialog;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.fragment.app.Fragment;
-
 import com.javascript.jscript.Activities.PremiumActivity;
 import com.javascript.jscript.Adapter.QuizItemsAdapter;
 import com.javascript.jscript.Adapter.QuizItemsAdapterPro;
@@ -28,10 +26,9 @@ public class QuizFragment extends Fragment {
     ExpandableHeightGridView gridView, gridViewPro;
     View proView;
     ImageView proImage;
-    String[] itemsName = {"Fundamental", "Basic", "Objects", "OOPs", "DOM", "BOM", "Advanced", "AJAX"};
-    String[] itemsNamePro = {"Typescript", "Angular", "Vue Js", "Next Js", "React Js", "Ember Js", "Svelte Js", "Gatsby", "Nuxt Js", "Bootstrap"
-            /*"Node Js","Spring Boot","Express Js",
-            "Laravel","Micronaut","Mocha"*/};
+    String[] itemsName = {"Fundamental", "Basic", "Objects", "OOPs", "DOM", "BOM", "Advanced", "AJAX", "Typescript"};
+    String[] itemsNamePro = {"Angular", "Vue Js", "Next Js", "React Js", "Ember Js", "Bootstrap", "Node Js", "Express Js", "Laravel", "jQuery"
+            /*"Svelte Js","Gatsby","Nuxt Js","Spring Boot","Micronaut","Mocha"*/};
     Integer[] itemImages = {
             R.drawable.ic_fundamental_icon,
             R.drawable.ic_programs_basic_image,
@@ -40,25 +37,27 @@ public class QuizFragment extends Fragment {
             R.drawable.ic_dom_icon,
             R.drawable.ic_bom_icon,
             R.drawable.ic_programs_advanced_image,
-            R.drawable.ic_ajax_icon
+            R.drawable.ic_ajax_icon,
+            R.drawable.ic_typescript_icon,
             //R.drawable.ic_json_icon
 
     };
     Integer[] itemImagesPro = {
-            R.drawable.ic_typescript_icon,
             R.drawable.ic_angular_icon,
             R.drawable.ic_js_vue_icon,
             R.drawable.ic_next_js,
             R.drawable.ic_react_icon,
             R.drawable.ic_emberjs_icon,
+            R.drawable.ic_bootstrap_icon,
+            R.drawable.ic_node_icon,
+            R.drawable.ic_expressjs_icon,
+            R.drawable.ic_laravel_icon,
+            R.drawable.ic_jquery_icon
+            /*
             R.drawable.ic_svelte_icon,
             R.drawable.ic_gatsbyjs_icon,
             R.drawable.ic_nuxt_icon,
-            R.drawable.ic_bootstrap_icon/*
-            R.drawable.ic_node_icon,
             R.drawable.ic_springio_icon,
-            R.drawable.ic_expressjs_icon,
-            R.drawable.ic_laravel_icon,
             R.drawable.ic_micronaut_icon,
             R.drawable.ic_mochajs_icon*/
 
@@ -132,10 +131,11 @@ public class QuizFragment extends Fragment {
                 AlertDialog.Builder dialog = new AlertDialog.Builder(getActivity(), R.style.AppCompatAlertDialogStyle);
                 dialog.setCancelable(false);
                 dialog.setTitle("How to Play?");
-                dialog.setMessage("1. Every quiz subjects has different types of quiz." +
-                        "\n2. Every types of quiz has a 10 different questions." +
-                        "\n3. Minimum 8 Correct Answer For Win." +
-                        "\n4. 2 Minutes to complete the quiz.");
+                dialog.setMessage("" +
+                        "=> Every quiz subjects has different types of quiz\n" +
+                        "=> Every types of quiz has a 10 different questions\n" +
+                        "=> Minimum 8 Correct Answer For Win\n" +
+                        "=> 2 Minutes to complete the quiz\n");
                 dialog.setPositiveButton(R.string.dialog_ok, new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialogInterface, int i) {
@@ -190,7 +190,11 @@ public class QuizFragment extends Fragment {
                         intent.putExtra("quizItems", "AJAX");
                         startActivity(intent);
                         break;
-                    /*case 8:
+                    case 8:
+                        intent.putExtra("quizItems", "Typescript");
+                        startActivity(intent);
+                        break;
+                    /*case 9:
                         intent.putExtra("quizItems","JSON");
                         startActivity(intent);
                         break;*/
@@ -207,61 +211,46 @@ public class QuizFragment extends Fragment {
                 Intent intent = new Intent(getActivity(), QuizTopicListActivity.class);
                 switch (i) {
                     case 0:
-                        intent.putExtra("quizItems", "Typescript");
-                        startActivity(intent);
-                        break;
-                    case 1:
                         intent.putExtra("quizItems", "Angular");
                         startActivity(intent);
                         break;
-                    case 2:
+                    case 1:
                         intent.putExtra("quizItems", "Vue Js");
                         startActivity(intent);
                         break;
-                    case 3:
+                    case 2:
                         intent.putExtra("quizItems", "Next Js");
                         startActivity(intent);
                         break;
-                    case 4:
+                    case 3:
                         intent.putExtra("quizItems", "React Js");
                         startActivity(intent);
                         break;
-                    case 5:
+                    case 4:
                         intent.putExtra("quizItems", "Ember Js");
                         startActivity(intent);
                         break;
-                    case 6:
-                        intent.putExtra("quizItems", "Svelte Js");
-                        startActivity(intent);
-                        break;
-                    case 7:
-                        intent.putExtra("quizItems", "Gatsby");
-                        startActivity(intent);
-                        break;
-                    case 8:
-                        intent.putExtra("quizItems", "Nuxt Js");
-                        startActivity(intent);
-                        break;
-                    case 9:
+                    case 5:
                         intent.putExtra("quizItems", "Bootstrap");
                         startActivity(intent);
                         break;
-                    /*case 10:
-                        intent.putExtra("quizItems","Node Js");
+                    case 6:
+                        intent.putExtra("quizItems", "Node Js");
                         startActivity(intent);
                         break;
-                    case 11:
-                        intent.putExtra("quizItems","Spring Boot");
+                    case 7:
+                        intent.putExtra("quizItems", "Express Js");
                         startActivity(intent);
                         break;
-                    case 12:
-                        intent.putExtra("quizItems","Express Js");
+                    case 8:
+                        intent.putExtra("quizItems", "Laravel");
                         startActivity(intent);
                         break;
-                    case 13:
-                        intent.putExtra("quizItems","Laravel");
+                    case 9:
+                        intent.putExtra("quizItems", "jQuery");
                         startActivity(intent);
                         break;
+                    /*
                     case 14:
                         intent.putExtra("quizItems","Micronaut");
                         startActivity(intent);
@@ -270,12 +259,26 @@ public class QuizFragment extends Fragment {
                         intent.putExtra("quizItems","Mocha Js");
                         startActivity(intent);
                         break;
+                    case 5:
+                        intent.putExtra("quizItems","Svelte Js");
+                        startActivity(intent);
+                        break;
+                    case 6:
+                        intent.putExtra("quizItems","Gatsby");
+                        startActivity(intent);
+                        break;
+                    case 7:
+                        intent.putExtra("quizItems","Nuxt Js");
+                        startActivity(intent);
+                        break;
+                    case 11:
+                        intent.putExtra("quizItems","Spring Boot");
+                        startActivity(intent);
+                        break;
 */
-
                 }
             }
         });
-
         // Inflate the layout for this fragment
         return view;
     }

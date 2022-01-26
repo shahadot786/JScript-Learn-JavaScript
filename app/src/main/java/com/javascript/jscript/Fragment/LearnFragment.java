@@ -88,22 +88,12 @@ public class LearnFragment extends Fragment {
         SliderView sliderView = view.findViewById(R.id.sliderView);
         String[] slideText = new String[]{
                 "95% OFF Limited Time Offer",
-                "Upcoming Courses",
-                "Learn JavaScript Offline",
-                "Play Quiz",
-                "Learn Practice Programs",
-                "Learn Interview Questions",
-                "Read 140+ Ebooks"
+                "Upcoming Courses"
         };
 
         int[] images = new int[]{
                 R.drawable.pro_ad,
-                R.drawable.upcoming,
-                R.drawable.ic_learn_slider_bg_200dp,
-                R.drawable.ic_quiz_slider_bg_200dp,
-                R.drawable.ic_program_slider_bg_200dp,
-                R.drawable.ic_interview_slider_bg_200dp,
-                R.drawable.ic_ebook_slider_bg_200dp
+                R.drawable.upcoming
         };
         LearnSliderAdapter sliderAdapter = new LearnSliderAdapter(images, slideText);
         sliderView.setSliderAdapter(sliderAdapter);
@@ -112,7 +102,7 @@ public class LearnFragment extends Fragment {
         sliderView.setAutoCycleDirection(SliderView.AUTO_CYCLE_DIRECTION_BACK_AND_FORTH);
         sliderView.setIndicatorSelectedColor(Color.parseColor("#15c55d"));
         sliderView.setIndicatorUnselectedColor(Color.WHITE);
-        sliderView.setScrollTimeInSec(6);
+        sliderView.setScrollTimeInSec(4);
         sliderView.startAutoCycle();
         //check if user are premium
         if (UiConfig.PRO_VISIBILITY_STATUS_SHOW) {

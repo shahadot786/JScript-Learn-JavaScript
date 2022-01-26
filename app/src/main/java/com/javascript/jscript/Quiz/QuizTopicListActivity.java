@@ -89,12 +89,7 @@ public class QuizTopicListActivity extends AppCompatActivity {
                 "Objects Quiz 2",
                 "Objects Quiz 3",
                 "Objects Quiz 4",
-                "Objects Quiz 5",
-                "Objects Quiz 6",
-                "Objects Quiz 7",
-                "Objects Quiz 8",
-                "Objects Quiz 9",
-                "Objects Quiz 10"
+                "Objects Quiz 5"
 
         };
         final String[] OOPs = {
@@ -102,12 +97,7 @@ public class QuizTopicListActivity extends AppCompatActivity {
                 "OOPs Quiz 2",
                 "OOPs Quiz 3",
                 "OOPs Quiz 4",
-                "OOPs Quiz 5",
-                "OOPs Quiz 6",
-                "OOPs Quiz 7",
-                "OOPs Quiz 8",
-                "OOPs Quiz 9",
-                "OOPs Quiz 10"
+                "OOPs Quiz 5"
 
         };
         final String[] DOM = {
@@ -115,12 +105,7 @@ public class QuizTopicListActivity extends AppCompatActivity {
                 "DOM Quiz 2",
                 "DOM Quiz 3",
                 "DOM Quiz 4",
-                "DOM Quiz 5",
-                "DOM Quiz 6",
-                "DOM Quiz 7",
-                "DOM Quiz 8",
-                "DOM Quiz 9",
-                "DOM Quiz 10"
+                "DOM Quiz 5"
 
         };
         final String[] BOM = {
@@ -128,12 +113,7 @@ public class QuizTopicListActivity extends AppCompatActivity {
                 "BOM Quiz 2",
                 "BOM Quiz 3",
                 "BOM Quiz 4",
-                "BOM Quiz 5",
-                "BOM Quiz 6",
-                "BOM Quiz 7",
-                "BOM Quiz 8",
-                "BOM Quiz 9",
-                "BOM Quiz 10"
+                "BOM Quiz 5"
 
         };
         final String[] Advanced = {

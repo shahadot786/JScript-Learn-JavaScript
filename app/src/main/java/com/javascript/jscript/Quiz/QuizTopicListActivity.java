@@ -108,14 +108,6 @@ public class QuizTopicListActivity extends AppCompatActivity {
                 "DOM Quiz 5"
 
         };
-        final String[] BOM = {
-                "BOM Quiz 1",
-                "BOM Quiz 2",
-                "BOM Quiz 3",
-                "BOM Quiz 4",
-                "BOM Quiz 5"
-
-        };
         final String[] Advanced = {
                 "Advanced Quiz 1",
                 "Advanced Quiz 2",
@@ -302,9 +294,6 @@ public class QuizTopicListActivity extends AppCompatActivity {
                 break;
             case "DOM":
                 list = DOM;
-                break;
-            case "BOM":
-                list = BOM;
                 break;
             case "Advanced":
                 list = Advanced;

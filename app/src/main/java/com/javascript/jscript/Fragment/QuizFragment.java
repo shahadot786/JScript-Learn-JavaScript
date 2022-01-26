@@ -26,7 +26,7 @@ public class QuizFragment extends Fragment {
     ExpandableHeightGridView gridView, gridViewPro;
     View proView;
     ImageView proImage;
-    String[] itemsName = {"Fundamental", "Basic", "Objects", "OOPs", "DOM", "BOM", "Advanced", "AJAX", "Typescript"};
+    String[] itemsName = {"Fundamental", "Basic", "Objects", "OOPs", "DOM", "Advanced", "AJAX", "Typescript"};
     String[] itemsNamePro = {"Angular", "Vue Js", "Next Js", "React Js", "Ember Js", "Bootstrap", "Node Js", "Express Js", "Laravel", "jQuery"
             /*"Svelte Js","Gatsby","Nuxt Js","Spring Boot","Micronaut","Mocha"*/};
     Integer[] itemImages = {
@@ -35,7 +35,6 @@ public class QuizFragment extends Fragment {
             R.drawable.ic_objects_icon,
             R.drawable.ic_oops_icon,
             R.drawable.ic_dom_icon,
-            R.drawable.ic_bom_icon,
             R.drawable.ic_programs_advanced_image,
             R.drawable.ic_ajax_icon,
             R.drawable.ic_typescript_icon,
@@ -180,18 +179,14 @@ public class QuizFragment extends Fragment {
                         startActivity(intent);
                         break;
                     case 5:
-                        intent.putExtra("quizItems", "BOM");
-                        startActivity(intent);
-                        break;
-                    case 6:
                         intent.putExtra("quizItems", "Advanced");
                         startActivity(intent);
                         break;
-                    case 7:
+                    case 6:
                         intent.putExtra("quizItems", "AJAX");
                         startActivity(intent);
                         break;
-                    case 8:
+                    case 7:
                         intent.putExtra("quizItems", "Typescript");
                         startActivity(intent);
                         break;

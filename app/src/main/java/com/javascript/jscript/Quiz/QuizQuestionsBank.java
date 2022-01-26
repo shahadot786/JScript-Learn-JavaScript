@@ -3579,93 +3579,93 @@ public class QuizQuestionsBank {
     private static List<QuizListModel> DOMQuiz1() {
         final List<QuizListModel> questionLists = new ArrayList<>();
         final QuizListModel q1 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "The display value of most DOM elements is either inline or block.",
+                "True",
+                "False",
+                "None",
+                "No",
+                "True",
                 ""
         );
         final QuizListModel q2 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Which of the following is an inline element:",
+                "<p>",
+                "<strong>",
+                "<section>",
+                "<body>",
+                "<strong>",
                 ""
         );
         final QuizListModel q3 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "All visible content in an HTML document is written inside of the <body> tag.",
+                "True",
+                "False",
+                "None",
+                "No",
+                "True",
                 ""
         );
         final QuizListModel q4 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Block elements can be nested inside of an inline element",
+                "True",
+                "False",
+                "None",
+                "No",
+                "False",
                 ""
         );
         final QuizListModel q5 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Inline elements can be nested inside of a block element",
+                "True",
+                "False",
+                "None",
+                "No",
+                "True",
                 ""
         );
         final QuizListModel q6 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Inline elements can be nested inside of another inline element",
+                "True",
+                "False",
+                "None",
+                "No",
+                "True",
                 ""
         );
         final QuizListModel q7 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Block elements can be nested in a block element",
+                "True",
+                "False",
+                "None",
+                "No",
+                "True",
                 ""
         );
         final QuizListModel q8 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "<span> elements have display: block by default",
+                "True",
+                "False",
+                "None",
+                "No",
+                "False",
                 ""
         );
         final QuizListModel q9 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Which of the following tags contains the main content of a table?",
+                "tablebody",
+                "thead",
+                "tbody",
+                "body",
+                "tbody",
                 ""
         );
         final QuizListModel q10 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Indicates the beginning and the end of a JavaScript section.",
+                "<html> </html>",
+                "<style> </style>",
+                "<article> </article>",
+                "<script> </script>",
+                "<script> </script>",
                 ""
         );
         questionLists.add(q1);
@@ -3683,93 +3683,100 @@ public class QuizQuestionsBank {
     private static List<QuizListModel> DOMQuiz2() {
         final List<QuizListModel> questionLists = new ArrayList<>();
         final QuizListModel q1 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "How can a developer show a pop-up message to the user on the browser window?",
+                "alert",
+                "prompt",
+                "console.log",
+                "<p> tag",
+                "alert",
                 ""
         );
         final QuizListModel q2 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Which message will the user see?\n" +
+                        "var message = \"Hello\"\n" +
+                        "//message = \"Goodbye\"\n" +
+                        "alert(message + \"user\");",
+                "\"Hello user\"",
+                "No message",
+                "\"Goodbye user\"",
+                "\"message + user\"",
+                "\"Hello user\"",
                 ""
         );
         final QuizListModel q3 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "What DOM Property is used to update the text of an HTML tag?",
+                "id",
+                "innerHTML",
+                "src",
+                "style",
+                "innerHTML",
                 ""
         );
         final QuizListModel q4 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "What is one key characteristic of an id?",
+                "It must be capitalized",
+                "It must be unique to one tag",
+                "It cannot include numbers",
+                "It must go in the closing tag",
+                "It must be unique to one tag",
                 ""
         );
         final QuizListModel q5 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Which of the following is the proper way to call the testFunction() function when a button is clicked?",
+                "onclick=testFunction",
+                "when button clicked = \"testFunction()\"",
+                "onclick=\"testFunction()\"",
+                "onclick=\"testFunction\"",
+                "onclick=\"testFunction()\"",
                 ""
         );
         final QuizListModel q6 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "DOM get element by id is?",
+                "Document.Getelementbyid()",
+                "document.getElementById()",
+                "Document.getElementByID()",
+                "DOM.getElmentById()",
+                "document.getElementById()",
                 ""
         );
         final QuizListModel q7 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "What is output once the button is pressed?\n" +
+                        "<button onclick=\"aFunction()\"> Click me </button>",
+                "aFunction() is called and its code get executed",
+                "Click me is displayed",
+                "EventError",
+                "None of these",
+                "aFunction() is called and its code get executed",
                 ""
         );
         final QuizListModel q8 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "What do \"purple\", \"green\" in this code refer to?\n" +
+                        "var x1= document.getElementById(\"purple\")" +
+                        "\n" +
+                        "var x2= document.getElementById(\"green\")",
+                "They are the names of the HTML",
+                "They are the names of <h1> tags",
+                "They are the names of <p> tags",
+                "They are the IDs",
+                "They are the IDs",
                 ""
         );
         final QuizListModel q9 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "How can a developer show a pop-up window input box that the user can type in?",
+                "alert",
+                "prompt",
+                "console.log",
+                "document.getElementById",
+                "prompt",
                 ""
         );
         final QuizListModel q10 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Fill in the blank: \"The DOM is a structured representation of a ________ document\"",
+                "JavaScript",
+                "HTML",
+                "CSS",
+                "JSON",
+                "HTML",
                 ""
         );
         questionLists.add(q1);
@@ -3787,93 +3794,111 @@ public class QuizQuestionsBank {
     private static List<QuizListModel> DOMQuiz3() {
         final List<QuizListModel> questionLists = new ArrayList<>();
         final QuizListModel q1 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Which object in JavaScript can we use to access and modify the DOM?",
+                "document",
+                "dom",
+                "model",
+                "html",
+                "document",
                 ""
         );
         final QuizListModel q2 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Can we change the contents of the HTML document using the DOM?",
+                "Yes",
+                "No",
+                "Only when having the correct security rights",
+                "Only in runtime i.e. the changes get lost when refreshing the page",
+                "Only in runtime i.e. the changes get lost when refreshing the page",
                 ""
         );
         final QuizListModel q3 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Fill in the blank: \"The ______ node sits at the root of the DOM tree?",
+                "top",
+                "first",
+                "html",
+                "document",
+                "document",
                 ""
         );
         final QuizListModel q4 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Consider the following HTML element:" +
+                        "\n" +
+                        "<p id=\"p_id\" class=\"p_class\" name=\"p_name\"></p>" +
+                        "\n" +
+                        "Which one of the following is correct syntax to select it using the DOM?",
+                "html.getElementById(p_id)",
+                "dom.getElementById(\"p_id\")",
+                "document.getElementById(\"p_id\")",
+                "document.getElementById(p_id)",
+                "document.getElementById(\"p_id\")",
                 ""
         );
         final QuizListModel q5 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Consider the following HTML element:" +
+                        "\n" +
+                        "<p id=\"p_id\" class=\"p_class\" name=\"p_name\"></p>" +
+                        "\n" +
+                        "Which one of the following is correct syntax to select it using the DOM? NOTE: This is the only child to the <body> tag!",
+                "document.getElementsByClassName(\"p_class\")",
+                "document.getElementsByClassName(p_class)",
+                "document.getFirstElementByClassName(\"p_class\")",
+                "document.getElementsByClassName(\"p_class\")[0]",
+                "document.getElementsByClassName(\"p_class\")[0]",
                 ""
         );
         final QuizListModel q6 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Consider the following HTML element:" +
+                        "\n" +
+                        "<p id=\"p_id\" class=\"p_class\" name=\"p_name\"></p>" +
+                        "\n" +
+                        "Which one of the following is correct syntax to select it using the DOM? NOTE: This is the only child to the <body> tag!",
+                "document.getElementsByTagName(p_name)[0]",
+                "document.getElementsByTagName(\"p\")",
+                "document.getElementByName(\"p_name\")",
+                "document.getElementsByTagName(\"p_name\")[0]",
+                "document.getElementsByTagName(\"p\")",
                 ""
         );
         final QuizListModel q7 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Consider the following HTML element:" +
+                        "\n" +
+                        "<p id=\"p_id\" class=\"p_class\" name=\"p_name\"></p>" +
+                        "\n" +
+                        "Which one of the following is correct syntax to select it using the DOM? NOTE: This is the only child to the <body> tag!",
+                "document.querySelector(\".p_class\")",
+                "document.querySelectorAll(\"#p_id\")",
+                "document.querySelector(\"p_class\")",
+                "document.querySelector(\"#p_name\")",
+                "document.querySelector(\".p_class\")",
                 ""
         );
         final QuizListModel q8 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Which property do we use to change the text of an element?",
+                "text",
+                "innerText",
+                "content",
+                "value",
+                "innerText",
                 ""
         );
         final QuizListModel q9 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "The location object does not include:",
+                "href",
+                "reload",
+                "replace",
+                "open",
+                "open",
                 ""
         );
         final QuizListModel q10 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Assess the truth of the statement:" +
+                        "\n" +
+                        "\"The history object is a child of the document object\"",
+                "true",
+                "false",
+                "falsehood",
+                "none of these",
+                "falsehood",
                 ""
         );
         questionLists.add(q1);
@@ -3891,93 +3916,99 @@ public class QuizQuestionsBank {
     private static List<QuizListModel> DOMQuiz4() {
         final List<QuizListModel> questionLists = new ArrayList<>();
         final QuizListModel q1 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "To refresh the current document, use:",
+                "document.open()",
+                "document.reload()",
+                "location.reload()",
+                "location.open()",
+                "location.reload()",
                 ""
         );
         final QuizListModel q2 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "The appName property belongs to the object:",
+                "document",
+                "window",
+                "location",
+                "navigator",
+                "navigator",
                 ""
         );
         final QuizListModel q3 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Assess the truth of the statement:" +
+                        "\n" +
+                        "\"The location.href property contains the same address as the document.url property\"",
+                "true",
+                "false",
+                "falsehood",
+                "none of these",
+                "true",
                 ""
         );
         final QuizListModel q4 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "The history object property is:",
+                "forward",
+                "go",
+                "length",
+                "back",
+                "length",
                 ""
         );
         final QuizListModel q5 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "The host name for the current document is stored by:",
+                "document.hostname",
+                "location.hostname",
+                "window.hostname",
+                "url.hostname",
+                "location.hostname",
                 ""
         );
         final QuizListModel q6 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Assess the truth of the statement:" +
+                        "\n" +
+                        "\"location.lastModified returns the date the page was last modified\"",
+                "true",
+                "false",
+                "falsehood",
+                "none of these",
+                "falsehood",
                 ""
         );
         final QuizListModel q7 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "A reference to a collection of paragraphs in an HTML document can be:",
+                "document.getElementById(\"p\")",
+                "document.getElementByTagName(p)",
+                "document.getElementByTagName(\"akapit\")\n",
+                "document.getElementById(\"akapit\")",
+                "document.getElementByTagName(p)",
                 ""
         );
         final QuizListModel q8 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Assess the correctness of the statement:" +
+                        "\n" +
+                        "\"The innerHTML property can only be used together with the getElementById () method\"",
+                "true",
+                "false",
+                "falsehood",
+                "none of these",
+                "true",
                 ""
         );
         final QuizListModel q9 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "DOM stands for...",
+                "Document Object Model",
+                "Digital Object Model",
+                "Documents Object Model",
+                "Digital Optical Module",
+                "Document Object Model",
                 ""
         );
         final QuizListModel q10 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Writing javascript code in an html file using the tag ...",
+                "<javascript>",
+                "<js>",
+                "<java>",
+                "<script>",
+                "<script>",
                 ""
         );
         questionLists.add(q1);
@@ -3995,614 +4026,101 @@ public class QuizQuestionsBank {
     private static List<QuizListModel> DOMQuiz5() {
         final List<QuizListModel> questionLists = new ArrayList<>();
         final QuizListModel q1 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "The document related event is:",
+                "onSelect",
+                "onBlur",
+                "onLoad",
+                "onChange",
+                "onLoad",
                 ""
         );
         final QuizListModel q2 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Not one of the events generated by form items",
+                "onFocus",
+                "onSelect",
+                "onBlur",
+                "onSubmit",
+                "onSubmit",
                 ""
         );
         final QuizListModel q3 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "A fragment of html code is given, creating the form:" +
+                        "\n" +
+                        "<form id=\"f1\" name=\"form1\" method=\" \" actions=\" \">" +
+                        "\n" +
+                        "..." +
+                        "\n" +
+                        "</form>" +
+                        "\n" +
+                        "Please indicate an incorrect way to refer to this form. Assume that this is the only form on the page!",
+                "document.forms[0]",
+                "document.getElementById('form1')",
+                "document.form1",
+                "document.getElementById('f1')",
+                "document.getElementById('form1')",
                 ""
         );
         final QuizListModel q4 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Document.forms.length specifies:",
+                "number of fields in the active form",
+                "number of characters stored in the forms field",
+                "Number of forms in the document",
+                "number of fields in the form named forms",
+                "Number of forms in the document",
                 ""
         );
         final QuizListModel q5 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Which of the following methods returns an array of all the elements in a Webpage, with a specified class name?",
+                "getElementsByName",
+                "getElementsByTagName",
+                "get Elements ByClassName",
+                "get Element ByClassTagName",
+                "get Elements ByClassName",
                 ""
         );
         final QuizListModel q6 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Which method allows you to delete entire HTML attributes from an element?",
+                "getElementById",
+                "setAttribute",
+                "innerHTML",
+                "removeAttribute",
+                "removeAttribute",
                 ""
         );
         final QuizListModel q7 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Which method retrieves the corresponding value of an attribute?",
+                "getAttribute",
+                "setAttribute",
+                "removeAttribute",
+                "innerHTML",
+                "getAttribute",
                 ""
         );
         final QuizListModel q8 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Which property of the form object returns the number of elements in the form?",
+                "target",
+                "encoding",
+                "elements",
+                "length",
+                "length",
                 ""
         );
         final QuizListModel q9 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Which function among the following lets to register a function to be invoked once?",
+                "setTimeout()",
+                "setTotaltime ()",
+                "setInterval()",
+                "settime()",
+                "setTimeout()",
                 ""
         );
         final QuizListModel q10 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        questionLists.add(q1);
-        questionLists.add(q2);
-        questionLists.add(q3);
-        questionLists.add(q4);
-        questionLists.add(q5);
-        questionLists.add(q6);
-        questionLists.add(q7);
-        questionLists.add(q8);
-        questionLists.add(q9);
-        questionLists.add(q10);
-        return questionLists;
-    }
-    //BOMQuiz
-    private static List<QuizListModel> BOMQuiz1() {
-        final List<QuizListModel> questionLists = new ArrayList<>();
-        final QuizListModel q1 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q2 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q3 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q4 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q5 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q6 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q7 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q8 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q9 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q10 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        questionLists.add(q1);
-        questionLists.add(q2);
-        questionLists.add(q3);
-        questionLists.add(q4);
-        questionLists.add(q5);
-        questionLists.add(q6);
-        questionLists.add(q7);
-        questionLists.add(q8);
-        questionLists.add(q9);
-        questionLists.add(q10);
-        return questionLists;
-    }
-    private static List<QuizListModel> BOMQuiz2() {
-        final List<QuizListModel> questionLists = new ArrayList<>();
-        final QuizListModel q1 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q2 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q3 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q4 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q5 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q6 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q7 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q8 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q9 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q10 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        questionLists.add(q1);
-        questionLists.add(q2);
-        questionLists.add(q3);
-        questionLists.add(q4);
-        questionLists.add(q5);
-        questionLists.add(q6);
-        questionLists.add(q7);
-        questionLists.add(q8);
-        questionLists.add(q9);
-        questionLists.add(q10);
-        return questionLists;
-    }
-    private static List<QuizListModel> BOMQuiz3() {
-        final List<QuizListModel> questionLists = new ArrayList<>();
-        final QuizListModel q1 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q2 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q3 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q4 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q5 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q6 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q7 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q8 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q9 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q10 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        questionLists.add(q1);
-        questionLists.add(q2);
-        questionLists.add(q3);
-        questionLists.add(q4);
-        questionLists.add(q5);
-        questionLists.add(q6);
-        questionLists.add(q7);
-        questionLists.add(q8);
-        questionLists.add(q9);
-        questionLists.add(q10);
-        return questionLists;
-    }
-    private static List<QuizListModel> BOMQuiz4() {
-        final List<QuizListModel> questionLists = new ArrayList<>();
-        final QuizListModel q1 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q2 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q3 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q4 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q5 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q6 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q7 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q8 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q9 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q10 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        questionLists.add(q1);
-        questionLists.add(q2);
-        questionLists.add(q3);
-        questionLists.add(q4);
-        questionLists.add(q5);
-        questionLists.add(q6);
-        questionLists.add(q7);
-        questionLists.add(q8);
-        questionLists.add(q9);
-        questionLists.add(q10);
-        return questionLists;
-    }
-    private static List<QuizListModel> BOMQuiz5() {
-        final List<QuizListModel> questionLists = new ArrayList<>();
-        final QuizListModel q1 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q2 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q3 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q4 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q5 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q6 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q7 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q8 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q9 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q10 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "How is everything treated in HTML DOM?",
+                "Attributes",
+                "Elements",
+                "Arrays",
+                "Node",
+                "Node",
                 ""
         );
         questionLists.add(q1);
@@ -18332,17 +17850,6 @@ public class QuizQuestionsBank {
                 return DOMQuiz4();
             case "DOM Quiz 5":
                 return DOMQuiz5();
-            //BOMQuiz
-            case "BOM Quiz 1":
-                return BOMQuiz1();
-            case "BOM Quiz 2":
-                return BOMQuiz2();
-            case "BOM Quiz 3":
-                return BOMQuiz3();
-            case "BOM Quiz 4":
-                return BOMQuiz4();
-            case "BOM Quiz 5":
-                return BOMQuiz5();
             //AdvancedQuiz
             case "Advanced Quiz 1":
                 return AdvancedQuiz1();

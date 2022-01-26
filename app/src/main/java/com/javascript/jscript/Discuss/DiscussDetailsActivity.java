@@ -30,7 +30,6 @@ import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
-import com.javascript.jscript.Activities.FeedBackActivity;
 import com.javascript.jscript.Adapter.CommentAdapter;
 import com.javascript.jscript.BuildConfig;
 import com.javascript.jscript.Config.UiConfig;
@@ -98,7 +97,7 @@ public class DiscussDetailsActivity extends AppCompatActivity {
             bannerAd.setVisibility(View.GONE);
         }
         //network check
-        ConnectivityManager connectivityManager = (ConnectivityManager) getSystemService(FeedBackActivity.CONNECTIVITY_SERVICE);
+        ConnectivityManager connectivityManager = (ConnectivityManager) getSystemService(DiscussDetailsActivity.CONNECTIVITY_SERVICE);
         if (connectivityManager.getNetworkInfo(ConnectivityManager.TYPE_MOBILE).getState() == NetworkInfo.State.CONNECTED ||
                 connectivityManager.getNetworkInfo(ConnectivityManager.TYPE_WIFI).getState() == NetworkInfo.State.CONNECTED) {
             //we are connected to a network
@@ -330,7 +329,7 @@ public class DiscussDetailsActivity extends AppCompatActivity {
             @Override
             public void onRefresh() {
                 //network check
-                ConnectivityManager connectivityManager = (ConnectivityManager) getSystemService(FeedBackActivity.CONNECTIVITY_SERVICE);
+                ConnectivityManager connectivityManager = (ConnectivityManager) getSystemService(DiscussDetailsActivity.CONNECTIVITY_SERVICE);
                 if (connectivityManager.getNetworkInfo(ConnectivityManager.TYPE_MOBILE).getState() == NetworkInfo.State.CONNECTED ||
                         connectivityManager.getNetworkInfo(ConnectivityManager.TYPE_WIFI).getState() == NetworkInfo.State.CONNECTED) {
                     //we are connected to a network
@@ -413,7 +412,7 @@ public class DiscussDetailsActivity extends AppCompatActivity {
         Intent shareIntent = new Intent();
         shareIntent.setAction(Intent.ACTION_SEND);
         shareIntent.putExtra(Intent.EXTRA_SUBJECT, "Q&A Discussions");
-        shareIntent.putExtra(Intent.EXTRA_TEXT, "Question: " + question + "\n\n" + "Descriptions: \n\n" + description +
+        shareIntent.putExtra(Intent.EXTRA_TEXT, "Question: " + question + "\n\n" + "\n\n" + description +
                 "\n\nLearn JavaScript in JScript & solve problems.\n" +
                 "https://play.google.com/store/apps/details?id=" +
                 BuildConfig.APPLICATION_ID);

@@ -432,93 +432,93 @@ public class QuizQuestionsBank {
     private static List<QuizListModel> FundamentalQuiz5() {
         final List<QuizListModel> questionLists = new ArrayList<>();
         final QuizListModel q1 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Which of the following is a server-side Java Script object?",
+                "Function",
+                "File",
+                "FileUpload",
+                "Date",
+                "File",
                 ""
         );
         final QuizListModel q2 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Java script can be used for Storing the form's contents to a database file on the server",
+                "False",
+                "True",
+                "Nan",
+                "None",
+                "False",
                 ""
         );
         final QuizListModel q3 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "To insert a JavaScript into an HTML page, which tag is used?",
+                "<script=’java’>",
+                "<javascript>",
+                "<script>",
+                "<js>",
+                "<script>",
                 ""
         );
         final QuizListModel q4 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Which of the below is used in Java script to insert special characters?",
+                "&",
+                "\\",
+                "-",
+                "%",
+                "\\",
                 ""
         );
         final QuizListModel q5 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "How does Java Script store dates in objects of Date type?",
+                "The number of days since January 1st, 1900",
+                "The number of seconds since January 1st, 1970",
+                "The number of milliseconds since January 1st, 1970",
+                "The number of picoseconds since January 1st, 1970",
+                "The number of milliseconds since January 1st, 1970",
                 ""
         );
         final QuizListModel q6 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "C-style block-level scoping is not supported in Java script",
+                "False",
+                "No",
+                "True",
+                "None",
+                "True",
                 ""
         );
         final QuizListModel q7 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "JavaScript ignores extra spaces",
+                "False",
+                "No",
+                "True",
+                "None",
+                "False",
                 ""
         );
         final QuizListModel q8 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Which is the correct way to write a JavaScript array?",
+                "var txt = new Array(1:\"arr\",2:\"kim\",3:\"jim\")",
+                "var txt = new Array:1=(\" arr \")2=(\"kim\")3=(\"jim\")",
+                "var txt = new Array(\"arr \",\"kim\",\"jim\")",
+                "var txt = new Array=\" arr \",\"kim\",\"jim\"",
+                "var txt = new Array(\"arr \",\"kim\",\"jim\")",
                 ""
         );
         final QuizListModel q9 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Which of the following is correct to write “Hello World” on the web page?",
+                "System.out.println(“Hello World”)",
+                "print(“Hello World”)",
+                "document.write(“Hello World”)",
+                "response.write(“Hello World”)",
+                "document.write(“Hello World”)",
                 ""
         );
         final QuizListModel q10 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Which of the following is the tainted property of a window object in Java Script?",
+                "Pathname",
+                "Protocol",
+                "Defaultstatus",
+                "Host",
+                "Defaultstatus",
                 ""
         );
         questionLists.add(q1);
@@ -536,93 +536,93 @@ public class QuizQuestionsBank {
     private static List<QuizListModel> FundamentalQuiz6() {
         final List<QuizListModel> questionLists = new ArrayList<>();
         final QuizListModel q1 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Which attribute needs to be changed to make elements invisible?",
+                "visibility",
+                "visible",
+                "invisibility",
+                "invisible",
+                "visibility",
                 ""
         );
         final QuizListModel q2 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Which of the following is used to capture all click events in a window?",
+                "window.captureEvents(Event.CLICK);",
+                "window.routeEvents(Event.CLICK );",
+                "window.handleEvents (Event.CLICK);",
+                "window.raiseEvents(Event.CLICK );",
+                "window.captureEvents(Event.CLICK);",
                 ""
         );
         final QuizListModel q3 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Javascript is an object oriented language?",
+                "False",
+                "None",
+                "No",
+                "True",
+                "Ture",
                 ""
         );
         final QuizListModel q4 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Which of the following is not a valid JavaScript variable name?",
+                "2java",
+                "_java_and_ java _names",
+                "javaandjava",
+                "None of the above",
+                "2java",
                 ""
         );
         final QuizListModel q5 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Which of the ways below is incorrect of instantiating a date?",
+                "new Date(dateString)",
+                "new Date()",
+                "new Date(seconds)",
+                "new Date(year, month, day, hours, minutes, seconds, milliseconds)",
+                "new Date(seconds)",
                 ""
         );
         final QuizListModel q6 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "What is negative infinity in Java script?",
+                "Any of below",
+                "number in JavaScript, derived by dividing number by a negative number.",
+                "number in JavaScript, derived by dividing number by zero.",
+                "number in JavaScript, derived by dividing negative number by zero",
+                "number in JavaScript, derived by dividing negative number by zero",
                 ""
         );
         final QuizListModel q7 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "___________ JavaScript is also called client-side JavaScript",
+                "Microsoft",
+                "Navigator",
+                "LiveWire",
+                "Native",
+                "Navigator",
                 ""
         );
         final QuizListModel q8 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "What language defines the behavior of a web page?",
+                "HTML",
+                "CSS",
+                "XML",
+                "JavaScript",
+                "JavaScript",
                 ""
         );
         final QuizListModel q9 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Why so Java and JavaScript have similar name?",
+                "Java Script is a stripped-down version of Java",
+                "The syntax of JavaScript is loosely based on Java syntax",
+                "They both support Object Oriented Programming",
+                "None of the above",
+                "The syntax of JavaScript is loosely based on Java syntax",
                 ""
         );
         final QuizListModel q10 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "File is a server-side JavaScript object?",
+                "False",
+                "True",
+                "No",
+                "None",
+                "True",
                 ""
         );
         questionLists.add(q1);
@@ -640,93 +640,93 @@ public class QuizQuestionsBank {
     private static List<QuizListModel> FundamentalQuiz7() {
         final List<QuizListModel> questionLists = new ArrayList<>();
         final QuizListModel q1 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "What is the alternate name for Java script?",
+                "LimeScript",
+                "Both a and d",
+                "ECMScript",
+                "ECMAScript",
+                "ECMAScript",
                 ""
         );
         final QuizListModel q2 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Which of the following is a client-side Java Script object?",
+                "File",
+                "Function",
+                "FileUpload",
+                "Time",
+                "FileUpload",
                 ""
         );
         final QuizListModel q3 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "What java wrapper type is created when a JavaScript object is sent to Java?",
+                "ScriptObject",
+                "JavaObject",
+                "Jobject",
+                "JSObject",
+                "JSObject",
                 ""
         );
         final QuizListModel q4 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Is it possible to declare a variable in Java Script along its type?",
+                "Yes",
+                "False",
+                "No",
+                "None",
+                "Yes",
                 ""
         );
         final QuizListModel q5 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "JavaScript ignores extra spaces",
+                "True",
+                "False",
+                "No",
+                "None",
+                "True",
                 ""
         );
         final QuizListModel q6 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Which of the following method is used to evaluate a string of Java Script code in the context of the specified object?",
+                "Eval",
+                "ParseDoule",
+                "ParseObject",
+                "Efloat",
+                "Eval",
                 ""
         );
         final QuizListModel q7 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Java Script supports all boolean operators",
+                "True",
+                "False",
+                "No",
+                "None",
+                "False",
                 ""
         );
         final QuizListModel q8 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Java Script entities start with ____________ and end with ______________",
+                "Semicolon, colon",
+                "Semicolon, Ampersand",
+                "Ampersand, colon",
+                "Ampersand, semicolon",
+                "Ampersand, semicolon",
                 ""
         );
         final QuizListModel q9 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "How to append a value to an array of Java Script?",
+                "arr[arr.length] = value",
+                "arr[arr.length+1] = new Arrays()",
+                "arr[arr.length-1] = value",
+                "arr[arr.length*1] = value",
+                "arr[arr.length] = value",
                 ""
         );
         final QuizListModel q10 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "If we declare a variable, let test = 1, then later, reassign, stating test = 2, what will happen?",
+                "test will equal 2",
+                "test will equal 1",
+                "JavaScript will raise a TypeError",
+                "test will equal undefined",
+                "test will equal 2",
                 ""
         );
         questionLists.add(q1);

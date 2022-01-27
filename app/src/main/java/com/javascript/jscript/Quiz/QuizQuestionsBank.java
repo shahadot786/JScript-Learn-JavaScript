@@ -4139,93 +4139,94 @@ public class QuizQuestionsBank {
     private static List<QuizListModel> AdvancedQuiz1() {
         final List<QuizListModel> questionLists = new ArrayList<>();
         final QuizListModel q1 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Is the following code a valid way to create a regular expression?\n" +
+                        "var newRegExp = /\\d/;",
+                "No",
+                "Yes",
+                "Not right",
+                "None of these",
+                "Yes",
                 ""
         );
         final QuizListModel q2 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "We have a choice of 3 flags to use with regular expressions and all are mutually exclusive?",
+                "False",
+                "True",
+                "None",
+                "None of these",
+                "False",
                 ""
         );
         final QuizListModel q3 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "What symbol do we use to escape special characters when using the RegExp constructor?",
+                "<",
+                "$",
+                "\\",
+                "~",
+                "\\",
                 ""
         );
         final QuizListModel q4 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "What statement is used to pass a value back from a function?",
+                "bind",
+                "call",
+                "return",
+                "terminate",
+                "return",
                 ""
         );
         final QuizListModel q5 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "What method can we use for function chaining?",
+                "apply()",
+                "call()",
+                "Neither of the above methods",
+                "Both of the above methods",
+                "Both of the above methods",
                 ""
         );
         final QuizListModel q6 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Which is the least efficient way to create a function?",
+                "Using the Function constructor",
+                "Using the function special operator",
+                "Using the function statement",
+                "Using the function parameter",
+                "Using the Function constructor",
                 ""
         );
         final QuizListModel q7 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "One advantage of using JSON is that code is more compact, what's another advantage?",
+                "Easier to code",
+                "Self documenting",
+                "Code runs faster",
+                "Visually more informative of object structure",
+                "Visually more informative of object structure",
                 ""
         );
         final QuizListModel q8 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "When using the JSON style of coding what symbols do we use to mark object boundaries?",
+                "''",
+                "[]",
+                "{}",
+                "##",
+                "{}",
                 ""
         );
         final QuizListModel q9 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "What does the acronym JSON stand for?",
+                "JavaScript Order Nodes",
+                "JavaScript Object Nodes",
+                "JavaScript Order Notation",
+                "JavaScript Object Notation",
+                "JavaScript Object Notation",
                 ""
         );
         final QuizListModel q10 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Care should be taken when using the IsNaN() function as results can be unexpected.?",
+                "False",
+                "True",
+                "None",
+                "None of these",
+                "True",
                 ""
         );
         questionLists.add(q1);
@@ -4243,93 +4244,100 @@ public class QuizQuestionsBank {
     private static List<QuizListModel> AdvancedQuiz2() {
         final List<QuizListModel> questionLists = new ArrayList<>();
         final QuizListModel q1 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "What is the parseFloat() function used for?",
+                "To convert a decimal to a string",
+                "To convert an integer to a string",
+                "To convert a string to a decimal",
+                "To convert a string to an integer",
+                "To convert a string to a decimal",
                 ""
         );
         final QuizListModel q2 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "What happens when we try to create an array without passing any arguments?",
+                "A RangeError exception is thrown",
+                "An empty array is created",
+                "An Error exception is thrown",
+                "An array is created with a length of 1",
+                "An empty array is created",
                 ""
         );
         final QuizListModel q3 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "When we create an array with one argument and the argument is not a number what happens?",
+                "A RangeError exception is thrown",
+                "An empty array is created with a length of 1 with undefined as the first elements value",
+                "An Error exception is thrown",
+                "An array is created with a length of 1 with the argument as the first elements value",
+                "An array is created with a length of 1 with the argument as the first elements value",
                 ""
         );
         final QuizListModel q4 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "On array creation when one argument is passed and it is a number between 0 and 4,294,967,295 an array is created with that length. What happens when a number outside these parameters is passed?",
+                "A RangeError exception is thrown",
+                "An empty array is created",
+                "An Error exception is thrown",
+                "An array is created with a length of 1",
+                "A RangeError exception is thrown",
                 ""
         );
         final QuizListModel q5 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "When creating an array using array literal syntax what symbols are used?",
+                "{}",
+                "()",
+                "[]",
+                "**",
+                "[]",
                 ""
         );
         final QuizListModel q6 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Date creation using the milliseconds parameter starts from which date.?",
+                "1 January 0000 00:00:00",
+                "1 January 1970 00:00:00",
+                "1 January 2000 00:00:00",
+                "The current date and time",
+                "1 January 1970 00:00:00",
                 ""
         );
         final QuizListModel q7 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Date creation using the milliseconds parameter can use negative as well as positive values?",
+                "False",
+                "True",
+                "None",
+                "None of these",
+                "True",
                 ""
         );
         final QuizListModel q8 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Is the following code a valid way of creating a Date object?\n" +
+                        "var aDate = new Date(Jan 1, 2022);",
+                "No",
+                "Yes",
+                "Not right",
+                "None of these",
+                "Yes",
                 ""
         );
         final QuizListModel q9 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "We must always use an else with an if statement?",
+                "False",
+                "True",
+                "None",
+                "None of these",
+                "False",
                 ""
         );
         final QuizListModel q10 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "What is output from the following conditional statement?\n" +
+                        "var aVariable = false;\n" +
+                        "if (aVariable = true) {\n" +
+                        "alert('true');\n" +
+                        "} else {\n" +
+                        "alert('false');\n" +
+                        "}",
+                "False",
+                "True",
+                "None",
+                "None of these",
+                "True",
                 ""
         );
         questionLists.add(q1);
@@ -4347,93 +4355,105 @@ public class QuizQuestionsBank {
     private static List<QuizListModel> AdvancedQuiz3() {
         final List<QuizListModel> questionLists = new ArrayList<>();
         final QuizListModel q1 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "We can have an if statement with multiple if....else statements within it?",
+                "False",
+                "True",
+                "None",
+                "None of these",
+                "True",
                 ""
         );
         final QuizListModel q2 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Which of these loop statements will always execute at least once?",
+                "do....while",
+                "while",
+                "Neither",
+                "Both",
+                "do....while",
                 ""
         );
         final QuizListModel q3 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Which statement allows us to exit a loop?",
+                "break",
+                "continue",
+                "exit",
+                "return",
+                "break",
                 ""
         );
         final QuizListModel q4 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Which statement allows us to carry on from the expression part of a loop?",
+                "break",
+                "continue",
+                "exit",
+                "return",
+                "continue",
                 ""
         );
         final QuizListModel q5 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "What would happen if we tried to run the following for loop code?\n" +
+                        "for (;;) {\n" +
+                        "alert('In loop');\n" +
+                        "}",
+                "The code throws an error",
+                "The for loop code loops endlessly",
+                "Nothing happens as the loop is never entered",
+                "The for loop code alerts once and ends",
+                "The for loop code loops endlessly",
                 ""
         );
         final QuizListModel q6 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "How many times will the following for loop execute?\n" +
+                        "for (var i=0; i<3; i++) {\n" +
+                        "alert('The i variable is = ' + i);\n" +
+                        "}",
+                "0",
+                "1",
+                "2",
+                "3",
+                "3",
                 ""
         );
         final QuizListModel q7 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "We can use break statements within our for loops?",
+                "False",
+                "True",
+                "None",
+                "None of these",
+                "True",
                 ""
         );
         final QuizListModel q8 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "What is generally returned from functions when a numerical value can't be derived or is unobtainable?",
+                "Error",
+                "isNaN",
+                "NaN",
+                "null",
+                "NaN",
                 ""
         );
         final QuizListModel q9 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "What is alerted from the following code?\n" +
+                        "nanResult = NaN == NaN;\n" +
+                        "alert(nanResult);",
+                "0",
+                "false",
+                "1",
+                "true",
+                "false",
                 ""
         );
         final QuizListModel q10 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "What's the output?\n" +
+                        "let person = { name:\"Anne\"};\n" +
+                        "const members = [person];\n" +
+                        "person = null;\n" +
+                        "console.log(members);",
+                "null",
+                "[null]",
+                "[{}]",
+                "[{name: \"Anne\"}]",
+                "[{name: \"Anne\"}]",
                 ""
         );
         questionLists.add(q1);
@@ -4451,93 +4471,130 @@ public class QuizQuestionsBank {
     private static List<QuizListModel> AdvancedQuiz4() {
         final List<QuizListModel> questionLists = new ArrayList<>();
         final QuizListModel q1 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Number(\"1\")-1==0;\n" +
+                        "What is the result?",
+                "False",
+                "True",
+                "None",
+                "AssertionError",
+                "True",
                 ""
         );
         final QuizListModel q2 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "new Array(5).toString();\n" +
+                        "What is the result?",
+                "[]",
+                "\"[]\"",
+                "\"{}\"",
+                "\",,,,\"",
+                "\",,,,\"",
                 ""
         );
         final QuizListModel q3 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "var x = 3;\n" +
+                        "var foo = {\n" +
+                        "x:2,\n" +
+                        "baz: {\n" +
+                        "x:1,\n" +
+                        "bar:function(){\n" +
+                        "return this.x;\n" +
+                        "}\n" +
+                        "}\n" +
+                        "}\n" +
+                        "\n\n" +
+                        "var go = foo.baz.bar;\n" +
+                        "alert(go());\n" +
+                        "alert(foo.baz.bar());\n" +
+                        "What is the order of values alerted?",
+                "1,2",
+                "2,1",
+                "2,2",
+                "3,1",
+                "3,1",
                 ""
         );
         final QuizListModel q4 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "function aaa(){\n" +
+                        "return\n" +
+                        "{\n" +
+                        "test:1};" +
+                        "}\n" +
+                        "alert(typeof aaa());\n" +
+                        "What does the above alert?",
+                "function",
+                "array",
+                "undefined",
+                "none of these",
+                "undefined",
                 ""
         );
         final QuizListModel q5 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "var foo = function foo(){\n" +
+                        "   console.log(foo===foo);\n" +
+                        "};\n" +
+                        "foo();\n" +
+                        "What is printed in the console?",
+                "False",
+                "True",
+                "None",
+                "AssertionError",
+                "True",
                 ""
         );
         final QuizListModel q6 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "\"1\"--\"1\"\n" +
+                        "What is the result?",
+                "11",
+                "\"11\"",
+                "2",
+                "0",
+                "2",
                 ""
         );
         final QuizListModel q7 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "new string(\"This is a string\") instanceof String;\n" +
+                        "What is the result?",
+                "TypeError",
+                "False",
+                "True",
+                "None of these",
+                "True",
                 ""
         );
         final QuizListModel q8 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "(true+false)>2+true;\n" +
+                        "What is the result?",
+                "TypeError",
+                "False",
+                "True",
+                "None of these",
+                "False",
                 ""
         );
         final QuizListModel q9 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "String('Hello')=== 'Hello';\n" +
+                        "What is the result?",
+                "TypeError",
+                "False",
+                "True",
+                "None of these",
+                "True",
                 ""
         );
         final QuizListModel q10 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "function bar(){\n" +
+                        "   return foo;\n" +
+                        "   foo=10;\n" +
+                        "   function foo(){\n" +
+                        "       var foo = '11';\n" +
+                        "       }\n" +
+                        "alert(typeof bar());\n" +
+                        "What is alerted?",
+                "undefined",
+                "false",
+                "function",
+                "none",
+                "function",
                 ""
         );
         questionLists.add(q1);
@@ -4555,93 +4612,95 @@ public class QuizQuestionsBank {
     private static List<QuizListModel> AdvancedQuiz5() {
         final List<QuizListModel> questionLists = new ArrayList<>();
         final QuizListModel q1 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "let string = \"foo\"\n" +
+                        "How to determine the length of the string?",
+                "string.length",
+                "string.add",
+                "length",
+                "string.lengths",
+                "string.length",
                 ""
         );
         final QuizListModel q2 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "let string = \"The cat is black\"\n" +
+                        "How to find the index/position of \"cat\" in the string",
+                "string.indexOf(0)",
+                "string.indexOf(1)",
+                "Both",
+                "string.indexOf(\"cat\")",
+                "string.indexOf(\"cat\")",
                 ""
         );
         final QuizListModel q3 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Which of these lines of JS code properly store a string?",
+                "var myName = 'Fox\";",
+                "var myName = Fox;",
+                "var myName = 'Fox';",
+                "var myName = \"Fox';",
+                "var myName = 'Fox';",
                 ""
         );
         final QuizListModel q4 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "What operator do you use to combine strings together?",
+                "++",
+                "&",
+                "&&",
+                "+",
+                "+",
                 ""
         );
         final QuizListModel q5 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Which of these lines of code display a string and have no errors?",
+                "text(Heya, 10, 20);",
+                "text(\"Heya\", 10, 20);",
+                "text(\"Heya, 10, 20\");",
+                "text(\"Heya, 10, 20);",
+                "text(\"Heya\", 10, 20);",
                 ""
         );
         final QuizListModel q6 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "What function do you call to change the size of text in your program?",
+                "textSize();",
+                "fontSize();",
+                "textHeight();",
+                "textWidth();",
+                "textSize();",
                 ""
         );
         final QuizListModel q7 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "What function can you call to change the font used by text in your program?",
+                "fontFamily();",
+                "textFont();",
+                "changeFont();",
+                "textFamily();",
+                "textFont();",
                 ""
         );
         final QuizListModel q8 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Which of the following is/are strings?",
+                "4",
+                "4.0",
+                "'4'",
+                "None of these",
+                "'4'",
                 ""
         );
         final QuizListModel q9 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "What is the result of 80 + 71.2?",
+                "151.2",
+                "151",
+                "8071.2",
+                "545",
+                "151.2",
                 ""
         );
         final QuizListModel q10 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "What is the result of \"80\" + 71.2?",
+                "151.2",
+                "151",
+                "\"8071.2\"",
+                "545",
+                "\"8071.2\"",
                 ""
         );
         questionLists.add(q1);
@@ -4659,93 +4718,111 @@ public class QuizQuestionsBank {
     private static List<QuizListModel> AdvancedQuiz6() {
         final List<QuizListModel> questionLists = new ArrayList<>();
         final QuizListModel q1 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Does 100 + 30 produce a number or a string?",
+                "string",
+                "number",
+                "both",
+                "none of these",
+                "number",
                 ""
         );
         final QuizListModel q2 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Which of the following JavaScript statements use arrays?",
+                "k = a(i)",
+                "k = a >> i",
+                "k = a[i]",
+                "k = a & i",
+                "k = a[i]",
                 ""
         );
         final QuizListModel q3 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Which of the following JavaScript statements are correct definitions of an array?",
+                "var a = new Array[100]",
+                "var a = new Array(100)",
+                "var[] a = new String[100]",
+                "a = new Array[100]",
+                "var a = new Array(100)",
                 ""
         );
         final QuizListModel q4 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "The JavaScript statement a = new Array(2,4)",
+                "defines a new two-dimensional array a whose dimensions are 2 and 4.",
+                "defines an array a and assigns the values 2 and 4 to a[1] and a[2]",
+                "defines an array a and assigns the values 2 and 4 to a[0] and a[1].",
+                "defines two four-element arrays",
+                "defines an array a and assigns the values 2 and 4 to a[0] and a[1].",
                 ""
         );
         final QuizListModel q5 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Consider the following sequence of JavaScript statements:\n" +
+                        "a = new Array();\n" +
+                        "a[0] = 12;\n" +
+                        "a[1] = false;\n" +
+                        "a[2] = \"text\";\n" +
+                        "a[3] = a;\n" +
+                        "Which line in this code will cause an error?",
+                "Line 3",
+                "Line 4",
+                "Line 5",
+                "This code will execute without errors",
+                "This code will execute without errors",
                 ""
         );
         final QuizListModel q6 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "After executing the JavaScript statement a=(new Array(10)).toString(), what's the value of a?",
+                "null",
+                "string \"10\"",
+                "array of 10 empty strings",
+                "string \",,,,,,,,,\"",
+                "string \",,,,,,,,,\"",
                 ""
         );
         final QuizListModel q7 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Consider the following JavaScript code:\n" +
+                        "a = new Array();\n" +
+                        "b = new Array();\n" +
+                        "a[1] = 3;\n" +
+                        "b[2] = 5;\n" +
+                        "a = b;\n" +
+                        "Which values are contained in a[1] and a[2] after this code executes?",
+                "a[1] is 3 and a[2] is 5",
+                "a[1] is undefined and a[2] is 5",
+                "both a[1] and a[2] are undefined",
+                "This code will cause an error.",
+                "a[1] is undefined and a[2] is 5",
                 ""
         );
         final QuizListModel q8 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Which of the following browsers support the sort() method for arrays?",
+                "Netscape Navigator 2.0",
+                "Microsoft Internet Explorer 3.0",
+                "Netscape Navigator 4.0",
+                "Firefox Navigator 4.0",
+                "Netscape Navigator 4.0",
                 ""
         );
         final QuizListModel q9 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "After executing the JavaScript statement\n" +
+                        "a=(new Array(\"test\",1,2,3,-1,-2,-3,0xFFFFF)).sort()\n" +
+                        "what's the order of elements in the array a?\n" +
+                        "(Hint: 0xFFFFF equals 1048575.)",
+                "-1,-2,-3,1,1048575,2,3,\"test\"",
+                "-1,-2,-3,1,2,3,1048575,\"test\"",
+                "\"test\",-1,-2,-3,1,2,3,1048575",
+                "-3,-2,-1,1,2,3,1048575,\"test\"",
+                "-1,-2,-3,1,1048575,2,3,\"test\"",
                 ""
         );
         final QuizListModel q10 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Consider the following code:\n" +
+                        "a = new Array(1,2,3);\n" +
+                        "for (i in a) alert(\"a[i]=\"+a[i]);\n" +
+                        "How many times will the alert box appear?",
+                "3 times (one alert per element)",
+                "4 times (one alert per element, plus an additional alert for the array's a.length property)",
+                "either 3 or 4 times, depending on the browser",
+                "This for...in loop will cause an error.",
+                "either 3 or 4 times, depending on the browser",
                 ""
         );
         questionLists.add(q1);
@@ -4763,93 +4840,100 @@ public class QuizQuestionsBank {
     private static List<QuizListModel> AdvancedQuiz7() {
         final List<QuizListModel> questionLists = new ArrayList<>();
         final QuizListModel q1 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Consider the following code:\n" +
+                        "function myAdder(arr) {arr[1]++;arr=arr+arr}\n" +
+                        "a = new Array(1,3,2,5);\n" +
+                        "myAdder(a);\n" +
+                        "What's the value of a after this code executes?",
+                "a remains the original array 1,3,2,5",
+                "a contains the array 1,4,2,5",
+                "a becomes an 8-element array: 1,4,2,5,1,4,2,5",
+                "a contains the string \"1,4,2,5,1,4,2,5\"",
+                "a contains the array 1,4,2,5",
                 ""
         );
         final QuizListModel q2 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Which of these contains an executable statement?",
+                "// var x = 10; // var y = 0;",
+                "/* var x = 10; // var y = 0; */.",
+                "/* var x = 10; */ var y = 0;",
+                "// var x = 10; /* var y = 0; */",
+                "/* var x = 10; */ var y = 0;",
                 ""
         );
         final QuizListModel q3 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Assume that a function myfunction is defined at some place . Which of the following is NOT a valid function call?",
+                "var z = myfunction();",
+                "myfunction;",
+                "z = myfunction();",
+                "myfunction();",
+                "myfunction;",
                 ""
         );
         final QuizListModel q4 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Assume that value of A is 10 and value of B is 15. Which of the following returns a true value in if statement.",
+                "if A not = B",
+                "if A != B",
+                "if (A not = B)",
+                "if (A != B)",
+                "if (A != B)",
                 ""
         );
         final QuizListModel q5 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Which of the following is not a builtin Javascript object?",
+                "Time",
+                "Array",
+                "Date",
+                "Math",
+                "Time",
                 ""
         );
         final QuizListModel q6 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "What command skips the rest of a case statement?",
+                "return",
+                "exit",
+                "continue",
+                "break",
+                "break",
                 ""
         );
         final QuizListModel q7 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "How many parameters can be passed to one function?",
+                "none",
+                "as many as you like",
+                "one for each argument",
+                "one",
+                "one for each argument",
                 ""
         );
         final QuizListModel q8 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Consider the following code for switch loop\n" +
+                        "case 10:\n" +
+                        "case 12:\n" +
+                        "What will run next if the value is 10?",
+                "the code following the case 12:",
+                "the code following default:",
+                "the code after the end of the switch",
+                "this is a coding error",
+                "the code following the case 12:",
                 ""
         );
         final QuizListModel q9 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "What does ++ do?",
+                "Adds two numbers together",
+                "Joins two text strings together",
+                "Adds 1 to a number",
+                "Adds 2 to a number",
+                "Adds 1 to a number",
                 ""
         );
         final QuizListModel q10 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "What is correct about a method.",
+                "A method is the object oriented version of a function",
+                "A method is the object oriented version ofa variable",
+                "A method is the object oriented version ofa sequence",
+                "A method is the object oriented version ofa program",
+                "A method is the object oriented version of a function",
                 ""
         );
         questionLists.add(q1);
@@ -4867,93 +4951,123 @@ public class QuizQuestionsBank {
     private static List<QuizListModel> AdvancedQuiz8() {
         final List<QuizListModel> questionLists = new ArrayList<>();
         final QuizListModel q1 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "var a= 'Z'; var b = 32; a = b; Variable 'a' now contains?",
+                "text",
+                "a number",
+                "true",
+                "it is not possible to tell",
+                "a number",
                 ""
         );
         final QuizListModel q2 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Which of the following JavaScript statements use arrays?",
+                "x = a(i)",
+                "x = a[i]",
+                "x = a >> i",
+                "x = a & i",
+                "x = a[i]",
                 ""
         );
         final QuizListModel q3 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Which of the following JavaScript statements is NOT a correct definitions of an array?",
+                "var a = new Array(100)",
+                "var a = new Array[100]",
+                "a = new Array(100)",
+                "a = new Array(1,2,3,4)",
+                "var a = new Array[100]",
                 ""
         );
         final QuizListModel q4 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "The JavaScript statement x = new Array(2,3)",
+                "defines a new two-dimensional array a whose dimensions are 2 and 3",
+                "defines an array a with two elements with a[1]=2 and a[2]=3;",
+                "defines an array a with two elements with a[0]=2 and a[1]=3",
+                "It is an incorrect way of defining an array",
+                "defines an array a with two elements with a[0]=2 and a[1]=3",
                 ""
         );
         final QuizListModel q5 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Consider the following JavaScript code:\n" +
+                        "x = new Array();\n" +
+                        "y = new Array();\n" +
+                        "x[1] = 3;\n" +
+                        "y[2] = 5;\n" +
+                        "x = y;\n" +
+                        "Which values are contained in x[1] and x[2] after this code executes?",
+                "x[1] is 3 and x[2] is 5",
+                "x[1] is undefined and x[2] is 5",
+                "both x[1] and x[2] are undefined",
+                "This code will cause an error",
+                "x[1] is undefined and x[2] is 5",
                 ""
         );
         final QuizListModel q6 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Consider the following javascript code\n" +
+                        "function myAdder(arr) {arr[1]++}\n" +
+                        " a = new Array(1,3,2,5);" +
+                        "\n" +
+                        " myAdder(a);" +
+                        "\n" +
+                        "document.writeln(a);" +
+                        "\n" +
+                        "What is the output of the code.",
+                "1,3,2,5",
+                "1,4,2,5",
+                "The code has error",
+                "2,3,2,5",
+                "1,4,2,5",
                 ""
         );
         final QuizListModel q7 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Consider the following\n" +
+                        "var  a = new Array(12,false,\"text\");\n" +
+                        "x=10;\n" +
+                        "if (a[1]) x = 20;\n" +
+                        "else x = 30;\n" +
+                        "What is the value of x at the end of the execution",
+                "10",
+                "20",
+                "30",
+                "The code has error",
+                "30",
                 ""
         );
         final QuizListModel q8 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Consider the initialization of the two dimensional array\n" +
+                        "var iMax = 20;\n" +
+                        "var jMax = 10;\n" +
+                        "var f = new Array();" +
+                        "\n" +
+                        "for (i=0;i<iMax;i++) {\n" +
+                        " f[i]=new Array();\n" +
+                        " for (j=0;j<jMax;j++) {\n" +
+                        "  f[i][j]=0;\n" +
+                        " }\n" +
+                        "}\n" +
+                        "What is the value of f.length ?",
+                "10",
+                "20",
+                "200",
+                "The code has error",
+                "20",
                 ""
         );
         final QuizListModel q9 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "How many buttons are there in an alert box?",
+                "one",
+                "two",
+                "three",
+                "four",
+                "one",
                 ""
         );
         final QuizListModel q10 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Which of the following is not a mouse event?",
+                "onmousescroller",
+                "onclick",
+                "onmouseover",
+                "onmousemove",
+                "onmousescroller",
                 ""
         );
         questionLists.add(q1);
@@ -4971,93 +5085,100 @@ public class QuizQuestionsBank {
     private static List<QuizListModel> AdvancedQuiz9() {
         final List<QuizListModel> questionLists = new ArrayList<>();
         final QuizListModel q1 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Which of the following is not an event that can trigger a Javascript?",
+                "mouse actions",
+                "operating system actions",
+                "keyboard actions",
+                "timed actions",
+                "timed actions",
                 ""
         );
         final QuizListModel q2 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Which event is triggered if the browser window is resized ?",
+                "onload",
+                "onscroll",
+                "onresize",
+                "onnewsize",
+                "onresize",
                 ""
         );
         final QuizListModel q3 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Which event is triggered when a field loses the focus ?",
+                "onmouseout",
+                "onblur",
+                "onunfocus",
+                "onkeyup",
+                "onblur",
                 ""
         );
         final QuizListModel q4 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "You define a method using ?",
+                "obj.method",
+                "obj.method[]",
+                "obj.method()",
+                "obj-method",
+                "obj.method()",
                 ""
         );
         final QuizListModel q5 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Which of these statements is true ?",
+                "arguments are parameters",
+                "arguments and parameters must have the same name",
+                "arguments are placeholders",
+                "arguments are disagreements between parameters",
+                "arguments are placeholders",
                 ""
         );
         final QuizListModel q6 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Which of the following is NOT a valid Alert call?",
+                "alert('A');",
+                "alert(a);",
+                "alert(a+b);",
+                "alert(#);",
+                "alert(#);",
                 ""
         );
         final QuizListModel q7 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Which event tests if a form field has changed?",
+                "onsubmit",
+                "onblur",
+                "onchange",
+                "onclick",
+                "onchange",
                 ""
         );
         final QuizListModel q8 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "When can you not trigger Javascript from an event handler ?",
+                "when another event is still being processed",
+                "when Javascript is disabled",
+                "when the page uses stylesheets",
+                "when it is running locally instead of on the web",
+                "when Javascript is disabled",
                 ""
         );
         final QuizListModel q9 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Which of the following is / are valid statement(s) to declare an array?\n" +
+                        "A. const arr = [2, 4, 6];" +
+                        "\n" +
+                        "B. const arr = new Array(2, 4, 6);" +
+                        "\n" +
+                        "C. const arr = Array(2, 4, 6);",
+                "A and B",
+                "Only A",
+                "B and C",
+                "A, B and C",
+                "A, B and C",
                 ""
         );
         final QuizListModel q10 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "What is the output?\n" +
+                        "const arr = [2, , , 4];\n" +
+                        "console.log(arr.length);",
+                "5",
+                "4",
+                "2",
+                "SyntaxError: Invalid operator ,",
+                "4",
                 ""
         );
         questionLists.add(q1);
@@ -5075,93 +5196,121 @@ public class QuizQuestionsBank {
     private static List<QuizListModel> AdvancedQuiz10() {
         final List<QuizListModel> questionLists = new ArrayList<>();
         final QuizListModel q1 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "What is the output?\n" +
+                        "const arr = Array(3);\n" +
+                        "console.log(arr);",
+                "undefined",
+                "[3]",
+                "[undefined, undefined, undefined]",
+                "None of these",
+                "[undefined, undefined, undefined]",
                 ""
         );
         final QuizListModel q2 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "What is the output?\n" +
+                        "const arr = [\"Mercedes\", \"BMW\", \"Porsche\"];\n" +
+                        "console.log(arr[1000]);",
+                "undefined",
+                "ReferenceError: Array out of bound exception",
+                "null",
+                "\"\"",
+                "undefined",
                 ""
         );
         final QuizListModel q3 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "In what all ways, we can check if a variable arr contains an array in JavaScript?\n" +
+                        "A. Array.isArray(arr) === true" +
+                        "\n" +
+                        "B. arr.constructor.name === \"Array\"" +
+                        "\n" +
+                        "C. typeof arr === \"Array\"",
+                "Only A",
+                "A and B",
+                "B and C",
+                "A, B and C",
+                "A and B",
                 ""
         );
         final QuizListModel q4 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "What is the output?\n" +
+                        "const arr1 = [1, 3, 5];\n" +
+                        "const arr2 = [2, 4, 6];\n" +
+                        "arr1.concat(arr2);\n" +
+                        "console.log(arr1);",
+                "[1, 2, 3, 4, 5, 6]",
+                "[2, 4, 6]",
+                "[1, 3, 5, 2, 4, 6]",
+                "[1, 3, 5]",
+                "[1, 3, 5]",
                 ""
         );
         final QuizListModel q5 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "What is the output?\n" +
+                        "const arr = [2, 4, 6];\n" +
+                        "const result = arr.every((ele) => ele * 2);\n" +
+                        "console.log(result);",
+                "true",
+                "[4, 8, 12]",
+                "false",
+                "[2, 4, 6]",
+                "true",
                 ""
         );
         final QuizListModel q6 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Which of these for loops would iterate through each item of the nums array (no more, no less)?",
+                "for (var i = 0; i < nums; i++) { }",
+                "for (var i = 1; i < nums.length; i++) { }",
+                "for (var i = 1; i < nums; i++) { }",
+                "for (var i = 0; i < nums.length; i++) { }",
+                "for (var i = 0; i < nums.length; i++) { }",
                 ""
         );
         final QuizListModel q7 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "In JavaScript, an array can be created using the:",
+                "Array() constructor",
+                "[] literals",
+                "Both of the above",
+                "None of these",
+                "Both of the above",
                 ""
         );
         final QuizListModel q8 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "What would arr.indexOf(0) and arr.indexOf(1) return respectively, if arr holds the array [1, 5, 8]?",
+                "1 and -1",
+                "-1 and 1",
+                "-1 and 0",
+                "1 and 5",
+                "-1 and 0",
                 ""
         );
         final QuizListModel q9 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "For a given array arr, the expressions arr[0] and arr.shift() both do the same thing. True or false?",
+                "True",
+                "False, arr[0] only returns whereas arr.shift() removes the first element",
+                "False, arr[0] only returns whereas arr.shift() returns and removes first element",
+                "None of these",
+                "False, arr[0] only returns whereas arr.shift() returns and removes first element",
                 ""
         );
         final QuizListModel q10 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Which of the following code snippets logs a sparse array?\n" +
+                        "Snippet 1:" +
+                        "\n" +
+                        "var nums = [1, 2, 3];\n" +
+                        "delete nums[0];" +
+                        "\n" +
+                        "console.log(nums);\n" +
+                        "Snippet 2:" +
+                        "\n" +
+                        "var nums = [1, 2, 3];\n" +
+                        "nums.shift();" +
+                        "\n" +
+                        "console.log(nums);",
+                "Snippet 1",
+                "Snippet 2",
+                "Both of the above",
+                "None of the above",
+                "Snippet 1",
                 ""
         );
         questionLists.add(q1);

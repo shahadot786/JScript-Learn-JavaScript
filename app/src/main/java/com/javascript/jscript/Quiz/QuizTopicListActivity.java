@@ -141,10 +141,7 @@ public class QuizTopicListActivity extends AppCompatActivity {
                 "Typescript Quiz 4",
                 "Typescript Quiz 5",
                 "Typescript Quiz 6",
-                "Typescript Quiz 7",
-                "Typescript Quiz 8",
-                "Typescript Quiz 9",
-                "Typescript Quiz 10"
+                "Typescript Quiz 7"
 
         };
         //pro content

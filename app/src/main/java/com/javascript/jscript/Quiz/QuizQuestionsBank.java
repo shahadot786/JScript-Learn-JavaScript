@@ -6370,93 +6370,93 @@ public class QuizQuestionsBank {
     private static List<QuizListModel> TypescriptQuiz1() {
         final List<QuizListModel> questionLists = new ArrayList<>();
         final QuizListModel q1 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Who developed and designed TypeScript?",
+                "Amazon",
+                "Oracle",
+                "TypeScript",
+                "Microsoft",
+                "Microsoft",
                 ""
         );
         final QuizListModel q2 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "When was the first time TypeScript was made public?",
+                "December 2012",
+                "October 2012",
+                "October 2013",
+                "November 2013",
+                "October 2012",
                 ""
         );
         final QuizListModel q3 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Which of the following is the typing principle of typescript?",
+                "Gradual",
+                "Dynamic",
+                "Duck",
+                "All of the above",
+                "All of the above",
                 ""
         );
         final QuizListModel q4 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Which of the following is a filename extension for typescript?",
+                ".tsx",
+                ".nod",
+                ".txt",
+                ".tt",
+                ".tsx",
                 ""
         );
         final QuizListModel q5 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Among which of the following computer programming language influenced the creation of typescript?",
+                "Java",
+                "JavaScript",
+                "C#",
+                "All of the above",
+                "All of the above",
                 ""
         );
         final QuizListModel q6 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "The following are backported features of typescript, except?",
+                "Classes",
+                "Methods",
+                "Modules",
+                "Arrow",
+                "Methods",
                 ""
         );
         final QuizListModel q7 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "The ...... Service powers the interactive TypeScript experience in Visual Studio, Vs Code, Sublime, the TypeScript playground and other editor.",
+                "Typescript language",
+                "TypeScript compiler",
+                "Typescript main",
+                "TypeScript method",
+                "Typescript language",
                 ""
         );
         final QuizListModel q8 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "A typescript can be installed or managed through?",
+                "Void",
+                "Space",
+                "Nmp",
+                "Tag",
+                "Nmp",
                 ""
         );
         final QuizListModel q9 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Which Object Oriented Terms are Supported by Typescript?",
+                "Modulus",
+                "Interface",
+                "Classes",
+                "All of the above",
+                 "All of the above",
                 ""
         );
         final QuizListModel q10 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "..... are the way to organise code in typescript.",
+                "Modules",
+                "Classes",
+                "Method",
+                "Arrow",
+                "Modules",
                 ""
         );
         questionLists.add(q1);
@@ -6474,93 +6474,93 @@ public class QuizQuestionsBank {
     private static List<QuizListModel> TypescriptQuiz2() {
         final List<QuizListModel> questionLists = new ArrayList<>();
         final QuizListModel q1 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Which are the different Data Types supported by Typescript?",
+                "Boolean var bValue: boolean = false",
+                "Number var age: number = 16",
+                "String var name: string = \"jon\"",
+                "All of the above mentioned",
+                "All of the above mentioned",
                 ""
         );
         final QuizListModel q2 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Which statements are true regarding JSX modes?",
+                "These modes only affect the emit stage - type checking is unaffected",
+                "The output of react mode will have a .jsx file extension",
+                "The react mode will emit React.addElement",
+                "The preserve mode will keep the JSX as part of the output to be further consumed by another transform step",
+                "The preserve mode will keep the JSX as part of the output to be further consumed by another transform step",
                 ""
         );
         final QuizListModel q3 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "What are variables in Typescript?",
+                "A variable name should contain alphabets and numeric digits",
+                "It cannot contain spaces and special characters except underscore (_) and dollar ($) sign",
+                "A variable name cannot begin with a digit",
+                "All of the above",
+                "All of the above",
                 ""
         );
         final QuizListModel q4 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "What are the variable scopes available in TypeScript?",
+                "Global Scope",
+                "Class Scope",
+                "Local Scope",
+                "All of the above",
+                "All of the above",
                 ""
         );
         final QuizListModel q5 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "What are the benefits of Typescript?",
+                "It helps in code structuring",
+                "Use class based object oriented programming",
+                "Impose coding guidelines",
+                "All of the above",
+                "All of the above",
                 ""
         );
         final QuizListModel q6 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Which object oriented terms are supported by Typescript?",
+                "Modules",
+                "Classes",
+                "Interfaces",
+                "All of these",
+                "All of these",
                 ""
         );
         final QuizListModel q7 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "List some features of Typescript?",
+                "Typescript can be compiled to all major versions of Javascript(ES3,ES5,ES6,ES7)",
+                "Typescript can be used for cross \"“browser development and is an open source project",
+                "Typescript is a superset of JavaScript that provides typed nature to your code",
+                "All of the above",
+                "All of the above",
                 ""
         );
         final QuizListModel q8 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "What are the components of TypeScript?",
+                "TypeScript Language",
+                "TypeScript Compiler",
+                "TypeScript Language Service",
+                "All of these",
+                "All of these",
                 ""
         );
         final QuizListModel q9 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "What are the types of access modifiers supported by TypeScript?",
+                "Public",
+                "Private",
+                "Protected",
+                "All of these",
+                "All of these",
                 ""
         );
         final QuizListModel q10 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Existing JavaScript programs are also valid TypeScript programs?",
+                "Yes",
+                "No",
+                "None",
+                "None of these",
+                "Yes",
                 ""
         );
         questionLists.add(q1);
@@ -6578,93 +6578,93 @@ public class QuizQuestionsBank {
     private static List<QuizListModel> TypescriptQuiz3() {
         final List<QuizListModel> questionLists = new ArrayList<>();
         final QuizListModel q1 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "JavaScript features in which stage of TC39 process will be included in latest version of TypeScript?",
+                "Stage 0",
+                "Stage 1",
+                "Stage 2,4",
+                "Stage 3",
+                "Stage 3",
                 ""
         );
         final QuizListModel q2 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Which following one are valid types of TypeScript?",
+                "string, integer, boolean, float",
+                "string, number, boolean, bigint",
+                "String, Number, Boolean, Float",
+                "String, Integer, Boolean, BigInt",
+                "string, number, boolean, bigint",
                 ""
         );
         final QuizListModel q3 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Which statement is correct?",
+                "A union type combines multiple types into one & An intersection type is a type formed from two or more other types, representing values that may be any one of those types.",
+                "An intersection type combines multiple types into one & A union type is a type formed from two or more other types, representing values that may be any one of those types.",
+                "Both are correct.",
+                "Both are incorrect.",
+                "An intersection type combines multiple types into one & A union type is a type formed from two or more other types, representing values that may be any one of those types.",
                 ""
         );
         final QuizListModel q4 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "How can we declare an Enum type?",
+                "enum LOG_LEVEL = { 1 = ERROR, 2 = WARN }",
+                "enum LOG_LEVEL { 1 = ERROR, 2 = WARN }",
+                "enum LOG_LEVEL = { ERROR = 1, WARN = 2 }",
+                "enum LOG_LEVEL { ERROR = 1, WARN = 2 }",
+                "enum LOG_LEVEL { ERROR = 1, WARN = 2 }",
                 ""
         );
         final QuizListModel q5 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "What was the first internet browser?",
+                "Google Chrome",
+                "Internet Explorer",
+                "Mosaic",
+                "Mozilla Firefox",
+                "Mosaic",
                 ""
         );
         final QuizListModel q6 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Which browsers were heavily influenced by Javascript in 1994?",
+                "Internet Explorer & Safari",
+                "Google Chrome & Mozilla Firefox",
+                "Opera & Chromium",
+                "Netscape & Yahoo!",
+                "Netscape & Yahoo!",
                 ""
         );
         final QuizListModel q7 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Who was the developer that gave rise to the Javascript language?",
+                "Brendan Eich",
+                "Bill Gates",
+                "Steve Jobs",
+                "Elon Musk",
+                "Brendan Eich",
                 ""
         );
         final QuizListModel q8 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "What are the two main standardizations of the Javascript language?",
+                "ECMA-263 & ISO 9001",
+                "ECMA-999 & ISO 9999",
+                "ECMA-262 & ISO/IEC 16262",
+                "ECMA-262 & ISO/IEC 16261",
+                "ECMA-262 & ISO/IEC 16262",
                 ""
         );
         final QuizListModel q9 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "What is ECMA International?",
+                "US government agency",
+                "European Computer Manufacturers Association",
+                "for-profit organization",
+                "None of the above alternatives",
+                "European Computer Manufacturers Association",
                 ""
         );
         final QuizListModel q10 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "What is the main feature of Typescript?",
+                "Allows better compilation than other languages.",
+                "Static typing.",
+                "Achieving full software performance.",
+                "None of the above alternatives.",
+                "Static typing.",
                 ""
         );
         questionLists.add(q1);
@@ -6682,93 +6682,93 @@ public class QuizQuestionsBank {
     private static List<QuizListModel> TypescriptQuiz4() {
         final List<QuizListModel> questionLists = new ArrayList<>();
         final QuizListModel q1 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "What other technologies are similar to Typescript?",
+                "Java & CoffeeScript",
+                "Python & Ruby",
+                "CoffeeScript & Dart",
+                "C & C++",
+                "CoffeeScript & Dart",
                 ""
         );
         final QuizListModel q2 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "What is the difference between Javascript & Typescript?",
+                "None, as they are two scripting languages.",
+                "Both run only on desktop applications.",
+                "Javascript is the only language that can run on all browsers, while Typescript is a language that proposes better organization of existing JavaScript code.",
+                "They have the same characteristics in terms of performance.",
+                "Javascript is the only language that can run on all browsers, while Typescript is a language that proposes better organization of existing JavaScript code.",
                 ""
         );
         final QuizListModel q3 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Where is Javascript used?",
+                "Front-end",
+                "Back-end",
+                "mobile apps",
+                "All",
+                "All",
                 ""
         );
         final QuizListModel q4 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Which companies use Javascript?",
+                "Google",
+                "Microsoft",
+                "Facebook",
+                "All",
+                "All",
                 ""
         );
         final QuizListModel q5 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Browsers know and can interpret TypeScript",
+                "True",
+                "Wrong",
+                "None",
+                "Not valid",
+                "Wrong",
                 ""
         );
         final QuizListModel q6 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Which one is right?",
+                "TypeScript bir JavaScript superset'idir",
+                "Can generate all major JavaScript versions including TypeScript ES3, ES5, ES6, ES7",
+                "TypeScript helps us to do multi-browser supported development",
+                "all of it",
+                "all of it",
                 ""
         );
         final QuizListModel q7 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Which ones are TypeScript components?",
+                "TypeScript compiler",
+                "TypeScript Language",
+                "TypeScript Language Service",
+                "All",
+                "All",
                 ""
         );
         final QuizListModel q8 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "How to install TypeScript?",
+                "with installer",
+                "Chocolate home",
+                "Npm how much",
+                "Uninstallable bullshit",
+                "Npm how much",
                 ""
         );
         final QuizListModel q9 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "What is TypeScript file extension?",
+                ".ts",
+                ".js",
+                ".jsx",
+                ".jx",
+                ".ts",
                 ""
         );
         final QuizListModel q10 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Which access tokens (Access modifiers) are supported?",
+                "public/None",
+                "private",
+                "protected",
+                "All",
+                "All",
                 ""
         );
         questionLists.add(q1);
@@ -6786,93 +6786,149 @@ public class QuizQuestionsBank {
     private static List<QuizListModel> TypescriptQuiz5() {
         final List<QuizListModel> questionLists = new ArrayList<>();
         final QuizListModel q1 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "What type of variable is this:\n" +
+                        "var version: {" +
+                        "\n" +
+                        "subVersion: number" +
+                        "\n" +
+                        "};",
+                "boolean",
+                "number",
+                "object",
+                "string",
+                "object",
                 ""
         );
         final QuizListModel q2 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "What is a difference between the following:\n" +
+                        "let a = 0;" +
+                        "\n" +
+                        "const a = 0;",
+                "\"const a\" can be reassigned. \"let a\" cannot be reassigned.",
+                "\"let a\" can be reassigned. \"const a\" cannot be reassigned.",
+                "There is no difference",
+                "None of these",
+                "\"let a\" can be reassigned. \"const a\" cannot be reassigned.",
                 ""
         );
         final QuizListModel q3 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "How do you declare a variable inside a class?",
+                "class MyCoolClass {" +
+                        "\n" +
+                        "let myCoolVariable;" +
+                        "\n" +
+                        "}",
+                "class MyCoolClass {" +
+                        "\n" +
+                        "myCoolVariable;" +
+                        "\n" +
+                        "}",
+                "Both",
+                "None of these",
+                "class MyCoolClass {" +
+                        "\n" +
+                        "myCoolVariable;" +
+                        "\n" +
+                        "}",
                 ""
         );
         final QuizListModel q4 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "How does a TypeScript class implement an interface?",
+                "class MyCoolClass implements IMyCoolInterface {" +
+                        "\n" +
+                        "}",
+                "class MyCoolClass extends IMyCoolInterface {" +
+                        "\n" +
+                        "}",
+                "interface IMyCoolInterface implemented by MyCoolClass {" +
+                        "\n" +
+                        "}",
+                "A class implements an interface automatically.",
+                "class MyCoolClass implements IMyCoolInterface {" +
+                        "\n" +
+                        "}",
                 ""
         );
         final QuizListModel q5 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "What is the benefit of interfaces?",
+                "They let you hide what the class is and reference an object via the interface.",
+                "They let you define inline-objects with type safety, like so:\n" +
+                        "let myObject: IMyCoolInterface = {" +
+                        "\n" +
+                        "myCoolVariable: 1\n" +
+                        "}",
+                "They let you change assign a different class to a variable as long as it implements the same interface.",
+                "All of the above.",
+                "All of the above.",
                 ""
         );
         final QuizListModel q6 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Typescript is dynamically typed language",
+                "True",
+                "False",
+                "Undefined",
+                "None of these",
+                "False",
                 ""
         );
         final QuizListModel q7 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Advantage of typescript are",
+                "Type Checking and type inference",
+                "Dynamically typed language",
+                "No need to have any external compilers / interpreter",
+                "None of these",
+                "Type Checking and type inference",
                 ""
         );
         final QuizListModel q8 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "ECMAScript (ES) is a scripting language specification created to standardize JavaScript",
+                "True",
+                "False",
+                "Undefined",
+                "None of these",
+                "True",
                 ""
         );
         final QuizListModel q9 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "What is the output of this code?" +
+                        "\n" +
+                        "function validate(){" +
+                        "\n" +
+                        "let a = 2;" +
+                        "\n" +
+                        "if(true){" +
+                        "\n" +
+                        "let a = 4;" +
+                        "\n" +
+                        "console.log(a);" +
+                        "\n" +
+                        "}" +
+                        "\n" +
+                        "console.log(a);" +
+                        "\n" +
+                        "}" +
+                        "\n" +
+                        "validate();",
+                "2 2",
+                "2 4",
+                "4 2",
+                "4 4",
+                "4 2",
                 ""
         );
         final QuizListModel q10 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Fill in the blanks to iterate through all the characters using the for... of loop." +
+                        "\n" +
+                        "__ (let ch __ \"Hello\") {" +
+                        "\n" +
+                        "console.log(ch);" +
+                        "\n" +
+                        "}",
+                "for in",
+                "for of",
+                "for at",
+                "None of these",
+                "for of",
                 ""
         );
         questionLists.add(q1);
@@ -6890,93 +6946,136 @@ public class QuizQuestionsBank {
     private static List<QuizListModel> TypescriptQuiz6() {
         final List<QuizListModel> questionLists = new ArrayList<>();
         final QuizListModel q1 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Fill in the blanks to declare an arrow function that takes an array and prints the odd elements.\n" +
+                        "const printOdds = (arr) __ {" +
+                        "\n" +
+                        "__ . forEach(__ => {" +
+                        "\n" +
+                        "if ( el % 2 != 0 ) console.log(el);" +
+                        "\n" +
+                        "});" +
+                        "\n" +
+                        "}",
+                "arr el",
+                "arrel",
+                "arr",
+                "None of these",
+                "arr el",
                 ""
         );
         final QuizListModel q2 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "What is the output of this code." +
+                        "\n" +
+                        "function test( a, b=3, c=42) {" +
+                        "\n" +
+                        "return a + b + c;" +
+                        "\n" +
+                        "}" +
+                        "\n" +
+                        "console.log(test(5));",
+                "51",
+                "50.0",
+                "50",
+                "5",
+                "50",
                 ""
         );
         final QuizListModel q3 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "What is the value of a, b, c and d?" +
+                        "\n" +
+                        "let a, b, c = 4, d=8;" +
+                        "\n" +
+                        "[a, b=6] = [2];" +
+                        "\n" +
+                        "[c, d] = [d, c];",
+                "2,6,8,4",
+                "2,6,4,8",
+                "6,2,8,4",
+                "8,2,6,4",
+                "2,6,8,4",
                 ""
         );
         final QuizListModel q4 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "What is the output of the following code?" +
+                        "\n" +
+                        "let names = ['John', 'Fred', 'Ann'];" +
+                        "\n" +
+                        "let[Ann, Fred, John] = names;" +
+                        "\n" +
+                        "console.log(John);",
+                "John",
+                "Ann",
+                "Error",
+                "Fred",
+                "Ann",
                 ""
         );
         final QuizListModel q5 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "What is the data type in TypeScript ?",
+                "int",
+                "float",
+                "number",
+                "All of the above answers are correct",
+                "number",
                 ""
         );
         final QuizListModel q6 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "What is the data type that can store any data?",
+                "enum",
+                "any",
+                "string",
+                "number",
+                "any",
                 ""
         );
         final QuizListModel q7 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Given the following code:" +
+                        "\n" +
+                        "interface Product{ id: number," +
+                        "\n" +
+                        "name: string, description: string }" +
+                        "\n" +
+                        "What is the correct syntax to declare the Product object for the above code?",
+                "let product: Product = { id: 1," +
+                        "\n" +
+                        "name: “IPhone 12” }",
+                "let product: Product = {" +
+                        "\n" +
+                        "id: 1, description: “New phone” }",
+                "let product: Product = { id: 1, name: “IPhone 12”," +
+                        "\n" +
+                        "description: “New phone”}",
+                "All answers above",
+                "let product: Product = { id: 1, name: “IPhone 12”," +
+                        "\n" +
+                        "description: “New phone”}",
                 ""
         );
         final QuizListModel q8 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "How many types of functions are there in TypeScript?",
+                "1",
+                "2",
+                "3",
+                "4",
+                "2",
                 ""
         );
         final QuizListModel q9 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "What is Promise declaration syntax?",
+                "let promise = Promise();",
+                "let promise = new Promise(resolve, reject);",
+                "let promise = new promise(resolve, reject)",
+                "let promise = promise(resolve, reject)",
+                "let promise = new Promise(resolve, reject);",
                 ""
         );
         final QuizListModel q10 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "What method do we use to get the value from the fullfiled state of the Promise?",
+                "then()",
+                "catch()",
+                "finally()",
+                "get()",
+                "then()",
                 ""
         );
         questionLists.add(q1);
@@ -6994,405 +7093,96 @@ public class QuizQuestionsBank {
     private static List<QuizListModel> TypescriptQuiz7() {
         final List<QuizListModel> questionLists = new ArrayList<>();
         final QuizListModel q1 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "What method do we use to get the value from the rejected state?",
+                "then()",
+                "catch()",
+                "finally()",
+                "get()",
+                "catch()",
                 ""
         );
         final QuizListModel q2 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "The different data types supported by Typescript are...",
+                "Boolean. VD: let bValue: boolean = false;",
+                "String. VD: let name: string = \"Jack\";",
+                "Number. VD: let age: number = 5;",
+                "All of the above ideas",
+                "All of the above ideas",
                 ""
         );
         final QuizListModel q3 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Is it possible to use alert() in TypeScript?",
+                "Yes",
+                "Are not",
+                "None",
+                "None of these",
+                "Yes",
                 ""
         );
         final QuizListModel q4 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "What command to generate js file from ts file?",
+                "npm fileName.ts",
+                "tsc fileName.ts",
+                "tsc fileName.js",
+                "compile fileName.ts",
+                "tsc fileName.ts",
                 ""
         );
         final QuizListModel q5 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Which of the following statements declares a variable in typescript?",
+                "let myVar : number = 123",
+                "var myVar = 123",
+                "let myVar : number = 123",
+                "All",
+                "All",
                 ""
         );
         final QuizListModel q6 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "What is a difference between the following:\n" +
+                        "let a = 0;" +
+                        "\n" +
+                        "const a = 0;",
+                "\"const a\" can be reassigned. \"let a\" cannot be reassigned.",
+                "\"let a\" can be reassigned. \"const a\" cannot be reassigned.",
+                "Both",
+                "There is no difference",
+                "\"let a\" can be reassigned. \"const a\" cannot be reassigned.",
                 ""
         );
         final QuizListModel q7 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Which is NOT considered as a type of heading?",
+                "marginal",
+                "shoulder",
+                "paragraph",
+                "indented",
+                "indented",
                 ""
         );
         final QuizListModel q8 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "On which of the following declarations does the expression a.foo not return an error? (several possible)",
+                "a: {};",
+                "a: object;",
+                "a: any;",
+                "a: void;",
+                "a: any;",
                 ""
         );
         final QuizListModel q9 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "I commit an immutable property in a class like this:",
+                "const animal = 'dog';",
+                "static animal = 'dog';",
+                "readonly animal = 'dog';",
+                "private animal = 'dog'",
+                "readonly animal = 'dog';",
                 ""
         );
         final QuizListModel q10 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        questionLists.add(q1);
-        questionLists.add(q2);
-        questionLists.add(q3);
-        questionLists.add(q4);
-        questionLists.add(q5);
-        questionLists.add(q6);
-        questionLists.add(q7);
-        questionLists.add(q8);
-        questionLists.add(q9);
-        questionLists.add(q10);
-        return questionLists;
-    }
-    private static List<QuizListModel> TypescriptQuiz8() {
-        final List<QuizListModel> questionLists = new ArrayList<>();
-        final QuizListModel q1 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q2 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q3 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q4 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q5 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q6 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q7 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q8 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q9 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q10 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        questionLists.add(q1);
-        questionLists.add(q2);
-        questionLists.add(q3);
-        questionLists.add(q4);
-        questionLists.add(q5);
-        questionLists.add(q6);
-        questionLists.add(q7);
-        questionLists.add(q8);
-        questionLists.add(q9);
-        questionLists.add(q10);
-        return questionLists;
-    }
-    private static List<QuizListModel> TypescriptQuiz9() {
-        final List<QuizListModel> questionLists = new ArrayList<>();
-        final QuizListModel q1 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q2 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q3 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q4 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q5 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q6 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q7 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q8 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q9 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q10 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        questionLists.add(q1);
-        questionLists.add(q2);
-        questionLists.add(q3);
-        questionLists.add(q4);
-        questionLists.add(q5);
-        questionLists.add(q6);
-        questionLists.add(q7);
-        questionLists.add(q8);
-        questionLists.add(q9);
-        questionLists.add(q10);
-        return questionLists;
-    }
-    private static List<QuizListModel> TypescriptQuiz10() {
-        final List<QuizListModel> questionLists = new ArrayList<>();
-        final QuizListModel q1 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q2 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q3 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q4 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q5 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q6 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q7 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q8 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q9 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q10 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Which of the following declarations conforms to TypeScript standard linting rules?",
+                "const seconds = 60 : number;",
+                "const seconds: number = 60;",
+                "const seconds = 60;",
+                "None of these",
+                "const seconds = 60;",
                 ""
         );
         questionLists.add(q1);
@@ -18056,12 +17846,6 @@ public class QuizQuestionsBank {
                 return TypescriptQuiz6();
             case "Typescript Quiz 7":
                 return TypescriptQuiz7();
-            case "Typescript Quiz 8":
-                return TypescriptQuiz8();
-            case "Typescript Quiz 9":
-                return TypescriptQuiz9();
-            case "Typescript Quiz 10":
-                return TypescriptQuiz10();
             //AngularQuiz
             case "Angular Quiz 1":
                 return AngularQuiz1();

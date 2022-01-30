@@ -127,11 +127,7 @@ public class QuizTopicListActivity extends AppCompatActivity {
                 "AJAX Quiz 3",
                 "AJAX Quiz 4",
                 "AJAX Quiz 5",
-                "AJAX Quiz 6",
-                "AJAX Quiz 7",
-                "AJAX Quiz 8",
-                "AJAX Quiz 9",
-                "AJAX Quiz 10"
+                "AJAX Quiz 6"
 
         };
         final String[] Typescript = {
@@ -150,12 +146,7 @@ public class QuizTopicListActivity extends AppCompatActivity {
                 "Angular Quiz 2",
                 "Angular Quiz 3",
                 "Angular Quiz 4",
-                "Angular Quiz 5",
-                "Angular Quiz 6",
-                "Angular Quiz 7",
-                "Angular Quiz 8",
-                "Angular Quiz 9",
-                "Angular Quiz 10"
+                "Angular Quiz 5"
 
         };
         final String[] VueJs = {
@@ -163,25 +154,7 @@ public class QuizTopicListActivity extends AppCompatActivity {
                 "VueJs Quiz 2",
                 "VueJs Quiz 3",
                 "VueJs Quiz 4",
-                "VueJs Quiz 5",
-                "VueJs Quiz 6",
-                "VueJs Quiz 7",
-                "VueJs Quiz 8",
-                "VueJs Quiz 9",
-                "VueJs Quiz 10"
-
-        };
-        final String[] NextJs = {
-                "NextJs Quiz 1",
-                "NextJs Quiz 2",
-                "NextJs Quiz 3",
-                "NextJs Quiz 4",
-                "NextJs Quiz 5",
-                "NextJs Quiz 6",
-                "NextJs Quiz 7",
-                "NextJs Quiz 8",
-                "NextJs Quiz 9",
-                "NextJs Quiz 10"
+                "VueJs Quiz 5"
 
         };
         final String[] ReactJs = {
@@ -189,25 +162,13 @@ public class QuizTopicListActivity extends AppCompatActivity {
                 "ReactJs Quiz 2",
                 "ReactJs Quiz 3",
                 "ReactJs Quiz 4",
-                "ReactJs Quiz 5",
-                "ReactJs Quiz 6",
-                "ReactJs Quiz 7",
-                "ReactJs Quiz 8",
-                "ReactJs Quiz 9",
-                "ReactJs Quiz 10"
+                "ReactJs Quiz 5"
 
         };
         final String[] EmberJs = {
                 "EmberJs Quiz 1",
                 "EmberJs Quiz 2",
-                "EmberJs Quiz 3",
-                "EmberJs Quiz 4",
-                "EmberJs Quiz 5",
-                "EmberJs Quiz 6",
-                "EmberJs Quiz 7",
-                "EmberJs Quiz 8",
-                "EmberJs Quiz 9",
-                "EmberJs Quiz 10"
+                "EmberJs Quiz 3"
 
         };
         final String[] Bootstrap = {
@@ -215,12 +176,7 @@ public class QuizTopicListActivity extends AppCompatActivity {
                 "Bootstrap Quiz 2",
                 "Bootstrap Quiz 3",
                 "Bootstrap Quiz 4",
-                "Bootstrap Quiz 5",
-                "Bootstrap Quiz 6",
-                "Bootstrap Quiz 7",
-                "Bootstrap Quiz 8",
-                "Bootstrap Quiz 9",
-                "Bootstrap Quiz 10"
+                "Bootstrap Quiz 5"
 
         };
         final String[] NodeJs = {
@@ -228,12 +184,7 @@ public class QuizTopicListActivity extends AppCompatActivity {
                 "NodeJs Quiz 2",
                 "NodeJs Quiz 3",
                 "NodeJs Quiz 4",
-                "NodeJs Quiz 5",
-                "NodeJs Quiz 6",
-                "NodeJs Quiz 7",
-                "NodeJs Quiz 8",
-                "NodeJs Quiz 9",
-                "NodeJs Quiz 10"
+                "NodeJs Quiz 5"
 
         };
         final String[] ExpressJs = {
@@ -241,12 +192,7 @@ public class QuizTopicListActivity extends AppCompatActivity {
                 "ExpressJs Quiz 2",
                 "ExpressJs Quiz 3",
                 "ExpressJs Quiz 4",
-                "ExpressJs Quiz 5",
-                "ExpressJs Quiz 6",
-                "ExpressJs Quiz 7",
-                "ExpressJs Quiz 8",
-                "ExpressJs Quiz 9",
-                "ExpressJs Quiz 10"
+                "ExpressJs Quiz 5"
 
         };
         final String[] Laravel = {
@@ -254,12 +200,7 @@ public class QuizTopicListActivity extends AppCompatActivity {
                 "Laravel Quiz 2",
                 "Laravel Quiz 3",
                 "Laravel Quiz 4",
-                "Laravel Quiz 5",
-                "Laravel Quiz 6",
-                "Laravel Quiz 7",
-                "Laravel Quiz 8",
-                "Laravel Quiz 9",
-                "Laravel Quiz 10"
+                "Laravel Quiz 5"
 
         };
         final String[] jQuery = {
@@ -267,12 +208,7 @@ public class QuizTopicListActivity extends AppCompatActivity {
                 "jQuery Quiz 2",
                 "jQuery Quiz 3",
                 "jQuery Quiz 4",
-                "jQuery Quiz 5",
-                "jQuery Quiz 6",
-                "jQuery Quiz 7",
-                "jQuery Quiz 8",
-                "jQuery Quiz 9",
-                "jQuery Quiz 10"
+                "jQuery Quiz 5"
 
         };
         String quizItems = getIntent().getStringExtra("quizItems");
@@ -307,9 +243,6 @@ public class QuizTopicListActivity extends AppCompatActivity {
                 break;
             case "Vue Js":
                 list = VueJs;
-                break;
-            case "Next Js":
-                list = NextJs;
                 break;
             case "React Js":
                 list = ReactJs;

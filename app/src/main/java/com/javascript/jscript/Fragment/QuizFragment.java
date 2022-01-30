@@ -27,7 +27,7 @@ public class QuizFragment extends Fragment {
     View proView;
     ImageView proImage;
     String[] itemsName = {"Fundamental", "Basic", "Objects", "OOPs", "DOM", "Advanced", "AJAX", "Typescript"};
-    String[] itemsNamePro = {"Angular", "Vue Js", "Next Js", "React Js", "Ember Js", "Bootstrap", "Node Js", "Express Js", "Laravel", "jQuery"
+    String[] itemsNamePro = {"Angular", "Vue Js", "React Js", "Ember Js", "Bootstrap", "Node Js", "Express Js", "Laravel", "jQuery"
             /*"Svelte Js","Gatsby","Nuxt Js","Spring Boot","Micronaut","Mocha"*/};
     Integer[] itemImages = {
             R.drawable.ic_fundamental_icon,
@@ -44,7 +44,6 @@ public class QuizFragment extends Fragment {
     Integer[] itemImagesPro = {
             R.drawable.ic_angular_icon,
             R.drawable.ic_js_vue_icon,
-            R.drawable.ic_next_js,
             R.drawable.ic_react_icon,
             R.drawable.ic_emberjs_icon,
             R.drawable.ic_bootstrap_icon,
@@ -215,34 +214,30 @@ public class QuizFragment extends Fragment {
                         startActivity(intent);
                         break;
                     case 2:
-                        intent.putExtra("quizItems", "Next Js");
-                        startActivity(intent);
-                        break;
-                    case 3:
                         intent.putExtra("quizItems", "React Js");
                         startActivity(intent);
                         break;
-                    case 4:
+                    case 3:
                         intent.putExtra("quizItems", "Ember Js");
                         startActivity(intent);
                         break;
-                    case 5:
+                    case 4:
                         intent.putExtra("quizItems", "Bootstrap");
                         startActivity(intent);
                         break;
-                    case 6:
+                    case 5:
                         intent.putExtra("quizItems", "Node Js");
                         startActivity(intent);
                         break;
-                    case 7:
+                    case 6:
                         intent.putExtra("quizItems", "Express Js");
                         startActivity(intent);
                         break;
-                    case 8:
+                    case 7:
                         intent.putExtra("quizItems", "Laravel");
                         startActivity(intent);
                         break;
-                    case 9:
+                    case 8:
                         intent.putExtra("quizItems", "jQuery");
                         startActivity(intent);
                         break;

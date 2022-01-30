@@ -5329,93 +5329,93 @@ public class QuizQuestionsBank {
     private static List<QuizListModel> AJAXQuiz1() {
         final List<QuizListModel> questionLists = new ArrayList<>();
         final QuizListModel q1 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Which  of the following is not the property of XMLHttp Object?",
+                "onreadystatechange",
+                "readystatechange",
+                "status",
+                "None of them.",
+                "None of them.",
                 ""
         );
         final QuizListModel q2 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Which of the following is the correct syntax for creating a  XMLHttpRequest Object?",
+                "var xhr = new XMLHttpRequest();",
+                "xhr = new XMLHttpRequest();",
+                "var xhr = XMLHttpRequest();",
+                "None of them.",
+                "var xhr = new XMLHttpRequest();",
                 ""
         );
         final QuizListModel q3 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "_______________ is an API used for accessing & manipulating structured documents .",
+                "SOAP",
+                "DOM",
+                "Json",
+                "Rest",
+                "DOM",
                 ""
         );
         final QuizListModel q4 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "_______________ is a java script object that performs asynchronous interaction with the server.",
+                "XMLHttpRequest",
+                "XMLHttp",
+                "XMLHttpResponse",
+                "None of them.",
+                "XMLHttpRequest",
                 ""
         );
         final QuizListModel q5 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "_______________ holds the status of the XMLHttpRequest.",
+                "status XMLHttp",
+                "Request Object",
+                "onreadystatechange",
+                "readystate",
+                "readystate",
                 ""
         );
         final QuizListModel q6 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "_______________ method specifies the type of the request.",
+                "send",
+                "connect",
+                "open",
+                "None of them.",
+                "open",
                 ""
         );
         final QuizListModel q7 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "The word AJAX stands for _________________.",
+                "Application of Java Script AND XML.",
+                "Asynchronous Java Script AND XML.",
+                "Application of Java AND X++.",
+                "None of them.",
+                "Asynchronous Java Script AND XML.",
                 ""
         );
         final QuizListModel q8 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Which of the following property of  a XMLHttp Object  is used to get the response data as a XML?",
+                "receiveXML",
+                "response Data",
+                "response XML",
+                "None of them.",
+                "response XML",
                 ""
         );
         final QuizListModel q9 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "_______________ is  being called as a result of an event.",
+                "Java Script function.",
+                "XMLHttpResponse function.",
+                "XMLHttpRequest function.",
+                "None of them.",
+                "Java Script function.",
                 ""
         );
         final QuizListModel q10 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Which of the following methods are being used to send a request to the server?",
+                "open( ) & connect( )",
+                "open( )",
+                "open( ) & established( )",
+                "None of them.",
+                "open( )",
                 ""
         );
         questionLists.add(q1);
@@ -5433,93 +5433,93 @@ public class QuizQuestionsBank {
     private static List<QuizListModel> AJAXQuiz2() {
         final List<QuizListModel> questionLists = new ArrayList<>();
         final QuizListModel q1 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Which of the following  is  the first step of an AJAX operation?",
+                "HTML DOM is being updated.",
+                "A client event occurs.",
+                "XMLHttpRequest Object is created.",
+                "None of them.",
+                "A client event occurs.",
                 ""
         );
         final QuizListModel q2 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "How many total  steps are there in an AJAX operation?",
+                "3",
+                "6",
+                "7",
+                "2",
+                "7",
                 ""
         );
         final QuizListModel q3 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Which of the following  statement is correct about AJAX?",
+                "Ajax is based on some internet standards.",
+                "It is used for creating fast & dynamic web pages.",
+                "It is used for dynamically updating the parts of the webpage without reloading the web page.",
+                "All of them.",
+                "All of them.",
                 ""
         );
         final QuizListModel q4 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "The word DOM stands for _________________.",
+                "Dynamic Object Model.",
+                "Dynamic Object Module.",
+                "Document Object Model.",
+                "None of them.",
+                "None of them.",
                 ""
         );
         final QuizListModel q5 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "_______________ event is triggered every time the ready state changes.",
+                "start",
+                "XMLHttpRequest",
+                "readystatechange",
+                "onreadystatechange",
+                "onreadystatechange",
                 ""
         );
         final QuizListModel q6 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "By using AJAX,  web application can send",
+                "As a stream",
+                "Asynchronously",
+                "Synchronously",
+                "All of these.",
+                "Asynchronously",
                 ""
         );
         final QuizListModel q7 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Which of the following property of  a XMLHttp Object  is used to get the response data as a String?",
+                "response String",
+                "response XML",
+                "response Text",
+                "response Data",
+                "response Text",
                 ""
         );
         final QuizListModel q8 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Which of the following  is  the last step of an AJAX operation?",
+                "XMLHttpRequest Object is created.",
+                "Web Server returns the XML which contains the result.",
+                "A client event occurs.",
+                "HTML DOM is being updated.",
+                "HTML DOM is being updated.",
                 ""
         );
         final QuizListModel q9 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Which of the following code snippet is representing that request is finished & status is ok?",
+                "if(this.readyState ==3 && this.status == 200){ }",
+                "if(this.readyState ==2 && this.status == 200){ }",
+                "if(this.readyState ==4 && this.status == 200){ }",
+                "if(this.readyState ==4 && this.status == 404){ }",
+                "if(this.readyState ==4 && this.status == 200){ }",
                 ""
         );
         final QuizListModel q10 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Which of the following code snippet is representing that  server connection is established & status is ok?",
+                "if(this.readyState ==4 && this.status == 200){ }",
+                "if(this.readyState ==2 && this.status == 200){ }",
+                "if(this.readyState ==3 && this.status == 200){ }",
+                "if(this.readyState ==1 && this.status == 200){ }",
+                "if(this.readyState ==1 && this.status == 200){ }",
                 ""
         );
         questionLists.add(q1);
@@ -5537,93 +5537,93 @@ public class QuizQuestionsBank {
     private static List<QuizListModel> AJAXQuiz3() {
         final List<QuizListModel> questionLists = new ArrayList<>();
         final QuizListModel q1 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Ajax initial release date ?",
+                "2001",
+                "2003",
+                "2005",
+                "2007",
+                "2005",
                 ""
         );
         final QuizListModel q2 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "What is full form of Ajax?",
+                "Asynchronous JavaScript And XML",
+                "Asynchronous jQuery And XML",
+                "Asynchronous JavaScript And XHTML",
+                "None of these",
+                "Asynchronous JavaScript And XML",
                 ""
         );
         final QuizListModel q3 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "In AJAX you can ?",
+                "Update a web page without reloading the page",
+                "Receive data from a server - after the page has loaded",
+                "Send data to a server - in the background",
+                "All of the above",
+                "All of the above",
                 ""
         );
         final QuizListModel q4 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Implementing AJAX in our websites we can make our web pages ________ ?",
+                "More Dynamic",
+                "More interactive and faster",
+                "More Responsive",
+                "Easy to connect web page with server",
+                "More interactive and faster",
                 ""
         );
         final QuizListModel q5 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "What is the name of object used for AJAX request?",
+                "XMLHttpRequest",
+                "XMLHttp",
+                "HttpRequest",
+                "Request",
+                "Request",
                 ""
         );
         final QuizListModel q6 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Ajax is a…",
+                "Programing Language",
+                "OOPs concepts",
+                "Technology",
+                "B and C",
+                "Technology",
                 ""
         );
         final QuizListModel q7 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Ajax based on ?",
+                "JavaScript and XML",
+                "VB Script and XML",
+                "JavaScript and jQuery",
+                "Javascript and HTTP requests",
+                "JavaScript and XML",
                 ""
         );
         final QuizListModel q8 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "AJAX allows web page to dynamically",
+                "Change content",
+                "Reload at times",
+                "Control other pages",
+                "Connect to other addresses",
+                "Change content",
                 ""
         );
         final QuizListModel q9 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "What server support AJAX?",
+                "SMTP",
+                "HTTP",
+                "WWW",
+                "All of the above",
+                "HTTP",
                 ""
         );
         final QuizListModel q10 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Which one of these technologies is NOT used in AJAX?",
+                "CSS",
+                "DOM",
+                "DHTML",
+                "Flash",
+                "Flash",
                 ""
         );
         questionLists.add(q1);
@@ -5641,93 +5641,93 @@ public class QuizQuestionsBank {
     private static List<QuizListModel> AJAXQuiz4() {
         final List<QuizListModel> questionLists = new ArrayList<>();
         final QuizListModel q1 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Which Web browser is the least optimized for Microsoft's version of AJAX?",
+                "Firefox",
+                "Opera",
+                "Safari",
+                "Internet Explorer",
+                "Safari",
                 ""
         );
         final QuizListModel q2 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "What makes Ajax unique?",
+                "It works as a stand-alone Web-development tool.",
+                "It works the same with all Web browsers.",
+                "It makes data requests asynchronously.",
+                "It uses C++ as its programming language.",
+                "It makes data requests asynchronously.",
                 ""
         );
         final QuizListModel q3 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "_____ Of the following technologies, which one provides the ability to dynamically interact with Web page layout?",
+                "XML",
+                "HTML",
+                "JavaScript",
+                "Document Object Model",
+                "Document Object Model",
                 ""
         );
         final QuizListModel q4 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "The XMLHttpRequest object can be disabled via browser settings",
+                "True",
+                "False",
+                "Error",
+                "None of these",
+                "False",
                 ""
         );
         final QuizListModel q5 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "AJAX made popular by______",
+                "Microsoft",
+                "Google",
+                "IBM",
+                "Sun Microsystems",
+                "Google",
                 ""
         );
         final QuizListModel q6 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "With Ajax, which of these is no longer required for data manipulation?",
+                "XML",
+                "XSLT",
+                "JASON",
+                "HTML",
+                "XSLT",
                 ""
         );
         final QuizListModel q7 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Select invalid type of trigger",
+                "PostBackTrigger",
+                "SyncPostBackTrigger",
+                "AsyncPostBackTrigger",
+                "None of the above",
+                "SyncPostBackTrigger",
                 ""
         );
         final QuizListModel q8 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Google made a deployment of AJAX cross browser technology with Gmail in",
+                "2003",
+                "2009",
+                "2004",
+                "2007",
+                "2004",
                 ""
         );
         final QuizListModel q9 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Google made a deployment of cross browser technology with GoogleMaps in",
+                "2005",
+                "2009",
+                "2004",
+                "2007",
+                "2005",
                 ""
         );
         final QuizListModel q10 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Select an invalid control",
+                "Timer",
+                "Control",
+                "UpdatePanel",
+                "ScriptManagerProxy",
+                "Control",
                 ""
         );
         questionLists.add(q1);
@@ -5745,93 +5745,93 @@ public class QuizQuestionsBank {
     private static List<QuizListModel> AJAXQuiz5() {
         final List<QuizListModel> questionLists = new ArrayList<>();
         final QuizListModel q1 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "From the following which is/are not AJAX framework ?",
+                "Google Web Toolkit",
+                "Dojo Toolkit",
+                "MooTools",
+                "Foundation",
+                "Foundation",
                 ""
         );
         final QuizListModel q2 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Using the AJAX, web applications can receive and send date asynchronously from a____",
+                "Database",
+                "Server",
+                "Control",
+                "Store",
+                "Store",
                 ""
         );
         final QuizListModel q3 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "What is the name of the DLL that contains Ajax control tool kit?",
+                "Ajaxtoolkit.dll",
+                "Ajaxcontrol.dll",
+                "Ajaxcontroltoolkit.dll",
+                "control.dll",
+                "Ajaxcontroltoolkit.dll",
                 ""
         );
         final QuizListModel q4 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Which property is used to control the duration of Ajax request.",
+                "AsyncPostBackTimeout",
+                "AsyncTimeout",
+                "Timeout",
+                "PostBackTimeout",
+                "AsyncPostBackTimeout",
                 ""
         );
         final QuizListModel q5 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Which one of these legendary greek mythical figures or places is the code name for Microsoft's version of Ajax?",
+                "Delphi",
+                "Oracle",
+                "Atlas",
+                "Hercules",
+                "Atlas",
                 ""
         );
         final QuizListModel q6 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "How can you test the Ajax code?",
+                "JSU",
+                "JSUnit",
+                "AjaxJSU",
+                "JSUnitAjax",
+                "JSUnit",
                 ""
         );
         final QuizListModel q7 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "From the following what is/are the technologies used by AJAX ?",
+                "HTML/XHTML and CSS",
+                "DOM and XML",
+                "XMLHttpRequest and JavaScript",
+                "All of the above",
+                "All of the above",
                 ""
         );
         final QuizListModel q8 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "How can we cancel the XMLHttpRequest in AJAX?",
+                "cancel()",
+                "Abort()",
+                "remove()",
+                "none",
+                "Abort()",
                 ""
         );
         final QuizListModel q9 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Which manager are use for pre-requisite Update Panel in Ajax.",
+                "Ajax Manager",
+                "Javascript Manager",
+                "Options A & B",
+                "Script Manager",
+                "Script Manager",
                 ""
         );
         final QuizListModel q10 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Which data types JSON does NOT supports?",
+                "ENUM",
+                "String",
+                "Object",
+                "Boolean",
+                "ENUM",
                 ""
         );
         questionLists.add(q1);
@@ -5849,509 +5849,93 @@ public class QuizQuestionsBank {
     private static List<QuizListModel> AJAXQuiz6() {
         final List<QuizListModel> questionLists = new ArrayList<>();
         final QuizListModel q1 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "The jQuery AJAX methods .get(), .post(), and .ajax() all require which parameter to be supplied?",
+                "method",
+                "url",
+                "data",
+                "headers",
+                "url",
                 ""
         );
         final QuizListModel q2 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Which of the following is not a restriction of JSON as a data interchange format relative to a plain object definition in JavaScript?",
+                "Property names must be quoted.",
+                "Single quotes may not be used as string delimiters.",
+                "Properties may not include functions or expressions.",
+                "Properties may only be objects, not arrays.",
+                "Properties may only be objects, not arrays.",
                 ""
         );
         final QuizListModel q3 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Which statement about XML is false?",
+                "Every XML document must have a DOCTYPE tag.",
+                "Every XML document must have a root element.",
+                "Every XML tag must have a closing tag.",
+                "Every XML document must start with an XML prolog.",
+                "Every XML document must have a DOCTYPE tag.",
                 ""
         );
         final QuizListModel q4 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "If a condition has two choices, namely true and false, then the syntax used is ...",
+                "IF",
+                "IF ... ELSE",
+                "IF - IF .. ELSE - ELSE",
+                "SWITCH",
+                "IF ... ELSE",
                 ""
         );
         final QuizListModel q5 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "PHP is a server-side programming, where the code will be executed on the server side. The following which one can act as a server on a local computer ...",
+                "XAMPP",
+                "HTDOCS",
+                "APACHE",
+                "MYSQL",
+                "APACHE",
                 ""
         );
         final QuizListModel q6 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "What is not an advantage of Jquery ...",
+                "Resolved inter-browser compatibility issues",
+                "Speed up form processing",
+                "Simple code",
+                "Complete documentation",
+                "Speed up form processing",
                 ""
         );
         final QuizListModel q7 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Which is an AJAX function?",
+                "can load data from the server to a web browser without reloading (refreshing)",
+                "make code more concise",
+                "add style to the web page",
+                "create slide animations",
+                "can load data from the server to a web browser without reloading (refreshing)",
                 ""
         );
         final QuizListModel q8 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Language to transport and store data. useful for updating services such as RSS feeds and blogs.",
+                "Static",
+                "HTML",
+                "Dynamic",
+                "XML",
+                "XML",
                 ""
         );
         final QuizListModel q9 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Website get data from a server without reloading the whole webpage.",
+                "JavaScript",
+                "Code",
+                "AJAX",
+                "API",
+                "AJAX",
                 ""
         );
         final QuizListModel q10 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        questionLists.add(q1);
-        questionLists.add(q2);
-        questionLists.add(q3);
-        questionLists.add(q4);
-        questionLists.add(q5);
-        questionLists.add(q6);
-        questionLists.add(q7);
-        questionLists.add(q8);
-        questionLists.add(q9);
-        questionLists.add(q10);
-        return questionLists;
-    }
-    private static List<QuizListModel> AJAXQuiz7() {
-        final List<QuizListModel> questionLists = new ArrayList<>();
-        final QuizListModel q1 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q2 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q3 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q4 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q5 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q6 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q7 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q8 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q9 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q10 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        questionLists.add(q1);
-        questionLists.add(q2);
-        questionLists.add(q3);
-        questionLists.add(q4);
-        questionLists.add(q5);
-        questionLists.add(q6);
-        questionLists.add(q7);
-        questionLists.add(q8);
-        questionLists.add(q9);
-        questionLists.add(q10);
-        return questionLists;
-    }
-    private static List<QuizListModel> AJAXQuiz8() {
-        final List<QuizListModel> questionLists = new ArrayList<>();
-        final QuizListModel q1 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q2 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q3 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q4 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q5 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q6 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q7 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q8 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q9 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q10 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        questionLists.add(q1);
-        questionLists.add(q2);
-        questionLists.add(q3);
-        questionLists.add(q4);
-        questionLists.add(q5);
-        questionLists.add(q6);
-        questionLists.add(q7);
-        questionLists.add(q8);
-        questionLists.add(q9);
-        questionLists.add(q10);
-        return questionLists;
-    }
-    private static List<QuizListModel> AJAXQuiz9() {
-        final List<QuizListModel> questionLists = new ArrayList<>();
-        final QuizListModel q1 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q2 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q3 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q4 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q5 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q6 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q7 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q8 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q9 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q10 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        questionLists.add(q1);
-        questionLists.add(q2);
-        questionLists.add(q3);
-        questionLists.add(q4);
-        questionLists.add(q5);
-        questionLists.add(q6);
-        questionLists.add(q7);
-        questionLists.add(q8);
-        questionLists.add(q9);
-        questionLists.add(q10);
-        return questionLists;
-    }
-    private static List<QuizListModel> AJAXQuiz10() {
-        final List<QuizListModel> questionLists = new ArrayList<>();
-        final QuizListModel q1 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q2 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q3 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q4 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q5 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q6 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q7 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q8 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q9 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q10 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Data is wrapped up with a set of functions into packages.",
+                "Object- oriented",
+                "Applications",
+                "App",
+                "Dynamic",
+                "Object- oriented",
                 ""
         );
         questionLists.add(q1);
@@ -7201,93 +6785,93 @@ public class QuizQuestionsBank {
     private static List<QuizListModel> AngularQuiz1() {
         final List<QuizListModel> questionLists = new ArrayList<>();
         final QuizListModel q1 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Which of the following directive bootstraps AngularJS framework?",
+                "ng-init",
+                "ng-app",
+                "ng-controller",
+                "ng-bootstrap",
+                "ng-app",
                 ""
         );
         final QuizListModel q2 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "What is the output of below code<div>{{ 'Hello! This is Angular Quiz' | uppercase | lowercase |titlecase }}</div>",
+                "hello! this is angular quiz",
+                "Hello! This Is Angular Quiz",
+                "HELLO! THIS IS ANGULAR QUIZ",
+                "Error -(Can't use multiple pipes for same element)",
+                "Hello! This Is Angular Quiz",
                 ""
         );
         final QuizListModel q3 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Which are the different Data Types supported by Typescript?",
+                "Boolean var bValue: boolean = false",
+                "Number var age: number = 16",
+                "String var name: string = \"jon\"",
+                "All of the above",
+                "All of the above",
                 ""
         );
         final QuizListModel q4 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Cons of SPA - Single Page Application",
+                "XSS",
+                "SEO",
+                "Lazy loading",
+                "Both a & b",
+                "Both a & b",
                 ""
         );
         final QuizListModel q5 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "PWA is type of",
+                "web architecture",
+                "web pattern",
+                "web application",
+                "Hybrid mobile app",
+                "web application",
                 ""
         );
         final QuizListModel q6 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Which of the following is true about lowercase filter?",
+                "Lowercase filter converts a text to lower case text.",
+                "Lowercase filter is a function which takes text as input.",
+                "Both of the above.",
+                "None of the above.",
+                "Lowercase filter converts a text to lower case text.",
                 ""
         );
         final QuizListModel q7 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Which of the following is true about ng-disabled directive?",
+                "ng-disabled directive can enable a given control.",
+                "ng-disabled directive can disable a given control.",
+                "Both of the above.",
+                "None of the above.",
+                "Both of the above.",
                 ""
         );
         final QuizListModel q8 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Which of the following is true about $invalid flag?",
+                "$invalid flag states that value has been changed.",
+                "$invalid flag states that form has invalid data.",
+                "Both of the above.",
+                "None of the above.",
+                "$invalid flag states that form has invalid data.",
                 ""
         );
         final QuizListModel q9 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "On which of the following types of component can we create a custom directive?",
+                "Element directives",
+                "Attribute",
+                "CSS",
+                "All of the above.",
+                "All of the above.",
                 ""
         );
         final QuizListModel q10 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "What is deep linking in AngularJS?",
+                "Deep linking allows you to encode the state of application in the URL so that it can be bookmarked.",
+                "Deep linking is a SEO based technique.",
+                "Deep linking refers to linking various views to a central page.",
+                "None of the above.",
+                "Deep linking allows you to encode the state of application in the URL so that it can be bookmarked.",
                 ""
         );
         questionLists.add(q1);
@@ -7305,93 +6889,93 @@ public class QuizQuestionsBank {
     private static List<QuizListModel> AngularQuiz2() {
         final List<QuizListModel> questionLists = new ArrayList<>();
         final QuizListModel q1 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Which of the following is true about currency filter?",
+                "Currency filter formats text in a currency format.",
+                "Currency filter is a function which takes text as input.",
+                "Both of the above.",
+                "None of the above.",
+                "Currency filter is a function which takes text as input.",
                 ""
         );
         final QuizListModel q2 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Father of AngularJs",
+                "Igor Minor",
+                "Misko Hevery",
+                "Brad Green",
+                "Gausling",
+                "Misko Hevery",
                 ""
         );
         final QuizListModel q3 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Data Binding in AngularJs means",
+                "Synchronization between model part and view part",
+                "Synchronization between model part and controller part",
+                "Synchronization between controller part and view part",
+                "None of the above",
+                "Synchronization between model part and view part",
                 ""
         );
         final QuizListModel q4 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "AngularJs is based on",
+                "MVC Architecture",
+                "MVVM Architectural pattern",
+                "Decorator pattern",
+                "Observer Pattern",
+                "MVVM Architectural pattern",
                 ""
         );
         final QuizListModel q5 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "AngularJs is used in",
+                "Model",
+                "Controller",
+                "Method",
+                "View",
+                "View",
                 ""
         );
         final QuizListModel q6 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Which sign is used as prefix for the built-in objects in AngularJS?",
+                "$",
+                "#",
+                "@",
+                "*",
+                "$",
                 ""
         );
         final QuizListModel q7 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Mark the invalid AngularJs filter",
+                "currency",
+                "orderby",
+                "lowercase",
+                "email",
+                "email",
                 ""
         );
         final QuizListModel q8 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "The controller take the single parameter",
+                "$control",
+                "^scope",
+                "$scope",
+                "None of the above",
+                "$scope",
                 ""
         );
         final QuizListModel q9 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "$routeprovider in AngularJs is",
+                "A component",
+                "A methods",
+                "A service",
+                "A model",
+                "A service",
                 ""
         );
         final QuizListModel q10 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "AngularJs Works in",
+                "angular.module is primarily used to create application module.",
+                "angular.module is used to create AngularJS modules along with its dependent modules.",
+                "None of the above",
+                "None of the above",
+                "None of the above",
                 ""
         );
         questionLists.add(q1);
@@ -7409,93 +6993,93 @@ public class QuizQuestionsBank {
     private static List<QuizListModel> AngularQuiz3() {
         final List<QuizListModel> questionLists = new ArrayList<>();
         final QuizListModel q1 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "No of $RootScope in angularJs",
+                "1",
+                "2",
+                "3",
+                "4",
+                "1",
                 ""
         );
         final QuizListModel q2 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "MVVM stands for",
+                "Model view controller",
+                "Model-view",
+                "Model–view–viewmodel",
+                "View-Model",
+                "Model–view–viewmodel",
                 ""
         );
         final QuizListModel q3 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "How to combine filter with expression",
+                "Using Dot {{expression. pipe}}",
+                "Using Slash {{expression / pipe}}",
+                "Using PIpe {{expression | pipe}}",
+                "None of the above",
+                "Using PIpe {{expression | pipe}}",
                 ""
         );
         final QuizListModel q4 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Controller in MVC is",
+                "It is a software Code that controls the interactions between the Model and View",
+                "It is a software Code that stores the data",
+                "It is a software Code that renders the user interface",
+                "all of the above",
+                "It is a software Code that renders the user interface",
                 ""
         );
         final QuizListModel q5 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Controllers are responsible for",
+                "Displaying the data",
+                "Controlling the data",
+                "Both",
+                "None",
+                "Controlling the data",
                 ""
         );
         final QuizListModel q6 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Angular.js is the combination of which of the following languages ?",
+                "HTML and PHP",
+                "HTML and CrossScript",
+                "HTML and Bootstrap",
+                "HTML and TypeScript",
+                "HTML and TypeScript",
                 ""
         );
         final QuizListModel q7 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Which of the following is a way for applying expression in AngularJS application ?",
+                "(expression)",
+                "{{expression}}",
+                "{({expression})}",
+                "[expression]",
+                "{{expression}}",
                 ""
         );
         final QuizListModel q8 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Which of the following is the way, used to manually start the application in Angular ?",
+                "angular. bootstrap",
+                "angular.element",
+                "angular. copy",
+                "None of the above",
+                "angular. bootstrap",
                 ""
         );
         final QuizListModel q9 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Which of the following is the correct syntax for the create module in angularJs ?",
+                "ar myModule= module();",
+                "var myModule= new Module();",
+                "angular.module(\"app\", []);",
+                "var Module= new Module(my);",
+                "angular.module(\"app\", []);",
                 ""
         );
         final QuizListModel q10 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "The component which is used for adding the dependency in AngularJS application are:",
+                "Value",
+                "Factory",
+                "Constant",
+                "Application Module",
+                "Application Module",
                 ""
         );
         questionLists.add(q1);
@@ -7513,93 +7097,118 @@ public class QuizQuestionsBank {
     private static List<QuizListModel> AngularQuiz4() {
         final List<QuizListModel> questionLists = new ArrayList<>();
         final QuizListModel q1 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Which of the following is a way to push one HTML content into another HTML content?",
+                "Server Side push",
+                "Use of Comment",
+                "Use of pushing",
+                "Use of include",
+                "Use of include",
                 ""
         );
         final QuizListModel q2 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "JQLite is used for ?",
+                "Built-in subset of jQuery",
+                "Built-in superset of jQuery",
+                "KnockoutJS built-in subset of jQuery",
+                "KnockoutJS built-in superset of jQuery",
+                "Built-in subset of jQuery",
                 ""
         );
         final QuizListModel q3 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Can we extend AngularJS?",
+                "True",
+                "False",
+                "None",
+                "None of these",
+                "True",
                 ""
         );
         final QuizListModel q4 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "In AngularJS, what is $scope variable used for?",
+                "Store data",
+                "Get/set values in a function call",
+                "Get/set values for model, view and controller",
+                "To get values of variables within the implementation scope",
+                "Get/set values for model, view and controller",
                 ""
         );
         final QuizListModel q5 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Which of the following statements are invalid AngularJS filters?",
+                "currency filter",
+                "aggregate filter",
+                "lowercase filter",
+                "orderby filter",
+                "aggregate filter",
                 ""
         );
         final QuizListModel q6 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Check whether the code below is correct\n" +
+                        "app.config(function ($routeProvider) {\n" +
+                        "   $routeProvider\n" +
+                        "      .when('/inbox', {\n" +
+                        "         templateUrl: 'views/inbox.html',\n" +
+                        "         controller: 'InboxCtrl',\n" +
+                        "         controllerAs: 'inbox'\n" +
+                        "      })\n" +
+                        "      .when('/inbox/email/:id', {\n" +
+                        "         templateUrl: 'views/email.html',\n" +
+                        "         controller: 'EmailCtrl',\n" +
+                        "         controllerAs: 'email'\n" +
+                        "      })\n" +
+                        "      .otherwise({\n" +
+                        "         redirectTo: '/inbox'\n" +
+                        "        });\n" +
+                        "    });",
+                "May be",
+                "Can be",
+                "No",
+                "Yes",
+                "Yes",
                 ""
         );
         final QuizListModel q7 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "In context of AngularJS, what does SPA stand for?",
+                "Single Page Application",
+                "Software Publisher Association",
+                "Software Product Assessment",
+                "Single Point of Access",
+                "Single Page Application",
                 ""
         );
         final QuizListModel q8 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Which of the service modes can be easiest to test while using AngularJS?",
+                "Event-driven",
+                "Service Oriented Architecture",
+                "Model View Controller",
+                "N-Tier",
+                "Service Oriented Architecture",
                 ""
         );
         final QuizListModel q9 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "For the script below.\n" +
+                        "var application = angular.module('myTestApp', []);\n" +
+                        "    application.controller('MyTestController', function($scope) {\n" +
+                        "        $scope.firstName = \"Michael\";\n" +
+                        "        $scope.lastName = \"Stephany\";\n" +
+                        "        $scope.fullName = function() {\n" +
+                        "            return $scope.firstName + \" \" + $scope.lastName;\n" +
+                        "        };\n" +
+                        "    });\n" +
+                        "Assuming that myTestApp has previously been defined. The above script will",
+                "Will show warnings",
+                "Runtime errors",
+                "Will run successfully",
+                "Give compilation errors",
+                "Will run successfully",
                 ""
         );
         final QuizListModel q10 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "What is AngularJS?",
+                "A simplified JavaScript framework, used binding for HTML User Interface Elements with JavaScript binding.",
+                "An MVC JavaScript framework, used for information security",
+                "A simplified JavaScript framework, used for modifiability.",
+                "A modifiable JavaScript framework, used for information security.",
+                "A simplified JavaScript framework, used binding for HTML User Interface Elements with JavaScript binding.",
                 ""
         );
         questionLists.add(q1);
@@ -7617,613 +7226,106 @@ public class QuizQuestionsBank {
     private static List<QuizListModel> AngularQuiz5() {
         final List<QuizListModel> questionLists = new ArrayList<>();
         final QuizListModel q1 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "In AngularJS data binding is __________.",
+                "one way",
+                "simplex",
+                "sychronous",
+                "two way",
+                "two way",
                 ""
         );
         final QuizListModel q2 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Using filters AngularJS cannot use _____________.",
+                "orderby",
+                "json",
+                "Special characters",
+                "limitTo",
+                "Special characters",
                 ""
         );
         final QuizListModel q3 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "What is the parent of $scope in AngualarJS?",
+                "@super",
+                "$super",
+                "$rootScope",
+                "$root",
+                "$rootScope",
                 ""
         );
         final QuizListModel q4 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Check whether the code syntax is correct\n" +
+                        "app.factory('TestFactory', function myTestFactory($rootScope, $http, $location) {\n" +
+                        "        return function myTestReusable() {\n" +
+                        "        // processing goes here\n" +
+                        "        };\n" +
+                        "    });",
+                "Can be",
+                "No",
+                "May be",
+                "Yes",
+                "Yes",
                 ""
         );
         final QuizListModel q5 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "What is the purpose of $destroy method in AngularJS?",
+                "Remove Dangling Pointers",
+                "Cleanup Resources",
+                "All of above",
+                "None of above",
+                "Cleanup Resources",
                 ""
         );
         final QuizListModel q6 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "How to use dependency injection in AngularJS ?",
+                "Pass scope and http variables as a parameter in the Controller function",
+                "Create JSONs and inject through a function call",
+                "Create JSONs and inject through a function call",
+                "Create two classes, one extends the other. Pass the child as a parameter to the parent class",
+                "Create two classes, one extends the other. Pass the child as a parameter to the parent class",
                 ""
         );
         final QuizListModel q7 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "What is the correct syntax for a variable “a” in AngularJS?",
+                "[{a}]",
+                "{(a)}",
+                "{{a}}",
+                "{[a]}",
+                "{{a}}",
                 ""
         );
         final QuizListModel q8 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "For the code below\n" +
+                        "<html ng-app=\"myApp\">\n" +
+                        "    <head>\n" +
+                        "    </head>\n" +
+                        "    <body>\n" +
+                        "        <div ng-view></div>\n" +
+                        "    </body>\n" +
+                        "    </html>\n" +
+                        "Is the syntax current",
+                "May be",
+                "No",
+                "Can be",
+                "Yes",
+                "Yes",
                 ""
         );
         final QuizListModel q9 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Elements of AngularJS MVC views are rendered in which order?",
+                "Priotization",
+                "Sequential",
+                "Random",
+                "Not listed above",
+                "Random",
                 ""
         );
         final QuizListModel q10 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        questionLists.add(q1);
-        questionLists.add(q2);
-        questionLists.add(q3);
-        questionLists.add(q4);
-        questionLists.add(q5);
-        questionLists.add(q6);
-        questionLists.add(q7);
-        questionLists.add(q8);
-        questionLists.add(q9);
-        questionLists.add(q10);
-        return questionLists;
-    }
-    private static List<QuizListModel> AngularQuiz6() {
-        final List<QuizListModel> questionLists = new ArrayList<>();
-        final QuizListModel q1 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q2 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q3 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q4 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q5 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q6 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q7 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q8 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q9 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q10 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        questionLists.add(q1);
-        questionLists.add(q2);
-        questionLists.add(q3);
-        questionLists.add(q4);
-        questionLists.add(q5);
-        questionLists.add(q6);
-        questionLists.add(q7);
-        questionLists.add(q8);
-        questionLists.add(q9);
-        questionLists.add(q10);
-        return questionLists;
-    }
-    private static List<QuizListModel> AngularQuiz7() {
-        final List<QuizListModel> questionLists = new ArrayList<>();
-        final QuizListModel q1 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q2 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q3 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q4 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q5 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q6 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q7 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q8 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q9 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q10 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        questionLists.add(q1);
-        questionLists.add(q2);
-        questionLists.add(q3);
-        questionLists.add(q4);
-        questionLists.add(q5);
-        questionLists.add(q6);
-        questionLists.add(q7);
-        questionLists.add(q8);
-        questionLists.add(q9);
-        questionLists.add(q10);
-        return questionLists;
-    }
-    private static List<QuizListModel> AngularQuiz8() {
-        final List<QuizListModel> questionLists = new ArrayList<>();
-        final QuizListModel q1 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q2 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q3 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q4 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q5 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q6 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q7 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q8 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q9 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q10 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        questionLists.add(q1);
-        questionLists.add(q2);
-        questionLists.add(q3);
-        questionLists.add(q4);
-        questionLists.add(q5);
-        questionLists.add(q6);
-        questionLists.add(q7);
-        questionLists.add(q8);
-        questionLists.add(q9);
-        questionLists.add(q10);
-        return questionLists;
-    }
-    private static List<QuizListModel> AngularQuiz9() {
-        final List<QuizListModel> questionLists = new ArrayList<>();
-        final QuizListModel q1 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q2 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q3 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q4 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q5 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q6 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q7 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q8 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q9 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q10 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        questionLists.add(q1);
-        questionLists.add(q2);
-        questionLists.add(q3);
-        questionLists.add(q4);
-        questionLists.add(q5);
-        questionLists.add(q6);
-        questionLists.add(q7);
-        questionLists.add(q8);
-        questionLists.add(q9);
-        questionLists.add(q10);
-        return questionLists;
-    }
-    private static List<QuizListModel> AngularQuiz10() {
-        final List<QuizListModel> questionLists = new ArrayList<>();
-        final QuizListModel q1 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q2 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q3 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q4 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q5 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q6 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q7 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q8 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q9 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q10 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "What are NOT an AngularJS directive?",
+                "ng-loop",
+                "ng-if",
+                "ng-bind",
+                "ng-app",
+                "ng-loop",
                 ""
         );
         questionLists.add(q1);
@@ -8242,93 +7344,93 @@ public class QuizQuestionsBank {
     private static List<QuizListModel> VueJsQuiz1() {
         final List<QuizListModel> questionLists = new ArrayList<>();
         final QuizListModel q1 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "What is Vue.js?",
+                "It is an open-source javascript library for developing user interfaces.",
+                "It is an open-source front-end javascript framework for developing user interfaces",
+                "It is an open-source, cross-platform, javascript run-time situations that perform the JavaScript program outside a web browser",
+                "It is a JavaScript library constructed to facilitate HTML DOM tree traversal and administration, and event handling, CSS activity, and Ajax.",
+                "It is an open-source front-end javascript framework for developing user interfaces",
                 ""
         );
         final QuizListModel q2 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "What is Vue.js used for?",
+                "It is a dynamic javascript framework that is frequently used for developing user interfaces",
+                "It is a JavaScript library that makes user interfaces for single-page applications by dividing UI into composable components",
+                "It uses the MVVM pattern to bind data to certain DOM elements",
+                "All of Above",
+                "It is a dynamic javascript framework that is frequently used for developing user interfaces",
                 ""
         );
         final QuizListModel q3 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Which data binding interpolation is also known as “Mustache” syntax?",
+                "v-on",
+                "v-model",
+                "{{}}",
+                "[]",
+                "{{}}",
                 ""
         );
         final QuizListModel q4 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "How to use for loop in Vue.js?",
+                "vFor",
+                "v-for",
+                "*v-for",
+                "None of these",
+                "v-for",
                 ""
         );
         final QuizListModel q5 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Once a View Model is lost, all the event listeners are automatically removed.",
+                "False",
+                "None",
+                "True",
+                "None of these",
+                "True",
                 ""
         );
         final QuizListModel q6 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "How to create a Vue.js instance?",
+                "var text = new object ({//options}).",
+                "var text = new class ({//options}).",
+                "var text = new text ({//options})",
+                "var text = new Vue({// options }).",
+                "var text = new Vue({// options }).",
                 ""
         );
         final QuizListModel q7 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Which modifier is very useful for improving the performance of mobile devices?",
+                ".directive",
+                ".once",
+                ".passive",
+                ".capture",
+                ".passive",
                 ""
         );
         final QuizListModel q8 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Which event modifier is used for only prevent clicks on the element itself?",
+                "@click.self.",
+                "@click.prevent.",
+                "click@.self.",
+                "@click.self.prevent.",
+                "@click.self.prevent.",
                 ""
         );
         final QuizListModel q9 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "The updated hook is terminated after modifications have been written to the DOM",
+                "False",
+                "None",
+                "True",
+                "None of these",
+                "True",
                 ""
         );
         final QuizListModel q10 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "How to install vue resources?",
+                "$ yarn add vue-resource",
+                "# yarn add vue-resource",
+                "@ yarn add vue-resource",
+                "& yarn add vue-resource",
+                "$ yarn add vue-resource",
                 ""
         );
         questionLists.add(q1);
@@ -8346,93 +7448,99 @@ public class QuizQuestionsBank {
     private static List<QuizListModel> VueJsQuiz2() {
         final List<QuizListModel> questionLists = new ArrayList<>();
         final QuizListModel q1 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "How to install vue plugins?",
+                "MyPlugin.install = function (Vue, options[]) {}.",
+                "MyPlugin.install = function (Vue, options) {}",
+                "MyPlugin.install = function () {}.",
+                "None of these",
+                "MyPlugin.install = function (Vue, options) {}",
                 ""
         );
         final QuizListModel q2 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Which is used to Dynamically bind one or more attributes, or a component property to an expression?",
+                "v-pre",
+                "v-html",
+                "v-bind",
+                "v-once directive,",
+                "v-bind",
                 ""
         );
         final QuizListModel q3 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "If we want to perform the click event only for one time.Which event modifier will be used?",
+                "<a @:click.passive=\"dotask\"></a>",
+                "<a @:click.once=\"dotask\"></a>",
+                "<a @:click.prevent-once=\"dotask\"></a>",
+                "<a @:click.prevent-once=\"dotask\"></a>",
+                "<a @:click.once=\"dotask\"></a>",
                 ""
         );
         final QuizListModel q4 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "How to represent filter in vue.js?",
+                "::",
+                "!",
+                "||",
+                "|",
+                "|",
                 ""
         );
         final QuizListModel q5 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "v-show doest not support the <template> element?",
+                "False",
+                "None",
+                "True",
+                "None of these",
+                "True",
                 ""
         );
         final QuizListModel q6 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                ".prevent will be ignored if we use .passive and .prevent together and it will probably show you a warning?",
+                "False",
+                "None",
+                "True",
+                "None of these",
+                "True",
                 ""
         );
         final QuizListModel q7 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Which keyword is used to create constant in vue.js?",
+                "Const",
+                "Constant",
+                "Define",
+                "None of these",
+                "Const",
                 ""
         );
         final QuizListModel q8 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "How many types of directive available in vue.js?",
+                "6",
+                "4",
+                "7",
+                "2",
+                "4",
                 ""
         );
         final QuizListModel q9 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "What is the short form of v-bind?",
+                "bind",
+                ":",
+                ";",
+                "None of these",
+                ":",
                 ""
         );
         final QuizListModel q10 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "The Following code represent the registered component.How we can call the custom component in my template\n" +
+                        "Vue.component(‘my-component’, {\n" +
+                        "template: ‘my own component!’\n" +
+                        "})\n" +
+                        "new Vue({\n" +
+                        "el: ‘#demo’\n" +
+                        "})",
+                "v-bind:my-component",
+                "<my-component></my-component>",
+                "v-my-component",
+                "@my-component",
+                "<my-component></my-component>",
                 ""
         );
         questionLists.add(q1);
@@ -8450,93 +7558,96 @@ public class QuizQuestionsBank {
     private static List<QuizListModel> VueJsQuiz3() {
         final List<QuizListModel> questionLists = new ArrayList<>();
         final QuizListModel q1 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Which of the following is not represent the non mutating methods ?",
+                "Reverse()",
+                "Concat()",
+                "Slice()",
+                "Filter()",
+                "Reverse()",
                 ""
         );
         final QuizListModel q2 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "What is the full form of MVVM?",
+                "Model-Value-ValueModel",
+                "Model-View-ValueModel",
+                "Model-View-ViewModel",
+                "Module-View-ViewModel",
+                "Model-View-ViewModel",
                 ""
         );
         final QuizListModel q3 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "In how many way we can define filter in vue.js?",
+                "4",
+                "2",
+                "3",
+                "1",
+                "2",
                 ""
         );
         final QuizListModel q4 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Which directive is used for makes two-way binding ?",
+                "v-on.",
+                "v-model.",
+                "no-one",
+                "[].",
+                "v-model.",
                 ""
         );
         final QuizListModel q5 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Who is the main Author of Vuejs?",
+                "Brendan Eich",
+                "Evan You",
+                "Rasmus Lerdorf",
+                "Tim",
+                "Evan You",
                 ""
         );
         final QuizListModel q6 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "What is the full form of HTTP?",
+                "Hyper text transfer package",
+                "Hyper text transfer protocol",
+                "Hyphenation text test program",
+                "None of the above",
+                "Hyper text transfer protocol",
                 ""
         );
         final QuizListModel q7 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "HTML document start and end with which tag pairs?",
+                "HTML",
+                "WEB",
+                "HEAD",
+                "BODY",
+                "HTML",
                 ""
         );
         final QuizListModel q8 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Consider the following code for switch loop\n" +
+                        "case 10:\n" +
+                        "case 12:\n" +
+                        "What will run next if the value is 10?",
+                "the code following the case 12:",
+                "the code following default:",
+                "the code after the end of the switch",
+                "this is a coding error",
+                "the code following the case 12:",
                 ""
         );
         final QuizListModel q9 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "What does ++ do?",
+                "Adds two numbers together",
+                "Joins two text strings together",
+                "Adds 1 to a number",
+                "Adds 2 to a number",
+                "Adds 1 to a number",
                 ""
         );
         final QuizListModel q10 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "What is correct about a method.",
+                "A method is the object oriented version of a function",
+                "A method is the object oriented version ofa variable",
+                "A method is the object oriented version ofa sequence",
+                "A method is the object oriented version ofa program",
+                "A method is the object oriented version of a function",
                 ""
         );
         questionLists.add(q1);
@@ -8554,93 +7665,93 @@ public class QuizQuestionsBank {
     private static List<QuizListModel> VueJsQuiz4() {
         final List<QuizListModel> questionLists = new ArrayList<>();
         final QuizListModel q1 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Vue.js is considered:",
+                "progressive framework",
+                "With a little active community",
+                "All the code is not in a single file",
+                "None of these",
+                "progressive framework",
                 ""
         );
         final QuizListModel q2 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Of the following options, which is NOT a disadvantage of Vue.js:",
+                "There is a risk of excessive flexibility",
+                "Lack of documentation in English",
+                "Very difficult tool to learn",
+                "Tool with few resources",
+                "Very difficult tool to learn",
                 ""
         );
         final QuizListModel q3 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Related to the emergence of Vue.js...",
+                "It was developed from features considered interesting from other frameworks (mainly Angular).",
+                "It was created from scratch with unique ideas, being an original framework.",
+                "One of the first frameworks to be created, giving rise to Angular, React and other frameworks.",
+                "None of these",
+                "It was developed from features considered interesting from other frameworks (mainly Angular).",
                 ""
         );
         final QuizListModel q4 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Vue.js is referenced for being a framework...",
+                "Just progressive.",
+                "Just reactive.",
+                "Progressive and Reactive.",
+                "None of these",
+                "Progressive and Reactive.",
                 ""
         );
         final QuizListModel q5 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "What knowledge is required to use Vue?",
+                "CSS,JavaScript,HTML",
+                "JavaScript",
+                "TypeScript",
+                "None of these",
+                "CSS,JavaScript,HTML",
                 ""
         );
         final QuizListModel q6 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "By using ECMAScript 5 features, Vue ends up not supporting...",
+                "Chrome 23.",
+                "IE 8 and its earlier versions.",
+                "Microsoft Edge.",
+                "Firefox 21.",
+                "IE 8 and its earlier versions.",
                 ""
         );
         final QuizListModel q7 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "One of the great features of Vue is the Single-File Component that allows...",
+                "Allows you to write HTML, CSS and JavaScript in a single file.",
+                "Allows you to instantiate components in multiple containers.",
+                "Allows to separate all kinds of languages from our component to multiple files.",
+                "None of these",
+                "Allows you to write HTML, CSS and JavaScript in a single file.",
                 ""
         );
         final QuizListModel q8 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Vue.js was heavily inspired by what kind of architecture?",
+                "MVC",
+                "MVVM",
+                "MVP",
+                "SoC",
+                "MVVM",
                 ""
         );
         final QuizListModel q9 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Two-way data binding is a feature of Vue.js that...",
+                "Synchronizes your model with the interface.",
+                "If there is any operation in the model, it reflects to the interface.",
+                "If there are changes in the interface, it ends up saving in the model.",
+                "All of the above",
+                "All of the above",
                 ""
         );
         final QuizListModel q10 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Vue.js uses the componentization concept that has the advantage...",
+                "Reuse and maintenance gain when several components break.",
+                "Ease of localization when having a very large component.",
+                "Fast maintenance by having only one block in a single JavaScript file.",
+                "None of these",
+                "Reuse and maintenance gain when several components break.",
                 ""
         );
         questionLists.add(q1);
@@ -8658,1654 +7769,106 @@ public class QuizQuestionsBank {
     private static List<QuizListModel> VueJsQuiz5() {
         final List<QuizListModel> questionLists = new ArrayList<>();
         final QuizListModel q1 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "What are other advantages that Vue.js offers?",
+                "Accessibility",
+                "Versatility",
+                "Both A & B",
+                "Flexibility",
+                "Both A & B",
                 ""
         );
         final QuizListModel q2 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "About Vue Native we can say that...",
+                "Developed by the company GeekyAnts for app development for Android and iOS.",
+                "It was designed to connect React Native and Vue.js.",
+                "Both",
+                "None of the above",
+                "Both",
                 ""
         );
         final QuizListModel q3 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "What is the correct way to bind the data from the data property of the VUE model instance to an input element of a form?",
+                "<input type = \"text\" v-bind = \"message\">",
+                "<input type = \"text\" v-model = \"message\">",
+                "<input type = \"text\" v-on: click = \"message\">",
+                "None of these",
+                "<input type = \"text\" v-model = \"message\">",
                 ""
         );
         final QuizListModel q4 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "How to bind a click event?",
+                "<button @ click = \"methodAccept\"> Accept </button>",
+                "<button: click = \"methodAccept\"> Accept </button>",
+                "Both of the above",
+                "None of the above",
+                "<button @ click = \"methodAccept\"> Accept </button>",
                 ""
         );
         final QuizListModel q5 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Vue is a framework designed for the frontend and the backend?",
+                "False",
+                "None",
+                "True",
+                "None of these",
+                "False",
                 ""
         );
         final QuizListModel q6 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                 "Vue utilized JavaScript proxy which enables Vue to perform dependency tracking and change notification when properties are accessed or modified.",
+                "False",
+                "None",
+                "True",
+                "None of these",
+                "True",
                 ""
         );
         final QuizListModel q7 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "JavaScript proxy parameter that holds the original object being proxied.",
+                "target",
+                "handler",
+                "data",
+                "key",
+                "target",
                 ""
         );
         final QuizListModel q8 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "What is the output of the following vanilla JavaScript code:\n" +
+                        "const data = {" +
+                        "\n" +
+                        "name: \"Dave\"," +
+                        "\n" +
+                        "age: 26" +
+                        "\n" +
+                        "};" +
+                        "\n" +
+                        "let message = `Name is ${data.name}, age is ${data.age}`;" +
+                        "\n" +
+                        "data.age = 30;" +
+                        "\n" +
+                        "console.log(message) ;",
+                "Name is Dave, age is 30",
+                "Name is Dave, age is 26",
+                "Error",
+                "None of these",
+                "Name is Dave, age is 26",
                 ""
         );
         final QuizListModel q9 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "This is used in the template property of the Vue instance to add/create HTML elements.",
+                "template string literal",
+                "Double quotes",
+                "Directives",
+                "String interpolation",
+                "template string literal",
                 ""
         );
         final QuizListModel q10 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        questionLists.add(q1);
-        questionLists.add(q2);
-        questionLists.add(q3);
-        questionLists.add(q4);
-        questionLists.add(q5);
-        questionLists.add(q6);
-        questionLists.add(q7);
-        questionLists.add(q8);
-        questionLists.add(q9);
-        questionLists.add(q10);
-        return questionLists;
-    }
-    private static List<QuizListModel> VueJsQuiz6() {
-        final List<QuizListModel> questionLists = new ArrayList<>();
-        final QuizListModel q1 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q2 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q3 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q4 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q5 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q6 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q7 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q8 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q9 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q10 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        questionLists.add(q1);
-        questionLists.add(q2);
-        questionLists.add(q3);
-        questionLists.add(q4);
-        questionLists.add(q5);
-        questionLists.add(q6);
-        questionLists.add(q7);
-        questionLists.add(q8);
-        questionLists.add(q9);
-        questionLists.add(q10);
-        return questionLists;
-    }
-    private static List<QuizListModel> VueJsQuiz7() {
-        final List<QuizListModel> questionLists = new ArrayList<>();
-        final QuizListModel q1 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q2 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q3 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q4 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q5 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q6 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q7 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q8 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q9 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q10 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        questionLists.add(q1);
-        questionLists.add(q2);
-        questionLists.add(q3);
-        questionLists.add(q4);
-        questionLists.add(q5);
-        questionLists.add(q6);
-        questionLists.add(q7);
-        questionLists.add(q8);
-        questionLists.add(q9);
-        questionLists.add(q10);
-        return questionLists;
-    }
-    private static List<QuizListModel> VueJsQuiz8() {
-        final List<QuizListModel> questionLists = new ArrayList<>();
-        final QuizListModel q1 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q2 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q3 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q4 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q5 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q6 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q7 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q8 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q9 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q10 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        questionLists.add(q1);
-        questionLists.add(q2);
-        questionLists.add(q3);
-        questionLists.add(q4);
-        questionLists.add(q5);
-        questionLists.add(q6);
-        questionLists.add(q7);
-        questionLists.add(q8);
-        questionLists.add(q9);
-        questionLists.add(q10);
-        return questionLists;
-    }
-    private static List<QuizListModel> VueJsQuiz9() {
-        final List<QuizListModel> questionLists = new ArrayList<>();
-        final QuizListModel q1 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q2 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q3 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q4 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q5 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q6 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q7 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q8 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q9 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q10 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        questionLists.add(q1);
-        questionLists.add(q2);
-        questionLists.add(q3);
-        questionLists.add(q4);
-        questionLists.add(q5);
-        questionLists.add(q6);
-        questionLists.add(q7);
-        questionLists.add(q8);
-        questionLists.add(q9);
-        questionLists.add(q10);
-        return questionLists;
-    }
-    private static List<QuizListModel> VueJsQuiz10() {
-        final List<QuizListModel> questionLists = new ArrayList<>();
-        final QuizListModel q1 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q2 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q3 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q4 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q5 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q6 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q7 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q8 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q9 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q10 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        questionLists.add(q1);
-        questionLists.add(q2);
-        questionLists.add(q3);
-        questionLists.add(q4);
-        questionLists.add(q5);
-        questionLists.add(q6);
-        questionLists.add(q7);
-        questionLists.add(q8);
-        questionLists.add(q9);
-        questionLists.add(q10);
-        return questionLists;
-    }
-    //NextJsQuiz
-    private static List<QuizListModel> NextJsQuiz1() {
-        final List<QuizListModel> questionLists = new ArrayList<>();
-        final QuizListModel q1 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q2 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q3 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q4 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q5 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q6 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q7 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q8 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q9 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q10 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        questionLists.add(q1);
-        questionLists.add(q2);
-        questionLists.add(q3);
-        questionLists.add(q4);
-        questionLists.add(q5);
-        questionLists.add(q6);
-        questionLists.add(q7);
-        questionLists.add(q8);
-        questionLists.add(q9);
-        questionLists.add(q10);
-        return questionLists;
-    }
-    private static List<QuizListModel> NextJsQuiz2() {
-        final List<QuizListModel> questionLists = new ArrayList<>();
-        final QuizListModel q1 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q2 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q3 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q4 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q5 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q6 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q7 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q8 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q9 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q10 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        questionLists.add(q1);
-        questionLists.add(q2);
-        questionLists.add(q3);
-        questionLists.add(q4);
-        questionLists.add(q5);
-        questionLists.add(q6);
-        questionLists.add(q7);
-        questionLists.add(q8);
-        questionLists.add(q9);
-        questionLists.add(q10);
-        return questionLists;
-    }
-    private static List<QuizListModel> NextJsQuiz3() {
-        final List<QuizListModel> questionLists = new ArrayList<>();
-        final QuizListModel q1 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q2 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q3 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q4 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q5 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q6 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q7 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q8 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q9 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q10 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        questionLists.add(q1);
-        questionLists.add(q2);
-        questionLists.add(q3);
-        questionLists.add(q4);
-        questionLists.add(q5);
-        questionLists.add(q6);
-        questionLists.add(q7);
-        questionLists.add(q8);
-        questionLists.add(q9);
-        questionLists.add(q10);
-        return questionLists;
-    }
-    private static List<QuizListModel> NextJsQuiz4() {
-        final List<QuizListModel> questionLists = new ArrayList<>();
-        final QuizListModel q1 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q2 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q3 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q4 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q5 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q6 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q7 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q8 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q9 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q10 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        questionLists.add(q1);
-        questionLists.add(q2);
-        questionLists.add(q3);
-        questionLists.add(q4);
-        questionLists.add(q5);
-        questionLists.add(q6);
-        questionLists.add(q7);
-        questionLists.add(q8);
-        questionLists.add(q9);
-        questionLists.add(q10);
-        return questionLists;
-    }
-    private static List<QuizListModel> NextJsQuiz5() {
-        final List<QuizListModel> questionLists = new ArrayList<>();
-        final QuizListModel q1 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q2 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q3 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q4 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q5 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q6 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q7 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q8 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q9 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q10 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        questionLists.add(q1);
-        questionLists.add(q2);
-        questionLists.add(q3);
-        questionLists.add(q4);
-        questionLists.add(q5);
-        questionLists.add(q6);
-        questionLists.add(q7);
-        questionLists.add(q8);
-        questionLists.add(q9);
-        questionLists.add(q10);
-        return questionLists;
-    }
-    private static List<QuizListModel> NextJsQuiz6() {
-        final List<QuizListModel> questionLists = new ArrayList<>();
-        final QuizListModel q1 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q2 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q3 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q4 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q5 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q6 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q7 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q8 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q9 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q10 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        questionLists.add(q1);
-        questionLists.add(q2);
-        questionLists.add(q3);
-        questionLists.add(q4);
-        questionLists.add(q5);
-        questionLists.add(q6);
-        questionLists.add(q7);
-        questionLists.add(q8);
-        questionLists.add(q9);
-        questionLists.add(q10);
-        return questionLists;
-    }
-    private static List<QuizListModel> NextJsQuiz7() {
-        final List<QuizListModel> questionLists = new ArrayList<>();
-        final QuizListModel q1 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q2 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q3 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q4 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q5 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q6 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q7 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q8 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q9 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q10 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        questionLists.add(q1);
-        questionLists.add(q2);
-        questionLists.add(q3);
-        questionLists.add(q4);
-        questionLists.add(q5);
-        questionLists.add(q6);
-        questionLists.add(q7);
-        questionLists.add(q8);
-        questionLists.add(q9);
-        questionLists.add(q10);
-        return questionLists;
-    }
-    private static List<QuizListModel> NextJsQuiz8() {
-        final List<QuizListModel> questionLists = new ArrayList<>();
-        final QuizListModel q1 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q2 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q3 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q4 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q5 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q6 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q7 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q8 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q9 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q10 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        questionLists.add(q1);
-        questionLists.add(q2);
-        questionLists.add(q3);
-        questionLists.add(q4);
-        questionLists.add(q5);
-        questionLists.add(q6);
-        questionLists.add(q7);
-        questionLists.add(q8);
-        questionLists.add(q9);
-        questionLists.add(q10);
-        return questionLists;
-    }
-    private static List<QuizListModel> NextJsQuiz9() {
-        final List<QuizListModel> questionLists = new ArrayList<>();
-        final QuizListModel q1 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q2 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q3 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q4 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q5 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q6 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q7 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q8 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q9 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q10 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        questionLists.add(q1);
-        questionLists.add(q2);
-        questionLists.add(q3);
-        questionLists.add(q4);
-        questionLists.add(q5);
-        questionLists.add(q6);
-        questionLists.add(q7);
-        questionLists.add(q8);
-        questionLists.add(q9);
-        questionLists.add(q10);
-        return questionLists;
-    }
-    private static List<QuizListModel> NextJsQuiz10() {
-        final List<QuizListModel> questionLists = new ArrayList<>();
-        final QuizListModel q1 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q2 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q3 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q4 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q5 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q6 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q7 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q8 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q9 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q10 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "In this lifecycle hook Templates and Virtual DOM are not yet mounted or rendered.",
+                "created",
+                "beforeCreate",
+                "Update",
+                "Mounted",
+                "created",
                 ""
         );
         questionLists.add(q1);
@@ -10324,93 +7887,97 @@ public class QuizQuestionsBank {
     private static List<QuizListModel> ReactJsQuiz1() {
         final List<QuizListModel> questionLists = new ArrayList<>();
         final QuizListModel q1 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "What is the correct command to create a new React project?",
+                "npx create-react-app",
+                "npm create-react-app myReactApp",
+                "npx create-react-app myReactApp",
+                "npm create-react-app",
+                "npx create-react-app myReactApp",
                 ""
         );
         final QuizListModel q2 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "What does myReactApp refer to in the following command?",
+                "The name you want to use for the new app",
+                "The type of app to create",
+                "A reference to an existing app",
+                "The directory to create the new app in",
+                "The name you want to use for the new app",
                 ""
         );
         final QuizListModel q3 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "What command is used to start the React local development server?",
+                "npm run dev",
+                "npm serve",
+                "npm start",
+                "npm build",
+                "npm start",
                 ""
         );
         final QuizListModel q4 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "What is the default local host port that a React development server uses?",
+                "8080",
+                "3500",
+                "5000",
+                "3000",
+                "3000",
                 ""
         );
         final QuizListModel q5 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "To develop and run React code, Node.js is required.",
+                "True",
+                "False",
+                "Don't know",
+                "None of these",
+                "True",
                 ""
         );
         final QuizListModel q6 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "What type of element will be rendered from the following code?\n" +
+                        "function Car() {\n" +
+                        "  return <h1>Ford Mustang</h1>;\n" +
+                        "}\n" +
+                        "ReactDOM.render(<Car />, document.getElementById('root'));",
+                "div",
+                "Component",
+                "h1",
+                "ReactDom",
+                "h1",
                 ""
         );
         final QuizListModel q7 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "What is the children prop?",
+                "A property that lets you pass data to child components",
+                "A property that lets you nest components in other components",
+                "A property that lets you set an object as a property",
+                "A property that adds child values to state",
+                "A property that lets you nest components in other components",
                 ""
         );
         final QuizListModel q8 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Which keyword creates a constant in JavaScript?",
+                "constant",
+                "let",
+                "const",
+                "var",
+                "const",
                 ""
         );
         final QuizListModel q9 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "A copy of the 'real' DOM that is kept in memory is called what?",
+                "Shadow DOM",
+                "React DOM",
+                "DOM",
+                "Virtual DOM",
+                "Virtual DOM",
                 ""
         );
         final QuizListModel q10 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "React component names must begin with an uppercase letter.",
+                "True",
+                "False",
+                "Don't know",
+                "None of these",
+                "True",
                 ""
         );
         questionLists.add(q1);
@@ -10428,93 +7995,99 @@ public class QuizQuestionsBank {
     private static List<QuizListModel> ReactJsQuiz2() {
         final List<QuizListModel> questionLists = new ArrayList<>();
         final QuizListModel q1 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Which operator can be used to conditionally render a React component?",
+                "||",
+                "&&",
+                "??",
+                "::",
+                "&&",
                 ""
         );
         final QuizListModel q2 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "When rendering a list using the JavaScript map() method, what is required for each element rendered?",
+                "data",
+                "id",
+                "key",
+                "index",
+                "key",
                 ""
         );
         final QuizListModel q3 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "What tool does React use to compile JSX?",
+                "ReactDOM",
+                "React Router",
+                "Babel",
+                "JSX Compiler",
+                "Babel",
                 ""
         );
         final QuizListModel q4 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "How can you optimize performance for a function component that always renders the same way?",
+                "Use the useMemo Hook.",
+                "Wrap it in the React.memo higher-order component.",
+                "Use the shouldComponentUpdate lifecycle method",
+                "Use the useReducer Hook",
+                "Wrap it in the React.memo higher-order component.",
                 ""
         );
         final QuizListModel q5 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "What props will be available to the following component?\n" +
+                        "<Car {...props} />",
+                "children",
+                "only static ones",
+                "only updated ones",
+                "all of them",
+                "all of them",
                 ""
         );
         final QuizListModel q6 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "What is a common use case for ref?",
+                "To refer to a function",
+                "To directly access a DOM node",
+                "To refer to another JavaScript file",
+                "To bind the function",
+                "To directly access a DOM node",
                 ""
         );
         final QuizListModel q7 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "How can you combine the following arrays using the spread operator?\n" +
+                        "const array1 = [1, 2, 3];\n" +
+                        "const array2 = [4, 5, 6];",
+                "const combined = [array1, array2];",
+                "const combined = array1 + array2;",
+                "const combined = ...array1 + ...array2;",
+                "const combined = [...array1, ...array2];",
+                "const combined = [...array1, ...array2];",
                 ""
         );
         final QuizListModel q8 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "What is the correct syntax to import a Component from React?",
+                "import Component from 'react'",
+                "import { Component } from 'react'",
+                "import [ Component ] from 'react'",
+                "import React.Component from 'react'",
+                "import { Component } from 'react'",
                 ""
         );
         final QuizListModel q9 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Find the bug in this code:\n" +
+                        "function car({make, model}) {\n" +
+                        "  return <h1>{make} {model}</h1>;\n" +
+                        "};",
+                "The first letter of the function must be capitalized",
+                "Remove the return statement",
+                "Wrap the return in a fragment",
+                "Add parenthesis around the return value",
+                "The first letter of the function must be capitalized",
                 ""
         );
         final QuizListModel q10 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "React separates the user interface into components. How are components combined to create a user interface?",
+                "With code splitting",
+                "With webpack",
+                "By putting them in a folder structure",
+                "By nesting components",
+                "By nesting components",
                 ""
         );
         questionLists.add(q1);
@@ -10532,93 +8105,97 @@ public class QuizQuestionsBank {
     private static List<QuizListModel> ReactJsQuiz3() {
         final List<QuizListModel> questionLists = new ArrayList<>();
         final QuizListModel q1 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Which of the following is NOT a rule for React Hooks?",
+                "Hooks can only be called inside React Function components",
+                "Hooks cannot be conditional",
+                "Hooks can be called in Class or Function components",
+                "Hooks can only be called at the top level of a component",
+                "Hooks can be called in Class or Function components",
                 ""
         );
         final QuizListModel q2 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "What is the output of the following code?\n" +
+                        "const make = 'Ford';\n" +
+                        "const model = 'Mustang';\n" +
+                        "const car = { make, model };\n" +
+                        "console.log(car);",
+                "{{make: 'Ford', model: 'Mustang'}}",
+                "{car: 'Ford', car: 'Mustang'}}",
+                "{car: {make: 'Ford', model: 'Mustang'}}",
+                "{make: 'Ford', model: 'Mustang'}",
+                "{make: 'Ford', model: 'Mustang'}",
                 ""
         );
         final QuizListModel q3 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Why should you avoid copying the values of props into a component's state?",
+                "Because prop values cannot be stored in state",
+                "Because that would create two instances of the same state that could become out of sync",
+                "Because you want to allow data to flow back up to the parent",
+                "Because you should never mutate state",
+                "Because that would create two instances of the same state that could become out of sync",
                 ""
         );
         final QuizListModel q4 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Which of the following command is used to create react-js-app ?",
+                "npx create-react-app appname",
+                "npm install create-react-app",
+                "npx install create-react-app -g",
+                "install - l create-react-app",
+                "npx create-react-app appname",
                 ""
         );
         final QuizListModel q5 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "In React.js which one of the following is used to create a class for Inheritance ?",
+                "Create",
+                "Inherits",
+                "Delete",
+                "Extends",
+                "Extends",
                 ""
         );
         final QuizListModel q6 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Which of the following is a way to handle data in React.js ?",
+                "Services & Components",
+                "State & Props",
+                "State & Services",
+                "State & Component",
+                "State & Props",
                 ""
         );
         final QuizListModel q7 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Which of the following is must for the API in React.js ?",
+                "SetinitialComponent",
+                "render",
+                "renderComponent",
+                "All of the above",
+                "renderComponent",
                 ""
         );
         final QuizListModel q8 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Which of the following function is true about changing the state in React.js ?",
+                "this.State{}",
+                "this.setState",
+                "this.setChangeState",
+                "All of the above",
+                "this.setState",
                 ""
         );
         final QuizListModel q9 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Which of the following is true about key props ?",
+                "\"Key\" props are used to look beauty",
+                "It is one type of attribute of HTML",
+                "\"Key\" prop is a way to identify the newly added element",
+                "It is not used in the array",
+                "\"Key\" prop is a way to identify the newly added element",
                 ""
         );
         final QuizListModel q10 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Everything in React is a _____________",
+                "Module",
+                "Component",
+                "Package",
+                "Class",
+                "Component",
                 ""
         );
         questionLists.add(q1);
@@ -10636,93 +8213,93 @@ public class QuizQuestionsBank {
     private static List<QuizListModel> ReactJsQuiz4() {
         final List<QuizListModel> questionLists = new ArrayList<>();
         final QuizListModel q1 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "React.js is a free and open-source front-end .................",
+                "JavaScript library",
+                "Bootstrap library",
+                "CSS library",
+                "None of the Above",
+                "JavaScript library",
                 ""
         );
         final QuizListModel q2 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "React.js was Initially released in ................",
+                "May 29, 2013",
+                "April 29, 2013",
+                "June 29, 2013",
+                "May 29, 2014",
+                "May 29, 2013",
                 ""
         );
         final QuizListModel q3 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "A state in React.js is also known is ..............",
+                "A permanent storage.",
+                "An Internal storage of the component.",
+                "An External storage of the component.",
+                "All of the above",
+                "An Internal storage of the component.",
                 ""
         );
         final QuizListModel q4 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "How can you access the state of a component from inside of a member function?",
+                "this.getState()",
+                "this.values",
+                "this.prototype.stateValue",
+                "this.state",
+                "this.values",
                 ""
         );
         final QuizListModel q5 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Props are __________ into other components",
+                "Methods",
+                "Injected",
+                "Both 1 & 2",
+                "All of the above",
+                "Methods",
                 ""
         );
         final QuizListModel q6 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "What is a react.js in MVC?",
+                "Middleware",
+                "Controller",
+                "Model",
+                "Router",
+                "Controller",
                 ""
         );
         final QuizListModel q7 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Keys are given to a list of elements in react. These keys should be -",
+                "Do not requires to be unique",
+                "Unique in the DOM",
+                "Unique among the siblings only",
+                "All of the above",
+                "Unique among the siblings only",
                 ""
         );
         final QuizListModel q8 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Which of the following is the correct data flow sequence of flux concept?",
+                "Dispatcher->Action->Store->View",
+                "Action->Dispatcher->View->Store",
+                "Action->Store->Dispatcher->View",
+                "Action->Dispatcher->Store->View",
+                "Action->Dispatcher->Store->View",
                 ""
         );
         final QuizListModel q9 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                ".............. helps react for keeping their data unidirectional.",
+                "JSX",
+                "Flux",
+                "Dom",
+                "Props",
+                "Flux",
                 ""
         );
         final QuizListModel q10 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "We can prevent default behavior in React using ............",
+                "revokeDefault()",
+                "avoidDefault()",
+                "preventDefault()",
+                "None of the Above",
+                "preventDefault()",
                 ""
         );
         questionLists.add(q1);
@@ -10740,613 +8317,105 @@ public class QuizQuestionsBank {
     private static List<QuizListModel> ReactJsQuiz5() {
         final List<QuizListModel> questionLists = new ArrayList<>();
         final QuizListModel q1 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "What is the smallest building block of ReactJS?",
+                "props",
+                "components",
+                "elements",
+                "None of the Above",
+                "components",
                 ""
         );
         final QuizListModel q2 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "What does the \"webpack\" command do?",
+                "A module bundler",
+                "Runs react local development server.",
+                "Transpiles all the Javascript down into one file",
+                "None of the Above",
+                "A module bundler",
                 ""
         );
         final QuizListModel q3 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "What are the limitations of ReactJS?",
+                "React is only for view layer of the app so we still need the help of other technologies to get a complete tooling set for development",
+                "React is using inline templating and JSX. This can seem awkward to some developers",
+                "The library of react is too large",
+                "All of these",
+                "All of these",
                 ""
         );
         final QuizListModel q4 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "What are the advantages of React JS?",
+                "React can be used on client and as well as server side too",
+                "Using React increases readability and makes maintainability easier. Component, Data patterns improves readability and thus makes it easier for maintaining larger apps",
+                "React can be used with any other framework (Backbone.js, Angular.js) as it is only a view layer",
+                "All of the above",
+                "Using React increases readability and makes maintainability easier. Component, Data patterns improves readability and thus makes it easier for maintaining larger apps",
                 ""
         );
         final QuizListModel q5 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Life cycle methods of a components fall under following categories?",
+                "Mounting, Updating, Unmounting",
+                "Mounting, Updating",
+                "Mounting, Unmounting",
+                "None of these",
+                "Mounting, Unmounting",
                 ""
         );
         final QuizListModel q6 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Which of the following is not components of Redux?",
+                "Action",
+                "State",
+                "Reducer",
+                "View",
+                "Reducer",
                 ""
         );
         final QuizListModel q7 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Which of the following represented the Pre and post life cycle methods of components ?",
+                "Will, Did",
+                "Before, After",
+                "Mounting, Unmounting",
+                "getInitialState, componentWillMount",
+                "getInitialState, componentWillMount",
                 ""
         );
         final QuizListModel q8 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "How do you fix the syntax error that results from running this code?\n" +
+                        "const person =(firstName, lastName) =>\n" +
+                        " { \n" +
+                        "   first: firstName, \n" +
+                        "   last: lastName } \n" +
+                        "console.log(person(\"jhon\", \"Wolson\"))",
+                "Wrap the object in parentheses.",
+                "Call the function from another file.",
+                "Replace the with an array",
+                "Add a return statement before the first curly brace.",
+                "Wrap the object in parentheses.",
                 ""
         );
         final QuizListModel q9 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "If you see the following import in a file, what is being used for state management in the component?\n" +
+                        "import React, {useState} from 'react';",
+                "stateful components",
+                "class components",
+                "math",
+                "React Hooks",
+                "React Hooks",
                 ""
         );
         final QuizListModel q10 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        questionLists.add(q1);
-        questionLists.add(q2);
-        questionLists.add(q3);
-        questionLists.add(q4);
-        questionLists.add(q5);
-        questionLists.add(q6);
-        questionLists.add(q7);
-        questionLists.add(q8);
-        questionLists.add(q9);
-        questionLists.add(q10);
-        return questionLists;
-    }
-    private static List<QuizListModel> ReactJsQuiz6() {
-        final List<QuizListModel> questionLists = new ArrayList<>();
-        final QuizListModel q1 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q2 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q3 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q4 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q5 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q6 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q7 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q8 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q9 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q10 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        questionLists.add(q1);
-        questionLists.add(q2);
-        questionLists.add(q3);
-        questionLists.add(q4);
-        questionLists.add(q5);
-        questionLists.add(q6);
-        questionLists.add(q7);
-        questionLists.add(q8);
-        questionLists.add(q9);
-        questionLists.add(q10);
-        return questionLists;
-    }
-    private static List<QuizListModel> ReactJsQuiz7() {
-        final List<QuizListModel> questionLists = new ArrayList<>();
-        final QuizListModel q1 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q2 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q3 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q4 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q5 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q6 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q7 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q8 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q9 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q10 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        questionLists.add(q1);
-        questionLists.add(q2);
-        questionLists.add(q3);
-        questionLists.add(q4);
-        questionLists.add(q5);
-        questionLists.add(q6);
-        questionLists.add(q7);
-        questionLists.add(q8);
-        questionLists.add(q9);
-        questionLists.add(q10);
-        return questionLists;
-    }
-    private static List<QuizListModel> ReactJsQuiz8() {
-        final List<QuizListModel> questionLists = new ArrayList<>();
-        final QuizListModel q1 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q2 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q3 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q4 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q5 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q6 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q7 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q8 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q9 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q10 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        questionLists.add(q1);
-        questionLists.add(q2);
-        questionLists.add(q3);
-        questionLists.add(q4);
-        questionLists.add(q5);
-        questionLists.add(q6);
-        questionLists.add(q7);
-        questionLists.add(q8);
-        questionLists.add(q9);
-        questionLists.add(q10);
-        return questionLists;
-    }
-    private static List<QuizListModel> ReactJsQuiz9() {
-        final List<QuizListModel> questionLists = new ArrayList<>();
-        final QuizListModel q1 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q2 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q3 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q4 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q5 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q6 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q7 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q8 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q9 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q10 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        questionLists.add(q1);
-        questionLists.add(q2);
-        questionLists.add(q3);
-        questionLists.add(q4);
-        questionLists.add(q5);
-        questionLists.add(q6);
-        questionLists.add(q7);
-        questionLists.add(q8);
-        questionLists.add(q9);
-        questionLists.add(q10);
-        return questionLists;
-    }
-    private static List<QuizListModel> ReactJsQuiz10() {
-        final List<QuizListModel> questionLists = new ArrayList<>();
-        final QuizListModel q1 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q2 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q3 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q4 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q5 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q6 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q7 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q8 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q9 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q10 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "What happens when the following render() method executes?\n" +
+                        "render(){\n" +
+                        "  let langs = [\"Ruby\",\"ES6\",\"Scala\"] \n" +
+                        "    return (<div> \n" +
+                        "      {langs.map(it => <p>{it}</p>)}\n" +
+                        "    </div>) \n" +
+                        "}",
+                "Error. Cannot use direct JavaScript code in JSX",
+                "Error. Should be replaced with a for..loop for correct output",
+                "Displays the list of languages in the array",
+                "Displays nothing",
+                "Displays the list of languages in the array",
                 ""
         );
         questionLists.add(q1);
@@ -11365,93 +8434,93 @@ public class QuizQuestionsBank {
     private static List<QuizListModel> EmberJsQuiz1() {
         final List<QuizListModel> questionLists = new ArrayList<>();
         final QuizListModel q1 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "What are the three parts built for an ember route?",
+                "An entry in the Ember router which maps between our route name and a specific URI",
+                "A route handler file, which sets up what should happen when that route is loaded",
+                "A route template, which is where we display the actual content for the page",
+                "All the above",
+                "All the above",
                 ""
         );
         final QuizListModel q2 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "What are the main components of Ember.js?",
+                "Models",
+                "The Router",
+                "Controllers",
+                "All of the above",
+                "All of the above",
                 ""
         );
         final QuizListModel q3 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Ember.js is which type of framework?",
+                "server-side framework",
+                "client-side framework",
+                "both a and b",
+                "None of the above",
+                "client-side framework",
                 ""
         );
         final QuizListModel q4 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Who designed Ember.js framework?",
+                "James Gausling",
+                "Hakon Wium Lee",
+                "Yehuda katz",
+                "Tee Berners-lee",
+                "Yehuda katz",
                 ""
         );
         final QuizListModel q5 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "How ember applications are structured?",
+                "Models",
+                "Controllers",
+                "Views",
+                "All of the above",
+                "All of the above",
                 ""
         );
         final QuizListModel q6 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "What is Git?",
+                "It tracks the changes made into the file",
+                "It changes the content of the file.",
+                "It is just a dependency an Ember.js uses.",
+                "None of the above",
+                "It tracks the changes made into the file",
                 ""
         );
         final QuizListModel q7 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Which command is used to install the Ember CLI",
+                "npm ember.js install",
+                "npm install -g ember-cli",
+                "install ember-cli",
+                "npm ember-cli",
+                "npm install -g ember-cli",
                 ""
         );
         final QuizListModel q8 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "What is the use of Router?",
+                "It used to keep the tracks",
+                "It is used to name the class in ember.js",
+                "It is used to map the route to route handler",
+                "None of the above",
+                "It is used to map the route to route handler",
                 ""
         );
         final QuizListModel q9 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "What are the uses of Ember.js services?",
+                "Logging",
+                "User/session authentication",
+                "Geolocation",
+                "All of the above",
+                "All of the above",
                 ""
         );
         final QuizListModel q10 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "What are the features of Emberjs?",
+                "Creating reusable modules",
+                "Handlebars Templates",
+                "Automatic determines the route and controller during declaration of the route resources",
+                "All of the above",
+                "All of the above",
                 ""
         );
         questionLists.add(q1);
@@ -11469,93 +8538,93 @@ public class QuizQuestionsBank {
     private static List<QuizListModel> EmberJsQuiz2() {
         final List<QuizListModel> questionLists = new ArrayList<>();
         final QuizListModel q1 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Tick the main component of Ember.js",
+                "Router",
+                "Controllers",
+                "Models",
+                "All of the above",
+                "All of the above",
                 ""
         );
         final QuizListModel q2 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Name the file loaded the ember application",
+                "application.js",
+                "application/application.js",
+                "App/app.js",
+                "None of the above",
+                "App/app.js",
                 ""
         );
         final QuizListModel q3 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Which command is used to check the ember in our system",
+                "ember check",
+                "ember -v",
+                "ember.js",
+                "ember/ember.check",
+                "ember -v",
                 ""
         );
         final QuizListModel q4 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Which command is used to start and stop development server in Ember.js?",
+                "Ember server",
+                "cd ember-quickstart",
+                "both a and b",
+                "None of the above",
+                "both a and b",
                 ""
         );
         final QuizListModel q5 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "What are the different common functions of Ember.js packages?",
+                "Empty",
+                " Log Binding",
+                "isArray",
+                "All of the above",
+                "All of the above",
                 ""
         );
         final QuizListModel q6 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "What is the command to start and stop development server in Ember.js?",
+                "Cd ember-quickstart",
+                "Ember serve",
+                "Both A and B",
+                "None",
+                "Both A and B",
                 ""
         );
         final QuizListModel q7 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Basic model of ember.js is/are",
+                "Routes",
+                "Models",
+                "Templates",
+                "All of the above",
+                "All of the above",
                 ""
         );
         final QuizListModel q8 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "What are the common functions of ember.js packages",
+                "isArray()",
+                "log Binding",
+                "Empty",
+                "All of the above",
+                "All of the above",
                 ""
         );
         final QuizListModel q9 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Tick the recent version of ember.js",
+                "2.1",
+                "4.1",
+                "3.2",
+                "3.9",
+                "4.1",
                 ""
         );
         final QuizListModel q10 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Is it possible to store the cache",
+                "Yes",
+                "No",
+                "Maybe",
+                "Possible in some cases",
+                "Yes",
                 ""
         );
         questionLists.add(q1);
@@ -11573,821 +8642,93 @@ public class QuizQuestionsBank {
     private static List<QuizListModel> EmberJsQuiz3() {
         final List<QuizListModel> questionLists = new ArrayList<>();
         final QuizListModel q1 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Uses of Ember.js services is/are",
+                "User/session authentication",
+                "Logging",
+                "Geolocation",
+                "All of the above",
+                "All of the above",
                 ""
         );
         final QuizListModel q2 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Which language is used for static development",
+                "Java",
+                "CSS",
+                "HTML",
+                "Python",
+                "HTML",
                 ""
         );
         final QuizListModel q3 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "What is template?",
+                "It is just a name of the class",
+                "It is specified layout for all the pages",
+                "It is the functions name",
+                "None of the above",
+                "It is specified layout for all the pages",
                 ""
         );
         final QuizListModel q4 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "The framework is for which language",
+                "JavaScript",
+                "CSS",
+                "HTML",
+                "Angular",
+                "JavaScript",
                 ""
         );
         final QuizListModel q5 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Command to create a applications",
+                "create application.js",
+                "ember application",
+                "ember new application",
+                "None of the above",
+                "ember new application",
                 ""
         );
         final QuizListModel q6 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Three parts built for an ember route are: ",
+                "A route handler file, which sets up what should happen when that route is loaded",
+                "An entry in the Ember router which maps between our route name and a specific URI",
+                "A route template, which is where we display the actual content for the page",
+                "All of the above",
+                "All of the above",
                 ""
         );
         final QuizListModel q7 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Explain how Router and {{outlet}} tag can be useful in ember.js?",
+                "Router allows you to specify all the possible states of an app and map them to urls",
+                "To build a hierarchy of sections by providing a mean for a container template to include a child template the {{outlet}} tag is used",
+                "Both a & b",
+                "None of the above",
+                "Both a & b",
                 ""
         );
         final QuizListModel q8 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Explain how you can add data using fixture into an application?",
+                "First update js/application.js to indicate that your application’s application adapter is an extension of the DS.FixtureAdapter.  Adapters are used for communicating with a source of data for your application.  Usually, this will be a web service API.",
+                "Next, update the file at js/models/todo.js",
+                "Both a & b",
+                "None of the above",
+                "Both a & b",
                 ""
         );
         final QuizListModel q9 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "What are the features of Ember.js?",
+                "It contains HTML and CSS at the core of the development model.",
+                "It is used to develop reusable JavaScript web applications.",
+                "It provides the instance initializers.",
+                "All of the above",
+                "All of the above",
                 ""
         );
         final QuizListModel q10 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        questionLists.add(q1);
-        questionLists.add(q2);
-        questionLists.add(q3);
-        questionLists.add(q4);
-        questionLists.add(q5);
-        questionLists.add(q6);
-        questionLists.add(q7);
-        questionLists.add(q8);
-        questionLists.add(q9);
-        questionLists.add(q10);
-        return questionLists;
-    }
-    private static List<QuizListModel> EmberJsQuiz4() {
-        final List<QuizListModel> questionLists = new ArrayList<>();
-        final QuizListModel q1 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q2 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q3 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q4 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q5 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q6 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q7 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q8 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q9 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q10 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        questionLists.add(q1);
-        questionLists.add(q2);
-        questionLists.add(q3);
-        questionLists.add(q4);
-        questionLists.add(q5);
-        questionLists.add(q6);
-        questionLists.add(q7);
-        questionLists.add(q8);
-        questionLists.add(q9);
-        questionLists.add(q10);
-        return questionLists;
-    }
-    private static List<QuizListModel> EmberJsQuiz5() {
-        final List<QuizListModel> questionLists = new ArrayList<>();
-        final QuizListModel q1 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q2 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q3 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q4 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q5 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q6 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q7 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q8 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q9 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q10 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        questionLists.add(q1);
-        questionLists.add(q2);
-        questionLists.add(q3);
-        questionLists.add(q4);
-        questionLists.add(q5);
-        questionLists.add(q6);
-        questionLists.add(q7);
-        questionLists.add(q8);
-        questionLists.add(q9);
-        questionLists.add(q10);
-        return questionLists;
-    }
-    private static List<QuizListModel> EmberJsQuiz6() {
-        final List<QuizListModel> questionLists = new ArrayList<>();
-        final QuizListModel q1 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q2 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q3 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q4 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q5 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q6 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q7 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q8 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q9 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q10 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        questionLists.add(q1);
-        questionLists.add(q2);
-        questionLists.add(q3);
-        questionLists.add(q4);
-        questionLists.add(q5);
-        questionLists.add(q6);
-        questionLists.add(q7);
-        questionLists.add(q8);
-        questionLists.add(q9);
-        questionLists.add(q10);
-        return questionLists;
-    }
-    private static List<QuizListModel> EmberJsQuiz7() {
-        final List<QuizListModel> questionLists = new ArrayList<>();
-        final QuizListModel q1 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q2 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q3 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q4 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q5 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q6 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q7 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q8 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q9 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q10 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        questionLists.add(q1);
-        questionLists.add(q2);
-        questionLists.add(q3);
-        questionLists.add(q4);
-        questionLists.add(q5);
-        questionLists.add(q6);
-        questionLists.add(q7);
-        questionLists.add(q8);
-        questionLists.add(q9);
-        questionLists.add(q10);
-        return questionLists;
-    }
-    private static List<QuizListModel> EmberJsQuiz8() {
-        final List<QuizListModel> questionLists = new ArrayList<>();
-        final QuizListModel q1 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q2 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q3 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q4 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q5 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q6 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q7 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q8 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q9 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q10 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        questionLists.add(q1);
-        questionLists.add(q2);
-        questionLists.add(q3);
-        questionLists.add(q4);
-        questionLists.add(q5);
-        questionLists.add(q6);
-        questionLists.add(q7);
-        questionLists.add(q8);
-        questionLists.add(q9);
-        questionLists.add(q10);
-        return questionLists;
-    }
-    private static List<QuizListModel> EmberJsQuiz9() {
-        final List<QuizListModel> questionLists = new ArrayList<>();
-        final QuizListModel q1 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q2 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q3 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q4 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q5 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q6 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q7 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q8 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q9 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q10 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        questionLists.add(q1);
-        questionLists.add(q2);
-        questionLists.add(q3);
-        questionLists.add(q4);
-        questionLists.add(q5);
-        questionLists.add(q6);
-        questionLists.add(q7);
-        questionLists.add(q8);
-        questionLists.add(q9);
-        questionLists.add(q10);
-        return questionLists;
-    }
-    private static List<QuizListModel> EmberJsQuiz10() {
-        final List<QuizListModel> questionLists = new ArrayList<>();
-        final QuizListModel q1 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q2 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q3 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q4 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q5 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q6 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q7 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q8 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q9 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q10 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Explain the architectural structure of Ember.js applications?",
+                "Models define the data that is used in an application.",
+                "Controllers are used to modifying the queries, edit the data and provide user interactions.",
+                "Both a & b",
+                "None of the above",
+                "Both a & b",
                 ""
         );
         questionLists.add(q1);
@@ -12406,93 +8747,93 @@ public class QuizQuestionsBank {
     private static List<QuizListModel> BootstrapQuiz1() {
         final List<QuizListModel> questionLists = new ArrayList<>();
         final QuizListModel q1 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Bootstrap's global default line-height",
+                "1.128",
+                "1.428",
+                "1.228",
+                "1.8",
+                "1.428",
                 ""
         );
         final QuizListModel q2 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Which of the following is correct about bootstrap wells?",
+                "You can change the size of well using the optional classes such as, well-lg or well-sm",
+                "well-lg or well-sm classes are used in conjunction with .well class",
+                "Both of the above",
+                "None of the above",
+                "Both of the above",
                 ""
         );
         final QuizListModel q3 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Glyphicons is mainly used for?",
+                "Slideshow",
+                "graphic images",
+                "animation",
+                "providing different icons",
+                "providing different icons",
                 ""
         );
         final QuizListModel q4 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Which of the following class styles a table as a nice basic table with stripes on rows?",
+                "table",
+                ".table-striped",
+                ".table-bordered",
+                ".table-hover",
+                ".table-striped",
                 ""
         );
         final QuizListModel q5 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "What layout is used for providing 100% width in Bootstrap?",
+                "Fixed layout",
+                "Fluid layout",
+                "Both (a)and (b)",
+                "None of the above",
+                "Fluid layout",
                 ""
         );
         final QuizListModel q6 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "In Bootstrap we can add for",
+                "Proper Rendering and Zooming in mobile",
+                "Make SEO",
+                "Make proper view of labels",
+                "None",
+                "Proper Rendering and Zooming in mobile",
                 ""
         );
         final QuizListModel q7 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Which of the following class makes thumbnail image",
+                ".img-tmbnail",
+                ".img-thumbnail-image",
+                ".img-thumb",
+                ".img-thumbnail",
+                ".img-thumbnail",
                 ""
         );
         final QuizListModel q8 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Which plugin is used to create a modal window?",
+                "modal",
+                "window",
+                "dialog Box",
+                "popup",
+                "modal",
                 ""
         );
         final QuizListModel q9 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "The .container class provides",
+                "Full width container",
+                "Fixed width container",
+                "Table format",
+                "To create a Form",
+                "Fixed width container",
                 ""
         );
         final QuizListModel q10 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Which of the following contextual class is used for warning purpose?",
+                ".active",
+                ".warning",
+                ".danger",
+                "All of the above",
+                ".warning",
                 ""
         );
         questionLists.add(q1);
@@ -12510,93 +8851,93 @@ public class QuizQuestionsBank {
     private static List<QuizListModel> BootstrapQuiz2() {
         final List<QuizListModel> questionLists = new ArrayList<>();
         final QuizListModel q1 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Which of the following is correct about data-trigger Data attribute of popover Plugin?",
+                "Sets the default title value if the title attribute isn't present",
+                "Defines default content value if data-content attribute isn't present",
+                "Defines how the popover is triggered",
+                "Delays showing and hiding the popover in ms",
+                "Defines how the popover is triggered",
                 ""
         );
         final QuizListModel q2 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Bootstrap Is Developed By",
+                "James Gosling",
+                "Mark Otto And Jacob Thornton",
+                "Mark Jukervich",
+                "None Of Them",
+                "Mark Otto And Jacob Thornton",
                 ""
         );
         final QuizListModel q3 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Which Of The Following Is Correct About Bootstrap Jumbotron?",
+                "This Component Can Optionally Increase The Size Of Headings And Add A Lot Of Margin For Landing Page Content.",
+                "To Use The Jumbotron: Create A Container With The Class Of .jumbotron.",
+                "Both A And B",
+                "None Of The Above",
+                "Both A And B",
                 ""
         );
         final QuizListModel q4 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Which Class Indicates A Dropdown Menu?",
+                ".dropdown",
+                ".select",
+                ".dropdown-list",
+                ".dropup-list",
+                ".dropdown",
                 ""
         );
         final QuizListModel q5 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "A Standard Navigation Tab Is Created With:",
+                "<ul Class=\"navigation-tabs\">",
+                "<ul Class=\"nav Tabs\">",
+                "<ul Class=\"navnav-tabs\">",
+                "<ul Class=\"navnav-navbar\">",
+                "<ul Class=\"nav Tabs\">",
                 ""
         );
         final QuizListModel q6 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Bootstrap's Grid System Allows Up To",
+                "6 Columns Across The Page",
+                "8 Columns Across The Page",
+                "12 Columns Across The Page",
+                "24 Columns Across The Page",
+                "12 Columns Across The Page",
                 ""
         );
         final QuizListModel q7 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Default Size Of H5 Bootstrap Heading",
+                "14px",
+                "16px",
+                "18px",
+                "20px",
+                "14px",
                 ""
         );
         final QuizListModel q8 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "The Bootstrap Class Xs Means For",
+                "Tablets",
+                "Desktop",
+                "Phones",
+                "Larger Desktops",
+                "Phones",
                 ""
         );
         final QuizListModel q9 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Which Of The Following Contextual Class Is Used For Warning Purpose?",
+                ".active",
+                ".warning",
+                ".danger",
+                "All Of The Above",
+                ".warning",
                 ""
         );
         final QuizListModel q10 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Which Plugin Is Used To Cycle Through Elements, Like A Slideshow?",
+                "Orbit",
+                "Scrollspy",
+                "Slideshow",
+                "Carousel",
+                "Carousel",
                 ""
         );
         questionLists.add(q1);
@@ -12614,93 +8955,93 @@ public class QuizQuestionsBank {
     private static List<QuizListModel> BootstrapQuiz3() {
         final List<QuizListModel> questionLists = new ArrayList<>();
         final QuizListModel q1 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Which Of The Following Class Is Used To Create A Button As A Link In Bootstrap?",
+                ".btn-hyperlink",
+                ".btn-link",
+                ".btn-anchor",
+                "None Of These",
+                ".btn-link",
                 ""
         );
         final QuizListModel q2 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Which Class Creates A List Of Items?",
+                "Lst-group",
+                "List-group",
+                "List-grp",
+                "Menu-group",
+                "List-group",
                 ""
         );
         final QuizListModel q3 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Medium Devices Are Defined As Having A Screen Width From",
+                "900 Pixels To 1000 Pixels",
+                "768 Pixels To 991 Pixels",
+                "512 Pixels To 2048 Pixels",
+                "992 Pixels To 1199 Pixels",
+                "992 Pixels To 1199 Pixels",
                 ""
         );
         final QuizListModel q4 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Bootstrap is used for",
+                "Data",
+                "IoT",
+                "Bigdata",
+                "Web applications",
+                "Web applications",
                 ""
         );
         final QuizListModel q5 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Sass stands for .........",
+                "Scripting awesome Stylesheets",
+                "Scripting awesome Spreadsheets",
+                "Syntactically awesome Stylesheets",
+                "Syntactically awesome Spreadsheets",
+                "Syntactically awesome Stylesheets",
                 ""
         );
         final QuizListModel q6 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Which class provides a responsive fixed width container?",
+                ".container-fluid",
+                ".container-fixed",
+                ".container",
+                "None of the above",
+                ".container",
                 ""
         );
         final QuizListModel q7 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Which class adds zebra-stripes to a table?",
+                ".table-striped",
+                ".table-zebra",
+                ".even and .odd",
+                ".table-bordered",
+                ".table-striped",
                 ""
         );
         final QuizListModel q8 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Which class shapes an image to a circle?",
+                ".img-rounded",
+                ".img-round",
+                ".img-thumbnail",
+                ".img-circle",
+                ".img-circle",
                 ""
         );
         final QuizListModel q9 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "How can you insert a search icon?",
+                "<span class=\"glyphicon-search\"></span>",
+                "<span class=\"glyphicon search\"></span>",
+                "<span class=\"glyphicon glyphicon-search\"></span>",
+                "<span class=\"glyph glyph-search\"></span>",
+                "<span class=\"glyphicon glyphicon-search\"></span>",
                 ""
         );
         final QuizListModel q10 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Which class is used to create a badge?",
+                ".flag",
+                ".tag",
+                ".label",
+                ".badge",
+                ".badge",
                 ""
         );
         questionLists.add(q1);
@@ -12718,93 +9059,93 @@ public class QuizQuestionsBank {
     private static List<QuizListModel> BootstrapQuiz4() {
         final List<QuizListModel> questionLists = new ArrayList<>();
         final QuizListModel q1 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Which class is used to create a basic pagination?",
+                ".navigation",
+                ".pages",
+                ".pagination",
+                ".page",
+                ".pagination",
                 ""
         );
         final QuizListModel q2 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Which class adds a heading to a panel?",
+                ".panel-heading",
+                ".panel-head",
+                ".panel-footer",
+                ".panel-header",
+                ".panel-heading",
                 ""
         );
         final QuizListModel q3 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "In the following code, what does the number 4 represent?\n" +"<div class=\"col-md-4\">",
+                "the span of the column",
+                "the height of the column",
+                "the responsiveness",
+                "how many columns are in a row",
+                "the span of the column",
                 ""
         );
         final QuizListModel q4 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "What are the Bootstrap classes for creating columns?",
+                ".#-col .sm-#-col .md-#-col .lg-#-col .xl-#-col",
+                ".large .medium ,small .extrasmall",
+                ".col-1 .col-2 .col-3 .col-4",
+                ".col-# .col-sm-# .col-md-# .col-lg-# .col-xl-#",
+                ".col-# .col-sm-# .col-md-# .col-lg-# .col-xl-#",
                 ""
         );
         final QuizListModel q5 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "A standard navigation bar is created with:",
+                "<nav class=\"nav navbar\">",
+                "<nav class=\"navigationbar navbar-default\">",
+                "<nav class=\"navbar navbar-default\">",
+                "<nav class=\"navbar default-navbar\">",
+                "<nav class=\"navbar navbar-default\">",
                 ""
         );
         final QuizListModel q6 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Which class is used to create a black navigation bar?",
+                ".navbar-inverse",
+                ".navbar-black",
+                ".navbar-dark",
+                ".navbar-default",
+                ".navbar-inverse",
                 ""
         );
         final QuizListModel q7 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Which plugin is used to create a modal window?",
+                "Dialog Box",
+                "Modal",
+                "Popup",
+                "Window",
+                "Modal",
                 ""
         );
         final QuizListModel q8 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Which contextual class indicates a successful or positive action?",
+                ".text-primary",
+                ".text-warning",
+                ".text-success",
+                ".text-info",
+                ".text-success",
                 ""
         );
         final QuizListModel q9 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Which class is used to create a big box for calling extra attention?",
+                ".bigbox",
+                ".jumbotron",
+                "There is no such class",
+                ".container",
+                "There is no such class",
                 ""
         );
         final QuizListModel q10 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Which button class is used to create a large button?",
+                ".btn-l",
+                ".btn-lg",
+                ".btn-large",
+                ".btn-l2",
+                ".btn-lg",
                 ""
         );
         questionLists.add(q1);
@@ -12822,613 +9163,125 @@ public class QuizQuestionsBank {
     private static List<QuizListModel> BootstrapQuiz5() {
         final List<QuizListModel> questionLists = new ArrayList<>();
         final QuizListModel q1 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Which class is used to create a loader?",
+                ".loader",
+                ".spinner",
+                ".spinner-loader",
+                ".spinner-border",
+                ".spinner-border",
                 ""
         );
         final QuizListModel q2 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Which class can be used to float an element to the right of the page?",
+                ".float-end",
+                ".float-right",
+                ".float-r",
+                ".float-start",
+                ".float-end",
                 ""
         );
         final QuizListModel q3 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "What is Bootstrap's homepage ?",
+                "https://w3schools.com",
+                "https://bootstrap.com",
+                "https://getbootstrap.com",
+                "https://getbootstrap.net",
+                "https://getbootstrap.com",
                 ""
         );
         final QuizListModel q4 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Different screen sizes are specified by Bootstrap with symbols?",
+                "very small, small, medium, big, very big",
+                "xs, sm, md, lg, xl",
+                "mobile, tablet, computer, monitor",
+                "None of the above",
+                "xs, sm, md, lg, xl",
                 ""
         );
         final QuizListModel q5 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Where is the HTML + Bootstrap code for a yellow orange button ?",
+                "<button class=\"btn btn-warning\">",
+                "<a href=\"#\" class=\"btn btn-outline-warning\">",
+                "<button class=\"btn-success\">",
+                "<a href=\"#\" class=\"btn-primary\">",
+                "<button class=\"btn btn-warning\">",
                 ""
         );
         final QuizListModel q6 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "<div class=“row”>" +
+                        "\n" +
+                        "<div class=“col-sm-6”>1</div>" +
+                        "\n" +
+                        "<div class=“col-sm-6”>2</div>" +
+                        "\n" +
+                        "</div>" +
+                        "\n" +
+                        "In the above code, what is the smallest screen size to divide the screen width into 2 equal columns ?",
+                "Desktop",
+                "Laptop",
+                "Tablet",
+                "Phone",
+                "Tablet",
                 ""
         );
         final QuizListModel q7 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Where is the HTML + Bootstrap code that creates a table that is compatible with different screen sizes?",
+                "<div class=“table-responsive”>" +
+                        "\n" +
+                        "..." +
+                        "\n" +
+                        "</div>",
+                "<table class=“table-responsive”>" +
+                        "\n" +
+                        "..." +
+                        "\n" +
+                        "</table>",
+                "<div class=“table-responsive”>" +
+                        "\n" +
+                        "<table class=“table”>" +
+                        "\n" +
+                        "..." +
+                        "\n" +
+                        "</table>" +
+                        "\n" +
+                        "</div>",
+                "None of the above",
+                "<div class=“table-responsive”>" +
+                        "\n" +
+                        "<table class=“table”>" +
+                        "\n" +
+                        "..." +
+                        "\n" +
+                        "</table>" +
+                        "\n" +
+                        "</div>",
                 ""
         );
         final QuizListModel q8 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Which Bootstrap class is used to display a message ?",
+                ".message",
+                ".alert",
+                ".table",
+                ".are not",
+                ".alert",
                 ""
         );
         final QuizListModel q9 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "What is Bootstrap's modal object used for?",
+                "Show a message",
+                "Create a compatibility table",
+                "Create a menu",
+                "None of the above",
+                "Show a message",
                 ""
         );
         final QuizListModel q10 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        questionLists.add(q1);
-        questionLists.add(q2);
-        questionLists.add(q3);
-        questionLists.add(q4);
-        questionLists.add(q5);
-        questionLists.add(q6);
-        questionLists.add(q7);
-        questionLists.add(q8);
-        questionLists.add(q9);
-        questionLists.add(q10);
-        return questionLists;
-    }
-    private static List<QuizListModel> BootstrapQuiz6() {
-        final List<QuizListModel> questionLists = new ArrayList<>();
-        final QuizListModel q1 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q2 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q3 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q4 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q5 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q6 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q7 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q8 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q9 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q10 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        questionLists.add(q1);
-        questionLists.add(q2);
-        questionLists.add(q3);
-        questionLists.add(q4);
-        questionLists.add(q5);
-        questionLists.add(q6);
-        questionLists.add(q7);
-        questionLists.add(q8);
-        questionLists.add(q9);
-        questionLists.add(q10);
-        return questionLists;
-    }
-    private static List<QuizListModel> BootstrapQuiz7() {
-        final List<QuizListModel> questionLists = new ArrayList<>();
-        final QuizListModel q1 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q2 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q3 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q4 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q5 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q6 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q7 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q8 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q9 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q10 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        questionLists.add(q1);
-        questionLists.add(q2);
-        questionLists.add(q3);
-        questionLists.add(q4);
-        questionLists.add(q5);
-        questionLists.add(q6);
-        questionLists.add(q7);
-        questionLists.add(q8);
-        questionLists.add(q9);
-        questionLists.add(q10);
-        return questionLists;
-    }
-    private static List<QuizListModel> BootstrapQuiz8() {
-        final List<QuizListModel> questionLists = new ArrayList<>();
-        final QuizListModel q1 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q2 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q3 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q4 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q5 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q6 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q7 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q8 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q9 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q10 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        questionLists.add(q1);
-        questionLists.add(q2);
-        questionLists.add(q3);
-        questionLists.add(q4);
-        questionLists.add(q5);
-        questionLists.add(q6);
-        questionLists.add(q7);
-        questionLists.add(q8);
-        questionLists.add(q9);
-        questionLists.add(q10);
-        return questionLists;
-    }
-    private static List<QuizListModel> BootstrapQuiz9() {
-        final List<QuizListModel> questionLists = new ArrayList<>();
-        final QuizListModel q1 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q2 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q3 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q4 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q5 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q6 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q7 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q8 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q9 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q10 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        questionLists.add(q1);
-        questionLists.add(q2);
-        questionLists.add(q3);
-        questionLists.add(q4);
-        questionLists.add(q5);
-        questionLists.add(q6);
-        questionLists.add(q7);
-        questionLists.add(q8);
-        questionLists.add(q9);
-        questionLists.add(q10);
-        return questionLists;
-    }
-    private static List<QuizListModel> BootstrapQuiz10() {
-        final List<QuizListModel> questionLists = new ArrayList<>();
-        final QuizListModel q1 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q2 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q3 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q4 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q5 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q6 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q7 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q8 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q9 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q10 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "What class in Bootstrap is used to group objects in a form?",
+                ".form-control",
+                ".group-form",
+                ".form-group",
+                ".form-input",
+                ".form-group",
                 ""
         );
         questionLists.add(q1);
@@ -13447,93 +9300,93 @@ public class QuizQuestionsBank {
     private static List<QuizListModel> NodeJsQuiz1() {
         final List<QuizListModel> questionLists = new ArrayList<>();
         final QuizListModel q1 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "In which of the following areas, Node.js is not advised to be used?",
+                "Single Page Applications",
+                "JSON APIs based Applications",
+                "CPU intensive applications",
+                "Data Intensive Realtime Applications (DIRT)",
+                "CPU intensive applications",
                 ""
         );
         final QuizListModel q2 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "What npm stands for?",
+                "Node Package Manager",
+                "Node Project Manager",
+                "New Project Manager",
+                "New Package Manager",
+                "Node Package Manager",
                 ""
         );
         final QuizListModel q3 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Buffer class is a global class and can be accessed in application without importing buffer module.",
+                "true",
+                "false",
+                "don't know",
+                "none of these",
+                "true",
                 ""
         );
         final QuizListModel q4 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Which method of fs module is used to close a file?",
+                "fs.close(fd, callback)",
+                "fs.closeFile(fd, callback)",
+                "fs.closePath(fd, callback)",
+                "None of the above.",
+                "fs.close(fd, callback)",
                 ""
         );
         final QuizListModel q5 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Which of the following is true about setTimeout(cb, ms) global function?",
+                "The setTimeout(cb, ms) global function is used to run callback cb after at least ms milliseconds.",
+                "The setTimeout(cb, ms) function returns an opaque value that represents the timer which can be used to clear the timer",
+                "Both of the above.",
+                "None of the above.",
+                "Both of the above.",
                 ""
         );
         final QuizListModel q6 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Is process a global object?",
+                "true",
+                "false",
+                "don't know",
+                "none of these",
+                "true",
                 ""
         );
         final QuizListModel q7 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Which of the following API creates a server?",
+                "net.createServer([options][, connectionListener])",
+                "net.connect(options[, connectionListener])",
+                "net.createConnection(port[, host][, connectListener])",
+                "None of the above.",
+                "net.createServer([options][, connectionListener])",
                 ""
         );
         final QuizListModel q8 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "net.isIP(input) returns 0 for invalid input.",
+                "true",
+                "false",
+                "don't know",
+                "none of these",
+                "true",
                 ""
         );
         final QuizListModel q9 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Which of the following module is required to create a web server?",
+                "url module",
+                "net module",
+                "http module",
+                "web module",
+                "http module",
                 ""
         );
         final QuizListModel q10 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "A stream fires data event when there is data available to read.",
+                "true",
+                "false",
+                "don't know",
+                "none of these",
+                "true",
                 ""
         );
         questionLists.add(q1);
@@ -13551,93 +9404,93 @@ public class QuizQuestionsBank {
     private static List<QuizListModel> NodeJsQuiz2() {
         final List<QuizListModel> questionLists = new ArrayList<>();
         final QuizListModel q1 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Which of the following is true about Node.JS?",
+                "Node.js is a JavaScript based framework/platform built on Google Chrome's JavaScript V8 Engine.",
+                "Node.JS is used to develop I/O intensive web applications like video streaming sites, single page applications and other web application.",
+                "Node.js is open source and is completely free to use.",
+                "All of the above.",
+                "All of the above.",
                 ""
         );
         final QuizListModel q2 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "What is use of Underscore Variable in REPL session?",
+                "to get the last command used.",
+                "to get the last result.",
+                "to store the result.",
+                "None of the above.",
+                "to get the last result.",
                 ""
         );
         final QuizListModel q3 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Which of the following is true with respect to Node.",
+                "Every API of Node js are asynchronous.",
+                "Node being a single thread, and uses async function calls to maintain the concurrency.",
+                "Node thread keeps an event loop and whenever any task get completed, it fires the corresponding event which signals the event listener function to get executed.",
+                "All of the above.",
+                "Node being a single thread, and uses async function calls to maintain the concurrency.",
                 ""
         );
         final QuizListModel q4 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Which of the following is true about File I/O in Node applications?",
+                "Node implements File I/O using simple wrappers around standard POSIX functions.",
+                "Node File System (fs) module should be imported for File I/O operations.",
+                "Both of the above.",
+                "None of the above.",
+                "Both of the above.",
                 ""
         );
         final QuizListModel q5 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Which of the following is true about __filename global object?",
+                "The __filename represents the filename of the code being executed.",
+                "The __filename represents the resolved absolute path of code file.",
+                "Both of the above.",
+                "None of the above.",
+                "Both of the above.",
                 ""
         );
         final QuizListModel q6 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Which of the following code prints current directory?",
+                "console.log('Current directory: ' + process.cwd());",
+                "console.log('Current directory: ' + console.cwd());",
+                "console.log('Current directory: ' + process.currenWorkingDirectory());",
+                "None of the above.",
+                "console.log('Current directory: ' + process.cwd());",
                 ""
         );
         final QuizListModel q7 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Which of the following code print the platform of operating system?",
+                "console.log('platform : ' + os.platform);",
+                "console.log('platform : ' + os.platform());",
+                "console.log('platform : ' + os.getPlatform());\n",
+                "None of the above.",
+                "console.log('platform : ' + os.platform());",
                 ""
         );
         final QuizListModel q8 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Which of the following is true about internal binding with respect to domain module?",
+                "Error emmitter is executing its code within run method of a domain.",
+                "Error emmitter is added explicitly to a domain using its add method.",
+                "Both of the above.",
+                "None of the above.",
+                "Error emmitter is executing its code within run method of a domain.",
                 ""
         );
         final QuizListModel q9 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Node.js is ___________ Language.",
+                "Server Side",
+                "Client Side",
+                "Both",
+                "None of these",
+                "Server Side",
                 ""
         );
         final QuizListModel q10 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Node.js is written in _____________ .",
+                "Javascript",
+                "C",
+                "C++",
+                "All of the Above",
+                "All of the Above",
                 ""
         );
         questionLists.add(q1);
@@ -13655,93 +9508,93 @@ public class QuizQuestionsBank {
     private static List<QuizListModel> NodeJsQuiz3() {
         final List<QuizListModel> questionLists = new ArrayList<>();
         final QuizListModel q1 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Is node js multithreaded?",
+                "Yes",
+                "No",
+                "Nothing",
+                "None of these",
+                "No",
                 ""
         );
         final QuizListModel q2 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Which extension is used to save NodeJs files?",
+                ".js",
+                ".node",
+                ".java",
+                ".txt",
+                ".js",
                 ""
         );
         final QuizListModel q3 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Node.js is ________ by default.",
+                "Synchronous",
+                "Multi-threaded",
+                "Asynchronous",
+                "None of the above",
+                "Asynchronous",
                 ""
         );
         final QuizListModel q4 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "How many Node object methods are available?",
+                "19",
+                "18",
+                "20",
+                "21",
+                "18",
                 ""
         );
         final QuizListModel q5 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "What is the default scope in Node.js application",
+                "Global",
+                "Local",
+                "Global Function",
+                "Local to object",
+                "Local",
                 ""
         );
         final QuizListModel q6 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Why a Node.JS code is pretty fast although being written in JavaScript?",
+                "Node.JS internally converts JavaScript code to Java based code and then execute the same",
+                "Node.JS internally converts JavaScript code to C based code and then execute the same",
+                "Being built on Google Chrome's V8 JavaScript Engine",
+                "None of the above",
+                "Being built on Google Chrome's V8 JavaScript Engine",
                 ""
         );
         final QuizListModel q7 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "How to test if two nodes are equal?",
+                "isEqualNode()",
+                "equal()",
+                "==",
+                "None of the above",
+                "isEqualNode()",
                 ""
         );
         final QuizListModel q8 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Which module is used to serve static resources in Node.js?",
+                "node-static",
+                "http",
+                "node-resource",
+                "static",
+                "node-static",
                 ""
         );
         final QuizListModel q9 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Node.js supports which of the following platform?",
+                "Windows",
+                "Macintosh",
+                "Unix/Linux",
+                "All of the above",
+                "All of the above",
                 ""
         );
         final QuizListModel q10 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "The Node.js modules can be exposed using _________.",
+                "module.expose",
+                "module",
+                "module.exports",
+                "All of the above",
+                "module.exports",
                 ""
         );
         questionLists.add(q1);
@@ -13759,93 +9612,93 @@ public class QuizQuestionsBank {
     private static List<QuizListModel> NodeJsQuiz4() {
         final List<QuizListModel> questionLists = new ArrayList<>();
         final QuizListModel q1 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Third-party packages can be install/update/delete using ________.",
+                "Node Package Manager",
+                "Node.exe",
+                "module.exports",
+                "REPL",
+                "Node Package Manager",
                 ""
         );
         final QuizListModel q2 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Node.js application runs on __________.",
+                "Multiple threads",
+                "Single thread",
+                "Multiple Processes",
+                "Single Process",
+                "Single thread",
                 ""
         );
         final QuizListModel q3 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Which of the following core module is used to create a web server in Node.js?",
+                "fs",
+                "url",
+                "connect",
+                "http",
+                "http",
                 ""
         );
         final QuizListModel q4 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Simple or complex functionality organized in a single or multiple JavaScript files which can be reused throughout your Node.js application is called",
+                "Module",
+                "Library",
+                "Package",
+                "Function",
+                "Module",
                 ""
         );
         final QuizListModel q5 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Which of the following class is used to create and consume custom events in Node.js?",
+                "EventEmitter",
+                "Events",
+                "NodeEvent",
+                "None of the above",
+                "EventEmitter",
                 ""
         );
         final QuizListModel q6 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Which of the following is a GUI-based debugging tool for Node.js?",
+                "Core node debugger",
+                "Console",
+                "REPL",
+                "Node Inspector",
+                "Node Inspector",
                 ""
         );
         final QuizListModel q7 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Which of the followings are web application frameworks for Node.js?",
+                "Express.js",
+                "Geddy",
+                "Locomotive",
+                "All of the above",
+                "All of the above",
                 ""
         );
         final QuizListModel q8 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Which of the following types of application can be built using Node.js?",
+                "Web Application",
+                "Chat Application",
+                "RESTful Service",
+                "All of the above",
+                "All of the above",
                 ""
         );
         final QuizListModel q9 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Node.js application can access which of the following databases?",
+                "NoSQL databases",
+                "Relational databases",
+                "All of the above",
+                "None of the above",
+                "None of the above",
                 ""
         );
         final QuizListModel q10 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Which of the following template engines can be used with Node.js?",
+                "Jade",
+                "Vash",
+                "Handlebars",
+                "All of the above",
+                "All of the above",
                 ""
         );
         questionLists.add(q1);
@@ -13863,613 +9716,93 @@ public class QuizQuestionsBank {
     private static List<QuizListModel> NodeJsQuiz5() {
         final List<QuizListModel> questionLists = new ArrayList<>();
         final QuizListModel q1 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
+                "The Node.js modules can be exposed using",
+                "module.expose",
+                "module",
+                "module.exports",
+                "All of the above",
                 "",
                 ""
         );
         final QuizListModel q2 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Which statement executes the code of sample.js file?",
+                "nodejs sample.js",
+                "node sample.js",
+                "sample.js",
+                "None of the above",
+                "node sample.js",
                 ""
         );
         final QuizListModel q3 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "How can we check the current version of NPM?",
+                "npm --version",
+                "npm --ver",
+                "npm help",
+                "None of the above",
+                "npm --version",
                 ""
         );
         final QuizListModel q4 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "How can we create instance of http module?",
+                "var http = require(\"http\")",
+                "var http = new require(\"http\")",
+                "var http = new http()",
+                "None of the above",
+                "None of the above",
                 ""
         );
         final QuizListModel q5 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Which of following are a valid form of route path?",
+                "strings",
+                "string patterns",
+                "regular expressions",
+                "All of above",
+                "All of above",
                 ""
         );
         final QuizListModel q6 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Which of the following shortcut command is used to kill a process in Node.js?",
+                "Ctrl + B",
+                "Ctrl + K",
+                "Ctrl + T",
+                "Ctrl + C",
+                "Ctrl + C",
                 ""
         );
         final QuizListModel q7 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Which of the following tool is used to automate the various tasks of the Node.js application?",
+                "Express.js",
+                "GruntJS",
+                "NPM",
+                "None of the above",
+                "GruntJS",
                 ""
         );
         final QuizListModel q8 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Which of the following areas, Node.js, is not advised to be used?",
+                "Single Page Applications",
+                "JSON APIs based Applications",
+                "CPU intensive applications",
+                "Data-Intensive Real-time Applications (DIRT)",
+                "CPU intensive applications",
                 ""
         );
         final QuizListModel q9 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Which of the following route parameter formats are valid?",
+                "/books/!:from-:to",
+                "/flights/:from-:to",
+                "/users/:userId/books/:bookId",
+                "None of the above.",
+                "/books/!:from-:to",
                 ""
         );
         final QuizListModel q10 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        questionLists.add(q1);
-        questionLists.add(q2);
-        questionLists.add(q3);
-        questionLists.add(q4);
-        questionLists.add(q5);
-        questionLists.add(q6);
-        questionLists.add(q7);
-        questionLists.add(q8);
-        questionLists.add(q9);
-        questionLists.add(q10);
-        return questionLists;
-    }
-    private static List<QuizListModel> NodeJsQuiz6() {
-        final List<QuizListModel> questionLists = new ArrayList<>();
-        final QuizListModel q1 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q2 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q3 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q4 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q5 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q6 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q7 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q8 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q9 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q10 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        questionLists.add(q1);
-        questionLists.add(q2);
-        questionLists.add(q3);
-        questionLists.add(q4);
-        questionLists.add(q5);
-        questionLists.add(q6);
-        questionLists.add(q7);
-        questionLists.add(q8);
-        questionLists.add(q9);
-        questionLists.add(q10);
-        return questionLists;
-    }
-    private static List<QuizListModel> NodeJsQuiz7() {
-        final List<QuizListModel> questionLists = new ArrayList<>();
-        final QuizListModel q1 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q2 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q3 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q4 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q5 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q6 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q7 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q8 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q9 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q10 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        questionLists.add(q1);
-        questionLists.add(q2);
-        questionLists.add(q3);
-        questionLists.add(q4);
-        questionLists.add(q5);
-        questionLists.add(q6);
-        questionLists.add(q7);
-        questionLists.add(q8);
-        questionLists.add(q9);
-        questionLists.add(q10);
-        return questionLists;
-    }
-    private static List<QuizListModel> NodeJsQuiz8() {
-        final List<QuizListModel> questionLists = new ArrayList<>();
-        final QuizListModel q1 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q2 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q3 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q4 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q5 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q6 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q7 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q8 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q9 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q10 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        questionLists.add(q1);
-        questionLists.add(q2);
-        questionLists.add(q3);
-        questionLists.add(q4);
-        questionLists.add(q5);
-        questionLists.add(q6);
-        questionLists.add(q7);
-        questionLists.add(q8);
-        questionLists.add(q9);
-        questionLists.add(q10);
-        return questionLists;
-    }
-    private static List<QuizListModel> NodeJsQuiz9() {
-        final List<QuizListModel> questionLists = new ArrayList<>();
-        final QuizListModel q1 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q2 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q3 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q4 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q5 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q6 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q7 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q8 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q9 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q10 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        questionLists.add(q1);
-        questionLists.add(q2);
-        questionLists.add(q3);
-        questionLists.add(q4);
-        questionLists.add(q5);
-        questionLists.add(q6);
-        questionLists.add(q7);
-        questionLists.add(q8);
-        questionLists.add(q9);
-        questionLists.add(q10);
-        return questionLists;
-    }
-    private static List<QuizListModel> NodeJsQuiz10() {
-        final List<QuizListModel> questionLists = new ArrayList<>();
-        final QuizListModel q1 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q2 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q3 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q4 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q5 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q6 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q7 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q8 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q9 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q10 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Which of the following method is used to compare the placement of two nodes in the DOM hierarchy (document)?",
+                "cloneNode()",
+                "compareDocumentPosition()",
+                "getFeature()",
+                "getUserData()",
+                "compareDocumentPosition()",
                 ""
         );
         questionLists.add(q1);
@@ -14488,93 +9821,93 @@ public class QuizQuestionsBank {
     private static List<QuizListModel> ExpressJsQuiz1() {
         final List<QuizListModel> questionLists = new ArrayList<>();
         final QuizListModel q1 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Express is a minimal and flexible _______ web application framework.",
+                "Node.js",
+                "React.js",
+                "Redux.js",
+                "Angular.js",
+                "Node.js",
                 ""
         );
         final QuizListModel q2 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Express.js, or simply Express, is a _________ web application framework for Node.js",
+                "Front-end",
+                "Back-end",
+                "Database",
+                "None of the above",
+                "Back-end",
                 ""
         );
         final QuizListModel q3 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Pug earlier known as ?",
+                "Terse",
+                "DRY",
+                "Express",
+                "Jade",
+                "Jade",
                 ""
         );
         final QuizListModel q4 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Backlog arguments defines as?",
+                "A port number on which the server should accept incoming requests.",
+                "Name of the domain",
+                "The maximum number of queued pending connections",
+                "An asynchronous function that is called when the server starts listening for requests.",
+                "The maximum number of queued pending connections",
                 ""
         );
         final QuizListModel q5 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Which method requests that the server accept the data enclosed in the request as a modification to existing object identified by the URI?",
+                "GET",
+                "DELETE",
+                "PUT",
+                "POST",
+                "PUT",
                 ""
         );
         final QuizListModel q6 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "This method of using values is called ?",
+                "filters",
+                "interpolation",
+                "inheritance",
+                "includes",
+                "interpolation",
                 ""
         );
         final QuizListModel q7 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "What are core features of Express framework?",
+                "Allows to set up middlewares to respond to HTTP Requests",
+                "Defines a routing table which can works as per HTTP Method and URL",
+                "Dynamically render HTML Pages",
+                "All of the above",
+                "All of the above",
                 ""
         );
         final QuizListModel q8 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "_________ is a middleware which parses cookies attached to the client request object.",
+                "cookie",
+                "req.cookies",
+                "cookie-parser",
+                "None of the above",
+                "cookie-parser",
                 ""
         );
         final QuizListModel q9 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "_____________ allows us to easily create a skeleton for a web application",
+                "Authentication",
+                "APIs",
+                "Debugging",
+                "Scaffolding",
+                "Scaffolding",
                 ""
         );
         final QuizListModel q10 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "In order to use Mongo with Express, we need a client API for node.",
+                "TRUE",
+                "FALSE",
+                "Can be true or false",
+                "Can not say",
+                "TRUE",
                 ""
         );
         questionLists.add(q1);
@@ -14592,93 +9925,93 @@ public class QuizQuestionsBank {
     private static List<QuizListModel> ExpressJsQuiz2() {
         final List<QuizListModel> questionLists = new ArrayList<>();
         final QuizListModel q1 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Who was developed by Express.Js ?",
+                "Larry wall",
+                "TJ Holowaychuk",
+                "Rob Pike",
+                "Rich Hikey",
+                "TJ Holowaychuk",
                 ""
         );
         final QuizListModel q2 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Express.Js was initially released in",
+                "November 2010",
+                "November 2011",
+                "December 2010",
+                "December 2011",
+                "November 2010",
                 ""
         );
         final QuizListModel q3 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "How to store local variables that can be access within the application?",
+                "Config file",
+                "Using database",
+                "Using app.locals",
+                "Using app.storage",
+                "Using app.locals",
                 ""
         );
         final QuizListModel q4 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Where is captured values are populated regarding route parameters are:",
+                "req.data",
+                "app.locals",
+                "req.params",
+                "Both A & B",
+                "req.params",
                 ""
         );
         final QuizListModel q5 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "How can we create chainable route handlers for a route path in ExpressJs ?",
+                "Using app.route()",
+                "Using app.routes()",
+                "Using app.router()",
+                "Using app.routing()",
+                "Using app.route()",
                 ""
         );
         final QuizListModel q6 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "What is Scaffolding in Express.js?",
+                "Yeoman",
+                "Express application generator",
+                "Handler functions",
+                "Both A & B",
+                "Both A & B",
                 ""
         );
         final QuizListModel q7 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "What is middleware in ExpressJs ?",
+                "function(req){ }",
+                "method(req){ }",
+                "function(req,res,next){ }",
+                "method(req,res,next){ }",
+                "function(req,res,next){ }",
                 ""
         );
         final QuizListModel q8 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Define templating in ExpressJs ?",
+                "Pug",
+                "EJS",
+                "Mustache",
+                "All of the above",
+                "All of the above",
                 ""
         );
         final QuizListModel q9 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "In ExpressJS, the method app.all(path, callback [, callback ...])",
+                "TRUE",
+                "FALSE",
+                "Can be true or false",
+                "Can not say",
+                "TRUE",
                 ""
         );
         final QuizListModel q10 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "How to use express js in node?",
+                "var = require('express')();",
+                "var_require('express')();",
+                "var app = require('express')();",
+                "None of them",
+                "var app = require('express')();",
                 ""
         );
         questionLists.add(q1);
@@ -14696,93 +10029,121 @@ public class QuizQuestionsBank {
     private static List<QuizListModel> ExpressJsQuiz3() {
         final List<QuizListModel> questionLists = new ArrayList<>();
         final QuizListModel q1 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "What will be the output of the following code in the console?\n" +
+                        "File: my_module.js  \n" +
+                        "exports.name = 'Zeus';  \n" +
+                        "Code:  \n" +
+                        "var my_module = require('./mymodule');  \n" +
+                        "console.log((function(settings){  \n" +
+                        "    return settings.split('').reverse().join('')  \n" +
+                        "})(my_module.name));",
+                "Error",
+                "Zeus",
+                "undefined",
+                "sueZ",
+                "Error",
                 ""
         );
         final QuizListModel q2 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Which of the following function arguments are available to Express.js Route handlers?",
+                "req - the request object",
+                "res - the response object",
+                "next",
+                "All of the above",
+                "All of the above",
                 ""
         );
         final QuizListModel q3 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Which of the following is the correct statement in the context of Express.js?",
+                "Express is a minimal and flexible Node.js web application framework.",
+                "Express is a minimal and flexible React.js web application framework.",
+                "Express is a minimal and flexible Redux.js web application framework.",
+                "Express is a minimal and flexible Angular.js web application framework.",
+                "Express is a minimal and flexible Node.js web application framework.",
                 ""
         );
         final QuizListModel q4 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Cookies are the complex, large files/data sent to the server with a client request and stored on the server-side.",
+                "This statement is true.",
+                "This statement is false.",
+                "Can be true or false",
+                "Cannot say.",
+                "This statement is false.",
                 ""
         );
         final QuizListModel q5 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "HTTP is stateless.",
+                "This statement is true.",
+                "This statement is false.",
+                "Can be true or false",
+                "Cannot say.",
+                "This statement is true.",
                 ""
         );
         final QuizListModel q6 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                " Imagine that you sent following ajax request:\n" +
+                        "$.post(\"/process\", {name:'john'}, function(data){\n" +
+                        "    // Do some stuff\n" +
+                        "});" +
+                        " \n" +
+                        "What will be the answer from the server?\n" +
+                        "Tip: On server side, we have the code which is given below" +
+                        " \n" +
+                        "Code:\n" +
+                        "app.post('/process', function(req, res){\n" +
+                        "    var data = '';" +
+                        " \n" +
+                        "    if(req.xhr){\n" +
+                        "        data += 'One';\n" +
+                        "    }" +
+                        " \n" +
+                        "    if(req.body.name){\n" +
+                        "        data += 'Two';\n" +
+                        "    }" +
+                        " \n" +
+                        "    res.send(data);\n" +
+                        "});",
+                "OneTwo'",
+                "'One'",
+                "'Two'",
+                "All of these",
+                "OneTwo'",
                 ""
         );
         final QuizListModel q7 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Express is based on :",
+                "Python",
+                "React.js",
+                "Node.js",
+                "C",
+                "Node.js",
                 ""
         );
         final QuizListModel q8 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "What web server is Node.js on by default?",
+                "Nginx",
+                "Npm",
+                "Apache",
+                "Its own web server",
+                "Its own web server",
                 ""
         );
         final QuizListModel q9 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "What is the terminal command to run a server file?",
+                "node server.js",
+                "npm server.js",
+                "call app.use()",
+                "node run()",
+                "node server.js",
                 ""
         );
         final QuizListModel q10 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "What are middleware functions for?",
+                "To run the codes, make changes to  the request and response  object, etc.",
+                "To use static files in your application.",
+                "Both",
+                "None of them",
+                "To run the codes, make changes to  the request and response  object, etc.",
                 ""
         );
         questionLists.add(q1);
@@ -14800,93 +10161,93 @@ public class QuizQuestionsBank {
     private static List<QuizListModel> ExpressJsQuiz4() {
         final List<QuizListModel> questionLists = new ArrayList<>();
         final QuizListModel q1 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "All Node.js APIs are:",
+                "Synchronous",
+                "Asynchronous",
+                "Both",
+                "Neither of the two.",
+                "Both",
                 ""
         );
         final QuizListModel q2 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "In ExpressJs what is the response that accepts all HTTP methods?",
+                "methode app.all(path, callback [,callback...])",
+                "methode app.one(path, callback [,callback...])",
+                "methode app.many(path, callback [,callback...])",
+                "methode app.none(path, callback [,callback...])",
+                "methode app.all(path, callback [,callback...])",
                 ""
         );
         final QuizListModel q3 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "How to install Nodemon using Node.js?",
+                "node install nodemon",
+                "npm install --save -dev nodemon",
+                "node install -g nodemon",
+                "node i nodemon",
+                "npm install --save -dev nodemon",
                 ""
         );
         final QuizListModel q4 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "What function arguments are available to Express.js Route handlers?",
+                "req - the request object",
+                "res - the response object",
+                "next",
+                "All of the above",
+                "All of the above",
                 ""
         );
         final QuizListModel q5 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Which of the following is part of the Back end?",
+                "HTML",
+                "API",
+                "CSS",
+                "None of them",
+                "API",
                 ""
         );
         final QuizListModel q6 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "What is Back End?",
+                "It is a framework from NodeJS which is designed flexibly and simply to assist the back end application development stage .",
+                "Is part of the application that is visible and used directly by the user ( end-user ).",
+                "Is part of a computer system or application that is not directly accessed by the user, is responsible for storing and manipulating data.",
+                "It is an open-source and cross-platform runtime environment for JavaScript.",
+                "Is part of a computer system or application that is not directly accessed by the user, is responsible for storing and manipulating data.",
                 ""
         );
         final QuizListModel q7 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "What does API stand for?",
+                "Application Programming Interface",
+                "Application Programmer Interface",
+                "Applicator Programmer Interface",
+                "Application Programming Internal",
+                "Application Programming Interface",
                 ""
         );
         final QuizListModel q8 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "The task to serve between client and server is a function of ?",
+                "CSS",
+                "HTML",
+                "ExpressJS",
+                "API",
+                "API",
                 ""
         );
         final QuizListModel q9 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Below are the advantages of using expressJS in the backend, Except ?",
+                "Express can create simple APIs",
+                "Easily connect with databases like MySQL and MongoDB",
+                "Can create web or application automatically",
+                "Easy to configure and customize",
+                "Can create web or application automatically",
                 ""
         );
         final QuizListModel q10 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Which of the following must be installed to use expressJS in this workshop?",
+                "Adobe Photoshop",
+                "Adobe Premiere",
+                "Sublime",
+                "NodeJS",
+                "NodeJS",
                 ""
         );
         questionLists.add(q1);
@@ -14904,613 +10265,123 @@ public class QuizQuestionsBank {
     private static List<QuizListModel> ExpressJsQuiz5() {
         final List<QuizListModel> questionLists = new ArrayList<>();
         final QuizListModel q1 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Which of the following statements is correct about Express.JS",
+                "Express.JS is a framework for creating HTTP Servers using Node.JS",
+                "Express.JS is a javascript runtime environment that runs in an Operating System",
+                "Express.JS is a library used to create client side applications",
+                "None of them",
+                "Express.JS is a framework for creating HTTP Servers using Node.JS",
                 ""
         );
         final QuizListModel q2 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Which of the following commands is correct to install express in a node.js project?",
+                "npm install express",
+                "npm install -g express",
+                "Both",
+                "None of them",
+                "npm install express",
                 ""
         );
         final QuizListModel q3 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Which of the code below is correct to import express module inside node.js?",
+                "use \"express\"",
+                "require(\"express\")",
+                "require(\"./express\")",
+                "None of them",
+                "require(\"express\")",
                 ""
         );
         final QuizListModel q4 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "To run the HTTP server from the express application instance , what method do we use?",
+                "listen",
+                "start",
+                "run",
+                "spin",
+                "listen",
                 ""
         );
         final QuizListModel q5 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "What method do we use to respond to the client in HTML which has dynamically rendered content in express?",
+                "send",
+                "json",
+                "render",
+                "None of them",
+                "render",
                 ""
         );
         final QuizListModel q6 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "How to install the jsonwebtoken package ?",
+                "npm i --save jsonwebtoken",
+                "npm i --save jwt",
+                "npm i --save express-jwt",
+                "None of them",
+                "npm i --save jsonwebtoken",
                 ""
         );
         final QuizListModel q7 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "How long is the token generated below?\n" +
+                        "const token = jwt.sign(" +
+                        "\n" +
+                        "{ exp: Math.floor(Date.now() / 1000) + 300, data: user[0], }, secretKey )",
+                "300 ms",
+                "5 min",
+                "5 s",
+                "300 s",
+                "5 min",
                 ""
         );
         final QuizListModel q8 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Which method of the jsonwebtoken component takes care of determining if a token is valid?",
+                "validate",
+                "sign",
+                "verify",
+                "None of them",
+                "verify",
                 ""
         );
         final QuizListModel q9 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "What is express-fileupload?",
+                "It is a plugin that is mainly used to provide our server with the functionality of creating files on the backend side and saving them on disk",
+                "It is a plugin that is mainly used to provide our server with the “Upload File” functionality.",
+                "It is a plugin that is mainly used to provide our server with the “Download File” functionality.",
+                "None of them",
+                "It is a plugin that is mainly used to provide our server with the “Upload File” functionality.",
                 ""
         );
         final QuizListModel q10 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "How is Express-fileupload integrated?",
+                "node install --save express-fileupload",
+                "npm install --load express-fileupload",
+                "npm install --save express-fileupload",
+                "None of them",
+                "npm install --save express-fileupload",
                 ""
         );
-        questionLists.add(q1);
-        questionLists.add(q2);
-        questionLists.add(q3);
-        questionLists.add(q4);
-        questionLists.add(q5);
-        questionLists.add(q6);
-        questionLists.add(q7);
-        questionLists.add(q8);
-        questionLists.add(q9);
-        questionLists.add(q10);
-        return questionLists;
-    }
-    private static List<QuizListModel> ExpressJsQuiz6() {
-        final List<QuizListModel> questionLists = new ArrayList<>();
-        final QuizListModel q1 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+        final QuizListModel q11 = new QuizListModel(
+                 "In the Express-fileupload configuration object, the \"limits\" property is used to:",
+                "It is a property that receives a boolean value and prohibits the upload of files when the defined limit is exceeded",
+                "It is an object in which we can define, through the “fileSize” attribute, the maximum number of Bytes that the package will allow for file uploads.",
+                "Its value will be a string that will be returned to the client when the weight of the file that is trying to be loaded is exceeded.",
+                "None of them",
+                "It is an object in which we can define, through the “fileSize” attribute, the maximum number of Bytes that the package will allow for file uploads.",
                 ""
         );
-        final QuizListModel q2 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+        final QuizListModel q12 = new QuizListModel(
+                "The proper way to occupy the body-parser component is:",
+                "app.get(bodyParser.urlencoded({ extended: true })); app.get(bodyParser.json());",
+                "app.use(bodyParser.urlencoded({ extended: true })); app.use(bodyParser.json());",
+                "app.activate(bodyParser.urlencoded({ extended: true })); app.activate(bodyParser.json());",
+                "None of them",
+                "app.use(bodyParser.urlencoded({ extended: true })); app.use(bodyParser.json());",
                 ""
         );
-        final QuizListModel q3 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q4 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q5 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q6 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q7 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q8 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q9 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q10 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        questionLists.add(q1);
-        questionLists.add(q2);
-        questionLists.add(q3);
-        questionLists.add(q4);
-        questionLists.add(q5);
-        questionLists.add(q6);
-        questionLists.add(q7);
-        questionLists.add(q8);
-        questionLists.add(q9);
-        questionLists.add(q10);
-        return questionLists;
-    }
-    private static List<QuizListModel> ExpressJsQuiz7() {
-        final List<QuizListModel> questionLists = new ArrayList<>();
-        final QuizListModel q1 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q2 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q3 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q4 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q5 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q6 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q7 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q8 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q9 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q10 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        questionLists.add(q1);
-        questionLists.add(q2);
-        questionLists.add(q3);
-        questionLists.add(q4);
-        questionLists.add(q5);
-        questionLists.add(q6);
-        questionLists.add(q7);
-        questionLists.add(q8);
-        questionLists.add(q9);
-        questionLists.add(q10);
-        return questionLists;
-    }
-    private static List<QuizListModel> ExpressJsQuiz8() {
-        final List<QuizListModel> questionLists = new ArrayList<>();
-        final QuizListModel q1 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q2 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q3 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q4 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q5 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q6 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q7 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q8 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q9 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q10 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        questionLists.add(q1);
-        questionLists.add(q2);
-        questionLists.add(q3);
-        questionLists.add(q4);
-        questionLists.add(q5);
-        questionLists.add(q6);
-        questionLists.add(q7);
-        questionLists.add(q8);
-        questionLists.add(q9);
-        questionLists.add(q10);
-        return questionLists;
-    }
-    private static List<QuizListModel> ExpressJsQuiz9() {
-        final List<QuizListModel> questionLists = new ArrayList<>();
-        final QuizListModel q1 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q2 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q3 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q4 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q5 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q6 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q7 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q8 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q9 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q10 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        questionLists.add(q1);
-        questionLists.add(q2);
-        questionLists.add(q3);
-        questionLists.add(q4);
-        questionLists.add(q5);
-        questionLists.add(q6);
-        questionLists.add(q7);
-        questionLists.add(q8);
-        questionLists.add(q9);
-        questionLists.add(q10);
-        return questionLists;
-    }
-    private static List<QuizListModel> ExpressJsQuiz10() {
-        final List<QuizListModel> questionLists = new ArrayList<>();
-        final QuizListModel q1 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q2 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q3 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q4 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q5 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q6 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q7 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q8 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q9 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q10 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+        final QuizListModel q13 = new QuizListModel(
+                "The correct way to delete an image file on the server (from the Express.js environment), could be:",
+                "fs.delete(`${__dirname}/public/images/${name}.jpg`, (err) => { res.send(`Image ${name} deleted successfully`);",
+                "fs.erase(`${__dirname}/public/images/${name}.jpg`, (err) => { res.send(`Image ${name} was deleted successfully`);",
+                "fs.unlink(`${__dirname}/public/images/${name}.jpg`, (err) => { res.send(`Image ${name} was successfully removed`);",
+                "None of them",
+                "fs.unlink(`${__dirname}/public/images/${name}.jpg`, (err) => { res.send(`Image ${name} was successfully removed`);",
                 ""
         );
         questionLists.add(q1);
@@ -15529,93 +10400,93 @@ public class QuizQuestionsBank {
     private static List<QuizListModel> LaravelQuiz1() {
         final List<QuizListModel> questionLists = new ArrayList<>();
         final QuizListModel q1 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "The _______ directory contains your project’s cache, session and log data.",
+                "Database",
+                "Public",
+                "Resources",
+                "Storage",
+                "Storage",
                 ""
         );
         final QuizListModel q2 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Laravel is based on___________________",
+                "MVVM Design Pattern",
+                "Composite Design Pattern",
+                "MVC Design Pattern",
+                "Singleton Design Pattern",
+                "MVC Design Pattern",
                 ""
         );
         final QuizListModel q3 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Which one Laravel command line interface?",
+                "composer",
+                "php artisan",
+                "git",
+                "CLI",
+                "php artisan",
                 ""
         );
         final QuizListModel q4 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Which of following command is used to remove the compiled class file in Laravel?",
+                "php artisan clear-compiled",
+                "php artisan down",
+                "php artisan clear-class",
+                "php artisan inspire",
+                "php artisan clear-compiled",
                 ""
         );
         final QuizListModel q5 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "How to define an mutator in Laravel?",
+                "setNameAttribute method inside controller",
+                "setNameAttribute method inside model",
+                "setMutator method inside controller",
+                "None of them",
+                "setNameAttribute method inside model",
                 ""
         );
         final QuizListModel q6 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Does Laravel Support Caching?",
+                "Yes",
+                "No",
+                "May be",
+                "None of them",
+                "Yes",
                 ""
         );
         final QuizListModel q7 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Where do we need to set database connection in Laravel?",
+                "config.php",
+                "setting.php",
+                ".ENV file",
+                "In seed files",
+                ".ENV file",
                 ""
         );
         final QuizListModel q8 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "What would this touch() function do? $obj= User::find(1); $obj->touch();",
+                "store a user object in cache",
+                "created a new filed in database",
+                "update updated_at to current timestamp",
+                "None of the Above",
+                "update updated_at to current timestamp",
                 ""
         );
         final QuizListModel q9 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Which command is used to start laravel server?",
+                "php artisan serve",
+                "php artisan project_name",
+                "php artisan start php",
+                "artisan start-server",
+                "php artisan serve",
                 ""
         );
         final QuizListModel q10 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Which command is used to create a new project in Laravel?",
+                "php composer.phar create-project --pref-dist laravel/laravel lar-project \"5.7.*\"",
+                "php composer.phar create-project --prefer-dist laravel/laravel lar-project \"5.7.*\"",
+                "php compose.phar create-project --prefer-dist laravel/laravel lar-project \"5.7.*\"",
+                "php composer.phar create-project --prefer-di laravel/laravel lar-project \"5.7.*\"",
+                "php composer.phar create-project --prefer-dist laravel/laravel lar-project \"5.7.*\"",
                 ""
         );
         questionLists.add(q1);
@@ -15633,93 +10504,93 @@ public class QuizQuestionsBank {
     private static List<QuizListModel> LaravelQuiz2() {
         final List<QuizListModel> questionLists = new ArrayList<>();
         final QuizListModel q1 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Composer is a tool for ______ in PHP.",
+                "Interpolation",
+                "configuration",
+                "dependency management",
+                "None of the above",
+                "dependency management",
                 ""
         );
         final QuizListModel q2 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "What is it Blade?",
+                "Template Engine",
+                "package",
+                "view file",
+                "framework",
+                "Template Engine",
                 ""
         );
         final QuizListModel q3 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Where is routing file located in Laravel?",
+                "public/",
+                "routes/",
+                "view/",
+                "None of the above",
+                "routes/",
                 ""
         );
         final QuizListModel q4 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Which command is used to create migrations in Laravel?",
+                "php artisan make:migration create_users_table",
+                "php artisan make:migrate create_users_table",
+                "php artisan migration create_users_table",
+                "All are Correct",
+                "php artisan make:migration create_users_table",
                 ""
         );
         final QuizListModel q5 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "The vendor directory contains ___.",
+                "Third-party code",
+                "Configuration files",
+                "Assets",
+                "Laravel Framework code",
+                "Third-party code",
                 ""
         );
         final QuizListModel q6 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Which of following Collection method returns all records from Laravel collection?",
+                "->get()",
+                "whereAll()",
+                "->where()",
+                "->all()",
+                "->all()",
                 ""
         );
         final QuizListModel q7 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Which one of the following command is used to create middleware in Laravel?",
+                "php artisan: middleware",
+                "php artisan make: middleware",
+                "php arti make: middleware",
+                "None of the above",
+                "php artisan make: middleware",
                 ""
         );
         final QuizListModel q8 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "How to remove a complied class file?",
+                "clear-compiled command",
+                "flush-compiled command",
+                "cache-compiled command",
+                "All are Correct",
+                "clear-compiled command",
                 ""
         );
         final QuizListModel q9 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "What do you mean by dd() function?",
+                "The full form of dd is Date and Day.",
+                "The full form of dd is Directory and Door.",
+                "The full form of dd is Diel and Deal.",
+                "The full form of dd is Dump and Die.",
+                "The full form of dd is Dump and Die.",
                 ""
         );
         final QuizListModel q10 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Which of the following function in Laravel checks that the desired table is exists in the database or not?",
+                "hasTab()",
+                "hashTable()",
+                "hasTable()",
+                "None of the above",
+                "hasTable()",
                 ""
         );
         questionLists.add(q1);
@@ -15737,93 +10608,93 @@ public class QuizQuestionsBank {
     private static List<QuizListModel> LaravelQuiz3() {
         final List<QuizListModel> questionLists = new ArrayList<>();
         final QuizListModel q1 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Which class is used in Laravel to handle exceptions?",
+                "App\\Exceptions\\Handler",
+                "App\\Exception\\Handler",
+                "App\\Exceptions\\Handle",
+                "None of the above",
+                "App\\Exceptions\\Handler",
                 ""
         );
         final QuizListModel q2 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Which method is used in Laravel to method to check request is ajax or not?",
+                "$request->ajaxRun()",
+                "$request->ajaxs()",
+                "$request->ajax()",
+                "None of the above",
+                "$request->ajax()",
                 ""
         );
         final QuizListModel q3 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Laravel is written in __ language.",
+                "PHP",
+                "JSP",
+                "ASP",
+                "All are Correct",
+                "PHP",
                 ""
         );
         final QuizListModel q4 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Query scope is a feature of Laravel where we can ____.",
+                "reuse similar queries",
+                "routes queries",
+                "seed queries",
+                "None of the above",
+                "reuse similar queries",
                 ""
         );
         final QuizListModel q5 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "In which directory controllers are kept in Laravel?",
+                "app/http/Views",
+                "app/http/Controllers",
+                "app/http/Model",
+                "app/http/routes",
+                "app/http/Controllers",
                 ""
         );
         final QuizListModel q6 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "How to get current environment in Laravel?",
+                "$environment = App::environment();",
+                "$environment = App::environ();",
+                "$environment = App::environments();",
+                "None of the above",
+                "$environment = App::environment();",
                 ""
         );
         final QuizListModel q7 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "In Laravel, @yield used for?",
+                "to extend an layout",
+                "to include a file",
+                "to display the contents of a given section",
+                "None of the above",
+                "to display the contents of a given section",
                 ""
         );
         final QuizListModel q8 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "After running \"artisan down\", The project will show the maintenance page. What would be HTTP Status return Code?",
+                "400",
+                "503",
+                "501",
+                "None",
+                "503",
                 ""
         );
         final QuizListModel q9 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Which directory contains “robot.txt” file ?",
+                "public",
+                "route",
+                "view",
+                "All are Correct",
+                "public",
                 ""
         );
         final QuizListModel q10 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "How to get current route name?",
+                "request()->route->getName()",
+                "request()->getName()",
+                "request()->route()->getName()",
+                "None of them",
+                "request()->route()->getName()",
                 ""
         );
         questionLists.add(q1);
@@ -15841,93 +10712,93 @@ public class QuizQuestionsBank {
     private static List<QuizListModel> LaravelQuiz4() {
         final List<QuizListModel> questionLists = new ArrayList<>();
         final QuizListModel q1 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "What is the minimum PHP version required to install Laravel 5.3?",
+                "5.6.4",
+                "5.4.3",
+                "5.4.1",
+                "None of the above",
+                "5.6.4",
                 ""
         );
         final QuizListModel q2 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "How to get current action name in Laravel?",
+                "request()->getActionMethod()",
+                "request()->route()->getActionMethod()",
+                "request()->DB->getActionMethod()",
+                "None of the above",
+                "request()->route()->getActionMethod()",
                 ""
         );
         final QuizListModel q3 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "What is the latest version of Laravel?er 2020.",
+                "8.0, released on 8th September",
+                "7.0, released on 8th September",
+                "6.0, released on 8th September",
+                "None of the above",
+                "8.0, released on 8th September",
                 ""
         );
         final QuizListModel q4 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "When was Laravel first released?",
+                "June 2009",
+                "June 2011",
+                "June 2007",
+                "All are Correct",
+                "June 2011",
                 ""
         );
         final QuizListModel q5 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "What does ORM stands for in laravel?",
+                "Object-Rotational Mechanism",
+                "Overloaded-relational Mapping",
+                "Object-relational Mapping",
+                "Object-related Modifier",
+                "Object-relational Mapping",
                 ""
         );
         final QuizListModel q6 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "How to check current laravel version install your system?",
+                "php artisan check --version",
+                "php artisan make --version",
+                "php artisan --version",
+                "None of the above",
+                "php artisan --version",
                 ""
         );
         final QuizListModel q7 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Controller is create in laravel by using ____ command.",
+                "php artisan make:controller --plain",
+                "php artisan make:request controller_name create",
+                "php artisan make: generate controller contoller_name",
+                "php artisan make:controller generate",
+                "php artisan make:controller --plain",
                 ""
         );
         final QuizListModel q8 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "How to set a session data in Laravel?",
+                "$request->session()->set('key', 'value');",
+                "$request->session()->put('key', 'value');",
+                "$request->db->session('key', 'value');",
+                "None of These",
+                "$request->session()->put('key', 'value');",
                 ""
         );
         final QuizListModel q9 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Interpolation of variable in laravel is done using ___.",
+                "{{}}",
+                "compact",
+                "helpers",
+                "None of the above",
+                "{{}}",
                 ""
         );
         final QuizListModel q10 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Which of the following methods are used in Database Migrations classes?",
+                "execute() and rollback()",
+                "save() and update()",
+                "up() and down()",
+                " run() and delete()",
+                "up() and down()",
                 ""
         );
         questionLists.add(q1);
@@ -15945,613 +10816,130 @@ public class QuizQuestionsBank {
     private static List<QuizListModel> LaravelQuiz5() {
         final List<QuizListModel> questionLists = new ArrayList<>();
         final QuizListModel q1 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "If you want to customize what file is generated via \"php artisan make:model\" command, what Artisan command you need to run?",
+                "php artisan stub:publish",
+                "php artisan make:publish",
+                "php artisan model:publish",
+                "php artisan publish",
+                "php artisan stub:publish",
                 ""
         );
         final QuizListModel q2 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Look at the code snippet. From Laravel 7, you can prepare your own casting mechanism, in a class. What should be the name of the methods, behind XXXXXXXX?\n" +
+                        "class Json implements CastsAttributes" +
+                        "{\n" +
+                        "    /**\n" +
+                        "     * Cast the given value.\n" +
+                        "     */\n" +
+                        "    public function XXXXXXXX($model, $key, $value, $attributes)\n" +
+                        "    {\n" +
+                        "        return json_decode($value, true);\n" +
+                        "    }" +
+                        "\n" +
+                        "    /**\n" +
+                        "     * Prepare the given value for storage.\n" +
+                        "     */\n" +
+                        "    public function XXXXXXXX($model, $key, $value, $attributes)\n" +
+                        "    {\n" +
+                        "        return json_encode($value);\n" +
+                        "    }\n" +
+                        "}",
+                "put() and pull()",
+                "in() and out()",
+                "from() and to()",
+                "get() and set()",
+                "get() and set()",
                 ""
         );
         final QuizListModel q3 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "What new array appeared in Laravel 7 in config/mail.php to configure multiple mail drivers?",
+                "drivers",
+                "vendors",
+                "mailers",
+                "services",
+                "mailers",
                 ""
         );
         final QuizListModel q4 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "What is the name of a new package for SPA Authentication that came out with Laravel 7?",
+                "Laravel Airwave",
+                "Laravel Sanctum",
+                "Laravel Dusk",
+                "Laravel Cors",
+                "Laravel Sanctum",
                 ""
         );
         final QuizListModel q5 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Route Model Binding in Laravel 7 gives us the ability to customize the field for the binding directly in the routes, instead of default \"id\". Look at the code snippet - what would you change to have post \"slug\" as a field for binding?\n" +
+                        "Route::get('api/posts/{post}', function (App\\Post $post) {\n" +
+                        "    return $post;\n" +
+                        "});",
+                "{post} to {slug}",
+                "{post} to {post:slug}",
+                "{post} to {post}/{slug}",
+                "\"return $post\" to \"return $post->slug\"",
+                "{post} to {post:slug}",
                 ""
         );
         final QuizListModel q6 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Laravel 7 now includes first-party support for... what?",
+                "CORS",
+                "Email sending",
+                "Tailwind UI",
+                "Algolia",
+                "CORS",
                 ""
         );
         final QuizListModel q7 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "In Laravel 7, you don't need to manually install Guzzle to make external requests. Look at the code snippet - what is hiding behind XXXXXXXX?\n" +
+                        "use Illuminate\\Support\\Facades\\XXXXXXXX;\n" +
+                        "// ...\n" +
+                        "$response = XXXXXXXX::get('http://test.com');",
+                "Guzzle",
+                "Request",
+                "Http",
+                "Response",
+                "Http",
                 ""
         );
         final QuizListModel q8 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Look at the code snippet for a Job. From Laravel 7, you can customize that command should fail if the retries are triggered by a given number of exceptions. What's the variable name behind XXXXXXXX?\n" +
+                        "namespace App\\Jobs;" +
+                        "\n" +
+                        "class ProcessPodcast implements ShouldQueue" +
+                        "{\n" +
+                        "    /**\n" +
+                        "     * The number of times the job may be attempted.\n" +
+                        "     */\n" +
+                        "    public $tries = 25;" +
+                        "\n" +
+                        "    /**\n" +
+                        "     * The maximum number of exceptions to allow before failing.\n" +
+                        "     */\n" +
+                        "    public $XXXXXXXX = 3;",
+                "maxErrors",
+                "maxExceptions",
+                "maxLimit",
+                "maxFailures",
+                "maxExceptions",
                 ""
         );
         final QuizListModel q9 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Which new Artisan command appeared in Laravel 7?",
+                "php artisan make:component",
+                "php artisan test",
+                "php artisan version",
+                "php artisan blade",
+                "php artisan test",
                 ""
         );
         final QuizListModel q10 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        questionLists.add(q1);
-        questionLists.add(q2);
-        questionLists.add(q3);
-        questionLists.add(q4);
-        questionLists.add(q5);
-        questionLists.add(q6);
-        questionLists.add(q7);
-        questionLists.add(q8);
-        questionLists.add(q9);
-        questionLists.add(q10);
-        return questionLists;
-    }
-    private static List<QuizListModel> LaravelQuiz6() {
-        final List<QuizListModel> questionLists = new ArrayList<>();
-        final QuizListModel q1 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q2 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q3 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q4 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q5 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q6 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q7 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q8 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q9 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q10 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        questionLists.add(q1);
-        questionLists.add(q2);
-        questionLists.add(q3);
-        questionLists.add(q4);
-        questionLists.add(q5);
-        questionLists.add(q6);
-        questionLists.add(q7);
-        questionLists.add(q8);
-        questionLists.add(q9);
-        questionLists.add(q10);
-        return questionLists;
-    }
-    private static List<QuizListModel> LaravelQuiz7() {
-        final List<QuizListModel> questionLists = new ArrayList<>();
-        final QuizListModel q1 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q2 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q3 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q4 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q5 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q6 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q7 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q8 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q9 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q10 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        questionLists.add(q1);
-        questionLists.add(q2);
-        questionLists.add(q3);
-        questionLists.add(q4);
-        questionLists.add(q5);
-        questionLists.add(q6);
-        questionLists.add(q7);
-        questionLists.add(q8);
-        questionLists.add(q9);
-        questionLists.add(q10);
-        return questionLists;
-    }
-    private static List<QuizListModel> LaravelQuiz8() {
-        final List<QuizListModel> questionLists = new ArrayList<>();
-        final QuizListModel q1 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q2 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q3 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q4 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q5 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q6 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q7 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q8 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q9 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q10 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        questionLists.add(q1);
-        questionLists.add(q2);
-        questionLists.add(q3);
-        questionLists.add(q4);
-        questionLists.add(q5);
-        questionLists.add(q6);
-        questionLists.add(q7);
-        questionLists.add(q8);
-        questionLists.add(q9);
-        questionLists.add(q10);
-        return questionLists;
-    }
-    private static List<QuizListModel> LaravelQuiz9() {
-        final List<QuizListModel> questionLists = new ArrayList<>();
-        final QuizListModel q1 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q2 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q3 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q4 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q5 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q6 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q7 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q8 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q9 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q10 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        questionLists.add(q1);
-        questionLists.add(q2);
-        questionLists.add(q3);
-        questionLists.add(q4);
-        questionLists.add(q5);
-        questionLists.add(q6);
-        questionLists.add(q7);
-        questionLists.add(q8);
-        questionLists.add(q9);
-        questionLists.add(q10);
-        return questionLists;
-    }
-    private static List<QuizListModel> LaravelQuiz10() {
-        final List<QuizListModel> questionLists = new ArrayList<>();
-        final QuizListModel q1 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q2 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q3 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q4 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q5 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q6 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q7 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q8 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q9 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q10 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "With Blade Components: if the component is defined in a class \"class Alert extends Component\", how that component can be called from Blade tag?",
+                "<x-alert />",
+                "<alert />",
+                "<Alert />",
+                "<blade-alert />",
+                "<x-alert />",
                 ""
         );
         questionLists.add(q1);
@@ -16570,93 +10958,93 @@ public class QuizQuestionsBank {
     private static List<QuizListModel> jQueryQuiz1() {
         final List<QuizListModel> questionLists = new ArrayList<>();
         final QuizListModel q1 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Which of the following is correct about jQuery?",
+                "The jQuery made it easy to select DOM elements, traverse them and modifying their content by using cross-browser open source selector engine called Sizzle.",
+                "The jQuery helps you a lot to develop a responsive and feature-rich site using AJAX technology.",
+                "The jQuery comes with plenty of built-in animation effects which you can use in your websites.",
+                "All of the above.",
+                "All of the above.",
                 ""
         );
         final QuizListModel q2 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Which of the following is correct about callbacks?",
+                "A callback is a plain JavaScript function passed to some method as an argument or option.",
+                "Some callbacks are just events, called to give the user a chance to react when a certain state is triggered.",
+                "Both of the above.",
+                "None of the above.",
+                "Both of the above.",
                 ""
         );
         final QuizListModel q3 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Which of the following jQuery selector selects all elements available in a DOM?",
+                "$('*')",
+                "$('?')",
+                "$('#')",
+                "None of the above.",
+                "$('*')",
                 ""
         );
         final QuizListModel q4 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Which of the following jQuery method sets attributes of an element?",
+                "attr(name, value)",
+                "setAttr(name, value)",
+                "setAttributes(name, value)",
+                "None of the above.",
+                "attr(name, value)",
                 ""
         );
         final QuizListModel q5 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Which of the following jQuery method checks the current selection against an expression?",
+                "getIs( selector )",
+                "is( selector )",
+                "checkIs( selector )",
+                "None of the above.",
+                "is( selector )",
                 ""
         );
         final QuizListModel q6 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Which of the following jQuery method finds all sibling elements after the current element?",
+                "locateNextAll( selector )",
+                "getNextAll( selector)",
+                "nextAll( selector )",
+                "None of the above.",
+                "nextAll( selector )",
                 ""
         );
         final QuizListModel q7 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Which of the following jQuery method gets a set of elements containing all of the unique siblings of each of the matched set of elements?",
+                "parents( selector )",
+                "prevAll( selector)",
+                "siblings( selector )",
+                "None of the above.",
+                "siblings( selector )",
                 ""
         );
         final QuizListModel q8 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Which of the following jQuery method removes all child nodes from the set of matched elements?",
+                "empty( )",
+                "delete( )",
+                "remove( expr )",
+                "None of the above.",
+                "empty( )",
                 ""
         );
         final QuizListModel q9 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Which of the following jQuery method can be used to attach a function to be executed whenever an AJAX request fails?",
+                "ajaxStart( callback )",
+                "ajaxComplete( callback )",
+                "ajaxSend( callback )",
+                "ajaxError(callback)",
+                "ajaxError(callback)",
                 ""
         );
         final QuizListModel q10 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Which of the following jQuery method serializes all forms and form elements like the .serialize() method but returns a JSON data structure for you to work with?",
+                "jQuery.ajax( options )",
+                "jQuery.ajaxSetup( options )",
+                "serialize( )",
+                "serializeArray( )",
+                "serializeArray( )",
                 ""
         );
         questionLists.add(q1);
@@ -16674,93 +11062,93 @@ public class QuizQuestionsBank {
     private static List<QuizListModel> jQueryQuiz2() {
         final List<QuizListModel> questionLists = new ArrayList<>();
         final QuizListModel q1 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "________________ is use for alternately expand and collapse a page element",
+                ".hover()",
+                "stopPropagation()",
+                ".toggle()",
+                ".trigger()",
+                ".trigger()",
                 ""
         );
         final QuizListModel q2 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "jQuery ______is used to set/return arbitrary data to/from an element.",
+                ".data()",
+                ".item()",
+                ".all",
+                "All of these",
+                ".data()",
                 ""
         );
         final QuizListModel q3 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "The ________ method acts on JQuery objects and translate the match DOM element into query string that can be pass along with AJAX request.",
+                ".serialize()",
+                ".serializeAll()",
+                ".synchronized()",
+                "none of these",
+                ".serialize()",
                 ""
         );
         final QuizListModel q4 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Which of the following method is used to hide the selected elements?",
+                "visible(false)",
+                "hidden()",
+                "display(none)",
+                "hide()",
+                "hide()",
                 ""
         );
         final QuizListModel q5 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "What is the file size of minified version of jQuery.x.x.x-min.js?",
+                "178KB",
+                "76.7 KB",
+                "180 KB",
+                "None of these",
+                "76.7 KB",
                 ""
         );
         final QuizListModel q6 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "How many ways are there to change the width of the element in jquery.",
+                "Two",
+                "Three",
+                "Four",
+                "None of these",
+                "Two",
                 ""
         );
         final QuizListModel q7 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "What does .size() method of jquery returns?",
+                "No. of variable in object",
+                "No. of element in object",
+                "Both a and b",
+                "None of these",
+                "No. of element in object",
                 ""
         );
         final QuizListModel q8 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Jquery is a library for _______ scripting",
+                "Client",
+                "Server",
+                "Both a and b",
+                "None of these",
+                "Client",
                 ""
         );
         final QuizListModel q9 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "CDN stands for_______",
+                "Common Distribution Network",
+                "Collective Distribution Network",
+                "Content Distribution Network",
+                "None of these",
+                "Content Distribution Network",
                 ""
         );
         final QuizListModel q10 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Highlight page element under mouse cursor by using ________",
+                ".hover()",
+                "stopPropagation()",
+                ".toggle()",
+                ".trigger()",
+                ".hover()",
                 ""
         );
         questionLists.add(q1);
@@ -16778,93 +11166,93 @@ public class QuizQuestionsBank {
     private static List<QuizListModel> jQueryQuiz3() {
         final List<QuizListModel> questionLists = new ArrayList<>();
         final QuizListModel q1 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "jquery written in which scripting language?",
+                "VBscript",
+                "java script",
+                "HTML",
+                "None of these",
+                "java script",
                 ""
         );
         final QuizListModel q2 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "1)jquery.size() 2) jquery.length Which is faster?",
+                "1",
+                "2",
+                "Both",
+                "None of them",
+                "2",
                 ""
         );
         final QuizListModel q3 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "The ______ Method acts as explicit iterator",
+                ".hover()",
+                ".all()",
+                ".toggle()",
+                ".each()",
+                ".each()",
                 ""
         );
         final QuizListModel q4 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "How many types of selectors available in jquery",
+                "1",
+                "2",
+                "3",
+                "4",
+                "3",
                 ""
         );
         final QuizListModel q5 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "By default .clone() method copy any event",
+                "Yes",
+                "No",
+                "Nothing",
+                "None of them",
+                "No",
                 ""
         );
         final QuizListModel q6 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "There are how many ways to check or unchecked the radio button",
+                "1",
+                "2",
+                "3",
+                "4",
+                "2",
                 ""
         );
         final QuizListModel q7 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "To deal with cookies in jQuery we have to use ______ cookie plugin",
+                "Dough",
+                "Session",
+                "Dazzler",
+                "None of these",
+                "Dough",
                 ""
         );
         final QuizListModel q8 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Using ________ function, we can hold or release the execution of jQuery’s ready event",
+                "jQuery.ready()",
+                "jQuery.holdReady()",
+                "jQuery.hold()",
+                "jQuery.holdready()",
+                "jQuery.holdReady()",
                 ""
         );
         final QuizListModel q9 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "The ________ method works for accepting an array of DOM elements and pushes them into a stack",
+                "push()",
+                "pop()",
+                "pushStack()",
+                "popStack()",
+                "pushStack()",
                 ""
         );
         final QuizListModel q10 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Which method is provided by the jquery to create our own custom animation with fine-grained control",
+                ".animation()",
+                "stopPropagation()",
+                ".toggle()",
+                ".animate()",
+                ".animate()",
                 ""
         );
         questionLists.add(q1);
@@ -16882,93 +11270,93 @@ public class QuizQuestionsBank {
     private static List<QuizListModel> jQueryQuiz4() {
         final List<QuizListModel> questionLists = new ArrayList<>();
         final QuizListModel q1 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Use __________ event handlers to reach to a user click on page element with .bind() or .click().",
+                "mouse",
+                "windows",
+                "click",
+                "None of these",
+                "mouse",
                 ""
         );
         final QuizListModel q2 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Jquery library is ____________ file.",
+                ".html",
+                ".XML",
+                ".js",
+                ".lib",
+                ".js",
                 ""
         );
         final QuizListModel q3 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "jquery has _______ method for inserting element before other element.",
+                "1",
+                "2",
+                "3",
+                "4",
+                "2",
                 ""
         );
         final QuizListModel q4 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "For the purposes of selecting specific class, class must contain prefix as “__“.",
+                "$",
+                "#",
+                ".",
+                "%",
+                ".",
                 ""
         );
         final QuizListModel q5 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "AHAH means ________",
+                "Asynchronous HTTP and HTML",
+                "Asynchronous HTTP and HTTPs",
+                "Alternate HTTP and HTML",
+                "None of these",
+                "Asynchronous HTTP and HTML",
                 ""
         );
         final QuizListModel q6 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "For coping the element ________ method is used.",
+                ".copy()",
+                ".clone()",
+                ".coping()",
+                "None of these",
+                ".clone()",
                 ""
         );
         final QuizListModel q7 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "In which version of the jquery, efficiency of the web page increased",
+                "minified version",
+                "normal version",
+                "Both",
+                "None of them",
+                "minified version",
                 ""
         );
         final QuizListModel q8 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "The .each method is the more convenient form of _______ loop.",
+                "do while",
+                "for",
+                "for each",
+                "None of these",
+                "for",
                 ""
         );
         final QuizListModel q9 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Multiple javascript library coexist on single page using ___________________",
+                "conflict()",
+                "noConflict()",
+                "unbind()",
+                "die()",
+                "noConflict()",
                 ""
         );
         final QuizListModel q10 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Which statement is true?",
+                "To use jQuery, you do not have to do anything. Most browsers (Internet Explorer, Chrome, Firefox and Opera) have the jQuery library built in the browser",
+                "To use jQuery, you can refer to a hosted jQuery library at Google",
+                "To use jQuery, you must buy the jQuery library at www.jquery.com",
+                "None of them",
+                "To use jQuery, you can refer to a hosted jQuery library at Google",
                 ""
         );
         questionLists.add(q1);
@@ -16986,613 +11374,103 @@ public class QuizQuestionsBank {
     private static List<QuizListModel> jQueryQuiz5() {
         final List<QuizListModel> questionLists = new ArrayList<>();
         final QuizListModel q1 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "What scripting language is jQuery written in?",
+                "C#",
+                "VBScript",
+                "JavaScript",
+                "C++",
+                "JavaScript",
                 ""
         );
         final QuizListModel q2 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Which jQuery function is used to prevent code from running, before the document is finished loading?",
+                "$(document).load()",
+                "$(document).ready()",
+                "$(body).onload()",
+                "None of them",
+                "$(document).ready()",
                 ""
         );
         final QuizListModel q3 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Which jQuery method should be used to deal with name conflicts?\n" +
+                        "What is the following code for:\\n\" +\n" +
+                        "   \"$( document ).ready( function (){\" +\n" +
+                        "   \" \\n\" +\n" +
+                        "   \"\\\\\\n // Actions to execute\\n\" +\n" +
+                        "   \"});",
+                "To save to disk the result of an execution of a list of actions.",
+                "To  wait for the document to be fully loaded and ready before working on it",
+                "To select the entire DOM document and generate an effect",
+                "None of them",
+                "To  wait for the document to be fully loaded and ready before working on it",
                 ""
         );
         final QuizListModel q4 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "In JQuery, the show() effect :",
+                "Show selected items",
+                "Animate selected elements",
+                "Hide selected items",
+                "Show matching elements, dimming them to opaque",
+                "Show selected items",
                 ""
         );
         final QuizListModel q5 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Use the correct selector to hide an element with id-\"test\".\n" +
+                        "$(\" \").hide();",
+                ".test",
+                "#test",
+                "id.test",
+                "id#test",
+                "#test",
                 ""
         );
         final QuizListModel q6 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "What event is used to hide all elements with a \"click\" ?\n" +
+                        "$(\"p\").evento(function(){" +
+                        " \n" +
+                        "\\\n $(this).hide();\n" +
+                        "});",
+                "show",
+                "hide",
+                "click",
+                "toggle",
+                "click",
                 ""
         );
         final QuizListModel q7 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "What does the $(this) selector allow you to do?",
+                "Select multiple elements with the same class",
+                "Select the particular element that triggered the event handler, without referring to an ID",
+                "Select multiple elements with the same ID",
+                "Select an element by its ID and not its class",
+                "Select the particular element that triggered the event handler, without referring to an ID",
                 ""
         );
         final QuizListModel q8 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "How do I set the background of all paragraphs to red?",
+                "$(\"p\").css(\"background-color\", \"red\");",
+                "$(\"p\").css(background-color : \"red\");",
+                "$(\"p\").css(\"background-color : red\");",
+                "$(\"p\").css(\"color: red\");",
+                "$(\"p\").css(\"background-color\", \"red\");",
                 ""
         );
         final QuizListModel q9 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Each odd table row can be selected with...",
+                "$('tr:nth-child(odd)')",
+                "$('tr:nth-child(even)')",
+                "$('tr:nth-child(2)')",
+                "$('tr').row()",
+                "$('tr:nth-child(odd)')",
                 ""
         );
         final QuizListModel q10 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        questionLists.add(q1);
-        questionLists.add(q2);
-        questionLists.add(q3);
-        questionLists.add(q4);
-        questionLists.add(q5);
-        questionLists.add(q6);
-        questionLists.add(q7);
-        questionLists.add(q8);
-        questionLists.add(q9);
-        questionLists.add(q10);
-        return questionLists;
-    }
-    private static List<QuizListModel> jQueryQuiz6() {
-        final List<QuizListModel> questionLists = new ArrayList<>();
-        final QuizListModel q1 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q2 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q3 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q4 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q5 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q6 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q7 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q8 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q9 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q10 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        questionLists.add(q1);
-        questionLists.add(q2);
-        questionLists.add(q3);
-        questionLists.add(q4);
-        questionLists.add(q5);
-        questionLists.add(q6);
-        questionLists.add(q7);
-        questionLists.add(q8);
-        questionLists.add(q9);
-        questionLists.add(q10);
-        return questionLists;
-    }
-    private static List<QuizListModel> jQueryQuiz7() {
-        final List<QuizListModel> questionLists = new ArrayList<>();
-        final QuizListModel q1 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q2 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q3 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q4 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q5 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q6 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q7 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q8 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q9 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q10 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        questionLists.add(q1);
-        questionLists.add(q2);
-        questionLists.add(q3);
-        questionLists.add(q4);
-        questionLists.add(q5);
-        questionLists.add(q6);
-        questionLists.add(q7);
-        questionLists.add(q8);
-        questionLists.add(q9);
-        questionLists.add(q10);
-        return questionLists;
-    }
-    private static List<QuizListModel> jQueryQuiz8() {
-        final List<QuizListModel> questionLists = new ArrayList<>();
-        final QuizListModel q1 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q2 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q3 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q4 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q5 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q6 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q7 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q8 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q9 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q10 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        questionLists.add(q1);
-        questionLists.add(q2);
-        questionLists.add(q3);
-        questionLists.add(q4);
-        questionLists.add(q5);
-        questionLists.add(q6);
-        questionLists.add(q7);
-        questionLists.add(q8);
-        questionLists.add(q9);
-        questionLists.add(q10);
-        return questionLists;
-    }
-    private static List<QuizListModel> jQueryQuiz9() {
-        final List<QuizListModel> questionLists = new ArrayList<>();
-        final QuizListModel q1 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q2 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q3 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q4 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q5 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q6 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q7 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q8 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q9 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q10 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        questionLists.add(q1);
-        questionLists.add(q2);
-        questionLists.add(q3);
-        questionLists.add(q4);
-        questionLists.add(q5);
-        questionLists.add(q6);
-        questionLists.add(q7);
-        questionLists.add(q8);
-        questionLists.add(q9);
-        questionLists.add(q10);
-        return questionLists;
-    }
-    private static List<QuizListModel> jQueryQuiz10() {
-        final List<QuizListModel> questionLists = new ArrayList<>();
-        final QuizListModel q1 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q2 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q3 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q4 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q5 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q6 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q7 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q8 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q9 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-        );
-        final QuizListModel q10 = new QuizListModel(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "What statement can be used to make a visible element invisible and an invisible element visible?",
+                "$('#my-element').switch();",
+                "$('#my-element').change();",
+                "You can't do that, you have to write a JavaScript function for that.",
+                "$('#my-element').toggle();",
+                "$('#my-element').toggle();",
                 ""
         );
         questionLists.add(q1);
@@ -17823,14 +11701,6 @@ public class QuizQuestionsBank {
                 return AJAXQuiz5();
             case "AJAX Quiz 6":
                 return AJAXQuiz6();
-            case "AJAX Quiz 7":
-                return AJAXQuiz7();
-            case "AJAX Quiz 8":
-                return AJAXQuiz8();
-            case "AJAX Quiz 9":
-                return AJAXQuiz9();
-            case "AJAX Quiz 10":
-                return AJAXQuiz10();
             //TypescriptQuiz
             case "Typescript Quiz 1":
                 return TypescriptQuiz1();
@@ -17857,16 +11727,6 @@ public class QuizQuestionsBank {
                 return AngularQuiz4();
             case "Angular Quiz 5":
                 return AngularQuiz5();
-            case "Angular Quiz 6":
-                return AngularQuiz6();
-            case "Angular Quiz 7":
-                return AngularQuiz7();
-            case "Angular Quiz 8":
-                return AngularQuiz8();
-            case "Angular Quiz 9":
-                return AngularQuiz9();
-            case "Angular Quiz 10":
-                return AngularQuiz10();
             //VueJsQuiz
             case "VueJs Quiz 1":
                 return VueJsQuiz1();
@@ -17878,37 +11738,6 @@ public class QuizQuestionsBank {
                 return VueJsQuiz4();
             case "VueJs Quiz 5":
                 return VueJsQuiz5();
-            case "VueJs Quiz 6":
-                return VueJsQuiz6();
-            case "VueJs Quiz 7":
-                return VueJsQuiz7();
-            case "VueJs Quiz 8":
-                return VueJsQuiz8();
-            case "VueJs Quiz 9":
-                return VueJsQuiz9();
-            case "VueJs Quiz 10":
-                return VueJsQuiz10();
-            //NextJsQuiz
-            case "NextJs Quiz 1":
-                return NextJsQuiz1();
-            case "NextJs Quiz 2":
-                return NextJsQuiz2();
-            case "NextJs Quiz 3":
-                return NextJsQuiz3();
-            case "NextJs Quiz 4":
-                return NextJsQuiz4();
-            case "NextJs Quiz 5":
-                return NextJsQuiz5();
-            case "NextJs Quiz 6":
-                return NextJsQuiz6();
-            case "NextJs Quiz 7":
-                return NextJsQuiz7();
-            case "NextJs Quiz 8":
-                return NextJsQuiz8();
-            case "NextJs Quiz 9":
-                return NextJsQuiz9();
-            case "NextJs Quiz 10":
-                return NextJsQuiz10();
             //ReactJsQuiz
             case "ReactJs Quiz 1":
                 return ReactJsQuiz1();
@@ -17920,16 +11749,6 @@ public class QuizQuestionsBank {
                 return ReactJsQuiz4();
             case "ReactJs Quiz 5":
                 return ReactJsQuiz5();
-            case "ReactJs Quiz 6":
-                return ReactJsQuiz6();
-            case "ReactJs Quiz 7":
-                return ReactJsQuiz7();
-            case "ReactJs Quiz 8":
-                return ReactJsQuiz8();
-            case "ReactJs Quiz 9":
-                return ReactJsQuiz9();
-            case "ReactJs Quiz 10":
-                return ReactJsQuiz10();
             //EmberJsQuiz
             case "EmberJs Quiz 1":
                 return EmberJsQuiz1();
@@ -17937,20 +11756,6 @@ public class QuizQuestionsBank {
                 return EmberJsQuiz2();
             case "EmberJs Quiz 3":
                 return EmberJsQuiz3();
-            case "EmberJs Quiz 4":
-                return EmberJsQuiz4();
-            case "EmberJs Quiz 5":
-                return EmberJsQuiz5();
-            case "EmberJs Quiz 6":
-                return EmberJsQuiz6();
-            case "EmberJs Quiz 7":
-                return EmberJsQuiz7();
-            case "EmberJs Quiz 8":
-                return EmberJsQuiz8();
-            case "EmberJs Quiz 9":
-                return EmberJsQuiz9();
-            case "EmberJs Quiz 10":
-                return EmberJsQuiz10();
             //BootstrapQuiz
             case "Bootstrap Quiz 1":
                 return BootstrapQuiz1();
@@ -17962,16 +11767,6 @@ public class QuizQuestionsBank {
                 return BootstrapQuiz4();
             case "Bootstrap Quiz 5":
                 return BootstrapQuiz5();
-            case "Bootstrap Quiz 6":
-                return BootstrapQuiz6();
-            case "Bootstrap Quiz 7":
-                return BootstrapQuiz7();
-            case "Bootstrap Quiz 8":
-                return BootstrapQuiz8();
-            case "Bootstrap Quiz 9":
-                return BootstrapQuiz9();
-            case "Bootstrap Quiz 10":
-                return BootstrapQuiz10();
             //NodeJsQuiz
             case "NodeJs Quiz 1":
                 return NodeJsQuiz1();
@@ -17983,16 +11778,6 @@ public class QuizQuestionsBank {
                 return NodeJsQuiz4();
             case "NodeJs Quiz 5":
                 return NodeJsQuiz5();
-            case "NodeJs Quiz 6":
-                return NodeJsQuiz6();
-            case "NodeJs Quiz 7":
-                return NodeJsQuiz7();
-            case "NodeJs Quiz 8":
-                return NodeJsQuiz8();
-            case "NodeJs Quiz 9":
-                return NodeJsQuiz9();
-            case "NodeJs Quiz 10":
-                return NodeJsQuiz10();
             //ExpressJsQuiz
             case "ExpressJs Quiz 1":
                 return ExpressJsQuiz1();
@@ -18004,16 +11789,6 @@ public class QuizQuestionsBank {
                 return ExpressJsQuiz4();
             case "ExpressJs Quiz 5":
                 return ExpressJsQuiz5();
-            case "ExpressJs Quiz 6":
-                return ExpressJsQuiz6();
-            case "ExpressJs Quiz 7":
-                return ExpressJsQuiz7();
-            case "ExpressJs Quiz 8":
-                return ExpressJsQuiz8();
-            case "ExpressJs Quiz 9":
-                return ExpressJsQuiz9();
-            case "ExpressJs Quiz 10":
-                return ExpressJsQuiz10();
             //LaravelQuiz
             case "Laravel Quiz 1":
                 return LaravelQuiz1();
@@ -18025,16 +11800,6 @@ public class QuizQuestionsBank {
                 return LaravelQuiz4();
             case "Laravel Quiz 5":
                 return LaravelQuiz5();
-            case "Laravel Quiz 6":
-                return LaravelQuiz6();
-            case "Laravel Quiz 7":
-                return LaravelQuiz7();
-            case "Laravel Quiz 8":
-                return LaravelQuiz8();
-            case "Laravel Quiz 9":
-                return LaravelQuiz9();
-            case "Laravel Quiz 10":
-                return LaravelQuiz10();
             //jQueryQuiz
             case "jQuery Quiz 1":
                 return jQueryQuiz1();
@@ -18046,16 +11811,6 @@ public class QuizQuestionsBank {
                 return jQueryQuiz4();
             case "jQuery Quiz 5":
                 return jQueryQuiz5();
-            case "jQuery Quiz 6":
-                return jQueryQuiz6();
-            case "jQuery Quiz 7":
-                return jQueryQuiz7();
-            case "jQuery Quiz 8":
-                return jQueryQuiz8();
-            case "jQuery Quiz 9":
-                return jQueryQuiz9();
-            case "jQuery Quiz 10":
-                return jQueryQuiz10();
 
             default:
                 return defaultQuestions();

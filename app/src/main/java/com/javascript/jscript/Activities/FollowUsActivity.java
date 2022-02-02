@@ -19,8 +19,10 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.javascript.jscript.BuildConfig;
 import com.javascript.jscript.Config.UiConfig;
+import com.javascript.jscript.Notifications.NotificationsActivity;
 import com.javascript.jscript.R;
 import com.javascript.jscript.databinding.ActivityFollowUsBinding;
+
 
 import java.util.Calendar;
 import java.util.Objects;
@@ -69,43 +71,106 @@ public class FollowUsActivity extends AppCompatActivity {
         binding.viewInstagram.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(getString(R.string.link_instagram))));
+                //network check
+                ConnectivityManager connectivityManager = (ConnectivityManager) getSystemService(FollowUsActivity.CONNECTIVITY_SERVICE);
+                if (connectivityManager.getNetworkInfo(ConnectivityManager.TYPE_MOBILE).getState() == NetworkInfo.State.CONNECTED ||
+                        connectivityManager.getNetworkInfo(ConnectivityManager.TYPE_WIFI).getState() == NetworkInfo.State.CONNECTED) {
+                    //we are connected to a network
+                    startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(getString(R.string.link_instagram))));
+                } else {
+                    toastText.setText(R.string.no_connection_text);
+                    toast.show();
+                }
             }
         });
         binding.viewFacebook.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(getString(R.string.link_facebook))));
+                //network check
+                ConnectivityManager connectivityManager = (ConnectivityManager) getSystemService(FollowUsActivity.CONNECTIVITY_SERVICE);
+                if (connectivityManager.getNetworkInfo(ConnectivityManager.TYPE_MOBILE).getState() == NetworkInfo.State.CONNECTED ||
+                        connectivityManager.getNetworkInfo(ConnectivityManager.TYPE_WIFI).getState() == NetworkInfo.State.CONNECTED) {
+                    //we are connected to a network
+                    startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(getString(R.string.link_facebook))));
+                } else {
+                    toastText.setText(R.string.no_connection_text);
+                    toast.show();
+                }
             }
         });
         binding.viewLinkedin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(getString(R.string.link_linkedin))));
+                //network check
+                ConnectivityManager connectivityManager = (ConnectivityManager) getSystemService(FollowUsActivity.CONNECTIVITY_SERVICE);
+                if (connectivityManager.getNetworkInfo(ConnectivityManager.TYPE_MOBILE).getState() == NetworkInfo.State.CONNECTED ||
+                        connectivityManager.getNetworkInfo(ConnectivityManager.TYPE_WIFI).getState() == NetworkInfo.State.CONNECTED) {
+                    //we are connected to a network
+                    startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(getString(R.string.link_linkedin))));
+                } else {
+                    toastText.setText(R.string.no_connection_text);
+                    toast.show();
+                }
             }
         });
         binding.viewTwitter.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(getString(R.string.link_twitter))));
+                //network check
+                ConnectivityManager connectivityManager = (ConnectivityManager) getSystemService(FollowUsActivity.CONNECTIVITY_SERVICE);
+                if (connectivityManager.getNetworkInfo(ConnectivityManager.TYPE_MOBILE).getState() == NetworkInfo.State.CONNECTED ||
+                        connectivityManager.getNetworkInfo(ConnectivityManager.TYPE_WIFI).getState() == NetworkInfo.State.CONNECTED) {
+                    //we are connected to a network
+                    startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(getString(R.string.link_twitter))));
+                } else {
+                    toastText.setText(R.string.no_connection_text);
+                    toast.show();
+                }
             }
         });
         binding.viewPlayStore.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(getString(R.string.url_play_more_apps))));
+                //network check
+                ConnectivityManager connectivityManager = (ConnectivityManager) getSystemService(FollowUsActivity.CONNECTIVITY_SERVICE);
+                if (connectivityManager.getNetworkInfo(ConnectivityManager.TYPE_MOBILE).getState() == NetworkInfo.State.CONNECTED ||
+                        connectivityManager.getNetworkInfo(ConnectivityManager.TYPE_WIFI).getState() == NetworkInfo.State.CONNECTED) {
+                    //we are connected to a network
+                    startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(getString(R.string.url_play_more_apps))));
+                } else {
+                    toastText.setText(R.string.no_connection_text);
+                    toast.show();
+                }
             }
         });
         binding.viewGithub.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(getString(R.string.link_github))));
+                //network check
+                ConnectivityManager connectivityManager = (ConnectivityManager) getSystemService(FollowUsActivity.CONNECTIVITY_SERVICE);
+                if (connectivityManager.getNetworkInfo(ConnectivityManager.TYPE_MOBILE).getState() == NetworkInfo.State.CONNECTED ||
+                        connectivityManager.getNetworkInfo(ConnectivityManager.TYPE_WIFI).getState() == NetworkInfo.State.CONNECTED) {
+                    //we are connected to a network
+                    startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(getString(R.string.link_github))));
+                } else {
+                    toastText.setText(R.string.no_connection_text);
+                    toast.show();
+                }
             }
         });
         binding.viewWebsite.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(getString(R.string.play_website))));
+                //network check
+                ConnectivityManager connectivityManager = (ConnectivityManager) getSystemService(FollowUsActivity.CONNECTIVITY_SERVICE);
+                if (connectivityManager.getNetworkInfo(ConnectivityManager.TYPE_MOBILE).getState() == NetworkInfo.State.CONNECTED ||
+                        connectivityManager.getNetworkInfo(ConnectivityManager.TYPE_WIFI).getState() == NetworkInfo.State.CONNECTED) {
+                    //we are connected to a network
+                    startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(getString(R.string.play_website))));
+                } else {
+                    toastText.setText(R.string.no_connection_text);
+                    toast.show();
+                }
             }
         });
         binding.contactUs.setOnClickListener(new View.OnClickListener() {

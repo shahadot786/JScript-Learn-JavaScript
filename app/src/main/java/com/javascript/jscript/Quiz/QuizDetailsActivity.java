@@ -33,6 +33,7 @@ import com.javascript.jscript.Activities.CodesActivity;
 import com.javascript.jscript.BuildConfig;
 import com.javascript.jscript.Config.UiConfig;
 import com.javascript.jscript.Model.QuizListModel;
+import com.javascript.jscript.Notifications.NotificationsActivity;
 import com.javascript.jscript.R;
 import com.javascript.jscript.Utils.AdNetwork;
 import com.javascript.jscript.databinding.ActivityQuizDetailsBinding;
@@ -301,11 +302,22 @@ public class QuizDetailsActivity extends AppCompatActivity {
                 dialog.setPositiveButton("Remove Timer", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialogInterface, int i) {
-                        adNetwork.showRewardedAd();
-                        qTimer.setVisibility(View.GONE);
-                        timerView.setVisibility(View.GONE);
-                        quizTimer.setVisibility(View.GONE);
-                        dialogInterface.dismiss();
+                        //network check
+                        ConnectivityManager connectivityManager = (ConnectivityManager) getSystemService(QuizDetailsActivity.CONNECTIVITY_SERVICE);
+                        if (connectivityManager.getNetworkInfo(ConnectivityManager.TYPE_MOBILE).getState() == NetworkInfo.State.CONNECTED ||
+                                connectivityManager.getNetworkInfo(ConnectivityManager.TYPE_WIFI).getState() == NetworkInfo.State.CONNECTED) {
+                            //we are connected to a network
+                            adNetwork.showRewardedAd();
+                            qTimer.setVisibility(View.GONE);
+                            timerView.setVisibility(View.GONE);
+                            quizTimer.setVisibility(View.GONE);
+                            dialogInterface.dismiss();
+
+                        } else {
+                            toastText.setText(R.string.no_connection_text);
+                            toast.show();
+                            start();
+                        }
                     }
                 });
                 //watch ad and remove timer
@@ -327,10 +339,20 @@ public class QuizDetailsActivity extends AppCompatActivity {
             binding.removeTimer.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    adNetwork.showRewardedAd();
-                    quizTimer.setVisibility(View.GONE);
-                    qTimer.setVisibility(View.GONE);
-                    timerView.setVisibility(View.GONE);
+                    //network check
+                    ConnectivityManager connectivityManager = (ConnectivityManager) getSystemService(QuizDetailsActivity.CONNECTIVITY_SERVICE);
+                    if (connectivityManager.getNetworkInfo(ConnectivityManager.TYPE_MOBILE).getState() == NetworkInfo.State.CONNECTED ||
+                            connectivityManager.getNetworkInfo(ConnectivityManager.TYPE_WIFI).getState() == NetworkInfo.State.CONNECTED) {
+                        //we are connected to a network
+                        adNetwork.showRewardedAd();
+                        quizTimer.setVisibility(View.GONE);
+                        qTimer.setVisibility(View.GONE);
+                        timerView.setVisibility(View.GONE);
+
+                    } else {
+                        toastText.setText(R.string.no_connection_text);
+                        toast.show();
+                    }
                 }
             });
 

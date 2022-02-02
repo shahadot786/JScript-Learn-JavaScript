@@ -6,6 +6,8 @@ import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.Gravity;
@@ -97,7 +99,16 @@ public class PremiumActivity extends AppCompatActivity implements PurchasesUpdat
         binding.privacyPolicy.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(getString(R.string.url_play_privacy_policy))));
+                //network check
+                ConnectivityManager connectivityManager = (ConnectivityManager) getSystemService(PremiumActivity.CONNECTIVITY_SERVICE);
+                if (connectivityManager.getNetworkInfo(ConnectivityManager.TYPE_MOBILE).getState() == NetworkInfo.State.CONNECTED ||
+                        connectivityManager.getNetworkInfo(ConnectivityManager.TYPE_WIFI).getState() == NetworkInfo.State.CONNECTED) {
+                    //we are connected to a network
+                    startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(getString(R.string.url_play_privacy_policy))));
+                } else {
+                    toastText.setText(R.string.no_connection_text);
+                    toast.show();
+                }
             }
         });
         //refund policy
@@ -151,7 +162,16 @@ public class PremiumActivity extends AppCompatActivity implements PurchasesUpdat
         binding.btnSubscribe.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                purchase();
+                //network check
+                ConnectivityManager connectivityManager = (ConnectivityManager) getSystemService(PremiumActivity.CONNECTIVITY_SERVICE);
+                if (connectivityManager.getNetworkInfo(ConnectivityManager.TYPE_MOBILE).getState() == NetworkInfo.State.CONNECTED ||
+                        connectivityManager.getNetworkInfo(ConnectivityManager.TYPE_WIFI).getState() == NetworkInfo.State.CONNECTED) {
+                    //we are connected to a network
+                    purchase();
+                } else {
+                    toastText.setText(R.string.no_connection_text);
+                    toast.show();
+                }
             }
         });
 

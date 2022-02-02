@@ -61,6 +61,17 @@
             app:layout_constraintVertical_bias="1.0" />
 
         <ImageView
+            android:id="@+id/imageView28"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:src="@drawable/ic_image_add_icon"
+            android:contentDescription="@string/app_main_images"
+            android:layout_marginBottom="2dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/profileImage"
+            app:layout_constraintStart_toStartOf="@+id/profileImage" />
+
+        <ImageView
             android:id="@+id/uploadCoverImg"
             android:layout_width="30dp"
             android:layout_height="30dp"

@@ -48,6 +48,7 @@ public class QuizDetailsActivity extends AppCompatActivity {
     FirebaseDatabase database;
     FirebaseAuth auth;
     TextView quizCount, question;
+    TextView quizTimer;
     LayoutInflater inflater;
     TextView toastText, qTimer;
     View toastLayout;
@@ -73,6 +74,7 @@ public class QuizDetailsActivity extends AppCompatActivity {
         //find id
         qTimer = findViewById(R.id.qTimer);
         timerView = findViewById(R.id.timerView);
+        quizTimer = findViewById(R.id.removeTimer);
         //custom toast
         inflater = getLayoutInflater();
         toastLayout = inflater.inflate(R.layout.custom_toast_layout, findViewById(R.id.toastLayout));
@@ -92,6 +94,8 @@ public class QuizDetailsActivity extends AppCompatActivity {
         //interstitial ads
         adNetwork = new AdNetwork(QuizDetailsActivity.this);
         adNetwork.loadInterstitialAd();
+        //rewarded ad
+        adNetwork.loadRewardedAd();
         //banner
         AdView bannerAd = findViewById(R.id.adView);
         AdRequest adRequest = new AdRequest.Builder().build();
@@ -104,7 +108,7 @@ public class QuizDetailsActivity extends AppCompatActivity {
         //check premium time
         if (UiConfig.PRO_VISIBILITY_STATUS_SHOW) {
             //true
-            time = 3;
+            time = 2;
             qTimer.setVisibility(View.VISIBLE);
             timerView.setVisibility(View.VISIBLE);
         } else {
@@ -113,8 +117,6 @@ public class QuizDetailsActivity extends AppCompatActivity {
             qTimer.setVisibility(View.GONE);
             timerView.setVisibility(View.GONE);
         }
-        //rewarded ad
-        adNetwork.loadRewardedAd();
         //quiz code
         quizCount = findViewById(R.id.quizCount);
         question = findViewById(R.id.question);
@@ -302,6 +304,7 @@ public class QuizDetailsActivity extends AppCompatActivity {
                         adNetwork.showRewardedAd();
                         qTimer.setVisibility(View.GONE);
                         timerView.setVisibility(View.GONE);
+                        quizTimer.setVisibility(View.GONE);
                         dialogInterface.dismiss();
                     }
                 });
@@ -317,6 +320,24 @@ public class QuizDetailsActivity extends AppCompatActivity {
                 dialog.show();
             }
         }.start();
+        //quiz timer codes
+        if (UiConfig.PRO_VISIBILITY_STATUS_SHOW){
+            quizTimer.setVisibility(View.VISIBLE);
+            //remove timer code
+            binding.removeTimer.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    adNetwork.showRewardedAd();
+                    quizTimer.setVisibility(View.GONE);
+                    qTimer.setVisibility(View.GONE);
+                    timerView.setVisibility(View.GONE);
+                }
+            });
+
+        }else {
+            //Remove quiz timer
+            quizTimer.setVisibility(View.GONE);
+        }
 
     }//on create
 

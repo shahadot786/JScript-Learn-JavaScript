@@ -22,9 +22,6 @@ public class QuizResultActivity extends AppCompatActivity {
 
     ActivityQuizResultBinding binding;
     ImageView quizTrophy;
-    private AppCompatButton startNewBtn;
-    private TextView quizMessage, correctAns, wrongAns;
-    private AdView mRecAd;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,13 +33,13 @@ public class QuizResultActivity extends AppCompatActivity {
         QuizResultActivity.this.setTitle("Quiz Result");
         Objects.requireNonNull(getSupportActionBar()).setDisplayHomeAsUpEnabled(true);
         //find id
-        quizMessage = findViewById(R.id.quizMessage);
+        TextView quizMessage = findViewById(R.id.quizMessage);
         quizTrophy = findViewById(R.id.quizTrophy);
-        correctAns = findViewById(R.id.correctAns);
-        wrongAns = findViewById(R.id.wrongAns);
-        startNewBtn = findViewById(R.id.startNewQuizBtn);
+        TextView correctAns = findViewById(R.id.correctAns);
+        TextView wrongAns = findViewById(R.id.wrongAns);
+        AppCompatButton startNewBtn = findViewById(R.id.startNewQuizBtn);
         //ad initialization
-        mRecAd = findViewById(R.id.adView);
+        AdView mRecAd = findViewById(R.id.adView);
         AdRequest adRequest = new AdRequest.Builder().build();
         mRecAd.loadAd(adRequest);
         //conditions

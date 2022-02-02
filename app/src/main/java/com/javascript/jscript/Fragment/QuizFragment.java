@@ -133,7 +133,7 @@ public class QuizFragment extends Fragment {
                         "=> Each subject has a different set of quiz\n" +
                         "=> Each set of quizzes has 10 different questions\n" +
                         "=> Minimum 8 Correct Answer For Win\n" +
-                        "=> 3 Minutes to complete all the questions\n" +
+                        "=> 2 Minutes to complete all the questions\n" +
                         "=> Watch an Ad for remove timer when finished time");
                 dialog.setPositiveButton(R.string.dialog_ok, new DialogInterface.OnClickListener() {
                     @Override

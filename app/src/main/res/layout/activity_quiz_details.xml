@@ -23,7 +23,7 @@
         android:id="@+id/nestedScrollView"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_marginBottom="50dp"
+        android:layout_marginBottom="60dp"
         android:fillViewport="true"
         android:scrollbars="none"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -69,6 +69,18 @@
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />-->
 
+                <TextView
+                    android:id="@+id/removeTimer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/remove_timer"
+                    android:textColor="@color/activeGreen"
+                    android:textSize="11sp"
+                    android:textStyle="bold"
+                    android:visibility="visible"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
                 <com.airbnb.lottie.LottieAnimationView
                     android:id="@+id/timerView"
                     android:layout_width="20dp"
@@ -85,8 +97,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="4dp"
-                    android:textStyle="bold"
                     android:textSize="12sp"
+                    android:textStyle="bold"
                     app:layout_constraintEnd_toStartOf="@+id/timerView"
                     app:layout_constraintTop_toTopOf="parent" />
 

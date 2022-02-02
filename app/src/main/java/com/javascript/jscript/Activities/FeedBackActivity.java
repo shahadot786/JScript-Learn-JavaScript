@@ -1,5 +1,6 @@
 package com.javascript.jscript.Activities;
 
+import android.content.Intent;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.os.Bundle;
@@ -188,6 +189,13 @@ public class FeedBackActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         finish();
         return super.onOptionsItemSelected(item);
+    }
+
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        Intent intent = new Intent(FeedBackActivity.this, MainActivity.class);
+        startActivity(intent);
     }
 }
 

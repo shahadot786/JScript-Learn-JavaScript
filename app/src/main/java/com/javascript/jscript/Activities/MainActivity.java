@@ -386,7 +386,7 @@ public class MainActivity extends AppCompatActivity {
             //rate now
             case R.id.rate:
                 //network check
-                ConnectivityManager connectivityManager = (ConnectivityManager) getSystemService(FeedBackActivity.CONNECTIVITY_SERVICE);
+                ConnectivityManager connectivityManager = (ConnectivityManager) getSystemService(MainActivity.CONNECTIVITY_SERVICE);
                 if (connectivityManager.getNetworkInfo(ConnectivityManager.TYPE_MOBILE).getState() == NetworkInfo.State.CONNECTED ||
                         connectivityManager.getNetworkInfo(ConnectivityManager.TYPE_WIFI).getState() == NetworkInfo.State.CONNECTED) {
                     //we are connected to a network
@@ -404,7 +404,7 @@ public class MainActivity extends AppCompatActivity {
             //more apps
             case R.id.more_apps:
                 //network check
-                ConnectivityManager connectivityManager2 = (ConnectivityManager) getSystemService(FeedBackActivity.CONNECTIVITY_SERVICE);
+                ConnectivityManager connectivityManager2 = (ConnectivityManager) getSystemService(MainActivity.CONNECTIVITY_SERVICE);
                 if (connectivityManager2.getNetworkInfo(ConnectivityManager.TYPE_MOBILE).getState() == NetworkInfo.State.CONNECTED ||
                         connectivityManager2.getNetworkInfo(ConnectivityManager.TYPE_WIFI).getState() == NetworkInfo.State.CONNECTED) {
                     //we are connected to a network
@@ -417,7 +417,7 @@ public class MainActivity extends AppCompatActivity {
             //privacy policy
             case R.id.privacy:
                 //network check
-                ConnectivityManager connectivityManager3 = (ConnectivityManager) getSystemService(FeedBackActivity.CONNECTIVITY_SERVICE);
+                ConnectivityManager connectivityManager3 = (ConnectivityManager) getSystemService(MainActivity.CONNECTIVITY_SERVICE);
                 if (connectivityManager3.getNetworkInfo(ConnectivityManager.TYPE_MOBILE).getState() == NetworkInfo.State.CONNECTED ||
                         connectivityManager3.getNetworkInfo(ConnectivityManager.TYPE_WIFI).getState() == NetworkInfo.State.CONNECTED) {
                     //we are connected to a network
@@ -431,7 +431,7 @@ public class MainActivity extends AppCompatActivity {
             //contact us
             case R.id.contact_us:
                 //network check
-                ConnectivityManager connectivityManager4 = (ConnectivityManager) getSystemService(FeedBackActivity.CONNECTIVITY_SERVICE);
+                ConnectivityManager connectivityManager4 = (ConnectivityManager) getSystemService(MainActivity.CONNECTIVITY_SERVICE);
                 if (connectivityManager4.getNetworkInfo(ConnectivityManager.TYPE_MOBILE).getState() == NetworkInfo.State.CONNECTED ||
                         connectivityManager4.getNetworkInfo(ConnectivityManager.TYPE_WIFI).getState() == NetworkInfo.State.CONNECTED) {
                     //we are connected to a network
@@ -475,7 +475,6 @@ public class MainActivity extends AppCompatActivity {
             exitTime = System.currentTimeMillis();
         } else {
             finishAffinity();
-
         }
     }
 

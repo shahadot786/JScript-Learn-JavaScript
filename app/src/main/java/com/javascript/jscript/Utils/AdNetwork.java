@@ -4,10 +4,13 @@ import static android.content.ContentValues.TAG;
 
 import android.app.Activity;
 import android.util.Log;
+import android.view.View;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 
+import com.airbnb.lottie.LottieAnimationView;
 import com.google.android.gms.ads.AdError;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.FullScreenContentCallback;
@@ -23,6 +26,8 @@ import com.javascript.jscript.R;
 
 public class AdNetwork {
 
+    TextView qTimer,quizTimer;
+    LottieAnimationView timerView;
     private final Activity context;
     int counter = 1;
     private InterstitialAd mInterstitialAd;
@@ -30,6 +35,10 @@ public class AdNetwork {
 
     public AdNetwork(Activity context) {
         this.context = context;
+        //find id
+        qTimer = context.findViewById(R.id.qTimer);
+        timerView = context.findViewById(R.id.timerView);
+        quizTimer = context.findViewById(R.id.removeTimer);
     }
 
     //load ad
@@ -121,6 +130,9 @@ public class AdNetwork {
                     @Override
                     public void onUserEarnedReward(@NonNull RewardItem rewardItem) {
                         Toast.makeText(context, "Removed timer..", Toast.LENGTH_SHORT).show();
+                        qTimer.setVisibility(View.GONE);
+                        timerView.setVisibility(View.GONE);
+                        quizTimer.setVisibility(View.GONE);
                     }
                 });
             }

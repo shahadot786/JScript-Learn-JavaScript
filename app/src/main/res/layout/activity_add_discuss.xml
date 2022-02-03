@@ -151,7 +151,7 @@
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/descriptionEditText"
                     android:layout_width="match_parent"
-                    android:layout_height="120dp"
+                    android:layout_height="200dp"
                     android:ems="10"
                     android:gravity="top"
                     android:hint="@string/write_your_descriptions"

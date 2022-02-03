@@ -33,7 +33,6 @@ import com.javascript.jscript.Activities.CodesActivity;
 import com.javascript.jscript.BuildConfig;
 import com.javascript.jscript.Config.UiConfig;
 import com.javascript.jscript.Model.QuizListModel;
-import com.javascript.jscript.Notifications.NotificationsActivity;
 import com.javascript.jscript.R;
 import com.javascript.jscript.Utils.AdNetwork;
 import com.javascript.jscript.databinding.ActivityQuizDetailsBinding;
@@ -308,9 +307,9 @@ public class QuizDetailsActivity extends AppCompatActivity {
                                 connectivityManager.getNetworkInfo(ConnectivityManager.TYPE_WIFI).getState() == NetworkInfo.State.CONNECTED) {
                             //we are connected to a network
                             adNetwork.showRewardedAd();
-                            qTimer.setVisibility(View.GONE);
+                            /*qTimer.setVisibility(View.GONE);
                             timerView.setVisibility(View.GONE);
-                            quizTimer.setVisibility(View.GONE);
+                            quizTimer.setVisibility(View.GONE);*/
                             dialogInterface.dismiss();
 
                         } else {
@@ -345,9 +344,9 @@ public class QuizDetailsActivity extends AppCompatActivity {
                             connectivityManager.getNetworkInfo(ConnectivityManager.TYPE_WIFI).getState() == NetworkInfo.State.CONNECTED) {
                         //we are connected to a network
                         adNetwork.showRewardedAd();
-                        quizTimer.setVisibility(View.GONE);
+                        /*quizTimer.setVisibility(View.GONE);
                         qTimer.setVisibility(View.GONE);
-                        timerView.setVisibility(View.GONE);
+                        timerView.setVisibility(View.GONE);*/
 
                     } else {
                         toastText.setText(R.string.no_connection_text);

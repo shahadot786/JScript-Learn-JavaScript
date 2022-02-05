@@ -16,7 +16,7 @@
     <string name="play_rate_now">https://play.google.com/store/apps/details?id=com.javascript.jscript</string>
     <string name="share_message">Hey check out this app to learn Javascript:</string>
     <string name="share_message2">Learn, Practice Programs, Play Quiz and Discuss your problems frequently.</string>
-    <string name="share_message3">Learn JavaScript start to end with QA &amp; Practice Programs. More than 4000+ Programs.</string>
+    <string name="share_message3">Learn JavaScript start to end with QA &amp; Practice Programs. More than 1000+ Programs.</string>
     <string name="share_message4">Discuss your problems in details with the large JScript QA community.</string>
 
     <!--Admob Ads Real-->
@@ -53,10 +53,10 @@
     <!--Start-->
     <string name="jscript_learn_javascript">JScript : Learn Javascript</string>
     <string name="next">Next</string>
-    <string name="next_message">Learn JavaScript</string>
-    <string name="next_message2">Discuss with Community</string>
+    <string name="next_message">Learn JavaScript A to Z</string>
+    <string name="next_message2">Discuss problems with community</string>
     <string name="next_message3">Play Unlimited Quiz</string>
-    <string name="get_started">Get Started</string>
+    <string name="get_started">Get Started Learning</string>
 
     <!--Sign Up-->
     <string name="signup">Sign Up</string>

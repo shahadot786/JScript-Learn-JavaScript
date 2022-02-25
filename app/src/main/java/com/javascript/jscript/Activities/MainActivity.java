@@ -219,7 +219,7 @@ public class MainActivity extends AppCompatActivity {
                                                             Bitmap largeIcon = BitmapFactory.decodeResource(getResources(), R.drawable.ic_main_icon_round);
                                                             //notification intent
                                                             Intent intent = new Intent(context, NotificationsActivity.class);
-                                                            PendingIntent pendingIntent = PendingIntent.getActivity(context, 0, intent, 0);
+                                                            PendingIntent pendingIntent = PendingIntent.getActivity(context, 0, intent, PendingIntent.FLAG_MUTABLE);
                                                             //notification builder
                                                             NotificationCompat.Builder commentBuilder = new NotificationCompat.Builder(context, "JScript Notifications");
                                                             commentBuilder.setContentTitle("Hi! " + postedByUserName + " \uD83D\uDC9A");

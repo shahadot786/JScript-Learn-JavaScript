@@ -126,24 +126,6 @@ public class CommentAdapter extends RecyclerView.Adapter<CommentAdapter.viewHold
                                                         public void onSuccess(Void unused) {
                                                             holder.binding.likes.setImageResource(R.drawable.ic_like_icon_green);
                                                             holder.binding.likesLoves.setVisibility(View.VISIBLE);
-                                                            //notification codes
-                                                            /*NotificationsModel notifications = new NotificationsModel();
-                                                            notifications.setNotificationBy(FirebaseAuth.getInstance().getUid());
-                                                            notifications.setNotificationAt(new Date().getTime());
-                                                            notifications.setPostId(comment.getPostID());
-                                                            notifications.setPostedBy(comment.getPostedBy());
-                                                            notifications.setType("likes");
-
-                                                            FirebaseDatabase.getInstance().getReference()
-                                                                    .child("Notifications")
-                                                                    .child(comment.getPostedBy())
-                                                                    .push()
-                                                                    .setValue(notifications).addOnSuccessListener(new OnSuccessListener<Void>() {
-                                                                @Override
-                                                                public void onSuccess(@NonNull Void unused) {
-                                                                }
-                                                            });*/
-
                                                         }
                                                     });
                                         }

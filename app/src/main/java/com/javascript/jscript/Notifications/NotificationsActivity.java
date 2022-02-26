@@ -105,6 +105,9 @@ public class NotificationsActivity extends AppCompatActivity {
                         if (list.isEmpty()) {
                             noNotification.setVisibility(View.VISIBLE);
                             noNotifyText.setVisibility(View.VISIBLE);
+                        }else {
+                            noNotification.setVisibility(View.GONE);
+                            noNotifyText.setVisibility(View.GONE);
                         }
                         notificationRV.setAdapter(adapter);
                         notificationRV.hideShimmerAdapter();

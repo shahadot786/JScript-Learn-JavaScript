@@ -13,6 +13,9 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import androidx.activity.result.ActivityResultCallback;
+import androidx.activity.result.ActivityResultLauncher;
+import androidx.activity.result.contract.ActivityResultContracts;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
@@ -61,6 +64,7 @@ public class ProfileFragment extends Fragment {
     TextView toastText;
     View toastLayout;
     Toast toast;
+    Uri coverImageUri, profileImageUri;
 
 
     public ProfileFragment() {
@@ -180,7 +184,7 @@ public class ProfileFragment extends Fragment {
                                     binding.profession.setText(profession);
                                 }
 
-                                //set profession and bio
+                                //set bio
                                 binding.userBioText.setText(bio);
                                 //insert link data
                                 binding.linkFacebook.setOnClickListener(new View.OnClickListener() {
@@ -285,10 +289,7 @@ public class ProfileFragment extends Fragment {
                 if (connectivityManager.getNetworkInfo(ConnectivityManager.TYPE_MOBILE).getState() == NetworkInfo.State.CONNECTED ||
                         connectivityManager.getNetworkInfo(ConnectivityManager.TYPE_WIFI).getState() == NetworkInfo.State.CONNECTED) {
                     //we are connected to a network
-                    Intent intent = new Intent();
-                    intent.setAction(Intent.ACTION_GET_CONTENT);
-                    intent.setType("image/*");
-                    startActivityForResult(intent, 11);
+                    coverLauncher.launch("image/*");
                 } else {
                     toastText.setText(R.string.no_connection_text);
                     toast.show();
@@ -305,10 +306,7 @@ public class ProfileFragment extends Fragment {
                 if (connectivityManager.getNetworkInfo(ConnectivityManager.TYPE_MOBILE).getState() == NetworkInfo.State.CONNECTED ||
                         connectivityManager.getNetworkInfo(ConnectivityManager.TYPE_WIFI).getState() == NetworkInfo.State.CONNECTED) {
                     //we are connected to a network
-                    Intent intent = new Intent();
-                    intent.setAction(Intent.ACTION_GET_CONTENT);
-                    intent.setType("image/*");
-                    startActivityForResult(intent, 22);
+                    profileLauncher.launch("image/*");
                 } else {
                     toastText.setText(R.string.no_connection_text);
                     toast.show();
@@ -390,69 +388,69 @@ public class ProfileFragment extends Fragment {
         return binding.getRoot();
     }//end onCreate
 
-
-    @Override
-    public void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
-        super.onActivityResult(requestCode, resultCode, data);
-        if (requestCode == 11) {
-            assert data != null;
-            if (data.getData() != null) {
-                Uri uri = data.getData();
-                binding.coverPhoto.setImageURI(uri);
-                dialog.show();
-                final StorageReference reference = storage.getReference().child("cover_photo")
-                        .child(Objects.requireNonNull(FirebaseAuth.getInstance().getUid()));
-                reference.putFile(uri).addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
-                    @Override
-                    public void onSuccess(@NonNull UploadTask.TaskSnapshot taskSnapshot) {
-                        dialog.dismiss();
-                        toastText.setText(R.string.UploadSuccessfully);
-                        toast.show();
-                        reference.getDownloadUrl().addOnSuccessListener(new OnSuccessListener<Uri>() {
+    //Start activity for image upload result
+    //cover
+    ActivityResultLauncher<String> coverLauncher = registerForActivityResult(new ActivityResultContracts.GetContent(),
+            new ActivityResultCallback<Uri>() {
+                @Override
+                public void onActivityResult(Uri uri) {
+                    if (uri != null) {
+                        binding.coverPhoto.setImageURI(uri);
+                        dialog.show();
+                        final StorageReference reference = storage.getReference().child("cover_photo")
+                                .child(Objects.requireNonNull(FirebaseAuth.getInstance().getUid()));
+                        reference.putFile(uri).addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
                             @Override
-                            public void onSuccess(@NonNull Uri uri) {
-                                database.getReference()
-                                        .child("UserImages")
-                                        .child(Objects.requireNonNull(auth.getUid()))
-                                        .child("coverPhoto")
-                                        .setValue(uri.toString());
+                            public void onSuccess(@NonNull UploadTask.TaskSnapshot taskSnapshot) {
+                                dialog.dismiss();
+                                toastText.setText(R.string.UploadSuccessfully);
+                                toast.show();
+                                reference.getDownloadUrl().addOnSuccessListener(new OnSuccessListener<Uri>() {
+                                    @Override
+                                    public void onSuccess(@NonNull Uri uri) {
+                                        database.getReference()
+                                                .child("UserImages")
+                                                .child(Objects.requireNonNull(auth.getUid()))
+                                                .child("coverPhoto")
+                                                .setValue(uri.toString());
+                                    }
+                                });
                             }
                         });
                     }
-                });
-            }
-        } else if (requestCode == 22) {
-            assert data != null;
-            if (data.getData() != null) {
-                Uri uri = data.getData();
-                binding.profileImage.setImageURI(uri);
-                dialog.show();
-                final StorageReference reference = storage.getReference().child("profile_image")
-                        .child(Objects.requireNonNull(FirebaseAuth.getInstance().getUid()));
-                reference.putFile(uri).addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
-                    @Override
-                    public void onSuccess(@NonNull UploadTask.TaskSnapshot taskSnapshot) {
-                        dialog.dismiss();
-                        toastText.setText(R.string.UploadSuccessfully);
-                        toast.show();
-                        reference.getDownloadUrl().addOnSuccessListener(new OnSuccessListener<Uri>() {
+                }
+            });
+    //profile
+    ActivityResultLauncher<String> profileLauncher = registerForActivityResult(new ActivityResultContracts.GetContent(),
+            new ActivityResultCallback<Uri>() {
+                @Override
+                public void onActivityResult(Uri uri) {
+                    if (uri != null) {
+                        binding.profileImage.setImageURI(uri);
+                        dialog.show();
+                        final StorageReference reference = storage.getReference().child("profile_image")
+                                .child(Objects.requireNonNull(FirebaseAuth.getInstance().getUid()));
+                        reference.putFile(uri).addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
                             @Override
-                            public void onSuccess(@NonNull Uri uri) {
-                                database.getReference()
-                                        .child("UserData")
-                                        .child(Objects.requireNonNull(auth.getUid()))
-                                        .child("profile")
-                                        .setValue(uri.toString());
+                            public void onSuccess(@NonNull UploadTask.TaskSnapshot taskSnapshot) {
+                                dialog.dismiss();
+                                toastText.setText(R.string.UploadSuccessfully);
+                                toast.show();
+                                reference.getDownloadUrl().addOnSuccessListener(new OnSuccessListener<Uri>() {
+                                    @Override
+                                    public void onSuccess(@NonNull Uri uri) {
+                                        database.getReference()
+                                                .child("UserData")
+                                                .child(Objects.requireNonNull(auth.getUid()))
+                                                .child("profile")
+                                                .setValue(uri.toString());
+                                    }
+                                });
                             }
                         });
                     }
-                });
-            }
-        } else {
-            toastText.setText(R.string.WrongImageUpload);
-            toast.show();
-        }
-    }
+                }
+            });
 
 
 }

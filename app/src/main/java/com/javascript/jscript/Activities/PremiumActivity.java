@@ -46,18 +46,20 @@ import java.util.List;
 
 public class PremiumActivity extends AppCompatActivity implements PurchasesUpdatedListener {
 
+    ActivityPremiumBinding binding;
     public static final String PREF_FILE = "JScript_Learn_JavaScript";
     public static final String PURCHASE_KEY = "lifetime_product";
     public static final String PRODUCT_ID = "shr_jscript_final";
-    public static final String VERIFY_PURCHASE_KEY = "JScriptBJZXQTc4gBeak9vwJv6ZjmSOpg2786";
     FirebaseDatabase database;
     FirebaseAuth auth;
-    ActivityPremiumBinding binding;
     LayoutInflater inflater;
     TextView toastText;
     View toastLayout;
     Toast toast;
     Activity activity = this;
+    private BillingClient billingClient;
+
+    //Acknowledge
     AcknowledgePurchaseResponseListener ackPurchase = new AcknowledgePurchaseResponseListener() {
         @Override
         public void onAcknowledgePurchaseResponse(BillingResult billingResult) {
@@ -69,7 +71,6 @@ public class PremiumActivity extends AppCompatActivity implements PurchasesUpdat
             }
         }
     };
-    private BillingClient billingClient;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -281,6 +282,7 @@ public class PremiumActivity extends AppCompatActivity implements PurchasesUpdat
                     @Override
                     public void onSkuDetailsResponse(@NonNull BillingResult billingResult,
                                                      List<SkuDetails> skuDetailsList) {
+
                         if (billingResult.getResponseCode() == BillingClient.BillingResponseCode.OK) {
                             if (skuDetailsList != null && skuDetailsList.size() > 0) {
                                 TextView itemPrice = findViewById(R.id.itemPrice);
@@ -313,6 +315,7 @@ public class PremiumActivity extends AppCompatActivity implements PurchasesUpdat
                     @Override
                     public void onSkuDetailsResponse(@NonNull BillingResult billingResult,
                                                      List<SkuDetails> skuDetailsList) {
+
                         if (billingResult.getResponseCode() == BillingClient.BillingResponseCode.OK) {
                             if (skuDetailsList != null && skuDetailsList.size() > 0) {
                                 TextView itemPrice = findViewById(R.id.itemPrice);

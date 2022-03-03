@@ -115,7 +115,7 @@
         android:id="@+id/signOutBtn"
         android:layout_width="130dp"
         android:layout_height="wrap_content"
-        android:background="@drawable/ic_sign_out_btn_bg"
+        android:background="@drawable/ic_sign_out_btn_bg_2"
         android:fontFamily="@font/oswald"
         android:text="@string/yes_signout"
         app:layout_constraintBottom_toBottomOf="@+id/cancelBtn"

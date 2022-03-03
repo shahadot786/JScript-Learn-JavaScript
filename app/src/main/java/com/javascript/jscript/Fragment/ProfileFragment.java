@@ -64,7 +64,7 @@ public class ProfileFragment extends Fragment {
     TextView toastText;
     View toastLayout;
     Toast toast;
-    
+
     public ProfileFragment() {
         // Required empty public constructor
     }

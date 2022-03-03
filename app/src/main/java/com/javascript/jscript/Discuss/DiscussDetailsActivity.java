@@ -360,15 +360,13 @@ public class DiscussDetailsActivity extends AppCompatActivity {
                             });
 
                     adapter.notifyDataSetChanged();
-                    swipeRefreshLayout.setRefreshing(false);
-                    commentShimmer.hideShimmerAdapter();
 
                 } else {
                     toastText.setText(R.string.no_connection_text);
                     toast.show();
-                    swipeRefreshLayout.setRefreshing(false);
-                    commentShimmer.hideShimmerAdapter();
                 }
+                swipeRefreshLayout.setRefreshing(false);
+                commentShimmer.hideShimmerAdapter();
 
             }
         });

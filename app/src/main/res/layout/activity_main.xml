@@ -25,7 +25,7 @@
         android:minHeight="?attr/actionBarSize"
         android:background="@drawable/toolbar_bg"
         app:popupTheme="@style/Theme.AppCompat.Light"
-        android:theme="@style/Theme.AppCompat.DayNight.DarkActionBar"
+        android:theme="@style/SearchViewStyle"
         android:textSize="40sp"
         android:visibility="visible"
         app:collapseIcon="@drawable/ic_arrow_back_24"

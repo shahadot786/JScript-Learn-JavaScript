@@ -296,4 +296,7 @@
     <string name="remove_timer">Remove Timer</string>
     <string name="app_price">$5.70</string>
 
+    <string name="empty_list">Empty</string>
+    <string name="please_use_different_keywords">Please use different keywords…</string>
+
 </resources>

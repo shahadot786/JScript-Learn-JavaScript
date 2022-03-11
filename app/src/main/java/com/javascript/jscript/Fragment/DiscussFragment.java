@@ -17,6 +17,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
+import androidx.appcompat.widget.SearchView;
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
@@ -52,6 +53,8 @@ public class DiscussFragment extends Fragment {
     View toastLayout;
     Toast toast;
     View dotView;
+    View empty;
+    TextView emptyText,emptySubText;
 
     public DiscussFragment() {
         // Required empty public constructor
@@ -72,6 +75,13 @@ public class DiscussFragment extends Fragment {
         setHasOptionsMenu(true);
         //find dot view
         dotView = view.findViewById(R.id.dotViews);
+
+        //empty view
+        empty = view.findViewById(R.id.emptyList);
+        emptyText = view.findViewById(R.id.empty);
+        emptySubText = view.findViewById(R.id.emptyListText);
+
+        //custom toast
         toastLayout = inflater.inflate(R.layout.custom_toast_layout, view.findViewById(R.id.toastLayout));
         toastText = toastLayout.findViewById(R.id.toastText);
         toast = new Toast(getActivity().getBaseContext());
@@ -206,8 +216,7 @@ public class DiscussFragment extends Fragment {
         MenuItem menuItem = menu.findItem(R.id.settings);
         menuItem.setVisible(false);
         inflater.inflate(R.menu.menu_discuss, menu);
-        final MenuItem menuItem1 = menu.findItem(R.id.notification);
-        menuItem1.setVisible(true);
+        MenuItem menuItem1 = menu.findItem(R.id.notification);
         //notification icon change
         database.getReference()
                 .child("Notifications")
@@ -233,6 +242,50 @@ public class DiscussFragment extends Fragment {
                     }
                 });
 
+        //search bar code
+        MenuItem search = menu.findItem(R.id.action_search);
+        SearchView searchView = (SearchView) search.getActionView();
+        searchView.setQueryHint("Search anything...");
+        searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
+            @Override
+            public boolean onQueryTextSubmit(String s) {
+                search(s);
+                return true;
+            }
+
+            @Override
+            public boolean onQueryTextChange(String s) {
+                search(s);
+                return true;
+            }
+        });
+
+    }
+
+    private void search(String str) {
+
+        ArrayList<DiscussModel> myList = new ArrayList<>();
+        for (DiscussModel object : dashboardList){
+            if (object.getQuestions().toLowerCase().contains(str.toLowerCase())){
+                myList.add(object);
+            }else if(object.getDescription().toLowerCase().contains(str.toLowerCase())){
+                myList.add(object);
+            }
+        }
+
+        DiscussAdapter adapter = new DiscussAdapter(myList,getContext());
+        recyclerView.setAdapter(adapter);
+
+        if (myList.isEmpty()){
+            emptyText.setVisibility(View.VISIBLE);
+            emptySubText.setVisibility(View.VISIBLE);
+            empty.setVisibility(View.VISIBLE);
+        }else {
+            emptyText.setVisibility(View.GONE);
+            emptySubText.setVisibility(View.GONE);
+            empty.setVisibility(View.GONE);
+        }
+
     }
 
 
@@ -246,31 +299,4 @@ public class DiscussFragment extends Fragment {
         return super.onOptionsItemSelected(item);
     }
 }
-   /* SearchView searchView = (SearchView) item.getActionView();
-        searchView.setQueryHint("Search questions...");
-        searchView.setBackgroundResource(R.drawable.ic_programs_image_bg);
-    //text
-    EditText txtSearch = ((EditText)searchView.findViewById(androidx.appcompat.R.id.search_src_text));
-        txtSearch.setHintTextColor(getResources().getColor(R.color.textColorPlaceholder));
-        txtSearch.setTextColor(Color.WHITE);
-    //query listener
-        searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
-        @Override
-        public boolean onQueryTextSubmit(String s) {
-            processsearch(s);
-            return false;
-        }
-
-        @Override
-        public boolean onQueryTextChange(String s) {
-            processsearch(s);
-            return false;
-        }
-    });
-        super.onCreateOptionsMenu(menu, inflater);
-
-}
-
-    private void processsearch(String s) {
-    }*/
 

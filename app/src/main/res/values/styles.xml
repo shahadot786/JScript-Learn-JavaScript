@@ -15,6 +15,8 @@
         <!--<item name="actionBarTheme">@style/ToolBarTheme</item>-->
         <item name="android:fontFamily">@font/oswald_light</item>
         <item name="android:itemBackground">@color/colorSecondary</item>
+        <!--Action search bar style-->
+        <item name="searchViewStyle">@style/SearchViewStyle</item>
 
 
     </style>
@@ -46,6 +48,13 @@
     <style name="CircularProgressBar">
         <item name="android:indeterminateOnly">false</item>
         <item name="android:progressDrawable">@drawable/progress_circle</item>
+    </style>
+
+    <!--Action search bar style-->
+    <style name="SearchViewStyle" parent="Widget.AppCompat.Light.SearchView">
+        <item name="queryBackground">@drawable/ic_programs_image_bg</item>
+        <item name="android:editTextColor">@color/colorWhite</item>
+        <item name="android:textColorHint">@color/textColorGrey</item>
     </style>
 
 </resources>

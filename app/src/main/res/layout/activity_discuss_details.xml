@@ -116,90 +116,124 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="4dp"
+                    android:autoLink="web"
                     android:background="@drawable/ic_quiz_option_bg"
                     android:fontFamily="@font/open_sans"
+                    android:linksClickable="true"
                     android:paddingStart="10dp"
                     android:paddingTop="5dp"
                     android:paddingEnd="10dp"
                     android:paddingBottom="15dp"
+                    android:textColorLink="@color/activeGreen"
                     android:textIsSelectable="true"
                     android:textSize="12sp"
-                    android:autoLink="web"
-                    android:linksClickable="true"
-                    android:textColorLink="@color/activeGreen"
                     app:layout_constraintEnd_toEndOf="@+id/question"
                     app:layout_constraintStart_toStartOf="@+id/question"
                     app:layout_constraintTop_toBottomOf="@+id/question"
                     tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck"
                     tools:targetApi="o" />
 
+                <ImageView
+                    android:id="@+id/likes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    android:contentDescription="@string/app_main_images"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/descriptions"
+                    app:srcCompat="@drawable/ic__like_icon" />
+
+                <TextView
+                    android:id="@+id/likesCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:text="@string/_0_"
+                    app:layout_constraintBottom_toBottomOf="@+id/likes"
+                    app:layout_constraintStart_toEndOf="@+id/likes"
+                    app:layout_constraintTop_toTopOf="@+id/likes" />
+
                 <androidx.appcompat.widget.AppCompatTextView
                     android:id="@+id/views"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
                     android:drawablePadding="4dp"
                     android:gravity="center"
+                    android:text="@string/_0_"
                     android:textColor="@color/color_text_discuss"
                     android:textSize="12sp"
                     app:drawableLeftCompat="@drawable/ic_watch_icon"
+                    app:layout_constraintBottom_toBottomOf="@+id/likes"
                     app:layout_constraintEnd_toStartOf="@+id/comment"
-                    app:layout_constraintStart_toStartOf="@+id/profileImage"
-                    app:layout_constraintTop_toBottomOf="@+id/descriptions" />
+                    app:layout_constraintTop_toTopOf="@+id/likes" />
 
                 <androidx.appcompat.widget.AppCompatTextView
                     android:id="@+id/comment"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="8dp"
-                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
                     android:drawablePadding="4dp"
                     android:gravity="center"
+                    android:text="@string/_0_"
                     android:textColor="@color/color_text_discuss"
                     android:textSize="12sp"
                     app:drawableLeftCompat="@drawable/ic_reply_white"
                     app:layout_constraintEnd_toStartOf="@+id/share"
-                    app:layout_constraintHorizontal_bias="0.5"
-                    app:layout_constraintStart_toEndOf="@+id/views"
-                    app:layout_constraintTop_toBottomOf="@+id/descriptions" />
+                    app:layout_constraintTop_toTopOf="@+id/views" />
 
                 <androidx.appcompat.widget.AppCompatTextView
                     android:id="@+id/share"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="8dp"
-                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="16dp"
                     android:drawablePadding="4dp"
                     android:gravity="center"
+                    android:text="@string/_0_"
                     android:textColor="@color/color_text_discuss"
                     android:textSize="12sp"
                     app:drawableLeftCompat="@drawable/ic_share_white"
-                    app:layout_constraintStart_toEndOf="@+id/comment"
-                    app:layout_constraintTop_toBottomOf="@+id/descriptions" />
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/comment" />
+
+                <com.airbnb.lottie.LottieAnimationView
+                    android:id="@+id/likes_loves"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:visibility="gone"
+                    app:layout_constraintBottom_toTopOf="@+id/commentRv"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:lottie_autoPlay="true"
+                    app:lottie_loop="false"
+                    app:lottie_rawRes="@raw/likes_loves" />
 
                 <View
                     android:id="@+id/view9"
                     android:layout_width="wrap_content"
-                    android:layout_height="1dp"
-                    android:layout_marginTop="4dp"
+                    android:layout_height="0.6dp"
+                    android:layout_marginTop="8dp"
                     android:background="@color/colorSecondary"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.5"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/share" />
+                    app:layout_constraintTop_toBottomOf="@+id/likes" />
 
                 <com.cooltechworks.views.shimmer.ShimmerRecyclerView
                     android:id="@+id/commentRv"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="8dp"
-                    android:layout_marginTop="16dp"
+                    android:layout_marginTop="10dp"
                     android:layout_marginEnd="8dp"
                     android:paddingTop="5dp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.5"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/views"
+                    app:layout_constraintTop_toTopOf="@+id/view9"
                     app:shimmer_demo_child_count="10"
                     app:shimmer_demo_layout="@layout/demo_comment_shimmer" />
 

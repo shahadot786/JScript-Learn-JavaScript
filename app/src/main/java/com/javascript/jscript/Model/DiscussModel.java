@@ -7,6 +7,7 @@ public class DiscussModel {
     private int postViews;
     private int commentCount;
     private int shareCount;
+    private int likesCount;
 
     public DiscussModel() {
     }
@@ -76,4 +77,11 @@ public class DiscussModel {
         this.shareCount = shareCount;
     }
 
+    public int getLikesCount() {
+        return likesCount;
+    }
+
+    public void setLikesCount(int likesCount) {
+        this.likesCount = likesCount;
+    }
 }

@@ -178,10 +178,11 @@ public class MainActivity extends AppCompatActivity {
                             assert model != null;
                             String types = model.getType();
                             String question = model.getQuestion();
-                            if (types.equals("comment")) {
+
+                            if (types.equals("likes")) {
                                 boolean checkOpens = model.isCheckOpen();
                                 if (!checkOpens) {
-                                    String typeText = " reply in";
+                                    String typeText = " liked your post ";
                                     //get user data
                                     database.getReference()
                                             .child("UserData")

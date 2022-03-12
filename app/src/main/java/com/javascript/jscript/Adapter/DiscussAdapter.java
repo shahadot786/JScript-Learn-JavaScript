@@ -57,8 +57,20 @@ public class DiscussAdapter extends RecyclerView.Adapter<DiscussAdapter.viewHold
         String views = model.getPostViews() + "";
         String comments = model.getCommentCount() + "";
         String shares = model.getShareCount() + "";
+        String likes = model.getLikesCount() + "";
         holder.binding.time.setText(time);
         holder.binding.question.setText(model.getQuestions());
+
+        //1K and 1M likes logic
+        int like = Integer.parseInt(likes);
+        if (like >= 1000) {
+            holder.binding.likes.setText((like / 1000) + "." + ((like % 1000) / 100) + "K");
+        } else {
+            holder.binding.likes.setText(likes);
+        }
+        if (like >= 1000000) {
+            holder.binding.likes.setText((like / 1000000) + "." + ((like % 1000000) / 10000) + "M");
+        }
         //1K and 1M views logic
         int view = Integer.parseInt(views);
         if (view >= 1000) {

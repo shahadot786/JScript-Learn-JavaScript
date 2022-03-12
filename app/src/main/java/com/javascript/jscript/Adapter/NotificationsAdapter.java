@@ -66,11 +66,11 @@ public class NotificationsAdapter extends RecyclerView.Adapter<NotificationsAdap
                                 .into(holder.binding.profileImage);
                         holder.binding.notificationTime.setText(time);
 
-                        if (type.equals("comment")) {
+                        if (type.equals("likes")) {
                             holder.binding.notificationText.setText(Html.fromHtml("<span style=\"font-weight:bold; color:#15c55d\">" +
-                                    userModel.getUserName() + " " + "</span>" + " reply in " +
+                                    userModel.getUserName() + " " + "</span>" + " liked you post (" +
                                     "\"<span style=\"font-weight:bold; color:#b3b5bd\"> " + question
-                                    + " " + " </span>\""));
+                                    + ") " + " </span>\""));
                         }
                         /*else if (type.equals("likes")){
                             holder.binding.notificationText.setText(Html.fromHtml("<span style=\"font-weight:bold; color:#15c55d\">"+

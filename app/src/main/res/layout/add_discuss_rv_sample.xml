@@ -73,15 +73,31 @@
         tools:targetApi="o" />
 
     <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/likes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:drawablePadding="4dp"
+        android:gravity="center"
+        android:text="@string/_0_"
+        android:textColor="@color/color_text_discuss"
+        android:textSize="12sp"
+        app:drawableLeftCompat="@drawable/ic__like_icon"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/question" />
+
+    <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/views"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
         android:drawablePadding="4dp"
         android:gravity="center"
+        android:text="@string/_0_"
         android:textColor="@color/color_text_discuss"
         android:textSize="12sp"
         app:drawableLeftCompat="@drawable/ic_watch_icon"
-        app:layout_constraintStart_toStartOf="@+id/profileImage"
+        app:layout_constraintStart_toEndOf="@+id/likes"
         app:layout_constraintTop_toBottomOf="@+id/question" />
 
     <androidx.appcompat.widget.AppCompatTextView
@@ -91,6 +107,7 @@
         android:layout_marginStart="8dp"
         android:drawablePadding="4dp"
         android:gravity="center"
+        android:text="@string/_0_"
         android:textColor="@color/color_text_discuss"
         android:textSize="12sp"
         app:drawableLeftCompat="@drawable/ic_reply_white"
@@ -104,6 +121,7 @@
         android:layout_marginStart="8dp"
         android:drawablePadding="4dp"
         android:gravity="center"
+        android:text="@string/_0_"
         android:textColor="@color/color_text_discuss"
         android:textSize="12sp"
         app:drawableLeftCompat="@drawable/ic_share_white"

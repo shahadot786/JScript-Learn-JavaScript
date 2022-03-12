@@ -129,9 +129,22 @@ public class DiscussDetailsActivity extends AppCompatActivity {
                 String views = discuss.getPostViews() + "";
                 String comments = discuss.getCommentCount() + "";
                 String shares = discuss.getShareCount() + "";
+                String likes = discuss.getLikesCount() + "";
                 binding.time.setText(time);
                 binding.question.setText(question);
                 binding.descriptions.setText(description);
+
+                //1K and 1M likes logic
+                int like = Integer.parseInt(likes);
+                if (like >= 1000) {
+                    binding.likesCount.setText((like / 1000) + "." + ((like % 1000) / 100) + "K");
+                } else {
+                    binding.likesCount.setText(likes);
+                }
+                if (like >= 1000000) {
+                    binding.likesCount.setText((like / 1000000) + "." + ((like % 1000000) / 10000) + "M");
+                }
+
                 //1K and 1M views logic
                 int view = Integer.parseInt(views);
                 if (view >= 1000) {
@@ -163,6 +176,96 @@ public class DiscussDetailsActivity extends AppCompatActivity {
                     binding.share.setText((share / 1000000) + "." + ((share % 1000000) / 10000) + "M");
                 }
 
+                //post likes data
+                FirebaseDatabase.getInstance().getReference()
+                        .child("Discuss")
+                        .child(postId)
+                        .child("likes")
+                        .child(Objects.requireNonNull(FirebaseAuth.getInstance().getUid()))
+                        .addListenerForSingleValueEvent(new ValueEventListener() {
+                            @Override
+                            public void onDataChange(@NonNull DataSnapshot snapshot) {
+                                if (snapshot.exists()){
+                                    binding.likes.setImageResource(R.drawable.ic_like_icon_green);
+                                }else {
+                                    binding.likes.setOnClickListener(new View.OnClickListener() {
+                                        @Override
+                                        public void onClick(View view) {
+                                            //network check
+                                            ConnectivityManager connectivityManager = (ConnectivityManager) getSystemService(DiscussDetailsActivity.CONNECTIVITY_SERVICE);
+                                            if (connectivityManager.getNetworkInfo(ConnectivityManager.TYPE_MOBILE).getState() == NetworkInfo.State.CONNECTED ||
+                                                    connectivityManager.getNetworkInfo(ConnectivityManager.TYPE_WIFI).getState() == NetworkInfo.State.CONNECTED) {
+
+                                                FirebaseDatabase.getInstance().getReference()
+                                                        .child("Discuss")
+                                                        .child(postId)
+                                                        .child("likes")
+                                                        .child(FirebaseAuth.getInstance().getUid())
+                                                        .setValue(true).addOnSuccessListener(new OnSuccessListener<Void>() {
+                                                    @Override
+                                                    public void onSuccess(Void unused) {
+                                                        FirebaseDatabase.getInstance().getReference()
+                                                                .child("Discuss")
+                                                                .child(postId)
+                                                                .child("likesCount")
+                                                                .setValue(discuss.getLikesCount() + 1)
+                                                                .addOnSuccessListener(new OnSuccessListener<Void>() {
+                                                                    @Override
+                                                                    public void onSuccess(Void unused) {
+                                                                        binding.likes.setImageResource(R.drawable.ic_like_icon_green);
+                                                                        binding.likesLoves.setVisibility(View.VISIBLE);
+
+                                                                        //for notification
+                                                                        database.getReference()
+                                                                                .child("Discuss")
+                                                                                .child(postId)
+                                                                                .addValueEventListener(new ValueEventListener() {
+                                                                                    @Override
+                                                                                    public void onDataChange(@NonNull DataSnapshot snapshot) {
+                                                                                        //notifications
+                                                                                        NotificationsModel notifications = new NotificationsModel();
+                                                                                        notifications.setNotificationBy(FirebaseAuth.getInstance().getUid());
+                                                                                        notifications.setNotificationAt(new Date().getTime());
+                                                                                        notifications.setPostId(postId);
+                                                                                        notifications.setPostedBy(postedBy);
+                                                                                        notifications.setQuestion(question);
+                                                                                        notifications.setType("likes");
+
+                                                                                        FirebaseDatabase.getInstance().getReference()
+                                                                                                .child("Notifications")
+                                                                                                .child(postedBy)
+                                                                                                .push()
+                                                                                                .setValue(notifications).addOnSuccessListener(new OnSuccessListener<Void>() {
+                                                                                            @Override
+                                                                                            public void onSuccess(@NonNull Void unused) {
+                                                                                            }
+                                                                                        });
+                                                                                    }
+
+                                                                                    @Override
+                                                                                    public void onCancelled(@NonNull DatabaseError error) {
+
+                                                                                    }
+                                                                                });
+                                                                    }
+                                                                });
+                                                    }
+                                                });
+                                            } else {
+                                                toastText.setText(R.string.no_connection_text);
+                                                toast.show();
+                                            }
+                                        }
+                                    });
+                                }
+                            }
+
+                            @Override
+                            public void onCancelled(@NonNull DatabaseError error) {
+
+                            }
+                        });
+
             }
 
             @Override
@@ -190,6 +293,10 @@ public class DiscussDetailsActivity extends AppCompatActivity {
 
             }
         });
+
+
+
+
         //reply codes
         binding.commentPostBtn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -234,41 +341,6 @@ public class DiscussDetailsActivity extends AppCompatActivity {
                                                 //hide keyboard
                                                 InputMethodManager inputMethodManager = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
                                                 inputMethodManager.hideSoftInputFromWindow(view.getWindowToken(), 0);
-                                                //get post data
-                                                database.getReference()
-                                                        .child("Discuss")
-                                                        .child(postId)
-                                                        .addValueEventListener(new ValueEventListener() {
-                                                            @Override
-                                                            public void onDataChange(@NonNull DataSnapshot snapshot) {
-                                                                DiscussModel model = snapshot.getValue(DiscussModel.class);
-                                                                assert model != null;
-                                                                String question = model.getQuestions();
-                                                                //notifications
-                                                                NotificationsModel notifications = new NotificationsModel();
-                                                                notifications.setNotificationBy(FirebaseAuth.getInstance().getUid());
-                                                                notifications.setNotificationAt(new Date().getTime());
-                                                                notifications.setPostId(postId);
-                                                                notifications.setPostedBy(postedBy);
-                                                                notifications.setQuestion(question);
-                                                                notifications.setType("comment");
-
-                                                                FirebaseDatabase.getInstance().getReference()
-                                                                        .child("Notifications")
-                                                                        .child(postedBy)
-                                                                        .push()
-                                                                        .setValue(notifications).addOnSuccessListener(new OnSuccessListener<Void>() {
-                                                                    @Override
-                                                                    public void onSuccess(@NonNull Void unused) {
-                                                                    }
-                                                                });
-                                                            }
-
-                                                            @Override
-                                                            public void onCancelled(@NonNull DatabaseError error) {
-
-                                                            }
-                                                        });
                                             }
                                         });
                                     }

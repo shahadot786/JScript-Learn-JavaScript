@@ -2,6 +2,7 @@ package com.javascript.jscript.Adapter;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -16,6 +17,7 @@ import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
+import com.javascript.jscript.Activities.UserProfileActivity;
 import com.javascript.jscript.Model.CommentModel;
 import com.javascript.jscript.Model.UserModel;
 import com.javascript.jscript.R;
@@ -50,6 +52,7 @@ public class CommentAdapter extends RecyclerView.Adapter<CommentAdapter.viewHold
         String commentLikes = comment.getCountLikes() + "";
         holder.binding.commentedText.setText(comment.getCommentBody());
         holder.binding.time.setText(time);
+        String commentedBy = comment.getCommentedBy();
         //if likes are empty
         if (commentLikes.equals("0")) {
             holder.binding.likesCount.setText("");
@@ -83,6 +86,16 @@ public class CommentAdapter extends RecyclerView.Adapter<CommentAdapter.viewHold
             @Override
             public void onCancelled(@NonNull DatabaseError error) {
 
+            }
+        });
+
+        holder.binding.commentedProfile.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(context, UserProfileActivity.class);
+                intent.putExtra("postedBy",commentedBy);
+                intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                context.getApplicationContext().startActivity(intent);
             }
         });
         //check likes exist

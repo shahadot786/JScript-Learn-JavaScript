@@ -35,6 +35,7 @@ import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
+import com.javascript.jscript.Activities.UserProfileActivity;
 import com.javascript.jscript.Adapter.CommentAdapter;
 import com.javascript.jscript.BuildConfig;
 import com.javascript.jscript.Config.UiConfig;
@@ -312,6 +313,16 @@ public class DiscussDetailsActivity extends AppCompatActivity {
             @Override
             public void onCancelled(@NonNull DatabaseError error) {
 
+            }
+        });
+
+        binding.profileView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(DiscussDetailsActivity.this, UserProfileActivity.class);
+                intent.putExtra("postedBy",postedBy);
+                intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                startActivity(intent);
             }
         });
 

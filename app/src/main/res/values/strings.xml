@@ -243,7 +243,7 @@
     <string name="interview">Interview</string>
     <string name="programs">Programs</string>
     <string name="_0">0%</string>
-    <string name="my_progress">My Progress :</string>
+    <string name="my_progress">Progress :</string>
     <string name="click_to_finish">Click to finish</string>
     <string name="write_only_this">//Just write the above code &amp; run</string>
     <string name="write_your_code_here">Coding area:</string>
@@ -299,5 +299,6 @@
     <string name="empty_list">Not found</string>
     <string name="please_use_different_keywords">Please use different keywords…</string>
     <string name="_0_">0</string>
+    <string name="questions">Questions</string>
 
 </resources>

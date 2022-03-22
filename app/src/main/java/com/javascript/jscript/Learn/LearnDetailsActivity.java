@@ -6,6 +6,7 @@ import android.content.res.ColorStateList;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.Menu;
@@ -25,6 +26,10 @@ import androidx.constraintlayout.widget.ConstraintLayout;
 
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
+import com.google.android.gms.ads.MobileAds;
+import com.google.android.gms.ads.initialization.AdapterStatus;
+import com.google.android.gms.ads.initialization.InitializationStatus;
+import com.google.android.gms.ads.initialization.OnInitializationCompleteListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DataSnapshot;
@@ -41,6 +46,7 @@ import com.javascript.jscript.Utils.AdNetwork;
 import com.javascript.jscript.databinding.ActivityLearnDetailsBinding;
 
 import java.util.List;
+import java.util.Map;
 import java.util.Objects;
 
 import thereisnospon.codeview.CodeView;
@@ -89,14 +95,29 @@ public class LearnDetailsActivity extends AppCompatActivity {
         adNetwork = new AdNetwork(LearnDetailsActivity.this);
         adNetwork.loadInterstitialAd();
         //banner
-        AdView bannerAd = findViewById(R.id.adView);
-        AdRequest adRequest = new AdRequest.Builder().build();
-        bannerAd.loadAd(adRequest);
-        if (UiConfig.BANNER_AD_VISIBILITY) {
-            bannerAd.setVisibility(View.VISIBLE);
-        } else {
-            bannerAd.setVisibility(View.GONE);
-        }
+        MobileAds.initialize(this, new OnInitializationCompleteListener() {
+            @Override
+            public void onInitializationComplete(@NonNull InitializationStatus initializationStatus) {
+                Map<String, AdapterStatus> statusMap = initializationStatus.getAdapterStatusMap();
+                for (String adapterClass : statusMap.keySet()) {
+                    AdapterStatus status = statusMap.get(adapterClass);
+                    Log.d("JScript", String.format(
+                            "Adapter name: %s, Description: %s, Latency: %d",
+                            adapterClass, status.getDescription(), status.getLatency()));
+                }
+
+                // Start loading ads here...
+                //ad request
+                AdView bannerAd = findViewById(R.id.adView);
+                AdRequest adRequest = new AdRequest.Builder().build();
+                bannerAd.loadAd(adRequest);
+                if (UiConfig.BANNER_AD_VISIBILITY) {
+                    bannerAd.setVisibility(View.VISIBLE);
+                } else {
+                    bannerAd.setVisibility(View.GONE);
+                }
+            }
+        });
         //find id
         title = findViewById(R.id.learnTitle);
         details = findViewById(R.id.learnDetails);

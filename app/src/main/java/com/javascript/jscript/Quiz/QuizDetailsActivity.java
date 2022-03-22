@@ -7,6 +7,7 @@ import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.os.Bundle;
 import android.os.CountDownTimer;
+import android.util.Log;
 import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.Menu;
@@ -23,6 +24,10 @@ import androidx.appcompat.widget.AppCompatButton;
 import com.airbnb.lottie.LottieAnimationView;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
+import com.google.android.gms.ads.MobileAds;
+import com.google.android.gms.ads.initialization.AdapterStatus;
+import com.google.android.gms.ads.initialization.InitializationStatus;
+import com.google.android.gms.ads.initialization.OnInitializationCompleteListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DataSnapshot;
@@ -39,6 +44,7 @@ import com.javascript.jscript.databinding.ActivityQuizDetailsBinding;
 
 import java.util.List;
 import java.util.Locale;
+import java.util.Map;
 import java.util.Objects;
 import java.util.concurrent.TimeUnit;
 
@@ -93,18 +99,34 @@ public class QuizDetailsActivity extends AppCompatActivity {
         //ad request
         //interstitial ads
         adNetwork = new AdNetwork(QuizDetailsActivity.this);
-        adNetwork.loadInterstitialAd();
-        //rewarded ad
-        adNetwork.loadRewardedAd();
+
         //banner
-        AdView bannerAd = findViewById(R.id.adView);
-        AdRequest adRequest = new AdRequest.Builder().build();
-        bannerAd.loadAd(adRequest);
-        if (UiConfig.BANNER_AD_VISIBILITY) {
-            bannerAd.setVisibility(View.VISIBLE);
-        } else {
-            bannerAd.setVisibility(View.GONE);
-        }
+        MobileAds.initialize(this, new OnInitializationCompleteListener() {
+            @Override
+            public void onInitializationComplete(@NonNull InitializationStatus initializationStatus) {
+                Map<String, AdapterStatus> statusMap = initializationStatus.getAdapterStatusMap();
+                for (String adapterClass : statusMap.keySet()) {
+                    AdapterStatus status = statusMap.get(adapterClass);
+                    Log.d("JScript", String.format(
+                            "Adapter name: %s, Description: %s, Latency: %d",
+                            adapterClass, status.getDescription(), status.getLatency()));
+                }
+
+                // Start loading ads here...
+                //ad request.
+                adNetwork.loadInterstitialAd();
+                //rewarded ad
+                adNetwork.loadRewardedAd();
+                AdView bannerAd = findViewById(R.id.adView);
+                AdRequest adRequest = new AdRequest.Builder().build();
+                bannerAd.loadAd(adRequest);
+                if (UiConfig.BANNER_AD_VISIBILITY) {
+                    bannerAd.setVisibility(View.VISIBLE);
+                } else {
+                    bannerAd.setVisibility(View.GONE);
+                }
+            }
+        });
         //check premium time
         if (UiConfig.PRO_VISIBILITY_STATUS_SHOW) {
             //true

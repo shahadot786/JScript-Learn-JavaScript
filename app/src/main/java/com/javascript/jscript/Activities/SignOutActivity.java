@@ -2,6 +2,7 @@ package com.javascript.jscript.Activities;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
 
@@ -10,6 +11,10 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
+import com.google.android.gms.ads.MobileAds;
+import com.google.android.gms.ads.initialization.AdapterStatus;
+import com.google.android.gms.ads.initialization.InitializationStatus;
+import com.google.android.gms.ads.initialization.OnInitializationCompleteListener;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
@@ -21,6 +26,7 @@ import com.javascript.jscript.R;
 import com.javascript.jscript.databinding.ActivitySignOutBinding;
 import com.squareup.picasso.Picasso;
 
+import java.util.Map;
 import java.util.Objects;
 
 public class SignOutActivity extends AppCompatActivity {
@@ -67,9 +73,30 @@ public class SignOutActivity extends AppCompatActivity {
                 });
 
         //ad initialization
-        mRecAd = findViewById(R.id.adView);
-        AdRequest adRequest = new AdRequest.Builder().build();
-        mRecAd.loadAd(adRequest);
+        MobileAds.initialize(this, new OnInitializationCompleteListener() {
+            @Override
+            public void onInitializationComplete(@NonNull InitializationStatus initializationStatus) {
+                Map<String, AdapterStatus> statusMap = initializationStatus.getAdapterStatusMap();
+                for (String adapterClass : statusMap.keySet()) {
+                    AdapterStatus status = statusMap.get(adapterClass);
+                    Log.d("MyApp", String.format(
+                            "Adapter name: %s, Description: %s, Latency: %d",
+                            adapterClass, status.getDescription(), status.getLatency()));
+                }
+
+                // Start loading ads here...
+                //ad initialization
+                mRecAd = findViewById(R.id.adView);
+                AdRequest adRequest = new AdRequest.Builder().build();
+                mRecAd.loadAd(adRequest);
+                //ads disabled code
+                if (UiConfig.BANNER_AD_VISIBILITY) {
+                    mRecAd.setVisibility(View.VISIBLE);
+                } else {
+                    mRecAd.setVisibility(View.GONE);
+                }
+            }
+        });
 
         //cancel button
         binding.cancelBtn.setOnClickListener(new View.OnClickListener() {

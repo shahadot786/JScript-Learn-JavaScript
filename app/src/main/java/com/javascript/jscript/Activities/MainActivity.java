@@ -15,6 +15,7 @@ import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
 import android.text.Html;
+import android.util.Log;
 import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.Menu;
@@ -29,9 +30,12 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.NotificationCompat;
 import androidx.core.app.NotificationManagerCompat;
 import androidx.fragment.app.FragmentTransaction;
-
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
+import com.google.android.gms.ads.MobileAds;
+import com.google.android.gms.ads.initialization.AdapterStatus;
+import com.google.android.gms.ads.initialization.InitializationStatus;
+import com.google.android.gms.ads.initialization.OnInitializationCompleteListener;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
@@ -50,6 +54,7 @@ import com.javascript.jscript.Notifications.NotificationsActivity;
 import com.javascript.jscript.R;
 import com.javascript.jscript.databinding.ActivityMainBinding;
 
+import java.util.Map;
 import java.util.Objects;
 import java.util.Random;
 
@@ -88,18 +93,36 @@ public class MainActivity extends AppCompatActivity {
         auth = FirebaseAuth.getInstance();
         database = FirebaseDatabase.getInstance();
         //ad request
-        bannerAd = findViewById(R.id.adView);
-        AdRequest adRequest = new AdRequest.Builder().build();
-        bannerAd.loadAd(adRequest);
+        MobileAds.initialize(this, new OnInitializationCompleteListener() {
+            @Override
+            public void onInitializationComplete(@NonNull InitializationStatus initializationStatus) {
+                Map<String, AdapterStatus> statusMap = initializationStatus.getAdapterStatusMap();
+                for (String adapterClass : statusMap.keySet()) {
+                    AdapterStatus status = statusMap.get(adapterClass);
+                    Log.d("JScript", String.format(
+                            "Adapter name: %s, Description: %s, Latency: %d",
+                            adapterClass, status.getDescription(), status.getLatency()));
+                }
+
+                // Start loading ads here...
+                //ad request
+                bannerAd = findViewById(R.id.adView);
+                AdRequest adRequest = new AdRequest.Builder().build();
+                bannerAd.loadAd(adRequest);
+                if (UiConfig.BANNER_AD_VISIBILITY) {
+                    bannerAd.setVisibility(View.VISIBLE);
+                }
+            }
+        });
+
+        //MediationTestSuite.launch(MainActivity.this);
         //by default fragment code
         FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
         binding.toolbar.setVisibility(View.VISIBLE);
         MainActivity.this.setTitle(getResources().getString(R.string.jscript_learn_javascript));
         transaction.replace(R.id.container, new HomeFragment());
         transaction.commit();
-        if (UiConfig.BANNER_AD_VISIBILITY) {
-            bannerAd.setVisibility(View.VISIBLE);
-        }
+
 
         //bottom bar fragment listener
         binding.bottomBar.setOnItemSelectedListener(new OnItemSelectedListener() {

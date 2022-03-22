@@ -3,6 +3,7 @@ package com.javascript.jscript.Quiz;
 import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
@@ -14,10 +15,15 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.google.android.gms.ads.MobileAds;
+import com.google.android.gms.ads.initialization.AdapterStatus;
+import com.google.android.gms.ads.initialization.InitializationStatus;
+import com.google.android.gms.ads.initialization.OnInitializationCompleteListener;
 import com.javascript.jscript.R;
 import com.javascript.jscript.Utils.AdNetwork;
 import com.javascript.jscript.databinding.ActivityQuizTopicListBinding;
 
+import java.util.Map;
 import java.util.Objects;
 
 public class QuizTopicListActivity extends AppCompatActivity {
@@ -43,7 +49,23 @@ public class QuizTopicListActivity extends AppCompatActivity {
         QuizTopicListActivity.CustomAdapter adapter = new QuizTopicListActivity.CustomAdapter();
         quizList.setAdapter(adapter);
         //load ad
-        adNetwork.loadInterstitialAd();
+        MobileAds.initialize(this, new OnInitializationCompleteListener() {
+            @Override
+            public void onInitializationComplete(@NonNull InitializationStatus initializationStatus) {
+                Map<String, AdapterStatus> statusMap = initializationStatus.getAdapterStatusMap();
+                for (String adapterClass : statusMap.keySet()) {
+                    AdapterStatus status = statusMap.get(adapterClass);
+                    Log.d("MyApp", String.format(
+                            "Adapter name: %s, Description: %s, Latency: %d",
+                            adapterClass, status.getDescription(), status.getLatency()));
+                }
+
+                // Start loading ads here...
+                //ad initialization
+                adNetwork.loadInterstitialAd();
+
+            }
+        });
         quizList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {

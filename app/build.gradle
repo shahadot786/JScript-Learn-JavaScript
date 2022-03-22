@@ -51,16 +51,18 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
     //firebase
     implementation platform('com.google.firebase:firebase-bom:29.0.0')
-    implementation 'com.google.firebase:firebase-analytics:20.1.0'
-    implementation 'com.google.firebase:firebase-auth:21.0.1'
-    implementation 'com.google.firebase:firebase-database:20.0.3'
-    implementation 'com.google.firebase:firebase-core:20.1.0'
-    implementation 'com.google.firebase:firebase-storage:20.0.0'
-    implementation 'com.google.firebase:firebase-firestore:24.0.1'
+    implementation 'com.google.firebase:firebase-analytics:20.1.1'
+    implementation 'com.google.firebase:firebase-auth:21.0.2'
+    implementation 'com.google.firebase:firebase-database:20.0.4'
+    implementation 'com.google.firebase:firebase-core:20.1.1'
+    implementation 'com.google.firebase:firebase-storage:20.0.1'
+    implementation 'com.google.firebase:firebase-firestore:24.0.2'
     //google ads
     implementation 'com.google.android.gms:play-services-auth:20.1.0'
     implementation "com.android.billingclient:billing:4.1.0"
     implementation 'com.google.android.gms:play-services-ads:20.6.0'
+    implementation 'com.google.ads.mediation:facebook:6.8.0.0'
+    //implementation 'com.google.android.ads:mediation-test-suite:2.0.0'
     //image
     implementation 'com.github.dhaval2404:imagepicker:2.1'
     implementation 'de.hdodenhof:circleimageview:3.1.0'

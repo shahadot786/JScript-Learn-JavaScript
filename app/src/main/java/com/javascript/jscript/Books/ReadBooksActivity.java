@@ -4,6 +4,7 @@ import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.KeyEvent;
 import android.view.MenuItem;
 import android.view.View;
@@ -16,11 +17,16 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
+import com.google.android.gms.ads.MobileAds;
+import com.google.android.gms.ads.initialization.AdapterStatus;
+import com.google.android.gms.ads.initialization.InitializationStatus;
+import com.google.android.gms.ads.initialization.OnInitializationCompleteListener;
 import com.javascript.jscript.Config.UiConfig;
 import com.javascript.jscript.R;
 import com.javascript.jscript.databinding.ActivityReadBooksBinding;
 
 import java.net.URISyntaxException;
+import java.util.Map;
 import java.util.Objects;
 
 
@@ -41,14 +47,29 @@ public class ReadBooksActivity extends AppCompatActivity {
         webView.setBackgroundColor(getResources().getColor(R.color.colorBlack));
         webView.setWebViewClient(new Callback());
         //ad request
-        AdView bannerAd = findViewById(R.id.adView);
-        AdRequest adRequest = new AdRequest.Builder().build();
-        bannerAd.loadAd(adRequest);
-        if (UiConfig.BANNER_AD_VISIBILITY) {
-            bannerAd.setVisibility(View.VISIBLE);
-        } else {
-            bannerAd.setVisibility(View.GONE);
-        }
+        MobileAds.initialize(this, new OnInitializationCompleteListener() {
+            @Override
+            public void onInitializationComplete(@NonNull InitializationStatus initializationStatus) {
+                Map<String, AdapterStatus> statusMap = initializationStatus.getAdapterStatusMap();
+                for (String adapterClass : statusMap.keySet()) {
+                    AdapterStatus status = statusMap.get(adapterClass);
+                    Log.d("JScript", String.format(
+                            "Adapter name: %s, Description: %s, Latency: %d",
+                            adapterClass, status.getDescription(), status.getLatency()));
+                }
+
+                // Start loading ads here...
+                //ad request
+                AdView bannerAd = findViewById(R.id.adView);
+                AdRequest adRequest = new AdRequest.Builder().build();
+                bannerAd.loadAd(adRequest);
+                if (UiConfig.BANNER_AD_VISIBILITY) {
+                    bannerAd.setVisibility(View.VISIBLE);
+                } else {
+                    bannerAd.setVisibility(View.GONE);
+                }
+            }
+        });
         //toolbar
         setSupportActionBar(binding.toolbar2);
         ReadBooksActivity.this.setTitle("Read Online Ebooks");

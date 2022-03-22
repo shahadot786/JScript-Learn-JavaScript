@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.Menu;
@@ -24,6 +25,10 @@ import com.cooltechworks.views.shimmer.ShimmerRecyclerView;
 import com.github.marlonlom.utilities.timeago.TimeAgo;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
+import com.google.android.gms.ads.MobileAds;
+import com.google.android.gms.ads.initialization.AdapterStatus;
+import com.google.android.gms.ads.initialization.InitializationStatus;
+import com.google.android.gms.ads.initialization.OnInitializationCompleteListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DataSnapshot;
@@ -43,6 +48,7 @@ import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
 import java.util.Date;
+import java.util.Map;
 import java.util.Objects;
 
 public class DiscussDetailsActivity extends AppCompatActivity {
@@ -88,14 +94,29 @@ public class DiscussDetailsActivity extends AppCompatActivity {
         DiscussDetailsActivity.this.setTitle("Q&A Discussions");
         Objects.requireNonNull(getSupportActionBar()).setDisplayHomeAsUpEnabled(true);
         //banner
-        AdView bannerAd = findViewById(R.id.adView);
-        AdRequest adRequest = new AdRequest.Builder().build();
-        bannerAd.loadAd(adRequest);
-        if (UiConfig.BANNER_AD_VISIBILITY) {
-            bannerAd.setVisibility(View.VISIBLE);
-        } else {
-            bannerAd.setVisibility(View.GONE);
-        }
+        MobileAds.initialize(this, new OnInitializationCompleteListener() {
+            @Override
+            public void onInitializationComplete(@NonNull InitializationStatus initializationStatus) {
+                Map<String, AdapterStatus> statusMap = initializationStatus.getAdapterStatusMap();
+                for (String adapterClass : statusMap.keySet()) {
+                    AdapterStatus status = statusMap.get(adapterClass);
+                    Log.d("JScript", String.format(
+                            "Adapter name: %s, Description: %s, Latency: %d",
+                            adapterClass, status.getDescription(), status.getLatency()));
+                }
+
+                // Start loading ads here...
+                //ad request
+                AdView bannerAd = findViewById(R.id.adView);
+                AdRequest adRequest = new AdRequest.Builder().build();
+                bannerAd.loadAd(adRequest);
+                if (UiConfig.BANNER_AD_VISIBILITY) {
+                    bannerAd.setVisibility(View.VISIBLE);
+                } else {
+                    bannerAd.setVisibility(View.GONE);
+                }
+            }
+        });
         //network check
         ConnectivityManager connectivityManager = (ConnectivityManager) getSystemService(DiscussDetailsActivity.CONNECTIVITY_SERVICE);
         if (connectivityManager.getNetworkInfo(ConnectivityManager.TYPE_MOBILE).getState() == NetworkInfo.State.CONNECTED ||

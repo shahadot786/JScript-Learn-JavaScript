@@ -44,9 +44,9 @@ import java.util.Objects;
 
 public class DiscussFragment extends Fragment {
 
-    ShimmerRecyclerView recyclerView;
     FirebaseAuth auth;
     FirebaseDatabase database;
+    ShimmerRecyclerView recyclerView;
     ArrayList<DiscussModel> dashboardList;
     SwipeRefreshLayout swipeRefreshLayout;
     TextView toastText;
@@ -88,9 +88,7 @@ public class DiscussFragment extends Fragment {
         toast.setGravity(Gravity.BOTTOM, 0, 200);
         toast.setDuration(Toast.LENGTH_LONG);
         toast.setView(toastLayout);
-        //recyclerview
-        recyclerView = view.findViewById(R.id.rv_discuss);
-        recyclerView.showShimmerAdapter();
+
         //pro status
         ImageView proBadge = view.findViewById(R.id.proBadge);
         if (UiConfig.PRO_VISIBILITY_STATUS_SHOW) {
@@ -109,6 +107,9 @@ public class DiscussFragment extends Fragment {
         //firebase instance
         TextView userName = view.findViewById(R.id.userName);
         ImageView profileImage = view.findViewById(R.id.profileImage);
+        //recyclerview
+        recyclerView = view.findViewById(R.id.rv_discuss);
+        recyclerView.showShimmerAdapter();
         auth = FirebaseAuth.getInstance();
         database = FirebaseDatabase.getInstance();
         database.getReference().child("UserData").child(Objects.requireNonNull(auth.getUid()))

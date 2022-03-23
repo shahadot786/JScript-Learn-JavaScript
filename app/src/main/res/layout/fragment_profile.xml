@@ -167,7 +167,8 @@
                     android:textStyle="bold"
                     app:layout_constraintBottom_toTopOf="@+id/userProgress"
                     app:layout_constraintStart_toStartOf="@+id/userProgress"
-                    app:layout_constraintTop_toBottomOf="@+id/promotion" />
+                    app:layout_constraintTop_toBottomOf="@+id/promotion"
+                    app:layout_constraintVertical_bias="0.0" />
 
                 <androidx.cardview.widget.CardView
                     android:id="@+id/socialLink"
@@ -405,21 +406,20 @@
 
 
                 </androidx.cardview.widget.CardView>
-
                 <!--Course Progress-->
-
                 <androidx.cardview.widget.CardView
                     android:id="@+id/userProgress"
                     android:layout_width="300dp"
                     android:layout_height="250dp"
-                    android:layout_marginTop="16dp"
+                    android:layout_marginTop="8dp"
                     android:layout_marginBottom="35dp"
                     android:visibility="visible"
                     app:cardBackgroundColor="@color/colorSecondary"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="@+id/promotion"
                     app:layout_constraintStart_toStartOf="@+id/promotion"
-                    app:layout_constraintTop_toBottomOf="@+id/promotion">
+                    app:layout_constraintTop_toBottomOf="@+id/promotion"
+                    app:layout_constraintVertical_bias="0.110000014">
 
                     <androidx.constraintlayout.widget.ConstraintLayout
                         android:layout_width="match_parent"
@@ -630,6 +630,80 @@
                                 app:layout_constraintTop_toBottomOf="@+id/textView43" />
 
                         </androidx.constraintlayout.widget.ConstraintLayout>
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                </androidx.cardview.widget.CardView>
+                <!--My Questions-->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/myQuestion"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:visibility="visible"
+                    app:cardBackgroundColor="@color/colorSecondary"
+                    app:layout_constraintEnd_toEndOf="@+id/userProgress"
+                    app:layout_constraintStart_toStartOf="@+id/userProgress"
+                    app:layout_constraintTop_toBottomOf="@+id/userProgress">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+
+                        <TextView
+                            android:id="@+id/myQuestionText"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginEnd="16dp"
+                            android:layout_marginBottom="16dp"
+                            android:maxLength="250"
+                            android:text="@string/questions"
+                            android:textAlignment="center"
+                            android:textSize="12sp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                </androidx.cardview.widget.CardView>
+                <!--Saved Questions-->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/savedQuestion"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:visibility="visible"
+                    app:cardBackgroundColor="@color/colorSecondary"
+                    app:layout_constraintEnd_toEndOf="@+id/myQuestion"
+                    app:layout_constraintStart_toStartOf="@+id/myQuestion"
+                    app:layout_constraintTop_toBottomOf="@+id/myQuestion">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+
+                        <TextView
+                            android:id="@+id/savedQuestionText"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginEnd="16dp"
+                            android:layout_marginBottom="16dp"
+                            android:maxLength="250"
+                            android:text="@string/saved_questions"
+                            android:textAlignment="center"
+                            android:textSize="12sp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
                     </androidx.constraintlayout.widget.ConstraintLayout>
 
 

@@ -4,6 +4,7 @@ import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
+import android.net.Uri;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.Gravity;
@@ -36,6 +37,7 @@ import com.javascript.jscript.Config.UiConfig;
 import com.javascript.jscript.Discuss.DiscussDetailsActivity;
 import com.javascript.jscript.Model.CourseProgress;
 import com.javascript.jscript.Model.DiscussModel;
+import com.javascript.jscript.Model.ProfileModel;
 import com.javascript.jscript.Model.UserModel;
 import com.javascript.jscript.R;
 import com.javascript.jscript.databinding.ActivityUserProfileBinding;
@@ -193,6 +195,123 @@ public class UserProfileActivity extends AppCompatActivity {
                         }
                     });
 
+            //other information data fetch
+            //update profile data fetch
+            database.getReference().child("UpdateProfile")
+                    .child(Objects.requireNonNull(auth.getUid()))
+                    .addListenerForSingleValueEvent(new ValueEventListener() {
+                        @Override
+                        public void onDataChange(@NonNull DataSnapshot snapshot) {
+                            if (snapshot.exists()) {
+                                ProfileModel profile = snapshot.getValue(ProfileModel.class);
+                                assert profile != null;
+                                String profession = profile.getProfession();
+                                String bio = profile.getUserBio();
+                                String fb = profile.getFbLink();
+                                String insta = profile.getInstaLink();
+                                String github = profile.getGithubLink();
+                                String linkedin = profile.getLinkedinLink();
+                                String twitter = profile.getTwitterLink();
+                                if (profession.isEmpty()) {
+                                    binding.profession.setText(getResources().getString(R.string.profession));
+                                } else {
+                                    binding.profession.setText(profession);
+                                }
+
+                                //set bio
+                                binding.userBioText.setText(bio);
+                                //insert link data
+                                binding.linkFacebook.setOnClickListener(new View.OnClickListener() {
+                                    @Override
+                                    public void onClick(View view) {
+                                        if (fb.isEmpty()) {
+                                            toastText.setText(R.string.Pleaseupdateyourprofilefirst);
+                                            toast.show();
+                                        } else if (fb.startsWith("https://")) {
+                                            startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(fb)));
+                                        } else if (fb.startsWith("http://")) {
+                                            startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(fb)));
+                                        } else {
+                                            toastText.setText(R.string.valid_input);
+                                            toast.show();
+                                        }
+                                    }
+                                });//facebook
+                                binding.linkInstagram.setOnClickListener(new View.OnClickListener() {
+                                    @Override
+                                    public void onClick(View view) {
+                                        if (insta.isEmpty()) {
+                                            toastText.setText(R.string.Pleaseupdateyourprofilefirst);
+                                            toast.show();
+                                        } else if (insta.startsWith("https://")) {
+                                            startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(insta)));
+                                        } else if (insta.startsWith("http://")) {
+                                            startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(insta)));
+                                        } else {
+                                            toastText.setText(R.string.valid_input);
+                                            toast.show();
+                                        }
+                                    }
+                                });//instagram
+                                binding.linkGithub.setOnClickListener(new View.OnClickListener() {
+                                    @Override
+                                    public void onClick(View view) {
+                                        if (github.isEmpty()) {
+                                            toastText.setText(R.string.Pleaseupdateyourprofilefirst);
+                                            toast.show();
+                                        } else if (github.startsWith("https://")) {
+                                            startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(github)));
+                                        } else if (github.startsWith("http://")) {
+                                            startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(github)));
+                                        } else {
+                                            toastText.setText(R.string.valid_input);
+                                            toast.show();
+                                        }
+                                    }
+                                });//github
+                                binding.linkLinkedIn.setOnClickListener(new View.OnClickListener() {
+                                    @Override
+                                    public void onClick(View view) {
+                                        if (linkedin.isEmpty()) {
+                                            toastText.setText(R.string.Pleaseupdateyourprofilefirst);
+                                            toast.show();
+                                        } else if (linkedin.startsWith("https://")) {
+                                            startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(linkedin)));
+                                        } else if (linkedin.startsWith("http://")) {
+                                            startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(linkedin)));
+                                        } else {
+                                            toastText.setText(R.string.valid_input);
+                                            toast.show();
+                                        }
+                                    }
+                                });//linkedin
+                                binding.linkTwitter.setOnClickListener(new View.OnClickListener() {
+                                    @Override
+                                    public void onClick(View view) {
+                                        if (twitter.isEmpty()) {
+                                            toastText.setText(R.string.Pleaseupdateyourprofilefirst);
+                                            toast.show();
+                                        } else if (twitter.startsWith("https://")) {
+                                            startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(twitter)));
+                                        } else if (twitter.startsWith("http://")) {
+                                            startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(twitter)));
+                                        } else {
+                                            toastText.setText(R.string.valid_input);
+                                            toast.show();
+                                        }
+                                    }
+                                });//twitter
+
+
+                            }
+                        }
+
+                        @Override
+                        public void onCancelled(@NonNull DatabaseError error) {
+
+                        }
+                    });
+
 
             //code of learn progress
             database.getReference().child("Progress")
@@ -320,7 +439,122 @@ public class UserProfileActivity extends AppCompatActivity {
 
                                 }
                             });
+                    //other information data fetch
+                    //update profile data fetch
+                    database.getReference().child("UpdateProfile")
+                            .child(Objects.requireNonNull(auth.getUid()))
+                            .addListenerForSingleValueEvent(new ValueEventListener() {
+                                @Override
+                                public void onDataChange(@NonNull DataSnapshot snapshot) {
+                                    if (snapshot.exists()) {
+                                        ProfileModel profile = snapshot.getValue(ProfileModel.class);
+                                        assert profile != null;
+                                        String profession = profile.getProfession();
+                                        String bio = profile.getUserBio();
+                                        String fb = profile.getFbLink();
+                                        String insta = profile.getInstaLink();
+                                        String github = profile.getGithubLink();
+                                        String linkedin = profile.getLinkedinLink();
+                                        String twitter = profile.getTwitterLink();
+                                        if (profession.isEmpty()) {
+                                            binding.profession.setText(getResources().getString(R.string.profession));
+                                        } else {
+                                            binding.profession.setText(profession);
+                                        }
 
+                                        //set bio
+                                        binding.userBioText.setText(bio);
+                                        //insert link data
+                                        binding.linkFacebook.setOnClickListener(new View.OnClickListener() {
+                                            @Override
+                                            public void onClick(View view) {
+                                                if (fb.isEmpty()) {
+                                                    toastText.setText(R.string.link_not_found);
+                                                    toast.show();
+                                                } else if (fb.startsWith("https://")) {
+                                                    startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(fb)));
+                                                } else if (fb.startsWith("http://")) {
+                                                    startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(fb)));
+                                                } else {
+                                                    toastText.setText(R.string.valid_input);
+                                                    toast.show();
+                                                }
+                                            }
+                                        });//facebook
+                                        binding.linkInstagram.setOnClickListener(new View.OnClickListener() {
+                                            @Override
+                                            public void onClick(View view) {
+                                                if (insta.isEmpty()) {
+                                                    toastText.setText(R.string.link_not_found);
+                                                    toast.show();
+                                                } else if (insta.startsWith("https://")) {
+                                                    startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(insta)));
+                                                } else if (insta.startsWith("http://")) {
+                                                    startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(insta)));
+                                                } else {
+                                                    toastText.setText(R.string.valid_input);
+                                                    toast.show();
+                                                }
+                                            }
+                                        });//instagram
+                                        binding.linkGithub.setOnClickListener(new View.OnClickListener() {
+                                            @Override
+                                            public void onClick(View view) {
+                                                if (github.isEmpty()) {
+                                                    toastText.setText(R.string.link_not_found);
+                                                    toast.show();
+                                                } else if (github.startsWith("https://")) {
+                                                    startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(github)));
+                                                } else if (github.startsWith("http://")) {
+                                                    startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(github)));
+                                                } else {
+                                                    toastText.setText(R.string.valid_input);
+                                                    toast.show();
+                                                }
+                                            }
+                                        });//github
+                                        binding.linkLinkedIn.setOnClickListener(new View.OnClickListener() {
+                                            @Override
+                                            public void onClick(View view) {
+                                                if (linkedin.isEmpty()) {
+                                                    toastText.setText(R.string.link_not_found);
+                                                    toast.show();
+                                                } else if (linkedin.startsWith("https://")) {
+                                                    startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(linkedin)));
+                                                } else if (linkedin.startsWith("http://")) {
+                                                    startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(linkedin)));
+                                                } else {
+                                                    toastText.setText(R.string.valid_input);
+                                                    toast.show();
+                                                }
+                                            }
+                                        });//linkedin
+                                        binding.linkTwitter.setOnClickListener(new View.OnClickListener() {
+                                            @Override
+                                            public void onClick(View view) {
+                                                if (twitter.isEmpty()) {
+                                                    toastText.setText(R.string.link_not_found);
+                                                    toast.show();
+                                                } else if (twitter.startsWith("https://")) {
+                                                    startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(twitter)));
+                                                } else if (twitter.startsWith("http://")) {
+                                                    startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(twitter)));
+                                                } else {
+                                                    toastText.setText(R.string.valid_input);
+                                                    toast.show();
+                                                }
+                                            }
+                                        });//twitter
+
+
+                                    }
+                                }
+
+                                @Override
+                                public void onCancelled(@NonNull DatabaseError error) {
+
+                                }
+                            });
 
                     //code of learn progress
                     database.getReference().child("Progress")

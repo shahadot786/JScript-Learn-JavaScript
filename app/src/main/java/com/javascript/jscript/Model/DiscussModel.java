@@ -8,6 +8,7 @@ public class DiscussModel {
     private int commentCount;
     private int shareCount;
     private int likesCount;
+    private String saved;
 
     public DiscussModel() {
     }
@@ -83,5 +84,13 @@ public class DiscussModel {
 
     public void setLikesCount(int likesCount) {
         this.likesCount = likesCount;
+    }
+
+    public String getSaved() {
+        return saved;
+    }
+
+    public void setSaved(String saved) {
+        this.saved = saved;
     }
 }

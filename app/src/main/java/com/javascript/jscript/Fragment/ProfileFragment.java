@@ -17,7 +17,6 @@ import androidx.activity.result.ActivityResultCallback;
 import androidx.activity.result.ActivityResultLauncher;
 import androidx.activity.result.contract.ActivityResultContracts;
 import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
 import com.google.android.gms.tasks.OnSuccessListener;
@@ -33,7 +32,9 @@ import com.google.firebase.storage.UploadTask;
 import com.javascript.jscript.Activities.EditProfileActivity;
 import com.javascript.jscript.Activities.FeedBackActivity;
 import com.javascript.jscript.Activities.GoogleSignInActivity;
+import com.javascript.jscript.Activities.MyQuestionsActivity;
 import com.javascript.jscript.Activities.PremiumActivity;
+import com.javascript.jscript.Activities.SavedQuestionsActivity;
 import com.javascript.jscript.Config.UiConfig;
 import com.javascript.jscript.Model.CourseProgress;
 import com.javascript.jscript.Model.ProfileModel;
@@ -327,6 +328,24 @@ public class ProfileFragment extends Fragment {
                 startActivity(intent);
             }
         });
+
+        //my questions
+        binding.myQuestion.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getActivity(), MyQuestionsActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        binding.savedQuestion.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getActivity(), SavedQuestionsActivity.class);
+                startActivity(intent);
+            }
+        });
+
         //code of learn progress
         database.getReference().child("Progress")
                 .child(Objects.requireNonNull(FirebaseAuth.getInstance().getUid()))

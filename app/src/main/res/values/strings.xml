@@ -300,5 +300,9 @@
     <string name="please_use_different_keywords">Please use different keywords…</string>
     <string name="_0_">0</string>
     <string name="questions">Questions</string>
+    <string name="saved_questions">Saved Questions</string>
+    <string name="empty">Empty</string>
+    <string name="list_is_empty_now">List is empty now..</string>
+    <string name="link_not_found">Link not found</string>
 
 </resources>

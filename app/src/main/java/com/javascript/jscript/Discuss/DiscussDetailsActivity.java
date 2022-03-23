@@ -288,6 +288,69 @@ public class DiscussDetailsActivity extends AppCompatActivity {
                             }
                         });
 
+                //saved questions
+                database.getReference()
+                        .child("Discuss")
+                        .child(postId)
+                        .child("Save")
+                        .child(Objects.requireNonNull(FirebaseAuth.getInstance().getUid()))
+                        .addListenerForSingleValueEvent(new ValueEventListener() {
+                            @Override
+                            public void onDataChange(@NonNull DataSnapshot snapshot) {
+                                if (snapshot.exists()){
+                                    binding.savedQuestions.setImageResource(R.drawable.ic_bookmark_icon_active);
+                                }else {
+                                    binding.savedQuestions.setOnClickListener(new View.OnClickListener() {
+                                        @Override
+                                        public void onClick(View view) {
+                                            //network check
+                                            ConnectivityManager connectivityManager = (ConnectivityManager) getSystemService(DiscussDetailsActivity.CONNECTIVITY_SERVICE);
+                                            if (connectivityManager.getNetworkInfo(ConnectivityManager.TYPE_MOBILE).getState() == NetworkInfo.State.CONNECTED ||
+                                                    connectivityManager.getNetworkInfo(ConnectivityManager.TYPE_WIFI).getState() == NetworkInfo.State.CONNECTED) {
+
+                                                FirebaseDatabase.getInstance().getReference()
+                                                        .child("Discuss")
+                                                        .child(postId)
+                                                        .child("Save")
+                                                        .child(FirebaseAuth.getInstance().getUid())
+                                                        .setValue(true)
+                                                        .addOnSuccessListener(new OnSuccessListener<Void>() {
+                                                            @Override
+                                                            public void onSuccess(Void unused) {
+                                                                database.getReference()
+                                                                        .child("Discuss")
+                                                                        .child(postId)
+                                                                        .child("saved")
+                                                                        .setValue(FirebaseAuth.getInstance().getUid())
+                                                                        .addOnSuccessListener(new OnSuccessListener<Void>() {
+                                                                            @Override
+                                                                            public void onSuccess(Void unused) {
+                                                                                binding.savedQuestions.setImageResource(R.drawable.ic_bookmark_icon_active);
+                                                                                toastText.setText("✔ Question Saved");
+                                                                                toast.show();
+                                                                            }
+                                                                        });
+                                                            }
+                                                        });
+
+
+                                            } else {
+                                                toastText.setText(R.string.no_connection_text);
+                                                toast.show();
+                                            }
+                                        }
+                                    });
+                                }
+                            }
+
+                            @Override
+                            public void onCancelled(@NonNull DatabaseError error) {
+
+                            }
+                        });
+
+
+
             }
 
             @Override

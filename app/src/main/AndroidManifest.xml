@@ -139,6 +139,9 @@
             android:name="com.google.android.gms.ads.APPLICATION_ID"
             android:value="@string/app_id" />
         <meta-data
+            android:name="applovin.sdk.key"
+            android:value="@string/applovin_sdk_key" />
+        <meta-data
             android:name="com.onesignal.messaging.default_notification_icon"
             android:resource="@drawable/ic_stat_onesignal_default" />
     </application>

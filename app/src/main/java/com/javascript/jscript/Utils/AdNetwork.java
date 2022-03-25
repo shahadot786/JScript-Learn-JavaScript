@@ -135,6 +135,8 @@ public class AdNetwork {
                         quizTimer.setVisibility(View.GONE);
                     }
                 });
+            }else {
+                Toast.makeText(context, "Failed to load ad, Please try again.", Toast.LENGTH_SHORT).show();
             }
         }
     }

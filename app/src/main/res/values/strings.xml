@@ -24,6 +24,7 @@
     <string name="banner_ad_unit_id">ca-app-pub-1183995713269973/7916247990</string>
     <string name="interstitial_ad_unit_id">ca-app-pub-1183995713269973/6541772361</string>
     <string name="rewarded_ad_unit_id">ca-app-pub-1183995713269973/3002852149</string>
+    <string name="applovin_sdk_key">h_SI4RH8q40T3xf1aRSRtbznFChbszL2K2PUQpTxxskOwo6LGumFvQgemqzfycGOwb2mKDFZoEecwDCsvaB0uD</string>
 
     <!--Google Sign In-->
     <!--<string name="default_web_client_id">10732582829-srv96l245sn3s9jgl6j4vfijnvplsf7p.apps.googleusercontent.com</string>-->

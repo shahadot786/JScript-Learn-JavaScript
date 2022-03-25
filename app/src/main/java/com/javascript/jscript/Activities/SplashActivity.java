@@ -32,7 +32,7 @@ import com.javascript.jscript.R;
 public class SplashActivity extends AppCompatActivity {
 
     public static final String PREF_FILE = "JScript_Learn_JavaScript";
-    final String PREFS_NAME = "JScript_for_new_user05";//change every update
+    final String PREFS_NAME = "JScript_for_new_user23";//change every update
     Animation bottomAnim;
     TextView slogan;
     FirebaseUser currentUser;

@@ -241,6 +241,15 @@
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/likes" />
 
+                <View
+                    android:id="@+id/viewAd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="55dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/commentRv" />
+
                 <com.cooltechworks.views.shimmer.ShimmerRecyclerView
                     android:id="@+id/commentRv"
                     android:layout_width="match_parent"
@@ -271,9 +280,10 @@
         android:visibility="gone"
         app:adSize="BANNER"
         app:adUnitId="@string/banner_ad_unit_id"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent">
+        app:layout_constraintBottom_toTopOf="@+id/view11"
+        app:layout_constraintEnd_toStartOf="@+id/swipeRefreshComment"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/swipeRefreshComment">
 
     </com.google.android.gms.ads.AdView>
 
@@ -308,7 +318,7 @@
         android:textColor="@color/colorWhite"
         android:textColorHint="@color/textColorPlaceholder"
         android:textSize="12sp"
-        app:layout_constraintBottom_toTopOf="@+id/adView"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/commentPostBtn"
         app:layout_constraintStart_toStartOf="parent" />
 

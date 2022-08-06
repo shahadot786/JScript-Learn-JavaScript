@@ -1,12 +1,15 @@
 package com.javascript.jscript.Quiz;
 
 import android.annotation.SuppressLint;
+import android.app.Activity;
+import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.os.Bundle;
 import android.os.CountDownTimer;
+import android.os.Handler;
 import android.util.Log;
 import android.view.Gravity;
 import android.view.LayoutInflater;
@@ -22,6 +25,12 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.AppCompatButton;
 
 import com.airbnb.lottie.LottieAnimationView;
+import com.applovin.mediation.MaxAd;
+import com.applovin.mediation.MaxError;
+import com.applovin.mediation.MaxReward;
+import com.applovin.mediation.MaxRewardedAdListener;
+import com.applovin.mediation.ads.MaxAdView;
+import com.applovin.mediation.ads.MaxRewardedAd;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
 import com.google.android.gms.ads.MobileAds;
@@ -48,7 +57,7 @@ import java.util.Map;
 import java.util.Objects;
 import java.util.concurrent.TimeUnit;
 
-public class QuizDetailsActivity extends AppCompatActivity {
+public class QuizDetailsActivity extends AppCompatActivity implements MaxRewardedAdListener {
 
     ActivityQuizDetailsBinding binding;
     FirebaseDatabase database;
@@ -61,7 +70,6 @@ public class QuizDetailsActivity extends AppCompatActivity {
     Toast toast;
     int time;
     LottieAnimationView timerView;
-    private AdNetwork adNetwork;
     private List<QuizListModel> questionList;
     private int currentQuestionPosition = 0;
     private String selectedOptionByUser = "";
@@ -71,12 +79,17 @@ public class QuizDetailsActivity extends AppCompatActivity {
     private AppCompatButton option4;
     private AppCompatButton nextBtn;
     private AppCompatButton prevBtn;
+    private AdNetwork adNetwork;
+    private MaxRewardedAd rewardedAd;
+    private int retryAttempt;
+    Activity context;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         binding = ActivityQuizDetailsBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
+        context = QuizDetailsActivity.this;
         //find id
         qTimer = findViewById(R.id.qTimer);
         timerView = findViewById(R.id.timerView);
@@ -98,35 +111,26 @@ public class QuizDetailsActivity extends AppCompatActivity {
         Objects.requireNonNull(getSupportActionBar()).setDisplayHomeAsUpEnabled(true);
         //ad request
         //interstitial ads
-        adNetwork = new AdNetwork(QuizDetailsActivity.this);
-
         //banner
-        MobileAds.initialize(this, new OnInitializationCompleteListener() {
-            @Override
-            public void onInitializationComplete(@NonNull InitializationStatus initializationStatus) {
-                Map<String, AdapterStatus> statusMap = initializationStatus.getAdapterStatusMap();
-                for (String adapterClass : statusMap.keySet()) {
-                    AdapterStatus status = statusMap.get(adapterClass);
-                    Log.d("JScript", String.format(
-                            "Adapter name: %s, Description: %s, Latency: %d",
-                            adapterClass, status.getDescription(), status.getLatency()));
-                }
+        //ad request.
+        adNetwork = new AdNetwork(this);
+        adNetwork.loadInterstitialAd();
+        adNetwork.loadBannerAd();
+        //banner
+        MaxAdView bannerAd = findViewById(R.id.adView);
+        //check premium
+        if (UiConfig.BANNER_AD_VISIBILITY) {
+            bannerAd.setVisibility(View.VISIBLE);
+            bannerAd.startAutoRefresh();
+        } else {
+            bannerAd.setVisibility(View.GONE);
+            bannerAd.stopAutoRefresh();
+        }
 
-                // Start loading ads here...
-                //ad request.
-                adNetwork.loadInterstitialAd();
-                //rewarded ad
-                adNetwork.loadRewardedAd();
-                AdView bannerAd = findViewById(R.id.adView);
-                AdRequest adRequest = new AdRequest.Builder().build();
-                bannerAd.loadAd(adRequest);
-                if (UiConfig.BANNER_AD_VISIBILITY) {
-                    bannerAd.setVisibility(View.VISIBLE);
-                } else {
-                    bannerAd.setVisibility(View.GONE);
-                }
-            }
-        });
+        rewardedAd = MaxRewardedAd.getInstance(getResources().getString(R.string.rewarded_ad_unit_id), this);
+        rewardedAd.setListener(this);
+        rewardedAd.loadAd();
+
         //check premium time
         if (UiConfig.PRO_VISIBILITY_STATUS_SHOW) {
             //true
@@ -328,7 +332,11 @@ public class QuizDetailsActivity extends AppCompatActivity {
                         if (connectivityManager.getNetworkInfo(ConnectivityManager.TYPE_MOBILE).getState() == NetworkInfo.State.CONNECTED ||
                                 connectivityManager.getNetworkInfo(ConnectivityManager.TYPE_WIFI).getState() == NetworkInfo.State.CONNECTED) {
                             //we are connected to a network
-                            adNetwork.showRewardedAd();
+                            if (rewardedAd.isReady()){
+                                rewardedAd.showAd();
+                            }else {
+                                Toast.makeText(context, "Ad load failed, try again", Toast.LENGTH_SHORT).show();
+                            }
                             /*qTimer.setVisibility(View.GONE);
                             timerView.setVisibility(View.GONE);
                             quizTimer.setVisibility(View.GONE);*/
@@ -365,7 +373,11 @@ public class QuizDetailsActivity extends AppCompatActivity {
                     if (connectivityManager.getNetworkInfo(ConnectivityManager.TYPE_MOBILE).getState() == NetworkInfo.State.CONNECTED ||
                             connectivityManager.getNetworkInfo(ConnectivityManager.TYPE_WIFI).getState() == NetworkInfo.State.CONNECTED) {
                         //we are connected to a network
-                        adNetwork.showRewardedAd();
+                        if (rewardedAd.isReady()){
+                            rewardedAd.showAd();
+                        }else {
+                            Toast.makeText(context, "Ad load failed, try again", Toast.LENGTH_SHORT).show();
+                        }
                         /*quizTimer.setVisibility(View.GONE);
                         qTimer.setVisibility(View.GONE);
                         timerView.setVisibility(View.GONE);*/
@@ -589,4 +601,59 @@ public class QuizDetailsActivity extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
+    @Override
+    public void onRewardedVideoStarted(MaxAd ad) {
+
+    }
+
+    @Override
+    public void onRewardedVideoCompleted(MaxAd ad) {
+
+    }
+
+    @Override
+    public void onUserRewarded(MaxAd ad, MaxReward reward) {
+        Toast.makeText(context, "Removed timer..", Toast.LENGTH_SHORT).show();
+        qTimer.setVisibility(View.GONE);
+        timerView.setVisibility(View.GONE);
+        quizTimer.setVisibility(View.GONE);
+    }
+
+    @Override
+    public void onAdLoaded(MaxAd ad) {
+        retryAttempt = 0;
+    }
+
+    @Override
+    public void onAdDisplayed(MaxAd ad) {
+
+    }
+
+    @Override
+    public void onAdHidden(MaxAd ad) {
+        rewardedAd.loadAd();
+    }
+
+    @Override
+    public void onAdClicked(MaxAd ad) {
+
+    }
+
+    @Override
+    public void onAdLoadFailed(String adUnitId, MaxError error) {
+        retryAttempt++;
+        long delayMillis = TimeUnit.SECONDS.toMillis((long) Math.pow(2, Math.min(6, retryAttempt)));
+
+        new Handler().postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                rewardedAd.loadAd();
+            }
+        }, delayMillis);
+    }
+
+    @Override
+    public void onAdDisplayFailed(MaxAd ad, MaxError error) {
+        rewardedAd.loadAd();
+    }
 }

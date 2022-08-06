@@ -17,6 +17,7 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.applovin.mediation.ads.MaxAdView;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
 import com.google.android.gms.ads.MobileAds;
@@ -32,6 +33,7 @@ import com.google.firebase.database.ValueEventListener;
 import com.javascript.jscript.Activities.CodesActivity;
 import com.javascript.jscript.Config.UiConfig;
 import com.javascript.jscript.R;
+import com.javascript.jscript.Utils.AdNetwork;
 import com.javascript.jscript.databinding.ActivityProgramsCodeBinding;
 
 import java.util.Map;
@@ -49,6 +51,7 @@ public class ProgramsCodeActivity extends AppCompatActivity {
     TextView toastText;
     View toastLayout;
     Toast toast;
+    private AdNetwork adNetwork;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -67,29 +70,19 @@ public class ProgramsCodeActivity extends AppCompatActivity {
         database = FirebaseDatabase.getInstance();
         auth = FirebaseAuth.getInstance();
         //ad request
-        MobileAds.initialize(this, new OnInitializationCompleteListener() {
-            @Override
-            public void onInitializationComplete(@NonNull InitializationStatus initializationStatus) {
-                Map<String, AdapterStatus> statusMap = initializationStatus.getAdapterStatusMap();
-                for (String adapterClass : statusMap.keySet()) {
-                    AdapterStatus status = statusMap.get(adapterClass);
-                    Log.d("JScript", String.format(
-                            "Adapter name: %s, Description: %s, Latency: %d",
-                            adapterClass, status.getDescription(), status.getLatency()));
-                }
-
-                // Start loading ads here...
-                //ad request
-                AdView bannerAd = findViewById(R.id.adView);
-                AdRequest adRequest = new AdRequest.Builder().build();
-                bannerAd.loadAd(adRequest);
-                if (UiConfig.BANNER_AD_VISIBILITY) {
-                    bannerAd.setVisibility(View.VISIBLE);
-                } else {
-                    bannerAd.setVisibility(View.GONE);
-                }
-            }
-        });
+        // ads
+        adNetwork = new AdNetwork(this);
+        adNetwork.loadBannerAd();
+        //banner
+        MaxAdView bannerAd = findViewById(R.id.adView);
+        //check premium
+        if (UiConfig.BANNER_AD_VISIBILITY) {
+            bannerAd.setVisibility(View.VISIBLE);
+            bannerAd.startAutoRefresh();
+        } else {
+            bannerAd.setVisibility(View.GONE);
+            bannerAd.stopAutoRefresh();
+        }
         //toolbar
         setSupportActionBar(binding.toolbar2);
         ProgramsCodeActivity.this.setTitle("Details");

@@ -24,6 +24,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.AppCompatButton;
 import androidx.constraintlayout.widget.ConstraintLayout;
 
+import com.applovin.mediation.ads.MaxAdView;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
 import com.google.android.gms.ads.MobileAds;
@@ -65,10 +66,10 @@ public class LearnDetailsActivity extends AppCompatActivity {
     LayoutInflater inflater;
     View toastLayout;
     Toast toast;
-    private AdNetwork adNetwork;
     private List<LearnDetailsModel> learnList;
     private int currentTopicPosition = 0;
     private AppCompatButton prevBtn, nextBtn, shareBtn;
+    private AdNetwork adNetwork;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -92,32 +93,20 @@ public class LearnDetailsActivity extends AppCompatActivity {
         Objects.requireNonNull(getSupportActionBar()).setDisplayHomeAsUpEnabled(true);
         //ad request
         //interstitial ads
-        adNetwork = new AdNetwork(LearnDetailsActivity.this);
+        adNetwork = new AdNetwork(this);
         adNetwork.loadInterstitialAd();
         //banner
-        MobileAds.initialize(this, new OnInitializationCompleteListener() {
-            @Override
-            public void onInitializationComplete(@NonNull InitializationStatus initializationStatus) {
-                Map<String, AdapterStatus> statusMap = initializationStatus.getAdapterStatusMap();
-                for (String adapterClass : statusMap.keySet()) {
-                    AdapterStatus status = statusMap.get(adapterClass);
-                    Log.d("JScript", String.format(
-                            "Adapter name: %s, Description: %s, Latency: %d",
-                            adapterClass, status.getDescription(), status.getLatency()));
-                }
-
-                // Start loading ads here...
-                //ad request
-                AdView bannerAd = findViewById(R.id.adView);
-                AdRequest adRequest = new AdRequest.Builder().build();
-                bannerAd.loadAd(adRequest);
-                if (UiConfig.BANNER_AD_VISIBILITY) {
-                    bannerAd.setVisibility(View.VISIBLE);
-                } else {
-                    bannerAd.setVisibility(View.GONE);
-                }
-            }
-        });
+        adNetwork.loadBannerAd();
+        //banner
+        MaxAdView bannerAd = findViewById(R.id.adView);
+        //check premium
+        if (UiConfig.BANNER_AD_VISIBILITY) {
+            bannerAd.setVisibility(View.VISIBLE);
+            bannerAd.startAutoRefresh();
+        } else {
+            bannerAd.setVisibility(View.GONE);
+            bannerAd.stopAutoRefresh();
+        }
         //find id
         title = findViewById(R.id.learnTitle);
         details = findViewById(R.id.learnDetails);

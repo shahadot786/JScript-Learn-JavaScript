@@ -17,6 +17,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 
+import com.applovin.mediation.ads.MaxAdView;
 import com.cooltechworks.views.shimmer.ShimmerRecyclerView;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DataSnapshot;
@@ -24,8 +25,10 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 import com.javascript.jscript.Adapter.NotificationsAdapter;
+import com.javascript.jscript.Config.UiConfig;
 import com.javascript.jscript.Model.NotificationsModel;
 import com.javascript.jscript.R;
+import com.javascript.jscript.Utils.AdNetwork;
 import com.javascript.jscript.databinding.ActivityNotificationsBinding;
 
 import java.util.ArrayList;
@@ -43,6 +46,7 @@ public class NotificationsActivity extends AppCompatActivity {
     View toastLayout;
     ImageView noNotification;
     TextView noNotifyText;
+    private AdNetwork adNetwork;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -69,6 +73,20 @@ public class NotificationsActivity extends AppCompatActivity {
         notificationRV.showShimmerAdapter();
         swipeRefreshLayout = findViewById(R.id.swipeNotifications);
         list = new ArrayList<>();
+
+        // ads
+        adNetwork = new AdNetwork(this);
+        adNetwork.loadBannerAd();
+        //banner
+        MaxAdView bannerAd = findViewById(R.id.adView);
+        //check premium
+        if (UiConfig.BANNER_AD_VISIBILITY) {
+            bannerAd.setVisibility(View.VISIBLE);
+            bannerAd.startAutoRefresh();
+        } else {
+            bannerAd.setVisibility(View.GONE);
+            bannerAd.stopAutoRefresh();
+        }
 
         NotificationsAdapter adapter = new NotificationsAdapter(list, NotificationsActivity.this);
         LinearLayoutManager layoutManager = new LinearLayoutManager(NotificationsActivity.this, LinearLayoutManager.VERTICAL, false);

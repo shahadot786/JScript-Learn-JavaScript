@@ -14,6 +14,7 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.applovin.mediation.ads.MaxAdView;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
 import com.google.android.gms.ads.MobileAds;
@@ -41,7 +42,7 @@ public class InterviewItemsListActivity extends AppCompatActivity {
         binding = ActivityInterviewItemsListBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
-        adNetwork = new AdNetwork(InterviewItemsListActivity.this);
+        adNetwork = new AdNetwork(this);
         //toolbar
         setSupportActionBar(binding.toolbar2);
         InterviewItemsListActivity.this.setTitle("JScript: Interview Questions");
@@ -51,32 +52,22 @@ public class InterviewItemsListActivity extends AppCompatActivity {
         InterviewItemsListActivity.CustomAdapter adapter = new InterviewItemsListActivity.CustomAdapter();
         interviews.setAdapter(adapter);
         //load ad
-        MobileAds.initialize(this, new OnInitializationCompleteListener() {
-            @Override
-            public void onInitializationComplete(@NonNull InitializationStatus initializationStatus) {
-                Map<String, AdapterStatus> statusMap = initializationStatus.getAdapterStatusMap();
-                for (String adapterClass : statusMap.keySet()) {
-                    AdapterStatus status = statusMap.get(adapterClass);
-                    Log.d("MyApp", String.format(
-                            "Adapter name: %s, Description: %s, Latency: %d",
-                            adapterClass, status.getDescription(), status.getLatency()));
-                }
+        //ad initialization
+        adNetwork.loadInterstitialAd();
+        //ad request
+        adNetwork.loadBannerAd();
+        //banner
+        MaxAdView bannerAd = findViewById(R.id.adView);
+        //check premium
+        if (UiConfig.BANNER_AD_VISIBILITY) {
+            bannerAd.setVisibility(View.VISIBLE);
+            bannerAd.startAutoRefresh();
+        } else {
+            bannerAd.setVisibility(View.GONE);
+            bannerAd.stopAutoRefresh();
+        }
 
-                // Start loading ads here...
-                //ad initialization
-                adNetwork.loadInterstitialAd();
-                //ad request
-                AdView bannerAd = findViewById(R.id.adView);
-                AdRequest adRequest = new AdRequest.Builder().build();
-                bannerAd.loadAd(adRequest);
-                if (UiConfig.BANNER_AD_VISIBILITY) {
-                    bannerAd.setVisibility(View.VISIBLE);
-                } else {
-                    bannerAd.setVisibility(View.GONE);
-                }
 
-            }
-        });
         interviews.setOnItemClickListener((adapterView, view, i, l) -> {
             Intent intent = new Intent(InterviewItemsListActivity.this, InterviewAnswerActivity.class);
             intent.putExtra("Interview Questions", list[i]);

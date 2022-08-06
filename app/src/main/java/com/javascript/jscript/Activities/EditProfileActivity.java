@@ -15,6 +15,7 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.applovin.mediation.ads.MaxAdView;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.material.textfield.TextInputLayout;
 import com.google.firebase.auth.FirebaseAuth;
@@ -26,6 +27,7 @@ import com.javascript.jscript.Config.UiConfig;
 import com.javascript.jscript.Model.ProfileModel;
 import com.javascript.jscript.Model.UserModel;
 import com.javascript.jscript.R;
+import com.javascript.jscript.Utils.AdNetwork;
 import com.javascript.jscript.databinding.ActivityEditProfileBinding;
 import com.squareup.picasso.Picasso;
 
@@ -43,6 +45,7 @@ public class EditProfileActivity extends AppCompatActivity {
     Toast toast;
     private TextInputLayout professionInput;
     private TextInputLayout bioInput;
+    private AdNetwork adNetwork;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -67,7 +70,19 @@ public class EditProfileActivity extends AppCompatActivity {
         } else {
             proBadge.setVisibility(View.VISIBLE);
         }
-
+        // ads
+        adNetwork = new AdNetwork(this);
+        adNetwork.loadBannerAd();
+        //banner
+        MaxAdView bannerAd = findViewById(R.id.adView);
+        //check premium
+        if (UiConfig.BANNER_AD_VISIBILITY) {
+            bannerAd.setVisibility(View.VISIBLE);
+            bannerAd.startAutoRefresh();
+        } else {
+            bannerAd.setVisibility(View.GONE);
+            bannerAd.stopAutoRefresh();
+        }
         //instance
         database = FirebaseDatabase.getInstance();
         auth = FirebaseAuth.getInstance();

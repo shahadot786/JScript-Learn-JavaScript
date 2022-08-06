@@ -9,6 +9,7 @@ import android.view.View;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.applovin.mediation.ads.MaxAdView;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
 import com.google.android.gms.ads.MobileAds;
@@ -23,6 +24,7 @@ import com.google.firebase.database.ValueEventListener;
 import com.javascript.jscript.Config.UiConfig;
 import com.javascript.jscript.Model.UserModel;
 import com.javascript.jscript.R;
+import com.javascript.jscript.Utils.AdNetwork;
 import com.javascript.jscript.databinding.ActivitySignOutBinding;
 import com.squareup.picasso.Picasso;
 
@@ -33,7 +35,7 @@ public class SignOutActivity extends AppCompatActivity {
     ActivitySignOutBinding binding;
     FirebaseAuth auth;
     FirebaseDatabase database;
-    private AdView mRecAd;
+    private AdNetwork adNetwork;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -44,6 +46,20 @@ public class SignOutActivity extends AppCompatActivity {
         //instance of firebase
         auth = FirebaseAuth.getInstance();
         database = FirebaseDatabase.getInstance();
+
+        //ad initialization
+        adNetwork = new AdNetwork(this);
+        MaxAdView mRecAd = findViewById(R.id.mRec);
+        adNetwork.loadMrecAd();
+        //ads disabled code
+        //check premium
+        if (UiConfig.BANNER_AD_VISIBILITY) {
+            mRecAd.setVisibility(View.VISIBLE);
+            mRecAd.startAutoRefresh();
+        } else {
+            mRecAd.setVisibility(View.GONE);
+            mRecAd.stopAutoRefresh();
+        }
 
         //toolbar
         setSupportActionBar(binding.toolbar4);
@@ -73,30 +89,7 @@ public class SignOutActivity extends AppCompatActivity {
                 });
 
         //ad initialization
-        MobileAds.initialize(this, new OnInitializationCompleteListener() {
-            @Override
-            public void onInitializationComplete(@NonNull InitializationStatus initializationStatus) {
-                Map<String, AdapterStatus> statusMap = initializationStatus.getAdapterStatusMap();
-                for (String adapterClass : statusMap.keySet()) {
-                    AdapterStatus status = statusMap.get(adapterClass);
-                    Log.d("MyApp", String.format(
-                            "Adapter name: %s, Description: %s, Latency: %d",
-                            adapterClass, status.getDescription(), status.getLatency()));
-                }
 
-                // Start loading ads here...
-                //ad initialization
-                mRecAd = findViewById(R.id.adView);
-                AdRequest adRequest = new AdRequest.Builder().build();
-                mRecAd.loadAd(adRequest);
-                //ads disabled code
-                if (UiConfig.BANNER_AD_VISIBILITY) {
-                    mRecAd.setVisibility(View.VISIBLE);
-                } else {
-                    mRecAd.setVisibility(View.GONE);
-                }
-            }
-        });
 
         //cancel button
         binding.cancelBtn.setOnClickListener(new View.OnClickListener() {
@@ -113,15 +106,6 @@ public class SignOutActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-
-        //ads disabled code
-        if (UiConfig.BANNER_AD_VISIBILITY) {
-            mRecAd.setVisibility(View.VISIBLE);
-        } else {
-            mRecAd.setVisibility(View.GONE);
-        }
-
-
     }
 
     //option menu item select

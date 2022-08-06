@@ -17,6 +17,7 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.applovin.mediation.ads.MaxAdView;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.material.textfield.TextInputLayout;
 import com.google.firebase.auth.FirebaseAuth;
@@ -28,6 +29,7 @@ import com.javascript.jscript.Config.UiConfig;
 import com.javascript.jscript.Model.FeedbackModel;
 import com.javascript.jscript.Model.UserModel;
 import com.javascript.jscript.R;
+import com.javascript.jscript.Utils.AdNetwork;
 import com.javascript.jscript.databinding.ActivityFeedBackBinding;
 import com.squareup.picasso.Picasso;
 
@@ -43,6 +45,7 @@ public class FeedBackActivity extends AppCompatActivity {
     Toast toast;
     private TextInputLayout sendInput;
     private TextInputLayout emailInput;
+    private AdNetwork adNetwork;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -67,6 +70,21 @@ public class FeedBackActivity extends AppCompatActivity {
         } else {
             proBadge.setVisibility(View.VISIBLE);
         }
+
+        // ads
+        adNetwork = new AdNetwork(this);
+        adNetwork.loadBannerAd();
+        //banner
+        MaxAdView bannerAd = findViewById(R.id.adView);
+        //check premium
+        if (UiConfig.BANNER_AD_VISIBILITY) {
+            bannerAd.setVisibility(View.VISIBLE);
+            bannerAd.startAutoRefresh();
+        } else {
+            bannerAd.setVisibility(View.GONE);
+            bannerAd.stopAutoRefresh();
+        }
+
         //instance
         database = FirebaseDatabase.getInstance();
         auth = FirebaseAuth.getInstance();

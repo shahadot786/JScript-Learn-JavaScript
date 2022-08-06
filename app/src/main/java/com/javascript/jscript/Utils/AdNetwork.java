@@ -1,145 +1,213 @@
 package com.javascript.jscript.Utils;
 
-import static android.content.ContentValues.TAG;
 
 import android.app.Activity;
-import android.util.Log;
+import android.graphics.Color;
+import android.os.Handler;
 import android.view.View;
-import android.widget.TextView;
-import android.widget.Toast;
+import android.view.ViewGroup;
+import android.widget.FrameLayout;
 
-import androidx.annotation.NonNull;
-
-import com.airbnb.lottie.LottieAnimationView;
-import com.google.android.gms.ads.AdError;
-import com.google.android.gms.ads.AdRequest;
-import com.google.android.gms.ads.FullScreenContentCallback;
-import com.google.android.gms.ads.LoadAdError;
-import com.google.android.gms.ads.OnUserEarnedRewardListener;
-import com.google.android.gms.ads.interstitial.InterstitialAd;
-import com.google.android.gms.ads.interstitial.InterstitialAdLoadCallback;
-import com.google.android.gms.ads.rewarded.RewardItem;
-import com.google.android.gms.ads.rewarded.RewardedAd;
-import com.google.android.gms.ads.rewarded.RewardedAdLoadCallback;
+import com.applovin.mediation.MaxAd;
+import com.applovin.mediation.MaxAdListener;
+import com.applovin.mediation.MaxAdViewAdListener;
+import com.applovin.mediation.MaxError;
+import com.applovin.mediation.ads.MaxAdView;
+import com.applovin.mediation.ads.MaxInterstitialAd;
+import com.applovin.sdk.AppLovinSdkUtils;
 import com.javascript.jscript.Config.UiConfig;
 import com.javascript.jscript.R;
 
+import java.util.concurrent.TimeUnit;
+
 public class AdNetwork {
 
-    TextView qTimer,quizTimer;
-    LottieAnimationView timerView;
     private final Activity context;
     int counter = 1;
-    private InterstitialAd mInterstitialAd;
-    private RewardedAd mRewardedAd;
+    private int retry = 0;
+    private MaxInterstitialAd interstitialAd;
 
     public AdNetwork(Activity context) {
         this.context = context;
         //find id
-        qTimer = context.findViewById(R.id.qTimer);
-        timerView = context.findViewById(R.id.timerView);
-        quizTimer = context.findViewById(R.id.removeTimer);
     }
 
-    //load ad
+    //load banner ad
+    public void loadBannerAd() {
+        MaxAdView adView = new MaxAdView(context.getString(R.string.banner_ad_unit_id), context);
+        MaxAdView bannerAd = context.findViewById(R.id.adView);
+        adView.setListener(new MaxAdViewAdListener() {
+            @Override
+            public void onAdExpanded(MaxAd ad) {
+
+            }
+
+            @Override
+            public void onAdCollapsed(MaxAd ad) {
+
+            }
+
+            @Override
+            public void onAdLoaded(MaxAd ad) {
+
+            }
+
+            @Override
+            public void onAdDisplayed(MaxAd ad) {
+
+            }
+
+            @Override
+            public void onAdHidden(MaxAd ad) {
+                bannerAd.setVisibility(View.GONE);
+                adView.loadAd();
+            }
+
+            @Override
+            public void onAdClicked(MaxAd ad) {
+
+            }
+
+            @Override
+            public void onAdLoadFailed(String adUnitId, MaxError error) {
+                bannerAd.setVisibility(View.GONE);
+                adView.loadAd();
+            }
+
+            @Override
+            public void onAdDisplayFailed(MaxAd ad, MaxError error) {
+                bannerAd.setVisibility(View.GONE);
+                adView.loadAd();
+            }
+        });
+
+        int width = ViewGroup.LayoutParams.MATCH_PARENT;
+        int height = context.getResources().getDimensionPixelSize(R.dimen.banner_height);
+
+        adView.setLayoutParams(new FrameLayout.LayoutParams(width, height));
+        adView.setBackgroundColor(Color.TRANSPARENT);
+        bannerAd.addView(adView);
+        adView.loadAd();
+        adView.startAutoRefresh();
+    }
+
+    //load MREC ad
+    public void loadMrecAd() {
+        MaxAdView MRECAdview = new MaxAdView(context.getString(R.string.mrec_ad_unit_id), context);
+        MaxAdView mRecAd = context.findViewById(R.id.mRec);
+        MRECAdview.setListener(new MaxAdViewAdListener() {
+            @Override
+            public void onAdExpanded(MaxAd ad) {
+
+            }
+
+            @Override
+            public void onAdCollapsed(MaxAd ad) {
+
+            }
+
+            @Override
+            public void onAdLoaded(MaxAd ad) {
+
+            }
+
+            @Override
+            public void onAdDisplayed(MaxAd ad) {
+
+            }
+
+            @Override
+            public void onAdHidden(MaxAd ad) {
+                mRecAd.setVisibility(View.GONE);
+                MRECAdview.loadAd();
+            }
+
+            @Override
+            public void onAdClicked(MaxAd ad) {
+
+            }
+
+            @Override
+            public void onAdLoadFailed(String adUnitId, MaxError error) {
+                mRecAd.setVisibility(View.GONE);
+                MRECAdview.loadAd();
+            }
+
+            @Override
+            public void onAdDisplayFailed(MaxAd ad, MaxError error) {
+                mRecAd.setVisibility(View.GONE);
+                MRECAdview.loadAd();
+            }
+        });
+
+        int width = AppLovinSdkUtils.dpToPx(context, 300);
+        int height = AppLovinSdkUtils.dpToPx(context, 250);
+
+        MRECAdview.setLayoutParams(new FrameLayout.LayoutParams(width, height));
+        MRECAdview.setBackgroundColor(Color.TRANSPARENT);
+        mRecAd.addView(MRECAdview);
+        MRECAdview.loadAd();
+        MRECAdview.startAutoRefresh();
+
+    }
+    //load Interstitial ad
     public void loadInterstitialAd() {
-        AdRequest adRequest = new AdRequest.Builder().build();
-        InterstitialAd.load(context, context.getString(R.string.interstitial_ad_unit_id), adRequest,
-                new InterstitialAdLoadCallback() {
+        interstitialAd = new MaxInterstitialAd(context.getString(R.string.interstitial_ad_unit_id), context);
+        MaxAdListener adListener = new MaxAdListener() {
+            @Override
+            public void onAdLoaded(MaxAd ad) {
+                retry = 0;
+            }
+
+            @Override
+            public void onAdDisplayed(MaxAd ad) {
+
+            }
+
+            @Override
+            public void onAdHidden(MaxAd ad) {
+                interstitialAd.loadAd();
+            }
+
+            @Override
+            public void onAdClicked(MaxAd ad) {
+
+            }
+
+            @Override
+            public void onAdLoadFailed(String adUnitId, MaxError error) {
+                retry++;
+                long delay = TimeUnit.SECONDS.toMillis((long) Math.pow(2, Math.min(6, retry)));
+
+                new Handler().postDelayed(new Runnable() {
                     @Override
-                    public void onAdLoaded(@NonNull InterstitialAd interstitialAd) {
-                        mInterstitialAd = interstitialAd;
-                        mInterstitialAd.setFullScreenContentCallback(new FullScreenContentCallback() {
-                            @Override
-                            public void onAdFailedToShowFullScreenContent(@NonNull AdError adError) {
-                                Log.d(TAG, "The ad failed to show.");
-                            }
-
-                            @Override
-                            public void onAdShowedFullScreenContent() {
-                                mInterstitialAd = null;
-                                Log.d(TAG, "The ad was shown.");
-                            }
-
-                            @Override
-                            public void onAdDismissedFullScreenContent() {
-                                loadInterstitialAd();
-                            }
-                        });
-                        Log.i(TAG, "onAdLoaded");
+                    public void run() {
+                        interstitialAd.loadAd();
                     }
+                }, delay);
+            }
 
-                    @Override
-                    public void onAdFailedToLoad(@NonNull LoadAdError loadAdError) {
-                        // Handle the error
-                        Log.i(TAG, loadAdError.getMessage());
-                        mInterstitialAd = null;
-                        Log.d(TAG, "Failed load AdMob Interstitial Ad");
-                    }
-                });
+            @Override
+            public void onAdDisplayFailed(MaxAd ad, MaxError error) {
+                interstitialAd.loadAd();
+            }
+        };
+
+        interstitialAd.setListener(adListener);
+        interstitialAd.loadAd();
     }
 
-    //show ad
+    //show Interstitial ad without count click
     public void showInterstitialAd() {
         if (UiConfig.INTERSTITIAL__AD_VISIBILITY) {
-            if (mInterstitialAd != null) {
+            if (interstitialAd.isReady()) {
                 if (counter == UiConfig.INTERSTITIAL_AD_INTERVAL) {
-                    mInterstitialAd.show(context);
+                    interstitialAd.showAd();
                     counter = 1;
                 } else {
                     counter++;
                 }
             }
         }
-        /*if (UiConfig.PRO_VISIBILITY_STATUS_SHOW){
-            if (mInterstitialAd !=null){
-                if (counter == UiConfig.INTERSTITIAL_AD_INTERVAL){
-                    mInterstitialAd.show(context);
-                    counter = 1;
-                }else {
-                    counter++;
-                }
-            }
-        }*/
-
     }
-
-    //load rewarded ad
-    public void loadRewardedAd() {
-        AdRequest adRequest = new AdRequest.Builder().build();
-        RewardedAd.load(context, context.getString(R.string.rewarded_ad_unit_id),
-                adRequest, new RewardedAdLoadCallback() {
-                    @Override
-                    public void onAdFailedToLoad(@NonNull LoadAdError loadAdError) {
-                        // Handle the error.
-                        mRewardedAd = null;
-                    }
-
-                    @Override
-                    public void onAdLoaded(@NonNull RewardedAd rewardedAd) {
-                        mRewardedAd = rewardedAd;
-                    }
-                });
-    }
-
-    //show rewarded ad
-    public void showRewardedAd() {
-        if (UiConfig.REWARDED__AD_VISIBILITY) {
-            if (mRewardedAd != null) {
-                mRewardedAd.show(context, new OnUserEarnedRewardListener() {
-                    @Override
-                    public void onUserEarnedReward(@NonNull RewardItem rewardItem) {
-                        Toast.makeText(context, "Removed timer..", Toast.LENGTH_SHORT).show();
-                        qTimer.setVisibility(View.GONE);
-                        timerView.setVisibility(View.GONE);
-                        quizTimer.setVisibility(View.GONE);
-                    }
-                });
-            }else {
-                Toast.makeText(context, "Failed to load ad, Please try again.", Toast.LENGTH_SHORT).show();
-            }
-        }
-    }
-
-
 }

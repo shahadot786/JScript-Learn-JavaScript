@@ -10,10 +10,12 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.AppCompatButton;
 
+import com.applovin.mediation.ads.MaxAdView;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
 import com.javascript.jscript.Config.UiConfig;
 import com.javascript.jscript.R;
+import com.javascript.jscript.Utils.AdNetwork;
 import com.javascript.jscript.databinding.ActivityQuizResultBinding;
 
 import java.util.Objects;
@@ -22,6 +24,7 @@ public class QuizResultActivity extends AppCompatActivity {
 
     ActivityQuizResultBinding binding;
     ImageView quizTrophy;
+    private AdNetwork adNetwork;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,15 +42,19 @@ public class QuizResultActivity extends AppCompatActivity {
         TextView wrongAns = findViewById(R.id.wrongAns);
         AppCompatButton startNewBtn = findViewById(R.id.startNewQuizBtn);
         //ad initialization
-        AdView mRecAd = findViewById(R.id.adView);
-        AdRequest adRequest = new AdRequest.Builder().build();
-        mRecAd.loadAd(adRequest);
-        //conditions
+
+        //ad initialization
+        adNetwork = new AdNetwork(this);
+        MaxAdView mRecAd = findViewById(R.id.mRec);
+        adNetwork.loadMrecAd();
         //ads disabled code
+        //check premium
         if (UiConfig.BANNER_AD_VISIBILITY) {
             mRecAd.setVisibility(View.VISIBLE);
+            mRecAd.startAutoRefresh();
         } else {
             mRecAd.setVisibility(View.GONE);
+            mRecAd.stopAutoRefresh();
         }
 
         //get results

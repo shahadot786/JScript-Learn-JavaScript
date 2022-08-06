@@ -35,21 +35,18 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <com.google.android.gms.ads.AdView
+    <com.applovin.mediation.ads.MaxAdView
+        xmlns:maxads="http://schemas.applovin.com/android/1.0"
         android:id="@+id/adView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/banner_height"
         android:visibility="gone"
-        app:adSize="BANNER"
-        app:adUnitId="@string/banner_ad_unit_id"
+        maxads:adUnitId="@string/banner_ad_unit_id"
         app:layout_constraintBottom_toBottomOf="@+id/container"
         app:layout_constraintEnd_toStartOf="@+id/container"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/container">
-
-    </com.google.android.gms.ads.AdView>
+    </com.applovin.mediation.ads.MaxAdView>
 
     <me.ibrahimsn.lib.SmoothBottomBar
         android:id="@+id/bottomBar"

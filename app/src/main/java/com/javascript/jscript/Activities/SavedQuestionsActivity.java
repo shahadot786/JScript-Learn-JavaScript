@@ -17,6 +17,7 @@ import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.applovin.mediation.ads.MaxAdView;
 import com.cooltechworks.views.shimmer.ShimmerRecyclerView;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
@@ -33,6 +34,7 @@ import com.javascript.jscript.Adapter.DiscussAdapter;
 import com.javascript.jscript.Config.UiConfig;
 import com.javascript.jscript.Model.DiscussModel;
 import com.javascript.jscript.R;
+import com.javascript.jscript.Utils.AdNetwork;
 import com.javascript.jscript.databinding.ActivityMyQuestionsBinding;
 
 import java.util.ArrayList;
@@ -53,6 +55,7 @@ public class SavedQuestionsActivity extends AppCompatActivity {
     ShimmerRecyclerView recyclerView;
     ArrayList<DiscussModel> dashboardList;
     SwipeRefreshLayout swipeRefreshLayout;
+    private AdNetwork adNetwork;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -72,29 +75,19 @@ public class SavedQuestionsActivity extends AppCompatActivity {
         SavedQuestionsActivity.this.setTitle("Saved Questions");
         Objects.requireNonNull(getSupportActionBar()).setDisplayHomeAsUpEnabled(true);
 
-        MobileAds.initialize(this, new OnInitializationCompleteListener() {
-            @Override
-            public void onInitializationComplete(@NonNull InitializationStatus initializationStatus) {
-                Map<String, AdapterStatus> statusMap = initializationStatus.getAdapterStatusMap();
-                for (String adapterClass : statusMap.keySet()) {
-                    AdapterStatus status = statusMap.get(adapterClass);
-                    Log.d("JScript", String.format(
-                            "Adapter name: %s, Description: %s, Latency: %d",
-                            adapterClass, status.getDescription(), status.getLatency()));
-                }
-
-                // Start loading ads here...
-                //ad request
-                AdView bannerAd = findViewById(R.id.adView);
-                AdRequest adRequest = new AdRequest.Builder().build();
-                bannerAd.loadAd(adRequest);
-                if (UiConfig.BANNER_AD_VISIBILITY) {
-                    bannerAd.setVisibility(View.VISIBLE);
-                } else {
-                    bannerAd.setVisibility(View.GONE);
-                }
-            }
-        });
+// ads
+        adNetwork = new AdNetwork(this);
+        adNetwork.loadBannerAd();
+        //banner
+        MaxAdView bannerAd = findViewById(R.id.adView);
+        //check premium
+        if (UiConfig.BANNER_AD_VISIBILITY) {
+            bannerAd.setVisibility(View.VISIBLE);
+            bannerAd.startAutoRefresh();
+        } else {
+            bannerAd.setVisibility(View.GONE);
+            bannerAd.stopAutoRefresh();
+        }
         //empty view
         empty = findViewById(R.id.emptyList);
         emptyText = findViewById(R.id.empty);

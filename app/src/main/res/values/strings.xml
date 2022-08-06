@@ -19,12 +19,15 @@
     <string name="share_message3">Learn JavaScript start to end with QA &amp; Practice Programs. More than 1000+ Programs.</string>
     <string name="share_message4">Discuss your problems in details with the large JScript QA community.</string>
 
-    <!--Admob Ads Real-->
+    <!--Ads Real-->
     <string name="app_id">ca-app-pub-1183995713269973~4276200822</string>
-    <string name="banner_ad_unit_id">ca-app-pub-1183995713269973/7916247990</string>
-    <string name="interstitial_ad_unit_id">ca-app-pub-1183995713269973/6541772361</string>
-    <string name="rewarded_ad_unit_id">ca-app-pub-1183995713269973/3002852149</string>
-    <string name="applovin_sdk_key">h_SI4RH8q40T3xf1aRSRtbznFChbszL2K2PUQpTxxskOwo6LGumFvQgemqzfycGOwb2mKDFZoEecwDCsvaB0uD</string>
+    <string name="banner_ad_unit_id">49ae875268de82cd</string>
+    <string name="interstitial_ad_unit_id">d70064df9569d177</string>
+    <string name="rewarded_ad_unit_id">ac9520145a00b17a</string>
+    <string name="mrec_ad_unit_id">b682896ef3bd11c4</string>
+    <string name="native_small_ad_unit_id">0f6e6c5f7b02496e</string>
+    <string name="native_medium_ad_unit_id">a6dec7ccd220a3bb</string>
+    <string name="applovin_sdk_key">1zWIpgA5ypdhsOvsw5LkOKHivpN2aMwgH0qMm77xmphANnQtbfRSXZTnCvCC_R3fvEXiz37ehgP2UVgypc0MCF</string>
 
     <!--Google Sign In-->
     <!--<string name="default_web_client_id">10732582829-srv96l245sn3s9jgl6j4vfijnvplsf7p.apps.googleusercontent.com</string>-->

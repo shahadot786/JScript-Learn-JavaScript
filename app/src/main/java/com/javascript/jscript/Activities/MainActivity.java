@@ -31,6 +31,9 @@ import androidx.core.app.NotificationCompat;
 import androidx.core.app.NotificationManagerCompat;
 import androidx.fragment.app.FragmentTransaction;
 
+import com.applovin.mediation.ads.MaxAdView;
+import com.applovin.sdk.AppLovinSdk;
+import com.applovin.sdk.AppLovinSdkConfiguration;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
 import com.google.android.gms.ads.MobileAds;
@@ -53,6 +56,7 @@ import com.javascript.jscript.Model.NotificationsModel;
 import com.javascript.jscript.Model.UserModel;
 import com.javascript.jscript.Notifications.NotificationsActivity;
 import com.javascript.jscript.R;
+import com.javascript.jscript.Utils.AdNetwork;
 import com.javascript.jscript.databinding.ActivityMainBinding;
 
 import java.util.Map;
@@ -72,7 +76,7 @@ public class MainActivity extends AppCompatActivity {
     FirebaseAuth auth;
     FirebaseDatabase database;
     private long exitTime = 0;
-    private AdView bannerAd;
+    private AdNetwork adNetwork;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -90,31 +94,35 @@ public class MainActivity extends AppCompatActivity {
         toast.setView(toastLayout);
         //toolbar
         setSupportActionBar(binding.toolbar);
+
+        //context
+        adNetwork = new AdNetwork(this);
         //firebase instance
         auth = FirebaseAuth.getInstance();
         database = FirebaseDatabase.getInstance();
-        //ad request
-        MobileAds.initialize(this, new OnInitializationCompleteListener() {
+        // Make sure to set the mediation provider value to "max" to ensure proper functionality
+        AppLovinSdk.getInstance( this ).setMediationProvider( "max" );
+        AppLovinSdk.initializeSdk( this, new AppLovinSdk.SdkInitializationListener() {
             @Override
-            public void onInitializationComplete(@NonNull InitializationStatus initializationStatus) {
-                Map<String, AdapterStatus> statusMap = initializationStatus.getAdapterStatusMap();
-                for (String adapterClass : statusMap.keySet()) {
-                    AdapterStatus status = statusMap.get(adapterClass);
-                    Log.d("JScript", String.format(
-                            "Adapter name: %s, Description: %s, Latency: %d",
-                            adapterClass, status.getDescription(), status.getLatency()));
-                }
-
-                // Start loading ads here...
-                //ad request
-                bannerAd = findViewById(R.id.adView);
-                AdRequest adRequest = new AdRequest.Builder().build();
-                bannerAd.loadAd(adRequest);
-                if (UiConfig.BANNER_AD_VISIBILITY) {
-                    bannerAd.setVisibility(View.VISIBLE);
-                }
+            public void onSdkInitialized(final AppLovinSdkConfiguration configuration)
+            {
+                // AppLovin SDK is initialized, start loading ads
+                adNetwork.loadInterstitialAd();
             }
-        });
+        } );
+        //AppLovinSdk.getInstance( this ).showMediationDebugger();
+
+        //banner
+        MaxAdView bannerAd = findViewById(R.id.adView);
+        adNetwork.loadBannerAd();
+        //check premium
+        if (UiConfig.BANNER_AD_VISIBILITY) {
+            bannerAd.setVisibility(View.VISIBLE);
+            bannerAd.startAutoRefresh();
+        } else {
+            bannerAd.setVisibility(View.GONE);
+            bannerAd.stopAutoRefresh();
+        }
 
         //MediationTestSuite.launch(MainActivity.this);
         //by default fragment code

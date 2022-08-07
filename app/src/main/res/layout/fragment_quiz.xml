@@ -134,6 +134,17 @@
 
             </com.javascript.jscript.Utils.ExpandableHeightGridView>
 
+            <FrameLayout
+                android:id="@+id/native_ad_layout"
+                android:layout_width="0dp"
+                android:layout_height="120dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/colorWhite"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/quiz_item_gridview" />
+
             <com.airbnb.lottie.LottieAnimationView
                 android:id="@+id/proImage"
                 android:layout_width="48dp"
@@ -146,7 +157,7 @@
                 app:layout_constraintHorizontal_bias="0.5"
                 app:layout_constraintHorizontal_chainStyle="packed"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/quiz_item_gridview" />
+                app:layout_constraintTop_toBottomOf="@+id/native_ad_layout" />
 
             <TextView
                 android:id="@+id/proText"

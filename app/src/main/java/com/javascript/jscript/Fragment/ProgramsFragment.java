@@ -3,16 +3,23 @@ package com.javascript.jscript.Fragment;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Handler;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
+import android.widget.FrameLayout;
 import android.widget.ImageView;
 
 import androidx.annotation.NonNull;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.fragment.app.Fragment;
 
+import com.applovin.mediation.MaxAd;
+import com.applovin.mediation.MaxError;
+import com.applovin.mediation.nativeAds.MaxNativeAdListener;
+import com.applovin.mediation.nativeAds.MaxNativeAdLoader;
+import com.applovin.mediation.nativeAds.MaxNativeAdView;
 import com.javascript.jscript.Activities.PremiumActivity;
 import com.javascript.jscript.Adapter.ProgramsItemsAdapter;
 import com.javascript.jscript.Adapter.ProgramsItemsAdapterPro;
@@ -21,6 +28,8 @@ import com.javascript.jscript.Programs.ProgramsItemsListActivity;
 import com.javascript.jscript.R;
 import com.javascript.jscript.Utils.AdNetwork;
 import com.javascript.jscript.Utils.ExpandableHeightGridView;
+
+import java.util.concurrent.TimeUnit;
 
 public class ProgramsFragment extends Fragment {
     ExpandableHeightGridView gridView, gridViewPro;
@@ -59,6 +68,10 @@ public class ProgramsFragment extends Fragment {
 
     };
     private AdNetwork adNetwork;
+    private MaxNativeAdLoader nativeAdLoader;
+    private MaxAd nativeAd;
+    FrameLayout nativeAdContainer;
+    private int retry;
 
     public ProgramsFragment() {
         // Required empty public constructor
@@ -114,6 +127,17 @@ public class ProgramsFragment extends Fragment {
         adNetwork = new AdNetwork(getActivity());
         //load ad
         adNetwork.loadInterstitialAd();
+        //native ad codes
+        nativeAdContainer = view.findViewById( R.id.native_ad_layout );
+        loadNativeAd();
+
+        //pro user check
+        if(UiConfig.PRO_VISIBILITY_STATUS_SHOW){
+            nativeAdContainer.setVisibility(View.VISIBLE);
+        }else {
+            nativeAdContainer.setVisibility(View.GONE);
+        }
+
         //click pro view
         proView.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -235,5 +259,45 @@ public class ProgramsFragment extends Fragment {
 
         // Inflate the layout for this fragment
         return view;
+    }
+
+    //load small native ad
+    public void loadNativeAd() {
+        nativeAdLoader = new MaxNativeAdLoader(getResources().getString(R.string.native_small_ad_unit_id), getActivity());
+        nativeAdLoader.setNativeAdListener(new MaxNativeAdListener() {
+            @Override
+            public void onNativeAdLoaded(final MaxNativeAdView nativeAdView, final MaxAd ad) {
+                // Clean up any pre-existing native ad to prevent memory leaks.
+                if (nativeAd != null) {
+                    nativeAdLoader.destroy(nativeAd);
+                }
+                // Save ad for cleanup.
+                nativeAd = ad;
+                // Add ad view to view.
+                nativeAdContainer.removeAllViews();
+                nativeAdContainer.addView(nativeAdView);
+            }
+
+            @Override
+            public void onNativeAdLoadFailed(final String adUnitId, final MaxError error) {
+                // We recommend retrying with exponentially higher delays up to a maximum delay
+                nativeAdContainer.setVisibility(View.GONE);
+                retry++;
+                long delay = TimeUnit.SECONDS.toMillis((long) Math.pow(2, Math.min(6, retry)));
+
+                new Handler().postDelayed(new Runnable() {
+                    @Override
+                    public void run() {
+                        nativeAdLoader.loadAd();
+                    }
+                }, delay);
+            }
+
+            @Override
+            public void onNativeAdClicked(final MaxAd ad) {
+                // Optional click callback
+            }
+        });
+        nativeAdLoader.loadAd();
     }
 }

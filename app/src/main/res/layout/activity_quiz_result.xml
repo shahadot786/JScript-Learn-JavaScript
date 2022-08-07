@@ -110,39 +110,22 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/adView"
+        app:layout_constraintTop_toBottomOf="@+id/mRec"
         tools:ignore="SpeakableTextPresentCheck" />
-
-
-    <com.google.android.gms.ads.AdView
-        android:id="@+id/adView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="8dp"
-        android:visibility="gone"
-        app:adSize="MEDIUM_RECTANGLE"
-        app:adUnitId="@string/banner_ad_unit_id"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView41">
-
-    </com.google.android.gms.ads.AdView>
 
     <com.applovin.mediation.ads.MaxAdView
         android:id="@+id/mRec"
         android:layout_width="300dp"
         android:layout_height="250dp"
+        android:layout_marginTop="8dp"
         android:background="@color/colorWhite"
         android:visibility="gone"
-        maxads:adUnitId="@string/mrec_ad_unit_id"
-        maxads:adFormat="MREC"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView41">
+        app:layout_constraintTop_toBottomOf="@+id/textView41"
+        maxads:adFormat="MREC"
+        maxads:adUnitId="@string/mrec_ad_unit_id">
 
     </com.applovin.mediation.ads.MaxAdView>
 

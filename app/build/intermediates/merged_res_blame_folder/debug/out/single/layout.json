@@ -1,0 +1,218 @@
+[
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-mergeDebugResources-59:\\layout\\notification_rv_sample.xml",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-main-62:\\layout\\notification_rv_sample.xml"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-mergeDebugResources-59:\\layout\\activity_sign_in.xml",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-main-62:\\layout\\activity_sign_in.xml"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-mergeDebugResources-59:\\layout\\activity_follow_us.xml",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-main-62:\\layout\\activity_follow_us.xml"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-mergeDebugResources-59:\\layout\\activity_programs_items_list.xml",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-main-62:\\layout\\activity_programs_items_list.xml"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-mergeDebugResources-59:\\layout\\activity_read_books.xml",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-main-62:\\layout\\activity_read_books.xml"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-mergeDebugResources-59:\\layout\\activity_programs_code.xml",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-main-62:\\layout\\activity_programs_code.xml"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-mergeDebugResources-59:\\layout\\activity_feed_back.xml",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-main-62:\\layout\\activity_feed_back.xml"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-mergeDebugResources-59:\\layout\\comments_rv_sample.xml",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-main-62:\\layout\\comments_rv_sample.xml"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-mergeDebugResources-59:\\layout\\activity_premium.xml",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-main-62:\\layout\\activity_premium.xml"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-mergeDebugResources-59:\\layout\\fragment_home.xml",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-main-62:\\layout\\fragment_home.xml"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-mergeDebugResources-59:\\layout\\activity_interview_items_list.xml",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-main-62:\\layout\\activity_interview_items_list.xml"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-mergeDebugResources-59:\\layout\\activity_discuss_details.xml",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-main-62:\\layout\\activity_discuss_details.xml"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-mergeDebugResources-59:\\layout\\activity_learn_items_list.xml",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-main-62:\\layout\\activity_learn_items_list.xml"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-mergeDebugResources-59:\\layout\\activity_codes.xml",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-main-62:\\layout\\activity_codes.xml"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-mergeDebugResources-59:\\layout\\activity_sign_out.xml",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-main-62:\\layout\\activity_sign_out.xml"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-mergeDebugResources-59:\\layout\\activity_forgot_password.xml",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-main-62:\\layout\\activity_forgot_password.xml"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-mergeDebugResources-59:\\layout\\activity_quiz_details.xml",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-main-62:\\layout\\activity_quiz_details.xml"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-mergeDebugResources-59:\\layout\\programs_list_items_layout.xml",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-main-62:\\layout\\programs_list_items_layout.xml"
+    },
+    {
+        "merged": "com.javascript.jscript.app-mergeDebugResources-59:/layout/activity_my_questions.xml",
+        "source": "com.javascript.jscript.app-main-62:/layout/activity_my_questions.xml"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-mergeDebugResources-59:\\layout\\activity_add_discuss.xml",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-main-62:\\layout\\activity_add_discuss.xml"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-mergeDebugResources-59:\\layout\\activity_edit_profile.xml",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-main-62:\\layout\\activity_edit_profile.xml"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-mergeDebugResources-59:\\layout\\activity_next3.xml",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-main-62:\\layout\\activity_next3.xml"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-mergeDebugResources-59:\\layout\\activity_sign_up.xml",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-main-62:\\layout\\activity_sign_up.xml"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-mergeDebugResources-59:\\layout\\activity_my_questions.xml",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-main-62:\\layout\\activity_my_questions.xml"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-mergeDebugResources-59:\\layout\\fragment_discuss.xml",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-main-62:\\layout\\fragment_discuss.xml"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-mergeDebugResources-59:\\layout\\fragment_learn.xml",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-main-62:\\layout\\fragment_learn.xml"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-mergeDebugResources-59:\\layout\\demo_notification_shimmer.xml",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-main-62:\\layout\\demo_notification_shimmer.xml"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-mergeDebugResources-59:\\layout\\demo_discuss_shimmer.xml",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-main-62:\\layout\\demo_discuss_shimmer.xml"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-mergeDebugResources-59:\\layout\\fragment_books.xml",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-main-62:\\layout\\fragment_books.xml"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-mergeDebugResources-59:\\layout\\activity_user_profile.xml",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-main-62:\\layout\\activity_user_profile.xml"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-mergeDebugResources-59:\\layout\\fragment_quiz.xml",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-main-62:\\layout\\fragment_quiz.xml"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-mergeDebugResources-59:\\layout\\activity_upcoming_courses.xml",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-main-62:\\layout\\activity_upcoming_courses.xml"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-mergeDebugResources-59:\\layout\\fragment_profile.xml",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-main-62:\\layout\\fragment_profile.xml"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-mergeDebugResources-59:\\layout\\activity_splash.xml",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-main-62:\\layout\\activity_splash.xml"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-mergeDebugResources-59:\\layout\\add_discuss_rv_sample.xml",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-main-62:\\layout\\add_discuss_rv_sample.xml"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-mergeDebugResources-59:\\layout\\fragment_interview_q_a.xml",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-main-62:\\layout\\fragment_interview_q_a.xml"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-mergeDebugResources-59:\\layout\\activity_next2.xml",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-main-62:\\layout\\activity_next2.xml"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-mergeDebugResources-59:\\layout\\activity_next.xml",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-main-62:\\layout\\activity_next.xml"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-mergeDebugResources-59:\\layout\\custom_notification_icon_layout.xml",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-main-62:\\layout\\custom_notification_icon_layout.xml"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-mergeDebugResources-59:\\layout\\demo_comment_shimmer.xml",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-main-62:\\layout\\demo_comment_shimmer.xml"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-mergeDebugResources-59:\\layout\\slider_item.xml",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-main-62:\\layout\\slider_item.xml"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-mergeDebugResources-59:\\layout\\activity_quiz_result.xml",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-main-62:\\layout\\activity_quiz_result.xml"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-mergeDebugResources-59:\\layout\\activity_books_list.xml",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-main-62:\\layout\\activity_books_list.xml"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-mergeDebugResources-59:\\layout\\activity_google_sign_in.xml",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-main-62:\\layout\\activity_google_sign_in.xml"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-mergeDebugResources-59:\\layout\\activity_interview_answer.xml",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-main-62:\\layout\\activity_interview_answer.xml"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-mergeDebugResources-59:\\layout\\activity_learn_details.xml",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-main-62:\\layout\\activity_learn_details.xml"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-mergeDebugResources-59:\\layout\\custom_toast_layout.xml",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-main-62:\\layout\\custom_toast_layout.xml"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-mergeDebugResources-59:\\layout\\activity_quiz_topic_list.xml",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-main-62:\\layout\\activity_quiz_topic_list.xml"
+    },
+    {
+        "merged": "com.javascript.jscript.app-mergeDebugResources-59:/layout/activity_notifications.xml",
+        "source": "com.javascript.jscript.app-main-62:/layout/activity_notifications.xml"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-mergeDebugResources-59:\\layout\\fragment_pro.xml",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-main-62:\\layout\\fragment_pro.xml"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-mergeDebugResources-59:\\layout\\activity_main.xml",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-main-62:\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-mergeDebugResources-59:\\layout\\fragment_programs.xml",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-main-62:\\layout\\fragment_programs.xml"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-mergeDebugResources-59:\\layout\\topics_items_grid_layout.xml",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-main-62:\\layout\\topics_items_grid_layout.xml"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-mergeDebugResources-59:\\layout\\activity_notifications.xml",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-main-62:\\layout\\activity_notifications.xml"
+    }
+]

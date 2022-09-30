@@ -1,0 +1,210 @@
+[
+    {
+        "merged": "com.javascript.jscript.app-mergeReleaseResources-59:/layout/activity_follow_us.xml",
+        "source": "com.javascript.jscript.app-main-61:/layout/activity_follow_us.xml"
+    },
+    {
+        "merged": "com.javascript.jscript.app-mergeReleaseResources-59:/layout/activity_sign_in.xml",
+        "source": "com.javascript.jscript.app-main-61:/layout/activity_sign_in.xml"
+    },
+    {
+        "merged": "com.javascript.jscript.app-mergeReleaseResources-59:/layout/activity_programs_code.xml",
+        "source": "com.javascript.jscript.app-main-61:/layout/activity_programs_code.xml"
+    },
+    {
+        "merged": "com.javascript.jscript.app-mergeReleaseResources-59:/layout/fragment_books.xml",
+        "source": "com.javascript.jscript.app-main-61:/layout/fragment_books.xml"
+    },
+    {
+        "merged": "com.javascript.jscript.app-mergeReleaseResources-59:/layout/activity_next2.xml",
+        "source": "com.javascript.jscript.app-main-61:/layout/activity_next2.xml"
+    },
+    {
+        "merged": "com.javascript.jscript.app-mergeReleaseResources-59:/layout/activity_splash.xml",
+        "source": "com.javascript.jscript.app-main-61:/layout/activity_splash.xml"
+    },
+    {
+        "merged": "com.javascript.jscript.app-mergeReleaseResources-59:/layout/activity_programs_items_list.xml",
+        "source": "com.javascript.jscript.app-main-61:/layout/activity_programs_items_list.xml"
+    },
+    {
+        "merged": "com.javascript.jscript.app-mergeReleaseResources-59:/layout/activity_next.xml",
+        "source": "com.javascript.jscript.app-main-61:/layout/activity_next.xml"
+    },
+    {
+        "merged": "com.javascript.jscript.app-mergeReleaseResources-59:/layout/fragment_learn.xml",
+        "source": "com.javascript.jscript.app-main-61:/layout/fragment_learn.xml"
+    },
+    {
+        "merged": "com.javascript.jscript.app-mergeReleaseResources-59:/layout/demo_comment_shimmer.xml",
+        "source": "com.javascript.jscript.app-main-61:/layout/demo_comment_shimmer.xml"
+    },
+    {
+        "merged": "com.javascript.jscript.app-mergeReleaseResources-59:/layout/activity_next3.xml",
+        "source": "com.javascript.jscript.app-main-61:/layout/activity_next3.xml"
+    },
+    {
+        "merged": "com.javascript.jscript.app-mergeReleaseResources-59:/layout/activity_premium.xml",
+        "source": "com.javascript.jscript.app-main-61:/layout/activity_premium.xml"
+    },
+    {
+        "merged": "com.javascript.jscript.app-mergeReleaseResources-59:/layout/activity_interview_items_list.xml",
+        "source": "com.javascript.jscript.app-main-61:/layout/activity_interview_items_list.xml"
+    },
+    {
+        "merged": "com.javascript.jscript.app-mergeReleaseResources-59:/layout/activity_quiz_topic_list.xml",
+        "source": "com.javascript.jscript.app-main-61:/layout/activity_quiz_topic_list.xml"
+    },
+    {
+        "merged": "com.javascript.jscript.app-mergeReleaseResources-59:/layout/custom_notification_icon_layout.xml",
+        "source": "com.javascript.jscript.app-main-61:/layout/custom_notification_icon_layout.xml"
+    },
+    {
+        "merged": "com.javascript.jscript.app-mergeReleaseResources-59:/layout/activity_sign_out.xml",
+        "source": "com.javascript.jscript.app-main-61:/layout/activity_sign_out.xml"
+    },
+    {
+        "merged": "com.javascript.jscript.app-mergeReleaseResources-59:/layout/fragment_quiz.xml",
+        "source": "com.javascript.jscript.app-main-61:/layout/fragment_quiz.xml"
+    },
+    {
+        "merged": "com.javascript.jscript.app-mergeReleaseResources-59:/layout/comments_rv_sample.xml",
+        "source": "com.javascript.jscript.app-main-61:/layout/comments_rv_sample.xml"
+    },
+    {
+        "merged": "com.javascript.jscript.app-mergeReleaseResources-59:/layout/activity_feed_back.xml",
+        "source": "com.javascript.jscript.app-main-61:/layout/activity_feed_back.xml"
+    },
+    {
+        "merged": "com.javascript.jscript.app-mergeReleaseResources-59:/layout/activity_google_sign_in.xml",
+        "source": "com.javascript.jscript.app-main-61:/layout/activity_google_sign_in.xml"
+    },
+    {
+        "merged": "com.javascript.jscript.app-mergeReleaseResources-59:/layout/fragment_programs.xml",
+        "source": "com.javascript.jscript.app-main-61:/layout/fragment_programs.xml"
+    },
+    {
+        "merged": "com.javascript.jscript.app-mergeReleaseResources-59:/layout/activity_notifications.xml",
+        "source": "com.javascript.jscript.app-main-61:/layout/activity_notifications.xml"
+    },
+    {
+        "merged": "com.javascript.jscript.app-mergeReleaseResources-59:/layout/activity_learn_items_list.xml",
+        "source": "com.javascript.jscript.app-main-61:/layout/activity_learn_items_list.xml"
+    },
+    {
+        "merged": "com.javascript.jscript.app-mergeReleaseResources-59:/layout/demo_notification_shimmer.xml",
+        "source": "com.javascript.jscript.app-main-61:/layout/demo_notification_shimmer.xml"
+    },
+    {
+        "merged": "com.javascript.jscript.app-mergeReleaseResources-59:/layout/activity_read_books.xml",
+        "source": "com.javascript.jscript.app-main-61:/layout/activity_read_books.xml"
+    },
+    {
+        "merged": "com.javascript.jscript.app-mergeReleaseResources-59:/layout/activity_quiz_result.xml",
+        "source": "com.javascript.jscript.app-main-61:/layout/activity_quiz_result.xml"
+    },
+    {
+        "merged": "com.javascript.jscript.app-mergeReleaseResources-59:/layout/activity_codes.xml",
+        "source": "com.javascript.jscript.app-main-61:/layout/activity_codes.xml"
+    },
+    {
+        "merged": "com.javascript.jscript.app-mergeReleaseResources-59:/layout/slider_item.xml",
+        "source": "com.javascript.jscript.app-main-61:/layout/slider_item.xml"
+    },
+    {
+        "merged": "com.javascript.jscript.app-mergeReleaseResources-59:/layout/activity_upcoming_courses.xml",
+        "source": "com.javascript.jscript.app-main-61:/layout/activity_upcoming_courses.xml"
+    },
+    {
+        "merged": "com.javascript.jscript.app-mergeReleaseResources-59:/layout/activity_discuss_details.xml",
+        "source": "com.javascript.jscript.app-main-61:/layout/activity_discuss_details.xml"
+    },
+    {
+        "merged": "com.javascript.jscript.app-mergeReleaseResources-59:/layout/activity_forgot_password.xml",
+        "source": "com.javascript.jscript.app-main-61:/layout/activity_forgot_password.xml"
+    },
+    {
+        "merged": "com.javascript.jscript.app-mergeReleaseResources-59:/layout/activity_my_questions.xml",
+        "source": "com.javascript.jscript.app-main-61:/layout/activity_my_questions.xml"
+    },
+    {
+        "merged": "com.javascript.jscript.app-mergeReleaseResources-59:/layout/fragment_pro.xml",
+        "source": "com.javascript.jscript.app-main-61:/layout/fragment_pro.xml"
+    },
+    {
+        "merged": "com.javascript.jscript.app-mergeReleaseResources-59:/layout/add_discuss_rv_sample.xml",
+        "source": "com.javascript.jscript.app-main-61:/layout/add_discuss_rv_sample.xml"
+    },
+    {
+        "merged": "com.javascript.jscript.app-mergeReleaseResources-59:/layout/fragment_interview_q_a.xml",
+        "source": "com.javascript.jscript.app-main-61:/layout/fragment_interview_q_a.xml"
+    },
+    {
+        "merged": "com.javascript.jscript.app-mergeReleaseResources-59:/layout/demo_discuss_shimmer.xml",
+        "source": "com.javascript.jscript.app-main-61:/layout/demo_discuss_shimmer.xml"
+    },
+    {
+        "merged": "com.javascript.jscript.app-mergeReleaseResources-59:/layout/programs_list_items_layout.xml",
+        "source": "com.javascript.jscript.app-main-61:/layout/programs_list_items_layout.xml"
+    },
+    {
+        "merged": "com.javascript.jscript.app-mergeReleaseResources-59:/layout/activity_user_profile.xml",
+        "source": "com.javascript.jscript.app-main-61:/layout/activity_user_profile.xml"
+    },
+    {
+        "merged": "com.javascript.jscript.app-mergeReleaseResources-59:/layout/fragment_profile.xml",
+        "source": "com.javascript.jscript.app-main-61:/layout/fragment_profile.xml"
+    },
+    {
+        "merged": "com.javascript.jscript.app-mergeReleaseResources-59:/layout/topics_items_grid_layout.xml",
+        "source": "com.javascript.jscript.app-main-61:/layout/topics_items_grid_layout.xml"
+    },
+    {
+        "merged": "com.javascript.jscript.app-mergeReleaseResources-59:/layout/activity_learn_details.xml",
+        "source": "com.javascript.jscript.app-main-61:/layout/activity_learn_details.xml"
+    },
+    {
+        "merged": "com.javascript.jscript.app-mergeReleaseResources-59:/layout/fragment_home.xml",
+        "source": "com.javascript.jscript.app-main-61:/layout/fragment_home.xml"
+    },
+    {
+        "merged": "com.javascript.jscript.app-mergeReleaseResources-59:/layout/custom_toast_layout.xml",
+        "source": "com.javascript.jscript.app-main-61:/layout/custom_toast_layout.xml"
+    },
+    {
+        "merged": "com.javascript.jscript.app-mergeReleaseResources-59:/layout/activity_interview_answer.xml",
+        "source": "com.javascript.jscript.app-main-61:/layout/activity_interview_answer.xml"
+    },
+    {
+        "merged": "com.javascript.jscript.app-mergeReleaseResources-59:/layout/fragment_discuss.xml",
+        "source": "com.javascript.jscript.app-main-61:/layout/fragment_discuss.xml"
+    },
+    {
+        "merged": "com.javascript.jscript.app-mergeReleaseResources-59:/layout/notification_rv_sample.xml",
+        "source": "com.javascript.jscript.app-main-61:/layout/notification_rv_sample.xml"
+    },
+    {
+        "merged": "com.javascript.jscript.app-mergeReleaseResources-59:/layout/activity_edit_profile.xml",
+        "source": "com.javascript.jscript.app-main-61:/layout/activity_edit_profile.xml"
+    },
+    {
+        "merged": "com.javascript.jscript.app-mergeReleaseResources-59:/layout/activity_books_list.xml",
+        "source": "com.javascript.jscript.app-main-61:/layout/activity_books_list.xml"
+    },
+    {
+        "merged": "com.javascript.jscript.app-mergeReleaseResources-59:/layout/activity_quiz_details.xml",
+        "source": "com.javascript.jscript.app-main-61:/layout/activity_quiz_details.xml"
+    },
+    {
+        "merged": "com.javascript.jscript.app-mergeReleaseResources-59:/layout/activity_add_discuss.xml",
+        "source": "com.javascript.jscript.app-main-61:/layout/activity_add_discuss.xml"
+    },
+    {
+        "merged": "com.javascript.jscript.app-mergeReleaseResources-59:/layout/activity_main.xml",
+        "source": "com.javascript.jscript.app-main-61:/layout/activity_main.xml"
+    },
+    {
+        "merged": "com.javascript.jscript.app-mergeReleaseResources-59:/layout/activity_sign_up.xml",
+        "source": "com.javascript.jscript.app-main-61:/layout/activity_sign_up.xml"
+    }
+]

@@ -1,0 +1,1202 @@
+[
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\layout_activity_next2.xml.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-main-62:\\layout\\activity_next2.xml"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\drawable-xhdpi_ic_linked_24dp.png.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-pngs-55:\\drawable-xhdpi\\ic_linked_24dp.png"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\drawable-xxxhdpi_ic_linked_24dp.png.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-pngs-55:\\drawable-xxxhdpi\\ic_linked_24dp.png"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\drawable_ic_facebook_24dp.xml.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-main-62:\\drawable\\ic_facebook_24dp.xml"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\drawable_upcoming.png.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-main-62:\\drawable\\upcoming.png"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\mipmap-mdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-main-62:\\mipmap-mdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\drawable_ic_quiz_option_bg.xml.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-main-62:\\drawable\\ic_quiz_option_bg.xml"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\drawable-hdpi_ic_typescript_icon.png.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-pngs-55:\\drawable-hdpi\\ic_typescript_icon.png"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\drawable_ic_feedback_gradient_color.xml.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-main-62:\\drawable\\ic_feedback_gradient_color.xml"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\drawable-hdpi_ic_password_icon.png.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-pngs-55:\\drawable-hdpi\\ic_password_icon.png"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\drawable-hdpi_ic_stat_onesignal_default.png.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-main-62:\\drawable-hdpi\\ic_stat_onesignal_default.png"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\drawable-xxxhdpi_ic_mochajs_icon.png.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-pngs-55:\\drawable-xxxhdpi\\ic_mochajs_icon.png"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\layout_comments_rv_sample.xml.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-main-62:\\layout\\comments_rv_sample.xml"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\layout_activity_add_discuss.xml.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-main-62:\\layout\\activity_add_discuss.xml"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\drawable_ic_pro_white_24dp.xml.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-main-62:\\drawable\\ic_pro_white_24dp.xml"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\drawable-hdpi_ic_programs_advanced_image.png.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-pngs-55:\\drawable-hdpi\\ic_programs_advanced_image.png"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\drawable-xhdpi_ic_js_splash.png.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-pngs-55:\\drawable-xhdpi\\ic_js_splash.png"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\anim_slide_out_right.xml.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-main-62:\\anim\\slide_out_right.xml"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\drawable-xxhdpi_ic_stat_onesignal_default.png.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-main-62:\\drawable-xxhdpi\\ic_stat_onesignal_default.png"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\layout_activity_quiz_result.xml.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-main-62:\\layout\\activity_quiz_result.xml"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\drawable_ic_micronaut_icon.png.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-main-62:\\drawable\\ic_micronaut_icon.png"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-main-62:\\mipmap-anydpi-v26\\ic_launcher.xml"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\drawable_ic_contact_us_24dp.xml.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-main-62:\\drawable\\ic_contact_us_24dp.xml"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\drawable-hdpi_ic_search_24.png.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-pngs-55:\\drawable-hdpi\\ic_search_24.png"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\layout_demo_notification_shimmer.xml.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-main-62:\\layout\\demo_notification_shimmer.xml"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\drawable_ic_quiz_white_24dp.xml.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-main-62:\\drawable\\ic_quiz_white_24dp.xml"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\menu_menu_discuss_share.xml.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-main-62:\\menu\\menu_discuss_share.xml"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\layout_activity_next3.xml.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-main-62:\\layout\\activity_next3.xml"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\drawable-ldpi_ic_mochajs_icon.png.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-pngs-55:\\drawable-ldpi\\ic_mochajs_icon.png"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\drawable-xxxhdpi_ic_profile_default_image.png.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-pngs-55:\\drawable-xxxhdpi\\ic_profile_default_image.png"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\drawable_progress_circle.xml.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-main-62:\\drawable\\progress_circle.xml"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\mipmap-xxhdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-main-62:\\mipmap-xxhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\drawable-anydpi-v24_ic_search_24.xml.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-pngs-55:\\drawable-anydpi-v24\\ic_search_24.xml"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\drawable-mdpi_ic_programs_advanced_image.png.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-pngs-55:\\drawable-mdpi\\ic_programs_advanced_image.png"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\layout_activity_read_books.xml.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-main-62:\\layout\\activity_read_books.xml"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\drawable_ic_learn_share_button_bg.xml.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-main-62:\\drawable\\ic_learn_share_button_bg.xml"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\drawable_ic_share_24dp.xml.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-main-62:\\drawable\\ic_share_24dp.xml"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\drawable-mdpi_ic_js_splash.png.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-pngs-55:\\drawable-mdpi\\ic_js_splash.png"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\drawable-ldpi_ic_gatsbyjs_icon.png.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-pngs-55:\\drawable-ldpi\\ic_gatsbyjs_icon.png"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\raw_quiz_result.json.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-main-62:\\raw\\quiz_result.json"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\drawable-xhdpi_ic_profile_default_image.png.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-pngs-55:\\drawable-xhdpi\\ic_profile_default_image.png"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\drawable_ic_programs_basic_image.xml.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-main-62:\\drawable\\ic_programs_basic_image.xml"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\drawable_ic_upload_picture_white_24dp.xml.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-main-62:\\drawable\\ic_upload_picture_white_24dp.xml"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\layout_activity_programs_code.xml.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-main-62:\\layout\\activity_programs_code.xml"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\drawable_ic_learn_prev_button_bg.xml.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-main-62:\\drawable\\ic_learn_prev_button_bg.xml"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\drawable_ic_sign_out_btn_bg.xml.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-main-62:\\drawable\\ic_sign_out_btn_bg.xml"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\drawable_ic_mocha_js_logo.xml.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-main-62:\\drawable\\ic_mocha_js_logo.xml"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\raw_pro_badge.json.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-main-62:\\raw\\pro_badge.json"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\drawable-ldpi_ic_js_splash.png.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-pngs-55:\\drawable-ldpi\\ic_js_splash.png"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\drawable_ic_code_white_32dp.xml.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-main-62:\\drawable\\ic_code_white_32dp.xml"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\drawable-xxhdpi_ic_programs_advanced_image.png.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-pngs-55:\\drawable-xxhdpi\\ic_programs_advanced_image.png"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\drawable-xxhdpi_ic_typescript_icon.png.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-pngs-55:\\drawable-xxhdpi\\ic_typescript_icon.png"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\layout_activity_google_sign_in.xml.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-main-62:\\layout\\activity_google_sign_in.xml"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\drawable-xxxhdpi_ic_js_splash.png.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-pngs-55:\\drawable-xxxhdpi\\ic_js_splash.png"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\drawable_ic_gatsby_logo.xml.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-main-62:\\drawable\\ic_gatsby_logo.xml"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\drawable_ic_follow_feedback_bg.xml.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-main-62:\\drawable\\ic_follow_feedback_bg.xml"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\drawable_ic_arrow_down_24.xml.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-main-62:\\drawable\\ic_arrow_down_24.xml"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-main-62:\\mipmap-xxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\layout_demo_discuss_shimmer.xml.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-main-62:\\layout\\demo_discuss_shimmer.xml"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\drawable-anydpi-v24_ic_programs_advanced_image.xml.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-pngs-55:\\drawable-anydpi-v24\\ic_programs_advanced_image.xml"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\layout_add_discuss_rv_sample.xml.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-main-62:\\layout\\add_discuss_rv_sample.xml"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\drawable_ic_notification_small_icon.xml.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-main-62:\\drawable\\ic_notification_small_icon.xml"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\drawable_ic_interview_slider_bg_200dp.xml.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-main-62:\\drawable\\ic_interview_slider_bg_200dp.xml"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\layout_activity_follow_us.xml.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-main-62:\\layout\\activity_follow_us.xml"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\mipmap-mdpi_ic_launcher_foreground.png.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-main-62:\\mipmap-mdpi\\ic_launcher_foreground.png"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\drawable-xxhdpi_ic_js_splash.png.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-pngs-55:\\drawable-xxhdpi\\ic_js_splash.png"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\drawable_ic_notification_icon.xml.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-main-62:\\drawable\\ic_notification_icon.xml"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\drawable_ic_pro_gradient_round.xml.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-main-62:\\drawable\\ic_pro_gradient_round.xml"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\layout_activity_discuss_details.xml.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-main-62:\\layout\\activity_discuss_details.xml"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\raw_pro_animations.json.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-main-62:\\raw\\pro_animations.json"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\drawable_ic_instagram_24dp.xml.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-main-62:\\drawable\\ic_instagram_24dp.xml"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\drawable_ic_arrow_up_24.xml.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-main-62:\\drawable\\ic_arrow_up_24.xml"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\drawable-anydpi-v24_ic_profile_default_image.xml.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-pngs-55:\\drawable-anydpi-v24\\ic_profile_default_image.xml"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\drawable_ic_notification_off_icon.xml.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-main-62:\\drawable\\ic_notification_off_icon.xml"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\drawable-ldpi_ic_profile_default_image.png.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-pngs-55:\\drawable-ldpi\\ic_profile_default_image.png"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\drawable_next1.png.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-main-62:\\drawable\\next1.png"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\layout_fragment_discuss.xml.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-main-62:\\layout\\fragment_discuss.xml"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\drawable-xxhdpi_ic_gatsbyjs_icon.png.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-pngs-55:\\drawable-xxhdpi\\ic_gatsbyjs_icon.png"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\drawable_ic_quiz_option_bg_red.xml.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-main-62:\\drawable\\ic_quiz_option_bg_red.xml"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\drawable-xxxhdpi_ic_gatsbyjs_icon.png.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-pngs-55:\\drawable-xxxhdpi\\ic_gatsbyjs_icon.png"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\drawable-anydpi-v24_ic_mochajs_icon.xml.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-pngs-55:\\drawable-anydpi-v24\\ic_mochajs_icon.xml"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\drawable-xxxhdpi_ic_typescript_icon.png.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-pngs-55:\\drawable-xxxhdpi\\ic_typescript_icon.png"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\drawable-xxxhdpi_ic_calender_white.png.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-pngs-55:\\drawable-xxxhdpi\\ic_calender_white.png"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\anim_slide_in_left.xml.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-main-62:\\anim\\slide_in_left.xml"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\layout_activity_programs_items_list.xml.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-main-62:\\layout\\activity_programs_items_list.xml"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\raw_empty_list.json.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-main-62:\\raw\\empty_list.json"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\layout_activity_sign_in.xml.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-main-62:\\layout\\activity_sign_in.xml"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\drawable_ic_play_store_24dp.xml.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-main-62:\\drawable\\ic_play_store_24dp.xml"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\drawable-hdpi_ic_mochajs_icon.png.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-pngs-55:\\drawable-hdpi\\ic_mochajs_icon.png"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\drawable_ic_home_white_24dp.xml.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-main-62:\\drawable\\ic_home_white_24dp.xml"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\font_cookie.xml.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-main-62:\\font\\cookie.xml"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\drawable_ic_follow_link_bg.xml.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-main-62:\\drawable\\ic_follow_link_bg.xml"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\drawable_next2.png.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-main-62:\\drawable\\next2.png"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\drawable_ic_profile_white_24dp.xml.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-main-62:\\drawable\\ic_profile_white_24dp.xml"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\drawable_ic_discuss_white_24dp.xml.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-main-62:\\drawable\\ic_discuss_white_24dp.xml"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\drawable-anydpi-v24_ic_linked_24dp.xml.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-pngs-55:\\drawable-anydpi-v24\\ic_linked_24dp.xml"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\drawable_ic_main_icon_round.png.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-main-62:\\drawable\\ic_main_icon_round.png"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\layout_fragment_quiz.xml.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-main-62:\\layout\\fragment_quiz.xml"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\layout_activity_upcoming_courses.xml.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-main-62:\\layout\\activity_upcoming_courses.xml"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\drawable_ic_program_slider_bg_200dp.xml.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-main-62:\\drawable\\ic_program_slider_bg_200dp.xml"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\layout_activity_sign_up.xml.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-main-62:\\layout\\activity_sign_up.xml"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\drawable-ldpi_ic_password_icon.png.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-pngs-55:\\drawable-ldpi\\ic_password_icon.png"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\raw_sign_up.json.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-main-62:\\raw\\sign_up.json"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\drawable_ic_objects_icon.xml.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-main-62:\\drawable\\ic_objects_icon.xml"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\drawable_ic_user_icon.xml.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-main-62:\\drawable\\ic_user_icon.xml"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\drawable_ic_angular_icon.xml.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-main-62:\\drawable\\ic_angular_icon.xml"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\drawable_ic_watch_icon.xml.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-main-62:\\drawable\\ic_watch_icon.xml"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\layout_activity_quiz_topic_list.xml.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-main-62:\\layout\\activity_quiz_topic_list.xml"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\drawable_pro_ad.png.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-main-62:\\drawable\\pro_ad.png"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\drawable-anydpi-v24_ic_password_icon.xml.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-pngs-55:\\drawable-anydpi-v24\\ic_password_icon.xml"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\drawable_ic_follow_us_white_24dp.xml.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-main-62:\\drawable\\ic_follow_us_white_24dp.xml"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\drawable-mdpi_ic_search_24.png.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-pngs-55:\\drawable-mdpi\\ic_search_24.png"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\layout_programs_list_items_layout.xml.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-main-62:\\layout\\programs_list_items_layout.xml"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\drawable-mdpi_ic_profile_default_image.png.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-pngs-55:\\drawable-mdpi\\ic_profile_default_image.png"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\drawable_ic_arrow_back_24.xml.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-main-62:\\drawable\\ic_arrow_back_24.xml"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\drawable_ic_email_icon.xml.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-main-62:\\drawable\\ic_email_icon.xml"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\drawable-xhdpi_ic_gatsbyjs_icon.png.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-pngs-55:\\drawable-xhdpi\\ic_gatsbyjs_icon.png"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\layout_activity_next.xml.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-main-62:\\layout\\activity_next.xml"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\drawable-ldpi_ic_search_24.png.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-pngs-55:\\drawable-ldpi\\ic_search_24.png"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\drawable_pro_big.png.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-main-62:\\drawable\\pro_big.png"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\mipmap-xhdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-main-62:\\mipmap-xhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\drawable_ic_placeholder_dark.jpg.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-main-62:\\drawable\\ic_placeholder_dark.jpg"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\drawable_ic_cancel_icon.xml.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-main-62:\\drawable\\ic_cancel_icon.xml"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\drawable-hdpi_ic_gatsbyjs_icon.png.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-pngs-55:\\drawable-hdpi\\ic_gatsbyjs_icon.png"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\drawable-xxxhdpi_ic_search_24.png.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-pngs-55:\\drawable-xxxhdpi\\ic_search_24.png"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\drawable_ic_quiz_success_64.xml.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-main-62:\\drawable\\ic_quiz_success_64.xml"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\mipmap-hdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-main-62:\\mipmap-hdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\layout_slider_item.xml.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-main-62:\\layout\\slider_item.xml"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\drawable_ic_bookmark_favorite.png.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-main-62:\\drawable\\ic_bookmark_favorite.png"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\drawable-hdpi_ic_linked_24dp.png.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-pngs-55:\\drawable-hdpi\\ic_linked_24dp.png"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\drawable-mdpi_ic_gatsbyjs_icon.png.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-pngs-55:\\drawable-mdpi\\ic_gatsbyjs_icon.png"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\layout_activity_sign_out.xml.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-main-62:\\layout\\activity_sign_out.xml"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\mipmap-xxxhdpi_ic_launcher_foreground.png.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-main-62:\\mipmap-xxxhdpi\\ic_launcher_foreground.png"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\drawable_after_pro_ad.png.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-main-62:\\drawable\\after_pro_ad.png"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\drawable_ic_image_add_icon.xml.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-main-62:\\drawable\\ic_image_add_icon.xml"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\drawable_ic_react_icon.xml.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-main-62:\\drawable\\ic_react_icon.xml"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\drawable_ic_quiz_option_bg_green.xml.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-main-62:\\drawable\\ic_quiz_option_bg_green.xml"
+    },
+    {
+        "merged": "com.javascript.jscript.app-merged_res-60:/layout_activity_my_questions.xml.flat",
+        "source": "com.javascript.jscript.app-main-62:/layout/activity_my_questions.xml"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\drawable_ic_discussion_splash.xml.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-main-62:\\drawable\\ic_discussion_splash.xml"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\drawable_ic_follow_link_pressed_bg.xml.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-main-62:\\drawable\\ic_follow_link_pressed_bg.xml"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\layout_activity_feed_back.xml.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-main-62:\\layout\\activity_feed_back.xml"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\layout_activity_splash.xml.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-main-62:\\layout\\activity_splash.xml"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\drawable-xxhdpi_ic_password_icon.png.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-pngs-55:\\drawable-xxhdpi\\ic_password_icon.png"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\drawable_ic_bom_icon.xml.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-main-62:\\drawable\\ic_bom_icon.xml"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\layout_fragment_profile.xml.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-main-62:\\layout\\fragment_profile.xml"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\mipmap-hdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-main-62:\\mipmap-hdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\drawable_ic_web_24dp.xml.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-main-62:\\drawable\\ic_web_24dp.xml"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\drawable-xxxhdpi_ic_password_icon.png.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-pngs-55:\\drawable-xxxhdpi\\ic_password_icon.png"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\drawable_ic_fundamental_icon.xml.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-main-62:\\drawable\\ic_fundamental_icon.xml"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\drawable-mdpi_ic_calender_white.png.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-pngs-55:\\drawable-mdpi\\ic_calender_white.png"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\drawable_ic_rate_white_24dp.xml.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-main-62:\\drawable\\ic_rate_white_24dp.xml"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\drawable_ic_expressjs_icon.xml.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-main-62:\\drawable\\ic_expressjs_icon.xml"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\drawable_ic_next_js.xml.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-main-62:\\drawable\\ic_next_js.xml"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\drawable_ic_dom_icon.xml.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-main-62:\\drawable\\ic_dom_icon.xml"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\drawable-xhdpi_ic_password_icon.png.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-pngs-55:\\drawable-xhdpi\\ic_password_icon.png"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\drawable_ic_share_white.xml.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-main-62:\\drawable\\ic_share_white.xml"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\drawable-xxxhdpi_ic_stat_onesignal_default.png.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-main-62:\\drawable-xxxhdpi\\ic_stat_onesignal_default.png"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\drawable-xhdpi_ic_typescript_icon.png.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-pngs-55:\\drawable-xhdpi\\ic_typescript_icon.png"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\layout_activity_books_list.xml.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-main-62:\\layout\\activity_books_list.xml"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\drawable_toolbar_bg.xml.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-main-62:\\drawable\\toolbar_bg.xml"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\drawable_ic_laravel_icon.xml.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-main-62:\\drawable\\ic_laravel_icon.xml"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\drawable_ic_ebook_slider_bg_200dp.xml.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-main-62:\\drawable\\ic_ebook_slider_bg_200dp.xml"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\font_oswald.xml.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-main-62:\\font\\oswald.xml"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\anim_slide_up.xml.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-main-62:\\anim\\slide_up.xml"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\drawable_ic_jquery_icon.xml.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-main-62:\\drawable\\ic_jquery_icon.xml"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\raw_upgrade_to_pro.json.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-main-62:\\raw\\upgrade_to_pro.json"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\layout_activity_interview_answer.xml.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-main-62:\\layout\\activity_interview_answer.xml"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\drawable-xxhdpi_ic_profile_default_image.png.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-pngs-55:\\drawable-xxhdpi\\ic_profile_default_image.png"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\drawable-xxhdpi_ic_linked_24dp.png.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-pngs-55:\\drawable-xxhdpi\\ic_linked_24dp.png"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\raw_notifications.json.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-main-62:\\raw\\notifications.json"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\drawable_ic_github_24dp.xml.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-main-62:\\drawable\\ic_github_24dp.xml"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\drawable-xhdpi_ic_programs_advanced_image.png.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-pngs-55:\\drawable-xhdpi\\ic_programs_advanced_image.png"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\anim_slide_down.xml.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-main-62:\\anim\\slide_down.xml"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\font_yanone_kaffeesatz.xml.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-main-62:\\font\\yanone_kaffeesatz.xml"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\raw_quiz.json.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-main-62:\\raw\\quiz.json"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\drawable_ic_svelte_icon.xml.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-main-62:\\drawable\\ic_svelte_icon.xml"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\mipmap-mdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-main-62:\\mipmap-mdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\layout_activity_premium.xml.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-main-62:\\layout\\activity_premium.xml"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\drawable_ic_js_vue_icon.xml.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-main-62:\\drawable\\ic_js_vue_icon.xml"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\layout_notification_rv_sample.xml.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-main-62:\\layout\\notification_rv_sample.xml"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\layout_activity_quiz_details.xml.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-main-62:\\layout\\activity_quiz_details.xml"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\drawable-anydpi-v24_ic_gatsbyjs_icon.xml.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-pngs-55:\\drawable-anydpi-v24\\ic_gatsbyjs_icon.xml"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\drawable_ic_edit_white_24dp.xml.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-main-62:\\drawable\\ic_edit_white_24dp.xml"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\layout_fragment_pro.xml.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-main-62:\\layout\\fragment_pro.xml"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\layout_fragment_learn.xml.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-main-62:\\layout\\fragment_learn.xml"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\drawable_ic_notification_open_bg.xml.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-main-62:\\drawable\\ic_notification_open_bg.xml"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\drawable-mdpi_ic_stat_onesignal_default.png.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-main-62:\\drawable-mdpi\\ic_stat_onesignal_default.png"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\anim_slide_in_right.xml.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-main-62:\\anim\\slide_in_right.xml"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\drawable-xxxhdpi_ic_programs_advanced_image.png.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-pngs-55:\\drawable-xxxhdpi\\ic_programs_advanced_image.png"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\drawable_ic_oops_icon.xml.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-main-62:\\drawable\\ic_oops_icon.xml"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\drawable_ic_privacy_icon.xml.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-main-62:\\drawable\\ic_privacy_icon.xml"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\layout_fragment_home.xml.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-main-62:\\layout\\fragment_home.xml"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\raw_google_sign_in.json.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-main-62:\\raw\\google_sign_in.json"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\drawable_ic_more_apps_white_24dp.xml.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-main-62:\\drawable\\ic_more_apps_white_24dp.xml"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\drawable-mdpi_ic_password_icon.png.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-pngs-55:\\drawable-mdpi\\ic_password_icon.png"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\raw_sign_in.json.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-main-62:\\raw\\sign_in.json"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\drawable_ic_list_items_bg.xml.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-main-62:\\drawable\\ic_list_items_bg.xml"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\drawable_ic_like_icon_green.xml.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-main-62:\\drawable\\ic_like_icon_green.xml"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\drawable_ic_settings_white_32dp.xml.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-main-62:\\drawable\\ic_settings_white_32dp.xml"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\layout_activity_user_profile.xml.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-main-62:\\layout\\activity_user_profile.xml"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\layout_activity_forgot_password.xml.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-main-62:\\layout\\activity_forgot_password.xml"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\drawable_next3.png.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-main-62:\\drawable\\next3.png"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\drawable-xhdpi_ic_stat_onesignal_default.png.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-main-62:\\drawable-xhdpi\\ic_stat_onesignal_default.png"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\raw_locked.json.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-main-62:\\raw\\locked.json"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\layout_activity_edit_profile.xml.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-main-62:\\layout\\activity_edit_profile.xml"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\raw_congratulations.json.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-main-62:\\raw\\congratulations.json"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-main-62:\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\menu_menu_items.xml.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-main-62:\\menu\\menu_items.xml"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\drawable_ic_node_icon.xml.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-main-62:\\drawable\\ic_node_icon.xml"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\font_oswald_light.xml.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-main-62:\\font\\oswald_light.xml"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\drawable_ic_follow_link_not_pressed_bg.xml.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-main-62:\\drawable\\ic_follow_link_not_pressed_bg.xml"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\drawable_ic_learn_next_button_bg.xml.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-main-62:\\drawable\\ic_learn_next_button_bg.xml"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\drawable-anydpi-v24_ic_typescript_icon.xml.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-pngs-55:\\drawable-anydpi-v24\\ic_typescript_icon.xml"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\layout_activity_codes.xml.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-main-62:\\layout\\activity_codes.xml"
+    },
+    {
+        "merged": "com.javascript.jscript.app-merged_res-60:/layout_activity_notifications.xml.flat",
+        "source": "com.javascript.jscript.app-main-62:/layout/activity_notifications.xml"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\anim_item_slide_in.xml.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-main-62:\\anim\\item_slide_in.xml"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\drawable_ic_sign_out_not_pressed_bg.xml.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-main-62:\\drawable\\ic_sign_out_not_pressed_bg.xml"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\xml_network_security_config.xml.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-main-62:\\xml\\network_security_config.xml"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\drawable-xhdpi_ic_mochajs_icon.png.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-pngs-55:\\drawable-xhdpi\\ic_mochajs_icon.png"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\layout_topics_items_grid_layout.xml.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-main-62:\\layout\\topics_items_grid_layout.xml"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\layout_activity_main.xml.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-main-62:\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\layout_activity_interview_items_list.xml.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-main-62:\\layout\\activity_interview_items_list.xml"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\raw_forget_password.json.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-main-62:\\raw\\forget_password.json"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\drawable_ic_logout_white_24dp.xml.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-main-62:\\drawable\\ic_logout_white_24dp.xml"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\drawable_jscript_notifications.png.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-main-62:\\drawable\\jscript_notifications.png"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\anim_layout_item_slide_in.xml.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-main-62:\\anim\\layout_item_slide_in.xml"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\drawable_ic_bootstrap_icon.xml.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-main-62:\\drawable\\ic_bootstrap_icon.xml"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\drawable-hdpi_ic_profile_default_image.png.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-pngs-55:\\drawable-hdpi\\ic_profile_default_image.png"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\drawable_ic_springio_icon.xml.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-main-62:\\drawable\\ic_springio_icon.xml"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\mipmap-xxhdpi_ic_launcher_foreground.png.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-main-62:\\mipmap-xxhdpi\\ic_launcher_foreground.png"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\layout_activity_notifications.xml.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-main-62:\\layout\\activity_notifications.xml"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\drawable-hdpi_ic_js_splash.png.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-pngs-55:\\drawable-hdpi\\ic_js_splash.png"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\drawable_circle.xml.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-main-62:\\drawable\\circle.xml"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\drawable_ic_ajax_icon.xml.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-main-62:\\drawable\\ic_ajax_icon.xml"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\drawable-anydpi-v24_ic_js_splash.xml.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-pngs-55:\\drawable-anydpi-v24\\ic_js_splash.xml"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\drawable_ic_nuxtjs_icon.xml.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-main-62:\\drawable\\ic_nuxtjs_icon.xml"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\layout_custom_toast_layout.xml.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-main-62:\\layout\\custom_toast_layout.xml"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\raw_splash_animation.json.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-main-62:\\raw\\splash_animation.json"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\drawable-ldpi_ic_programs_advanced_image.png.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-pngs-55:\\drawable-ldpi\\ic_programs_advanced_image.png"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\drawable_ic_emberjs_icon.xml.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-main-62:\\drawable\\ic_emberjs_icon.xml"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\drawable_ic_bookmark_icon_active.xml.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-main-62:\\drawable\\ic_bookmark_icon_active.xml"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\drawable_ic_learn_slider_bg_200dp.xml.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-main-62:\\drawable\\ic_learn_slider_bg_200dp.xml"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\drawable-ldpi_ic_linked_24dp.png.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-pngs-55:\\drawable-ldpi\\ic_linked_24dp.png"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\drawable-xxhdpi_ic_mochajs_icon.png.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-pngs-55:\\drawable-xxhdpi\\ic_mochajs_icon.png"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\drawable_ic_sign_out_pressed_bg.xml.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-main-62:\\drawable\\ic_sign_out_pressed_bg.xml"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\raw_loading.json.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-main-62:\\raw\\loading.json"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\menu_menu_discuss.xml.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-main-62:\\menu\\menu_discuss.xml"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\layout_fragment_interview_q_a.xml.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-main-62:\\layout\\fragment_interview_q_a.xml"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\drawable-xhdpi_ic_search_24.png.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-pngs-55:\\drawable-xhdpi\\ic_search_24.png"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\drawable_ic_programs_items_gradient_bg.xml.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-main-62:\\drawable\\ic_programs_items_gradient_bg.xml"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\drawable-hdpi_ic_calender_white.png.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-pngs-55:\\drawable-hdpi\\ic_calender_white.png"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\drawable_ic_bookmark_icon.xml.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-main-62:\\drawable\\ic_bookmark_icon.xml"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\drawable_ic_twitter_24dp.xml.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-main-62:\\drawable\\ic_twitter_24dp.xml"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\drawable_ic_send_24.xml.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-main-62:\\drawable\\ic_send_24.xml"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\drawable_ic_nuxt_icon.xml.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-main-62:\\drawable\\ic_nuxt_icon.xml"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\drawable_ic_feedback_white_24dp.xml.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-main-62:\\drawable\\ic_feedback_white_24dp.xml"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\mipmap-hdpi_ic_launcher_foreground.png.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-main-62:\\mipmap-hdpi\\ic_launcher_foreground.png"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\raw_timer.json.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-main-62:\\raw\\timer.json"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\anim_bottom_animation.xml.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-main-62:\\anim\\bottom_animation.xml"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\drawable_ic_programs_image_bg.xml.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-main-62:\\drawable\\ic_programs_image_bg.xml"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\drawable_ic_quiz_slider_bg_200dp.xml.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-main-62:\\drawable\\ic_quiz_slider_bg_200dp.xml"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\layout_activity_learn_details.xml.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-main-62:\\layout\\activity_learn_details.xml"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\drawable_ic_pro_gradient_purchse_bg.xml.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-main-62:\\drawable\\ic_pro_gradient_purchse_bg.xml"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\drawable_ic_pro_gradient.xml.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-main-62:\\drawable\\ic_pro_gradient.xml"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\layout_demo_comment_shimmer.xml.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-main-62:\\layout\\demo_comment_shimmer.xml"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\layout_fragment_books.xml.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-main-62:\\layout\\fragment_books.xml"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\drawable-xxhdpi_ic_search_24.png.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-pngs-55:\\drawable-xxhdpi\\ic_search_24.png"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\drawable-xhdpi_ic_calender_white.png.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-pngs-55:\\drawable-xhdpi\\ic_calender_white.png"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\drawable-ldpi_ic_typescript_icon.png.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-pngs-55:\\drawable-ldpi\\ic_typescript_icon.png"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\drawable_ic__like_icon.xml.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-main-62:\\drawable\\ic__like_icon.xml"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\drawable-mdpi_ic_linked_24dp.png.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-pngs-55:\\drawable-mdpi\\ic_linked_24dp.png"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\layout-v26_activity_upcoming_courses.xml.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-main-62:\\layout-v26\\activity_upcoming_courses.xml"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\drawable_ic_circle_round.xml.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-main-62:\\drawable\\ic_circle_round.xml"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\drawable_ic_reply_white.xml.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-main-62:\\drawable\\ic_reply_white.xml"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\layout_activity_learn_items_list.xml.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-main-62:\\layout\\activity_learn_items_list.xml"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\drawable-xxhdpi_ic_calender_white.png.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-pngs-55:\\drawable-xxhdpi\\ic_calender_white.png"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\drawable_ic_feed_splash.xml.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-main-62:\\drawable\\ic_feed_splash.xml"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\mipmap-xxxhdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-main-62:\\mipmap-xxxhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\layout_fragment_programs.xml.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-main-62:\\layout\\fragment_programs.xml"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\drawable_ic_discuss_border_bg.xml.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-main-62:\\drawable\\ic_discuss_border_bg.xml"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\font_open_sans.xml.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-main-62:\\font\\open_sans.xml"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\mipmap-xhdpi_ic_launcher_foreground.png.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-main-62:\\mipmap-xhdpi\\ic_launcher_foreground.png"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\drawable_ic_notification_active_24.xml.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-main-62:\\drawable\\ic_notification_active_24.xml"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\drawable-mdpi_ic_typescript_icon.png.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-pngs-55:\\drawable-mdpi\\ic_typescript_icon.png"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\drawable-mdpi_ic_mochajs_icon.png.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-pngs-55:\\drawable-mdpi\\ic_mochajs_icon.png"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\layout_custom_notification_icon_layout.xml.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-main-62:\\layout\\custom_notification_icon_layout.xml"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-main-62:\\mipmap-xxxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\drawable-anydpi-v24_ic_calender_white.xml.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-pngs-55:\\drawable-anydpi-v24\\ic_calender_white.xml"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\layout_activity_my_questions.xml.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-main-62:\\layout\\activity_my_questions.xml"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-main-62:\\mipmap-xhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\menu_menu.xml.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-main-62:\\menu\\menu.xml"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\drawable_ic_sign_out_btn_bg_2.xml.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-main-62:\\drawable\\ic_sign_out_btn_bg_2.xml"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\drawable-ldpi_ic_calender_white.png.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-pngs-55:\\drawable-ldpi\\ic_calender_white.png"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\drawable_ic_pro_check_green_24dp.xml.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-main-62:\\drawable\\ic_pro_check_green_24dp.xml"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\drawable_ic_json_icon.xml.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-main-62:\\drawable\\ic_json_icon.xml"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\raw_likes_loves.json.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-main-62:\\raw\\likes_loves.json"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\menu_menu_codes.xml.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-main-62:\\menu\\menu_codes.xml"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\drawable_ic_quiz_fail_64.xml.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-main-62:\\drawable\\ic_quiz_fail_64.xml"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\drawable_spring_boot.png.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-main-62:\\drawable\\spring_boot.png"
+    },
+    {
+        "merged": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-merged_res-60:\\anim_slide_out_left.xml.flat",
+        "source": "C:\\Users\\Humaira\\.gradle\\daemon\\7.3.3\\com.javascript.jscript.app-main-62:\\anim\\slide_out_left.xml"
+    }
+]

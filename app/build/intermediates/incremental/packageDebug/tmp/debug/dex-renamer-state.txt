@@ -1,0 +1,16 @@
+#Sun Aug 07 12:51:24 BDT 2022
+path.4=classes5.dex
+path.3=classes4.dex
+path.2=classes3.dex
+path.1=classes2.dex
+path.0=classes.dex
+base.4=E\:\\Android App Projects\\JavaScript\\app\\build\\intermediates\\safedk\\dex\\debug\\classes5.dex
+base.3=E\:\\Android App Projects\\JavaScript\\app\\build\\intermediates\\safedk\\dex\\debug\\classes4.dex
+base.2=E\:\\Android App Projects\\JavaScript\\app\\build\\intermediates\\safedk\\dex\\debug\\classes3.dex
+base.1=E\:\\Android App Projects\\JavaScript\\app\\build\\intermediates\\safedk\\dex\\debug\\classes2.dex
+base.0=E\:\\Android App Projects\\JavaScript\\app\\build\\intermediates\\safedk\\dex\\debug\\classes.dex
+renamed.3=classes4.dex
+renamed.2=classes3.dex
+renamed.1=classes2.dex
+renamed.0=classes.dex
+renamed.4=classes5.dex

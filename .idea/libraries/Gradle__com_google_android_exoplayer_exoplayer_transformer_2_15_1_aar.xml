@@ -1,0 +1,18 @@
+<component name="libraryTable">
+  <library name="Gradle: com.google.android.exoplayer:exoplayer-transformer:2.15.1@aar">
+    <ANNOTATIONS>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/d1f0f61d1c95c930a6b78d56620ce93d/transformed/jetified-exoplayer-transformer-2.15.1/annotations.zip!/" />
+    </ANNOTATIONS>
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/183b76f4464f7c9b5db4b9cc5cab0960/transformed/jetified-exoplayer-transformer-2.15.1/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/66047d33a202ef266b5598ac7720598b/transformed/jetified-exoplayer-transformer-2.15.1/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/d1f0f61d1c95c930a6b78d56620ce93d/transformed/jetified-exoplayer-transformer-2.15.1/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/d1f0f61d1c95c930a6b78d56620ce93d/transformed/jetified-exoplayer-transformer-2.15.1/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/d1f0f61d1c95c930a6b78d56620ce93d/transformed/jetified-exoplayer-transformer-2.15.1/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.android.exoplayer/exoplayer-transformer/2.15.1/3d7c2aca0dee8c07b800e35bf247eb3c1d670a84/exoplayer-transformer-2.15.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

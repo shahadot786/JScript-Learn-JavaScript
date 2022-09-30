@@ -1,0 +1,63 @@
+com.javascript.jscript.app-jetified-lifecycle-process-2.4.0-0 C:\Users\Humaira\.gradle\caches\transforms-3\0025c6e6096c257e61deca1242147ca2\transformed\jetified-lifecycle-process-2.4.0\res
+com.javascript.jscript.app-recyclerview-1.2.1-1 C:\Users\Humaira\.gradle\caches\transforms-3\04f3f9d618623dbe7a1add64b4e9f33b\transformed\recyclerview-1.2.1\res
+com.javascript.jscript.app-jetified-viewpager2-1.0.0-2 C:\Users\Humaira\.gradle\caches\transforms-3\09fa7e4cab5cf4234f07b7ab4d2fbca8\transformed\jetified-viewpager2-1.0.0\res
+com.javascript.jscript.app-jetified-shimmerlayout-2.1.0-3 C:\Users\Humaira\.gradle\caches\transforms-3\19034a055bed2a02e711bf3f59d48494\transformed\jetified-shimmerlayout-2.1.0\res
+com.javascript.jscript.app-media-1.3.1-4 C:\Users\Humaira\.gradle\caches\transforms-3\1ef26e8d0569b448e51adbebd7a0b224\transformed\media-1.3.1\res
+com.javascript.jscript.app-navigation-runtime-2.3.5-5 C:\Users\Humaira\.gradle\caches\transforms-3\207041ee2dba5b02bd29717b444d5ed5\transformed\navigation-runtime-2.3.5\res
+com.javascript.jscript.app-jetified-OneSignal-4.6.3-6 C:\Users\Humaira\.gradle\caches\transforms-3\224e50c17a141177d21323c57093f290\transformed\jetified-OneSignal-4.6.3\res
+com.javascript.jscript.app-material-1.6.1-7 C:\Users\Humaira\.gradle\caches\transforms-3\22fc7b6269152758c742a1fe85897cfa\transformed\material-1.6.1\res
+com.javascript.jscript.app-jetified-SmoothBottomBar-1.7.8-8 C:\Users\Humaira\.gradle\caches\transforms-3\2c00800c9df9da7a041d5123fbc47c85\transformed\jetified-SmoothBottomBar-1.7.8\res
+com.javascript.jscript.app-lifecycle-livedata-2.5.1-9 C:\Users\Humaira\.gradle\caches\transforms-3\2d8563a04948b306f56e3372cc8e5039\transformed\lifecycle-livedata-2.5.1\res
+com.javascript.jscript.app-jetified-savedstate-1.2.0-10 C:\Users\Humaira\.gradle\caches\transforms-3\31a88487b750a9901d79f63d9f0b2011\transformed\jetified-savedstate-1.2.0\res
+com.javascript.jscript.app-coordinatorlayout-1.1.0-11 C:\Users\Humaira\.gradle\caches\transforms-3\35904a236ddf6825c816aaf3c93f5f64\transformed\coordinatorlayout-1.1.0\res
+com.javascript.jscript.app-jetified-lottie-4.2.2-12 C:\Users\Humaira\.gradle\caches\transforms-3\363bfc5045941dbf8509aac015f8f29f\transformed\jetified-lottie-4.2.2\res
+com.javascript.jscript.app-transition-1.3.0-13 C:\Users\Humaira\.gradle\caches\transforms-3\3835d95b2f398115480d2bbe0d5d16e8\transformed\transition-1.3.0\res
+com.javascript.jscript.app-jetified-play-services-auth-20.2.0-14 C:\Users\Humaira\.gradle\caches\transforms-3\3cdb3891deefab711bd9acbb29a08d29\transformed\jetified-play-services-auth-20.2.0\res
+com.javascript.jscript.app-jetified-play-services-base-18.0.1-15 C:\Users\Humaira\.gradle\caches\transforms-3\3f86d43f9d6eba07433a73a9112b1e4b\transformed\jetified-play-services-base-18.0.1\res
+com.javascript.jscript.app-jetified-lifecycle-livedata-core-ktx-2.5.1-16 C:\Users\Humaira\.gradle\caches\transforms-3\4593148c6cc7418b51aa47ba61dda286\transformed\jetified-lifecycle-livedata-core-ktx-2.5.1\res
+com.javascript.jscript.app-jetified-ucrop-2.2.6-17 C:\Users\Humaira\.gradle\caches\transforms-3\4651814c1ee94c1e0c5e4c19c71d5784\transformed\jetified-ucrop-2.2.6\res
+com.javascript.jscript.app-work-runtime-2.7.1-18 C:\Users\Humaira\.gradle\caches\transforms-3\48a6fc44ff2757445cbc0ee9339acbb4\transformed\work-runtime-2.7.1\res
+com.javascript.jscript.app-jetified-startup-runtime-1.0.0-19 C:\Users\Humaira\.gradle\caches\transforms-3\4f3989073d857c2d353062236316900a\transformed\jetified-startup-runtime-1.0.0\res
+com.javascript.jscript.app-jetified-firebase-messaging-23.0.2-20 C:\Users\Humaira\.gradle\caches\transforms-3\54666591cb3512a12c80517d5bf6104e\transformed\jetified-firebase-messaging-23.0.2\res
+com.javascript.jscript.app-jetified-play-services-ads-lite-21.1.0-21 C:\Users\Humaira\.gradle\caches\transforms-3\568c3915f43945c70286e935326fe30b\transformed\jetified-play-services-ads-lite-21.1.0\res
+com.javascript.jscript.app-lifecycle-runtime-2.4.0-22 C:\Users\Humaira\.gradle\caches\transforms-3\5dc4f269dd0f8ac4fe306d2aca7fb956\transformed\lifecycle-runtime-2.4.0\res
+com.javascript.jscript.app-browser-1.4.0-23 C:\Users\Humaira\.gradle\caches\transforms-3\5dd943bf981ae5266d2c1f88db015fb2\transformed\browser-1.4.0\res
+com.javascript.jscript.app-jetified-lifecycle-livedata-ktx-2.5.1-24 C:\Users\Humaira\.gradle\caches\transforms-3\61f52e09d0558fbb9f5c959c24a58cc0\transformed\jetified-lifecycle-livedata-ktx-2.5.1\res
+com.javascript.jscript.app-fragment-1.3.6-25 C:\Users\Humaira\.gradle\caches\transforms-3\79c34da9f497ffce4a5c5b219203b4c7\transformed\fragment-1.3.6\res
+com.javascript.jscript.app-jetified-autoimageslider-1.4.0-26 C:\Users\Humaira\.gradle\caches\transforms-3\811570e0a8dd1d65a52eb8b811b44213\transformed\jetified-autoimageslider-1.4.0\res
+com.javascript.jscript.app-jetified-appcompat-resources-1.4.2-27 C:\Users\Humaira\.gradle\caches\transforms-3\81dad9f23215d028fe8b09bdec78907e\transformed\jetified-appcompat-resources-1.4.2\res
+com.javascript.jscript.app-jetified-emoji2-views-helper-1.0.0-28 C:\Users\Humaira\.gradle\caches\transforms-3\8503614f84954f4b9e8f2c3d570d32f7\transformed\jetified-emoji2-views-helper-1.0.0\res
+com.javascript.jscript.app-jetified-diagonallayout-1.0.9-29 C:\Users\Humaira\.gradle\caches\transforms-3\898d89a31b91f9d03cedc3be64256ec1\transformed\jetified-diagonallayout-1.0.9\res
+com.javascript.jscript.app-core-1.8.0-30 C:\Users\Humaira\.gradle\caches\transforms-3\9a3c839e0dbf0b5b091621a8201b4760\transformed\core-1.8.0\res
+com.javascript.jscript.app-navigation-fragment-2.3.5-31 C:\Users\Humaira\.gradle\caches\transforms-3\a44bdafd19517a88042c12c425624936\transformed\navigation-fragment-2.3.5\res
+com.javascript.jscript.app-lifecycle-viewmodel-2.5.1-32 C:\Users\Humaira\.gradle\caches\transforms-3\a861b2185c65a41ca5fcd6d362f76c56\transformed\lifecycle-viewmodel-2.5.1\res
+com.javascript.jscript.app-navigation-common-2.3.5-33 C:\Users\Humaira\.gradle\caches\transforms-3\a9475f48c579e1cb38a935f96e08c0d3\transformed\navigation-common-2.3.5\res
+com.javascript.jscript.app-jetified-roundedimageview-2.3.0-34 C:\Users\Humaira\.gradle\caches\transforms-3\ad7cc9de8567c2025f33583cd2e4f7f5\transformed\jetified-roundedimageview-2.3.0\res
+com.javascript.jscript.app-drawerlayout-1.1.1-35 C:\Users\Humaira\.gradle\caches\transforms-3\b34af124a6fa7a40047ecd7e0e738571\transformed\drawerlayout-1.1.1\res
+com.javascript.jscript.app-jetified-play-services-ads-21.1.0-36 C:\Users\Humaira\.gradle\caches\transforms-3\b8e0a2c2d97d839b9fa4e532dd457220\transformed\jetified-play-services-ads-21.1.0\res
+com.javascript.jscript.app-jetified-applovin-sdk-11.4.4-37 C:\Users\Humaira\.gradle\caches\transforms-3\c114c99ab4d995cca546be9394604ea0\transformed\jetified-applovin-sdk-11.4.4\res
+com.javascript.jscript.app-jetified-codeview-0.3.1-38 C:\Users\Humaira\.gradle\caches\transforms-3\c8594d59521eda2d9edd4b7d46f99a34\transformed\jetified-codeview-0.3.1\res
+com.javascript.jscript.app-jetified-circleimageview-3.1.0-39 C:\Users\Humaira\.gradle\caches\transforms-3\c93e6498fd313be35246e27c1595b76f\transformed\jetified-circleimageview-3.1.0\res
+com.javascript.jscript.app-jetified-lifecycle-viewmodel-savedstate-2.5.1-40 C:\Users\Humaira\.gradle\caches\transforms-3\cd0024987d2392c636b410b409ad0d8b\transformed\jetified-lifecycle-viewmodel-savedstate-2.5.1\res
+com.javascript.jscript.app-jetified-exoplayer-ui-2.15.1-41 C:\Users\Humaira\.gradle\caches\transforms-3\cf8b2345b6af0c03665020a39b614cee\transformed\jetified-exoplayer-ui-2.15.1\res
+com.javascript.jscript.app-jetified-emoji2-1.0.0-42 C:\Users\Humaira\.gradle\caches\transforms-3\d0e5c8487694aa4ffccf88e22fe3d247\transformed\jetified-emoji2-1.0.0\res
+com.javascript.jscript.app-constraintlayout-2.1.4-43 C:\Users\Humaira\.gradle\caches\transforms-3\d13c54638c274fe3da86217d0bea081b\transformed\constraintlayout-2.1.4\res
+com.javascript.jscript.app-appcompat-1.4.2-44 C:\Users\Humaira\.gradle\caches\transforms-3\db15f1764b9af6b687bc4d7a1ed2bcb6\transformed\appcompat-1.4.2\res
+com.javascript.jscript.app-jetified-ShimmerRecyclerView-v1.3-45 C:\Users\Humaira\.gradle\caches\transforms-3\e138570681eb8fbb353135998d57f2d1\transformed\jetified-ShimmerRecyclerView-v1.3\res
+com.javascript.jscript.app-jetified-lifecycle-viewmodel-ktx-2.5.1-46 C:\Users\Humaira\.gradle\caches\transforms-3\e34c94e9f66764d143c4c573711d1c47\transformed\jetified-lifecycle-viewmodel-ktx-2.5.1\res
+com.javascript.jscript.app-jetified-play-services-basement-18.0.0-47 C:\Users\Humaira\.gradle\caches\transforms-3\e4fd2609d991c0c8cc8a6cd9e97f4380\transformed\jetified-play-services-basement-18.0.0\res
+com.javascript.jscript.app-jetified-firebase-common-20.1.1-48 C:\Users\Humaira\.gradle\caches\transforms-3\e8a7abb4a3b4a96fdf55a4b2f9ddcc2f\transformed\jetified-firebase-common-20.1.1\res
+com.javascript.jscript.app-lifecycle-livedata-core-2.5.1-49 C:\Users\Humaira\.gradle\caches\transforms-3\ea36ac8974a54b8b99521b01e3cce0bb\transformed\lifecycle-livedata-core-2.5.1\res
+com.javascript.jscript.app-jetified-annotation-experimental-1.1.0-50 C:\Users\Humaira\.gradle\caches\transforms-3\f27dccddc44497624317048b37b49869\transformed\jetified-annotation-experimental-1.1.0\res
+com.javascript.jscript.app-jetified-imagepicker-2.1-51 C:\Users\Humaira\.gradle\caches\transforms-3\f81443a0eabf3e4adff8b36234c1dafc\transformed\jetified-imagepicker-2.1\res
+com.javascript.jscript.app-cardview-1.0.0-52 C:\Users\Humaira\.gradle\caches\transforms-3\fe7ed02dc4c91e543e7180d28dcfd57e\transformed\cardview-1.0.0\res
+com.javascript.jscript.app-navigation-ui-2.3.5-53 C:\Users\Humaira\.gradle\caches\transforms-3\ff7cae0cb9c7c223c3caa6bf2f55892d\transformed\navigation-ui-2.3.5\res
+com.javascript.jscript.app-google-services-54 E:\Android App Projects\JavaScript\app\build\generated\res\google-services\release
+com.javascript.jscript.app-pngs-55 E:\Android App Projects\JavaScript\app\build\generated\res\pngs\release
+com.javascript.jscript.app-resValues-56 E:\Android App Projects\JavaScript\app\build\generated\res\resValues\release
+com.javascript.jscript.app-rs-57 E:\Android App Projects\JavaScript\app\build\generated\res\rs\release
+com.javascript.jscript.app-mergeReleaseResources-58 E:\Android App Projects\JavaScript\app\build\intermediates\incremental\release\mergeReleaseResources\merged.dir
+com.javascript.jscript.app-mergeReleaseResources-59 E:\Android App Projects\JavaScript\app\build\intermediates\incremental\release\mergeReleaseResources\stripped.dir
+com.javascript.jscript.app-merged_res-60 E:\Android App Projects\JavaScript\app\build\intermediates\merged_res\release
+com.javascript.jscript.app-main-61 E:\Android App Projects\JavaScript\app\src\main\res
+com.javascript.jscript.app-release-62 E:\Android App Projects\JavaScript\app\src\release\res
